@@ -1,0 +1,31 @@
+# Forever Codex
+
+An unofficial fan wiki cataloguing **World of Warcraft: Forever**, Blizzard's "Classic+" branch of WoW (launched 4 Nov 2026). Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and deployed to GitHub Pages.
+
+## Local preview
+
+```bash
+python -m venv .venv
+.venv/Scripts/pip install -r requirements.txt   # or .venv/bin/pip on macOS/Linux
+.venv/Scripts/mkdocs serve
+```
+
+Then open http://127.0.0.1:8000/wow-forever/.
+
+## Deploy
+
+`.github/workflows/deploy.yml` builds with `mkdocs build --strict` and publishes to GitHub Pages on every push to `main`.
+One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+## Layout
+
+| Folder | Section |
+|---|---|
+| `docs/about/` | What Forever is: timeline, editions, rulesets, Hardcore, patches, reception, FAQ |
+| `docs/characters/` | Races, classes, Legacy, professions, leveling, customization |
+| `docs/world/` | Zones, Zephras Isle, lore, travel, NPCs, events |
+| `docs/content/` | Dungeons, raids, PvP, roadmap |
+| `docs/systems/` | Camping, add-ons, economy, items, social, client |
+| `docs/community/` | Reception, resources, glossary |
+
+Not affiliated with Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.

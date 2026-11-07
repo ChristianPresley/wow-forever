@@ -1,0 +1,49 @@
+# Hyjal Summit
+
+| | |
+|---|---|
+| **Type** | Raid (new in Forever). *Not* the Burning Crusade raid of the same name |
+| **Size** | 20 players |
+| **Level** | 60 |
+| **Unlocks** | 9 Dec 2026 |
+| **Location** | Summit of [Mount Hyjal](../../world/zones.md#mount-hyjal), by Nordrassil |
+| **Bosses** | 13 |
+| **Reset** | Weekly |
+
+## Overview
+
+The raid opens with an **ancient guardian** (Bandalar), then **branches into above-ground and below-ground routes** that meet again for the final encounters. Fel corruption is a running theme, and guilds may split a clear across nights.
+
+Blizzard has teased a **legendary** item tied to this raid. Details are unconfirmed.
+
+## Bosses (wiki order)
+
+| # | Boss |
+|---|---|
+| 1 | Bandalar |
+| 2 | Time-Lost Battalion |
+| 3 | Old Gloomlurker |
+| 4 | Kathris the Haunted |
+| 5 | Elder Minderel |
+| 6 | Council of Thorns |
+| 7 | The Wild King |
+| 8 | Ancient of Decay |
+| 9 | Sylvesteris Dusksong |
+| 10 | Gharalis the Abyssal |
+| 11 | Anara Chillwind |
+| 12 | Tracker Stillwind |
+| 13 | **Nythus the Dreambound** |
+
+!!! note "Conflicts & spellings"
+    - **Final boss:** the Warcraft Wiki names Nythus the Dreambound. Method lists The Wild King.
+    - Warcraft Tavern spells some names *Nythus the Dreadbound*, *Sylvestris* and *Elder Minderei*.
+    - The TBC bosses (Rage Winterchill, Archimonde and the rest) are **not** in this raid.
+
+## Developer previews
+
+- An undead possessed by a ghost.
+- A "body horror" fight.
+
+## Reputation
+
+Mount Hyjal's factions are described as the level-60 endgame reputations. The name *Guardians of Hyjal* comes from fan sources and is **unconfirmed**.

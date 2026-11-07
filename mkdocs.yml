@@ -1,0 +1,153 @@
+site_name: Forever Codex
+site_description: An unofficial, community-style wiki cataloguing World of Warcraft — Forever.
+site_url: https://christianpresley.github.io/wow-forever/
+repo_url: https://github.com/ChristianPresley/wow-forever
+repo_name: ChristianPresley/wow-forever
+edit_uri: edit/main/docs/
+copyright: Unofficial fan wiki. World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc. Not affiliated with or endorsed by Blizzard.
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/sword-cross
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.action.edit
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - abbr
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - About Forever:
+      - about/index.md
+      - Timeline: about/timeline.md
+      - Editions & Pricing: about/editions.md
+      - Rulesets & Megaserver: about/rulesets.md
+      - Hardcore: about/hardcore.md
+      - Patches & Builds: about/patches.md
+      - Launch & Reception: about/reception.md
+      - Developers & Interviews: about/developers.md
+      - FAQ: about/faq.md
+  - Characters:
+      - characters/index.md
+      - Races & Skyborne: characters/races.md
+      - Classes:
+          - characters/classes/index.md
+          - Druid: characters/classes/druid.md
+          - Hunter: characters/classes/hunter.md
+          - Mage: characters/classes/mage.md
+          - Paladin: characters/classes/paladin.md
+          - Priest: characters/classes/priest.md
+          - Rogue: characters/classes/rogue.md
+          - Shaman: characters/classes/shaman.md
+          - Warlock: characters/classes/warlock.md
+          - Warrior: characters/classes/warrior.md
+      - Legacy System: characters/legacy.md
+      - Professions: characters/professions.md
+      - Leveling, Mounts & Rep: characters/leveling.md
+      - Customization & Transmog: characters/customization.md
+  - World:
+      - world/index.md
+      - Zones: world/zones.md
+      - Zephras Isle: world/zephras-isle.md
+      - Lore & Story: world/lore.md
+      - Travel: world/travel.md
+      - NPCs & Villains: world/npcs.md
+      - World Events: world/events.md
+  - Content:
+      - content/index.md
+      - Dungeons:
+          - content/dungeons/index.md
+          - Hall of Thanes: content/dungeons/hall-of-thanes.md
+          - Ruins of Lordaeron: content/dungeons/ruins-of-lordaeron.md
+          - "Excavation Site: Wetlands": content/dungeons/excavation-site.md
+          - City of Dalaran: content/dungeons/city-of-dalaran.md
+          - The Drowned City: content/dungeons/drowned-city.md
+          - Krol'dok Stronghold: content/dungeons/kroldok-stronghold.md
+          - Alcaz Prison: content/dungeons/alcaz-prison.md
+          - Blackmaw Hold: content/dungeons/blackmaw-hold.md
+          - Shaper's Terrace: content/dungeons/shapers-terrace.md
+      - Raids:
+          - content/raids/index.md
+          - The Barrow Deeps: content/raids/barrow-deeps.md
+          - Hyjal Summit: content/raids/hyjal-summit.md
+          - Onyxia's Lair: content/raids/onyxias-lair.md
+      - PvP:
+          - content/pvp/index.md
+          - Battlegrounds: content/pvp/battlegrounds.md
+      - Roadmap: content/roadmap.md
+  - Systems:
+      - systems/index.md
+      - Camping: systems/camping.md
+      - Add-ons & UI: systems/addons.md
+      - Economy: systems/economy.md
+      - Items & Collectibles: systems/items.md
+      - Social: systems/social.md
+      - Client, Gamepad & Tech: systems/client.md
+  - Community:
+      - community/index.md
+      - Resources: community/resources.md
+      - Glossary: community/glossary.md
+      - Sources: sources.md
+      - About this wiki: about-this-wiki.md
+
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
+    unrecognized_links: warn

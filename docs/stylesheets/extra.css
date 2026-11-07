@@ -1,0 +1,14 @@
+:root {
+  --md-primary-fg-color: #1b2a41;
+  --md-primary-fg-color--light: #2c4366;
+  --md-primary-fg-color--dark: #0f1828;
+  --md-accent-fg-color: #c9a227;
+}
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #12161d;
+  --md-typeset-a-color: #e0b84a;
+}
+.md-typeset h1 { font-weight: 700; letter-spacing: -0.01em; }
+.md-typeset table:not([class]) { font-size: 0.72rem; }
+.md-typeset table:not([class]) th { background: var(--md-primary-fg-color); color: #fff; }
+.unconfirmed { color: var(--md-default-fg-color--light); font-style: italic; }

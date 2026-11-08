@@ -28,11 +28,11 @@ These are capacity figures, not usage, and the regions they cover were not state
 
 | Ruleset | Rules | Factions | Available |
 |---|---|---|---|
-| **Normal** (sometimes "PvE") | Adventuring and fighting monsters. PvP is optional | Both | Launch |
+| **Normal** (sometimes "PvE") | Adventuring and fighting monsters. PvP is optional | **Both**{ .pill .pill--neutral-faction } | Launch |
 | **PvP** | Frequent risk of attack by opposing players | **One faction per account** | Launch |
-| **Roleplay (RP)** | Strict naming and behavior rules for immersive roleplay | Both | Launch |
+| **Roleplay (RP)** | Strict naming and behavior rules for immersive roleplay | **Both**{ .pill .pill--neutral-faction } | Launch |
 | **Roleplay PvP (RP-PvP)** | RP rules plus PvP | One faction *unconfirmed*{ .unconfirmed } | Launch |
-| **Hardcore** | Permadeath. A closed ecosystem | Both | Winter 2026/27 ([details](hardcore.md)) |
+| **Hardcore** | Permadeath. A closed ecosystem | **Both**{ .pill .pill--neutral-faction } | Winter 2026/27 ([details](hardcore.md)) |
 
 </div>
 

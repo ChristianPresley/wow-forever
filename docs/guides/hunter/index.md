@@ -36,19 +36,28 @@ The Hunter is a ranged physical damage dealer who fights alongside a tamed beast
 
 </aside>
 
-**Strengths**
+<div class="proscons" markdown>
+<div class="pros" markdown>
+
+Strengths
 
 - Kills fast and safely: the pet tanks while you shoot.
 - Excellent kiting tools: Concussive Shot, Wing Clip, Frost Trap, and now **traps in combat**.
 - Feign Death and Freezing Trap give you emergency exits that few classes have.
 - Pets scale with **your** gear, so a pet tamed at 30 is no longer left behind.
 
-**Weaknesses**
+</div>
+<div class="cons" markdown>
+
+Weaknesses
 
 - The **deadzone**: you can't shoot targets closer than 8 yards, and you're weak in melee unless you're Survival.
 - Mana runs dry on long fights before talents like Rapid Recuperation.
 - Pets die in AoE until the 10 November durability fix.
 - Ammunition, food for your pet, and stable fees add bag clutter and cost (Classic-era behaviour, not changed as far as we know).
+
+</div>
+</div>
 
 ### What's new in Forever
 
@@ -64,14 +73,14 @@ The Hunter is a ranged physical damage dealer who fights alongside a tamed beast
 
 | Race | Faction | Status | Headline racial for Hunters | Add-on |
 |---|---|---|---|---|
-| Human | Alliance | **New**{ .pill .pill--new .pill--sm } | Ruthless (+1% crit), Will to Survive (stun break) | [Human Hunter](human.md) |
-| Dwarf | Alliance | Classic | Artisan's Precision (+1% hit), Stoneform | [Dwarf Hunter](dwarf.md) |
-| Night Elf | Alliance | Classic | Elune's Light (+10% crit for 15 s), Shadowmeld | [Night Elf Hunter](night-elf.md) |
-| Skyborne (High Order) | Alliance | **New**{ .pill .pill--new .pill--sm } | Wind Blessed (haste), Walk on Air | [High Order Hunter](skyborne-high-order.md) |
-| Orc | Horde | Classic | Blood Fury, Command (+5% pet damage) | [Orc Hunter](orc.md) |
-| Troll | Horde | Classic | Berserking, Beast Slaying | [Troll Hunter](troll.md) |
-| Tauren | Horde | Classic | War Stomp, Endurance | [Tauren Hunter](tauren.md) |
-| Skyborne (Windshaper) | Horde | **New**{ .pill .pill--new .pill--sm } | Wind Blessed (haste), Skysight | [Windshaper Hunter](skyborne-windshaper.md) |
+| Human | **Alliance**{ .pill .pill--alliance } | **New**{ .pill .pill--new .pill--sm } | Ruthless (+1% crit), Will to Survive (stun break) | [Human Hunter](human.md) |
+| Dwarf | **Alliance**{ .pill .pill--alliance } | Classic | Artisan's Precision (+1% hit), Stoneform | [Dwarf Hunter](dwarf.md) |
+| Night Elf | **Alliance**{ .pill .pill--alliance } | Classic | Elune's Light (+10% crit for 15 s), Shadowmeld | [Night Elf Hunter](night-elf.md) |
+| Skyborne (High Order) | **Alliance**{ .pill .pill--alliance } | **New**{ .pill .pill--new .pill--sm } | Wind Blessed (haste), Walk on Air | [High Order Hunter](skyborne-high-order.md) |
+| Orc | **Horde**{ .pill .pill--horde } | Classic | Blood Fury, Command (+5% pet damage) | [Orc Hunter](orc.md) |
+| Troll | **Horde**{ .pill .pill--horde } | Classic | Berserking, Beast Slaying | [Troll Hunter](troll.md) |
+| Tauren | **Horde**{ .pill .pill--horde } | Classic | War Stomp, Endurance | [Tauren Hunter](tauren.md) |
+| Skyborne (Windshaper) | **Horde**{ .pill .pill--horde } | **New**{ .pill .pill--new .pill--sm } | Wind Blessed (haste), Skysight | [Windshaper Hunter](skyborne-windshaper.md) |
 
 Full racial tables: [Races](../../characters/races.md#racial-abilities).
 

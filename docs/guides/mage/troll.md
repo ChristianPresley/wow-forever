@@ -22,7 +22,7 @@ Troll Mage is the classic Horde PvE caster. **Berserking** now gives a flat +10%
 | | |
 |---|---|
 | **Status** | Classic combination |
-| **Faction** | Horde |
+| **Faction** | **Horde**{ .pill .pill--horde } |
 | **Start / capital** | Valley of Trials, Durotar / Orgrimmar |
 | **Mount** | Raptor |
 | **Home reputation** | Darkspear Trolls |

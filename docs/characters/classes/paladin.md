@@ -21,9 +21,15 @@
 **Races:** Human, Dwarf, **Undead (new; Horde)**. The Forsaken Paladin is the headline new combination: **612,096** were created in beta.
 
 !!! forever "What Forever changed"
-    **Headline additions:** Holy Strike, Seal of Fury (tank), baseline Consecration and Kings, Templar's Bulwark, Twist of Light, Unsealed Wrath.
+    **Headline additions**
 
-    **Notable removals:** Salvation, Sanctuary, Blessing of Light. Full list: [Classes summary](index.md#summary).
+    **Holy Strike**{ .pill .pill--new } **Seal of Fury (tank)**{ .pill .pill--new } **Baseline Consecration and Kings**{ .pill .pill--new } **Templar's Bulwark**{ .pill .pill--new } **Twist of Light**{ .pill .pill--new } **Unsealed Wrath**{ .pill .pill--new }
+
+    **Notable removals**
+
+    **Salvation**{ .pill .pill--removed } **Sanctuary**{ .pill .pill--removed } **Blessing of Light**{ .pill .pill--removed }
+
+    Full list: [Classes summary](index.md#summary).
 
 <div class="fc-cta" data-class="paladin" markdown>
 

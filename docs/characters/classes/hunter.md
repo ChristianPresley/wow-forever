@@ -21,9 +21,15 @@
 **Races:** Human **New**{ .pill .pill--new .pill--sm }, Dwarf, Night Elf, Orc, Troll, Tauren, Skyborne (both).
 
 !!! forever "What Forever changed"
-    **Headline additions:** Aimed Shot baseline, combat traps, Summon Hawk, Lone Wolf, Sniper Shot, Strider Kick, Lacerating Strikes.
+    **Headline additions**
 
-    **Notable removals:** Wyvern Sting, Slaying talents. Full list: [Classes summary](index.md#summary).
+    **Aimed Shot baseline**{ .pill .pill--new } **Combat traps**{ .pill .pill--new } **Summon Hawk**{ .pill .pill--new } **Lone Wolf**{ .pill .pill--new } **Sniper Shot**{ .pill .pill--new } **Strider Kick**{ .pill .pill--new } **Lacerating Strikes**{ .pill .pill--new }
+
+    **Notable removals**
+
+    **Wyvern Sting**{ .pill .pill--removed } **Slaying talents**{ .pill .pill--removed }
+
+    Full list: [Classes summary](index.md#summary).
 
 <div class="fc-cta" data-class="hunter" markdown>
 

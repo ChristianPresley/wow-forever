@@ -31,23 +31,32 @@ The Druid is the hybrid of hybrids. With one character you can tank (Bear), deal
 | **Roles** | Tank (Bear), melee DPS (Cat), ranged DPS (Balance), healer (Restoration) |
 | **Armor / weapons** | Leather (cloth and leather early), staves, maces, daggers, fist weapons, polearms (trainer at 20), off-hand items |
 | **Resources** | Mana (caster), Rage (Bear), Energy (Cat). Mana is hidden in form unless you turn on the Personal Resource Display |
-| **Factions** | Both |
+| **Factions** | **Both**{ .pill .pill--neutral-faction } |
 
 </aside>
 
-**Strengths**
+<div class="proscons" markdown>
+<div class="pros" markdown>
+
+Strengths
 
 - Best solo leveling kit in the game for a melee class: stealth, sprint, self-heals, a speed form at 30 and no pet to manage.
 - Feral can switch between tank and DPS without a respec, and Forever's +115% bear threat makes Bear a real dungeon tank.
 - Brings unique raid utility: Innervate, Rebirth (combat resurrection), Mark of the Wild, Moonkin Form or Leader of the Pack crit auras.
 - Forever's baseline additions (Omen of Clarity at 20, Revive at 12, Nature's Grasp at 10) remove old talent taxes.
 
-**Weaknesses**
+</div>
+<div class="cons" markdown>
+
+Weaknesses
 
 - Gear competition: Feral wants leather with Strength/Agility, while Balance and Resto want caster leather and cloth. Two gear sets for dual spec.
 - Shifting costs mana. Long fights can still drain you if you over-shift.
 - Balance is mana-hungry while leveling: you spend mana both killing and healing.
 - Early bear tools (Dire Bear, Lacerate) arrive in the 25–40 range, so low-level tanking is weaker than a Warrior's or Paladin's.
+
+</div>
+</div>
 
 ### What's new in Forever
 
@@ -62,10 +71,10 @@ The Druid is the hybrid of hybrids. With one character you can tank (Bear), deal
 
 | Race | Faction | Status | Add-on |
 |---|---|---|---|
-| Night Elf | Alliance | Classic | [Night Elf Druid](night-elf.md) |
-| Skyborne (High Order) | Alliance | **New**{ .pill .pill--new .pill--sm } | [High Order Skyborne Druid](skyborne-high-order.md) |
-| Tauren | Horde | Classic | [Tauren Druid](tauren.md) |
-| Skyborne (Windshaper) | Horde | **New**{ .pill .pill--new .pill--sm } | [Windshaper Skyborne Druid](skyborne-windshaper.md) |
+| Night Elf | **Alliance**{ .pill .pill--alliance } | Classic | [Night Elf Druid](night-elf.md) |
+| Skyborne (High Order) | **Alliance**{ .pill .pill--alliance } | **New**{ .pill .pill--new .pill--sm } | [High Order Skyborne Druid](skyborne-high-order.md) |
+| Tauren | **Horde**{ .pill .pill--horde } | Classic | [Tauren Druid](tauren.md) |
+| Skyborne (Windshaper) | **Horde**{ .pill .pill--horde } | **New**{ .pill .pill--new .pill--sm } | [Windshaper Skyborne Druid](skyborne-windshaper.md) |
 
 Community guides call the race differences **marginal**. Pick for faction and looks first. See [Races](../../characters/races.md) for every racial.
 
@@ -336,7 +345,7 @@ From trainer and quest tables on Warcraft Tavern and Method. Levels marked *(fan
 
 ### 1–10: Caster
 
-| | Alliance | Horde |
+| | **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|---|
 | Night Elf / Tauren | Shadowglen → Dolanaar (Teldrassil) | Camp Narache → Bloodhoof Village (Mulgore) |
 | Skyborne | Thendal Village → Shen'dar Village ([Zephras Isle](../../world/zephras-isle.md)) | same, phased |

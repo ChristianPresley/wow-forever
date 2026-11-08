@@ -34,11 +34,32 @@ The Priest is still Azeroth's most flexible healer. It heals with heal-over-time
 |---|---|
 | **Roles** | Healer (Holy, Discipline), ranged caster DPS (Shadow) |
 | **Armor / weapons** | Cloth. Wands and one-handed maces by default; daggers and staves from weapon trainers |
-| **Strengths** | Best all-round healer, strong self-sustain while leveling (Shield, Renew, Penance), Fear Ward and Mind Control utility, two healer specs to choose from |
-| **Weaknesses** | Cloth armor and few escapes. Slow early kill speed: Priest and Warrior were the **slowest classes to level in beta**. Mana-hungry before talents and gear |
 | **Dual spec** | Level 40, 50g at the class trainer |
 
 </aside>
+
+<div class="proscons" markdown>
+<div class="pros" markdown>
+
+Strengths
+
+- Best all-round healer
+- Strong self-sustain while leveling (Shield, Renew, Penance)
+- Fear Ward and Mind Control utility
+- Two healer specs to choose from
+
+</div>
+<div class="cons" markdown>
+
+Weaknesses
+
+- Cloth armor and few escapes
+- Slow early kill speed: Priest and Warrior were the **slowest classes to level in beta**
+- Mana-hungry before talents and gear
+
+</div>
+</div>
+
 
 ### What's new in Forever
 
@@ -56,12 +77,12 @@ Six races can be Priests. **Gnome is a new combination** in Forever.
 
 | Faction | Race | Race-locked Priest spells | Add-on |
 |---|---|---|---|
-| Alliance | Human | Divine Grace *(new)*, Feedback | [Human Priest](human.md) |
-| Alliance | Dwarf | Desperate Prayer, Chastise *(new)* | [Dwarf Priest](dwarf.md) |
-| Alliance | Gnome **(new)** | Confounding Flash *(new)*, Contingency Plan *(new)* | [Gnome Priest](gnome.md) |
-| Alliance | Night Elf | Starshards (buffed), Elune's Grace (redesigned) | [Night Elf Priest](night-elf.md) |
-| Horde | Troll | Hex of Weakness, Shadowguard | [Troll Priest](troll.md) |
-| Horde | Undead | Touch of Weakness, Dark Sacrifice *(new)* | [Undead Priest](undead.md) |
+| **Alliance**{ .pill .pill--alliance } | Human | Divine Grace *(new)*, Feedback | [Human Priest](human.md) |
+| **Alliance**{ .pill .pill--alliance } | Dwarf | Desperate Prayer, Chastise *(new)* | [Dwarf Priest](dwarf.md) |
+| **Alliance**{ .pill .pill--alliance } | Gnome **(new)** | Confounding Flash *(new)*, Contingency Plan *(new)* | [Gnome Priest](gnome.md) |
+| **Alliance**{ .pill .pill--alliance } | Night Elf | Starshards (buffed), Elune's Grace (redesigned) | [Night Elf Priest](night-elf.md) |
+| **Horde**{ .pill .pill--horde } | Troll | Hex of Weakness, Shadowguard | [Troll Priest](troll.md) |
+| **Horde**{ .pill .pill--horde } | Undead | Touch of Weakness, Dark Sacrifice *(new)* | [Undead Priest](undead.md) |
 
 Skyborne, Orc and Tauren cannot be Priests. See [Races](../../characters/races.md) for every racial ability.
 
@@ -385,7 +406,7 @@ General advice:
 
 ### 1–10: starting zones
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Human: Northshire → Elwynn Forest | Troll: Valley of Trials → Durotar |
 | Dwarf, Gnome: Coldridge Valley → Dun Morogh | Undead: Deathknell → Tirisfal Glades |
@@ -400,7 +421,7 @@ Each race add-on has the step-by-step for its starting zone.
 
 ### 10–20
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Westfall, Loch Modan, Darkshore | The Barrens, Silverpine Forest |
 | Redridge Mountains (15+) | Stonetalon Mountains (15+) |
@@ -422,7 +443,7 @@ Each race add-on has the step-by-step for its starting zone.
 
 ### 20–30
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Wetlands, Duskwood, Ashenvale, Redridge | Hillsbrad Foothills, Ashenvale, Stonetalon, Thousand Needles (25+) |
 
@@ -434,7 +455,7 @@ Each race add-on has the step-by-step for its starting zone.
 
 ### 30–40
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Alterac Mountains (Dalaran), Arathi Highlands, Stranglethorn Vale, Desolace, Dustwallow (35+) | Arathi Highlands, Stranglethorn Vale, Desolace, Thousand Needles, Dustwallow (35+) |
 | **Riverglades** (35+) from Farholde Keep | **Riverglades** (35+) from Rog'mar |
@@ -448,7 +469,7 @@ Each race add-on has the step-by-step for its starting zone.
 
 ### 40–50
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Riverglades, Badlands, Swamp of Sorrows, Feralas, Tanaris, Hinterlands | Riverglades, Badlands, Swamp of Sorrows, Feralas, Tanaris, Hinterlands |
 | Searing Gorge (43+), Azshara and Felwood (45+) | Searing Gorge (43+), Azshara and Felwood (45+) |
@@ -460,7 +481,7 @@ Each race add-on has the step-by-step for its starting zone.
 
 ### 50–60
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Un'Goro (48+), Burning Steppes, Western Plaguelands, Azshara | Un'Goro (48+), Burning Steppes, Western Plaguelands, Azshara |
 | Winterspring and Eastern Plaguelands (53+), Silithus (55+) | Winterspring and Eastern Plaguelands (53+), Silithus (55+) |

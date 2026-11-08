@@ -11,7 +11,7 @@
 |---|---|
 | **Levels** | 1–12 |
 | **Location** | Skywall, the Elemental Plane of Air (a floating island, not on Azeroth) |
-| **Status** | Sanctuary |
+| **Status** | **Sanctuary**{ .pill .pill--success } |
 | **Capital** | Valanaar (trainers, bank, Skydocks) |
 | **Access** | The Skyborne starting zone requires the **Skyborne Heroic Pack** or higher. **Anyone can visit by airship** from Dalaran or Skywatcher Plateau |
 | **Quests** | ~145 (attributed to Wowhead's database, unverified) *unconfirmed*{ .unconfirmed } |
@@ -30,8 +30,8 @@ The **Skyborne** call themselves the ***shen'dorei***, "hidden people". They des
 
 | Faction | Allegiance | Role | Leader | Off-world ally |
 |---|---|---|---|---|
-| **Windshapers** | Horde | Shamanic spiritual leaders who wield *Skysight*. Unlock **Shaman** | Grand Skyseer **Ayessa Dawnsinger** | Earthen Ring, **Muln Earthfury** (Mulgore) |
-| **High Order** | Alliance | Descendants of Highborne magisters. Unlock **Mage** | Supreme Magister **Elaadrin Evengale** | Kirin Tor, **Archmage Ansirem Runeweaver** (Dalaran) |
+| **Windshapers** | **Horde**{ .pill .pill--horde } | Shamanic spiritual leaders who wield *Skysight*. Unlock **Shaman** | Grand Skyseer **Ayessa Dawnsinger** | Earthen Ring, **Muln Earthfury** (Mulgore) |
+| **High Order** | **Alliance**{ .pill .pill--alliance } | Descendants of Highborne magisters. Unlock **Mage** | Supreme Magister **Elaadrin Evengale** | Kirin Tor, **Archmage Ansirem Runeweaver** (Dalaran) |
 | **Al'Aketh** | Hostile | A cult of **Al'Akir the Windlord** that is disabling the wards | High Priestess **Lorthuna** | — |
 
 </div>

@@ -22,7 +22,7 @@ tags:
 | | |
 |---|---|
 | **Status** | **NEW** combination |
-| **Faction** | Horde |
+| **Faction** | **Horde**{ .pill .pill--horde } |
 | **Start / capital** | Valley of Trials, Durotar / Orgrimmar |
 | **Mount** | Wolf |
 | **Home reputation** | Orgrimmar |

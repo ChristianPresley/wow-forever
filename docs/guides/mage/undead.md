@@ -22,7 +22,7 @@ The Forsaken Mage is the Horde's PvP classic. **Will of the Forsaken** breaks fe
 | | |
 |---|---|
 | **Status** | Classic combination |
-| **Faction** | Horde |
+| **Faction** | **Horde**{ .pill .pill--horde } |
 | **Start / capital** | Deathknell, Tirisfal Glades / Undercity |
 | **Mount** | Skeletal Horse |
 | **Home reputation** | Undercity |

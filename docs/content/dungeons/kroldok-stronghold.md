@@ -9,7 +9,7 @@
 | **Type** | 5-player dungeon (new in Forever) |
 | **Level** | 40–45 (LFG 40–47). An earlier Blizzard figure said 40–55 and was corrected |
 | **Location** | On a hill above Sunnyglade in the **[Riverglades](../../world/zones.md#riverglades)**. Entered through a cave west of the fortress gates (~37.5, 37.5) |
-| **Faction** | Both |
+| **Faction** | **Both**{ .pill .pill--neutral-faction } |
 | **Bosses** | 1 known (one source counts 5) |
 
 </aside>

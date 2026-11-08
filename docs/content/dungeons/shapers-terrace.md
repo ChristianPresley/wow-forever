@@ -9,7 +9,7 @@
 | **Type** | 5-player dungeon (new in Forever) |
 | **Level** | 58–60 |
 | **Location** | Northern Un'Goro Crater, on a hill above Marshal's Refuge (~48.1, 6.1) |
-| **Faction** | Both |
+| **Faction** | **Both**{ .pill .pill--neutral-faction } |
 | **Bosses** | 4 known (one source counts 11) |
 
 </aside>

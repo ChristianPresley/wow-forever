@@ -21,9 +21,15 @@
 **Races:** Every race: Human, Dwarf, Gnome, Night Elf, Orc, Troll, Tauren, Undead, Skyborne (both).
 
 !!! forever "What Forever changed"
-    **Headline additions:** Victory Rush and Tactical Mastery baseline, normalized rage, Spearing Strike, Weaponmaster, Reckless Swings.
+    **Headline additions**
 
-    **Notable removals:** Weapon specializations. Full list: [Classes summary](index.md#summary).
+    **Victory Rush and Tactical Mastery baseline**{ .pill .pill--new } **Normalized rage**{ .pill .pill--new } **Spearing Strike**{ .pill .pill--new } **Weaponmaster**{ .pill .pill--new } **Reckless Swings**{ .pill .pill--new }
+
+    **Notable removals**
+
+    **Weapon specializations**{ .pill .pill--removed }
+
+    Full list: [Classes summary](index.md#summary).
 
 <div class="fc-cta" data-class="warrior" markdown>
 

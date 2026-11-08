@@ -9,7 +9,7 @@
 | **Type** | 5-player dungeon (new in Forever) |
 | **Level** | 55–60 |
 | **Location** | Azshara. The tunnel is at ~38.7, 33.4, and the portal itself (deep inside) appears on the Winterspring map at ~66.6, 84.4 |
-| **Faction** | Both |
+| **Faction** | **Both**{ .pill .pill--neutral-faction } |
 | **Bosses** | 1 known (counts reported from 7 to "20+") |
 | **Raid link** | Contains an entrance to the **[Barrow Deeps](../raids/barrow-deeps.md)** raid |
 

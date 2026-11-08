@@ -21,9 +21,15 @@
 **Races:** Night Elf, Tauren, Skyborne (both).
 
 !!! forever "What Forever changed"
-    **Headline additions:** Baseline Omen of Clarity, Revive, Lacerate, Poised. Eclipse, Shifting Power, Primal Bite, Wild Growth, Bloom.
+    **Headline additions**
 
-    **Notable removals:** Berserk, Mangle, Tiger's Fury. Full list: [Classes summary](index.md#summary).
+    **Baseline Omen of Clarity**{ .pill .pill--new } **Revive**{ .pill .pill--new } **Lacerate**{ .pill .pill--new } **Poised**{ .pill .pill--new } **Eclipse**{ .pill .pill--new } **Shifting Power**{ .pill .pill--new } **Primal Bite**{ .pill .pill--new } **Wild Growth**{ .pill .pill--new } **Bloom**{ .pill .pill--new }
+
+    **Notable removals**
+
+    **Berserk**{ .pill .pill--removed } **Mangle**{ .pill .pill--removed } **Tiger's Fury**{ .pill .pill--removed }
+
+    Full list: [Classes summary](index.md#summary).
 
 <div class="fc-cta" data-class="druid" markdown>
 

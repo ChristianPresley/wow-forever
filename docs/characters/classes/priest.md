@@ -21,9 +21,15 @@
 **Races:** Human, Dwarf, Gnome **New**{ .pill .pill--new .pill--sm }, Night Elf, Troll, Undead.
 
 !!! forever "What Forever changed"
-    **Headline additions:** Fear Ward and Devouring Plague for all, SW:Death baseline, Penance, Divine Aegis, Prayer of Mending, Holy Binding.
+    **Headline additions**
 
-    **Notable removals:** Lightwell, Binding Heal. Full list: [Classes summary](index.md#summary).
+    **Fear Ward and Devouring Plague for all**{ .pill .pill--new } **SW:Death baseline**{ .pill .pill--new } **Penance**{ .pill .pill--new } **Divine Aegis**{ .pill .pill--new } **Prayer of Mending**{ .pill .pill--new } **Holy Binding**{ .pill .pill--new }
+
+    **Notable removals**
+
+    **Lightwell**{ .pill .pill--removed } **Binding Heal**{ .pill .pill--removed }
+
+    Full list: [Classes summary](index.md#summary).
 
 <div class="fc-cta" data-class="priest" markdown>
 

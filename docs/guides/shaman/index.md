@@ -36,19 +36,28 @@ The Shaman is a hybrid that can fill **any non-tank role**: ranged caster (Eleme
 
 </aside>
 
-**Strengths**
+<div class="proscons" markdown>
+<div class="pros" markdown>
+
+Strengths
 
 - Party-wide buffs that every group wants: Windfury, Flametongue, Strength of Earth, Mana Spring and the resistance totems, which now cover the **whole raid**.
 - Strong utility in PvP and dungeons: Purge, Grounding Totem, Tremor Totem, Earth Shock interrupts and Earthbind.
 - Every spec can heal in an emergency, and Reincarnation saves wipes.
 - Enhancement levels quickly and solos well.
 
-**Weaknesses**
+</div>
+<div class="cons" markdown>
+
+Weaknesses
 
 - Heavy mana use, especially for Elemental while leveling.
 - Totems are stationary. Moving fights pull you away from your buffs, although Totemic Call (level 22) now brings them to you.
 - No tank spec. Shield Specialization was removed.
 - Totems need **totem items in your bags**, earned through four class quests.
+
+</div>
+</div>
 
 ### What's new in Forever
 
@@ -319,8 +328,8 @@ Training every ability from 1 to 60 costs about **206–207g** for any class. Ne
 
 | Faction | Zones |
 |---|---|
-| Alliance | Coldridge Valley → Kharanos (Dun Morogh). See [Dwarf](dwarf.md) |
-| Horde | Valley of Trials → Razor Hill (Durotar) for [Orc](orc.md) and [Troll](troll.md); Camp Narache → Bloodhoof Village (Mulgore) for [Tauren](tauren.md); Zephras Isle for [Windshapers](skyborne-windshaper.md), who stay there until about 12 |
+| **Alliance**{ .pill .pill--alliance } | Coldridge Valley → Kharanos (Dun Morogh). See [Dwarf](dwarf.md) |
+| **Horde**{ .pill .pill--horde } | Valley of Trials → Razor Hill (Durotar) for [Orc](orc.md) and [Troll](troll.md); Camp Narache → Bloodhoof Village (Mulgore) for [Tauren](tauren.md); Zephras Isle for [Windshapers](skyborne-windshaper.md), who stay there until about 12 |
 
 - **Spells:** Rockbiter Weapon, Lightning Bolt, Earth Shock (4), Earthbind (6), Stoneclaw and Lightning Shield (8).
 - **Class quest, about level 4: *Call of Earth*.** Your first trainer sends you to an Earth Spirit, gives you Earth Sapta to drink, and you defeat a Minor Manifestation of Earth. Reward: the **Earth Totem** and Stoneskin Totem.
@@ -331,8 +340,8 @@ Training every ability from 1 to 60 costs about **206–207g** for any class. Ne
 
 | Faction | Zones | Dungeons |
 |---|---|---|
-| Alliance | Loch Modan, then Westfall or Darkshore (Stormwind Harbor now sails to Auberdine) | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18), Deadmines (18–24) |
-| Horde | The Barrens, Silverpine Forest | Ragefire Chasm (13–18), [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) (15–22), Wailing Caverns |
+| **Alliance**{ .pill .pill--alliance } | Loch Modan, then Westfall or Darkshore (Stormwind Harbor now sails to Auberdine) | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18), Deadmines (18–24) |
+| **Horde**{ .pill .pill--horde } | The Barrens, Silverpine Forest | Ragefire Chasm (13–18), [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) (15–22), Wailing Caverns |
 
 - **Class quest, level 10: *Call of Fire*.** A multi-step quest that ends with the **Fire Totem** and Searing Totem. Do it straight away; Searing Totem is a big damage boost.
 - **Spells:** Flame Shock, Flametongue Weapon, Strength of Earth (10); Fire Nova, Purge, Ancestral Spirit (12); Cure Poison (16); Tremor (18).
@@ -343,8 +352,8 @@ Training every ability from 1 to 60 costs about **206–207g** for any class. Ne
 
 | Faction | Zones | Dungeons |
 |---|---|---|
-| Alliance | Wetlands, Redridge, Duskwood, Ashenvale | Deadmines, [Excavation Site](../../content/dungeons/excavation-site.md) (24–29), The Stockade, Blackfathom Deeps |
-| Horde | Stonetalon, Hillsbrad Foothills, Ashenvale, Thousand Needles | Shadowfang Keep, Blackfathom Deeps |
+| **Alliance**{ .pill .pill--alliance } | Wetlands, Redridge, Duskwood, Ashenvale | Deadmines, [Excavation Site](../../content/dungeons/excavation-site.md) (24–29), The Stockade, Blackfathom Deeps |
+| **Horde**{ .pill .pill--horde } | Stonetalon, Hillsbrad Foothills, Ashenvale, Thousand Needles | Shadowfang Keep, Blackfathom Deeps |
 
 - **Level 20 is the big one:** Ghost Wolf, Call of the Elements, Totemic Recall, Frost Shock, Frostbrand Weapon and Lesser Healing Wave.
 - **Class quest, level 20: *Call of Water*.** The longest totem quest; Warcraft Tavern puts the Alliance version at about two hours of travel. Reward: the **Water Totem** and Healing Stream Totem.
@@ -357,8 +366,8 @@ Training every ability from 1 to 60 costs about **206–207g** for any class. Ne
 
 | Faction | Zones | Dungeons |
 |---|---|---|
-| Alliance | Arathi Highlands, Hillsbrad, Stranglethorn Vale, Desolace, **Riverglades** (35+, Farholde Keep) | Gnomeregan, Scarlet Monastery, Razorfen Kraul, [The Drowned City](../../content/dungeons/drowned-city.md) (35–40) |
-| Horde | Arathi Highlands, Stranglethorn Vale, Desolace, **Riverglades** (35+, Rog'mar), Dustwallow Marsh | Razorfen Kraul, Scarlet Monastery, The Drowned City |
+| **Alliance**{ .pill .pill--alliance } | Arathi Highlands, Hillsbrad, Stranglethorn Vale, Desolace, **Riverglades** (35+, Farholde Keep) | Gnomeregan, Scarlet Monastery, Razorfen Kraul, [The Drowned City](../../content/dungeons/drowned-city.md) (35–40) |
+| **Horde**{ .pill .pill--horde } | Arathi Highlands, Stranglethorn Vale, Desolace, **Riverglades** (35+, Rog'mar), Dustwallow Marsh | Razorfen Kraul, Scarlet Monastery, The Drowned City |
 
 - **Level 30:** **Windfury Weapon**, Grounding Totem, Reincarnation and Call of the Ancestors. Enhancement damage jumps here.
 - **Class quest, level 30: *Call of Air*.** New for this level range in Forever (Classic had no Air totem quest). Reward: the **Air Totem**. The quest also offers a **spec weapon**: *Rage of the Storm* (Enhancement), *Lightning's Grasp* (Elemental), *Tidebringer's Claw* (Restoration), or *Elementalist's Guard* for casters. Names are from Warcraft Tavern's beta guide.
@@ -372,8 +381,8 @@ Training every ability from 1 to 60 costs about **206–207g** for any class. Ne
 
 | Faction | Zones | Dungeons |
 |---|---|---|
-| Alliance | Riverglades, Dustwallow Marsh (Theramore), Badlands, Swamp of Sorrows, Feralas, Hinterlands, Tanaris | Krol'dok Stronghold, Uldaman, Zul'Farrak, [Alcaz Prison](../../content/dungeons/alcaz-prison.md) (48–53) |
-| Horde | Riverglades, Dustwallow Marsh, Badlands, Feralas, Hinterlands, Tanaris | Same |
+| **Alliance**{ .pill .pill--alliance } | Riverglades, Dustwallow Marsh (Theramore), Badlands, Swamp of Sorrows, Feralas, Hinterlands, Tanaris | Krol'dok Stronghold, Uldaman, Zul'Farrak, [Alcaz Prison](../../content/dungeons/alcaz-prison.md) (48–53) |
+| **Horde**{ .pill .pill--horde } | Riverglades, Dustwallow Marsh, Badlands, Feralas, Hinterlands, Tanaris | Same |
 
 - Tanaris has a new ferry from Steamwheedle Port to Powderfuse Port in Riverglades.
 - **Library books at 45** unlock the third book quest.
@@ -383,7 +392,7 @@ Training every ability from 1 to 60 costs about **206–207g** for any class. Ne
 
 | Faction | Zones | Dungeons |
 |---|---|---|
-| Both | Azshara (many new quests), Un'Goro Crater, Felwood, Burning Steppes, Searing Gorge, Western and Eastern Plaguelands, Winterspring, Silithus | [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60), [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) (58–60), Sunken Temple, Blackrock Depths, Lower Blackrock Spire, Dire Maul, Scholomance, Stratholme |
+| **Both**{ .pill .pill--neutral-faction } | Azshara (many new quests), Un'Goro Crater, Felwood, Burning Steppes, Searing Gorge, Western and Eastern Plaguelands, Winterspring, Silithus | [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60), [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) (58–60), Sunken Temple, Blackrock Depths, Lower Blackrock Spire, Dire Maul, Scholomance, Stratholme |
 
 - At 60, **[Mount Hyjal](../../world/zones.md#mount-hyjal)** opens through Darkwhisper Gorge in Winterspring. It holds both new raids.
 - Epic riding is **1,000g** at level 60. There is no flying.

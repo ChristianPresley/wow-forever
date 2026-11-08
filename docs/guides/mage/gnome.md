@@ -22,7 +22,7 @@ Gnome Mage is the original "glass-cannon with an escape hatch". Forever adds **E
 | | |
 |---|---|
 | **Status** | Classic combination |
-| **Faction** | Alliance |
+| **Faction** | **Alliance**{ .pill .pill--alliance } |
 | **Start / capital** | Coldridge Valley, Dun Morogh / Ironforge |
 | **Mount** | Mechanostrider |
 | **Home reputation** | Gnomeregan Exiles |

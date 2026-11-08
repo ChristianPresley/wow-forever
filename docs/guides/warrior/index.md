@@ -36,18 +36,27 @@ The Warrior is Forever's plate-wearing melee class. It can **tank** (Protection)
 
 </aside>
 
-**Strengths**
+<div class="proscons" markdown>
+<div class="pros" markdown>
+
+Strengths
 
 - The best-supported tank class, with a much larger Defensive Stance threat bonus (+80%) in Forever.
 - Huge damage potential once geared, with strong cleave from Sweeping Strikes and Whirlwind.
 - Rage normalization means **gear no longer starves you of rage**: armor and absorbs don't reduce what you gain from being hit.
 - Victory Rush and Tactical Mastery are baseline, so early leveling hurts less than in Classic.
 
-**Weaknesses**
+</div>
+<div class="cons" markdown>
+
+Weaknesses
 
 - Reported in the beta as one of the **two slowest leveling classes** (with Priest). Kill speed depends almost entirely on your weapon.
 - Little self-healing, no crowd control to speak of, and you need a healer to tank anything serious.
 - Gear-hungry. A Warrior with a bad weapon feels far worse than any other class with a bad weapon.
+
+</div>
+</div>
 
 ### What's new in Forever
 
@@ -61,7 +70,7 @@ The Warrior is Forever's plate-wearing melee class. It can **tank** (Protection)
 
 Every race can be a Warrior. Pick a race, then read its add-on alongside this guide.
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | [Human](human.md): Will to Survive, +1% crit | [Orc](orc.md): Blood Fury, stun reduction |
 | [Dwarf](dwarf.md): Stoneform, +1% hit | [Troll](troll.md): Berserking, out-of-combat regen |
@@ -317,7 +326,7 @@ Zone suggestions below follow the Classic-era leveling order plus the new zones.
 
 ### 1–10: Starting zone
 
-| | Alliance | Horde |
+| | **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|---|
 | **Zones** | Elwynn Forest · Dun Morogh · Teldrassil · [Zephras Isle](../../world/zephras-isle.md) | Durotar · Mulgore · Tirisfal Glades · Zephras Isle |
 | **Train** | Battle Shout, Charge and Rend (4), Hamstring (8) | Same |
@@ -330,7 +339,7 @@ Zone suggestions below follow the Classic-era leveling order plus the new zones.
 
 ### 10–20
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Westfall, Loch Modan, Darkshore, Redridge (from ~15) | The Barrens, Silverpine Forest, Stonetalon Mountains (from ~15) |
 
@@ -342,7 +351,7 @@ Zone suggestions below follow the Classic-era leveling order plus the new zones.
 
 ### 20–30
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Duskwood, Wetlands, Ashenvale, Hillsbrad Foothills | Hillsbrad Foothills, Ashenvale, Thousand Needles, Stonetalon |
 
@@ -356,7 +365,7 @@ Zone suggestions below follow the Classic-era leveling order plus the new zones.
 
 ### 30–40
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Arathi Highlands, Stranglethorn Vale, Desolace, Alterac Mountains | Arathi Highlands, Stranglethorn Vale, Desolace, Thousand Needles |
 
@@ -369,7 +378,7 @@ Zone suggestions below follow the Classic-era leveling order plus the new zones.
 
 ### 40–50
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Riverglades, Dustwallow Marsh, Badlands, Swamp of Sorrows, Tanaris, Feralas, Hinterlands | Riverglades, Dustwallow Marsh, Badlands, Swamp of Sorrows, Tanaris, Feralas, Hinterlands |
 
@@ -380,7 +389,7 @@ Zone suggestions below follow the Classic-era leveling order plus the new zones.
 
 ### 50–60
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Azshara, Un'Goro Crater, Felwood, Searing Gorge, Burning Steppes, Western/Eastern Plaguelands, Winterspring, Silithus | Same |
 

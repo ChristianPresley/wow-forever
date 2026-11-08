@@ -48,8 +48,8 @@
 | Levels | Zone | Where | Status |
 |---|---|---|---|
 | 1–12 | **[Zephras Isle](zephras-isle.md)** | Skywall (Elemental Plane of Air) | Sanctuary. Skyborne only (paid) |
-| 35–45 | **[Riverglades](zones.md#riverglades)** | Southeastern Khaz Modan | Contested |
-| ? (38–40+) | **[Shen'dralas](zones.md#shendralas)** | Southeast of Desolace, via the Valley of Bones | Contested |
-| 60 | **[Mount Hyjal](zones.md#mount-hyjal)** | Northern Kalimdor, via Darkwhisper Gorge | Contested |
+| 35–45 | **[Riverglades](zones.md#riverglades)** | Southeastern Khaz Modan | **Contested**{ .pill .pill--warning } |
+| ? (38–40+) | **[Shen'dralas](zones.md#shendralas)** | Southeast of Desolace, via the Valley of Bones | **Contested**{ .pill .pill--warning } |
+| 60 | **[Mount Hyjal](zones.md#mount-hyjal)** | Northern Kalimdor, via Darkwhisper Gorge | **Contested**{ .pill .pill--warning } |
 
 </div>

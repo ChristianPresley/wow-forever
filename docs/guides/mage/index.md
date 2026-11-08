@@ -31,11 +31,32 @@ The Mage is a cloth-wearing ranged caster: the best crowd control in the game (P
 | **Role** | Ranged damage, crowd control, utility |
 | **Armor / weapons** | Cloth; staves, one-hand swords, daggers, wands, off-hand items |
 | **Resource** | **Mana**{ .pill .pill--mana } |
-| **Strengths** | Polymorph and Frost Nova kiting, burst (Arcane Power, Combustion, Ice Lance shatter), self-sufficient food and water, fast travel |
-| **Weaknesses** | Lowest armor in the game, mana-hungry, vulnerable when caught in melee or stunned |
 | **Leveling speed** | Third fastest in the beta, behind Hunter and Warlock |
 
 </aside>
+
+<div class="proscons" markdown>
+<div class="pros" markdown>
+
+Strengths
+
+- Polymorph and Frost Nova kiting
+- Burst (Arcane Power, Combustion, Ice Lance shatter)
+- Self-sufficient food and water
+- Fast travel
+
+</div>
+<div class="cons" markdown>
+
+Weaknesses
+
+- Lowest armor in the game
+- Mana-hungry
+- Vulnerable when caught in melee or stunned
+
+</div>
+</div>
+
 
 ### What's new in Forever
 
@@ -52,12 +73,12 @@ The Mage is a cloth-wearing ranged caster: the best crowd control in the game (P
 
 | Race | Faction | Status | Add-on |
 |---|---|---|---|
-| Human | Alliance | Classic | [Human Mage](human.md) |
-| Gnome | Alliance | Classic | [Gnome Mage](gnome.md) |
-| Skyborne (High Order) | Alliance | **New** (paid race) | [Skyborne Mage](skyborne-high-order.md) |
-| Orc | Horde | **New** | [Orc Mage](orc.md) |
-| Troll | Horde | Classic | [Troll Mage](troll.md) |
-| Undead | Horde | Classic | [Undead Mage](undead.md) |
+| Human | **Alliance**{ .pill .pill--alliance } | Classic | [Human Mage](human.md) |
+| Gnome | **Alliance**{ .pill .pill--alliance } | Classic | [Gnome Mage](gnome.md) |
+| Skyborne (High Order) | **Alliance**{ .pill .pill--alliance } | **New** (paid race) | [Skyborne Mage](skyborne-high-order.md) |
+| Orc | **Horde**{ .pill .pill--horde } | **New** | [Orc Mage](orc.md) |
+| Troll | **Horde**{ .pill .pill--horde } | Classic | [Troll Mage](troll.md) |
+| Undead | **Horde**{ .pill .pill--horde } | Classic | [Undead Mage](undead.md) |
 
 !!! conflict "Conflict: best race"
     Warcraft Tavern names Skyborne as the best Alliance Mage and Orc as the best Horde Mage. Method.gg suggests Human or Gnome for Alliance and Orc or Troll for Horde. The differences are small; pick the race you'll enjoy for a few hundred hours.

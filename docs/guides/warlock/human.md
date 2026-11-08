@@ -22,7 +22,7 @@ A Classic combination and, in Forever, arguably the best Alliance Warlock. Metho
 | | |
 |---|---|
 | **Status** | Classic combination |
-| **Faction** | Alliance |
+| **Faction** | **Alliance**{ .pill .pill--alliance } |
 | **Start / capital** | Northshire, Elwynn Forest / Stormwind |
 | **Mount** | Horse (but you'll ride your Felsteed from 40) |
 | **Home reputation** | Stormwind |

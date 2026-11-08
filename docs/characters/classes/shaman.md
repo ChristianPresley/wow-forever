@@ -21,9 +21,15 @@
 **Races:** Orc, Troll, Tauren, **Dwarf (new; Alliance)**, Skyborne Windshaper (**Horde only**).
 
 !!! forever "What Forever changed"
-    **Headline additions:** 1 s totem GCD, 5-min totems, totem presets, Lightning Overload, Maelstrom Weapon, Water Shield, Riptide.
+    **Headline additions**
 
-    **Notable removals:** Elemental Mastery, Lava Burst, Tranquil Air. Full list: [Classes summary](index.md#summary).
+    **1 s totem GCD**{ .pill .pill--new } **5-min totems**{ .pill .pill--new } **Totem presets**{ .pill .pill--new } **Lightning Overload**{ .pill .pill--new } **Maelstrom Weapon**{ .pill .pill--new } **Water Shield**{ .pill .pill--new } **Riptide**{ .pill .pill--new }
+
+    **Notable removals**
+
+    **Elemental Mastery**{ .pill .pill--removed } **Lava Burst**{ .pill .pill--removed } **Tranquil Air**{ .pill .pill--removed }
+
+    Full list: [Classes summary](index.md#summary).
 
 <div class="fc-cta" data-class="shaman" markdown>
 

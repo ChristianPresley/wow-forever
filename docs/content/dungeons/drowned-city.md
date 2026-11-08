@@ -9,7 +9,7 @@
 | **Type** | 5-player dungeon (new in Forever) |
 | **Level** | 35–40 (LFG 35–42) |
 | **Location** | Off the Stranglethorn Vale coast, west of Grom'gol. **Underwater entrance** (~21.4, 27.9) past the Vile Reef, in the Sunken Hollow |
-| **Faction** | Both |
+| **Faction** | **Both**{ .pill .pill--neutral-faction } |
 | **Bosses** | 4 known (one source counts 6) |
 
 </aside>

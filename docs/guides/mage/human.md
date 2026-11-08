@@ -22,7 +22,7 @@ Human Mage is the classic Alliance caster and remains one of the best all-round 
 | | |
 |---|---|
 | **Status** | Classic combination |
-| **Faction** | Alliance |
+| **Faction** | **Alliance**{ .pill .pill--alliance } |
 | **Start / capital** | Northshire Valley, Elwynn Forest / Stormwind |
 | **Mount** | Horse |
 | **Home reputation** | Stormwind |

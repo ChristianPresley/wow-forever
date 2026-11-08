@@ -31,11 +31,35 @@ The Warlock is a cloth-wearing ranged caster that fights with damage-over-time s
 | **Role** | Ranged damage, crowd control, raid utility (curses, summons, stones) |
 | **Armor / weapons** | Cloth; daggers, wands, one-hand swords and staves |
 | **Resource** | **Mana**{ .pill .pill--mana } (refilled from health with Life Tap) and **Soul Shards** |
-| **Strengths** | Very self-sufficient leveling, pet tanking, strong sustained damage, Fear in PvP, unique group utility |
-| **Weaknesses** | Low armor, slow ramp on DoTs, Soul Shard upkeep, weak mobility, melee-range AoE (Hellfire) |
 | **Leveling speed** | Second fastest in the beta, behind Hunter |
 
 </aside>
+
+<div class="proscons" markdown>
+<div class="pros" markdown>
+
+Strengths
+
+- Very self-sufficient leveling
+- Pet tanking
+- Strong sustained damage
+- Fear in PvP
+- Unique group utility
+
+</div>
+<div class="cons" markdown>
+
+Weaknesses
+
+- Low armor
+- Slow ramp on DoTs
+- Soul Shard upkeep
+- Weak mobility
+- Melee-range AoE (Hellfire)
+
+</div>
+</div>
+
 
 ### What's new in Forever
 
@@ -55,11 +79,11 @@ The Warlock is a cloth-wearing ranged caster that fights with damage-over-time s
 
 | Race | Faction | Status | Add-on |
 |---|---|---|---|
-| Human | Alliance | Classic | [Human Warlock](human.md) |
-| Gnome | Alliance | Classic | [Gnome Warlock](gnome.md) |
-| Orc | Horde | Classic | [Orc Warlock](orc.md) |
-| Troll | Horde | **New** | [Troll Warlock](troll.md) |
-| Undead | Horde | Classic | [Undead Warlock](undead.md) |
+| Human | **Alliance**{ .pill .pill--alliance } | Classic | [Human Warlock](human.md) |
+| Gnome | **Alliance**{ .pill .pill--alliance } | Classic | [Gnome Warlock](gnome.md) |
+| Orc | **Horde**{ .pill .pill--horde } | Classic | [Orc Warlock](orc.md) |
+| Troll | **Horde**{ .pill .pill--horde } | **New** | [Troll Warlock](troll.md) |
+| Undead | **Horde**{ .pill .pill--horde } | Classic | [Undead Warlock](undead.md) |
 
 !!! conflict "Conflict: best race"
     Method.gg ranks them Human (S), Orc (A), Undead and Gnome (B), Troll (C). Warcraft Tavern says all five are close, calling Human and Orc strong in both PvE and PvP, Undead a PvP pick and Troll good against beasts. One beta-era guide puts every race within 1% DPS. Pick the faction and look you want.
@@ -387,7 +411,7 @@ Warlocks are one of the easiest classes to level: the pet tanks, Life Tap and dr
 
 ### 1–10: Starting zone
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Elwynn Forest (Human) · Dun Morogh (Gnome) | Durotar (Orc, Troll) · Tirisfal Glades (Undead) |
 
@@ -398,7 +422,7 @@ Warlocks are one of the easiest classes to level: the pet tanks, Life Tap and dr
 
 ### 10–20: First zones and first dungeons
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Westfall, Loch Modan, Darkshore (now reachable by the **Stormwind Harbor ↔ Auberdine** boat) | Barrens, Silverpine Forest |
 
@@ -410,7 +434,7 @@ Warlocks are one of the easiest classes to level: the pet tanks, Life Tap and dr
 
 ### 20–30: Pet swap and drain-tanking
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Redridge, Duskwood, Wetlands, Ashenvale | Stonetalon, Ashenvale, Hillsbrad Foothills |
 
@@ -422,7 +446,7 @@ Warlocks are one of the easiest classes to level: the pet tanks, Life Tap and dr
 
 ### 30–40: Felhunter, Felsteed and dual spec
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Arathi Highlands, Stranglethorn Vale, Desolace, Dustwallow (Theramore) | Thousand Needles, Stranglethorn Vale, Desolace, Arathi |
 
@@ -435,7 +459,7 @@ Warlocks are one of the easiest classes to level: the pet tanks, Life Tap and dr
 
 ### 40–50: Riverglades and the desert
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Riverglades, Tanaris, Feralas, Hinterlands | Riverglades, Tanaris, Feralas, Badlands |
 

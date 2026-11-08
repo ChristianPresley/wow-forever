@@ -12,7 +12,7 @@
 | **Type** | 5-player dungeon (new in Forever) |
 | **Level** | 48–53 (LFG 48–55) |
 | **Location** | Alcaz Island, Dustwallow Marsh. The entrance is in the basement of a large building (~75, 15) |
-| **Faction** | Both |
+| **Faction** | **Both**{ .pill .pill--neutral-faction } |
 | **Bosses** | 1 known (one source counts 5) |
 
 </aside>

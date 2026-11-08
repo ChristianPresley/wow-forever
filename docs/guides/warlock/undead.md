@@ -22,7 +22,7 @@ The classic PvP Warlock. **Will of the Forsaken** breaks and blocks the fears, c
 | | |
 |---|---|
 | **Status** | Classic combination |
-| **Faction** | Horde |
+| **Faction** | **Horde**{ .pill .pill--horde } |
 | **Start / capital** | Deathknell, Tirisfal Glades / Undercity |
 | **Mount** | Skeletal Horse (Felsteed from 40) |
 | **Home reputation** | Undercity |

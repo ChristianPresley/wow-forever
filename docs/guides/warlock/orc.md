@@ -22,7 +22,7 @@ The original Horde Warlock, and the race most guides call the best fit for the c
 | | |
 |---|---|
 | **Status** | Classic combination |
-| **Faction** | Horde |
+| **Faction** | **Horde**{ .pill .pill--horde } |
 | **Start / capital** | Valley of Trials, Durotar / Orgrimmar |
 | **Mount** | Wolf (Felsteed from 40) |
 | **Home reputation** | Orgrimmar |

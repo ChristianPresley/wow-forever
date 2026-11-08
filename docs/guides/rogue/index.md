@@ -31,10 +31,34 @@ The Rogue is a pure melee damage dealer that wears leather and runs on **Energy*
 | **Role** | Melee DPS only |
 | **Armor / weapons** | Leather; daggers, swords, maces, fist weapons, **one-handed axes (new)**, thrown, bows, crossbows, guns |
 | **Resource** | **Energy**{ .pill .pill--energy } (now regenerates smoothly) + 5 combo points |
-| **Strengths** | Top-tier single-target damage, best opener control in the game, strong solo survival through Stealth, Vanish and Evasion, excellent world PvP |
-| **Weaknesses** | No healing, no ranged pull besides throwing, weak multi-pull survival, gear-hungry, competes with Warriors for gear |
 
 </aside>
+
+<div class="proscons" markdown>
+<div class="pros" markdown>
+
+Strengths
+
+- Top-tier single-target damage
+- Best opener control in the game
+- Strong solo survival through Stealth
+- Vanish and Evasion
+- Excellent world PvP
+
+</div>
+<div class="cons" markdown>
+
+Weaknesses
+
+- No healing
+- No ranged pull besides throwing
+- Weak multi-pull survival
+- Gear-hungry
+- Competes with Warriors for gear
+
+</div>
+</div>
+
 
 ### What's new in Forever
 
@@ -51,7 +75,7 @@ The Rogue is a pure melee damage dealer that wears leather and runs on **Energy*
 
 Rogue is open to every race except Tauren. Each combination has an add-on page:
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | [Human](human.md) | [Orc](orc.md) |
 | [Dwarf](dwarf.md) | [Troll](troll.md) |
@@ -370,8 +394,8 @@ Developers put 1–20 at about 20 hours. Quests give much more XP than dungeon m
 
 | Faction | Zones |
 |---|---|
-| Alliance | Elwynn Forest, Dun Morogh, Teldrassil, or Zephras Isle (Skyborne) |
-| Horde | Durotar, Tirisfal Glades, or Zephras Isle (Skyborne) |
+| **Alliance**{ .pill .pill--alliance } | Elwynn Forest, Dun Morogh, Teldrassil, or Zephras Isle (Skyborne) |
+| **Horde**{ .pill .pill--horde } | Durotar, Tirisfal Glades, or Zephras Isle (Skyborne) |
 
 - Your race's add-on page walks through the starting zone and trainers.
 - Train **Slice and Dice**, **Sap** and **Sprint** at 10 and spend your first talent point.
@@ -379,7 +403,7 @@ Developers put 1–20 at about 20 hours. Quests give much more XP than dungeon m
 
 ### 10–20
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Westfall, Loch Modan, Darkshore, Redridge (from 15) | The Barrens, Silverpine Forest, Stonetalon Mountains (from 15) |
 
@@ -416,7 +440,7 @@ Poison crafting skill rises by one per poison made, up to 5× your level. Reagen
 
 ### 20–30
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Redridge, Duskwood, **Wetlands** (new quests), Ashenvale, Hillsbrad | Stonetalon Mountains, Ashenvale, Hillsbrad Foothills, Thousand Needles |
 
@@ -428,7 +452,7 @@ Poison crafting skill rises by one per poison made, up to 5× your level. Reagen
 
 ### 30–40
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | Arathi Highlands, Alterac Mountains, Stranglethorn Vale, Desolace, Thousand Needles, Dustwallow from 35 | Arathi Highlands, Stranglethorn Vale, Desolace, Dustwallow Marsh |
 
@@ -440,7 +464,7 @@ Poison crafting skill rises by one per poison made, up to 5× your level. Reagen
 
 ### 40–50
 
-| Alliance | Horde |
+| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
 |---|---|
 | **Riverglades** (Farholde Keep), Badlands, Swamp of Sorrows, Tanaris, Feralas, The Hinterlands | **Riverglades** (Rog'mar), Badlands, Swamp of Sorrows, Tanaris, Feralas, The Hinterlands |
 

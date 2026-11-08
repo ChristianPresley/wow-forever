@@ -22,7 +22,7 @@ A Classic combination with a new twist. Gnomes keep **Escape Artist** and **Expa
 | | |
 |---|---|
 | **Status** | Classic combination |
-| **Faction** | Alliance |
+| **Faction** | **Alliance**{ .pill .pill--alliance } |
 | **Start / capital** | Coldridge Valley, Dun Morogh / Ironforge |
 | **Mount** | Mechanostrider (Felsteed from 40) |
 | **Home reputation** | Gnomeregan Exiles |

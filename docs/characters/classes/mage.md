@@ -21,9 +21,15 @@
 **Races:** Human, Gnome, Orc **New**{ .pill .pill--new .pill--sm }, Troll, Undead, Skyborne High Order (**Alliance only**).
 
 !!! forever "What Forever changed"
-    **Headline additions:** Frostfire Bolt baseline, Comprehension tradeskill, Arcane Blast, Missile Barrage, Heating Up, Ice Lance, Fingers of Frost.
+    **Headline additions**
 
-    **Notable removals:** Frost Blast, Piercing Ice. Full list: [Classes summary](index.md#summary).
+    **Frostfire Bolt baseline**{ .pill .pill--new } **Comprehension tradeskill**{ .pill .pill--new } **Arcane Blast**{ .pill .pill--new } **Missile Barrage**{ .pill .pill--new } **Heating Up**{ .pill .pill--new } **Ice Lance**{ .pill .pill--new } **Fingers of Frost**{ .pill .pill--new }
+
+    **Notable removals**
+
+    **Frost Blast**{ .pill .pill--removed } **Piercing Ice**{ .pill .pill--removed }
+
+    Full list: [Classes summary](index.md#summary).
 
 <div class="fc-cta" data-class="mage" markdown>
 

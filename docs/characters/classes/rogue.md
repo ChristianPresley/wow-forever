@@ -21,9 +21,15 @@
 **Races:** Human, Dwarf, Gnome, Night Elf, Orc, Troll, Undead, Skyborne (both).
 
 !!! forever "What Forever changed"
-    **Headline additions:** Smooth energy, combo points kept on target, axes, Shank, Poised, Mutilate, Hack and Slash, Death Mark.
+    **Headline additions**
 
-    **Notable removals:** Weapon specializations. Full list: [Classes summary](index.md#summary).
+    **Smooth energy**{ .pill .pill--new } **Combo points kept on target**{ .pill .pill--new } **Axes**{ .pill .pill--new } **Shank**{ .pill .pill--new } **Poised**{ .pill .pill--new } **Mutilate**{ .pill .pill--new } **Hack and Slash**{ .pill .pill--new } **Death Mark**{ .pill .pill--new }
+
+    **Notable removals**
+
+    **Weapon specializations**{ .pill .pill--removed }
+
+    Full list: [Classes summary](index.md#summary).
 
 <div class="fc-cta" data-class="rogue" markdown>
 

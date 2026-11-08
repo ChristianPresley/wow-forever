@@ -36,18 +36,27 @@ The paladin is a plate-wearing hybrid of melee, healing and tanking. Forever giv
 
 </aside>
 
-**Strengths**
+<div class="proscons" markdown>
+<div class="pros" markdown>
+
+Strengths
 
 - Very hard to kill: plate, a shield, Divine Protection, Divine Shield, Lay on Hands every 20 minutes, and self-healing.
 - Group value: blessings now last an hour, Blessing of Kings is baseline, and resistance auras cover the raid.
 - Protection is now a full tank, with a taunt on Judgement of Fury and Consecration from level 20.
 - One of the best dungeon-mob AoE pullers early on, though Consecration's full damage is capped at 4 targets.
 
-**Weaknesses**
+</div>
+<div class="cons" markdown>
+
+Weaknesses
 
 - **Mana** is the leveling bottleneck for every spec.
 - Still no interrupt and no slow. Kiting casters and runners is awkward.
 - Holy Shock (21 Holy) and Unsealed Wrath (31 Retribution) cannot both fit in 51 points, so the classic "Shockadin with seal twisting" hybrid is not possible.
+
+</div>
+</div>
 
 ### What is new in Forever
 

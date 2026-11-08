@@ -29,8 +29,8 @@ This works like Season of Discovery. Loot **crates** in the world, fill them, an
 
 | Faction | Side | Location |
 |---|---|---|
-| **Azeroth Commerce Authority** | Alliance | Three Corners, Redridge Mountains |
-| **Durotar Supply and Logistics** | Horde | West of the Crossroads, the Barrens |
+| **Azeroth Commerce Authority** | **Alliance**{ .pill .pill--alliance } | Three Corners, Redridge Mountains |
+| **Durotar Supply and Logistics** | **Horde**{ .pill .pill--horde } | West of the Crossroads, the Barrens |
 
 High-end recipes require Favor **and** reputation. Examples: rare helm recipes for 30 Favor, a tabard for 200, a *Packmule Treat* for 1,500, and **Reins of the Pack Kodo** for **6,000**.
 

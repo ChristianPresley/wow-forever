@@ -9,13 +9,13 @@
 
 | Route | Faction | Status |
 |---|---|---|
-| **Stormwind Harbor ↔ Auberdine** | Alliance | **New**{ .pill .pill--new } The first early link from the Eastern Kingdoms to Kalimdor |
-| **Menethil → Southshore → Auberdine → Menethil** | Alliance | **New**{ .pill .pill--new } one-way loop (new Southshore pier) |
+| **Stormwind Harbor ↔ Auberdine** | **Alliance**{ .pill .pill--alliance } | **New**{ .pill .pill--new } The first early link from the Eastern Kingdoms to Kalimdor |
+| **Menethil → Southshore → Auberdine → Menethil** | **Alliance**{ .pill .pill--alliance } | **New**{ .pill .pill--new } one-way loop (new Southshore pier) |
 | **Steamwheedle Port (Tanaris) ↔ Powderfuse Port (Riverglades)** | Neutral | **New**{ .pill .pill--new } |
 | **Valanaar Skydocks (east) ↔ north Dalaran** | Alliance Skyborne, open to anyone | **New**{ .pill .pill--new } airship |
 | **Valanaar Skydocks (west) ↔ Skywatcher Plateau (Mulgore)** | Horde Skyborne, open to anyone | **New**{ .pill .pill--new } airship. Reportedly departs about every 5 minutes |
-| Menethil ↔ Theramore · Auberdine ↔ Rut'theran · Feathermoon ↔ Forgotten Coast · Deeprun Tram | Alliance | **Classic**{ .badge .original } |
-| Orgrimmar ↔ Undercity ↔ Grom'gol zeppelins | Horde | **Classic**{ .badge .original } |
+| Menethil ↔ Theramore · Auberdine ↔ Rut'theran · Feathermoon ↔ Forgotten Coast · Deeprun Tram | **Alliance**{ .pill .pill--alliance } | **Classic**{ .badge .original } |
+| Orgrimmar ↔ Undercity ↔ Grom'gol zeppelins | **Horde**{ .pill .pill--horde } | **Classic**{ .badge .original } |
 | Booty Bay ↔ Ratchet | Neutral | **Classic**{ .badge .original } |
 
 </div>
@@ -26,11 +26,11 @@
 
 | Flight master | Faction | Connects to |
 |---|---|---|
-| Farholde Keep (Riverglades) | Alliance | Lakeshire, Thelsamar, Morgan's Vigil |
-| Rog'mar (Riverglades) | Horde | Stonard, Hammerfall, Kargath, Flame Crest |
+| Farholde Keep (Riverglades) | **Alliance**{ .pill .pill--alliance } | Lakeshire, Thelsamar, Morgan's Vigil |
+| Rog'mar (Riverglades) | **Horde**{ .pill .pill--horde } | Stonard, Hammerfall, Kargath, Flame Crest |
 | Powderfuse Port (Riverglades) | Neutral | 1 flight |
-| Tainted Foothills (Hyjal) | Both | Everlook |
-| Summit of Eternity (Hyjal) | Both | — |
+| Tainted Foothills (Hyjal) | **Both**{ .pill .pill--neutral-faction } | Everlook |
+| Summit of Eternity (Hyjal) | **Both**{ .pill .pill--neutral-faction } | — |
 
 Dalaran reportedly has **no** flight master. Some Classic flight points are missing from the beta map art, probably a rendering artifact *unconfirmed*{ .unconfirmed }.
 

@@ -9,7 +9,7 @@
 | **Type** | 5-player dungeon (new in Forever) |
 | **Level** | 24–29 (Blizzard) / 26–32 (Wiki) / 26–33 (LFG). Quests start at 24 and the final boss is level 31 |
 | **Location** | Whelgar's Excavation, Wetlands. The entrance is near Thelgen Rock and Dun Algaz (~53.4, 65.3) |
-| **Faction** | Both |
+| **Faction** | **Both**{ .pill .pill--neutral-faction } |
 | **Bosses** | 3 |
 
 </aside>

@@ -9,7 +9,7 @@
 | **Type** | 5-player dungeon (new in Forever) |
 | **Level** | 28–33 (Blizzard) / 28–34 (Wiki) / 28–35 (LFG) |
 | **Location** | Dalaran, Alterac Mountains. Entered through the western sewer grate |
-| **Faction** | Both |
+| **Faction** | **Both**{ .pill .pill--neutral-faction } |
 | **Bosses** | 8 (one source says 9) |
 | **Key** | Dalaran Sewer Key |
 

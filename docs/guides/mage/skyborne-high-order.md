@@ -24,7 +24,7 @@ Mechanically you get permanent **haste**, a strong **mana-regen** cooldown and a
 | | |
 |---|---|
 | **Status** | **NEW** combination, Alliance only |
-| **Faction** | Alliance |
+| **Faction** | **Alliance**{ .pill .pill--alliance } |
 | **Start / capital** | Zephras Isle / Valanaar |
 | **Mount** | Galestrider |
 | **Home reputation** | High Order |

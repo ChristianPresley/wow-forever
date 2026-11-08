@@ -12,10 +12,10 @@
 
 | Levels | Zone | Location | Faction | Key hubs | Instances |
 |---|---|---|---|---|---|
-| **1–12** | **[Zephras Isle](zephras-isle.md)** | Skywall, a floating island | Sanctuary | Thendal Village, Shen'dar Village, **Valanaar** (capital), Falaath Village | — |
-| **35–45** | **Riverglades** | Southeastern Khaz Modan | Contested | Farholde Keep (A), Rog'mar (H), Bolder'ok, Powderfuse Port | [Krol'dok Stronghold](../content/dungeons/kroldok-stronghold.md) |
-| **Unknown** | **Shen'dralas** | Southeast of Desolace | Contested | Shen'dralas | — |
-| **60** | **Mount Hyjal** | Northern Kalimdor | Contested | Tainted Foothills, Summit of Eternity | [Barrow Deeps](../content/raids/barrow-deeps.md), [Hyjal Summit](../content/raids/hyjal-summit.md) |
+| **1–12** | **[Zephras Isle](zephras-isle.md)** | Skywall, a floating island | **Sanctuary**{ .pill .pill--success } | Thendal Village, Shen'dar Village, **Valanaar** (capital), Falaath Village | — |
+| **35–45** | **Riverglades** | Southeastern Khaz Modan | **Contested**{ .pill .pill--warning } | Farholde Keep (A), Rog'mar (H), Bolder'ok, Powderfuse Port | [Krol'dok Stronghold](../content/dungeons/kroldok-stronghold.md) |
+| **Unknown** | **Shen'dralas** | Southeast of Desolace | **Contested**{ .pill .pill--warning } | Shen'dralas | — |
+| **60** | **Mount Hyjal** | Northern Kalimdor | **Contested**{ .pill .pill--warning } | Tainted Foothills, Summit of Eternity | [Barrow Deeps](../content/raids/barrow-deeps.md), [Hyjal Summit](../content/raids/hyjal-summit.md) |
 
 </div>
 
@@ -46,8 +46,8 @@ Built from a previously inaccessible part of **southeastern Khaz Modan**: east o
 
 | Hub | Faction | Notes |
 |---|---|---|
-| **Farholde Keep** | Alliance | A fortified island keep of the Brotherhood of the Horse, led by **Knight Commander Demar Brant**. Inn, forge, stables, and a memorial to fallen knights. Gryphon master Gretchen Mayberry |
-| **Rog'mar** | Horde | The Horde starting hub. Its leader is unknown |
+| **Farholde Keep** | **Alliance**{ .pill .pill--alliance } | A fortified island keep of the Brotherhood of the Horse, led by **Knight Commander Demar Brant**. Inn, forge, stables, and a memorial to fallen knights. Gryphon master Gretchen Mayberry |
+| **Rog'mar** | **Horde**{ .pill .pill--horde } | The Horde starting hub. Its leader is unknown |
 | **Bolder'ok** | Horde-aligned ogres | Ogres who broke from the Twilight's Hammer and allied with the Horde |
 | **Powderfuse Port** | Neutral (goblin) | Run by **Melbin Powderfuse**. Ferry to Steamwheedle Port (Tanaris). The arena of Jazzle Cheapshot is "not open yet" |
 

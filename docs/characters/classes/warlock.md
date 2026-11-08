@@ -21,9 +21,15 @@
 **Races:** Human, Gnome, Orc, Troll **New**{ .pill .pill--new .pill--sm }, Undead.
 
 !!! forever "What Forever changed"
-    **Headline additions:** Banes, DoTs can crit, stones become imbues, Pandemic, Demonic Pact, Incinerate, Wrack.
+    **Headline additions**
 
-    **Notable removals:** Curse of Shadows, ~17 talents. Full list: [Classes summary](index.md#summary).
+    **Banes**{ .pill .pill--new } **DoTs can crit**{ .pill .pill--new } **Stones become imbues**{ .pill .pill--new } **Pandemic**{ .pill .pill--new } **Demonic Pact**{ .pill .pill--new } **Incinerate**{ .pill .pill--new } **Wrack**{ .pill .pill--new }
+
+    **Notable removals**
+
+    **Curse of Shadows**{ .pill .pill--removed } **~17 talents**{ .pill .pill--removed }
+
+    Full list: [Classes summary](index.md#summary).
 
 <div class="fc-cta" data-class="warlock" markdown>
 

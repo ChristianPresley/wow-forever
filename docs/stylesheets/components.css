@@ -164,3 +164,6 @@
 
 /* code highlighting: HTML tag names pass 4.5:1 on the light code surface */
 [data-md-color-scheme="default"] .md-typeset .highlight .nt { color: #2f5aa8; }
+
+/* pill rows inside callouts: a little air between wrapped lines */
+.md-typeset .admonition p:has(> .pill + .pill) { line-height: 2.1; }

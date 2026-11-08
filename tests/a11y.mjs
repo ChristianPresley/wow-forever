@@ -48,9 +48,14 @@ async function run(job) {
     await page.waitForTimeout(250);
     const scheme = await page.evaluate(() => document.body.getAttribute("data-md-color-scheme"));
     const r = await new AxeBuilder({ page }).withTags(TAGS).analyze();
+    // target-size "partially obscured" on a sidebar link = the link half-scrolled out of the sticky
+    // sidebar's visible area at this scroll position (a scan artefact, not a size defect). Report apart.
+    const clipped = (v, n) => v.id === "target-size" && /partially obscured/.test(n.failureSummary || "") && /md-nav/.test(n.target.join(" "));
+    const map = (v, keep) => ({ id: v.id, impact: v.impact, help: v.help, helpUrl: v.helpUrl,
+      nodes: v.nodes.filter((n) => keep === !clipped(v, n)).map((n) => ({ target: n.target.join(" "), summary: n.failureSummary?.split("\n").slice(0, 3).join(" ") })) });
     results.push({ ...job, scheme_attr: scheme, consoleErrors,
-      violations: r.violations.map((v) => ({ id: v.id, impact: v.impact, help: v.help, helpUrl: v.helpUrl,
-        nodes: v.nodes.map((n) => ({ target: n.target.join(" "), summary: n.failureSummary?.split("\n").slice(0, 3).join(" ") })) })),
+      violations: r.violations.map((v) => map(v, true)).filter((v) => v.nodes.length),
+      scrollClipped: r.violations.map((v) => map(v, false)).reduce((a, v) => a + v.nodes.length, 0),
       incomplete: r.incomplete.map((v) => ({ id: v.id, count: v.nodes.length })) });
   } catch (e) {
     results.push({ ...job, error: String(e), violations: [], incomplete: [], consoleErrors });
@@ -75,7 +80,8 @@ const jsErrors = results.filter((r) => r.consoleErrors.length);
 mkdirSync(OUT, { recursive: true });
 writeFileSync(`${OUT}/a11y.json`, JSON.stringify({ tags: TAGS, jobs: results.length, total, results }, null, 2));
 let md = `# axe-core ${TAGS.join(", ")}\n\n${results.length} page loads (${pages.length} pages x 2 schemes at 1280px, ${mobile.length} x 2 at 375px). ` +
-  `**${total} violating nodes** across ${Object.keys(byRule).length} rules. Load errors: ${errors.length}. Pages with JS console errors: ${jsErrors.length}.\n\n`;
+  `**${total} violating nodes** across ${Object.keys(byRule).length} rules. Load errors: ${errors.length}. Pages with JS console errors: ${jsErrors.length}. ` +
+  `Informational (not counted): ${results.reduce((a, r) => a + (r.scrollClipped || 0), 0)} sidebar links reported by target-size as "partially obscured" because they were half-scrolled at the sidebar's clip edge.\n\n`;
 for (const r of Object.values(byRule).sort((a, b) => b.nodes - a.nodes)) {
   md += `## ${r.id} (${r.impact}): ${r.nodes} nodes on ${r.pages.size} page loads\n${r.help}. ${r.helpUrl}\n\n`;
   for (const [t, v] of Object.entries(r.targets).sort((a, b) => b[1].count - a[1].count).slice(0, 8)) md += `- \`${t}\` x${v.count}: ${v.summary ?? ""}\n`;

@@ -3,11 +3,15 @@
 !!! info "Unlock date"
     All launch raids open on **9 December 2026** for level-60 characters.
 
+<div class="compare" markdown>
+
 | Raid | Status | Size | Location | Bosses | Attunement | Reset |
 |---|---|---|---|---|---|---|
-| **[The Barrow Deeps](barrow-deeps.md)** | New | 10 | Beneath Mount Hyjal (3 entrances) | 8 | None reported | Weekly |
-| **[Hyjal Summit](hyjal-summit.md)** | New | 20 | Summit of Mount Hyjal, by Nordrassil | 13 | None reported | Weekly |
-| **[Onyxia's Lair](onyxias-lair.md)** | Original | 40 | Dustwallow Marsh | 1 | Drakefire Amulet | Weekly |
+| **[The Barrow Deeps](barrow-deeps.md)** | **New**{ .badge .new } | 10 | Beneath Mount Hyjal (3 entrances) | 8 | None reported | Weekly |
+| **[Hyjal Summit](hyjal-summit.md)** | **New**{ .badge .new } | 20 | Summit of Mount Hyjal, by Nordrassil | 13 | None reported | Weekly |
+| **[Onyxia's Lair](onyxias-lair.md)** <span class="fc-alias">Ony</span> | **Original**{ .badge .original } | 40 | Dustwallow Marsh | 1 | Drakefire Amulet | Weekly |
+
+</div>
 
 ## Raid design philosophy
 
@@ -23,4 +27,4 @@ The original raids are **"kept in reserve"**. Developers hinted that Molten Core
 
 ## World bosses
 
-The End-of-Beta event spawned Azuregos, Lord Kazzak, Thunderaan and others as a one-time event. Whether world bosses exist in the live game is **unconfirmed**.
+The End-of-Beta event spawned Azuregos, Lord Kazzak, Thunderaan and others as a one-time event. Whether world bosses exist in the live game is *unconfirmed*{ .unconfirmed }.

@@ -1,5 +1,9 @@
 # Blackmaw Hold
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Blackmaw Hold</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **5-player dungeon**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | 5-player dungeon (new in Forever) |
@@ -9,7 +13,7 @@
 | **Bosses** | 1 known (counts reported from 7 to "20+") |
 | **Raid link** | Contains an entrance to the **[Barrow Deeps](../raids/barrow-deeps.md)** raid |
 
-## Overview
+</aside>
 
 The furbolg city of the **Blackmaw clan** sits behind a long-sealed gate, and the clan is fighting a spreading corruption. The dungeon has **multiple routes**, and a hidden path leads "far beneath Azeroth". Its footprint is reportedly **larger than Blackrock Depths**.
 

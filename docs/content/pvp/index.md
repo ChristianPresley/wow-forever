@@ -8,18 +8,24 @@
 - In the beta, players most often died to other players, and raids on the Undercity and Southshore were common. Blizzard chose **not** to close early access to Mount Hyjal.
 - World kills give **Honor** but **not Rank Points**.
 - **Arenas:** none announced. Blizzard lent an arena for the community "Forever Open" tournament.
-- **Mak'gora:** a dedicated duel-to-the-death space was hinted at for Hardcore. Unconfirmed.
+- **Mak'gora:** a dedicated duel-to-the-death space was hinted at for Hardcore. *unconfirmed*{ .unconfirmed }
 
 ## Progression: Honor, Ranks and seasons
 
 Blizzard announced the framework on 7 Oct 2026. PvP has **two tracks**:
+
+<div class="compare" markdown>
 
 | Track | What it is | Sources |
 |---|---|---|
 | **Honor** | A currency for buying gear | Player kills, battlegrounds, PvP quests |
 | **Rank Points** | Decide your rank | Battlegrounds, PvP quests, weekly "journey" tasks. **Not** world kills |
 
-- The old realm-wide standing grind is **gone**. You start each **season** at Rank 1 and can climb to **Rank 14** (High Warlord / Grand Marshal). It combines TBC-style seasons with the vanilla ranks.
+</div>
+
+!!! forever "Seasons replace the old grind"
+    The old realm-wide standing grind is **gone**. You start each **season** at Rank 1 and can climb to **Rank 14** (High Warlord / Grand Marshal). It combines TBC-style seasons with the vanilla ranks.
+
 - Gains are **capped weekly**. According to fan-collected beta data (wowf.io), the earliest you can reach Rank 14 is **week 10** of a season.
 - **Gear:** Honor buys **blue** and **epic** sets. Epic pieces are upgrades: a blue piece plus an **Emboldened Seal**, and seals have rank requirements. New sets fill gaps for specs; Shaman, for example, get healer, melee and caster sets.
 - **Season journey:** weekly tasks give Honor and Rank Points. Three tasks per season award a **[Legacy Point](../../characters/legacy.md)** (3 per season).

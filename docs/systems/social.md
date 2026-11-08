@@ -16,7 +16,7 @@ Layering (several copies of the world inside one mega-realm) is confirmed, and i
 
 - Names have two parts and are unique per region. There is a "My Secondary Name" nameplate option.
 - With no realm reputation, guilds recruit across the whole ruleset and faction. GuildOrder advises storing **full names** in rosters and DKP logs, since first names repeat.
-- An in-game guild finder at launch is **unconfirmed**. Guild banks exist.
+- An in-game guild finder at launch is *unconfirmed*{ .unconfirmed }. Guild banks exist.
 
 ## Grouping
 

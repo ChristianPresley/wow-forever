@@ -1,6 +1,37 @@
 # Rogue
 
+**Also called:** Rog · Sin / Assa (Assassination) · Combat rogue · Sub (Subtlety)
+{: .fc-aka }
+
+<aside class="infobox" data-class="rogue" markdown>
+<p class="infobox-title">Rogue</p>
+<p class="infobox-roles" markdown>**DPS**{ .badge .dps }</p>
+
+| | |
+|---|---|
+| **Specs** | Assassination · Combat · Subtlety |
+| **Armor** | Leather |
+| **Resource** | Energy & combo points |
+| **Races** | 9 combinations |
+| **Forever focus** | Mutilate Assassination, Hemo Subtlety |
+| **Guide** | [Rogue guide](../../guides/rogue/index.md) |
+
+</aside>
+
 **Races:** Human, Dwarf, Gnome, Night Elf, Orc, Troll, Undead, Skyborne (both).
+
+!!! forever "What Forever changed"
+    **Headline additions:** Smooth energy, combo points kept on target, axes, Shank, Poised, Mutilate, Hack and Slash, Death Mark.
+
+    **Notable removals:** Weapon specializations. Full list: [Classes summary](index.md#summary).
+
+<div class="fc-cta" data-class="rogue" markdown>
+
+**Playing a Rogue?** The [Rogue guide](../../guides/rogue/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+
+<span class="fc-cta__label">Race add-ons</span> [Human](../../guides/rogue/human.md){ .fc-chip } [Dwarf](../../guides/rogue/dwarf.md){ .fc-chip } [Gnome](../../guides/rogue/gnome.md){ .fc-chip } [Night Elf](../../guides/rogue/night-elf.md){ .fc-chip } [Skyborne (High Order)](../../guides/rogue/skyborne-high-order.md){ .fc-chip } [Orc](../../guides/rogue/orc.md){ .fc-chip } [Troll](../../guides/rogue/troll.md){ .fc-chip } [Undead](../../guides/rogue/undead.md){ .fc-chip } [Skyborne (Windshaper)](../../guides/rogue/skyborne-windshaper.md){ .fc-chip }
+
+</div>
 
 ## Baseline changes
 
@@ -30,4 +61,5 @@
 
 Dagger, Mace, Sword and Fist Weapon Specialization (merged into Hack and Slash) · Sleight of Hand · Deadliness
 
-*The BlizzCon demo mentioned "Restless Blades". It is unconfirmed at launch.*
+!!! unconfirmed "Restless Blades"
+    The BlizzCon demo mentioned "Restless Blades". It is unconfirmed at launch.

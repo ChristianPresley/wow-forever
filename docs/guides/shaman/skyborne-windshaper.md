@@ -7,8 +7,13 @@ tags:
 
 # Skyborne (Windshaper) Shaman
 
-!!! tip "Add-on"
-    Read with the [Shaman guide](index.md).
+<div class="guide-head" data-class="shaman" markdown>
+
+:codex-shaman:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Shaman guide](index.md).</p>
+
+</div>
 
 ## Why this combo
 
@@ -22,39 +27,86 @@ The Windshapers feel indebted to the air spirits that vanished from Zephras Isle
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **Wind Blessed** | Passive | **5/5**{ .stars .s5 } | Permanent haste for every spec. More casts, more swings, more Windfury and Flurry chances | Always on |
-| **Elemental Insight** | Passive | **3/5**{ .stars .s3 } | +5% damage to Elementals. Useful against the many elementals in Silithus, Un'Goro, Azshara and (probably) Hyjal | — |
-| **Walk on Air** | Active | **3/5**{ .stars .s3 } | A 10 s controlled glide. Cancels fall damage and opens shortcuts off cliffs | Escape route off high ground, for example in Arathi Basin |
-| **Skysight** *(Windshaper only)* | Active | **3/5**{ .stars .s3 } | +15% movement speed for 15 s. At an **elemental convergence** it grants *Charged* for 1 hour, raising the bonus to +30% | Chases or escapes; stacks with Ghost Wolf *(unconfirmed)* |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Wind Blessed** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
+<p markdown><span class="ability-label">PvE</span> Permanent haste for every spec. More casts, more swings, more Windfury and Flurry chances</p>
+<p markdown><span class="ability-label">PvP</span> Always on</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Elemental Insight** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +5% damage to Elementals. Useful against the many elementals in Silithus, Un'Goro, Azshara and (probably) Hyjal</p>
+<p markdown><span class="ability-label">PvP</span> —</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> A 10 s controlled glide. Cancels fall damage and opens shortcuts off cliffs</p>
+<p markdown><span class="ability-label">PvP</span> Escape route off high ground, for example in Arathi Basin</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Skysight** *(Windshaper only)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +15% movement speed for 15 s. At an **elemental convergence** it grants *Charged* for 1 hour, raising the bonus to +30%</p>
+<p markdown><span class="ability-label">PvP</span> Chases or escapes; stacks with Ghost Wolf *(unconfirmed)*</p>
+</div>
+
+</div>
 
 !!! conflict "Conflict"
     Sources give **Wind Blessed** as 1%, 2% or 3% haste. The latest official notes say **2%**. **Walk on Air** has a cooldown of 1.5 or 2 minutes depending on the source.
 
-**Macro**
+??? example "Macro"
 
-```text
-#showtooltip Ghost Wolf
-/cast Skysight
-/cast Ghost Wolf
-```
+    ```text
+    #showtooltip Ghost Wolf
+    /cast Skysight
+    /cast Ghost Wolf
+    ```
 
-Skysight plus Ghost Wolf for a fast escape. If Skysight triggers the GCD, press them separately.
+    Skysight plus Ghost Wolf for a fast escape. If Skysight triggers the GCD, press them separately.
 
 ## Starting zone: Zephras Isle (1–12)
 
 The Skyborne start on **[Zephras Isle](../../world/zephras-isle.md)**, a floating island in Skywall, the Elemental Plane of Air. Both factions share the zone but are phased apart. The island takes you to about level 12–14. Tornadoes give *Blessing of Zephras* (+40% movement speed).
 
-| Chapter | Where | Shaman notes |
-|---|---|---|
-| 1 | **Thendal Village** | Starting quests. The Windshaper opener is *The Gift of Skysight* |
-| 2 | Road to **Shen'dar Village** | Al'Aketh thugs. *The Great Outdoors* teaches [camping](../../systems/camping.md) |
-| 3 | **Falaath Village** | Infiltrate the cult and recover the Shadowsong Family Signet |
-| 4 | **Valanaar** (capital) | Meet **Grand Skyseer Ayessa Dawnsinger** (*The Grand Skyseer*). Trainers, bank, Skydocks |
-| 5 | Gustberry Lowlands | Windshaper chain *The Broken Construct* |
-| 6 | Shadowgale Forest | Windshaper chain *In Service of Zephras* → *Blood for Blood*. Nightclaw reputation is repeatable |
-| 7 | Shrine of Akir | The finale against Lorthuna and **Rohash, Lord of the East Wind**. Horde reinforcements arrive with **Muln Earthfury** |
+<div class="steps" markdown>
+
+1.  **1**{ .lvl } **Thendal Village**
+
+    Starting quests. The Windshaper opener is *The Gift of Skysight*
+
+2.  **2**{ .lvl } Road to **Shen'dar Village**
+
+    Al'Aketh thugs. *The Great Outdoors* teaches [camping](../../systems/camping.md)
+
+3.  **3**{ .lvl } **Falaath Village**
+
+    Infiltrate the cult and recover the Shadowsong Family Signet
+
+4.  **4**{ .lvl } **Valanaar** (capital)
+
+    Meet **Grand Skyseer Ayessa Dawnsinger** (*The Grand Skyseer*). Trainers, bank, Skydocks
+
+5.  **5**{ .lvl } Gustberry Lowlands
+
+    Windshaper chain *The Broken Construct*
+
+6.  **6**{ .lvl } Shadowgale Forest
+
+    Windshaper chain *In Service of Zephras* → *Blood for Blood*. Nightclaw reputation is repeatable
+
+7.  **7**{ .lvl } Shrine of Akir
+
+    The finale against Lorthuna and **Rohash, Lord of the East Wind**. Horde reinforcements arrive with **Muln Earthfury**
+
+</div>
 
 **Shaman specifics**
 
@@ -70,18 +122,49 @@ The Skyborne start on **[Zephras Isle](../../world/zephras-isle.md)**, a floatin
 
 **Class trainer cities:** Valanaar on the island, then **Thunder Bluff** and **Orgrimmar**. Horde has about 15 Shaman trainers in total.
 
-| Levels | Zones | Flight path / travel |
-|---|---|---|
-| 1–12 | Zephras Isle | Valanaar |
-| 12–25 | **The Barrens**, with a quick stop in Mulgore for flight paths | Thunder Bluff, Crossroads |
-| 15–27 | Stonetalon Mountains | Sun Rock Retreat |
-| 20–30 | Ashenvale, Hillsbrad, Silverpine | Splintertree, Tarren Mill |
-| 25–35 | Thousand Needles | Freewind Post |
-| 30–40 | **Desolace** (path from Skywatcher Plateau), Arathi, Stranglethorn | Shadowprey, Hammerfall, Grom'gol |
-| 35–45 | **Shen'dralas** (south of Desolace), Riverglades (Rog'mar), Dustwallow Marsh | Rog'mar flights |
-| 40–50 | Feralas, Tanaris, Badlands, Swamp of Sorrows, Hinterlands | Camp Mojache, Gadgetzan, Kargath, Stonard |
-| 50–60 | Un'Goro, Azshara, Felwood, **Silithus**, Winterspring, the Plaguelands | Elementals for Elemental Insight in Un'Goro and Silithus |
-| 60 | Mount Hyjal | Darkwhisper Gorge |
+<div class="steps" markdown>
+
+1.  **1–12**{ .lvl } Zephras Isle
+
+    <span class="step-label">Flight path / travel</span> Valanaar
+
+2.  **12–25**{ .lvl } **The Barrens**, with a quick stop in Mulgore for flight paths
+
+    <span class="step-label">Flight path / travel</span> Thunder Bluff, Crossroads
+
+3.  **15–27**{ .lvl } Stonetalon Mountains
+
+    <span class="step-label">Flight path / travel</span> Sun Rock Retreat
+
+4.  **20–30**{ .lvl } Ashenvale, Hillsbrad, Silverpine
+
+    <span class="step-label">Flight path / travel</span> Splintertree, Tarren Mill
+
+5.  **25–35**{ .lvl } Thousand Needles
+
+    <span class="step-label">Flight path / travel</span> Freewind Post
+
+6.  **30–40**{ .lvl } **Desolace** (path from Skywatcher Plateau), Arathi, Stranglethorn
+
+    <span class="step-label">Flight path / travel</span> Shadowprey, Hammerfall, Grom'gol
+
+7.  **35–45**{ .lvl } **Shen'dralas** (south of Desolace), Riverglades (Rog'mar), Dustwallow Marsh
+
+    <span class="step-label">Flight path / travel</span> Rog'mar flights
+
+8.  **40–50**{ .lvl } Feralas, Tanaris, Badlands, Swamp of Sorrows, Hinterlands
+
+    <span class="step-label">Flight path / travel</span> Camp Mojache, Gadgetzan, Kargath, Stonard
+
+9.  **50–60**{ .lvl } Un'Goro, Azshara, Felwood, **Silithus**, Winterspring, the Plaguelands
+
+    <span class="step-label">Flight path / travel</span> Elementals for Elemental Insight in Un'Goro and Silithus
+
+10.  **60**{ .lvl } Mount Hyjal
+
+    <span class="step-label">Flight path / travel</span> Darkwhisper Gorge
+
+</div>
 
 **Lore stop:** **Shen'dralas** is tied to the Shen'dralar Highborne of Dire Maul. The Skyborne descend from Shen'dralar rebels, but Blizzard hasn't confirmed a direct story link, and the zone's quests and levels are thinly documented. Dire Maul itself (55–60) is the Skyborne's ancestral home of Eldre'Thalas.
 
@@ -96,4 +179,8 @@ The Skyborne start on **[Zephras Isle](../../world/zephras-isle.md)**, a floatin
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 **The strongest Shaman race on paper, at a price.** Permanent haste from Wind Blessed helps all three specs, and Elemental Insight pays off against the many elementals at level cap. Skysight and Walk on Air give you mobility, but you have no stun break, curse removal or stun resistance, so in PvP an Orc is sturdier. If you own the Heroic Pack and play Horde, this is the most thematic Shaman and probably the best for PvE.
+
+</div>

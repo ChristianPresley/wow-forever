@@ -1,13 +1,20 @@
 # Battlegrounds
 
+**Also called:** BGs · WSG (Warsong Gulch) · AB (Arathi Basin) · AV (Alterac Valley)
+{: .fc-aka }
+
+<div class="compare" markdown>
+
 | Battleground | New? | Team size | Level brackets | Objective |
 |---|---|---|---|---|
-| Warsong Gulch | Original | 10v10 | 10–19 … 50–59, 60 | Capture the flag |
-| Arathi Basin | Original | 15v15 | 20–29 … 60 | Hold resource nodes |
-| **Battle for the Darkspear Islands** | **New** | **15v15** | 30–60 | 4 bases plus a central flag. First to 2,000 points wins |
-| Alterac Valley | Original | 40v40 | 51–60 (Wowhead's database says 20–60) | Kill the enemy general |
+| Warsong Gulch <span class="fc-alias">WSG</span> | **Original**{ .badge .original } | 10v10 | 10–19 … 50–59, 60 | Capture the flag |
+| Arathi Basin <span class="fc-alias">AB</span> | **Original**{ .badge .original } | 15v15 | 20–29 … 60 | Hold resource nodes |
+| **[Battle for the Darkspear Islands](#darkspear-islands)** | **New**{ .badge .new } | **15v15** | 30–60 | 4 bases plus a central flag. First to 2,000 points wins |
+| Alterac Valley <span class="fc-alias">AV</span> | **Original**{ .badge .original } | 40v40 | 51–60 (Wowhead's database says 20–60) | Kill the enemy general |
 
-!!! warning "Reliability"
+</div>
+
+!!! unconfirmed "Reliability"
     Darkspear Islands details are **official**. That WSG, AB and AV are live, and all the brackets and sizes above, come from **fan sites built on beta datamining**. Blizzard has not published a battleground list. "Battle for Gilneas" is only an empty database placeholder. An Azshara Crater battleground was hinted at but is speculation.
 
 - Honor has been rebalanced so that **Alterac Valley is no longer the obvious farm**.
@@ -16,6 +23,10 @@
 
 ## Battle for the Darkspear Islands { #darkspear-islands }
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Darkspear Islands</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **15v15**{ .badge } **Official**{ .badge .official }</p>
+
 | | |
 |---|---|
 | **Location** | Islands off Dustwallow Marsh |
@@ -23,6 +34,8 @@
 | **Size** | 15v15 |
 | **Levels** | 30–60, in brackets of 10 |
 | **Subzones** | Abandoned Tower, Camp, Ruins, Shipwreck Cove |
+
+</aside>
 
 ### Rules
 

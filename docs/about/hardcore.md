@@ -21,7 +21,7 @@ At the BlizzCon Hardcore panel, developers said much of Forever's content was bu
 
 ## Speculation and unconfirmed items
 
-- **Mak'gora:** Josh Greenfield (Aggrend) floated a possible "dedicated space" for duels to the death. Not confirmed.
-- **Self-Found:** whether a Classic-style Self-Found option exists is **unconfirmed**.
+- **Mak'gora:** Josh Greenfield (Aggrend) floated a possible "dedicated space" for duels to the death. Not confirmed *unconfirmed*{ .unconfirmed }.
+- **Self-Found:** whether a Classic-style Self-Found option exists is *unconfirmed*{ .unconfirmed }.
 
 See also: [Rulesets & Megaserver](rulesets.md).

@@ -1,0 +1,18 @@
+{#- Forever Codex override: race add-ons are listed by full name ("Orc Rogue"), as chips -#}
+{% macro label(item) -%}
+  {%- if item.url and item.url.startswith('guides/') and item.url.count('/') == 3 and item.parent -%}
+    {{ item.title }} {{ item.parent.title }}
+  {%- else -%}{{ item.title }}{%- endif -%}
+{%- endmacro %}
+{% macro render(listing) %}
+  {{ listing.content }}
+  <ul class="fc-taglist">
+    {% for mapping in listing.mappings | sort(attribute="item.url") %}
+      <li><a class="fc-chip" href="{{ mapping.item.url | url }}">{{ label(mapping.item) }}</a></li>
+    {% endfor %}
+    {% for child in listing %}
+      <li style="list-style-type:none">{{ render(child) }}</li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+{{ render(listing) }}

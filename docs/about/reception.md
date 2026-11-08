@@ -26,14 +26,14 @@ Longdale called it the biggest beta in Blizzard's recorded history and admitted 
 
 | Metric | Figure | Reliability |
 |---|---|---|
-| Twitch peak, WoW category (4 Nov) | **1,119,734** viewers | Good (Streams Charts). Classic's 2019 launch peaked slightly higher at 1,132,957 |
-| Twitch hours watched, first 2 days | ~14.47M | Good |
-| Shadowlands launch peak (2020) | 947,419 | Comparison |
-| Dragonflight launch peak (2022) | 799,001 | Comparison |
-| BlizzCon reveal peak (12 Sep 2026) | 807,223 | Comparison |
-| Characters created by 5 Nov | 1M+ | Press report |
-| MMO-Population daily players | ~300,000 | Low (method changed 6 Nov) |
-| Reddit census "2M+ concurrent" | — | Unverified extrapolation |
+| Twitch peak, WoW category (4 Nov) | **1,119,734** viewers | **Good**{ .badge .done } (Streams Charts). Classic's 2019 launch peaked slightly higher at 1,132,957 |
+| Twitch hours watched, first 2 days | ~14.47M | **Good**{ .badge .done } |
+| Shadowlands launch peak (2020) | 947,419 | **Comparison**{ .badge .original } |
+| Dragonflight launch peak (2022) | 799,001 | **Comparison**{ .badge .original } |
+| BlizzCon reveal peak (12 Sep 2026) | 807,223 | **Comparison**{ .badge .original } |
+| Characters created by 5 Nov | 1M+ | **Press report**{ .badge .stated } |
+| MMO-Population daily players | ~300,000 | **Low**{ .badge .fan } (method changed 6 Nov) |
+| Reddit census "2M+ concurrent" | — | **Unverified**{ .badge .fan } extrapolation |
 
 ## How launch went
 
@@ -45,11 +45,15 @@ Longdale called it the biggest beta in Blizzard's recorded history and admitted 
 
 ## Critical themes
 
+<div class="compare" markdown>
+
 | Praise | Criticism |
 |---|---|
 | Smooth launch, short queues | Skyborne paywall ("cash elves") |
 | Classic feel with new content | Empty-feeling zones at launch |
 | No token, no boosts, a permanent cap | Tooltip and data mismatches in the first patches |
 | Good entry point for new players | Talent tuning still in flux |
+
+</div>
 
 FinalBoss summarized it as "great value, awkward Skyborne upsell". See [Community](../community/index.md) for more on player sentiment.

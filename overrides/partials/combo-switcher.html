@@ -1,5 +1,7 @@
 {#- Chip rows linking every class/race guide combination. Built from the nav, so nothing to maintain by hand. -#}
 <nav class="fc-switcher" aria-label="Related guides">
+<details class="fc-switcher__box" open>
+  <summary class="fc-switcher__summary">Other races and classes for this guide</summary>
   {% if fc_is_addon %}
     {% set slug = page.url.split('/')[2] %}
     <p class="fc-switcher__row"><span class="fc-switcher__label">Other {{ page.parent.title }} races</span>
@@ -20,4 +22,6 @@
       {%- endfor %}
     </p>
   {% endif %}
+</details>
+<script>/* collapse before first paint on phones: avoids layout shift */(function(d){if(d&&window.matchMedia("(max-width: 44.984375em)").matches){d.open=false;d.dataset.fcInit="1"}})(document.currentScript&&document.currentScript.previousElementSibling)</script>
 </nav>

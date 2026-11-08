@@ -7,8 +7,13 @@ tags:
 
 # Orc Rogue
 
-!!! tip "Add-on"
-    Read with the [Rogue guide](index.md). This page covers only what changes for an Orc.
+<div class="guide-head" data-class="rogue" markdown>
+
+:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page covers only what changes for an Orc.</p>
+
+</div>
 
 ## Why this combo
 
@@ -18,62 +23,136 @@ Orc Rogue is a Classic combination, and both Method and Warcraft Tavern pick Orc
 
 ## Racials in practice
 
-| Racial | Type | Rogue rating | Notes |
-|---|---|---|---|
-| **Blood Fury** | Active | **5/5**{ .stars .s5 } | +10% attack power for 15 s, 2-minute cooldown. Use it with every major cooldown, and on every pull while leveling |
-| **Shatter Curse** *(new)* | Active | **3/5**{ .stars .s3 } PvP · **2/5**{ .stars .s2 } PvE | Removes curses and Warlock Banes, and you take 5% less magic damage for 8 s. Strong against Warlocks and cursing casters, which Rogues normally can't cleanse |
-| **Command** | Passive | — | +5% pet damage. Rogues have no pet |
-| **Hardiness** | Passive | **4/5**{ .stars .s4 } PvP · **1/5**{ .stars .s1 } PvE | Stuns last 20% less. Cheap Shot, Kidney Shot, Hammer of Justice and Charge stuns all shorten |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Blood Fury** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 }</p>
+<p markdown>+10% attack power for 15 s, 2-minute cooldown. Use it with every major cooldown, and on every pull while leveling</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Shatter Curse** *(new)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } PvP · **2/5**{ .stars .s2 } PvE</p>
+<p markdown>Removes curses and Warlock Banes, and you take 5% less magic damage for 8 s. Strong against Warlocks and cursing casters, which Rogues normally can't cleanse</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Command** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> —</p>
+<p markdown>+5% pet damage. Rogues have no pet</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Hardiness** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 } PvP · **1/5**{ .stars .s1 } PvE</p>
+<p markdown>Stuns last 20% less. Cheap Shot, Kidney Shot, Hammer of Justice and Charge stuns all shorten</p>
+</div>
+
+</div>
 
 !!! note "Blood Fury penalty"
     The Classic version reduced healing received. The Forever racial list doesn't mention a penalty. Check the tooltip.
 
-### Macros
+??? example "Macros"
 
-```text
-#showtooltip Blood Fury
-/cast Blood Fury
-/cast Adrenaline Rush
-```
+    ```text
+    #showtooltip Blood Fury
+    /cast Blood Fury
+    /cast Adrenaline Rush
+    ```
 
-```text
-#showtooltip Shatter Curse
-/cast Shatter Curse
-```
+    ```text
+    #showtooltip Shatter Curse
+    /cast Shatter Curse
+    ```
 
-Keep it on its own key: you'll want it the moment a Bane lands.
+    Keep it on its own key: you'll want it the moment a Bane lands.
 
 ## Starting zone: Valley of Trials and Durotar (1–12)
 
 Blizzard added **new NPCs, quests, profession hooks and small moments** to the Valley of Trials. Exact new quest names haven't been documented, so the Classic flow is given here.
 
-| Level | Where | What to do |
-|---|---|---|
-| 1 | **The Den**, Valley of Trials | Take the Rogue letter (*Encrypted Parchment*) to **Rwag**, the rogue trainer in the Den, and the first quests from Kaltunk and Gornek |
-| 1–5 | Valley of Trials | Mottled boars, scorpids, Vile Familiars in Burning Blade Coven: *Cutting Teeth*, *Sting of the Scorpid*, *Vile Familiars*, *Sarkoth*, *Lazy Peons* |
-| 4 | Rwag | **Backstab**, **Pick Pocket** |
-| 5–6 | Road to **Razor Hill** | The Razor Hill rogue trainer, **Kaplak**, is in the barracks |
-| 6–10 | Durotar | Kul Tiras sailors at Tiragarde Keep, quilboar, Echo Isles trolls, Thunder Ridge |
-| 10 | Kaplak | **Slice and Dice**, **Sap**, **Sprint**; first talent point |
-| 10–12 | Orgrimmar and the Barrens border | Visit the **Cleft of Shadow** in Orgrimmar, then head west to the Crossroads |
+<div class="steps" markdown>
+
+1.  **1**{ .lvl } **The Den**, Valley of Trials
+
+    Take the Rogue letter (*Encrypted Parchment*) to **Rwag**, the rogue trainer in the Den, and the first quests from Kaltunk and Gornek
+
+2.  **1–5**{ .lvl } Valley of Trials
+
+    Mottled boars, scorpids, Vile Familiars in Burning Blade Coven: *Cutting Teeth*, *Sting of the Scorpid*, *Vile Familiars*, *Sarkoth*, *Lazy Peons*
+
+3.  **4**{ .lvl } Rwag
+
+    **Backstab**, **Pick Pocket**
+
+4.  **5–6**{ .lvl } Road to **Razor Hill**
+
+    The Razor Hill rogue trainer, **Kaplak**, is in the barracks
+
+5.  **6–10**{ .lvl } Durotar
+
+    Kul Tiras sailors at Tiragarde Keep, quilboar, Echo Isles trolls, Thunder Ridge
+
+6.  **10**{ .lvl } Kaplak
+
+    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+
+7.  **10–12**{ .lvl } Orgrimmar and the Barrens border
+
+    Visit the **Cleft of Shadow** in Orgrimmar, then head west to the Crossroads
+
+</div>
 
 - Tiragarde Keep's humans are perfect **Pick Pocket** targets.
 - **Blood Fury** on every pull from level 1 noticeably speeds up the Valley.
 
 ## Route to 60 from Orgrimmar
 
-| Level | Zone | Hub / flight path |
-|---|---|---|
-| 10–20 | **The Barrens** | Crossroads · Ratchet |
-| 13–19 | Ragefire Chasm (Orgrimmar) | In your capital |
-| 15–25 | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) (Tirisfal) and Wailing Caverns | Zeppelin to Undercity · Barrens |
-| 18–25 | Silverpine Forest, Stonetalon Mountains | The Sepulcher · Sun Rock Retreat |
-| 20–22 | Poison quest from **Shenthul**, Cleft of Shadow | Barrens → Hillsbrad |
-| 22–30 | Ashenvale, Hillsbrad Foothills, Thousand Needles | Splintertree Post · Tarren Mill · Freewind Post |
-| 30–40 | Arathi (Hammerfall), Stranglethorn (Grom'gol), Desolace, Dustwallow | Hammerfall · Grom'gol · Shadowprey · Brackenwall |
-| 35–45 | **Riverglades** via Badlands or Swamp of Sorrows | **Rog'mar** (flights to Stonard, Hammerfall, Kargath, Flame Crest, *fan source*) |
-| 40–50 | Badlands, Swamp of Sorrows, Tanaris, Feralas, Hinterlands | Kargath · Stonard · Gadgetzan · Camp Mojache · Revantusk |
-| 50–60 | Searing Gorge, Burning Steppes, **Azshara**, Un'Goro, Felwood, Plaguelands, Winterspring | Flame Crest · Valormok · Bloodvenom Post · Everlook |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } **The Barrens**
+
+    <span class="step-label">Hub / flight path</span> Crossroads · Ratchet
+
+2.  **13–19**{ .lvl } Ragefire Chasm (Orgrimmar)
+
+    <span class="step-label">Hub / flight path</span> In your capital
+
+3.  **15–25**{ .lvl } [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) (Tirisfal) and Wailing Caverns
+
+    <span class="step-label">Hub / flight path</span> Zeppelin to Undercity · Barrens
+
+4.  **18–25**{ .lvl } Silverpine Forest, Stonetalon Mountains
+
+    <span class="step-label">Hub / flight path</span> The Sepulcher · Sun Rock Retreat
+
+5.  **20–22**{ .lvl } Poison quest from **Shenthul**, Cleft of Shadow
+
+    <span class="step-label">Hub / flight path</span> Barrens → Hillsbrad
+
+6.  **22–30**{ .lvl } Ashenvale, Hillsbrad Foothills, Thousand Needles
+
+    <span class="step-label">Hub / flight path</span> Splintertree Post · Tarren Mill · Freewind Post
+
+7.  **30–40**{ .lvl } Arathi (Hammerfall), Stranglethorn (Grom'gol), Desolace, Dustwallow
+
+    <span class="step-label">Hub / flight path</span> Hammerfall · Grom'gol · Shadowprey · Brackenwall
+
+8.  **35–45**{ .lvl } **Riverglades** via Badlands or Swamp of Sorrows
+
+    <span class="step-label">Hub / flight path</span> **Rog'mar** (flights to Stonard, Hammerfall, Kargath, Flame Crest, *fan source*)
+
+9.  **40–50**{ .lvl } Badlands, Swamp of Sorrows, Tanaris, Feralas, Hinterlands
+
+    <span class="step-label">Hub / flight path</span> Kargath · Stonard · Gadgetzan · Camp Mojache · Revantusk
+
+10.  **50–60**{ .lvl } Searing Gorge, Burning Steppes, **Azshara**, Un'Goro, Felwood, Plaguelands, Winterspring
+
+    <span class="step-label">Hub / flight path</span> Flame Crest · Valormok · Bloodvenom Post · Everlook
+
+</div>
 
 **Class trainers:** Rwag (Valley of Trials), Kaplak (Razor Hill), and the rogue trainers in **Orgrimmar's Cleft of Shadow**.
 
@@ -88,4 +167,8 @@ Blizzard added **new NPCs, quests, profession hooks and small moments** to the V
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 **The best Horde Rogue for PvE, and excellent in PvP.** Blood Fury is a short, frequent burst cooldown, and Hardiness quietly wins Rogue duels. Pick Undead instead if fears worry you more than stuns, or Troll for Berserking.
+
+</div>

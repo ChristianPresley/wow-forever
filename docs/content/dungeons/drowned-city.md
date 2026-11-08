@@ -1,5 +1,9 @@
 # The Drowned City
 
+<aside class="infobox" markdown>
+<p class="infobox-title">The Drowned City</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **5-player dungeon**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | 5-player dungeon (new in Forever) |
@@ -8,7 +12,7 @@
 | **Faction** | Both |
 | **Bosses** | 4 known (one source counts 6) |
 
-## Overview
+</aside>
 
 Sunken troll ruins have risen from the sea, overrun by trolls, naga and the crew of a wrecked pirate ship.
 

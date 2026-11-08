@@ -1,5 +1,9 @@
 # City of Dalaran
 
+<aside class="infobox" markdown>
+<p class="infobox-title">City of Dalaran</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **5-player dungeon**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | 5-player dungeon (new in Forever) |
@@ -9,7 +13,7 @@
 | **Bosses** | 8 (one source says 9) |
 | **Key** | Dalaran Sewer Key |
 
-## Overview
+</aside>
 
 The barrier hiding Dalaran's restoration has collapsed, unleashing arcane chaos: backfiring enchantments and runaway constructs. The dungeon has **multiple paths and optional encounters**.
 

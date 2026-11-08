@@ -7,8 +7,13 @@ tags:
 
 # Gnome Mage
 
-!!! tip "Add-on"
-    Read with the [Mage guide](index.md). This page covers only what changes when your Mage is a Gnome.
+<div class="guide-head" data-class="mage" markdown>
+
+:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Mage guide](index.md). This page covers only what changes when your Mage is a Gnome.</p>
+
+</div>
 
 ## Why this combo
 
@@ -24,68 +29,118 @@ Gnome Mage is the original "glass-cannon with an escape hatch". Forever adds **E
 
 ## Racials in practice
 
-| Racial | Type | Rating | Mage use |
-|---|---|---|---|
-| **Escape Artist** | Active | **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE | Removes roots and snares and gives 3 s immunity. Breaks Frost Nova, Hamstring, Entangling Roots and Frostbite, then you Blink away |
-| **Eureka!** *(new)* | Active | **4/5**{ .stars .s4 } | For 8 s, non-periodic abilities cost 10% less and deal 10% more. Fits Arcane Blast chains, Fireball/Pyroblast, Ice Lance shatters. It does not boost DoTs such as Ignite or Frostfire Bolt's tick |
-| **Expansive Mind** | Passive | **3/5**{ .stars .s3 } | +5% maximum mana. More casts per drink and a bigger Arcane burn phase |
-| **Engineering Specialization** | Passive | **2/5**{ .stars .s2 } | 20% fewer device failures. Only matters if you take Engineering, but Engineering is a strong PvP pick |
+<div class="ability-cards" markdown>
 
-### Macros
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Escape Artist** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE</p>
+<p markdown>Removes roots and snares and gives 3 s immunity. Breaks Frost Nova, Hamstring, Entangling Roots and Frostbite, then you Blink away</p>
+</div>
 
-Stack Eureka! with your burst cooldowns (exact GCD behavior of Eureka! is *not verified*):
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Eureka!** *(new)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown>For 8 s, non-periodic abilities cost 10% less and deal 10% more. Fits Arcane Blast chains, Fireball/Pyroblast, Ice Lance shatters. It does not boost DoTs such as Ignite or Frostfire Bolt's tick</p>
+</div>
 
-=== "Arcane"
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Expansive Mind** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown>+5% maximum mana. More casts per drink and a bigger Arcane burn phase</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Engineering Specialization** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown>20% fewer device failures. Only matters if you take Engineering, but Engineering is a strong PvP pick</p>
+</div>
+
+</div>
+
+??? example "Macros"
+
+    Stack Eureka! with your burst cooldowns (exact GCD behavior of Eureka! is *not verified*):
+
+    === "Arcane"
+
+        ```
+        #showtooltip Arcane Power
+        /cast Eureka!
+        /cast Presence of Mind
+        /cast Arcane Power
+        ```
+
+    === "Fire"
+
+        ```
+        #showtooltip Combustion
+        /cast Eureka!
+        /cast Combustion
+        ```
+
+    Escape Artist plus Blink:
 
     ```
-    #showtooltip Arcane Power
-    /cast Eureka!
-    /cast Presence of Mind
-    /cast Arcane Power
+    #showtooltip Escape Artist
+    /cast Escape Artist
+    /cast Blink
     ```
-
-=== "Fire"
-
-    ```
-    #showtooltip Combustion
-    /cast Eureka!
-    /cast Combustion
-    ```
-
-Escape Artist plus Blink:
-
-```
-#showtooltip Escape Artist
-/cast Escape Artist
-/cast Blink
-```
 
 ## Starting zone walkthrough (1–12)
 
 Coldridge Valley and Dun Morogh follow the Classic layout. Quest names are Classic-era.
 
-1. **Coldridge Valley (1–6).** Start at Anvilmar. Your Mage trainer is **Marryk Nurribit** inside Anvilmar (Classic); check your bags for his class letter. Kill wolves, troggs and Frostmane trolls in the valley.
-2. **Level 4.** Train Frostbolt and Conjure Water.
-3. **Level 5–6.** Head through the tunnel to **Kharanos**. The Thunderbrew Distillery inn is your hub. Magis Sparkmantle trains Mages there (Classic).
-4. **Kharanos (6–10).** Do the Brewnall Village, Shimmer Ridge and Gnomeregan-outskirts quests, plus the Frostmane troll cave. Polymorph at 8.
-5. **Level 10.** Frost Nova and your first talent point. Ironforge trainers are in the **Mystic Ward**. Tailoring is in the Great Forge area.
-6. **10–12.** Finish Dun Morogh and move to Loch Modan via the North Gate pass.
+<div class="steps" markdown>
+
+1.  **1–6**{ .lvl } **Coldridge Valley.** Start at Anvilmar. Your Mage trainer is **Marryk Nurribit** inside Anvilmar (Classic); check your bags for his class letter. Kill wolves, troggs and Frostmane trolls in the valley.
+2.  **4**{ .lvl } Train Frostbolt and Conjure Water.
+3.  **5–6**{ .lvl } Head through the tunnel to **Kharanos**. The Thunderbrew Distillery inn is your hub. Magis Sparkmantle trains Mages there (Classic).
+4.  **6–10**{ .lvl } **Kharanos.** Do the Brewnall Village, Shimmer Ridge and Gnomeregan-outskirts quests, plus the Frostmane troll cave. Polymorph at 8.
+5.  **10**{ .lvl } Frost Nova and your first talent point. Ironforge trainers are in the **Mystic Ward**. Tailoring is in the Great Forge area.
+6.  **10–12.** Finish Dun Morogh and move to Loch Modan via the North Gate pass.
+
+</div>
 
 !!! tip "Hall of Thanes"
     Forever's new dungeon [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–20) is in Ironforge itself. It's the easiest first dungeon for a Gnome.
 
 ## Route to 60 from Ironforge
 
-| Levels | Zones | Travel |
-|---|---|---|
-| 10–20 | Loch Modan, then Westfall or Darkshore | Deeprun Tram to Stormwind; Stormwind Harbor boat to Auberdine |
-| 15–25 | Redridge, Wetlands (low end), Darkshore | Thelsamar flight point |
-| 20–30 | Wetlands, Duskwood, Ashenvale | New [Excavation Site](../../content/dungeons/excavation-site.md) dungeon in the Wetlands |
-| 25–35 | Hillsbrad, Alterac Mountains | Menethil–Southshore–Auberdine boat loop |
-| 30–40 | Arathi, Stranglethorn, Desolace, Dustwallow | Gnomeregan (31–37) is your race's old city |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** | Farholde Keep flight to Thelsamar or Lakeshire |
-| 40–50 | Badlands, Tanaris, Feralas, Hinterlands | Riding at 40 |
-| 50–60 | Searing Gorge, Burning Steppes, Un'Goro, Azshara, Felwood, Plaguelands, Winterspring | [Mount Hyjal](../../world/zones.md#mount-hyjal) at 60 |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } Loch Modan, then Westfall or Darkshore
+
+    <span class="step-label">Travel</span> Deeprun Tram to Stormwind; Stormwind Harbor boat to Auberdine
+
+2.  **15–25**{ .lvl } Redridge, Wetlands (low end), Darkshore
+
+    <span class="step-label">Travel</span> Thelsamar flight point
+
+3.  **20–30**{ .lvl } Wetlands, Duskwood, Ashenvale
+
+    <span class="step-label">Travel</span> New [Excavation Site](../../content/dungeons/excavation-site.md) dungeon in the Wetlands
+
+4.  **25–35**{ .lvl } Hillsbrad, Alterac Mountains
+
+    <span class="step-label">Travel</span> Menethil–Southshore–Auberdine boat loop
+
+5.  **30–40**{ .lvl } Arathi, Stranglethorn, Desolace, Dustwallow
+
+    <span class="step-label">Travel</span> Gnomeregan (31–37) is your race's old city
+
+6.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)**
+
+    <span class="step-label">Travel</span> Farholde Keep flight to Thelsamar or Lakeshire
+
+7.  **40–50**{ .lvl } Badlands, Tanaris, Feralas, Hinterlands
+
+    <span class="step-label">Travel</span> Riding at 40
+
+8.  **50–60**{ .lvl } Searing Gorge, Burning Steppes, Un'Goro, Azshara, Felwood, Plaguelands, Winterspring
+
+    <span class="step-label">Travel</span> [Mount Hyjal](../../world/zones.md#mount-hyjal) at 60
+
+</div>
 
 **Teleports (Classic levels):** Ironforge and Stormwind at 20, Darnassus at 30.
 
@@ -99,4 +154,8 @@ Coldridge Valley and Dun Morogh follow the Classic layout. Quest names are Class
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 The best Alliance PvP Mage after the Human, and arguably the best for burst PvE thanks to Eureka!. Escape Artist turns every root into a wasted global for your opponent. If you like Engineering, take Gnome.
+
+</div>

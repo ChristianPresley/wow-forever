@@ -1,4 +1,5 @@
 ---
+description: "Rogue guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
 tags:
   - Rogue
 search:
@@ -6,6 +7,14 @@ search:
 ---
 
 # Rogue Guide
+
+<div class="guide-head" data-class="rogue" markdown>
+
+:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **DPS**{ .badge .dps } <span class="gh-diff" title="Method: one of the most approachable classes">Leveling difficulty: <strong>Easy</strong><span class="gh-pips" data-level="1" aria-hidden="true"><i></i></span></span>
+
+<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+
+</div>
 
 !!! info "Current as of 7 November 2026"
     Forever launched on 4 November. This guide follows Blizzard's class deep dive (7 Oct), the pre-launch notes of 2–3 November (which reworked the Rogue talents and added **Shank**, **Poised** and **Death Mark**), and launch-week guides. Warcraft Tavern points to a class-tuning pass on **10 November**, so expect numbers to move. Reference data lives on the [Rogue class page](../../characters/classes/rogue.md).
@@ -65,14 +74,27 @@ Talents start at level 10 and cap at 51 points. Single-point "gold medal" talent
 
     **Theme:** poisons, crits and finishers.
 
-    | Tier | Key talents |
-    |---|---|
-    | Early | **Malice** (crit, now also for poisons), Remorseless Attacks, **Murder** (now hits Giants) |
-    | 16 pts | **Cold Blood** — guaranteed crit on the next ability |
-    | Mid | **Lethality** (2 points, +10/20% crit damage), Improved Poisons (chance not to use a charge), Vile Poisons, **Vigor** (row 5), Improved Expose Armor |
-    | 21 pts | **Mutilate** — 60 Energy, strikes with both daggers for 90% weapon damage, awards 2 combo points, more damage vs poisoned targets |
-    | Deep | **Seal Fate** (crits add an extra combo point) |
-    | 31 pts | **Venom** — +30% poison damage and +10% application chance |
+    <div class="milestones" markdown>
+
+    Early
+    :   **Malice** (crit, now also for poisons), Remorseless Attacks, **Murder** (now hits Giants)
+
+    16 pts
+    :   **Cold Blood** — guaranteed crit on the next ability
+
+    Mid
+    :   **Lethality** (2 points, +10/20% crit damage), Improved Poisons (chance not to use a charge), Vile Poisons, **Vigor** (row 5), Improved Expose Armor
+
+    21 pts
+    :   **Mutilate** — 60 Energy, strikes with both daggers for 90% weapon damage, awards 2 combo points, more damage vs poisoned targets
+
+    Deep
+    :   **Seal Fate** (crits add an extra combo point)
+
+    31 pts
+    :   **Venom** — +30% poison damage and +10% application chance
+
+    </div>
 
     Mutilate requires a **dagger in both hands**.
 
@@ -80,26 +102,50 @@ Talents start at level 10 and cap at 51 points. Single-point "gold medal" talent
 
     **Theme:** sustained melee, any weapon type, cleave.
 
-    | Tier | Key talents |
-    |---|---|
-    | Early | Improved Eviscerate, Puncturing Wounds, Deflection, **Precision** (now one of the talents that grants hit), Endurance |
-    | 11 pts | Riposte |
-    | 16 pts | **Flawless Execution** — Eviscerate costs less Energy (−15 on the class page, −10 in Blizzard's deep dive) |
-    | Mid | **Hack and Slash** (axes and swords: extra-attack chance; maces: armor ignore; daggers and fists: crit), Dual Wield Specialization, **Weapon Expertise**, **Blade Flurry** |
-    | Deep | **Aggression**, **Efficient Strikes**, Flash of Steel |
-    | 31 pts | **Adrenaline Rush** |
+    <div class="milestones" markdown>
+
+    Early
+    :   Improved Eviscerate, Puncturing Wounds, Deflection, **Precision** (now one of the talents that grants hit), Endurance
+
+    11 pts
+    :   Riposte
+
+    16 pts
+    :   **Flawless Execution** — Eviscerate costs less Energy (−15 on the class page, −10 in Blizzard's deep dive)
+
+    Mid
+    :   **Hack and Slash** (axes and swords: extra-attack chance; maces: armor ignore; daggers and fists: crit), Dual Wield Specialization, **Weapon Expertise**, **Blade Flurry**
+
+    Deep
+    :   **Aggression**, **Efficient Strikes**, Flash of Steel
+
+    31 pts
+    :   **Adrenaline Rush**
+
+    </div>
 
 === "Subtlety"
 
     **Theme:** openers, bleeds, burst from Stealth.
 
-    | Tier | Key talents |
-    |---|---|
-    | Early | **Camouflage**, **Master of Deception** (3 points), Opportunity, **Setup**, Dirty Tricks, Initiative, **Improved Distract** (new) |
-    | 16 pts | **Premeditation** (20 s cooldown) |
-    | Mid | Serrated Blades, **Dirty Deeds** (Garrote from any side), **Hemorrhage** (+15% Rupture and Garrote damage), Ghostly Strike, Preparation |
-    | Deep | **Quietus** (bonus damage below 35% health), **Cutthroat** (Backstab can let your next Ambush work outside Stealth) |
-    | 31 pts | **Thousand Cuts** and/or **Death Mark** — see conflict box |
+    <div class="milestones" markdown>
+
+    Early
+    :   **Camouflage**, **Master of Deception** (3 points), Opportunity, **Setup**, Dirty Tricks, Initiative, **Improved Distract** (new)
+
+    16 pts
+    :   **Premeditation** (20 s cooldown)
+
+    Mid
+    :   Serrated Blades, **Dirty Deeds** (Garrote from any side), **Hemorrhage** (+15% Rupture and Garrote damage), Ghostly Strike, Preparation
+
+    Deep
+    :   **Quietus** (bonus damage below 35% health), **Cutthroat** (Backstab can let your next Ambush work outside Stealth)
+
+    31 pts
+    :   **Thousand Cuts** and/or **Death Mark** — see conflict box
+
+    </div>
 
 !!! conflict "Conflict: Thousand Cuts vs Death Mark"
     - Blizzard's 7 Oct deep dive lists **Thousand Cuts** as the 31-point capstone: each Rupture tick makes your next Backstab or Hemorrhage cheaper, stacking.
@@ -121,28 +167,56 @@ Talent calculators had not been updated for the 3 Nov rework at the time of writ
 
     The smoothest solo spec according to Method, Mobalytics and Warcraft Tavern. Use a slow sword, axe or mace in the main hand and Sinister Strike.
 
-    | Level | Points | Pick up |
-    |---|---|---|
-    | 10–14 | 5 | Improved Sinister Strike or **Precision** first (fewer misses). Some builds start with 5/5 Malice in Assassination |
-    | 15–19 | 10 | Deflection, Improved Gouge or Lightning Reflexes |
-    | 20 | 11 | **Riposte** |
-    | 21–25 | 16 | **Flawless Execution**, Dual Wield Specialization |
-    | 26–30 | 21 | **Blade Flurry**, Weapon Expertise, Hack and Slash for your weapon type |
-    | 31–40 | 31 | Aggression, Efficient Strikes, **Adrenaline Rush** at 31 points (level 40) |
-    | 41–60 | 51 | Back to Assassination: Malice, Remorseless Attacks, Ruthlessness, Improved Slice and Dice, Lethality, **Cold Blood** |
+    <div class="milestones" markdown>
+
+    Lv 10–14
+    :   **5 pts**{ .pts } Improved Sinister Strike or **Precision** first (fewer misses). Some builds start with 5/5 Malice in Assassination
+
+    Lv 15–19
+    :   **10 pts**{ .pts } Deflection, Improved Gouge or Lightning Reflexes
+
+    Lv 20
+    :   **11 pts**{ .pts } **Riposte**
+
+    Lv 21–25
+    :   **16 pts**{ .pts } **Flawless Execution**, Dual Wield Specialization
+
+    Lv 26–30
+    :   **21 pts**{ .pts } **Blade Flurry**, Weapon Expertise, Hack and Slash for your weapon type
+
+    Lv 31–40
+    :   **31 pts**{ .pts } Aggression, Efficient Strikes, **Adrenaline Rush** at 31 points (level 40)
+
+    Lv 41–60
+    :   **51 pts**{ .pts } Back to Assassination: Malice, Remorseless Attacks, Ruthlessness, Improved Slice and Dice, Lethality, **Cold Blood**
+
+    </div>
 
 === "Assassination (daggers)"
 
     Method's plan: Backstab with daggers until Mutilate, without relying on poisons early. Warcraft Tavern's build takes Malice and Remorseless Attacks at 10, Lethality at 20 and Cold Blood around 25.
 
-    | Level | Points | Pick up |
-    |---|---|---|
-    | 10–14 | 5 | Malice |
-    | 15–19 | 10 | Remorseless Attacks, Ruthlessness |
-    | 20–25 | 16 | Lethality, Murder, **Cold Blood** |
-    | 26–30 | 21 | Improved Poisons, Vigor, **Mutilate** |
-    | 31–40 | 31 | Seal Fate, Vile Poisons, **Venom** |
-    | 41–60 | 51 | Combat for Precision, Dual Wield Specialization, Puncturing Wounds or Lightning Reflexes |
+    <div class="milestones" markdown>
+
+    Lv 10–14
+    :   **5 pts**{ .pts } Malice
+
+    Lv 15–19
+    :   **10 pts**{ .pts } Remorseless Attacks, Ruthlessness
+
+    Lv 20–25
+    :   **16 pts**{ .pts } Lethality, Murder, **Cold Blood**
+
+    Lv 26–30
+    :   **21 pts**{ .pts } Improved Poisons, Vigor, **Mutilate**
+
+    Lv 31–40
+    :   **31 pts**{ .pts } Seal Fate, Vile Poisons, **Venom**
+
+    Lv 41–60
+    :   **51 pts**{ .pts } Combat for Precision, Dual Wield Specialization, Puncturing Wounds or Lightning Reflexes
+
+    </div>
 
     Warcraft Tavern lists Mutilate at level 40 in its build, Blizzard's tree puts it at 21 points (level 30). The difference is just how many points you spend elsewhere first.
 
@@ -206,52 +280,75 @@ Training levels below are from Classic unless marked *Forever*. Training every r
 
 === "Combat"
 
-    1. Open from Stealth with **Cheap Shot**, or walk up and **Sinister Strike**.
-    2. **Slice and Dice** at 1–2 combo points; keep it up.
-    3. Sinister Strike to build, **Shank** on cooldown, **Riposte** after every parry.
-    4. **Eviscerate** at 5 combo points (cheaper with Flawless Execution).
-    5. **Blade Flurry** with two or more targets, **Adrenaline Rush** for burst.
+    !!! rotation "Combat priority"
+
+        <div class="priority" markdown>
+
+        1. Open from Stealth with **Cheap Shot**, or walk up and **Sinister Strike**.
+        2. **Slice and Dice** at 1–2 combo points; keep it up.
+        3. Sinister Strike to build, **Shank** on cooldown, **Riposte** after every parry.
+        4. **Eviscerate** at 5 combo points (cheaper with Flawless Execution).
+        5. **Blade Flurry** with two or more targets, **Adrenaline Rush** for burst.
+
+        </div>
+
 
 === "Assassination"
 
-    1. Open with **Garrote** (if the mob lives long) or **Ambush**.
-    2. **Mutilate** to build; Sinister Strike can top off the last point to save Energy.
-    3. **Slice and Dice**, then **Shank** on cooldown.
-    4. Eviscerate at 4–5 combo points. On bosses, **Expose Armor** first if no Warrior is applying Sunder.
-    5. **Cold Blood** on a 5-point Eviscerate.
+    !!! rotation "Assassination priority"
+
+        <div class="priority" markdown>
+
+        1. Open with **Garrote** (if the mob lives long) or **Ambush**.
+        2. **Mutilate** to build; Sinister Strike can top off the last point to save Energy.
+        3. **Slice and Dice**, then **Shank** on cooldown.
+        4. Eviscerate at 4–5 combo points. On bosses, **Expose Armor** first if no Warrior is applying Sunder.
+        5. **Cold Blood** on a 5-point Eviscerate.
+
+        </div>
+
 
 === "Subtlety"
 
-    1. **Premeditation** + **Ambush** (or Garrote with Dirty Deeds).
-    2. **Hemorrhage** to build, **Ghostly Strike** on cooldown, **Shank** on cooldown.
-    3. **Slice and Dice**, then **Rupture** in long fights (Thousand Cuts feeds on its ticks).
-    4. **Death Mark** for burst while Slice and Dice is up.
-    5. For more burst: Gouge → Vanish → Ambush, then Preparation to reset.
+    !!! rotation "Subtlety priority"
+
+        <div class="priority" markdown>
+
+        1. **Premeditation** + **Ambush** (or Garrote with Dirty Deeds).
+        2. **Hemorrhage** to build, **Ghostly Strike** on cooldown, **Shank** on cooldown.
+        3. **Slice and Dice**, then **Rupture** in long fights (Thousand Cuts feeds on its ticks).
+        4. **Death Mark** for burst while Slice and Dice is up.
+        5. For more burst: Gouge → Vanish → Ambush, then Preparation to reset.
+
+        </div>
+
 
 ### Useful macros
 
-```text
-#showtooltip Ambush
-/cast Pick Pocket
-/cast Ambush
-```
+??? example "Show 3 macros"
 
-Loots the target, then opens. Because Sap no longer breaks Stealth, a Sap → Pick Pocket → Ambush chain on a separate mob is now routine.
+    ```text
+    #showtooltip Ambush
+    /cast Pick Pocket
+    /cast Ambush
+    ```
 
-```text
-#showtooltip Sap
-/cleartarget
-/targetenemy
-/cast Sap
-```
+    Loots the target, then opens. Because Sap no longer breaks Stealth, a Sap → Pick Pocket → Ambush chain on a separate mob is now routine.
 
-```text
-#showtooltip Kick
-/cast [@focus,exists,harm] Kick; Kick
-```
+    ```text
+    #showtooltip Sap
+    /cleartarget
+    /targetenemy
+    /cast Sap
+    ```
 
-!!! warning "Macros"
-    Forever uses a modern client, so conditionals like `@focus` should work. Blizzard has not published a list of macro restrictions for Forever.
+    ```text
+    #showtooltip Kick
+    /cast [@focus,exists,harm] Kick; Kick
+    ```
+
+    !!! warning "Macros"
+        Forever uses a modern client, so conditionals like `@focus` should work. Blizzard has not published a list of macro restrictions for Forever.
 
 ---
 
@@ -266,6 +363,8 @@ Developers put 1–20 at about 20 hours. Quests give much more XP than dungeon m
     - **Sap** the second mob in a pack, kill the first, then deal with the Sapped one. Sap no longer breaks Stealth, so you can also Sap and walk past.
     - Use **First Aid** bandages; you have no other healing.
     - Grab the **Cozy Sleeping Bag** scavenger hunt at 14 and set up [camping](../../systems/camping.md) for rested XP.
+
+<div class="route" markdown>
 
 ### 1–10: Starting zones
 
@@ -295,15 +394,23 @@ Warcraft Tavern recommends waiting until **22** (for Vanish and Distract) with *
 
 === "Alliance"
 
+    <div class="steps" markdown>
+
     1. **Master Mathias Shaw**, SI:7 in Old Town, Stormwind: *Mathias and the Defias*.
     2. Agent Kearnen in Westfall: *Klaven's Tower*. Sneak into the tower and open Klaven Mortwake's chest. Turning it in teaches **Poisons** and the **Thistle Tea** recipe.
     3. *The Touch of Zanzil* cures the debuff from the chest (Anti-Venom also works).
 
+    </div>
+
 === "Horde"
+
+    <div class="steps" markdown>
 
     1. **Shenthul**, Cleft of Shadow, Orgrimmar: *The Shattered Salute*, then *Deep Cover*.
     2. Taskmaster Fizzule in the Barrens: *Mission: Possible But Not Probable*.
     3. Serge Hinott in Hillsbrad Foothills: *Hinott's Assistance*. Warcraft Tavern calls this side noticeably harder.
+
+    </div>
 
 Poison crafting skill rises by one per poison made, up to 5× your level. Reagents come from **Shady Dealers** and other poison vendors; new recipes from any Rogue trainer.
 
@@ -354,6 +461,8 @@ Poison crafting skill rises by one per poison made, up to 5× your level. Reagen
 
 !!! conflict "Conflict: library-book quests"
     Our [Leveling page](../../characters/leveling.md) says turning in **10/20/25** class books unlocks quests at **20/35/45**. Warcraft Tavern's library guide lists three *Friend of the Library* turn-ins at levels **1/20/30** for the same book counts, with jewelry and off-hand rewards. Books can be turned in one at a time to **Garion Wendell** (Mage Quarter, Stormwind) or **Owen Thadd** (Magic Quarter, Undercity). No Rogue-only book has been documented.
+
+</div>
 
 ---
 
@@ -478,15 +587,17 @@ Rogues are the class every other class prepares for. See [PvP](../../content/pvp
 
 ## Hardcore notes
 
-Hardcore arrives in **winter 2026/27**. See [Hardcore](../../about/hardcore.md).
+!!! hardcore "Hardcore survival"
 
-- Rogues are among the safest Hardcore classes: **Vanish**, **Sprint**, **Evasion**, Gouge and Blind all reset bad pulls.
-- Keep **Flash Powder** (Vanish) and **Blinding Powder** stocked unless you have Reagent Economy.
-- Never fight two mobs without Sap or Gouge on one.
-- Bandage between every risky pull and carry Healing Potions.
-- Stealth past content instead of clearing it; don't Stealth into unknown caves at low level.
-- Dwarf **Stoneform** (cleanses poisons and bleeds) and Gnome **Escape Artist** are strong survival racials.
-- The [Legacy](../../characters/legacy.md) talents *Thrill of Adventure* and *Field Medicine* add sustain.
+    Hardcore arrives in **winter 2026/27**. See [Hardcore](../../about/hardcore.md).
+
+    - Rogues are among the safest Hardcore classes: **Vanish**, **Sprint**, **Evasion**, Gouge and Blind all reset bad pulls.
+    - Keep **Flash Powder** (Vanish) and **Blinding Powder** stocked unless you have Reagent Economy.
+    - Never fight two mobs without Sap or Gouge on one.
+    - Bandage between every risky pull and carry Healing Potions.
+    - Stealth past content instead of clearing it; don't Stealth into unknown caves at low level.
+    - Dwarf **Stoneform** (cleanses poisons and bleeds) and Gnome **Escape Artist** are strong survival racials.
+    - The [Legacy](../../characters/legacy.md) talents *Thrill of Adventure* and *Field Medicine* add sustain.
 
 ---
 
@@ -525,17 +636,19 @@ Hardcore arrives in **winter 2026/27**. See [Hardcore](../../about/hardcore.md).
 
 ## Sources
 
-- [Blizzard: Class Deep Dives — Rogue and Warlock](https://worldofwarcraft.blizzard.com/news/24310968)
-- [Warcraft Tavern: Rogue Leveling Guide](https://www.warcrafttavern.com/forever/guides/rogue-leveling/)
-- [Warcraft Tavern: Rogue Guide](https://www.warcrafttavern.com/forever/guides/rogue/)
-- [Warcraft Tavern: Combat Rogue](https://www.warcrafttavern.com/forever/guides/combat-rogue/)
-- [Warcraft Tavern: Subtlety Rogue](https://www.warcrafttavern.com/forever/guides/subtlety-rogue/)
-- [Warcraft Tavern: Assassination Rogue](https://www.warcrafttavern.com/forever/guides/assassination-rogue/)
-- [Warcraft Tavern: Poisons](https://www.warcrafttavern.com/forever/guides/poisons/)
-- [Warcraft Tavern: Library Books](https://www.warcrafttavern.com/forever/guides/library-books/)
-- [Warcraft Tavern: Rogue & Warlock deep dive](https://www.warcrafttavern.com/forever/news/poison-pets-rogue-warlock-deep-dive-for-wow-forever/)
-- [Method: Rogue Leveling Guide & Talents](https://www.method.gg/wow-forever/wow-forever-rogue-leveling-guide-and-talents)
-- [Mobalytics: Rogue Leveling Guide](https://mobalytics.gg/wow-forever/classes/rogue-leveling-guide)
-- [Icy Veins: Will Rogues Sneak to the Top?](https://www.icy-veins.com/wow-forever/news/countdown-to-forever-3-will-rogues-sneak-to-the-top/)
-- [ExitLag: WoW Forever Rogue](https://www.exitlag.com/blog/wow-forever-rogue)
-- [Mein MMO: the comeback of the rogues](https://mein-mmo.de/en/while-the-shamans-of-wow-forever-barricade-their-discord-in-protest-i-celebrate-the-comeback-of-the-rogues,1595001/)
+??? quote "14 sources"
+
+    - [Blizzard: Class Deep Dives — Rogue and Warlock](https://worldofwarcraft.blizzard.com/news/24310968)
+    - [Warcraft Tavern: Rogue Leveling Guide](https://www.warcrafttavern.com/forever/guides/rogue-leveling/)
+    - [Warcraft Tavern: Rogue Guide](https://www.warcrafttavern.com/forever/guides/rogue/)
+    - [Warcraft Tavern: Combat Rogue](https://www.warcrafttavern.com/forever/guides/combat-rogue/)
+    - [Warcraft Tavern: Subtlety Rogue](https://www.warcrafttavern.com/forever/guides/subtlety-rogue/)
+    - [Warcraft Tavern: Assassination Rogue](https://www.warcrafttavern.com/forever/guides/assassination-rogue/)
+    - [Warcraft Tavern: Poisons](https://www.warcrafttavern.com/forever/guides/poisons/)
+    - [Warcraft Tavern: Library Books](https://www.warcrafttavern.com/forever/guides/library-books/)
+    - [Warcraft Tavern: Rogue & Warlock deep dive](https://www.warcrafttavern.com/forever/news/poison-pets-rogue-warlock-deep-dive-for-wow-forever/)
+    - [Method: Rogue Leveling Guide & Talents](https://www.method.gg/wow-forever/wow-forever-rogue-leveling-guide-and-talents)
+    - [Mobalytics: Rogue Leveling Guide](https://mobalytics.gg/wow-forever/classes/rogue-leveling-guide)
+    - [Icy Veins: Will Rogues Sneak to the Top?](https://www.icy-veins.com/wow-forever/news/countdown-to-forever-3-will-rogues-sneak-to-the-top/)
+    - [ExitLag: WoW Forever Rogue](https://www.exitlag.com/blog/wow-forever-rogue)
+    - [Mein MMO: the comeback of the rogues](https://mein-mmo.de/en/while-the-shamans-of-wow-forever-barricade-their-discord-in-protest-i-celebrate-the-comeback-of-the-rogues,1595001/)

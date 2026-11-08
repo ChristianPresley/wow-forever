@@ -5,10 +5,10 @@ Every page on this wiki was compiled from public web sources between the BlizzCo
 **200 sources** across **59 sites**.
 
 !!! note "Reliability tiers"
-    1. **Official:** Blizzard news, forums, shop
-    2. **Fan wiki with game data:** warcraft.wiki.gg
-    3. **Established outlets:** Warcraft Tavern, Wowhead, Icy Veins, Method, PC Gamer, mein-mmo and others
-    4. **Fan and guide sites:** lower confidence. Claims that rest only on these are marked *unconfirmed* in the wiki
+    1. **Official**{ .badge .official } Blizzard news, forums, shop
+    2. **Fan wiki with game data**{ .badge .done } warcraft.wiki.gg
+    3. **Established outlets**{ .badge .stated } Warcraft Tavern, Wowhead, Icy Veins, Method, PC Gamer, mein-mmo and others
+    4. **Fan and guide sites**{ .badge .fan } lower confidence. Claims that rest only on these are marked *unconfirmed*{ .unconfirmed } in the wiki
 
 ## blizzardwatch.com
 

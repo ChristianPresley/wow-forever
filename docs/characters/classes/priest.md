@@ -1,6 +1,37 @@
 # Priest
 
+**Also called:** Disc (Discipline) · Holy priest · Spriest / Shadow priest
+{: .fc-aka }
+
+<aside class="infobox" data-class="priest" markdown>
+<p class="infobox-title">Priest</p>
+<p class="infobox-roles" markdown>**Healer**{ .badge .heal } **DPS**{ .badge .dps }</p>
+
+| | |
+|---|---|
+| **Specs** | Discipline · Holy · Shadow |
+| **Armor** | Cloth |
+| **Resource** | Mana |
+| **Races** | 6 combinations |
+| **Forever focus** | The most versatile healer |
+| **Guide** | [Priest guide](../../guides/priest/index.md) |
+
+</aside>
+
 **Races:** Human, Dwarf, Gnome (**new**), Night Elf, Troll, Undead.
+
+!!! forever "What Forever changed"
+    **Headline additions:** Fear Ward and Devouring Plague for all, SW:Death baseline, Penance, Divine Aegis, Prayer of Mending, Holy Binding.
+
+    **Notable removals:** Lightwell, Binding Heal. Full list: [Classes summary](index.md#summary).
+
+<div class="fc-cta" data-class="priest" markdown>
+
+**Playing a Priest?** The [Priest guide](../../guides/priest/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+
+<span class="fc-cta__label">Race add-ons</span> [Human](../../guides/priest/human.md){ .fc-chip } [Dwarf](../../guides/priest/dwarf.md){ .fc-chip } [Gnome](../../guides/priest/gnome.md){ .fc-chip } [Night Elf](../../guides/priest/night-elf.md){ .fc-chip } [Troll](../../guides/priest/troll.md){ .fc-chip } [Undead](../../guides/priest/undead.md){ .fc-chip }
+
+</div>
 
 ## Baseline changes
 

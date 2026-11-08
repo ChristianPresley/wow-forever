@@ -1,6 +1,37 @@
 # Warrior
 
+**Also called:** War · Warr · Arms / Fury / Prot warrior
+{: .fc-aka }
+
+<aside class="infobox" data-class="warrior" markdown>
+<p class="infobox-title">Warrior</p>
+<p class="infobox-roles" markdown>**Tank**{ .badge .tank } **DPS**{ .badge .dps }</p>
+
+| | |
+|---|---|
+| **Specs** | Arms · Fury · Protection |
+| **Armor** | Plate at 40 |
+| **Resource** | Rage |
+| **Races** | 10 combinations |
+| **Forever focus** | Reliable rage generation |
+| **Guide** | [Warrior guide](../../guides/warrior/index.md) |
+
+</aside>
+
 **Races:** Every race: Human, Dwarf, Gnome, Night Elf, Orc, Troll, Tauren, Undead, Skyborne (both).
+
+!!! forever "What Forever changed"
+    **Headline additions:** Victory Rush and Tactical Mastery baseline, normalized rage, Spearing Strike, Weaponmaster, Reckless Swings.
+
+    **Notable removals:** Weapon specializations. Full list: [Classes summary](index.md#summary).
+
+<div class="fc-cta" data-class="warrior" markdown>
+
+**Playing a Warrior?** The [Warrior guide](../../guides/warrior/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+
+<span class="fc-cta__label">Race add-ons</span> [Human](../../guides/warrior/human.md){ .fc-chip } [Dwarf](../../guides/warrior/dwarf.md){ .fc-chip } [Gnome](../../guides/warrior/gnome.md){ .fc-chip } [Night Elf](../../guides/warrior/night-elf.md){ .fc-chip } [Skyborne (High Order)](../../guides/warrior/skyborne-high-order.md){ .fc-chip } [Orc](../../guides/warrior/orc.md){ .fc-chip } [Troll](../../guides/warrior/troll.md){ .fc-chip } [Tauren](../../guides/warrior/tauren.md){ .fc-chip } [Undead](../../guides/warrior/undead.md){ .fc-chip } [Skyborne (Windshaper)](../../guides/warrior/skyborne-windshaper.md){ .fc-chip }
+
+</div>
 
 ## Rage normalization
 

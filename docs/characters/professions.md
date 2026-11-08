@@ -9,9 +9,11 @@
 
 ## New in Forever
 
+!!! forever "Professions no longer give stats"
+    Professions give **no passive stat bonuses**. Their value comes from crafting, gathering and [camping](../systems/camping.md).
+
 - **600+ new recipes** according to the developers (a datamine counted 884). Armor crafters get many new **BoP** patterns.
 - **Healing potions moved from Alchemy to First Aid** (about six potions).
-- Professions give **no passive stat bonuses**. Their value comes from crafting, gathering and [camping](../systems/camping.md).
 - A new **Professions window** (hotkey **K**) with search, filters, recipe tracking and chat links.
 - A dedicated **reagent bag** slot: the 6-slot Linen Reagent Bag (Tailoring) or a 4-slot starter gathering bag.
 - A starter quest lets you pick a gathering profession (+2 skill).

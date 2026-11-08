@@ -1,4 +1,5 @@
 ---
+description: "Shaman guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
 tags:
   - Shaman
 search:
@@ -6,6 +7,14 @@ search:
 ---
 
 # Shaman Guide
+
+<div class="guide-head" data-class="shaman" markdown>
+
+:codex-shaman:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+
+</div>
 
 !!! info "Current as of 7 November 2026"
     Forever launched on 4 November. This guide follows the latest pre-launch notes (builds 70753 and 70755) and launch-week hotfixes. Talent builds and stat priorities were published during the beta and are likely to move, especially after the **planned 10 November class tuning**. For reference data, see the [Shaman class page](../../characters/classes/shaman.md).
@@ -66,15 +75,30 @@ Talents start at **level 10** and give **51 points** by level 60. The single-poi
 
     A ranged caster built around Lightning Bolt and Chain Lightning.
 
-    | Points | Talent | Notes |
-    |---|---|---|
-    | Early | Elemental Devastation, Elemental Alacrity, Improved Fire Nova, Eye of the Storm | Elemental Devastation moved up the tree |
-    | 16 | **Call of Thunder** | +5% crit (added in the launch build) |
-    | — | Elemental Reach | Range |
-    | — | **Lightning Overload** | 10/20/30% chance for a free extra bolt |
-    | 21 | **Earthbound** | Earthbind also roots for 5 s |
-    | — | Elemental Fury | Crit damage |
-    | Tier 7 | **Lightning Mastery** | Takes Elemental Mastery's old slot. *What it does is unconfirmed* |
+    <div class="milestones" markdown>
+
+    Early
+    :   Elemental Devastation, Elemental Alacrity, Improved Fire Nova, Eye of the Storm — Elemental Devastation moved up the tree
+
+    16
+    :   **Call of Thunder** — +5% crit (added in the launch build)
+
+    —
+    :   Elemental Reach — Range
+
+    —
+    :   **Lightning Overload** — 10/20/30% chance for a free extra bolt
+
+    21
+    :   **Earthbound** — Earthbind also roots for 5 s
+
+    —
+    :   Elemental Fury — Crit damage
+
+    Tier 7
+    :   **Lightning Mastery** — Takes Elemental Mastery's old slot. *What it does is unconfirmed*
+
+    </div>
 
     Elemental Mastery and the 31-point Lava Burst were both cut. The deep-dive capstone no longer exists.
 
@@ -82,34 +106,74 @@ Talents start at **level 10** and give **51 points** by level 60. The single-poi
 
     A melee hybrid that mixes weapon hits, shocks and instant spells.
 
-    | Points | Talent | Notes |
-    |---|---|---|
-    | Early | **Thundering Strikes** | Now a standalone first-row talent |
-    | — | **Ancestral Knowledge** | Now gives Intellect instead of mana |
-    | — | **Mental Dexterity** | 50/100/150% of Intellect as attack power |
-    | — | Improved Ghost Wolf | Usable indoors, then instant |
-    | 11 | **Shamanistic Focus** | |
-    | — | Toughness | Now % Stamina |
-    | — | **Flurry** | 6–30% attack speed after a crit |
-    | 16 | **Stormstrike** | 150% weapon damage, 6 s cooldown; no longer the capstone |
-    | 21 | **Spirit Weapons** | |
-    | — | Mental Quickness, Improved Stormstrike | |
-    | — | **Maelstrom Weapon** | Works with **Lightning Bolt only** (Warcraft Tavern) |
-    | 31 | **Rage of the Farseer** | +30% attack speed for 25 s, 3 min cooldown. A self-only Bloodlust |
+    <div class="milestones" markdown>
+
+    Early
+    :   **Thundering Strikes** — Now a standalone first-row talent
+
+    —
+    :   **Ancestral Knowledge** — Now gives Intellect instead of mana
+
+    —
+    :   **Mental Dexterity** — 50/100/150% of Intellect as attack power
+
+    —
+    :   Improved Ghost Wolf — Usable indoors, then instant
+
+    11
+    :   **Shamanistic Focus**
+
+    —
+    :   Toughness — Now % Stamina
+
+    —
+    :   **Flurry** — 6–30% attack speed after a crit
+
+    16
+    :   **Stormstrike** — 150% weapon damage, 6 s cooldown; no longer the capstone
+
+    21
+    :   **Spirit Weapons**
+
+    —
+    :   Mental Quickness, Improved Stormstrike
+
+    —
+    :   **Maelstrom Weapon** — Works with **Lightning Bolt only** (Warcraft Tavern)
+
+    31
+    :   **Rage of the Farseer** — +30% attack speed for 25 s, 3 min cooldown. A self-only Bloodlust
+
+    </div>
 
 === "Restoration"
 
     A healer with chain heals, shields and strong mana tools.
 
-    | Points | Talent | Notes |
-    |---|---|---|
-    | Early | Totemic Focus, **Mindfulness**, Natural Grace, Tidal Focus (reworked) | |
-    | — | Improved Reincarnation | |
-    | 11 | **Water Shield** | Mana return. Off-specs take it too |
-    | — | Restorative Totems | |
-    | 16 | **Mana Tide Totem** | Moved down from 31 points |
-    | — | Healing Way | |
-    | 31 | **Riptide** | 12 s cooldown, 40% cheaper, a HoT with no upfront heal. Warcraft Tavern says Chain Heal also heals the Riptide target for 25% more (*unconfirmed*) |
+    <div class="milestones" markdown>
+
+    Early
+    :   Totemic Focus, **Mindfulness**, Natural Grace, Tidal Focus (reworked)
+
+    —
+    :   Improved Reincarnation
+
+    11
+    :   **Water Shield** — Mana return. Off-specs take it too
+
+    —
+    :   Restorative Totems
+
+    16
+    :   **Mana Tide Totem** — Moved down from 31 points
+
+    —
+    :   Healing Way
+
+    31
+    :   **Riptide** — 12 s cooldown, 40% cheaper, a HoT with no upfront heal. Warcraft Tavern says Chain Heal also heals the Riptide target for 25% more (*unconfirmed*)
+
+    </div>
 
 ### Recommended builds
 
@@ -163,61 +227,84 @@ Training every ability from 1 to 60 costs about **206–207g** for any class. Ne
 
 === "Elemental"
 
-    1. Drop totems with your Call preset: a Fire totem (Searing for single target, Magma for packs), **Mana Spring**, and Earth and Air for the situation.
-    2. **Flame Shock** if the target will live long enough.
-    3. **Lightning Bolt** as your filler. Lightning Overload gives free extra bolts.
-    4. **Chain Lightning** on two or more targets.
-    5. **Earth Shock** to interrupt, or to finish a fleeing target. Shocks share a cooldown.
-    6. **Fire Nova** on packs gathered around your Fire Totem.
+    !!! rotation "Elemental priority"
+
+        <div class="priority" markdown>
+
+        1. Drop totems with your Call preset: a Fire totem (Searing for single target, Magma for packs), **Mana Spring**, and Earth and Air for the situation.
+        2. **Flame Shock** if the target will live long enough.
+        3. **Lightning Bolt** as your filler. Lightning Overload gives free extra bolts.
+        4. **Chain Lightning** on two or more targets.
+        5. **Earth Shock** to interrupt, or to finish a fleeing target. Shocks share a cooldown.
+        6. **Fire Nova** on packs gathered around your Fire Totem.
+
+        </div>
+
 
     Use your racial (Blood Fury, Berserking, Wind Blessed passively) with your opening bolts.
 
 === "Enhancement"
 
-    1. Keep **Windfury Weapon** on your main hand (Rockbiter or Flametongue before level 30) and **Lightning Shield**, or Water Shield if you have it and mana is short.
-    2. Drop Strength of Earth, Searing Totem and, in groups, Windfury Totem.
-    3. Pull with a **Lightning Bolt**, or simply run in.
-    4. **Stormstrike** on cooldown (6 s).
-    5. **Flame Shock** on targets that live long, otherwise **Earth Shock** as a filler and interrupt.
-    6. Spend **Maelstrom Weapon** stacks on Lightning Bolt.
-    7. Save **Rage of the Farseer** for elites, bosses and PvP bursts.
+    !!! rotation "Enhancement priority"
+
+        <div class="priority" markdown>
+
+        1. Keep **Windfury Weapon** on your main hand (Rockbiter or Flametongue before level 30) and **Lightning Shield**, or Water Shield if you have it and mana is short.
+        2. Drop Strength of Earth, Searing Totem and, in groups, Windfury Totem.
+        3. Pull with a **Lightning Bolt**, or simply run in.
+        4. **Stormstrike** on cooldown (6 s).
+        5. **Flame Shock** on targets that live long, otherwise **Earth Shock** as a filler and interrupt.
+        6. Spend **Maelstrom Weapon** stacks on Lightning Bolt.
+        7. Save **Rage of the Farseer** for elites, bosses and PvP bursts.
+
+        </div>
+
 
 === "Restoration"
 
-    1. Keep **Water Shield** up and drop **Mana Spring** or **Healing Stream**.
-    2. **Riptide** on the tank, then **Chain Heal** onto them for the bonus (if confirmed).
-    3. **Lesser Healing Wave** for emergencies, **Healing Wave** (downranked) for efficiency.
-    4. **Mana Tide Totem** when mana dips in long fights.
-    5. Use Poison Cleansing or Disease Cleansing Totem, or Cure spells, on the right fights.
+    !!! rotation "Restoration priority"
+
+        <div class="priority" markdown>
+
+        1. Keep **Water Shield** up and drop **Mana Spring** or **Healing Stream**.
+        2. **Riptide** on the tank, then **Chain Heal** onto them for the bonus (if confirmed).
+        3. **Lesser Healing Wave** for emergencies, **Healing Wave** (downranked) for efficiency.
+        4. **Mana Tide Totem** when mana dips in long fights.
+        5. Use Poison Cleansing or Disease Cleansing Totem, or Cure spells, on the right fights.
+
+        </div>
+
 
 ### Macros and keybinds
 
-The Forever client has Midnight-style add-on restrictions (no WeakAuras; see [Add-ons & UI](../../systems/addons.md)), but ordinary macros work. Useful ones:
+??? example "Show 3 macros"
 
-```text
-#showtooltip Earth Shock
-/stopcasting
-/cast Earth Shock
-```
+    The Forever client has Midnight-style add-on restrictions (no WeakAuras; see [Add-ons & UI](../../systems/addons.md)), but ordinary macros work. Useful ones:
 
-Interrupts even while you are casting.
+    ```text
+    #showtooltip Earth Shock
+    /stopcasting
+    /cast Earth Shock
+    ```
 
-```text
-#showtooltip Lesser Healing Wave
-/cast [@mouseover,help,nodead][] Lesser Healing Wave
-```
+    Interrupts even while you are casting.
 
-Mouseover healing for Restoration or emergency off-heals.
+    ```text
+    #showtooltip Lesser Healing Wave
+    /cast [@mouseover,help,nodead][] Lesser Healing Wave
+    ```
 
-```text
-#showtooltip Stormstrike
-/cast Blood Fury
-/cast Stormstrike
-```
+    Mouseover healing for Restoration or emergency off-heals.
 
-Burst for Orc Enhancement. Swap in Berserking for Trolls.
+    ```text
+    #showtooltip Stormstrike
+    /cast Blood Fury
+    /cast Stormstrike
+    ```
 
-**Keybind priorities:** your three Call presets, Totemic Call, Earth Shock, Purge, Grounding Totem, Tremor Totem, Earthbind Totem, and Ghost Wolf. With the 1.0 s totem GCD, swapping a single totem mid-fight is cheap, so bind Grounding and Tremor directly.
+    Burst for Orc Enhancement. Swap in Berserking for Trolls.
+
+    **Keybind priorities:** your three Call presets, Totemic Call, Earth Shock, Purge, Grounding Totem, Tremor Totem, Earthbind Totem, and Ghost Wolf. With the 1.0 s totem GCD, swapping a single totem mid-fight is cheap, so bind Grounding and Tremor directly.
 
 ## Leveling walkthrough 1–60
 
@@ -225,6 +312,8 @@ Burst for Orc Enhancement. Swap in Berserking for Trolls.
     The Forever client doesn't assign level ranges to zones. The ranges below are Classic ranges or Forever source estimates. See [Zones](../../world/zones.md) and [Leveling](../../characters/leveling.md).
 
 **General plan:** level as **Enhancement** (the most common recommendation) or Elemental. Questing gives much more XP than dungeon mobs in Forever, and dungeon *quests* give a lot. Normal mobs take about 10–15 s to kill solo. Developers put levels 1–20 at about 20 hours.
+
+<div class="route" markdown>
 
 ### 1–10: starting zone and the Earth totem
 
@@ -299,6 +388,8 @@ Burst for Orc Enhancement. Swap in Berserking for Trolls.
 - At 60, **[Mount Hyjal](../../world/zones.md#mount-hyjal)** opens through Darkwhisper Gorge in Winterspring. It holds both new raids.
 - Epic riding is **1,000g** at level 60. There is no flying.
 - The world-first level-60 group, about three days after launch, included a Shaman. The group used large AoE pulls.
+
+</div>
 
 ## Dungeons
 
@@ -418,15 +509,17 @@ Six crafting professions also give [Legacy Points](../../characters/legacy.md) a
 
 ## Hardcore notes
 
-The **Hardcore** ruleset arrives in winter 2026/27 with no date yet. See [Hardcore](../../about/hardcore.md).
+!!! hardcore "Hardcore survival"
 
-- **Reincarnation** (30) is the obvious question. How it works on Hardcore has **not been confirmed**; don't plan around it.
-- **Earthbind**, **Frost Shock** and **Ghost Wolf** (20) are your escape kit. Always keep Ghost Wolf off cooldown before a risky pull.
-- **Stoneclaw Totem** draws an add for a few seconds while you run.
-- Keep **Lesser Healing Wave** ranks on a bar in every spec.
-- **Grounding Totem** stops one deadly spell, such as an elite caster's Polymorph or Fear.
-- The Fire totem quest for Dwarves sends you among level-14 troggs in groups. Pull carefully.
-- Hardcore Legacy points apply to other rulesets, but not the other way around.
+    The **Hardcore** ruleset arrives in winter 2026/27 with no date yet. See [Hardcore](../../about/hardcore.md).
+
+    - **Reincarnation** (30) is the obvious question. How it works on Hardcore has **not been confirmed**; don't plan around it.
+    - **Earthbind**, **Frost Shock** and **Ghost Wolf** (20) are your escape kit. Always keep Ghost Wolf off cooldown before a risky pull.
+    - **Stoneclaw Totem** draws an add for a few seconds while you run.
+    - Keep **Lesser Healing Wave** ranks on a bar in every spec.
+    - **Grounding Totem** stops one deadly spell, such as an elite caster's Polymorph or Fear.
+    - The Fire totem quest for Dwarves sends you among level-14 troggs in groups. Pull carefully.
+    - Hardcore Legacy points apply to other rulesets, but not the other way around.
 
 ## Common mistakes / FAQ
 
@@ -456,16 +549,18 @@ The **Hardcore** ruleset arrives in winter 2026/27 with no date yet. See [Hardco
 
 ## Sources
 
-- [Warcraft Tavern: Shaman guide](https://www.warcrafttavern.com/forever/guides/shaman/)
-- [Warcraft Tavern: Shaman leveling guide](https://www.warcrafttavern.com/forever/guides/shaman-leveling/)
-- [Warcraft Tavern: Enhancement Shaman guide](https://www.warcrafttavern.com/forever/guides/enhancement-shaman/)
-- [Warcraft Tavern: Dwarf Shaman totem quests](https://www.warcrafttavern.com/forever/guides/dwarf-shaman-totem-quests/)
-- [Warcraft Tavern: Class trainer locations](https://www.warcrafttavern.com/forever/guides/class-trainers/)
-- [Warcraft Tavern: Dwarf race overview](https://www.warcrafttavern.com/forever/guides/dwarf/)
-- [Warcraft Tavern: Class tuning coming for Shamans, Warlocks and Hunter pets](https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/)
-- [Warcraft Tavern: Mage & Shaman deep dive](https://www.warcrafttavern.com/forever/news/scrolls-totems-mage-shaman-deep-dive-for-wow-forever/)
-- [Warcraft Wiki: Shaman abilities (Forever)](https://warcraft.wiki.gg/wiki/Shaman_abilities_(Forever))
-- [Mobalytics: Shaman leveling guide](https://mobalytics.gg/wow-forever/classes/shaman-leveling-guide)
-- [Mobalytics: Elemental Shaman leveling guide](https://mobalytics.gg/wow-forever/classes/elemental-shaman-leveling-guide)
-- [Icy Veins: Enhancement Shaman leveling](https://www.icy-veins.com/wow-forever/enhancement-shaman-leveling)
-- [Method: Shaman leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents)
+??? quote "13 sources"
+
+    - [Warcraft Tavern: Shaman guide](https://www.warcrafttavern.com/forever/guides/shaman/)
+    - [Warcraft Tavern: Shaman leveling guide](https://www.warcrafttavern.com/forever/guides/shaman-leveling/)
+    - [Warcraft Tavern: Enhancement Shaman guide](https://www.warcrafttavern.com/forever/guides/enhancement-shaman/)
+    - [Warcraft Tavern: Dwarf Shaman totem quests](https://www.warcrafttavern.com/forever/guides/dwarf-shaman-totem-quests/)
+    - [Warcraft Tavern: Class trainer locations](https://www.warcrafttavern.com/forever/guides/class-trainers/)
+    - [Warcraft Tavern: Dwarf race overview](https://www.warcrafttavern.com/forever/guides/dwarf/)
+    - [Warcraft Tavern: Class tuning coming for Shamans, Warlocks and Hunter pets](https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/)
+    - [Warcraft Tavern: Mage & Shaman deep dive](https://www.warcrafttavern.com/forever/news/scrolls-totems-mage-shaman-deep-dive-for-wow-forever/)
+    - [Warcraft Wiki: Shaman abilities (Forever)](https://warcraft.wiki.gg/wiki/Shaman_abilities_(Forever))
+    - [Mobalytics: Shaman leveling guide](https://mobalytics.gg/wow-forever/classes/shaman-leveling-guide)
+    - [Mobalytics: Elemental Shaman leveling guide](https://mobalytics.gg/wow-forever/classes/elemental-shaman-leveling-guide)
+    - [Icy Veins: Enhancement Shaman leveling](https://www.icy-veins.com/wow-forever/enhancement-shaman-leveling)
+    - [Method: Shaman leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents)

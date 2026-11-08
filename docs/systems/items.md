@@ -2,14 +2,17 @@
 
 ## Legendaries
 
-- **Taldramir, the Whispering Wood**, Forever's **first legendary**, is a staff. It was revealed about an hour before launch on the Warcraft Twitch stream and built as a physical prop with **Wētā Workshop**. It is presumably obtained from the raids opening 9 Dec (*unconfirmed*).
+- **Taldramir, the Whispering Wood**, Forever's **first legendary**, is a staff. It was revealed about an hour before launch on the Warcraft Twitch stream and built as a physical prop with **Wētā Workshop**. It is presumably obtained from the raids opening 9 Dec *unconfirmed*{ .unconfirmed }.
 - A **legendary tied to Hyjal Summit** has been teased, possibly Taldramir.
 - A **new legendary questline** is on the spring 2027 roadmap.
 - Classic legendaries (Sulfuras, Thunderfury and others) dropped only during the one-time [End of Beta event](../world/events.md#end-of-beta-event-2223-oct-2026).
 
 ## Hidden items
 
-Blizzard **encrypts the item database**:
+!!! forever "Hidden by design"
+    Blizzard **encrypts the item database**.
+
+What that means:
 
 - About **12,594 items (~40%)** shipped without readable stats. **4,419** of them were revealed during beta.
 - Stats unlock **region-wide** once someone discovers the item.
@@ -48,7 +51,7 @@ Most Forever mounts **don't carry over** to other WoW versions. The Forsaken pal
 | Musical Gustjumper | Pet | `/sing` at frogs on Zephras Isle |
 | Zergling Leash, Panda Collar, Diablo Stone, Pachimari | Pets | Epic Pack and higher |
 | Darkspear Islands tabards | Tabard | Exalted with the battleground faction |
-| Golden Murloc Plush | Housing decor (retail) | Pre-launch Twitch drop (*unconfirmed*) |
+| Golden Murloc Plush | Housing decor (retail) | Pre-launch Twitch drop *unconfirmed*{ .unconfirmed } |
 
 ## The in-game shop
 

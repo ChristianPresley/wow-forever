@@ -7,8 +7,13 @@ tags:
 
 # Windshaper Skyborne Druid
 
-!!! tip "Add-on"
-    Read with the [Druid guide](index.md). This page covers only what changes for a Horde Skyborne.
+<div class="guide-head" data-class="druid" markdown>
+
+:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Druid guide](index.md). This page covers only what changes for a Horde Skyborne.</p>
+
+</div>
 
 ## Why this combo
 
@@ -23,30 +28,55 @@ Method recommends the Windshaper as the Horde choice for **Cat and Balance in Pv
 
 ## Racials in practice
 
-| Racial | Type | PvE | PvP | Rating |
-|---|---|---|---|---|
-| **Skysight** | Active: +15% movement speed for 15 s; +30% while *Charged* (1 hr buff from an elemental convergence) | Leveling travel before Travel Form at 30; dodging mechanics | Chasing or escaping, stacks with forms (*unconfirmed*) | **3/5**{ .stars .s3 } |
-| **Walk on Air** | Active: 10 s controlled glide. **Works in forms** | Shortcuts and fall rescue | Cliff escapes; cooldown 1.5 or 2 min (*conflict*) | **3/5**{ .stars .s3 } |
-| **Wind Blessed** | Passive: haste | Faster casts and swings | Same | **4/5**{ .stars .s4 } |
-| **Elemental Insight** | Passive: +5% damage vs Elementals | Hyjal, Skywall and elemental-heavy dungeons | None | **2/5**{ .stars .s2 } |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Skysight** <span class="ability-type active">Active: +15% movement speed for 15 s; +30% while *Charged* (1 hr buff from an elemental convergence)</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> Leveling travel before Travel Form at 30; dodging mechanics</p>
+<p markdown><span class="ability-label">PvP</span> Chasing or escaping, stacks with forms (*unconfirmed*)</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active: 10 s controlled glide. **Works in forms**</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> Shortcuts and fall rescue</p>
+<p markdown><span class="ability-label">PvP</span> Cliff escapes; cooldown 1.5 or 2 min (*conflict*)</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Wind Blessed** <span class="ability-type passive">Passive: haste</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> Faster casts and swings</p>
+<p markdown><span class="ability-label">PvP</span> Same</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Elemental Insight** <span class="ability-type passive">Passive: +5% damage vs Elementals</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> Hyjal, Skywall and elemental-heavy dungeons</p>
+<p markdown><span class="ability-label">PvP</span> None</p>
+</div>
+
+</div>
 
 !!! conflict "Conflict: Wind Blessed"
     Sources give 1%, 2% or 3% haste. Blizzard's latest notes say **2%**.
 
-**Macros**
+??? example "Macros"
 
-```text
-#showtooltip
-/cast Skysight
-/cast [nostance:3] !Cat Form
-```
+    ```text
+    #showtooltip
+    /cast Skysight
+    /cast [nostance:3] !Cat Form
+    ```
 
-```text
-#showtooltip Walk on Air
-/cast Walk on Air
-```
+    ```text
+    #showtooltip Walk on Air
+    /cast Walk on Air
+    ```
 
-Check that Cat Form is stance 3 on your bar. Skysight plus Dash is a strong gap-closer or escape in Cat.
+    Check that Cat Form is stance 3 on your bar. Skysight plus Dash is a strong gap-closer or escape in Cat.
 
 ## Starting zone walkthrough: Zephras Isle (1–~12)
 
@@ -54,9 +84,13 @@ Both Skyborne factions share [Zephras Isle](../../world/zephras-isle.md), phased
 
 **Thendal Village (1–5)**
 
-1. Quests: *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* (Walk on Air) and *The Anchors of Zephras*.
-2. Your faction opener is ***The Gift of Skysight***, which shows you how to get Charged.
-3. Caster play: Wrath, Moonfire, Rejuvenation.
+<div class="steps" markdown>
+
+1.  Quests: *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* (Walk on Air) and *The Anchors of Zephras*.
+2.  Your faction opener is ***The Gift of Skysight***, which shows you how to get Charged.
+3.  Caster play: Wrath, Moonfire, Rejuvenation.
+
+</div>
 
 **Road to Shen'dar Village (5–9)**
 
@@ -85,16 +119,41 @@ Both Skyborne factions share [Zephras Isle](../../world/zephras-isle.md), phased
 
 The Windshaper airship leaves the **west Skydock** for **Skywatcher Plateau** in northwest Mulgore, just outside Thunder Bluff. It reportedly leaves about every 5 minutes. From there you follow the Tauren route.
 
-| Levels | Zone(s) | Notes |
-|---|---|---|
-| 1–13 | Zephras Isle | Bear Form at 10 on the island |
-| 13 | Skywatcher Plateau → Thunder Bluff | Pick up the Thunder Bluff flight path and train |
-| 13–20 | **The Barrens** (Crossroads), Silverpine | Lessons Anew (14) and Aquatic Form (16): where Skyborne take these is *unconfirmed*; check Valanaar, then Thunder Bluff |
-| 20 | Zephras Isle | ***The Great Windborne Cat Spirit*** (Cat Form, Prowl, Claw, Rip) |
-| 20–30 | Stonetalon, Ashenvale, Hillsbrad, Thousand Needles | Wailing Caverns, Shadowfang Keep, Razorfen Kraul |
-| 30–40 | Desolace (the Skywatcher path leads there), Arathi, Stranglethorn, Dustwallow | Travel Form at 30. Horde are attacked in Dalaran |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar) | [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) |
-| 40–60 | Same Horde route as the [Tauren Druid](tauren.md#route-to-60-from-thunder-bluff) | Feralas trainer Jannos Lighthoof; Moonglade via Teleport |
+<div class="steps" markdown>
+
+1.  **1–13**{ .lvl } Zephras Isle
+
+    Bear Form at 10 on the island
+
+2.  **13**{ .lvl } Skywatcher Plateau → Thunder Bluff
+
+    Pick up the Thunder Bluff flight path and train
+
+3.  **13–20**{ .lvl } **The Barrens** (Crossroads), Silverpine
+
+    Lessons Anew (14) and Aquatic Form (16): where Skyborne take these is *unconfirmed*; check Valanaar, then Thunder Bluff
+
+4.  **20**{ .lvl } Zephras Isle
+
+    ***The Great Windborne Cat Spirit*** (Cat Form, Prowl, Claw, Rip)
+
+5.  **20–30**{ .lvl } Stonetalon, Ashenvale, Hillsbrad, Thousand Needles
+
+    Wailing Caverns, Shadowfang Keep, Razorfen Kraul
+
+6.  **30–40**{ .lvl } Desolace (the Skywatcher path leads there), Arathi, Stranglethorn, Dustwallow
+
+    Travel Form at 30. Horde are attacked in Dalaran
+
+7.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar)
+
+    [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md)
+
+8.  **40–60**{ .lvl } Same Horde route as the [Tauren Druid](tauren.md#route-to-60-from-thunder-bluff)
+
+    Feralas trainer Jannos Lighthoof; Moonglade via Teleport
+
+</div>
 
 ## Faction-specific notes
 
@@ -108,6 +167,8 @@ The Windshaper airship leaves the **west Skydock** for **Skywatcher Plateau** in
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 The Horde's **PvE damage druid**. Wind Blessed haste helps Cat and Balance, and Skysight with Walk on Air makes leveling and battleground movement fun. Tauren is still better for Bear and PvP, thanks to Endurance and War Stomp. The airship drops you right by Thunder Bluff, so the start is much smoother than the High Order's.
 
 | Spec | Rating |
@@ -119,3 +180,5 @@ The Horde's **PvE damage druid**. Wind Blessed haste helps Cat and Balance, and 
 | PvP | **3/5**{ .stars .s3 } |
 
 *Ratings are this guide's own judgment.*
+
+</div>

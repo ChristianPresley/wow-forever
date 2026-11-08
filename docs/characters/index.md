@@ -1,5 +1,41 @@
 # Characters
 
+Everything about the character you play: the nine races, the nine classes and the account-wide systems around them.
+
+## In this section
+
+<div class="grid cards fc-hub" markdown>
+
+-   :material-account-multiple: **[Races & Skyborne](races.md)**
+
+    Racials, the race/class matrix, starting zones and the new Skyborne race.
+
+-   :material-shield-sword: **[Classes](classes/index.md)**
+
+    Cross-class changes and per-class talents for all nine classes.
+
+-   :material-star-circle: **[Legacy System](legacy.md)**
+
+    Account-wide challenges, Legacy Points, perk trees and rewards.
+
+-   :material-hammer-wrench: **[Professions](professions.md)**
+
+    600+ new recipes, crates, Merchant's Favor and profession racials.
+
+-   :material-stairs-up: **[Leveling, Mounts & Reputation](leveling.md)**
+
+    Leveling pace, riding costs, new reputations and dual spec.
+
+-   :material-palette-swatch: **[Customization & Transmog](customization.md)**
+
+    Two-part names, SD/HD models, the barbershop and transmog rules.
+
+</div>
+
+## At a glance
+
+<div class="compare" markdown>
+
 | System | In Forever | vs Classic |
 |---|---|---|
 | **Level cap** | 60, permanent | The Classic cap, made permanent |
@@ -16,14 +52,8 @@
 | **Models** | HD ("Enhanced") or SD ("Classic") toggle | New |
 | **Names** | Required **first and last name** | New |
 
-## Pages
+</div>
 
-- **[Races](races.md)**, including the new **[Skyborne](races.md#skyborne)**
-- **[Classes](classes/index.md)**: per-class changes and talents
-- **[Legacy System](legacy.md)**
-- **[Professions](professions.md)**
-- **[Leveling, Mounts & Reputation](leveling.md)**
-- **[Customization & Transmog](customization.md)**
 
 !!! warning "Class data is still moving"
     Most class detail comes from Blizzard's beta Class Deep Dives (Sept–Oct 2026), as summarized by Warcraft Tavern. The pre-launch development notes (early Nov 2026) **changed many numbers and removed several talents**. Where the two differ, these pages use the pre-launch notes.

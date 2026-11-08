@@ -18,9 +18,13 @@ search:
 | Marker | Meaning |
 |---|---|
 | **Conflict** (note box) | Sources disagree. Every version is listed |
-| *unconfirmed* | Comes from a single, non-official source |
-| *fan source* | From a fan or guide site of lower reliability |
-| **new** | New in Forever (vs. original Classic) |
+| **Forever** box | A change that exists only in Forever (vs. original Classic) |
+| *unconfirmed*{ .unconfirmed } | Comes from a single, non-official source |
+| *fan source*{ .fan-source } | From a fan or guide site of lower reliability |
+| **New**{ .badge .new } | New in Forever (vs. original Classic) |
+| **Official**{ .badge .official } **Stated**{ .badge .stated } **Done**{ .badge .done } | Confidence on dated plans (see [Roadmap](content/roadmap.md)) |
+| **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps } | Roles a class can fill |
+| <span class="fc-alias">BRD</span> **Also called** | Common abbreviations and slang, shown so search finds them ([Glossary](community/glossary.md#player-shorthand)) |
 
 When the beta Class Deep Dives and the later pre-launch notes disagree, the wiki follows the **newer** pre-launch notes.
 

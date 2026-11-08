@@ -1,5 +1,9 @@
 # Hyjal Summit
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Hyjal Summit</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **20-player raid**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | Raid (new in Forever). *Not* the Burning Crusade raid of the same name |
@@ -10,11 +14,11 @@
 | **Bosses** | 13 |
 | **Reset** | Weekly |
 
-## Overview
+</aside>
 
 The raid opens with an **ancient guardian** (Bandalar), then **branches into above-ground and below-ground routes** that meet again for the final encounters. Fel corruption is a running theme, and guilds may split a clear across nights.
 
-Blizzard has teased a **legendary** item tied to this raid. Details are unconfirmed.
+Blizzard has teased a **legendary** item tied to this raid. Details are *unconfirmed*{ .unconfirmed }.
 
 ## Bosses (wiki order)
 
@@ -46,4 +50,4 @@ Blizzard has teased a **legendary** item tied to this raid. Details are unconfir
 
 ## Reputation
 
-Mount Hyjal's factions are described as the level-60 endgame reputations. The name *Guardians of Hyjal* comes from fan sources and is **unconfirmed**.
+Mount Hyjal's factions are described as the level-60 endgame reputations. The name *Guardians of Hyjal* comes from fan sources and is *unconfirmed*{ .unconfirmed }.

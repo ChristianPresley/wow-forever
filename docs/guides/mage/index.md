@@ -1,4 +1,5 @@
 ---
+description: "Mage guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
 tags:
   - Mage
 search:
@@ -6,6 +7,14 @@ search:
 ---
 
 # Mage Guide
+
+<div class="guide-head" data-class="mage" markdown>
+
+:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **DPS**{ .badge .dps }
+
+<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+
+</div>
 
 !!! info "Current as of 7 November 2026"
     Forever launched on 4 November. This guide follows Blizzard's class deep dive (Oct 2026), the pre-launch development notes (early Nov) and launch-week guides. Talent numbers were still moving in the last beta builds, so check the in-game tooltip before you commit gold to a respec. Reference data lives on the [Mage class page](../../characters/classes/mage.md).
@@ -124,13 +133,24 @@ Two approaches are popular. Both are fine; Frost is safer, Arcane kills a little
 
     Talent order from Warcraft Tavern's leveling build; the level column is this wiki's arithmetic (one point per level from 10, no *Talented* Legacy points), not a published table.
 
-    | Levels | Tree points | Take |
-    |---|---|---|
-    | 10–16 | 7 Arcane | Arcane Concentration and the early Arcane path; Warcraft Tavern takes these first for Missile Barrage procs from rank-1 Frostbolt |
-    | 17–27 | 11 Frost | Improved Frostbolt, Frostbite, Ice Shards → **Ice Lance** at 27 |
-    | 28–32 | 16 Frost | Shatter, **Ice Block** |
-    | 33–37 | 21 Frost | Fingers of Frost, **Cold Snap** |
-    | 38–60 | rest | Winter's Chill, Ice Barrier, Elemental Precision, Arctic Reach; leftover points back into Arcane |
+    <div class="milestones" markdown>
+
+    Lv 10–16
+    :   **7 Arcane**{ .pts } Arcane Concentration and the early Arcane path; Warcraft Tavern takes these first for Missile Barrage procs from rank-1 Frostbolt
+
+    Lv 17–27
+    :   **11 Frost**{ .pts } Improved Frostbolt, Frostbite, Ice Shards → **Ice Lance** at 27
+
+    Lv 28–32
+    :   **16 Frost**{ .pts } Shatter, **Ice Block**
+
+    Lv 33–37
+    :   **21 Frost**{ .pts } Fingers of Frost, **Cold Snap**
+
+    Lv 38–60
+    :   **rest**{ .pts } Winter's Chill, Ice Barrier, Elemental Precision, Arctic Reach; leftover points back into Arcane
+
+    </div>
 
     If you'd rather have Ice Lance at 20, skip the Arcane points and put them in at the end.
 
@@ -186,51 +206,74 @@ Suggested dual spec at 40: one PvE damage build (Arcane or Fire) and one Frost b
 
 === "Arcane"
 
-    1. **Arcane Blast** to build stacks (each stack also raises your other spells' damage via Intellect).
-    2. **Arcane Missiles** whenever **Missile Barrage** procs (free and faster).
-    3. Cast Arcane Blast on **Clearcasting** (Arcane Concentration) procs — the free cast ignores the stack cost.
-    4. Don't spam Arcane Blast to 4 stacks unless you're bursting: weave Frostbolt or Fireball, which also proc Missile Barrage, and let the stacks fall off.
-    5. Burn phase: Presence of Mind → Arcane Power → Arcane Blast chain, then Evocation.
+    !!! rotation "Arcane priority"
+
+        <div class="priority" markdown>
+
+        1. **Arcane Blast** to build stacks (each stack also raises your other spells' damage via Intellect).
+        2. **Arcane Missiles** whenever **Missile Barrage** procs (free and faster).
+        3. Cast Arcane Blast on **Clearcasting** (Arcane Concentration) procs — the free cast ignores the stack cost.
+        4. Don't spam Arcane Blast to 4 stacks unless you're bursting: weave Frostbolt or Fireball, which also proc Missile Barrage, and let the stacks fall off.
+        5. Burn phase: Presence of Mind → Arcane Power → Arcane Blast chain, then Evocation.
+
+        </div>
+
 
 === "Fire"
 
-    1. Pre-pull **Pyroblast**.
-    2. **Scorch** until Improved Scorch is at 5 stacks (self-only, so every Fire Mage keeps their own).
-    3. **Fireball** as filler, **Fire Blast** on cooldown.
-    4. At **3 Heating Up** stacks, cast **Pyroblast** (1.5 s).
-    5. **Arcane Missiles** on Missile Barrage if you took it.
-    6. **Combustion** with Heating Up stacks building for the big crits.
+    !!! rotation "Fire priority"
+
+        <div class="priority" markdown>
+
+        1. Pre-pull **Pyroblast**.
+        2. **Scorch** until Improved Scorch is at 5 stacks (self-only, so every Fire Mage keeps their own).
+        3. **Fireball** as filler, **Fire Blast** on cooldown.
+        4. At **3 Heating Up** stacks, cast **Pyroblast** (1.5 s).
+        5. **Arcane Missiles** on Missile Barrage if you took it.
+        6. **Combustion** with Heating Up stacks building for the big crits.
+
+        </div>
+
 
 === "Frost"
 
-    1. **Frostbolt** as your main spell.
-    2. **Ice Lance** whenever the target is Frozen: Frost Nova, Frostbite or a **Fingers of Frost** proc. Remember the shared 8 s cooldown with Fire Blast.
-    3. If nothing has procced in melee range: **Frost Nova → step back → Ice Lance**.
-    4. **Cone of Cold** for finishing and AoE, ideally once Winter's Chill is stacked.
-    5. **Frostfire Bolt** (40+) against Frost-resistant targets, or as a slow on a runner.
+    !!! rotation "Frost priority"
+
+        <div class="priority" markdown>
+
+        1. **Frostbolt** as your main spell.
+        2. **Ice Lance** whenever the target is Frozen: Frost Nova, Frostbite or a **Fingers of Frost** proc. Remember the shared 8 s cooldown with Fire Blast.
+        3. If nothing has procced in melee range: **Frost Nova → step back → Ice Lance**.
+        4. **Cone of Cold** for finishing and AoE, ideally once Winter's Chill is stacked.
+        5. **Frostfire Bolt** (40+) against Frost-resistant targets, or as a slow on a runner.
+
+        </div>
+
 
 ### Useful macros
 
-```
-#showtooltip Polymorph
-/cast [@focus,exists,harm,nodead][] Polymorph
-```
+??? example "Show 3 macros"
 
-```
-#showtooltip Counterspell
-/stopcasting
-/cast [@focus,exists,harm][] Counterspell
-```
+    ```
+    #showtooltip Polymorph
+    /cast [@focus,exists,harm,nodead][] Polymorph
+    ```
 
-```
-#showtooltip
-/use Mana Agate
-/use Mana Jade
-/use Mana Citrine
-/use Mana Ruby
-```
+    ```
+    #showtooltip Counterspell
+    /stopcasting
+    /cast [@focus,exists,harm][] Counterspell
+    ```
 
-The client has built-in mouseover and self-cast keys and a Cooldown Manager, so many old macro tricks are now settings.
+    ```
+    #showtooltip
+    /use Mana Agate
+    /use Mana Jade
+    /use Mana Citrine
+    /use Mana Ruby
+    ```
+
+    The client has built-in mouseover and self-cast keys and a Cooldown Manager, so many old macro tricks are now settings.
 
 ## Leveling walkthrough 1–60
 
@@ -241,59 +284,69 @@ General rules for the whole trip:
 - Mobs take about 10–15 s to kill solo. Pull one at a time until you have Frost Nova and Ice Lance.
 - **Quests give much more XP than dungeon mobs.** Run dungeons with their quests, not for boosting.
 
-=== "1–10"
+<div class="route" markdown>
 
-    - **Zones:** your starting zone (see each race add-on). Skyborne start on [Zephras Isle](../../world/zephras-isle.md) and stay there to about 12.
-    - **Train:** Frostbolt (4), Conjure Water (4), Fire Blast (6), Polymorph and Arcane Missiles (8), Frost Nova (10).
-    - Do the class letter quest from your first trainer (Classic-era).
-    - Pick a gathering profession at the starter quest (+2 skill) or start Tailoring right away.
-    - Fight with Frostbolt; finish with Fire Blast.
+### 1–10
 
-=== "10–20"
 
-    - **Alliance:** Westfall or Loch Modan, then Darkshore by the new **Stormwind Harbor ↔ Auberdine** boat; Redridge at 16+.
-    - **Horde:** the Barrens or Silverpine Forest.
-    - **Skyborne (Alliance):** airship to Dalaran, then route into Hillsbrad and the Wetlands (see the add-on).
-    - **Talents:** first points at 10. See [the leveling build](#recommended-leveling-build).
-    - **Dungeons:** [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18, Ironforge), Ragefire Chasm (13–19), [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) (15–22, Tirisfal), Deadmines and Wailing Caverns (17–25).
-    - **Level 20:** Blink, Evocation, Blizzard, Mana Shield, capital teleports. Turn in **10 library books** for your first book quest.
-    - Start the **Cozy Sleeping Bag** hunt at 14.
+- **Zones:** your starting zone (see each race add-on). Skyborne start on [Zephras Isle](../../world/zephras-isle.md) and stay there to about 12.
+- **Train:** Frostbolt (4), Conjure Water (4), Fire Blast (6), Polymorph and Arcane Missiles (8), Frost Nova (10).
+- Do the class letter quest from your first trainer (Classic-era).
+- Pick a gathering profession at the starter quest (+2 skill) or start Tailoring right away.
+- Fight with Frostbolt; finish with Fire Blast.
 
-=== "20–30"
+### 10–20
 
-    - **Alliance:** Duskwood, Wetlands, Ashenvale, Hillsbrad.
-    - **Horde:** Stonetalon, Hillsbrad, Ashenvale, Thousand Needles.
-    - **Dungeons:** Shadowfang Keep, [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) (24–33), Blackfathom Deeps, the Stockade, [City of Dalaran](../../content/dungeons/city-of-dalaran.md) (28–35, needs the Dalaran Sewer Key).
-    - **Gear:** Tailoring robes, Excavation Site and Dalaran spell power drops.
-    - **Level 25:** first *Mage — Novice* Legacy Point (first Mage on your account only).
-    - Use Polymorph on the second mob of every double pull.
 
-=== "30–40"
+- **Alliance:** Westfall or Loch Modan, then Darkshore by the new **Stormwind Harbor ↔ Auberdine** boat; Redridge at 16+.
+- **Horde:** the Barrens or Silverpine Forest.
+- **Skyborne (Alliance):** airship to Dalaran, then route into Hillsbrad and the Wetlands (see the add-on).
+- **Talents:** first points at 10. See [the leveling build](#recommended-leveling-build).
+- **Dungeons:** [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18, Ironforge), Ragefire Chasm (13–19), [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) (15–22, Tirisfal), Deadmines and Wailing Caverns (17–25).
+- **Level 20:** Blink, Evocation, Blizzard, Mana Shield, capital teleports. Turn in **10 library books** for your first book quest.
+- Start the **Cozy Sleeping Bag** hunt at 14.
 
-    - **Alliance:** Arathi Highlands, Stranglethorn, Desolace, Alterac Mountains (Dalaran is Alliance-friendly).
-    - **Horde:** Arathi, Stranglethorn, Desolace, Dustwallow. Horde Mages are **attacked on sight in Dalaran**.
-    - **Dungeons:** Razorfen Kraul, Gnomeregan, Scarlet Monastery wings, [The Drowned City](../../content/dungeons/drowned-city.md) (35–42).
-    - **Level 35:** second library-book quest (20 books). Artisan professions open.
-    - **Level 30:** Ice Armor. **34:** Mage Armor (much better regen in Forever; use it when leveling).
-    - Battlegrounds from 30: [Darkspear Islands](../../content/pvp/battlegrounds.md#darkspear-islands).
+### 20–30
 
-=== "40–50"
 
-    - **Level 40:** **Frostfire Bolt**, **dual spec (50g)**, **riding (100g)**. Save gold from 30 onward.
-    - **New zone:** [Riverglades](../../world/zones.md#riverglades) (35–45): Farholde Keep (A) or Rog'mar (H).
-    - Also: Tanaris, Feralas, Badlands, Swamp of Sorrows, the Hinterlands.
-    - **Dungeons:** [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) (40–47), Uldaman, Zul'Farrak, Razorfen Downs.
-    - **Level 45:** third library-book quest (25 books) and *Mage — Experienced* Legacy Point.
+- **Alliance:** Duskwood, Wetlands, Ashenvale, Hillsbrad.
+- **Horde:** Stonetalon, Hillsbrad, Ashenvale, Thousand Needles.
+- **Dungeons:** Shadowfang Keep, [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) (24–33), Blackfathom Deeps, the Stockade, [City of Dalaran](../../content/dungeons/city-of-dalaran.md) (28–35, needs the Dalaran Sewer Key).
+- **Gear:** Tailoring robes, Excavation Site and Dalaran spell power drops.
+- **Level 25:** first *Mage — Novice* Legacy Point (first Mage on your account only).
+- Use Polymorph on the second mob of every double pull.
 
-=== "50–60"
+### 30–40
 
-    - **Zones:** Un'Goro, Azshara (many new quests), Felwood, Western/Eastern Plaguelands, Winterspring, Burning Steppes, Silithus.
-    - **Dungeons:** [Alcaz Prison](../../content/dungeons/alcaz-prison.md) (48–55), Maraudon, Sunken Temple, Blackrock Depths, [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60), [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) (58–60).
-    - **Level 60:** *Mage — Master* Legacy Point; [Mount Hyjal](../../world/zones.md#mount-hyjal) opens through Darkwhisper Gorge in Winterspring.
-    - Conjure Mana Ruby at 58 (Classic level).
+
+- **Alliance:** Arathi Highlands, Stranglethorn, Desolace, Alterac Mountains (Dalaran is Alliance-friendly).
+- **Horde:** Arathi, Stranglethorn, Desolace, Dustwallow. Horde Mages are **attacked on sight in Dalaran**.
+- **Dungeons:** Razorfen Kraul, Gnomeregan, Scarlet Monastery wings, [The Drowned City](../../content/dungeons/drowned-city.md) (35–42).
+- **Level 35:** second library-book quest (20 books). Artisan professions open.
+- **Level 30:** Ice Armor. **34:** Mage Armor (much better regen in Forever; use it when leveling).
+- Battlegrounds from 30: [Darkspear Islands](../../content/pvp/battlegrounds.md#darkspear-islands).
+
+### 40–50
+
+
+- **Level 40:** **Frostfire Bolt**, **dual spec (50g)**, **riding (100g)**. Save gold from 30 onward.
+- **New zone:** [Riverglades](../../world/zones.md#riverglades) (35–45): Farholde Keep (A) or Rog'mar (H).
+- Also: Tanaris, Feralas, Badlands, Swamp of Sorrows, the Hinterlands.
+- **Dungeons:** [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) (40–47), Uldaman, Zul'Farrak, Razorfen Downs.
+- **Level 45:** third library-book quest (25 books) and *Mage — Experienced* Legacy Point.
+
+### 50–60
+
+
+- **Zones:** Un'Goro, Azshara (many new quests), Felwood, Western/Eastern Plaguelands, Winterspring, Burning Steppes, Silithus.
+- **Dungeons:** [Alcaz Prison](../../content/dungeons/alcaz-prison.md) (48–55), Maraudon, Sunken Temple, Blackrock Depths, [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60), [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) (58–60).
+- **Level 60:** *Mage — Master* Legacy Point; [Mount Hyjal](../../world/zones.md#mount-hyjal) opens through Darkwhisper Gorge in Winterspring.
+- Conjure Mana Ruby at 58 (Classic level).
 
 !!! warning "AoE leveling"
     The world-first level-60 group included three Mages using big AoE pulls, so it still works. But the Improved Blizzard and Cone of Cold nerfs make solo kiting of huge packs riskier than in Classic, and dungeon mobs give less XP. Learn single-target questing first.
+
+</div>
 
 ## Dungeons
 
@@ -398,13 +451,15 @@ You can spend up to 16 points per character.
 
 ## Hardcore notes
 
-[Hardcore](../../about/hardcore.md) arrives in winter 2026/27. Mages die to being caught.
+!!! hardcore "Hardcore survival"
 
-- Play **Frost**. Two escapes (Ice Block plus Cold Snap reset) and constant slows.
-- Always keep **Blink, Frost Nova and Ice Block** off cooldown before a pull you aren't sure about.
-- Mana Shield and Ice Barrier before pulls; Evocation is an emergency refill, not a damage tool.
-- Polymorph the adds and never fight more than you can kill. Watch for runners (Frostfire Bolt's slow helps at 40+).
-- Remember the Troll's *Rapid Regeneration* and Human's *Will to Survive* as extra lifelines.
+    [Hardcore](../../about/hardcore.md) arrives in winter 2026/27. Mages die to being caught.
+
+    - Play **Frost**. Two escapes (Ice Block plus Cold Snap reset) and constant slows.
+    - Always keep **Blink, Frost Nova and Ice Block** off cooldown before a pull you aren't sure about.
+    - Mana Shield and Ice Barrier before pulls; Evocation is an emergency refill, not a damage tool.
+    - Polymorph the adds and never fight more than you can kill. Watch for runners (Frostfire Bolt's slow helps at 40+).
+    - Remember the Troll's *Rapid Regeneration* and Human's *Will to Survive* as extra lifelines.
 
 ## Common mistakes & FAQ
 
@@ -429,12 +484,14 @@ You can spend up to 16 points per character.
 
 ## Sources
 
-- [Warcraft Tavern: Mage & Shaman deep dive](https://www.warcrafttavern.com/forever/news/scrolls-totems-mage-shaman-deep-dive-for-wow-forever/)
-- [Warcraft Tavern: Mage leveling guide](https://www.warcrafttavern.com/forever/guides/mage-leveling/)
-- [Warcraft Tavern: Mage guide](https://www.warcrafttavern.com/forever/guides/mage/)
-- [Method.gg: Mage leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-mage-leveling-guide-and-talents)
-- [Kami-Labs: every reworked Mage spell and talent](https://kami-labs.fr/en/wow-forever/mage-wow-forever-sorts-et-talents-modifies/)
-- [Kami-Labs: Ice Lance 8-second cooldown](https://kami-labs.fr/en/wow-forever/mage-wow-forever-changements-28-octobre/)
-- [Mobalytics: Arcane Mage guide](https://mobalytics.gg/wow-forever/classes/arcane-mage-guide)
-- [Mobalytics: Frost AoE leveling guide](https://mobalytics.gg/wow-forever/profile/kargoz/classes/1-60-frost-mage-aoe-leveling-guide-talents-strategy-best-grinding-spots)
-- [Warcraft Tavern: world-first level 60s](https://www.warcrafttavern.com/forever/news/world-first-level-60s-in-wow-forever-paladin-shaman-3-mages/)
+??? quote "9 sources"
+
+    - [Warcraft Tavern: Mage & Shaman deep dive](https://www.warcrafttavern.com/forever/news/scrolls-totems-mage-shaman-deep-dive-for-wow-forever/)
+    - [Warcraft Tavern: Mage leveling guide](https://www.warcrafttavern.com/forever/guides/mage-leveling/)
+    - [Warcraft Tavern: Mage guide](https://www.warcrafttavern.com/forever/guides/mage/)
+    - [Method.gg: Mage leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-mage-leveling-guide-and-talents)
+    - [Kami-Labs: every reworked Mage spell and talent](https://kami-labs.fr/en/wow-forever/mage-wow-forever-sorts-et-talents-modifies/)
+    - [Kami-Labs: Ice Lance 8-second cooldown](https://kami-labs.fr/en/wow-forever/mage-wow-forever-changements-28-octobre/)
+    - [Mobalytics: Arcane Mage guide](https://mobalytics.gg/wow-forever/classes/arcane-mage-guide)
+    - [Mobalytics: Frost AoE leveling guide](https://mobalytics.gg/wow-forever/profile/kargoz/classes/1-60-frost-mage-aoe-leveling-guide-talents-strategy-best-grinding-spots)
+    - [Warcraft Tavern: world-first level 60s](https://www.warcrafttavern.com/forever/news/world-first-level-60s-in-wow-forever-paladin-shaman-3-mages/)

@@ -1,0 +1,27 @@
+{
+  "name": "forever-codex-quality",
+  "private": true,
+  "description": "Quality gates for the Forever Codex static site: accessibility, Lighthouse, HTML validation and links.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "mkdocs build --strict",
+    "serve:site": "node tests/serve.mjs",
+    "test:a11y": "node tests/a11y.mjs",
+    "test:html": "node tests/html.mjs",
+    "test:lhci": "lhci autorun --config=tests/lighthouserc.json",
+    "test:links": "node tests/links.mjs",
+    "test": "npm run test:html && npm run test:a11y && npm run test:links",
+    "test:lhci:summary": "node tests/lhci-summary.mjs tests/reports/lhci tests/reports/lhci.md",
+    "test:contrast": "node tests/contrast.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@lhci/cli": "^0.16.0",
+    "html-validate": "^11.19.0",
+    "playwright-core": "^1.65.0"
+  }
+}

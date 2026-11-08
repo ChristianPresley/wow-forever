@@ -12,7 +12,7 @@ theme:
   language: en
   font: false
   icon:
-    logo: material/sword-cross
+    logo: codex/crest
     repo: fontawesome/brands/github
   favicon: assets/favicon.svg
   palette:
@@ -54,8 +54,11 @@ theme:
     - toc.follow
 
 extra_css:
-  - https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500..800;1,500..800&family=Alegreya+SC:wght@500;700&family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&display=swap
   - stylesheets/extra.css
+  - stylesheets/identity.css
+  - stylesheets/interactive.css
+  - stylesheets/guides.css
+  - stylesheets/reference.css
 
 extra_javascript:
   - javascripts/codex.js
@@ -80,6 +83,9 @@ markdown_extensions:
       toc_depth: 3
   - pymdownx.details
   - pymdownx.keys
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
@@ -88,6 +94,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
 
 plugins:
   - search:
@@ -97,7 +106,28 @@ plugins:
       type: date
       enable_creation_date: false
       fallback_to_build_date: true
+  - social:
+      enabled: !ENV [CI, false]
+      cards_layout_dir: layouts
+      cards_layout: codex
+  - optimize:
+      enabled: !ENV [CI, false]
   - privacy
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      cache_safe: true
+      htmlmin_opts:
+        remove_comments: true
+      js_files:
+        - javascripts/codex.js
+      css_files:
+        - stylesheets/extra.css
+        - stylesheets/identity.css
+        - stylesheets/interactive.css
+        - stylesheets/guides.css
+        - stylesheets/reference.css
 
 nav:
   - Home: index.md
@@ -250,6 +280,9 @@ nav:
       - Tags: tags.md
       - Sources: sources.md
       - About this wiki: about-this-wiki.md
+
+watch:
+  - includes
 
 validation:
   nav:

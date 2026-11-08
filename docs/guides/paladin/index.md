@@ -1,4 +1,5 @@
 ---
+description: "Paladin guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
 tags:
   - Paladin
 search:
@@ -6,6 +7,14 @@ search:
 ---
 
 # Paladin Guide
+
+<div class="guide-head" data-class="paladin" markdown>
+
+:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+
+</div>
 
 !!! info "Current as of 7 November 2026"
     Written three days after launch (Patch 1.60.1). The paladin trees were reworked on **30 October** and retuned in the **2 November** pre-launch notes, so many beta-era guides are out of date. Blizzard has said a larger balance pass will come once players reach the 30s. Reference data lives on the [Paladin class page](../../characters/classes/paladin.md).
@@ -145,19 +154,42 @@ Talents start at level 10, one point per level, 51 at level 60. Each tree has si
 
 **Leveling (Retribution, then a second spec at 40).** The two most-used launch orders agree on the shape; they differ only in the order of the 15–23 picks.
 
-| Level | Points |
-|---|---|
-| 10–14 | Benediction 5/5 |
-| 15–19 | Improved Judgement 2/2, Conviction 3/3 (either order) |
-| 20–23 | Sanctified Judgement 3/3, Seal of Command 1/1 |
-| 24–25 | Pursuit of Justice 2/2 |
-| 26–28 | Two-Handed Weapon Specialization 3/3 |
-| 29 | Sacred Arbiter |
-| 30–34 | Vengeance 3/3, Vindication 1, Repentance |
-| 35–39 | Champion of the Light 5/5 |
-| 40–45 | Unsealed Wrath (as soon as legal), Divine Strength 5/5 |
-| 46–55 | Improved Seals 5/5, Divine Intellect 5/5 |
-| 56–60 | Precision 3/3 *or* Reverence 2 + Holy Conduit 2 |
+<div class="milestones" markdown>
+
+Lv 10–14
+:   Benediction 5/5
+
+Lv 15–19
+:   Improved Judgement 2/2, Conviction 3/3 (either order)
+
+Lv 20–23
+:   Sanctified Judgement 3/3, Seal of Command 1/1
+
+Lv 24–25
+:   Pursuit of Justice 2/2
+
+Lv 26–28
+:   Two-Handed Weapon Specialization 3/3
+
+Lv 29
+:   Sacred Arbiter
+
+Lv 30–34
+:   Vengeance 3/3, Vindication 1, Repentance
+
+Lv 35–39
+:   Champion of the Light 5/5
+
+Lv 40–45
+:   Unsealed Wrath (as soon as legal), Divine Strength 5/5
+
+Lv 46–55
+:   Improved Seals 5/5, Divine Intellect 5/5
+
+Lv 56–60
+:   Precision 3/3 *or* Reverence 2 + Holy Conduit 2
+
+</div>
 
 This lands at **12/8/31** (Holy/Protection/Retribution), which is also the most-cited level-60 PvE Retribution build.
 
@@ -222,53 +254,76 @@ Source: a beta spellbook listing (build 70755). Newly learned spells are **not**
 
 === "Retribution"
 
-    1. Keep a Seal up: **Seal of Righteousness** until 20, then **Seal of Command** with a slow two-hander (3.2 s or slower).
-    2. **Judgement** on cooldown. It is off the GCD and no longer eats your Seal, so there is nothing to reapply.
-    3. **Holy Strike** on cooldown.
-    4. **Consecration** when two or more enemies are on you.
-    5. On a tough mob: **Hammer of Justice**, then Judgement and Holy Strike while it is stunned.
-    6. **Exorcism** on undead and demons; **Hammer of Wrath** (44+) as an execute.
+    !!! rotation "Retribution priority"
+
+        <div class="priority" markdown>
+
+        1. Keep a Seal up: **Seal of Righteousness** until 20, then **Seal of Command** with a slow two-hander (3.2 s or slower).
+        2. **Judgement** on cooldown. It is off the GCD and no longer eats your Seal, so there is nothing to reapply.
+        3. **Holy Strike** on cooldown.
+        4. **Consecration** when two or more enemies are on you.
+        5. On a tough mob: **Hammer of Justice**, then Judgement and Holy Strike while it is stunned.
+        6. **Exorcism** on undead and demons; **Hammer of Wrath** (44+) as an execute.
+
+        </div>
+
 
     **Unsealed Wrath (40+):** swing a few times with one Seal to build stacks, then switch Seals. The next hit with the new Seal fires each stored Seal's proc once. A common pattern is to build on Seal of Command and switch to Seal of Righteousness just before a slow swing lands. Timing is still being worked out, and the talent's value at launch is not settled.
 
 === "Protection"
 
-    1. **Righteous Fury** on, **Seal of Fury** up.
-    2. Pull with **Judgement**, or with **Swift Judgement** for a second instant hit.
-    3. **Consecration** on packs; it is your main AoE threat.
-    4. **Holy Strike** on cooldown (every 6 s with Shieldsworn), **Holy Shield** kept up.
-    5. If a mob runs loose: **Judgement of Fury** taunts it (10 yd).
-    6. Emergencies: **Templar's Bulwark**, then Divine Protection or Lay on Hands. Bulwark and Divine Shield share Forbearance, so do not plan to chain them.
+    !!! rotation "Protection priority"
+
+        <div class="priority" markdown>
+
+        1. **Righteous Fury** on, **Seal of Fury** up.
+        2. Pull with **Judgement**, or with **Swift Judgement** for a second instant hit.
+        3. **Consecration** on packs; it is your main AoE threat.
+        4. **Holy Strike** on cooldown (every 6 s with Shieldsworn), **Holy Shield** kept up.
+        5. If a mob runs loose: **Judgement of Fury** taunts it (10 yd).
+        6. Emergencies: **Templar's Bulwark**, then Divine Protection or Lay on Hands. Bulwark and Divine Shield share Forbearance, so do not plan to chain them.
+
+        </div>
+
 
 === "Holy"
 
-    1. **Oath of Light** on the tank before the pull, and keep it up (5 minutes).
-    2. **Holy Light** (downranked) for steady healing on the Oath target; **Flash of Light** for efficient top-ups.
-    3. **Holy Shock** for instant emergencies; on non-Oath targets it gets Boundless Light's crit.
-    4. **Light's Vigil** before a big hit: the next Holy Shock has no cooldown and splashes the tank's party.
-    5. **Divine Favor** + Holy Light for a guaranteed big crit.
-    6. Cleanse poisons, diseases and magic. Keep **Concentration Aura** up if you are being hit.
+    !!! rotation "Holy priority"
+
+        <div class="priority" markdown>
+
+        1. **Oath of Light** on the tank before the pull, and keep it up (5 minutes).
+        2. **Holy Light** (downranked) for steady healing on the Oath target; **Flash of Light** for efficient top-ups.
+        3. **Holy Shock** for instant emergencies; on non-Oath targets it gets Boundless Light's crit.
+        4. **Light's Vigil** before a big hit: the next Holy Shock has no cooldown and splashes the tank's party.
+        5. **Divine Favor** + Holy Light for a guaranteed big crit.
+        6. Cleanse poisons, diseases and magic. Keep **Concentration Aura** up if you are being hit.
+
+        </div>
+
 
 ### Useful macros
 
-```
-#showtooltip Judgement
-/castsequence reset=target Seal of Righteousness, Judgement
-```
+??? example "Show 3 macros"
 
-```
-#showtooltip Holy Strike
-/startattack
-/cast Holy Strike
-```
+    ```
+    #showtooltip Judgement
+    /castsequence reset=target Seal of Righteousness, Judgement
+    ```
 
-```
-#showtooltip Blessing of Kings
-/cast [@mouseover,help,nodead][help,nodead][@player] Blessing of Kings
-```
+    ```
+    #showtooltip Holy Strike
+    /startattack
+    /cast Holy Strike
+    ```
 
-!!! tip "Bars"
-    Keep Divine Protection, Lay on Hands and Hammer of Justice on easy keys. Put your Seals together so you can swap quickly for Unsealed Wrath.
+    ```
+    #showtooltip Blessing of Kings
+    /cast [@mouseover,help,nodead][help,nodead][@player] Blessing of Kings
+    ```
+
+    !!! tip "Bars"
+        Keep Divine Protection, Lay on Hands and Hammer of Justice on easy keys. Put your Seals together so you can swap quickly for Unsealed Wrath.
 
 ---
 
@@ -278,6 +333,8 @@ Retribution is the most common leveling spec; Protection works well for dungeon-
 
 !!! tip "Class trainers"
     Alliance paladins train in Stormwind or Ironforge. Forsaken paladins have **no trainer in Undercity or Orgrimmar**; they train at **Bandarion Keep** (Tirisfal), Brill or Deathknell. Plan your return trips — see [Undead Paladin](undead.md#route-to-60).
+
+<div class="route" markdown>
 
 ### 1–10: Starting zone
 
@@ -334,6 +391,8 @@ Retribution is the most common leveling spec; Protection works well for dungeon-
 - **Dungeons:** Sunken Temple, Blackrock Depths, Dire Maul, [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60), Lower Blackrock Spire, Scholomance, Stratholme, [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) (58–60).
 - Undead-heavy Scholomance and Stratholme are paladin-friendly: Exorcism, Holy Wrath and Turn Undead all work on most of their mobs.
 - **Level 60:** third paladin Legacy Point, Journeyman Riding (1,000g), the **epic mount quest** (Charger for Alliance; *Forsaken Charger* "in the name of Retribution" for Undead), and [Mount Hyjal](../../world/zones.md#mount-hyjal).
+
+</div>
 
 ---
 
@@ -443,14 +502,16 @@ Paladin class Legacy Points come at levels **25, 45 and 60**. See [Legacy System
 
 ## Hardcore notes
 
-The Hardcore ruleset arrives this winter. Paladins are among the safest Hardcore classes, but their survival tools need discipline.
+!!! hardcore "Hardcore survival"
 
-- **Divine Protection** at 6 and **Divine Shield** at 34 are escape buttons; hearth while shielded if a pull goes wrong.
-- **Lay on Hands** is now on a 20-minute cooldown, so you'll have it for most bad fights.
-- **Templar's Bulwark** and Divine Shield share **Forbearance**. Plan for one, not both.
-- No slow or interrupt: avoid fleeing humanoids near other packs and casters you can't reach.
-- Keep Blessing of Freedom handy for roots and snares.
-- Undead can drop fear with Will of the Forsaken. Humans can break stuns with Will to Survive.
+    The Hardcore ruleset arrives this winter. Paladins are among the safest Hardcore classes, but their survival tools need discipline.
+
+    - **Divine Protection** at 6 and **Divine Shield** at 34 are escape buttons; hearth while shielded if a pull goes wrong.
+    - **Lay on Hands** is now on a 20-minute cooldown, so you'll have it for most bad fights.
+    - **Templar's Bulwark** and Divine Shield share **Forbearance**. Plan for one, not both.
+    - No slow or interrupt: avoid fleeing humanoids near other packs and casters you can't reach.
+    - Keep Blessing of Freedom handy for roots and snares.
+    - Undead can drop fear with Will of the Forsaken. Humans can break stuns with Will to Survive.
 
 ---
 
@@ -481,18 +542,20 @@ The Hardcore ruleset arrives this winter. Paladins are among the safest Hardcore
 
 ## Sources
 
-- [Warcraft Tavern: All Changes to Paladins in WoW Forever](https://www.warcrafttavern.com/forever/news/all-changes-to-paladins-in-wow-forever/) (September beta)
-- [Warcraft Tavern: Class Trainer Locations](https://www.warcrafttavern.com/forever/guides/class-trainers/)
-- [Warcraft Tavern: Seal Twisting & Shockadins, Paladin Deep Dive](https://www.warcrafttavern.com/forever/news/seal-twisting-shockadins-paladin-deep-dive-for-wow-forever/)
-- [Warcraft Tavern: Pre-Launch Class Changes](https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/)
-- [Kami Labs: November 2 patch notes](https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/)
-- [Method: Paladin Leveling Guide & Talents](https://www.method.gg/wow-forever/wow-forever-paladin-leveling-guide-and-talents)
-- [ConquestCapped: Paladin Leveling](https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-leveling/)
-- [ConquestCapped: Paladin Mount Guide](https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-mount/)
-- [Talents Forever: Paladin leveling orders](https://talentsforever.com/paladin/leveling)
-- [Leprestore: Retribution Paladin Guide](https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-retribution-paladin-guide-best-builds-race-professions/)
-- [ForG: Forsaken Paladin class quests](https://forg.gg/en/forever/tips/forsaken-paladin)
-- [ForG: Wolfsbane](https://forg.gg/en/forever/wolfsbane)
-- [LFCarry: Undead Paladin guide](https://lfcarry.com/guides/wow-forever-undead-paladin)
-- [ChaosBoost: Undead Paladin guide](https://www.chaosboost.com/articles/wow-forever-undead-paladin-guide)
-- [ForeverDB: Paladin lore](https://foreverdb.net/lore/class/paladin)
+??? quote "15 sources"
+
+    - [Warcraft Tavern: All Changes to Paladins in WoW Forever](https://www.warcrafttavern.com/forever/news/all-changes-to-paladins-in-wow-forever/) (September beta)
+    - [Warcraft Tavern: Class Trainer Locations](https://www.warcrafttavern.com/forever/guides/class-trainers/)
+    - [Warcraft Tavern: Seal Twisting & Shockadins, Paladin Deep Dive](https://www.warcrafttavern.com/forever/news/seal-twisting-shockadins-paladin-deep-dive-for-wow-forever/)
+    - [Warcraft Tavern: Pre-Launch Class Changes](https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/)
+    - [Kami Labs: November 2 patch notes](https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/)
+    - [Method: Paladin Leveling Guide & Talents](https://www.method.gg/wow-forever/wow-forever-paladin-leveling-guide-and-talents)
+    - [ConquestCapped: Paladin Leveling](https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-leveling/)
+    - [ConquestCapped: Paladin Mount Guide](https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-mount/)
+    - [Talents Forever: Paladin leveling orders](https://talentsforever.com/paladin/leveling)
+    - [Leprestore: Retribution Paladin Guide](https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-retribution-paladin-guide-best-builds-race-professions/)
+    - [ForG: Forsaken Paladin class quests](https://forg.gg/en/forever/tips/forsaken-paladin)
+    - [ForG: Wolfsbane](https://forg.gg/en/forever/wolfsbane)
+    - [LFCarry: Undead Paladin guide](https://lfcarry.com/guides/wow-forever-undead-paladin)
+    - [ChaosBoost: Undead Paladin guide](https://www.chaosboost.com/articles/wow-forever-undead-paladin-guide)
+    - [ForeverDB: Paladin lore](https://foreverdb.net/lore/class/paladin)

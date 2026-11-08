@@ -1,5 +1,12 @@
 # Zephras Isle
 
+**Also called:** Zephras · the Skyborne starting zone
+{: .fc-aka }
+
+<aside class="infobox" markdown>
+<p class="infobox-title">Zephras Isle</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **1–12**{ .lvl } **Sanctuary**{ .badge }</p>
+
 | | |
 |---|---|
 | **Levels** | 1–12 |
@@ -7,9 +14,9 @@
 | **Status** | Sanctuary |
 | **Capital** | Valanaar (trainers, bank, Skydocks) |
 | **Access** | The Skyborne starting zone requires the **Skyborne Heroic Pack** or higher. **Anyone can visit by airship** from Dalaran or Skywatcher Plateau |
-| **Quests** | ~145 (attributed to Wowhead's database, unverified) |
+| **Quests** | ~145 (attributed to Wowhead's database, unverified) *unconfirmed*{ .unconfirmed } |
 
-## Lore
+</aside>
 
 The **Skyborne** call themselves the ***shen'dorei***, "hidden people". They descend from the **Shen'dralar**, Highborne rebels of **Eldre'Thalas** (Dire Maul) who opposed **Prince Tortheldrin**'s plan to summon a demon. They fled by sea after the War of the Ancients. Wind spirits hid them in Skywall (Warcraft Tavern calls it a pact with the wind elementals), where they have lived across several floating islands for about **10,000 years**.
 
@@ -19,11 +26,15 @@ The **Skyborne** call themselves the ***shen'dorei***, "hidden people". They des
 
 ## The three factions
 
+<div class="compare" markdown>
+
 | Faction | Allegiance | Role | Leader | Off-world ally |
 |---|---|---|---|---|
 | **Windshapers** | Horde | Shamanic spiritual leaders who wield *Skysight*. Unlock **Shaman** | Grand Skyseer **Ayessa Dawnsinger** | Earthen Ring, **Muln Earthfury** (Mulgore) |
 | **High Order** | Alliance | Descendants of Highborne magisters. Unlock **Mage** | Supreme Magister **Elaadrin Evengale** | Kirin Tor, **Archmage Ansirem Runeweaver** (Dalaran) |
 | **Al'Aketh** | Hostile | A cult of **Al'Akir the Windlord** that is disabling the wards | High Priestess **Lorthuna** | — |
+
+</div>
 
 ## Story walkthrough
 

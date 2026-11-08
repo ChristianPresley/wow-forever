@@ -1,0 +1,16 @@
+# lychee config for the external-link pass. Internal links and #anchors are checked
+# offline by tests/links.mjs, which also writes tests/reports/external-urls.txt for lychee.
+max_concurrency = 8
+max_retries = 2
+retry_wait_time = 4
+timeout = 20
+user_agent = "Mozilla/5.0 (X11; Linux x86_64) Forever-Codex-linkcheck (+https://github.com/ChristianPresley/wow-forever)"
+# 403/429: Cloudflare-style bot walls (mobalytics, curseforge) and rate limits are not rot.
+accept = ["200..=299", "403", "429"]
+cache = true
+max_cache_age = "3d"
+exclude = [
+  '^https://github\.com/ChristianPresley/wow-forever/(edit|blob|commits)/',
+  '^https://api\.github\.com/',
+  '^https://fonts\.(googleapis|gstatic)\.com',
+]

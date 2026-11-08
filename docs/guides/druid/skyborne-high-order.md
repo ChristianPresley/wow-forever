@@ -7,8 +7,13 @@ tags:
 
 # High Order Skyborne Druid
 
-!!! tip "Add-on"
-    Read with the [Druid guide](index.md). This page covers only what changes for an Alliance Skyborne.
+<div class="guide-head" data-class="druid" markdown>
+
+:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Druid guide](index.md). This page covers only what changes for an Alliance Skyborne.</p>
+
+</div>
 
 ## Why this combo
 
@@ -23,30 +28,55 @@ You get **haste** (Wind Blessed), a **regeneration cooldown** (Read Ley Line) an
 
 ## Racials in practice
 
-| Racial | Type | PvE | PvP | Rating |
-|---|---|---|---|---|
-| **Read Ley Line** | Active: +50% health and mana regen for 15 s; +100% while *Attuned* (1 hr buff from standing at a Ley Line) | Big for Balance leveling downtime and for Resto mana. **Not usable with Innervate** | Short reset between fights | **4/5**{ .stars .s4 } |
-| **Walk on Air** | Active: 10 s controlled glide. **Works in forms** | Skip paths, survive falls, reach ledges | Escape off cliffs, flag-carrier tricks. Cooldown 1.5 or 2 min (*conflict*) | **3/5**{ .stars .s3 } |
-| **Wind Blessed** | Passive: haste | Faster casts and swings, more Energy use | Same | **4/5**{ .stars .s4 } |
-| **Elemental Insight** | Passive: +5% damage vs Elementals | Situational: Hyjal and Skywall elementals, some dungeons | None | **2/5**{ .stars .s2 } |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Read Ley Line** <span class="ability-type active">Active: +50% health and mana regen for 15 s; +100% while *Attuned* (1 hr buff from standing at a Ley Line)</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> Big for Balance leveling downtime and for Resto mana. **Not usable with Innervate**</p>
+<p markdown><span class="ability-label">PvP</span> Short reset between fights</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active: 10 s controlled glide. **Works in forms**</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> Skip paths, survive falls, reach ledges</p>
+<p markdown><span class="ability-label">PvP</span> Escape off cliffs, flag-carrier tricks. Cooldown 1.5 or 2 min (*conflict*)</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Wind Blessed** <span class="ability-type passive">Passive: haste</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> Faster casts and swings, more Energy use</p>
+<p markdown><span class="ability-label">PvP</span> Same</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Elemental Insight** <span class="ability-type passive">Passive: +5% damage vs Elementals</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> Situational: Hyjal and Skywall elementals, some dungeons</p>
+<p markdown><span class="ability-label">PvP</span> None</p>
+</div>
+
+</div>
 
 !!! conflict "Conflict: Wind Blessed"
     Sources give 1%, 2% or 3% haste. Blizzard's latest notes say **2%**.
 
-**Macros**
+??? example "Macros"
 
-```text
-#showtooltip Read Ley Line
-/cast [nocombat] Read Ley Line
-/use [nocombat] Morning Glory Dew
-```
+    ```text
+    #showtooltip Read Ley Line
+    /cast [nocombat] Read Ley Line
+    /use [nocombat] Morning Glory Dew
+    ```
 
-```text
-#showtooltip Walk on Air
-/cast Walk on Air
-```
+    ```text
+    #showtooltip Walk on Air
+    /cast Walk on Air
+    ```
 
-Swap *Morning Glory Dew* for whatever drink you carry. Read Ley Line and Innervate don't stack, so Resto should use one and save the other.
+    Swap *Morning Glory Dew* for whatever drink you carry. Read Ley Line and Innervate don't stack, so Resto should use one and save the other.
 
 ## Starting zone walkthrough: Zephras Isle (1–~12)
 
@@ -54,9 +84,13 @@ Both Skyborne factions share [Zephras Isle](../../world/zephras-isle.md), phased
 
 **Thendal Village (1–5)**
 
-1. Start at Thendal Village. Quests: *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* (teaches you to use Walk on Air) and *The Anchors of Zephras*.
-2. Your faction opener is ***Reading the Leylines***, which shows you how to get Attuned.
-3. Caster play as usual: Wrath, Moonfire, Rejuvenation.
+<div class="steps" markdown>
+
+1.  Start at Thendal Village. Quests: *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* (teaches you to use Walk on Air) and *The Anchors of Zephras*.
+2.  Your faction opener is ***Reading the Leylines***, which shows you how to get Attuned.
+3.  Caster play as usual: Wrath, Moonfire, Rejuvenation.
+
+</div>
 
 **Road to Shen'dar Village (5–9)**
 
@@ -85,16 +119,39 @@ Both Skyborne factions share [Zephras Isle](../../world/zephras-isle.md), phased
 
 The High Order airship leaves the **east Skydock** for **north Dalaran** in the Alterac Mountains, a 30–40 zone. Don't quest there at 12. Head for the Alliance lowbie zones.
 
-| Levels | Zone(s) | Notes |
-|---|---|---|
-| 1–13 | Zephras Isle | Bear Form at 10 on the island |
-| 13 | Dalaran → Hillsbrad → Southshore | Walk south. Take the new **Southshore pier** boat loop to Menethil, or run on to Arathi and the Wetlands |
-| 13–20 | Loch Modan, Westfall, Redridge (via Ironforge and the Tram) or Darkshore (via Menethil → Auberdine) | Lessons Anew (14) and Aquatic Form (16): where Skyborne take these is *unconfirmed*; check Valanaar first, then Darnassus |
-| 20 | Zephras Isle | ***The Great Windborne Cat Spirit*** (Cat Form, Prowl, Claw, Rip) |
-| 20–30 | Ashenvale, Wetlands, Duskwood, Hillsbrad | [Excavation Site](../../content/dungeons/excavation-site.md) |
-| 28–40 | **Alterac and [Dalaran](../../world/zones.md#dalaran)**, Arathi, Desolace, Stranglethorn, Dustwallow | Your airship hub becomes your quest hub. [City of Dalaran](../../content/dungeons/city-of-dalaran.md); Kirin Tor reputation |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** (Farholde Keep) | |
-| 40–60 | Same Alliance route as the [Druid guide](index.md#leveling-walkthrough-160) | Felwood trainer Golhine the Hooded; Moonglade via Teleport |
+<div class="steps" markdown>
+
+1.  **1–13**{ .lvl } Zephras Isle
+
+    Bear Form at 10 on the island
+
+2.  **13**{ .lvl } Dalaran → Hillsbrad → Southshore
+
+    Walk south. Take the new **Southshore pier** boat loop to Menethil, or run on to Arathi and the Wetlands
+
+3.  **13–20**{ .lvl } Loch Modan, Westfall, Redridge (via Ironforge and the Tram) or Darkshore (via Menethil → Auberdine)
+
+    Lessons Anew (14) and Aquatic Form (16): where Skyborne take these is *unconfirmed*; check Valanaar first, then Darnassus
+
+4.  **20**{ .lvl } Zephras Isle
+
+    ***The Great Windborne Cat Spirit*** (Cat Form, Prowl, Claw, Rip)
+
+5.  **20–30**{ .lvl } Ashenvale, Wetlands, Duskwood, Hillsbrad
+
+    [Excavation Site](../../content/dungeons/excavation-site.md)
+
+6.  **28–40**{ .lvl } **Alterac and [Dalaran](../../world/zones.md#dalaran)**, Arathi, Desolace, Stranglethorn, Dustwallow
+
+    Your airship hub becomes your quest hub. [City of Dalaran](../../content/dungeons/city-of-dalaran.md); Kirin Tor reputation
+
+7.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Farholde Keep)
+
+8.  **40–60**{ .lvl } Same Alliance route as the [Druid guide](index.md#leveling-walkthrough-160)
+
+    Felwood trainer Golhine the Hooded; Moonglade via Teleport
+
+</div>
 
 **Getting home:** the airship runs both ways, and anyone can visit the island. Dalaran reportedly has no flight master, so walk to Southshore or Refuge Pointe for flights. **Alfina Nightgaze** in Dalaran is listed as a druid trainer.
 
@@ -110,6 +167,8 @@ The High Order airship leaves the **east Skydock** for **north Dalaran** in the 
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 A good, distinctive Alliance druid. **Wind Blessed** and **Read Ley Line** make it the best Alliance pick for **Balance and Restoration**, and it's close to Night Elf for Cat. You lose Shadowmeld and Elune's Light burst. The awkward part is the start: you land in a 30–40 zone at level 12 and must walk to the lowbie zones.
 
 | Spec | Rating |
@@ -121,3 +180,5 @@ A good, distinctive Alliance druid. **Wind Blessed** and **Read Ley Line** make 
 | PvP | **3/5**{ .stars .s3 } |
 
 *Ratings are this guide's own judgment.*
+
+</div>

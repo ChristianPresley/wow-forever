@@ -1,0 +1,103 @@
+# Forever Codex social card layout (perf-seo, round 2).
+# Used by the Material social plugin: cards_layout_dir: layouts, cards_layout: codex.
+# Original design: navy field, gold frame, the wiki's own gem mark (docs/assets/favicon.svg),
+# Alegreya / Alegreya SC / Inter, all fetched from Google Fonts at build time.
+# Text meta tags (og:title, og:description, twitter:card ...) are written by
+# overrides/main.html; this layout adds only the image tags.
+
+definitions:
+
+  - &site_name >-
+    {{ config.site_name }}
+
+  # "Orc Rogue" for race add-ons, front-matter title or page title otherwise
+  - &page_title >-
+    {%- if page.meta.get("title") -%}
+      {{ page.meta.title }}
+    {%- elif page.is_homepage -%}
+      The WoW: Forever wiki
+    {%- elif page.url.startswith("guides/") and page.parent and not page.is_index and page.url.count("/") == 3 -%}
+      {{ page.title }} {{ page.parent.title }}
+    {%- else -%}
+      {{ page.title }}
+    {%- endif -%}
+
+  # Section path, outermost first: "Class Guides · Rogue"
+  - &kicker >-
+    {%- set trail = [] -%}
+    {%- for a in page.ancestors | reverse -%}
+      {%- if a.title and a.title != page.title -%}{%- set _ = trail.append(a.title) -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if page.is_homepage -%}
+      Classes · Races · Dungeons · Guides
+    {%- elif trail -%}
+      {{ trail[-2:] | join(" · ") }}
+    {%- else -%}
+      Forever Codex
+    {%- endif -%}
+
+  - &alt >-
+    {%- if page.is_homepage -%}
+      {{ config.site_name }}: the unofficial WoW: Forever wiki
+    {%- else -%}
+      {%- if page.meta.get("title") -%}{{ page.meta.title }}
+      {%- elif page.url.startswith("guides/") and page.parent and not page.is_index and page.url.count("/") == 3 -%}{{ page.title }} {{ page.parent.title }}
+      {%- else -%}{{ page.title }}{%- endif %} on {{ config.site_name }}, an unofficial WoW: Forever wiki
+    {%- endif -%}
+
+tags:
+  og:image: "{{ image.url }}"
+  og:image:type: "{{ image.type }}"
+  og:image:width: "{{ image.width }}"
+  og:image:height: "{{ image.height }}"
+  og:image:alt: *alt
+  twitter:image: "{{ image.url }}"
+  twitter:image:alt: *alt
+
+size: { width: 1200, height: 630 }
+layers:
+
+  # Backdrop: gradient, hatch, frame, rules
+  - background:
+      image: layouts/codex-card.svg
+
+  # Gem mark
+  - size: { width: 88, height: 88 }
+    offset: { x: 72, y: 76 }
+    background:
+      image: docs/assets/favicon.svg
+
+  # Masthead
+  - size: { width: 700, height: 52 }
+    offset: { x: 184, y: 94 }
+    typography:
+      content: *site_name
+      color: "#fcfbf8"
+      font: { family: Alegreya SC, style: Bold }
+
+  # Section kicker
+  - size: { width: 900, height: 40 }
+    offset: { x: 72, y: 232 }
+    typography:
+      content: *kicker
+      color: "#e8be62"
+      font: { family: Alegreya SC, style: Medium }
+
+  # Page title
+  - size: { width: 840, height: 220 }
+    offset: { x: 70, y: 286 }
+    typography:
+      content: *page_title
+      align: start top
+      overflow: shrink
+      color: "#fcfbf8"
+      line: { amount: 2, height: 1.15 }
+      font: { family: Alegreya, style: Bold }
+
+  # Footer
+  - size: { width: 1056, height: 30 }
+    offset: { x: 72, y: 540 }
+    typography:
+      content: "Unofficial fan wiki for World of Warcraft: Forever · not affiliated with Blizzard"
+      color: "#c3cbd8"
+      font: { family: Inter, style: Regular }

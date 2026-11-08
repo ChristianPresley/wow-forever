@@ -27,14 +27,18 @@ The launch client is **Patch 1.60.1** (TOC `16001`). It is built on the same Mai
 
 - **5 Nov:** NPC spawn fixes (including a Zephras Druid trainer), Mild Spices vendor price, Plainsrunning stacking blocked in battlegrounds, quest text and respawn fixes.
 - **6 Nov:** better long-range visibility of other players and their targets, in response to "empty world" feedback.
-- **10 Nov (reported):** a class-tuning hotfix, per a third-party tracker. *Unconfirmed.*
+- **10 Nov (reported):** a class-tuning hotfix, per a third-party tracker. *unconfirmed*{ .unconfirmed }
 
 ## Add-on API (vs retail 12.1.5)
+
+<div class="fc-matrix" markdown>
 
 | | Added | Removed |
 |---|---|---|
 | Global API functions | 176 | 10 |
 | FrameXML | 471 | 1,041 |
+
+</div>
 
 - Midnight's add-on restrictions ("disarmament" and secret values) apply to Forever.
 - Creature, pet and object GUIDs use obfuscated IDs.

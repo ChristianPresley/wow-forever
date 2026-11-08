@@ -2,6 +2,8 @@
 
 ## System requirements
 
+<div class="compare" markdown>
+
 | Component | Minimum | Recommended |
 |---|---|---|
 | CPU | 4 cores @ 3.0 GHz | 8 P-cores, 5.2 GHz boost (Intel Core Ultra 200 / Ryzen 9000) |
@@ -10,7 +12,9 @@
 | Storage | **SSD required, 128 GB free** (HDDs unsupported) | — |
 | OS | Windows 10 64-bit / macOS | — |
 
-!!! warning "Partly unverified"
+</div>
+
+!!! unconfirmed "Partly unverified"
     PC Games Hardware presents the CPU, GPU and RAM rows as Blizzard's. Another FAQ says only the **128 GB SSD** figure is official. Treat the CPU and GPU rows as unverified.
 
 - **Download:** about **52.9 GB** fresh, or about 13 GB if retail or Classic is already installed.

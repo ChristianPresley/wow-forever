@@ -1,10 +1,51 @@
 # What is WoW: Forever?
 
+**Also called:** WoW: Forever · Classic+ (before the reveal) · Camelot (internal codename)
+{: .fc-aka }
+
 **World of Warcraft: Forever** (also *WoW: Forever*) is a permanent, standalone branch of World of Warcraft that runs **alongside** modern ("retail") WoW and WoW Classic. Before the reveal, players called the idea "Classic+". Internally the project was codenamed **"Camelot"**.
 
 It keeps the 2004 game's mechanics, art style and 1–60 leveling. On top of that it adds new zones, quests, dungeons, raids, a new race, new race/class combinations, reworked talents and new account-wide systems. **The level cap is 60 and will never rise.**
 
 > Blizzard describes Forever as *not a mode, a season, or a new version of Classic*. Lead Software Engineer Nora Mills called it a "completely separate third pillar" of World of Warcraft.
+
+## In this section
+
+<div class="grid cards fc-hub" markdown>
+
+-   :material-timeline-clock: **[Timeline](timeline.md)**
+
+    From the first 2020 talks to the summer 2027 roadmap.
+
+-   :material-cash-multiple: **[Editions & Pricing](editions.md)**
+
+    What the subscription covers and what the Skyborne packs add.
+
+-   :material-server-network: **[Rulesets & Megaserver](rulesets.md)**
+
+    No realms: one regional world per ruleset, and the cross-ruleset rules.
+
+-   :material-skull-crossbones: **[Hardcore](hardcore.md)**
+
+    The permadeath ruleset due winter 2026/27, and what is known so far.
+
+-   :material-update: **[Patches & Builds](patches.md)**
+
+    Patch 1.60.1 build history, hotfixes and add-on API changes.
+
+-   :material-chart-line: **[Launch & Reception](reception.md)**
+
+    Official claims, beta statistics, viewership and how launch went.
+
+-   :material-account-voice: **[Developers & Interviews](developers.md)**
+
+    Who is who on the team, and the interviews worth reading.
+
+-   :material-frequently-asked-questions: **[FAQ](faq.md)**
+
+    Short answers: price, platforms, level cap, flying, realms, raids.
+
+</div>
 
 ## At a glance
 
@@ -56,23 +97,14 @@ Other stated principles:
 
 ## What's new, in one list
 
-- New race: **[Skyborne](../characters/races.md)** (High Order for the Alliance, Windshapers for the Horde)
-- New race/class combinations, including **Undead Paladin** and **Dwarf Shaman**
-- New zones: **Mount Hyjal, the Riverglades, Shen'dralas, Zephras Isle**. **Dalaran** is relocated to the Alterac Mountains
-- **1,000+ new quests**
-- **9 new five-player dungeons** (32 in total) and new 10- and 20-player raids
-- New battleground: **Battle for the Darkspear Islands** (15v15)
-- **[Legacy system](../characters/legacy.md)**, account-wide, replacing achievements
-- **[Camping](../systems/camping.md)**, **dual specialization** at level 40, account-wide **Collections**
-- SD/HD model toggle, experience presets, gamepad support (beta)
+!!! forever "Only in Forever"
 
-## In this section
-
-- [Timeline](timeline.md): from 2020 to the summer 2027 roadmap
-- [Editions & Pricing](editions.md)
-- [Rulesets & Megaserver](rulesets.md)
-- [Hardcore](hardcore.md)
-- [Patches & Builds](patches.md)
-- [Launch & Reception](reception.md)
-- [Developers & Interviews](developers.md)
-- [FAQ](faq.md)
+    - New race: **[Skyborne](../characters/races.md)** (High Order for the Alliance, Windshapers for the Horde)
+    - New race/class combinations, including **Undead Paladin** and **Dwarf Shaman**
+    - New zones: **Mount Hyjal, the Riverglades, Shen'dralas, Zephras Isle**. **Dalaran** is relocated to the Alterac Mountains
+    - **1,000+ new quests**
+    - **9 new five-player dungeons** (32 in total) and new 10- and 20-player raids
+    - New battleground: **Battle for the Darkspear Islands** (15v15)
+    - **[Legacy system](../characters/legacy.md)**, account-wide, replacing achievements
+    - **[Camping](../systems/camping.md)**, **dual specialization** at level 40, account-wide **Collections**
+    - SD/HD model toggle, experience presets, gamepad support (beta)

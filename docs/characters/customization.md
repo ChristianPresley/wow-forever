@@ -2,7 +2,10 @@
 
 ## Names
 
-- A **first and last name** are both required, each 2–12 characters. Neither has to be unique alone, but the **combination** must be unique within your region.
+!!! forever "Two-part names"
+    A **first and last name** are both required. This is new in Forever.
+
+- Each part is 2–12 characters. Neither has to be unique alone, but the **combination** must be unique within your region.
 - RP rulesets require lore-friendly names. Names that pass the filter can still be flagged later.
 - Early Name Reservation (27 Oct – 3 Nov) let pack owners reserve **3 names**. A filter bug rejected every name containing "con". See [Reception](../about/reception.md).
 
@@ -37,9 +40,13 @@ Account-wide **transmog, toys, mounts and companions**, shared across rulesets. 
 
 ## Cosmetics from editions & Legacy
 
+<div class="compare" markdown>
+
 | Source | Items |
 |---|---|
 | Heroic Pack and up | Cerulean Prideclaw (mount), Ensemble: Shen'dorei Skyseer's Garb, Veteran Adventurer's Rucksack, Shen'dorei Windwell (toy) |
 | Epic Pack and up | Veteran Adventurer's Loyal Companion (mount), Ensemble: Veteran Adventurer's Outdoor Wear, Lordaeron Forever and Shen'dorei tabards, Zergling Leash, Panda Collar, Diablo Stone, Pachimari |
 | Legacy | Ironforge Air Rifle toy, Spectral Bear Cub, Spectral Bear Tabard, Reins of the Spectral Bear |
 | Hidden | *Musical Gustjumper* pet (`/sing` at the frogs on Zephras Isle) |
+
+</div>

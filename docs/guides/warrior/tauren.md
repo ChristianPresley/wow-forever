@@ -7,8 +7,13 @@ tags:
 
 # Tauren Warrior
 
-!!! tip "Add-on"
-    Read with the [Warrior guide](index.md). This page covers only what changes for a Tauren.
+<div class="guide-head" data-class="warrior" markdown>
+
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Warrior guide](index.md). This page covers only what changes for a Tauren.</p>
+
+</div>
 
 ## Why this combo
 
@@ -19,45 +24,91 @@ Tauren are the biggest Warriors in the game. Before launch, Blizzard raised Taur
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **War Stomp** | Active | **4/5**{ .stars .s4 } | Area stun around you. Interrupts casters in a pack, or buys a Shield Slam | Stun, then Mortal Strike or Hamstring. Also interrupts heals |
-| **Cultivation** *(new)* | Active | **2/5**{ .stars .s2 } | Grows an herb anyone can pick, with bonus yield for Herbalists | None |
-| **Plainsrunning** *(new)* | Passive | **3/5**{ .stars .s3 } | +2% speed per stack while moving, up to +60%, not while mounted. Great before level 40 | Stacking was blocked in battlegrounds by a 5 Nov hotfix |
-| **Endurance** | Passive | **4/5**{ .stars .s4 } | +5% health: tanks love it | Harder to burst |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**War Stomp** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> Area stun around you. Interrupts casters in a pack, or buys a Shield Slam</p>
+<p markdown><span class="ability-label">PvP</span> Stun, then Mortal Strike or Hamstring. Also interrupts heals</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Cultivation** *(new)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> Grows an herb anyone can pick, with bonus yield for Herbalists</p>
+<p markdown><span class="ability-label">PvP</span> None</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Plainsrunning** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +2% speed per stack while moving, up to +60%, not while mounted. Great before level 40</p>
+<p markdown><span class="ability-label">PvP</span> Stacking was blocked in battlegrounds by a 5 Nov hotfix</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Endurance** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> +5% health: tanks love it</p>
+<p markdown><span class="ability-label">PvP</span> Harder to burst</p>
+</div>
+
+</div>
 
 !!! note "Nature Resistance"
     The old Tauren nature resistance racial was removed.
 
-**Macro: stomp and strike**
+??? example "Macro: stomp and strike"
 
-```text
-#showtooltip War Stomp
-/cast War Stomp
-/cast [stance:1] Mortal Strike; [stance:2] Shield Slam
-```
+    ```text
+    #showtooltip War Stomp
+    /cast War Stomp
+    /cast [stance:1] Mortal Strike; [stance:2] Shield Slam
+    ```
 
 ## Starting zone walkthrough (1–12)
 
 Tauren start at **Camp Narache** in **Mulgore**. Mulgore gained **Skywatcher Plateau** in the northwest (the Horde Skyborne airship landing). *Quest and NPC names are Classic-era; check in game.*
 
-1. **Camp Narache (1–5).** Warrior trainer in camp (Classic: Harutt Thunderhorn). Plainstriders, mountain cougars, the Battleboar camp and the quilboar. **Charge** and **Rend** at 4.
-2. **The Great Outdoors (~5).** Camping intro and Cooking.
-3. **Bloodhoof Village (5–10).** The Venture Co. and Palemane gnoll quests and the wells. Warrior trainer in Bloodhoof. **Hamstring** at 8. Plainsrunning makes Mulgore's long walks shorter.
-4. **Level 10.** **Defensive Stance** quest from your trainer.
-5. **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
-6. **10–12.** Visit **Thunder Bluff**, then head east into **the Barrens**.
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } **Camp Narache.** Warrior trainer in camp (Classic: Harutt Thunderhorn). Plainstriders, mountain cougars, the Battleboar camp and the quilboar. **Charge** and **Rend** at 4.
+2.  **~5**{ .lvl } **The Great Outdoors.** Camping intro and Cooking.
+3.  **5–10**{ .lvl } **Bloodhoof Village.** The Venture Co. and Palemane gnoll quests and the wells. Warrior trainer in Bloodhoof. **Hamstring** at 8. Plainsrunning makes Mulgore's long walks shorter.
+4.  **10**{ .lvl } **Defensive Stance** quest from your trainer.
+5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
+6.  **10–12.** Visit **Thunder Bluff**, then head east into **the Barrens**.
+
+</div>
 
 ## Route to 60 from Thunder Bluff
 
-| Levels | Zones | Flight paths / notes |
-|---|---|---|
-| 10–20 | The Barrens → Stonetalon → Silverpine (via Orgrimmar zeppelin) | Crossroads, Camp Taurajo. Wailing Caverns |
-| 20–30 | Stonetalon → Ashenvale → Thousand Needles → Hillsbrad | Sun Rock Retreat, Freewind Post. Razorfen Kraul |
-| 30–40 | Desolace → Arathi → Stranglethorn | Shadowprey Village. Desolace centaur quests need 35 now |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar) → Dustwallow Marsh → Feralas | Razorfen Downs |
-| 45–55 | Tanaris → Feralas → Hinterlands → Azshara → Un'Goro | Camp Mojache. [Alcaz Prison](../../content/dungeons/alcaz-prison.md) |
-| 55–60 | Felwood → Burning Steppes → Plaguelands → Winterspring → Mount Hyjal | |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } The Barrens → Stonetalon → Silverpine (via Orgrimmar zeppelin)
+
+    <span class="step-label">Flight paths / notes</span> Crossroads, Camp Taurajo. Wailing Caverns
+
+2.  **20–30**{ .lvl } Stonetalon → Ashenvale → Thousand Needles → Hillsbrad
+
+    <span class="step-label">Flight paths / notes</span> Sun Rock Retreat, Freewind Post. Razorfen Kraul
+
+3.  **30–40**{ .lvl } Desolace → Arathi → Stranglethorn
+
+    <span class="step-label">Flight paths / notes</span> Shadowprey Village. Desolace centaur quests need 35 now
+
+4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar) → Dustwallow Marsh → Feralas
+
+    <span class="step-label">Flight paths / notes</span> Razorfen Downs
+
+5.  **45–55**{ .lvl } Tanaris → Feralas → Hinterlands → Azshara → Un'Goro
+
+    <span class="step-label">Flight paths / notes</span> Camp Mojache. [Alcaz Prison](../../content/dungeons/alcaz-prison.md)
+
+6.  **55–60**{ .lvl } Felwood → Burning Steppes → Plaguelands → Winterspring → Mount Hyjal
+
+</div>
 
 **Class trainers:** **Hunter Rise** in Thunder Bluff.
 
@@ -88,4 +139,8 @@ Tauren start at **Camp Narache** in **Mulgore**. Mulgore gained **Skywatcher Pla
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 The Horde's best main-tank race: more health, more Strength and an area stun. War Stomp also makes Tauren dangerous in PvP. Orc beats it for pure damage, but a Tauren Warrior is never a wrong pick.
+
+</div>

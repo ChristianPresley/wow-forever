@@ -60,3 +60,17 @@ Guide pages carry `tags:` front matter (class, race, faction), which feeds searc
 - **Social cards.** These need cairo, so they would have to be CI-gated with `enabled: !ENV [CI, false]`.
 - **Blog/RSS patch notes.**
 - **Zensical migration.** Re-evaluate by March 2027, before Material's end-of-life on 5 May 2027.
+
+## Round 2 additions (8 Nov 2026)
+
+| Area | Where |
+|---|---|
+| Identity: crest, favicon and app icons, 9 class sigils + faction emblems (`:codex-mage:` …), hero art, textures | `docs/assets/`, `overrides/.icons/codex/`, `docs/stylesheets/identity.css` |
+| Performance & SEO: self-hosted subset fonts with preload, meta descriptions, Open Graph, JSON-LD, canonical URLs, git-dated sitemap, robots.txt, CI-only social cards, minify/optimize | `overrides/main.html`, `overrides/sitemap.xml`, `layouts/`, `deploy.yml` |
+| Interactive: guides-hub filter, glossary tooltips (`includes/abbreviations.md`), mobile "On this page", copy-section links, leveling step checklists, `?` shortcut help | `docs/javascripts/codex.js`, `docs/stylesheets/interactive.css`, `overrides/partials/` |
+| Guides: guide headers, steps, milestones, rotation priorities, ability cards | `docs/guides/**`, `docs/stylesheets/guides.css` |
+| Reference: infoboxes, hub cards, Forever/unconfirmed callouts, aliases, class→guide bridges | `docs/**`, `docs/stylesheets/reference.css` |
+| Quality gates: axe (both schemes), html-validate, links, lychee, Lighthouse CI | `.github/workflows/quality.yml`, `tests/`, `package.json` |
+
+Local checks: `npm ci`, then `npm run test` (and `npm run test:lhci`); see `tests/README.md`.
+The one remaining axe finding is `target-size` on sidebar links that are partially scrolled out of the sidebar's own viewport, which is a known axe false positive for clipped scroll containers.

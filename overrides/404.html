@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% block content %}
+  <div class="fc-404">
+    <p class="fc-404__code" aria-hidden="true">404</p>
+    <h1>This page wandered off the map</h1>
+    <p>The page you followed doesn't exist, or it moved when the Codex was reorganised. Try searching, or start from one of these.</p>
+    <p>
+      <label class="md-button md-button--primary" for="__search">Search the Codex</label>
+      <a class="md-button" href="{{ config.site_url }}">Home</a>
+    </p>
+    <p>
+      <a class="fc-chip" href="{{ config.site_url }}guides/">Class &amp; race guides</a>
+      <a class="fc-chip" href="{{ config.site_url }}characters/races/">Races</a>
+      <a class="fc-chip" href="{{ config.site_url }}content/dungeons/">Dungeons</a>
+      <a class="fc-chip" href="{{ config.site_url }}content/raids/">Raids</a>
+      <a class="fc-chip" href="{{ config.site_url }}about/faq/">FAQ</a>
+    </p>
+  </div>
+{% endblock %}

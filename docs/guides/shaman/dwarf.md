@@ -7,8 +7,13 @@ tags:
 
 # Dwarf Shaman
 
-!!! tip "Add-on"
-    Read with the [Shaman guide](index.md).
+<div class="guide-head" data-class="shaman" markdown>
+
+:codex-shaman:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Shaman guide](index.md).</p>
+
+</div>
 
 ## Why this combo
 
@@ -19,45 +24,74 @@ Dwarves bring Shamans into Alliance groups for the first time in a Classic-style
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **Stoneform** *(changed)* | Active | **5/5**{ .stars .s5 } | Removes bleeds, poisons and diseases, gives immunity to them, and 10% less physical damage for 8 s. A personal defensive on bosses with bleeds or poison | Clears Rogue poisons, Warrior bleeds and Hunter stings. The 10% physical reduction is strong against melee bursts |
-| **Find Treasure** | Active | **2/5**{ .stars .s2 } | Tracks treasure chests, with a chance for better loot. Nice while leveling | — |
-| **Artisan's Precision** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% hit with attacks **and** spells. Every spec needs hit, Elemental most of all | Fewer missed Earth Shocks and Purges |
-| **Big Game Hunter** *(new)* | Passive | **3/5**{ .stars .s3 } | +5% damage to Beasts. Very useful while leveling, since many quest mobs are beasts | Hunter pets and Druids in animal forms may count; *unconfirmed* |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Stoneform** *(changed)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
+<p markdown><span class="ability-label">PvE</span> Removes bleeds, poisons and diseases, gives immunity to them, and 10% less physical damage for 8 s. A personal defensive on bosses with bleeds or poison</p>
+<p markdown><span class="ability-label">PvP</span> Clears Rogue poisons, Warrior bleeds and Hunter stings. The 10% physical reduction is strong against melee bursts</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Find Treasure** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> Tracks treasure chests, with a chance for better loot. Nice while leveling</p>
+<p markdown><span class="ability-label">PvP</span> —</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Artisan's Precision** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> +1% hit with attacks **and** spells. Every spec needs hit, Elemental most of all</p>
+<p markdown><span class="ability-label">PvP</span> Fewer missed Earth Shocks and Purges</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Big Game Hunter** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +5% damage to Beasts. Very useful while leveling, since many quest mobs are beasts</p>
+<p markdown><span class="ability-label">PvP</span> Hunter pets and Druids in animal forms may count; *unconfirmed*</p>
+</div>
+
+</div>
 
 Stoneform is no longer an armor buff. It is now a flat damage reduction, which also helps casters.
 
-**Macro: Stoneform with a heal**
+??? example "Macro: Stoneform with a heal"
 
-```text
-#showtooltip Stoneform
-/cast Stoneform
-/cast Lesser Healing Wave
-```
+    ```text
+    #showtooltip Stoneform
+    /cast Stoneform
+    /cast Lesser Healing Wave
+    ```
 
-Stoneform is off the GCD in Classic. If it shares a GCD in Forever, press it on its own instead.
+    Stoneform is off the GCD in Classic. If it shares a GCD in Forever, press it on its own instead.
 
 ## Starting zone: Coldridge Valley to Kharanos (1–12)
 
 !!! note "Trainer names"
     Trainer names below come from Warcraft Tavern's guides. The trainer list is partly from an automated summary of that page, so check the names in game.
 
-**Coldridge Valley (1–6)**
+<div class="steps" markdown>
 
-- You start at **Anvilmar**. Your Shaman trainer, **Teo Hammerstorm**, is inside Anvilmar (about 28.8, 66.2).
-- Kill troll whelps and wolves, and keep Rockbiter Weapon up. Open with Lightning Bolt and finish with melee.
-- **Level 4: *Call of Earth*.** Teo asks for two Iceclaw Bear Pendants from Frostmane Troll Whelps (near 27.3, 79.6). He gives you **Earth Sapta**. Follow the path marked with rubble (from about 25.8, 69.3) to the Earth Spirit Stone (25.0, 62.4), drink it, and defeat the Minor Manifestation of Earth. Return the Rough Quartz to Teo for the **Earth Totem** and Stoneskin Totem.
+1.  **1–6**{ .lvl } Coldridge Valley
 
-**Kharanos (6–12)**
+    - You start at **Anvilmar**. Your Shaman trainer, **Teo Hammerstorm**, is inside Anvilmar (about 28.8, 66.2).
+    - Kill troll whelps and wolves, and keep Rockbiter Weapon up. Open with Lightning Bolt and finish with melee.
+    - **Level 4: *Call of Earth*.** Teo asks for two Iceclaw Bear Pendants from Frostmane Troll Whelps (near 27.3, 79.6). He gives you **Earth Sapta**. Follow the path marked with rubble (from about 25.8, 69.3) to the Earth Spirit Stone (25.0, 62.4), drink it, and defeat the Minor Manifestation of Earth. Return the Rough Quartz to Teo for the **Earth Totem** and Stoneskin Totem.
 
-- A second trainer, **Ingrid Dunwald**, is reported in Kharanos.
-- Train Earthbind (6) and Stoneclaw and Lightning Shield (8).
-- Quest around Kharanos, then the Frostmane trolls and the Gnomeregan outskirts.
-- **Level 10: *Call of Fire*.** A trainer sends you to **Bruegs Kindleborn**, whose path starts behind a farm near the Loch Modan tunnel in Dun Morogh (about 86.7, 47.0). He gives you a Torch of the Dormant Flame for **Braldir Ashmantle** in Loch Modan (32.0, 66.3).
-    - Braldir wants Fire Tar from Tunnel Rat Geomancers in Silver Stream Mine and a Reagent Pouch from Stonesplinter Seers in Stonesplinter Valley. These troggs are up to level 14 and come in groups, so bring some levels or a friend.
-    - Drink the **Fire Sapta** at the Fire Spirit Stone above Braldir (31.9, 64.5), kill the Minor Manifestation of Fire, light your torch at the Brazier of the Dormant Flame, and bring it back to Bruegs. Reward: **Fire Totem** and Searing Totem.
-- **First talent point** at 10. Enhancement starts with Thundering Strikes; Elemental with its first-row damage talents.
+2.  **6–12**{ .lvl } Kharanos
+
+    - A second trainer, **Ingrid Dunwald**, is reported in Kharanos.
+    - Train Earthbind (6) and Stoneclaw and Lightning Shield (8).
+    - Quest around Kharanos, then the Frostmane trolls and the Gnomeregan outskirts.
+    - **Level 10: *Call of Fire*.** A trainer sends you to **Bruegs Kindleborn**, whose path starts behind a farm near the Loch Modan tunnel in Dun Morogh (about 86.7, 47.0). He gives you a Torch of the Dormant Flame for **Braldir Ashmantle** in Loch Modan (32.0, 66.3).
+        - Braldir wants Fire Tar from Tunnel Rat Geomancers in Silver Stream Mine and a Reagent Pouch from Stonesplinter Seers in Stonesplinter Valley. These troggs are up to level 14 and come in groups, so bring some levels or a friend.
+        - Drink the **Fire Sapta** at the Fire Spirit Stone above Braldir (31.9, 64.5), kill the Minor Manifestation of Fire, light your torch at the Brazier of the Dormant Flame, and bring it back to Bruegs. Reward: **Fire Totem** and Searing Totem.
+    - **First talent point** at 10. Enhancement starts with Thundering Strikes; Elemental with its first-row damage talents.
+
+</div>
 
 The Fire quest pulls you into Loch Modan anyway, so plan to finish it at 11–12 while you quest there.
 
@@ -68,17 +102,45 @@ The Fire quest pulls you into Loch Modan anyway, so plan to finish it at 11–12
 !!! warning "Plan your training trips"
     This is the biggest practical difference from Horde Shamans, who have about 15 trainers across Kalimdor and Stonard. Ironforge is reachable from Stormwind through the Deeprun Tram. Set your hearthstone with this in mind on even levels.
 
-| Levels | Zones | Travel |
-|---|---|---|
-| 1–12 | Dun Morogh | — |
-| 10–20 | **Loch Modan**; [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18) in Ironforge | Thelsamar flight path |
-| 15–25 | Westfall, Redridge, or Darkshore | Tram to Stormwind. **Stormwind Harbor** now sails to Auberdine |
-| 20–30 | **Wetlands** ([Excavation Site](../../content/dungeons/excavation-site.md) 24–29), Duskwood, Ashenvale | Menethil Harbor |
-| 28–35 | Hillsbrad, Alterac Mountains ([City of Dalaran](../../content/dungeons/city-of-dalaran.md)), **Arathi Highlands** | New Menethil → Southshore → Auberdine boat loop |
-| 30–45 | Stranglethorn Vale, Desolace, **Riverglades** (Farholde Keep) | Farholde Keep flies to Lakeshire, Thelsamar and Morgan's Vigil |
-| 40–50 | Dustwallow Marsh (Theramore), Badlands, Swamp of Sorrows, Feralas, Hinterlands, Tanaris | Menethil → Theramore boat |
-| 50–60 | Searing Gorge, Burning Steppes, Azshara, Un'Goro, Felwood, the Plaguelands, Winterspring | Morgan's Vigil, Everlook |
-| 60 | Mount Hyjal | Through Darkwhisper Gorge in Winterspring |
+<div class="steps" markdown>
+
+1.  **1–12**{ .lvl } Dun Morogh
+
+    <span class="step-label">Travel</span> —
+
+2.  **10–20**{ .lvl } **Loch Modan**; [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18) in Ironforge
+
+    <span class="step-label">Travel</span> Thelsamar flight path
+
+3.  **15–25**{ .lvl } Westfall, Redridge, or Darkshore
+
+    <span class="step-label">Travel</span> Tram to Stormwind. **Stormwind Harbor** now sails to Auberdine
+
+4.  **20–30**{ .lvl } **Wetlands** ([Excavation Site](../../content/dungeons/excavation-site.md) 24–29), Duskwood, Ashenvale
+
+    <span class="step-label">Travel</span> Menethil Harbor
+
+5.  **28–35**{ .lvl } Hillsbrad, Alterac Mountains ([City of Dalaran](../../content/dungeons/city-of-dalaran.md)), **Arathi Highlands**
+
+    <span class="step-label">Travel</span> New Menethil → Southshore → Auberdine boat loop
+
+6.  **30–45**{ .lvl } Stranglethorn Vale, Desolace, **Riverglades** (Farholde Keep)
+
+    <span class="step-label">Travel</span> Farholde Keep flies to Lakeshire, Thelsamar and Morgan's Vigil
+
+7.  **40–50**{ .lvl } Dustwallow Marsh (Theramore), Badlands, Swamp of Sorrows, Feralas, Hinterlands, Tanaris
+
+    <span class="step-label">Travel</span> Menethil → Theramore boat
+
+8.  **50–60**{ .lvl } Searing Gorge, Burning Steppes, Azshara, Un'Goro, Felwood, the Plaguelands, Winterspring
+
+    <span class="step-label">Travel</span> Morgan's Vigil, Everlook
+
+9.  **60**{ .lvl } Mount Hyjal
+
+    <span class="step-label">Travel</span> Through Darkwhisper Gorge in Winterspring
+
+</div>
 
 **Alliance totem quests**
 
@@ -106,4 +168,8 @@ The Fire quest pulls you into Loch Modan anyway, so plan to finish it at 11–12
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 **The best Alliance Shaman, because it is the only one, and a good one too.** Artisan's Precision helps every spec reach hit sooner, Big Game Hunter speeds up leveling, and Stoneform shuts down Rogues and Warriors in PvP. The main drawback is that Shaman trainers are concentrated in Dun Morogh and Ironforge, so plan your training trips. For raids, you'll be one of a small number of Alliance players who can provide totems, which makes you very valuable.
+
+</div>

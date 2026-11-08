@@ -1,5 +1,9 @@
 # Excavation Site: Wetlands
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Excavation Site: Wetlands</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **5-player dungeon**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | 5-player dungeon (new in Forever) |
@@ -8,7 +12,7 @@
 | **Faction** | Both |
 | **Bosses** | 3 |
 
-## Overview
+</aside>
 
 Mist and flashes of light over Whelgar's Excavation lead to a **time-frozen area** guarded by titan constructs and wildlife.
 

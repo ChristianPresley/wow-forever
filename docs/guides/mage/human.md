@@ -7,8 +7,13 @@ tags:
 
 # Human Mage
 
-!!! tip "Add-on"
-    Read with the [Mage guide](index.md). This page covers only what changes when your Mage is a Human.
+<div class="guide-head" data-class="mage" markdown>
+
+:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Mage guide](index.md). This page covers only what changes when your Mage is a Human.</p>
+
+</div>
 
 ## Why this combo
 
@@ -24,59 +29,109 @@ Human Mage is the classic Alliance caster and remains one of the best all-round 
 
 ## Racials in practice
 
-| Racial | Type | Rating | Mage use |
-|---|---|---|---|
-| **Will to Survive** *(new)* | Active | **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE | Instantly removes stuns. A Rogue's Cheap Shot or a Warrior's Intercept no longer means death: break it, then Frost Nova and Blink |
-| **Perception** | Active | **3/5**{ .stars .s3 } PvP · **1/5**{ .stars .s1 } PvE | Detect stealth for 20 s. Pop it when a Rogue or Druid disappears near a flag or node |
-| **Ruthless** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% crit. Feeds Fire's Heating Up and Ignite, Arcane Impact, and Frost shatter combos |
-| **The Human Spirit** | Passive | **3/5**{ .stars .s3 } leveling · **2/5**{ .stars .s2 } raid | +10% Spirit (was 5%). Noticeably less drinking at low levels |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Will to Survive** *(new)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE</p>
+<p markdown>Instantly removes stuns. A Rogue's Cheap Shot or a Warrior's Intercept no longer means death: break it, then Frost Nova and Blink</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Perception** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } PvP · **1/5**{ .stars .s1 } PvE</p>
+<p markdown>Detect stealth for 20 s. Pop it when a Rogue or Druid disappears near a flag or node</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Ruthless** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown>+1% crit. Feeds Fire's Heating Up and Ignite, Arcane Impact, and Frost shatter combos</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**The Human Spirit** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } leveling · **2/5**{ .stars .s2 } raid</p>
+<p markdown>+10% Spirit (was 5%). Noticeably less drinking at low levels</p>
+</div>
+
+</div>
 
 The old Human *Diplomacy* racial is now the account-wide Legacy talent *Diplomat*, so you don't lose anything there.
 
-### Macros
+??? example "Macros"
 
-Break a stun and escape (whether Will to Survive triggers the global cooldown is *not verified*; if it does, press the macro twice):
+    Break a stun and escape (whether Will to Survive triggers the global cooldown is *not verified*; if it does, press the macro twice):
 
-```
-#showtooltip Will to Survive
-/cast Will to Survive
-/cast Blink
-```
+    ```
+    #showtooltip Will to Survive
+    /cast Will to Survive
+    /cast Blink
+    ```
 
-Detect stealth and drop a Frost Nova around you:
+    Detect stealth and drop a Frost Nova around you:
 
-```
-#showtooltip Perception
-/cast Perception
-/cast Frost Nova
-```
+    ```
+    #showtooltip Perception
+    /cast Perception
+    /cast Frost Nova
+    ```
 
 ## Starting zone walkthrough (1–12)
 
 Northshire and Elwynn are largely the Classic zones. Quest names below are Classic-era; Forever kept the core chains but added new NPCs and side quests in some starting zones.
 
-1. **Northshire Abbey (1–5).** Deputy Willem starts you off with the wolves and kobolds outside the abbey. Your Mage trainer is **Khelden Bremen** on the upper floor of the abbey (Classic location); he also sends a class letter you'll find in your bags.
-2. **Level 2–4.** Train Frostbolt at 4, plus Conjure Water. Kill kobolds in the vineyard and the Echo Ridge Mine.
-3. **Level 5–6.** Hand in *Report to Goldshire* and leave the valley. Fire Blast at 6.
-4. **Goldshire (6–10).** The Lion's Pride Inn is your hub. A Mage trainer works inside the inn (Classic). Do the Fargodeep Mine, Jerod's Landing and Eastvale Logging Camp quests. Polymorph at 8 makes double pulls safe.
-5. **Level 10.** Frost Nova and your first talent point. Pick a gathering or crafting profession now — Tailoring trainers are in Stormwind's Trade District.
-6. **10–12.** Finish Elwynn (Princess, the Brotherhood of Thieves chain) and run *Westfall* letters, or ride the new **Stormwind Harbor** boat to Darkshore.
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } **Northshire Abbey.** Deputy Willem starts you off with the wolves and kobolds outside the abbey. Your Mage trainer is **Khelden Bremen** on the upper floor of the abbey (Classic location); he also sends a class letter you'll find in your bags.
+2.  **2–4**{ .lvl } Train Frostbolt at 4, plus Conjure Water. Kill kobolds in the vineyard and the Echo Ridge Mine.
+3.  **5–6**{ .lvl } Hand in *Report to Goldshire* and leave the valley. Fire Blast at 6.
+4.  **6–10**{ .lvl } **Goldshire.** The Lion's Pride Inn is your hub. A Mage trainer works inside the inn (Classic). Do the Fargodeep Mine, Jerod's Landing and Eastvale Logging Camp quests. Polymorph at 8 makes double pulls safe.
+5.  **10**{ .lvl } Frost Nova and your first talent point. Pick a gathering or crafting profession now — Tailoring trainers are in Stormwind's Trade District.
+6.  **10–12.** Finish Elwynn (Princess, the Brotherhood of Thieves chain) and run *Westfall* letters, or ride the new **Stormwind Harbor** boat to Darkshore.
+
+</div>
 
 !!! tip "Stormwind Mage Quarter"
     The full trainer set and the Mage portal trainer are in the Wizard's Sanctum in the Mage Quarter. The transmogrifier, **Fyrenz Vishonar**, is also in the Mage Quarter (48, 84).
 
 ## Route to 60 from Stormwind
 
-| Levels | Zones | Travel |
-|---|---|---|
-| 10–20 | Westfall, then Redridge **or** Darkshore | Fly from Stormwind; the harbor boat goes straight to Auberdine |
-| 18–25 | Loch Modan or Darkshore end-game, Redridge | Deeprun Tram to Ironforge for Loch Modan |
-| 20–30 | Duskwood, Wetlands, Ashenvale | Wetlands has the new [Excavation Site](../../content/dungeons/excavation-site.md) dungeon |
-| 25–35 | Hillsbrad (new Southshore pier), Alterac Mountains | Menethil → Southshore → Auberdine boat loop |
-| 30–40 | Stranglethorn, Arathi, Desolace, Dustwallow | Dalaran (Alterac) is Alliance-friendly; the [City of Dalaran](../../content/dungeons/city-of-dalaran.md) key chain starts in Southshore or Stormwind |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** | Walk east from Redridge; Farholde Keep flight connects to Lakeshire |
-| 40–50 | Tanaris, Feralas, Hinterlands, Badlands | Riding at 40 |
-| 50–60 | Un'Goro, Azshara, Felwood, Plaguelands, Winterspring, Burning Steppes | Winterspring leads to [Mount Hyjal](../../world/zones.md#mount-hyjal) |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } Westfall, then Redridge **or** Darkshore
+
+    <span class="step-label">Travel</span> Fly from Stormwind; the harbor boat goes straight to Auberdine
+
+2.  **18–25**{ .lvl } Loch Modan or Darkshore end-game, Redridge
+
+    <span class="step-label">Travel</span> Deeprun Tram to Ironforge for Loch Modan
+
+3.  **20–30**{ .lvl } Duskwood, Wetlands, Ashenvale
+
+    <span class="step-label">Travel</span> Wetlands has the new [Excavation Site](../../content/dungeons/excavation-site.md) dungeon
+
+4.  **25–35**{ .lvl } Hillsbrad (new Southshore pier), Alterac Mountains
+
+    <span class="step-label">Travel</span> Menethil → Southshore → Auberdine boat loop
+
+5.  **30–40**{ .lvl } Stranglethorn, Arathi, Desolace, Dustwallow
+
+    <span class="step-label">Travel</span> Dalaran (Alterac) is Alliance-friendly; the [City of Dalaran](../../content/dungeons/city-of-dalaran.md) key chain starts in Southshore or Stormwind
+
+6.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)**
+
+    <span class="step-label">Travel</span> Walk east from Redridge; Farholde Keep flight connects to Lakeshire
+
+7.  **40–50**{ .lvl } Tanaris, Feralas, Hinterlands, Badlands
+
+    <span class="step-label">Travel</span> Riding at 40
+
+8.  **50–60**{ .lvl } Un'Goro, Azshara, Felwood, Plaguelands, Winterspring, Burning Steppes
+
+    <span class="step-label">Travel</span> Winterspring leads to [Mount Hyjal](../../world/zones.md#mount-hyjal)
+
+</div>
 
 **Teleports (Classic levels):** Stormwind and Ironforge at 20, Darnassus at 30. Ask other Mages for a Dalaran portal; *Teleport: Dalaran* at 50 is unconfirmed.
 
@@ -92,4 +147,8 @@ Northshire and Elwynn are largely the Classic zones. Quest names below are Class
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 A no-regrets choice. Will to Survive is the best Alliance PvP racial for a Mage, Ruthless helps every spec, and the extra Spirit keeps early leveling smooth. Pick Gnome if you want more burst and root-breaking, or Skyborne for haste and regen.
+
+</div>

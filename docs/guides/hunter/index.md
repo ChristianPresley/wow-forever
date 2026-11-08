@@ -1,4 +1,5 @@
 ---
+description: "Hunter guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
 tags:
   - Hunter
 search:
@@ -6,6 +7,14 @@ search:
 ---
 
 # Hunter Guide
+
+<div class="guide-head" data-class="hunter" markdown>
+
+:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **DPS**{ .badge .dps } <span class="gh-diff" title="Guide infobox; Method: one of the easiest classes to level">Leveling difficulty: <strong>Easy</strong><span class="gh-pips" data-level="1" aria-hidden="true"><i></i></span></span>
+
+<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+
+</div>
 
 !!! info "Current as of 7 November 2026"
     Forever launched on 4 November. The public beta capped at level 30, so **almost every talent build above level 30 is theory**, not tested play. A class-tuning patch is planned for **Tuesday 10 November** that makes Hunter pets more durable (Classic Era parity). Re-check numbers after it lands. Reference data lives on the [Hunter class page](../../characters/classes/hunter.md).
@@ -131,15 +140,46 @@ Talent points start at **level 10**, one per level, for **51 points at 60**. The
 
 Talent calculators show builds as images, so exact rank-by-rank orders aren't published in text. The milestones below come from Method, Mobalytics and Warcraft Tavern, and only up to level 30 were tested in the beta.
 
-| Level | Beast Mastery (leveling) | Notes |
-|---|---|---|
-| 10–14 | Deadly Aspects (max) | Early damage from your aspect |
-| 15–19 | Endurance Training / Focused Fire | Mobalytics' 30 build takes Focused Fire 2/2 |
-| 20–24 | Bestial Swiftness, Unleashed Fury or Bestial Discipline | Sources differ: Warcraft Tavern's leveling guide takes Bestial Swiftness and Ferocity; its class overview prefers Bestial Discipline for mana |
-| **25** | **Summon Hawk** | First big power spike |
-| 26–30 | Ferocity, then Intimidation | Mobalytics: **21/0/0** at 30 |
-| 31–40 | Frenzy, Bestial Wrath line (*Classic-era layout, unconfirmed*) | Untested in beta |
-| 40–60 | Finish BM, then dip Marksmanship for Efficiency/Lethal Attacks | Respec to MM for raids at 60 |
+<div class="milestones" markdown>
+
+<p class="milestones-cap">Beast Mastery (leveling)</p>
+
+Lv 10–14
+:   Deadly Aspects (max)
+
+    *Notes:* Early damage from your aspect
+
+Lv 15–19
+:   Endurance Training / Focused Fire
+
+    *Notes:* Mobalytics' 30 build takes Focused Fire 2/2
+
+Lv 20–24
+:   Bestial Swiftness, Unleashed Fury or Bestial Discipline
+
+    *Notes:* Sources differ: Warcraft Tavern's leveling guide takes Bestial Swiftness and Ferocity; its class overview prefers Bestial Discipline for mana
+
+**25**
+:   **Summon Hawk**
+
+    *Notes:* First big power spike
+
+Lv 26–30
+:   Ferocity, then Intimidation
+
+    *Notes:* Mobalytics: **21/0/0** at 30
+
+Lv 31–40
+:   Frenzy, Bestial Wrath line (*Classic-era layout, unconfirmed*)
+
+    *Notes:* Untested in beta
+
+Lv 40–60
+:   Finish BM, then dip Marksmanship for Efficiency/Lethal Attacks
+
+    *Notes:* Respec to MM for raids at 60
+
+</div>
 
 !!! conflict "Conflict"
     Warcraft Tavern's two Hunter pages disagree on the level-30 BM focus: Bestial Swiftness + Ferocity (leveling guide) versus Unleashed Fury + Ferocity with Bestial Discipline (class overview). Both work; Bestial Discipline helps more if you run out of mana.
@@ -182,24 +222,65 @@ Aspect of the Monkey, Wing Clip, Mongoose Bite, Disengage, Scatter Shot, Immolat
 
 === "Beast Mastery"
 
-    1. Aspect of the Hawk. Send the pet, then open with Auto Shot.
-    2. Serpent Sting.
-    3. **Summon Hawk** on cooldown.
-    4. Arcane Shot once both hawks are out with 6+ s left (they share a cooldown).
-    5. Aimed Shot on cooldown; Rapid Fire on cooldown for big pulls.
-    6. If the pet loses aggro: Wing Clip, Concussive Shot or Frost Trap, then step back.
+    !!! rotation "Beast Mastery priority"
+
+        <div class="priority" markdown>
+
+        1. Aspect of the Hawk. Send the pet, then open with Auto Shot.
+        2. Serpent Sting.
+        3. **Summon Hawk** on cooldown.
+        4. Arcane Shot once both hawks are out with 6+ s left (they share a cooldown).
+        5. Aimed Shot on cooldown; Rapid Fire on cooldown for big pulls.
+        6. If the pet loses aggro: Wing Clip, Concussive Shot or Frost Trap, then step back.
+
+        </div>
+
 
 === "Marksmanship"
 
-    **Single target:** pre-place Immolation Trap where the tank will stand → start **Sniper Shot** as the pull lands → Serpent Sting (refresh on expiry; it powers Rapid Recuperation) → Aimed Shot → Arcane Shot → Rapid Fire on cooldown → Sniper Shot again on cooldown.
+    !!! rotation "Marksmanship: Single target"
 
-    **AoE:** pre-place Explosive Trap → Multi-Shot → Serpent Sting on several targets → Sniper Shot → Arcane Shot → re-trap on cooldown → Rapid Fire.
+        <div class="priority" markdown>
+
+        1. Pre-place Immolation Trap where the tank will stand
+        2. Start **Sniper Shot** as the pull lands
+        3. Serpent Sting (refresh on expiry; it powers Rapid Recuperation)
+        4. Aimed Shot
+        5. Arcane Shot
+        6. Rapid Fire on cooldown
+        7. Sniper Shot again on cooldown.
+
+        </div>
+
+    !!! rotation "Marksmanship: AoE"
+
+        <div class="priority" markdown>
+
+        1. Pre-place Explosive Trap
+        2. Multi-Shot
+        3. Serpent Sting on several targets
+        4. Sniper Shot
+        5. Arcane Shot
+        6. Re-trap on cooldown
+        7. Rapid Fire.
+
+        </div>
 
     Remember Multi-Shot and Aimed Shot share a cooldown.
 
 === "Survival"
 
-    **Melee-weave:** Hawk or Beast aspect → the right tracking → Auto Shot, Serpent Sting, Arcane Shot, Aimed Shot, Rapid Fire as the target closes → step in: Raptor Strike, Immolation Trap at your feet, Mongoose Bite (applies the Lacerating bleed at 31 points), Strider Kick → step back out when the pet takes aggro and shoot again.
+    !!! rotation "Survival: Melee-weave"
+
+        <div class="priority" markdown>
+
+        1. Hawk or Beast aspect
+        2. The right tracking
+        3. Auto Shot, Serpent Sting, Arcane Shot, Aimed Shot, Rapid Fire as the target closes
+        4. Step in: Raptor Strike, Immolation Trap at your feet, Mongoose Bite (applies the Lacerating bleed at 31 points), Strider Kick
+        5. Step back out when the pet takes aggro and shoot again.
+
+        </div>
 
     Full-melee Survival with Predator's Edge dual-wielding is also viable; no source has published a finished priority yet.
 
@@ -215,89 +296,101 @@ Aspect of the Monkey, Wing Clip, Mongoose Bite, Disengage, Scatter Shot, Immolat
 
 ### Useful macros
 
-Warcraft Tavern lists these five; write them in the in-game macro editor (they use standard Classic macro conditionals).
+??? example "Show 5 macros"
 
-```text
-#showtooltip Auto Shot
-/cast !Auto Shot
-```
+    Warcraft Tavern lists these five; write them in the in-game macro editor (they use standard Classic macro conditionals).
 
-```text
-#showtooltip Hunter's Mark
-/cast [@mouseover,harm,nodead][] Hunter's Mark
-```
+    ```text
+    #showtooltip Auto Shot
+    /cast !Auto Shot
+    ```
 
-```text
-/petattack [@mouseover,harm,nodead][]
-```
+    ```text
+    #showtooltip Hunter's Mark
+    /cast [@mouseover,harm,nodead][] Hunter's Mark
+    ```
 
-```text
-#showtooltip
-/cast [@pet,dead] Revive Pet; [nopet] Call Pet; Mend Pet
-```
+    ```text
+    /petattack [@mouseover,harm,nodead][]
+    ```
 
-```text
-#showtooltip Eagle Eye
-/cast [@cursor] Eagle Eye
-```
+    ```text
+    #showtooltip
+    /cast [@pet,dead] Revive Pet; [nopet] Call Pet; Mend Pet
+    ```
 
-The texts above are written for this guide; whether `[@cursor]` works on Eagle Eye in Forever is *unconfirmed*.
+    ```text
+    #showtooltip Eagle Eye
+    /cast [@cursor] Eagle Eye
+    ```
+
+    The texts above are written for this guide; whether `[@cursor]` works on Eagle Eye in Forever is *unconfirmed*.
 
 ## Leveling walkthrough 1–60
 
 Hunters leveled fastest in the beta. Dungeon mobs give less XP and dungeon quests give much more, so quest through and hit dungeons for their quest chains. Zone ranges below are Classic ranges unless marked new; see [Zones](../../world/zones.md).
 
-??? abstract "Levels 1–10: learn the basics, get your pet"
-    - **Zones:** your race's starting zone ([Zephras Isle](../../world/zephras-isle.md) for Skyborne, to about 12). Each race add-on has the exact route.
-    - **Train:** Serpent Sting (4), Arcane Shot and Hunter's Mark (6), Concussive Shot (8).
-    - **Play:** Auto Shot to pull, Serpent Sting, Arcane Shot, kite with Concussive Shot, Raptor Strike when something reaches you.
-    - **Level 10:** Aspect of the Hawk and the **taming chain**. The trainer gives *Taming the Beast*: tame three specific beasts with a Taming Rod, then *Training the Beast* teaches Tame Beast, Feed Pet, Revive Pet and Beast Training. Quest givers vary by race.
-    - **Camping:** at about level 5, take *The Great Outdoors* outside your level-5 hub and build a Basic Campfire. See [Camping](../../systems/camping.md).
-    - **Profession:** take the starter gathering quest (+2 skill). Skinning is the classic Hunter pick.
+<div class="route" markdown>
 
-??? abstract "Levels 10–20: pet and first talents"
-    - **Alliance:** Westfall and Loch Modan (or Darkshore). The new **Stormwind Harbor–Auberdine boat** makes crossing continents easy.
-    - **Horde:** the Barrens (Crossroads), Silverpine Forest. The *Durotar Supply and Logistics* crate camp is west of the Crossroads.
-    - **Talents:** Deadly Aspects first.
-    - **Pet:** a Cat or Boar is the safe leveling pick. Remember you can only tame beasts at your level or lower.
-    - **Dungeons:** Ragefire Chasm, [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18), [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) (15–22), Deadmines, Wailing Caverns.
-    - **Cozy Sleeping Bag** scavenger hunt starts at level 14.
+### 1–10: Learn the basics, get your pet
 
-??? abstract "Levels 20–30: Aimed Shot and Summon Hawk"
-    - **Level 20:** **Aimed Shot**, Aspect of the Cheetah, Freezing Trap. Expert professions open.
-    - **Alliance:** Redridge (Three Corners crate camp), Wetlands, Duskwood, Ashenvale.
-    - **Horde:** Stonetalon, Hillsbrad (Tarren Mill), Ashenvale, Thousand Needles.
-    - **Level 25:** **Summon Hawk** (BM), and the Novice Hunter Legacy tier (+1 Legacy Point).
-    - **Level 26–28:** Rapid Fire, Frost Trap.
-    - **Dungeons:** Shadowfang Keep, [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md), Stockade, Blackfathom Deeps, [City of Dalaran](../../content/dungeons/city-of-dalaran.md) (Alliance-friendly; Horde are attacked on sight in Dalaran).
-    - **Library books:** turn in books at Garion Wendell (Stormwind) or Owen Thadd (Undercity). See the note below.
+- **Zones:** your race's starting zone ([Zephras Isle](../../world/zephras-isle.md) for Skyborne, to about 12). Each race add-on has the exact route.
+- **Train:** Serpent Sting (4), Arcane Shot and Hunter's Mark (6), Concussive Shot (8).
+- **Play:** Auto Shot to pull, Serpent Sting, Arcane Shot, kite with Concussive Shot, Raptor Strike when something reaches you.
+- **Level 10:** Aspect of the Hawk and the **taming chain**. The trainer gives *Taming the Beast*: tame three specific beasts with a Taming Rod, then *Training the Beast* teaches Tame Beast, Feed Pet, Revive Pet and Beast Training. Quest givers vary by race.
+- **Camping:** at about level 5, take *The Great Outdoors* outside your level-5 hub and build a Basic Campfire. See [Camping](../../systems/camping.md).
+- **Profession:** take the starter gathering quest (+2 skill). Skinning is the classic Hunter pick.
 
-??? abstract "Levels 30–40: Feign Death, Darkspear Islands"
-    - **Level 30:** **Feign Death**, Intimidation, pet Dash. Battle for the [Darkspear Islands](../../content/pvp/battlegrounds.md#darkspear-islands) opens.
-    - **Alliance:** Hillsbrad, Arathi, Stranglethorn, Desolace, Dustwallow (Theramore).
-    - **Horde:** Arathi (Hammerfall), Stranglethorn (Grom'gol), Desolace, Thousand Needles.
-    - **Level 35+:** the new contested zone [Riverglades](../../world/zones.md#riverglades) (35–45; Farholde Keep for Alliance, Rog'mar for Horde). Desolace centaur quests now need level 35. Artisan professions at 35.
-    - **Dungeons:** Razorfen Kraul, Gnomeregan, Scarlet Monastery wings, [The Drowned City](../../content/dungeons/drowned-city.md) (35–40).
-    - **Level 40:** **Mail armor**, **riding** (100g including your first mount; see [Riding](../../characters/leveling.md#riding)) and **dual spec** (50g). Budget gold from about level 30.
+### 10–20: Pet and first talents
 
-??? abstract "Levels 40–50: Riverglades and Tanaris"
-    - **Both factions:** finish Riverglades, then Badlands, Swamp of Sorrows, Tanaris (Steamwheedle Port ferry to Riverglades), Feralas, the Hinterlands.
-    - **Level 45:** Experienced Hunter Legacy tier.
-    - **Level 46:** Aspect of the Wild.
-    - **Dungeons:** [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) (40–45), Razorfen Downs, Uldaman, Zul'Farrak, [Alcaz Prison](../../content/dungeons/alcaz-prison.md) (48–53).
-    - **Pet upgrade:** swap to a Wolf for dungeons (Furious Howl), keep a Boar or Cat for questing.
+- **Alliance:** Westfall and Loch Modan (or Darkshore). The new **Stormwind Harbor–Auberdine boat** makes crossing continents easy.
+- **Horde:** the Barrens (Crossroads), Silverpine Forest. The *Durotar Supply and Logistics* crate camp is west of the Crossroads.
+- **Talents:** Deadly Aspects first.
+- **Pet:** a Cat or Boar is the safe leveling pick. Remember you can only tame beasts at your level or lower.
+- **Dungeons:** Ragefire Chasm, [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18), [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) (15–22), Deadmines, Wailing Caverns.
+- **Cozy Sleeping Bag** scavenger hunt starts at level 14.
 
-??? abstract "Levels 50–60: Azshara, Un'Goro and Hyjal"
-    - **Zones:** [Azshara](../../world/zones.md#changed-classic-zones) (lots of new quests), Un'Goro, Felwood, Western and Eastern Plaguelands, Burning Steppes, Winterspring, Silithus.
-    - **Level 60:** [Mount Hyjal](../../world/zones.md#mount-hyjal) through Darkwhisper Gorge in Winterspring, and the Master Hunter Legacy tier.
-    - **Dungeons:** Maraudon, Sunken Temple, [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60), Blackrock Depths, then the 60 dungeons and [Shaper's Terrace](../../content/dungeons/shapers-terrace.md).
-    - Start the **Onyxia attunement** early; it runs through Blackrock Spire.
+### 20–30: Aimed Shot and Summon Hawk
+
+- **Level 20:** **Aimed Shot**, Aspect of the Cheetah, Freezing Trap. Expert professions open.
+- **Alliance:** Redridge (Three Corners crate camp), Wetlands, Duskwood, Ashenvale.
+- **Horde:** Stonetalon, Hillsbrad (Tarren Mill), Ashenvale, Thousand Needles.
+- **Level 25:** **Summon Hawk** (BM), and the Novice Hunter Legacy tier (+1 Legacy Point).
+- **Level 26–28:** Rapid Fire, Frost Trap.
+- **Dungeons:** Shadowfang Keep, [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md), Stockade, Blackfathom Deeps, [City of Dalaran](../../content/dungeons/city-of-dalaran.md) (Alliance-friendly; Horde are attacked on sight in Dalaran).
+- **Library books:** turn in books at Garion Wendell (Stormwind) or Owen Thadd (Undercity). See the note below.
+
+### 30–40: Feign Death, Darkspear Islands
+
+- **Level 30:** **Feign Death**, Intimidation, pet Dash. Battle for the [Darkspear Islands](../../content/pvp/battlegrounds.md#darkspear-islands) opens.
+- **Alliance:** Hillsbrad, Arathi, Stranglethorn, Desolace, Dustwallow (Theramore).
+- **Horde:** Arathi (Hammerfall), Stranglethorn (Grom'gol), Desolace, Thousand Needles.
+- **Level 35+:** the new contested zone [Riverglades](../../world/zones.md#riverglades) (35–45; Farholde Keep for Alliance, Rog'mar for Horde). Desolace centaur quests now need level 35. Artisan professions at 35.
+- **Dungeons:** Razorfen Kraul, Gnomeregan, Scarlet Monastery wings, [The Drowned City](../../content/dungeons/drowned-city.md) (35–40).
+- **Level 40:** **Mail armor**, **riding** (100g including your first mount; see [Riding](../../characters/leveling.md#riding)) and **dual spec** (50g). Budget gold from about level 30.
+
+### 40–50: Riverglades and Tanaris
+
+- **Both factions:** finish Riverglades, then Badlands, Swamp of Sorrows, Tanaris (Steamwheedle Port ferry to Riverglades), Feralas, the Hinterlands.
+- **Level 45:** Experienced Hunter Legacy tier.
+- **Level 46:** Aspect of the Wild.
+- **Dungeons:** [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) (40–45), Razorfen Downs, Uldaman, Zul'Farrak, [Alcaz Prison](../../content/dungeons/alcaz-prison.md) (48–53).
+- **Pet upgrade:** swap to a Wolf for dungeons (Furious Howl), keep a Boar or Cat for questing.
+
+### 50–60: Azshara, Un'Goro and Hyjal
+
+- **Zones:** [Azshara](../../world/zones.md#changed-classic-zones) (lots of new quests), Un'Goro, Felwood, Western and Eastern Plaguelands, Burning Steppes, Winterspring, Silithus.
+- **Level 60:** [Mount Hyjal](../../world/zones.md#mount-hyjal) through Darkwhisper Gorge in Winterspring, and the Master Hunter Legacy tier.
+- **Dungeons:** Maraudon, Sunken Temple, [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60), Blackrock Depths, then the 60 dungeons and [Shaper's Terrace](../../content/dungeons/shapers-terrace.md).
+- Start the **Onyxia attunement** early; it runs through Blackrock Spire.
 
 !!! conflict "Conflict: library-book quests"
     The [leveling page](../../characters/leveling.md#carried-over-from-season-of-discovery) says 10/20/25 books unlock quests at levels **20/35/45**. Warcraft Tavern's library-book guide lists the same book counts as unlocking *Friend of the Library* rewards at levels **1/20/30** (the 25-book tier offers a bow, *Truthseeker's Bow*, among other rewards). Neither source describes a Hunter-only quest. Check with Garion Wendell or Owen Thadd in game.
 
 !!! warning "No Rhok'delar yet"
     The Classic level-60 Hunter epic bow quest needs a drop from Molten Core, which isn't in Forever at launch. Whether it returns with a revamped Molten Core is unknown.
+
+</div>
 
 ## Dungeons
 
@@ -399,15 +492,17 @@ Leveling any of the six crafting professions to 150/225/300 also earns [Legacy P
 
 ## Hardcore notes
 
-[Hardcore](../../about/hardcore.md) arrives in winter 2026/2027. Hunters are among the safest classes for it:
+!!! hardcore "Hardcore survival"
 
-- **Never tame while another mob can reach you.** Taming reduces your armor by 100% for the channel.
-- Keep **Feign Death** and a **Freezing Trap** ready before every pull, and remember the shared trap cooldown.
-- Don't fight in Cheetah or Pack: being Dazed is how many Hardcore Hunters die.
-- Keep a defensive pet (Boar, Bear, Turtle) for dangerous zones.
-- Skyborne **Walk on Air** and Night Elf **Shadowmeld** are extra escape buttons.
-- Feign Death can be resisted. Have a second plan.
-- Elite quests and dungeons: go with a group, and set the pet to Passive in corridors so it doesn't pull.
+    [Hardcore](../../about/hardcore.md) arrives in winter 2026/2027. Hunters are among the safest classes for it:
+
+    - **Never tame while another mob can reach you.** Taming reduces your armor by 100% for the channel.
+    - Keep **Feign Death** and a **Freezing Trap** ready before every pull, and remember the shared trap cooldown.
+    - Don't fight in Cheetah or Pack: being Dazed is how many Hardcore Hunters die.
+    - Keep a defensive pet (Boar, Bear, Turtle) for dangerous zones.
+    - Skyborne **Walk on Air** and Night Elf **Shadowmeld** are extra escape buttons.
+    - Feign Death can be resisted. Have a second plan.
+    - Elite quests and dungeons: go with a group, and set the pet to Passive in corridors so it doesn't pull.
 
 ## Common mistakes & FAQ
 
@@ -442,17 +537,19 @@ Leveling any of the six crafting professions to 150/225/300 also earns [Legacy P
 
 ## Sources
 
-- [Warcraft Tavern: Hunter guide](https://warcrafttavern.com/forever/guides/hunter/)
-- [Warcraft Tavern: Hunter leveling](https://www.warcrafttavern.com/forever/guides/hunter-leveling/)
-- [Warcraft Tavern: Marksmanship Hunter](https://www.warcrafttavern.com/forever/guides/marksmanship-hunter/)
-- [Warcraft Tavern: Hunter pets](https://www.warcrafttavern.com/forever/guides/hunter-pets/)
-- [Warcraft Tavern: Hunter pet families](https://www.warcrafttavern.com/forever/guides/hunter-pet-families/)
-- [Warcraft Tavern: Best Hunter pets](https://www.warcrafttavern.com/forever/guides/best-hunter-pets/)
-- [Warcraft Tavern: Library books](https://www.warcrafttavern.com/forever/guides/library-books/)
-- [Warcraft Tavern: Beta dates and level caps](https://www.warcrafttavern.com/forever/guides/beta/)
-- [Method: Hunter leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-hunter-leveling-guide-and-talents)
-- [Mobalytics: Hunter leveling guide](https://mobalytics.gg/wow-forever/classes/hunter-leveling-guide)
-- [Icy Veins: Hunter class quests](https://www.icy-veins.com/wow-forever/hunter-class-quests)
-- [Blizzard forums: "Lone Wolf is a mistake"](https://us.forums.blizzard.com/en/wow/t/2375143)
-- [Wowhead: Taming the Beast (Skyborne)](https://www.wowhead.com/forever/quest=94978)
-- [Warcraft Wiki: Josephine Carson](https://warcraft.wiki.gg/wiki/Josephine_Carson)
+??? quote "14 sources"
+
+    - [Warcraft Tavern: Hunter guide](https://warcrafttavern.com/forever/guides/hunter/)
+    - [Warcraft Tavern: Hunter leveling](https://www.warcrafttavern.com/forever/guides/hunter-leveling/)
+    - [Warcraft Tavern: Marksmanship Hunter](https://www.warcrafttavern.com/forever/guides/marksmanship-hunter/)
+    - [Warcraft Tavern: Hunter pets](https://www.warcrafttavern.com/forever/guides/hunter-pets/)
+    - [Warcraft Tavern: Hunter pet families](https://www.warcrafttavern.com/forever/guides/hunter-pet-families/)
+    - [Warcraft Tavern: Best Hunter pets](https://www.warcrafttavern.com/forever/guides/best-hunter-pets/)
+    - [Warcraft Tavern: Library books](https://www.warcrafttavern.com/forever/guides/library-books/)
+    - [Warcraft Tavern: Beta dates and level caps](https://www.warcrafttavern.com/forever/guides/beta/)
+    - [Method: Hunter leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-hunter-leveling-guide-and-talents)
+    - [Mobalytics: Hunter leveling guide](https://mobalytics.gg/wow-forever/classes/hunter-leveling-guide)
+    - [Icy Veins: Hunter class quests](https://www.icy-veins.com/wow-forever/hunter-class-quests)
+    - [Blizzard forums: "Lone Wolf is a mistake"](https://us.forums.blizzard.com/en/wow/t/2375143)
+    - [Wowhead: Taming the Beast (Skyborne)](https://www.wowhead.com/forever/quest=94978)
+    - [Warcraft Wiki: Josephine Carson](https://warcraft.wiki.gg/wiki/Josephine_Carson)

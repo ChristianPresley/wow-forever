@@ -1,0 +1,137 @@
+/* guides.css: owned by the guides session (round 2). Loaded after extra.css.
+   Presentation for docs/guides/**: the slim guide header, ability cards,
+   step titles, milestone points, the verdict card and collapsible macros.
+   Tokens come from extra.css; nothing here sets a raw colour. */
+
+/* 1 · slim guide header ------------------------------------------------- */
+.md-typeset .guide-head {
+  --gh-accent: var(--fc-gold);
+  display: flex; flex-direction: column; gap: .45rem;
+  margin: 0 0 1.2rem; padding: .55rem .8rem .6rem;
+  border: 1px solid var(--fc-border); border-left: 4px solid var(--gh-accent);
+  border-radius: var(--fc-radius); background: var(--fc-surface-1);
+  font-size: .78rem;
+}
+.md-typeset .guide-head[data-class="warrior"] { --gh-accent: var(--fc-c-warrior); }
+.md-typeset .guide-head[data-class="hunter"]  { --gh-accent: var(--fc-c-hunter); }
+.md-typeset .guide-head[data-class="paladin"] { --gh-accent: var(--fc-c-paladin); }
+.md-typeset .guide-head[data-class="druid"]   { --gh-accent: var(--fc-c-druid); }
+.md-typeset .guide-head[data-class="rogue"]   { --gh-accent: var(--fc-c-rogue); }
+.md-typeset .guide-head[data-class="shaman"]  { --gh-accent: var(--fc-c-shaman); }
+.md-typeset .guide-head[data-class="mage"]    { --gh-accent: var(--fc-c-mage); }
+.md-typeset .guide-head[data-class="warlock"] { --gh-accent: var(--fc-c-warlock); }
+.md-typeset .guide-head[data-class="priest"]  { --gh-accent: var(--fc-c-priest); }
+.md-typeset .guide-head > p { margin: 0; }
+/* row 1: kind, roles, faction, difficulty */
+.md-typeset .guide-head > p:first-child { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .4rem; }
+.md-typeset .guide-head .gh-kind {
+  font-family: var(--fc-display-font); font-size: .85rem; font-weight: 700; color: var(--fc-text); margin-right: .2rem;
+}
+.md-typeset .guide-head .badge.faction { color: var(--fc-text); border-color: var(--fc-border-strong); }
+.md-typeset .guide-head .gh-diff { color: var(--fc-text-muted); white-space: nowrap; }
+.md-typeset .guide-head .gh-diff strong { color: var(--fc-text); font-weight: 650; }
+/* three-pip difficulty meter; the word beside it carries the meaning */
+.md-typeset .guide-head .gh-pips { display: inline-flex; gap: 2px; margin-left: .3em; vertical-align: .05em; }
+.md-typeset .guide-head .gh-pips::before, .md-typeset .guide-head .gh-pips::after,
+.md-typeset .guide-head .gh-pips > i { content: ""; display: block; width: .55em; height: .55em; border-radius: 1px;
+  border: 1px solid var(--fc-border-strong); }
+.md-typeset .guide-head .gh-pips::before { order: 0; } .md-typeset .guide-head .gh-pips > i { order: 1; } .md-typeset .guide-head .gh-pips::after { order: 2; }
+.md-typeset .guide-head .gh-pips[data-level="1"]::before,
+.md-typeset .guide-head .gh-pips[data-level="2"]::before, .md-typeset .guide-head .gh-pips[data-level="2"] > i,
+.md-typeset .guide-head .gh-pips[data-level="3"]::before, .md-typeset .guide-head .gh-pips[data-level="3"] > i,
+.md-typeset .guide-head .gh-pips[data-level="3"]::after { background: var(--gh-accent); border-color: var(--gh-accent); }
+/* row 2: the add-on note, or jump links on class guides */
+.md-typeset .guide-head .gh-note { color: var(--fc-text-muted); }
+.md-typeset .guide-head .gh-jump { display: flex; flex-wrap: wrap; gap: .3rem; }
+.md-typeset .guide-head .gh-jump a {
+  display: inline-flex; align-items: center; min-height: 1.75rem; padding: 0 .6rem; border-radius: 1rem;
+  border: 1px solid var(--fc-border); background: var(--fc-bg); color: var(--fc-text);
+  text-decoration: none; font-weight: 600; font-size: .72rem;
+  transition: border-color var(--fc-dur-1, 100ms) var(--fc-ease, ease), background-color var(--fc-dur-1, 100ms) var(--fc-ease, ease);
+}
+.md-typeset .guide-head .gh-jump a:hover { border-color: var(--gh-accent); background: var(--fc-surface-2); }
+.md-typeset .guide-head .gh-sigil { width: 1.4rem; height: 1.4rem; flex: none; color: var(--gh-accent); }
+
+/* 2 · ability (racial) cards ---------------------------------------------- */
+.md-typeset .ability-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: .7rem; margin: 1rem 0 1.2rem; }
+.md-typeset .ability-card {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .65rem .8rem .7rem; border: 1px solid var(--fc-border); border-radius: var(--fc-radius);
+  background: var(--fc-surface-1); font-size: .78rem;
+}
+.md-typeset .ability-card > p { margin: 0; }
+.md-typeset .ability-card .ability-name { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .5rem; font-size: .85rem; }
+.md-typeset .ability-card .ability-name > strong { font-family: var(--fc-display-font); font-size: 1.05em; }
+.md-typeset .ability-card .ability-type {
+  margin-left: auto; padding: .02em .5em; border-radius: .2em; font-size: .62rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--fc-text-muted); border: 1px solid var(--fc-border-strong);
+}
+.md-typeset .ability-card .ability-type.active { color: var(--fc-text); border-style: solid; }
+.md-typeset .ability-card .ability-type.passive { border-style: dashed; }
+.md-typeset .ability-card .ability-rating { padding-bottom: .35rem; border-bottom: 1px solid var(--fc-border); }
+.md-typeset .ability-card .ability-label { font-weight: 650; color: var(--fc-text-muted); margin-right: .35em; }
+
+/* 3 · steps: chip-first titles, route meta ---------------------------------- */
+.md-typeset .steps > ol > li > p:first-child { font-weight: 600; }
+.md-typeset .steps > ol > li > p:first-child > .lvl:first-child { margin: 0 .45em 0 0; vertical-align: .1em; }
+.md-typeset .steps > ol > li > p { margin: .1rem 0 .3rem; }
+.md-typeset .steps .step-label { font-size: .68rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--fc-text-muted); margin-right: .4em; }
+
+/* 4 · milestones: points chip --------------------------------------------- */
+.md-typeset .milestones .pts { font-size: .68rem; font-weight: 700; padding: .02em .45em; margin-right: .4em; border-radius: .2em;
+  background: var(--fc-surface-2); color: var(--fc-text-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.md-typeset .milestones dt { font-variant-numeric: tabular-nums; }
+
+/* 5 · verdict card --------------------------------------------------------- */
+.md-typeset .verdict { padding: .7rem .9rem; border: 1px solid var(--fc-border); border-top: 3px solid var(--fc-gold);
+  border-radius: var(--fc-radius); background: var(--fc-surface-1); }
+.md-typeset .verdict > :first-child { margin-top: 0; }
+.md-typeset .verdict > :last-child { margin-bottom: 0; }
+
+/* 6 · rotation blocks sit tighter -------------------------------------------- */
+.md-typeset .rotation .priority > ol { margin: .4rem 0; }
+
+@media (forced-colors: active) {
+  .md-typeset :is(.guide-head, .ability-card, .verdict) { border: 1px solid CanvasText; }
+  .md-typeset .guide-head .gh-pips::before, .md-typeset .guide-head .gh-pips::after, .md-typeset .guide-head .gh-pips > i { border-color: CanvasText; }
+  .md-typeset .guide-head .gh-pips[data-level="1"]::before,
+  .md-typeset .guide-head .gh-pips[data-level="2"]::before, .md-typeset .guide-head .gh-pips[data-level="2"] > i,
+  .md-typeset .guide-head .gh-pips[data-level="3"]::before, .md-typeset .guide-head .gh-pips[data-level="3"] > i,
+  .md-typeset .guide-head .gh-pips[data-level="3"]::after { background: CanvasText; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .guide-head .gh-jump a { transition: none; }
+}
+@media print {
+  .md-typeset .guide-head .gh-jump { display: none; }
+}
+
+/* 7 · leveling route rail on class guides: the H3 brackets become stops ----- */
+.md-typeset .route { position: relative; counter-reset: stop; padding-left: 2.6rem; }
+.md-typeset .route::before { content: ""; position: absolute; left: .875rem; top: 1.6rem; bottom: 1rem; width: 2px; background: var(--fc-border); }
+.md-typeset .route > h3 { position: relative; counter-increment: stop; }
+.md-typeset .route > h3::before { content: counter(stop); position: absolute; left: -2.6rem; top: 50%; transform: translateY(-50%);
+  width: 1.8rem; height: 1.8rem; display: grid; place-items: center; border-radius: 50%;
+  background: var(--fc-navy); color: var(--fc-on-navy); box-shadow: 0 0 0 2px var(--fc-gold);
+  font-family: var(--md-text-font-family, inherit); font-size: .75rem; font-weight: 700; }
+@media (max-width: 30em) { .md-typeset .route { padding-left: 2.1rem; } .md-typeset .route > h3::before { left: -2.1rem; width: 1.5rem; height: 1.5rem; } .md-typeset .route::before { left: .7rem; } }
+
+/* 8 · milestone caption (names the build a timeline belongs to) */
+.md-typeset .milestones-cap { margin: 0 0 .3rem; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--fc-text-muted); }
+
+/* 9 · priority list fix: extra.css makes each <li> a flex row, which turns every
+   <strong> and text run into its own flex item and breaks inline spacing
+   ("with  Cheap Shot ,"). Keep the numbered tile but let the text flow. */
+.md-typeset .priority > ol > li { display: block; position: relative; padding-left: 2rem; margin: .35rem 0; }
+.md-typeset .priority > ol > li::before { position: absolute; left: 0; top: .1em; line-height: 1.4; }
+
+/* 10 · phones: the jump links stay one swipeable row instead of three wrapped rows */
+@media (max-width: 44.9375em) {
+  .md-typeset .guide-head .gh-jump { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -.8rem; padding-right: .8rem; padding-bottom: 2px; }
+  .md-typeset .guide-head .gh-jump::-webkit-scrollbar { display: none; }
+  .md-typeset .guide-head .gh-jump a { flex: none; }
+}
+
+/* 11 · class sigil (identity's :codex-*: icons) leads the header row */
+.md-typeset .guide-head > p:first-child > .fc-sigil:first-child { font-size: 1.35em; color: var(--gh-accent); }
+.md-typeset .guide-head .badge.faction .fc-sigil { font-size: 1.1em; }

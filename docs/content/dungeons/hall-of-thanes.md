@@ -1,5 +1,9 @@
 # Hall of Thanes
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Hall of Thanes</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **5-player dungeon**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | 5-player dungeon (new in Forever) |
@@ -8,7 +12,7 @@
 | **Faction** | Effectively Alliance |
 | **Bosses** | 4 |
 
-## Overview
+</aside>
 
 The tomb of the dwarven kings lies beneath Ironforge. Suspected Dark Iron intruders have broken in, and something ancient has stirred in the halls.
 

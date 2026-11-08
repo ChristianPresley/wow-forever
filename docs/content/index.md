@@ -2,6 +2,34 @@
 
 Forever's level cap is **60, permanently**. New content is added *sideways* (new zones, dungeons and raids at or below 60) instead of raising the cap.
 
+## In this section
+
+<div class="grid cards fc-hub" markdown>
+
+-   :material-castle: **[Dungeons](dungeons/index.md)**
+
+    All 32 five-player dungeons by level, plus the 9 new ones in detail.
+
+-   :material-tower-fire: **[Raids](raids/index.md)**
+
+    Barrow Deeps, Hyjal Summit and Onyxia's Lair, unlocking 9 Dec 2026.
+
+-   :material-sword-cross: **[PvP](pvp/index.md)**
+
+    World PvP, Honor, seasonal Ranks 1–14 and rank rewards.
+
+-   :material-flag-variant: **[Battlegrounds](pvp/battlegrounds.md)**
+
+    The new Darkspear Islands 15v15, and the original battlegrounds.
+
+-   :material-road-variant: **[Roadmap](roadmap.md)**
+
+    What is official, stated or speculated for winter 2026 to summer 2027.
+
+</div>
+
+## At launch
+
 | | At launch (4 Nov 2026) |
 |---|---|
 | **Dungeons** | 32 in total: 9 new five-player dungeons for levels 13–60, plus every original Classic dungeon. [Full list](dungeons/index.md) |

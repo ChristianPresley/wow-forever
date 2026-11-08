@@ -1,5 +1,9 @@
 # The Barrow Deeps
 
+<aside class="infobox" markdown>
+<p class="infobox-title">The Barrow Deeps</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **10-player raid**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | Raid (new in Forever) |
@@ -10,7 +14,7 @@
 | **Bosses** | 8 |
 | **Reset** | Weekly |
 
-## Overview
+</aside>
 
 The Barrow Deeps are the prison where **Illidan Stormrage was held for 10,000 years**. Druids of the Claw and dangerous night elf prisoners roam its halls. The raid has multiple paths and themed areas.
 
@@ -32,7 +36,7 @@ The Barrow Deeps are the prison where **Illidan Stormrage was held for 10,000 ye
 From the official podcast, episode 5:
 
 - One fight grants a damage buff that comes at a cost.
-- A two-spider fight, probably Ravus and Darlissa or the Dreadspinner (unconfirmed which).
+- A two-spider fight, probably Ravus and Darlissa or the Dreadspinner (*unconfirmed*{ .unconfirmed } which).
 
 !!! conflict "Conflicts"
     The Warcraft Wiki's infobox says 10 players, but its intro says 20. Blizzard says **10**. Mobalytics lists only the Blackmaw Hold entrance.

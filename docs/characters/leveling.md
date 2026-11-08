@@ -18,11 +18,15 @@
 
 ## Riding
 
+<div class="compare" markdown>
+
 | Skill | Level | Speed | Cost |
 |---|---|---|---|
 | Apprentice | 40 | +60% | **100g**, including your first racial mount (extra colors 20g) |
-| Journeyman (epic) | 60 | +100% | **1,000g**. Epic mounts reportedly 200g each (*single source*) |
+| Journeyman (epic) | 60 | +100% | **1,000g**. Epic mounts reportedly 200g each *unconfirmed*{ .unconfirmed } |
 | Flying | — | — | **None, by design** |
+
+</div>
 
 - **Discounts:** Honored with your home faction gives −10% on Riding and racial mounts. The Legacy talent *Bartering* gives up to −10% on mounts. Skyborne reputation gives 5–20% off Galestriders.
 - Mounts of other races require **Exalted** reputation.
@@ -39,7 +43,7 @@
     - **Darkspear Raiders / Theramore Expeditionary Force** (Darkspear Islands battleground). Exalted gives a tabard and a Legacy Point.
     - **Nightclaw** druids (Zephras Isle, repeatable quest).
     - **Kirin Tor** (Dalaran; not available to the Horde).
-    - Mount Hyjal endgame factions (names unconfirmed).
+    - Mount Hyjal endgame factions (names *unconfirmed*{ .unconfirmed }).
     - Reworked **Gelkis** and **Magram** centaur factions (Desolace).
 - The Legacy talent **Diplomat** gives up to +10% reputation gain.
 

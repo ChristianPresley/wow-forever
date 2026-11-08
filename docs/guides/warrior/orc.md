@@ -7,8 +7,13 @@ tags:
 
 # Orc Warrior
 
-!!! tip "Add-on"
-    Read with the [Warrior guide](index.md). This page covers only what changes for an Orc.
+<div class="guide-head" data-class="warrior" markdown>
+
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Warrior guide](index.md). This page covers only what changes for an Orc.</p>
+
+</div>
 
 ## Why this combo
 
@@ -19,45 +24,93 @@ The Orc Warrior is the iconic Horde fighter. Forever removed **Axe Specializatio
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **Blood Fury** | Active | **5/5**{ .stars .s5 } | +10% AP for 15 s on a 2 min cooldown. Use it with Death Wish and Recklessness, and on every leveling pull where it's ready | Burst for a Mortal Strike kill |
-| **Shatter Curse** *(new)* | Active | **3/5**{ .stars .s3 } | Removes curses and Banes, and −5% magic damage taken for 8 s. Handy on cursed bosses | Removes Curse of Exhaustion, Curse of Recklessness, and Warlock Banes |
-| **Command** | Passive | ☆☆☆☆☆ | +5% pet damage: does nothing for a Warrior | None |
-| **Hardiness** | Passive | **4/5**{ .stars .s4 } | Shorter boss stuns | 20% off every stun: Kidney Shot, Hammer of Justice, Concussion Blow |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Blood Fury** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
+<p markdown><span class="ability-label">PvE</span> +10% AP for 15 s on a 2 min cooldown. Use it with Death Wish and Recklessness, and on every leveling pull where it's ready</p>
+<p markdown><span class="ability-label">PvP</span> Burst for a Mortal Strike kill</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Shatter Curse** *(new)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> Removes curses and Banes, and −5% magic damage taken for 8 s. Handy on cursed bosses</p>
+<p markdown><span class="ability-label">PvP</span> Removes Curse of Exhaustion, Curse of Recklessness, and Warlock Banes</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Command** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> ☆☆☆☆☆</p>
+<p markdown><span class="ability-label">PvE</span> +5% pet damage: does nothing for a Warrior</p>
+<p markdown><span class="ability-label">PvP</span> None</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Hardiness** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> Shorter boss stuns</p>
+<p markdown><span class="ability-label">PvP</span> 20% off every stun: Kidney Shot, Hammer of Justice, Concussion Blow</p>
+</div>
+
+</div>
 
 !!! note "Axe Specialization"
     The old Orc axe racial is gone. If you want axes, the **Weaponmaster** talent gives them crit.
 
-**Macro: open with burst**
+??? example "Macro: open with burst"
 
-```text
-#showtooltip Blood Fury
-/cast Blood Fury
-/cast Death Wish
-```
+    ```text
+    #showtooltip Blood Fury
+    /cast Blood Fury
+    /cast Death Wish
+    ```
 
 ## Starting zone walkthrough (1–12)
 
 Orcs start in the **Valley of Trials**, **Durotar**. Blizzard says the Valley got new NPCs, quests, profession hooks and "small moments". *Quest and NPC names are Classic-era; check in game.*
 
-1. **Valley of Trials (1–5).** Speak to the Warrior trainer near the den (Classic: Frang). Kill boars, scorpids, Sarkoth and the Vile Familiars. **Charge** and **Rend** at 4.
-2. **The Great Outdoors (~5).** Camping intro and Cooking.
-3. **Razor Hill and Sen'jin (5–10).** Kul Tiras sailors at Tiragarde Keep, Burning Blade cultists, Echo Isles trolls. There's a Warrior trainer in Razor Hill. **Hamstring** at 8.
-4. **Level 10.** **Defensive Stance** quest from your trainer.
-5. **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
-6. **10–12.** Finish Durotar and head west into **the Barrens**. Ragefire Chasm in Orgrimmar opens at 13.
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } **Valley of Trials.** Speak to the Warrior trainer near the den (Classic: Frang). Kill boars, scorpids, Sarkoth and the Vile Familiars. **Charge** and **Rend** at 4.
+2.  **~5**{ .lvl } **The Great Outdoors.** Camping intro and Cooking.
+3.  **5–10**{ .lvl } **Razor Hill and Sen'jin.** Kul Tiras sailors at Tiragarde Keep, Burning Blade cultists, Echo Isles trolls. There's a Warrior trainer in Razor Hill. **Hamstring** at 8.
+4.  **10**{ .lvl } **Defensive Stance** quest from your trainer.
+5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
+6.  **10–12.** Finish Durotar and head west into **the Barrens**. Ragefire Chasm in Orgrimmar opens at 13.
+
+</div>
 
 ## Route to 60 from Orgrimmar
 
-| Levels | Zones | Flight paths / notes |
-|---|---|---|
-| 10–20 | The Barrens → Silverpine Forest (zeppelin) → Stonetalon | Crossroads. Ragefire Chasm, Wailing Caverns, [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) |
-| 20–30 | Stonetalon → Ashenvale → Hillsbrad → Thousand Needles | Sun Rock Retreat, Splintertree Post, Tarren Mill. Shadowfang Keep |
-| 30–40 | Arathi → Stranglethorn → Desolace → Thousand Needles | Hammerfall, Grom'gol. Scarlet Monastery. [The Drowned City](../../content/dungeons/drowned-city.md). Avoid Dalaran: it's hostile to the Horde |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar, with the ogres of Bolder'ok) → Dustwallow Marsh | Brackenwall Village |
-| 45–55 | Badlands → Tanaris → Feralas → Hinterlands → Azshara → Un'Goro | Kargath, Camp Mojache. [Alcaz Prison](../../content/dungeons/alcaz-prison.md), Zul'Farrak |
-| 55–60 | Felwood → Burning Steppes → Plaguelands → Winterspring → Mount Hyjal | Bloodvenom Post, Flame Crest. Blackrock Spire is Orc history |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } The Barrens → Silverpine Forest (zeppelin) → Stonetalon
+
+    <span class="step-label">Flight paths / notes</span> Crossroads. Ragefire Chasm, Wailing Caverns, [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md)
+
+2.  **20–30**{ .lvl } Stonetalon → Ashenvale → Hillsbrad → Thousand Needles
+
+    <span class="step-label">Flight paths / notes</span> Sun Rock Retreat, Splintertree Post, Tarren Mill. Shadowfang Keep
+
+3.  **30–40**{ .lvl } Arathi → Stranglethorn → Desolace → Thousand Needles
+
+    <span class="step-label">Flight paths / notes</span> Hammerfall, Grom'gol. Scarlet Monastery. [The Drowned City](../../content/dungeons/drowned-city.md). Avoid Dalaran: it's hostile to the Horde
+
+4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar, with the ogres of Bolder'ok) → Dustwallow Marsh
+
+    <span class="step-label">Flight paths / notes</span> Brackenwall Village
+
+5.  **45–55**{ .lvl } Badlands → Tanaris → Feralas → Hinterlands → Azshara → Un'Goro
+
+    <span class="step-label">Flight paths / notes</span> Kargath, Camp Mojache. [Alcaz Prison](../../content/dungeons/alcaz-prison.md), Zul'Farrak
+
+6.  **55–60**{ .lvl } Felwood → Burning Steppes → Plaguelands → Winterspring → Mount Hyjal
+
+    <span class="step-label">Flight paths / notes</span> Bloodvenom Post, Flame Crest. Blackrock Spire is Orc history
+
+</div>
 
 **Class trainers:** Orgrimmar's Warrior trainers are in the **Valley of Honor**. The PvP vendor is in the Hall of Legends.
 
@@ -89,4 +142,8 @@ Orcs start in the **Valley of Trials**, **Durotar**. Blizzard says the Valley go
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 Still one of the best Warrior races. Blood Fury and Hardiness are useful in every part of the game, and Shatter Curse adds a niche cleanse. For PvE damage it's arguably the Horde's best; Tauren is the main rival for tanking.
+
+</div>

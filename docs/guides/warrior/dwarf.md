@@ -7,8 +7,13 @@ tags:
 
 # Dwarf Warrior
 
-!!! tip "Add-on"
-    Read with the [Warrior guide](index.md). This page covers only what changes for a Dwarf.
+<div class="guide-head" data-class="warrior" markdown>
+
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Warrior guide](index.md). This page covers only what changes for a Dwarf.</p>
+
+</div>
 
 ## Why this combo
 
@@ -19,45 +24,93 @@ The Dwarf is the Alliance's tank race in Forever. **Stoneform** now adds **10% p
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **Stoneform** *(changed)* | Active | **5/5**{ .stars .s5 } | A tank cooldown: 10% physical reduction for 8 s plus cleansing. Use it on big hits or bleed and poison phases | Removes Rend, Deep Wounds, Garrote, poisons and diseases and grants immunity. A Rogue's worst nightmare |
-| **Find Treasure** | Active | **1/5**{ .stars .s1 } | Tracks treasure chests while leveling | None |
-| **Artisan's Precision** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% hit, one of the most valuable DPS stats until you're capped | Fewer misses on Hamstring and Mortal Strike |
-| **Big Game Hunter** *(new)* | Passive | **3/5**{ .stars .s3 } | +5% damage vs Beasts, which make up much of the leveling world | +5% vs Hunter pets and Druids in animal form *(unconfirmed whether forms count)* |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Stoneform** *(changed)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
+<p markdown><span class="ability-label">PvE</span> A tank cooldown: 10% physical reduction for 8 s plus cleansing. Use it on big hits or bleed and poison phases</p>
+<p markdown><span class="ability-label">PvP</span> Removes Rend, Deep Wounds, Garrote, poisons and diseases and grants immunity. A Rogue's worst nightmare</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Find Treasure** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **1/5**{ .stars .s1 }</p>
+<p markdown><span class="ability-label">PvE</span> Tracks treasure chests while leveling</p>
+<p markdown><span class="ability-label">PvP</span> None</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Artisan's Precision** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> +1% hit, one of the most valuable DPS stats until you're capped</p>
+<p markdown><span class="ability-label">PvP</span> Fewer misses on Hamstring and Mortal Strike</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Big Game Hunter** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +5% damage vs Beasts, which make up much of the leveling world</p>
+<p markdown><span class="ability-label">PvP</span> +5% vs Hunter pets and Druids in animal form *(unconfirmed whether forms count)*</p>
+</div>
+
+</div>
 
 !!! note "Earth Fury"
     Some mid-beta articles list an "Earth Fury" Dwarf racial. It was replaced before launch.
 
-**Macro: emergency tank button**
+??? example "Macro: emergency tank button"
 
-```text
-#showtooltip Stoneform
-/cast Stoneform
-/cast Shield Block
-```
+    ```text
+    #showtooltip Stoneform
+    /cast Stoneform
+    /cast Shield Block
+    ```
 
 ## Starting zone walkthrough (1–12)
 
 Dwarves start in **Coldridge Valley**, **Dun Morogh**. *Quest and NPC names are Classic-era; check in game.*
 
-1. **Coldridge Valley (1–5).** Speak to the Warrior trainer at Anvilmar (Classic: Thran Khorman). Kill wolves and troggs and clear the troll cave. Learn **Charge** and **Rend** at 4.
-2. **The Great Outdoors (~5).** Pick up the camping intro and learn Cooking.
-3. **Kharanos (5–10).** Take the quests around the inn and Gnomeregan's refugees; there's a Warrior trainer in Kharanos. **Hamstring** at 8.
-4. **Level 10.** Do the **Defensive Stance** quest from your trainer. Pick a gathering profession; Mining is easy to level in Dun Morogh.
-5. **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
-6. **10–13.** Finish Dun Morogh's east side, and queue for the new **[Hall of Thanes](../../content/dungeons/hall-of-thanes.md)** in Ironforge (13–18) as soon as you can.
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } **Coldridge Valley.** Speak to the Warrior trainer at Anvilmar (Classic: Thran Khorman). Kill wolves and troggs and clear the troll cave. Learn **Charge** and **Rend** at 4.
+2.  **~5**{ .lvl } **The Great Outdoors.** Pick up the camping intro and learn Cooking.
+3.  **5–10**{ .lvl } **Kharanos.** Take the quests around the inn and Gnomeregan's refugees; there's a Warrior trainer in Kharanos. **Hamstring** at 8.
+4.  **10**{ .lvl } Do the **Defensive Stance** quest from your trainer. Pick a gathering profession; Mining is easy to level in Dun Morogh.
+5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
+6.  **10–13.** Finish Dun Morogh's east side, and queue for the new **[Hall of Thanes](../../content/dungeons/hall-of-thanes.md)** in Ironforge (13–18) as soon as you can.
+
+</div>
 
 ## Route to 60 from Ironforge
 
-| Levels | Zones | Flight paths / notes |
-|---|---|---|
-| 10–20 | Loch Modan → Westfall or Darkshore → Redridge | Thelsamar. Hall of Thanes, Deadmines |
-| 20–30 | Wetlands → Duskwood → Ashenvale | Menethil Harbor. [Excavation Site](../../content/dungeons/excavation-site.md) (Wetlands) |
-| 30–40 | Hillsbrad → Alterac Mountains → Arathi → Stranglethorn → Desolace | Southshore, Refuge Pointe. Gnomeregan, Scarlet Monastery |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** (Farholde Keep) → Dustwallow Marsh | From Badlands or Redridge |
-| 45–55 | Badlands → Tanaris → Feralas → Hinterlands → Azshara → Un'Goro | Uldaman in Badlands is a Dwarf story dungeon |
-| 55–60 | Searing Gorge → Burning Steppes → Plaguelands → Winterspring → Mount Hyjal | Thorium Point, Morgan's Vigil. Blackrock Depths |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } Loch Modan → Westfall or Darkshore → Redridge
+
+    <span class="step-label">Flight paths / notes</span> Thelsamar. Hall of Thanes, Deadmines
+
+2.  **20–30**{ .lvl } Wetlands → Duskwood → Ashenvale
+
+    <span class="step-label">Flight paths / notes</span> Menethil Harbor. [Excavation Site](../../content/dungeons/excavation-site.md) (Wetlands)
+
+3.  **30–40**{ .lvl } Hillsbrad → Alterac Mountains → Arathi → Stranglethorn → Desolace
+
+    <span class="step-label">Flight paths / notes</span> Southshore, Refuge Pointe. Gnomeregan, Scarlet Monastery
+
+4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Farholde Keep) → Dustwallow Marsh
+
+    <span class="step-label">Flight paths / notes</span> From Badlands or Redridge
+
+5.  **45–55**{ .lvl } Badlands → Tanaris → Feralas → Hinterlands → Azshara → Un'Goro
+
+    <span class="step-label">Flight paths / notes</span> Uldaman in Badlands is a Dwarf story dungeon
+
+6.  **55–60**{ .lvl } Searing Gorge → Burning Steppes → Plaguelands → Winterspring → Mount Hyjal
+
+    <span class="step-label">Flight paths / notes</span> Thorium Point, Morgan's Vigil. Blackrock Depths
+
+</div>
 
 **Class trainers:** Ironforge's Warrior trainers are in the **Hall of Arms** (Military Ward). The Deeprun Tram links Ironforge to Stormwind.
 
@@ -89,4 +142,8 @@ Dwarves start in **Coldridge Valley**, **Dun Morogh**. *Quest and NPC names are 
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 The best Alliance race for a **main tank**, and strong for Arms and Fury too thanks to +1% hit. Stoneform also makes Rogues miserable in PvP. Pick Human instead only if you want the stun break.
+
+</div>

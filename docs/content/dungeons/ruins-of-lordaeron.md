@@ -1,5 +1,9 @@
 # Ruins of Lordaeron
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Ruins of Lordaeron</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **5-player dungeon**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | 5-player dungeon (new in Forever) |
@@ -8,7 +12,7 @@
 | **Faction** | Horde-favored |
 | **Bosses** | 6 + 1 rare |
 
-## Overview
+</aside>
 
 The Forsaken are reclaiming the ruined capital of Lordaeron from the Scourge while a necromancer gathers power within. The dungeon ties into the Forsaken Kingdom storyline that leads into Forever's setting. See [Lore](../../world/lore.md).
 

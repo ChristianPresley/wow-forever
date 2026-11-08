@@ -7,8 +7,13 @@ tags:
 
 # Human Warrior
 
-!!! tip "Add-on"
-    Read with the [Warrior guide](index.md). This page covers only what changes for a Human.
+<div class="guide-head" data-class="warrior" markdown>
+
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Warrior guide](index.md). This page covers only what changes for a Human.</p>
+
+</div>
 
 ## Why this combo
 
@@ -19,45 +24,93 @@ Human Warrior is the classic Alliance choice, and Forever keeps it strong for a 
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **Will to Survive** *(new)* | Active | **5/5**{ .stars .s5 } | Rarely needed; breaks boss stuns on tanks | A second PvP trinket. Use it on Kidney Shot, Hammer of Justice, Concussion Blow or War Stomp, then Intercept |
-| **Perception** | Active | **2/5**{ .stars .s2 } | Spot stealthed mobs in some dungeons | Find Rogues and Druids guarding a flag or base |
-| **Ruthless** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% crit for every spec, so more rage too | Same |
-| **The Human Spirit** | Passive | **2/5**{ .stars .s2 } | +10% Spirit: slightly faster health regen between pulls | Minimal |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Will to Survive** *(new)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
+<p markdown><span class="ability-label">PvE</span> Rarely needed; breaks boss stuns on tanks</p>
+<p markdown><span class="ability-label">PvP</span> A second PvP trinket. Use it on Kidney Shot, Hammer of Justice, Concussion Blow or War Stomp, then Intercept</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Perception** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> Spot stealthed mobs in some dungeons</p>
+<p markdown><span class="ability-label">PvP</span> Find Rogues and Druids guarding a flag or base</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Ruthless** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> +1% crit for every spec, so more rage too</p>
+<p markdown><span class="ability-label">PvP</span> Same</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**The Human Spirit** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> +10% Spirit: slightly faster health regen between pulls</p>
+<p markdown><span class="ability-label">PvP</span> Minimal</p>
+</div>
+
+</div>
 
 !!! note "Sword and Mace Specialization"
     Some beta articles still list the old weapon racials. They were removed before launch. Your weapon choice is now driven by the **Weaponmaster** talent, not your race.
 
-**Macro: stun break into gap closer**
+??? example "Macro: stun break into gap closer"
 
-```text
-#showtooltip Will to Survive
-/cast Will to Survive
-/cast [stance:3] Intercept
-```
+    ```text
+    #showtooltip Will to Survive
+    /cast Will to Survive
+    /cast [stance:3] Intercept
+    ```
 
 ## Starting zone walkthrough (1–12)
 
 Humans start at **Northshire Abbey** in **Elwynn Forest**. Blizzard didn't single out Elwynn for a rework, so the Classic flow below should mostly hold. *Quest and NPC names are Classic-era; check in game.*
 
-1. **Northshire (1–5).** Speak to the Warrior trainer inside the abbey (Classic: Llane Beshere). Clear wolves and kobolds and the Defias in the vineyard. Learn **Charge** and **Rend** at 4.
-2. **The Great Outdoors (~5).** Pick up the camping intro from the adventurer near your hub, and learn Cooking for the campfire kit.
-3. **Goldshire (5–10).** Take the inn's quest board and the Eastvale, Fargodeep Mine and Jasperlode Mine quests. **Hamstring** at 8. Elwynn's trainers in Goldshire are the closest.
-4. **Level 10.** Your trainer sends you on the **Defensive Stance** quest. Do it straight away: it gives Sunder Armor and Taunt, and the follow-up gives a one-hander.
-5. **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
-6. **10–12.** Finish Elwynn's east side (Eastvale, Brackwell Pumpkin Patch), then move to Westfall.
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } **Northshire.** Speak to the Warrior trainer inside the abbey (Classic: Llane Beshere). Clear wolves and kobolds and the Defias in the vineyard. Learn **Charge** and **Rend** at 4.
+2.  **~5**{ .lvl } **The Great Outdoors.** Pick up the camping intro from the adventurer near your hub, and learn Cooking for the campfire kit.
+3.  **5–10**{ .lvl } **Goldshire.** Take the inn's quest board and the Eastvale, Fargodeep Mine and Jasperlode Mine quests. **Hamstring** at 8. Elwynn's trainers in Goldshire are the closest.
+4.  **10**{ .lvl } Your trainer sends you on the **Defensive Stance** quest. Do it straight away: it gives Sunder Armor and Taunt, and the follow-up gives a one-hander.
+5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
+6.  **10–12.** Finish Elwynn's east side (Eastvale, Brackwell Pumpkin Patch), then move to Westfall.
+
+</div>
 
 ## Route to 60 from Stormwind
 
-| Levels | Zones | Flight paths / notes |
-|---|---|---|
-| 10–20 | Westfall → Loch Modan → Redridge Mountains | Sentinel Hill, Thelsamar, Lakeshire. Deadmines in Westfall; [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) in Ironforge |
-| 20–30 | Duskwood → Wetlands → Ashenvale (via the new Stormwind harbor boat to Auberdine) | Darkshire, Menethil. [Excavation Site](../../content/dungeons/excavation-site.md), Stockade |
-| 30–40 | Hillsbrad → Alterac Mountains → Arathi → Stranglethorn Vale → Desolace | Southshore, Refuge Pointe, Booty Bay. [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** (Farholde Keep) → Dustwallow Marsh | Walk in from Redridge through the widened pass. Gryphon master at Farholde |
-| 45–55 | Tanaris → Feralas → Hinterlands → Azshara → Un'Goro | Gadgetzan, Feathermoon, Aerie Peak |
-| 55–60 | Felwood → Burning Steppes → Plaguelands → Winterspring → Silithus → Mount Hyjal | Morgan's Vigil, Chillwind Camp, Everlook |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } Westfall → Loch Modan → Redridge Mountains
+
+    <span class="step-label">Flight paths / notes</span> Sentinel Hill, Thelsamar, Lakeshire. Deadmines in Westfall; [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) in Ironforge
+
+2.  **20–30**{ .lvl } Duskwood → Wetlands → Ashenvale (via the new Stormwind harbor boat to Auberdine)
+
+    <span class="step-label">Flight paths / notes</span> Darkshire, Menethil. [Excavation Site](../../content/dungeons/excavation-site.md), Stockade
+
+3.  **30–40**{ .lvl } Hillsbrad → Alterac Mountains → Arathi → Stranglethorn Vale → Desolace
+
+    <span class="step-label">Flight paths / notes</span> Southshore, Refuge Pointe, Booty Bay. [City of Dalaran](../../content/dungeons/city-of-dalaran.md)
+
+4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Farholde Keep) → Dustwallow Marsh
+
+    <span class="step-label">Flight paths / notes</span> Walk in from Redridge through the widened pass. Gryphon master at Farholde
+
+5.  **45–55**{ .lvl } Tanaris → Feralas → Hinterlands → Azshara → Un'Goro
+
+    <span class="step-label">Flight paths / notes</span> Gadgetzan, Feathermoon, Aerie Peak
+
+6.  **55–60**{ .lvl } Felwood → Burning Steppes → Plaguelands → Winterspring → Silithus → Mount Hyjal
+
+    <span class="step-label">Flight paths / notes</span> Morgan's Vigil, Chillwind Camp, Everlook
+
+</div>
 
 **Class trainers:** Stormwind's Warrior trainers are in **Old Town**, near SI:7 and Champion's Hall. The PvP vendor (Champion's Hall) is there too.
 
@@ -90,4 +143,8 @@ Humans start at **Northshire Abbey** in **Elwynn Forest**. Blizzard didn't singl
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 A very safe pick. **Will to Survive** makes Human one of the best Alliance PvP Warriors, and **Ruthless** helps every PvE spec. If you're unsure which Alliance race to roll, roll Human. Dwarf is the alternative if you plan to main-tank.
+
+</div>

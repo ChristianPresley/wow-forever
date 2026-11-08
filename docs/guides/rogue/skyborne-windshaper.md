@@ -7,8 +7,13 @@ tags:
 
 # Skyborne Rogue (Windshaper)
 
-!!! tip "Add-on"
-    Read with the [Rogue guide](index.md). This page covers only what changes for a Horde Skyborne.
+<div class="guide-head" data-class="rogue" markdown>
+
+:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page covers only what changes for a Horde Skyborne.</p>
+
+</div>
 
 !!! warning "Paid race"
     Skyborne need the **Skyborne Heroic Pack** or a higher edition. See [Editions](../../about/editions.md).
@@ -21,48 +26,97 @@ tags:
 
 ## Racials in practice
 
-| Racial | Type | Rogue rating | Notes |
-|---|---|---|---|
-| **Walk on Air** | Active | **3/5**{ .stars .s3 } | A 10 s controlled glide. Cliff shortcuts, safe drops and escapes |
-| **Skysight** | Active | **4/5**{ .stars .s4 } PvP · **2/5**{ .stars .s2 } PvE | +15% movement speed for 15 s, +30% while *Charged* at an elemental convergence. Stack it with Sprint to catch kiting classes, or to run a flag |
-| **Wind Blessed** | Passive | **4/5**{ .stars .s4 } | Permanent haste: more swings, more poison procs |
-| **Elemental Insight** | Passive | **2/5**{ .stars .s2 } | +5% damage against Elementals |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown>A 10 s controlled glide. Cliff shortcuts, safe drops and escapes</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Skysight** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 } PvP · **2/5**{ .stars .s2 } PvE</p>
+<p markdown>+15% movement speed for 15 s, +30% while *Charged* at an elemental convergence. Stack it with Sprint to catch kiting classes, or to run a flag</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Wind Blessed** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown>Permanent haste: more swings, more poison procs</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Elemental Insight** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown>+5% damage against Elementals</p>
+</div>
+
+</div>
 
 !!! conflict "Conflicts"
     - **Wind Blessed:** 1%, 2% or 3% haste depending on the source; the latest official notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 minutes.
     - Whether Skysight stacks fully with Sprint is *unconfirmed*; test it.
 
-### Macros
+??? example "Macros"
 
-```text
-#showtooltip Skysight
-/cast Skysight
-/cast Sprint
-```
+    ```text
+    #showtooltip Skysight
+    /cast Skysight
+    /cast Sprint
+    ```
 
-The chase button. Split it if you want to save Sprint.
+    The chase button. Split it if you want to save Sprint.
 
-```text
-#showtooltip Walk on Air
-/cast Walk on Air
-```
+    ```text
+    #showtooltip Walk on Air
+    /cast Walk on Air
+    ```
 
 ## Starting zone: Zephras Isle (1–12)
 
 Every Skyborne starts in **Thendal Village**, northwest Zephras Isle. Horde and Alliance share the zone but are phased apart. Full story: [Zephras Isle](../../world/zephras-isle.md).
 
-| Level | Where | What to do |
-|---|---|---|
-| 1–4 | **Thendal Village** | *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style*, *The Anchors of Zephras* |
-| 3–4 | Thendal Village | Windshaper opener *The Gift of Skysight* |
-| 4–7 | Road to **Shen'dar Village** | Al'Aketh thugs, *Blessing of Zephras* tornadoes (+40% speed), **The Great Outdoors** ([camping](../../systems/camping.md)), *WANTED: Vulgara the Insatiable* |
-| 7–8 | **Falaath Village** | *Secret Agent Elf*: infiltrate the cult disguised with the Mark of Akir |
-| 8–9 | **Valanaar** | Meet High Elder Talaanis Shadowsong and **Grand Skyseer Ayessa Dawnsinger**. Class trainers are in Valanaar |
-| 9–11 | Gustberry Lowlands | Windshaper chain *The Broken Construct*; Windfield Orchard; `/sing` at the frogs for the *Musical Gustjumper* pet |
-| 10 | Valanaar | **Slice and Dice**, **Sap**, **Sprint**; first talent point |
-| 10–12 | Shadowgale Forest | *In Service of Zephras* → *Blood for Blood*; Nightclaw druid quests and reputation |
-| 12–14 | Shrine of Akir | *Confront Lorthuna*, defeat **Rohash**, then *The Fate of Zephras* and *What Comes Next* |
+<div class="steps" markdown>
+
+1.  **1–4**{ .lvl } **Thendal Village**
+
+    *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style*, *The Anchors of Zephras*
+
+2.  **3–4**{ .lvl } Thendal Village
+
+    Windshaper opener *The Gift of Skysight*
+
+3.  **4–7**{ .lvl } Road to **Shen'dar Village**
+
+    Al'Aketh thugs, *Blessing of Zephras* tornadoes (+40% speed), **The Great Outdoors** ([camping](../../systems/camping.md)), *WANTED: Vulgara the Insatiable*
+
+4.  **7–8**{ .lvl } **Falaath Village**
+
+    *Secret Agent Elf*: infiltrate the cult disguised with the Mark of Akir
+
+5.  **8–9**{ .lvl } **Valanaar**
+
+    Meet High Elder Talaanis Shadowsong and **Grand Skyseer Ayessa Dawnsinger**. Class trainers are in Valanaar
+
+6.  **9–11**{ .lvl } Gustberry Lowlands
+
+    Windshaper chain *The Broken Construct*; Windfield Orchard; `/sing` at the frogs for the *Musical Gustjumper* pet
+
+7.  **10**{ .lvl } Valanaar
+
+    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+
+8.  **10–12**{ .lvl } Shadowgale Forest
+
+    *In Service of Zephras* → *Blood for Blood*; Nightclaw druid quests and reputation
+
+9.  **12–14**{ .lvl } Shrine of Akir
+
+    *Confront Lorthuna*, defeat **Rohash**, then *The Fate of Zephras* and *What Comes Next*
+
+</div>
 
 - **Pick Pocket** the Al'Aketh cultists and bandits.
 - Skysight plus the tornado speed buff makes Zephras very quick to cross.
@@ -71,17 +125,45 @@ Every Skyborne starts in **Thendal Village**, northwest Zephras Isle. Horde and 
 
 The Windshaper airship leaves the west Skydock and lands at **Skywatcher Plateau** in northwest Mulgore, just outside Thunder Bluff. There is a path from there toward Desolace.
 
-| Level | Zone | Hub / flight path |
-|---|---|---|
-| 12 | Skywatcher Plateau → Thunder Bluff | Get the Thunder Bluff flight path |
-| 12–20 | **The Barrens** | Crossroads · Ratchet. The Durotar Supply and Logistics camp is west of the Crossroads |
-| 13–19 | Ragefire Chasm, Wailing Caverns | Orgrimmar · Barrens |
-| 20–22 | Poison quest from **Shenthul**, Orgrimmar | Barrens → Hillsbrad |
-| 20–30 | Stonetalon, Ashenvale, Hillsbrad, Thousand Needles | Sun Rock · Splintertree · Tarren Mill · Freewind |
-| 30–40 | Desolace (via the Skywatcher path), Arathi, Stranglethorn, Dustwallow | Shadowprey · Hammerfall · Grom'gol · Brackenwall |
-| 35–45 | **Riverglades** | Rog'mar |
-| 40–50 | Badlands, Swamp, Tanaris, Feralas, Hinterlands | Kargath · Stonard · Gadgetzan · Camp Mojache |
-| 50–60 | Searing Gorge, Burning Steppes, Azshara, Un'Goro, Felwood, Plaguelands, Winterspring | Everlook, then [Mount Hyjal](../../world/zones.md#mount-hyjal) |
+<div class="steps" markdown>
+
+1.  **12**{ .lvl } Skywatcher Plateau → Thunder Bluff
+
+    <span class="step-label">Hub / flight path</span> Get the Thunder Bluff flight path
+
+2.  **12–20**{ .lvl } **The Barrens**
+
+    <span class="step-label">Hub / flight path</span> Crossroads · Ratchet. The Durotar Supply and Logistics camp is west of the Crossroads
+
+3.  **13–19**{ .lvl } Ragefire Chasm, Wailing Caverns
+
+    <span class="step-label">Hub / flight path</span> Orgrimmar · Barrens
+
+4.  **20–22**{ .lvl } Poison quest from **Shenthul**, Orgrimmar
+
+    <span class="step-label">Hub / flight path</span> Barrens → Hillsbrad
+
+5.  **20–30**{ .lvl } Stonetalon, Ashenvale, Hillsbrad, Thousand Needles
+
+    <span class="step-label">Hub / flight path</span> Sun Rock · Splintertree · Tarren Mill · Freewind
+
+6.  **30–40**{ .lvl } Desolace (via the Skywatcher path), Arathi, Stranglethorn, Dustwallow
+
+    <span class="step-label">Hub / flight path</span> Shadowprey · Hammerfall · Grom'gol · Brackenwall
+
+7.  **35–45**{ .lvl } **Riverglades**
+
+    <span class="step-label">Hub / flight path</span> Rog'mar
+
+8.  **40–50**{ .lvl } Badlands, Swamp, Tanaris, Feralas, Hinterlands
+
+    <span class="step-label">Hub / flight path</span> Kargath · Stonard · Gadgetzan · Camp Mojache
+
+9.  **50–60**{ .lvl } Searing Gorge, Burning Steppes, Azshara, Un'Goro, Felwood, Plaguelands, Winterspring
+
+    <span class="step-label">Hub / flight path</span> Everlook, then [Mount Hyjal](../../world/zones.md#mount-hyjal)
+
+</div>
 
 **Class trainers:** Valanaar on Zephras Isle, then **Orgrimmar's Cleft of Shadow** or **Undercity's Rogues' Quarter**. Thunder Bluff had no rogue trainer in Classic; whether Forever added one for Skyborne is *unconfirmed*.
 
@@ -97,4 +179,8 @@ The Windshaper airship leaves the west Skydock and lands at **Skywatcher Plateau
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 **A fun, mobile Horde Rogue.** Skysight is the best mobility racial a Horde Rogue can get, and Wind Blessed is a steady damage passive. Orc and Undead have stronger PvP or burst racials, but none of them can catch a kiting Mage as well. Pick Windshaper for the new race, the speed and the Galestrider.
+
+</div>

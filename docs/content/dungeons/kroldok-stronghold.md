@@ -1,5 +1,9 @@
 # Krol'dok Stronghold
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Krol'dok Stronghold</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **5-player dungeon**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | 5-player dungeon (new in Forever) |
@@ -8,13 +12,13 @@
 | **Faction** | Both |
 | **Bosses** | 1 known (one source counts 5) |
 
-## Overview
+</aside>
 
 An ogre fortress tied to the **Twilight's Hammer**. Ogre outrunners kidnap travelers, and strange chanting is heard at night. Inside are workshops, encampments and guarded passages.
 
 ## Known details
 
-- **Boss:** **Overlord Mugg** (revealed through a Legacy challenge). The rest of the roster is unconfirmed.
+- **Boss:** **Overlord Mugg** (revealed through a Legacy challenge). The rest of the roster is *unconfirmed*{ .unconfirmed }.
 - **Datamined items:** Krol'dok Compound Key, Krol'dok Ogre Key, and quest-starting *Krol'dok Moulding* items.
 
 !!! conflict "Conflict"

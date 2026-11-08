@@ -7,8 +7,13 @@ tags:
 
 # Human Priest
 
-!!! tip "Add-on"
-    Read with the [Priest guide](index.md).
+<div class="guide-head" data-class="priest" markdown>
+
+:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Priest guide](index.md).</p>
+
+</div>
 
 ## Why this combo
 
@@ -18,12 +23,37 @@ Human Priest is a classic Alliance pick and **not a new combination**. It is the
 
 ## Racials in practice
 
-| Racial | Type | PvE | PvP | Rating |
-|---|---|---|---|---|
-| **Will to Survive** *(new)* | Active | Rarely needed; breaks a stun from a mob during a bad pull | Top-tier. Breaks Rogue openers, Hammer of Justice, Charge stuns | **5/5**{ .stars .s5 } PvP / **2/5**{ .stars .s2 } PvE |
-| **Perception** | Active | Spots stealthed mobs in some dungeons | Finds Rogues and Druids before they open on you | **3/5**{ .stars .s3 } |
-| **Ruthless** *(new)* | Passive | +1% crit: more Inspiration, Divine Aegis and Renewed Hope procs for healers; more damage for Shadow | Same | **4/5**{ .stars .s4 } |
-| **The Human Spirit** | Passive | **+10% Spirit** (was 5%). Faster mana between pulls while leveling; more in-combat regen through Meditation | Longer fights | **4/5**{ .stars .s4 } |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Will to Survive** *(new)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvP / **2/5**{ .stars .s2 } PvE</p>
+<p markdown><span class="ability-label">PvE</span> Rarely needed; breaks a stun from a mob during a bad pull</p>
+<p markdown><span class="ability-label">PvP</span> Top-tier. Breaks Rogue openers, Hammer of Justice, Charge stuns</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Perception** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> Spots stealthed mobs in some dungeons</p>
+<p markdown><span class="ability-label">PvP</span> Finds Rogues and Druids before they open on you</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Ruthless** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> +1% crit: more Inspiration, Divine Aegis and Renewed Hope procs for healers; more damage for Shadow</p>
+<p markdown><span class="ability-label">PvP</span> Same</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**The Human Spirit** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> **+10% Spirit** (was 5%). Faster mana between pulls while leveling; more in-combat regen through Meditation</p>
+<p markdown><span class="ability-label">PvP</span> Longer fights</p>
+</div>
+
+</div>
 
 **Priest spells unique to Humans**
 
@@ -34,53 +64,85 @@ Human Priest is a classic Alliance pick and **not a new combination**. It is the
 
 Warcraft Tavern rates Divine Grace as decent for shield-focused healers. It can't save *you*, so it's a group tool.
 
-**Macros**
+??? example "Macros"
 
-Break a stun and shield yourself in one press:
+    Break a stun and shield yourself in one press:
 
-```
-#showtooltip Will to Survive
-/cast Will to Survive
-/cast [@player] Power Word: Shield
-```
+    ```
+    #showtooltip Will to Survive
+    /cast Will to Survive
+    /cast [@player] Power Word: Shield
+    ```
 
-Divine Grace then shield the same target (Discipline):
+    Divine Grace then shield the same target (Discipline):
 
-```
-#showtooltip Divine Grace
-/cast [@mouseover,help,nodead][help] Divine Grace
-/cast [@mouseover,help,nodead][help] Power Word: Shield
-```
+    ```
+    #showtooltip Divine Grace
+    /cast [@mouseover,help,nodead][help] Divine Grace
+    /cast [@mouseover,help,nodead][help] Power Word: Shield
+    ```
 
-!!! note
-    Whether Will to Survive and Divine Grace share the global cooldown isn't documented. If the second line doesn't fire, press the macro twice.
+    !!! note
+        Whether Will to Survive and Divine Grace share the global cooldown isn't documented. If the second line doesn't fire, press the macro twice.
 
 ## Starting zone walkthrough (1–~12)
 
 Humans start at **Northshire Abbey** in Elwynn Forest. Quest names below are from Classic; Northshire wasn't on Blizzard's list of reworked starting zones, but small changes are possible.
 
-1. **Level 1–2:** take the opening quest from the Marshal outside the abbey and kill wolves and kobolds in the valley. The Priest trainer is inside **Northshire Abbey** (Classic: Priestess Anetta). Learn your spells there at every even level.
-2. **Level 2–4:** the vineyard and kobold mine quests. Train **Shadow Word: Pain** at 4 and start opening with it.
-3. **Level 5:** pick up **The Great Outdoors** for camping, and learn Cooking. Head toward **Goldshire**. Learn Tailoring and Enchanting in Stormwind or Goldshire if you plan to make your own **Lesser Magic Wand**.
-4. **Level 6:** train **Power Word: Shield**. Pre-shield every pull from now on.
-5. **Level 6–10:** Elwynn's Goldshire quests: Fargodeep Mine, the Stonefield and Maclure farms, the Eastvale logging camp, and the murlocs of Crystal Lake.
-6. **Level 8:** Renew and Fade.
-7. **Level 10:** visit a Priest trainer in Goldshire or the **Cathedral of Light** in Stormwind. Learn **Mind Blast**, **Divine Grace** and your first talent point. Pick up the level-10 class quest (Warcraft Tavern says class quests come at 10 and 20).
-8. **Level 10–12:** finish Elwynn (Hogger, the Brackwell pumpkin patch), then move to **Westfall**, or **Loch Modan** through Dun Morogh.
+<div class="steps" markdown>
+
+1.  **1–2**{ .lvl } take the opening quest from the Marshal outside the abbey and kill wolves and kobolds in the valley. The Priest trainer is inside **Northshire Abbey** (Classic: Priestess Anetta). Learn your spells there at every even level.
+2.  **2–4**{ .lvl } the vineyard and kobold mine quests. Train **Shadow Word: Pain** at 4 and start opening with it.
+3.  **5**{ .lvl } pick up **The Great Outdoors** for camping, and learn Cooking. Head toward **Goldshire**. Learn Tailoring and Enchanting in Stormwind or Goldshire if you plan to make your own **Lesser Magic Wand**.
+4.  **6**{ .lvl } train **Power Word: Shield**. Pre-shield every pull from now on.
+5.  **6–10**{ .lvl } Elwynn's Goldshire quests: Fargodeep Mine, the Stonefield and Maclure farms, the Eastvale logging camp, and the murlocs of Crystal Lake.
+6.  **8**{ .lvl } Renew and Fade.
+7.  **10**{ .lvl } visit a Priest trainer in Goldshire or the **Cathedral of Light** in Stormwind. Learn **Mind Blast**, **Divine Grace** and your first talent point. Pick up the level-10 class quest (Warcraft Tavern says class quests come at 10 and 20).
+8.  **10–12**{ .lvl } finish Elwynn (Hogger, the Brackwell pumpkin patch), then move to **Westfall**, or **Loch Modan** through Dun Morogh.
+
+</div>
 
 ## Route to 60 from Stormwind
 
-| Levels | Zones | Hub / flight path |
-|---|---|---|
-| 10–15 | Westfall (or Loch Modan) | Sentinel Hill |
-| 15–20 | Redridge Mountains | Lakeshire; Three Corners supply camp (Azeroth Commerce Authority) |
-| 18–24 | The Deadmines; [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) from Ironforge | — |
-| 18–30 | Darkshore (boat from Stormwind Harbor), Duskwood, Wetlands, Ashenvale | Darkshire, Menethil Harbor, Astranaar |
-| 30–40 | Alterac Mountains (Dalaran), Arathi Highlands, Stranglethorn Vale, Desolace | Refuge Pointe, Booty Bay, Nijel's Point |
-| 35–45 | **Riverglades** (from Redridge) | **Farholde Keep** (flights to Lakeshire, Thelsamar, Morgan's Vigil) |
-| 40–50 | Dustwallow Marsh, Feralas, Tanaris, Hinterlands, Badlands, Swamp of Sorrows | Theramore, Feathermoon, Gadgetzan, Aerie Peak |
-| 50–60 | Un'Goro, Azshara, Burning Steppes, Western and Eastern Plaguelands, Winterspring, Silithus | Marshal's Refuge, Chillwind Camp, Everlook |
-| 60 | Mount Hyjal (from Winterspring) | Tainted Foothills |
+<div class="steps" markdown>
+
+1.  **10–15**{ .lvl } Westfall (or Loch Modan)
+
+    <span class="step-label">Hub / flight path</span> Sentinel Hill
+
+2.  **15–20**{ .lvl } Redridge Mountains
+
+    <span class="step-label">Hub / flight path</span> Lakeshire; Three Corners supply camp (Azeroth Commerce Authority)
+
+3.  **18–24**{ .lvl } The Deadmines; [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) from Ironforge
+
+    <span class="step-label">Hub / flight path</span> —
+
+4.  **18–30**{ .lvl } Darkshore (boat from Stormwind Harbor), Duskwood, Wetlands, Ashenvale
+
+    <span class="step-label">Hub / flight path</span> Darkshire, Menethil Harbor, Astranaar
+
+5.  **30–40**{ .lvl } Alterac Mountains (Dalaran), Arathi Highlands, Stranglethorn Vale, Desolace
+
+    <span class="step-label">Hub / flight path</span> Refuge Pointe, Booty Bay, Nijel's Point
+
+6.  **35–45**{ .lvl } **Riverglades** (from Redridge)
+
+    <span class="step-label">Hub / flight path</span> **Farholde Keep** (flights to Lakeshire, Thelsamar, Morgan's Vigil)
+
+7.  **40–50**{ .lvl } Dustwallow Marsh, Feralas, Tanaris, Hinterlands, Badlands, Swamp of Sorrows
+
+    <span class="step-label">Hub / flight path</span> Theramore, Feathermoon, Gadgetzan, Aerie Peak
+
+8.  **50–60**{ .lvl } Un'Goro, Azshara, Burning Steppes, Western and Eastern Plaguelands, Winterspring, Silithus
+
+    <span class="step-label">Hub / flight path</span> Marshal's Refuge, Chillwind Camp, Everlook
+
+9.  **60**{ .lvl } Mount Hyjal (from Winterspring)
+
+    <span class="step-label">Hub / flight path</span> Tainted Foothills
+
+</div>
 
 - **Class trainers:** the Cathedral of Light in Stormwind, plus Goldshire and Northshire for early ranks.
 - **Boats:** Stormwind Harbor ↔ Auberdine is new. The Menethil → Southshore → Auberdine loop is also new. See [Travel](../../world/travel.md).
@@ -96,4 +158,8 @@ Humans start at **Northshire Abbey** in Elwynn Forest. Quest names below are fro
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 **The safe, strong default for Alliance healers.** +10% Spirit and +1% crit help every spec, Will to Survive is one of the best PvP racials in the game, and Divine Grace adds a real tank save for Discipline. Pick Night Elf or Gnome instead if you want more burst damage or self-protection, or Dwarf for Stoneform.
+
+</div>

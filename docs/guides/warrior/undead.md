@@ -7,8 +7,13 @@ tags:
 
 # Undead Warrior
 
-!!! tip "Add-on"
-    Read with the [Warrior guide](index.md). This page covers only what changes for an Undead.
+<div class="guide-head" data-class="warrior" markdown>
+
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Warrior guide](index.md). This page covers only what changes for an Undead.</p>
+
+</div>
 
 ## Why this combo
 
@@ -19,45 +24,91 @@ The Undead Warrior is a PvP favorite. **Will of the Forsaken** breaks fear, char
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **Will of the Forsaken** | Active | **5/5**{ .stars .s5 } | Breaks boss fears and charms | Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control effects. Shares nothing with Berserker Rage, so you have two fear breaks |
-| **Cannibalize** | Active | **3/5**{ .stars .s3 } | Free healing from humanoid and undead corpses between pulls | Recover between fights |
-| **Underwater Breathing** | Passive | **2/5**{ .stars .s2 } | Underwater quests and the Drowned City approach | None |
-| **Touch of the Grave** *(new)* | Passive | **3/5**{ .stars .s3 } | A chance to drain 5% of max health (15 s internal cooldown). Small but constant sustain | Same |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Will of the Forsaken** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
+<p markdown><span class="ability-label">PvE</span> Breaks boss fears and charms</p>
+<p markdown><span class="ability-label">PvP</span> Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control effects. Shares nothing with Berserker Rage, so you have two fear breaks</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Cannibalize** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> Free healing from humanoid and undead corpses between pulls</p>
+<p markdown><span class="ability-label">PvP</span> Recover between fights</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Underwater Breathing** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> Underwater quests and the Drowned City approach</p>
+<p markdown><span class="ability-label">PvP</span> None</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Touch of the Grave** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> A chance to drain 5% of max health (15 s internal cooldown). Small but constant sustain</p>
+<p markdown><span class="ability-label">PvP</span> Same</p>
+</div>
+
+</div>
 
 !!! note "Value of Touch of the Grave"
     Warcraft Tavern calls its value for Warriors undecided. Its proc chance isn't published.
 
-**Macro: break fear and close**
+??? example "Macro: break fear and close"
 
-```text
-#showtooltip Will of the Forsaken
-/cast Will of the Forsaken
-/cast [stance:3] Intercept
-```
+    ```text
+    #showtooltip Will of the Forsaken
+    /cast Will of the Forsaken
+    /cast [stance:3] Intercept
+    ```
 
 ## Starting zone walkthrough (1–12)
 
 Undead start in **Deathknell**, **Tirisfal Glades**. Forever fills Tirisfal's empty west with **Shadowvale** and **Bandarion Keep** (the Forsaken Paladin story) and adds the **[Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md)** dungeon. *Quest and NPC names are Classic-era; check in game.*
 
-1. **Deathknell (1–5).** Warrior trainer in the chapel area (Classic: Dannal Stern). Mindless zombies, the Night Web's Hollow spiders and the Scarlet Crusade. **Charge** and **Rend** at 4.
-2. **The Great Outdoors (~5).** Camping intro and Cooking.
-3. **Brill (5–10).** The Brill quests: Scarlet camps, murlocs, the Agamand Mills and Garren's Haunt. Warrior trainer in Brill. **Hamstring** at 8.
-4. **Level 10.** **Defensive Stance** quest from your trainer.
-5. **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
-6. **10–15.** Finish Tirisfal (the new western areas included), then queue **Ruins of Lordaeron** (15–22) before Silverpine.
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } **Deathknell.** Warrior trainer in the chapel area (Classic: Dannal Stern). Mindless zombies, the Night Web's Hollow spiders and the Scarlet Crusade. **Charge** and **Rend** at 4.
+2.  **~5**{ .lvl } **The Great Outdoors.** Camping intro and Cooking.
+3.  **5–10**{ .lvl } **Brill.** The Brill quests: Scarlet camps, murlocs, the Agamand Mills and Garren's Haunt. Warrior trainer in Brill. **Hamstring** at 8.
+4.  **10**{ .lvl } **Defensive Stance** quest from your trainer.
+5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
+6.  **10–15.** Finish Tirisfal (the new western areas included), then queue **Ruins of Lordaeron** (15–22) before Silverpine.
+
+</div>
 
 ## Route to 60 from Undercity
 
-| Levels | Zones | Flight paths / notes |
-|---|---|---|
-| 10–20 | Silverpine Forest → the Barrens (zeppelin to Orgrimmar) | The Sepulcher. Ruins of Lordaeron, Shadowfang Keep. Gilneas may be visible past the Greymane Wall (*unconfirmed*) |
-| 20–30 | Hillsbrad → Stonetalon → Ashenvale → Thousand Needles | Tarren Mill. Raids on Southshore were common in the beta |
-| 30–40 | Arathi → Stranglethorn → Desolace | Hammerfall, Grom'gol (zeppelin from Tirisfal). **Scarlet Monastery** is right in Tirisfal. Avoid Dalaran: hostile to the Horde |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar) → Dustwallow Marsh | |
-| 45–55 | Badlands → Tanaris → Feralas → Hinterlands → Azshara → Un'Goro | Revantusk Village |
-| 55–60 | **Western/Eastern Plaguelands** → Burning Steppes → Winterspring → Mount Hyjal | The Bulwark. Scholomance and Stratholme are close to home |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } Silverpine Forest → the Barrens (zeppelin to Orgrimmar)
+
+    <span class="step-label">Flight paths / notes</span> The Sepulcher. Ruins of Lordaeron, Shadowfang Keep. Gilneas may be visible past the Greymane Wall (*unconfirmed*)
+
+2.  **20–30**{ .lvl } Hillsbrad → Stonetalon → Ashenvale → Thousand Needles
+
+    <span class="step-label">Flight paths / notes</span> Tarren Mill. Raids on Southshore were common in the beta
+
+3.  **30–40**{ .lvl } Arathi → Stranglethorn → Desolace
+
+    <span class="step-label">Flight paths / notes</span> Hammerfall, Grom'gol (zeppelin from Tirisfal). **Scarlet Monastery** is right in Tirisfal. Avoid Dalaran: hostile to the Horde
+
+4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar) → Dustwallow Marsh
+
+5.  **45–55**{ .lvl } Badlands → Tanaris → Feralas → Hinterlands → Azshara → Un'Goro
+
+    <span class="step-label">Flight paths / notes</span> Revantusk Village
+
+6.  **55–60**{ .lvl } **Western/Eastern Plaguelands** → Burning Steppes → Winterspring → Mount Hyjal
+
+    <span class="step-label">Flight paths / notes</span> The Bulwark. Scholomance and Stratholme are close to home
+
+</div>
 
 **Class trainers:** the **War Quarter** in Undercity.
 
@@ -89,4 +140,8 @@ Undead start in **Deathknell**, **Tirisfal Glades**. Forever fills Tirisfal's em
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 The Horde's best PvP race for a Warrior, because fear breaks win fights. In PvE, Orc and Troll do more damage and Tauren tanks better, but Undead loses little and levels comfortably with Cannibalize.
+
+</div>

@@ -4,7 +4,11 @@
     {
       "name": "wiki",
       "runtimeExecutable": ".venv/Scripts/mkdocs.exe",
-      "runtimeArgs": ["serve", "-a", "127.0.0.1:8000"],
+      "runtimeArgs": [
+        "serve",
+        "-a",
+        "127.0.0.1:8000"
+      ],
       "port": 8000
     }
   ]

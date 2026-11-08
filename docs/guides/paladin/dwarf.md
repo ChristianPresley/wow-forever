@@ -7,8 +7,13 @@ tags:
 
 # Dwarf Paladin
 
-!!! tip "Add-on"
-    Read with the [Paladin guide](index.md). This page covers what changes when your paladin is a Dwarf.
+<div class="guide-head" data-class="paladin" markdown>
+
+:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Paladin guide](index.md). This page covers what changes when your paladin is a Dwarf.</p>
+
+</div>
 
 ## Why this combo
 
@@ -23,47 +28,97 @@ Ironforge is also home to the new [Hall of Thanes](../../content/dungeons/hall-o
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **Stoneform** | Active | **5/5**{ .stars .s5 } | Removes and blocks bleeds, poisons and diseases; −10% physical damage for 8 s. Use it as a short tank cooldown, or to clear diseases in Scholomance and Stratholme | Cleanses rogue poisons and warrior bleeds; the damage cut helps against burst |
-| **Artisan's Precision** | Passive | **4/5**{ .stars .s4 } | +1% hit with attacks and spells. Fewer missed Judgements and Holy Strikes | Fewer misses on Hammer of Justice and Repentance |
-| **Big Game Hunter** | Passive | **3/5**{ .stars .s3 } | +5% damage to Beasts. Strong while leveling; useful against beast bosses | Druids in animal forms are *not* confirmed to count as Beasts |
-| **Find Treasure** | Active | **2/5**{ .stars .s2 } | Tracks treasure chests, which have a chance for better loot | — |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Stoneform** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
+<p markdown><span class="ability-label">PvE</span> Removes and blocks bleeds, poisons and diseases; −10% physical damage for 8 s. Use it as a short tank cooldown, or to clear diseases in Scholomance and Stratholme</p>
+<p markdown><span class="ability-label">PvP</span> Cleanses rogue poisons and warrior bleeds; the damage cut helps against burst</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Artisan's Precision** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> +1% hit with attacks and spells. Fewer missed Judgements and Holy Strikes</p>
+<p markdown><span class="ability-label">PvP</span> Fewer misses on Hammer of Justice and Repentance</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Big Game Hunter** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +5% damage to Beasts. Strong while leveling; useful against beast bosses</p>
+<p markdown><span class="ability-label">PvP</span> Druids in animal forms are *not* confirmed to count as Beasts</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Find Treasure** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> Tracks treasure chests, which have a chance for better loot</p>
+<p markdown><span class="ability-label">PvP</span> —</p>
+</div>
+
+</div>
 
 !!! note "Cooldowns"
     Stoneform's Forever cooldown isn't published. In Classic it was 3 minutes.
 
-**Macros**
+??? example "Macros"
 
-```
-#showtooltip Stoneform
-/cast Stoneform
-/cast Divine Protection
-```
+    ```
+    #showtooltip Stoneform
+    /cast Stoneform
+    /cast Divine Protection
+    ```
 
-Don't chain Stoneform into Templar's Bulwark if you might need Divine Shield; Bulwark and Divine Shield share Forbearance.
+    Don't chain Stoneform into Templar's Bulwark if you might need Divine Shield; Bulwark and Divine Shield share Forbearance.
 
-```
-#showtooltip Find Treasure
-/cast Find Treasure
-```
+    ```
+    #showtooltip Find Treasure
+    /cast Find Treasure
+    ```
 
-Swap between Find Treasure and Find Minerals (Mining) as needed; you can only track one at a time.
+    Swap between Find Treasure and Find Minerals (Mining) as needed; you can only track one at a time.
 
 ## Starting zone walkthrough (1–12)
 
 You start in **Coldridge Valley**, Dun Morogh, alongside Gnome characters.
 
-| Level | Where | Notes |
-|---|---|---|
-| 1–5 | Coldridge Valley | **Bromos Grummner** (28.8, 68.2) trains you to level 6. Do the troll, wolf and boar quests (Big Game Hunter helps with the beasts) |
-| 4 | Coldridge | Train **Judgement** and **Blessing of Might** |
-| 5–6 | Kharanos | Take the tunnel to Kharanos. Pick up *The Great Outdoors* for camping and learn Cooking |
-| 6–10 | Kharanos, Brewnall Village, Gnomeregan outskirts | **Azar Stronghammer** at the Thunderbrew Distillery (47.6, 52.0) is your trainer. Train **Holy Strike** at 6 and Hammer of Justice at 8 |
-| 10 | Kharanos / Ironforge | Train **Seal of Fury, Righteous Fury, Lay on Hands**. First talent: Benediction (Ret) or Redoubt (Prot) |
-| 10–12 | Ironforge, Loch Modan | Ironforge's **Mystic Ward** has three paladin trainers (Valgar Highforge, Brandur Ironhammer, Beldruk Doombrow, around 24, 6) |
-| 12 | Ironforge | **Redemption** class quest (Classic: *The Tome of Divinity*, from the Mystic Ward). Expect a short chain with a cloth turn-in and a resurrection task |
-| 13–18 | Ironforge | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) is your first dungeon, a good place to try Protection |
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } Coldridge Valley
+
+    **Bromos Grummner** (28.8, 68.2) trains you to level 6. Do the troll, wolf and boar quests (Big Game Hunter helps with the beasts)
+
+2.  **4**{ .lvl } Coldridge
+
+    Train **Judgement** and **Blessing of Might**
+
+3.  **5–6**{ .lvl } Kharanos
+
+    Take the tunnel to Kharanos. Pick up *The Great Outdoors* for camping and learn Cooking
+
+4.  **6–10**{ .lvl } Kharanos, Brewnall Village, Gnomeregan outskirts
+
+    **Azar Stronghammer** at the Thunderbrew Distillery (47.6, 52.0) is your trainer. Train **Holy Strike** at 6 and Hammer of Justice at 8
+
+5.  **10**{ .lvl } Kharanos / Ironforge
+
+    Train **Seal of Fury, Righteous Fury, Lay on Hands**. First talent: Benediction (Ret) or Redoubt (Prot)
+
+6.  **10–12**{ .lvl } Ironforge, Loch Modan
+
+    Ironforge's **Mystic Ward** has three paladin trainers (Valgar Highforge, Brandur Ironhammer, Beldruk Doombrow, around 24, 6)
+
+7.  **12**{ .lvl } Ironforge
+
+    **Redemption** class quest (Classic: *The Tome of Divinity*, from the Mystic Ward). Expect a short chain with a cloth turn-in and a resurrection task
+
+8.  **13–18**{ .lvl } Ironforge
+
+    [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) is your first dungeon, a good place to try Protection
+
+</div>
 
 !!! note "Classic-era detail"
     The exact Alliance Redemption chain in Forever hasn't been documented by the sources we checked. In Classic, Dwarf and Human paladins had separate starts that end in the same spell.
@@ -72,15 +127,37 @@ You start in **Coldridge Valley**, Dun Morogh, alongside Gnome characters.
 
 Your trainers are in **Ironforge** (Mystic Ward) and Kharanos, plus Stormwind and Theramore.
 
-| Level | Zones | Notes |
-|---|---|---|
-| 10–20 | Loch Modan, Westfall, Darkshore | Thelsamar (Loch Modan) is the hub. The Deadmines' **Rhahk'Zor's Hammer** is a good early two-hander |
-| 20 | Ironforge / Stormwind | **Verigan's Fist** class quest (Classic: *The Tome of Valor*). In Classic, the Ironforge chain went through Jordan Stilwell outside the gates and needed Deadmines, Shadowfang Keep and Blackfathom Deeps materials |
-| 20–30 | Wetlands, Redridge, Duskwood, Ashenvale | **Menethil Harbor** (Wetlands) is a short walk; [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) is there, along with new Wetlands quests |
-| 28–35 | Hillsbrad, Alterac Mountains | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) and Kirin Tor quests (Alliance only) |
-| 30–40 | Arathi, Stranglethorn, Desolace, Dustwallow | Gnomeregan (31–37) is nearby in Dun Morogh |
-| 35–45 | [Riverglades](../../world/zones.md#riverglades), Badlands | From Loch Modan, head south through the Badlands toward the new passes into Riverglades. Uldaman (Badlands) suits Dwarf flavor |
-| 45–60 | Hinterlands, Searing Gorge, Burning Steppes, Plaguelands, Azshara, Un'Goro, Winterspring | Blackrock Mountain is close to Ironforge by flight |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } Loch Modan, Westfall, Darkshore
+
+    Thelsamar (Loch Modan) is the hub. The Deadmines' **Rhahk'Zor's Hammer** is a good early two-hander
+
+2.  **20**{ .lvl } Ironforge / Stormwind
+
+    **Verigan's Fist** class quest (Classic: *The Tome of Valor*). In Classic, the Ironforge chain went through Jordan Stilwell outside the gates and needed Deadmines, Shadowfang Keep and Blackfathom Deeps materials
+
+3.  **20–30**{ .lvl } Wetlands, Redridge, Duskwood, Ashenvale
+
+    **Menethil Harbor** (Wetlands) is a short walk; [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) is there, along with new Wetlands quests
+
+4.  **28–35**{ .lvl } Hillsbrad, Alterac Mountains
+
+    [City of Dalaran](../../content/dungeons/city-of-dalaran.md) and Kirin Tor quests (Alliance only)
+
+5.  **30–40**{ .lvl } Arathi, Stranglethorn, Desolace, Dustwallow
+
+    Gnomeregan (31–37) is nearby in Dun Morogh
+
+6.  **35–45**{ .lvl } [Riverglades](../../world/zones.md#riverglades), Badlands
+
+    From Loch Modan, head south through the Badlands toward the new passes into Riverglades. Uldaman (Badlands) suits Dwarf flavor
+
+7.  **45–60**{ .lvl } Hinterlands, Searing Gorge, Burning Steppes, Plaguelands, Azshara, Un'Goro, Winterspring
+
+    Blackrock Mountain is close to Ironforge by flight
+
+</div>
 
 **Travel tips**
 
@@ -96,4 +173,8 @@ Your trainers are in **Ironforge** (Mystic Ward) and Kharanos, plus Stormwind an
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 **The best PvE paladin.** Artisan's Precision is free hit for every spec, Stoneform is both a cleanse and a short defensive cooldown, and Big Game Hunter speeds up leveling. Humans win in PvP thanks to Will to Survive; for raiding and dungeon tanking, the Dwarf is the safer choice.
+
+</div>

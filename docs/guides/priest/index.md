@@ -1,4 +1,5 @@
 ---
+description: "Priest guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
 tags:
   - Priest
 search:
@@ -6,6 +7,14 @@ search:
 ---
 
 # Priest Guide
+
+<div class="guide-head" data-class="priest" markdown>
+
+:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+
+</div>
 
 !!! info "Current as of 7 November 2026"
     This guide follows Blizzard's Priest deep dive, the [Priest reference page](../../characters/classes/priest.md) and launch-week fan guides. Warcraft Tavern reports **class tuning due on 10 November**, so expect numbers to move. Exact talent point orders were only published as images by fan sites. Where this guide gives a build, it lists the talents each milestone needs rather than a point-by-point order.
@@ -62,12 +71,21 @@ Skyborne, Orc and Tauren cannot be Priests. See [Races](../../characters/races.m
 
 Talents start at **level 10**, one point per level, for 51 points at 60. Gold single-point tiers sit at **11, 16, 21 and 31 points** spent in a tree. Without Legacy bonuses that means:
 
-| Points in one tree | Earliest level | What it unlocks |
-|---|---|---|
-| 11 | 20 | Tier-3 talents (Mind Flay for Shadow, Holy Nova for Holy) |
-| 16 | 25 | Soul Warding · Holy Binding · Vampiric Embrace |
-| 21 | 30 | Penance (Discipline) |
-| 31 | 40 | Prayer of Mending · Shadowform |
+<div class="milestones" markdown>
+
+11
+:   **Lv 20**{ .pts } Tier-3 talents (Mind Flay for Shadow, Holy Nova for Holy)
+
+16
+:   **Lv 25**{ .pts } Soul Warding · Holy Binding · Vampiric Embrace
+
+21
+:   **Lv 30**{ .pts } Penance (Discipline)
+
+31
+:   **Lv 40**{ .pts } Prayer of Mending · Shadowform
+
+</div>
 
 The Legacy talent **Talented** moves your first point up to five levels earlier, so every milestone above arrives earlier too. See [Legacy](#professions-legacy).
 
@@ -150,25 +168,47 @@ The Legacy talent **Talented** moves your first point up to five levels earlier,
 
     **A. Discipline → Shadow at 40** (Method)
 
-    | Levels | Spend on |
-    |---|---|
-    | 10–19 | Wand Specialization (2), Twin Disciplines, Improved Power Word: Shield, Silent Resolve or Holy Precision |
-    | 20–25 | Mental Agility, Meditation, Improved Inner Fire, then **Soul Warding** at 16 points |
-    | 25–30 | Mental Strength, Renewed Hope, then **Penance** at 21 points |
-    | 30–39 | Power in Light, Divine Aegis and the rest of the cheap-mana talents |
-    | 40 | Buy dual spec. Make spec two **Shadow** for questing and keep Discipline for dungeons, or respec fully into Shadow |
+    <div class="milestones" markdown>
+
+    Lv 10–19
+    :   Wand Specialization (2), Twin Disciplines, Improved Power Word: Shield, Silent Resolve or Holy Precision
+
+    Lv 20–25
+    :   Mental Agility, Meditation, Improved Inner Fire, then **Soul Warding** at 16 points
+
+    Lv 25–30
+    :   Mental Strength, Renewed Hope, then **Penance** at 21 points
+
+    Lv 30–39
+    :   Power in Light, Divine Aegis and the rest of the cheap-mana talents
+
+    Lv 40
+    :   Buy dual spec. Make spec two **Shadow** for questing and keep Discipline for dungeons, or respec fully into Shadow
+
+    </div>
 
     Method notes this build is mana-efficient and tanky, but its damage falls off in the mid-to-late 30s. That's why it swaps to Shadow at 40.
 
     **B. Shadow from level 10** (Mobalytics, Warcraft Tavern)
 
-    | Levels | Spend on |
-    |---|---|
-    | 10–19 | Shadow Focus, Shadow Reach, Improved Shadow Word: Pain (if present), then Mind Flay at 11 points |
-    | 20–25 | Improved Mind Flay, then **Vampiric Embrace** at 16 points |
-    | 25–39 | Shadow Affinity, Silence, Devouring Contagion, Shadow Weaving, Early Demise |
-    | 40 | **Shadowform** at 31 points |
-    | 41–60 | Top up Shadow, then Discipline: Wand Specialization, Twin Disciplines, Improved Shield, Mental Agility, Meditation |
+    <div class="milestones" markdown>
+
+    Lv 10–19
+    :   Shadow Focus, Shadow Reach, Improved Shadow Word: Pain (if present), then Mind Flay at 11 points
+
+    Lv 20–25
+    :   Improved Mind Flay, then **Vampiric Embrace** at 16 points
+
+    Lv 25–39
+    :   Shadow Affinity, Silence, Devouring Contagion, Shadow Weaving, Early Demise
+
+    Lv 40
+    :   **Shadowform** at 31 points
+
+    Lv 41–60
+    :   Top up Shadow, then Discipline: Wand Specialization, Twin Disciplines, Improved Shield, Mental Agility, Meditation
+
+    </div>
 
     Warcraft Tavern notes Shadow doesn't really shine until about level 28, when you have some spell power. Disc is smoother before that.
 
@@ -231,14 +271,20 @@ Spell levels follow Warcraft Tavern and Method. Ranks are omitted.
 
 === "Shadow"
 
-    **Solo questing (Method, 40+):**
 
-    1. Pre-cast **Power Word: Shield** on yourself.
-    2. Open with **Mind Blast** (cast before the mob reaches you).
-    3. **Shadow Word: Pain**.
-    4. **Shadow Word: Death** on cooldown, if your health allows.
-    5. **Mind Blast** on cooldown.
-    6. **Mind Flay** to fill. Add **Devouring Plague** on tough or elite mobs.
+    !!! rotation "Shadow: Solo questing (Method, 40+)"
+
+        <div class="priority" markdown>
+
+        1. Pre-cast **Power Word: Shield** on yourself.
+        2. Open with **Mind Blast** (cast before the mob reaches you).
+        3. **Shadow Word: Pain**.
+        4. **Shadow Word: Death** on cooldown, if your health allows.
+        5. **Mind Blast** on cooldown.
+        6. **Mind Flay** to fill. Add **Devouring Plague** on tough or elite mobs.
+
+        </div>
+
 
     **Single-target raid (general):** keep SW:Pain and Devouring Plague up, Mind Blast on cooldown, Mind Flay to fill, SW:Death while moving or during execute (Early Demise). Shadow Weaving stacks from your own spells only, so start building it immediately.
 
@@ -250,24 +296,36 @@ Spell levels follow Warcraft Tavern and Method. Ranks are omitted.
 
     **Solo questing (Warcraft Tavern):** Shield yourself when mana allows, open with Smite or Holy Fire (Power in Light), apply SW:Pain, **Penance on cooldown** (as damage, or as a self-heal), then wand or let the DoT finish.
 
-    **Healing:**
 
-    1. **Power Word: Shield** on whoever is about to take damage. Soul Warding makes this your main spell.
-    2. **Penance** on cooldown on the most injured target.
-    3. Flash Heal / Greater Heal on Weakened Soul targets for Renewed Hope crits. Each crit leaves **Divine Aegis**.
-    4. Renew on a tank you can't shield.
-    5. In a 5-player group, Prayer of Healing for group damage.
+    !!! rotation "Discipline: Healing"
+
+        <div class="priority" markdown>
+
+        1. **Power Word: Shield** on whoever is about to take damage. Soul Warding makes this your main spell.
+        2. **Penance** on cooldown on the most injured target.
+        3. Flash Heal / Greater Heal on Weakened Soul targets for Renewed Hope crits. Each crit leaves **Divine Aegis**.
+        4. Renew on a tank you can't shield.
+        5. In a 5-player group, Prayer of Healing for group damage.
+
+        </div>
+
 
 === "Holy"
 
-    **Healing:**
 
-    1. Keep **Prayer of Mending** bouncing. Put it back on the tank every 10 s.
-    2. **Renew** on targets taking steady damage. Renew from other Priests stacks.
-    3. **Flash Heal** for fast single-target healing. Holy Binding heals you for half.
-    4. **Heal / Greater Heal** for efficient big heals.
-    5. **Prayer of Healing** on a member of the damaged group.
-    6. Alternate spells for **Litany of Light** refunds rather than spamming one.
+    !!! rotation "Holy: Healing"
+
+        <div class="priority" markdown>
+
+        1. Keep **Prayer of Mending** bouncing. Put it back on the tank every 10 s.
+        2. **Renew** on targets taking steady damage. Renew from other Priests stacks.
+        3. **Flash Heal** for fast single-target healing. Holy Binding heals you for half.
+        4. **Heal / Greater Heal** for efficient big heals.
+        5. **Prayer of Healing** on a member of the damaged group.
+        6. Alternate spells for **Litany of Light** refunds rather than spamming one.
+
+        </div>
+
 
     **Solo:** same as Discipline minus Penance. Holy is the slowest leveling spec.
 
@@ -285,29 +343,31 @@ Spell levels follow Warcraft Tavern and Method. Ranks are omitted.
 
 ### Macros
 
-Mouseover healing (no add-on needed):
+??? example "Show 3 macros"
 
-```
-#showtooltip
-/cast [@mouseover,help,nodead][help,nodead][@player] Flash Heal
-```
+    Mouseover healing (no add-on needed):
 
-Self-shield without losing your target:
+    ```
+    #showtooltip
+    /cast [@mouseover,help,nodead][help,nodead][@player] Flash Heal
+    ```
 
-```
-#showtooltip
-/cast [@player] Power Word: Shield
-```
+    Self-shield without losing your target:
 
-Fear Ward on the focus (set the tank as focus):
+    ```
+    #showtooltip
+    /cast [@player] Power Word: Shield
+    ```
 
-```
-#showtooltip
-/cast [@focus,help][help][@player] Fear Ward
-```
+    Fear Ward on the focus (set the tank as focus):
 
-!!! note
-    The modern `@` macro conditionals and focus targets are assumed to work, as they do in the current Classic clients. Forever's add-on and macro rules are on [Add-ons & UI](../../systems/addons.md).
+    ```
+    #showtooltip
+    /cast [@focus,help][help][@player] Fear Ward
+    ```
+
+    !!! note
+        The modern `@` macro conditionals and focus targets are assumed to work, as they do in the current Classic clients. Forever's add-on and macro rules are on [Add-ons & UI](../../systems/addons.md).
 
 ---
 
@@ -320,6 +380,8 @@ General advice:
 - **Drink, don't rest.** Buy water for your level every time you visit a town. Spirit regenerates mana outside the five-second rule.
 - **Camping and rested XP:** a campfire with a Leatherworking Camp Tent gives rested XP. The Cozy Sleeping Bag scavenger hunt starts at level 14. See [Camping](../../systems/camping.md) and [Leveling](../../characters/leveling.md).
 - **Quest XP beats dungeon mob XP.** Run dungeons for their quests.
+
+<div class="route" markdown>
 
 ### 1–10: starting zones
 
@@ -407,6 +469,8 @@ Each race add-on has the step-by-step for its starting zone.
 - **Azshara** has many new quests and the new [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60). Un'Goro's north holds [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) (58–60).
 - **Mount Hyjal** opens from Winterspring's Darkwhisper Gorge at 60. Its two raids open on 9 December.
 - The Legacy class tiers award points at 25, 45 and 60 for the first Priest on your account.
+
+</div>
 
 ---
 
@@ -553,15 +617,17 @@ See [Legacy System](../../characters/legacy.md).
 
 ## Hardcore notes
 
-The [Hardcore](../../about/hardcore.md) ruleset arrives this winter. Priests are one of the safer Hardcore classes thanks to self-healing, but they are slow and squishy.
+!!! hardcore "Hardcore survival"
 
-- **Always pre-shield.** Most deaths start with an unshielded pull.
-- **Keep Psychic Scream for escapes,** and look around before you use it. Feared mobs can bring friends.
-- **Fear Ward yourself** in areas with fearing mobs.
-- **Don't use SW:Death** when your own health is low.
-- **Know your race's panic button:** Desperate Prayer (Dwarf), Contingency Plan (Gnome), Divine Grace for a party member (Human), Elune's Grace (Night Elf), Rapid Regeneration (Troll), Will of the Forsaken (Undead).
-- Keep healing potions (First Aid) and bandages.
-- Dungeons give less mob XP. Group for quests rather than chain runs.
+    The [Hardcore](../../about/hardcore.md) ruleset arrives this winter. Priests are one of the safer Hardcore classes thanks to self-healing, but they are slow and squishy.
+
+    - **Always pre-shield.** Most deaths start with an unshielded pull.
+    - **Keep Psychic Scream for escapes,** and look around before you use it. Feared mobs can bring friends.
+    - **Fear Ward yourself** in areas with fearing mobs.
+    - **Don't use SW:Death** when your own health is low.
+    - **Know your race's panic button:** Desperate Prayer (Dwarf), Contingency Plan (Gnome), Divine Grace for a party member (Human), Elune's Grace (Night Elf), Rapid Regeneration (Troll), Will of the Forsaken (Undead).
+    - Keep healing potions (First Aid) and bandages.
+    - Dungeons give less mob XP. Group for quests rather than chain runs.
 
 ---
 
@@ -597,11 +663,13 @@ The [Hardcore](../../about/hardcore.md) ruleset arrives this winter. Priests are
 
 ## Sources
 
-- Blizzard, *Class Deep Dives — Priest and Warrior*: <https://news.blizzard.com/en-us/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior>
-- Warcraft Tavern, Priest guide: <https://www.warcrafttavern.com/forever/guides/priest/>
-- Warcraft Tavern, Priest leveling guide: <https://www.warcrafttavern.com/forever/guides/priest-leveling/>
-- Method, Priest leveling guide and talents: <https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents>
-- Mobalytics, Priest guides and talent calculator: <https://mobalytics.gg/wow-forever/priest-guides>, <https://mobalytics.gg/wow-forever/priest-talent-calculator>
-- Icy Veins, Holy and Discipline Priest guides: <https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide>, <https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide>
-- Zockify, Priest talent calculator: <https://www.zockify.com/forever/priest/>
-- Wiki pages: [Priest](../../characters/classes/priest.md), [Races](../../characters/races.md), [Leveling](../../characters/leveling.md), [Legacy](../../characters/legacy.md), [Sources](../../sources.md)
+??? quote "8 sources"
+
+    - Blizzard, *Class Deep Dives — Priest and Warrior*: <https://news.blizzard.com/en-us/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior>
+    - Warcraft Tavern, Priest guide: <https://www.warcrafttavern.com/forever/guides/priest/>
+    - Warcraft Tavern, Priest leveling guide: <https://www.warcrafttavern.com/forever/guides/priest-leveling/>
+    - Method, Priest leveling guide and talents: <https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents>
+    - Mobalytics, Priest guides and talent calculator: <https://mobalytics.gg/wow-forever/priest-guides>, <https://mobalytics.gg/wow-forever/priest-talent-calculator>
+    - Icy Veins, Holy and Discipline Priest guides: <https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide>, <https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide>
+    - Zockify, Priest talent calculator: <https://www.zockify.com/forever/priest/>
+    - Wiki pages: [Priest](../../characters/classes/priest.md), [Races](../../characters/races.md), [Leveling](../../characters/leveling.md), [Legacy](../../characters/legacy.md), [Sources](../../sources.md)

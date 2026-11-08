@@ -7,8 +7,13 @@ tags:
 
 # Tauren Hunter
 
-!!! tip "Add-on"
-    Read with the [Hunter guide](index.md).
+<div class="guide-head" data-class="hunter" markdown>
+
+:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Hunter guide](index.md).</p>
+
+</div>
 
 ## Why this combo
 
@@ -24,70 +29,128 @@ That makes Tauren a good choice for Hardcore, solo play and new players.
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **War Stomp** | Active | **4/5**{ .stars .s4 } | AoE stun at melee range. Stun the adds, step back, trap or shoot | Stun a Rogue or Warrior, then back off past your deadzone |
-| **Cultivation** *(new)* | Active | **2/5**{ .stars .s2 } | Grows an herb anyone can gather; Herbalists get bonus yield. Gold and Alchemy materials | Nothing |
-| **Plainsrunning** *(new)* | Passive | **3/5**{ .stars .s3 } | +2% speed per stack while moving, up to +60%, not while mounted. Fast travel and kiting before 40 | Kiting; **drops on flag pickup** after the 5 November hotfix |
-| **Endurance** | Passive | **3/5**{ .stars .s3 } | +5% health. Also a safety margin in Hardcore | More survivability |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**War Stomp** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> AoE stun at melee range. Stun the adds, step back, trap or shoot</p>
+<p markdown><span class="ability-label">PvP</span> Stun a Rogue or Warrior, then back off past your deadzone</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Cultivation** *(new)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> Grows an herb anyone can gather; Herbalists get bonus yield. Gold and Alchemy materials</p>
+<p markdown><span class="ability-label">PvP</span> Nothing</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Plainsrunning** *(new)* <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +2% speed per stack while moving, up to +60%, not while mounted. Fast travel and kiting before 40</p>
+<p markdown><span class="ability-label">PvP</span> Kiting; **drops on flag pickup** after the 5 November hotfix</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Endurance** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +5% health. Also a safety margin in Hardcore</p>
+<p markdown><span class="ability-label">PvP</span> More survivability</p>
+</div>
+
+</div>
 
 !!! note "Plainsrunning hotfix (5 November)"
     After players abused it to carry flags in Warsong Gulch, Blizzard changed Plainsrunning: it **drops when you pick up a flag**, and the notes also say it "no longer stacks". The exact post-hotfix behaviour isn't documented; check in game.
 
 Nature Resistance is gone.
 
-**Macros**
+??? example "Macros"
 
-```text
-#showtooltip War Stomp
-/cast War Stomp
-/cast Wing Clip
-```
+    ```text
+    #showtooltip War Stomp
+    /cast War Stomp
+    /cast Wing Clip
+    ```
 
-Stun first. Wing Clip only fires if the target is in melee range and the GCD allows; press again if needed.
+    Stun first. Wing Clip only fires if the target is in melee range and the GCD allows; press again if needed.
 
-```text
-#showtooltip Cultivation
-/cast Cultivation
-```
+    ```text
+    #showtooltip Cultivation
+    /cast Cultivation
+    ```
 
 ## Starting zone walkthrough 1–12
 
 Tauren start at **Camp Narache**, Mulgore. Forever adds **Skywatcher Plateau** in northwest Mulgore (the Windshaper Skyborne airship landing, with a path toward Desolace). The route below follows Classic (*Classic-era*).
 
-??? abstract "Levels 1–5: Camp Narache"
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } Camp Narache
+
     - Grull Hawkwind's *The Hunt Begins*: plainstriders, then mountain cougars; Sharptusk's battleboars and the Rite of Strength.
     - The **Hunter trainer is at Camp Narache** (Lanka Farshot in Classic, *Classic-era*). Train **Serpent Sting** at 4.
 
-??? abstract "Levels 5–10: Bloodhoof Village"
+2.  **5–10**{ .lvl } Bloodhoof Village
+
     - Go to **Bloodhoof Village** (inn, Wind Rider later). Take *The Great Outdoors* to unlock [camping](../../systems/camping.md), and the starter gathering quest. Herbalism pairs with Cultivation; Skinning pairs with Hunter leveling.
     - Quests at Brambleblade Ravine, the Venture Co. mine, Palemane Rock, the Rite of the Winds and the Red Rocks.
     - Train Arcane Shot and Hunter's Mark (6), Concussive Shot (8).
 
-??? abstract "Level 10: the first pet"
+3.  **10**{ .lvl } The first pet
+
     - In Classic, **Yaw Sharpmane** in Bloodhoof Village gave the taming chain: **Adult Plainstrider**, **Prairie Wolf Alpha** and **Swoop** (*Classic-era*). Forever quest *Taming the Beast* (Tauren; Warcraft Tavern gives 6061), then *Training the Beast* (6089).
     - Keep a **Prairie Wolf** (Furious Howl later) or tame a **Prairie Stalker** or mountain cougar (cat).
     - First talent: **Deadly Aspects**.
 
-??? abstract "Levels 10–12: Thunder Bluff and the Barrens"
+4.  **10–12**{ .lvl } Thunder Bluff and the Barrens
+
     - Train in **Thunder Bluff** (Hunter Rise). It now has a barbershop.
     - Optionally visit **Skywatcher Plateau** to see the Skyborne airship to Zephras Isle; anyone can ride it.
     - Go east to the **Crossroads** in the Barrens.
+
+</div>
 
 ## Route to 60 from Thunder Bluff
 
 **Class trainer city:** Thunder Bluff, Hunter Rise (*Classic-era location*).
 
-| Levels | Zones | Travel |
-|---|---|---|
-| 10–20 | The Barrens (Crossroads; **Durotar Supply and Logistics** crate camp), Silverpine | Thunder Bluff wind rider |
-| 15–25 | Wailing Caverns, Ragefire Chasm, [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) | Orgrimmar–Undercity zeppelin |
-| 18–30 | Stonetalon (Sun Rock), Ashenvale, Hillsbrad (Tarren Mill), Thousand Needles | Sun Rock, Freewind Post |
-| 30–40 | Desolace (Shadowprey; reach it from Mulgore via the new Skywatcher path, *route unconfirmed*), Arathi, Stranglethorn, Dustwallow | Shadowprey Village |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar), or Shen'dralas from southern Desolace (level range unknown) | Tanaris ferry or Swamp of Sorrows |
-| 40–50 | Feralas (Camp Mojache), Tanaris, Badlands, Swamp of Sorrows, Hinterlands | Camp Mojache |
-| 50–60 | Un'Goro, Azshara, Felwood, Winterspring, Plaguelands, Silithus | Everlook, Cenarion Hold |
-| 60 | [Mount Hyjal](../../world/zones.md#mount-hyjal) | Darkwhisper Gorge |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } The Barrens (Crossroads; **Durotar Supply and Logistics** crate camp), Silverpine
+
+    <span class="step-label">Travel</span> Thunder Bluff wind rider
+
+2.  **15–25**{ .lvl } Wailing Caverns, Ragefire Chasm, [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md)
+
+    <span class="step-label">Travel</span> Orgrimmar–Undercity zeppelin
+
+3.  **18–30**{ .lvl } Stonetalon (Sun Rock), Ashenvale, Hillsbrad (Tarren Mill), Thousand Needles
+
+    <span class="step-label">Travel</span> Sun Rock, Freewind Post
+
+4.  **30–40**{ .lvl } Desolace (Shadowprey; reach it from Mulgore via the new Skywatcher path, *route unconfirmed*), Arathi, Stranglethorn, Dustwallow
+
+    <span class="step-label">Travel</span> Shadowprey Village
+
+5.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar), or Shen'dralas from southern Desolace (level range unknown)
+
+    <span class="step-label">Travel</span> Tanaris ferry or Swamp of Sorrows
+
+6.  **40–50**{ .lvl } Feralas (Camp Mojache), Tanaris, Badlands, Swamp of Sorrows, Hinterlands
+
+    <span class="step-label">Travel</span> Camp Mojache
+
+7.  **50–60**{ .lvl } Un'Goro, Azshara, Felwood, Winterspring, Plaguelands, Silithus
+
+    <span class="step-label">Travel</span> Everlook, Cenarion Hold
+
+8.  **60**{ .lvl } [Mount Hyjal](../../world/zones.md#mount-hyjal)
+
+    <span class="step-label">Travel</span> Darkwhisper Gorge
+
+</div>
 
 Tauren have a natural Kalimdor-first route.
 
@@ -103,4 +166,8 @@ Tauren have a natural Kalimdor-first route.
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 The **sturdiest** Hunter in the game, but the weakest for raw damage since it has no offensive racial. Pick Tauren for Hardcore, solo play and relaxed leveling; pick Orc or Troll if you want to top damage meters.
+
+</div>

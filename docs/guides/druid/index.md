@@ -1,4 +1,5 @@
 ---
+description: "Druid guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
 tags:
   - Druid
 search:
@@ -6,6 +7,14 @@ search:
 ---
 
 # Druid Guide
+
+<div class="guide-head" data-class="druid" markdown>
+
+:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation-9-december">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+
+</div>
 
 !!! info "Status: 7 November 2026"
     Written three days after launch (Patch 1.60.1), from the pre-launch development notes, launch-week hotfixes and the first community guides. Talent calculators are still settling, so **builds here list key talents and milestones rather than exact point-by-point orders**. Check the [Druid reference page](../../characters/classes/druid.md) for the raw list of changes.
@@ -70,27 +79,53 @@ Forever reworked all three trees and added a **16-point tier** alongside the cla
 
     **Role:** ranged caster DPS; raid crit aura with Moonkin Form.
 
-    | Tier | Key talents |
-    |---|---|
-    | Early | **Genesis** (bonus periodic damage), **Improved Wrath** (cheaper, faster Wrath), **Nature's Majesty** (crit), **Nature's Reach** (spell hit and range) |
-    | 11 | **Nature's Splendor** |
-    | 16 | **Insect Swarm** (moved here from Resto) |
-    | Mid | **Overgrowth** (Roots several targets: two points lets you root up to 3 targets, per Warcraft Tavern), Moonglow, improved Nature's Grace |
-    | Deep | **Eclipse** (Wrath speeds up your next Starfires) |
-    | Capstone | **Moonkin Form**: party/raid crit for spells and attacks; doubles Omen of Clarity procs. Does **not** stack with Leader of the Pack |
+    <div class="milestones" markdown>
+
+    Early
+    :   **Genesis** (bonus periodic damage), **Improved Wrath** (cheaper, faster Wrath), **Nature's Majesty** (crit), **Nature's Reach** (spell hit and range)
+
+    11
+    :   **Nature's Splendor**
+
+    16
+    :   **Insect Swarm** (moved here from Resto)
+
+    Mid
+    :   **Overgrowth** (Roots several targets: two points lets you root up to 3 targets, per Warcraft Tavern), Moonglow, improved Nature's Grace
+
+    Deep
+    :   **Eclipse** (Wrath speeds up your next Starfires)
+
+    Capstone
+    :   **Moonkin Form**: party/raid crit for spells and attacks; doubles Omen of Clarity procs. Does **not** stack with Leader of the Pack
+
+    </div>
 
 === "Feral"
 
     **Role:** Cat melee DPS and Bear tank, from one tree.
 
-    | Tier | Key talents |
-    |---|---|
-    | Early | **Ferocity** (cheaper Maul/Swipe and Cat abilities), **Feral Instinct**, **Thick Hide**, **Feral Swiftness** (Cat speed, works indoors; adds dodge in all forms), **Savage Fury** |
-    | 11 | **Feral Charge** (now has a Cat version; the Bear version interrupts) |
-    | Mid | **Shredding Attacks**, **Predatory Discipline**, **Natural Instinct**, **Natural Reaction** (dodge, plus Rage when you dodge) |
-    | 16 | **Shifting Power** (Cat: instant 40 Energy for mana, 16 s cooldown, 8 s when improved) and **Primal Bite** (Bear: the Mangle replacement, high threat) |
-    | 21 | **Leader of the Pack** (party crit aura) |
-    | Deep | **Predatory Strikes**, **Rend and Tear**, **Blood Frenzy**, **Lacerate** (now a talent) |
+    <div class="milestones" markdown>
+
+    Early
+    :   **Ferocity** (cheaper Maul/Swipe and Cat abilities), **Feral Instinct**, **Thick Hide**, **Feral Swiftness** (Cat speed, works indoors; adds dodge in all forms), **Savage Fury**
+
+    11
+    :   **Feral Charge** (now has a Cat version; the Bear version interrupts)
+
+    Mid
+    :   **Shredding Attacks**, **Predatory Discipline**, **Natural Instinct**, **Natural Reaction** (dodge, plus Rage when you dodge)
+
+    16
+    :   **Shifting Power** (Cat: instant 40 Energy for mana, 16 s cooldown, 8 s when improved) and **Primal Bite** (Bear: the Mangle replacement, high threat)
+
+    21
+    :   **Leader of the Pack** (party crit aura)
+
+    Deep
+    :   **Predatory Strikes**, **Rend and Tear**, **Blood Frenzy**, **Lacerate** (now a talent)
+
+    </div>
 
     **Furor 5/5** lets Energy regenerate outside Cat Form and gives Rage when you shift into Bear.
 
@@ -98,14 +133,27 @@ Forever reworked all three trees and added a **16-point tier** alongside the cla
 
     **Role:** healer. HoT-focused, strong on the move.
 
-    | Tier | Key talents |
-    |---|---|
-    | Early | **Heart of the Wild** (swapped places with Furor), **Naturalist** (now also +2–10% damage), **Reflection** (up to 50% mana regen while casting at max rank) |
-    | 11 | **Gift of the Earthmother**: −0.5 s global cooldown on Rejuvenation, Swiftmend and Wild Growth |
-    | 16 | **Swiftmend** (consumes one of **your own** HoTs) |
-    | Mid | **Living Spirit**, Nature's Swiftness, Improved Tranquility |
-    | Tier 3 | **Bloom** (added pre-launch; fixed to heal on 6 Nov) |
-    | Capstone | **Wild Growth** (31 points, 3 s cast in the pre-launch notes) |
+    <div class="milestones" markdown>
+
+    Early
+    :   **Heart of the Wild** (swapped places with Furor), **Naturalist** (now also +2–10% damage), **Reflection** (up to 50% mana regen while casting at max rank)
+
+    11
+    :   **Gift of the Earthmother**: −0.5 s global cooldown on Rejuvenation, Swiftmend and Wild Growth
+
+    16
+    :   **Swiftmend** (consumes one of **your own** HoTs)
+
+    Mid
+    :   **Living Spirit**, Nature's Swiftness, Improved Tranquility
+
+    Tier 3
+    :   **Bloom** (added pre-launch; fixed to heal on 6 Nov)
+
+    Capstone
+    :   **Wild Growth** (31 points, 3 s cast in the pre-launch notes)
+
+    </div>
 
 ### Recommended builds
 
@@ -114,12 +162,36 @@ Forever reworked all three trees and added a **16-point tier** alongside the cla
 
 | Build | Use | Milestones |
 |---|---|---|
-| **Feral leveling** (recommended) | 10–60 solo | 10–15: Ferocity, then Feral Instinct/Thick Hide for Bear. 20: Feral Swiftness and Savage Fury for Cat. 11-point: Feral Charge. 16-point: Shifting Power (and Primal Bite if you tank dungeons). 21-point: Leader of the Pack. Then Predatory Strikes and the Cat damage talents. Warcraft Tavern skips Shredding Attacks while leveling. Finish with Furor or Balance hit talents. |
+| **Feral leveling** (recommended) | 10–60 solo | See the [Feral leveling timeline](#feral-leveling-timeline) below |
 | **Balance leveling** | Solo caster | Genesis to unlock Nature's Majesty and Nature's Reach, Improved Wrath, Nature's Splendor, Insect Swarm (16-point), two points of Overgrowth for multi-root pulls, then Eclipse. |
 | **Hybrid Feral (endgame)** | Cat DPS + off-tank | Warcraft Tavern's 9/37/5-style hybrid: Balance for Nature's Reach (hit), the full Feral tree including Shifting Power, Primal Bite, Leader of the Pack and Lacerate, and a few Resto points. *Page doesn't say which number is which tree.* |
 | **Bear tank (endgame)** | Main tank in 5s, 10s | Feral with Thick Hide, Feral Instinct, Natural Reaction, Ferocity, Primal Bite, Lacerate, Rend and Tear. Kami-labs skips Brutal Impact; commenters suggested moving points to Nature's Reach/Majesty for hit and crit. |
 | **Restoration (endgame)** | Raid/dungeon healer | Heart of the Wild, Reflection, Gift of the Earthmother, Swiftmend, Living Spirit, Nature's Swiftness, Bloom, Wild Growth. |
 | **Moonkin (endgame)** | Raid caster | Deep Balance through Eclipse and Moonkin Form. |
+
+<p class="milestones-cap" id="feral-leveling-timeline">Feral leveling timeline</p>
+
+<div class="milestones" markdown>
+
+Lv 10–15
+:   Ferocity, then Feral Instinct/Thick Hide for Bear
+
+Lv 20
+:   Feral Swiftness and Savage Fury for Cat
+
+11 pts
+:   Feral Charge
+
+16 pts
+:   Shifting Power (and Primal Bite if you tank dungeons)
+
+21 pts
+:   Leader of the Pack
+
+Then
+:   Predatory Strikes and the Cat damage talents. Warcraft Tavern skips Shredding Attacks while leveling. Finish with Furor or Balance hit talents.
+
+</div>
 
 !!! conflict "Conflict: talent names"
     Warcraft Tavern calls the Cat speed talent *Feral Swiftness*. Method calls it *Feline Swiftness*, with a different spell ID. They seem to be the same slot in the tree, but it may have been renamed.
@@ -157,25 +229,37 @@ From trainer and quest tables on Warcraft Tavern and Method. Levels marked *(fan
 
     **Opener:** Prowl → Ravage (or Pounce in PvP) from behind. Before level 32, use Shred from behind or Claw.
 
-    **Priority:**
 
-    1. Faerie Fire (free in form) if it's missing.
-    2. **Rip** at 5 combo points on targets that will live through it.
-    3. **Ferocious Bite** at 4–5 combo points with 70+ Energy, or as the finisher on targets that are about to die.
-    4. **Rake** if it's missing.
-    5. **Shifting Power** when you're below 50 Energy and it's off cooldown.
-    6. **Shred** from behind, **Claw** from the front.
+    !!! rotation "Cat priority"
+
+        <div class="priority" markdown>
+
+        1. Faerie Fire (free in form) if it's missing.
+        2. **Rip** at 5 combo points on targets that will live through it.
+        3. **Ferocious Bite** at 4–5 combo points with 70+ Energy, or as the finisher on targets that are about to die.
+        4. **Rake** if it's missing.
+        5. **Shifting Power** when you're below 50 Energy and it's off cooldown.
+        6. **Shred** from behind, **Claw** from the front.
+
+        </div>
+
 
     Don't refresh bleeds until they fall off. Thorns before pulling is free damage while you solo. *Poised* (32) makes your next Energy ability cost 10 less, so use the cheap ability after it procs. Omen of Clarity procs make your next ability free, so spend them on Shred.
 
 === "Bear"
 
-    **Single target:**
 
-    1. Faerie Fire and **Demoralizing Roar** kept up.
-    2. **Primal Bite** on cooldown (main threat button).
-    3. **Lacerate** to 5 stacks, refreshed before it drops.
-    4. **Maul** as a Rage dump (25+ Rage).
+    !!! rotation "Bear: Single target"
+
+        <div class="priority" markdown>
+
+        1. Faerie Fire and **Demoralizing Roar** kept up.
+        2. **Primal Bite** on cooldown (main threat button).
+        3. **Lacerate** to 5 stacks, refreshed before it drops.
+        4. **Maul** as a Rage dump (25+ Rage).
+
+        </div>
+
 
     **Multi-target:** Swipe (3 targets) between Primal Bites. Challenging Roar for emergencies.
 
@@ -188,7 +272,19 @@ From trainer and quest tables on Warcraft Tavern and Method. Levels marked *(fan
 
 === "Balance"
 
-    **Leveling (multi-DoT):** Wrath to pull → Moonfire → Insect Swarm → Entangling Roots → kite or keep casting Wrath. With Overgrowth, root and DoT 2–3 mobs.
+    !!! rotation "Balance: Leveling (multi-DoT)"
+
+        <div class="priority" markdown>
+
+        1. Wrath to pull
+        2. Moonfire
+        3. Insect Swarm
+        4. Entangling Roots
+        5. Kite or keep casting Wrath.
+
+        </div>
+
+        With Overgrowth, root and DoT 2–3 mobs.
 
     **Leveling (Eclipse):** Wrath, Moonfire, Insect Swarm, Wrath until level 30. Then Wrath procs Eclipse, so the pattern becomes roughly **2 Starfire : 1 Wrath**.
 
@@ -196,31 +292,35 @@ From trainer and quest tables on Warcraft Tavern and Method. Levels marked *(fan
 
 === "Restoration"
 
-    - Pre-HoT the tank with **Rejuvenation** (shorter GCD thanks to Gift of the Earthmother).
-    - **Regrowth** for medium damage, **Healing Touch** (downranked) for big, planned heals.
-    - **Swiftmend** needs one of your own HoTs on the target. Use it on spikes.
-    - **Wild Growth** for group damage. **Bloom** is your tier-3 tool now that it heals.
-    - **Nature's Swiftness → Healing Touch** for emergencies. **Innervate** yourself or another healer. **Rebirth** a dead healer or tank.
+    !!! rotation "Restoration"
+
+        - Pre-HoT the tank with **Rejuvenation** (shorter GCD thanks to Gift of the Earthmother).
+        - **Regrowth** for medium damage, **Healing Touch** (downranked) for big, planned heals.
+        - **Swiftmend** needs one of your own HoTs on the target. Use it on spikes.
+        - **Wild Growth** for group damage. **Bloom** is your tier-3 tool now that it heals.
+        - **Nature's Swiftness → Healing Touch** for emergencies. **Innervate** yourself or another healer. **Rebirth** a dead healer or tank.
 
 ### Useful macros
 
-```text
-#showtooltip
-/cast [nostance:1] !Dire Bear Form; Primal Bite
-```
+??? example "Show 3 macros"
 
-```text
-#showtooltip
-/cast [stance:3,nostealth] Prowl; [nostance:3] !Cat Form
-```
+    ```text
+    #showtooltip
+    /cast [nostance:1] !Dire Bear Form; Primal Bite
+    ```
 
-```text
-#showtooltip Innervate
-/cast [@mouseover,help,nodead][] Innervate
-```
+    ```text
+    #showtooltip
+    /cast [stance:3,nostealth] Prowl; [nostance:3] !Cat Form
+    ```
 
-!!! note
-    Stance numbers depend on which forms you know. Check which form is 1, 2 and 3 on your stance bar. Forever's client supports modern macro conditionals (*mouseover* targeting); see [Addons & UI](../../systems/addons.md).
+    ```text
+    #showtooltip Innervate
+    /cast [@mouseover,help,nodead][] Innervate
+    ```
+
+    !!! note
+        Stance numbers depend on which forms you know. Check which form is 1, 2 and 3 on your stance bar. Forever's client supports modern macro conditionals (*mouseover* targeting); see [Addons & UI](../../systems/addons.md).
 
 ---
 
@@ -231,6 +331,8 @@ From trainer and quest tables on Warcraft Tavern and Method. Levels marked *(fan
 
 !!! tip "First 20 levels in one line"
     Caster until 10, Bear 10–20, Cat from 20. Visit the trainer every even level.
+
+<div class="route" markdown>
 
 ### 1–10: Caster
 
@@ -287,6 +389,8 @@ From trainer and quest tables on Warcraft Tavern and Method. Levels marked *(fan
 
 !!! tip "Moonglade"
     Teleport: Moonglade from level 10 is a free hearth to the druid trainer Loganaar in Moonglade, then a flight path. Use it to reach Kalimdor fast as Horde or Alliance.
+
+</div>
 
 ---
 
@@ -399,14 +503,16 @@ See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/batt
 
 ## Hardcore notes
 
-[Hardcore](../../about/hardcore.md) arrives in winter 2026/27. The Druid is one of the safest classes for it.
+!!! hardcore "Hardcore survival"
 
-- **Escape kit:** Travel Form, Dash, Prowl (out of combat), Aquatic Form, Nature's Grasp and Entangling Roots. Night Elves also have Shadowmeld.
-- **Bear is your panic button:** high armor, Frenzied Regeneration to full, and potions now work without leaving form.
-- **Self-healing:** shift out, Regrowth plus Rejuvenation, shift back. Keep enough mana for this. Don't drain it on shifts.
-- **Watch out for fear casters** (you have no fear break) and for packs you can't control: Hibernate only works on Beasts and Dragonkin.
-- **Revive** (12) and **Rebirth** (20) help your group, not you.
-- The new dungeon items with special effects were designed partly with Hardcore in mind.
+    [Hardcore](../../about/hardcore.md) arrives in winter 2026/27. The Druid is one of the safest classes for it.
+
+    - **Escape kit:** Travel Form, Dash, Prowl (out of combat), Aquatic Form, Nature's Grasp and Entangling Roots. Night Elves also have Shadowmeld.
+    - **Bear is your panic button:** high armor, Frenzied Regeneration to full, and potions now work without leaving form.
+    - **Self-healing:** shift out, Regrowth plus Rejuvenation, shift back. Keep enough mana for this. Don't drain it on shifts.
+    - **Watch out for fear casters** (you have no fear break) and for packs you can't control: Hibernate only works on Beasts and Dragonkin.
+    - **Revive** (12) and **Rebirth** (20) help your group, not you.
+    - The new dungeon items with special effects were designed partly with Hardcore in mind.
 
 ---
 
@@ -445,12 +551,14 @@ See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/batt
 
 ## Sources
 
-- [Warcraft Tavern — Druid Guide](https://www.warcrafttavern.com/forever/guides/druid/)
-- [Warcraft Tavern — Druid Leveling Guide](https://www.warcrafttavern.com/forever/guides/druid-leveling/)
-- [Warcraft Tavern — Feral Druid Guide](https://www.warcrafttavern.com/forever/guides/feral-druid/)
-- [Warcraft Tavern — Hunter & Druid deep dive](https://www.warcrafttavern.com/forever/news/powershifting-is-back-sort-of-hunter-druid-deep-dive-for-wow-forever/)
-- [Method — WoW Forever Druid Leveling Guide & Talents](https://www.method.gg/wow-forever/wow-forever-druid-leveling-guide-and-talents)
-- [Kami-labs — Guardian Druid PvE Build](https://kami-labs.fr/en/wow-forever/build-druide-gardien-wow-forever/)
-- [Mobalytics — Druid guides](https://mobalytics.gg/wow-forever/druid-guides)
-- [Warcraft Wiki — Druid abilities (Forever)](https://warcraft.wiki.gg/wiki/Druid_abilities_(Forever))
-- [games.gg — Best tank classes](https://games.gg/world-of-warcraft/guides/wow-forever-guide-best-tank-classes/)
+??? quote "9 sources"
+
+    - [Warcraft Tavern — Druid Guide](https://www.warcrafttavern.com/forever/guides/druid/)
+    - [Warcraft Tavern — Druid Leveling Guide](https://www.warcrafttavern.com/forever/guides/druid-leveling/)
+    - [Warcraft Tavern — Feral Druid Guide](https://www.warcrafttavern.com/forever/guides/feral-druid/)
+    - [Warcraft Tavern — Hunter & Druid deep dive](https://www.warcrafttavern.com/forever/news/powershifting-is-back-sort-of-hunter-druid-deep-dive-for-wow-forever/)
+    - [Method — WoW Forever Druid Leveling Guide & Talents](https://www.method.gg/wow-forever/wow-forever-druid-leveling-guide-and-talents)
+    - [Kami-labs — Guardian Druid PvE Build](https://kami-labs.fr/en/wow-forever/build-druide-gardien-wow-forever/)
+    - [Mobalytics — Druid guides](https://mobalytics.gg/wow-forever/druid-guides)
+    - [Warcraft Wiki — Druid abilities (Forever)](https://warcraft.wiki.gg/wiki/Druid_abilities_(Forever))
+    - [games.gg — Best tank classes](https://games.gg/world-of-warcraft/guides/wow-forever-guide-best-tank-classes/)

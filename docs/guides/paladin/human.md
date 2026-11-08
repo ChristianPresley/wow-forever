@@ -7,8 +7,13 @@ tags:
 
 # Human Paladin
 
-!!! tip "Add-on"
-    Read with the [Paladin guide](index.md). This page covers what changes when your paladin is Human.
+<div class="guide-head" data-class="paladin" markdown>
+
+:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Paladin guide](index.md). This page covers what changes when your paladin is Human.</p>
+
+</div>
 
 ## Why this combo
 
@@ -23,45 +28,92 @@ Stormwind also sits near the new Alliance content: the harbor with a boat to Aub
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **Will to Survive** | Active | **5/5**{ .stars .s5 } | Breaks boss stuns (rarely needed) | Instantly removes stuns, like a PvP trinket. Pair with Blessing of Freedom and you are very hard to lock down |
-| **Ruthless** | Passive | **4/5**{ .stars .s4 } | +1% crit with spells and attacks: more Vengeance uptime (Ret), more Illumination returns (Holy) | Slightly more burst |
-| **The Human Spirit** | Passive | **3/5**{ .stars .s3 } | +10% Spirit: faster out-of-combat mana regen while leveling | Small |
-| **Perception** | Active | **2/5**{ .stars .s2 } | Rarely matters | Detects stealth for 20 s. Good for flag defense and spotting rogues before they open |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Will to Survive** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
+<p markdown><span class="ability-label">PvE</span> Breaks boss stuns (rarely needed)</p>
+<p markdown><span class="ability-label">PvP</span> Instantly removes stuns, like a PvP trinket. Pair with Blessing of Freedom and you are very hard to lock down</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Ruthless** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
+<p markdown><span class="ability-label">PvE</span> +1% crit with spells and attacks: more Vengeance uptime (Ret), more Illumination returns (Holy)</p>
+<p markdown><span class="ability-label">PvP</span> Slightly more burst</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**The Human Spirit** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +10% Spirit: faster out-of-combat mana regen while leveling</p>
+<p markdown><span class="ability-label">PvP</span> Small</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Perception** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> Rarely matters</p>
+<p markdown><span class="ability-label">PvP</span> Detects stealth for 20 s. Good for flag defense and spotting rogues before they open</p>
+</div>
+
+</div>
 
 !!! note "Cooldown unknown"
     Blizzard hasn't published Will to Survive's cooldown. Classic PvP trinkets were 5 minutes; don't assume the same.
 
-**Macros**
+??? example "Macros"
 
-```
-#showtooltip Will to Survive
-/cast Will to Survive
-/cast Blessing of Freedom
-```
+    ```
+    #showtooltip Will to Survive
+    /cast Will to Survive
+    /cast Blessing of Freedom
+    ```
 
-If Will to Survive is off the global cooldown, both fire on one press; otherwise press it twice. Use it as a "break stun, then free myself" button against warriors and rogues.
+    If Will to Survive is off the global cooldown, both fire on one press; otherwise press it twice. Use it as a "break stun, then free myself" button against warriors and rogues.
 
-```
-#showtooltip Perception
-/cast Perception
-/cast Hammer of Justice
-```
+    ```
+    #showtooltip Perception
+    /cast Perception
+    /cast Hammer of Justice
+    ```
 
 ## Starting zone walkthrough (1–12)
 
 You start at **Northshire Abbey** in Elwynn Forest. The Classic quest flow is largely intact, with new NPCs and quests mixed in.
 
-| Level | Where | Notes |
-|---|---|---|
-| 1–5 | Northshire Valley | **Brother Sammuel** (Northshire Abbey, 50.4, 42.0) trains you to level 6. Do the kobold, wolf and Defias quests |
-| 4 | Northshire | Train **Judgement** and **Blessing of Might** |
-| 5 | Goldshire | Pick up *The Great Outdoors* outside the hub to unlock camping, and learn Cooking |
-| 5–10 | Goldshire, Eastvale, Jerod's Landing | **Brother Wilhelm** in Goldshire (41.0, 66.0) is your trainer. Train **Holy Strike** at 6 and Hammer of Justice at 8 |
-| 10 | Goldshire | Train **Seal of Fury, Righteous Fury, Lay on Hands**. First talent: Benediction (Ret) or Redoubt (Prot) |
-| 10–12 | Stormwind, Westfall | Visit the **Cathedral of Light** (trainers Arthur the Faithful, Katherine the Pure, Lord Grayson Shadowbreaker, around 49, 50) |
-| 12 | Stormwind | **Redemption** class quest (Classic: *The Tome of Divinity*, from the Cathedral of Light). Expect a short chain with a cloth turn-in and a resurrection task |
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } Northshire Valley
+
+    **Brother Sammuel** (Northshire Abbey, 50.4, 42.0) trains you to level 6. Do the kobold, wolf and Defias quests
+
+2.  **4**{ .lvl } Northshire
+
+    Train **Judgement** and **Blessing of Might**
+
+3.  **5**{ .lvl } Goldshire
+
+    Pick up *The Great Outdoors* outside the hub to unlock camping, and learn Cooking
+
+4.  **5–10**{ .lvl } Goldshire, Eastvale, Jerod's Landing
+
+    **Brother Wilhelm** in Goldshire (41.0, 66.0) is your trainer. Train **Holy Strike** at 6 and Hammer of Justice at 8
+
+5.  **10**{ .lvl } Goldshire
+
+    Train **Seal of Fury, Righteous Fury, Lay on Hands**. First talent: Benediction (Ret) or Redoubt (Prot)
+
+6.  **10–12**{ .lvl } Stormwind, Westfall
+
+    Visit the **Cathedral of Light** (trainers Arthur the Faithful, Katherine the Pure, Lord Grayson Shadowbreaker, around 49, 50)
+
+7.  **12**{ .lvl } Stormwind
+
+    **Redemption** class quest (Classic: *The Tome of Divinity*, from the Cathedral of Light). Expect a short chain with a cloth turn-in and a resurrection task
+
+</div>
 
 !!! note "Classic-era detail"
     The exact Redemption chain for Alliance paladins in Forever hasn't been documented by the sources we checked. The Classic version starts in the Cathedral of Light at level 12; the Forsaken version (*A Lesson in Divinity*) follows the same shape.
@@ -70,15 +122,37 @@ You start at **Northshire Abbey** in Elwynn Forest. The Classic quest flow is la
 
 Your trainers are in **Stormwind** (Cathedral of Light) and Goldshire, plus Ironforge and Theramore.
 
-| Level | Zones | Notes |
-|---|---|---|
-| 10–20 | Westfall, Loch Modan, Redridge | The Deadmines (18–24) is your first big dungeon. **Rhahk'Zor's Hammer** is a great slow two-hander. [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18) is a short trip to Ironforge |
-| 20 | Stormwind / Ironforge | **Verigan's Fist** class quest (Classic: *The Tome of Valor*), a two-handed mace that needs materials from the Deadmines, Shadowfang Keep and Blackfathom Deeps. Group up for the dungeon parts |
-| 20–30 | Redridge, Duskwood, Wetlands, Ashenvale | [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md), the Stockade (in Stormwind), Blackfathom Deeps. Turn in crates at the **Azeroth Commerce Authority** in Three Corners, Redridge |
-| 28–35 | Hillsbrad, Alterac Mountains | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) and the Kirin Tor quests (Alliance only): start with Emissary Jacques in Southshore (*fan source*) |
-| 30–40 | Arathi Highlands, Stranglethorn, Desolace, Dustwallow | Scarlet Monastery (Tirisfal Glades, a long trip through Horde land); [The Drowned City](../../content/dungeons/drowned-city.md) (35–40) |
-| 35–45 | [Riverglades](../../world/zones.md#riverglades) | Walk east from Redridge to **Farholde Keep** and the Brotherhood of the Horse. Classic knightly flavor that suits a paladin |
-| 45–60 | Feralas, Tanaris, Hinterlands, Azshara, Un'Goro, Plaguelands, Winterspring | Fly back to Stormwind or Ironforge to train |
+<div class="steps" markdown>
+
+1.  **10–20**{ .lvl } Westfall, Loch Modan, Redridge
+
+    The Deadmines (18–24) is your first big dungeon. **Rhahk'Zor's Hammer** is a great slow two-hander. [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18) is a short trip to Ironforge
+
+2.  **20**{ .lvl } Stormwind / Ironforge
+
+    **Verigan's Fist** class quest (Classic: *The Tome of Valor*), a two-handed mace that needs materials from the Deadmines, Shadowfang Keep and Blackfathom Deeps. Group up for the dungeon parts
+
+3.  **20–30**{ .lvl } Redridge, Duskwood, Wetlands, Ashenvale
+
+    [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md), the Stockade (in Stormwind), Blackfathom Deeps. Turn in crates at the **Azeroth Commerce Authority** in Three Corners, Redridge
+
+4.  **28–35**{ .lvl } Hillsbrad, Alterac Mountains
+
+    [City of Dalaran](../../content/dungeons/city-of-dalaran.md) and the Kirin Tor quests (Alliance only): start with Emissary Jacques in Southshore (*fan source*)
+
+5.  **30–40**{ .lvl } Arathi Highlands, Stranglethorn, Desolace, Dustwallow
+
+    Scarlet Monastery (Tirisfal Glades, a long trip through Horde land); [The Drowned City](../../content/dungeons/drowned-city.md) (35–40)
+
+6.  **35–45**{ .lvl } [Riverglades](../../world/zones.md#riverglades)
+
+    Walk east from Redridge to **Farholde Keep** and the Brotherhood of the Horse. Classic knightly flavor that suits a paladin
+
+7.  **45–60**{ .lvl } Feralas, Tanaris, Hinterlands, Azshara, Un'Goro, Plaguelands, Winterspring
+
+    Fly back to Stormwind or Ironforge to train
+
+</div>
 
 **Travel tips**
 
@@ -96,4 +170,8 @@ Your trainers are in **Stormwind** (Cathedral of Light) and Goldshire, plus Iron
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 **The best PvP paladin, and a solid all-rounder.** Will to Survive is the strongest racial a paladin can have against stuns, and Ruthless and The Human Spirit help every spec. Dwarves edge Humans in raid DPS (hit) and against poison-heavy fights; Humans win in battlegrounds and world PvP.
+
+</div>

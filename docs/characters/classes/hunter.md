@@ -1,6 +1,37 @@
 # Hunter
 
+**Also called:** Hunt · BM (Beast Mastery) · MM (Marksmanship) · SV (Survival)
+{: .fc-aka }
+
+<aside class="infobox" data-class="hunter" markdown>
+<p class="infobox-title">Hunter</p>
+<p class="infobox-roles" markdown>**DPS**{ .badge .dps }</p>
+
+| | |
+|---|---|
+| **Specs** | Beast Mastery · Marksmanship · Survival |
+| **Armor** | Mail at 40 |
+| **Resource** | Mana |
+| **Races** | 8 combinations |
+| **Forever focus** | Petless MM; melee Survival |
+| **Guide** | [Hunter guide](../../guides/hunter/index.md) |
+
+</aside>
+
 **Races:** Human (**new**), Dwarf, Night Elf, Orc, Troll, Tauren, Skyborne (both).
+
+!!! forever "What Forever changed"
+    **Headline additions:** Aimed Shot baseline, combat traps, Summon Hawk, Lone Wolf, Sniper Shot, Strider Kick, Lacerating Strikes.
+
+    **Notable removals:** Wyvern Sting, Slaying talents. Full list: [Classes summary](index.md#summary).
+
+<div class="fc-cta" data-class="hunter" markdown>
+
+**Playing a Hunter?** The [Hunter guide](../../guides/hunter/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+
+<span class="fc-cta__label">Race add-ons</span> [Human](../../guides/hunter/human.md){ .fc-chip } [Dwarf](../../guides/hunter/dwarf.md){ .fc-chip } [Night Elf](../../guides/hunter/night-elf.md){ .fc-chip } [Skyborne (High Order)](../../guides/hunter/skyborne-high-order.md){ .fc-chip } [Orc](../../guides/hunter/orc.md){ .fc-chip } [Troll](../../guides/hunter/troll.md){ .fc-chip } [Tauren](../../guides/hunter/tauren.md){ .fc-chip } [Skyborne (Windshaper)](../../guides/hunter/skyborne-windshaper.md){ .fc-chip }
+
+</div>
 
 ## Baseline changes
 

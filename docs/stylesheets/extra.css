@@ -143,6 +143,8 @@
 .md-nav__item--section > .md-nav__link { color: var(--fc-text); font-weight: 650; }
 .md-nav__title { color: var(--fc-text-muted); }
 .md-footer-meta { font-size: .65rem; }
+.md-copyright, .md-copyright__highlight { color: var(--md-footer-fg-color--light); }
+.md-typeset small { opacity: 1; color: var(--fc-text-muted); }
 
 /* show top tabs from 960px so small laptops keep visible navigation */
 @media screen and (min-width: 60em) and (max-width: 76.234375em) {
@@ -213,7 +215,7 @@
 .md-typeset .fc-hero a { text-decoration: none; }
 
 .md-typeset kbd { font-family: var(--md-code-font); }
-.md-typeset .unconfirmed { color: var(--fc-text-muted); font-style: italic; }
+.md-typeset :is(em, span).unconfirmed { color: var(--fc-text-muted); font-style: italic; }
 
 /* ---------- 6. Focus ----------------------------------------------- */
 :where(a, button, input, summary, label, [tabindex]):focus-visible,
@@ -265,6 +267,8 @@ html { scroll-padding-top: 4.4rem; }
 .md-typeset .fc-matrix td a { display: inline-block; min-width: 1.6rem; padding: .1em .3em; border-radius: .2rem; font-weight: 650; }
 .md-typeset .fc-matrix td a:hover { background: var(--md-accent-fg-color--transparent); }
 .md-typeset .fc-matrix .fc-na { color: var(--fc-text-subtle); }
+.md-typeset .fc-matrix td { position: relative; }
+.md-typeset .fc-sr { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 
 /* ---------- 8. Admonitions: 6 colour-blind-safe families ----------- */
 .md-typeset :is(.admonition, details) { font-size: .75rem; line-height: 1.55; border-width: 0 0 0 .2rem; border-radius: var(--fc-radius); box-shadow: none;
@@ -392,8 +396,8 @@ html { scroll-padding-top: 4.4rem; }
 
 /* rotation priority */
 .md-typeset .priority > ol { counter-reset: p; list-style: none; padding: 0; margin-left: 0; }
-.md-typeset .priority > ol > li { counter-increment: p; display: flex; gap: .6rem; align-items: baseline; margin: .3rem 0; }
-.md-typeset .priority > ol > li::before { content: counter(p); flex: none; width: 1.4rem; text-align: center; font-weight: 800; color: var(--fc-bg); background: var(--fc-adm-success); border-radius: .2rem; }
+.md-typeset .priority > ol > li { counter-increment: p; position: relative; padding-left: 2rem; margin: .35rem 0; }
+.md-typeset .priority > ol > li::before { content: counter(p); position: absolute; left: 0; top: .1em; width: 1.4rem; line-height: 1.4; text-align: center; font-weight: 800; color: var(--fc-bg); background: var(--fc-adm-success); border-radius: .2rem; }
 
 /* inline spoiler */
 .md-typeset .spoiler-text { filter: blur(.3em); background: var(--fc-border); border-radius: .2em; cursor: pointer; transition: filter var(--fc-dur-2) var(--fc-ease); }
@@ -443,6 +447,9 @@ html { scroll-padding-top: 4.4rem; }
 .md-typeset .fc-hero .md-button:focus-visible { outline-color: #f6d78c; }
 .md-typeset .fc-hero label.md-button { cursor: pointer; }
 
+/* sidebar links: meet WCAG 2.5.8 target size on desktop too */
+.md-nav__link { min-height: 1.2rem; align-items: center; }
+
 /* ---------- 14. Touch targets on coarse pointers ------------------- */
 @media (pointer: coarse) {
   .md-nav__link { min-height: 2.2rem; align-items: center; margin-top: 0; padding-block: .45rem; }
@@ -474,3 +481,20 @@ html { scroll-padding-top: 4.4rem; }
   .fc-switcher, .md-banner, .md-path { display: none !important; }
   .md-typeset .infobox { float: none; width: auto; }
 }
+
+/* tags index: chip lists */
+.md-typeset ul.fc-taglist { list-style: none; margin-left: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .1rem .2rem; }
+.md-typeset ul.fc-taglist > li { margin: 0; }
+
+/* 404 page */
+.md-typeset .fc-404 { text-align: center; padding: 2rem 0 3rem; }
+.md-typeset .fc-404 h1::after { margin-inline: auto; }
+.md-typeset .fc-404 p { margin-inline: auto; }
+.md-typeset .fc-404__code { font-family: var(--fc-display-font); font-size: 4rem; line-height: 1; margin: 0; color: var(--fc-gold-text); opacity: .85; }
+
+/* buttons: readable in both schemes (hero keeps its own styling) */
+.md-typeset .md-button { color: var(--fc-link); border-color: currentColor; border-radius: 999px; }
+.md-typeset .md-button:is(:hover, :focus-visible) { color: var(--fc-on-navy); background: var(--fc-navy-2); border-color: var(--fc-navy-2); }
+.md-typeset .md-button--primary { color: var(--fc-on-navy); background: var(--fc-navy); border-color: var(--fc-navy); }
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary { color: #11151c; background: var(--fc-gold); border-color: var(--fc-gold); }
+[data-md-color-scheme="slate"] .md-typeset .md-button:is(:hover, :focus-visible) { color: #11151c; background: var(--fc-link-hover); border-color: var(--fc-link-hover); }

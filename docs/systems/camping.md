@@ -1,6 +1,7 @@
 # Camping
 
-**Camping** is a new social rest system built around shared campfires. Blizzard pitches it explicitly as a way to meet other players.
+!!! forever "New in Forever"
+    **Camping** is a new social rest system built around shared campfires. Blizzard pitches it explicitly as a way to meet other players.
 
 ## Unlocking it
 
@@ -17,6 +18,8 @@ At around level 5, take **The Great Outdoors** from an adventurer outside your s
 
 ## Camp features by profession
 
+<div class="compare" markdown>
+
 | Profession | Tier 1 (effect; doesn't stack with) | Tier 2 | Tier 3 |
 |---|---|---|---|
 | Cooking | Basic Campfire | Journeyman Campfire; Cookie's Feast | Expert Campfire; Iron Oven |
@@ -31,6 +34,8 @@ At around level 5, take **The Great Outdoors** from an adventurer outside your s
 | Mining | Lodestone: melee AP (Blessing of Might) | Rock Garden | Molten Foundry |
 | Skinning | Camp Chair: +2% crit (Moonkin Aura) | Field Guide (Track Beasts) | Trapper's Workbench |
 | Tailoring | Faction Banner: Spirit (Divine Spirit) | Spinning Wheel | Loom |
+
+</div>
 
 ## Known blueprint drops
 

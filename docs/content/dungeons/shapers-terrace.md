@@ -1,5 +1,9 @@
 # Shaper's Terrace
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Shaper's Terrace</p>
+<p class="infobox-roles" markdown>**New**{ .badge .new } **5-player dungeon**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | 5-player dungeon (new in Forever) |
@@ -8,7 +12,7 @@
 | **Faction** | Both |
 | **Bosses** | 4 known (one source counts 11) |
 
-## Overview
+</aside>
 
 A **titan facility overrun by dinosaurs**. A tar-pit path leads to the *Pillar of Assimilation*. The dungeon also contains a crystal cave and a titan building with a waterfall.
 
@@ -18,11 +22,12 @@ Bring **Un'Goro power crystals** (Blue, Green, Red, Yellow) into the dungeon and
 
 ### A future raid?
 
-A **gated "unknown raid portal"** inside has fueled speculation about a future raid. This is unconfirmed.
+A **gated "unknown raid portal"** inside has fueled speculation about a future raid. *unconfirmed*{ .unconfirmed }
 
 ## Bosses (known so far)
 
-Bolt · Cinder · Snowtalon · Nanaya. These names come from Legacy challenges, from a single source, and are **unconfirmed**.
+!!! unconfirmed "Single source"
+    Bolt · Cinder · Snowtalon · Nanaya. These names come from Legacy challenges, from a single source, and are **unconfirmed**.
 
 ## Related quests
 

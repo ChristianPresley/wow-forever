@@ -8,22 +8,28 @@
 
 ## How Forever differs from the original first year
 
-- Forsaken can be **paladins**, and the Forsaken Kingdom campaign leads straight into Forever.
-- The **Skyborne** have arrived from Skywall.
-- **Dalaran** is drawn intact without its shield, and it is hostile to the Horde.
-- **Sunnyglade** stays in ruins.
-- **Gilneas** reportedly appears behind the Greymane Wall (*unconfirmed*).
-- Rumors place **King Varian Wrynn** in [Alcaz Prison](../content/dungeons/alcaz-prison.md).
+!!! forever "Forever-only changes to year one"
+
+    - Forsaken can be **paladins**, and the Forsaken Kingdom campaign leads straight into Forever.
+    - The **Skyborne** have arrived from Skywall.
+    - **Dalaran** is drawn intact without its shield, and it is hostile to the Horde.
+    - **Sunnyglade** stays in ruins.
+    - **Gilneas** reportedly appears behind the Greymane Wall *unconfirmed*{ .unconfirmed }.
+    - Rumors place **King Varian Wrynn** in [Alcaz Prison](../content/dungeons/alcaz-prison.md).
 
 ## Story philosophy: "found photographs"
 
 From Blizzard's BlizzCon *Found Photos* panel: "found photographs" is **Chris Metzen**'s term from Season of Discovery. It means new stories that feel as if they were always part of Classic. Blizzard's approach favors local mysteries, grounded conflicts and underused characters. New content falls into three buckets:
+
+<div class="compare" markdown>
 
 | Bucket | Meaning | Example |
 |---|---|---|
 | **Anticipated** | Places players have long asked for | Mount Hyjal |
 | **New but familiar** | New stories rooted in existing history | Riverglades |
 | **Unexpected** | Used sparingly | Zephras Isle and the Skyborne |
+
+</div>
 
 There is **no single "big bad"**. That fits the stated pillar that *not every story is about saving the world*, and the Warcraft Wiki pillar of *a dangerous Azeroth*. The tone is grounded: everyday people and how the wars affected them. BlizzardWatch argued the panel didn't explain how the lore fits together.
 

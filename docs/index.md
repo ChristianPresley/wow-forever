@@ -9,6 +9,9 @@ search:
 
 <div class="fc-hero" markdown>
 
+<div class="fc-hero__deco" aria-hidden="true"><svg class="fc-hero__art" viewBox="0 0 800 320" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor"><circle cx="400" cy="53" r="44" stroke-opacity=".45"/><circle cx="400" cy="53" r="60" stroke-opacity=".3" stroke-dasharray="1 5"/><circle cx="400" cy="53" r="104" stroke-opacity=".18"/><circle cx="400" cy="53" r="150" stroke-opacity=".12"/><circle cx="400" cy="53" r="230" stroke-opacity=".07"/><path d="M460.0 53.0L550.0 53.0M458.0 68.5L544.9 91.8M452.0 83.0L529.9 128.0M442.4 95.4L506.1 159.1M430.0 105.0L475.0 182.9M415.5 111.0L438.8 197.9M400.0 113.0L400.0 203.0M384.5 111.0L361.2 197.9M370.0 105.0L325.0 182.9M357.6 95.4L293.9 159.1M348.0 83.0L270.1 128.0M342.0 68.5L255.1 91.8M340.0 53.0L250.0 53.0M342.0 37.5L255.1 14.2M348.0 23.0L270.1 -22.0M357.6 10.6L293.9 -53.1M370.0 1.0L325.0 -76.9M384.5 -5.0L361.2 -91.9M400.0 -7.0L400.0 -97.0M415.5 -5.0L438.8 -91.9M430.0 1.0L475.0 -76.9M442.4 10.6L506.1 -53.1M452.0 23.0L529.9 -22.0M458.0 37.5L544.9 14.2" stroke-opacity=".08"/></g><g fill="#f6e7b8"><circle cx="84" cy="282" r="0.6" opacity="0.6"/><circle cx="606" cy="37" r="1.2" opacity="0.5"/><circle cx="48" cy="52" r="1" opacity="0.8"/><circle cx="81" cy="131" r="0.6" opacity="0.8"/><circle cx="70" cy="297" r="0.6" opacity="0.5"/><circle cx="655" cy="39" r="1.2" opacity="0.8" class="tw"/><circle cx="60" cy="121" r="0.6" opacity="0.5"/><circle cx="306" cy="222" r="0.8" opacity="0.35"/><circle cx="594" cy="165" r="1.2" opacity="0.5"/><circle cx="115" cy="300" r="1.6" opacity="0.5"/><circle cx="570" cy="40" r="1.2" opacity="0.35"/><circle cx="643" cy="113" r="1" opacity="0.8" class="tw"/><circle cx="331" cy="246" r="1.2" opacity="0.8"/><circle cx="380" cy="161" r="0.8" opacity="0.5"/><circle cx="725" cy="132" r="0.6" opacity="0.6"/><circle cx="547" cy="261" r="0.8" opacity="0.8"/><circle cx="130" cy="270" r="1" opacity="0.5"/><circle cx="785" cy="183" r="0.8" opacity="0.8" class="tw"/><circle cx="694" cy="47" r="1.2" opacity="0.6"/><circle cx="358" cy="187" r="1.2" opacity="0.8"/><circle cx="603" cy="241" r="0.6" opacity="0.35"/><circle cx="286" cy="250" r="1.6" opacity="0.35"/><circle cx="72" cy="166" r="1.6" opacity="0.8"/><circle cx="301" cy="205" r="1.6" opacity="0.6" class="tw"/><circle cx="33" cy="244" r="0.8" opacity="0.5"/><circle cx="635" cy="67" r="1" opacity="0.35"/><circle cx="233" cy="155" r="0.8" opacity="0.5"/><circle cx="417" cy="208" r="1" opacity="0.35"/><circle cx="180" cy="237" r="1" opacity="0.6"/></g></svg><svg class="fc-hero__ridge" viewBox="0 0 800 60" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 60V38l60-14 50 10 70-22 60 16 40-8 80 20 70-26 60 18 50-6 70 16 60-20 70 14 60-6v48Z" fill="#0d1524" fill-opacity=".55"/><path d="M0 60V48l90-10 70 8 80-14 90 12 60-6 110 12 80-10 70 8 80-6 70 6v20Z" fill="#0b111d" fill-opacity=".8"/></svg></div>
+<div class="fc-hero__seal" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M24 8 32 24 24 40 16 24Z M24 15 28.5 24 24 33 19.5 24ZM15 15.5Q6.5 9.5 1.5 9.5Q5.0 14.0 13.5 20.5ZM14 21.5Q7.5 16.5 2.5 18Q6.0 21.0 13.5 26ZM14 27Q9.5 23.5 5.5 26.5Q8.0 28.0 14.5 30.5ZM33 15.5Q41.5 9.5 46.5 9.5Q43.0 14.0 34.5 20.5ZM34 21.5Q40.5 16.5 45.5 18Q42.0 21.0 34.5 26ZM34 27Q38.5 23.5 42.5 26.5Q40.0 28.0 33.5 30.5ZM24 1.5 25.2 4.8 24 6.4 22.8 4.8Z"/></svg></div>
+
 <p class="fc-kicker">The unofficial WoW: Forever wiki</p>
 
 # Forever Codex
@@ -16,6 +19,20 @@ search:
 A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "Classic+" branch of WoW. It has class walkthroughs for every race, zones, dungeons, raids and systems.
 
 [Class & race guides](guides/index.md){ .md-button .md-button--primary } [What is Forever?](about/index.md){ .md-button } <label class="md-button" for="__search">Search the Codex</label>
+
+<nav class="fc-sigils" aria-label="Class guides" markdown>
+
+[:codex-druid: Druid](guides/druid/index.md){ data-class="druid" }
+[:codex-hunter: Hunter](guides/hunter/index.md){ data-class="hunter" }
+[:codex-mage: Mage](guides/mage/index.md){ data-class="mage" }
+[:codex-paladin: Paladin](guides/paladin/index.md){ data-class="paladin" }
+[:codex-priest: Priest](guides/priest/index.md){ data-class="priest" }
+[:codex-rogue: Rogue](guides/rogue/index.md){ data-class="rogue" }
+[:codex-shaman: Shaman](guides/shaman/index.md){ data-class="shaman" }
+[:codex-warlock: Warlock](guides/warlock/index.md){ data-class="warlock" }
+[:codex-warrior: Warrior](guides/warrior/index.md){ data-class="warrior" }
+
+</nav>
 
 </div>
 
@@ -26,7 +43,7 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 
 <div class="grid cards" markdown>
 
--   :material-account-switch:{ .lg .middle } **Pick your class & race**
+-   :codex-crest:{ .lg .middle } **Pick your class & race**
 
     ---
 

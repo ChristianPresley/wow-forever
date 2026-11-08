@@ -89,3 +89,35 @@ Gol-pat
 
 Lexicon Client
 :   A third-party data collector for WarcraftDB.
+
+## Player shorthand
+
+Common abbreviations and nicknames, so search finds the page you mean.
+
+<div class="compare" markdown>
+
+| Shorthand | Means | Page |
+|---|---|---|
+| **Pally, Pala** | Paladin | [Paladin](../characters/classes/paladin.md) |
+| **Lock** | Warlock | [Warlock](../characters/classes/warlock.md) |
+| **Sham, Shammy** | Shaman | [Shaman](../characters/classes/shaman.md) |
+| **Dudu, Boomkin, Kitty, Tree** | Druid (Boomkin = Balance, Kitty = Feral cat, Tree = Restoration) | [Druid](../characters/classes/druid.md) |
+| **Hunt, BM, MM, SV** | Hunter and its three specs | [Hunter and its three specs](../characters/classes/hunter.md) |
+| **Spriest, Disc** | Shadow Priest, Discipline Priest | [Shadow Priest](../characters/classes/priest.md) |
+| **Rog, Sin, Sub** | Rogue, Assassination, Subtlety | [Rogue](../characters/classes/rogue.md) |
+| **War, Warr** | Warrior | [Warrior](../characters/classes/warrior.md) |
+| **Shockadin** | Holy-Retribution hybrid Paladin | [Holy-Retribution hybrid Paladin](../characters/classes/paladin.md) |
+| **NE, Nelf** | Night Elf | [Night Elf](../characters/races.md) |
+| **UD, Forsaken** | Undead | [Undead](../characters/races.md) |
+| **Skyborne Elves, shen'dorei** | Skyborne | [Skyborne](../characters/races.md#skyborne) |
+| **BRD, LBRS, UBRS** | Blackrock Depths, Lower and Upper Blackrock Spire | [Blackrock Depths](../content/dungeons/index.md#all-dungeons-by-level) |
+| **SM, Strat, Scholo, DM** | Scarlet Monastery, Stratholme, Scholomance, Dire Maul (or Deadmines) | [Scarlet Monastery](../content/dungeons/index.md#all-dungeons-by-level) |
+| **Ony** | Onyxia's Lair | [Onyxia's Lair](../content/raids/onyxias-lair.md) |
+| **MC, BWL, AQ, Naxx** | Molten Core, Blackwing Lair, Ahn'Qiraj, Naxxramas (not in Forever yet) | [Molten Core](../content/raids/index.md#what-about-molten-core-bwl-aq-and-naxx) |
+| **WSG, AB, AV** | Warsong Gulch, Arathi Basin, Alterac Valley | [Warsong Gulch](../content/pvp/battlegrounds.md) |
+| **STV, EPL** | Stranglethorn Vale, Eastern Plaguelands | [Stranglethorn Vale](../world/zones.md#changed-classic-zones) |
+| **LP** | Legacy Points | [Legacy Points](../characters/legacy.md) |
+| **GDKP** | Gold-bid loot runs (banned in NA and EU) | [Gold-bid loot runs](../systems/economy.md#gdkp) |
+| **RMT** | Real-money trading | [Real-money trading](../systems/economy.md#anti-rmt-measures) |
+
+</div>

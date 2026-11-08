@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Forever Codex social card backdrop (original artwork, perf-seo). -->
+  <defs>
+    <radialGradient id="glow" cx="78%" cy="18%" r="90%">
+      <stop offset="0" stop-color="#2c4366"/>
+      <stop offset=".55" stop-color="#1b2a41"/>
+      <stop offset="1" stop-color="#0f1828"/>
+    </radialGradient>
+    <pattern id="hatch" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0V24" stroke="#fcfbf8" stroke-opacity=".035" stroke-width="2"/>
+    </pattern>
+    <linearGradient id="rule" x1="0" x2="1">
+      <stop offset="0" stop-color="#e2b849"/>
+      <stop offset="1" stop-color="#e2b849" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#hatch)"/>
+  <!-- inset frame with clipped corners -->
+  <path d="M52 32H1148L1168 52V578L1148 598H52L32 578V52Z" fill="none" stroke="#e2b849" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M60 44H1140L1156 60V570L1140 586H60L44 570V60Z" fill="none" stroke="#e2b849" stroke-opacity=".18" stroke-width="1"/>
+  <!-- rule under the masthead -->
+  <rect x="72" y="196" width="560" height="3" fill="url(#rule)"/>
+  <circle cx="72" cy="197.5" r="5" fill="#e2b849"/>
+  <!-- large faint diamond motif, echoes the favicon gem -->
+  <path d="M1010 120 1104 316 1010 512 916 316Z" fill="none" stroke="#e2b849" stroke-opacity=".10" stroke-width="3"/>
+  <path d="M1010 190 1070 316 1010 442 950 316Z" fill="#e2b849" fill-opacity=".05"/>
+  <!-- footer band -->
+  <rect x="33" y="514" width="1134" height="1" fill="#e2b849" fill-opacity=".25"/>
+</svg>

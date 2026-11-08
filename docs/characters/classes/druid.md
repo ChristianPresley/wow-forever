@@ -1,6 +1,37 @@
 # Druid
 
+**Also called:** Dudu · Boomkin (Balance) · Kitty / Cat (Feral) · Bear (Feral tank) · Tree / Resto (Restoration)
+{: .fc-aka }
+
+<aside class="infobox" data-class="druid" markdown>
+<p class="infobox-title">Druid</p>
+<p class="infobox-roles" markdown>**Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }</p>
+
+| | |
+|---|---|
+| **Specs** | Balance · Feral · Restoration |
+| **Armor** | Leather |
+| **Resource** | Mana, Rage, Energy |
+| **Races** | 4 combinations |
+| **Forever focus** | Viable Feral and Bear; consumables work in forms |
+| **Guide** | [Druid guide](../../guides/druid/index.md) |
+
+</aside>
+
 **Races:** Night Elf, Tauren, Skyborne (both).
+
+!!! forever "What Forever changed"
+    **Headline additions:** Baseline Omen of Clarity, Revive, Lacerate, Poised. Eclipse, Shifting Power, Primal Bite, Wild Growth, Bloom.
+
+    **Notable removals:** Berserk, Mangle, Tiger's Fury. Full list: [Classes summary](index.md#summary).
+
+<div class="fc-cta" data-class="druid" markdown>
+
+**Playing a Druid?** The [Druid guide](../../guides/druid/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+
+<span class="fc-cta__label">Race add-ons</span> [Night Elf](../../guides/druid/night-elf.md){ .fc-chip } [Skyborne (High Order)](../../guides/druid/skyborne-high-order.md){ .fc-chip } [Tauren](../../guides/druid/tauren.md){ .fc-chip } [Skyborne (Windshaper)](../../guides/druid/skyborne-windshaper.md){ .fc-chip }
+
+</div>
 
 ## Baseline changes
 

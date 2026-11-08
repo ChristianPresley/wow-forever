@@ -1,6 +1,37 @@
 # Warlock
 
+**Also called:** Lock · Affli (Affliction) · Demo (Demonology) · Destro (Destruction)
+{: .fc-aka }
+
+<aside class="infobox" data-class="warlock" markdown>
+<p class="infobox-title">Warlock</p>
+<p class="infobox-roles" markdown>**DPS**{ .badge .dps }</p>
+
+| | |
+|---|---|
+| **Specs** | Affliction · Demonology · Destruction |
+| **Armor** | Cloth |
+| **Resource** | Mana & soul shards |
+| **Races** | 5 combinations |
+| **Forever focus** | Pet-tank Demonology |
+| **Guide** | [Warlock guide](../../guides/warlock/index.md) |
+
+</aside>
+
 **Races:** Human, Gnome, Orc, Troll (**new**), Undead.
+
+!!! forever "What Forever changed"
+    **Headline additions:** Banes, DoTs can crit, stones become imbues, Pandemic, Demonic Pact, Incinerate, Wrack.
+
+    **Notable removals:** Curse of Shadows, ~17 talents. Full list: [Classes summary](index.md#summary).
+
+<div class="fc-cta" data-class="warlock" markdown>
+
+**Playing a Warlock?** The [Warlock guide](../../guides/warlock/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+
+<span class="fc-cta__label">Race add-ons</span> [Human](../../guides/warlock/human.md){ .fc-chip } [Gnome](../../guides/warlock/gnome.md){ .fc-chip } [Orc](../../guides/warlock/orc.md){ .fc-chip } [Troll](../../guides/warlock/troll.md){ .fc-chip } [Undead](../../guides/warlock/undead.md){ .fc-chip }
+
+</div>
 
 ## Baseline changes
 

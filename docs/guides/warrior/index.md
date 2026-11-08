@@ -1,4 +1,5 @@
 ---
+description: "Warrior guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
 tags:
   - Warrior
 search:
@@ -6,6 +7,14 @@ search:
 ---
 
 # Warrior
+
+<div class="guide-head" data-class="warrior" markdown>
+
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **Tank**{ .badge .tank } **DPS**{ .badge .dps } <span class="gh-diff" title="Method: somewhat high entry difficulty">Leveling difficulty: <strong>Hard</strong><span class="gh-pips" data-level="3" aria-hidden="true"><i></i></span></span>
+
+<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+
+</div>
 
 !!! info "Current as of 7 November 2026"
     This guide follows Blizzard's pre-launch notes (2–4 Nov), the launch-week hotfixes and the first community guides. Talent numbers in Forever are still moving. For reference data, see the [Warrior class page](../../characters/classes/warrior.md).
@@ -129,17 +138,23 @@ Forever's Warrior trees keep the Classic shape but swap many talents. The new **
 
     Method recommends this for solo play, and Icy Veins' leveling guide reportedly calls it the fastest Warrior leveling spec, with a slow start before the 16-point tier.
 
+    <div class="steps" markdown>
+
     1. **Shield Specialization** first, for rage.
     2. **Improved Thunder Clap** and **Improved Bloodrage** for pulls of 2–3 mobs.
     3. Around level 20: **Master of Defense** and **Improved Revenge** (Revenge is now a damage button).
     4. **Vanguard** at the 16-point tier. From here you live in Defensive Stance: Charge, Thunder Clap, Revenge, Shield Slam later.
     5. Then **Bastion** and **Focused Rage**, then Anticipation, Last Stand and Concussion Blow.
 
+    </div>
+
     Warcraft Tavern's version is similar but leans on Anticipation and Defiance earlier. Both agree on Shield Specialization → Master of Defense → Vanguard.
 
 === "Leveling: Arms (group)"
 
     The classic two-hander route, best with a healer or in dungeons.
+
+    <div class="steps" markdown>
 
     1. **Improved Rend** (AP scaling makes it real damage now), then **Improved Heroic Strike** or **Deep Wounds**.
     2. **Improved Overpower**. Overpower is your main button for most of leveling.
@@ -149,6 +164,8 @@ Forever's Warrior trees keep the Classic shape but swap many talents. The new **
     6. **Improved Slam**, then **Mortal Strike**.
     7. Method then goes into Fury for **Unbridled Wrath** and **Enrage**.
 
+    </div>
+
     !!! conflict "Conflict"
         Warcraft Tavern's Arms build stays in the Arms tree (listed as 26/0/0). Method's is a hybrid that dips into Fury. Both are reasonable; the hybrid suits longer fights.
 
@@ -156,11 +173,15 @@ Forever's Warrior trees keep the Classic shape but swap many talents. The new **
 
     Works, but missed auto attacks leave you short on rage early. Better after level 40 with a good pair of weapons.
 
+    <div class="steps" markdown>
+
     1. **Cruelty**, then **Unbridled Wrath**, then **Precision** (hit).
     2. **Blood Craze** for sustain.
     3. **Dual Wield Specialization**, then **Death Wish**.
     4. **Enrage** and **Flurry** (Flurry no longer needs Death Wish).
     5. **Bloodthirst** for damage and the movement speed buff.
+
+    </div>
 
 === "Endgame"
 
@@ -204,7 +225,16 @@ From Method's leveling guide; Victory Rush and Tactical Mastery are Forever base
 
 === "Protection"
 
-    **Single target:** Shield Slam (if talented) → Revenge whenever it lights up → Sunder Armor → Heroic Strike as a rage dump when above ~50 rage.
+    !!! rotation "Protection: Single target"
+
+        <div class="priority" markdown>
+
+        1. Shield Slam (if talented)
+        2. Revenge whenever it lights up
+        3. Sunder Armor
+        4. Heroic Strike as a rage dump when above ~50 rage.
+
+        </div>
 
     **Multi-target:** open with **Thunder Clap** (usable in Defensive Stance, 6 s cooldown, now scales with AP), Demoralizing Shout, then tab-Sunder and Cleave.
 
@@ -212,13 +242,38 @@ From Method's leveling guide; Victory Rush and Tactical Mastery are Forever base
 
 === "Arms"
 
-    **Leveling:** Charge → Rend → auto-attack → **Overpower** every time it lights up → Mortal Strike on cooldown → Slam (15 s cooldown now) → Heroic Strike only with spare rage. Keep Demoralizing Shout up on packs. Pop **Sweeping Strikes** on two targets, then Whirlwind or Cleave.
+    !!! rotation "Arms: Leveling"
+
+        <div class="priority" markdown>
+
+        1. Charge
+        2. Rend
+        3. Auto-attack
+        4. **Overpower** every time it lights up
+        5. Mortal Strike on cooldown
+        6. Slam (15 s cooldown now)
+        7. Heroic Strike only with spare rage.
+
+        </div>
+
+        Keep Demoralizing Shout up on packs. Pop **Sweeping Strikes** on two targets, then Whirlwind or Cleave.
 
     **Pool rage:** don't spend your last rage on a mob that's about to die. Carry it into the next pull. Finish low mobs with **Victory Rush** for the heal.
 
 === "Fury"
 
-    **Priority:** Bloodthirst on cooldown → Whirlwind on cooldown → Heroic Strike (or Cleave on 2+ targets) above ~50 rage → Execute below 20% health. Stay in **Berserker Stance**. Use Bloodrage and Berserker Rage on cooldown for rage.
+    !!! rotation "Fury priority"
+
+        <div class="priority" markdown>
+
+        1. Bloodthirst on cooldown
+        2. Whirlwind on cooldown
+        3. Heroic Strike (or Cleave on 2+ targets) above ~50 rage
+        4. Execute below 20% health.
+
+        </div>
+
+        Stay in **Berserker Stance**. Use Bloodrage and Berserker Rage on cooldown for rage.
 
     **Cooldowns:** Death Wish and Recklessness together in raids. Death Wish now increases damage taken, so mind your health.
 
@@ -228,24 +283,26 @@ Recklessness, Retaliation and Shield Wall **no longer share a cooldown** in Fore
 
 ### Useful macros
 
-```text
-#showtooltip Charge
-/cast [stance:1] Charge; [stance:3] Intercept; Battle Stance
-```
+??? example "Show 3 macros"
 
-```text
-#showtooltip Overpower
-/cast [stance:1] Overpower; Battle Stance
-```
+    ```text
+    #showtooltip Charge
+    /cast [stance:1] Charge; [stance:3] Intercept; Battle Stance
+    ```
 
-```text
-#showtooltip Victory Rush
-/cast Victory Rush
-/startattack
-```
+    ```text
+    #showtooltip Overpower
+    /cast [stance:1] Overpower; Battle Stance
+    ```
 
-!!! tip "Keybinds"
-    Put Revenge, Overpower and Victory Rush on easy keys. They're reactive and you'll press them constantly. With Vanguard, most Protection Warriors can drop their stance-swap Charge macro.
+    ```text
+    #showtooltip Victory Rush
+    /cast Victory Rush
+    /startattack
+    ```
+
+    !!! tip "Keybinds"
+        Put Revenge, Overpower and Victory Rush on easy keys. They're reactive and you'll press them constantly. With Vanguard, most Protection Warriors can drop their stance-swap Charge macro.
 
 ---
 
@@ -255,6 +312,8 @@ Recklessness, Retaliation and Shield Wall **no longer share a cooldown** in Fore
     In the beta, Warriors were among the slowest classes to level. Normal mobs take about 10–15 s solo. Buy or quest every weapon upgrade you can: Method estimates almost all of your leveling damage comes from your weapon. Group up for elites and dungeon quests, which give much more XP in Forever.
 
 Zone suggestions below follow the Classic-era leveling order plus the new zones. Forever doesn't show zone level ranges in game; see [Zones](../../world/zones.md).
+
+<div class="route" markdown>
 
 ### 1–10: Starting zone
 
@@ -328,6 +387,8 @@ Zone suggestions below follow the Classic-era leveling order plus the new zones.
 - **Azshara** has many new quests and **[Blackmaw Hold](../../content/dungeons/blackmaw-hold.md)** (55–60). Un'Goro's north holds **[Shaper's Terrace](../../content/dungeons/shapers-terrace.md)** (58–60).
 - Run **Sunken Temple**, **Blackrock Depths** and **Lower Blackrock Spire** for pre-raid gear while you level.
 - At **60**: third Warrior Legacy Point (Master). Head to **[Mount Hyjal](../../world/zones.md#mount-hyjal)** through Darkwhisper Gorge in Winterspring. Epic riding is 1,000g.
+
+</div>
 
 ---
 
@@ -445,15 +506,17 @@ See [Legacy](../../characters/legacy.md).
 
 ## Hardcore notes
 
-The Hardcore ruleset arrives in winter. Warrior is a demanding Hardcore class because you can't heal or escape well. Tips:
+!!! hardcore "Hardcore survival"
 
-- **Level as Protection** with a shield. You give up some kill speed and gain a lot of safety.
-- Never pull more than you can Thunder Clap down; keep **Retaliation** and **Shield Wall** for emergencies (they don't share a cooldown now).
-- Carry bandages and potions (First Aid makes both), and use Victory Rush to top up.
-- Pick a race with an escape or survival racial: Will to Survive (Human), Stoneform (Dwarf), Escape Artist (Gnome), Shadowmeld (Night Elf), War Stomp (Tauren), Will of the Forsaken (Undead).
-- Legacy points earned on Hardcore apply to other rulesets, but not the other way around.
+    The Hardcore ruleset arrives in winter. Warrior is a demanding Hardcore class because you can't heal or escape well. Tips:
 
-See [Hardcore](../../about/hardcore.md).
+    - **Level as Protection** with a shield. You give up some kill speed and gain a lot of safety.
+    - Never pull more than you can Thunder Clap down; keep **Retaliation** and **Shield Wall** for emergencies (they don't share a cooldown now).
+    - Carry bandages and potions (First Aid makes both), and use Victory Rush to top up.
+    - Pick a race with an escape or survival racial: Will to Survive (Human), Stoneform (Dwarf), Escape Artist (Gnome), Shadowmeld (Night Elf), War Stomp (Tauren), Will of the Forsaken (Undead).
+    - Legacy points earned on Hardcore apply to other rulesets, but not the other way around.
+
+    See [Hardcore](../../about/hardcore.md).
 
 ---
 
@@ -486,12 +549,14 @@ See [Hardcore](../../about/hardcore.md).
 
 ## Sources
 
-- Wiki research notes (`.research/characters.md`) and the [Warrior class page](../../characters/classes/warrior.md)
-- [Method — WoW Forever Warrior leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-warrior-leveling-guide-and-talents)
-- [Warcraft Tavern — Warrior guide](https://www.warcrafttavern.com/forever/guides/warrior/)
-- [Warcraft Tavern — Pre-launch class changes](https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/)
-- [Warcraft Tavern — Priest & Warrior deep dive](https://www.warcrafttavern.com/forever/news/rage-will-benefit-from-crit-priest-warrior-deep-dive-for-wow-forever/)
-- [Icy Veins — Protection Warrior leveling](https://www.icy-veins.com/wow-forever/protection-warrior-leveling) (search summary only)
-- [Mobalytics — Arms Warrior leveling](https://mobalytics.gg/wow-forever/profile/kargoz/classes/1-60-arms-warrior-leveling-guide-talents-rotation-weapons-tips) (search summary only)
-- [RankedBoost — Forever new talents](https://rankedboost.com/world-of-warcraft/forever/whats-new/talents/) (search summary only)
-- [Destructoid — Beta patch notes, 3 Nov 2026](https://www.destructoid.com/wow-forever-beta-patch-notes-nov-3-2026/) (search summary only)
+??? quote "9 sources"
+
+    - Wiki research notes (`.research/characters.md`) and the [Warrior class page](../../characters/classes/warrior.md)
+    - [Method — WoW Forever Warrior leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-warrior-leveling-guide-and-talents)
+    - [Warcraft Tavern — Warrior guide](https://www.warcrafttavern.com/forever/guides/warrior/)
+    - [Warcraft Tavern — Pre-launch class changes](https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/)
+    - [Warcraft Tavern — Priest & Warrior deep dive](https://www.warcrafttavern.com/forever/news/rage-will-benefit-from-crit-priest-warrior-deep-dive-for-wow-forever/)
+    - [Icy Veins — Protection Warrior leveling](https://www.icy-veins.com/wow-forever/protection-warrior-leveling) (search summary only)
+    - [Mobalytics — Arms Warrior leveling](https://mobalytics.gg/wow-forever/profile/kargoz/classes/1-60-arms-warrior-leveling-guide-talents-rotation-weapons-tips) (search summary only)
+    - [RankedBoost — Forever new talents](https://rankedboost.com/world-of-warcraft/forever/whats-new/talents/) (search summary only)
+    - [Destructoid — Beta patch notes, 3 Nov 2026](https://www.destructoid.com/wow-forever-beta-patch-notes-nov-3-2026/) (search summary only)

@@ -40,7 +40,7 @@ New characters introduced in Forever.
 | NPC | Where | Role |
 |---|---|---|
 | Archmage Celindra | Violet Citadel, Dalaran | Kirin Tor contact |
-| Image of Archmage Modera | Silverpine Forest | Gives the Dalaran Sewer Key (fan source) |
+| Image of Archmage Modera | Silverpine Forest | Gives the Dalaran Sewer Key *fan source*{ .fan-source } |
 | Emissary Jacques | Southshore | Alliance Dalaran questline |
 | Magus Wordeen Voidglare | Tarren Mill | Horde Dalaran questline |
 | Garion Wendell / Owen Thadd | Stormwind / Undercity | Library book quests |

@@ -26,15 +26,15 @@ Damage Meter · Cooldown Manager · Swing Timer · Equipment Manager (in place o
 | **Vendor Price** | Vendor prices in tooltips | |
 | **Forever Layer Hop** | Layer and group helper | |
 | **Communities Forever** | Social grouping without a guild | |
-| ForeverUI / ForeverPlus | UI suite / vendor helper | *Unconfirmed* (single source) |
-| CampfireKit | Camp features helper | *Unconfirmed* |
+| ForeverUI / ForeverPlus | UI suite / vendor helper | *unconfirmed*{ .unconfirmed } (single source) |
+| CampfireKit | Camp features helper | *unconfirmed*{ .unconfirmed } |
 
 !!! warning "WeakAuras"
     Some guides recommend WeakAuras, but it has **no Forever version**, and its team ended support for Midnight under the secret-values API. Treat any "WeakAuras for Forever" as unavailable.
 
 ## Data collection
 
-The **Lexicon Client** (WarcraftDB) is a third-party desktop app for Windows and Linux. It reads your WoW cache and uploads discovered hidden items to *forever.warcraftdb.com*. Its terms-of-service status is unverified.
+The **Lexicon Client** (WarcraftDB) is a third-party desktop app for Windows and Linux. It reads your WoW cache and uploads discovered hidden items to *forever.warcraftdb.com*. Its terms-of-service status is unverified *unconfirmed*{ .unconfirmed }.
 
 ## UI defaults & tips
 

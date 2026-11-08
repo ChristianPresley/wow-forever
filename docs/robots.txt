@@ -1,0 +1,9 @@
+# Forever Codex: everything is public and crawlable.
+# Note: this file is served at /wow-forever/robots.txt. Crawlers only read
+# robots.txt at the host root, so it takes effect only if the site moves to a
+# custom domain or a user/organisation Pages root. The sitemap is also
+# discoverable from the <link rel="canonical"> pages and Search Console.
+User-agent: *
+Allow: /
+
+Sitemap: https://christianpresley.github.io/wow-forever/sitemap.xml

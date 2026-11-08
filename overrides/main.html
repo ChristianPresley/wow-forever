@@ -7,18 +7,139 @@
   {%- elif p -%}{{ p.title }}{%- endif -%}
 {%- endmacro %}
 
+{#- ---- perf-seo: shared values for <head> --------------------------------
+  fc_desc   front-matter `description`, else the first body paragraph
+            (trimmed to ~155 characters), else site_description.
+  fc_title  the page's display title ("Orc Rogue" for race add-ons).
+  fc_root   site path ("/wow-forever/"): root-relative font URLs stay valid
+            after instant navigation changes the document URL.
+------------------------------------------------------------------------ -#}
+{% set fc_root = "/" ~ (config.site_url or "/").split("/", 3)[3:] | join("") %}
+{% set fc_ns = namespace(desc=config.site_description, found=false, depth=0) %}
+{% if page and page.meta and page.meta.description %}
+  {% set fc_ns.desc = page.meta.description %}
+{% elif page and page.content and not page.is_homepage %}
+  {#- first top-level paragraph: not inside an admonition, infobox or details -#}
+  {% set fc_parts = page.content.split("</h1>", 1)[-1].split("<p>") %}
+  {% for chunk in fc_parts %}
+    {% if not loop.first and not fc_ns.found and fc_ns.depth <= 0 %}
+      {% set fc_text = chunk.split("</p>", 1)[0] | striptags %}
+      {% if fc_text | length > 70 and fc_text.count(" · ") < 2 and not fc_text.startswith(("Read with", "Races:", "*")) %}
+        {% set fc_ns.desc = fc_text | truncate(158, False, "…", 8) %}
+        {% set fc_ns.found = true %}
+      {% endif %}
+    {% endif %}
+    {% set fc_ns.depth = fc_ns.depth + chunk.count("<div") - chunk.count("</div>") + chunk.count("<details") - chunk.count("</details>") + chunk.count("<table") - chunk.count("</table>") + chunk.count("<aside") - chunk.count("</aside>") %}
+  {% endfor %}
+{% endif %}
+{% set fc_desc = fc_ns.desc %}
+{% if page and page.meta and page.meta.title %}
+  {% set fc_title = page.meta.title %}
+{% elif page and page.title and not page.is_homepage %}
+  {% set fc_title = full_title(page) | striptags | trim %}
+{% else %}
+  {% set fc_title = config.site_name %}
+{% endif %}
+{% set fc_social = config.plugins["material/social"] if "material/social" in config.plugins else none %}
+{% set fc_cards = fc_social is not none and fc_social.config.enabled and fc_social.config.cards %}
+
 {% block htmltitle %}
-  {% if page.meta and page.meta.title %}
-    <title>{{ page.meta.title }} · {{ config.site_name }}</title>
-  {% elif page.title and not page.is_homepage %}
-    <title>{{ full_title(page) | striptags }} · {{ config.site_name }}</title>
-  {% else %}
+  {% if page and page.is_homepage %}
     <title>{{ config.site_name }} · WoW: Forever wiki</title>
+  {% elif page and page.title %}
+    <title>{{ fc_title }} · {{ config.site_name }}</title>
+  {% else %}
+    <title>{{ config.site_name }}</title>
   {% endif %}
+{% endblock %}
+
+{% block site_meta %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {#- every page paints Inter (body) and Alegreya (h1) above the fold -#}
+  <link rel="preload" href="{{ fc_root }}assets/fonts/inter-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ fc_root }}assets/fonts/alegreya-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="description" content="{{ fc_desc | e }}">
+  {% if page and page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}">
+  {% else %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+  {% if page and page.previous_page %}
+    <link rel="prev" href="{{ page.previous_page.url | url }}">
+  {% endif %}
+  {% if page and page.next_page %}
+    <link rel="next" href="{{ page.next_page.url | url }}">
+  {% endif %}
+  {#- icon set from identity (docs/assets): .ico for legacy, SVG preferred -#}
+  <link rel="icon" href="{{ 'assets/favicon.ico' | url }}" sizes="32x32">
+  <link rel="icon" href="{{ config.theme.favicon | url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ 'assets/apple-touch-icon.png' | url }}">
+  <link rel="manifest" href="{{ 'assets/site.webmanifest' | url }}">
+  <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-9.8.1">
 {% endblock %}
 
 {% block extrahead %}
   <meta name="theme-color" content="#1b2a41">
+
+  {#- Self-hosted Latin subsets (docs/assets/fonts, built with fontTools:
+      Inter opsz pinned to 14 and wght 400-700, Alegreya wght 500-800).
+      The two roman faces are preloaded in site_meta, ahead of the CSS. -#}
+  {%- set fc_u = "U+0000-00FF,U+0101,U+0113,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2190-2199,U+2212,U+2215,U+2248,U+FEFF,U+FFFD" %}
+  <style>
+    @font-face{font-family:"Inter";font-style:normal;font-weight:400 700;font-display:swap;src:url("{{ fc_root }}assets/fonts/inter-roman.woff2") format("woff2");unicode-range:{{ fc_u }}}
+    @font-face{font-family:"Inter";font-style:italic;font-weight:400 700;font-display:swap;src:url("{{ fc_root }}assets/fonts/inter-italic.woff2") format("woff2");unicode-range:{{ fc_u }}}
+    @font-face{font-family:"Alegreya";font-style:normal;font-weight:500 800;font-display:swap;src:url("{{ fc_root }}assets/fonts/alegreya-roman.woff2") format("woff2");unicode-range:{{ fc_u }}}
+    @font-face{font-family:"Alegreya";font-style:italic;font-weight:500 800;font-display:swap;src:url("{{ fc_root }}assets/fonts/alegreya-italic.woff2") format("woff2");unicode-range:{{ fc_u }}}
+    @font-face{font-family:"Alegreya SC";font-style:normal;font-weight:500;font-display:swap;src:url("{{ fc_root }}assets/fonts/alegreya-sc-500.woff2") format("woff2");unicode-range:{{ fc_u }}}
+    @font-face{font-family:"Alegreya SC";font-style:normal;font-weight:700;font-display:swap;src:url("{{ fc_root }}assets/fonts/alegreya-sc-700.woff2") format("woff2");unicode-range:{{ fc_u }}}
+  </style>
+
+  {#- Open Graph / Twitter text tags. The social plugin's "codex" layout
+      (layouts/codex.yml) adds only the image tags, so nothing is duplicated
+      and pages still share well when cards are off (local builds). -#}
+  {% if page and page.canonical_url %}
+    <meta property="og:site_name" content="{{ config.site_name }}">
+    <meta property="og:type" content="{{ 'website' if page.is_homepage else 'article' }}">
+    <meta property="og:title" content="{{ fc_title | e }}">
+    <meta property="og:description" content="{{ fc_desc | e }}">
+    <meta property="og:url" content="{{ page.canonical_url }}">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="{{ 'summary_large_image' if fc_cards else 'summary' }}">
+    <meta name="twitter:title" content="{{ fc_title | e }}">
+    <meta name="twitter:description" content="{{ fc_desc | e }}">
+  {% endif %}
+
+  {#- Structured data: WebSite on the home page, BreadcrumbList elsewhere -#}
+  {% if page and page.is_homepage %}
+    <script type="application/ld+json">{{ {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": config.site_name,
+      "alternateName": "Forever Codex: WoW: Forever wiki",
+      "url": config.site_url,
+      "description": config.site_description,
+      "inLanguage": "en"
+    } | tojson }}</script>
+  {% elif page and page.canonical_url %}
+    {% set fc_crumbs = [{"name": config.site_name, "url": config.site_url}] %}
+    {% for anc in page.ancestors | reverse %}
+      {% set first = anc.children[0] if anc.children else none %}
+      {% if first and first.is_page and first.is_index and first.url != page.url %}
+        {% set _ = fc_crumbs.append({"name": anc.title, "url": first.canonical_url}) %}
+      {% endif %}
+    {% endfor %}
+    {% set _ = fc_crumbs.append({"name": fc_title, "url": page.canonical_url}) %}
+    {% set fc_items = [] %}
+    {% for c in fc_crumbs %}
+      {% set _ = fc_items.append({"@type": "ListItem", "position": loop.index, "name": c.name, "item": c.url}) %}
+    {% endfor %}
+    <script type="application/ld+json">{{ {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": fc_items
+    } | tojson }}</script>
+  {% endif %}
 {% endblock %}
 
 {% block announce %}

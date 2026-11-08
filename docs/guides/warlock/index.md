@@ -1,4 +1,5 @@
 ---
+description: "Warlock guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
 tags:
   - Warlock
 search:
@@ -6,6 +7,14 @@ search:
 ---
 
 # Warlock Guide
+
+<div class="guide-head" data-class="warlock" markdown>
+
+:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **DPS**{ .badge .dps } <span class="gh-diff" title="Guide: one of the easiest classes to level">Leveling difficulty: <strong>Easy</strong><span class="gh-pips" data-level="1" aria-hidden="true"><i></i></span></span>
+
+<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+
+</div>
 
 !!! info "Current as of 7 November 2026"
     Forever launched on 4 November. This guide follows Blizzard's Rogue & Warlock class deep dive (7 Oct 2026), Warcraft Tavern's launch-week spec guides (1–3 Nov), Method.gg's leveling guide (4 Nov) and Blizzard's class-tuning notice of 6 Nov. **A Warlock hotfix is scheduled for Tuesday 10 November** (see [Upcoming tuning](#upcoming-tuning)), so treat Affliction rotation advice and Voidwalker tanking as likely to shift. Reference data lives on the [Warlock class page](../../characters/classes/warlock.md).
@@ -148,13 +157,24 @@ Every major guide recommends **Affliction** for leveling, with Demonology a clos
 
 === "Affliction (40/7/4)"
 
-    | Levels | Points |
-    |---|---|
-    | 10–19 | Improved Corruption 5/5, Suppression 5/5 |
-    | 20–26 | Unholy Power 5/5, Demonic Energies 2/2 (Demonology, for a sturdier pet) |
-    | 27–30 | Improved Drains 3/3, Amplify Curse |
-    | 31–40 | Improved Bane of Agony 2/2, Improved Life Tap 2/2, Pandemic 3/3, Soul Siphon 3/3 |
-    | 41–60 | Malevolence 5/5, Shadow Mastery 5/5, Siphon Life, Fel Concentration 3/3, Nightfall 2/2, Improved Shadow Bolt 4/5 |
+    <div class="milestones" markdown>
+
+    Lv 10–19
+    :   Improved Corruption 5/5, Suppression 5/5
+
+    Lv 20–26
+    :   Unholy Power 5/5, Demonic Energies 2/2 (Demonology, for a sturdier pet)
+
+    Lv 27–30
+    :   Improved Drains 3/3, Amplify Curse
+
+    Lv 31–40
+    :   Improved Bane of Agony 2/2, Improved Life Tap 2/2, Pandemic 3/3, Soul Siphon 3/3
+
+    Lv 41–60
+    :   Malevolence 5/5, Shadow Mastery 5/5, Siphon Life, Fel Concentration 3/3, Nightfall 2/2, Improved Shadow Bolt 4/5
+
+    </div>
 
     Take Fel Concentration earlier if mobs keep interrupting your drains. Voidwalker tanks until 20, then the Sayaad; drain-tanking with Drain Life starts around 30.
 
@@ -162,23 +182,41 @@ Every major guide recommends **Affliction** for leveling, with Demonology a clos
 
     Level as Affliction to 27, then respec:
 
-    | Levels | Points |
-    |---|---|
-    | 27 (respec, 18 pts) | Unholy Power 5, Demonic Energies 2, Fel Vitality 3, Master Summoner 2, Improved Sayaad 3, Demonic Brand 3 |
-    | 28–40 | Demonic Sacrifice, Soul Link, Demonic Knowledge 3/3, Demonic Embrace 1/5, Fel Domination, Master Demonologist 5/5, **Demonic Pact** at 40 |
-    | 41–60 | Affliction: Improved Corruption 5, Improved Life Tap 2, Suppression 5, Improved Drains 3, Pandemic 3, Malevolence 2 |
+    <div class="milestones" markdown>
+
+    Lv 27 (respec, 18 pts)
+    :   Unholy Power 5, Demonic Energies 2, Fel Vitality 3, Master Summoner 2, Improved Sayaad 3, Demonic Brand 3
+
+    Lv 28–40
+    :   Demonic Sacrifice, Soul Link, Demonic Knowledge 3/3, Demonic Embrace 1/5, Fel Domination, Master Demonologist 5/5, **Demonic Pact** at 40
+
+    Lv 41–60
+    :   Affliction: Improved Corruption 5, Improved Life Tap 2, Suppression 5, Improved Drains 3, Pandemic 3, Malevolence 2
+
+    </div>
 
     You can also go straight down Demonology from 10. Method.gg instead stays Affliction until the mid-40s.
 
 === "Destruction (17/3/31)"
 
-    | Levels | Points |
-    |---|---|
-    | 10–20 | Bane 5/5, Cataclysm 3/3, Aftermath 2/5, Shadowburn at 20 |
-    | 21–25 | Aftermath 5/5, Ruin 1/5, **Conflagrate** at 25 |
-    | 26–30 | Ruin 3/5, Agonizing Flames 3/3 |
-    | 31–40 | Bane of Havoc, Fire and Brimstone 3/3, Shadow and Flame 5/5, **Incinerate** at 40 |
-    | 41–60 | Suppression 5/5, Improved Life Tap 2/2, Improved Corruption 5/5, Improved Imp 3/3, Amplify Curse, Pandemic 3/3, Malevolence 1/5 |
+    <div class="milestones" markdown>
+
+    Lv 10–20
+    :   Bane 5/5, Cataclysm 3/3, Aftermath 2/5, Shadowburn at 20
+
+    Lv 21–25
+    :   Aftermath 5/5, Ruin 1/5, **Conflagrate** at 25
+
+    Lv 26–30
+    :   Ruin 3/5, Agonizing Flames 3/3
+
+    Lv 31–40
+    :   Bane of Havoc, Fire and Brimstone 3/3, Shadow and Flame 5/5, **Incinerate** at 40
+
+    Lv 41–60
+    :   Suppression 5/5, Improved Life Tap 2/2, Improved Corruption 5/5, Improved Imp 3/3, Amplify Curse, Pandemic 3/3, Malevolence 1/5
+
+    </div>
 
     Method.gg lists Shadowburn at 24 and Conflagrate at 29; that is build order, not a different rule.
 
@@ -228,16 +266,22 @@ Levels below come from Method.gg and Warcraft Tavern for Forever; those marked *
 
 === "Affliction"
 
-    **Single target (Wrack build)**
 
-    1. **Bane of Doom** if the fight has a minute or more left; otherwise Amplify Curse → **Bane of Agony**.
-    2. Your assigned **Curse** (Elements for caster-heavy raids, Recklessness for melee-heavy ones).
-    3. Corruption.
-    4. Siphon Life.
-    5. Immolate.
-    6. Shadow Bolt **only** when Nightfall makes it instant.
-    7. Life Tap in the gap before a refresh, or while moving.
-    8. **Wrack** as filler. Break the channel whenever something above comes due.
+    !!! rotation "Affliction: Single target (Wrack build)"
+
+        <div class="priority" markdown>
+
+        1. **Bane of Doom** if the fight has a minute or more left; otherwise Amplify Curse → **Bane of Agony**.
+        2. Your assigned **Curse** (Elements for caster-heavy raids, Recklessness for melee-heavy ones).
+        3. Corruption.
+        4. Siphon Life.
+        5. Immolate.
+        6. Shadow Bolt **only** when Nightfall makes it instant.
+        7. Life Tap in the gap before a refresh, or while moving.
+        8. **Wrack** as filler. Break the channel whenever something above comes due.
+
+        </div>
+
 
     Open with a Shadow Bolt while the tank pulls. On a second target add Corruption, plus Bane of Agony and Siphon Life if it will live 30 s or more.
 
@@ -245,16 +289,22 @@ Levels below come from Method.gg and Warcraft Tavern for Forever; those marked *
 
 === "Demonology"
 
-    **Fire build**
 
-    1. Searing Pain if **Demonic Brand** is missing from the target.
-    2. Bane of Doom / Bane of Agony as above.
-    3. Assigned Curse.
-    4. Immolate.
-    5. **Soul Fire** while Decimation is up (below 35%).
-    6. Corruption.
-    7. Life Tap.
-    8. Searing Pain filler.
+    !!! rotation "Demonology: Fire build"
+
+        <div class="priority" markdown>
+
+        1. Searing Pain if **Demonic Brand** is missing from the target.
+        2. Bane of Doom / Bane of Agony as above.
+        3. Assigned Curse.
+        4. Immolate.
+        5. **Soul Fire** while Decimation is up (below 35%).
+        6. Corruption.
+        7. Life Tap.
+        8. Searing Pain filler.
+
+        </div>
+
 
     **Shadow build:** Bane, Curse, Searing Pain to keep the brand, Immolate, Corruption, Life Tap, then Shadow Bolt filler. Skip Soul Fire.
 
@@ -262,16 +312,22 @@ Levels below come from Method.gg and Warcraft Tavern for Forever; those marked *
 
 === "Destruction"
 
-    **Single target**
 
-    1. Bane of Doom / Bane of Agony as above.
-    2. Assigned Curse.
-    3. Immolate.
-    4. Corruption.
-    5. **Conflagrate** (needs Immolate).
-    6. **Shadowburn** (needs a shard; with Shadow and Flame it can refund it).
-    7. Life Tap in gaps.
-    8. **Incinerate** filler (Shadow Bolt before 40).
+    !!! rotation "Destruction: Single target"
+
+        <div class="priority" markdown>
+
+        1. Bane of Doom / Bane of Agony as above.
+        2. Assigned Curse.
+        3. Immolate.
+        4. Corruption.
+        5. **Conflagrate** (needs Immolate).
+        6. **Shadowburn** (needs a shard; with Shadow and Flame it can refund it).
+        7. Life Tap in gaps.
+        8. **Incinerate** filler (Shadow Bolt before 40).
+
+        </div>
+
 
     Open with **Soul Fire** while the tank pulls and enter every fight with at least 2 shards. On two targets, put **Bane of Havoc** on the second one; Hellfire isn't worth it on two. In dungeons: Bane of Havoc on one mob, Bane of Agony on others, **Hellfire** on packs of 3 or more.
 
@@ -292,27 +348,29 @@ Blizzard said on 6 Nov that Voidwalkers are **not durable enough** as tanks and 
 
 ### Keybinds and macros
 
-Bind pet **Attack** and **Follow** (and the new **Move**) to easy keys. Useful macros:
+??? example "Show 3 macros"
 
-```
-#showtooltip
-/petattack
-/cast Bane of Agony
-```
+    Bind pet **Attack** and **Follow** (and the new **Move**) to easy keys. Useful macros:
 
-```
-#showtooltip Fear
-/cast [@focus,exists,harm] Fear; Fear
-```
+    ```
+    #showtooltip
+    /petattack
+    /cast Bane of Agony
+    ```
 
-```
-#showtooltip Soul Fire
-/cast Demonic Sacrifice
-/cast Soul Fire
-```
+    ```
+    #showtooltip Fear
+    /cast [@focus,exists,harm] Fear; Fear
+    ```
 
-!!! note
-    Forever uses a modern client with Midnight-style add-on limits. `@focus` conditionals work in standard macros; complex add-ons such as WeakAuras do not. See [Add-ons](../../systems/addons.md).
+    ```
+    #showtooltip Soul Fire
+    /cast Demonic Sacrifice
+    /cast Soul Fire
+    ```
+
+    !!! note
+        Forever uses a modern client with Midnight-style add-on limits. `@focus` conditionals work in standard macros; complex add-ons such as WeakAuras do not. See [Add-ons](../../systems/addons.md).
 
 ## Leveling walkthrough 1–60
 
@@ -324,6 +382,8 @@ Warlocks are one of the easiest classes to level: the pet tanks, Life Tap and dr
     - Two mobs: DoT both. Three: DoT two and **Fear** the third, and don't hit the feared one.
     - Keep 2–3 spare shards for Soulstone, Healthstone and emergencies; collect them with Drain Soul on kills.
     - Bring a Soulstone on yourself for hard pulls.
+
+<div class="route" markdown>
 
 ### 1–10: Starting zone
 
@@ -395,6 +455,8 @@ Warlocks are one of the easiest classes to level: the pet tanks, Life Tap and dr
 - Dungeons: Maraudon, Sunken Temple, Blackrock Depths, the new **[Blackmaw Hold](../../content/dungeons/blackmaw-hold.md)** (55–60, Azshara), Lower Blackrock Spire, Dire Maul, Scholomance, Stratholme, the new **[Shaper's Terrace](../../content/dungeons/shapers-terrace.md)** (58–60, Un'Goro).
 - At **60**: Ritual of Doom and the long **Dreadsteed** epic mount chain (Classic-style; Forever changes undocumented). Journeyman Riding is 1,000g.
 - Then head through Darkwhisper Gorge in Winterspring into **[Mount Hyjal](../../world/zones.md#mount-hyjal)**, the level-60 zone.
+
+</div>
 
 ## Dungeons
 
@@ -484,14 +546,16 @@ Armor is **cloth**. Weapons: daggers, wands, and (from the right trainer) one-ha
 
 ## Hardcore notes
 
-The Hardcore ruleset arrives in **winter 2026/27**; its detailed rules aren't published. See [Hardcore](../../about/hardcore.md). For a careful Warlock:
+!!! hardcore "Hardcore survival"
 
-- Level **Affliction or Demonology** with the **Voidwalker**; Soul Link is a huge safety net.
-- Keep a **Soulstone** on yourself (whether self-Soulstones are allowed on Hardcore is *unconfirmed*), a Healthstone and a potion.
-- **Fear is dangerous**: feared mobs run into other packs. Use it only with clear space, or use Seduction and Banish instead.
-- Life Tap only when safe; never tap below half health in combat.
-- **Death Coil** and **Howl of Terror** are your escape buttons.
-- Keep 3+ shards; Drain Soul when anything is low.
+    The Hardcore ruleset arrives in **winter 2026/27**; its detailed rules aren't published. See [Hardcore](../../about/hardcore.md). For a careful Warlock:
+
+    - Level **Affliction or Demonology** with the **Voidwalker**; Soul Link is a huge safety net.
+    - Keep a **Soulstone** on yourself (whether self-Soulstones are allowed on Hardcore is *unconfirmed*), a Healthstone and a potion.
+    - **Fear is dangerous**: feared mobs run into other packs. Use it only with clear space, or use Seduction and Banish instead.
+    - Life Tap only when safe; never tap below half health in combat.
+    - **Death Coil** and **Howl of Terror** are your escape buttons.
+    - Keep 3+ shards; Drain Soul when anything is low.
 
 ## Common mistakes / FAQ
 
@@ -532,9 +596,11 @@ No numbers were given. This page will be updated after the hotfix.
 
 ## Sources
 
-- Blizzard: [World of Warcraft: Forever Class Deep Dives — Rogue and Warlock](https://worldofwarcraft.blizzard.com/news/24310968) (7 Oct 2026)
-- Blizzard forums: [Class Tuning Incoming – November 10](https://us.forums.blizzard.com/en/wow/t/class-tuning-incoming-november-10/2404092) (cited via Warcraft Tavern)
-- Warcraft Tavern: [Class tuning coming for Shamans, Warlocks, Hunter pets](https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/) (6 Nov 2026)
-- Warcraft Tavern: [Warlock guide](https://www.warcrafttavern.com/forever/guides/warlock/), [Warlock leveling](https://www.warcrafttavern.com/forever/guides/warlock-leveling/), [Affliction](https://www.warcrafttavern.com/forever/guides/affliction-warlock/), [Demonology](https://www.warcrafttavern.com/forever/guides/demonology-warlock/), [Destruction](https://www.warcrafttavern.com/forever/guides/destruction-warlock/), [Racial abilities](https://www.warcrafttavern.com/forever/guides/racial-abilities/)
-- Method.gg: [WoW Forever Warlock leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents) (4 Nov 2026)
-- wowtbc.gg: [Affliction Warlock PvE guide](https://wowtbc.gg/warcraftforever/class-guides/affliction-warlock/)
+??? quote "6 sources"
+
+    - Blizzard: [World of Warcraft: Forever Class Deep Dives — Rogue and Warlock](https://worldofwarcraft.blizzard.com/news/24310968) (7 Oct 2026)
+    - Blizzard forums: [Class Tuning Incoming – November 10](https://us.forums.blizzard.com/en/wow/t/class-tuning-incoming-november-10/2404092) (cited via Warcraft Tavern)
+    - Warcraft Tavern: [Class tuning coming for Shamans, Warlocks, Hunter pets](https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/) (6 Nov 2026)
+    - Warcraft Tavern: [Warlock guide](https://www.warcrafttavern.com/forever/guides/warlock/), [Warlock leveling](https://www.warcrafttavern.com/forever/guides/warlock-leveling/), [Affliction](https://www.warcrafttavern.com/forever/guides/affliction-warlock/), [Demonology](https://www.warcrafttavern.com/forever/guides/demonology-warlock/), [Destruction](https://www.warcrafttavern.com/forever/guides/destruction-warlock/), [Racial abilities](https://www.warcrafttavern.com/forever/guides/racial-abilities/)
+    - Method.gg: [WoW Forever Warlock leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents) (4 Nov 2026)
+    - wowtbc.gg: [Affliction Warlock PvE guide](https://wowtbc.gg/warcraftforever/class-guides/affliction-warlock/)

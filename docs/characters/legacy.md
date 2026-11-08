@@ -1,6 +1,10 @@
 # Legacy System
 
-The **Legacy System** is Forever's account-wide progression and **replaces achievements**. It arrived in Patch 1.60.1.
+**Also called:** Legacy · Legacy Points (LP) · Legacy talents
+{: .fc-aka }
+
+!!! forever "Forever only"
+    The **Legacy System** is Forever's account-wide progression and **replaces achievements**. It arrived in Patch 1.60.1.
 
 ## How it works
 

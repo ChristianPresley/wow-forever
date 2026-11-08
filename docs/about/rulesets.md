@@ -2,7 +2,8 @@
 
 ## No realms
 
-Forever has **no realm list**. Before creating a character you pick a **Ruleset**. Each ruleset is one large shared world, a "mega-realm", **per region**. Blizzard calls a ruleset "a broad player ecosystem rather than a single realm".
+!!! forever "Rulesets replace realms"
+    Forever has **no realm list**. Before creating a character you pick a **Ruleset**. Each ruleset is one large shared world, a "mega-realm", **per region**. Blizzard calls a ruleset "a broad player ecosystem rather than a single realm".
 
 - **Names:** two-part names (first and last), unique **per region**.
 - **Language:** set *Preferred Online Language* under *Game Menu → Options → System → Languages and Social*. The setting is account-wide with a 24-hour cooldown. The game prefers to show you open-world players who share your language. There are no dedicated language servers.
@@ -23,13 +24,17 @@ These are capacity figures, not usage, and the regions they cover were not state
 
 ## The rulesets
 
+<div class="compare" markdown>
+
 | Ruleset | Rules | Factions | Available |
 |---|---|---|---|
 | **Normal** (sometimes "PvE") | Adventuring and fighting monsters. PvP is optional | Both | Launch |
 | **PvP** | Frequent risk of attack by opposing players | **One faction per account** | Launch |
 | **Roleplay (RP)** | Strict naming and behavior rules for immersive roleplay | Both | Launch |
-| **Roleplay PvP (RP-PvP)** | RP rules plus PvP | One faction (unconfirmed) | Launch |
+| **Roleplay PvP (RP-PvP)** | RP rules plus PvP | One faction *unconfirmed*{ .unconfirmed } | Launch |
 | **Hardcore** | Permadeath. A closed ecosystem | Both | Winter 2026/27 ([details](hardcore.md)) |
+
+</div>
 
 !!! conflict "Conflict"
     Several outlets (TweakTown, Gfinity, mein-mmo) count three or four rulesets. Blizzard's official article lists **RP-PvP** as a separate fourth launch ruleset, with Hardcore to follow.

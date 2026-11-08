@@ -3,11 +3,11 @@
 ## Holidays
 
 - According to Blizzard's 6th Forever podcast (reported 29 Oct), launch adds **no new holiday events**.
-- Which Classic holidays are live in Forever has **not been confirmed**. Blizzard doesn't announce holiday changes in advance. A fan calendar lists Feast of Winter Veil from 15 Dec (*unconfirmed*).
+- Which Classic holidays are live in Forever has **not been confirmed**. Blizzard doesn't announce holiday changes in advance. A fan calendar lists Feast of Winter Veil from 15 Dec *unconfirmed*{ .unconfirmed }.
 
 ## World bosses
 
-No source has confirmed which Classic world bosses (Azuregos, Lord Kazzak, the Emerald Dragons) are live. **Unverified.**
+No source has confirmed which Classic world bosses (Azuregos, Lord Kazzak, the Emerald Dragons) are live. *unconfirmed*{ .unconfirmed }
 
 ## Ideas Blizzard is exploring
 

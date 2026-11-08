@@ -7,8 +7,13 @@ tags:
 
 # Skyborne (High Order) Warrior
 
-!!! tip "Add-on"
-    Read with the [Warrior guide](index.md). This page covers only what changes for an Alliance Skyborne.
+<div class="guide-head" data-class="warrior" markdown>
+
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Warrior guide](index.md). This page covers only what changes for an Alliance Skyborne.</p>
+
+</div>
 
 !!! warning "Paid race"
     Skyborne require the **Skyborne Heroic Pack** or a higher edition. See [Editions](../../about/editions.md) and [Skyborne](../../characters/races.md#skyborne).
@@ -22,12 +27,37 @@ tags:
 
 ## Racials in practice
 
-| Racial | Type | Rating | PvE | PvP |
-|---|---|---|---|---|
-| **Walk on Air** | Active | **3/5**{ .stars .s3 } | A 10 s controlled glide. Skip paths, survive falls | Escape off ledges in battlegrounds; Charge works again once you land |
-| **Read Ley Line** | Active | **2/5**{ .stars .s2 } | +50% regen for 15 s (+100% while *Attuned* at a Ley Line). For a Warrior, only health regen matters, so it mainly shortens downtime | Minimal |
-| **Wind Blessed** | Passive | **3/5**{ .stars .s3 } | +haste (2% in the latest notes). Faster swings mean more rage | Same |
-| **Elemental Insight** | Passive | **2/5**{ .stars .s2 } | +5% damage vs Elementals. Good on Zephras Isle and in some dungeons | None |
+<div class="ability-cards" markdown>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> A 10 s controlled glide. Skip paths, survive falls</p>
+<p markdown><span class="ability-label">PvP</span> Escape off ledges in battlegrounds; Charge works again once you land</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Read Ley Line** <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> +50% regen for 15 s (+100% while *Attuned* at a Ley Line). For a Warrior, only health regen matters, so it mainly shortens downtime</p>
+<p markdown><span class="ability-label">PvP</span> Minimal</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Wind Blessed** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
+<p markdown><span class="ability-label">PvE</span> +haste (2% in the latest notes). Faster swings mean more rage</p>
+<p markdown><span class="ability-label">PvP</span> Same</p>
+</div>
+
+<div class="ability-card" markdown>
+<p class="ability-name" markdown>**Elemental Insight** <span class="ability-type passive">Passive</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
+<p markdown><span class="ability-label">PvE</span> +5% damage vs Elementals. Good on Zephras Isle and in some dungeons</p>
+<p markdown><span class="ability-label">PvP</span> None</p>
+</div>
+
+</div>
 
 !!! conflict "Conflicts"
     Wind Blessed is listed as 1%, 2% or 3% haste in different sources; the latest official notes say **2%**. Walk on Air's cooldown is given as 1.5 or 2 minutes.
@@ -36,25 +66,44 @@ tags:
 
 Every Skyborne starts in **Thendal Village** on **[Zephras Isle](../../world/zephras-isle.md)**, a floating island in Skywall. The zone takes you to about 12–14. Both factions share it but are phased apart.
 
-1. **Thendal Village (1–5).** *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen* and the Ursera bear chain. *Harvesting Windstones* gives a gathering-profession voucher. Your Alliance opener is *Reading the Leylines*. Learn **Charge** and **Rend** at 4 from the Warrior trainer in the village (*exact location unconfirmed*).
-2. **Road to Shen'dar Village (5–8).** Fight Al'Aketh thugs. *Blessing of Zephras* tornadoes give +40% speed. **The Great Outdoors** (Raan Wildwind) teaches camping. Shen'dar Village has bandit, hippogryph and Prideclaw quests, plus the "Badwind" Bennic and Vulgara wanted posters. **Hamstring** at 8.
-3. **Falaath Village (8–10).** Infiltrate the cult in disguise, then kill its commanders.
-4. **Valanaar (10).** Hand the signet to Talaanis Shadowsong and meet **Elaadrin Evengale**. Valanaar has trainers and a bank; do your **Defensive Stance** quest here (*details unconfirmed for Skyborne*). First talent: **Shield Specialization** (Prot) or **Improved Rend** (Arms).
-5. **Gustberry Lowlands and Shadowgale Forest (10–12).** The High Order chain *The Missing Scholar* and the Index Esoteria chain. `/sing` at the frogs for a secret pet.
-6. **The confrontation (12–14).** Assault the Shrine of Akir and face Lorthuna and Rohash. *What Comes Next* sends you off the island.
+<div class="steps" markdown>
+
+1.  **1–5**{ .lvl } **Thendal Village.** *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen* and the Ursera bear chain. *Harvesting Windstones* gives a gathering-profession voucher. Your Alliance opener is *Reading the Leylines*. Learn **Charge** and **Rend** at 4 from the Warrior trainer in the village (*exact location unconfirmed*).
+2.  **5–8**{ .lvl } **Road to Shen'dar Village.** Fight Al'Aketh thugs. *Blessing of Zephras* tornadoes give +40% speed. **The Great Outdoors** (Raan Wildwind) teaches camping. Shen'dar Village has bandit, hippogryph and Prideclaw quests, plus the "Badwind" Bennic and Vulgara wanted posters. **Hamstring** at 8.
+3.  **8–10**{ .lvl } **Falaath Village.** Infiltrate the cult in disguise, then kill its commanders.
+4.  **10**{ .lvl } **Valanaar.** Hand the signet to Talaanis Shadowsong and meet **Elaadrin Evengale**. Valanaar has trainers and a bank; do your **Defensive Stance** quest here (*details unconfirmed for Skyborne*). First talent: **Shield Specialization** (Prot) or **Improved Rend** (Arms).
+5.  **10–12**{ .lvl } **Gustberry Lowlands and Shadowgale Forest.** The High Order chain *The Missing Scholar* and the Index Esoteria chain. `/sing` at the frogs for a secret pet.
+6.  **12–14**{ .lvl } **The confrontation.** Assault the Shrine of Akir and face Lorthuna and Rohash. *What Comes Next* sends you off the island.
+
+</div>
 
 ## Route to 60 from Dalaran
 
 The High Order airship lands in north **Dalaran** in the Alterac Mountains, a level 30–40 zone. Don't quest there yet.
 
-| Levels | Zones | Flight paths / notes |
-|---|---|---|
-| 12–15 | Walk south to **Southshore**, then take the new pier boat to Menethil (Wetlands) and on to Ironforge or Stormwind | Grab every flight path on the way |
-| 15–20 | Loch Modan → Westfall → Redridge | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md), Deadmines |
-| 20–30 | Duskwood → Wetlands → Ashenvale | [Excavation Site](../../content/dungeons/excavation-site.md) |
-| 30–40 | Hillsbrad → **Alterac Mountains (Dalaran)** → Arathi → Stranglethorn | [City of Dalaran](../../content/dungeons/city-of-dalaran.md). Kirin Tor reputation is Alliance-only |
-| 35–45 | **[Riverglades](../../world/zones.md#riverglades)** (Farholde Keep) → Dustwallow Marsh | |
-| 45–60 | Tanaris → Feralas → Azshara → Un'Goro → Plaguelands → Winterspring → Mount Hyjal | |
+<div class="steps" markdown>
+
+1.  **12–15**{ .lvl } Walk south to **Southshore**, then take the new pier boat to Menethil (Wetlands) and on to Ironforge or Stormwind
+
+    <span class="step-label">Flight paths / notes</span> Grab every flight path on the way
+
+2.  **15–20**{ .lvl } Loch Modan → Westfall → Redridge
+
+    <span class="step-label">Flight paths / notes</span> [Hall of Thanes](../../content/dungeons/hall-of-thanes.md), Deadmines
+
+3.  **20–30**{ .lvl } Duskwood → Wetlands → Ashenvale
+
+    <span class="step-label">Flight paths / notes</span> [Excavation Site](../../content/dungeons/excavation-site.md)
+
+4.  **30–40**{ .lvl } Hillsbrad → **Alterac Mountains (Dalaran)** → Arathi → Stranglethorn
+
+    <span class="step-label">Flight paths / notes</span> [City of Dalaran](../../content/dungeons/city-of-dalaran.md). Kirin Tor reputation is Alliance-only
+
+5.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Farholde Keep) → Dustwallow Marsh
+
+6.  **45–60**{ .lvl } Tanaris → Feralas → Azshara → Un'Goro → Plaguelands → Winterspring → Mount Hyjal
+
+</div>
 
 **Class trainers:** Valanaar on Zephras Isle, and the Warrior trainers in Stormwind, Ironforge and Darnassus.
 
@@ -86,4 +135,8 @@ The High Order airship lands in north **Dalaran** in the Alterac Mountains, a le
 
 ## Verdict
 
+<div class="verdict" markdown>
+
 A good-looking, comfortable leveler with a unique starting zone. Its racials are weaker than Human, Dwarf or Night Elf for a Warrior, mostly utility rather than damage or survival. Pick it if the Skyborne story is why you're playing; pick another race if you're min-maxing.
+
+</div>

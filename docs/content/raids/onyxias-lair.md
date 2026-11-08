@@ -1,5 +1,14 @@
 # Onyxia's Lair
 
+**Also called:** Ony · Onyxia
+{: .fc-aka }
+
+## The fight
+
+<aside class="infobox" markdown>
+<p class="infobox-title">Onyxia's Lair</p>
+<p class="infobox-roles" markdown>**Original**{ .badge .original } **40-player raid**{ .badge }</p>
+
 | | |
 |---|---|
 | **Type** | Raid (original Classic) |
@@ -11,7 +20,7 @@
 | **Attunement** | **Drakefire Amulet** (in your bags; it doesn't need to be equipped). **Not account-wide** |
 | **Reset** | Weekly |
 
-## The fight
+</aside>
 
 The classic three-phase fight with heavy fire damage. Fire resistance gear is recommended. Loot is expected to change from Classic, but the details haven't been published.
 

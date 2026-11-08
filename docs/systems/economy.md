@@ -2,8 +2,10 @@
 
 ## Structure
 
+!!! forever "No token, no boosts"
+    **No WoW Token and no paid boosts.** Clay Stone: "the journey is the game".
+
 - **A realmless economy.** Each ruleset is one regional mega-realm, so the auction house, mail and trade are shared **within a ruleset and faction**. Whether anything crosses rulesets has not been stated, and characters can't move between them.
-- **No WoW Token and no paid boosts.** Clay Stone: "the journey is the game".
 - **Gold sources:** quests (1,000+ new) and vendor sales.
 - **Gold sinks:** training (~206g for levels 1–60), riding (100g and 1,000g), consumables, repairs, dual spec (50g), respecs, transmog outfit slots.
 - **Black Market NPCs** sell certain materials at fixed prices.

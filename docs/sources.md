@@ -178,8 +178,8 @@ Every page on this wiki was compiled from public web sources between the BlizzCo
 
 ## mein-mmo.de
 
-- <https://mein-mmo.de/en/a-detail-of-wow-forever-drives-fans-crazy-because-it-costs-you-at-least-30-euros>
-- <https://mein-mmo.de/en/wow-forever-release-in-the-live-ticker-time-status-queues-and-more>
+- `https://mein-mmo.de/en/a-detail-of-wow-forever-drives-fans-crazy-because-it-costs-you-at-least-30-euros` *(link dead as of 8 Nov 2026; content retrieved earlier)*
+- `https://mein-mmo.de/en/wow-forever-release-in-the-live-ticker-time-status-queues-and-more` *(link dead as of 8 Nov 2026; content retrieved earlier)*
 - <https://mein-mmo.de/wow-forever-sprachen-server/>
 
 ## method.gg
@@ -216,7 +216,7 @@ Every page on this wiki was compiled from public web sources between the BlizzCo
 
 ## playnews.gg
 
-- <https://www.playnews.gg/guides/addons-wow-forever-lesquels-installer-et-lesquels-remplacent-ceux-de-classic>
+- `https://www.playnews.gg/guides/addons-wow-forever-lesquels-installer-et-lesquels-remplacent-ceux-de-classic` *(link dead as of 8 Nov 2026; content retrieved earlier)*
 
 ## seramate.com
 

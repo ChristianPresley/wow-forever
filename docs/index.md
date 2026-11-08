@@ -141,24 +141,33 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 
 ## Key facts
 
-| | |
-|---|---|
-| **Announced** | 12 Sep 2026, BlizzCon |
-| **Launched** | 4 Nov 2026, 23:00 UTC |
-| **Price** | Included with a WoW subscription. Skyborne race from $29.99 |
-| **Level cap** | 60, forever |
-| **Realms** | None. Pick a [Ruleset](about/rulesets.md) |
-| **New content** | 4 zones · 1,000+ quests · 9 dungeons · 2 new raids · 1 battleground · 1 race |
-| **Not included** | Flying · level scaling · WoW Token · boosts · Dungeon Finder |
+<div class="stats" markdown>
+
+- **4 Nov 2026** launched worldwide at 23:00 UTC
+- **60** level cap, permanently
+- **1,000+** new quests in 4 new zones
+- **9** new dungeons, plus 2 new raids
+- **1** new race: the Skyborne
+- **$0** extra with any WoW subscription
+
+</div>
+
+<div class="pills" markdown>
+**Flying**{ .pill .pill--removed } **Level scaling**{ .pill .pill--removed } **WoW Token**{ .pill .pill--removed } **Boosts**{ .pill .pill--removed } **Dungeon Finder**{ .pill .pill--removed }
+</div>
+
+Not in Forever, by design. There are no realms either: you pick a [Ruleset](about/rulesets.md). The [Skyborne](characters/races.md#skyborne) race is the only paid content, from $29.99.
 
 ## Upcoming
 
-| When | What |
-|---|---|
-| **9 Dec 2026** | [Barrow Deeps](content/raids/barrow-deeps.md) (10) · [Hyjal Summit](content/raids/hyjal-summit.md) (20) · [Onyxia's Lair](content/raids/onyxias-lair.md) (40) |
-| Winter 2026/27 | [Hardcore](about/hardcore.md) ruleset |
-| Spring 2027 | 2 raids · 2 dungeons · new area · legendary questline · PvP season |
-| Summer 2027 | Revamped iconic raid · new raid · 2 dungeons · profession and Legacy updates |
+<div class="timeline" markdown>
+
+- **9 Dec 2026** [Barrow Deeps](content/raids/barrow-deeps.md) (10) · [Hyjal Summit](content/raids/hyjal-summit.md) (20) · [Onyxia's Lair](content/raids/onyxias-lair.md) (40) **Coming soon**{ .pill .pill--soon }
+- **Winter 2026/27** [Hardcore](about/hardcore.md) ruleset **Planned**{ .pill .pill--planned }
+- **Spring 2027** 2 raids · 2 dungeons · new area · legendary questline · PvP season **Planned**{ .pill .pill--planned }
+- **Summer 2027** Revamped iconic raid · new raid · 2 dungeons · profession and Legacy updates **Planned**{ .pill .pill--planned }
+
+</div>
 
 ---
 

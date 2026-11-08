@@ -10,8 +10,8 @@
 | | |
 |---|---|
 | **Specs** | Arms · Fury · Protection |
-| **Armor** | Plate at 40 |
-| **Resource** | Rage |
+| **Armor** | **Plate**{ .pill .pill--plate } at 40 |
+| **Resource** | **Rage**{ .pill .pill--rage } |
 | **Races** | 10 combinations |
 | **Forever focus** | Reliable rage generation |
 | **Guide** | [Warrior guide](../../guides/warrior/index.md) |

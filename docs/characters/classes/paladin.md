@@ -10,8 +10,8 @@
 | | |
 |---|---|
 | **Specs** | Holy · Protection · Retribution |
-| **Armor** | Plate at 40 |
-| **Resource** | Mana |
+| **Armor** | **Plate**{ .pill .pill--plate } at 40 |
+| **Resource** | **Mana**{ .pill .pill--mana } |
 | **Races** | 3 combinations |
 | **Forever focus** | A real tank; Shockadin |
 | **Guide** | [Paladin guide](../../guides/paladin/index.md) |

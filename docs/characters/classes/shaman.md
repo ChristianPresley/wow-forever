@@ -10,8 +10,8 @@
 | | |
 |---|---|
 | **Specs** | Elemental · Enhancement · Restoration |
-| **Armor** | Mail at 40 |
-| **Resource** | Mana |
+| **Armor** | **Mail**{ .pill .pill--mail } at 40 |
+| **Resource** | **Mana**{ .pill .pill--mana } |
 | **Races** | 5 combinations |
 | **Forever focus** | Viable Elemental and Enhancement |
 | **Guide** | [Shaman guide](../../guides/shaman/index.md) |

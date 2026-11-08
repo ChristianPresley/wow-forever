@@ -30,7 +30,7 @@ The Rogue is a pure melee damage dealer that wears leather and runs on **Energy*
 |---|---|
 | **Role** | Melee DPS only |
 | **Armor / weapons** | Leather; daggers, swords, maces, fist weapons, **one-handed axes (new)**, thrown, bows, crossbows, guns |
-| **Resource** | Energy (now regenerates smoothly) + 5 combo points |
+| **Resource** | **Energy**{ .pill .pill--energy } (now regenerates smoothly) + 5 combo points |
 | **Strengths** | Top-tier single-target damage, best opener control in the game, strong solo survival through Stealth, Vanish and Evasion, excellent world PvP |
 | **Weaknesses** | No healing, no ranged pull besides throwing, weak multi-pull survival, gear-hungry, competes with Warriors for gear |
 
@@ -56,8 +56,8 @@ Rogue is open to every race except Tauren. Each combination has an add-on page:
 | [Human](human.md) | [Orc](orc.md) |
 | [Dwarf](dwarf.md) | [Troll](troll.md) |
 | [Gnome](gnome.md) | [Undead](undead.md) |
-| [Night Elf](night-elf.md) | [Skyborne (Windshaper)](skyborne-windshaper.md) — **NEW** |
-| [Skyborne (High Order)](skyborne-high-order.md) — **NEW** | |
+| [Night Elf](night-elf.md) | [Skyborne (Windshaper)](skyborne-windshaper.md) **New**{ .pill .pill--new .pill--sm } |
+| [Skyborne (High Order)](skyborne-high-order.md) **New**{ .pill .pill--new .pill--sm } | |
 
 Racials were rebuilt for Forever: every race has two actives and two passives, and the old weapon-skill racials are gone. See [Races](../../characters/races.md).
 

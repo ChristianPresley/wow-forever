@@ -29,8 +29,8 @@ The Hunter is a ranged physical damage dealer who fights alongside a tamed beast
 | | |
 |---|---|
 | **Roles** | Damage (ranged or melee). Pets can off-tank solo content |
-| **Armor** | Cloth and Leather from level 1, **Mail at 40** |
-| **Resource** | Mana (pets use Focus) |
+| **Armor** | **Cloth**{ .pill .pill--cloth } and **Leather**{ .pill .pill--leather } from level 1, **Mail at 40** |
+| **Resource** | **Mana**{ .pill .pill--mana } (pets use Focus) |
 | **Leveling speed** | **Fastest class in the beta**, ahead of Warlock and Mage |
 | **Difficulty** | Easy to level, harder to master (pet control, the 8-yard deadzone, mana) |
 
@@ -64,14 +64,14 @@ The Hunter is a ranged physical damage dealer who fights alongside a tamed beast
 
 | Race | Faction | Status | Headline racial for Hunters | Add-on |
 |---|---|---|---|---|
-| Human | Alliance | **NEW** | Ruthless (+1% crit), Will to Survive (stun break) | [Human Hunter](human.md) |
+| Human | Alliance | **New**{ .pill .pill--new .pill--sm } | Ruthless (+1% crit), Will to Survive (stun break) | [Human Hunter](human.md) |
 | Dwarf | Alliance | Classic | Artisan's Precision (+1% hit), Stoneform | [Dwarf Hunter](dwarf.md) |
 | Night Elf | Alliance | Classic | Elune's Light (+10% crit for 15 s), Shadowmeld | [Night Elf Hunter](night-elf.md) |
-| Skyborne (High Order) | Alliance | **NEW** | Wind Blessed (haste), Walk on Air | [High Order Hunter](skyborne-high-order.md) |
+| Skyborne (High Order) | Alliance | **New**{ .pill .pill--new .pill--sm } | Wind Blessed (haste), Walk on Air | [High Order Hunter](skyborne-high-order.md) |
 | Orc | Horde | Classic | Blood Fury, Command (+5% pet damage) | [Orc Hunter](orc.md) |
 | Troll | Horde | Classic | Berserking, Beast Slaying | [Troll Hunter](troll.md) |
 | Tauren | Horde | Classic | War Stomp, Endurance | [Tauren Hunter](tauren.md) |
-| Skyborne (Windshaper) | Horde | **NEW** | Wind Blessed (haste), Skysight | [Windshaper Hunter](skyborne-windshaper.md) |
+| Skyborne (Windshaper) | Horde | **New**{ .pill .pill--new .pill--sm } | Wind Blessed (haste), Skysight | [Windshaper Hunter](skyborne-windshaper.md) |
 
 Full racial tables: [Races](../../characters/races.md#racial-abilities).
 

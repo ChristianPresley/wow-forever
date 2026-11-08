@@ -10,8 +10,8 @@
 | | |
 |---|---|
 | **Specs** | Assassination · Combat · Subtlety |
-| **Armor** | Leather |
-| **Resource** | Energy & combo points |
+| **Armor** | **Leather**{ .pill .pill--leather } |
+| **Resource** | **Energy**{ .pill .pill--energy } & combo points |
 | **Races** | 9 combinations |
 | **Forever focus** | Mutilate Assassination, Hemo Subtlety |
 | **Guide** | [Rogue guide](../../guides/rogue/index.md) |

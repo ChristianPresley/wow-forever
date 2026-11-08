@@ -59,6 +59,7 @@ extra_css:
   - stylesheets/interactive.css
   - stylesheets/guides.css
   - stylesheets/reference.css
+  - stylesheets/components.css
 
 extra_javascript:
   - javascripts/codex.js
@@ -128,6 +129,7 @@ plugins:
         - stylesheets/interactive.css
         - stylesheets/guides.css
         - stylesheets/reference.css
+        - stylesheets/components.css
 
 nav:
   - Home: index.md
@@ -278,6 +280,7 @@ nav:
       - Resources: community/resources.md
       - Glossary: community/glossary.md
       - Tags: tags.md
+      - Style guide: community/style-guide.md
       - Sources: sources.md
       - About this wiki: about-this-wiki.md
 

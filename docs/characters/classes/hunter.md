@@ -10,15 +10,15 @@
 | | |
 |---|---|
 | **Specs** | Beast Mastery · Marksmanship · Survival |
-| **Armor** | Mail at 40 |
-| **Resource** | Mana |
+| **Armor** | **Mail**{ .pill .pill--mail } at 40 |
+| **Resource** | **Mana**{ .pill .pill--mana } |
 | **Races** | 8 combinations |
 | **Forever focus** | Petless MM; melee Survival |
 | **Guide** | [Hunter guide](../../guides/hunter/index.md) |
 
 </aside>
 
-**Races:** Human (**new**), Dwarf, Night Elf, Orc, Troll, Tauren, Skyborne (both).
+**Races:** Human **New**{ .pill .pill--new .pill--sm }, Dwarf, Night Elf, Orc, Troll, Tauren, Skyborne (both).
 
 !!! forever "What Forever changed"
     **Headline additions:** Aimed Shot baseline, combat traps, Summon Hawk, Lone Wolf, Sniper Shot, Strider Kick, Lacerating Strikes.

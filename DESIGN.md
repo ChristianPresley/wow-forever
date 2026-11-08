@@ -74,3 +74,7 @@ Guide pages carry `tags:` front matter (class, race, faction), which feeds searc
 
 Local checks: `npm ci`, then `npm run test` (and `npm run test:lhci`); see `tests/README.md`.
 The one remaining axe finding is `target-size` on sidebar links that are partially scrolled out of the sidebar's own viewport, which is a known axe false positive for clipped scroll containers.
+
+## Visual element library (8 Nov 2026)
+
+`docs/stylesheets/components.css` adds pills (status, change, faction, class, armour, resource, difficulty, label-value; soft, solid and outline styles), spec strips, stat tiles, timelines, meters, pros/cons, price cards and labelled dividers. The live reference with copy-paste Markdown is the **Style guide** page (`docs/community/style-guide.md`).

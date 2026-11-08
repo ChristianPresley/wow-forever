@@ -30,7 +30,7 @@ The paladin is a plate-wearing hybrid of melee, healing and tanking. Forever giv
 |---|---|
 | **Roles** | Tank (Protection), healer (Holy), melee DPS (Retribution) |
 | **Armor / weapons** | Plate from 40 (mail before); shields; one- and two-handed swords, maces and axes; polearms |
-| **Resource** | Mana |
+| **Resource** | **Mana**{ .pill .pill--mana } |
 | **Races** | [Human](human.md), [Dwarf](dwarf.md) (Alliance) · [Undead](undead.md) (Horde, **new**) |
 | **Class trainers** | Stormwind (Cathedral of Light), Ironforge (Mystic Ward), Northshire, Goldshire, Coldridge Valley, Thunderbrew Distillery, Theramore · Deathknell, Brill, **Bandarion Keep** (Tirisfal) |
 

@@ -30,7 +30,7 @@ The Mage is a cloth-wearing ranged caster: the best crowd control in the game (P
 |---|---|
 | **Role** | Ranged damage, crowd control, utility |
 | **Armor / weapons** | Cloth; staves, one-hand swords, daggers, wands, off-hand items |
-| **Resource** | Mana |
+| **Resource** | **Mana**{ .pill .pill--mana } |
 | **Strengths** | Polymorph and Frost Nova kiting, burst (Arcane Power, Combustion, Ice Lance shatter), self-sufficient food and water, fast travel |
 | **Weaknesses** | Lowest armor in the game, mana-hungry, vulnerable when caught in melee or stunned |
 | **Leveling speed** | Third fastest in the beta, behind Hunter and Warlock |

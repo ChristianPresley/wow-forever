@@ -5,7 +5,7 @@
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Zephras Isle</p>
-<p class="infobox-roles" markdown>**New**{ .badge .new } **1–12**{ .lvl } **Sanctuary**{ .badge }</p>
+<p class="infobox-roles" markdown>**New**{ .pill .pill--new } **1–12**{ .lvl } **Sanctuary**{ .badge }</p>
 
 | | |
 |---|---|

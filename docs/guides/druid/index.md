@@ -63,9 +63,9 @@ The Druid is the hybrid of hybrids. With one character you can tank (Bear), deal
 | Race | Faction | Status | Add-on |
 |---|---|---|---|
 | Night Elf | Alliance | Classic | [Night Elf Druid](night-elf.md) |
-| Skyborne (High Order) | Alliance | **NEW** | [High Order Skyborne Druid](skyborne-high-order.md) |
+| Skyborne (High Order) | Alliance | **New**{ .pill .pill--new .pill--sm } | [High Order Skyborne Druid](skyborne-high-order.md) |
 | Tauren | Horde | Classic | [Tauren Druid](tauren.md) |
-| Skyborne (Windshaper) | Horde | **NEW** | [Windshaper Skyborne Druid](skyborne-windshaper.md) |
+| Skyborne (Windshaper) | Horde | **New**{ .pill .pill--new .pill--sm } | [Windshaper Skyborne Druid](skyborne-windshaper.md) |
 
 Community guides call the race differences **marginal**. Pick for faction and looks first. See [Races](../../characters/races.md) for every racial.
 

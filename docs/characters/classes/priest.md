@@ -10,15 +10,15 @@
 | | |
 |---|---|
 | **Specs** | Discipline · Holy · Shadow |
-| **Armor** | Cloth |
-| **Resource** | Mana |
+| **Armor** | **Cloth**{ .pill .pill--cloth } |
+| **Resource** | **Mana**{ .pill .pill--mana } |
 | **Races** | 6 combinations |
 | **Forever focus** | The most versatile healer |
 | **Guide** | [Priest guide](../../guides/priest/index.md) |
 
 </aside>
 
-**Races:** Human, Dwarf, Gnome (**new**), Night Elf, Troll, Undead.
+**Races:** Human, Dwarf, Gnome **New**{ .pill .pill--new .pill--sm }, Night Elf, Troll, Undead.
 
 !!! forever "What Forever changed"
     **Headline additions:** Fear Ward and Devouring Plague for all, SW:Death baseline, Penance, Divine Aegis, Prayer of Mending, Holy Binding.

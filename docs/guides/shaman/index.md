@@ -29,9 +29,9 @@ The Shaman is a hybrid that can fill **any non-tank role**: ranged caster (Eleme
 | | |
 |---|---|
 | **Roles** | Ranged DPS, melee DPS, healer |
-| **Armor** | Leather, then mail from level 40 (Classic rule; not re-confirmed for Forever) |
+| **Armor** | **Leather**{ .pill .pill--leather }, then mail from level 40 (Classic rule; not re-confirmed for Forever) |
 | **Weapons** | Maces, staves, fist weapons, daggers, axes; **two-handed axes and maces are now baseline** |
-| **Resource** | Mana |
+| **Resource** | **Mana**{ .pill .pill--mana } |
 | **Races** | [Dwarf](dwarf.md) (Alliance, **new**), [Orc](orc.md), [Troll](troll.md), [Tauren](tauren.md), [Skyborne Windshaper](skyborne-windshaper.md) (Horde only, **new**) |
 
 </aside>

@@ -2,7 +2,7 @@
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Hyjal Summit</p>
-<p class="infobox-roles" markdown>**New**{ .badge .new } **20-player raid**{ .badge }</p>
+<p class="infobox-roles" markdown>**New**{ .pill .pill--new } **20-player raid**{ .badge }</p>
 
 | | |
 |---|---|

@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | Warsong Gulch <span class="fc-alias">WSG</span> | **Original**{ .badge .original } | 10v10 | 10–19 … 50–59, 60 | Capture the flag |
 | Arathi Basin <span class="fc-alias">AB</span> | **Original**{ .badge .original } | 15v15 | 20–29 … 60 | Hold resource nodes |
-| **[Battle for the Darkspear Islands](#darkspear-islands)** | **New**{ .badge .new } | **15v15** | 30–60 | 4 bases plus a central flag. First to 2,000 points wins |
+| **[Battle for the Darkspear Islands](#darkspear-islands)** | **New**{ .pill .pill--new } | **15v15** | 30–60 | 4 bases plus a central flag. First to 2,000 points wins |
 | Alterac Valley <span class="fc-alias">AV</span> | **Original**{ .badge .original } | 40v40 | 51–60 (Wowhead's database says 20–60) | Kill the enemy general |
 
 </div>
@@ -25,7 +25,7 @@
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Darkspear Islands</p>
-<p class="infobox-roles" markdown>**New**{ .badge .new } **15v15**{ .badge } **Official**{ .badge .official }</p>
+<p class="infobox-roles" markdown>**New**{ .pill .pill--new } **15v15**{ .badge } **Official**{ .badge .official }</p>
 
 | | |
 |---|---|

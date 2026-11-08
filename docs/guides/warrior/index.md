@@ -29,9 +29,9 @@ The Warrior is Forever's plate-wearing melee class. It can **tank** (Protection)
 | | |
 |---|---|
 | **Roles** | Tank (Protection) · Melee DPS (Arms, Fury) |
-| **Armor** | Cloth, leather and mail from level 1. **Plate at 40** from the class trainer |
+| **Armor** | **Cloth**{ .pill .pill--cloth }, leather and mail from level 1. ****Plate**{ .pill .pill--plate } at 40** from the class trainer |
 | **Weapons** | Every type except wands. Shields. Polearms trainable from level 20 |
-| **Resource** | Rage (now normalized; see below) |
+| **Resource** | **Rage**{ .pill .pill--rage } (now normalized; see below) |
 | **Races** | All ten: every race in the game can be a Warrior |
 
 </aside>

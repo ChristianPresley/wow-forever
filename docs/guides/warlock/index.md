@@ -30,7 +30,7 @@ The Warlock is a cloth-wearing ranged caster that fights with damage-over-time s
 |---|---|
 | **Role** | Ranged damage, crowd control, raid utility (curses, summons, stones) |
 | **Armor / weapons** | Cloth; daggers, wands, one-hand swords and staves |
-| **Resource** | Mana (refilled from health with Life Tap) and **Soul Shards** |
+| **Resource** | **Mana**{ .pill .pill--mana } (refilled from health with Life Tap) and **Soul Shards** |
 | **Strengths** | Very self-sufficient leveling, pet tanking, strong sustained damage, Fear in PvP, unique group utility |
 | **Weaknesses** | Low armor, slow ramp on DoTs, Soul Shard upkeep, weak mobility, melee-range AoE (Hellfire) |
 | **Leveling speed** | Second fastest in the beta, behind Hunter |

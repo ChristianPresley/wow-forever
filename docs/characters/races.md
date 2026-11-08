@@ -121,7 +121,7 @@ Each chip opens the race add-on for that class. Read it alongside the class guid
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Skyborne</p>
-<p class="infobox-roles" markdown>**Both factions**{ .badge } **New**{ .badge .new }</p>
+<p class="infobox-roles" markdown>**Both factions**{ .badge } **New**{ .pill .pill--new }</p>
 
 | | |
 |---|---|

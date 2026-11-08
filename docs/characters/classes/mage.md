@@ -10,15 +10,15 @@
 | | |
 |---|---|
 | **Specs** | Arcane · Fire · Frost |
-| **Armor** | Cloth |
-| **Resource** | Mana |
+| **Armor** | **Cloth**{ .pill .pill--cloth } |
+| **Resource** | **Mana**{ .pill .pill--mana } |
 | **Races** | 6 combinations |
 | **Forever focus** | Distinct school identities |
 | **Guide** | [Mage guide](../../guides/mage/index.md) |
 
 </aside>
 
-**Races:** Human, Gnome, Orc (**new**), Troll, Undead, Skyborne High Order (**Alliance only**).
+**Races:** Human, Gnome, Orc **New**{ .pill .pill--new .pill--sm }, Troll, Undead, Skyborne High Order (**Alliance only**).
 
 !!! forever "What Forever changed"
     **Headline additions:** Frostfire Bolt baseline, Comprehension tradeskill, Arcane Blast, Missile Barrage, Heating Up, Ice Lance, Fingers of Frost.

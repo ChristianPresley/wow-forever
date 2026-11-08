@@ -10,8 +10,8 @@
 | | |
 |---|---|
 | **Specs** | Balance · Feral · Restoration |
-| **Armor** | Leather |
-| **Resource** | Mana, Rage, Energy |
+| **Armor** | **Leather**{ .pill .pill--leather } |
+| **Resource** | **Mana**{ .pill .pill--mana } **Rage**{ .pill .pill--rage } **Energy**{ .pill .pill--energy } |
 | **Races** | 4 combinations |
 | **Forever focus** | Viable Feral and Bear; consumables work in forms |
 | **Guide** | [Druid guide](../../guides/druid/index.md) |

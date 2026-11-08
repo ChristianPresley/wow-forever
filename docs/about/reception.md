@@ -11,14 +11,21 @@ Holly Longdale also cited the most new players at any WoW launch in 15 years. **
 
 ## Beta statistics (Blizzard, 30 Oct)
 
-| Stat | Value |
+<div class="stats" markdown>
+
+- **8,862,354** characters created
+- **1,889,084** Skyborne characters
+- **612,096** Undead Paladins
+- **9,959,014** PvP kills
+- **1,248,125** duels
+- **1,157,204** deaths from falling
+
+</div>
+
+| Share of all beta characters | |
 |---|---|
-| Characters created | 8,862,354 |
-| Skyborne characters | 1,889,084 (~21%) |
-| Undead Paladins | 612,096 |
-| PvP kills | 9,959,014 |
-| Duels | 1,248,125 |
-| Deaths from falling | 1,157,204 |
+| Skyborne | <span class="meter" style="--v:21.3%"><span>21.3%</span></span> |
+| Undead Paladin | <span class="meter meter--info" style="--v:6.9%"><span>6.9%</span></span> |
 
 Longdale called it the biggest beta in Blizzard's recorded history and admitted "we weren't ready for this kind of engagement". Some beta players were banned for buying gold.
 

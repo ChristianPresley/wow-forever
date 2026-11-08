@@ -21,7 +21,7 @@ search:
 | **Forever** box | A change that exists only in Forever (vs. original Classic) |
 | *unconfirmed*{ .unconfirmed } | Comes from a single, non-official source |
 | *fan source*{ .fan-source } | From a fan or guide site of lower reliability |
-| **New**{ .badge .new } | New in Forever (vs. original Classic) |
+| **New**{ .pill .pill--new } | New in Forever (vs. original Classic) |
 | **Official**{ .badge .official } **Stated**{ .badge .stated } **Done**{ .badge .done } | Confidence on dated plans (see [Roadmap](content/roadmap.md)) |
 | **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps } | Roles a class can fill |
 | <span class="fc-alias">BRD</span> **Also called** | Common abbreviations and slang, shown so search finds them ([Glossary](community/glossary.md#player-shorthand)) |

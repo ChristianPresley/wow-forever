@@ -1,15 +1,23 @@
 # Raids
 
-!!! info "Unlock date"
-    All launch raids open on **9 December 2026** for level-60 characters.
+<div class="specs" markdown>
+
+- **9 Dec 2026** All three unlock
+- **3** Launch raids
+- **22** Bosses in total
+- **10 · 20 · 40** Raid sizes
+
+</div>
+
+**Coming soon**{ .pill .pill--soon } All launch raids open on **9 December 2026** for level-60 characters.
 
 <div class="compare" markdown>
 
 | Raid | Status | Size | Location | Bosses | Attunement | Reset |
 |---|---|---|---|---|---|---|
-| **[The Barrow Deeps](barrow-deeps.md)** | **New**{ .badge .new } | 10 | Beneath Mount Hyjal (3 entrances) | 8 | None reported | Weekly |
-| **[Hyjal Summit](hyjal-summit.md)** | **New**{ .badge .new } | 20 | Summit of Mount Hyjal, by Nordrassil | 13 | None reported | Weekly |
-| **[Onyxia's Lair](onyxias-lair.md)** <span class="fc-alias">Ony</span> | **Original**{ .badge .original } | 40 | Dustwallow Marsh | 1 | Drakefire Amulet | Weekly |
+| **[The Barrow Deeps](barrow-deeps.md)** | **New**{ .pill .pill--new } | **10-player**{ .pill .pill--gold } | Beneath Mount Hyjal (3 entrances) | 8 | None reported | Weekly |
+| **[Hyjal Summit](hyjal-summit.md)** | **New**{ .pill .pill--new } | **20-player**{ .pill .pill--gold } | Summit of Mount Hyjal, by Nordrassil | 13 | None reported | Weekly |
+| **[Onyxia's Lair](onyxias-lair.md)** <span class="fc-alias">Ony</span> | **Original**{ .pill .pill--outline } | **40-player**{ .pill .pill--gold } | Dustwallow Marsh | 1 | Drakefire Amulet | Weekly |
 
 </div>
 

@@ -25,7 +25,7 @@
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Riverglades</p>
-<p class="infobox-roles" markdown>**New**{ .badge .new } **35–45**{ .lvl } **Contested**{ .badge }</p>
+<p class="infobox-roles" markdown>**New**{ .pill .pill--new } **35–45**{ .lvl } **Contested**{ .badge }</p>
 
 | | |
 |---|---|
@@ -71,7 +71,7 @@ Built from a previously inaccessible part of **southeastern Khaz Modan**: east o
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Shen'dralas</p>
-<p class="infobox-roles" markdown>**New**{ .badge .new } **Level ?**{ .lvl } **Contested**{ .badge }</p>
+<p class="infobox-roles" markdown>**New**{ .pill .pill--new } **Level ?**{ .lvl } **Contested**{ .badge }</p>
 
 | | |
 |---|---|
@@ -102,7 +102,7 @@ Blizzard describes a hidden mystery between **Mulgore and Desolace**, tied to th
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Mount Hyjal</p>
-<p class="infobox-roles" markdown>**New**{ .badge .new } **60**{ .lvl } **Contested**{ .badge }</p>
+<p class="infobox-roles" markdown>**New**{ .pill .pill--new } **60**{ .lvl } **Contested**{ .badge }</p>
 
 | | |
 |---|---|

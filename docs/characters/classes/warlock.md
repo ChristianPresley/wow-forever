@@ -10,15 +10,15 @@
 | | |
 |---|---|
 | **Specs** | Affliction · Demonology · Destruction |
-| **Armor** | Cloth |
-| **Resource** | Mana & soul shards |
+| **Armor** | **Cloth**{ .pill .pill--cloth } |
+| **Resource** | **Mana**{ .pill .pill--mana } & soul shards |
 | **Races** | 5 combinations |
 | **Forever focus** | Pet-tank Demonology |
 | **Guide** | [Warlock guide](../../guides/warlock/index.md) |
 
 </aside>
 
-**Races:** Human, Gnome, Orc, Troll (**new**), Undead.
+**Races:** Human, Gnome, Orc, Troll **New**{ .pill .pill--new .pill--sm }, Undead.
 
 !!! forever "What Forever changed"
     **Headline additions:** Banes, DoTs can crit, stones become imbues, Pandemic, Demonic Pact, Incinerate, Wrack.

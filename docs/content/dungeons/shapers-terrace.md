@@ -2,7 +2,7 @@
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Shaper's Terrace</p>
-<p class="infobox-roles" markdown>**New**{ .badge .new } **5-player dungeon**{ .badge }</p>
+<p class="infobox-roles" markdown>**New**{ .pill .pill--new } **5-player dungeon**{ .badge }</p>
 
 | | |
 |---|---|

@@ -6,7 +6,7 @@ retry_wait_time = 4
 timeout = 20
 user_agent = "Mozilla/5.0 (X11; Linux x86_64) Forever-Codex-linkcheck (+https://github.com/ChristianPresley/wow-forever)"
 # 403/429: Cloudflare-style bot walls (mobalytics, curseforge) and rate limits are not rot.
-accept = ["200..=299", "403", "429"]
+accept = ["200..=299", "403", "412", "429"]  # 403/412/429: bot walls that load fine in a browser
 cache = true
 max_cache_age = "3d"
 exclude = [

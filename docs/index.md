@@ -29,6 +29,14 @@ hide:
 
     [:octicons-arrow-right-24: Characters](characters/index.md)
 
+-   :material-book-open-variant:{ .lg .middle } **Class & Race Guides**
+
+    ---
+
+    Full 1–60 walkthroughs for all 9 classes, plus an add-on for each of the 56 race/class combos.
+
+    [:octicons-arrow-right-24: Guides](guides/index.md)
+
 -   :material-map:{ .lg .middle } **The World**
 
     ---

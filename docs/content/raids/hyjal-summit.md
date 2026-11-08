@@ -34,7 +34,7 @@ Blizzard has teased a **legendary** item tied to this raid. Details are unconfir
 | 12 | Tracker Stillwind |
 | 13 | **Nythus the Dreambound** |
 
-!!! note "Conflicts & spellings"
+!!! conflict "Conflicts & spellings"
     - **Final boss:** the Warcraft Wiki names Nythus the Dreambound. Method lists The Wild King.
     - Warcraft Tavern spells some names *Nythus the Dreadbound*, *Sylvestris* and *Elder Minderei*.
     - The TBC bosses (Rage Winterchill, Archimonde and the rest) are **not** in this raid.

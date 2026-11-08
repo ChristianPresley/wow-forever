@@ -2,14 +2,65 @@
 hide:
   - navigation
   - toc
+  - path
+search:
+  boost: 2
 ---
+
+<div class="fc-hero" markdown>
+
+<p class="fc-kicker">The unofficial WoW: Forever wiki</p>
 
 # Forever Codex
 
-**An unofficial, community-style wiki cataloguing *World of Warcraft: Forever*, Blizzard's permanent "Classic+" branch of WoW.**
+A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "Classic+" branch of WoW. It has class walkthroughs for every race, zones, dungeons, raids and systems.
+
+[Class & race guides](guides/index.md){ .md-button .md-button--primary } [What is Forever?](about/index.md){ .md-button } <label class="md-button" for="__search">Search the Codex</label>
+
+</div>
 
 !!! info "Current as of 7 November 2026"
-    Forever launched **4 November 2026**. Raids unlock **9 December 2026**. Information this soon after launch changes quickly. Conflicts between sources are flagged as **Conflict**, and single-source claims are marked *unconfirmed*.
+    Forever launched **4 November 2026**. Raids unlock **9 December 2026**. Information this soon after launch changes quickly. When sources disagree, the wiki says so in a **Conflict** box, and claims from a single source are marked *unconfirmed*.
+
+## Start here
+
+<div class="grid cards" markdown>
+
+-   :material-account-switch:{ .lg .middle } **Pick your class & race**
+
+    ---
+
+    56 race add-ons on top of 9 full class walkthroughs.
+
+    [:octicons-arrow-right-24: Class guides](guides/index.md)
+
+-   :material-stairs-up:{ .lg .middle } **Level 1–60**
+
+    ---
+
+    Pace, rested XP, mounts and reputation.
+
+    [:octicons-arrow-right-24: Leveling](characters/leveling.md)
+
+-   :material-castle:{ .lg .middle } **Dungeons**
+
+    ---
+
+    Nine new dungeons, sorted by level.
+
+    [:octicons-arrow-right-24: Dungeons](content/dungeons/index.md)
+
+-   :material-calendar-clock:{ .lg .middle } **What's next**
+
+    ---
+
+    The launch timeline, raids on 9 December, and the 2027 roadmap.
+
+    [:octicons-arrow-right-24: Timeline](about/timeline.md)
+
+</div>
+
+## Explore the Codex
 
 <div class="grid cards" markdown>
 

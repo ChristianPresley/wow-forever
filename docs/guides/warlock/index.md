@@ -1,3 +1,10 @@
+---
+tags:
+  - Warlock
+search:
+  boost: 2
+---
+
 # Warlock Guide
 
 !!! info "Current as of 7 November 2026"
@@ -7,6 +14,9 @@
 
 The Warlock is a cloth-wearing ranged caster that fights with damage-over-time spells, fire nukes and a summoned demon. It trades health for mana with **Life Tap**, heals itself with drains, and controls fights with Fear, Banish and its demons. In groups it brings the only summon in the game, Healthstones, Soulstones and **Curse of the Elements**, which in Forever boosts every magic school.
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Warlock at a glance</p>
+
 | | |
 |---|---|
 | **Role** | Ranged damage, crowd control, raid utility (curses, summons, stones) |
@@ -15,6 +25,8 @@ The Warlock is a cloth-wearing ranged caster that fights with damage-over-time s
 | **Strengths** | Very self-sufficient leveling, pet tanking, strong sustained damage, Fear in PvP, unique group utility |
 | **Weaknesses** | Low armor, slow ramp on DoTs, Soul Shard upkeep, weak mobility, melee-range AoE (Hellfire) |
 | **Leveling speed** | Second fastest in the beta, behind Hunter |
+
+</aside>
 
 ### What's new in Forever
 
@@ -40,7 +52,7 @@ The Warlock is a cloth-wearing ranged caster that fights with damage-over-time s
 | Troll | Horde | **New** | [Troll Warlock](troll.md) |
 | Undead | Horde | Classic | [Undead Warlock](undead.md) |
 
-!!! note "Conflict: best race"
+!!! conflict "Conflict: best race"
     Method.gg ranks them Human (S), Orc (A), Undead and Gnome (B), Troll (C). Warcraft Tavern says all five are close, calling Human and Orc strong in both PvE and PvP, Undead a PvP pick and Troll good against beasts. One beta-era guide puts every race within 1% DPS. Pick the faction and look you want.
 
 ## Specs & talents
@@ -127,7 +139,7 @@ Talents start at level 10 (one point per level, 51 at 60). Single-point **gold-m
 
 Improved Healthstone · Fel Intellect · Fel Stamina · Improved Subjugate Demon · Improved Firestone · Improved Spellstone · Improved Curse of Weakness · Improved Drain Life · Improved Drain Mana · Improved Curse of Exhaustion · Grim Reach · Dark Pact · Improved Firebolt · Improved Lash of Pain · Devastation · Improved Immolate · Emberstorm.
 
-!!! note "Conflict: Grim Reach"
+!!! conflict "Conflict: Grim Reach"
     Blizzard's deep dive lists Grim Reach as removed, but Warcraft Tavern's and Method.gg's leveling guides still suggest it for PvP. Trust the in-game tree; if it is missing, *Destructive Reach* (Destruction row 1) covers range instead.
 
 ### Leveling builds

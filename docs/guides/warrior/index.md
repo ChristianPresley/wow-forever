@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+search:
+  boost: 2
+---
+
 # Warrior
 
 !!! info "Current as of 7 November 2026"
@@ -7,6 +14,9 @@
 
 The Warrior is Forever's plate-wearing melee class. It can **tank** (Protection) or deal **melee damage** (Arms with a two-hander, Fury dual-wielding). It runs on **rage**, which you gain by hitting and being hit, and it switches between three stances for different tools.
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Warrior at a glance</p>
+
 | | |
 |---|---|
 | **Roles** | Tank (Protection) · Melee DPS (Arms, Fury) |
@@ -14,6 +24,8 @@ The Warrior is Forever's plate-wearing melee class. It can **tank** (Protection)
 | **Weapons** | Every type except wands. Shields. Polearms trainable from level 20 |
 | **Resource** | Rage (now normalized; see below) |
 | **Races** | All ten: every race in the game can be a Warrior |
+
+</aside>
 
 **Strengths**
 
@@ -93,7 +105,7 @@ Forever's Warrior trees keep the Classic shape but swap many talents. The new **
     | **Reckless Swings** | Added 3 Nov (see conflict below) |
     | **Improved Whirlwind** | Added 3 Nov: shorter Whirlwind cooldown and more damage to the closest target (*single source*) |
 
-    !!! note "Conflict: Reckless Swings"
+    !!! conflict "Conflict: Reckless Swings"
         The wiki's research notes describe a pre-launch version that **costs 25% of base health** and adds **+5 rage to your next 4 swings**. RankedBoost's talent list describes it as **healing 0.5% of max health** on your next 3 melee hits after Enrage, Berserker Rage, Bloodrage, Death Wish or Bloodthirst. Both may be accurate for different builds. Read the tooltip in game.
 
 === "Protection"
@@ -137,7 +149,7 @@ Forever's Warrior trees keep the Classic shape but swap many talents. The new **
     6. **Improved Slam**, then **Mortal Strike**.
     7. Method then goes into Fury for **Unbridled Wrath** and **Enrage**.
 
-    !!! note "Conflict"
+    !!! conflict "Conflict"
         Warcraft Tavern's Arms build stays in the Arms tree (listed as 26/0/0). Method's is a hybrid that dips into Fury. Both are reasonable; the hybrid suits longer fights.
 
 === "Leveling: Fury"

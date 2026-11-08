@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+  - Human
+  - Alliance
+---
+
 # Human Warrior
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ Human Warrior is the classic Alliance choice, and Forever keeps it strong for a 
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Will to Survive** *(new)* | Active | ★★★★★ | Rarely needed; breaks boss stuns on tanks | A second PvP trinket. Use it on Kidney Shot, Hammer of Justice, Concussion Blow or War Stomp, then Intercept |
-| **Perception** | Active | ★★☆☆☆ | Spot stealthed mobs in some dungeons | Find Rogues and Druids guarding a flag or base |
-| **Ruthless** *(new)* | Passive | ★★★★☆ | +1% crit for every spec, so more rage too | Same |
-| **The Human Spirit** | Passive | ★★☆☆☆ | +10% Spirit: slightly faster health regen between pulls | Minimal |
+| **Will to Survive** *(new)* | Active | **5/5**{ .stars .s5 } | Rarely needed; breaks boss stuns on tanks | A second PvP trinket. Use it on Kidney Shot, Hammer of Justice, Concussion Blow or War Stomp, then Intercept |
+| **Perception** | Active | **2/5**{ .stars .s2 } | Spot stealthed mobs in some dungeons | Find Rogues and Druids guarding a flag or base |
+| **Ruthless** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% crit for every spec, so more rage too | Same |
+| **The Human Spirit** | Passive | **2/5**{ .stars .s2 } | +10% Spirit: slightly faster health regen between pulls | Minimal |
 
 !!! note "Sword and Mace Specialization"
     Some beta articles still list the old weapon racials. They were removed before launch. Your weapon choice is now driven by the **Weaponmaster** talent, not your race.
@@ -66,9 +73,9 @@ Humans start at **Northshire Abbey** in **Elwynn Forest**. Blizzard didn't singl
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Arms** | ★★★★★ | Ruthless crit means more Overpower procs from rage and harder Mortal Strikes; Will to Survive is the best PvP racial for a Mortal Strike Warrior |
-| **Fury** | ★★★★☆ | +1% crit helps Flurry uptime. No active damage racial, so you fall a little behind Orc and Night Elf in burst |
-| **Protection** | ★★★★☆ | Crit gives rage, rage gives threat. Will to Survive breaks boss stuns that would otherwise drop your threat. Dwarf is stronger on mitigation |
+| **Arms** | **5/5**{ .stars .s5 } | Ruthless crit means more Overpower procs from rage and harder Mortal Strikes; Will to Survive is the best PvP racial for a Mortal Strike Warrior |
+| **Fury** | **4/5**{ .stars .s4 } | +1% crit helps Flurry uptime. No active damage racial, so you fall a little behind Orc and Night Elf in burst |
+| **Protection** | **4/5**{ .stars .s4 } | Crit gives rage, rage gives threat. Will to Survive breaks boss stuns that would otherwise drop your threat. Dwarf is stronger on mitigation |
 
 **Weapon choice:** without Sword or Mace Specialization, follow **Weaponmaster**: axes and polearms for crit stacking with Ruthless, swords for extra attacks, maces for armor penetration.
 

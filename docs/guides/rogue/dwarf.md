@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+  - Dwarf
+  - Alliance
+---
+
 # Dwarf Rogue
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Dwarf Rogue is a Classic combination. Forever made it much stronger. **Stoneform
 
 | Racial | Type | Rogue rating | Notes |
 |---|---|---|---|
-| **Stoneform** *(changed)* | Active | ★★★★★ PvP · ★★★ PvE | Removes bleeds, poisons and diseases, grants immunity to them, and reduces physical damage taken by 10% for 8 s. Kills enemy Rogue poisons and Rupture/Garrote, and Warrior Rend and Deep Wounds. In PvE it is a short defensive cooldown and a cleanse for poison-heavy dungeons |
-| **Find Treasure** | Active | ★★ | Tracks treasure chests. Pairs well with Lockpicking: open locked chests for coin and items |
-| **Artisan's Precision** *(new)* | Passive | ★★★★ | +1% hit with attacks and spells. Every Rogue wants hit until misses are rare |
-| **Big Game Hunter** *(new)* | Passive | ★★★ leveling · ★ raids | +5% damage against Beasts. A lot of leveling content is beasts; launch raid bosses mostly aren't |
+| **Stoneform** *(changed)* | Active | **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE | Removes bleeds, poisons and diseases, grants immunity to them, and reduces physical damage taken by 10% for 8 s. Kills enemy Rogue poisons and Rupture/Garrote, and Warrior Rend and Deep Wounds. In PvE it is a short defensive cooldown and a cleanse for poison-heavy dungeons |
+| **Find Treasure** | Active | **2/5**{ .stars .s2 } | Tracks treasure chests. Pairs well with Lockpicking: open locked chests for coin and items |
+| **Artisan's Precision** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% hit with attacks and spells. Every Rogue wants hit until misses are rare |
+| **Big Game Hunter** *(new)* | Passive | **3/5**{ .stars .s3 } leveling · **1/5**{ .stars .s1 } raids | +5% damage against Beasts. A lot of leveling content is beasts; launch raid bosses mostly aren't |
 
 ### Macros
 

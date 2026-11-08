@@ -1,3 +1,10 @@
+---
+tags:
+  - Shaman
+  - Tauren
+  - Horde
+---
+
 # Tauren Shaman
 
 !!! tip "Add-on"
@@ -11,10 +18,10 @@ Tauren are the Horde's spiritual heart: Thunder Bluff's Elder Rise is home to sh
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **War Stomp** | Active | ★★★★ | Stuns up to 5 nearby enemies for 2 s. Interrupts a pack of casters or buys time for a Lesser Healing Wave | The best racial for a Restoration Shaman in melee range: stomp, then heal |
-| **Cultivation** *(new)* | Active | ★★★ | Grows an herb anyone can gather. Herbalists get duplicate nodes or bonus herbs. Pairs well with Alchemy for your own mana potions | — |
-| **Plainsrunning** *(new)* | Passive | ★★ | +2% movement speed per stack while moving, up to +60%. Doesn't work while mounted, so it mostly helps before level 40 | On 5 November it was hotfixed to **no longer stack and to drop on flag pickup**, after Warsong Gulch abuse. Its current exact effect is unclear |
-| **Endurance** *(changed)* | Passive | ★★★ | +5% health. The beta hit and crit bonus was removed | More health for a healer in battlegrounds |
+| **War Stomp** | Active | **4/5**{ .stars .s4 } | Stuns up to 5 nearby enemies for 2 s. Interrupts a pack of casters or buys time for a Lesser Healing Wave | The best racial for a Restoration Shaman in melee range: stomp, then heal |
+| **Cultivation** *(new)* | Active | **3/5**{ .stars .s3 } | Grows an herb anyone can gather. Herbalists get duplicate nodes or bonus herbs. Pairs well with Alchemy for your own mana potions | — |
+| **Plainsrunning** *(new)* | Passive | **2/5**{ .stars .s2 } | +2% movement speed per stack while moving, up to +60%. Doesn't work while mounted, so it mostly helps before level 40 | On 5 November it was hotfixed to **no longer stack and to drop on flag pickup**, after Warsong Gulch abuse. Its current exact effect is unclear |
+| **Endurance** *(changed)* | Passive | **3/5**{ .stars .s3 } | +5% health. The beta hit and crit bonus was removed | More health for a healer in battlegrounds |
 
 **Macro: stomp and heal**
 
@@ -30,7 +37,7 @@ Tauren are the Horde's spiritual heart: Thunder Bluff's Elder Rise is home to sh
 
 Press War Stomp, then heal yourself. Keep them as two keys, since War Stomp has a short cast time.
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     The 5 November hotfix note for Plainsrunning is short. It says the racial "no longer stacks" and drops when you pick up a flag. Whether the speed bonus still works at all outside battlegrounds isn't clear. Test it in game.
 
 ## Starting zone: Camp Narache to Bloodhoof Village (1–12)

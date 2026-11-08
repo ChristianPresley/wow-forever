@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+  - Undead
+  - Horde
+---
+
 # Undead Warrior
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ The Undead Warrior is a PvP favorite. **Will of the Forsaken** breaks fear, char
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Will of the Forsaken** | Active | ★★★★★ | Breaks boss fears and charms | Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control effects. Shares nothing with Berserker Rage, so you have two fear breaks |
-| **Cannibalize** | Active | ★★★☆☆ | Free healing from humanoid and undead corpses between pulls | Recover between fights |
-| **Underwater Breathing** | Passive | ★★☆☆☆ | Underwater quests and the Drowned City approach | None |
-| **Touch of the Grave** *(new)* | Passive | ★★★☆☆ | A chance to drain 5% of max health (15 s internal cooldown). Small but constant sustain | Same |
+| **Will of the Forsaken** | Active | **5/5**{ .stars .s5 } | Breaks boss fears and charms | Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control effects. Shares nothing with Berserker Rage, so you have two fear breaks |
+| **Cannibalize** | Active | **3/5**{ .stars .s3 } | Free healing from humanoid and undead corpses between pulls | Recover between fights |
+| **Underwater Breathing** | Passive | **2/5**{ .stars .s2 } | Underwater quests and the Drowned City approach | None |
+| **Touch of the Grave** *(new)* | Passive | **3/5**{ .stars .s3 } | A chance to drain 5% of max health (15 s internal cooldown). Small but constant sustain | Same |
 
 !!! note "Value of Touch of the Grave"
     Warcraft Tavern calls its value for Warriors undecided. Its proc chance isn't published.
@@ -65,9 +72,9 @@ Undead start in **Deathknell**, **Tirisfal Glades**. Forever fills Tirisfal's em
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Arms** | ★★★★★ | Will of the Forsaken plus Berserker Rage counters Warlocks and Priests, the Warrior's worst matchups |
-| **Fury** | ★★★☆☆ | No damage racial; Touch of the Grave adds a little sustain |
-| **Protection** | ★★★★☆ | Fear and charm breaks keep you on the boss; Cannibalize between pulls |
+| **Arms** | **5/5**{ .stars .s5 } | Will of the Forsaken plus Berserker Rage counters Warlocks and Priests, the Warrior's worst matchups |
+| **Fury** | **3/5**{ .stars .s3 } | No damage racial; Touch of the Grave adds a little sustain |
+| **Protection** | **4/5**{ .stars .s4 } | Fear and charm breaks keep you on the boss; Cannibalize between pulls |
 
 **Leveling tip:** Cannibalize works on humanoid and undead corpses, which covers most of Tirisfal, Silverpine, Hillsbrad and the Scarlet Monastery.
 

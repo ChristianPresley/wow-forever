@@ -1,3 +1,10 @@
+---
+tags:
+  - Warlock
+  - Orc
+  - Horde
+---
+
 # Orc Warlock
 
 !!! tip "Add-on"
@@ -19,10 +26,10 @@ The original Horde Warlock, and the race most guides call the best fit for the c
 
 | Racial | Type | Rating | Warlock use |
 |---|---|---|---|
-| **Blood Fury** | Active | ★★★★★ | +10% attack power and spell power for 15 s, **2 min** cooldown (was 3). Use with your opener: Soul Fire for Destruction, Decimation Soul Fire for Demonology, or a fresh set of DoTs for Affliction (DoTs recalculate each tick, so keep them rolling during the window) |
-| **Shatter Curse** *(new)* | Active | ★★★★ PvP · ★★ PvE | Removes curses and Banes from you, then −5% magic damage taken for 8 s. Great in Warlock mirror matches (Curse of Exhaustion, Bane of Agony) and against curse-casting mobs and bosses in PvE |
-| **Command** | Passive | ★★★ | +5% demon damage. Your demon is roughly a fifth of Demonology's damage, less for the others. Wasted if you sacrifice your only demon |
-| **Hardiness** | Passive | ★★★★ PvP | −20% stun duration, always on. Combines with Felhunter and Soul Link for a sturdy duelist |
+| **Blood Fury** | Active | **5/5**{ .stars .s5 } | +10% attack power and spell power for 15 s, **2 min** cooldown (was 3). Use with your opener: Soul Fire for Destruction, Decimation Soul Fire for Demonology, or a fresh set of DoTs for Affliction (DoTs recalculate each tick, so keep them rolling during the window) |
+| **Shatter Curse** *(new)* | Active | **4/5**{ .stars .s4 } PvP · **2/5**{ .stars .s2 } PvE | Removes curses and Banes from you, then −5% magic damage taken for 8 s. Great in Warlock mirror matches (Curse of Exhaustion, Bane of Agony) and against curse-casting mobs and bosses in PvE |
+| **Command** | Passive | **3/5**{ .stars .s3 } | +5% demon damage. Your demon is roughly a fifth of Demonology's damage, less for the others. Wasted if you sacrifice your only demon |
+| **Hardiness** | Passive | **4/5**{ .stars .s4 } PvP | −20% stun duration, always on. Combines with Felhunter and Soul Link for a sturdy duelist |
 
 ### Macros
 

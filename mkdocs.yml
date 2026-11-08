@@ -8,7 +8,9 @@ copyright: Unofficial fan wiki. World of Warcraft and Blizzard Entertainment are
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
+  font: false
   icon:
     logo: material/sword-cross
     repo: fontawesome/brands/github
@@ -29,8 +31,15 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
+    - announce.dismiss
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
     - navigation.tabs
     - navigation.sections
+    - navigation.path
+    - navigation.prune
     - navigation.top
     - navigation.indexes
     - navigation.footer
@@ -39,10 +48,23 @@ theme:
     - search.share
     - content.tabs.link
     - content.action.edit
+    - content.tooltips
+    - content.footnote.tooltips
+    - content.code.copy
     - toc.follow
 
 extra_css:
+  - https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500..800;1,500..800&family=Alegreya+SC:wght@500;700&family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&display=swap
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/codex.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ChristianPresley/wow-forever
+      name: Source on GitHub
 
 markdown_extensions:
   - admonition
@@ -54,6 +76,8 @@ markdown_extensions:
   - abbr
   - toc:
       permalink: true
+      title: On this page
+      toc_depth: 3
   - pymdownx.details
   - pymdownx.keys
   - pymdownx.superfences
@@ -66,11 +90,18 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\-_,:!=\[\]()"`/'']+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: false
+      fallback_to_build_date: true
+  - privacy
 
 nav:
   - Home: index.md
-  - About Forever:
+  - About:
       - about/index.md
       - Timeline: about/timeline.md
       - Editions & Pricing: about/editions.md
@@ -80,7 +111,7 @@ nav:
       - Launch & Reception: about/reception.md
       - Developers & Interviews: about/developers.md
       - FAQ: about/faq.md
-  - Characters:
+  - Races & Classes:
       - characters/index.md
       - Races & Skyborne: characters/races.md
       - Classes:
@@ -106,7 +137,7 @@ nav:
       - Travel: world/travel.md
       - NPCs & Villains: world/npcs.md
       - World Events: world/events.md
-  - Content:
+  - Dungeons & Raids:
       - content/index.md
       - Dungeons:
           - content/dungeons/index.md
@@ -128,7 +159,7 @@ nav:
           - content/pvp/index.md
           - Battlegrounds: content/pvp/battlegrounds.md
       - Roadmap: content/roadmap.md
-  - Guides:
+  - Class Guides:
       - guides/index.md
       - Druid:
           - guides/druid/index.md
@@ -204,7 +235,7 @@ nav:
           - "Tauren": guides/warrior/tauren.md
           - "Undead": guides/warrior/undead.md
           - "Skyborne (Windshaper)": guides/warrior/skyborne-windshaper.md
-  - Systems:
+  - Game Systems:
       - systems/index.md
       - Camping: systems/camping.md
       - Add-ons & UI: systems/addons.md
@@ -216,6 +247,7 @@ nav:
       - community/index.md
       - Resources: community/resources.md
       - Glossary: community/glossary.md
+      - Tags: tags.md
       - Sources: sources.md
       - About this wiki: about-this-wiki.md
 

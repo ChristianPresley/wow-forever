@@ -27,7 +27,7 @@ All times are as reported by sources. 23:00 UTC is 3 PM PST.
 | 28 Oct 2026 | Microsoft CEO Satya Nadella cites the "largest beta in franchise history" on an earnings call |
 | 30 Oct 2026 | Blizzard publishes beta recap stats (8.86M characters created) |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     BlizzCon roadmaps showed the beta ending 22 Oct. It actually closed 23 Oct.
 
 ## Launch
@@ -40,7 +40,7 @@ All times are as reported by sources. 23:00 UTC is 3 PM PST.
 | 6 Nov 2026 | @Warcraft: "biggest launch in WoW history by peak concurrent players". Hotfix improves long-range player visibility. The Americas region is restarted during peak hours |
 | 7 Nov 2026 | Build 70862 is the current client |
 
-!!! warning "Conflict"
+!!! conflict "Conflict"
     Insider Gaming mentioned a "November 9 worldwide launch". That claim appears nowhere else and is almost certainly wrong.
 
 ## Roadmap

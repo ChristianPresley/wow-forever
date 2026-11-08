@@ -1,3 +1,10 @@
+---
+tags:
+  - Hunter
+  - Night Elf
+  - Alliance
+---
+
 # Night Elf Hunter
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ The reason is **Elune's Light**, a new +10% crit cooldown for 15 s. Lined up wit
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Elune's Light** *(new)* | Active | ★★★★★ | +10% crit for 15 s. Use on pull with Rapid Fire; your pet inherits your crit, so it gains too | Burst window: open with it, Aimed Shot, Arcane Shot |
-| Shadowmeld | Active | ★★★★ | Method: 10 s cooldown out of combat, 2 min in combat, and it **drops you to the bottom of the threat table**. A second Feign Death in dungeons | Reset fights, ambush flag carriers, wait out a Rogue's stealth |
-| Quickness | Passive | ★★★ | +1% dodge and +2% run speed: more survivability and faster kiting | Kiting melee |
-| Wisp Spirit | Passive | ★★ | Faster corpse runs as a wisp | Faster return after a battleground death |
+| **Elune's Light** *(new)* | Active | **5/5**{ .stars .s5 } | +10% crit for 15 s. Use on pull with Rapid Fire; your pet inherits your crit, so it gains too | Burst window: open with it, Aimed Shot, Arcane Shot |
+| Shadowmeld | Active | **4/5**{ .stars .s4 } | Method: 10 s cooldown out of combat, 2 min in combat, and it **drops you to the bottom of the threat table**. A second Feign Death in dungeons | Reset fights, ambush flag carriers, wait out a Rogue's stealth |
+| Quickness | Passive | **3/5**{ .stars .s3 } | +1% dodge and +2% run speed: more survivability and faster kiting | Kiting melee |
+| Wisp Spirit | Passive | **2/5**{ .stars .s2 } | Faster corpse runs as a wisp | Faster return after a battleground death |
 
 Bow Specialization and Nature Resistance are gone.
 

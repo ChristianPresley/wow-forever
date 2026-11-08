@@ -1,3 +1,10 @@
+---
+tags:
+  - Mage
+  - Gnome
+  - Alliance
+---
+
 # Gnome Mage
 
 !!! tip "Add-on"
@@ -19,10 +26,10 @@ Gnome Mage is the original "glass-cannon with an escape hatch". Forever adds **E
 
 | Racial | Type | Rating | Mage use |
 |---|---|---|---|
-| **Escape Artist** | Active | ★★★★★ PvP · ★★ PvE | Removes roots and snares and gives 3 s immunity. Breaks Frost Nova, Hamstring, Entangling Roots and Frostbite, then you Blink away |
-| **Eureka!** *(new)* | Active | ★★★★ | For 8 s, non-periodic abilities cost 10% less and deal 10% more. Fits Arcane Blast chains, Fireball/Pyroblast, Ice Lance shatters. It does not boost DoTs such as Ignite or Frostfire Bolt's tick |
-| **Expansive Mind** | Passive | ★★★ | +5% maximum mana. More casts per drink and a bigger Arcane burn phase |
-| **Engineering Specialization** | Passive | ★★ | 20% fewer device failures. Only matters if you take Engineering, but Engineering is a strong PvP pick |
+| **Escape Artist** | Active | **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE | Removes roots and snares and gives 3 s immunity. Breaks Frost Nova, Hamstring, Entangling Roots and Frostbite, then you Blink away |
+| **Eureka!** *(new)* | Active | **4/5**{ .stars .s4 } | For 8 s, non-periodic abilities cost 10% less and deal 10% more. Fits Arcane Blast chains, Fireball/Pyroblast, Ice Lance shatters. It does not boost DoTs such as Ignite or Frostfire Bolt's tick |
+| **Expansive Mind** | Passive | **3/5**{ .stars .s3 } | +5% maximum mana. More casts per drink and a bigger Arcane burn phase |
+| **Engineering Specialization** | Passive | **2/5**{ .stars .s2 } | 20% fewer device failures. Only matters if you take Engineering, but Engineering is a strong PvP pick |
 
 ### Macros
 

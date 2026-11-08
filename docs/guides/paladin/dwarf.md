@@ -1,3 +1,10 @@
+---
+tags:
+  - Paladin
+  - Dwarf
+  - Alliance
+---
+
 # Dwarf Paladin
 
 !!! tip "Add-on"
@@ -18,10 +25,10 @@ Ironforge is also home to the new [Hall of Thanes](../../content/dungeons/hall-o
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Stoneform** | Active | ★★★★★ | Removes and blocks bleeds, poisons and diseases; −10% physical damage for 8 s. Use it as a short tank cooldown, or to clear diseases in Scholomance and Stratholme | Cleanses rogue poisons and warrior bleeds; the damage cut helps against burst |
-| **Artisan's Precision** | Passive | ★★★★☆ | +1% hit with attacks and spells. Fewer missed Judgements and Holy Strikes | Fewer misses on Hammer of Justice and Repentance |
-| **Big Game Hunter** | Passive | ★★★☆☆ | +5% damage to Beasts. Strong while leveling; useful against beast bosses | Druids in animal forms are *not* confirmed to count as Beasts |
-| **Find Treasure** | Active | ★★☆☆☆ | Tracks treasure chests, which have a chance for better loot | — |
+| **Stoneform** | Active | **5/5**{ .stars .s5 } | Removes and blocks bleeds, poisons and diseases; −10% physical damage for 8 s. Use it as a short tank cooldown, or to clear diseases in Scholomance and Stratholme | Cleanses rogue poisons and warrior bleeds; the damage cut helps against burst |
+| **Artisan's Precision** | Passive | **4/5**{ .stars .s4 } | +1% hit with attacks and spells. Fewer missed Judgements and Holy Strikes | Fewer misses on Hammer of Justice and Repentance |
+| **Big Game Hunter** | Passive | **3/5**{ .stars .s3 } | +5% damage to Beasts. Strong while leveling; useful against beast bosses | Druids in animal forms are *not* confirmed to count as Beasts |
+| **Find Treasure** | Active | **2/5**{ .stars .s2 } | Tracks treasure chests, which have a chance for better loot | — |
 
 !!! note "Cooldowns"
     Stoneform's Forever cooldown isn't published. In Classic it was 3 minutes.

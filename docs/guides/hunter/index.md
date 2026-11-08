@@ -1,3 +1,10 @@
+---
+tags:
+  - Hunter
+search:
+  boost: 2
+---
+
 # Hunter Guide
 
 !!! info "Current as of 7 November 2026"
@@ -7,6 +14,9 @@
 
 The Hunter is a ranged physical damage dealer who fights alongside a tamed beast. Forever keeps that core and adds three real choices: a pet-focused **Beast Mastery**, a **Marksmanship** that can drop the pet entirely, and a **Survival** rebuilt around melee, traps and bleeds.
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Hunter at a glance</p>
+
 | | |
 |---|---|
 | **Roles** | Damage (ranged or melee). Pets can off-tank solo content |
@@ -14,6 +24,8 @@ The Hunter is a ranged physical damage dealer who fights alongside a tamed beast
 | **Resource** | Mana (pets use Focus) |
 | **Leveling speed** | **Fastest class in the beta**, ahead of Warlock and Mage |
 | **Difficulty** | Easy to level, harder to master (pet control, the 8-yard deadzone, mana) |
+
+</aside>
 
 **Strengths**
 
@@ -92,7 +104,7 @@ Talent points start at **level 10**, one per level, for **51 points at 60**. The
     | Mortal Shots, Ranged Weapon Specialization | Classic-style damage talents |
     | **Sniper Shot** | 31-point capstone: **4 s cast, 15 s cooldown, 45 yd range**; the next three shots gain +10 yd range |
 
-    !!! note "Conflict"
+    !!! conflict "Conflict"
         One search-result summary describes Sniper Shot as having a "4-second cooldown". Warcraft Tavern's Marksmanship guide and the class page both give a **4 s cast** and **15 s cooldown**; this guide uses those.
 
 === "Survival"
@@ -129,7 +141,7 @@ Talent calculators show builds as images, so exact rank-by-rank orders aren't pu
 | 31–40 | Frenzy, Bestial Wrath line (*Classic-era layout, unconfirmed*) | Untested in beta |
 | 40–60 | Finish BM, then dip Marksmanship for Efficiency/Lethal Attacks | Respec to MM for raids at 60 |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Warcraft Tavern's two Hunter pages disagree on the level-30 BM focus: Bestial Swiftness + Ferocity (leveling guide) versus Unleashed Fury + Ferocity with Bestial Discipline (class overview). Both work; Bestial Discipline helps more if you run out of mana.
 
 **Endgame builds (theory until raids open on 9 December):**
@@ -281,7 +293,7 @@ Hunters leveled fastest in the beta. Dungeon mobs give less XP and dungeon quest
     - **Dungeons:** Maraudon, Sunken Temple, [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60), Blackrock Depths, then the 60 dungeons and [Shaper's Terrace](../../content/dungeons/shapers-terrace.md).
     - Start the **Onyxia attunement** early; it runs through Blackrock Spire.
 
-!!! note "Conflict: library-book quests"
+!!! conflict "Conflict: library-book quests"
     The [leveling page](../../characters/leveling.md#carried-over-from-season-of-discovery) says 10/20/25 books unlock quests at levels **20/35/45**. Warcraft Tavern's library-book guide lists the same book counts as unlocking *Friend of the Library* rewards at levels **1/20/30** (the 25-book tier offers a bow, *Truthseeker's Bow*, among other rewards). Neither source describes a Hunter-only quest. Check with Garion Wendell or Owen Thadd in game.
 
 !!! warning "No Rhok'delar yet"

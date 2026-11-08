@@ -33,5 +33,5 @@ The classic three-phase fight with heavy fire damage. Fire resistance gear is re
     5. Four "Test of Skulls" kills: Scryer, Somnus, Chronalis, Axtroz.
     6. *Dull Drakefire Amulet* → Drakkisath's blood from UBRS → back to Rexxar.
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     One Blizzard video said Onyxia was available "at launch". The roadmap and launch article put all three raids on 9 Dec.

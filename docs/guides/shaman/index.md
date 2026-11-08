@@ -1,3 +1,10 @@
+---
+tags:
+  - Shaman
+search:
+  boost: 2
+---
+
 # Shaman Guide
 
 !!! info "Current as of 7 November 2026"
@@ -7,6 +14,9 @@
 
 The Shaman is a hybrid that can fill **any non-tank role**: ranged caster (Elemental), melee (Enhancement) or healer (Restoration). Your toolkit is your **totems**: four elements, one totem of each at a time. They buff your group, heal it, cleanse it or hurt enemies.
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Shaman at a glance</p>
+
 | | |
 |---|---|
 | **Roles** | Ranged DPS, melee DPS, healer |
@@ -14,6 +24,8 @@ The Shaman is a hybrid that can fill **any non-tank role**: ranged caster (Eleme
 | **Weapons** | Maces, staves, fist weapons, daggers, axes; **two-handed axes and maces are now baseline** |
 | **Resource** | Mana |
 | **Races** | [Dwarf](dwarf.md) (Alliance, **new**), [Orc](orc.md), [Troll](troll.md), [Tauren](tauren.md), [Skyborne Windshaper](skyborne-windshaper.md) (Horde only, **new**) |
+
+</aside>
 
 **Strengths**
 
@@ -111,7 +123,7 @@ Exact point-by-point builds for the launch talent trees have not been published 
 | Endgame Enhancement | 8 / 35 / 8 | Warcraft Tavern | Elemental Devastation, Mindfulness, Ancestral Knowledge 4/5 |
 | Endgame Restoration | 0 / 10 / 41 | Warcraft Tavern | Thundering Strikes and Ancestral Knowledge only |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Warcraft Tavern's builds were made before the **3 November** launch build, which removed Lava Burst, added Call of Thunder and renamed Elemental Mastery to Lightning Mastery. Its Elemental build may still assume the old tree. Check the in-game talent pane before you commit points.
 
 **Leveling milestones (general guidance)**
@@ -371,7 +383,7 @@ Warcraft Tavern's stat priorities (beta; the author expects them to change at le
 | **Enhancement** | Weapon damage > Hit (at least 8%) > Intellect / Strength > Spell Penetration / Spell Power > Crit > Agility |
 | **Restoration** | Healing Power > Intellect > Haste > MP5 > Spirit > Crit |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     The Enhancement order above values Intellect as much as Strength, and lists an expertise target (6.5%) that no other source mentions. Blizzard's **planned 10 November tuning** will make **Strength** the top Enhancement stat. Plan for Strength and attack power, with some Intellect.
 
 - **Weapons:** a slow two-hander for Enhancement (Windfury rewards slow hits). A one-hand caster weapon plus shield or off-hand for Elemental and Restoration. The Level 30 Air totem quest weapon carries you a long way.

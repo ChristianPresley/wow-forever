@@ -1,3 +1,10 @@
+---
+tags:
+  - Paladin
+  - Undead
+  - Horde
+---
+
 # Undead Paladin
 
 !!! tip "Add-on"
@@ -26,12 +33,12 @@ Forever is set in 25 ADP, right after the Warcraft III campaign *[Forsaken Kingd
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Will of the Forsaken** | Active, 2 min | ★★★★★ | Breaks fear, charm and sleep on bosses that use them | Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control. No lasting immunity in Forever. Doesn't work under Scatter Shot |
-| **Cannibalize** | Active, 2 min | ★★★★☆ | Restores 7% health **and mana** every 2 s for 10 s from a humanoid or undead corpse. Big for leveling downtime | Out-of-combat recovery between fights. Now usable while immune to physical damage, so Divine Protection or Blessing of Protection won't block it |
-| **Touch of the Grave** | Passive | ★★★☆☆ | 20% chance on melee hits and damaging spells to drain up to 5% of max health, 15 s internal cooldown. Retribution and Protection proc it constantly | A free self-heal every 15 s in long fights |
-| **Underwater Breathing** | Passive | ★☆☆☆☆ | +300% breath. Handy for the Wolfsbane naga and lumber steps | — |
+| **Will of the Forsaken** | Active, 2 min | **5/5**{ .stars .s5 } | Breaks fear, charm and sleep on bosses that use them | Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control. No lasting immunity in Forever. Doesn't work under Scatter Shot |
+| **Cannibalize** | Active, 2 min | **4/5**{ .stars .s4 } | Restores 7% health **and mana** every 2 s for 10 s from a humanoid or undead corpse. Big for leveling downtime | Out-of-combat recovery between fights. Now usable while immune to physical damage, so Divine Protection or Blessing of Protection won't block it |
+| **Touch of the Grave** | Passive | **3/5**{ .stars .s3 } | 20% chance on melee hits and damaging spells to drain up to 5% of max health, 15 s internal cooldown. Retribution and Protection proc it constantly | A free self-heal every 15 s in long fights |
+| **Underwater Breathing** | Passive | **1/5**{ .stars .s1 } | +300% breath. Handy for the Wolfsbane naga and lumber steps | — |
 
-!!! note "Conflict: when Touch of the Grave changed"
+!!! conflict "Conflict: when Touch of the Grave changed"
     One source dates the cooldown cut (25 s → 15 s) to the 27 October patch; another to the 2 November notes. Both agree it is 15 s at launch. It does not proc from heals.
 
 Undead no longer have Shadow Resistance; Forever removed racial resistances.
@@ -69,7 +76,7 @@ You begin at **Deathknell** in Tirisfal Glades. Trainers: **Aramis Hammerhand** 
 | 10–12 | Undercity | *A Token of Good Faith*: deliver the head to Sylvanas (Royal Quarter) |
 | 12 | Undercity, Venomweb Vale, keep | *A Lesson in Divinity* (Danitha): bring 10 Linen Cloth to **Tanis Alderwood** (Trade Quarter), take the **Symbol of Life**, resurrect **Deathguard Falgan** at Venomweb Vale, collect Scarlet Crusade attack plans, report to **Deathguard Billmuth**, then back to Danitha. Reward: **Redemption** |
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     - *A Second Home* is "level 8" (ForG) or "level 11, available from 8" (ChaosBoost).
     - ForeverDB names the Redemption quest *The Tome of Divinity*, Classic's Alliance name. The two quest-tracking sources call it *A Lesson in Divinity*.
     - Deathguard Billmuth is placed "at the keep" in one source but pinned at 86.6, 47.6, which isn't near the keep. Check your quest map.
@@ -109,7 +116,7 @@ The Forsaken counterpart of the Alliance's *Verigan's Fist*. Start: **Danitha Mo
 
 **Wolfsbane:** two-handed, 3.40 speed, about 25.6 DPS, +9 Stamina, +10 Intellect, with a Holy damage proc that triples against wolves and worgen. A fine Seal of Command weapon. Reportedly also gives Undercity, Orgrimmar and Earthen Ring reputation.
 
-!!! note "Conflict: Wolfsbane's level"
+!!! conflict "Conflict: Wolfsbane's level"
     ForG says the chain finishes around level 20; ChaosBoost calls Old Fire-Eye a level-26 elite. The dungeon steps (SFK, Deadmines) suggest low-to-mid 20s is realistic.
 
 ## Faction-specific notes

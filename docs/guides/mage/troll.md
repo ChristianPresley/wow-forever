@@ -1,3 +1,10 @@
+---
+tags:
+  - Mage
+  - Troll
+  - Horde
+---
+
 # Troll Mage
 
 !!! tip "Add-on"
@@ -19,10 +26,10 @@ Troll Mage is the classic Horde PvE caster. **Berserking** now gives a flat +10%
 
 | Racial | Type | Rating | Mage use |
 |---|---|---|---|
-| **Berserking** | Active | ★★★★★ PvE · ★★★ PvP | +10% cast and attack speed for **15 s** (was 10 in beta). More Arcane Blasts in a burn, faster Pyroblast hard-casts, quicker Frostbolts |
-| **Rapid Regeneration** *(new)* | Active | ★★★ leveling · ★★ PvE | Regenerates 50% of max health over 6 s; any action cancels it. Use it while you drink so you only need water, not food |
-| **Beast Slaying** | Passive | ★★ leveling | +5% damage to Beasts. Plenty of beast quests while leveling; little use in raids |
-| **Regeneration** | Passive | ★★ | +20% health regen, part of it in combat. Small but constant |
+| **Berserking** | Active | **5/5**{ .stars .s5 } PvE · **3/5**{ .stars .s3 } PvP | +10% cast and attack speed for **15 s** (was 10 in beta). More Arcane Blasts in a burn, faster Pyroblast hard-casts, quicker Frostbolts |
+| **Rapid Regeneration** *(new)* | Active | **3/5**{ .stars .s3 } leveling · **2/5**{ .stars .s2 } PvE | Regenerates 50% of max health over 6 s; any action cancels it. Use it while you drink so you only need water, not food |
+| **Beast Slaying** | Passive | **2/5**{ .stars .s2 } leveling | +5% damage to Beasts. Plenty of beast quests while leveling; little use in raids |
+| **Regeneration** | Passive | **2/5**{ .stars .s2 } | +20% health regen, part of it in combat. Small but constant |
 
 ### Macros
 

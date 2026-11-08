@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+  - Orc
+  - Horde
+---
+
 # Orc Rogue
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Orc Rogue is a Classic combination, and both Method and Warcraft Tavern pick Orc
 
 | Racial | Type | Rogue rating | Notes |
 |---|---|---|---|
-| **Blood Fury** | Active | ★★★★★ | +10% attack power for 15 s, 2-minute cooldown. Use it with every major cooldown, and on every pull while leveling |
-| **Shatter Curse** *(new)* | Active | ★★★ PvP · ★★ PvE | Removes curses and Warlock Banes, and you take 5% less magic damage for 8 s. Strong against Warlocks and cursing casters, which Rogues normally can't cleanse |
+| **Blood Fury** | Active | **5/5**{ .stars .s5 } | +10% attack power for 15 s, 2-minute cooldown. Use it with every major cooldown, and on every pull while leveling |
+| **Shatter Curse** *(new)* | Active | **3/5**{ .stars .s3 } PvP · **2/5**{ .stars .s2 } PvE | Removes curses and Warlock Banes, and you take 5% less magic damage for 8 s. Strong against Warlocks and cursing casters, which Rogues normally can't cleanse |
 | **Command** | Passive | — | +5% pet damage. Rogues have no pet |
-| **Hardiness** | Passive | ★★★★ PvP · ★ PvE | Stuns last 20% less. Cheap Shot, Kidney Shot, Hammer of Justice and Charge stuns all shorten |
+| **Hardiness** | Passive | **4/5**{ .stars .s4 } PvP · **1/5**{ .stars .s1 } PvE | Stuns last 20% less. Cheap Shot, Kidney Shot, Hammer of Justice and Charge stuns all shorten |
 
 !!! note "Blood Fury penalty"
     The Classic version reduced healing received. The Forever racial list doesn't mention a penalty. Check the tooltip.

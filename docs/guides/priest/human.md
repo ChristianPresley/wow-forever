@@ -1,3 +1,10 @@
+---
+tags:
+  - Priest
+  - Human
+  - Alliance
+---
+
 # Human Priest
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Human Priest is a classic Alliance pick and **not a new combination**. It is the
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **Will to Survive** *(new)* | Active | Rarely needed; breaks a stun from a mob during a bad pull | Top-tier. Breaks Rogue openers, Hammer of Justice, Charge stuns | ★★★★★ PvP / ★★ PvE |
-| **Perception** | Active | Spots stealthed mobs in some dungeons | Finds Rogues and Druids before they open on you | ★★★ |
-| **Ruthless** *(new)* | Passive | +1% crit: more Inspiration, Divine Aegis and Renewed Hope procs for healers; more damage for Shadow | Same | ★★★★ |
-| **The Human Spirit** | Passive | **+10% Spirit** (was 5%). Faster mana between pulls while leveling; more in-combat regen through Meditation | Longer fights | ★★★★ |
+| **Will to Survive** *(new)* | Active | Rarely needed; breaks a stun from a mob during a bad pull | Top-tier. Breaks Rogue openers, Hammer of Justice, Charge stuns | **5/5**{ .stars .s5 } PvP / **2/5**{ .stars .s2 } PvE |
+| **Perception** | Active | Spots stealthed mobs in some dungeons | Finds Rogues and Druids before they open on you | **3/5**{ .stars .s3 } |
+| **Ruthless** *(new)* | Passive | +1% crit: more Inspiration, Divine Aegis and Renewed Hope procs for healers; more damage for Shadow | Same | **4/5**{ .stars .s4 } |
+| **The Human Spirit** | Passive | **+10% Spirit** (was 5%). Faster mana between pulls while leveling; more in-combat regen through Meditation | Longer fights | **4/5**{ .stars .s4 } |
 
 **Priest spells unique to Humans**
 

@@ -1,3 +1,10 @@
+---
+tags:
+  - Shaman
+  - Skyborne
+  - Horde
+---
+
 # Skyborne (Windshaper) Shaman
 
 !!! tip "Add-on"
@@ -17,12 +24,12 @@ The Windshapers feel indebted to the air spirits that vanished from Zephras Isle
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Wind Blessed** | Passive | ★★★★★ | Permanent haste for every spec. More casts, more swings, more Windfury and Flurry chances | Always on |
-| **Elemental Insight** | Passive | ★★★ | +5% damage to Elementals. Useful against the many elementals in Silithus, Un'Goro, Azshara and (probably) Hyjal | — |
-| **Walk on Air** | Active | ★★★ | A 10 s controlled glide. Cancels fall damage and opens shortcuts off cliffs | Escape route off high ground, for example in Arathi Basin |
-| **Skysight** *(Windshaper only)* | Active | ★★★ | +15% movement speed for 15 s. At an **elemental convergence** it grants *Charged* for 1 hour, raising the bonus to +30% | Chases or escapes; stacks with Ghost Wolf *(unconfirmed)* |
+| **Wind Blessed** | Passive | **5/5**{ .stars .s5 } | Permanent haste for every spec. More casts, more swings, more Windfury and Flurry chances | Always on |
+| **Elemental Insight** | Passive | **3/5**{ .stars .s3 } | +5% damage to Elementals. Useful against the many elementals in Silithus, Un'Goro, Azshara and (probably) Hyjal | — |
+| **Walk on Air** | Active | **3/5**{ .stars .s3 } | A 10 s controlled glide. Cancels fall damage and opens shortcuts off cliffs | Escape route off high ground, for example in Arathi Basin |
+| **Skysight** *(Windshaper only)* | Active | **3/5**{ .stars .s3 } | +15% movement speed for 15 s. At an **elemental convergence** it grants *Charged* for 1 hour, raising the bonus to +30% | Chases or escapes; stacks with Ghost Wolf *(unconfirmed)* |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Sources give **Wind Blessed** as 1%, 2% or 3% haste. The latest official notes say **2%**. **Walk on Air** has a cooldown of 1.5 or 2 minutes depending on the source.
 
 **Macro**

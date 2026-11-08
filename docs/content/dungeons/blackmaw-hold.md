@@ -18,5 +18,5 @@ The furbolg city of the **Blackmaw clan** sits behind a long-sealed gate, and th
 - **Boss:** **Varrox Bleakhoof**.
 - **Datamined items:** *Blackmaw Pouch* (possibly reputation-related), *Blackmaw Ritual Totem*.
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     GosuGamers (citing Wowhead) reports "20+ bosses" and no single route. Zockify counts 7. Neither figure is verified.

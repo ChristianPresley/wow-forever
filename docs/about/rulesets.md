@@ -10,7 +10,7 @@ Forever has **no realm list**. Before creating a character you pick a **Ruleset*
 - **Layering:** Blizzard has published no technical details. At launch some zones felt empty. Josh Greenfield acknowledged it, and a 6 Nov hotfix improved long-range visibility of other players.
 - **World refresh safety:** a new system checks that you are in a safe spot before the world refreshes around you. This applies to every ruleset.
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Some coverage (citing Wowhead) describes one global megaserver per ruleset. The Warcraft Wiki and Method say per region, and per-region name uniqueness supports that reading.
 
 ### Launch capacity (@Warcraft, 4 Nov)
@@ -31,7 +31,7 @@ These are capacity figures, not usage, and the regions they cover were not state
 | **Roleplay PvP (RP-PvP)** | RP rules plus PvP | One faction (unconfirmed) | Launch |
 | **Hardcore** | Permadeath. A closed ecosystem | Both | Winter 2026/27 ([details](hardcore.md)) |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Several outlets (TweakTown, Gfinity, mein-mmo) count three or four rulesets. Blizzard's official article lists **RP-PvP** as a separate fourth launch ruleset, with Hardcore to follow.
 
 ## Cross-ruleset rules

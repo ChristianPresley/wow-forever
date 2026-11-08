@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+  - Skyborne
+  - Alliance
+---
+
 # Skyborne (High Order) Warrior
 
 !!! tip "Add-on"
@@ -17,12 +24,12 @@
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Walk on Air** | Active | ★★★☆☆ | A 10 s controlled glide. Skip paths, survive falls | Escape off ledges in battlegrounds; Charge works again once you land |
-| **Read Ley Line** | Active | ★★☆☆☆ | +50% regen for 15 s (+100% while *Attuned* at a Ley Line). For a Warrior, only health regen matters, so it mainly shortens downtime | Minimal |
-| **Wind Blessed** | Passive | ★★★☆☆ | +haste (2% in the latest notes). Faster swings mean more rage | Same |
-| **Elemental Insight** | Passive | ★★☆☆☆ | +5% damage vs Elementals. Good on Zephras Isle and in some dungeons | None |
+| **Walk on Air** | Active | **3/5**{ .stars .s3 } | A 10 s controlled glide. Skip paths, survive falls | Escape off ledges in battlegrounds; Charge works again once you land |
+| **Read Ley Line** | Active | **2/5**{ .stars .s2 } | +50% regen for 15 s (+100% while *Attuned* at a Ley Line). For a Warrior, only health regen matters, so it mainly shortens downtime | Minimal |
+| **Wind Blessed** | Passive | **3/5**{ .stars .s3 } | +haste (2% in the latest notes). Faster swings mean more rage | Same |
+| **Elemental Insight** | Passive | **2/5**{ .stars .s2 } | +5% damage vs Elementals. Good on Zephras Isle and in some dungeons | None |
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     Wind Blessed is listed as 1%, 2% or 3% haste in different sources; the latest official notes say **2%**. Walk on Air's cooldown is given as 1.5 or 2 minutes.
 
 ## Starting zone walkthrough (1–12)
@@ -62,9 +69,9 @@ The High Order airship lands in north **Dalaran** in the Alterac Mountains, a le
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Fury** | ★★★☆☆ | Wind Blessed's haste means more swings and more Flurry; there's no burst cooldown |
-| **Arms** | ★★★☆☆ | Fine for leveling; Walk on Air helps you escape in PvP but doesn't help you kill |
-| **Protection** | ★★☆☆☆ | No mitigation or health racial |
+| **Fury** | **3/5**{ .stars .s3 } | Wind Blessed's haste means more swings and more Flurry; there's no burst cooldown |
+| **Arms** | **3/5**{ .stars .s3 } | Fine for leveling; Walk on Air helps you escape in PvP but doesn't help you kill |
+| **Protection** | **2/5**{ .stars .s2 } | No mitigation or health racial |
 
 **Leveling tip:** Walk on Air lets you glide off cliffs straight to your next quest, especially in Alterac, Hillsbrad and Stonetalon. Read Ley Line cuts your eating time after hard pulls.
 

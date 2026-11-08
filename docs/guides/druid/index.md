@@ -1,3 +1,10 @@
+---
+tags:
+  - Druid
+search:
+  boost: 2
+---
+
 # Druid Guide
 
 !!! info "Status: 7 November 2026"
@@ -7,12 +14,17 @@
 
 The Druid is the hybrid of hybrids. With one character you can tank (Bear), deal melee damage (Cat), cast at range (Balance/Moonkin) or heal (Restoration), and swap between the first two mid-fight. Forever's main change is that **forms are no longer a trap**. Potions, most consumables, weapon enchants and procs all work in form. Form auto-attacks use your weapon's DPS. Most doors and objects can be used without shifting out.
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Druid at a glance</p>
+
 | | |
 |---|---|
 | **Roles** | Tank (Bear), melee DPS (Cat), ranged DPS (Balance), healer (Restoration) |
 | **Armor / weapons** | Leather (cloth and leather early), staves, maces, daggers, fist weapons, polearms (trainer at 20), off-hand items |
 | **Resources** | Mana (caster), Rage (Bear), Energy (Cat). Mana is hidden in form unless you turn on the Personal Resource Display |
 | **Factions** | Both |
+
+</aside>
 
 **Strengths**
 
@@ -109,7 +121,7 @@ Forever reworked all three trees and added a **16-point tier** alongside the cla
 | **Restoration (endgame)** | Raid/dungeon healer | Heart of the Wild, Reflection, Gift of the Earthmother, Swiftmend, Living Spirit, Nature's Swiftness, Bloom, Wild Growth. |
 | **Moonkin (endgame)** | Raid caster | Deep Balance through Eclipse and Moonkin Form. |
 
-!!! note "Conflict: talent names"
+!!! conflict "Conflict: talent names"
     Warcraft Tavern calls the Cat speed talent *Feral Swiftness*. Method calls it *Feline Swiftness*, with a different spell ID. They seem to be the same slot in the tree, but it may have been renamed.
 
 ---
@@ -171,7 +183,7 @@ From trainer and quest tables on Warcraft Tavern and Method. Levels marked *(fan
 
     Kami-labs' bear simulation put Maul, Lacerate and Primal Bite at roughly 35/26/16% of damage. The exact numbers will change after the 4 Nov threat hotfix, but the shape holds.
 
-    !!! note "Conflict: opener"
+    !!! conflict "Conflict: opener"
         Warcraft Tavern's leveling guide stacks Lacerate before Primal Bite. Its Feral guide and Kami-labs' simulation press Primal Bite first. Primal Bite first is the safer threat opener.
 
 === "Balance"
@@ -352,10 +364,10 @@ See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/batt
 | **Restoration** | Healing Power > mana regeneration (Spirit with Reflection, MP5) > Intellect > Stamina |
 | **Leveling (Feral)** | Strength/Agility/AP > Stamina > Intellect/Spirit > Armor |
 
-!!! note "Conflict: leveling stats"
+!!! conflict "Conflict: leveling stats"
     Warcraft Tavern says Strength/Agility first. Method suggests Intellect and Spirit pieces for leveling, to keep mana up for shifting. Both work. Spirit helps a Balance or mixed playstyle; Strength/Agility kills faster as Cat.
 
-!!! note "Conflict: Expertise"
+!!! conflict "Conflict: Expertise"
     Warcraft Tavern's Feral guide mentions an Expertise cap after Hit. Expertise isn't in the Classic stat system, and no other source mentions it in Forever. Treat as *unconfirmed*.
 
 **Weapons:** form damage uses your weapon's DPS, so a high-DPS staff, polearm or two-hander matters. Weapon enchants (Crusader) and weightstones work in form.

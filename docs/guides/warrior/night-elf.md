@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+  - Night Elf
+  - Alliance
+---
+
 # Night Elf Warrior
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ Forever gives Night Elves a proper damage cooldown: **Elune's Light**, +10% crit
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Elune's Light** *(new)* | Active | ★★★★★ | +10% crit for 15 s. Use it with Death Wish or Recklessness; tanks can use it for a rage and threat spike on a pull | A burst window for Mortal Strike |
-| **Shadowmeld** | Active | ★★★☆☆ | Drop out of combat to drink or eat, or dump threat as DPS *(Classic behavior; check in game)* | Ambush flag carriers; break targeting |
-| **Quickness** | Passive | ★★★☆☆ | +1% dodge (tanks) and +2% run speed | The speed helps you stay on targets |
-| **Wisp Spirit** | Passive | ★★☆☆☆ | Faster corpse runs | Same |
+| **Elune's Light** *(new)* | Active | **5/5**{ .stars .s5 } | +10% crit for 15 s. Use it with Death Wish or Recklessness; tanks can use it for a rage and threat spike on a pull | A burst window for Mortal Strike |
+| **Shadowmeld** | Active | **3/5**{ .stars .s3 } | Drop out of combat to drink or eat, or dump threat as DPS *(Classic behavior; check in game)* | Ambush flag carriers; break targeting |
+| **Quickness** | Passive | **3/5**{ .stars .s3 } | +1% dodge (tanks) and +2% run speed | The speed helps you stay on targets |
+| **Wisp Spirit** | Passive | **2/5**{ .stars .s2 } | Faster corpse runs | Same |
 
 **Macro: burst**
 
@@ -61,9 +68,9 @@ Night Elves start in **Shadowglen**, **Teldrassil**. Blizzard says Shadowglen go
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Fury** | ★★★★★ | Elune's Light's +10% crit feeds Flurry, Enrage and rage for 15 s: the strongest Alliance burst cooldown |
-| **Arms** | ★★★★☆ | Big Mortal Strike crits; Shadowmeld ambushes in battlegrounds |
-| **Protection** | ★★★★☆ | Quickness adds dodge; Elune's Light on the pull gives a fast threat lead |
+| **Fury** | **5/5**{ .stars .s5 } | Elune's Light's +10% crit feeds Flurry, Enrage and rage for 15 s: the strongest Alliance burst cooldown |
+| **Arms** | **4/5**{ .stars .s4 } | Big Mortal Strike crits; Shadowmeld ambushes in battlegrounds |
+| **Protection** | **4/5**{ .stars .s4 } | Quickness adds dodge; Elune's Light on the pull gives a fast threat lead |
 
 **Group tip:** if Shadowmeld drops threat in Forever (as in Classic), use it as a DPS when you pull aggro off the tank. Test it on a trash mob first.
 

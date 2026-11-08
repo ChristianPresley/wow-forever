@@ -1,3 +1,10 @@
+---
+tags:
+  - Warlock
+  - Gnome
+  - Alliance
+---
+
 # Gnome Warlock
 
 !!! tip "Add-on"
@@ -19,10 +26,10 @@ A Classic combination with a new twist. Gnomes keep **Escape Artist** and **Expa
 
 | Racial | Type | Rating | Warlock use |
 |---|---|---|---|
-| **Escape Artist** | Active | ★★★★ PvP · ★★ PvE | Removes roots and snares, plus 3 s immunity. Breaks Frost Nova, Entangling Roots, Hamstring and Wing Clip so you can get back to Fear range |
-| **Eureka!** *(new)* | Active | ★★★★ Destro/Demo · ★★ Aff | For 8 s, non-periodic abilities cost 10% less and deal 10% more. Warcraft Tavern gives a 2-minute cooldown. DoT ticks and (per guides) channels don't benefit, so use it on Conflagrate + Shadowburn + Incinerate, or a Decimation Soul Fire |
-| **Expansive Mind** | Passive | ★★★ | +5% maximum mana. Fewer Life Taps per fight, and a bigger buffer when leveling |
-| **Engineering Specialization** | Passive | ★★ | 20% fewer device failures. No longer adds Engineering skill. Only useful if you take Engineering, which Warcraft Tavern does suggest for top damage |
+| **Escape Artist** | Active | **4/5**{ .stars .s4 } PvP · **2/5**{ .stars .s2 } PvE | Removes roots and snares, plus 3 s immunity. Breaks Frost Nova, Entangling Roots, Hamstring and Wing Clip so you can get back to Fear range |
+| **Eureka!** *(new)* | Active | **4/5**{ .stars .s4 } Destro/Demo · **2/5**{ .stars .s2 } Aff | For 8 s, non-periodic abilities cost 10% less and deal 10% more. Warcraft Tavern gives a 2-minute cooldown. DoT ticks and (per guides) channels don't benefit, so use it on Conflagrate + Shadowburn + Incinerate, or a Decimation Soul Fire |
+| **Expansive Mind** | Passive | **3/5**{ .stars .s3 } | +5% maximum mana. Fewer Life Taps per fight, and a bigger buffer when leveling |
+| **Engineering Specialization** | Passive | **2/5**{ .stars .s2 } | 20% fewer device failures. No longer adds Engineering skill. Only useful if you take Engineering, which Warcraft Tavern does suggest for top damage |
 
 ### Macros
 

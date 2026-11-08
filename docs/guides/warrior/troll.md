@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+  - Troll
+  - Horde
+---
+
 # Troll Warrior
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ Trolls are the Horde's leveling-comfort Warriors. **Berserking** (+10% attack sp
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Berserking** | Active | ★★★★☆ | +10% cast and attack speed for 15 s. More swings, more rage, more Flurry and Enrage uptime. Stack it with Death Wish | Burst |
-| **Rapid Regeneration** *(new)* | Active | ★★★★★ (leveling) | 50% of max health over 6 s, cancelled by any action. A free half-heal after every hard pull | Out-of-combat recovery between fights |
-| **Beast Slaying** | Passive | ★★☆☆☆ | Bonus damage vs Beasts (the wiki gives no Forever value; in Classic it was +5%) | Hunter pets, maybe Druid forms |
-| **Regeneration** | Passive | ★★★☆☆ | +20% health regen, some of it in combat | Small sustain |
+| **Berserking** | Active | **4/5**{ .stars .s4 } | +10% cast and attack speed for 15 s. More swings, more rage, more Flurry and Enrage uptime. Stack it with Death Wish | Burst |
+| **Rapid Regeneration** *(new)* | Active | **5/5**{ .stars .s5 } (leveling) | 50% of max health over 6 s, cancelled by any action. A free half-heal after every hard pull | Out-of-combat recovery between fights |
+| **Beast Slaying** | Passive | **2/5**{ .stars .s2 } | Bonus damage vs Beasts (the wiki gives no Forever value; in Classic it was +5%) | Hunter pets, maybe Druid forms |
+| **Regeneration** | Passive | **3/5**{ .stars .s3 } | +20% health regen, some of it in combat | Small sustain |
 
 !!! note "Bow and Throwing Specialization"
     These old Troll racials were removed. The wiki lists Berserking as a flat +10% for 15 s; whether Classic's bonus at low health still applies is *unconfirmed*.
@@ -64,9 +71,9 @@ Trolls start in the **Valley of Trials**, **Durotar**, with Orcs. *Quest and NPC
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Fury** | ★★★★★ | Berserking's attack speed boosts Flurry, Enrage procs and rage. It's the best raid racial for dual-wielding |
-| **Arms** | ★★★★☆ | Rapid Regeneration makes solo leveling with a two-hander far less punishing |
-| **Protection** | ★★★☆☆ | Berserking speeds up rage and threat; no mitigation racial |
+| **Fury** | **5/5**{ .stars .s5 } | Berserking's attack speed boosts Flurry, Enrage procs and rage. It's the best raid racial for dual-wielding |
+| **Arms** | **4/5**{ .stars .s4 } | Rapid Regeneration makes solo leveling with a two-hander far less punishing |
+| **Protection** | **3/5**{ .stars .s3 } | Berserking speeds up rage and threat; no mitigation racial |
 
 **Leveling tip:** use Rapid Regeneration after every pull that leaves you under half health. Eat only when it's on cooldown.
 

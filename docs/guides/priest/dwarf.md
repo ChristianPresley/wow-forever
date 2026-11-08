@@ -1,3 +1,10 @@
+---
+tags:
+  - Priest
+  - Dwarf
+  - Alliance
+---
+
 # Dwarf Priest
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Dwarf Priest is a Classic combination and **not new**. In Classic, Dwarves were 
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **Stoneform** *(changed)* | Active | Removes bleeds, poisons and diseases and grants immunity, plus **10% physical damage reduction for 8 s**. Saves you from poisons and plague effects, and from a loose mob on the healer | Cleanses Rogue poisons, Hunter Serpent Sting and Warrior Rend; 10% reduction under a melee train | ★★★★★ |
-| **Find Treasure** | Active | Shows treasure chests on the minimap. Useful gold while leveling | — | ★★ |
-| **Artisan's Precision** *(new)* | Passive | **+1% hit**. Shadow needs hit, so this is a real gain; Holy damage is mostly covered by Holy Precision | Same | ★★★★ Shadow / ★★ healer |
-| **Big Game Hunter** *(new)* | Passive | +5% damage against Beasts. A lot of leveling quests are beasts | Druids in animal forms are probably not Beasts (*unconfirmed*) | ★★★ leveling |
+| **Stoneform** *(changed)* | Active | Removes bleeds, poisons and diseases and grants immunity, plus **10% physical damage reduction for 8 s**. Saves you from poisons and plague effects, and from a loose mob on the healer | Cleanses Rogue poisons, Hunter Serpent Sting and Warrior Rend; 10% reduction under a melee train | **5/5**{ .stars .s5 } |
+| **Find Treasure** | Active | Shows treasure chests on the minimap. Useful gold while leveling | — | **2/5**{ .stars .s2 } |
+| **Artisan's Precision** *(new)* | Passive | **+1% hit**. Shadow needs hit, so this is a real gain; Holy damage is mostly covered by Holy Precision | Same | **4/5**{ .stars .s4 } Shadow / **2/5**{ .stars .s2 } healer |
+| **Big Game Hunter** *(new)* | Passive | +5% damage against Beasts. A lot of leveling quests are beasts | Druids in animal forms are probably not Beasts (*unconfirmed*) | **3/5**{ .stars .s3 } leveling |
 
 **Priest spells unique to Dwarves**
 

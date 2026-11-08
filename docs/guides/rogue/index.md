@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+search:
+  boost: 2
+---
+
 # Rogue Guide
 
 !!! info "Current as of 7 November 2026"
@@ -7,6 +14,9 @@
 
 The Rogue is a pure melee damage dealer that wears leather and runs on **Energy** and **combo points**. You build points with attacks, then spend them on finishers. Stealth, stuns, Sap and Vanish give you more control over when and where a fight starts than any other class.
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Rogue at a glance</p>
+
 | | |
 |---|---|
 | **Role** | Melee DPS only |
@@ -14,6 +24,8 @@ The Rogue is a pure melee damage dealer that wears leather and runs on **Energy*
 | **Resource** | Energy (now regenerates smoothly) + 5 combo points |
 | **Strengths** | Top-tier single-target damage, best opener control in the game, strong solo survival through Stealth, Vanish and Evasion, excellent world PvP |
 | **Weaknesses** | No healing, no ranged pull besides throwing, weak multi-pull survival, gear-hungry, competes with Warriors for gear |
+
+</aside>
 
 ### What's new in Forever
 
@@ -89,12 +101,12 @@ Talents start at level 10 and cap at 51 points. Single-point "gold medal" talent
     | Deep | **Quietus** (bonus damage below 35% health), **Cutthroat** (Backstab can let your next Ambush work outside Stealth) |
     | 31 pts | **Thousand Cuts** and/or **Death Mark** — see conflict box |
 
-!!! note "Conflict: Thousand Cuts vs Death Mark"
+!!! conflict "Conflict: Thousand Cuts vs Death Mark"
     - Blizzard's 7 Oct deep dive lists **Thousand Cuts** as the 31-point capstone: each Rupture tick makes your next Backstab or Hemorrhage cheaper, stacking.
     - The 3 Nov pre-launch notes add **Death Mark**. Our [class page](../../characters/classes/rogue.md) lists it as a new active (25 Energy, 10 s cooldown). Warcraft Tavern's Subtlety guide describes it as a mark that **stores part of your damage and detonates after 6 s**, and lists no cost. Mein MMO calls it a finisher.
     - Treat both as live until the in-game tooltip settles it, and expect the 10 November tuning to touch them.
 
-!!! note "Conflict: Venom"
+!!! conflict "Conflict: Venom"
     Blizzard's deep dive calls Venom a **25-Energy finisher**. Warcraft Tavern's general and Combat guides describe it as a **passive triggered by Shank**. The [class page](../../characters/classes/rogue.md) gives the effect (+30% poison damage, +10% application) without naming the trigger.
 
 ### Removed talents
@@ -340,7 +352,7 @@ Poison crafting skill rises by one per poison made, up to 5× your level. Reagen
 - Blackrock Depths and Dire Maul reward Lockpicking: boxes and doors open for you.
 - At 60, head to [Mount Hyjal](../../world/zones.md#mount-hyjal) through Darkwhisper Gorge in Winterspring. The first rogue to **60** earns the *Master* Legacy point.
 
-!!! note "Conflict: library-book quests"
+!!! conflict "Conflict: library-book quests"
     Our [Leveling page](../../characters/leveling.md) says turning in **10/20/25** class books unlocks quests at **20/35/45**. Warcraft Tavern's library guide lists three *Friend of the Library* turn-ins at levels **1/20/30** for the same book counts, with jewelry and off-hand rewards. Books can be turned in one at a time to **Garion Wendell** (Mage Quarter, Stormwind) or **Owen Thadd** (Magic Quarter, Undercity). No Rogue-only book has been documented.
 
 ---
@@ -429,7 +441,7 @@ Rogues are the class every other class prepares for. See [PvP](../../content/pvp
 | Assassination | Hit > Agility > Crit (Seal Fate, Lethality) > Attack Power |
 | Subtlety | Agility > Crit > Hit > Attack Power |
 
-!!! note "Conflict: crit or agility first"
+!!! conflict "Conflict: crit or agility first"
     Warcraft Tavern's leveling guide puts **crit** first; its general guide puts **agility and hit** first. In practice: grab enough hit to stop most misses (several talents like Precision now give hit), then agility and crit are close.
 
 - Many talents grant hit in Forever, so you need less hit on gear than in Classic.

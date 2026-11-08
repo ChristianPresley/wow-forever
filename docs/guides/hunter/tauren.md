@@ -1,3 +1,10 @@
+---
+tags:
+  - Hunter
+  - Tauren
+  - Horde
+---
+
 # Tauren Hunter
 
 !!! tip "Add-on"
@@ -19,10 +26,10 @@ That makes Tauren a good choice for Hardcore, solo play and new players.
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **War Stomp** | Active | ★★★★ | AoE stun at melee range. Stun the adds, step back, trap or shoot | Stun a Rogue or Warrior, then back off past your deadzone |
-| **Cultivation** *(new)* | Active | ★★ | Grows an herb anyone can gather; Herbalists get bonus yield. Gold and Alchemy materials | Nothing |
-| **Plainsrunning** *(new)* | Passive | ★★★ | +2% speed per stack while moving, up to +60%, not while mounted. Fast travel and kiting before 40 | Kiting; **drops on flag pickup** after the 5 November hotfix |
-| **Endurance** | Passive | ★★★ | +5% health. Also a safety margin in Hardcore | More survivability |
+| **War Stomp** | Active | **4/5**{ .stars .s4 } | AoE stun at melee range. Stun the adds, step back, trap or shoot | Stun a Rogue or Warrior, then back off past your deadzone |
+| **Cultivation** *(new)* | Active | **2/5**{ .stars .s2 } | Grows an herb anyone can gather; Herbalists get bonus yield. Gold and Alchemy materials | Nothing |
+| **Plainsrunning** *(new)* | Passive | **3/5**{ .stars .s3 } | +2% speed per stack while moving, up to +60%, not while mounted. Fast travel and kiting before 40 | Kiting; **drops on flag pickup** after the 5 November hotfix |
+| **Endurance** | Passive | **3/5**{ .stars .s3 } | +5% health. Also a safety margin in Hardcore | More survivability |
 
 !!! note "Plainsrunning hotfix (5 November)"
     After players abused it to carry flags in Warsong Gulch, Blizzard changed Plainsrunning: it **drops when you pick up a flag**, and the notes also say it "no longer stacks". The exact post-hotfix behaviour isn't documented; check in game.

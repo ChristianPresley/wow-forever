@@ -1,3 +1,10 @@
+---
+tags:
+  - Mage
+  - Skyborne
+  - Alliance
+---
+
 # Skyborne Mage
 
 !!! tip "Add-on"
@@ -25,12 +32,12 @@ Mechanically you get permanent **haste**, a strong **mana-regen** cooldown and a
 
 | Racial | Type | Rating | Mage use |
 |---|---|---|---|
-| **Walk on Air** | Active | ★★★ PvP · ★★ PvE | 10 s controlled glide. Step off a ledge and float to safety, or cross gaps in Alterac Valley and the Darkspear Islands. Also a fall-damage negator — but Mages already have Slow Fall, so this matters less for you than for other classes |
-| **Read Ley Line** | Active | ★★★★ leveling · ★★★ raid | +50% health and mana regen for 15 s, or +100% while *Attuned* (1 hour, gained at a Ley Line). Pop it while drinking to cut downtime; in raids it stretches your mana between Evocations |
-| **Wind Blessed** | Passive | ★★★★ | Permanent haste. Every cast is faster, which helps Arcane Blast chains and Frostbolt kiting |
-| **Elemental Insight** | Passive | ★★ | +5% damage to Elementals. Useful in Hyjal, Un'Goro and Silithus quests and in some new dungeons; note Fire Mages still hit fire-immune elementals poorly |
+| **Walk on Air** | Active | **3/5**{ .stars .s3 } PvP · **2/5**{ .stars .s2 } PvE | 10 s controlled glide. Step off a ledge and float to safety, or cross gaps in Alterac Valley and the Darkspear Islands. Also a fall-damage negator — but Mages already have Slow Fall, so this matters less for you than for other classes |
+| **Read Ley Line** | Active | **4/5**{ .stars .s4 } leveling · **3/5**{ .stars .s3 } raid | +50% health and mana regen for 15 s, or +100% while *Attuned* (1 hour, gained at a Ley Line). Pop it while drinking to cut downtime; in raids it stretches your mana between Evocations |
+| **Wind Blessed** | Passive | **4/5**{ .stars .s4 } | Permanent haste. Every cast is faster, which helps Arcane Blast chains and Frostbolt kiting |
+| **Elemental Insight** | Passive | **2/5**{ .stars .s2 } | +5% damage to Elementals. Useful in Hyjal, Un'Goro and Silithus quests and in some new dungeons; note Fire Mages still hit fire-immune elementals poorly |
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     - **Wind Blessed:** sources say 1%, 2% or 3% haste. Blizzard's latest notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 minutes depending on source.
     - Read Ley Line can't be used together with a Druid's Innervate.

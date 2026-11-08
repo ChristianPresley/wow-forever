@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+  - Night Elf
+  - Alliance
+---
+
 # Night Elf Rogue
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Night Elf Rogue is a Classic combination. In Forever it gains **Elune's Light**,
 
 | Racial | Type | Rogue rating | Notes |
 |---|---|---|---|
-| **Elune's Light** *(new)* | Active | ★★★★★ PvE · ★★★★ PvP | +10% crit for 15 s. With Seal Fate this means extra combo points; with Lethality it means huge Eviscerates. Use it with Adrenaline Rush or Cold Blood |
-| **Shadowmeld** | Active | ★★★ | Stealth while standing still. A Rogue already has Stealth, but Shadowmeld works while Stealth is on cooldown and as a quick drink/eat-hide spot |
-| **Quickness** | Passive | ★★★ | +1% dodge and +2% run speed. The run speed is always welcome; the dodge stacks with Evasion |
-| **Wisp Spirit** | Passive | ★ | Faster ghost. Only matters for corpse runs |
+| **Elune's Light** *(new)* | Active | **5/5**{ .stars .s5 } PvE · **4/5**{ .stars .s4 } PvP | +10% crit for 15 s. With Seal Fate this means extra combo points; with Lethality it means huge Eviscerates. Use it with Adrenaline Rush or Cold Blood |
+| **Shadowmeld** | Active | **3/5**{ .stars .s3 } | Stealth while standing still. A Rogue already has Stealth, but Shadowmeld works while Stealth is on cooldown and as a quick drink/eat-hide spot |
+| **Quickness** | Passive | **3/5**{ .stars .s3 } | +1% dodge and +2% run speed. The run speed is always welcome; the dodge stacks with Evasion |
+| **Wisp Spirit** | Passive | **1/5**{ .stars .s1 } | Faster ghost. Only matters for corpse runs |
 
 !!! note "Unconfirmed"
     One source says Elune's Light has a **3-minute** cooldown. Others don't say. Plan around it as a long burst cooldown until the tooltip confirms.

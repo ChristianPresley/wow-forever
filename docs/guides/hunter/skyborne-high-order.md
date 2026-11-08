@@ -1,3 +1,10 @@
+---
+tags:
+  - Hunter
+  - Skyborne
+  - Alliance
+---
+
 # Skyborne (High Order) Hunter
 
 !!! tip "Add-on"
@@ -21,12 +28,12 @@ What they bring:
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Walk on Air** | Active | ★★★ | 10 s glide. Skip long paths down from ledges; safe fall. Great for Hardcore | Jump off a ledge to break line of sight and reset range |
-| **Read Ley Line** | Active | ★★★★ | +50% health and mana regen for 15 s; at a Ley Line it grants *Attuned* for 1 hr, raising the bonus to +100%. Fewer drinking breaks | Small mana top-up between fights |
-| **Wind Blessed** | Passive | ★★★★ | Passive haste: more Auto Shots, faster Aimed and Sniper Shot casts | Faster casts on Aimed Shot |
-| **Elemental Insight** | Passive | ★★ | +5% damage to Elementals. Good in Zephras, Silithus, Un'Goro, [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) | Nothing |
+| **Walk on Air** | Active | **3/5**{ .stars .s3 } | 10 s glide. Skip long paths down from ledges; safe fall. Great for Hardcore | Jump off a ledge to break line of sight and reset range |
+| **Read Ley Line** | Active | **4/5**{ .stars .s4 } | +50% health and mana regen for 15 s; at a Ley Line it grants *Attuned* for 1 hr, raising the bonus to +100%. Fewer drinking breaks | Small mana top-up between fights |
+| **Wind Blessed** | Passive | **4/5**{ .stars .s4 } | Passive haste: more Auto Shots, faster Aimed and Sniper Shot casts | Faster casts on Aimed Shot |
+| **Elemental Insight** | Passive | **2/5**{ .stars .s2 } | +5% damage to Elementals. Good in Zephras, Silithus, Un'Goro, [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) | Nothing |
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     - **Wind Blessed:** sources give 1%, 2% or 3% haste. The latest official notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 minutes.
     - Read Ley Line can't be used with Innervate.

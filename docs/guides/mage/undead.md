@@ -1,3 +1,10 @@
+---
+tags:
+  - Mage
+  - Undead
+  - Horde
+---
+
 # Undead Mage
 
 !!! tip "Add-on"
@@ -19,10 +26,10 @@ The Forsaken Mage is the Horde's PvP classic. **Will of the Forsaken** breaks fe
 
 | Racial | Type | Rating | Mage use |
 |---|---|---|---|
-| **Will of the Forsaken** | Active | ★★★★★ PvP · ★★ PvE | Instantly removes charm, fear and sleep (no lasting immunity in Forever). Your answer to Fear, Psychic Scream, Seduction and Mind Control |
-| **Cannibalize** | Active | ★★★ leveling | 7% health and mana per 2 s tick, up to 35%, from a humanoid or undead corpse. Use it instead of a drink after humanoid pulls. Now usable while immune to physical damage |
-| **Underwater Breathing** | Passive | ★ | +300% breath. Handy in the Drowned City and underwater quests |
-| **Touch of the Grave** *(new)* | Passive | ★★ | 30% chance for casters to drain up to 5% of max health, 15 s internal cooldown. A little free healing |
+| **Will of the Forsaken** | Active | **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE | Instantly removes charm, fear and sleep (no lasting immunity in Forever). Your answer to Fear, Psychic Scream, Seduction and Mind Control |
+| **Cannibalize** | Active | **3/5**{ .stars .s3 } leveling | 7% health and mana per 2 s tick, up to 35%, from a humanoid or undead corpse. Use it instead of a drink after humanoid pulls. Now usable while immune to physical damage |
+| **Underwater Breathing** | Passive | **1/5**{ .stars .s1 } | +300% breath. Handy in the Drowned City and underwater quests |
+| **Touch of the Grave** *(new)* | Passive | **2/5**{ .stars .s2 } | 30% chance for casters to drain up to 5% of max health, 15 s internal cooldown. A little free healing |
 
 !!! note "Cannibalize and mana"
     The research notes give Cannibalize as health **and** mana per tick. Classic Cannibalize restored health only. If it only heals in your client, treat it as a food substitute.

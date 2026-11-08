@@ -1,3 +1,10 @@
+---
+tags:
+  - Druid
+  - Tauren
+  - Horde
+---
+
 # Tauren Druid
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ The Tauren is the original Horde druid. You start at Camp Narache in Mulgore, tr
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **War Stomp** | Active: stuns up to 5 nearby enemies for 2 s | Interrupts casters, buys time on a bad pull. **Usable in Bear and Cat** | Stops a cast or fear, then shift or heal | ★★★★★ |
-| **Endurance** | Passive: +5% health | Always-on survivability for Bear | Harder to burst | ★★★★☆ |
-| **Plainsrunning** *(new)* | Passive: +2% speed per stack while moving, up to +60%; not while mounted | Huge for leveling before Travel Form at 30 and before a mount at 40 | **Blocked in battlegrounds** by the 5 Nov hotfix | ★★★★☆ (leveling) |
-| **Cultivation** *(new)* | Active: grows an herb anyone can gather; bonus yield for Herbalists | Gold and potion supply with Herbalism | None | ★★★☆☆ |
+| **War Stomp** | Active: stuns up to 5 nearby enemies for 2 s | Interrupts casters, buys time on a bad pull. **Usable in Bear and Cat** | Stops a cast or fear, then shift or heal | **5/5**{ .stars .s5 } |
+| **Endurance** | Passive: +5% health | Always-on survivability for Bear | Harder to burst | **4/5**{ .stars .s4 } |
+| **Plainsrunning** *(new)* | Passive: +2% speed per stack while moving, up to +60%; not while mounted | Huge for leveling before Travel Form at 30 and before a mount at 40 | **Blocked in battlegrounds** by the 5 Nov hotfix | **4/5**{ .stars .s4 } (leveling) |
+| **Cultivation** *(new)* | Active: grows an herb anyone can gather; bonus yield for Herbalists | Gold and potion supply with Herbalism | None | **3/5**{ .stars .s3 } |
 
 The old Nature Resistance racial was removed. Endurance lost the hit/crit bonus it had in beta.
 
@@ -93,8 +100,8 @@ The best Horde **bear** and the best druid for **PvP**. War Stomp in form is a r
 
 | Spec | Rating |
 |---|---|
-| Bear | ★★★★★ |
-| Cat | ★★★★☆ |
-| Balance | ★★★☆☆ |
-| Restoration | ★★★★☆ |
-| PvP | ★★★★★ |
+| Bear | **5/5**{ .stars .s5 } |
+| Cat | **4/5**{ .stars .s4 } |
+| Balance | **3/5**{ .stars .s3 } |
+| Restoration | **4/5**{ .stars .s4 } |
+| PvP | **5/5**{ .stars .s5 } |

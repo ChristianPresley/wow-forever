@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+  - Skyborne
+  - Horde
+---
+
 # Skyborne Rogue (Windshaper)
 
 !!! tip "Add-on"
@@ -16,12 +23,12 @@
 
 | Racial | Type | Rogue rating | Notes |
 |---|---|---|---|
-| **Walk on Air** | Active | ★★★ | A 10 s controlled glide. Cliff shortcuts, safe drops and escapes |
-| **Skysight** | Active | ★★★★ PvP · ★★ PvE | +15% movement speed for 15 s, +30% while *Charged* at an elemental convergence. Stack it with Sprint to catch kiting classes, or to run a flag |
-| **Wind Blessed** | Passive | ★★★★ | Permanent haste: more swings, more poison procs |
-| **Elemental Insight** | Passive | ★★ | +5% damage against Elementals |
+| **Walk on Air** | Active | **3/5**{ .stars .s3 } | A 10 s controlled glide. Cliff shortcuts, safe drops and escapes |
+| **Skysight** | Active | **4/5**{ .stars .s4 } PvP · **2/5**{ .stars .s2 } PvE | +15% movement speed for 15 s, +30% while *Charged* at an elemental convergence. Stack it with Sprint to catch kiting classes, or to run a flag |
+| **Wind Blessed** | Passive | **4/5**{ .stars .s4 } | Permanent haste: more swings, more poison procs |
+| **Elemental Insight** | Passive | **2/5**{ .stars .s2 } | +5% damage against Elementals |
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     - **Wind Blessed:** 1%, 2% or 3% haste depending on the source; the latest official notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 minutes.
     - Whether Skysight stacks fully with Sprint is *unconfirmed*; test it.

@@ -34,5 +34,5 @@ From the official podcast, episode 5:
 - One fight grants a damage buff that comes at a cost.
 - A two-spider fight, probably Ravus and Darlissa or the Dreadspinner (unconfirmed which).
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     The Warcraft Wiki's infobox says 10 players, but its intro says 20. Blizzard says **10**. Mobalytics lists only the Blackmaw Hold entrance.

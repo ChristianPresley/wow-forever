@@ -1,3 +1,10 @@
+---
+tags:
+  - Shaman
+  - Troll
+  - Horde
+---
+
 # Troll Shaman
 
 !!! tip "Add-on"
@@ -11,10 +18,10 @@ The Darkspear trolls are an old shamanic people; their witch doctors and shamans
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Berserking** *(changed)* | Active | ★★★★★ | +10% cast and attack speed for **15 s** (10 s in the beta). More bolts for Elemental, more swings and Windfury chances for Enhancement, faster heals for Restoration | Burst window, or faster heals under pressure |
-| **Rapid Regeneration** *(new)* | Active | ★★★ | Regenerates 50% of max health over 6 s; any action cancels it. Saves mana that would go into self-heals while leveling | Rarely usable mid-fight, but good between fights in battlegrounds |
-| **Beast Slaying** | Passive | ★★★ | +5% damage to Beasts. Very useful while leveling | Hunter pets and Druid forms may count; *unconfirmed* |
-| **Regeneration** | Passive | ★★ | +20% health regen, and 20% of it keeps going in combat | Small, constant benefit |
+| **Berserking** *(changed)* | Active | **5/5**{ .stars .s5 } | +10% cast and attack speed for **15 s** (10 s in the beta). More bolts for Elemental, more swings and Windfury chances for Enhancement, faster heals for Restoration | Burst window, or faster heals under pressure |
+| **Rapid Regeneration** *(new)* | Active | **3/5**{ .stars .s3 } | Regenerates 50% of max health over 6 s; any action cancels it. Saves mana that would go into self-heals while leveling | Rarely usable mid-fight, but good between fights in battlegrounds |
+| **Beast Slaying** | Passive | **3/5**{ .stars .s3 } | +5% damage to Beasts. Very useful while leveling | Hunter pets and Druid forms may count; *unconfirmed* |
+| **Regeneration** | Passive | **2/5**{ .stars .s2 } | +20% health regen, and 20% of it keeps going in combat | Small, constant benefit |
 
 The old Bow and Throwing Specializations are gone, which never mattered for Shamans.
 

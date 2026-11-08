@@ -1,3 +1,10 @@
+---
+tags:
+  - Warlock
+  - Troll
+  - Horde
+---
+
 # Troll Warlock
 
 !!! tip "Add-on"
@@ -19,12 +26,12 @@
 
 | Racial | Type | Rating | Warlock use |
 |---|---|---|---|
-| **Berserking** | Active | ★★★★ Destro · ★★★ Aff/Demo | +10% cast and attack speed for **15 s** (raised from 10 s in the 26 Oct beta notes). Speeds Incinerate, Shadow Bolt, Searing Pain, Soul Fire and the global cooldown; per Warcraft Tavern it doesn't speed DoT ticks or channels, so it does little for Wrack. Cooldown not published (3 min in Classic) |
-| **Rapid Regeneration** *(new)* | Active | ★★★★ leveling · ★★ PvP | Regenerates **50% of max health over 6 s**, cancelled by any action. A free half-heal after every Life Tap session: tap down to half, Rapid Regenerate back, keep the mana |
-| **Beast Slaying** | Passive | ★★ | +5% damage against beasts. Good for leveling (lots of beasts) and any beast bosses; nothing confirmed for the launch raids |
-| **Regeneration** | Passive | ★★ | +20% health regeneration, part of it in combat. Synergizes with Life Tap and drain-tanking |
+| **Berserking** | Active | **4/5**{ .stars .s4 } Destro · **3/5**{ .stars .s3 } Aff/Demo | +10% cast and attack speed for **15 s** (raised from 10 s in the 26 Oct beta notes). Speeds Incinerate, Shadow Bolt, Searing Pain, Soul Fire and the global cooldown; per Warcraft Tavern it doesn't speed DoT ticks or channels, so it does little for Wrack. Cooldown not published (3 min in Classic) |
+| **Rapid Regeneration** *(new)* | Active | **4/5**{ .stars .s4 } leveling · **2/5**{ .stars .s2 } PvP | Regenerates **50% of max health over 6 s**, cancelled by any action. A free half-heal after every Life Tap session: tap down to half, Rapid Regenerate back, keep the mana |
+| **Beast Slaying** | Passive | **2/5**{ .stars .s2 } | +5% damage against beasts. Good for leveling (lots of beasts) and any beast bosses; nothing confirmed for the launch raids |
+| **Regeneration** | Passive | **2/5**{ .stars .s2 } | +20% health regeneration, part of it in combat. Synergizes with Life Tap and drain-tanking |
 
-!!! note "Conflict: Berserking"
+!!! conflict "Conflict: Berserking"
     Blizzard's 26 Oct notes and Icy Veins give a 15-second duration. Games.gg still lists 10 seconds on a 3-minute cooldown, and an earlier beta guide described a nerf to a flat 10%. This page uses Blizzard's figure.
 
 ### Macros

@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+  - Dwarf
+  - Alliance
+---
+
 # Dwarf Warrior
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ The Dwarf is the Alliance's tank race in Forever. **Stoneform** now adds **10% p
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Stoneform** *(changed)* | Active | ★★★★★ | A tank cooldown: 10% physical reduction for 8 s plus cleansing. Use it on big hits or bleed and poison phases | Removes Rend, Deep Wounds, Garrote, poisons and diseases and grants immunity. A Rogue's worst nightmare |
-| **Find Treasure** | Active | ★☆☆☆☆ | Tracks treasure chests while leveling | None |
-| **Artisan's Precision** *(new)* | Passive | ★★★★☆ | +1% hit, one of the most valuable DPS stats until you're capped | Fewer misses on Hamstring and Mortal Strike |
-| **Big Game Hunter** *(new)* | Passive | ★★★☆☆ | +5% damage vs Beasts, which make up much of the leveling world | +5% vs Hunter pets and Druids in animal form *(unconfirmed whether forms count)* |
+| **Stoneform** *(changed)* | Active | **5/5**{ .stars .s5 } | A tank cooldown: 10% physical reduction for 8 s plus cleansing. Use it on big hits or bleed and poison phases | Removes Rend, Deep Wounds, Garrote, poisons and diseases and grants immunity. A Rogue's worst nightmare |
+| **Find Treasure** | Active | **1/5**{ .stars .s1 } | Tracks treasure chests while leveling | None |
+| **Artisan's Precision** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% hit, one of the most valuable DPS stats until you're capped | Fewer misses on Hamstring and Mortal Strike |
+| **Big Game Hunter** *(new)* | Passive | **3/5**{ .stars .s3 } | +5% damage vs Beasts, which make up much of the leveling world | +5% vs Hunter pets and Druids in animal form *(unconfirmed whether forms count)* |
 
 !!! note "Earth Fury"
     Some mid-beta articles list an "Earth Fury" Dwarf racial. It was replaced before launch.
@@ -65,9 +72,9 @@ Dwarves start in **Coldridge Valley**, **Dun Morogh**. *Quest and NPC names are 
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Protection** | ★★★★★ | Stoneform is a free 8 s damage reduction every few minutes and removes bleeds and poisons that tank-killing bosses apply |
-| **Arms** | ★★★★☆ | +1% hit and +5% vs Beasts make leveling smooth; Stoneform wins Rogue and Warrior duels |
-| **Fury** | ★★★★☆ | Dual-wielders miss a lot, so +1% hit is worth more than for any other spec |
+| **Protection** | **5/5**{ .stars .s5 } | Stoneform is a free 8 s damage reduction every few minutes and removes bleeds and poisons that tank-killing bosses apply |
+| **Arms** | **4/5**{ .stars .s4 } | +1% hit and +5% vs Beasts make leveling smooth; Stoneform wins Rogue and Warrior duels |
+| **Fury** | **4/5**{ .stars .s4 } | Dual-wielders miss a lot, so +1% hit is worth more than for any other spec |
 
 **Leveling tip:** Big Game Hunter makes beast-heavy zones (Loch Modan, Wetlands, Arathi, Stranglethorn's tigers and panthers) noticeably faster.
 

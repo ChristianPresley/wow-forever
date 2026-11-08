@@ -1,3 +1,10 @@
+---
+tags:
+  - Hunter
+  - Troll
+  - Horde
+---
+
 # Troll Hunter
 
 !!! tip "Add-on"
@@ -17,10 +24,10 @@ Trolls are also the faction of the new **Darkspear Islands** battleground and th
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Berserking** | Active | ★★★★★ | +10% cast and attack speed for 15 s. Stack with Rapid Fire; also shortens Aimed Shot and Sniper Shot casts | Faster Aimed Shot in a burst window |
-| **Rapid Regeneration** *(new)* | Active | ★★★ | Heals 50% of max health over 6 s, but **any action cancels it**. Use between pulls instead of eating | Between fights only |
-| **Beast Slaying** | Passive | ★★★★ leveling | Bonus damage to Beasts (+5% in Classic; Forever's value isn't published). Strong in questing, rarely matters in raids | Hunter pets and Druid animal forms: unclear, *Classic-era rule says Druid forms aren't Beasts* |
-| **Regeneration** | Passive | ★★ | +20% health regen, part of it continuing in combat | Small sustain |
+| **Berserking** | Active | **5/5**{ .stars .s5 } | +10% cast and attack speed for 15 s. Stack with Rapid Fire; also shortens Aimed Shot and Sniper Shot casts | Faster Aimed Shot in a burst window |
+| **Rapid Regeneration** *(new)* | Active | **3/5**{ .stars .s3 } | Heals 50% of max health over 6 s, but **any action cancels it**. Use between pulls instead of eating | Between fights only |
+| **Beast Slaying** | Passive | **4/5**{ .stars .s4 } leveling | Bonus damage to Beasts (+5% in Classic; Forever's value isn't published). Strong in questing, rarely matters in raids | Hunter pets and Druid animal forms: unclear, *Classic-era rule says Druid forms aren't Beasts* |
+| **Regeneration** | Passive | **2/5**{ .stars .s2 } | +20% health regen, part of it continuing in combat | Small sustain |
 
 **Macros**
 

@@ -1,3 +1,10 @@
+---
+tags:
+  - Paladin
+search:
+  boost: 2
+---
+
 # Paladin Guide
 
 !!! info "Current as of 7 November 2026"
@@ -7,6 +14,9 @@
 
 The paladin is a plate-wearing hybrid of melee, healing and tanking. Forever gives it the tools it lacked in Classic: a real taunt, an early tank seal, a short-cooldown melee strike, and a much shorter Lay on Hands.
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Paladin at a glance</p>
+
 | | |
 |---|---|
 | **Roles** | Tank (Protection), healer (Holy), melee DPS (Retribution) |
@@ -14,6 +24,8 @@ The paladin is a plate-wearing hybrid of melee, healing and tanking. Forever giv
 | **Resource** | Mana |
 | **Races** | [Human](human.md), [Dwarf](dwarf.md) (Alliance) · [Undead](undead.md) (Horde, **new**) |
 | **Class trainers** | Stormwind (Cathedral of Light), Ironforge (Mystic Ward), Northshire, Goldshire, Coldridge Valley, Thunderbrew Distillery, Theramore · Deathknell, Brill, **Bandarion Keep** (Tirisfal) |
+
+</aside>
 
 **Strengths**
 
@@ -77,7 +89,7 @@ Talents start at level 10, one point per level, 51 at level 60. Each tree has si
     | Turn Evil | 2 | Faster Turn Undead, now also hits Demons |
     | **Unsealed Wrath** (31) | 1 | Melee swings store a copy of your Seal (up to 3 stacks, 15 s). Swinging with a *different* Seal releases every stored Seal's proc chance |
 
-    !!! note "Conflict: Twist of Light"
+    !!! conflict "Conflict: Twist of Light"
         Older guides (and the beta deep dive) list **Twist of Light**, a seal-twisting capstone with an "Echo" on swap. The 30 October rework **replaced** it with Unsealed Wrath. Several fan pages still list both.
 
 === "Protection"
@@ -103,7 +115,7 @@ Talents start at level 10, one point per level, 51 at level 60. Each tree has si
     | Stoicism | 2 | −10/20% stun and charm duration |
     | **Shieldsworn** (31) | 1 | Holy Strike −4 s cooldown and strikes with your shield (triggering block talents); briefly lets you block spells |
 
-    !!! note "Conflict: Improved Seal of Fury"
+    !!! conflict "Conflict: Improved Seal of Fury"
         The beta deep dive had **Improved Seal of Fury** as the 11-point Protection talent. The 30 October rework removed it, along with One-Handed Weapon Specialization.
 
 === "Holy"
@@ -149,7 +161,7 @@ Talents start at level 10, one point per level, 51 at level 60. Each tree has si
 
 This lands at **12/8/31** (Holy/Protection/Retribution), which is also the most-cited level-60 PvE Retribution build.
 
-!!! note "Conflict: when to start Retribution's 15–23 points"
+!!! conflict "Conflict: when to start Retribution's 15–23 points"
     Talents Forever's usage data has Improved Judgement at 15–16 and Seal of Command around 23. Leprestore takes Conviction first and Seal of Command at 20. Both are fine; take Seal of Command at 20 if you already use a slow two-hander.
 
 **Endgame templates (level 60).**
@@ -395,7 +407,7 @@ Raids open on **9 December 2026**: [The Barrow Deeps](../../content/raids/barrow
 | **Protection** | Stamina and Defense → block value and block → hit → Strength |
 | **Holy** | Intellect and healing power → mana regeneration → crit → Stamina |
 
-!!! note "Conflict: Retribution stat priority"
+!!! conflict "Conflict: Retribution stat priority"
     ConquestCapped puts Stamina, Spirit and Intellect ahead of Strength for leveling, arguing most damage comes from abilities. Leprestore puts weapon DPS, Strength and crit first. Both agree weapon quality matters most.
 
 - **Hit sources:** Divine Precision (Holy), Precision (Protection), and Dwarf's Artisan's Precision all add hit, so hit gear is less crucial than in Classic.

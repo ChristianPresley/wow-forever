@@ -1,3 +1,10 @@
+---
+tags:
+  - Druid
+  - Night Elf
+  - Alliance
+---
+
 # Night Elf Druid
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ The Night Elf is the original Alliance druid. You start in Shadowglen under Teld
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **Elune's Light** *(new)* | Active: +10% crit for 15 s | Pairs with Cat burst, Moonkin Starfire windows or a Bear pull. One source gives a 3 min cooldown (*unconfirmed*) | A kill window from Prowl | ★★★★★ |
-| **Shadowmeld** | Active: stealth while still | Drops aggro to save a wipe or skip a patrol; works in form | Reset fights, ambush flag carriers. **Can't Ravage or Pounce out of it since the 6 Nov hotfix** | ★★★☆☆ |
-| **Quickness** | Passive: +1% dodge, +2% run speed | Small but always on; dodge helps Bear | Extra speed for kiting and flag runs | ★★★☆☆ |
-| **Wisp Spirit** | Passive: +75% run speed as a ghost | Faster corpse runs while leveling | Nothing in combat | ★☆☆☆☆ |
+| **Elune's Light** *(new)* | Active: +10% crit for 15 s | Pairs with Cat burst, Moonkin Starfire windows or a Bear pull. One source gives a 3 min cooldown (*unconfirmed*) | A kill window from Prowl | **5/5**{ .stars .s5 } |
+| **Shadowmeld** | Active: stealth while still | Drops aggro to save a wipe or skip a patrol; works in form | Reset fights, ambush flag carriers. **Can't Ravage or Pounce out of it since the 6 Nov hotfix** | **3/5**{ .stars .s3 } |
+| **Quickness** | Passive: +1% dodge, +2% run speed | Small but always on; dodge helps Bear | Extra speed for kiting and flag runs | **3/5**{ .stars .s3 } |
+| **Wisp Spirit** | Passive: +75% run speed as a ghost | Faster corpse runs while leveling | Nothing in combat | **1/5**{ .stars .s1 } |
 
 The old Nature Resistance racial was removed, like every other resistance racial.
 
@@ -91,8 +98,8 @@ A strong, safe pick. **Elune's Light** is the best throughput racial an Alliance
 
 | Spec | Rating |
 |---|---|
-| Cat | ★★★★★ |
-| Bear | ★★★★☆ |
-| Balance | ★★★★☆ |
-| Restoration | ★★★☆☆ |
-| PvP | ★★★★☆ |
+| Cat | **5/5**{ .stars .s5 } |
+| Bear | **4/5**{ .stars .s4 } |
+| Balance | **4/5**{ .stars .s4 } |
+| Restoration | **3/5**{ .stars .s3 } |
+| PvP | **4/5**{ .stars .s4 } |

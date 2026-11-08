@@ -1,3 +1,8 @@
+---
+search:
+  boost: 0.5
+---
+
 # About this wiki
 
 **Forever Codex** catalogues *World of Warcraft: Forever* from public sources. It is an unofficial fan project and is not affiliated with or endorsed by Blizzard Entertainment.

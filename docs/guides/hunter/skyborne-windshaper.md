@@ -1,3 +1,10 @@
+---
+tags:
+  - Hunter
+  - Skyborne
+  - Horde
+---
+
 # Skyborne (Windshaper) Hunter
 
 !!! tip "Add-on"
@@ -21,12 +28,12 @@ Compared with the Alliance High Order, Windshapers swap **Read Ley Line** (regen
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Walk on Air** | Active | ★★★ | 10 s glide. Shortcut down cliffs (Thousand Needles, Feralas, Un'Goro) and a Hardcore escape | Break line of sight off a ledge |
-| **Skysight** | Active | ★★★★ PvP | +15% speed for 15 s; at an elemental convergence you get *Charged* for 1 hr, raising it to +30%. Travel before your mount | Kite melee out of the deadzone; carry or chase flags |
-| **Wind Blessed** | Passive | ★★★★ | Passive haste: more Auto Shots, faster Aimed and Sniper Shot casts | Faster Aimed Shot |
-| **Elemental Insight** | Passive | ★★ | +5% damage to Elementals: Zephras Isle, Silithus, Un'Goro, [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) | Nothing |
+| **Walk on Air** | Active | **3/5**{ .stars .s3 } | 10 s glide. Shortcut down cliffs (Thousand Needles, Feralas, Un'Goro) and a Hardcore escape | Break line of sight off a ledge |
+| **Skysight** | Active | **4/5**{ .stars .s4 } PvP | +15% speed for 15 s; at an elemental convergence you get *Charged* for 1 hr, raising it to +30%. Travel before your mount | Kite melee out of the deadzone; carry or chase flags |
+| **Wind Blessed** | Passive | **4/5**{ .stars .s4 } | Passive haste: more Auto Shots, faster Aimed and Sniper Shot casts | Faster Aimed Shot |
+| **Elemental Insight** | Passive | **2/5**{ .stars .s2 } | +5% damage to Elementals: Zephras Isle, Silithus, Un'Goro, [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) | Nothing |
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     - **Wind Blessed:** sources give 1%, 2% or 3% haste. The latest official notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 minutes.
     - The 5 November hotfix note groups Plainsrunning with Skyborne. Plainsrunning is a Tauren racial; it's unclear whether any Skyborne speed racial was changed too.

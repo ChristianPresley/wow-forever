@@ -1,3 +1,10 @@
+---
+tags:
+  - Hunter
+  - Human
+  - Alliance
+---
+
 # Human Hunter
 
 !!! tip "Add-on"
@@ -17,10 +24,10 @@ Humans are a strong all-round pick:
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Will to Survive** *(new)* | Active | ★★★★★ PvP / ★★ PvE | Breaks a stun from a pack of mobs or a boss | Breaks Cheap Shot, Kidney Shot, Hammer of Justice, Charge stuns. Use it, then step out and trap |
-| Perception | Active | ★★★ | Spots stealthed mobs in some dungeons | 20 s of stealth detection: find the Rogue before the opener. Pairs with Track Hidden |
-| **Ruthless** *(new)* | Passive | ★★★★ | +1% crit, always on; also helps your pet, which inherits your crit | Same |
-| The Human Spirit | Passive | ★★ | +10% Spirit: slightly faster out-of-combat mana regen, and more value from Rapid Recuperation (MM) | Minor |
+| **Will to Survive** *(new)* | Active | **5/5**{ .stars .s5 } PvP / **2/5**{ .stars .s2 } PvE | Breaks a stun from a pack of mobs or a boss | Breaks Cheap Shot, Kidney Shot, Hammer of Justice, Charge stuns. Use it, then step out and trap |
+| Perception | Active | **3/5**{ .stars .s3 } | Spots stealthed mobs in some dungeons | 20 s of stealth detection: find the Rogue before the opener. Pairs with Track Hidden |
+| **Ruthless** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% crit, always on; also helps your pet, which inherits your crit | Same |
+| The Human Spirit | Passive | **2/5**{ .stars .s2 } | +10% Spirit: slightly faster out-of-combat mana regen, and more value from Rapid Recuperation (MM) | Minor |
 
 Old Human racials (Sword and Mace Specialization, Diplomacy) are gone. Diplomacy became the universal Legacy talent *Diplomat*.
 

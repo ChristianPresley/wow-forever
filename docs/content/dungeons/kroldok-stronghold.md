@@ -17,5 +17,5 @@ An ogre fortress tied to the **Twilight's Hammer**. Ogre outrunners kidnap trave
 - **Boss:** **Overlord Mugg** (revealed through a Legacy challenge). The rest of the roster is unconfirmed.
 - **Datamined items:** Krol'dok Compound Key, Krol'dok Ogre Key, and quest-starting *Krol'dok Moulding* items.
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Zockify lists Krol'dok as a 10-player instance. Blizzard says all nine new dungeons are 5-player.

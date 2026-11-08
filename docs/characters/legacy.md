@@ -24,7 +24,7 @@ The **Legacy System** is Forever's account-wide progression and **replaces achie
 | **Raids** | 3 | Conqueror of the Wilds (Hyjal Summit), of the Deeps (Barrow Deeps), of the Lair (Onyxia) |
 | **Adventure** | 2 | The Lord Valthalak / Dungeon Set 2 questline; Explore Azeroth on one character |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     The Warcraft Wiki's main Forever page lists class tiers at **25/40/60**. Its Legacy page and Warcraft Tavern say **25/45/60**.
 
 ## Rewards

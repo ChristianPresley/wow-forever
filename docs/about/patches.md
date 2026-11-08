@@ -20,7 +20,7 @@ The launch client is **Patch 1.60.1** (TOC `16001`). It is built on the same Mai
 | 70790 | 4 Nov 2026 | Launch-day client. Writes earlier hotfixes (including training costs) into the client |
 | 70862 | 7 Nov 2026 | Current build. Tooltip fixes, Natural flask and Adventurer's Tent changes, 25 dungeon quest rewards filled in. No official notes |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Trackers disagree on whether **70755** or **70790** is the "launch client". Build dates come from community trackers (wowforevertalents.com) and the Warcraft Wiki.
 
 ## Hotfixes

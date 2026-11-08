@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+  - Human
+  - Alliance
+---
+
 # Human Rogue
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Human Rogue is a Classic combination. Forever made it one of the strongest Allia
 
 | Racial | Type | Rogue rating | Notes |
 |---|---|---|---|
-| **Will to Survive** *(new)* | Active | ★★★★★ PvP · ★★ PvE | Instantly removes stuns. In PvP this works like a second trinket: break a Kidney Shot or Cheap Shot and turn the fight around. In PvE it saves you from stun-heavy trash or bosses |
-| **Perception** | Active | ★★★ PvP · ★ PvE | Detect stealth for 20 s. The counter to enemy Rogues and Cat Druids; press it when a flag carrier dies to "nothing" |
-| **Ruthless** *(new)* | Passive | ★★★★ | +1% crit with attacks and spells (it was 2% in beta). Always on, helps Seal Fate and Lethality builds |
-| **The Human Spirit** | Passive | ★ | +10% Spirit. Spirit does little for a Rogue apart from slightly faster health regen out of combat |
+| **Will to Survive** *(new)* | Active | **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE | Instantly removes stuns. In PvP this works like a second trinket: break a Kidney Shot or Cheap Shot and turn the fight around. In PvE it saves you from stun-heavy trash or bosses |
+| **Perception** | Active | **3/5**{ .stars .s3 } PvP · **1/5**{ .stars .s1 } PvE | Detect stealth for 20 s. The counter to enemy Rogues and Cat Druids; press it when a flag carrier dies to "nothing" |
+| **Ruthless** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% crit with attacks and spells (it was 2% in beta). Always on, helps Seal Fate and Lethality builds |
+| **The Human Spirit** | Passive | **1/5**{ .stars .s1 } | +10% Spirit. Spirit does little for a Rogue apart from slightly faster health regen out of combat |
 
 !!! note "Cooldowns"
     Blizzard hasn't published cooldowns for Will to Survive or Perception in Forever. Check the tooltip in game.

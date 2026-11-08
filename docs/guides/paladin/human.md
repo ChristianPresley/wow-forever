@@ -1,3 +1,10 @@
+---
+tags:
+  - Paladin
+  - Human
+  - Alliance
+---
+
 # Human Paladin
 
 !!! tip "Add-on"
@@ -18,10 +25,10 @@ Stormwind also sits near the new Alliance content: the harbor with a boat to Aub
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Will to Survive** | Active | ★★★★★ | Breaks boss stuns (rarely needed) | Instantly removes stuns, like a PvP trinket. Pair with Blessing of Freedom and you are very hard to lock down |
-| **Ruthless** | Passive | ★★★★☆ | +1% crit with spells and attacks: more Vengeance uptime (Ret), more Illumination returns (Holy) | Slightly more burst |
-| **The Human Spirit** | Passive | ★★★☆☆ | +10% Spirit: faster out-of-combat mana regen while leveling | Small |
-| **Perception** | Active | ★★☆☆☆ | Rarely matters | Detects stealth for 20 s. Good for flag defense and spotting rogues before they open |
+| **Will to Survive** | Active | **5/5**{ .stars .s5 } | Breaks boss stuns (rarely needed) | Instantly removes stuns, like a PvP trinket. Pair with Blessing of Freedom and you are very hard to lock down |
+| **Ruthless** | Passive | **4/5**{ .stars .s4 } | +1% crit with spells and attacks: more Vengeance uptime (Ret), more Illumination returns (Holy) | Slightly more burst |
+| **The Human Spirit** | Passive | **3/5**{ .stars .s3 } | +10% Spirit: faster out-of-combat mana regen while leveling | Small |
+| **Perception** | Active | **2/5**{ .stars .s2 } | Rarely matters | Detects stealth for 20 s. Good for flag defense and spotting rogues before they open |
 
 !!! note "Cooldown unknown"
     Blizzard hasn't published Will to Survive's cooldown. Classic PvP trinkets were 5 minutes; don't assume the same.

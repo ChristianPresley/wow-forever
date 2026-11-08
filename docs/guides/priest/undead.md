@@ -1,3 +1,10 @@
+---
+tags:
+  - Priest
+  - Undead
+  - Horde
+---
+
 # Undead Priest
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Undead Priest is a Classic combination and **not new**. It's the classic Horde P
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **Will of the Forsaken** | Active | Breaks fear, charm and sleep. Handy against fearing mobs and bosses, though every Priest has Fear Ward now | One of the best PvP racials: counters Warlock Fear, Priest Scream and Warrior Intimidating Shout | ★★★★★ PvP / ★★★ PvE |
-| **Cannibalize** | Active | Eat humanoid or undead corpses to regain health out of combat | — | ★★★ leveling |
-| **Underwater Breathing** | Passive | Longer breath underwater | — | ★ |
-| **Touch of the Grave** *(new)* | Passive | A chance on hit to drain **5% of max health** (15 s internal cooldown). Free sustain and damage | Same | ★★★★ |
+| **Will of the Forsaken** | Active | Breaks fear, charm and sleep. Handy against fearing mobs and bosses, though every Priest has Fear Ward now | One of the best PvP racials: counters Warlock Fear, Priest Scream and Warrior Intimidating Shout | **5/5**{ .stars .s5 } PvP / **3/5**{ .stars .s3 } PvE |
+| **Cannibalize** | Active | Eat humanoid or undead corpses to regain health out of combat | — | **3/5**{ .stars .s3 } leveling |
+| **Underwater Breathing** | Passive | Longer breath underwater | — | **1/5**{ .stars .s1 } |
+| **Touch of the Grave** *(new)* | Passive | A chance on hit to drain **5% of max health** (15 s internal cooldown). Free sustain and damage | Same | **4/5**{ .stars .s4 } |
 
 **Priest spells unique to Undead**
 

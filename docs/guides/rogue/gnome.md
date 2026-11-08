@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+  - Gnome
+  - Alliance
+---
+
 # Gnome Rogue
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Gnome Rogue is a Classic combination. Forever gives it a new burst racial: **Eur
 
 | Racial | Type | Rogue rating | Notes |
 |---|---|---|---|
-| **Escape Artist** | Active | ★★★★★ PvP · ★★ PvE | Removes roots and snares and gives 3 s of immunity. Breaks Frost Nova, Hamstring, Crippling Poison, Entangling Roots and Frostbolt slows, then lets you close the gap |
-| **Eureka!** *(new)* | Active | ★★★★ | For 8 s your non-periodic abilities cost 10% less and deal 10% more. Rupture and Garrote ticks don't benefit; Sinister Strike, Mutilate, Ambush, Eviscerate and Shank do. Line it up with Cold Blood, Adrenaline Rush or a Stealth opener |
-| **Expansive Mind** *(changed)* | Passive | ★★★ | +5% maximum Energy. A bigger pool means a bigger opener and more pooling before a burst |
-| **Engineering Specialization** *(changed)* | Passive | ★★★ with Engineering · — without | 20% fewer device failures and backfires. It no longer adds skill points. Great if you use bombs and nets in PvP |
+| **Escape Artist** | Active | **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE | Removes roots and snares and gives 3 s of immunity. Breaks Frost Nova, Hamstring, Crippling Poison, Entangling Roots and Frostbolt slows, then lets you close the gap |
+| **Eureka!** *(new)* | Active | **4/5**{ .stars .s4 } | For 8 s your non-periodic abilities cost 10% less and deal 10% more. Rupture and Garrote ticks don't benefit; Sinister Strike, Mutilate, Ambush, Eviscerate and Shank do. Line it up with Cold Blood, Adrenaline Rush or a Stealth opener |
+| **Expansive Mind** *(changed)* | Passive | **3/5**{ .stars .s3 } | +5% maximum Energy. A bigger pool means a bigger opener and more pooling before a burst |
+| **Engineering Specialization** *(changed)* | Passive | **3/5**{ .stars .s3 } with Engineering · — without | 20% fewer device failures and backfires. It no longer adds skill points. Great if you use bombs and nets in PvP |
 
 !!! note "Unknown cooldown"
     Eureka!'s cooldown hasn't been published. Check the tooltip, and use it in every fight if it's short.

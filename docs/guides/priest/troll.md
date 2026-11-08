@@ -1,3 +1,10 @@
+---
+tags:
+  - Priest
+  - Troll
+  - Horde
+---
+
 # Troll Priest
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Troll Priest is a Classic combination and **not new**. Its Priest spells, **Hex 
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **Berserking** | Active | **+10% cast speed for 15 s.** More Greater Heals in a crisis, or more Mind Flay ticks and Mind Blasts in a burn | Burst | ★★★★★ |
-| **Rapid Regeneration** *(new)* | Active | Regenerates **50% of max health over 6 s**; any action cancels it. Use it instead of eating after a fight | Only to top up out of combat | ★★★★ leveling |
-| **Beast Slaying** | Passive | Extra damage against Beasts (value not given on this wiki). Many leveling quests are beasts | Druid forms aren't Beasts (*Classic-era*) | ★★★ leveling |
-| **Regeneration** | Passive | +20% health regen, part of it in combat | Small | ★★ |
+| **Berserking** | Active | **+10% cast speed for 15 s.** More Greater Heals in a crisis, or more Mind Flay ticks and Mind Blasts in a burn | Burst | **5/5**{ .stars .s5 } |
+| **Rapid Regeneration** *(new)* | Active | Regenerates **50% of max health over 6 s**; any action cancels it. Use it instead of eating after a fight | Only to top up out of combat | **4/5**{ .stars .s4 } leveling |
+| **Beast Slaying** | Passive | Extra damage against Beasts (value not given on this wiki). Many leveling quests are beasts | Druid forms aren't Beasts (*Classic-era*) | **3/5**{ .stars .s3 } leveling |
+| **Regeneration** | Passive | +20% health regen, part of it in combat | Small | **2/5**{ .stars .s2 } |
 
 **Priest spells unique to Trolls**
 

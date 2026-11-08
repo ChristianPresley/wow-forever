@@ -1,3 +1,10 @@
+---
+tags:
+  - Hunter
+  - Dwarf
+  - Alliance
+---
+
 # Dwarf Hunter
 
 !!! tip "Add-on"
@@ -17,12 +24,12 @@ Warcraft Tavern names Dwarf (with Human) as the best Alliance PvP Hunter.
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Stoneform** *(changed)* | Active | ★★★★ | Cleanses poisons, diseases and bleeds and grants immunity, plus −10% physical damage for 8 s. Great on Hardcore and against poison-heavy dungeon trash | Removes Rogue poisons, Rend, Rip, Garrote and Deep Wounds; −10% physical damage during a burst |
-| Find Treasure | Active | ★★ | Tracks chests and gives a chance of better loot. You can't run it with Track Beasts at the same time | None |
-| **Artisan's Precision** *(new)* | Passive | ★★★★★ PvE | +1% hit with attacks and spells. Fewer misses on bosses and an easier hit cap | Fewer missed Scatter/Concussive shots |
-| **Big Game Hunter** *(new)* | Passive | ★★★★ leveling | +5% damage to Beasts. Very strong while questing. In raids it only helps on Beast bosses (Onyxia and her whelps are Dragonkin), and Warcraft Tavern notes rare Beast bosses | Druids in animal forms are not Beasts (*Classic-era rule*) |
+| **Stoneform** *(changed)* | Active | **4/5**{ .stars .s4 } | Cleanses poisons, diseases and bleeds and grants immunity, plus −10% physical damage for 8 s. Great on Hardcore and against poison-heavy dungeon trash | Removes Rogue poisons, Rend, Rip, Garrote and Deep Wounds; −10% physical damage during a burst |
+| Find Treasure | Active | **2/5**{ .stars .s2 } | Tracks chests and gives a chance of better loot. You can't run it with Track Beasts at the same time | None |
+| **Artisan's Precision** *(new)* | Passive | **5/5**{ .stars .s5 } PvE | +1% hit with attacks and spells. Fewer misses on bosses and an easier hit cap | Fewer missed Scatter/Concussive shots |
+| **Big Game Hunter** *(new)* | Passive | **4/5**{ .stars .s4 } leveling | +5% damage to Beasts. Very strong while questing. In raids it only helps on Beast bosses (Onyxia and her whelps are Dragonkin), and Warcraft Tavern notes rare Beast bosses | Druids in animal forms are not Beasts (*Classic-era rule*) |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Warcraft Tavern's Hunter overview still lists **Earth Fury** as a Dwarf racial. Earth Fury was a mid-beta racial that was replaced before launch; the live list is the one above (see [Races](../../characters/races.md#racial-abilities)).
 
 **Macros**

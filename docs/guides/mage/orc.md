@@ -1,3 +1,10 @@
+---
+tags:
+  - Mage
+  - Orc
+  - Horde
+---
+
 # Orc Mage
 
 !!! tip "Add-on"
@@ -19,10 +26,10 @@
 
 | Racial | Type | Rating | Mage use |
 |---|---|---|---|
-| **Blood Fury** | Active | ★★★★★ | +10% attack power **and spell power** for 15 s on a **2 min** cooldown (was 3). Lines up with Arcane Power, Combustion or an Ice Lance shatter window |
-| **Shatter Curse** *(new)* | Active | ★★★★ PvP · ★★★ PvE | Removes curses and Warlock **Banes**, then −5% magic damage taken for 8 s. Mages already have Remove Lesser Curse, but this also clears Banes and is an off-GCD-style self-cleanse plus damage reduction (*GCD behavior unverified*) |
+| **Blood Fury** | Active | **5/5**{ .stars .s5 } | +10% attack power **and spell power** for 15 s on a **2 min** cooldown (was 3). Lines up with Arcane Power, Combustion or an Ice Lance shatter window |
+| **Shatter Curse** *(new)* | Active | **4/5**{ .stars .s4 } PvP · **3/5**{ .stars .s3 } PvE | Removes curses and Warlock **Banes**, then −5% magic damage taken for 8 s. Mages already have Remove Lesser Curse, but this also clears Banes and is an off-GCD-style self-cleanse plus damage reduction (*GCD behavior unverified*) |
 | **Command** | Passive | ☆ | +5% pet damage. Only Hunters and Warlocks benefit; wasted on a Mage |
-| **Hardiness** | Passive | ★★★★ PvP | −20% stun duration. Shorter Cheap Shots, Kidney Shots and Hammer of Justice |
+| **Hardiness** | Passive | **4/5**{ .stars .s4 } PvP | −20% stun duration. Shorter Cheap Shots, Kidney Shots and Hammer of Justice |
 
 ### Macros
 

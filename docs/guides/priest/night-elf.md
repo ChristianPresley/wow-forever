@@ -1,3 +1,10 @@
+---
+tags:
+  - Priest
+  - Night Elf
+  - Alliance
+---
+
 # Night Elf Priest
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Night Elf Priest is a Classic combination and **not new**. Forever made it much 
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **Elune's Light** *(new)* | Active | **+10% crit for 15 s.** Burst for Shadow; a healer crit window for Inspiration, Divine Aegis and Renewed Hope | Burst for a Mind Blast + SW:Death kill | ★★★★★ |
-| **Shadowmeld** | Active | Drop out of combat to drink, or skip a pack while waiting for the group | Ambushes, flag guarding, losing a chaser | ★★★ |
-| **Quickness** | Passive | +1% dodge, +2% run speed | Kiting | ★★★ |
-| **Wisp Spirit** | Passive | Faster corpse runs. Great for a slow-leveling cloth class | — | ★★ (★★★★ leveling) |
+| **Elune's Light** *(new)* | Active | **+10% crit for 15 s.** Burst for Shadow; a healer crit window for Inspiration, Divine Aegis and Renewed Hope | Burst for a Mind Blast + SW:Death kill | **5/5**{ .stars .s5 } |
+| **Shadowmeld** | Active | Drop out of combat to drink, or skip a pack while waiting for the group | Ambushes, flag guarding, losing a chaser | **3/5**{ .stars .s3 } |
+| **Quickness** | Passive | +1% dodge, +2% run speed | Kiting | **3/5**{ .stars .s3 } |
+| **Wisp Spirit** | Passive | Faster corpse runs. Great for a slow-leveling cloth class | — | **2/5**{ .stars .s2 } (**4/5**{ .stars .s4 } leveling) |
 
 **Priest spells unique to Night Elves**
 

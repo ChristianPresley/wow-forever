@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+  - Orc
+  - Horde
+---
+
 # Orc Warrior
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ The Orc Warrior is the iconic Horde fighter. Forever removed **Axe Specializatio
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Blood Fury** | Active | ★★★★★ | +10% AP for 15 s on a 2 min cooldown. Use it with Death Wish and Recklessness, and on every leveling pull where it's ready | Burst for a Mortal Strike kill |
-| **Shatter Curse** *(new)* | Active | ★★★☆☆ | Removes curses and Banes, and −5% magic damage taken for 8 s. Handy on cursed bosses | Removes Curse of Exhaustion, Curse of Recklessness, and Warlock Banes |
+| **Blood Fury** | Active | **5/5**{ .stars .s5 } | +10% AP for 15 s on a 2 min cooldown. Use it with Death Wish and Recklessness, and on every leveling pull where it's ready | Burst for a Mortal Strike kill |
+| **Shatter Curse** *(new)* | Active | **3/5**{ .stars .s3 } | Removes curses and Banes, and −5% magic damage taken for 8 s. Handy on cursed bosses | Removes Curse of Exhaustion, Curse of Recklessness, and Warlock Banes |
 | **Command** | Passive | ☆☆☆☆☆ | +5% pet damage: does nothing for a Warrior | None |
-| **Hardiness** | Passive | ★★★★☆ | Shorter boss stuns | 20% off every stun: Kidney Shot, Hammer of Justice, Concussion Blow |
+| **Hardiness** | Passive | **4/5**{ .stars .s4 } | Shorter boss stuns | 20% off every stun: Kidney Shot, Hammer of Justice, Concussion Blow |
 
 !!! note "Axe Specialization"
     The old Orc axe racial is gone. If you want axes, the **Weaponmaster** talent gives them crit.
@@ -65,9 +72,9 @@ Orcs start in the **Valley of Trials**, **Durotar**. Blizzard says the Valley go
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Fury** | ★★★★★ | Blood Fury every 2 minutes lines up with Death Wish and every other raid cooldown |
-| **Arms** | ★★★★★ | Burst plus Hardiness makes Orc Arms the classic Horde PvP Warrior |
-| **Protection** | ★★★★☆ | Blood Fury on the pull gives a threat lead; Hardiness shortens boss stuns. Tauren has more health |
+| **Fury** | **5/5**{ .stars .s5 } | Blood Fury every 2 minutes lines up with Death Wish and every other raid cooldown |
+| **Arms** | **5/5**{ .stars .s5 } | Burst plus Hardiness makes Orc Arms the classic Horde PvP Warrior |
+| **Protection** | **4/5**{ .stars .s4 } | Blood Fury on the pull gives a threat lead; Hardiness shortens boss stuns. Tauren has more health |
 
 **Leveling tip:** Blood Fury's 2-minute cooldown is short enough to use on most hard pulls. Treat it as a regular part of your opener.
 

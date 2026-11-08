@@ -1,3 +1,10 @@
+---
+tags:
+  - Druid
+  - Skyborne
+  - Alliance
+---
+
 # High Order Skyborne Druid
 
 !!! tip "Add-on"
@@ -18,12 +25,12 @@ You get **haste** (Wind Blessed), a **regeneration cooldown** (Read Ley Line) an
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **Read Ley Line** | Active: +50% health and mana regen for 15 s; +100% while *Attuned* (1 hr buff from standing at a Ley Line) | Big for Balance leveling downtime and for Resto mana. **Not usable with Innervate** | Short reset between fights | ★★★★☆ |
-| **Walk on Air** | Active: 10 s controlled glide. **Works in forms** | Skip paths, survive falls, reach ledges | Escape off cliffs, flag-carrier tricks. Cooldown 1.5 or 2 min (*conflict*) | ★★★☆☆ |
-| **Wind Blessed** | Passive: haste | Faster casts and swings, more Energy use | Same | ★★★★☆ |
-| **Elemental Insight** | Passive: +5% damage vs Elementals | Situational: Hyjal and Skywall elementals, some dungeons | None | ★★☆☆☆ |
+| **Read Ley Line** | Active: +50% health and mana regen for 15 s; +100% while *Attuned* (1 hr buff from standing at a Ley Line) | Big for Balance leveling downtime and for Resto mana. **Not usable with Innervate** | Short reset between fights | **4/5**{ .stars .s4 } |
+| **Walk on Air** | Active: 10 s controlled glide. **Works in forms** | Skip paths, survive falls, reach ledges | Escape off cliffs, flag-carrier tricks. Cooldown 1.5 or 2 min (*conflict*) | **3/5**{ .stars .s3 } |
+| **Wind Blessed** | Passive: haste | Faster casts and swings, more Energy use | Same | **4/5**{ .stars .s4 } |
+| **Elemental Insight** | Passive: +5% damage vs Elementals | Situational: Hyjal and Skywall elementals, some dungeons | None | **2/5**{ .stars .s2 } |
 
-!!! note "Conflict: Wind Blessed"
+!!! conflict "Conflict: Wind Blessed"
     Sources give 1%, 2% or 3% haste. Blizzard's latest notes say **2%**.
 
 **Macros**
@@ -107,10 +114,10 @@ A good, distinctive Alliance druid. **Wind Blessed** and **Read Ley Line** make 
 
 | Spec | Rating |
 |---|---|
-| Cat | ★★★★☆ |
-| Bear | ★★★☆☆ |
-| Balance | ★★★★★ |
-| Restoration | ★★★★★ |
-| PvP | ★★★☆☆ |
+| Cat | **4/5**{ .stars .s4 } |
+| Bear | **3/5**{ .stars .s3 } |
+| Balance | **5/5**{ .stars .s5 } |
+| Restoration | **5/5**{ .stars .s5 } |
+| PvP | **3/5**{ .stars .s3 } |
 
 *Ratings are this guide's own judgment.*

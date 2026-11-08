@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+  - Skyborne
+  - Horde
+---
+
 # Skyborne (Windshaper) Warrior
 
 !!! tip "Add-on"
@@ -17,12 +24,12 @@
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Walk on Air** | Active | ★★★☆☆ | A 10 s controlled glide. Skip paths, survive falls | Escape off ledges in battlegrounds |
-| **Skysight** | Active | ★★★☆☆ | +15% speed for 15 s (+30% while *Charged* at an elemental convergence). Faster travel between quests | A gap closer when Charge and Intercept are down, or a way to catch a flag carrier |
-| **Wind Blessed** | Passive | ★★★☆☆ | +haste (2% in the latest notes). More swings, more rage | Same |
-| **Elemental Insight** | Passive | ★★☆☆☆ | +5% damage vs Elementals | None |
+| **Walk on Air** | Active | **3/5**{ .stars .s3 } | A 10 s controlled glide. Skip paths, survive falls | Escape off ledges in battlegrounds |
+| **Skysight** | Active | **3/5**{ .stars .s3 } | +15% speed for 15 s (+30% while *Charged* at an elemental convergence). Faster travel between quests | A gap closer when Charge and Intercept are down, or a way to catch a flag carrier |
+| **Wind Blessed** | Passive | **3/5**{ .stars .s3 } | +haste (2% in the latest notes). More swings, more rage | Same |
+| **Elemental Insight** | Passive | **2/5**{ .stars .s2 } | +5% damage vs Elementals | None |
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     Wind Blessed is listed as 1%, 2% or 3% haste; the latest official notes say **2%**. Walk on Air's cooldown is given as 1.5 or 2 minutes.
 
 **Macro: run them down**
@@ -69,9 +76,9 @@ The Windshaper airship lands at **Skywatcher Plateau** in northwest Mulgore, jus
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Arms** | ★★★☆☆ | Skysight is a useful extra gap closer in PvP |
-| **Fury** | ★★★☆☆ | Wind Blessed haste means more swings and Flurry procs |
-| **Protection** | ★★☆☆☆ | No mitigation or health racial |
+| **Arms** | **3/5**{ .stars .s3 } | Skysight is a useful extra gap closer in PvP |
+| **Fury** | **3/5**{ .stars .s3 } | Wind Blessed haste means more swings and Flurry procs |
+| **Protection** | **2/5**{ .stars .s2 } | No mitigation or health racial |
 
 **Leveling tip:** chain Skysight and the Zephras tornadoes early, and use Walk on Air to cut corners in Thousand Needles and Stonetalon.
 

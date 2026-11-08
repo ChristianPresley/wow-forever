@@ -1,3 +1,10 @@
+---
+tags:
+  - Warrior
+  - Tauren
+  - Horde
+---
+
 # Tauren Warrior
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ Tauren are the biggest Warriors in the game. Before launch, Blizzard raised Taur
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **War Stomp** | Active | ★★★★☆ | Area stun around you. Interrupts casters in a pack, or buys a Shield Slam | Stun, then Mortal Strike or Hamstring. Also interrupts heals |
-| **Cultivation** *(new)* | Active | ★★☆☆☆ | Grows an herb anyone can pick, with bonus yield for Herbalists | None |
-| **Plainsrunning** *(new)* | Passive | ★★★☆☆ | +2% speed per stack while moving, up to +60%, not while mounted. Great before level 40 | Stacking was blocked in battlegrounds by a 5 Nov hotfix |
-| **Endurance** | Passive | ★★★★☆ | +5% health: tanks love it | Harder to burst |
+| **War Stomp** | Active | **4/5**{ .stars .s4 } | Area stun around you. Interrupts casters in a pack, or buys a Shield Slam | Stun, then Mortal Strike or Hamstring. Also interrupts heals |
+| **Cultivation** *(new)* | Active | **2/5**{ .stars .s2 } | Grows an herb anyone can pick, with bonus yield for Herbalists | None |
+| **Plainsrunning** *(new)* | Passive | **3/5**{ .stars .s3 } | +2% speed per stack while moving, up to +60%, not while mounted. Great before level 40 | Stacking was blocked in battlegrounds by a 5 Nov hotfix |
+| **Endurance** | Passive | **4/5**{ .stars .s4 } | +5% health: tanks love it | Harder to burst |
 
 !!! note "Nature Resistance"
     The old Tauren nature resistance racial was removed.
@@ -64,9 +71,9 @@ Tauren start at **Camp Narache** in **Mulgore**. Mulgore gained **Skywatcher Pla
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Protection** | ★★★★★ | +5% health, top Strength and an area interrupt for caster packs |
-| **Arms** | ★★★★☆ | +5 Strength and War Stomp into Mortal Strike; a strong PvP choice |
-| **Fury** | ★★★☆☆ | No damage cooldown; the extra Strength helps a little |
+| **Protection** | **5/5**{ .stars .s5 } | +5% health, top Strength and an area interrupt for caster packs |
+| **Arms** | **4/5**{ .stars .s4 } | +5 Strength and War Stomp into Mortal Strike; a strong PvP choice |
+| **Fury** | **3/5**{ .stars .s3 } | No damage cooldown; the extra Strength helps a little |
 
 **Leveling tip:** Plainsrunning stacks only while you keep moving and doesn't work mounted. Don't stop between mobs before level 40.
 

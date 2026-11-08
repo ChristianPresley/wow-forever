@@ -1,3 +1,10 @@
+---
+tags:
+  - Mage
+  - Human
+  - Alliance
+---
+
 # Human Mage
 
 !!! tip "Add-on"
@@ -19,10 +26,10 @@ Human Mage is the classic Alliance caster and remains one of the best all-round 
 
 | Racial | Type | Rating | Mage use |
 |---|---|---|---|
-| **Will to Survive** *(new)* | Active | ★★★★★ PvP · ★★★ PvE | Instantly removes stuns. A Rogue's Cheap Shot or a Warrior's Intercept no longer means death: break it, then Frost Nova and Blink |
-| **Perception** | Active | ★★★ PvP · ★ PvE | Detect stealth for 20 s. Pop it when a Rogue or Druid disappears near a flag or node |
-| **Ruthless** *(new)* | Passive | ★★★★ | +1% crit. Feeds Fire's Heating Up and Ignite, Arcane Impact, and Frost shatter combos |
-| **The Human Spirit** | Passive | ★★★ leveling · ★★ raid | +10% Spirit (was 5%). Noticeably less drinking at low levels |
+| **Will to Survive** *(new)* | Active | **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE | Instantly removes stuns. A Rogue's Cheap Shot or a Warrior's Intercept no longer means death: break it, then Frost Nova and Blink |
+| **Perception** | Active | **3/5**{ .stars .s3 } PvP · **1/5**{ .stars .s1 } PvE | Detect stealth for 20 s. Pop it when a Rogue or Druid disappears near a flag or node |
+| **Ruthless** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% crit. Feeds Fire's Heating Up and Ignite, Arcane Impact, and Frost shatter combos |
+| **The Human Spirit** | Passive | **3/5**{ .stars .s3 } leveling · **2/5**{ .stars .s2 } raid | +10% Spirit (was 5%). Noticeably less drinking at low levels |
 
 The old Human *Diplomacy* racial is now the account-wide Legacy talent *Diplomat*, so you don't lose anything there.
 

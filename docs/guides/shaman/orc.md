@@ -1,3 +1,10 @@
+---
+tags:
+  - Shaman
+  - Orc
+  - Horde
+---
+
 # Orc Shaman
 
 !!! tip "Add-on"
@@ -11,10 +18,10 @@ Orc Shaman is the original Horde Shaman. Thrall is one, and Orgrimmar is built a
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Blood Fury** *(changed)* | Active | ★★★★★ | +10% attack power and spell power for 15 s, every **2 min** (was 3). Use it with Rage of the Farseer for Enhancement, or at the start of a boss for Elemental | A big burst window for Stormstrike + Earth Shock, or for a Lightning Bolt chain |
-| **Shatter Curse** *(new)* | Active | ★★★★ | Removes curses and Banes, and you take 5% less magic damage for 8 s. Shamans have no curse removal of their own, so this fills a real gap | Strong against Warlocks (Banes, Curse of Exhaustion) and Druid or Mage curses |
-| **Command** | Passive | ★ | +5% Hunter and Warlock pet damage. **Does nothing for Shamans** (totems aren't pets) | — |
-| **Hardiness** | Passive | ★★★★ | 20% shorter stuns | One of the best PvP passives against Rogues, Warriors and Paladins |
+| **Blood Fury** *(changed)* | Active | **5/5**{ .stars .s5 } | +10% attack power and spell power for 15 s, every **2 min** (was 3). Use it with Rage of the Farseer for Enhancement, or at the start of a boss for Elemental | A big burst window for Stormstrike + Earth Shock, or for a Lightning Bolt chain |
+| **Shatter Curse** *(new)* | Active | **4/5**{ .stars .s4 } | Removes curses and Banes, and you take 5% less magic damage for 8 s. Shamans have no curse removal of their own, so this fills a real gap | Strong against Warlocks (Banes, Curse of Exhaustion) and Druid or Mage curses |
+| **Command** | Passive | **1/5**{ .stars .s1 } | +5% Hunter and Warlock pet damage. **Does nothing for Shamans** (totems aren't pets) | — |
+| **Hardiness** | Passive | **4/5**{ .stars .s4 } | 20% shorter stuns | One of the best PvP passives against Rogues, Warriors and Paladins |
 
 The old Axe Specialization is gone, so axes have no special advantage for Orcs any more.
 

@@ -1,3 +1,10 @@
+---
+tags:
+  - Priest
+search:
+  boost: 2
+---
+
 # Priest Guide
 
 !!! info "Current as of 7 November 2026"
@@ -11,6 +18,9 @@ The Priest is still Azeroth's most flexible healer. It heals with heal-over-time
 - **Less race lottery.** **Fear Ward** and **Devouring Plague** are now baseline for every Priest at level 20. The remaining race-locked spells are smaller utility picks.
 - **Less hit grinding.** *Holy Precision* (Discipline) gives up to 18% Holy hit, and *Shadow Focus* (Shadow) now grants Shadow hit.
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Priest at a glance</p>
+
 | | |
 |---|---|
 | **Roles** | Healer (Holy, Discipline), ranged caster DPS (Shadow) |
@@ -18,6 +28,8 @@ The Priest is still Azeroth's most flexible healer. It heals with heal-over-time
 | **Strengths** | Best all-round healer, strong self-sustain while leveling (Shield, Renew, Penance), Fear Ward and Mind Control utility, two healer specs to choose from |
 | **Weaknesses** | Cloth armor and few escapes. Slow early kill speed: Priest and Warrior were the **slowest classes to level in beta**. Mana-hungry before talents and gear |
 | **Dual spec** | Level 40, 50g at the class trainer |
+
+</aside>
 
 ### What's new in Forever
 
@@ -101,7 +113,7 @@ The Legacy talent **Talented** moves your first point up to five levels earlier,
     | Spirit of Redemption | Now lasts 15 s |
     | **Prayer of Mending** (31) | 10 s cooldown, 30 s duration. Heals on the next hit, then jumps up to 5 times within 20 yards |
 
-    !!! warning "Conflict: Binding Heal vs. Holy Binding"
+    !!! conflict "Conflict: Binding Heal vs. Holy Binding"
         Blizzard's deep dive describes **Binding Heal**, a 1.5 s spell that heals you and your target. The launch kit replaced it with the passive **Holy Binding** described above (see [Classes](../../characters/classes/index.md#changes-between-the-deep-dives-and-launch)). Some fan guides still list Binding Heal. Renewed Hope's tooltip may still name it as well.
 
 === "Shadow"
@@ -122,7 +134,7 @@ The Legacy talent **Talented** moves your first point up to five levels earlier,
     | Shadow Weaving | Self-only, with a smaller bonus |
     | **Shadowform** (31) | You can cast all non-healing spells. Shadow spells cost **50% less** and get **+100% crit damage**; the flat damage bonus is lower |
 
-    !!! note "Conflict: Shadowform"
+    !!! conflict "Conflict: Shadowform"
         Blizzard's text gives Shadowform +100% Shadow **crit damage**. Warcraft Tavern's summary says Shadow crit **chance**. This guide follows Blizzard.
 
     Vampiric Touch is not in the Forever kit according to Warcraft Tavern.
@@ -212,7 +224,7 @@ Spell levels follow Warcraft Tavern and Method. Ranks are omitted.
 | 56 | Prayer of Shadow Protection |
 | 60 | Prayer of Spirit |
 
-!!! warning "Conflict: Shadow Word: Death backlash"
+!!! conflict "Conflict: Shadow Word: Death backlash"
     Blizzard's deep dive says SW:Death hurts you for **10%** of your maximum health if the target survives. The pre-launch notes collected on the [Priest page](../../characters/classes/priest.md) say **30%**, with no backlash on a miss. Treat it as a big self-hit and don't use it as a filler at low health.
 
 ### Rotations

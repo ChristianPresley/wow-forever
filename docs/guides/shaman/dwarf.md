@@ -1,3 +1,10 @@
+---
+tags:
+  - Shaman
+  - Dwarf
+  - Alliance
+---
+
 # Dwarf Shaman
 
 !!! tip "Add-on"
@@ -14,10 +21,10 @@ Dwarves bring Shamans into Alliance groups for the first time in a Classic-style
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Stoneform** *(changed)* | Active | ★★★★★ | Removes bleeds, poisons and diseases, gives immunity to them, and 10% less physical damage for 8 s. A personal defensive on bosses with bleeds or poison | Clears Rogue poisons, Warrior bleeds and Hunter stings. The 10% physical reduction is strong against melee bursts |
-| **Find Treasure** | Active | ★★ | Tracks treasure chests, with a chance for better loot. Nice while leveling | — |
-| **Artisan's Precision** *(new)* | Passive | ★★★★ | +1% hit with attacks **and** spells. Every spec needs hit, Elemental most of all | Fewer missed Earth Shocks and Purges |
-| **Big Game Hunter** *(new)* | Passive | ★★★ | +5% damage to Beasts. Very useful while leveling, since many quest mobs are beasts | Hunter pets and Druids in animal forms may count; *unconfirmed* |
+| **Stoneform** *(changed)* | Active | **5/5**{ .stars .s5 } | Removes bleeds, poisons and diseases, gives immunity to them, and 10% less physical damage for 8 s. A personal defensive on bosses with bleeds or poison | Clears Rogue poisons, Warrior bleeds and Hunter stings. The 10% physical reduction is strong against melee bursts |
+| **Find Treasure** | Active | **2/5**{ .stars .s2 } | Tracks treasure chests, with a chance for better loot. Nice while leveling | — |
+| **Artisan's Precision** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% hit with attacks **and** spells. Every spec needs hit, Elemental most of all | Fewer missed Earth Shocks and Purges |
+| **Big Game Hunter** *(new)* | Passive | **3/5**{ .stars .s3 } | +5% damage to Beasts. Very useful while leveling, since many quest mobs are beasts | Hunter pets and Druids in animal forms may count; *unconfirmed* |
 
 Stoneform is no longer an armor buff. It is now a flat damage reduction, which also helps casters.
 
@@ -82,7 +89,7 @@ The Fire quest pulls you into Loch Modan anyway, so plan to finish it at 11–12
 | 20 | *Call of Water* | Start with **Norric Lochthane** in northern Loch Modan (41.9, 19.0). **Hervdana Saegrund**, in a cave behind a waterfall in the Wetlands (65.7, 76.4), has you fill waterskins at her waterfall, at Stonewatch Falls in Redridge (73.7, 61.6) and at a lake near Astranaar in Ashenvale (37.0, 51.6). Back at Norric, go to the Forgotten Shrine at Stendel's Pond in Westfall (47.5, 60.4), drink the Water Sapta and defeat the corrupted water spirit. Reward: **Water Totem** and Healing Stream. Warcraft Tavern says it takes about two hours |
 | 30 | *Call of Air* | Your trainer sends you to **Veyric Thundervein** in Arathi Highlands (about 59.8, 27.6), up a narrow path and rocks near the Shard of Myzrael. Reward: **Air Totem**, plus the choice of spec weapon |
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Warcraft Tavern says the Air quest NPC shows up as "Thunderhame" in game but "Thundervein" in the quest text. The author suspects a beta bug.
 
 **Water quest tips:** do it at 20–22 while you quest in the Wetlands and Redridge. Take the Menethil boat to Auberdine and get off at Darkshore (not Southshore), then run south to Ashenvale. The Legacy talent *Frequent Flier* makes all of this cheaper.

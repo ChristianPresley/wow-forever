@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+  - Troll
+  - Horde
+---
+
 # Troll Rogue
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Troll Rogue is a Classic combination. **Berserking** gives +10% attack speed for
 
 | Racial | Type | Rogue rating | Notes |
 |---|---|---|---|
-| **Berserking** | Active | ★★★★ | +10% attack and cast speed for 15 s. Stacks with Adrenaline Rush and Blade Flurry. More swings = more poison and Hack and Slash procs |
-| **Rapid Regeneration** *(new)* | Active | ★★★★ leveling · ★★ PvP | Regenerates 50% of max health over 6 s; any action cancels it. Use it after a kill instead of eating. In PvP, use it while Vanished or after a Blind |
-| **Beast Slaying** | Passive | ★★★ leveling · ★ raids | Bonus damage against Beasts (5% in Classic; the Forever value isn't listed). Lots of leveling mobs are beasts |
-| **Regeneration** | Passive | ★★★ | +20% health regen, part of it during combat. Less eating overall |
+| **Berserking** | Active | **4/5**{ .stars .s4 } | +10% attack and cast speed for 15 s. Stacks with Adrenaline Rush and Blade Flurry. More swings = more poison and Hack and Slash procs |
+| **Rapid Regeneration** *(new)* | Active | **4/5**{ .stars .s4 } leveling · **2/5**{ .stars .s2 } PvP | Regenerates 50% of max health over 6 s; any action cancels it. Use it after a kill instead of eating. In PvP, use it while Vanished or after a Blind |
+| **Beast Slaying** | Passive | **3/5**{ .stars .s3 } leveling · **1/5**{ .stars .s1 } raids | Bonus damage against Beasts (5% in Classic; the Forever value isn't listed). Lots of leveling mobs are beasts |
+| **Regeneration** | Passive | **3/5**{ .stars .s3 } | +20% health regen, part of it during combat. Less eating overall |
 
 !!! note "Berserking"
     The Classic version scaled from 10% to 30% as your health dropped. Forever's racial list gives a flat 10%. Check the tooltip.

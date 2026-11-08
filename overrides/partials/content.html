@@ -1,0 +1,19 @@
+{#- Forever Codex override: injects the guide combo switcher right after the H1 -#}
+{% include "partials/tags.html" %}
+{% include "partials/actions.html" %}
+{% if "<h1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+{% set fc_is_addon = page.url.startswith('guides/') and page.url.count('/') == 3 %}
+{% set fc_is_class = page.url.startswith('guides/') and page.url.count('/') == 2 and page.is_index %}
+{% if (fc_is_addon or fc_is_class) and "</h1>" in page.content %}
+  {% set parts = page.content.split('</h1>', 1) %}
+  {{ parts[0] }}</h1>
+  {% include "partials/combo-switcher.html" %}
+  {{ parts[1] }}
+{% else %}
+  {{ page.content }}
+{% endif %}
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}

@@ -1,3 +1,10 @@
+---
+tags:
+  - Warlock
+  - Human
+  - Alliance
+---
+
 # Human Warlock
 
 !!! tip "Add-on"
@@ -19,10 +26,10 @@ A Classic combination and, in Forever, arguably the best Alliance Warlock. Metho
 
 | Racial | Type | Rating | Warlock use |
 |---|---|---|---|
-| **Will to Survive** *(new)* | Active | ★★★★★ PvP · ★★ PvE | Instantly removes stuns. Breaks Cheap Shot, Kidney Shot, Hammer of Justice and Charge stuns so you can Fear or Death Coil back. Cooldown not published |
-| **Perception** | Active | ★★★ PvP | Detect stealth for 20 s. Spot the Rogue before the opener, then Fear or put a DoT on them. Paired with your Felhunter's Paranoia (if trained) it shuts down stealth openers |
-| **Ruthless** *(new)* | Passive | ★★★★ | +1% crit with every school. Worth about 9 spell power for Destruction by Warcraft Tavern's numbers, and DoTs can crit now, so Affliction gains too (more so with Pandemic) |
-| **The Human Spirit** | Passive | ★★★ | **+10% Spirit** (was 5%). More Spirit means more mana from Life Tap and better out-of-combat regen while leveling |
+| **Will to Survive** *(new)* | Active | **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE | Instantly removes stuns. Breaks Cheap Shot, Kidney Shot, Hammer of Justice and Charge stuns so you can Fear or Death Coil back. Cooldown not published |
+| **Perception** | Active | **3/5**{ .stars .s3 } PvP | Detect stealth for 20 s. Spot the Rogue before the opener, then Fear or put a DoT on them. Paired with your Felhunter's Paranoia (if trained) it shuts down stealth openers |
+| **Ruthless** *(new)* | Passive | **4/5**{ .stars .s4 } | +1% crit with every school. Worth about 9 spell power for Destruction by Warcraft Tavern's numbers, and DoTs can crit now, so Affliction gains too (more so with Pandemic) |
+| **The Human Spirit** | Passive | **3/5**{ .stars .s3 } | **+10% Spirit** (was 5%). More Spirit means more mana from Life Tap and better out-of-combat regen while leveling |
 
 !!! note "Diplomacy is gone"
     The old Human reputation racial became the account-wide Legacy talent *Diplomat*. Any race can take it.

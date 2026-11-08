@@ -1,3 +1,10 @@
+---
+tags:
+  - Priest
+  - Gnome
+  - Alliance
+---
+
 # Gnome Priest
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **Escape Artist** | Active | Breaks roots and snares, then gives 3 s immunity. Useful against netting and frost mobs | Breaks Frost Nova, Hamstring, Entangling Roots and Crippling Poison. Excellent for a fragile caster | ★★★★ |
-| **Eureka!** *(new)* | Active | For 8 s, **non-periodic** spells cost 10% less and deal or heal 10% more. Good for Mind Blast, Penance (assuming its channel counts as non-periodic; *unconfirmed*), Flash Heal, Greater Heal and Prayer of Healing. It does nothing for SW:Pain, Renew or Devouring Plague | Burst window for Mind Blast and SW:Death | ★★★★ |
-| **Expansive Mind** | Passive | **+5% maximum mana.** Bigger pool on long fights | Same | ★★★ |
-| **Engineering Specialization** | Passive | 20% fewer device failures. Only matters with Engineering | Engineering gadgets in PvP | ★ (★★★ with Engineering) |
+| **Escape Artist** | Active | Breaks roots and snares, then gives 3 s immunity. Useful against netting and frost mobs | Breaks Frost Nova, Hamstring, Entangling Roots and Crippling Poison. Excellent for a fragile caster | **4/5**{ .stars .s4 } |
+| **Eureka!** *(new)* | Active | For 8 s, **non-periodic** spells cost 10% less and deal or heal 10% more. Good for Mind Blast, Penance (assuming its channel counts as non-periodic; *unconfirmed*), Flash Heal, Greater Heal and Prayer of Healing. It does nothing for SW:Pain, Renew or Devouring Plague | Burst window for Mind Blast and SW:Death | **4/5**{ .stars .s4 } |
+| **Expansive Mind** | Passive | **+5% maximum mana.** Bigger pool on long fights | Same | **3/5**{ .stars .s3 } |
+| **Engineering Specialization** | Passive | 20% fewer device failures. Only matters with Engineering | Engineering gadgets in PvP | **1/5**{ .stars .s1 } (**3/5**{ .stars .s3 } with Engineering) |
 
 **Priest spells unique to Gnomes**
 

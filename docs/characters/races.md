@@ -37,7 +37,7 @@ Every race now has **four racials: two active and two passive**. The old weapon-
 | **Skyborne (High Order)** | **Walk on Air**: 10 s controlled glide | **Read Ley Line**: +50% regen for 15 s (+100% while *Attuned* at a Ley Line) | **Wind Blessed**: +haste | **Elemental Insight**: +5% damage vs Elementals |
 | **Skyborne (Windshaper)** | **Walk on Air** | **Skysight**: +15% movement speed for 15 s (+30% while *Charged* at an elemental convergence) | **Wind Blessed** | **Elemental Insight** |
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     - **Wind Blessed:** sources give 1%, 2% or 3% haste. The latest official notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 min.
     - Human **Diplomacy** is no longer a racial; it became the universal Legacy talent *Diplomat*.

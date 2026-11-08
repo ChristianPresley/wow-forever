@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{#- "Orc Rogue" for race add-ons, plain title elsewhere -#}
+{% macro full_title(p) -%}
+  {%- if p and p.url and p.url.startswith('guides/') and p.parent and not p.is_index and p.url.count('/') == 3 -%}
+    {{ p.title }} {{ p.parent.title }}
+  {%- elif p -%}{{ p.title }}{%- endif -%}
+{%- endmacro %}
+
+{% block htmltitle %}
+  {% if page.meta and page.meta.title %}
+    <title>{{ page.meta.title }} · {{ config.site_name }}</title>
+  {% elif page.title and not page.is_homepage %}
+    <title>{{ full_title(page) | striptags }} · {{ config.site_name }}</title>
+  {% else %}
+    <title>{{ config.site_name }} · WoW: Forever wiki</title>
+  {% endif %}
+{% endblock %}
+
+{% block extrahead %}
+  <meta name="theme-color" content="#1b2a41">
+{% endblock %}
+
+{% block announce %}
+  <span class="fc-announce">Raids unlock <strong>9 December 2026</strong>: Barrow Deeps, Hyjal Summit and Onyxia's Lair. <a href="{{ 'content/raids/' | url }}">Raid guides</a></span>
+{% endblock %}
+
+{% block footer %}
+  {% set fc_prev = full_title(page.previous_page) if page.previous_page else "" %}
+  {% set fc_next = full_title(page.next_page) if page.next_page else "" %}
+  {% include "partials/footer.html" %}
+{% endblock %}

@@ -1,3 +1,10 @@
+---
+tags:
+  - Warlock
+  - Undead
+  - Horde
+---
+
 # Undead Warlock
 
 !!! tip "Add-on"
@@ -19,12 +26,12 @@ The classic PvP Warlock. **Will of the Forsaken** breaks and blocks the fears, c
 
 | Racial | Type | Rating | Warlock use |
 |---|---|---|---|
-| **Will of the Forsaken** | Active | ★★★★★ PvP · ★★ PvE | Removes charm, fear and sleep. Counter enemy Warlocks' Fear and Howl of Terror, Priests' Psychic Scream, Seduction and Hibernate. Cooldown not published |
-| **Cannibalize** | Active | ★★★ leveling | Eat a humanoid or undead corpse to regenerate; Method.gg says it now restores **mana and health**. Less drinking between pulls |
-| **Underwater Breathing** | Passive | ★ | Longer breath. Warlocks already have Unending Breath, so this is redundant except for convenience |
-| **Touch of the Grave** *(new)* | Passive | ★★★ | Chance on hit to drain 5% of max health, **15 s** internal cooldown. Method.gg and Warcraft Tavern give a 30% chance and say it scales with Stamina. Steady free healing while leveling and in PvP |
+| **Will of the Forsaken** | Active | **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE | Removes charm, fear and sleep. Counter enemy Warlocks' Fear and Howl of Terror, Priests' Psychic Scream, Seduction and Hibernate. Cooldown not published |
+| **Cannibalize** | Active | **3/5**{ .stars .s3 } leveling | Eat a humanoid or undead corpse to regenerate; Method.gg says it now restores **mana and health**. Less drinking between pulls |
+| **Underwater Breathing** | Passive | **1/5**{ .stars .s1 } | Longer breath. Warlocks already have Unending Breath, so this is redundant except for convenience |
+| **Touch of the Grave** *(new)* | Passive | **3/5**{ .stars .s3 } | Chance on hit to drain 5% of max health, **15 s** internal cooldown. Method.gg and Warcraft Tavern give a 30% chance and say it scales with Stamina. Steady free healing while leveling and in PvP |
 
-!!! note "Conflict: best PvP racial"
+!!! conflict "Conflict: best PvP racial"
     Warcraft Tavern calls Will of the Forsaken the strongest PvP racial for a Warlock. Method.gg gives that title to the Human's new *Will to Survive*. Both are top tier; which matters more depends on whether you fear stuns or fears more.
 
 ### Macros

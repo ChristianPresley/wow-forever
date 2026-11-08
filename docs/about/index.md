@@ -35,7 +35,7 @@ The Warcraft Wiki lists four development pillars:
 3. **Journey before destination.** The level cap never rises, and players catch up by leveling.
 4. **Protect and nurture social experiences.** Every quality-of-life change is weighed by its social impact.
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Lead Game Designer Tim Jones listed only three pillars to Shacknews. He did not name "approachable and familiar".
 
 Other stated principles:

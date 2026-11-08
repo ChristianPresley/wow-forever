@@ -1,3 +1,10 @@
+---
+tags:
+  - Druid
+  - Skyborne
+  - Horde
+---
+
 # Windshaper Skyborne Druid
 
 !!! tip "Add-on"
@@ -18,12 +25,12 @@ Method recommends the Windshaper as the Horde choice for **Cat and Balance in Pv
 
 | Racial | Type | PvE | PvP | Rating |
 |---|---|---|---|---|
-| **Skysight** | Active: +15% movement speed for 15 s; +30% while *Charged* (1 hr buff from an elemental convergence) | Leveling travel before Travel Form at 30; dodging mechanics | Chasing or escaping, stacks with forms (*unconfirmed*) | ★★★☆☆ |
-| **Walk on Air** | Active: 10 s controlled glide. **Works in forms** | Shortcuts and fall rescue | Cliff escapes; cooldown 1.5 or 2 min (*conflict*) | ★★★☆☆ |
-| **Wind Blessed** | Passive: haste | Faster casts and swings | Same | ★★★★☆ |
-| **Elemental Insight** | Passive: +5% damage vs Elementals | Hyjal, Skywall and elemental-heavy dungeons | None | ★★☆☆☆ |
+| **Skysight** | Active: +15% movement speed for 15 s; +30% while *Charged* (1 hr buff from an elemental convergence) | Leveling travel before Travel Form at 30; dodging mechanics | Chasing or escaping, stacks with forms (*unconfirmed*) | **3/5**{ .stars .s3 } |
+| **Walk on Air** | Active: 10 s controlled glide. **Works in forms** | Shortcuts and fall rescue | Cliff escapes; cooldown 1.5 or 2 min (*conflict*) | **3/5**{ .stars .s3 } |
+| **Wind Blessed** | Passive: haste | Faster casts and swings | Same | **4/5**{ .stars .s4 } |
+| **Elemental Insight** | Passive: +5% damage vs Elementals | Hyjal, Skywall and elemental-heavy dungeons | None | **2/5**{ .stars .s2 } |
 
-!!! note "Conflict: Wind Blessed"
+!!! conflict "Conflict: Wind Blessed"
     Sources give 1%, 2% or 3% haste. Blizzard's latest notes say **2%**.
 
 **Macros**
@@ -105,10 +112,10 @@ The Horde's **PvE damage druid**. Wind Blessed haste helps Cat and Balance, and 
 
 | Spec | Rating |
 |---|---|
-| Cat | ★★★★★ |
-| Bear | ★★★☆☆ |
-| Balance | ★★★★★ |
-| Restoration | ★★★★☆ |
-| PvP | ★★★☆☆ |
+| Cat | **5/5**{ .stars .s5 } |
+| Bear | **3/5**{ .stars .s3 } |
+| Balance | **5/5**{ .stars .s5 } |
+| Restoration | **4/5**{ .stars .s4 } |
+| PvP | **3/5**{ .stars .s3 } |
 
 *Ratings are this guide's own judgment.*

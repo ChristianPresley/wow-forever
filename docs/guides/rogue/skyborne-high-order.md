@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+  - Skyborne
+  - Alliance
+---
+
 # Skyborne Rogue (High Order)
 
 !!! tip "Add-on"
@@ -16,12 +23,12 @@
 
 | Racial | Type | Rogue rating | Notes |
 |---|---|---|---|
-| **Walk on Air** | Active | ★★★ | A 10 s controlled glide. Cross gaps, drop off cliffs safely, take shortcuts while leveling. Rogues get Safe Fall at 40, but gliding is also a route-finder and escape in world PvP |
-| **Read Ley Line** | Active | ★★ | +50% regen for 15 s, +100% while *Attuned* at a Ley Line. It is unclear whether it affects Energy; for health regen it shortens downtime |
-| **Wind Blessed** | Passive | ★★★★ | Permanent haste. More swings means more poison and Hack and Slash procs |
-| **Elemental Insight** | Passive | ★★ | +5% damage against Elementals. Zephras Isle is full of them, and some dungeons too |
+| **Walk on Air** | Active | **3/5**{ .stars .s3 } | A 10 s controlled glide. Cross gaps, drop off cliffs safely, take shortcuts while leveling. Rogues get Safe Fall at 40, but gliding is also a route-finder and escape in world PvP |
+| **Read Ley Line** | Active | **2/5**{ .stars .s2 } | +50% regen for 15 s, +100% while *Attuned* at a Ley Line. It is unclear whether it affects Energy; for health regen it shortens downtime |
+| **Wind Blessed** | Passive | **4/5**{ .stars .s4 } | Permanent haste. More swings means more poison and Hack and Slash procs |
+| **Elemental Insight** | Passive | **2/5**{ .stars .s2 } | +5% damage against Elementals. Zephras Isle is full of them, and some dungeons too |
 
-!!! note "Conflicts"
+!!! conflict "Conflicts"
     - **Wind Blessed:** sources give 1%, 2% or 3% haste. The latest official notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 minutes, depending on the source.
     - Whether **Read Ley Line** boosts Energy regen is *unconfirmed*.

@@ -1,3 +1,10 @@
+---
+tags:
+  - Mage
+search:
+  boost: 2
+---
+
 # Mage Guide
 
 !!! info "Current as of 7 November 2026"
@@ -7,6 +14,9 @@
 
 The Mage is a cloth-wearing ranged caster: the best crowd control in the game (Polymorph), strong burst, group AoE, and a toolkit of utility nobody else has (conjured food and water, teleports and portals, Remove Lesser Curse, Counterspell, Slow Fall). In Forever all three trees were rebuilt so that each school plays differently, and the class gained a cross-school spell and its own minor tradeskill.
 
+<aside class="infobox" markdown>
+<p class="infobox-title">Mage at a glance</p>
+
 | | |
 |---|---|
 | **Role** | Ranged damage, crowd control, utility |
@@ -15,6 +25,8 @@ The Mage is a cloth-wearing ranged caster: the best crowd control in the game (P
 | **Strengths** | Polymorph and Frost Nova kiting, burst (Arcane Power, Combustion, Ice Lance shatter), self-sufficient food and water, fast travel |
 | **Weaknesses** | Lowest armor in the game, mana-hungry, vulnerable when caught in melee or stunned |
 | **Leveling speed** | Third fastest in the beta, behind Hunter and Warlock |
+
+</aside>
 
 ### What's new in Forever
 
@@ -38,7 +50,7 @@ The Mage is a cloth-wearing ranged caster: the best crowd control in the game (P
 | Troll | Horde | Classic | [Troll Mage](troll.md) |
 | Undead | Horde | Classic | [Undead Mage](undead.md) |
 
-!!! note "Conflict: best race"
+!!! conflict "Conflict: best race"
     Warcraft Tavern names Skyborne as the best Alliance Mage and Orc as the best Horde Mage. Method.gg suggests Human or Gnome for Alliance and Orc or Troll for Horde. The differences are small; pick the race you'll enjoy for a few hundred hours.
 
 ## Specs & talents
@@ -62,7 +74,7 @@ Talents start at level 10 (or earlier with the *Talented* Legacy talent) and you
     | Arcane Resilience | Mid | 3 points, up to 75% of Intellect as armor |
     | Presence of Mind → Arcane Power | Deep | Arcane Power now requires Presence of Mind |
 
-    !!! note "Conflict: Arcane Blast numbers"
+    !!! conflict "Conflict: Arcane Blast numbers"
         The deep dive described +175% mana per stack, 15% Intellect, 4 stacks and 8–15 s. The pre-launch notes set **+100% mana per stack, 12% Intellect, 18 s**. Use the pre-launch values. Missile Barrage chance was 40% from Arcane Blast and 20% from other bolts in beta.
 
 === "Fire"
@@ -81,7 +93,7 @@ Talents start at level 10 (or earlier with the *Talented* Legacy talent) and you
     | Critical Mass | Mid | Reverted to 3 points for 6% crit |
     | Combustion | Deep | Now lasts 4 crits (was 3) |
 
-    !!! note "Conflict: naming"
+    !!! conflict "Conflict: naming"
         The BlizzCon demo and some guides call the proc **Hot Streak**. Blizzard's deep dive and the spell ID call it **Heating Up**. It is one talent.
 
 === "Frost"
@@ -101,7 +113,7 @@ Talents start at level 10 (or earlier with the *Talented* Legacy talent) and you
     | Winter's Chill | Mid | Frost crit debuff, now **self-only** |
     | Ice Barrier | Deep | Also grants **+15% Frost damage** for 1 min |
 
-    !!! note "Conflict: Fingers of Frost"
+    !!! conflict "Conflict: Fingers of Frost"
         Blizzard describes "charges". Kami-Labs says the next **two** spells; Method.gg gives a 15% proc chance and says one spell. Expect 15–30% from Chill effects; read the tooltip.
 
 ### Recommended leveling build
@@ -122,7 +134,7 @@ Two approaches are popular. Both are fine; Frost is safer, Arcane kills a little
 
     If you'd rather have Ice Lance at 20, skip the Arcane points and put them in at the end.
 
-    !!! note "Conflict: where Missile Barrage sits"
+    !!! conflict "Conflict: where Missile Barrage sits"
         Blizzard's deep dive labels Missile Barrage a **16-point** gold talent. Warcraft Tavern's leveling build reaches it with 7 Arcane points, and another guide says it moved to Arcane tier 2. Check the in-game tree before planning around it.
 
 === "Arcane (open-world solo)"

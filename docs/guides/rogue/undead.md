@@ -1,3 +1,10 @@
+---
+tags:
+  - Rogue
+  - Undead
+  - Horde
+---
+
 # Undead Rogue
 
 !!! tip "Add-on"
@@ -13,10 +20,10 @@ Undead Rogue is the iconic Classic Horde PvP Rogue. **Will of the Forsaken** bre
 
 | Racial | Type | Rogue rating | Notes |
 |---|---|---|---|
-| **Will of the Forsaken** | Active | ★★★★★ PvP · ★★★ PvE | Removes charm, fear and sleep. Breaks Fear, Psychic Scream, Intimidating Shout, Seduction and Hibernate. Several dungeon and raid bosses fear too |
-| **Cannibalize** | Active | ★★★ leveling | Eat a humanoid or undead corpse to heal. Free food while questing |
-| **Underwater Breathing** | Passive | ★ | Longer breath. Handy in coastal quests and the Drowned City approach |
-| **Touch of the Grave** *(new)* | Passive | ★★★ | A chance to drain 5% of your max health from the target (15 s internal cooldown). Small but constant self-healing for a class with none |
+| **Will of the Forsaken** | Active | **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE | Removes charm, fear and sleep. Breaks Fear, Psychic Scream, Intimidating Shout, Seduction and Hibernate. Several dungeon and raid bosses fear too |
+| **Cannibalize** | Active | **3/5**{ .stars .s3 } leveling | Eat a humanoid or undead corpse to heal. Free food while questing |
+| **Underwater Breathing** | Passive | **1/5**{ .stars .s1 } | Longer breath. Handy in coastal quests and the Drowned City approach |
+| **Touch of the Grave** *(new)* | Passive | **3/5**{ .stars .s3 } | A chance to drain 5% of your max health from the target (15 s internal cooldown). Small but constant self-healing for a class with none |
 
 ### Macros
 

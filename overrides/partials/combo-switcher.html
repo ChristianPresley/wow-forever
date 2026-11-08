@@ -1,0 +1,23 @@
+{#- Chip rows linking every class/race guide combination. Built from the nav, so nothing to maintain by hand. -#}
+<nav class="fc-switcher" aria-label="Related guides">
+  {% if fc_is_addon %}
+    {% set slug = page.url.split('/')[2] %}
+    <p class="fc-switcher__row"><span class="fc-switcher__label">Other {{ page.parent.title }} races</span>
+      <a class="fc-chip fc-chip--home" href="{{ page.parent.children[0].url | url }}">{{ page.parent.title }} guide</a>
+      {%- for p in page.parent.children if p.is_page and not p.is_index %}
+        <a class="fc-chip" href="{{ p.url | url }}"{% if p == page %} aria-current="page"{% endif %}>{{ p.title }}</a>
+      {%- endfor %}
+    </p>
+    <p class="fc-switcher__row"><span class="fc-switcher__label">{{ page.title }} as another class</span>
+      {%- for p in nav.pages if p.url.startswith('guides/') and p.url.count('/') == 3 and p.url.split('/')[2] == slug and p != page %}
+        <a class="fc-chip" href="{{ p.url | url }}">{{ p.parent.title }}</a>
+      {%- endfor %}
+    </p>
+  {% else %}
+    <p class="fc-switcher__row"><span class="fc-switcher__label">Race add-ons</span>
+      {%- for p in page.parent.children if p.is_page and not p.is_index %}
+        <a class="fc-chip" href="{{ p.url | url }}">{{ p.title }}</a>
+      {%- endfor %}
+    </p>
+  {% endif %}
+</nav>

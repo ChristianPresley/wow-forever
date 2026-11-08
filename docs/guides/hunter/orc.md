@@ -1,3 +1,10 @@
+---
+tags:
+  - Hunter
+  - Orc
+  - Horde
+---
+
 # Orc Hunter
 
 !!! tip "Add-on"
@@ -16,14 +23,14 @@ Add **Hardiness** (−20% stun duration) and the new **Shatter Curse**, and Orc 
 
 | Racial | Type | Rating | PvE | PvP |
 |---|---|---|---|---|
-| **Blood Fury** *(changed)* | Active | ★★★★★ | +10% AP (and spell power) for 15 s every 2 min. Pair with Rapid Fire and Summon Hawk | Burst window for Aimed Shot + Arcane Shot |
-| **Shatter Curse** *(new)* | Active | ★★★ | Removes curses and Warlock **Banes**, and −5% magic damage taken for 8 s. Handy on cursed dungeon bosses | Cleanses Curse of Exhaustion and Banes; strong vs Warlocks |
-| **Command** | Passive | ★★★★ BM | +5% pet damage. Best for Beast Mastery; worthless as a petless Lone Wolf | More pet pressure |
-| **Hardiness** | Passive | ★★★★ PvP | −20% stun duration | Shorter Kidney Shot, Hammer of Justice, Cheap Shot |
+| **Blood Fury** *(changed)* | Active | **5/5**{ .stars .s5 } | +10% AP (and spell power) for 15 s every 2 min. Pair with Rapid Fire and Summon Hawk | Burst window for Aimed Shot + Arcane Shot |
+| **Shatter Curse** *(new)* | Active | **3/5**{ .stars .s3 } | Removes curses and Warlock **Banes**, and −5% magic damage taken for 8 s. Handy on cursed dungeon bosses | Cleanses Curse of Exhaustion and Banes; strong vs Warlocks |
+| **Command** | Passive | **4/5**{ .stars .s4 } BM | +5% pet damage. Best for Beast Mastery; worthless as a petless Lone Wolf | More pet pressure |
+| **Hardiness** | Passive | **4/5**{ .stars .s4 } PvP | −20% stun duration | Shorter Kidney Shot, Hammer of Justice, Cheap Shot |
 
 Axe Specialization is gone.
 
-!!! note "Conflict"
+!!! conflict "Conflict"
     Warcraft Tavern's Hunter overview lists Orc racials as "Blood Fury, Savage". *Savage* was a mid-beta racial replaced before launch. The live set (Blood Fury, Shatter Curse, Command, Hardiness) is listed by Method and the [Races](../../characters/races.md#racial-abilities) page.
 
 **Macros**

@@ -444,14 +444,102 @@ All three launch raids open on **9 December 2026**. See [Raids](../../content/ra
 
 ### Professions
 
-| Pick | Why |
-|---|---|
-| **Tailoring** | BoP cloth with spell power from about level 10, robes, bags and the reagent bag slot. Every source recommends it |
-| **Enchanting** | Disenchant your own cloth drops; BoP wands |
-| Alchemy / Herbalism | Mana and elixirs for raids |
-| Engineering | PvP gadgets; Gnomes fail less often |
+Every source recommends Tailoring for a Mage; Method.gg says not to bother gathering.
 
-Warcraft Tavern's guides suggest Tailoring + Enchanting; Method.gg agrees and says not to bother gathering. Cooking, First Aid (which now makes **healing potions**) and Fishing are all useful.
+<div class="prof-picks" markdown>
+
+<div class="prof-pick prof-pick--best" markdown>
+
+<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
+
+<p class="prof-pair" markdown>:material-needle: Tailoring <span class="prof-plus">+</span> :material-auto-fix: Enchanting</p>
+
+<p class="prof-for">Best for: Every Mage</p>
+
+<div class="pills" markdown>
+**Leveling**{ .pill .pill--success .pill--sm } **Raids**{ .pill .pill--info .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+</dl>
+
+- BoP spell power cloth from about level 10, robes, bags and the reagent bag
+- Disenchant your own cloth drops; craft BoP wands
+- Warcraft Tavern and Method.gg both suggest it
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Faction Banner (Spirit) · Enchanted Lute (armor, stats, resists)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--alt" markdown>
+
+<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+
+<p class="prof-pair" markdown>:material-leaf: Herbalism <span class="prof-plus">+</span> :material-flask: Alchemy</p>
+
+<p class="prof-for">Best for: Raid consumables</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Mana potions and elixirs for raid nights
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Incense Candle (Intellect) · Mana Well (mana regen)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--sit" markdown>
+
+<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
+
+<p class="prof-pair" markdown>:material-needle: Tailoring <span class="prof-plus">+</span> :material-cog: Engineering</p>
+
+<p class="prof-for">Best for: PvP</p>
+
+<div class="pills" markdown>
+**PvP**{ .pill .pill--danger .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+</dl>
+
+- Keep the cloth; trade Enchanting for PvP gadgets
+- Gnomes have 20% fewer device failures
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Faction Banner (Spirit) · Reagent Bot</p>
+
+</div>
+
+</div>
+
+<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare every class in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
+
+<div class="pills" markdown>
+**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
+</div>
+
+**Secondary skills.** Cooking, First Aid (which now makes healing potions) and Fishing are all useful.
+
+!!! tip "Race notes"
+    **Skyborne:** Read Ley Line already cuts leveling downtime, which favors Tailoring over early Alchemy. **Gnome:** best Engineering race.
+
+Crafting professions award [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever.
 
 ### Comprehension
 

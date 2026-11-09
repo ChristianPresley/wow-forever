@@ -487,15 +487,102 @@ Raids open on **9 December 2026**: [The Barrow Deeps](../../content/raids/barrow
 
 ## Professions & Legacy
 
-**Professions.**
+<p class="divider">Professions</p>
 
-| Pair | Why |
-|---|---|
-| **Mining + Blacksmithing** | The paladin standard. Blacksmithing has many new BoP patterns for all three specs, including mail spell power gear before 40. |
-| Mining + Engineering | PvP gadgets. |
-| Herbalism + Alchemy | Self-supplied elixirs and mana potions for healers. |
+Paladins wear plate at 40, and Blacksmithing covers all three specs.
 
-Take **First Aid** on every character; it now makes healing potions. Cooking and Fishing feed the camping system. See [Professions](../../characters/professions.md).
+<div class="prof-picks" markdown>
+
+<div class="prof-pick prof-pick--best" markdown>
+
+<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
+
+<p class="prof-pair" markdown>:material-pickaxe: Mining <span class="prof-plus">+</span> :material-anvil: Blacksmithing</p>
+
+<p class="prof-for">Best for: All three specs</p>
+
+<div class="pills" markdown>
+**Leveling**{ .pill .pill--success .pill--sm } **Raids**{ .pill .pill--info .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+</dl>
+
+- The Paladin standard
+- Many new BoP patterns, including mail spell power gear before 40
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Lodestone (melee AP) · Sharpening Wheel (Strength)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--alt" markdown>
+
+<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+
+<p class="prof-pair" markdown>:material-pickaxe: Mining <span class="prof-plus">+</span> :material-cog: Engineering</p>
+
+<p class="prof-for">Best for: PvP</p>
+
+<div class="pills" markdown>
+**PvP**{ .pill .pill--danger .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+</dl>
+
+- PvP gadgets
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Lodestone (melee AP) · Reagent Bot</p>
+
+</div>
+
+<div class="prof-pick prof-pick--sit" markdown>
+
+<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
+
+<p class="prof-pair" markdown>:material-leaf: Herbalism <span class="prof-plus">+</span> :material-flask: Alchemy</p>
+
+<p class="prof-for">Best for: Holy healers</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Self-supplied elixirs and mana potions
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Incense Candle (Intellect) · Mana Well (mana regen)</p>
+
+</div>
+
+</div>
+
+<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare every class in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
+
+<div class="pills" markdown>
+**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
+</div>
+
+**Secondary skills.** Take First Aid on every character; it now makes healing potions. Cooking and Fishing feed the camping system.
+
+!!! tip "Race notes"
+    **Dwarf, Human, Undead:** no profession racials; pick freely.
+
+Crafting professions award [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever.
 
 **Legacy talents** (up to 16 points per character):
 

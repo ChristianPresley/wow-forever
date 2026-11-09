@@ -23,6 +23,38 @@
 - Leveling crafting professions awards **[Legacy Points](legacy.md)** at 150, 225 and 300.
 - **Mage-only Comprehension** tradeskill (see [Mage](classes/mage.md)).
 
+## Best professions by class
+
+Each class guide ranks its best profession pairs. This grid shows the best rank that each profession gets for each class.
+
+<div class="pills" markdown>
+**S**{ .tier .tier-s } best pick **A**{ .tier .tier-a } strong alternative **B**{ .tier .tier-b } situational
+</div>
+
+<div class="fc-matrix" markdown>
+
+| Class | :material-flask: Alchemy | :material-anvil: Blacksmithing | :material-auto-fix: Enchanting | :material-cog: Engineering | :material-leaf: Herbalism | :material-bag-personal: Leatherworking | :material-pickaxe: Mining | :material-knife: Skinning | :material-needle: Tailoring |
+|---|---|---|---|---|---|---|---|---|---|
+| [Druid](../guides/druid/index.md#professions-legacy){ .pill .pill--druid } | **A**{ .tier .tier-a } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> |
+| [Hunter](../guides/hunter/index.md#professions-legacy){ .pill .pill--hunter } | **B**{ .tier .tier-b } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> |
+| [Mage](../guides/mage/index.md#professions-legacy){ .pill .pill--mage } | **A**{ .tier .tier-a } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **S**{ .tier .tier-s } | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **S**{ .tier .tier-s } |
+| [Paladin](../guides/paladin/index.md#professions-legacy){ .pill .pill--paladin } | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **S**{ .tier .tier-s } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> |
+| [Priest](../guides/priest/index.md#professions-legacy){ .pill .pill--priest } | **A**{ .tier .tier-a } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **S**{ .tier .tier-s } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **A**{ .tier .tier-a } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } |
+| [Rogue](../guides/rogue/index.md#professions-legacy){ .pill .pill--rogue } | **B**{ .tier .tier-b } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> |
+| [Shaman](../guides/shaman/index.md#professions-legacy){ .pill .pill--shaman } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> |
+| [Warlock](../guides/warlock/index.md#professions-legacy){ .pill .pill--warlock } | **B**{ .tier .tier-b } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **S**{ .tier .tier-s } |
+| [Warrior](../guides/warrior/index.md#professions-legacy){ .pill .pill--warrior } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **S**{ .tier .tier-s } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **A**{ .tier .tier-a } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> | **S**{ .tier .tier-s } | **B**{ .tier .tier-b } | <span class="fc-na"><span aria-hidden="true">–</span><span class="fc-sr">not a top pick</span></span> |
+
+</div>
+
+<div class="stats" markdown>
+
+- **6** of 9 classes build their best pair around Tailoring or Leatherworking
+- **2** primary professions per character, from 9
+- **0** passive stat bonuses from professions in Forever
+
+</div>
+
 ## Crates & Merchant's Favor
 
 This works like Season of Discovery. Loot **crates** in the world, fill them, and turn them in for silver, reputation and **Merchant's Favor**, a character-bound currency.

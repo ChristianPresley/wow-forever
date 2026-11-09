@@ -479,15 +479,102 @@ At 60, treat **hit up to the cap** as your first priority for raids (general Cla
 
 ## Professions & Legacy { #professions-legacy }
 
-| Pair | Why |
-|---|---|
-| **Leatherworking + Skinning** | Method's pick. Many new BoP leather and mail patterns, cheap materials; you skin while the pet finishes kills |
-| **Engineering + Mining** | Scopes, ammo, explosives and PvP gadgets (Warcraft Tavern's pick) |
-| Alchemy + Herbalism | Elixirs for raids (healing potions now belong to First Aid) |
+<p class="divider">Professions</p>
 
-Leveling any of the six crafting professions to 150/225/300 also earns [Legacy Points](../../characters/legacy.md). Secondary skills: **Cooking** (camp fires, XP food, pet food), **First Aid** (bandages and now healing potions; Freezing Trap buys bandage time), Fishing.
+Hunters wear leather until 40 and mail after, and skin while the pet finishes a kill.
 
-**Camping:** the Skinning camp item, the **Camp Chair**, gives +2% crit; the Leatherworking **Camp Tent** stores rested XP.
+<div class="prof-picks" markdown>
+
+<div class="prof-pick prof-pick--best" markdown>
+
+<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
+
+<p class="prof-pair" markdown>:material-bag-personal: Leatherworking <span class="prof-plus">+</span> :material-knife: Skinning</p>
+
+<p class="prof-for">Best for: Leveling and gold</p>
+
+<div class="pills" markdown>
+**Leveling**{ .pill .pill--success .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Method's pick: many new BoP leather and mail patterns from cheap materials
+- You skin while the pet finishes kills
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Camp Tent (rested XP) · Camp Chair (+2% crit)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--alt" markdown>
+
+<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+
+<p class="prof-pair" markdown>:material-cog: Engineering <span class="prof-plus">+</span> :material-pickaxe: Mining</p>
+
+<p class="prof-for">Best for: PvP and raid utility</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **PvP**{ .pill .pill--danger .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+</dl>
+
+- Warcraft Tavern's pick: scopes, ammo, explosives and PvP gadgets
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Reagent Bot · Lodestone (melee AP)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--sit" markdown>
+
+<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
+
+<p class="prof-pair" markdown>:material-flask: Alchemy <span class="prof-plus">+</span> :material-leaf: Herbalism</p>
+
+<p class="prof-for">Best for: Raid consumables</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Elixirs for raids (healing potions now belong to First Aid)
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Mana Well (mana regen) · Incense Candle (Intellect)</p>
+
+</div>
+
+</div>
+
+<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare every class in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
+
+<div class="pills" markdown>
+**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
+</div>
+
+**Secondary skills.** Cooking makes XP food and pet food; First Aid bandages (Freezing Trap buys the time) and healing potions; Fishing.
+
+!!! tip "Race notes"
+    **Tauren:** *Cultivation* adds herbs for Herbalists.
+
+Crafting professions award [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever.
 
 **Legacy picks** (16 points per character at launch):
 

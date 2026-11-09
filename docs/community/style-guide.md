@@ -209,6 +209,35 @@ Weaknesses
 </div>
 ```
 
+## Profession picks
+
+Ranked cards for profession pairs. Every class guide uses them. Each card has:
+
+- a tier and rank
+- the 2 professions with icons
+- use-case pills
+- a 1–5 meter for each dimension
+- reasons
+- the camp features of the pair
+
+Use `prof-pick--best` (gold frame) for the top pick, `prof-pick--alt` for alternatives and `prof-pick--sit` for situational picks.
+
+```html
+<div class="prof-picks" markdown>
+<div class="prof-pick prof-pick--best" markdown>
+<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
+<p class="prof-pair" markdown>:material-needle: Tailoring <span class="prof-plus">+</span> :material-auto-fix: Enchanting</p>
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Why it works
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Faction Banner · Enchanted Lute</p>
+</div>
+</div>
+```
+
 ## Labelled divider
 
 <p class="divider">Alliance</p>

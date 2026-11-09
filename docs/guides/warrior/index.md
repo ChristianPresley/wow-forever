@@ -488,16 +488,103 @@ Arms is the PvP spec: **Mortal Strike** for healing reduction, **Hamstring** to 
 
 ## Professions & Legacy
 
-**Professions**
+<p class="divider">Professions</p>
 
-| Pair | Why |
-|---|---|
-| **Mining + Blacksmithing** | The classic Warrior pair. Weapon stones, plate, many new BoP patterns. Mining's camp feature (**Lodestone**) adds melee AP |
-| **Mining + Engineering** | Bombs and gadgets for PvP; Warcraft Tavern rates Engineering highly |
-| **Skinning + Mining** (leveling) | Money for your mount at 40. Skinning's **Camp Chair** gives +2% crit |
-| **First Aid** | Mandatory secondary skill: it now makes **health potions** as well as bandages |
+Warriors depend on gear more than any other class, so a crafting pair that makes weapons and plate pays off.
 
-Professions give no passive stat bonuses in Forever; their value is crafting, gathering and [camping](../../systems/camping.md). Crafting professions also award Legacy Points at 150/225/300. See [Professions](../../characters/professions.md).
+<div class="prof-picks" markdown>
+
+<div class="prof-pick prof-pick--best" markdown>
+
+<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
+
+<p class="prof-pair" markdown>:material-pickaxe: Mining <span class="prof-plus">+</span> :material-anvil: Blacksmithing</p>
+
+<p class="prof-for">Best for: Tanks and Fury</p>
+
+<div class="pills" markdown>
+**Leveling**{ .pill .pill--success .pill--sm } **Raids**{ .pill .pill--info .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+</dl>
+
+- The classic Warrior pair: weapon stones, plate and many new BoP patterns
+- Both camp features add melee power
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Lodestone (melee AP) · Sharpening Wheel (Strength)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--alt" markdown>
+
+<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+
+<p class="prof-pair" markdown>:material-pickaxe: Mining <span class="prof-plus">+</span> :material-cog: Engineering</p>
+
+<p class="prof-for">Best for: PvP</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **PvP**{ .pill .pill--danger .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+</dl>
+
+- Bombs and gadgets; Warcraft Tavern rates Engineering highly
+- Gnomes have 20% fewer device failures
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Lodestone (melee AP) · Reagent Bot</p>
+
+</div>
+
+<div class="prof-pick prof-pick--sit" markdown>
+
+<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
+
+<p class="prof-pair" markdown>:material-knife: Skinning <span class="prof-plus">+</span> :material-pickaxe: Mining</p>
+
+<p class="prof-for">Best for: Mount money</p>
+
+<div class="pills" markdown>
+**Leveling**{ .pill .pill--success .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:20%"><span>1/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:20%"><span>1/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+</dl>
+
+- Pays for your mount at 40; swap one for a crafting skill afterwards
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Camp Chair (+2% crit) · Lodestone (melee AP)</p>
+
+</div>
+
+</div>
+
+<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare every class in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
+
+<div class="pills" markdown>
+**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
+</div>
+
+**Secondary skills.** First Aid is mandatory: it now makes health potions as well as bandages. Cooking and Fishing feed camping.
+
+!!! tip "Race notes"
+    **Gnome:** best Engineering race. **Tauren:** *Cultivation* only helps if you take Herbalism.
+
+Crafting professions award [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever.
 
 **Legacy talents** (16 points per character at launch)
 

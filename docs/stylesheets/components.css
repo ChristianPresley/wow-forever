@@ -153,6 +153,40 @@
   font-family: var(--fc-caps-font); font-size: .78rem; letter-spacing: .1em; color: var(--fc-gold-text); }
 .md-typeset .divider::before, .md-typeset .divider::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--fc-gold), transparent); }
 
+/* ---------- Profession picks: ranked pairing cards ------------------- */
+.md-typeset .prof-picks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: .7rem; margin: .8em 0 1.2em; max-width: none; }
+.md-typeset .prof-pick { position: relative; display: flex; flex-direction: column; gap: .45rem; padding: .75rem .9rem .7rem;
+  border: 1px solid var(--fc-border); border-radius: calc(var(--fc-radius) * 1.5); background: var(--fc-surface-1);
+  font-size: .76rem; line-height: 1.45; overflow: hidden; }
+.md-typeset .prof-pick::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: var(--fc-border-strong); }
+.md-typeset .prof-pick--best { border-color: var(--fc-gold); box-shadow: 0 0 0 1px var(--fc-gold) inset; }
+.md-typeset .prof-pick--best::before { background: linear-gradient(90deg, var(--fc-gold), color-mix(in srgb, var(--fc-gold) 25%, transparent)); }
+.md-typeset .prof-pick--alt::before { background: linear-gradient(90deg, var(--fc-adm-info), transparent); }
+.md-typeset .prof-pick > :is(p, ul, dl, div) { margin: 0; max-width: none; }
+.md-typeset .prof-rank { display: flex; align-items: center; gap: .45rem; font-size: .64rem; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--fc-text-muted); }
+.md-typeset .prof-rank .tier { margin: 0; }
+.md-typeset .prof-pair { display: flex; flex-wrap: wrap; align-items: center; gap: .15rem .35rem;
+  font-family: var(--fc-display-font); font-size: 1.08rem; font-weight: 700; line-height: 1.2; color: var(--fc-text); }
+.md-typeset .prof-pair .twemoji { height: 1.15em; }
+.md-typeset .prof-pair .twemoji svg { width: 1.15em; height: 1.15em; fill: var(--fc-gold); }
+.md-typeset .prof-plus { color: var(--fc-text-subtle); font-family: var(--md-text-font-family); font-weight: 400; }
+.md-typeset .prof-pick .pills { margin: 0; }
+.md-typeset .prof-scores { display: grid; grid-template-columns: auto 1fr; gap: .2rem .7rem; align-items: center;
+  padding: .45rem 0; border-block: 1px solid var(--fc-border); font-size: .7rem; }
+.md-typeset .prof-scores dt { margin: 0; font-weight: 600; color: var(--fc-text-muted); }
+.md-typeset .prof-scores dd { margin: 0; }
+.md-typeset .prof-scores .meter { display: grid; grid-template-columns: 1fr auto; width: 100%; }
+.md-typeset .prof-pick ul { padding-left: 1.1em; }
+.md-typeset .prof-pick li { margin: .2em 0; }
+.md-typeset .prof-camp { margin-top: auto !important; padding-top: .45rem; border-top: 1px dashed var(--fc-border);
+  font-size: .7rem; color: var(--fc-text-muted); }
+.md-typeset .prof-camp .twemoji svg { fill: var(--fc-gold); }
+.md-typeset .prof-camp strong { color: var(--fc-text); }
+.md-typeset .fc-matrix th .twemoji { display: block; margin: 0 auto .15em; }
+.md-typeset .fc-matrix th .twemoji svg { fill: var(--fc-gold); }
+@media (forced-colors: active) { .md-typeset .prof-pick { border: 1px solid CanvasText; } .md-typeset .prof-pick--best { border-width: 3px; } }
+
 /* ---------- Pill legend --------------------------------------------- */
 .md-typeset .legend { display: flex; flex-wrap: wrap; gap: .3rem .8rem; align-items: center; font-size: .7rem; color: var(--fc-text-muted); margin: .2em 0 1em; max-width: none; }
 

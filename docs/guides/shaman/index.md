@@ -493,17 +493,130 @@ Warcraft Tavern's stat priorities (beta; the author expects them to change at le
 
 ## Professions & Legacy { #professions-legacy }
 
-**Professions.** See [Professions](../../characters/professions.md).
+<p class="divider">Professions</p>
 
-| Pick | Why |
-|---|---|
-| **Herbalism + Alchemy** | Mana potions and elixirs are your biggest raid cost. Tauren Cultivation adds bonus herbs |
-| **Mining + Blacksmithing** | Sharpening stones and weightstones for Enhancement, now that they stack with imbues |
-| **Skinning + Leatherworking** | Leather and mail armor, plus the Leatherworking Camp Tent for rested XP |
-| **Mining + Engineering** | Best for PvP gadgets |
-| **Gathering pair** | Fastest gold while leveling; buy your 40 and 60 mounts sooner |
+Mana is the biggest Shaman cost, but Enhancement and leveling Shamans have good options too.
 
-Six crafting professions also give [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300. See [Camping](../../systems/camping.md) for camp features tied to professions.
+<div class="prof-picks" markdown>
+
+<div class="prof-pick prof-pick--best" markdown>
+
+<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
+
+<p class="prof-pair" markdown>:material-leaf: Herbalism <span class="prof-plus">+</span> :material-flask: Alchemy</p>
+
+<p class="prof-for">Best for: Elemental and Restoration</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Mana potions and elixirs are your biggest raid cost
+- Tauren Cultivation adds bonus herbs
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Incense Candle (Intellect) · Mana Well (mana regen)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--alt" markdown>
+
+<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+
+<p class="prof-pair" markdown>:material-pickaxe: Mining <span class="prof-plus">+</span> :material-anvil: Blacksmithing</p>
+
+<p class="prof-for">Best for: Enhancement</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+</dl>
+
+- Sharpening stones and weightstones, which now stack with imbues
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Lodestone (melee AP) · Sharpening Wheel (Strength)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--alt" markdown>
+
+<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+
+<p class="prof-pair" markdown>:material-knife: Skinning <span class="prof-plus">+</span> :material-bag-personal: Leatherworking</p>
+
+<p class="prof-for">Best for: Leveling</p>
+
+<div class="pills" markdown>
+**Leveling**{ .pill .pill--success .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Leather and mail armor
+- The Leatherworking Camp Tent stores rested XP
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Camp Chair (+2% crit) · Camp Tent (rested XP)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--sit" markdown>
+
+<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
+
+<p class="prof-pair" markdown>:material-pickaxe: Mining <span class="prof-plus">+</span> :material-cog: Engineering</p>
+
+<p class="prof-for">Best for: PvP</p>
+
+<div class="pills" markdown>
+**PvP**{ .pill .pill--danger .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+</dl>
+
+- Best for PvP gadgets
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Lodestone (melee AP) · Reagent Bot</p>
+
+</div>
+
+</div>
+
+<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare every class in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
+
+A **pure gathering pair** (for example Herbalism + Mining) is the fastest gold while leveling, so you buy your 40 and 60 mounts sooner.
+
+<div class="pills" markdown>
+**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
+</div>
+
+**Secondary skills.** Cooking for campfires, First Aid for healing potions, Fishing for the Fish Bowl.
+
+!!! tip "Race notes"
+    **Tauren:** *Cultivation* adds herbs, which suits the Herbalism + Alchemy pair.
+
+Crafting professions award [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever.
 
 **Legacy talents.** Up to 16 points per character at launch.
 

@@ -553,14 +553,102 @@ Armor is **cloth**. Weapons: daggers, wands, and (from the right trainer) one-ha
 
 ## Professions & Legacy
 
-| Pairing | Why |
-|---|---|
-| **Tailoring + Enchanting** | Method.gg's pick: crafted robes, wands, disenchanting dungeon loot |
-| **Tailoring + Engineering** | Warcraft Tavern's highest-damage pick (gadgets and the Engineering camp features) |
-| **Herbalism + Alchemy** | Cheap elixirs and potions for raid nights |
+<p class="divider">Professions</p>
 
-- Professions give **no passive stat bonuses**; value comes from crafting and camp features. Tailoring's **Faction Banner** camp feature gives Spirit, which helps Life Tap.
-- Healing potions moved to **First Aid**; level it.
+Warlocks wear cloth, so Tailoring anchors every top pairing. Tailoring's Faction Banner gives Spirit, which helps Life Tap.
+
+<div class="prof-picks" markdown>
+
+<div class="prof-pick prof-pick--best" markdown>
+
+<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
+
+<p class="prof-pair" markdown>:material-needle: Tailoring <span class="prof-plus">+</span> :material-auto-fix: Enchanting</p>
+
+<p class="prof-for">Best for: Every Warlock</p>
+
+<div class="pills" markdown>
+**Leveling**{ .pill .pill--success .pill--sm } **Raids**{ .pill .pill--info .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+</dl>
+
+- Method.gg's pick: crafted robes, wands and disenchanting dungeon loot
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Faction Banner (Spirit) · Enchanted Lute (armor, stats, resists)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--alt" markdown>
+
+<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+
+<p class="prof-pair" markdown>:material-needle: Tailoring <span class="prof-plus">+</span> :material-cog: Engineering</p>
+
+<p class="prof-for">Best for: Highest damage</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **PvP**{ .pill .pill--danger .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+</dl>
+
+- Warcraft Tavern's highest-damage pick
+- Gadgets and the Engineering camp features; Gnomes fail less often
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Faction Banner (Spirit) · Reagent Bot</p>
+
+</div>
+
+<div class="prof-pick prof-pick--sit" markdown>
+
+<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
+
+<p class="prof-pair" markdown>:material-leaf: Herbalism <span class="prof-plus">+</span> :material-flask: Alchemy</p>
+
+<p class="prof-for">Best for: Raid consumables</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Cheap elixirs and potions for raid nights
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Incense Candle (Intellect) · Mana Well (mana regen)</p>
+
+</div>
+
+</div>
+
+<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare every class in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
+
+<div class="pills" markdown>
+**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
+</div>
+
+**Secondary skills.** Healing potions moved to First Aid; level it. Cooking and Fishing feed camping.
+
+!!! tip "Race notes"
+    **Gnome:** 20% fewer Engineering device failures, which favors the Tailoring + Engineering pair.
+
+Crafting professions award [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever.
 
 **Legacy picks (16 points at launch)**
 

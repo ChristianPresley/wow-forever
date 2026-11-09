@@ -490,14 +490,103 @@ See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/batt
 
 ## Professions & Legacy
 
-**Professions**
+<p class="divider">Professions</p>
 
-| Pick | Why |
-|---|---|
-| **Leatherworking + Skinning** | Classic Feral choice. LW gets many new BoP patterns, and the Camp Tent gives rested XP |
-| **Herbalism + Alchemy** | Every druid uses potions now that they work in form. Herbalism pairs with Travel Form and Tauren Cultivation |
-| **Mining + Engineering** | Engineering trinkets and bombs (SAF-T and EZ-Thro bombs work in form) |
-| Secondary | Cooking (campfires), **First Aid** (it now makes healing potions), Fishing |
+Druids wear leather and can use potions in every form, so the right pair depends on your spec.
+
+<div class="prof-picks" markdown>
+
+<div class="prof-pick prof-pick--best" markdown>
+
+<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
+
+<p class="prof-pair" markdown>:material-bag-personal: Leatherworking <span class="prof-plus">+</span> :material-knife: Skinning</p>
+
+<p class="prof-for">Best for: Feral and leveling</p>
+
+<div class="pills" markdown>
+**Leveling**{ .pill .pill--success .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- The classic Feral choice: leather armor and many new BoP patterns
+- Skin your own kills while leveling
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Camp Tent (rested XP) · Camp Chair (+2% crit)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--alt" markdown>
+
+<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+
+<p class="prof-pair" markdown>:material-leaf: Herbalism <span class="prof-plus">+</span> :material-flask: Alchemy</p>
+
+<p class="prof-for">Best for: Balance and Restoration raiders</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Potions now work in form, so every druid uses them
+- Herbalism pairs with Travel Form; Tauren Cultivation adds herbs
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Incense Candle (Intellect) · Mana Well (mana regen)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--sit" markdown>
+
+<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
+
+<p class="prof-pair" markdown>:material-pickaxe: Mining <span class="prof-plus">+</span> :material-cog: Engineering</p>
+
+<p class="prof-for">Best for: PvP</p>
+
+<div class="pills" markdown>
+**PvP**{ .pill .pill--danger .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+</dl>
+
+- Trinkets and bombs; SAF-T and EZ-Thro bombs work in form
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Lodestone (melee AP) · Reagent Bot</p>
+
+</div>
+
+</div>
+
+<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare every class in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
+
+<div class="pills" markdown>
+**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
+</div>
+
+**Secondary skills.** Cooking feeds campfires; First Aid now makes healing potions; Fishing adds the Fish Bowl.
+
+!!! tip "Race notes"
+    **Tauren:** *Cultivation* grows an herb with bonus yield for Herbalists.
+
+Crafting professions award [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever.
 
 **Legacy talents** (16 points per character; see [Legacy](../../characters/legacy.md))
 

@@ -586,15 +586,112 @@ Rogues are the class every other class prepares for. See [PvP](../../content/pvp
 
 ## Professions & Legacy
 
-| Combo | Why |
-|---|---|
-| **Skinning + Leatherworking** | The standard Rogue pair: leather armor, armor kits and the **Camp Tent** (+5% rested XP). Many new BoP armor patterns |
-| **Engineering + Mining** | PvP: bombs, grenades, nets. Best for Gnomes (fewer device failures) |
-| **Herbalism + Alchemy** | Gold and your own Agility elixirs and Free Action Potions |
-| Leveling only | **Skinning + Mining** early, then swap Mining for Blacksmithing or Leatherworking (Method's plan) |
+<p class="divider">Professions</p>
 
-- Secondary: **First Aid** (now also makes Healing Potions), Cooking, Fishing.
-- Crafting professions award Legacy Points at skill 150/225/300.
+Rogues want leather armor and armor kits for PvE, or explosives for PvP.
+
+<div class="prof-picks" markdown>
+
+<div class="prof-pick prof-pick--best" markdown>
+
+<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
+
+<p class="prof-pair" markdown>:material-knife: Skinning <span class="prof-plus">+</span> :material-bag-personal: Leatherworking</p>
+
+<p class="prof-for">Best for: PvE and leveling</p>
+
+<div class="pills" markdown>
+**Leveling**{ .pill .pill--success .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- The standard Rogue pair: leather armor and armor kits
+- Many new BoP armor patterns
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Camp Chair (+2% crit) · Camp Tent (rested XP)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--alt" markdown>
+
+<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+
+<p class="prof-pair" markdown>:material-cog: Engineering <span class="prof-plus">+</span> :material-pickaxe: Mining</p>
+
+<p class="prof-for">Best for: PvP</p>
+
+<div class="pills" markdown>
+**PvP**{ .pill .pill--danger .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
+</dl>
+
+- Bombs, grenades and nets
+- Best for Gnomes (fewer device failures)
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Reagent Bot · Lodestone (melee AP)</p>
+
+</div>
+
+<div class="prof-pick prof-pick--sit" markdown>
+
+<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
+
+<p class="prof-pair" markdown>:material-leaf: Herbalism <span class="prof-plus">+</span> :material-flask: Alchemy</p>
+
+<p class="prof-for">Best for: Self-supplied consumables</p>
+
+<div class="pills" markdown>
+**Raids**{ .pill .pill--info .pill--sm } **PvP**{ .pill .pill--danger .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
+</div>
+
+<dl class="prof-scores">
+<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
+<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>PvP</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
+</dl>
+
+- Gold, your own Agility elixirs and Free Action Potions
+
+<p class="prof-camp" markdown>:material-campfire: **Camp features:** Incense Candle (Intellect) · Mana Well (mana regen)</p>
+
+</div>
+
+</div>
+
+<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare every class in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
+
+**Leveling plan**
+
+<div class="timeline" markdown>
+
+- **Early** Skinning + Mining for gold while leveling.
+- **Later** Drop Mining for Blacksmithing or Leatherworking once you can afford it (Method's plan).
+
+</div>
+
+<div class="pills" markdown>
+**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
+</div>
+
+**Secondary skills.** First Aid (now also makes healing potions) matters most for a class with no heals; Cooking and Fishing round it out.
+
+!!! tip "Race notes"
+    **Gnome:** 20% fewer Engineering device failures.
+
+Crafting professions award [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever.
 
 ### Legacy talents for a Rogue
 

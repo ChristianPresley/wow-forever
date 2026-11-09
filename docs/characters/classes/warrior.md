@@ -33,7 +33,7 @@
 
 <div class="fc-cta" data-class="warrior" markdown>
 
-**Playing a Warrior?** The [Warrior guide](../../guides/warrior/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+**Do you play a Warrior?** The [Warrior guide](../../guides/warrior/index.md) explains talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
 
 <span class="fc-cta__label">Race add-ons</span> [Human](../../guides/warrior/human.md){ .fc-chip } [Dwarf](../../guides/warrior/dwarf.md){ .fc-chip } [Gnome](../../guides/warrior/gnome.md){ .fc-chip } [Night Elf](../../guides/warrior/night-elf.md){ .fc-chip } [Skyborne (High Order)](../../guides/warrior/skyborne-high-order.md){ .fc-chip } [Orc](../../guides/warrior/orc.md){ .fc-chip } [Troll](../../guides/warrior/troll.md){ .fc-chip } [Tauren](../../guides/warrior/tauren.md){ .fc-chip } [Undead](../../guides/warrior/undead.md){ .fc-chip } [Skyborne (Windshaper)](../../guides/warrior/skyborne-windshaper.md){ .fc-chip }
 
@@ -41,9 +41,9 @@
 
 ## Rage normalization
 
-- Armor no longer reduces rage from damage taken; it is calculated as if armor were always 50%.
-- Absorbs don't reduce rage.
-- Rage from dealing damage depends on weapon speed.
+- Armor no longer reduces rage from damage taken. The game calculates rage as if armor is always 50%.
+- Absorbs do not reduce rage.
+- Rage from the damage that you deal depends on weapon speed.
 - **Crits give +75% rage.**
 
 ## Baseline changes
@@ -51,19 +51,19 @@
 - **Tactical Mastery** (lvl 14): keep 10 rage when you switch stances.
 - **Victory Rush** (lvl 20): 30 s cooldown, heals 10%.
 - Recklessness, Retaliation and Shield Wall no longer share a cooldown. Retaliation and Shield Wall are 15 min.
-- Rend and Thunder Clap gain AP scaling. Thunder Clap is usable in Defensive Stance (6 s cooldown).
-- Improved Battle Shout is folded in. Sunder Armor coexists with Expose Armor.
+- Rend and Thunder Clap gain AP scaling. You can use Thunder Clap in Defensive Stance (6 s cooldown).
+- Improved Battle Shout is now part of baseline. Sunder Armor and Expose Armor can both be on the same target.
 - Defensive Stance threat **+80%** (was 30%). Slam has a 15 s cooldown.
 
 ## Talents
 
 === "Arms"
 
-    Improved Tactical Mastery (5/10/15 rage) · Improved Overpower · **Spearing Strike** (16: 15 rage, 20 s cooldown, dismounts; double damage vs mounted targets, dragons and giants) · **Bloodthrill** (10/20%) · **Weaponmaster** (crit for axes and polearms, armor penetration for maces and staves, extra attacks for swords) · Improved Slam (doesn't reset the swing) · Iron Will
+    Improved Tactical Mastery (5/10/15 rage) · Improved Overpower · **Spearing Strike** (16: 15 rage, 20 s cooldown, dismounts, double damage vs mounted targets, dragons and giants) · **Bloodthrill** (10/20%) · **Weaponmaster** (crit for axes and polearms, armor penetration for maces and staves, extra attacks for swords) · Improved Slam (does not reset the swing) · Iron Will
 
 === "Fury"
 
-    Unbridled Rage · Improved Cleave · Blood Craze · **Boundless Rage** · Dual Wield Specialization · **Raging Blows** (16) · Enrage (redesigned) · Precision · Death Wish (now also raises damage taken) · Flurry (10/20/30%, no longer requires Death Wish) · **Bloodthirst** (no heal; +10% movement speed for 10 s) · **Reckless Swings** (pre-launch: costs 25% of base health, +5 rage on your next 4 swings) · Improved Whirlwind
+    Unbridled Rage · Improved Cleave · Blood Craze · **Boundless Rage** · Dual Wield Specialization · **Raging Blows** (16) · Enrage (redesigned) · Precision · Death Wish (now also raises damage taken) · Flurry (10/20/30%, no longer requires Death Wish) · **Bloodthirst** (no heal, +10% movement speed for 10 s) · **Reckless Swings** (pre-launch: costs 25% of base health, +5 rage on your next 4 swings) · Improved Whirlwind
 
 === "Protection"
 
@@ -73,4 +73,4 @@
 
 Weapon specializations (merged into Weaponmaster) · Improved Battle Shout, Improved Demoralizing Shout, Improved Shield Block, Improved Taunt (now baseline) · One-Handed Weapon Specialization
 
-In the beta, Warrior was reported as one of the **slowest leveling classes**.
+In the beta, reports said that Warrior was one of the **slowest leveling classes**.

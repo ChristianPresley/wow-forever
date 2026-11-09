@@ -2,7 +2,7 @@
 
 <div class="specs" markdown>
 
-- **9 Dec 2026** All three unlock
+- **9 Dec 2026** All 3 unlock
 - **3** Launch raids
 - **22** Bosses in total
 - **10 · 20 · 40** Raid sizes
@@ -23,16 +23,16 @@
 
 ## Raid design philosophy
 
-- **No difficulty modes and no scaling.** Raids are fixed-size; with 21 players for Hyjal Summit, one sits out.
-- Encounters aren't designed around "hundreds of attempts". Difficulty comes from **preparation**: gear, consumables and strategy. Developers describe the target as "beer and pretzels", meaning friendly, low-complexity raiding.
-- Locked doors can be opened in several ways.
-- **Every raid tier will include at least one 10-player and one 20-player raid** (Tim Jones). The 40-player Onyxia is the launch exception.
-- The two new raids have **21 bosses** between them.
+- **No difficulty modes and no scaling.** Raids have a fixed size. If you have 21 players for Hyjal Summit, 1 player cannot go in.
+- The encounters are not designed for "hundreds of attempts". Difficulty comes from **preparation**: gear, consumables and strategy. The developers call the target "beer and pretzels". This means raids that are friendly and not complex.
+- There are several ways to open locked doors.
+- **Every raid tier will have at least 1 raid for 10 players and 1 raid for 20 players** (Tim Jones). The 40-player Onyxia is the launch exception.
+- The 2 new raids have **21 bosses** in total.
 
 ## What about Molten Core, BWL, AQ and Naxx?
 
-The original raids are **"kept in reserve"**. Developers hinted that Molten Core would come back revamped rather than as plain "tank and spank" fights. The summer 2027 roadmap promises a revamped "iconic" raid without naming it; the community assumes Molten Core. Blackwing Lair, Zul'Gurub, Ahn'Qiraj and Naxxramas have no dates.
+The original raids are **"kept in reserve"**. The developers hinted that Molten Core will come back revamped, and not as plain "tank and spank" fights. The summer 2027 roadmap promises a revamped "iconic" raid, but it does not give the name. The community thinks that it is Molten Core. Blackwing Lair, Zul'Gurub, Ahn'Qiraj and Naxxramas have no dates.
 
 ## World bosses
 
-The End-of-Beta event spawned Azuregos, Lord Kazzak, Thunderaan and others as a one-time event. Whether world bosses exist in the live game is *unconfirmed*{ .unconfirmed }.
+The End-of-Beta event spawned Azuregos, Lord Kazzak, Thunderaan and others 1 time only. It is *unconfirmed*{ .unconfirmed } if world bosses exist in the live game.

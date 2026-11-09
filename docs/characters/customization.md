@@ -3,21 +3,21 @@
 ## Names
 
 !!! forever "Two-part names"
-    A **first and last name** are both required. This is new in Forever.
+    You must give a **first and last name**. This is new in Forever.
 
-- Each part is 2–12 characters. Neither has to be unique alone, but the **combination** must be unique within your region.
-- RP rulesets require lore-friendly names. Names that pass the filter can still be flagged later.
-- Early Name Reservation (27 Oct – 3 Nov) let pack owners reserve **3 names**. A filter bug rejected every name containing "con". See [Reception](../about/reception.md).
+- Each part is 2–12 characters. Each part alone does not have to be unique. The **combination** must be unique in your region.
+- On RP rulesets, names must be lore-friendly. A name that passes the filter can still get a flag later.
+- Early Name Reservation (27 Oct – 3 Nov) let pack owners reserve **3 names**. A filter bug rejected every name that contained "con". See [Reception](../about/reception.md).
 
 ## Models
 
 - **"Enhanced" HD** or **"Classic" SD** models, toggled per character in Options or at a barbershop.
 - Skyborne are **HD only** at launch.
-- Ion Hazzikostas called the SD vs HD decision one of the hardest calls in development.
+- Ion Hazzikostas called the SD vs HD decision one of the most difficult decisions in development.
 
 ## Barbershop
 
-Change appearance, body type and racial options (not race). Skyborne druid form colors are changed here. Darnassus and Thunder Bluff gained barbershops, and capital-city barbers were replaced by local ones.
+At the barbershop, you can change appearance, body type and racial options (not race). You also change Skyborne druid form colors here. Darnassus and Thunder Bluff now have barbershops. Local barbers replaced the capital-city barbers.
 
 ## Transmog
 
@@ -26,17 +26,17 @@ Change appearance, body type and racial options (not race). Skyborne druid form 
     - Fyrenz Vishonar, Stormwind Mage District (48, 84)
     - Mon'ye, Orgrimmar Cleft of Shadows (46, 54)
     - Spellweaver Thaldris, Dalaran (Alliance)
-- **Account-wide appearance unlocks.** Transmog is slot-based and stays when you upgrade the item. You can only apply the same armor type and the same weapon type. You can collect appearances you can't wear, but class-specific items stay class-locked.
+- **Account-wide appearance unlocks.** Transmog is slot-based and stays when you upgrade the item. You can only apply the same armor type and the same weapon type. You can collect appearances that you cannot wear. Class-specific items stay class-locked.
 - **How appearances unlock:**
     - Quest rewards unlock **every** choice.
     - BoP, grey and white items unlock on pickup.
-    - BoE items unlock when bound or vendored.
-    - **Everyone in the group** unlocks an item that was rolled on in a dungeon or raid.
+    - BoE items unlock when they bind or when you sell them to a vendor.
+    - If players roll on an item in a dungeon or raid, **everyone in the group** unlocks it.
 - **Outfits:** 2 free slots, with more for gold. Outfits can switch automatically by location, movement, spec, weather or time of day.
 
 ## Collections
 
-Account-wide **transmog, toys, mounts and companions**, shared across rulesets. Hardcore is one-way: its unlocks carry out to other rulesets, but nothing flows in.
+Account-wide **transmog, toys, mounts and companions**, shared across rulesets. Hardcore is one-way. Its unlocks go to other rulesets, but nothing from other rulesets goes into Hardcore.
 
 ## Cosmetics from editions & Legacy
 

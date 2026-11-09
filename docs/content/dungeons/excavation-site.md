@@ -14,12 +14,12 @@
 
 </aside>
 
-Mist and flashes of light over Whelgar's Excavation lead to a **time-frozen area** guarded by titan constructs and wildlife.
+Mist and flashes of light over Whelgar's Excavation lead to a **time-frozen area**. Titan constructs and wildlife guard this area.
 
 ## Quests
 
 - **Alliance:** chains start in Menethil, Greenwarden's Grove and Lakeshire (*Daily Delivery*, *Horrors in the Highland*, *Songblade Search*).
-- **Horde:** chains start in Orgrimmar and Hammerfall (*Changing Tastes*, *Elder Knowledge*, *Dragonmaw Rumors*). Horde players have to cross the Thandol Span.
+- **Horde:** chains start in Orgrimmar and Hammerfall (*Changing Tastes*, *Elder Knowledge*, *Dragonmaw Rumors*). Horde players must cross the Thandol Span.
 
 ## Bosses & loot
 

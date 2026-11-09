@@ -4,6 +4,13 @@ site_url: https://christianpresley.github.io/wow-forever/
 repo_url: https://github.com/ChristianPresley/wow-forever
 repo_name: ChristianPresley/wow-forever
 edit_uri: edit/main/docs/
+
+# Never publish patch and merge leftovers. The first two lines keep MkDocs' defaults.
+exclude_docs: |
+  .*
+  /templates/
+  *.orig
+  *.rej
 copyright: Unofficial fan wiki. World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc. Not affiliated with or endorsed by Blizzard.
 
 theme:

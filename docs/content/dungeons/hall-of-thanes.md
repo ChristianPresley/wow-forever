@@ -8,15 +8,15 @@
 |---|---|
 | **Type** | 5-player dungeon (new in Forever) |
 | **Level** | 13–18 (LFG 13–20) |
-| **Location** | Beneath Ironforge, entered from the High Seat |
-| **Faction** | Effectively Alliance |
+| **Location** | Below Ironforge. The entrance is in the High Seat |
+| **Faction** | Alliance in practice |
 | **Bosses** | 4 |
 
 </aside>
 
-The tomb of the dwarven kings lies beneath Ironforge. Suspected Dark Iron intruders have broken in, and something ancient has stirred in the halls.
+The tomb of the dwarven kings is below Ironforge. Intruders, possibly Dark Iron, have broken in. Something ancient has started to move in the halls.
 
-Horde groups would have to fight through guarded Ironforge to reach it, which the Warcraft Wiki calls "ill-advised". Almost every quest is Alliance-only. The one neutral quest, *An Ancient Grudge*, comes from a ghost inside the instance.
+To get to it, Horde groups must fight through the guards of Ironforge. The Warcraft Wiki calls this "ill-advised". Almost all quests are Alliance-only. The 1 neutral quest, *An Ancient Grudge*, comes from a ghost in the instance.
 
 ## Quests
 

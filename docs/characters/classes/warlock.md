@@ -33,7 +33,7 @@
 
 <div class="fc-cta" data-class="warlock" markdown>
 
-**Playing a Warlock?** The [Warlock guide](../../guides/warlock/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+**Do you play a Warlock?** The [Warlock guide](../../guides/warlock/index.md) explains talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
 
 <span class="fc-cta__label">Race add-ons</span> [Human](../../guides/warlock/human.md){ .fc-chip } [Gnome](../../guides/warlock/gnome.md){ .fc-chip } [Orc](../../guides/warlock/orc.md){ .fc-chip } [Troll](../../guides/warlock/troll.md){ .fc-chip } [Undead](../../guides/warlock/undead.md){ .fc-chip }
 
@@ -44,10 +44,10 @@
 - Curse of Agony and Curse of Doom are now **Banes**: one Bane per Warlock per target.
 - Curse of the Elements covers all magic schools, and **Curse of Shadows is removed**.
 - **Firestone** and **Spellstone** are weapon imbues. Spellstone affects Shadow only.
-- Life Tap scales with Spirit. Drain Soul's chance to give a shard rises with each tick.
-- Pets scale from your stats, gaining 2 Health per point of your Stamina.
+- Life Tap scales with Spirit. The chance of Drain Soul to give a shard increases with each tick.
+- Pets scale from your stats. They get 2 Health per point of your Stamina.
 - DoTs can crit.
-- Training costs were lowered to offset Grimoire purchases.
+- Blizzard lowered training costs to compensate for the cost of Grimoires.
 
 ## Talents
 
@@ -69,4 +69,4 @@
 
 Improved Healthstone · Fel Intellect · Fel Stamina · Improved Subjugate Demon · Improved Firestone · Improved Spellstone · Improved Curse of Weakness · Improved Drain Life · Improved Drain Mana · Improved Curse of Exhaustion · Grim Reach · Dark Pact · Improved Firebolt · Improved Lash of Pain · Devastation · Improved Immolate · Emberstorm
 
-Warlocks can still **summon** with Ritual of Summoning. It is the only summon in the game, since Meeting Stones don't summon.
+Warlocks can still **summon** with Ritual of Summoning. It is the only summon in the game, because Meeting Stones do not summon.

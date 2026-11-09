@@ -1,6 +1,6 @@
 # Sources
 
-Every page on this wiki was compiled from public web sources between the BlizzCon reveal and **7 November 2026**. Below is every source URL cited during research, grouped by site. Official Blizzard sources come first.
+We wrote all pages on this wiki from public web sources, between the BlizzCon reveal and **7 November 2026**. Below is each source URL that we used in the research, grouped by site. Official Blizzard sources come first.
 
 **200 sources** across **59 sites**.
 
@@ -8,7 +8,7 @@ Every page on this wiki was compiled from public web sources between the BlizzCo
     1. **Official**{ .badge .official } Blizzard news, forums, shop
     2. **Fan wiki with game data**{ .badge .done } warcraft.wiki.gg
     3. **Established outlets**{ .badge .stated } Warcraft Tavern, Wowhead, Icy Veins, Method, PC Gamer, mein-mmo and others
-    4. **Fan and guide sites**{ .badge .fan } lower confidence. Claims that rest only on these are marked *unconfirmed*{ .unconfirmed } in the wiki
+    4. **Fan and guide sites**{ .badge .fan } lower confidence. If a claim comes only from these sites, the wiki marks it as *unconfirmed*{ .unconfirmed }
 
 ## blizzardwatch.com
 
@@ -178,8 +178,8 @@ Every page on this wiki was compiled from public web sources between the BlizzCo
 
 ## mein-mmo.de
 
-- `https://mein-mmo.de/en/a-detail-of-wow-forever-drives-fans-crazy-because-it-costs-you-at-least-30-euros` *(link dead as of 8 Nov 2026; content retrieved earlier)*
-- `https://mein-mmo.de/en/wow-forever-release-in-the-live-ticker-time-status-queues-and-more` *(link dead as of 8 Nov 2026; content retrieved earlier)*
+- `https://mein-mmo.de/en/a-detail-of-wow-forever-drives-fans-crazy-because-it-costs-you-at-least-30-euros` *(link dead as of 8 Nov 2026. We got the content before this date)*
+- `https://mein-mmo.de/en/wow-forever-release-in-the-live-ticker-time-status-queues-and-more` *(link dead as of 8 Nov 2026. We got the content before this date)*
 - <https://mein-mmo.de/wow-forever-sprachen-server/>
 
 ## method.gg
@@ -216,7 +216,7 @@ Every page on this wiki was compiled from public web sources between the BlizzCo
 
 ## playnews.gg
 
-- `https://www.playnews.gg/guides/addons-wow-forever-lesquels-installer-et-lesquels-remplacent-ceux-de-classic` *(link dead as of 8 Nov 2026; content retrieved earlier)*
+- `https://www.playnews.gg/guides/addons-wow-forever-lesquels-installer-et-lesquels-remplacent-ceux-de-classic` *(link dead as of 8 Nov 2026. We got the content before this date)*
 
 ## seramate.com
 

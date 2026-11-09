@@ -16,9 +16,9 @@
 
 </aside>
 
-The raid opens with an **ancient guardian** (Bandalar), then **branches into above-ground and below-ground routes** that meet again for the final encounters. Fel corruption is a running theme, and guilds may split a clear across nights.
+The raid starts with an **ancient guardian** (Bandalar). Then it **branches into above-ground and below-ground routes**. These routes meet again for the final encounters. Fel corruption is a theme through all of the raid. Guilds can split a clear across more than 1 night.
 
-Blizzard has teased a **legendary** item tied to this raid. Details are *unconfirmed*{ .unconfirmed }.
+Blizzard teased a **legendary** item that is related to this raid. Details are *unconfirmed*{ .unconfirmed }.
 
 ## Bosses (wiki order)
 

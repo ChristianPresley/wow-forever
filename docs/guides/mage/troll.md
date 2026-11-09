@@ -11,13 +11,13 @@ tags:
 
 :codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Mage guide](index.md). This page covers only what changes when your Mage is a Troll.</p>
+<p class="gh-note" markdown>Read this page with the [Mage guide](index.md). This page gives only the differences for a Troll Mage.</p>
 
 </div>
 
 ## Why this combo
 
-Troll Mage is the classic Horde PvE caster. **Berserking** now gives a flat +10% cast speed for a full 15 s, and the new **Rapid Regeneration** heals half your health out of combat — a real downtime saver on a class that already drinks a lot. You start alongside the Orcs in Durotar, with the Echo Isles and the new Darkspear Islands battleground as your people's home turf.
+The Troll Mage is the traditional Horde PvE caster. **Berserking** now gives a flat +10% cast speed for a full 15 s. The new **Rapid Regeneration** heals half your health out of combat. This saves much time between fights for a class that already drinks a lot. You start with the Orcs in Durotar. The Echo Isles and the new Darkspear Islands battleground are the home of your people.
 
 | | |
 |---|---|
@@ -34,25 +34,25 @@ Troll Mage is the classic Horde PvE caster. **Berserking** now gives a flat +10%
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvE · **3/5**{ .stars .s3 } PvP</p>
-<p markdown>+10% cast and attack speed for **15 s** (was 10 in beta). More Arcane Blasts in a burn, faster Pyroblast hard-casts, quicker Frostbolts</p>
+<p markdown>+10% cast and attack speed for **15 s** (it was 10 in the beta). More Arcane Blasts in a burn phase, faster Pyroblast hard-casts, faster Frostbolts</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Rapid Regeneration** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } leveling · **2/5**{ .stars .s2 } PvE</p>
-<p markdown>Regenerates 50% of max health over 6 s; any action cancels it. Use it while you drink so you only need water, not food</p>
+<p markdown>Gives back 50% of maximum health over 6 s. All actions cancel it. Use it while you drink, so that you need only water, not food</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Beast Slaying** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 } leveling</p>
-<p markdown>+5% damage to Beasts. Plenty of beast quests while leveling; little use in raids</p>
+<p markdown>+5% damage to Beasts. Many quests have beasts while you level. Not very useful in raids</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Regeneration** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown>+20% health regen, part of it in combat. Small but constant</p>
+<p markdown>+20% health regeneration, part of it in combat. Small but always active</p>
 </div>
 
 </div>
@@ -67,7 +67,7 @@ Troll Mage is the classic Horde PvE caster. **Berserking** now gives a flat +10%
     /cast Arcane Power
     ```
 
-    Fire players swap *Arcane Power* for *Combustion*. Frost has no matching cooldown, so press Berserking before a Frostbolt and Ice Lance chain.
+    Fire players replace *Arcane Power* with *Combustion*. Frost has no equivalent cooldown. Thus, push Berserking before a chain of Frostbolt and Ice Lance.
 
     Drink and heal:
 
@@ -77,20 +77,20 @@ Troll Mage is the classic Horde PvE caster. **Berserking** now gives a flat +10%
     /use Conjured Water
     ```
 
-    Rapid Regeneration is cancelled by "any action"; whether drinking counts is *not verified*. If it cancels, press it after you sit down to drink.
+    "Any action" cancels Rapid Regeneration. It is *not verified* if drinking counts as an action. If drinking cancels it, push it after you sit down to drink.
 
 ## Starting zone walkthrough (1–12)
 
-Trolls start in the **Valley of Trials** with the Orcs. Forever added new NPCs and quests here; the Classic backbone remains.
+Trolls start in the **Valley of Trials** with the Orcs. Forever added new NPCs and quests here. The Classic quests are still the base.
 
 <div class="steps" markdown>
 
-1.  **1–6**{ .lvl } **Valley of Trials.** Your Mage trainer is **Mai'ah** near the Den (Classic). Boars, scorpids, the Vile Familiars cave and Sarkoth.
-2.  **4**{ .lvl } Frostbolt and Conjure Water. **8:** Polymorph and Arcane Missiles.
-3.  **6–10**{ .lvl } **Sen'jin Village.** Head south. Your racial capital-in-exile: Darkspear quests against the Kul Tiran and the naga, and the **Echo Isles** chain against Zalazane. Sen'jin has a Mage trainer (Classic).
-4.  **8–10**{ .lvl } **Razor Hill.** Tiragarde Keep, Razormane quilboar, Burning Blade cultists.
-5.  **10**{ .lvl } Frost Nova, first talent point. Train in Orgrimmar's Valley of Spirits (Classic location), which is also the Troll quarter.
-6.  **10–12.** Finish Skull Rock and move to the Crossroads in the Barrens.
+1.  **1–6**{ .lvl } **Valley of Trials.** Your Mage trainer is **Mai'ah**, near the Den (Classic). Kill boars and scorpids, then do the Vile Familiars cave and Sarkoth.
+2.  **4**{ .lvl } Train Frostbolt and Conjure Water. **8:** Train Polymorph and Arcane Missiles.
+3.  **6–10**{ .lvl } **Sen'jin Village.** Go south. This is the capital-in-exile of your race. Do the Darkspear quests against the Kul Tiran and the naga, and the **Echo Isles** chain against Zalazane. Sen'jin has a Mage trainer (Classic).
+4.  **8–10**{ .lvl } **Razor Hill.** Do Tiragarde Keep, the Razormane quilboar and the Burning Blade cultists.
+5.  **10**{ .lvl } Train Frost Nova and spend your first talent point. Train in the Valley of Spirits in Orgrimmar (Classic location), which is also the Troll quarter.
+6.  **10–12.** Complete Skull Rock and go to the Crossroads in the Barrens.
 
 </div>
 
@@ -98,7 +98,7 @@ Trolls start in the **Valley of Trials** with the Orcs. Forever added new NPCs a
 
 <div class="steps" markdown>
 
-1.  **10–20**{ .lvl } The Barrens; Silverpine is an alternative via zeppelin
+1.  **10–20**{ .lvl } The Barrens. Silverpine is an alternative, by zeppelin
 
     <span class="step-label">Travel</span> Crossroads flight point
 
@@ -108,15 +108,15 @@ Trolls start in the **Valley of Trials** with the Orcs. Forever added new NPCs a
 
 3.  **20–30**{ .lvl } Hillsbrad, Ashenvale, Thousand Needles
 
-    <span class="step-label">Travel</span> Tarren Mill starts the Dalaran Sewer Key chain
+    <span class="step-label">Travel</span> The Dalaran Sewer Key chain starts in Tarren Mill
 
-4.  **30–40**{ .lvl } Arathi, Stranglethorn (Troll ruins everywhere), Desolace, Dustwallow
+4.  **30–40**{ .lvl } Arathi, Stranglethorn (Troll ruins in many locations), Desolace, Dustwallow
 
     <span class="step-label">Travel</span> Grom'gol zeppelin
 
 5.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar)
 
-    <span class="step-label">Travel</span> Badlands or Swamp of Sorrows passes
+    <span class="step-label">Travel</span> Passes through the Badlands or Swamp of Sorrows
 
 6.  **40–50**{ .lvl } Tanaris (Zul'Farrak), Feralas, Hinterlands
 
@@ -131,20 +131,20 @@ Trolls start in the **Valley of Trials** with the Orcs. Forever added new NPCs a
 **Teleports (Classic levels):** Orgrimmar and Undercity at 20, Thunder Bluff at 30.
 
 !!! warning "Dalaran"
-    Horde Mages are attacked on sight in Dalaran and can't earn Kirin Tor reputation.
+    NPCs in Dalaran attack Horde Mages on sight, and Horde Mages cannot get Kirin Tor reputation.
 
 ## Faction-specific notes
 
-- **Reputation:** Darkspear Trolls Honored for 10% off riding and the Raptor.
-- **Darkspear Islands:** the new [battleground](../../content/pvp/battlegrounds.md#darkspear-islands) off Dustwallow puts your people front and centre as the **Darkspear Raiders**. Exalted gives a tabard and a Legacy Point.
+- **Reputation:** Darkspear Trolls Honored gives 10% off riding and the Raptor.
+- **Darkspear Islands:** your people are the **Darkspear Raiders** and have the main role in the new [battleground](../../content/pvp/battlegrounds.md#darkspear-islands) near Dustwallow. Exalted gives a tabard and a Legacy Point.
 - **Troll dungeons:** Zul'Farrak (44–54) and the new [Drowned City](../../content/dungeons/drowned-city.md) on the Stranglethorn coast (35–42).
 - **Transmog:** Mon'ye, Cleft of Shadows, Orgrimmar.
-- **Lore:** Darkspear shadow hunters and witch doctors are more common than arcanists, but Troll Mages have been playable since 2004.
+- **Lore:** Darkspear shadow hunters and witch doctors are more common than arcanists. But players can play Troll Mages since 2004.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-The best Horde Mage for raiding throughput if you value haste over Orc's spell-power burst; the two are close. Troll is also comfortable for leveling thanks to Rapid Regeneration and Beast Slaying. Pick Orc or Undead if PvP comes first.
+This is the best Horde Mage for raid damage if you prefer haste to the Orc spell-power burst. The two races are close. Troll is also good for leveling because of Rapid Regeneration and Beast Slaying. If PvP is your first priority, choose Orc or Undead.
 
 </div>

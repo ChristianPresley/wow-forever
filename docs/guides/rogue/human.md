@@ -11,15 +11,15 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page covers only what changes for a Human.</p>
+<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page shows only the differences for a Human.</p>
 
 </div>
 
 ## Why this combo
 
-Human Rogue is a Classic combination. Forever made it one of the strongest Alliance picks: **Will to Survive** is a built-in stun breaker, and **Ruthless** adds 1% crit at all times. Humans start in Elwynn Forest, the easiest starting zone for a Rogue, and live next door to SI:7, the Alliance Rogue headquarters, where the poison quest starts.
+Human Rogue is a Classic combination. Forever made it one of the strongest Alliance choices. **Will to Survive** is a stun breaker, and **Ruthless** always gives 1% crit. Humans start in Elwynn Forest, the easiest starting zone for a Rogue. Their city also has SI:7, the Alliance Rogue headquarters, where the poison quest starts.
 
-**Best for:** PvP-minded players, and PvE players who want a reliable passive bonus.
+**Best for:** PvP players, and PvE players who want a reliable passive bonus.
 
 ## Racials in practice
 
@@ -28,31 +28,31 @@ Human Rogue is a Classic combination. Forever made it one of the strongest Allia
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Will to Survive** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE</p>
-<p markdown>Instantly removes stuns. In PvP this works like a second trinket: break a Kidney Shot or Cheap Shot and turn the fight around. In PvE it saves you from stun-heavy trash or bosses</p>
+<p markdown>Instantly removes stuns. In PvP, this works like a second trinket: break a Kidney Shot or Cheap Shot and change the result of the fight. In PvE, it saves you from trash mobs or bosses that stun frequently</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Perception** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } PvP · **1/5**{ .stars .s1 } PvE</p>
-<p markdown>Detect stealth for 20 s. The counter to enemy Rogues and Cat Druids; press it when a flag carrier dies to "nothing"</p>
+<p markdown>Detect stealth for 20 s. The counter to enemy Rogues and Cat Druids. Use it when a flag carrier dies and you cannot see the attacker</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Ruthless** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 }</p>
-<p markdown>+1% crit with attacks and spells (it was 2% in beta). Always on, helps Seal Fate and Lethality builds</p>
+<p markdown>+1% crit with attacks and spells (it was 2% in beta). Always active. Helps Seal Fate and Lethality builds</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**The Human Spirit** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **1/5**{ .stars .s1 }</p>
-<p markdown>+10% Spirit. Spirit does little for a Rogue apart from slightly faster health regen out of combat</p>
+<p markdown>+10% Spirit. For a Rogue, Spirit only gives slightly faster health regen out of combat</p>
 </div>
 
 </div>
 
 !!! note "Cooldowns"
-    Blizzard hasn't published cooldowns for Will to Survive or Perception in Forever. Check the tooltip in game.
+    Blizzard has not published the cooldowns for Will to Survive or Perception in Forever. Look at the tooltip in the game.
 
 ??? example "Macros"
 
@@ -62,7 +62,7 @@ Human Rogue is a Classic combination. Forever made it one of the strongest Allia
     /cast Vanish
     ```
 
-    Breaks a stun and vanishes on the same key. Use it only when you need to reset a fight, because it spends both cooldowns.
+    Breaks a stun and casts Vanish with the same key. Use it only when you must reset a fight, because it uses both cooldowns.
 
     ```text
     #showtooltip Perception
@@ -70,17 +70,17 @@ Human Rogue is a Classic combination. Forever made it one of the strongest Allia
     /cast Sap
     ```
 
-    Reveals a stealthed enemy and tries to Sap them once they're visible (press twice).
+    Shows a stealthed enemy and tries to Sap the enemy when it is visible (push twice).
 
 ## Starting zone: Northshire and Elwynn Forest (1–12)
 
-Quest names below are from Classic. Blizzard has not listed changes to Northshire, so expect them to be the same or close.
+The quest names below are from Classic. Blizzard has not listed changes to Northshire. Thus they are probably the same or almost the same.
 
 <div class="steps" markdown>
 
 1.  **1**{ .lvl } **Northshire Abbey**
 
-    Take *A Threat Within*, then the Rogue letter (*Encrypted Letter*) to the rogue trainer **Jorik Kerridan**, who stands near the stables behind the abbey
+    Get *A Threat Within*. Then take the Rogue letter (*Encrypted Letter*) to the rogue trainer **Jorik Kerridan**, near the stables behind the abbey
 
 2.  **1–4**{ .lvl } Northshire Valley
 
@@ -92,11 +92,11 @@ Quest names below are from Classic. Blizzard has not listed changes to Northshir
 
 4.  **5–6**{ .lvl } Northshire
 
-    *Milly Osworth* grape chain, then *Report to Goldshire*
+    Do the *Milly Osworth* grape chain, then *Report to Goldshire*
 
 5.  **6–10**{ .lvl } **Goldshire** and Elwynn
 
-    Fargodeep Mine, Jasperlode Mine, the farms east of Goldshire, Stonefield and Maclure. The Goldshire rogue trainer, **Keryn Sylvius**, is in the Lion's Pride Inn
+    Fargodeep Mine, Jasperlode Mine, and the farms east of Goldshire, Stonefield and Maclure. The Goldshire rogue trainer, **Keryn Sylvius**, is in the Lion's Pride Inn
 
 6.  **8**{ .lvl } Keryn Sylvius
 
@@ -104,17 +104,17 @@ Quest names below are from Classic. Blizzard has not listed changes to Northshir
 
 7.  **10**{ .lvl } Keryn Sylvius
 
-    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+    **Slice and Dice**, **Sap**, **Sprint**. First talent point
 
 8.  **10–12**{ .lvl } Eastvale Logging Camp, Brackwell Pumpkin Patch
 
-    Finish Elwynn, then head to Westfall
+    Complete Elwynn. Then go to Westfall
 
 </div>
 
-- Use the starting dagger only until Elwynn gives you a sword or mace. The Defias in Elwynn drop plenty of cheap weapons.
-- **Pick Pocket** every Defias. Elwynn's thieves and kobolds give coins that pay for your level-10 training.
-- First talent: Combat **Improved Sinister Strike** or **Precision**, per the main guide.
+- Use the starting dagger only until you get a sword or mace in Elwynn. The Defias in Elwynn drop many cheap weapons.
+- Use **Pick Pocket** on each Defias. The thieves and kobolds of Elwynn give coins that pay for your level-10 training.
+- First talent: Combat **Improved Sinister Strike** or **Precision**, as the main guide recommends.
 
 ## Route to 60 from Stormwind
 
@@ -148,7 +148,7 @@ Quest names below are from Classic. Blizzard has not listed changes to Northshir
 
     <span class="step-label">Hub / flight path</span> Refuge Pointe · Booty Bay · Nijel's Point · Theramore
 
-8.  **35–45**{ .lvl } **Riverglades** via Redridge's widened eastern edge
+8.  **35–45**{ .lvl } **Riverglades** through the wider east edge of Redridge
 
     <span class="step-label">Hub / flight path</span> **Farholde Keep** (flights to Lakeshire, Thelsamar, Morgan's Vigil, *fan source*)
 
@@ -166,18 +166,18 @@ Quest names below are from Classic. Blizzard has not listed changes to Northshir
 
 ## Faction notes
 
-- **Poison quest (20):** **Master Mathias Shaw** in SI:7 starts *Mathias and the Defias*. It leads to Agent Kearnen and *Klaven's Tower* in Westfall, then *The Touch of Zanzil*. You learn Poisons and Thistle Tea. Full walkthrough in the [main guide](index.md#the-poison-quest-level-20).
-- **Library books:** turn in to Garion Wendell in the Mage Quarter of Stormwind, a short walk from Old Town.
-- **Mount:** Stormwind horses at Eastvale Logging Camp in Elwynn. Riding costs 100g at 40, including your first horse. Honored with Stormwind gives 10% off.
+- **Poison quest (20):** **Master Mathias Shaw** in SI:7 starts *Mathias and the Defias*. It continues to Agent Kearnen and *Klaven's Tower* in Westfall, then *The Touch of Zanzil*. You learn Poisons and Thistle Tea. The [main guide](index.md#the-poison-quest-level-20) has the full walkthrough.
+- **Library books:** Give them to Garion Wendell in the Mage Quarter of Stormwind, a short walk from Old Town.
+- **Mount:** Stormwind horses at Eastvale Logging Camp in Elwynn. At 40, riding costs 100g, with your first horse included. Honored with Stormwind gives 10% off.
 - **Reputation:** Stormwind. The Legacy talent *Diplomat* replaced the old Human Diplomacy racial.
-- **Commerce:** the Azeroth Commerce Authority crate camp is at Three Corners in Redridge, on your way to Riverglades.
+- **Commerce:** The Azeroth Commerce Authority crate camp is at Three Corners in Redridge, on your route to Riverglades.
 - **PvP:** Champion's Hall in Stormwind sells Honor gear.
-- **Lore:** SI:7 is Stormwind's intelligence service. Its agents appear across Westfall, Redridge and Duskwood, and the Rogue poison chain is a Defias story.
+- **Lore:** SI:7 is the intelligence service of Stormwind. Its agents are in Westfall, Redridge and Duskwood. The Rogue poison chain is a Defias story.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**One of the best Alliance Rogues.** Will to Survive is the strongest PvP racial a Rogue can have, and Ruthless is a clean PvE bonus. Pick Human if you want to do everything well. Pick Gnome only if you value Escape Artist and Eureka! more, or Night Elf if you want Elune's Light burst.
+**One of the best Alliance Rogues.** Will to Survive is the strongest PvP racial that a Rogue can have. Ruthless is a simple PvE bonus. Select Human if you want to do all things well. Select Gnome only if Escape Artist and Eureka! are more important to you. Select Night Elf if you want Elune's Light burst.
 
 </div>

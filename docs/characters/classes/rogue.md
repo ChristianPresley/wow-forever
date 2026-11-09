@@ -33,7 +33,7 @@
 
 <div class="fc-cta" data-class="rogue" markdown>
 
-**Playing a Rogue?** The [Rogue guide](../../guides/rogue/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+**Do you play a Rogue?** The [Rogue guide](../../guides/rogue/index.md) explains talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
 
 <span class="fc-cta__label">Race add-ons</span> [Human](../../guides/rogue/human.md){ .fc-chip } [Dwarf](../../guides/rogue/dwarf.md){ .fc-chip } [Gnome](../../guides/rogue/gnome.md){ .fc-chip } [Night Elf](../../guides/rogue/night-elf.md){ .fc-chip } [Skyborne (High Order)](../../guides/rogue/skyborne-high-order.md){ .fc-chip } [Orc](../../guides/rogue/orc.md){ .fc-chip } [Troll](../../guides/rogue/troll.md){ .fc-chip } [Undead](../../guides/rogue/undead.md){ .fc-chip } [Skyborne (Windshaper)](../../guides/rogue/skyborne-windshaper.md){ .fc-chip }
 
@@ -43,7 +43,7 @@
 
 - **Smooth energy regeneration**, with no 2-second ticks.
 - **Combo points stay on the original target.**
-- **One-handed axes** are usable.
+- Rogues can use **one-handed axes**.
 - Poisons have more charges and stack with stones. Deadly and Instant Poison AP coefficients are doubled.
 - Feint threat doubled. **Sap no longer breaks stealth.** Distract lowers enemy stealth detection for 10 s. Expose Armor equals 5 Sunders.
 - **Shank** (lvl 24, added pre-launch): 5 Energy, 10 s cooldown, 50% off-hand damage. Generates 15 Energy (25 at rank 2, lvl 44).

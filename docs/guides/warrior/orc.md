@@ -20,7 +20,7 @@ tags:
 The Orc Warrior is the iconic Horde fighter. Forever removed **Axe Specialization**, but **Blood Fury** (+10% attack power for 15 s, now a 2-minute cooldown) is still a strong damage button. **Hardiness** cuts stun duration by 20%. The new **Shatter Curse** adds a cleanse against Warlocks.
 
 - **Best at:** PvE damage (Blood Fury every 2 minutes) and PvP resilience.
-- **Status:** available in Classic; not a new combination.
+- **Status:** available in Classic, not a new combination.
 
 ## Racials in practice
 
@@ -29,14 +29,14 @@ The Orc Warrior is the iconic Horde fighter. Forever removed **Axe Specializatio
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Blood Fury** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown><span class="ability-label">PvE</span> +10% AP for 15 s on a 2 min cooldown. Use it with Death Wish and Recklessness, and on every leveling pull where it's ready</p>
+<p markdown><span class="ability-label">PvE</span> +10% AP for 15 s on a 2 min cooldown. Use it with Death Wish and Recklessness. When you level, use it on every pull when it is ready</p>
 <p markdown><span class="ability-label">PvP</span> Burst for a Mortal Strike kill</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Shatter Curse** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> Removes curses and Banes, and −5% magic damage taken for 8 s. Handy on cursed bosses</p>
+<p markdown><span class="ability-label">PvE</span> Removes curses and Banes, and gives −5% magic damage taken for 8 s. Useful on cursed bosses</p>
 <p markdown><span class="ability-label">PvP</span> Removes Curse of Exhaustion, Curse of Recklessness, and Warlock Banes</p>
 </div>
 
@@ -69,16 +69,16 @@ The Orc Warrior is the iconic Horde fighter. Forever removed **Axe Specializatio
 
 ## Starting zone walkthrough (1–12)
 
-Orcs start in the **Valley of Trials**, **Durotar**. Blizzard says the Valley got new NPCs, quests, profession hooks and "small moments". *Quest and NPC names are Classic-era; check in game.*
+Orcs start in the **Valley of Trials**, **Durotar**. Blizzard says that the Valley got new NPCs, quests, profession hooks and "small moments". *Quest and NPC names are Classic-era. Check in game.*
 
 <div class="steps" markdown>
 
 1.  **1–5**{ .lvl } **Valley of Trials.** Speak to the Warrior trainer near the den (Classic: Frang). Kill boars, scorpids, Sarkoth and the Vile Familiars. **Charge** and **Rend** at 4.
 2.  **~5**{ .lvl } **The Great Outdoors.** Camping intro and Cooking.
-3.  **5–10**{ .lvl } **Razor Hill and Sen'jin.** Kul Tiras sailors at Tiragarde Keep, Burning Blade cultists, Echo Isles trolls. There's a Warrior trainer in Razor Hill. **Hamstring** at 8.
+3.  **5–10**{ .lvl } **Razor Hill and Sen'jin.** Kul Tiras sailors at Tiragarde Keep, Burning Blade cultists and Echo Isles trolls. There is a Warrior trainer in Razor Hill. **Hamstring** at 8.
 4.  **10**{ .lvl } **Defensive Stance** quest from your trainer.
 5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
-6.  **10–12.** Finish Durotar and head west into **the Barrens**. Ragefire Chasm in Orgrimmar opens at 13.
+6.  **10–12.** Finish Durotar and go west into **the Barrens**. Ragefire Chasm in Orgrimmar opens at 13.
 
 </div>
 
@@ -96,7 +96,7 @@ Orcs start in the **Valley of Trials**, **Durotar**. Blizzard says the Valley go
 
 3.  **30–40**{ .lvl } Arathi → Stranglethorn → Desolace → Thousand Needles
 
-    <span class="step-label">Flight paths / notes</span> Hammerfall, Grom'gol. Scarlet Monastery. [The Drowned City](../../content/dungeons/drowned-city.md). Avoid Dalaran: it's hostile to the Horde
+    <span class="step-label">Flight paths / notes</span> Hammerfall, Grom'gol. Scarlet Monastery. [The Drowned City](../../content/dungeons/drowned-city.md). Do not go to Dalaran: it is hostile to the Horde
 
 4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar, with the ogres of Bolder'ok) → Dustwallow Marsh
 
@@ -117,19 +117,19 @@ Orcs start in the **Valley of Trials**, **Durotar**. Blizzard says the Valley go
 ## Faction-specific notes
 
 - **Mount:** Wolf, from the wolf vendor in Orgrimmar's Valley of Honor (Classic: Ogunaro Wolfrunner). **Honored with Orgrimmar** gives 10% off.
-- **Reputation:** Orgrimmar. The **Durotar Supply and Logistics** crate camp is just west of the Crossroads.
-- **Battlegrounds:** the new Darkspear Islands battleground pits the **Darkspear Raiders** against Theramore; Orcs queue from the Orgrimmar battlemasters or the Merchant Coast portal.
-- **Lore:** Krol'dok Stronghold in Riverglades is where the Old Horde fell back after the Siege of Farholde, a story Orc players will recognize.
+- **Reputation:** Orgrimmar. The **Durotar Supply and Logistics** crate camp is a short distance west of the Crossroads.
+- **Battlegrounds:** the new Darkspear Islands battleground puts the **Darkspear Raiders** against Theramore. Orcs queue from the Orgrimmar battlemasters or the Merchant Coast portal.
+- **Lore:** Krol'dok Stronghold in Riverglades is where the Old Horde retreated after the Siege of Farholde. Orc players will know this story.
 
 ## Spec fit
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Fury** | **5/5**{ .stars .s5 } | Blood Fury every 2 minutes lines up with Death Wish and every other raid cooldown |
+| **Fury** | **5/5**{ .stars .s5 } | Blood Fury every 2 minutes aligns with Death Wish and all other raid cooldowns |
 | **Arms** | **5/5**{ .stars .s5 } | Burst plus Hardiness makes Orc Arms the classic Horde PvP Warrior |
-| **Protection** | **4/5**{ .stars .s4 } | Blood Fury on the pull gives a threat lead; Hardiness shortens boss stuns. Tauren has more health |
+| **Protection** | **4/5**{ .stars .s4 } | Blood Fury on the pull gives a threat lead. Hardiness shortens boss stuns. Tauren has more health |
 
-**Leveling tip:** Blood Fury's 2-minute cooldown is short enough to use on most hard pulls. Treat it as a regular part of your opener.
+**Leveling tip:** Blood Fury has a 2-minute cooldown, so you can use it on most hard pulls. Make it a usual part of your opener.
 
 ### Leveling checklist
 
@@ -137,13 +137,13 @@ Orcs start in the **Valley of Trials**, **Durotar**. Blizzard says the Valley go
 - [ ] Cooking and *The Great Outdoors* for camping by level 5–6
 - [ ] First Aid trained early: it now makes health potions as well as bandages
 - [ ] Collect class library books for the quests at 20, 35 and 45
-- [ ] **Wolf** and Apprentice Riding at 40 (100g); plate and dual spec (50g) at the same time
+- [ ] **Wolf** and Apprentice Riding at 40 (100g), and plate and dual spec (50g) at the same time
 - [ ] Warrior Legacy Points at 25, 45 and 60 (account-wide, first Warrior only)
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-Still one of the best Warrior races. Blood Fury and Hardiness are useful in every part of the game, and Shatter Curse adds a niche cleanse. For PvE damage it's arguably the Horde's best; Tauren is the main rival for tanking.
+Still one of the best Warrior races. Blood Fury and Hardiness are useful in every part of the game, and Shatter Curse adds a special cleanse. For PvE damage, it is possibly the Horde's best. For tanking, Tauren is the main alternative.
 
 </div>

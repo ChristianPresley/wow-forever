@@ -17,9 +17,9 @@ tags:
 
 ## Why this combo
 
-Troll Priest is a Classic combination and **not new**. Its Priest spells, **Hex of Weakness** and **Shadowguard**, are unchanged and rated weak by Warcraft Tavern. The race itself carries the combo: **Berserking** is +10% cast speed on demand, and the new **Rapid Regeneration** heals half your health over 6 s out of combat, which cuts downtime a lot while leveling.
+Troll Priest is a Classic combination and **not new**. Its Priest spells, **Hex of Weakness** and **Shadowguard**, did not change, and Warcraft Tavern rates them as weak. The strength of the combination comes from the race. **Berserking** gives +10% cast speed when you want it. The new **Rapid Regeneration** heals half your health over 6 s out of combat. This decreases downtime much when you level.
 
-**Best for:** Horde raid healers and Shadow DPS who want a haste cooldown, and players who want fast leveling downtime.
+**Best for:** Horde raid healers and Shadow DPS who want a haste cooldown, and players who want short downtime when they level.
 
 ## Racials in practice
 
@@ -28,22 +28,22 @@ Troll Priest is a Classic combination and **not new**. Its Priest spells, **Hex 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown><span class="ability-label">PvE</span> **+10% cast speed for 15 s.** More Greater Heals in a crisis, or more Mind Flay ticks and Mind Blasts in a burn</p>
+<p markdown><span class="ability-label">PvE</span> **+10% cast speed for 15 s.** More Greater Heals in an emergency, or more Mind Flay ticks and Mind Blasts in a burn phase</p>
 <p markdown><span class="ability-label">PvP</span> Burst</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Rapid Regeneration** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } leveling</p>
-<p markdown><span class="ability-label">PvE</span> Regenerates **50% of max health over 6 s**; any action cancels it. Use it instead of eating after a fight</p>
-<p markdown><span class="ability-label">PvP</span> Only to top up out of combat</p>
+<p markdown><span class="ability-label">PvE</span> Gives back **50% of max health over 6 s**. Each action stops it. Use it after a fight, not food</p>
+<p markdown><span class="ability-label">PvP</span> Only to fill your health out of combat</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Beast Slaying** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } leveling</p>
-<p markdown><span class="ability-label">PvE</span> Extra damage against Beasts (value not given on this wiki). Many leveling quests are beasts</p>
-<p markdown><span class="ability-label">PvP</span> Druid forms aren't Beasts (*Classic-era*)</p>
+<p markdown><span class="ability-label">PvE</span> More damage against Beasts (this wiki does not give the value). Many leveling quests have Beasts as targets</p>
+<p markdown><span class="ability-label">PvP</span> Druid forms are not Beasts (*Classic-era*)</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -59,14 +59,14 @@ Troll Priest is a Classic combination and **not new**. Its Priest spells, **Hex 
 
 | Spell | Level | Effect (Classic-era) | Use |
 |---|---|---|---|
-| **Hex of Weakness** | (Classic spell) | Weakens the target's damage and the healing it receives | PvP against melee; marginal in PvE |
-| **Shadowguard** | (Classic spell) | A self-buff that deals Shadow damage to attackers with each hit, using charges | A little extra damage while leveling, especially when mobs reach you |
+| **Hex of Weakness** | (Classic spell) | Decreases the damage of the target and the healing that it gets | PvP against melee. Of little use in PvE |
+| **Shadowguard** | (Classic spell) | A self-buff with charges. Each hit on you causes Shadow damage to the attacker | A little more damage when you level, especially when mobs get to you |
 
-Blizzard lists both as unchanged from Classic, without levels. Expect them at the race-spell levels of 10 and 20.
+Blizzard lists both spells as unchanged from Classic, without levels. They probably come at the race-spell levels of 10 and 20.
 
 ??? example "Macros"
 
-    Berserking with a big heal:
+    Berserking with a large heal:
 
     ```
     #showtooltip Greater Heal
@@ -74,7 +74,7 @@ Blizzard lists both as unchanged from Classic, without levels. Expect them at th
     /cast [@mouseover,help,nodead][help][@player] Greater Heal
     ```
 
-    Rapid Regeneration after a fight (it cancels if you act, so don't spam):
+    Rapid Regeneration after a fight (an action stops it. Do not push the button again and again):
 
     ```
     #showtooltip Rapid Regeneration
@@ -82,21 +82,21 @@ Blizzard lists both as unchanged from Classic, without levels. Expect them at th
     ```
 
     !!! note
-        It isn't documented whether Rapid Regeneration can be cast in combat. The `[nocombat]` guard stops you wasting it.
+        It is not documented if you can cast Rapid Regeneration in combat. The `[nocombat]` condition prevents a wasted cast.
 
 ## Starting zone walkthrough (1–~12)
 
-Trolls start in the **Valley of Trials**, Durotar, with Orcs. Blizzard says the Valley of Trials got **new NPCs, quests, profession hooks and "small moments"**. Quest names below are Classic-era and may differ.
+Trolls and Orcs start in the **Valley of Trials**, Durotar. Blizzard says that the Valley of Trials got **new NPCs, quests, profession hooks and "small moments"**. The quest names below are Classic-era and can be different.
 
 <div class="steps" markdown>
 
-1.  **1–2**{ .lvl } take *Your Place in the World* and the opening quests from the den. Kill boars and scorpids. The Priest trainer is in the **Den** (Classic: Ken'jai).
-2.  **2–5**{ .lvl } the quilboar *Sarkoth*, *Vile Familiars* and the cactus apples. Train **Shadow Word: Pain** at 4.
-3.  **5**{ .lvl } take **The Great Outdoors** and learn Cooking. Kill **Yarrog Baneshadow** in the cave for the Burning Blade medallion.
-4.  **6**{ .lvl } **Power Word: Shield**. Head toward **Sen'jin Village**, the Darkspear home on the coast.
-5.  **6–10**{ .lvl } Sen'jin and **Razor Hill**: the Echo Isles, Thunder Ridge, the Skull Rock Burning Blade, and Tiragarde Keep. Sen'jin has early class trainers (Classic-era).
-6.  **10**{ .lvl } learn your first race spell and first talent, and take the class quest. Full training is in **Orgrimmar** in the **Valley of Spirits**.
-7.  **10–12**{ .lvl } finish Durotar, then cross west into **the Barrens** at the Crossroads.
+1.  **1–2**{ .lvl } Get *Your Place in the World* and the first quests from the den. Kill boars and scorpids. The Priest trainer is in the **Den** (Classic: Ken'jai).
+2.  **2–5**{ .lvl } Do the quilboar quest *Sarkoth*, *Vile Familiars* and the cactus apples. At 4, train **Shadow Word: Pain**.
+3.  **5**{ .lvl } Get **The Great Outdoors** and learn Cooking. Kill **Yarrog Baneshadow** in the cave for the Burning Blade medallion.
+4.  **6**{ .lvl } Train **Power Word: Shield**. Go to **Sen'jin Village**, the Darkspear home on the coast.
+5.  **6–10**{ .lvl } Do the quests at Sen'jin and **Razor Hill**: the Echo Isles, Thunder Ridge, the Skull Rock Burning Blade, and Tiragarde Keep. Sen'jin has early class trainers (Classic-era).
+6.  **10**{ .lvl } Learn your first race spell and first talent. Get the class quest. Full training is in **Orgrimmar**, in the **Valley of Spirits**.
+7.  **10–12**{ .lvl } Complete Durotar. Then go west into **the Barrens** at the Crossroads.
 
 </div>
 
@@ -106,13 +106,13 @@ Trolls start in the **Valley of Trials**, Durotar, with Orcs. Blizzard says the 
 
 1.  **10–20**{ .lvl } The Barrens
 
-    <span class="step-label">Hub / flight path</span> The Crossroads; Durotar Supply and Logistics camp to the west
+    <span class="step-label">Hub / flight path</span> The Crossroads. Durotar Supply and Logistics camp to the west
 
 2.  **13–19**{ .lvl } Ragefire Chasm (Orgrimmar)
 
     <span class="step-label">Hub / flight path</span> —
 
-3.  **15–25**{ .lvl } Stonetalon Mountains, Silverpine Forest (via the Undercity zeppelin), Wailing Caverns
+3.  **15–25**{ .lvl } Stonetalon Mountains, Silverpine Forest (through the Undercity zeppelin), Wailing Caverns
 
     <span class="step-label">Hub / flight path</span> Sun Rock Retreat, the Sepulcher
 
@@ -147,20 +147,20 @@ Trolls start in the **Valley of Trials**, Durotar, with Orcs. Blizzard says the 
 </div>
 
 - **Class trainers:** Valley of Spirits, Orgrimmar.
-- Horde players are **attacked on sight in Dalaran** and can't earn Kirin Tor reputation, so skip the City of Dalaran quest hubs.
-- Stranglethorn's new [Drowned City](../../content/dungeons/drowned-city.md) and the troll-themed Zul'Farrak are on your route.
+- In Dalaran, Horde players are **attacked on sight**, and they cannot get Kirin Tor reputation. Thus do not go to the quest hubs in the City of Dalaran.
+- The new [Drowned City](../../content/dungeons/drowned-city.md) in Stranglethorn and Zul'Farrak, which has a troll theme, are on your route.
 
 ## Faction-specific notes
 
 - **Mount:** raptors at 40 (100g). Honored with **Darkspear Trolls** gives 10% off.
-- **Reputation:** Darkspear Trolls is your home faction. The new **Darkspear Raiders** battleground faction ([Darkspear Islands](../../content/pvp/battlegrounds.md#darkspear-islands)) is separate. Its Exalted rewards include a tabard and a Legacy Point.
-- **Lore:** Darkspear priests honor the loa as well as the Light and shadow; the Echo Isles and Sen'jin are your people's home.
+- **Reputation:** Darkspear Trolls is your home faction. The new **Darkspear Raiders** battleground faction ([Darkspear Islands](../../content/pvp/battlegrounds.md#darkspear-islands)) is a different faction. Its Exalted rewards include a tabard and a Legacy Point.
+- **Lore:** Darkspear priests honor the loa, and also the Light and shadow. The Echo Isles and Sen'jin are the home of your people.
 - **PvP vendor:** Hall of Legends, Orgrimmar.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**The Horde raid-healer and Shadow pick.** Berserking is the best throughput racial a Priest can get, and Rapid Regeneration makes leveling smoother. The Troll Priest spells are weak, so you're choosing the race for its racials, not its Priest kit. Pick Undead instead for Will of the Forsaken in PvP.
+**The Horde choice for raid healers and Shadow.** Berserking is the best throughput racial that a Priest can get. Rapid Regeneration makes leveling easier. The Troll Priest spells are weak. Thus you select the race for its racials, not for its Priest kit. For Will of the Forsaken in PvP, select Undead.
 
 </div>

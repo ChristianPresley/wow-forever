@@ -1,6 +1,6 @@
 # Characters
 
-Everything about the character you play: the nine races, the nine classes and the account-wide systems around them.
+Everything about the character you play: the 9 races, the 9 classes and their account-wide systems.
 
 ## In this section
 
@@ -12,7 +12,7 @@ Everything about the character you play: the nine races, the nine classes and th
 
 -   :material-shield-sword: **[Classes](classes/index.md)**
 
-    Cross-class changes and per-class talents for all nine classes.
+    Cross-class changes and per-class talents for all 9 classes.
 
 -   :material-star-circle: **[Legacy System](legacy.md)**
 
@@ -28,7 +28,7 @@ Everything about the character you play: the nine races, the nine classes and th
 
 -   :material-palette-swatch: **[Customization & Transmog](customization.md)**
 
-    Two-part names, SD/HD models, the barbershop and transmog rules.
+    Names with 2 parts, SD/HD models, the barbershop and transmog rules.
 
 </div>
 
@@ -39,13 +39,13 @@ Everything about the character you play: the nine races, the nine classes and th
 | System | In Forever | vs Classic |
 |---|---|---|
 | **Level cap** | 60, permanent | The Classic cap, made permanent |
-| **Races** | 8 Classic races + **Skyborne** (two faction versions). No TBC or later races | New race |
+| **Races** | 8 Classic races + **Skyborne** (2 faction versions). No TBC or later races | New race |
 | **Classes** | All 9, available to **both** factions | Alliance gains Shaman (Dwarf), Horde gains Paladin (Undead) |
 | **Racials** | 4 per race (2 active, 2 passive), mostly redesigned | Reworked |
 | **Talents** | Reworked trees for every class, with a new **16-point** capstone tier | Reworked |
 | **Dual spec** | Level 40, 50g | New |
 | **Training** | ~206g in total for levels 1–60, for every class | Rebalanced |
-| **Legacy** | Account-wide challenges → per-character perk trees | New; replaces achievements |
+| **Legacy** | Account-wide challenges → per-character perk trees | New, replaces achievements |
 | **Professions** | 2 primaries + Cooking, First Aid, Fishing. Cap 300. 600+ new recipes. Camping | Expanded |
 | **Riding** | Level 40 (60%, 100g) and level 60 (100%, 1,000g). No flying | Similar |
 | **Transmog** | Account-wide, with outfits | New |
@@ -55,5 +55,5 @@ Everything about the character you play: the nine races, the nine classes and th
 </div>
 
 
-!!! warning "Class data is still moving"
-    Most class detail comes from Blizzard's beta Class Deep Dives (Sept–Oct 2026), as summarized by Warcraft Tavern. The pre-launch development notes (early Nov 2026) **changed many numbers and removed several talents**. Where the two differ, these pages use the pre-launch notes.
+!!! warning "Class data still changes"
+    Most class details come from the Blizzard beta Class Deep Dives (Sept–Oct 2026), as Warcraft Tavern summarized them. The pre-launch development notes (early Nov 2026) **changed many numbers and removed several talents**. When the 2 sources differ, these pages use the pre-launch notes.

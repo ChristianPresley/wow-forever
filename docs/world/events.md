@@ -3,15 +3,15 @@
 ## Holidays
 
 - According to Blizzard's 6th Forever podcast (reported 29 Oct), launch adds **no new holiday events**.
-- Which Classic holidays are live in Forever has **not been confirmed**. Blizzard doesn't announce holiday changes in advance. A fan calendar lists Feast of Winter Veil from 15 Dec *unconfirmed*{ .unconfirmed }.
+- Blizzard has **not confirmed** which Classic holidays are live in Forever. Blizzard does not announce holiday changes before they occur. A fan calendar lists Feast of Winter Veil from 15 Dec *unconfirmed*{ .unconfirmed }.
 
 ## World bosses
 
-No source has confirmed which Classic world bosses (Azuregos, Lord Kazzak, the Emerald Dragons) are live. *unconfirmed*{ .unconfirmed }
+No source has confirmed which Classic world bosses (Azuregos, Lord Kazzak, the Emerald Dragons) are in the live game. *unconfirmed*{ .unconfirmed }
 
 ## Ideas Blizzard is exploring
 
-None of these has a date or a promise attached.
+None of these has a date or a promise.
 
 - More social or holiday-style activities, such as fishing tournaments
 - **Shared world bosses**
@@ -21,18 +21,18 @@ None of these has a date or a promise attached.
 
 ## Scripted world events still present
 
-- **Stormwind, "The Attack!":** no longer an escort; you speak to Tyrion to start it.
+- **Stormwind, "The Attack!":** no longer an escort. To start it, speak to Tyrion.
 - **The Barrens, "Counterattack!":** Rethgar Deathgate.
-- **Skyborne Elemental Convergences and Leylines:** world spawns across both continents that interact with Skyborne racials.
-- **Removed:** the Khonsu event in Silithus was taken out during beta.
+- **Skyborne Elemental Convergences and Leylines:** world spawns on both continents. They have an effect on Skyborne racials.
+- **Removed:** Blizzard removed the Khonsu event in Silithus during beta.
 
 ## End of Beta event (22–23 Oct 2026)
 
-A one-time beta farewell, continuing a tradition from the 2004 beta:
+A one-time beta farewell. It continued a tradition from the 2004 beta:
 
 - Creatures dropped **Molten Core loot as BoE with no level requirement**.
-- "Endless" elixirs and scrolls were sold (Gabbi Goodwhistle).
+- An NPC (Gabbi Goodwhistle) sold "Endless" elixirs and scrolls.
 - **Azuregos, Lord Kazzak, "Super Hogger", Thunderaan and "Voracious"** attacked quest hubs and dropped legendaries: Sulfuras, Thunderfury, Benediction, Quel'Serrar, Rhok'delar.
-- Around 5 PM PDT, a Scourge-style plague broke out, with **Plague Zombies** and *Conspicuous Crates*.
+- At about 5 PM PDT, a Scourge-style plague started, with **Plague Zombies** and *Conspicuous Crates*.
 
-None of this carried over to the live game.
+None of this went into the live game.

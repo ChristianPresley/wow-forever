@@ -16,18 +16,18 @@ tags:
 </div>
 
 !!! warning "Paid race"
-    Skyborne require the **Skyborne Heroic Pack** or a higher edition. See [Editions](../../about/editions.md).
+    Skyborne need the **Skyborne Heroic Pack** or a higher edition. Refer to [Editions](../../about/editions.md).
 
 ## Why this combo
 
-**NEW in Forever.** The Horde's [Skyborne](../../characters/races.md#skyborne), the **Windshapers**, can be Hunters (with Druid, Rogue, Shaman and Warrior). They're the shamanic, kaldorei-descended half of the race, allied with the Earthen Ring.
+**NEW in Forever.** The Horde [Skyborne](../../characters/races.md#skyborne), the **Windshapers**, can be Hunters (and also Druid, Rogue, Shaman and Warrior). They are the shamanic half of the race. Their ancestors are kaldorei, and they are allies of the Earthen Ring.
 
-Compared with the Alliance High Order, Windshapers swap **Read Ley Line** (regen) for **Skysight** (movement speed). For a Hunter that means:
+The Alliance High Order has **Read Ley Line** (regen). Windshapers have **Skysight** (movement speed) in its place. For a Hunter, this gives:
 
-- **Wind Blessed** gives passive **haste**, which speeds Auto Shot, casts and the global cooldown.
-- **Skysight** gives +15% speed for 15 s (+30% while *Charged*): kiting and travel.
-- **Walk on Air** gives a 10 s glide to escape or shortcut.
-- They land at **Skywatcher Plateau**, just outside Thunder Bluff, which puts you on the Tauren's Kalimdor route.
+- **Wind Blessed** gives passive **haste**. Haste makes Auto Shot, casts and the global cooldown faster.
+- **Skysight** gives +15% speed for 15 s (+30% while *Charged*). Use it to kite and to travel.
+- **Walk on Air** gives a 10 s glide to escape or to make a short path.
+- They arrive at **Skywatcher Plateau**, near Thunder Bluff. From there, you follow the Kalimdor route of the Tauren.
 
 ## Racials in practice
 
@@ -36,15 +36,15 @@ Compared with the Alliance High Order, Windshapers swap **Read Ley Line** (regen
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> 10 s glide. Shortcut down cliffs (Thousand Needles, Feralas, Un'Goro) and a Hardcore escape</p>
-<p markdown><span class="ability-label">PvP</span> Break line of sight off a ledge</p>
+<p markdown><span class="ability-label">PvE</span> 10 s glide. A short path down cliffs (Thousand Needles, Feralas, Un'Goro) and a Hardcore escape</p>
+<p markdown><span class="ability-label">PvP</span> Jump off a ledge to break line of sight</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Skysight** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } PvP</p>
-<p markdown><span class="ability-label">PvE</span> +15% speed for 15 s; at an elemental convergence you get *Charged* for 1 hr, raising it to +30%. Travel before your mount</p>
-<p markdown><span class="ability-label">PvP</span> Kite melee out of the deadzone; carry or chase flags</p>
+<p markdown><span class="ability-label">PvE</span> +15% speed for 15 s. At an elemental convergence, you get *Charged* for 1 hr, which increases it to +30%. Travel before you have a mount</p>
+<p markdown><span class="ability-label">PvP</span> Kite melee out of the deadzone. Carry flags or chase flag carriers</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -66,7 +66,7 @@ Compared with the Alliance High Order, Windshapers swap **Read Ley Line** (regen
 !!! conflict "Conflicts"
     - **Wind Blessed:** sources give 1%, 2% or 3% haste. The latest official notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 minutes.
-    - The 5 November hotfix note groups Plainsrunning with Skyborne. Plainsrunning is a Tauren racial; it's unclear whether any Skyborne speed racial was changed too.
+    - The 5 November hotfix note puts Plainsrunning in the same group as Skyborne. Plainsrunning is a Tauren racial. It is not clear if Blizzard also changed a Skyborne speed racial.
 
 ??? example "Macros"
 
@@ -76,7 +76,7 @@ Compared with the Alliance High Order, Windshapers swap **Read Ley Line** (regen
     /cast Concussive Shot
     ```
 
-    Speed up and snare at the same time when a melee closes in.
+    When a melee enemy comes near, this macro gives you speed and snares the enemy at the same time.
 
     ```text
     #showtooltip Walk on Air
@@ -86,49 +86,49 @@ Compared with the Alliance High Order, Windshapers swap **Read Ley Line** (regen
 
 ## Starting zone walkthrough 1–12
 
-All Skyborne start in **Thendal Village** on [Zephras Isle](../../world/zephras-isle.md), a sanctuary zone where both factions quest side by side, phased apart. The isle takes you to about level 12–14. Trainers are in Thendal Village and **Valanaar**.
+All Skyborne start in **Thendal Village** on [Zephras Isle](../../world/zephras-isle.md). It is a sanctuary zone where both factions do quests in the same area, but in different phases. The isle takes you to about level 12–14. Trainers are in Thendal Village and **Valanaar**.
 
 <div class="steps" markdown>
 
 1.  **1–5**{ .lvl } Thendal Village
 
     - *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (a gathering-profession voucher: Skinning), *Falling With Style* and *The Anchors of Zephras*. The Ursera bear chain ends with Urs'anah.
-    - Faction opener: **The Gift of Skysight** (Windshaper), which introduces your racial.
-    - Train Serpent Sting at 4.
+    - Faction opener: **The Gift of Skysight** (Windshaper). This quest gives you your racial.
+    - At 4, train Serpent Sting.
 
 2.  **5–9**{ .lvl } The road to Shen'dar Village
 
-    - Al'Aketh thugs under Malduko Cloudcrash; *Blessing of Zephras* tornadoes (+40% speed).
-    - Raan Wildwind's **The Great Outdoors** unlocks [camping](../../systems/camping.md).
-    - **Shen'dar Village**: bandits, hippogryphs, Prideclaws, "Badwind" Bennic and *WANTED: Vulgara the Insatiable*. The two factions skirmish at the Windsong Standing Stones.
+    - Al'Aketh thugs under Malduko Cloudcrash. *Blessing of Zephras* tornadoes (+40% speed).
+    - **The Great Outdoors** from Raan Wildwind unlocks [camping](../../systems/camping.md).
+    - **Shen'dar Village**: bandits, hippogryphs, Prideclaws, "Badwind" Bennic and *WANTED: Vulgara the Insatiable*. The 2 factions fight small battles at the Windsong Standing Stones.
     - Train Arcane Shot, Hunter's Mark and Concussive Shot.
 
 3.  **10**{ .lvl } The first pet
 
-    - *Taming the Beast* (Wowhead quest 94978): use a Taming Rod on a **Windsong Crawler**, a crab near water. Warcraft Tavern lists the final Skyborne quest under the same name (94013).
-    - Completing the chain teaches Tame Beast, Feed Pet and Revive Pet.
+    - *Taming the Beast* (Wowhead quest 94978): use a Taming Rod on a **Windsong Crawler**, a crab near water. Warcraft Tavern gives the final Skyborne quest the same name (94013).
+    - When you complete the chain, you learn Tame Beast, Feed Pet and Revive Pet.
     - Players report **foxes** on the island (*unconfirmed*). The Fox is a new family with *Trickster's Dance*.
     - First talent: **Deadly Aspects**.
 
 4.  **9–12+**{ .lvl } Falaath, Valanaar and the finale
 
-    - *Secret Agent Elf*: infiltrate **Falaath Village**; defeat Commanders Cyclas and Aanders; recover the Shadowsong Family Signet.
-    - **Valanaar:** give the signet to Talaanis Shadowsong and meet **Grand Skyseer Ayessa Dawnsinger** (*The Grand Skyseer*). Hearth here.
+    - *Secret Agent Elf*: go secretly into **Falaath Village**. Defeat Commanders Cyclas and Aanders. Get the Shadowsong Family Signet back.
+    - **Valanaar:** give the signet to Talaanis Shadowsong and meet **Grand Skyseer Ayessa Dawnsinger** (*The Grand Skyseer*). Set your hearthstone here.
     - **Gustberry Lowlands:** the Windshaper chain *The Broken Construct* and the Windfield Orchard chain. `/sing` at the frogs for the *Musical Gustjumper* pet.
-    - **Shadowgale Forest:** *In Service of Zephras* → *Blood for Blood*; Nightclaw reputation via *Mercy Falls on Deaf Ears*; recording crystals in Nightclaw Cavern.
+    - **Shadowgale Forest:** *In Service of Zephras* → *Blood for Blood*. Nightclaw reputation from *Mercy Falls on Deaf Ears*. Recording crystals in Nightclaw Cavern.
     - **Finale:** East Pylon Watchtower, *Desperate Times*, the Shrine of Akir, *Confront Lorthuna*, Rohash, then *The Fate of Zephras* and *What Comes Next*.
 
 </div>
 
 ## Route to 60 from Valanaar
 
-**Class trainer city:** Valanaar; once you leave, Thunder Bluff (Hunter Rise) is closest.
+**Class trainer city:** Valanaar. After you leave, Thunder Bluff (Hunter Rise) is the nearest.
 
 The **west Skydock airship** goes to **Skywatcher Plateau** in northwest Mulgore, reportedly every 5 minutes.
 
 <div class="steps" markdown>
 
-1.  **12–20**{ .lvl } Mulgore leftovers, then the Barrens (Crossroads; **Durotar Supply and Logistics** crate camp)
+1.  **12–20**{ .lvl } The remaining Mulgore quests, then the Barrens (Crossroads; **Durotar Supply and Logistics** crate camp)
 
     <span class="step-label">Travel</span> Thunder Bluff wind rider
 
@@ -144,7 +144,7 @@ The **west Skydock airship** goes to **Skywatcher Plateau** in northwest Mulgore
 
     <span class="step-label">Travel</span> Shadowprey Village
 
-5.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar), or Shen'dralas, the home of the Skyborne's Shen'dralar ancestors (level range unknown)
+5.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar), or Shen'dralas, the home of the Shen'dralar ancestors of the Skyborne (level range unknown)
 
     <span class="step-label">Travel</span> Steamwheedle ferry
 
@@ -163,21 +163,21 @@ The **west Skydock airship** goes to **Skywatcher Plateau** in northwest Mulgore
 </div>
 
 !!! warning "Dalaran is hostile"
-    The High Order's Dalaran isn't yours. Horde players are attacked on sight in Dalaran and can't earn Kirin Tor reputation, so skip the [City of Dalaran](../../content/dungeons/city-of-dalaran.md) quest hub.
+    Do not use the [City of Dalaran](../../content/dungeons/city-of-dalaran.md) quest hub. Dalaran belongs to the High Order, not to you. In Dalaran, the guards attack Horde players when they see them, and Horde players cannot get Kirin Tor reputation.
 
 ## Faction-specific notes
 
-- **Reputation:** **Windshapers**. Cloth turn-ins in **Mulgore** count. Exalted lets other Horde races buy Galestriders.
-- **Earthen Ring:** the Windshapers' ally, represented by Muln Earthfury in Mulgore.
-- **Mount:** **Galestrider** from Fairweather Stables (53.8, 81.3) on Zephras, Umber, Stormy or Empyrean, with a 5–20% reputation discount.
-- **Language:** Darnassian and Orcish; you can speak Darnassian with Alliance Skyborne.
+- **Reputation:** **Windshapers**. Cloth turn-ins in **Mulgore** count. At Exalted, other Horde races can buy Galestriders.
+- **Earthen Ring:** the ally of the Windshapers. Muln Earthfury in Mulgore represents it.
+- **Mount:** **Galestrider** from Fairweather Stables (53.8, 81.3) on Zephras, in Umber, Stormy or Empyrean, with a 5–20% reputation discount.
+- **Language:** Darnassian and Orcish. You can speak Darnassian with Alliance Skyborne.
 - **Library books:** Owen Thadd, Undercity.
-- **PvP:** Darkspear Raiders reputation; Hall of Legends in Orgrimmar. Horde character creation on PvP rulesets was locked for population balance at launch.
+- **PvP:** Darkspear Raiders reputation. Hall of Legends in Orgrimmar. At launch, Blizzard locked Horde character creation on PvP rulesets for population balance.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-A fast, mobile Horde Hunter. Passive haste trades Troll's on-demand burst for steady uptime, and Skysight plus Walk on Air give the best mobility of any Horde Hunter. You give up Orc's pet damage and Tauren's sturdiness. Pick Windshaper if you own the pack and want the Zephras story with a Thunder Bluff landing.
+A fast, mobile Horde Hunter. Troll has burst when you need it. Passive haste gives a constant bonus in its place. Skysight and Walk on Air give the best mobility of all Horde Hunters. You do not get the pet damage of Orc or the durability of Tauren. Select Windshaper if you have the pack and want the Zephras story with an arrival at Thunder Bluff.
 
 </div>

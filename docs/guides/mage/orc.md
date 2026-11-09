@@ -11,13 +11,19 @@ tags:
 
 :codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Mage guide](index.md). This page covers only what changes when your Mage is an Orc.</p>
+<p class="gh-note" markdown>Read this page with the [Mage guide](index.md). This page gives only the differences for an Orc Mage.</p>
 
 </div>
 
 ## Why this combo
 
-**New in Forever.** Orcs couldn't be Mages in Classic. In Forever they can, and they arrive with arguably the strongest Horde caster racial kit: **Blood Fury** now boosts spell power on a 2-minute cooldown, **Shatter Curse** cleanses Warlock curses and Banes, and **Hardiness** shortens stuns. Warcraft Tavern and Method.gg both name Orc as a top Horde Mage.
+**New in Forever.** In Classic, Orcs could not be Mages. In Forever they can, and their racials are possibly the strongest set for a Horde caster:
+
+- **Blood Fury** now increases spell power, with a 2-minute cooldown.
+- **Shatter Curse** removes Warlock curses and Banes.
+- **Hardiness** makes stuns shorter.
+
+Warcraft Tavern and Method.gg both name Orc as a top Horde Mage.
 
 | | |
 |---|---|
@@ -34,25 +40,25 @@ tags:
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Blood Fury** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown>+10% attack power **and spell power** for 15 s on a **2 min** cooldown (was 3). Lines up with Arcane Power, Combustion or an Ice Lance shatter window</p>
+<p markdown>+10% attack power **and spell power** for 15 s, with a **2 min** cooldown (it was 3). Use it together with Arcane Power, Combustion or an Ice Lance shatter window</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Shatter Curse** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } PvP · **3/5**{ .stars .s3 } PvE</p>
-<p markdown>Removes curses and Warlock **Banes**, then −5% magic damage taken for 8 s. Mages already have Remove Lesser Curse, but this also clears Banes and is an off-GCD-style self-cleanse plus damage reduction (*GCD behavior unverified*)</p>
+<p markdown>Removes curses and Warlock **Banes**, then gives −5% magic damage taken for 8 s. Mages already have Remove Lesser Curse. But this also removes Banes, and it is a self-cleanse plus damage reduction that acts like an off-GCD ability (*GCD behavior not verified*)</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Command** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> ☆</p>
-<p markdown>+5% pet damage. Only Hunters and Warlocks benefit; wasted on a Mage</p>
+<p markdown>+5% pet damage. Only Hunters and Warlocks get a benefit. It is of no use to a Mage</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Hardiness** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } PvP</p>
-<p markdown>−20% stun duration. Shorter Cheap Shots, Kidney Shots and Hammer of Justice</p>
+<p markdown>−20% stun duration. Cheap Shot, Kidney Shot and Hammer of Justice are shorter</p>
 </div>
 
 </div>
@@ -88,15 +94,15 @@ tags:
 
 ## Starting zone walkthrough (1–12)
 
-Forever added new NPCs, quests and "small moments" to the Valley of Trials. The Classic chains below are still the backbone; exact quest text may differ.
+Forever added new NPCs, quests and "small moments" to the Valley of Trials. The Classic quest chains below are still the base. The quest text can be different.
 
 <div class="steps" markdown>
 
-1.  **1–6**{ .lvl } **Valley of Trials.** Start at the Den. Your Mage trainer in the valley is **Mai'ah**, the Troll trainer who teaches all Horde Mages here (Classic location; check the Den area). Kill boars and scorpids, then the Vile Familiars in the cave and Sarkoth.
-2.  **4**{ .lvl } Frostbolt and Conjure Water. Polymorph at 8.
-3.  **6–10**{ .lvl } **Razor Hill.** Hand in *Report to Sen'jin Village* / *Report to Orgnil*. Kill Kul Tiran sailors at Tiragarde Keep and quilboar in the Razormane camp. **Sen'jin Village** to the south has a Mage trainer (Classic).
-4.  **10**{ .lvl } Frost Nova and first talent point. Orgrimmar's Mage trainers are in the Valley of Spirits area (Classic).
-5.  **10–12.** Burning Blade cultists in Skull Rock and Dustwind Cave, then cross into the Barrens at the Crossroads.
+1.  **1–6**{ .lvl } **Valley of Trials.** Start at the Den. Your Mage trainer in the valley is **Mai'ah**, the Troll trainer who teaches all Horde Mages here (Classic location; look near the Den). Kill boars and scorpids. Then kill the Vile Familiars in the cave and Sarkoth.
+2.  **4**{ .lvl } Train Frostbolt and Conjure Water. Train Polymorph at 8.
+3.  **6–10**{ .lvl } **Razor Hill.** Turn in *Report to Sen'jin Village* / *Report to Orgnil*. Kill Kul Tiran sailors at Tiragarde Keep and quilboar in the Razormane camp. **Sen'jin Village**, to the south, has a Mage trainer (Classic).
+4.  **10**{ .lvl } Train Frost Nova and spend your first talent point. The Orgrimmar Mage trainers are near the Valley of Spirits (Classic).
+5.  **10–12.** Kill Burning Blade cultists in Skull Rock and Dustwind Cave. Then go into the Barrens at the Crossroads.
 
 </div>
 
@@ -107,17 +113,17 @@ Forever added new NPCs, quests and "small moments" to the Valley of Trials. The 
 
 <div class="steps" markdown>
 
-1.  **10–20**{ .lvl } The Barrens (Crossroads), with Silverpine or Durotar as alternatives
+1.  **10–20**{ .lvl } The Barrens (Crossroads). Silverpine or Durotar are alternatives
 
-    <span class="step-label">Travel</span> Zeppelin to Undercity for Silverpine
+    <span class="step-label">Travel</span> Take the zeppelin to Undercity for Silverpine
 
 2.  **15–25**{ .lvl } Stonetalon, Barrens; [Ragefire Chasm](../../content/dungeons/index.md) and Wailing Caverns
 
-    <span class="step-label">Travel</span> Durotar Supply and Logistics crate camp west of the Crossroads
+    <span class="step-label">Travel</span> Durotar Supply and Logistics crate camp, west of the Crossroads
 
 3.  **20–30**{ .lvl } Hillsbrad (Tarren Mill), Ashenvale, Thousand Needles
 
-    <span class="step-label">Travel</span> Tarren Mill also starts the Dalaran Sewer Key chain
+    <span class="step-label">Travel</span> The Dalaran Sewer Key chain also starts in Tarren Mill
 
 4.  **30–40**{ .lvl } Arathi, Stranglethorn, Desolace, Dustwallow
 
@@ -125,7 +131,7 @@ Forever added new NPCs, quests and "small moments" to the Valley of Trials. The 
 
 5.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar)
 
-    <span class="step-label">Travel</span> Through the Badlands or Swamp of Sorrows; Rog'mar flights connect to Stonard, Hammerfall, Kargath
+    <span class="step-label">Travel</span> Through the Badlands or Swamp of Sorrows. Flights from Rog'mar go to Stonard, Hammerfall and Kargath
 
 6.  **40–50**{ .lvl } Tanaris, Feralas, Badlands, Hinterlands
 
@@ -140,19 +146,19 @@ Forever added new NPCs, quests and "small moments" to the Valley of Trials. The 
 **Teleports (Classic levels):** Orgrimmar and Undercity at 20, Thunder Bluff at 30.
 
 !!! warning "Dalaran"
-    Horde players are **attacked on sight** in Dalaran and can't earn Kirin Tor reputation. You can still run the [City of Dalaran](../../content/dungeons/city-of-dalaran.md) dungeon through the sewer with the key from Tarren Mill.
+    NPCs in Dalaran **attack Horde players on sight**, and Horde players cannot get Kirin Tor reputation. You can still do the [City of Dalaran](../../content/dungeons/city-of-dalaran.md) dungeon. Go in through the sewer with the key from Tarren Mill.
 
 ## Faction-specific notes
 
-- **Reputation:** Orgrimmar Honored for 10% off riding and the Wolf.
+- **Reputation:** Orgrimmar Honored gives 10% off riding and the Wolf.
 - **PvP vendors:** Hall of Legends in Orgrimmar.
 - **Transmog:** Mon'ye in the Cleft of Shadows, Orgrimmar (46, 54).
-- **Lore:** Orc spellcasters have traditionally been shamans and (in the Old Horde) warlocks. Orc arcanists were rare in Classic-era lore, so how your character came to study arcane magic is largely yours to role-play.
+- **Lore:** Orc spellcasters were traditionally shamans and (in the Old Horde) warlocks. In Classic-era lore, Orc arcanists were rare. Thus, the story of how your character learned arcane magic is mostly yours to role-play.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-The strongest Horde Mage on paper: a spell-power cooldown every 2 minutes, a curse/Bane cleanse and stun resistance. Command is a wasted slot, but nothing else is. Roll Troll instead if you want haste and better solo survival.
+On paper, this is the strongest Horde Mage. It has a spell-power cooldown every 2 minutes, a curse/Bane cleanse and stun resistance. Command is of no use, but all the other racials are useful. If you want haste and better solo survival, choose Troll.
 
 </div>

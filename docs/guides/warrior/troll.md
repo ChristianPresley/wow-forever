@@ -17,10 +17,10 @@ tags:
 
 ## Why this combo
 
-Trolls are the Horde's leveling-comfort Warriors. **Berserking** (+10% attack speed for 15 s) means more swings, so more rage. The new **Rapid Regeneration** heals 50% of your health over 6 s, which cuts a Warrior's biggest leveling problem, downtime between pulls.
+Trolls are the Horde Warriors that are most comfortable to level. **Berserking** (+10% attack speed for 15 s) gives more swings, so more rage. The new **Rapid Regeneration** heals 50% of your health over 6 s. This decreases the biggest problem of a Warrior when you level: the downtime between pulls.
 
 - **Best at:** leveling and Fury damage.
-- **Status:** available in Classic; not a new combination.
+- **Status:** available in Classic, not a new combination.
 
 ## Racials in practice
 
@@ -29,22 +29,22 @@ Trolls are the Horde's leveling-comfort Warriors. **Berserking** (+10% attack sp
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
-<p markdown><span class="ability-label">PvE</span> +10% cast and attack speed for 15 s. More swings, more rage, more Flurry and Enrage uptime. Stack it with Death Wish</p>
+<p markdown><span class="ability-label">PvE</span> +10% cast and attack speed for 15 s. More swings, more rage, more Flurry and Enrage uptime. Use it together with Death Wish</p>
 <p markdown><span class="ability-label">PvP</span> Burst</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Rapid Regeneration** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } (leveling)</p>
-<p markdown><span class="ability-label">PvE</span> 50% of max health over 6 s, cancelled by any action. A free half-heal after every hard pull</p>
+<p markdown><span class="ability-label">PvE</span> 50% of max health over 6 s. All actions cancel it. A free half-heal after every hard pull</p>
 <p markdown><span class="ability-label">PvP</span> Out-of-combat recovery between fights</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Beast Slaying** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown><span class="ability-label">PvE</span> Bonus damage vs Beasts (the wiki gives no Forever value; in Classic it was +5%)</p>
-<p markdown><span class="ability-label">PvP</span> Hunter pets, maybe Druid forms</p>
+<p markdown><span class="ability-label">PvE</span> Bonus damage vs Beasts (the wiki gives no Forever value. In Classic it was +5%)</p>
+<p markdown><span class="ability-label">PvP</span> Hunter pets, possibly Druid forms</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -57,7 +57,7 @@ Trolls are the Horde's leveling-comfort Warriors. **Berserking** (+10% attack sp
 </div>
 
 !!! note "Bow and Throwing Specialization"
-    These old Troll racials were removed. The wiki lists Berserking as a flat +10% for 15 s; whether Classic's bonus at low health still applies is *unconfirmed*.
+    Blizzard removed these old Troll racials. The wiki lists Berserking as a flat +10% for 15 s. It is *unconfirmed* whether Classic's bonus at low health still applies.
 
 ??? example "Macro: regenerate"
 
@@ -69,16 +69,16 @@ Trolls are the Horde's leveling-comfort Warriors. **Berserking** (+10% attack sp
 
 ## Starting zone walkthrough (1–12)
 
-Trolls start in the **Valley of Trials**, **Durotar**, with Orcs. *Quest and NPC names are Classic-era; check in game.*
+Trolls start in the **Valley of Trials**, **Durotar**, with Orcs. *Quest and NPC names are Classic-era. Check in game.*
 
 <div class="steps" markdown>
 
-1.  **1–5**{ .lvl } **Valley of Trials.** Warrior trainer near the den (Classic: Frang). Boars, scorpids, Sarkoth and the Vile Familiars. **Charge** and **Rend** at 4.
+1.  **1–5**{ .lvl } **Valley of Trials.** The Warrior trainer is near the den (Classic: Frang). Kill boars, scorpids, Sarkoth and the Vile Familiars. **Charge** and **Rend** at 4.
 2.  **~5**{ .lvl } **The Great Outdoors.** Camping intro and Cooking.
-3.  **5–10**{ .lvl } **Sen'jin Village and Razor Hill.** Sen'jin's quests against the Echo Isles' rebel trolls are the Troll story chain. Warrior trainer at Razor Hill. **Hamstring** at 8.
+3.  **5–10**{ .lvl } **Sen'jin Village and Razor Hill.** Sen'jin's quests against the Echo Isles' rebel trolls are the Troll story chain. There is a Warrior trainer at Razor Hill. **Hamstring** at 8.
 4.  **10**{ .lvl } **Defensive Stance** quest from your trainer.
 5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
-6.  **10–12.** Into **the Barrens**. Ragefire Chasm at 13.
+6.  **10–12.** Go into **the Barrens**. Ragefire Chasm at 13.
 
 </div>
 
@@ -96,7 +96,7 @@ Trolls start in the **Valley of Trials**, **Durotar**, with Orcs. *Quest and NPC
 
 3.  **30–40**{ .lvl } Arathi → **Stranglethorn Vale** → Desolace
 
-    <span class="step-label">Flight paths / notes</span> Grom'gol. [The Drowned City](../../content/dungeons/drowned-city.md) on the STV coast. Skip Dalaran: hostile to the Horde
+    <span class="step-label">Flight paths / notes</span> Grom'gol. [The Drowned City](../../content/dungeons/drowned-city.md) on the STV coast. Do not go to Dalaran: it is hostile to the Horde
 
 4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar) → Dustwallow Marsh
 
@@ -112,19 +112,19 @@ Trolls start in the **Valley of Trials**, **Durotar**, with Orcs. *Quest and NPC
 
 ## Faction-specific notes
 
-- **Mount:** Raptor, from Sen'jin Village. Your home reputation is the **Darkspear Trolls**; whether its Honored discount applies to Riding is *unconfirmed*.
-- **Darkspear Islands:** the new battleground is fought over Troll islands off Dustwallow Marsh. Your side is the **Darkspear Raiders**, and Exalted with them gives a tabard and a Legacy Point.
+- **Mount:** Raptor, from Sen'jin Village. Your home reputation is the **Darkspear Trolls**. It is *unconfirmed* whether its Honored discount applies to Riding.
+- **Darkspear Islands:** the new battleground is on Troll islands near the coast of Dustwallow Marsh. Your side is the **Darkspear Raiders**. Exalted with them gives a tabard and a Legacy Point.
 - **Reputation:** Darkspear Trolls and Orgrimmar. The Horde crate camp is west of the Crossroads.
 
 ## Spec fit
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Fury** | **5/5**{ .stars .s5 } | Berserking's attack speed boosts Flurry, Enrage procs and rage. It's the best raid racial for dual-wielding |
-| **Arms** | **4/5**{ .stars .s4 } | Rapid Regeneration makes solo leveling with a two-hander far less punishing |
-| **Protection** | **3/5**{ .stars .s3 } | Berserking speeds up rage and threat; no mitigation racial |
+| **Fury** | **5/5**{ .stars .s5 } | Berserking's attack speed increases Flurry, Enrage procs and rage. It is the best raid racial when you dual-wield |
+| **Arms** | **4/5**{ .stars .s4 } | Rapid Regeneration makes solo leveling with a two-hander much easier |
+| **Protection** | **3/5**{ .stars .s3 } | Berserking gives rage and threat faster. No mitigation racial |
 
-**Leveling tip:** use Rapid Regeneration after every pull that leaves you under half health. Eat only when it's on cooldown.
+**Leveling tip:** after every pull that leaves you under half health, use Rapid Regeneration. Eat only when it is on cooldown.
 
 ### Leveling checklist
 
@@ -132,13 +132,13 @@ Trolls start in the **Valley of Trials**, **Durotar**, with Orcs. *Quest and NPC
 - [ ] Cooking and *The Great Outdoors* for camping by level 5–6
 - [ ] First Aid trained early: it now makes health potions as well as bandages
 - [ ] Collect class library books for the quests at 20, 35 and 45
-- [ ] **Raptor** and Apprentice Riding at 40 (100g); plate and dual spec (50g) at the same time
+- [ ] **Raptor** and Apprentice Riding at 40 (100g), and plate and dual spec (50g) at the same time
 - [ ] Warrior Legacy Points at 25, 45 and 60 (account-wide, first Warrior only)
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-The most comfortable Horde Warrior to level: Rapid Regeneration saves a lot of eating. Berserking also suits Fury in raids. Orc is slightly better for burst and stuns, but Troll is the easier ride to 60.
+The most comfortable Horde Warrior to level: with Rapid Regeneration, you eat much less. Berserking is also good for Fury in raids. Orc is slightly better for burst and stuns, but Troll is the easier way to 60.
 
 </div>

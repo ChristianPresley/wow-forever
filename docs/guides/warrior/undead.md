@@ -17,10 +17,10 @@ tags:
 
 ## Why this combo
 
-The Undead Warrior is a PvP favorite. **Will of the Forsaken** breaks fear, charm and sleep, and fear is the Warrior's worst enemy in PvP. Forever adds **Touch of the Grave**, a passive chance to drain 5% of your maximum health, which helps your sustain while leveling.
+The Undead Warrior is a PvP favorite. **Will of the Forsaken** breaks fear, charm and sleep, and fear is the Warrior's worst enemy in PvP. Forever adds **Touch of the Grave**, a passive chance to drain 5% of your maximum health. This helps your sustain when you level.
 
-- **Best at:** PvP against Warlocks and Priests; solid all-round leveling.
-- **Status:** available in Classic; not a new combination.
+- **Best at:** PvP against Warlocks and Priests, and good all-round leveling.
+- **Status:** available in Classic, not a new combination.
 
 ## Racials in practice
 
@@ -30,7 +30,7 @@ The Undead Warrior is a PvP favorite. **Will of the Forsaken** breaks fear, char
 <p class="ability-name" markdown>**Will of the Forsaken** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
 <p markdown><span class="ability-label">PvE</span> Breaks boss fears and charms</p>
-<p markdown><span class="ability-label">PvP</span> Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control effects. Shares nothing with Berserker Rage, so you have two fear breaks</p>
+<p markdown><span class="ability-label">PvP</span> Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control effects. Has no shared cooldown with Berserker Rage, so you have two fear breaks</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -57,7 +57,7 @@ The Undead Warrior is a PvP favorite. **Will of the Forsaken** breaks fear, char
 </div>
 
 !!! note "Value of Touch of the Grave"
-    Warcraft Tavern calls its value for Warriors undecided. Its proc chance isn't published.
+    Warcraft Tavern says that its value for Warriors is not decided. Its proc chance is not published.
 
 ??? example "Macro: break fear and close"
 
@@ -69,13 +69,13 @@ The Undead Warrior is a PvP favorite. **Will of the Forsaken** breaks fear, char
 
 ## Starting zone walkthrough (1–12)
 
-Undead start in **Deathknell**, **Tirisfal Glades**. Forever fills Tirisfal's empty west with **Shadowvale** and **Bandarion Keep** (the Forsaken Paladin story) and adds the **[Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md)** dungeon. *Quest and NPC names are Classic-era; check in game.*
+Undead start in **Deathknell**, **Tirisfal Glades**. Forever puts **Shadowvale** and **Bandarion Keep** (the Forsaken Paladin story) in the empty west of Tirisfal. It also adds the **[Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md)** dungeon. *Quest and NPC names are Classic-era. Check in game.*
 
 <div class="steps" markdown>
 
-1.  **1–5**{ .lvl } **Deathknell.** Warrior trainer in the chapel area (Classic: Dannal Stern). Mindless zombies, the Night Web's Hollow spiders and the Scarlet Crusade. **Charge** and **Rend** at 4.
+1.  **1–5**{ .lvl } **Deathknell.** The Warrior trainer is in the chapel area (Classic: Dannal Stern). Kill mindless zombies, the Night Web's Hollow spiders and the Scarlet Crusade. **Charge** and **Rend** at 4.
 2.  **~5**{ .lvl } **The Great Outdoors.** Camping intro and Cooking.
-3.  **5–10**{ .lvl } **Brill.** The Brill quests: Scarlet camps, murlocs, the Agamand Mills and Garren's Haunt. Warrior trainer in Brill. **Hamstring** at 8.
+3.  **5–10**{ .lvl } **Brill.** The Brill quests: Scarlet camps, murlocs, the Agamand Mills and Garren's Haunt. There is a Warrior trainer in Brill. **Hamstring** at 8.
 4.  **10**{ .lvl } **Defensive Stance** quest from your trainer.
 5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
 6.  **10–15.** Finish Tirisfal (the new western areas included), then queue **Ruins of Lordaeron** (15–22) before Silverpine.
@@ -88,7 +88,7 @@ Undead start in **Deathknell**, **Tirisfal Glades**. Forever fills Tirisfal's em
 
 1.  **10–20**{ .lvl } Silverpine Forest → the Barrens (zeppelin to Orgrimmar)
 
-    <span class="step-label">Flight paths / notes</span> The Sepulcher. Ruins of Lordaeron, Shadowfang Keep. Gilneas may be visible past the Greymane Wall (*unconfirmed*)
+    <span class="step-label">Flight paths / notes</span> The Sepulcher. Ruins of Lordaeron, Shadowfang Keep. Gilneas is possibly visible past the Greymane Wall (*unconfirmed*)
 
 2.  **20–30**{ .lvl } Hillsbrad → Stonetalon → Ashenvale → Thousand Needles
 
@@ -96,7 +96,7 @@ Undead start in **Deathknell**, **Tirisfal Glades**. Forever fills Tirisfal's em
 
 3.  **30–40**{ .lvl } Arathi → Stranglethorn → Desolace
 
-    <span class="step-label">Flight paths / notes</span> Hammerfall, Grom'gol (zeppelin from Tirisfal). **Scarlet Monastery** is right in Tirisfal. Avoid Dalaran: hostile to the Horde
+    <span class="step-label">Flight paths / notes</span> Hammerfall, Grom'gol (zeppelin from Tirisfal). **Scarlet Monastery** is in Tirisfal. Do not go to Dalaran: it is hostile to the Horde
 
 4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar) → Dustwallow Marsh
 
@@ -116,18 +116,18 @@ Undead start in **Deathknell**, **Tirisfal Glades**. Forever fills Tirisfal's em
 
 - **Mount:** Skeletal Horse, from Brill. **Honored with Undercity** gives 10% off.
 - **Travel:** the Tirisfal zeppelins go to Orgrimmar and Grom'gol (Stranglethorn).
-- **World PvP:** Undercity and Tarren Mill saw frequent raids in the beta. Expect fights.
-- **Lore:** Tirisfal's new Bandarion Keep and the Ruins of Lordaeron expand the Forsaken story you'll level through.
+- **World PvP:** Undercity and Tarren Mill had frequent raids in the beta. Be ready for fights.
+- **Lore:** Tirisfal's new Bandarion Keep and the Ruins of Lordaeron expand the Forsaken story that you level through.
 
 ## Spec fit
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Arms** | **5/5**{ .stars .s5 } | Will of the Forsaken plus Berserker Rage counters Warlocks and Priests, the Warrior's worst matchups |
-| **Fury** | **3/5**{ .stars .s3 } | No damage racial; Touch of the Grave adds a little sustain |
-| **Protection** | **4/5**{ .stars .s4 } | Fear and charm breaks keep you on the boss; Cannibalize between pulls |
+| **Arms** | **5/5**{ .stars .s5 } | Will of the Forsaken and Berserker Rage counter Warlocks and Priests, the Warrior's worst matchups |
+| **Fury** | **3/5**{ .stars .s3 } | No damage racial. Touch of the Grave adds a little sustain |
+| **Protection** | **4/5**{ .stars .s4 } | Fear and charm breaks keep you on the boss. Cannibalize between pulls |
 
-**Leveling tip:** Cannibalize works on humanoid and undead corpses, which covers most of Tirisfal, Silverpine, Hillsbrad and the Scarlet Monastery.
+**Leveling tip:** Cannibalize works on humanoid and undead corpses. These are most of the mobs in Tirisfal, Silverpine, Hillsbrad and the Scarlet Monastery.
 
 ### Leveling checklist
 
@@ -135,13 +135,13 @@ Undead start in **Deathknell**, **Tirisfal Glades**. Forever fills Tirisfal's em
 - [ ] Cooking and *The Great Outdoors* for camping by level 5–6
 - [ ] First Aid trained early: it now makes health potions as well as bandages
 - [ ] Collect class library books for the quests at 20, 35 and 45
-- [ ] **Skeletal Horse** and Apprentice Riding at 40 (100g); plate and dual spec (50g) at the same time
+- [ ] **Skeletal Horse** and Apprentice Riding at 40 (100g), and plate and dual spec (50g) at the same time
 - [ ] Warrior Legacy Points at 25, 45 and 60 (account-wide, first Warrior only)
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-The Horde's best PvP race for a Warrior, because fear breaks win fights. In PvE, Orc and Troll do more damage and Tauren tanks better, but Undead loses little and levels comfortably with Cannibalize.
+The Horde's best PvP race for a Warrior, because fear breaks win fights. In PvE, Orc and Troll do more damage and Tauren is a better tank. But the difference for Undead is small, and Cannibalize makes leveling comfortable.
 
 </div>

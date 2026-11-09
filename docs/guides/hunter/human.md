@@ -11,17 +11,17 @@ tags:
 
 :codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Hunter guide](index.md).</p>
+<p class="gh-note" markdown>Read this page with the [Hunter guide](index.md).</p>
 
 </div>
 
 ## Why this combo
 
-**NEW in Forever.** Humans could never be Hunters in Classic; this is one of the six new race/class combinations Blizzard announced. It gives the Alliance a Hunter that starts in Elwynn Forest, a short walk from Stormwind's new harbor and the boat to Auberdine.
+**NEW in Forever.** In Classic, Humans could not be Hunters. This is 1 of the 6 new race/class combinations that Blizzard announced. It gives the Alliance a Hunter that starts in Elwynn Forest. Elwynn is a short walk from the new harbor of Stormwind and the boat to Auberdine.
 
 Humans are a strong all-round pick:
 
-- **Ruthless** is a flat +1% crit that's always on, for raids and leveling.
+- **Ruthless** is a flat +1% crit that is always active, for raids and leveling.
 - **Will to Survive** is a stun break, which no other Alliance Hunter race has. Warcraft Tavern names Human (with Dwarf) as the best Alliance PvP Hunter.
 - For PvE, Warcraft Tavern rates Human and Night Elf as the best Alliance options, depending on fight length.
 
@@ -33,20 +33,20 @@ Humans are a strong all-round pick:
 <p class="ability-name" markdown>**Will to Survive** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvP / **2/5**{ .stars .s2 } PvE</p>
 <p markdown><span class="ability-label">PvE</span> Breaks a stun from a pack of mobs or a boss</p>
-<p markdown><span class="ability-label">PvP</span> Breaks Cheap Shot, Kidney Shot, Hammer of Justice, Charge stuns. Use it, then step out and trap</p>
+<p markdown><span class="ability-label">PvP</span> Breaks Cheap Shot, Kidney Shot, Hammer of Justice, Charge stuns. Use it, then move away and trap</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>Perception <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> Spots stealthed mobs in some dungeons</p>
-<p markdown><span class="ability-label">PvP</span> 20 s of stealth detection: find the Rogue before the opener. Pairs with Track Hidden</p>
+<p markdown><span class="ability-label">PvE</span> Finds stealthed mobs in some dungeons</p>
+<p markdown><span class="ability-label">PvP</span> 20 s of stealth detection: find the Rogue before the opener. Works well with Track Hidden</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Ruthless** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
-<p markdown><span class="ability-label">PvE</span> +1% crit, always on; also helps your pet, which inherits your crit</p>
+<p markdown><span class="ability-label">PvE</span> +1% crit, always active. Also helps your pet, which inherits your crit</p>
 <p markdown><span class="ability-label">PvP</span> Same</p>
 </div>
 
@@ -69,7 +69,7 @@ Old Human racials (Sword and Mace Specialization, Diplomacy) are gone. Diplomacy
     /cast Concussive Shot
     ```
 
-    Press after a stun breaks to snare the target at once. The second line only fires if it's off the global cooldown, so you may need a second press.
+    Push it after a stun breaks, to snare the target immediately. The second line only fires if it is not on the global cooldown. Thus, it is possible that you must push it a second time.
 
     ```text
     #showtooltip Perception
@@ -79,10 +79,10 @@ Old Human racials (Sword and Mace Specialization, Diplomacy) are gone. Diplomacy
 
 ## Starting zone walkthrough 1–12
 
-Humans start in **Northshire Valley**, Elwynn Forest. Forever didn't announce major changes to Elwynn, so the route below follows Classic (*Classic-era*), with the Hunter steps from Forever sources.
+Humans start in **Northshire Valley**, Elwynn Forest. Forever did not announce major changes to Elwynn. Thus, the route below follows Classic (*Classic-era*), with the Hunter steps from Forever sources.
 
 !!! warning "Trainer location unconfirmed"
-    Classic had no Human Hunter, so the trainers are new. The Warcraft Wiki lists **Josephine Carson** as a Human hunter trainer in **Goldshire**, and **Tordrin Sternblade** as a hunter trainer in **Northshire Valley**. Icy Veins tells Human Hunters to look for a trainer in Goldshire or Stormwind, and says other trainers can hand you the breadcrumb *The Hunter's Path*. Check in game before you rely on either.
+    Classic had no Human Hunter. Thus, the trainers are new. The Warcraft Wiki lists **Josephine Carson** as a Human hunter trainer in **Goldshire**, and **Tordrin Sternblade** as a hunter trainer in **Northshire Valley**. Icy Veins tells Human Hunters to look for a trainer in Goldshire or Stormwind. It also says that other trainers can give you the breadcrumb *The Hunter's Path*. Check in game before you trust either source.
 
 <div class="steps" markdown>
 
@@ -90,37 +90,37 @@ Humans start in **Northshire Valley**, Elwynn Forest. Forever didn't announce ma
 
     - Start with Deputy Willem and Marshal McBride: wolves, kobolds in the vineyards and the Echo Ridge Mine.
     - Brotherhood of Thieves (Defias bandanas), Milly Osworth's grapes.
-    - Train **Serpent Sting** at 4 if a trainer is in Northshire.
+    - If there is a trainer in Northshire, train **Serpent Sting** at 4.
     - Rotation: Auto Shot → Serpent Sting → Raptor Strike when they reach you.
 
 2.  **5–10**{ .lvl } Goldshire and Elwynn
 
-    - **Goldshire** (Lion's Pride Inn): set your hearthstone. Take *The Great Outdoors* here or near the level-5 hub to unlock [camping](../../systems/camping.md), and the starter gathering quest (pick Skinning).
-    - Quests at Fargodeep Mine, Jasperlode Mine, the Stonefield and Maclure farms, Eastvale Logging Camp and Westbrook Garrison. Save **Hogger** for level 10–11 or a group.
+    - **Goldshire** (Lion's Pride Inn): set your hearthstone. Take *The Great Outdoors* here or near the level-5 hub to unlock [camping](../../systems/camping.md). Also take the starter gathering quest (select Skinning).
+    - Do the quests at Fargodeep Mine, Jasperlode Mine, the Stonefield and Maclure farms, Eastvale Logging Camp and Westbrook Garrison. Keep **Hogger** for level 10–11 or for a group.
     - Train Arcane Shot and Hunter's Mark (6), Concussive Shot (8).
 
 3.  **10**{ .lvl } The first pet
 
-    - Train Aspect of the Hawk and take **Taming the Beast** from the trainer (the Human version is listed as *Taming the Beast (human 1)*). You tame three local beasts with a Taming Rod, then *Training the Beast* (Human) teaches Tame Beast, Feed Pet, Revive Pet and Beast Training.
-    - Which beasts the Human chain uses isn't published. Elwynn's options are **wolves**, **boars** and **bears** (*Classic-era*).
+    - Train Aspect of the Hawk. Take **Taming the Beast** from the trainer (sources list the Human version as *Taming the Beast (human 1)*). You tame 3 local beasts with a Taming Rod. Then *Training the Beast* (Human) teaches Tame Beast, Feed Pet, Revive Pet and Beast Training.
+    - There is no published list of the beasts in the Human chain. The options in Elwynn are **wolves**, **boars** and **bears** (*Classic-era*).
     - First talent: **Deadly Aspects**.
 
 4.  **10–12**{ .lvl } Finish Elwynn
 
     - Tame a level-10+ beast to keep: a **Prowler** (wolf) or a boar from eastern Elwynn.
-    - Finish Eastvale and the Redridge border quests, then head to Westfall.
+    - Finish Eastvale and the Redridge border quests, then go to Westfall.
 
 </div>
 
 ## Route to 60 from Stormwind
 
-**Class trainer city:** Stormwind (Hunter trainer location in the city *unconfirmed*). Ironforge's Hall of Arms has hunter trainers from Classic.
+**Class trainer city:** Stormwind (Hunter trainer location in the city *unconfirmed*). The Hall of Arms in Ironforge has hunter trainers from Classic.
 
 <div class="steps" markdown>
 
 1.  **10–20**{ .lvl } Westfall (Sentinel Hill), Loch Modan, Redridge (Lakeshire)
 
-    <span class="step-label">Travel</span> Westfall and Lakeshire flight paths; Deeprun Tram to Ironforge
+    <span class="step-label">Travel</span> Westfall and Lakeshire flight paths, Deeprun Tram to Ironforge
 
 2.  **18–25**{ .lvl } Redridge (Three Corners crate camp), Darkshore
 
@@ -158,17 +158,17 @@ Humans start in **Northshire Valley**, Elwynn Forest. Forever didn't announce ma
 
 ## Faction-specific notes
 
-- **Mount:** Horse from the Eastvale stable (Classic location) at 40; **Honored with Stormwind** saves 10%.
-- **Library books:** turn them in at Garion Wendell in the Wizard's Sanctum, Stormwind.
+- **Mount:** Horse from the Eastvale stable (Classic location) at 40. **Honored with Stormwind** saves 10%.
+- **Library books:** turn them in to Garion Wendell in the Wizard's Sanctum, Stormwind.
 - **Crates:** the Azeroth Commerce Authority camp is at Three Corners, Redridge, on your way.
-- **PvP:** Champion's Hall in Stormwind sells PvP gear. Darkspear Islands reputation is with the **Theramore Expeditionary Force**; queue at Northwatch or any capital battlemaster.
+- **PvP:** Champion's Hall in Stormwind sells PvP gear. Darkspear Islands reputation is with the **Theramore Expeditionary Force**. Queue at Northwatch or at a battlemaster in a capital.
 - **Onyxia attunement** starts in the Burning Steppes and ends with Bolvar in Stormwind Keep, close to home.
-- **Lore:** Humans are new to the Hunter class. Expect Stormwind's forest and farm folk as your flavour rather than dwarven riflemen.
+- **Lore:** Humans are new to the Hunter class. Expect the forest and farm people of Stormwind as your flavour, not dwarven riflemen.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-A very good Alliance Hunter. Ruthless keeps up with Night Elf in long raid fights, and Will to Survive makes Human the strongest Alliance PvP Hunter alongside Dwarf. The only weakness is the unclear trainer setup in Elwynn during launch week. **Pick it** if you want a balanced PvE/PvP Hunter starting near Stormwind.
+A very good Alliance Hunter. In long raid fights, Ruthless is as good as the Night Elf racials. Will to Survive makes Human the strongest Alliance PvP Hunter, together with Dwarf. The only weakness is the unclear trainer setup in Elwynn during launch week. **Select it** if you want a balanced PvE/PvP Hunter that starts near Stormwind.
 
 </div>

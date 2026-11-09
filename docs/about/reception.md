@@ -7,7 +7,7 @@ On 6 Nov 2026 @Warcraft called Forever:
 - "The biggest launch in WoW history by peak concurrent players"
 - "The highest number of returning players in WoW history"
 
-Holly Longdale also cited the most new players at any WoW launch in 15 years. **Blizzard released no actual numbers.** Its last published subscriber count was 5.5 million, in 2015.
+Holly Longdale also said that it had the most new players of any WoW launch in 15 years. **Blizzard released no actual numbers.** Its last published subscriber count was 5.5 million, in 2015.
 
 ## Beta statistics (Blizzard, 30 Oct)
 
@@ -27,13 +27,13 @@ Holly Longdale also cited the most new players at any WoW launch in 15 years. **
 | Skyborne | <span class="meter" style="--v:21.3%"><span>21.3%</span></span> |
 | Undead Paladin | <span class="meter meter--info" style="--v:6.9%"><span>6.9%</span></span> |
 
-Longdale called it the biggest beta in Blizzard's recorded history and admitted "we weren't ready for this kind of engagement". Some beta players were banned for buying gold.
+Longdale called it the biggest beta in the recorded history of Blizzard. She also admitted, "we weren't ready for this kind of engagement". Blizzard banned some beta players because they bought gold.
 
 ## Proxies and estimates
 
 | Metric | Figure | Reliability |
 |---|---|---|
-| Twitch peak, WoW category (4 Nov) | **1,119,734** viewers | **Good**{ .badge .done } (Streams Charts). Classic's 2019 launch peaked slightly higher at 1,132,957 |
+| Twitch peak, WoW category (4 Nov) | **1,119,734** viewers | **Good**{ .badge .done } (Streams Charts). The 2019 Classic launch had a slightly higher peak of 1,132,957 |
 | Twitch hours watched, first 2 days | ~14.47M | **Good**{ .badge .done } |
 | Shadowlands launch peak (2020) | 947,419 | **Comparison**{ .badge .original } |
 | Dragonflight launch peak (2022) | 799,001 | **Comparison**{ .badge .original } |
@@ -44,10 +44,10 @@ Longdale called it the biggest beta in Blizzard's recorded history and admitted 
 
 ## How launch went
 
-- **Stability:** Windows Central reported players calling it "the smoothest launch in Blizzard's MMORPG history". Queues were reportedly about 1,500–4,000 deep around 3:10 PM PST, with waits of roughly 10 minutes.
-- **"Empty world":** layering made some zones feel deserted. Blizzard tuned population caps and shipped a visibility hotfix on 6 Nov.
-- **Name reservation bug (27–28 Oct):** the name filter rejected any name containing "con" (Connor, Falcon, Deacon and so on). It was fixed with each region's next restart.
-- **Login errors:** greyed-out rulesets (the workaround was to requeue), BLZ51900033, WOW51900309.
+- **Stability:** Windows Central reported that players called it "the smoothest launch in Blizzard's MMORPG history". Reportedly, queues had about 1,500–4,000 players at about 3:10 PM PST. Waits were about 10 minutes.
+- **"Empty world":** layering made some zones feel empty. Blizzard adjusted the population caps. On 6 Nov, it released a visibility hotfix.
+- **Name reservation bug (27–28 Oct):** the name filter rejected all names that contain "con" (Connor, Falcon, Deacon and other names). Each region got the fix with its next restart.
+- **Login errors:** greyed-out rulesets (the workaround was to join the queue again), BLZ51900033, WOW51900309.
 - **Americas restart** during peak hours on 6 Nov.
 
 ## Critical themes
@@ -57,10 +57,10 @@ Longdale called it the biggest beta in Blizzard's recorded history and admitted 
 | Praise | Criticism |
 |---|---|
 | Smooth launch, short queues | Skyborne paywall ("cash elves") |
-| Classic feel with new content | Empty-feeling zones at launch |
+| Classic feel with new content | Zones that felt empty at launch |
 | No token, no boosts, a permanent cap | Tooltip and data mismatches in the first patches |
-| Good entry point for new players | Talent tuning still in flux |
+| Good entry point for new players | Talent tuning still changes |
 
 </div>
 
-FinalBoss summarized it as "great value, awkward Skyborne upsell". See [Community](../community/index.md) for more on player sentiment.
+FinalBoss summarized it as "great value, awkward Skyborne upsell". See [Community](../community/index.md) for more about what players think.

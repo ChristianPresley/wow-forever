@@ -16,7 +16,7 @@ search:
 
 # Forever Codex
 
-A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "Classic+" branch of WoW. It has class walkthroughs for every race, zones, dungeons, raids and systems.
+A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "Classic+" version of WoW. It has class walkthroughs for all races, and pages for zones, dungeons, raids and systems.
 
 [Class & race guides](guides/index.md){ .md-button .md-button--primary } [What is Forever?](about/index.md){ .md-button } <label class="md-button" for="__search">Search the Codex</label>
 
@@ -37,7 +37,7 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 </div>
 
 !!! info "Current as of 7 November 2026"
-    Forever launched **4 November 2026**. Raids unlock **9 December 2026**. Information this soon after launch changes quickly. When sources disagree, the wiki says so in a **Conflict** box, and claims from a single source are marked *unconfirmed*.
+    Forever launched **4 November 2026**. Raids unlock **9 December 2026**. So soon after launch, information changes quickly. When sources do not agree, the wiki shows this in a **Conflict** box. The wiki marks claims from only 1 source as *unconfirmed*.
 
 ## Start here
 
@@ -47,7 +47,7 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 
     ---
 
-    56 race add-ons on top of 9 full class walkthroughs.
+    9 full class walkthroughs, and 56 race add-ons.
 
     [:octicons-arrow-right-24: Class guides](guides/index.md)
 
@@ -63,7 +63,7 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 
     ---
 
-    Nine new dungeons, sorted by level.
+    9 new dungeons, sorted by level.
 
     [:octicons-arrow-right-24: Dungeons](content/dungeons/index.md)
 
@@ -101,7 +101,7 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 
     ---
 
-    Full 1–60 walkthroughs for all 9 classes, plus an add-on for each of the 56 race/class combos.
+    Full 1–60 walkthroughs for all 9 classes, and an add-on for each of the 56 race/class combinations.
 
     [:octicons-arrow-right-24: Guides](guides/index.md)
 
@@ -146,7 +146,7 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 - **4 Nov 2026** launched worldwide at 23:00 UTC
 - **60** level cap, permanently
 - **1,000+** new quests in 4 new zones
-- **9** new dungeons, plus 2 new raids
+- **9** new dungeons, and 2 new raids
 - **1** new race: the Skyborne
 - **$0** extra with any WoW subscription
 
@@ -156,7 +156,7 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 **Flying**{ .pill .pill--removed } **Level scaling**{ .pill .pill--removed } **WoW Token**{ .pill .pill--removed } **Boosts**{ .pill .pill--removed } **Dungeon Finder**{ .pill .pill--removed }
 </div>
 
-Not in Forever, by design. There are no realms either: you pick a [Ruleset](about/rulesets.md). The [Skyborne](characters/races.md#skyborne) race is the only paid content, from $29.99.
+These are not in Forever, by design. There are also no realms: you choose a [Ruleset](about/rulesets.md). The [Skyborne](characters/races.md#skyborne) race is the only paid content, from $29.99.
 
 ## Upcoming
 
@@ -171,4 +171,4 @@ Not in Forever, by design. There are no realms either: you pick a [Ruleset](abou
 
 ---
 
-<small>Forever Codex is a fan project with no affiliation to Blizzard Entertainment. World of Warcraft® is a trademark of Blizzard Entertainment, Inc. All facts are paraphrased from the public sources listed on the [Sources](sources.md) page. See [About this wiki](about-this-wiki.md).</small>
+<small>Forever Codex is a fan project. It has no connection to Blizzard Entertainment. World of Warcraft® is a trademark of Blizzard Entertainment, Inc. All facts are in our own words, from the public sources on the [Sources](sources.md) page. See [About this wiki](about-this-wiki.md).</small>

@@ -17,9 +17,9 @@ tags:
 
 ## Why this combo
 
-Troll Rogue is a Classic combination. **Berserking** gives +10% attack speed for 15 s, which means more poison procs, more Sword or Axe extra attacks and more Combat Potency-style Energy. The new **Rapid Regeneration** heals 50% of your health over 6 s between pulls, and **Regeneration** keeps part of your health regen going in combat. Trolls start in the reworked **Valley of Trials**.
+Troll Rogue is a Classic combination. **Berserking** gives +10% attack speed for 15 s. This gives more poison procs, more Sword or Axe extra attacks and more Combat Potency-style Energy. The new **Rapid Regeneration** heals 50% of your health over 6 s between pulls. **Regeneration** keeps part of your health regen active in combat. Trolls start in the reworked **Valley of Trials**.
 
-**Best for:** fast, low-downtime leveling and Combat or poison builds that love attack speed.
+**Best for:** fast, low-downtime leveling and Combat or poison builds that get much benefit from attack speed.
 
 ## Racials in practice
 
@@ -34,25 +34,25 @@ Troll Rogue is a Classic combination. **Berserking** gives +10% attack speed for
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Rapid Regeneration** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 } leveling · **2/5**{ .stars .s2 } PvP</p>
-<p markdown>Regenerates 50% of max health over 6 s; any action cancels it. Use it after a kill instead of eating. In PvP, use it while Vanished or after a Blind</p>
+<p markdown>Regenerates 50% of max health over 6 s. Any action cancels it. Use it after a kill instead of eating. In PvP, use it when you are Vanished or after a Blind</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Beast Slaying** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } leveling · **1/5**{ .stars .s1 } raids</p>
-<p markdown>Bonus damage against Beasts (5% in Classic; the Forever value isn't listed). Lots of leveling mobs are beasts</p>
+<p markdown>Bonus damage against Beasts (5% in Classic. The Forever value is not listed). Many leveling mobs are beasts</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Regeneration** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown>+20% health regen, part of it during combat. Less eating overall</p>
+<p markdown>+20% health regen, part of it during combat. You eat less food</p>
 </div>
 
 </div>
 
 !!! note "Berserking"
-    The Classic version scaled from 10% to 30% as your health dropped. Forever's racial list gives a flat 10%. Check the tooltip.
+    The Classic version increased from 10% to 30% when your health decreased. Forever's racial list gives a flat 10%. Check the tooltip.
 
 ??? example "Macros"
 
@@ -73,13 +73,13 @@ Troll Rogue is a Classic combination. **Berserking** gives +10% attack speed for
 
 ## Starting zone: Valley of Trials and Durotar (1–12)
 
-Trolls share the Orc start. Blizzard added new NPCs, quests and small moments to the Valley of Trials; the Classic flow is given here.
+Trolls share the Orc start. Blizzard added new NPCs, quests and small moments to the Valley of Trials. This page gives the Classic sequence.
 
 <div class="steps" markdown>
 
 1.  **1**{ .lvl } **The Den**, Valley of Trials
 
-    Rogue letter (*Encrypted Parchment*) to **Rwag** in the Den; first quests from Kaltunk and Gornek
+    Rogue letter (*Encrypted Parchment*) to **Rwag** in the Den. First quests from Kaltunk and Gornek
 
 2.  **1–5**{ .lvl } Valley of Trials
 
@@ -91,7 +91,7 @@ Trolls share the Orc start. Blizzard added new NPCs, quests and small moments to
 
 4.  **5–6**{ .lvl } **Sen'jin Village** and Razor Hill
 
-    The Troll village on the coast has Darkspear quests; rogue trainer **Kaplak** is in the Razor Hill barracks
+    The Troll village on the coast has Darkspear quests. Rogue trainer **Kaplak** is in the Razor Hill barracks
 
 5.  **6–10**{ .lvl } Durotar, Echo Isles
 
@@ -103,12 +103,12 @@ Trolls share the Orc start. Blizzard added new NPCs, quests and small moments to
 
 7.  **10–12**{ .lvl } Orgrimmar, then the Barrens
 
-    Visit the Cleft of Shadow and head west to the Crossroads
+    Visit the Cleft of Shadow and go west to the Crossroads
 
 </div>
 
-- **Rapid Regeneration** basically replaces food for the first ten levels.
-- The Echo Isles trolls and Tiragarde sailors are humanoids for **Pick Pocket**.
+- For the first 10 levels, **Rapid Regeneration** almost replaces food.
+- The Echo Isles trolls and Tiragarde sailors are humanoids, so you can use **Pick Pocket** on them.
 
 ## Route to 60 from Orgrimmar
 
@@ -166,15 +166,15 @@ Trolls share the Orc start. Blizzard added new NPCs, quests and small moments to
 
 - **Poison quest (20):** Shenthul in the Cleft of Shadow. See the [main guide](index.md#the-poison-quest-level-20).
 - **Library books:** Owen Thadd, Magic Quarter, Undercity.
-- **Mount:** raptors from Zjolnir in Sen'jin Village. Honored with **Darkspear Trolls** gives 10% off.
+- **Mount:** raptors from Zjolnir in Sen'jin Village. At Honored with **Darkspear Trolls**, you get a 10% discount.
 - **Reputation:** Darkspear Trolls.
-- **Darkspear Islands:** the new battleground puts the **Darkspear Raiders** against the Theramore Expeditionary Force. Exalted gives a tabard and a Legacy Point, a natural goal for a Troll.
+- **Darkspear Islands:** the new battleground puts the **Darkspear Raiders** against the Theramore Expeditionary Force. Exalted gives a tabard and a Legacy Point. This is a natural goal for a Troll.
 - **Revantusk Village** in the Hinterlands is a Troll outpost with its own quests.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**A smooth leveler with strong Combat burst.** Rapid Regeneration and Regeneration cut downtime more than any other Horde Rogue gets, and Berserking stacks well with Adrenaline Rush. Orc has a slightly stronger raid racial and Undead better PvP; Troll is the most comfortable route to 60.
+**A smooth leveler with strong Combat burst.** Rapid Regeneration and Regeneration decrease downtime more than the racials of any other Horde Rogue. Berserking stacks well with Adrenaline Rush. Orc has a slightly stronger raid racial, and Undead has better PvP. Troll is the most comfortable route to 60.
 
 </div>

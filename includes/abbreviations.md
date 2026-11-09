@@ -5,7 +5,7 @@
 *[AB]: Arathi Basin, a 15v15 battleground
 *[ADP]: After the Dark Portal, the in-world calendar
 *[AH]: Auction House
-*[AoE]: Area of effect: hits every enemy in an area
+*[AoE]: Area of effect: hits all enemies in an area
 *[AP]: Attack power
 *[AV]: Alterac Valley, a 40v40 battleground
 *[BG]: Battleground
@@ -14,13 +14,13 @@
 *[BoE]: Bind on Equip
 *[BoP]: Bind on Pickup
 *[BRD]: Blackrock Depths (dungeon)
-*[CC]: Crowd control: Sap, Polymorph, Fear and the like
+*[CC]: Crowd control: Sap, Polymorph, Fear and similar effects
 *[DoT]: Damage over time
 *[DoTs]: Damage-over-time effects
-*[DPS]: Damage per second, or a damage-dealing role
+*[DPS]: Damage per second, or a role that does damage
 *[FP]: Flight path
-*[GCD]: Global cooldown: the 1–1.5 s lockout after most abilities
-*[GDKP]: Gold DKP: a raid that auctions loot for gold and splits the pot
+*[GCD]: Global cooldown: the 1–1.5 s lock after most abilities
+*[GDKP]: Gold DKP: a raid that sells loot for gold and divides the gold among the players
 *[HC]: Hardcore (one-life ruleset)
 *[HD]: High-definition character models
 *[HO]: High Order (Alliance Skyborne)
@@ -38,7 +38,7 @@
 *[RAP]: Ranged attack power
 *[RFD]: Razorfen Downs (dungeon)
 *[RFK]: Razorfen Kraul (dungeon)
-*[RMT]: Real-money trading: buying gold or items for cash
+*[RMT]: Real-money trading: gold or items bought with real money
 *[RP]: Roleplay
 *[SD]: Standard-definition (original) character models
 *[SFK]: Shadowfang Keep (dungeon)

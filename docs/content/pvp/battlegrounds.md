@@ -15,11 +15,11 @@
 </div>
 
 !!! unconfirmed "Reliability"
-    Darkspear Islands details are **official**. That WSG, AB and AV are live, and all the brackets and sizes above, come from **fan sites built on beta datamining**. Blizzard has not published a battleground list. "Battle for Gilneas" is only an empty database placeholder. An Azshara Crater battleground was hinted at but is speculation.
+    Darkspear Islands details are **official**. **Fan sites that use beta datamining** say that WSG, AB and AV are live. All the brackets and sizes above also come from these sites. Blizzard did not publish a battleground list. "Battle for Gilneas" is only an empty database placeholder. There were hints about an Azshara Crater battleground, but this is speculation.
 
-- Honor has been rebalanced so that **Alterac Valley is no longer the obvious farm**.
+- Blizzard rebalanced Honor so that **Alterac Valley is no longer the obvious farm**.
 - Holiday-week battlegrounds give boosted Honor and Rank Points.
-- **Marks of Honor:** 3 for a win, 1 for a loss. They gate PvP gear by slot per map (beta datamine).
+- **Marks of Honor:** 3 for a win, 1 for a loss. They gate PvP gear by slot for each map (beta datamine).
 
 ## Battle for the Darkspear Islands { #darkspear-islands }
 
@@ -39,9 +39,9 @@
 
 ### Rules
 
-- **Four bases.** Holding more of them speeds up point gain.
-- **A central flag.** Carrying it to a base your team controls gives bonus points.
-- The **first team to 2,000** points wins. The layout resembles Eye of the Storm.
+- **4 bases.** When your team holds more bases, it gets points faster.
+- **A central flag.** If you carry it to a base that your team controls, your team gets bonus points.
+- The **first team to 2,000** points wins. The layout is similar to Eye of the Storm.
 
 ### Where to queue
 
@@ -50,8 +50,8 @@
 
 ### Rewards
 
-- A **separate reputation** for each faction, earned from battleground quests and Mark of Honor turn-ins. It unlocks trinkets, rings, cloaks, weapons, armor and consumables.
-- **Exalted** unlocks a short questline for a faction **tabard** and grants **1 Legacy Point**.
+- A **separate reputation** for each faction. You get it from battleground quests and when you turn in Marks of Honor. It unlocks trinkets, rings, cloaks, weapons, armor and consumables.
+- **Exalted** unlocks a short questline for a faction **tabard** and gives **1 Legacy Point**.
 - This reputation is separate from PvP rank.
 
 *Sources: Blizzard (news 24307308); warcraft.wiki.gg; wow.gg.*

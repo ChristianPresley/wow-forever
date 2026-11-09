@@ -17,7 +17,7 @@ tags:
 
 ## Why this combo
 
-A Classic combination with a new twist. Gnomes keep **Escape Artist** and **Expansive Mind**, and gain **Eureka!**, an 8-second window in which non-periodic spells cost less and hit harder. That makes Gnome a better fit for **Destruction and Demonology** (Incinerate, Soul Fire, Searing Pain) than for Affliction, whose damage comes mostly from DoTs and channels. Warcraft Tavern says Gnome gains the least of the Warlock races but still sits close to the others; Method.gg puts it in its B tier.
+A Classic combination with a new change. Gnomes keep **Escape Artist** and **Expansive Mind**. They also get **Eureka!**, an 8-second window in which non-periodic spells cost less and do more damage. Thus, Gnome is better for **Destruction and Demonology** (Incinerate, Soul Fire, Searing Pain) than for Affliction. Most Affliction damage comes from DoTs and channels. Warcraft Tavern says that Gnome gets the least benefit of the Warlock races, but it is still close to the others. Method.gg puts it in its B tier.
 
 | | |
 |---|---|
@@ -34,25 +34,25 @@ A Classic combination with a new twist. Gnomes keep **Escape Artist** and **Expa
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Escape Artist** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } PvP · **2/5**{ .stars .s2 } PvE</p>
-<p markdown>Removes roots and snares, plus 3 s immunity. Breaks Frost Nova, Entangling Roots, Hamstring and Wing Clip so you can get back to Fear range</p>
+<p markdown>Removes roots and snares and gives 3 s immunity. Breaks Frost Nova, Entangling Roots, Hamstring and Wing Clip, so you can move back to Fear range</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Eureka!** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } Destro/Demo · **2/5**{ .stars .s2 } Aff</p>
-<p markdown>For 8 s, non-periodic abilities cost 10% less and deal 10% more. Warcraft Tavern gives a 2-minute cooldown. DoT ticks and (per guides) channels don't benefit, so use it on Conflagrate + Shadowburn + Incinerate, or a Decimation Soul Fire</p>
+<p markdown>For 8 s, non-periodic abilities cost 10% less and do 10% more damage. Warcraft Tavern gives a 2-minute cooldown. DoT ticks get no benefit, and guides say that channels also get no benefit. Use it on Conflagrate + Shadowburn + Incinerate, or on a Decimation Soul Fire</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Expansive Mind** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown>+5% maximum mana. Fewer Life Taps per fight, and a bigger buffer when leveling</p>
+<p markdown>+5% maximum mana. Fewer Life Taps per fight, and more spare mana when you level</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Engineering Specialization** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown>20% fewer device failures. No longer adds Engineering skill. Only useful if you take Engineering, which Warcraft Tavern does suggest for top damage</p>
+<p markdown>20% fewer device failures. Does not add Engineering skill now. Only useful if you take Engineering. Warcraft Tavern recommends Engineering for top damage</p>
 </div>
 
 </div>
@@ -83,20 +83,20 @@ A Classic combination with a new twist. Gnomes keep **Escape Artist** and **Expa
     /cast Fear
     ```
 
-    *Whether Eureka! and Escape Artist trigger the global cooldown is unverified; if they do, press the macro twice.*
+    *It is not verified if Eureka! and Escape Artist trigger the global cooldown. If they do, push the macro 2 times.*
 
 ## Starting zone walkthrough (1–12)
 
-You start in **Coldridge Valley**, Dun Morogh. Trainer names follow Classic; check in game.
+You start in **Coldridge Valley**, Dun Morogh. The trainer names are from Classic. Make sure in the game.
 
 <div class="steps" markdown>
 
-1.  **1**{ .lvl } sell your starting gear and buy **Immolate** from the warlock trainer in Anvilmar (Classic: *Alamar Grimm*). Do the **Imp** quest.
-2.  **1–5**{ .lvl } troggs, wolves and the Coldridge chain. Learn **Corruption**, **Curse of Weakness** and the **Blood Pact** grimoire at 4.
-3.  **~5**{ .lvl } go through the tunnel to **Kharanos**. Pick up **The Great Outdoors** ([camping](../../systems/camping.md)) and the gathering-profession starter quest. The Kharanos warlock trainer (Classic: *Gimrizz Shadowcog*, Thunderbrew Distillery) covers 6–10.
-4.  **6–10**{ .lvl } Life Tap at 6, Bane of Agony and Fear at 8. Quest around Kharanos, Brewnall Village, Gnomeregan's outer camps and the Frostmane trolls.
-5.  **10**{ .lvl } first talent point (**Improved Corruption**), Drain Soul and Healthstone. For the **Voidwalker** quest Method.gg recommends taking the **Deeprun Tram** to Stormwind (Mage Quarter) rather than the Ironforge version.
-6.  **10–13**{ .lvl } the new **[Hall of Thanes](../../content/dungeons/hall-of-thanes.md)** dungeon in Ironforge (13–18) is right on your doorstep. Then **Loch Modan**.
+1.  **1**{ .lvl } Sell your starting gear. Buy **Immolate** from the warlock trainer in Anvilmar (Classic: *Alamar Grimm*). Do the **Imp** quest.
+2.  **1–5**{ .lvl } Troggs, wolves and the Coldridge chain. At 4, learn **Corruption**, **Curse of Weakness** and the **Blood Pact** grimoire.
+3.  **~5**{ .lvl } Go through the tunnel to **Kharanos**. Pick up **The Great Outdoors** ([camping](../../systems/camping.md)) and the gathering-profession starter quest. The Kharanos warlock trainer (Classic: *Gimrizz Shadowcog*, Thunderbrew Distillery) trains levels 6–10.
+4.  **6–10**{ .lvl } Life Tap at 6, Bane of Agony and Fear at 8. Quest near Kharanos, Brewnall Village, the outer camps of Gnomeregan and the Frostmane trolls.
+5.  **10**{ .lvl } First talent point (**Improved Corruption**), Drain Soul and Healthstone. For the **Voidwalker** quest, Method.gg recommends the Stormwind version, not the Ironforge version. Take the **Deeprun Tram** to Stormwind (Mage Quarter).
+6.  **10–13**{ .lvl } The new **[Hall of Thanes](../../content/dungeons/hall-of-thanes.md)** dungeon in Ironforge (13–18) is very near. Then go to **Loch Modan**.
 
 </div>
 
@@ -106,7 +106,7 @@ You start in **Coldridge Valley**, Dun Morogh. Trainer names follow Classic; che
 
 1.  **10–20**{ .lvl } Loch Modan, Westfall or **Darkshore**
 
-    Menethil → Auberdine boat, or tram to Stormwind and take the new Stormwind Harbor boat. Hall of Thanes, then Deadmines. Sayaad quest at 20
+    Menethil → Auberdine boat, or the tram to Stormwind and then the new Stormwind Harbor boat. Hall of Thanes, then Deadmines. Sayaad quest at 20
 
 2.  **20–30**{ .lvl } Wetlands, Redridge, Duskwood, Ashenvale
 
@@ -118,11 +118,11 @@ You start in **Coldridge Valley**, Dun Morogh. Trainer names follow Classic; che
 
 4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)**
 
-    Walk in from Loch Modan via the Badlands or from Redridge. **Farholde Keep** flight master connects to Thelsamar. Felsteed quest at 40 (Strahad Farsan, Ratchet)
+    Walk in from Loch Modan through the Badlands, or from Redridge. The **Farholde Keep** flight master flies to Thelsamar. Felsteed quest at 40 (Strahad Farsan, Ratchet)
 
 5.  **40–50**{ .lvl } Hinterlands, Tanaris, Feralas, Badlands
 
-    Uldaman is a short ride from Loch Modan. Krol'dok Stronghold in the Riverglades
+    Uldaman is a short distance from Loch Modan. Krol'dok Stronghold in the Riverglades
 
 6.  **50–60**{ .lvl } Searing Gorge, Burning Steppes, Azshara, Un'Goro, Felwood, Plaguelands, Winterspring
 
@@ -130,20 +130,20 @@ You start in **Coldridge Valley**, Dun Morogh. Trainer names follow Classic; che
 
 </div>
 
-**Class trainer city:** Ironforge (Classic: the Forlorn Cavern) or Stormwind. Library-book quests go to **Garion Wendell** in Stormwind's Wizard's Sanctum.
+**Class trainer city:** Ironforge (Classic: the Forlorn Cavern) or Stormwind. You turn in library-book quests to **Garion Wendell** in the Wizard's Sanctum, Stormwind.
 
 ## Faction-specific notes
 
 - **Class quests:** Imp (1), Voidwalker (10, Stormwind recommended), Sayaad (20), Felhunter (30), Felsteed (40), Dreadsteed (60).
-- **Reputation:** Gnomeregan Exiles. Honored gives 10% off Riding and mechanostriders.
-- **Professions:** Engineering pairs naturally with your racial, and Warcraft Tavern rates **Tailoring + Engineering** as the highest-damage Warlock pairing.
-- **Raids:** Alliance Onyxia attunement (Burning Steppes, BRD, Stormwind). Blackrock Mountain is a short trip from Ironforge.
-- **Cosmetic:** gnome Warlocks are a lore staple of the Gnomeregan exile era; the HD model's small size also makes you harder to click in PvP.
+- **Reputation:** Gnomeregan Exiles. Honored gives a 10% discount on Riding and mechanostriders.
+- **Professions:** Engineering is a natural match for your racial. Warcraft Tavern rates **Tailoring + Engineering** as the Warlock profession pair with the highest damage.
+- **Raids:** Alliance Onyxia attunement (Burning Steppes, BRD, Stormwind). Blackrock Mountain is a short distance from Ironforge.
+- **Cosmetic:** gnome Warlocks are a usual part of the lore of the Gnomeregan exile period. The HD model is small, so it is also more difficult for enemies to click you in PvP.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**A good choice for Destruction or Demonology, the weakest of the five for pure Affliction.** Eureka! gives Fire builds a real burst window and Escape Artist is excellent against melee kiting. If you plan to play Affliction, Human gives more.
+**A good choice for Destruction or Demonology, the weakest of the 5 for pure Affliction.** Eureka! gives Fire builds a real burst window. Escape Artist is very good when you kite melee enemies. If you plan to play Affliction, Human gives more.
 
 </div>

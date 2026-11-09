@@ -1,14 +1,14 @@
 # Timeline
 
-All times are as reported by sources. 23:00 UTC is 3 PM PST.
+All times are the times that the sources report. 23:00 UTC is 3 PM PST.
 
 ## Development & announcement
 
 <div class="timeline" markdown>
 
 - **~2020** First internal discussions about a new version of the original game
-- **2023–2024** Season of Discovery acts as a testbed for Classic changes
-- **~2024** Greenlit as a full project after the Classic Anniversary Edition
+- **2023–2024** Season of Discovery is a test for Classic changes
+- **~2024** Approved as a full project after the Classic Anniversary Edition
 - **12 Sep 2026** **Revealed at BlizzCon 2026** (Anaheim, 12–13 Sep). Trailers: *New Horizons* (cinematic) and the *Forever Gameplay Trailer*. Editions go on sale
 
 </div>
@@ -17,12 +17,12 @@ All times are as reported by sources. 23:00 UTC is 3 PM PST.
 
 <div class="timeline" markdown>
 
-- **17 Sep 2026** **Beta begins** for Epic Pack and Collection owners and invitees. Level cap 20
+- **17 Sep 2026** **Beta starts** for Epic Pack and Collection owners and invitees. Level cap 20
 - **22 Sep 2026** Build 69977: Mac display, stability and controller fixes
 - **Late Sep 2026** Beta population caps raised several times
 - **1 Oct 2026** Beta level cap raised **20 → 30**
 - **12 Oct 2026** Holly Longdale at PAX Australia: the biggest beta in Blizzard's recorded history
-- **21 Oct 2026** **Server stress test**, 21:00–01:00 UTC (moved from 19 Oct). Characters wiped afterward
+- **21 Oct 2026** **Server stress test**, 21:00–01:00 UTC (moved from 19 Oct). Characters deleted after the test
 - **22 Oct 2026** **End of Beta event** starts at 10 AM PDT. World bosses raid quest hubs and drop legendaries
 - **23 Oct 2026** **Beta closes** at 10 AM PDT
 - **27 Oct 2026** **Early Name Reservation** opens at 20:00 UTC (up to 3 characters per account, until 3 Nov)
@@ -32,7 +32,7 @@ All times are as reported by sources. 23:00 UTC is 3 PM PST.
 </div>
 
 !!! conflict "Conflict"
-    BlizzCon roadmaps showed the beta ending 22 Oct. It actually closed 23 Oct.
+    BlizzCon roadmaps showed 22 Oct as the end of the beta. It actually closed on 23 Oct.
 
 ## Launch
 
@@ -41,13 +41,13 @@ All times are as reported by sources. 23:00 UTC is 3 PM PST.
 - **4 Nov 2026** **Launch at 23:00 UTC** (5 Nov in Europe and Asia) **Live**{ .pill .pill--live }
 - **4–11 Nov 2026** Launch-week Invite-A-Friend window: invitees play without a subscription
 - **5 Nov 2026** First hotfixes (NPC spawns, vendor prices, Plainsrunning in battlegrounds)
-- **6 Nov 2026** @Warcraft: "biggest launch in WoW history by peak concurrent players". Hotfix improves long-range player visibility. The Americas region is restarted during peak hours
+- **6 Nov 2026** @Warcraft: "biggest launch in WoW history by peak concurrent players". Hotfix improves long-range player visibility. Blizzard restarts the Americas region during peak hours
 - **7 Nov 2026** Build 70862 is the current client
 
 </div>
 
 !!! conflict "Conflict"
-    Insider Gaming mentioned a "November 9 worldwide launch". That claim appears nowhere else and is almost certainly wrong.
+    Insider Gaming mentioned a "November 9 worldwide launch". No other source has that claim, and it is almost certainly wrong.
 
 ## Roadmap
 
@@ -62,6 +62,6 @@ All times are as reported by sources. 23:00 UTC is 3 PM PST.
 
 </div>
 
-Blizzard plans updates by **season**, not by numbered Classic-style "phases". No post-launch patch numbers have been announced; the next client version seen is **1.60.2**.
+Blizzard plans updates by **season**, not by numbered Classic-style "phases". Blizzard has not announced post-launch patch numbers. The next client version in the data is **1.60.2**.
 
 See also: [Roadmap](../content/roadmap.md).

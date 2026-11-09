@@ -17,9 +17,9 @@ tags:
 
 ## Why this combo
 
-Undead Rogue is the iconic Classic Horde PvP Rogue. **Will of the Forsaken** breaks fear, charm and sleep, which counters Warlocks, Priests and Warriors. Forever adds **Touch of the Grave**, a passive health drain that helps both leveling and dueling. Tirisfal Glades got one of the biggest starting-zone expansions in Forever: **Shadowvale**, **Bandarion Keep** and the new [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) dungeon.
+Undead Rogue is the iconic Classic Horde PvP Rogue. **Will of the Forsaken** breaks fear, charm and sleep. This counters Warlocks, Priests and Warriors. Forever adds **Touch of the Grave**, a passive health drain that helps when you level and when you duel. In Forever, Tirisfal Glades got one of the largest starting-zone expansions: **Shadowvale**, **Bandarion Keep** and the new [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) dungeon.
 
-**Best for:** PvP, world PvP on PvP realms, and players who like Undercity's atmosphere.
+**Best for:** PvP, world PvP on PvP realms, and players who like the atmosphere of Undercity.
 
 ## Racials in practice
 
@@ -28,25 +28,25 @@ Undead Rogue is the iconic Classic Horde PvP Rogue. **Will of the Forsaken** bre
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Will of the Forsaken** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE</p>
-<p markdown>Removes charm, fear and sleep. Breaks Fear, Psychic Scream, Intimidating Shout, Seduction and Hibernate. Several dungeon and raid bosses fear too</p>
+<p markdown>Removes charm, fear and sleep. Breaks Fear, Psychic Scream, Intimidating Shout, Seduction and Hibernate. Several dungeon and raid bosses also use fear</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Cannibalize** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } leveling</p>
-<p markdown>Eat a humanoid or undead corpse to heal. Free food while questing</p>
+<p markdown>Eat a humanoid or undead corpse to heal. Free food when you quest</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Underwater Breathing** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **1/5**{ .stars .s1 }</p>
-<p markdown>Longer breath. Handy in coastal quests and the Drowned City approach</p>
+<p markdown>Longer breath. Useful in coastal quests and on the way to the Drowned City</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Touch of the Grave** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown>A chance to drain 5% of your max health from the target (15 s internal cooldown). Small but constant self-healing for a class with none</p>
+<p markdown>A chance to drain 5% of your max health from the target (15 s internal cooldown). Small but constant self-healing for a class that has no healing</p>
 </div>
 
 </div>
@@ -58,7 +58,7 @@ Undead Rogue is the iconic Classic Horde PvP Rogue. **Will of the Forsaken** bre
     /cast Will of the Forsaken
     ```
 
-    Put it on an easy key; reaction time matters more than anything else.
+    Put it on an easy key. Reaction time is the most important thing.
 
     ```text
     #showtooltip Cannibalize
@@ -67,13 +67,13 @@ Undead Rogue is the iconic Classic Horde PvP Rogue. **Will of the Forsaken** bre
 
 ## Starting zone: Deathknell and Tirisfal Glades (1–12)
 
-Tirisfal's Classic quests remain, with a big addition in the west: **Shadowvale** and **Bandarion Keep** in the Whispering Wood. Quest names below are from Classic unless marked.
+The Classic quests of Tirisfal are still there, with a large addition in the west: **Shadowvale** and **Bandarion Keep** in the Whispering Wood. The quest names below come from Classic, except where marked.
 
 <div class="steps" markdown>
 
 1.  **1**{ .lvl } **Deathknell**
 
-    Rise from the crypt, take *Rude Awakening* and the Rogue letter (*Encrypted Scroll*) to **David Trias**, the rogue trainer in the church
+    Leave the crypt. Take *Rude Awakening* and the Rogue letter (*Encrypted Scroll*) to **David Trias**, the rogue trainer in the church
 
 2.  **1–5**{ .lvl } Deathknell
 
@@ -89,7 +89,7 @@ Tirisfal's Classic quests remain, with a big addition in the west: **Shadowvale*
 
 5.  **6–10**{ .lvl } Tirisfal
 
-    Scarlet camps at Solliden Farmstead, Agamand Mills, Garren's Haunt, Cold Hearth Manor; *That Shadowvale Green Elixir* and the new **Shadowvale** quests *(Forever)*
+    Scarlet camps at Solliden Farmstead, Agamand Mills, Garren's Haunt, Cold Hearth Manor. *That Shadowvale Green Elixir* and the new **Shadowvale** quests *(Forever)*
 
 6.  **10**{ .lvl } Marion Call
 
@@ -97,13 +97,13 @@ Tirisfal's Classic quests remain, with a big addition in the west: **Shadowvale*
 
 7.  **10–12**{ .lvl } Finish Tirisfal, then Silverpine
 
-    The Sepulcher; or zeppelin to Orgrimmar and the Barrens
+    The Sepulcher, or the zeppelin to Orgrimmar and the Barrens
 
 </div>
 
-- The **Scarlet Crusade** humans across Tirisfal are excellent **Pick Pocket** targets and drop leather and cloth.
-- **Cannibalize** the Scarlets after you kill them instead of buying food.
-- The new **Bandarion Keep** content is the Forsaken Paladin journey; Rogues can visit but it is aimed at Paladins.
+- The **Scarlet Crusade** humans in Tirisfal are excellent **Pick Pocket** targets. They drop leather and cloth.
+- After you kill the Scarlets, use **Cannibalize** on them. Do not buy food.
+- The new **Bandarion Keep** content is the Forsaken Paladin journey. Rogues can go there, but the content is for Paladins.
 
 ## Route to 60 from Undercity
 
@@ -115,7 +115,7 @@ Tirisfal's Classic quests remain, with a big addition in the west: **Shadowvale*
 
 2.  **15–22**{ .lvl } **[Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md)** in Tirisfal
 
-    <span class="step-label">Hub / flight path</span> Right next to Undercity
+    <span class="step-label">Hub / flight path</span> Very near Undercity
 
 3.  **20–30**{ .lvl } **Shadowfang Keep**, Hillsbrad Foothills, Ashenvale, Stonetalon
 
@@ -125,9 +125,9 @@ Tirisfal's Classic quests remain, with a big addition in the west: **Shadowvale*
 
     <span class="step-label">Hub / flight path</span> Orgrimmar → Barrens → Hillsbrad
 
-5.  **26–33**{ .lvl } Hillsbrad; Horde Kirin Tor questline from Magus Wordeen Voidglare in Tarren Mill *(fan source)*
+5.  **26–33**{ .lvl } Hillsbrad. Horde Kirin Tor questline from Magus Wordeen Voidglare in Tarren Mill *(fan source)*
 
-    <span class="step-label">Hub / flight path</span> Tarren Mill. Dalaran guards attack Horde on sight
+    <span class="step-label">Hub / flight path</span> Tarren Mill. Dalaran guards attack Horde players on sight
 
 6.  **30–40**{ .lvl } **Scarlet Monastery** (Tirisfal), Arathi, Stranglethorn, Desolace, Dustwallow
 
@@ -151,17 +151,17 @@ Tirisfal's Classic quests remain, with a big addition in the west: **Shadowvale*
 
 ## Faction notes
 
-- **Poison quest (20):** the Horde chain starts with **Shenthul in Orgrimmar**, not Undercity. Take the zeppelin. It then sends you to the Barrens and to **Hillsbrad**, close to home. See the [main guide](index.md#the-poison-quest-level-20).
-- **Library books:** **Owen Thadd** in Undercity's Magic Quarter is right in your capital.
-- **Mount:** skeletal horses from Zachariah Post in Brill. Honored with Undercity gives 10% off.
+- **Poison quest (20):** the Horde chain starts with **Shenthul in Orgrimmar**, not Undercity. Take the zeppelin. Then it sends you to the Barrens and to **Hillsbrad**, near your home city. See the [main guide](index.md#the-poison-quest-level-20).
+- **Library books:** **Owen Thadd** is in the Magic Quarter of Undercity, in your capital.
+- **Mount:** skeletal horses from Zachariah Post in Brill. At Honored with Undercity, you get a 10% discount.
 - **Reputation:** Undercity.
-- **Southshore and Undercity raids** were the most common world-PvP hotspots in beta; as an Undead you'll be near both.
-- **Lore:** the new Tirisfal content includes the Forsaken Paladin journey, which deals with other Forsaken mistrusting the Light, and the Ruins of Lordaeron explore the fallen capital above Undercity.
+- **Southshore and Undercity raids** were the most common world-PvP hotspots in beta. As an Undead, you will be near both.
+- **Lore:** the new Tirisfal content includes the Forsaken Paladin journey. Its story is about other Forsaken who do not trust the Light. The Ruins of Lordaeron show the fallen capital above Undercity.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**The Horde PvP Rogue.** Will of the Forsaken shuts down the classes that counter Rogues best, and Touch of the Grave plus Cannibalize make leveling self-sufficient. For pure raid damage Orc is slightly ahead, but Undead never feels weak.
+**The Horde PvP Rogue.** Will of the Forsaken stops the classes that are the best counters to Rogues. With Touch of the Grave and Cannibalize, you need little help when you level. For pure raid damage, Orc is slightly better, but Undead is never weak.
 
 </div>

@@ -5,30 +5,30 @@
 - On **PvP** and **RP-PvP** rulesets you are "almost always at risk". On Normal, PvP is optional. See [Rulesets](../../about/rulesets.md).
 - On the PvP ruleset an account can only have characters of **one faction**.
 - **Battlegrounds can mix rulesets**, except Hardcore. Horde and Alliance can never group together.
-- In the beta, players most often died to other players, and raids on the Undercity and Southshore were common. Blizzard chose **not** to close early access to Mount Hyjal.
+- In the beta, the most frequent cause of death for players was other players. Raids on the Undercity and Southshore were frequent. Blizzard chose **not** to close early access to Mount Hyjal.
 - World kills give **Honor** but **not Rank Points**.
 - **Arenas:** none announced. Blizzard lent an arena for the community "Forever Open" tournament.
-- **Mak'gora:** a dedicated duel-to-the-death space was hinted at for Hardcore. *unconfirmed*{ .unconfirmed }
+- **Mak'gora:** there were hints about a special duel-to-the-death area for Hardcore. *unconfirmed*{ .unconfirmed }
 
 ## Progression: Honor, Ranks and seasons
 
-Blizzard announced the framework on 7 Oct 2026. PvP has **two tracks**:
+Blizzard announced the framework on 7 Oct 2026. PvP has **2 tracks**:
 
 <div class="compare" markdown>
 
 | Track | What it is | Sources |
 |---|---|---|
-| **Honor** | A currency for buying gear | Player kills, battlegrounds, PvP quests |
-| **Rank Points** | Decide your rank | Battlegrounds, PvP quests, weekly "journey" tasks. **Not** world kills |
+| **Honor** | A currency to buy gear | Player kills, battlegrounds, PvP quests |
+| **Rank Points** | Set your rank | Battlegrounds, PvP quests, weekly "journey" tasks. **Not** world kills |
 
 </div>
 
 !!! forever "Seasons replace the old grind"
     The old realm-wide standing grind is **gone**. You start each **season** at Rank 1 and can climb to **Rank 14** (High Warlord / Grand Marshal). It combines TBC-style seasons with the vanilla ranks.
 
-- Gains are **capped weekly**. According to fan-collected beta data (wowf.io), the earliest you can reach Rank 14 is **week 10** of a season.
-- **Gear:** Honor buys **blue** and **epic** sets. Epic pieces are upgrades: a blue piece plus an **Emboldened Seal**, and seals have rank requirements. New sets fill gaps for specs; Shaman, for example, get healer, melee and caster sets.
-- **Season journey:** weekly tasks give Honor and Rank Points. Three tasks per season award a **[Legacy Point](../../characters/legacy.md)** (3 per season).
+- There is a **weekly cap** on gains. Beta data that fans collected (wowf.io) shows that the earliest you can reach Rank 14 is **week 10** of a season.
+- **Gear:** Honor buys **blue** and **epic** sets. Epic pieces are upgrades: a blue piece plus an **Emboldened Seal**. Seals have rank requirements. New sets fill gaps for specs. For example, Shaman get healer, melee and caster sets.
+- **Season journey:** weekly tasks give Honor and Rank Points. 3 tasks per season award a **[Legacy Point](../../characters/legacy.md)** (3 per season).
 - **Vendors:** Champion's Hall (Stormwind) and Hall of Legends (Orgrimmar).
 - **Honor cap:** 25,000 (unofficial).
 - Check your rank in the Character pane (C), on the PvP tab.
@@ -56,6 +56,6 @@ Blizzard announced the framework on 7 Oct 2026. PvP has **two tracks**:
 
 **Highest rank reachable by week** (wowf.io): weeks 1–10 → ranks 3, 5, 6, 7, 8, 9, 11, 12, 13, 14.
 
-Season length has not been published. Refreshes are on the roadmap for spring 2027 and summer 2027.
+There is no published season length. The roadmap shows refreshes for spring 2027 and summer 2027.
 
 See also: [Battlegrounds](battlegrounds.md).

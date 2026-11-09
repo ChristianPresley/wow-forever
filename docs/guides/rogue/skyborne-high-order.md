@@ -20,7 +20,7 @@ tags:
 
 ## Why this combo
 
-**NEW in Forever.** The Skyborne are a Forever-only elven race descended from exiles of Eldre'Thalas, and the High Order is their Alliance branch. Rogue is one of five High Order classes. You get **Wind Blessed** (permanent haste), **Walk on Air** (a 10 s controlled glide) and a starting zone, [Zephras Isle](../../world/zephras-isle.md), that only Skyborne play through.
+**NEW in Forever.** The Skyborne are a Forever-only elven race that descends from exiles of Eldre'Thalas. The High Order is their Alliance branch. Rogue is one of five High Order classes. You get **Wind Blessed** (permanent haste) and **Walk on Air** (a 10 s controlled glide). You also get a starting zone, [Zephras Isle](../../world/zephras-isle.md), that only Skyborne play.
 
 **Best for:** players who want something new, steady haste for poison and Combat builds, and the Galestrider mount from day one of riding.
 
@@ -31,13 +31,13 @@ tags:
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown>A 10 s controlled glide. Cross gaps, drop off cliffs safely, take shortcuts while leveling. Rogues get Safe Fall at 40, but gliding is also a route-finder and escape in world PvP</p>
+<p markdown>A 10 s controlled glide. Cross gaps, jump from cliffs safely and take shortcuts when you level. Rogues get Safe Fall at 40, but the glide also helps you find routes and escape in world PvP</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Read Ley Line** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown>+50% regen for 15 s, +100% while *Attuned* at a Ley Line. It is unclear whether it affects Energy; for health regen it shortens downtime</p>
+<p markdown>+50% regen for 15 s, +100% while *Attuned* at a Ley Line. It is not clear if it affects Energy. For health regen, it decreases downtime</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -49,7 +49,7 @@ tags:
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Elemental Insight** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown>+5% damage against Elementals. Zephras Isle is full of them, and some dungeons too</p>
+<p markdown>+5% damage against Elementals. Zephras Isle has many of them, and some dungeons also have them</p>
 </div>
 
 </div>
@@ -57,7 +57,7 @@ tags:
 !!! conflict "Conflicts"
     - **Wind Blessed:** sources give 1%, 2% or 3% haste. The latest official notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 minutes, depending on the source.
-    - Whether **Read Ley Line** boosts Energy regen is *unconfirmed*.
+    - It is *unconfirmed* if **Read Ley Line** increases Energy regen.
 
 ??? example "Macros"
 
@@ -74,7 +74,7 @@ tags:
 
 ## Starting zone: Zephras Isle (1–12)
 
-Every Skyborne starts in **Thendal Village** in the northwest of Zephras Isle, a floating island in Skywall. Both factions share the zone but are phased apart. The story takes you to about level 12–14. Full story: [Zephras Isle](../../world/zephras-isle.md).
+Every Skyborne starts in **Thendal Village** in the northwest of Zephras Isle, a floating island in Skywall. Both factions share the zone, but they are in different phases. The story takes you to about level 12–14. Full story: [Zephras Isle](../../world/zephras-isle.md).
 
 <div class="steps" markdown>
 
@@ -92,11 +92,11 @@ Every Skyborne starts in **Thendal Village** in the northwest of Zephras Isle, a
 
 4.  **7–8**{ .lvl } **Falaath Village**
 
-    *Secret Agent Elf*: infiltrate the cult in disguise. Perfect Rogue flavor. Kill Commander Cyclas and Commander Aanders
+    *Secret Agent Elf*: infiltrate the cult in disguise. This quest is a very good match for a Rogue. Kill Commander Cyclas and Commander Aanders
 
 5.  **8–9**{ .lvl } **Valanaar**
 
-    Hand the Shadowsong signet to High Elder Talaanis Shadowsong and meet **Supreme Magister Elaadrin Evengale**. Valanaar has the class trainers; train here
+    Hand the Shadowsong signet to High Elder Talaanis Shadowsong and meet **Supreme Magister Elaadrin Evengale**. Valanaar has the class trainers. Train here
 
 6.  **9–11**{ .lvl } Gustberry Lowlands
 
@@ -116,21 +116,21 @@ Every Skyborne starts in **Thendal Village** in the northwest of Zephras Isle, a
 
 </div>
 
-- Lots of Al'Aketh cultists are humanoids: **Pick Pocket** them.
+- Many Al'Aketh cultists are humanoids: use **Pick Pocket** on them.
 - **Elemental Insight** gives +5% damage on the island's elementals.
-- Exact trainer NPC names in Valanaar haven't been documented. Ask a guard.
+- Nobody has documented the exact trainer NPC names in Valanaar. Ask a guard.
 
 ## Route to 60 from Dalaran
 
-The High Order airship docks at the east Skydock and flies to north **Dalaran** in the Alterac Mountains. Dalaran is a level 30–40 zone, so don't quest there at 12.
+The High Order airship leaves from the east Skydock and flies to north **Dalaran** in the Alterac Mountains. Dalaran is a level 30–40 zone, so do not do quests there at 12.
 
 <div class="steps" markdown>
 
 1.  **12**{ .lvl } Dalaran → walk south to **Southshore** (Hillsbrad)
 
-    <span class="step-label">Hub / flight path</span> Careful: Alterac and Hillsbrad are higher level and contested
+    <span class="step-label">Hub / flight path</span> Be careful: Alterac and Hillsbrad are higher level and contested
 
-2.  **12–20**{ .lvl } Take the new **Southshore–Auberdine** boat to **Darkshore**, or Southshore–Menethil to reach Loch Modan or Westfall
+2.  **12–20**{ .lvl } Take the new **Southshore–Auberdine** boat to **Darkshore**, or Southshore–Menethil to go to Loch Modan or Westfall
 
     <span class="step-label">Hub / flight path</span> Auberdine · Thelsamar · Sentinel Hill
 
@@ -164,22 +164,22 @@ The High Order airship docks at the east Skydock and flies to north **Dalaran** 
 
 </div>
 
-**Class trainers:** Valanaar on Zephras Isle, then **Stormwind's Old Town** on the mainland. Whether Dalaran has a rogue trainer is *unconfirmed*.
+**Class trainers:** Valanaar on Zephras Isle, then **Stormwind's Old Town** on the mainland. It is *unconfirmed* if Dalaran has a rogue trainer.
 
 ## Faction notes
 
 - **Poison quest (20):** Master Mathias Shaw, SI:7, Stormwind. See the [main guide](index.md#the-poison-quest-level-20).
 - **Library books:** Garion Wendell, Mage Quarter, Stormwind.
-- **Mount:** **Galestriders** at **Fairweather Stables**, Zephras Isle (53.8, 81.3), in Umber, Stormy and Empyrean, with Swift versions. High Order reputation gives 5/10/15/20% off at Friendly → Exalted. Riding still costs 100g at 40.
+- **Mount:** **Galestriders** at **Fairweather Stables**, Zephras Isle (53.8, 81.3), in Umber, Stormy and Empyrean, with Swift versions. High Order reputation gives a 5/10/15/20% discount at Friendly → Exalted. Riding still costs 100g at 40.
 - **Reputation:** High Order. Other Alliance races can earn Galestriders at Exalted with it. The Nightclaw druids have a separate reputation.
 - **Kirin Tor:** the High Order are allies of Dalaran. Kirin Tor reputation is Alliance-only.
 - **Language:** Darnassian and Common. You can talk to Windshaper Skyborne in Darnassian across factions.
-- **Looks:** HD models only at launch, with two body types; feathers, tattoos and the vivid-blue "Sky-Touched Blessing" skin. See [Races](../../characters/races.md#skyborne).
+- **Looks:** HD models only at launch, with two body types. Feathers, tattoos and the vivid-blue "Sky-Touched Blessing" skin. See [Races](../../characters/races.md#skyborne).
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**A fresh, solid Rogue with steady haste.** Wind Blessed is a good passive for poison and Combat builds, Walk on Air is fun and useful, and the Zephras story (including a spy chapter) suits a Rogue. Human, Gnome and Night Elf have stronger PvP or burst racials; pick High Order for the new race, the starting experience and the Galestrider.
+**A fresh, solid Rogue with steady haste.** Wind Blessed is a good passive for poison and Combat builds. Walk on Air is fun and useful. The Zephras story (including a spy chapter) is a good match for a Rogue. Human, Gnome and Night Elf have stronger PvP or burst racials. Pick High Order for the new race, the starting experience and the Galestrider.
 
 </div>

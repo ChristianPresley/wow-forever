@@ -46,7 +46,7 @@
 | **PC Games Hardware** (DE) | Tech, requirements, live ticker |
 | **wowforevertalents.com** | Build-by-build patch notes and talent tracker |
 | **wowf.io** | PvP rank data (fan) |
-| **GuildOrder** | Recruiting without realms |
+| **GuildOrder** | Guild recruitment with no realms |
 
 ## Tools
 

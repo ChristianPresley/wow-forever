@@ -1,6 +1,6 @@
 # Systems & Quality of Life
 
-Forever runs on the **modern WoW client** (the retail 12.1.5 UI architecture) but deliberately keeps much of Classic's friction.
+Forever uses the **modern WoW client** (the retail 12.1.5 UI architecture). But it intentionally keeps many of the inconveniences of Classic.
 
 ## In this section
 
@@ -34,7 +34,7 @@ Forever runs on the **modern WoW client** (the retail 12.1.5 UI architecture) bu
 
 ## Experience presets
 
-You pick a preset at first login, before choosing a ruleset. Every setting can be changed later under *Game Menu → Options*.
+You choose a preset at first login, before you choose a ruleset. You can change all settings later under *Game Menu → Options*.
 
 <div class="compare" markdown>
 
@@ -49,7 +49,7 @@ You pick a preset at first login, before choosing a ruleset. Every setting can b
 
 </div>
 
-Blizzard recommends **Enhanced** if you're unsure.
+If you are not sure, Blizzard recommends **Enhanced**.
 
 ## Modern features that are built in
 
@@ -62,18 +62,18 @@ Blizzard recommends **Enhanced** if you're unsure.
 - **Discord** account linking and guild-chat mirroring
 
 !!! tip "Defaults worth changing"
-    Camera follow defaults to "Always". Health and mana text and Target of Target are **off**. The low-health screen flash is **on**.
+    The default for camera follow is "Always". Health and mana text and Target of Target are **off**. The low-health screen flash is **on**.
 
 ## Deliberately *not* modernized
 
 !!! forever "Classic friction, kept on purpose"
 
-    - **No automated Group Finder or dungeon teleport.** The only LFG tool is a Classic-style listing.
-    - **Meeting Stones don't summon.** Only a Warlock's Ritual of Summoning does.
+    - **No automated Group Finder or dungeon teleport.** The only LFG tool is a Classic-style list.
+    - **Meeting Stones do not summon.** Only a Warlock's Ritual of Summoning can summon.
     - **No flying.** No level scaling.
-    - **No Dungeon Journal** at launch, and raid bosses aren't previewed.
-    - **No PTRs** for new raids, and **item stats are hidden** until someone discovers the item. See [Items](items.md).
-    - **No built-in "Classic UI" toggle.** Blizzard left that look to add-ons such as *ClassicUI Forever*.
+    - **No Dungeon Journal** at launch, and no preview of raid bosses.
+    - **No PTRs** for new raids, and **item stats are hidden** until a player finds the item. See [Items](items.md).
+    - **No built-in "Classic UI" toggle.** For that look, Blizzard tells players to use add-ons such as *ClassicUI Forever*.
 
 ## Carried over from Season of Discovery
 

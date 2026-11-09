@@ -17,12 +17,12 @@
 | **Unlocks** | 9 Dec 2026 |
 | **Location** | Dustwallow Marsh |
 | **Bosses** | 1 (Onyxia) |
-| **Attunement** | **Drakefire Amulet** (in your bags; it doesn't need to be equipped). **Not account-wide** |
+| **Attunement** | **Drakefire Amulet** (it must be in your bags, but you do not have to equip it). **Not account-wide** |
 | **Reset** | Weekly |
 
 </aside>
 
-The classic three-phase fight with heavy fire damage. Fire resistance gear is recommended. Loot is expected to change from Classic, but the details haven't been published.
+The classic 3-phase fight with a lot of fire damage. Fire resistance gear is recommended. The loot will probably change from Classic, but there are no published details.
 
 ## Attunement
 
@@ -39,8 +39,8 @@ The classic three-phase fight with heavy fire damage. Fire resistance gear is re
     2. Lower Blackrock Spire, then Thrall.
     3. Rexxar (Desolace) and Myranda the Hag (Western Plaguelands).
     4. *Amulet of Draconic Subversion* → Emberstrife in Dustwallow Marsh.
-    5. Four "Test of Skulls" kills: Scryer, Somnus, Chronalis, Axtroz.
+    5. 4 "Test of Skulls" kills: Scryer, Somnus, Chronalis, Axtroz.
     6. *Dull Drakefire Amulet* → Drakkisath's blood from UBRS → back to Rexxar.
 
 !!! conflict "Conflict"
-    One Blizzard video said Onyxia was available "at launch". The roadmap and launch article put all three raids on 9 Dec.
+    One Blizzard video said Onyxia was available "at launch". The roadmap and launch article put all 3 raids on 9 Dec.

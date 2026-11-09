@@ -1,6 +1,6 @@
 # Dungeons
 
-Forever launched with **32 dungeons**: all the original Classic instances plus **9 new five-player dungeons** for levels 13–60. Blizzard calls this an *additive* approach: the original dungeons stay largely intact, with reworked quests and rewards.
+Forever launched with **32 dungeons**: all the original Classic instances plus **9 new 5-player dungeons** for levels 13–60. Blizzard calls this an *additive* approach. The original dungeons stay almost the same, but with changed quests and rewards.
 
 ## General rules
 
@@ -8,17 +8,17 @@ Forever launched with **32 dungeons**: all the original Classic instances plus *
 |---|---|
 | **Difficulty** | One difficulty per dungeon. No Heroic, Mythic, Mythic+ or scaling |
 | **Group size** | 5 players. Upper Blackrock Spire is 10 |
-| **Group finder** | A Classic-style LFG listing tool with no auto-matching or teleport. **Meeting Stones cannot summon**; only a Warlock's Ritual of Summoning works. You have to travel to the entrance |
-| **Lockouts** | Up to 5 instance resets per hour |
-| **Loot** | Items carry unique stats themed to class, spec, biome or enemy. Looting an item unlocks its transmog. Each new-dungeon boss reportedly drops a guaranteed blue item. There is a dungeon currency, *Tarnished Undermine Real* |
+| **Group finder** | A Classic-style LFG listing tool with no auto-matching or teleport. **Meeting Stones cannot summon**. Only a Warlock's Ritual of Summoning works. You must travel to the entrance |
+| **Lockouts** | A maximum of 5 instance resets per hour |
+| **Loot** | Items have unique stats with a theme of class, spec, biome or enemy. When you loot an item, you unlock its transmog. Each boss in a new dungeon reportedly drops a guaranteed blue item. There is a dungeon currency, *Tarnished Undermine Real* |
 | **XP** | Dungeon mobs give **less** XP and dungeon quests give **much more**. Mob boosting is nerfed: Improved Blizzard's slow is weaker, and Consecration's extra damage hits only the first 4 targets |
 | **Legacy** | "Spelunker" challenges award Legacy Points for one clear of each dungeon |
-| **Secrets** | Some loot and map data is deliberately undocumented. Developers say even they don't know Herod's drop |
+| **Secrets** | Some loot and map data is intentionally not documented. The developers say that even they do not know Herod's drop |
 | **Camping** | Rare camp blueprints drop in instances (e.g. *Blueprint: Rock Garden*) |
 
 ## All dungeons by level
 
-**New** dungeons are in bold and carry a **New**{ .pill .pill--new } badge. Common abbreviations (BRD, UBRS, SM…) sit next to each name, so search finds them. The *LFG* column shows the in-game group-finder range (via Warcraft Tavern). The *Wiki* column shows the Warcraft Wiki's range.
+**New** dungeons are in bold and carry a **New**{ .pill .pill--new } badge. Common abbreviations (BRD, UBRS, SM…) are next to each name, so that the search finds them. The *LFG* column shows the in-game group-finder range (via Warcraft Tavern). The *Wiki* column shows the Warcraft Wiki's range.
 
 <div class="compare" markdown>
 
@@ -61,7 +61,7 @@ Forever launched with **32 dungeons**: all the original Classic instances plus *
 </div>
 
 !!! note "Level ranges vary by source"
-    Blizzard's pre-launch ranges (Sept 2026) are the narrowest. The live LFG ranges run 2–7 levels higher. Boss counts for original dungeons follow Classic and have not been checked against Forever.
+    Blizzard's pre-launch ranges (Sept 2026) are the narrowest. The live LFG ranges are 2–7 levels higher. Boss counts for original dungeons are the Classic counts. Nobody has verified them against Forever yet.
 
 ## Level ranges for the new dungeons by source
 

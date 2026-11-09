@@ -5,6 +5,6 @@ search:
 
 # Tags
 
-Every class guide and race add-on is tagged by class, race, faction and role. Pick a tag to see every page that carries it.
+Each class guide and race add-on has tags for class, race, faction and role. Select a tag to see all pages with that tag.
 
 <!-- material/tags -->

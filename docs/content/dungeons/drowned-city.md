@@ -14,11 +14,11 @@
 
 </aside>
 
-Sunken troll ruins have risen from the sea, overrun by trolls, naga and the crew of a wrecked pirate ship.
+Sunken troll ruins have come up from the sea. Trolls, naga and the crew of a wrecked pirate ship now occupy them.
 
 ### Signature mechanic: the storm
 
-The Drowned City is an **open-air dungeon** whose weather escalates as you progress: **mist → rain → full storm** before the final boss. The layout is a central pool area with side wings.
+The Drowned City is an **open-air dungeon**. Its weather becomes worse as you go forward: **mist → rain → full storm** before the final boss. The dungeon has a central pool area with side wings.
 
 ## Bosses (known so far)
 

@@ -9,17 +9,17 @@
 | **Type** | 5-player dungeon (new in Forever) |
 | **Level** | 15–22 (Blizzard pre-launch: 15–20) |
 | **Location** | Tirisfal Glades, the ruined capital above the Undercity |
-| **Faction** | Horde-favored |
+| **Faction** | Favors Horde |
 | **Bosses** | 6 + 1 rare |
 
 </aside>
 
-The Forsaken are reclaiming the ruined capital of Lordaeron from the Scourge while a necromancer gathers power within. The dungeon ties into the Forsaken Kingdom storyline that leads into Forever's setting. See [Lore](../../world/lore.md).
+The Forsaken fight to take back the ruined capital of Lordaeron from the Scourge. At the same time, a necromancer gathers power in the city. The dungeon is part of the Forsaken Kingdom storyline, which leads into the setting of Forever. See [Lore](../../world/lore.md).
 
 ## Quests
 
 - **Horde:** quests come from the Undercity, Silverpine and Tirisfal. Chains include *A Recipe For Death*, *Rear Guard Patrol* and *Unending Torment*.
-- **Alliance:** quests come only from inside the dungeon (e.g. *Bloodied Insignia*, *Remember That I Love You*). Getting there is a long trip: Stormwind → Darkshore → Menethil → Southshore → swim across Lordamere Lake.
+- **Alliance:** quests come only from inside the dungeon (e.g. *Bloodied Insignia*, *Remember That I Love You*). The trip to the dungeon is long: Stormwind → Darkshore → Menethil → Southshore → swim across Lordamere Lake.
 - **Both factions:** *Abominable Creatures*, *Crest of Lordaeron*.
 - Most quests need level 16 or higher.
 

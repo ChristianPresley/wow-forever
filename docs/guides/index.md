@@ -7,12 +7,12 @@ hide:
 
 # Class & Race Guides
 
-Full walkthroughs for all **9 classes**, plus a **race add-on** for each of the **56** race/class combinations. Pick a class, then your race.
+Full walkthroughs for all **9 classes**, and a **race add-on** for each of the **56** race/class combinations. Select a class, then your race.
 
 ??? info "How the guides fit together · current as of 7 November 2026"
-    - **Class guide:** the core walkthrough. It covers talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep for 9 December, PvP, gear and professions.
-    - **Race add-on:** read it alongside the class guide. It covers racials for that class, the starting zone, the route from your capital and faction notes.
-    - Forever launched on 4 November, so expect numbers to shift. Reference data lives on [Classes](../characters/classes/index.md) and [Races](../characters/races.md).
+    - **Class guide:** the core walkthrough. It gives talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep for 9 December, PvP, gear and professions.
+    - **Race add-on:** read it together with the class guide. It gives the racials for that class, the starting zone, the route from your capital and faction notes.
+    - Forever started on 4 November, so numbers can change. The reference data is on [Classes](../characters/classes/index.md) and [Races](../characters/races.md).
 
 ## Pick a class
 
@@ -112,7 +112,7 @@ Full walkthroughs for all **9 classes**, plus a **race add-on** for each of the 
 
 ## Race × class matrix
 
-Each link names its class; **—** means the combination isn't playable.
+Each link gives the name of its class. **—** means that you cannot play the combination.
 
 <div class="fc-matrix" markdown>
 

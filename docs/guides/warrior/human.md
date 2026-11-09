@@ -17,10 +17,10 @@ tags:
 
 ## Why this combo
 
-Human Warrior is the classic Alliance choice, and Forever keeps it strong for a new reason. The old Sword and Mace Specialization racials are **gone**. Humans now get a **stun break** (Will to Survive) and **+1% crit**. Crits give +75% rage in Forever, so that crit feeds your rage as well as your damage.
+Human Warrior is the classic Alliance choice. Forever keeps it strong, but for a new reason. The old Sword and Mace Specialization racials are **gone**. Humans now get a **stun break** (Will to Survive) and **+1% crit**. Crits give +75% rage in Forever, so that crit increases your rage and your damage.
 
 - **Best at:** PvP (a free stun break) and all-round PvE damage.
-- **Status:** available in Classic; not a new combination.
+- **Status:** available in Classic, not a new combination.
 
 ## Racials in practice
 
@@ -29,7 +29,7 @@ Human Warrior is the classic Alliance choice, and Forever keeps it strong for a 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Will to Survive** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown><span class="ability-label">PvE</span> Rarely needed; breaks boss stuns on tanks</p>
+<p markdown><span class="ability-label">PvE</span> Not often necessary. Breaks boss stuns on tanks</p>
 <p markdown><span class="ability-label">PvP</span> A second PvP trinket. Use it on Kidney Shot, Hammer of Justice, Concussion Blow or War Stomp, then Intercept</p>
 </div>
 
@@ -37,7 +37,7 @@ Human Warrior is the classic Alliance choice, and Forever keeps it strong for a 
 <p class="ability-name" markdown>**Perception** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
 <p markdown><span class="ability-label">PvE</span> Spot stealthed mobs in some dungeons</p>
-<p markdown><span class="ability-label">PvP</span> Find Rogues and Druids guarding a flag or base</p>
+<p markdown><span class="ability-label">PvP</span> Find Rogues and Druids that guard a flag or base</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -57,7 +57,7 @@ Human Warrior is the classic Alliance choice, and Forever keeps it strong for a 
 </div>
 
 !!! note "Sword and Mace Specialization"
-    Some beta articles still list the old weapon racials. They were removed before launch. Your weapon choice is now driven by the **Weaponmaster** talent, not your race.
+    Some beta articles still list the old weapon racials. Blizzard removed them before launch. Now the **Weaponmaster** talent controls your weapon choice, not your race.
 
 ??? example "Macro: stun break into gap closer"
 
@@ -69,14 +69,14 @@ Human Warrior is the classic Alliance choice, and Forever keeps it strong for a 
 
 ## Starting zone walkthrough (1–12)
 
-Humans start at **Northshire Abbey** in **Elwynn Forest**. Blizzard didn't single out Elwynn for a rework, so the Classic flow below should mostly hold. *Quest and NPC names are Classic-era; check in game.*
+Humans start at **Northshire Abbey** in **Elwynn Forest**. Blizzard did not name Elwynn for a rework. Thus the Classic sequence below is probably mostly correct. *Quest and NPC names are Classic-era. Check in game.*
 
 <div class="steps" markdown>
 
-1.  **1–5**{ .lvl } **Northshire.** Speak to the Warrior trainer inside the abbey (Classic: Llane Beshere). Clear wolves and kobolds and the Defias in the vineyard. Learn **Charge** and **Rend** at 4.
-2.  **~5**{ .lvl } **The Great Outdoors.** Pick up the camping intro from the adventurer near your hub, and learn Cooking for the campfire kit.
+1.  **1–5**{ .lvl } **Northshire.** Speak to the Warrior trainer inside the abbey (Classic: Llane Beshere). Kill the wolves, the kobolds and the Defias in the vineyard. Learn **Charge** and **Rend** at 4.
+2.  **~5**{ .lvl } **The Great Outdoors.** Pick up the camping intro from the adventurer near your hub. Learn Cooking for the campfire kit.
 3.  **5–10**{ .lvl } **Goldshire.** Take the inn's quest board and the Eastvale, Fargodeep Mine and Jasperlode Mine quests. **Hamstring** at 8. Elwynn's trainers in Goldshire are the closest.
-4.  **10**{ .lvl } Your trainer sends you on the **Defensive Stance** quest. Do it straight away: it gives Sunder Armor and Taunt, and the follow-up gives a one-hander.
+4.  **10**{ .lvl } Your trainer sends you on the **Defensive Stance** quest. Do it immediately. It gives Sunder Armor and Taunt. The next quest in the chain gives a one-hander.
 5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
 6.  **10–12.** Finish Elwynn's east side (Eastvale, Brackwell Pumpkin Patch), then move to Westfall.
 
@@ -116,21 +116,21 @@ Humans start at **Northshire Abbey** in **Elwynn Forest**. Blizzard didn't singl
 
 ## Faction-specific notes
 
-- **Mount:** Horse, from Eastvale Logging Camp in Elwynn. Apprentice Riding costs 100g at 40 including the first mount. **Honored with Stormwind** cuts 10% off Riding and the racial mount.
-- **Reputation:** Stormwind. The **Azeroth Commerce Authority** supply camp is at Three Corners in Redridge, your nearest crate turn-in.
+- **Mount:** Horse, from Eastvale Logging Camp in Elwynn. At 40, Apprentice Riding costs 100g, and this price includes the first mount. **Honored with Stormwind** gives 10% off Riding and the racial mount.
+- **Reputation:** Stormwind. The **Azeroth Commerce Authority** supply camp is at Three Corners in Redridge. It is your nearest crate turn-in.
 - **Stormwind harbor:** new in Forever. Its boat to Auberdine is the fastest way to Darkshore and Ashenvale.
-- **Diplomacy:** no longer a Human racial; it's now the Legacy talent *Diplomat*.
-- **Lore:** Stormwind's Old Town and Champion's Hall are the traditional home of Human soldiers. The Brotherhood of the Horse in Riverglades is a Human knightly order worth following.
+- **Diplomacy:** no longer a Human racial. It is now the Legacy talent *Diplomat*.
+- **Lore:** Stormwind's Old Town and Champion's Hall are the traditional home of Human soldiers. The Brotherhood of the Horse in Riverglades is a Human knightly order that is worth your attention.
 
 ## Spec fit
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Arms** | **5/5**{ .stars .s5 } | Ruthless crit means more Overpower procs from rage and harder Mortal Strikes; Will to Survive is the best PvP racial for a Mortal Strike Warrior |
-| **Fury** | **4/5**{ .stars .s4 } | +1% crit helps Flurry uptime. No active damage racial, so you fall a little behind Orc and Night Elf in burst |
-| **Protection** | **4/5**{ .stars .s4 } | Crit gives rage, rage gives threat. Will to Survive breaks boss stuns that would otherwise drop your threat. Dwarf is stronger on mitigation |
+| **Arms** | **5/5**{ .stars .s5 } | Ruthless crit gives more Overpower procs from rage and stronger Mortal Strikes. Will to Survive is the best PvP racial for a Mortal Strike Warrior |
+| **Fury** | **4/5**{ .stars .s4 } | +1% crit helps Flurry uptime. There is no active damage racial, so your burst is a little less than Orc and Night Elf burst |
+| **Protection** | **4/5**{ .stars .s4 } | Crit gives rage, rage gives threat. Will to Survive breaks boss stuns that otherwise decrease your threat. Dwarf is stronger on mitigation |
 
-**Weapon choice:** without Sword or Mace Specialization, follow **Weaponmaster**: axes and polearms for crit stacking with Ruthless, swords for extra attacks, maces for armor penetration.
+**Weapon choice:** there is no Sword or Mace Specialization, so use the **Weaponmaster** talent: axes and polearms for more crit with Ruthless, swords for extra attacks, maces for armor penetration.
 
 ### Leveling checklist
 
@@ -138,13 +138,13 @@ Humans start at **Northshire Abbey** in **Elwynn Forest**. Blizzard didn't singl
 - [ ] Cooking and *The Great Outdoors* for camping by level 5–6
 - [ ] First Aid trained early: it now makes health potions as well as bandages
 - [ ] Collect class library books for the quests at 20, 35 and 45
-- [ ] **Horse** and Apprentice Riding at 40 (100g); plate and dual spec (50g) at the same time
+- [ ] **Horse** and Apprentice Riding at 40 (100g), and plate and dual spec (50g) at the same time
 - [ ] Warrior Legacy Points at 25, 45 and 60 (account-wide, first Warrior only)
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-A very safe pick. **Will to Survive** makes Human one of the best Alliance PvP Warriors, and **Ruthless** helps every PvE spec. If you're unsure which Alliance race to roll, roll Human. Dwarf is the alternative if you plan to main-tank.
+A very safe pick. **Will to Survive** makes Human one of the best Alliance PvP Warriors, and **Ruthless** helps every PvE spec. If you are not sure which Alliance race to roll, roll Human. If you plan to main-tank, Dwarf is the alternative.
 
 </div>

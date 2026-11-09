@@ -1,12 +1,12 @@
 ---
-description: Every visual element the Forever Codex uses (pills, badges, stat tiles, timelines, meters, pros and cons, cards and callouts), with the Markdown to write each one.
+description: Every visual element that the Forever Codex uses (pills, badges, stat tiles, timelines, meters, pros and cons, cards and callouts), with the Markdown to write each one.
 search:
   boost: 0.5
 ---
 
 # Style guide
 
-These are the visual building blocks used across the Codex. Each one shows what it looks like and the Markdown that makes it, so contributors can reuse them. Every coloured element also carries a word or a symbol, so meaning never depends on colour alone.
+These are the visual elements that the Codex uses. For each element, this page shows how it looks and the Markdown that makes it. Contributors can use these elements again. Every coloured element also has a word or a symbol, so the meaning never depends only on colour.
 
 ## Pills
 
@@ -78,11 +78,11 @@ Pills are small inline labels. Add them to bold text with an attribute list: `**
 **Soft**{ .pill .pill--info } **Solid**{ .pill .pill--info .pill--solid } **Outline**{ .pill .pill--info .pill--outline } **Small**{ .pill .pill--gold .pill--sm } **Large**{ .pill .pill--gold .pill--lg } **:material-shield: With icon**{ .pill .pill--info }
 </div>
 
-Wrap a row of pills in `<div class="pills" markdown>` to space them evenly.
+Put a row of pills in `<div class="pills" markdown>` to space them evenly.
 
 ## Badges, tiers and ratings
 
-These existed before the pills and remain in use: role badges, letter tiers and CSS star ratings.
+These existed before the pills, and the Codex still uses them: role badges, letter tiers and CSS star ratings.
 
 **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps } · **S**{ .tier .tier-s } **A**{ .tier .tier-a } **B**{ .tier .tier-b } **C**{ .tier .tier-c } · **4/5**{ .stars .s4 } · **10–20**{ .lvl }
 
@@ -136,14 +136,14 @@ Use stat tiles for headline numbers.
 
 ## Timeline
 
-Start each item with its date in bold. A status pill in an item also colours that item's dot.
+Start each item with its date in bold. A status pill in an item also colours the dot of that item.
 
 <div class="timeline" markdown>
 
 - **12 Sep 2026** Revealed at BlizzCon. **Official**{ .pill .pill--official }
 - **4 Nov 2026** Launch. **Live**{ .pill .pill--live }
 - **9 Dec 2026** Raids unlock. **Coming soon**{ .pill .pill--soon }
-- **Spring 2027** Two raids, two dungeons, a new area. **Planned**{ .pill .pill--planned }
+- **Spring 2027** 2 raids, 2 dungeons, a new area. **Planned**{ .pill .pill--planned }
 
 </div>
 
@@ -185,7 +185,7 @@ Strengths
 Weaknesses
 
 - Fragile in melee
-- Gear-hungry
+- Needs much gear
 
 </div>
 </div>
@@ -248,7 +248,7 @@ Use `prof-pick--best` (gold frame) for the top pick, `prof-pick--alt` for altern
 
 ## Callouts
 
-The Codex also has six custom callout types, plus the built-in ones:
+The Codex also has 6 custom callout types, plus the built-in types:
 
 !!! forever "What Forever changed"
     Marks a change from Classic.
@@ -257,7 +257,7 @@ The Codex also has six custom callout types, plus the built-in ones:
     Lists every version when sources conflict.
 
 !!! unconfirmed "Single source"
-    The claim comes from one non-official source.
+    The claim comes from only 1 source, and that source is not official.
 
 !!! hardcore "Hardcore risk"
     A danger for permadeath characters.
@@ -270,4 +270,4 @@ The Codex also has six custom callout types, plus the built-in ones:
     Marks a change from Classic.
 ```
 
-The remaining components (infobox, steps, milestones, rotation priority and the comparison matrix) are documented in `DESIGN.md` in the repository.
+`DESIGN.md` in the repository documents the other components (infobox, steps, milestones, rotation priority and the comparison matrix).

@@ -1,6 +1,6 @@
 # Group Content & Endgame
 
-Forever's level cap is **60, permanently**. New content is added *sideways* (new zones, dungeons and raids at or below 60) instead of raising the cap.
+The level cap of Forever is **60, permanently**. New content comes *sideways* (new zones, dungeons and raids at or below 60). The cap does not go up.
 
 ## In this section
 
@@ -8,11 +8,11 @@ Forever's level cap is **60, permanently**. New content is added *sideways* (new
 
 -   :material-castle: **[Dungeons](dungeons/index.md)**
 
-    All 32 five-player dungeons by level, plus the 9 new ones in detail.
+    All 32 dungeons (5 players each) by level, plus the 9 new ones in detail.
 
 -   :material-tower-fire: **[Raids](raids/index.md)**
 
-    Barrow Deeps, Hyjal Summit and Onyxia's Lair, unlocking 9 Dec 2026.
+    Barrow Deeps, Hyjal Summit and Onyxia's Lair, which unlock on 9 Dec 2026.
 
 -   :material-sword-cross: **[PvP](pvp/index.md)**
 
@@ -32,7 +32,7 @@ Forever's level cap is **60, permanently**. New content is added *sideways* (new
 
 | | At launch (4 Nov 2026) |
 |---|---|
-| **Dungeons** | 32 in total: 9 new five-player dungeons for levels 13–60, plus every original Classic dungeon. [Full list](dungeons/index.md) |
+| **Dungeons** | 32 in total: 9 new 5-player dungeons for levels 13–60, plus every original Classic dungeon. [Full list](dungeons/index.md) |
 | **Raids** | 3 unlock **9 Dec 2026**: Barrow Deeps (10), Hyjal Summit (20), Onyxia's Lair (40). [Details](raids/index.md) |
 | **Battlegrounds** | New: **Darkspear Islands** (15v15). The original battlegrounds also appear (based on datamining). [Details](pvp/battlegrounds.md) |
 | **PvP progression** | Seasonal Ranks 1–14 with weekly caps. [Details](pvp/index.md) |
@@ -41,10 +41,10 @@ Forever's level cap is **60, permanently**. New content is added *sideways* (new
 
 ## The level-60 loop
 
-1. **Gear up in level-60 dungeons:** Blackrock Depths, Lower and Upper Blackrock Spire, Dire Maul, Scholomance, Stratholme, and the new [Blackmaw Hold](dungeons/blackmaw-hold.md) and [Shaper's Terrace](dungeons/shapers-terrace.md).
+1. **Get gear in level-60 dungeons:** Blackrock Depths, Lower and Upper Blackrock Spire, Dire Maul, Scholomance, Stratholme, and the new [Blackmaw Hold](dungeons/blackmaw-hold.md) and [Shaper's Terrace](dungeons/shapers-terrace.md).
 2. **Attune for Onyxia** with the Drakefire Amulet (requires UBRS). The new raids reportedly need no attunement.
-3. **Raid weekly** from 9 Dec: new epics, a teased Hyjal **legendary**, and Mount Hyjal reputations.
+3. **Raid weekly** from 9 Dec: new epics, a Hyjal **legendary** that Blizzard teased, and Mount Hyjal reputations.
 4. **PvP season:** a weekly Rank Point cap, Honor gear upgraded with Emboldened Seals, Darkspear reputation, and journey tasks that award Legacy Points.
-5. **Side loops:** [Legacy](../characters/legacy.md) challenges, dungeon "Spelunker" clears, camping blueprints from instances, reputation recipes and transmog collecting.
+5. **Side loops:** [Legacy](../characters/legacy.md) challenges, dungeon "Spelunker" clears, camping blueprints from instances, reputation recipes and transmog collection.
 
 See the [Roadmap](roadmap.md) for what comes next.

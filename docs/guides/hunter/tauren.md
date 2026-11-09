@@ -17,15 +17,15 @@ tags:
 
 ## Why this combo
 
-The Mulgore plainsrunner. Tauren Hunters existed in Classic, and Forever keeps **War Stomp** and **Endurance** while adding two new racials: **Plainsrunning** (movement speed while moving) and **Cultivation** (grow an herb).
+The Mulgore plainsrunner. Tauren Hunters were in Classic. Forever keeps **War Stomp** and **Endurance** and adds 2 new racials: **Plainsrunning** (movement speed while you move) and **Cultivation** (grow an herb).
 
-Tauren aren't the damage pick: they have no offensive racial. They're the **safe** pick:
+Tauren are not the damage choice, because they have no offensive racial. They are the **safe** choice:
 
-- **War Stomp** is an AoE stun with no target needed, a perfect panic button against melee.
+- **War Stomp** is an AoE stun that needs no target. It is a very good emergency button against melee.
 - **Endurance** adds 5% health.
-- **Plainsrunning** speeds up kiting and travel before your mount at 40.
+- **Plainsrunning** makes kiting and travel faster before you get your mount at 40.
 
-That makes Tauren a good choice for Hardcore, solo play and new players.
+Thus Tauren are a good choice for Hardcore, solo play and new players.
 
 ## Racials in practice
 
@@ -34,22 +34,22 @@ That makes Tauren a good choice for Hardcore, solo play and new players.
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**War Stomp** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
-<p markdown><span class="ability-label">PvE</span> AoE stun at melee range. Stun the adds, step back, trap or shoot</p>
-<p markdown><span class="ability-label">PvP</span> Stun a Rogue or Warrior, then back off past your deadzone</p>
+<p markdown><span class="ability-label">PvE</span> AoE stun at melee range. Stun the adds, move back, then trap or shoot</p>
+<p markdown><span class="ability-label">PvP</span> Stun a Rogue or Warrior, then move back out of your deadzone</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Cultivation** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown><span class="ability-label">PvE</span> Grows an herb anyone can gather; Herbalists get bonus yield. Gold and Alchemy materials</p>
+<p markdown><span class="ability-label">PvE</span> Grows an herb that all players can gather. Herbalists get a bonus yield. Gold and Alchemy materials</p>
 <p markdown><span class="ability-label">PvP</span> Nothing</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Plainsrunning** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> +2% speed per stack while moving, up to +60%, not while mounted. Fast travel and kiting before 40</p>
-<p markdown><span class="ability-label">PvP</span> Kiting; **drops on flag pickup** after the 5 November hotfix</p>
+<p markdown><span class="ability-label">PvE</span> +2% speed for each stack while you move, to a maximum of +60%, not while mounted. Fast travel and kiting before 40</p>
+<p markdown><span class="ability-label">PvP</span> Kiting. After the 5 November hotfix, it **is removed when you pick up a flag**</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -62,9 +62,9 @@ That makes Tauren a good choice for Hardcore, solo play and new players.
 </div>
 
 !!! note "Plainsrunning hotfix (5 November)"
-    After players abused it to carry flags in Warsong Gulch, Blizzard changed Plainsrunning: it **drops when you pick up a flag**, and the notes also say it "no longer stacks". The exact post-hotfix behaviour isn't documented; check in game.
+    Players used Plainsrunning incorrectly to carry flags in Warsong Gulch. Thus Blizzard changed it: it **is removed when you pick up a flag**. The notes also say that it "no longer stacks". No source tells the exact behavior after the hotfix. Examine it in the game.
 
-Nature Resistance is gone.
+Nature Resistance is not in the game now.
 
 ??? example "Macros"
 
@@ -74,7 +74,7 @@ Nature Resistance is gone.
     /cast Wing Clip
     ```
 
-    Stun first. Wing Clip only fires if the target is in melee range and the GCD allows; press again if needed.
+    This macro stuns first. Wing Clip casts only if the target is in melee range and the GCD lets it. If necessary, press again.
 
     ```text
     #showtooltip Cultivation
@@ -83,31 +83,31 @@ Nature Resistance is gone.
 
 ## Starting zone walkthrough 1–12
 
-Tauren start at **Camp Narache**, Mulgore. Forever adds **Skywatcher Plateau** in northwest Mulgore (the Windshaper Skyborne airship landing, with a path toward Desolace). The route below follows Classic (*Classic-era*).
+Tauren start at **Camp Narache**, Mulgore. Forever adds **Skywatcher Plateau** in northwest Mulgore. The airship of the Windshaper Skyborne lands there, and a path goes from there to Desolace. The route below follows Classic (*Classic-era*).
 
 <div class="steps" markdown>
 
 1.  **1–5**{ .lvl } Camp Narache
 
-    - Grull Hawkwind's *The Hunt Begins*: plainstriders, then mountain cougars; Sharptusk's battleboars and the Rite of Strength.
-    - The **Hunter trainer is at Camp Narache** (Lanka Farshot in Classic, *Classic-era*). Train **Serpent Sting** at 4.
+    - *The Hunt Begins* from Grull Hawkwind: plainstriders, then mountain cougars. The battleboars of Sharptusk and the Rite of Strength.
+    - The **Hunter trainer is at Camp Narache** (Lanka Farshot in Classic, *Classic-era*). At 4, train **Serpent Sting**.
 
 2.  **5–10**{ .lvl } Bloodhoof Village
 
-    - Go to **Bloodhoof Village** (inn, Wind Rider later). Take *The Great Outdoors* to unlock [camping](../../systems/camping.md), and the starter gathering quest. Herbalism pairs with Cultivation; Skinning pairs with Hunter leveling.
-    - Quests at Brambleblade Ravine, the Venture Co. mine, Palemane Rock, the Rite of the Winds and the Red Rocks.
+    - Go to **Bloodhoof Village** (inn, Wind Rider later). Take *The Great Outdoors* to unlock [camping](../../systems/camping.md). Also take the starter gathering quest. Herbalism is a good pair with Cultivation. Skinning is a good pair with Hunter leveling.
+    - Do the quests at Brambleblade Ravine, the Venture Co. mine, Palemane Rock, the Rite of the Winds and the Red Rocks.
     - Train Arcane Shot and Hunter's Mark (6), Concussive Shot (8).
 
 3.  **10**{ .lvl } The first pet
 
-    - In Classic, **Yaw Sharpmane** in Bloodhoof Village gave the taming chain: **Adult Plainstrider**, **Prairie Wolf Alpha** and **Swoop** (*Classic-era*). Forever quest *Taming the Beast* (Tauren; Warcraft Tavern gives 6061), then *Training the Beast* (6089).
-    - Keep a **Prairie Wolf** (Furious Howl later) or tame a **Prairie Stalker** or mountain cougar (cat).
+    - In Classic, **Yaw Sharpmane** in Bloodhoof Village gave the taming chain: **Adult Plainstrider**, **Prairie Wolf Alpha** and **Swoop** (*Classic-era*). The Forever quest is *Taming the Beast* (Tauren; Warcraft Tavern gives 6061), then *Training the Beast* (6089).
+    - Keep a **Prairie Wolf** (Furious Howl later), or tame a **Prairie Stalker** or mountain cougar (cat).
     - First talent: **Deadly Aspects**.
 
 4.  **10–12**{ .lvl } Thunder Bluff and the Barrens
 
     - Train in **Thunder Bluff** (Hunter Rise). It now has a barbershop.
-    - Optionally visit **Skywatcher Plateau** to see the Skyborne airship to Zephras Isle; anyone can ride it.
+    - Optional: go to **Skywatcher Plateau** to see the Skyborne airship to Zephras Isle. All players can use it.
     - Go east to the **Crossroads** in the Barrens.
 
 </div>
@@ -130,11 +130,11 @@ Tauren start at **Camp Narache**, Mulgore. Forever adds **Skywatcher Plateau** i
 
     <span class="step-label">Travel</span> Sun Rock, Freewind Post
 
-4.  **30–40**{ .lvl } Desolace (Shadowprey; reach it from Mulgore via the new Skywatcher path, *route unconfirmed*), Arathi, Stranglethorn, Dustwallow
+4.  **30–40**{ .lvl } Desolace (Shadowprey. Go there from Mulgore on the new Skywatcher path, *route unconfirmed*), Arathi, Stranglethorn, Dustwallow
 
     <span class="step-label">Travel</span> Shadowprey Village
 
-5.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar), or Shen'dralas from southern Desolace (level range unknown)
+5.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar), or Shen'dralas from south Desolace (level range unknown)
 
     <span class="step-label">Travel</span> Tanaris ferry or Swamp of Sorrows
 
@@ -152,22 +152,22 @@ Tauren start at **Camp Narache**, Mulgore. Forever adds **Skywatcher Plateau** i
 
 </div>
 
-Tauren have a natural Kalimdor-first route.
+For Tauren, it is natural to level in Kalimdor first.
 
 ## Faction-specific notes
 
-- **Mount:** Kodo from Bloodhoof Village (*Classic-era location*) at 40. **Honored with Thunder Bluff** saves 10%.
-- **Skyborne connection:** Windshaper Skyborne land at Skywatcher Plateau, and cloth turn-ins in **Mulgore** count toward Windshaper reputation. Exalted lets a Tauren buy a **Galestrider**.
+- **Mount:** Kodo from Bloodhoof Village (*Classic-era location*) at 40. **Honored with Thunder Bluff** gives a 10% discount.
+- **Skyborne connection:** Windshaper Skyborne arrive at Skywatcher Plateau. Cloth turn-ins in **Mulgore** count for Windshaper reputation. At Exalted, a Tauren can buy a **Galestrider**.
 - **Library books:** Owen Thadd, Magic Quarter, Undercity.
 - **Crates:** Durotar Supply and Logistics, west of the Crossroads.
-- **PvP:** Darkspear Raiders reputation; Hall of Legends in Orgrimmar.
-- **Lore:** Tauren hunters honour the Earth Mother's creatures; the Pack Kodo mount (6,000 Merchant's Favor) fits the theme.
-- **Model note:** the big Tauren model can block your view of the target in tight dungeons; zoom out.
+- **PvP:** Darkspear Raiders reputation. Hall of Legends in Orgrimmar.
+- **Lore:** Tauren hunters honour the creatures of the Earth Mother. The Pack Kodo mount (6,000 Merchant's Favor) agrees with this theme.
+- **Model note:** in small dungeon areas, the big Tauren model can stop you from seeing the target. Zoom out.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-The **sturdiest** Hunter in the game, but the weakest for raw damage since it has no offensive racial. Pick Tauren for Hardcore, solo play and relaxed leveling; pick Orc or Troll if you want to top damage meters.
+The **most durable** Hunter in the game, but the weakest for raw damage, because it has no offensive racial. Select Tauren for Hardcore, solo play and relaxed leveling. Select Orc or Troll if you want the highest damage.
 
 </div>

@@ -13,12 +13,12 @@
 | **Armor** | **Plate**{ .pill .pill--plate } at 40 |
 | **Resource** | **Mana**{ .pill .pill--mana } |
 | **Races** | 3 combinations |
-| **Forever focus** | A real tank; Shockadin |
+| **Forever focus** | A real tank, Shockadin |
 | **Guide** | [Paladin guide](../../guides/paladin/index.md) |
 
 </aside>
 
-**Races:** Human, Dwarf, **Undead (new; Horde)**. The Forsaken Paladin is the headline new combination: **612,096** were created in beta.
+**Races:** Human, Dwarf, **Undead (new, Horde)**. The Forsaken Paladin is the main new combination. Players made **612,096** of them in the beta.
 
 !!! forever "What Forever changed"
     **Headline additions**
@@ -33,7 +33,7 @@
 
 <div class="fc-cta" data-class="paladin" markdown>
 
-**Playing a Paladin?** The [Paladin guide](../../guides/paladin/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+**Do you play a Paladin?** The [Paladin guide](../../guides/paladin/index.md) explains talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
 
 <span class="fc-cta__label">Race add-ons</span> [Human](../../guides/paladin/human.md){ .fc-chip } [Dwarf](../../guides/paladin/dwarf.md){ .fc-chip } [Undead](../../guides/paladin/undead.md){ .fc-chip }
 
@@ -66,7 +66,7 @@
     Benediction · Holy Conduit · Conviction · Vindication · Sanctified Judgement · Pursuit of Justice · Eye for an Eye · **Sacred Arbiter** (16) · Vengeance (5 stacks) · **Repentance** (21) · **Champion of the Light** (spell damage from Intellect, 12–60% by rank) · Instrument of the Law · **Twist of Light** (31: seal twisting via "Echo") · **Unsealed Wrath** *(pre-launch: stores your Seal for up to 3 stacks)*
 
 !!! unconfirmed "Unsealed Wrath: replacement or addition?"
-    The pre-launch notes call Unsealed Wrath "the new 31st talent". Whether it replaced Twist of Light or was added alongside it is unconfirmed. Mobalytics counts **20 brand-new Paladin talents** (Holy 8, Protection 5, Retribution 7).
+    The pre-launch notes call Unsealed Wrath "the new 31st talent". It is unconfirmed whether it replaced Twist of Light or is an addition to it. Mobalytics counts **20 brand-new Paladin talents** (Holy 8, Protection 5, Retribution 7).
 
 ## Removed
 
@@ -74,4 +74,4 @@ Blessing of Sanctuary · Improved Concentration Aura · Improved Retribution Aur
 
 ## Mount quest
 
-Alliance paladins have the classic *Redemption*-themed charger quest. **Forsaken paladins** get their own level-60 epic mount quest ridden "in the name of **Retribution**". See [Lore](../../world/lore.md).
+Alliance paladins have the classic *Redemption*-themed charger quest. **Forsaken paladins** get their own level-60 epic mount quest. They ride "in the name of **Retribution**". See [Lore](../../world/lore.md).

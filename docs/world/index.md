@@ -1,13 +1,13 @@
 # The World
 
 !!! forever "The world is the main character"
-    Forever's design pillar is **"the world is the main character."** Instead of raising the level cap, Blizzard adds new zones, quests and rewards at every level from 1 to 60.
+    Forever's design pillar is **"the world is the main character."** Blizzard does not increase the level cap. It adds new zones, quests and rewards at all levels from 1 to 60.
 
 | | |
 |---|---|
 | **New zones** | 4 areas: Zephras Isle, Riverglades, Shen'dralas, Mount Hyjal. Blizzard's BlizzCon summary says "three" |
-| **New quests** | **1,000+**, for roughly 3,000–3,500 playable quests in total (a figure reported by a Blizzard designer, not verified) *unconfirmed*{ .unconfirmed } |
-| **Reworked zones** | About 25 Classic zones changed, from new hubs and paths to whole new districts |
+| **New quests** | **1,000+**, for about 3,000–3,500 playable quests in total (a Blizzard designer gave this figure, not verified) *unconfirmed*{ .unconfirmed } |
+| **Reworked zones** | About 25 Classic zones changed. The changes go from new hubs and paths to full new districts |
 | **Flying** | None, by design |
 | **Level scaling** | None |
 

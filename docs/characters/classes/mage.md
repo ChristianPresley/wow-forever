@@ -33,7 +33,7 @@
 
 <div class="fc-cta" data-class="mage" markdown>
 
-**Playing a Mage?** The [Mage guide](../../guides/mage/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+**Do you play a Mage?** The [Mage guide](../../guides/mage/index.md) explains talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
 
 <span class="fc-cta__label">Race add-ons</span> [Human](../../guides/mage/human.md){ .fc-chip } [Gnome](../../guides/mage/gnome.md){ .fc-chip } [Skyborne (High Order)](../../guides/mage/skyborne-high-order.md){ .fc-chip } [Orc](../../guides/mage/orc.md){ .fc-chip } [Troll](../../guides/mage/troll.md){ .fc-chip } [Undead](../../guides/mage/undead.md){ .fc-chip }
 
@@ -41,10 +41,10 @@
 
 ## Baseline changes
 
-- **Frostfire Bolt** (lvl 40): 3 s cast. Counts as both Fire and Frost and deals a hit plus a DoT and slow, using the better of your Fire/Frost spell power against the target's lower resistance.
-- **Comprehension**, a new Mage-only minor tradeskill. *Comprehend Scroll* (General tab) deciphers scrolls found in the world into stat scrolls and higher-tier items. It replaces Season of Discovery's comprehension scrolls.
+- **Frostfire Bolt** (lvl 40): 3 s cast. It counts as both Fire and Frost. It deals a hit plus a DoT and slow. It uses the better of your Fire/Frost spell power against the lower resistance of the target.
+- **Comprehension**, a new Mage-only minor tradeskill. *Comprehend Scroll* (General tab) deciphers scrolls that you find in the world and changes them into stat scrolls and higher-tier items. It replaces the comprehension scrolls of Season of Discovery.
 - Shorter Cone of Cold (anti-farming). Mage Armor regen buffed. Magic Attunement baseline.
-- Reportedly learns **Teleport: Dalaran** at level 50 *fan source*{ .fan-source }.
+- Reportedly, Mages learn **Teleport: Dalaran** at level 50 *fan source*{ .fan-source }.
 
 ## Talents
 
@@ -54,7 +54,7 @@
 
 === "Fire"
 
-    Wake of Fire · Incineration (5 pts for 10% crit) · **Ignite now per Mage** · Burning Soul · Improved Scorch (self-only) · **Heating Up** (crits cut the next Pyroblast's cast by 25%, up to 3 stacks → 1.5 s Pyroblast) · Blast Wave · Critical Mass (3 pts for 6%)
+    Wake of Fire · Incineration (5 pts for 10% crit) · **Ignite now per Mage** · Burning Soul · Improved Scorch (self-only) · **Heating Up** (crits decrease the cast time of the next Pyroblast by 25%, up to 3 stacks → 1.5 s Pyroblast) · Blast Wave · Critical Mass (3 pts for 6%)
 
     *The BlizzCon demo called the proc "Hot Streak". "Heating Up" is the deep-dive name.*
 

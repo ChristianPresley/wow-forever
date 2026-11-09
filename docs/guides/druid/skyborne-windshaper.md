@@ -11,15 +11,15 @@ tags:
 
 :codex-druid:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Druid guide](index.md). This page covers only what changes for a Horde Skyborne.</p>
+<p class="gh-note" markdown>Read this page with the [Druid guide](index.md). This page gives only the differences for a Horde Skyborne.</p>
 
 </div>
 
 ## Why this combo
 
-**NEW in Forever.** The Windshapers are the Horde Skyborne, descended from ordinary kaldorei citizens of Eldre'Thalas rather than Highborne. They are a shamanic people who feel indebted to the missing wind spirits, which makes the druid a natural fit. Skyborne druid forms come from **Urs'endris** (the Great Windborne Bear) and **Saeyleenan** (the Great Windborne Cat).
+**NEW in Forever.** The Windshapers are the Horde Skyborne. Their ancestors are ordinary kaldorei citizens of Eldre'Thalas, not Highborne. They are a shamanic people who feel a debt to the missing wind spirits. Thus, the druid class is a natural fit for them. Skyborne druid forms come from **Urs'endris** (the Great Windborne Bear) and **Saeyleenan** (the Great Windborne Cat).
 
-Method recommends the Windshaper as the Horde choice for **Cat and Balance in PvE**, thanks to **Wind Blessed** haste. Warcraft Tavern says the Horde race choice is marginal and that Skysight is the weaker of the two Skyborne actives in combat.
+Method recommends the Windshaper as the Horde choice for **Cat and Balance in PvE**, because of **Wind Blessed** haste. Warcraft Tavern says that the race choice for Horde is marginal. It also says that, in combat, Skysight is the weaker of the 2 Skyborne actives.
 
 !!! warning "Paid race"
     Skyborne need the **Skyborne Heroic Pack** or a higher edition. See [Editions](../../about/editions.md) and [Skyborne](../../characters/races.md#skyborne).
@@ -31,17 +31,17 @@ Method recommends the Windshaper as the Horde choice for **Cat and Balance in Pv
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Skysight** <span class="ability-type active">Active: +15% movement speed for 15 s; +30% while *Charged* (1 hr buff from an elemental convergence)</span></p>
+<p class="ability-name" markdown>**Skysight** <span class="ability-type active">Active: +15% movement speed for 15 s. +30% when *Charged* (1 hr buff from an elemental convergence)</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> Leveling travel before Travel Form at 30; dodging mechanics</p>
-<p markdown><span class="ability-label">PvP</span> Chasing or escaping, stacks with forms (*unconfirmed*)</p>
+<p markdown><span class="ability-label">PvE</span> Travel when you level, before Travel Form at 30. Avoid mechanics</p>
+<p markdown><span class="ability-label">PvP</span> Chase or escape. Stacks with forms (*unconfirmed*)</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active: 10 s controlled glide. **Works in forms**</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown><span class="ability-label">PvE</span> Shortcuts and fall rescue</p>
-<p markdown><span class="ability-label">PvP</span> Cliff escapes; cooldown 1.5 or 2 min (*conflict*)</p>
+<p markdown><span class="ability-label">PvP</span> Cliff escapes. Cooldown 1.5 or 2 min (*conflict*)</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -54,7 +54,7 @@ Method recommends the Windshaper as the Horde choice for **Cat and Balance in Pv
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Elemental Insight** <span class="ability-type passive">Passive: +5% damage vs Elementals</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown><span class="ability-label">PvE</span> Hyjal, Skywall and elemental-heavy dungeons</p>
+<p markdown><span class="ability-label">PvE</span> Hyjal, Skywall and dungeons with many elementals</p>
 <p markdown><span class="ability-label">PvP</span> None</p>
 </div>
 
@@ -80,7 +80,7 @@ Method recommends the Windshaper as the Horde choice for **Cat and Balance in Pv
 
 ## Starting zone walkthrough: Zephras Isle (1–~12)
 
-Both Skyborne factions share [Zephras Isle](../../world/zephras-isle.md), phased apart, through about **12–14**.
+Both Skyborne factions use [Zephras Isle](../../world/zephras-isle.md), in different phases, until about **12–14**.
 
 **Thendal Village (1–5)**
 
@@ -88,7 +88,7 @@ Both Skyborne factions share [Zephras Isle](../../world/zephras-isle.md), phased
 
 1.  Quests: *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* (Walk on Air) and *The Anchors of Zephras*.
 2.  Your faction opener is ***The Gift of Skysight***, which shows you how to get Charged.
-3.  Caster play: Wrath, Moonfire, Rejuvenation.
+3.  Play as a caster: Wrath, Moonfire, Rejuvenation.
 
 </div>
 
@@ -96,7 +96,7 @@ Both Skyborne factions share [Zephras Isle](../../world/zephras-isle.md), phased
 
 1. Fight the Al'Aketh under Malduko Cloudcrash. *Blessing of Zephras* tornadoes give +40% speed.
 2. **The Great Outdoors** (Raan Wildwind) teaches [camping](../../systems/camping.md).
-3. Shen'dar Village: bandit, hippogryph and Prideclaw quests, "Badwind" Bennic, *WANTED: Vulgara the Insatiable*. The two factions skirmish at the Windsong Standing Stones.
+3. Shen'dar Village: bandit, hippogryph and Prideclaw quests, "Badwind" Bennic, *WANTED: Vulgara the Insatiable*. The 2 factions fight at the Windsong Standing Stones.
 
 **Falaath Village and Valanaar (9–11)**
 
@@ -107,9 +107,9 @@ Both Skyborne factions share [Zephras Isle](../../world/zephras-isle.md), phased
 **Gustberry Lowlands and Shadowgale Forest (11–13)**
 
 1. Windshaper chains *The Broken Construct*, then *In Service of Zephras* → *Blood for Blood*.
-2. **Nightclaw druids:** the repeatable *Mercy Falls on Deaf Ears* gives Nightclaw reputation; *The Ties That Bind* and *Wounds of Betrayal* lead to Commander Haalien. Nightclaw Cavern's recording crystals tell the origin story.
+2. **Nightclaw druids:** the repeatable *Mercy Falls on Deaf Ears* gives Nightclaw reputation. *The Ties That Bind* and *Wounds of Betrayal* lead to Commander Haalien. The recording crystals in Nightclaw Cavern tell the origin story.
 3. `/sing` at the Gustberry frogs for the *Musical Gustjumper* pet.
-4. Finish with the Shrine of Akir and *Confront Lorthuna*, where Muln Earthfury arrives with the Horde.
+4. Finish with the Shrine of Akir and *Confront Lorthuna*. In this quest, Muln Earthfury arrives with the Horde.
 
 **Trainers:** Xyton Silverwind, Naeluna Swiftmend and Lotheluum Starbreeze (Zephras Isle, per Method). A 5 Nov hotfix fixed a missing Zephras druid trainer.
 
@@ -117,7 +117,7 @@ Both Skyborne factions share [Zephras Isle](../../world/zephras-isle.md), phased
 
 ## Route to 60 from Valanaar
 
-The Windshaper airship leaves the **west Skydock** for **Skywatcher Plateau** in northwest Mulgore, just outside Thunder Bluff. It reportedly leaves about every 5 minutes. From there you follow the Tauren route.
+The Windshaper airship leaves the **west Skydock** for **Skywatcher Plateau** in northwest Mulgore, near Thunder Bluff. Reportedly, it leaves about every 5 minutes. From there, follow the Tauren route.
 
 <div class="steps" markdown>
 
@@ -127,11 +127,11 @@ The Windshaper airship leaves the **west Skydock** for **Skywatcher Plateau** in
 
 2.  **13**{ .lvl } Skywatcher Plateau → Thunder Bluff
 
-    Pick up the Thunder Bluff flight path and train
+    Get the Thunder Bluff flight path and train
 
 3.  **13–20**{ .lvl } **The Barrens** (Crossroads), Silverpine
 
-    Lessons Anew (14) and Aquatic Form (16): where Skyborne take these is *unconfirmed*; check Valanaar, then Thunder Bluff
+    Lessons Anew (14) and Aquatic Form (16): it is *unconfirmed* where Skyborne take these. Look in Valanaar, then in Thunder Bluff
 
 4.  **20**{ .lvl } Zephras Isle
 
@@ -143,7 +143,7 @@ The Windshaper airship leaves the **west Skydock** for **Skywatcher Plateau** in
 
 6.  **30–40**{ .lvl } Desolace (the Skywatcher path leads there), Arathi, Stranglethorn, Dustwallow
 
-    Travel Form at 30. Horde are attacked in Dalaran
+    Travel Form at 30. Horde players are attacked in Dalaran
 
 7.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Rog'mar)
 
@@ -151,25 +151,25 @@ The Windshaper airship leaves the **west Skydock** for **Skywatcher Plateau** in
 
 8.  **40–60**{ .lvl } Same Horde route as the [Tauren Druid](tauren.md#route-to-60-from-thunder-bluff)
 
-    Feralas trainer Jannos Lighthoof; Moonglade via Teleport
+    Feralas trainer Jannos Lighthoof. Moonglade via Teleport
 
 </div>
 
 ## Faction-specific notes
 
-- **Class quests:** island versions at 10 and 20; Tauren take theirs in Thunder Bluff.
-- **Reputation:** Windshapers (home), boosted by cloth turn-ins in Mulgore. Nightclaw from the Zephras repeatable. Exalted Windshapers lets other Horde races buy Galestriders. No Kirin Tor for the Horde.
+- **Class quests:** island versions at 10 and 20. Tauren take theirs in Thunder Bluff.
+- **Reputation:** Windshapers (home). Cloth turn-ins in Mulgore increase it. Nightclaw from the Zephras repeatable. Exalted Windshapers lets other Horde races buy Galestriders. No Kirin Tor for the Horde.
 - **Allies:** the Earthen Ring, through Muln Earthfury in Mulgore.
 - **Form colors:** Default (blue/white), Deep Purple and Blue, Umber, Empyrean, changed at the barbershop.
-- **Models:** HD only at launch; SD expected in early 2027.
+- **Models:** HD only at launch. SD is expected in early 2027.
 - **Languages:** Darnassian and Orcish. You can speak Darnassian with Night Elves and High Order players across the faction line.
-- **Population:** about 21% of beta characters were Skyborne, so expect busy starting phases in launch week.
+- **Population:** about 21% of beta characters were Skyborne. Expect busy starting phases in launch week.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-The Horde's **PvE damage druid**. Wind Blessed haste helps Cat and Balance, and Skysight with Walk on Air makes leveling and battleground movement fun. Tauren is still better for Bear and PvP, thanks to Endurance and War Stomp. The airship drops you right by Thunder Bluff, so the start is much smoother than the High Order's.
+The **PvE damage druid** of the Horde. Wind Blessed haste helps Cat and Balance. Skysight with Walk on Air makes movement fun when you level and in battlegrounds. Tauren is still better for Bear and PvP, because of Endurance and War Stomp. The airship puts you next to Thunder Bluff. Thus, the start is much easier than the start of the High Order.
 
 | Spec | Rating |
 |---|---|
@@ -179,6 +179,6 @@ The Horde's **PvE damage druid**. Wind Blessed haste helps Cat and Balance, and 
 | Restoration | **4/5**{ .stars .s4 } |
 | PvP | **3/5**{ .stars .s3 } |
 
-*Ratings are this guide's own judgment.*
+*The ratings are the opinion of this guide.*
 
 </div>

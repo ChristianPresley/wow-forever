@@ -17,7 +17,7 @@ tags:
 
 ## Why this combo
 
-Dwarf Priest is a Classic combination and **not new**. In Classic, Dwarves were *the* raid Priest because they owned Fear Ward. In Forever, **Fear Ward is baseline for every Priest**, so the Dwarf's case now rests on **Stoneform**, the most flexible defensive racial in the game, plus +1% hit, Desperate Prayer and the new **Chastise** root.
+Dwarf Priest is a Classic combination and **not new**. In Classic, Dwarves were *the* raid Priest because only they had Fear Ward. In Forever, **Fear Ward is baseline for every Priest**. Now the strengths of the Dwarf are **Stoneform**, the most flexible defensive racial in the game, +1% hit, Desperate Prayer and the new **Chastise** root.
 
 **Best for:** Shadow Priests (free hit), Hardcore players (two self-saves), and PvP healers who fear Rogues and poisons.
 
@@ -28,28 +28,28 @@ Dwarf Priest is a Classic combination and **not new**. In Classic, Dwarves were 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Stoneform** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown><span class="ability-label">PvE</span> Removes bleeds, poisons and diseases and grants immunity, plus **10% physical damage reduction for 8 s**. Saves you from poisons and plague effects, and from a loose mob on the healer</p>
-<p markdown><span class="ability-label">PvP</span> Cleanses Rogue poisons, Hunter Serpent Sting and Warrior Rend; 10% reduction under a melee train</p>
+<p markdown><span class="ability-label">PvE</span> Removes bleeds, poisons and diseases and gives immunity to them, plus **10% physical damage reduction for 8 s**. Protects you from poisons and plague effects, and from a mob that attacks the healer</p>
+<p markdown><span class="ability-label">PvP</span> Removes Rogue poisons, Hunter Serpent Sting and Warrior Rend. 10% reduction when many melee players attack you</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Find Treasure** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown><span class="ability-label">PvE</span> Shows treasure chests on the minimap. Useful gold while leveling</p>
+<p markdown><span class="ability-label">PvE</span> Shows treasure chests on the minimap. Useful gold when you level</p>
 <p markdown><span class="ability-label">PvP</span> —</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Artisan's Precision** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } Shadow / **2/5**{ .stars .s2 } healer</p>
-<p markdown><span class="ability-label">PvE</span> **+1% hit**. Shadow needs hit, so this is a real gain; Holy damage is mostly covered by Holy Precision</p>
+<p markdown><span class="ability-label">PvE</span> **+1% hit**. This is a real gain for Shadow, because Shadow needs hit. Holy Precision gives most of the hit that Holy damage needs</p>
 <p markdown><span class="ability-label">PvP</span> Same</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Big Game Hunter** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } leveling</p>
-<p markdown><span class="ability-label">PvE</span> +5% damage against Beasts. A lot of leveling quests are beasts</p>
+<p markdown><span class="ability-label">PvE</span> +5% damage against Beasts. Many leveling quests have Beasts as targets</p>
 <p markdown><span class="ability-label">PvP</span> Druids in animal forms are probably not Beasts (*unconfirmed*)</p>
 </div>
 
@@ -59,14 +59,14 @@ Dwarf Priest is a Classic combination and **not new**. In Classic, Dwarves were 
 
 | Spell | Level | Effect | Use |
 |---|---|---|---|
-| **Desperate Prayer** | (Classic spell) | An instant self-heal on a long cooldown (Classic-era behavior; Blizzard lists it as unchanged) | Panic button while soloing and in Hardcore |
-| **Chastise** *(new)* | 20 | Roots a **Humanoid** for 2 s. Instant, 2-minute cooldown | Escape a melee Humanoid, peel for a flag carrier, or stop a runner. It only works on Humanoids, so it's weak against Beasts, Undead and Elementals |
+| **Desperate Prayer** | (Classic spell) | An instant self-heal on a long cooldown (Classic-era behavior. Blizzard lists it as unchanged) | Emergency button when you solo and in Hardcore |
+| **Chastise** *(new)* | 20 | Roots a **Humanoid** for 2 s. Instant, 2-minute cooldown | Escape from a melee Humanoid, protect a flag carrier, or stop a player who runs. It works only on Humanoids. It is weak against Beasts, Undead and Elementals |
 
-Combined with Psychic Scream and Stoneform, a Dwarf has three self-defense buttons by level 20.
+With Psychic Scream and Stoneform, a Dwarf has three self-defense buttons by level 20.
 
 ??? example "Macros"
 
-    Stoneform and shield yourself:
+    Use Stoneform and shield yourself:
 
     ```
     #showtooltip Stoneform
@@ -74,7 +74,7 @@ Combined with Psychic Scream and Stoneform, a Dwarf has three self-defense butto
     /cast [@player] Power Word: Shield
     ```
 
-    Chastise the focus (set a Warrior or Rogue as focus in PvP):
+    Cast Chastise on the focus (in PvP, set a Warrior or Rogue as focus):
 
     ```
     #showtooltip Chastise
@@ -83,17 +83,17 @@ Combined with Psychic Scream and Stoneform, a Dwarf has three self-defense butto
 
 ## Starting zone walkthrough (1–~12)
 
-Dwarves start in **Coldridge Valley**, Dun Morogh. Quest names are Classic-era; Forever adds the new [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) dungeon near Ironforge but hasn't announced a rework of Coldridge.
+Dwarves start in **Coldridge Valley**, Dun Morogh. Quest names are Classic-era. Forever adds the new [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) dungeon near Ironforge. Blizzard has not announced a rework of Coldridge.
 
 <div class="steps" markdown>
 
-1.  **1–2**{ .lvl } take the opening quests at **Anvilmar** and kill wolves and troggs in the valley. Your Priest trainer is inside **Anvilmar** (Classic: Branstock Khalder).
-2.  **2–5**{ .lvl } the troll camp quests (frostmane seers and novices) and the mail delivery to Kharanos. Train **Shadow Word: Pain** at 4.
-3.  **5**{ .lvl } take **The Great Outdoors**, learn Cooking, and plan your wand (Tailoring + Enchanting or buy one in Ironforge).
-4.  **6**{ .lvl } **Power Word: Shield**. Kill **Grik'nir the Cold** in the cave for the valley's last quest.
-5.  **6–10**{ .lvl } walk through the tunnel to **Kharanos**. Do the Thunderbrew, wendigo, Shimmerweed and Gnomeregan-refugee quests around the town. There is a Priest trainer in Kharanos for early ranks (Classic-era).
-6.  **10**{ .lvl } take your first talent and the level-10 class quest. Visit **Ironforge's Mystic Ward** for the full Priest trainers.
-7.  **10–12**{ .lvl } finish Dun Morogh (Brewnall Village, Shimmer Ridge, the Gnomeregan approach), then go east through the tunnel to **Loch Modan**.
+1.  **1–2**{ .lvl } Get the first quests at **Anvilmar**. Kill wolves and troggs in the valley. Your Priest trainer is in **Anvilmar** (Classic: Branstock Khalder).
+2.  **2–5**{ .lvl } Do the troll camp quests (frostmane seers and novices) and the mail delivery to Kharanos. At 4, train **Shadow Word: Pain**.
+3.  **5**{ .lvl } Get **The Great Outdoors** and learn Cooking. Plan how to get your wand: Tailoring + Enchanting, or buy one in Ironforge.
+4.  **6**{ .lvl } Train **Power Word: Shield**. Kill **Grik'nir the Cold** in the cave for the last quest of the valley.
+5.  **6–10**{ .lvl } Go through the tunnel to **Kharanos**. Do the Thunderbrew, wendigo, Shimmerweed and Gnomeregan-refugee quests near the town. Kharanos has a Priest trainer for early ranks (Classic-era).
+6.  **10**{ .lvl } Get your first talent and the level-10 class quest. Go to the **Mystic Ward in Ironforge** for the full Priest trainers.
+7.  **10–12**{ .lvl } Complete Dun Morogh (Brewnall Village, Shimmer Ridge, the Gnomeregan approach). Then go east through the tunnel to **Loch Modan**.
 
 </div>
 
@@ -109,11 +109,11 @@ Dwarves start in **Coldridge Valley**, Dun Morogh. Quest names are Classic-era; 
 
     <span class="step-label">Hub / flight path</span> —
 
-3.  **15–22**{ .lvl } Westfall or Redridge via the Deeprun Tram
+3.  **15–22**{ .lvl } Westfall or Redridge through the Deeprun Tram
 
     <span class="step-label">Hub / flight path</span> Sentinel Hill, Lakeshire
 
-4.  **20–30**{ .lvl } **Wetlands** (new [Excavation Site](../../content/dungeons/excavation-site.md)), Duskwood, Ashenvale via Menethil
+4.  **20–30**{ .lvl } **Wetlands** (new [Excavation Site](../../content/dungeons/excavation-site.md)), Duskwood, Ashenvale through Menethil
 
     <span class="step-label">Hub / flight path</span> Menethil Harbor
 
@@ -140,20 +140,20 @@ Dwarves start in **Coldridge Valley**, Dun Morogh. Quest names are Classic-era; 
 </div>
 
 - **Class trainers:** the **Mystic Ward** in Ironforge.
-- Ironforge is the closest capital to the Riverglades. Farholde Keep's flight master connects to **Thelsamar** in Loch Modan.
-- Uldaman (Badlands) and Gnomeregan are dwarf-flavored dungeons on your route.
+- Ironforge is the nearest capital to the Riverglades. The flight master at Farholde Keep connects to **Thelsamar** in Loch Modan.
+- Uldaman (Badlands) and Gnomeregan are dungeons with a dwarf theme on your route.
 
 ## Faction-specific notes
 
 - **Mount:** Ironforge rams at 40 (100g). Honored with Ironforge gives 10% off.
-- **Reputation:** Ironforge. The Wetlands Excavation Site and Uldaman tie into the Explorers' League storyline (Classic-era lore).
-- **Fear Ward is no longer yours alone.** If you join a raid guild expecting Dwarf-only demand from Classic, that's gone. Stoneform and hit are still good reasons.
-- **Lore:** Ironforge's priests serve the Holy Light alongside Stormwind's church; the Mystic Ward is their home.
+- **Reputation:** Ironforge. The Wetlands Excavation Site and Uldaman connect to the Explorers' League story (Classic-era lore).
+- **Fear Ward is no longer only yours.** In Classic, raid guilds wanted Dwarves for Fear Ward. That demand is gone. Stoneform and hit are still good reasons to play a Dwarf.
+- **Lore:** The priests of Ironforge serve the Holy Light together with the church of Stormwind. The Mystic Ward is their home.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**The best defensive Priest.** Stoneform handles poisons, bleeds, diseases and melee damage, Desperate Prayer is a free self-heal, and Chastise adds a third escape. +1% hit makes Dwarf a strong Alliance **Shadow** pick. Losing exclusive Fear Ward makes it less mandatory than in Classic, but it's still one of the safest choices, especially on Hardcore.
+**The best defensive Priest.** Stoneform helps against poisons, bleeds, diseases and melee damage. Desperate Prayer is a free self-heal, and Chastise adds a third escape. +1% hit makes Dwarf a strong Alliance **Shadow** choice. Without exclusive Fear Ward, Dwarf is less necessary than in Classic. But it is still one of the safest choices, especially on Hardcore.
 
 </div>

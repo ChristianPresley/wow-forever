@@ -17,7 +17,7 @@ tags:
 
 ## Why this combo
 
-Orc Rogue is a Classic combination, and both Method and Warcraft Tavern pick Orc as the best Horde Rogue in Forever. **Blood Fury** (+10% attack power for 15 s, now on a 2-minute cooldown) is a frequent burst button, and **Hardiness** cuts every stun on you by 20%, which matters in Rogue-versus-Rogue fights. The new **Shatter Curse** adds a cleanse against Warlocks. Orcs start in the **Valley of Trials**, which Blizzard reworked for Forever.
+Orc Rogue is a Classic combination. Method and Warcraft Tavern both pick Orc as the best Horde Rogue in Forever. **Blood Fury** (+10% attack power for 15 s, now on a 2-minute cooldown) is a frequent burst button. **Hardiness** makes every stun on you 20% shorter, which is important in Rogue-versus-Rogue fights. The new **Shatter Curse** adds a cleanse against Warlocks. Orcs start in the **Valley of Trials**, which Blizzard reworked for Forever.
 
 **Best for:** PvE damage on the Horde, and PvP against stun-heavy classes.
 
@@ -28,13 +28,13 @@ Orc Rogue is a Classic combination, and both Method and Warcraft Tavern pick Orc
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Blood Fury** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown>+10% attack power for 15 s, 2-minute cooldown. Use it with every major cooldown, and on every pull while leveling</p>
+<p markdown>+10% attack power for 15 s, 2-minute cooldown. Use it with every major cooldown, and on every pull when you level</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Shatter Curse** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } PvP · **2/5**{ .stars .s2 } PvE</p>
-<p markdown>Removes curses and Warlock Banes, and you take 5% less magic damage for 8 s. Strong against Warlocks and cursing casters, which Rogues normally can't cleanse</p>
+<p markdown>Removes curses and Warlock Banes, and you take 5% less magic damage for 8 s. Strong against Warlocks and casters that use curses. Rogues usually cannot cleanse these</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -46,13 +46,13 @@ Orc Rogue is a Classic combination, and both Method and Warcraft Tavern pick Orc
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Hardiness** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 } PvP · **1/5**{ .stars .s1 } PvE</p>
-<p markdown>Stuns last 20% less. Cheap Shot, Kidney Shot, Hammer of Justice and Charge stuns all shorten</p>
+<p markdown>Stuns last 20% less. Cheap Shot, Kidney Shot, Hammer of Justice and Charge stuns are all shorter</p>
 </div>
 
 </div>
 
 !!! note "Blood Fury penalty"
-    The Classic version reduced healing received. The Forever racial list doesn't mention a penalty. Check the tooltip.
+    The Classic version reduced healing received. The Forever racial list does not mention a penalty. Check the tooltip.
 
 ??? example "Macros"
 
@@ -67,17 +67,17 @@ Orc Rogue is a Classic combination, and both Method and Warcraft Tavern pick Orc
     /cast Shatter Curse
     ```
 
-    Keep it on its own key: you'll want it the moment a Bane lands.
+    Put it on its own key: you will need it immediately when a Bane hits you.
 
 ## Starting zone: Valley of Trials and Durotar (1–12)
 
-Blizzard added **new NPCs, quests, profession hooks and small moments** to the Valley of Trials. Exact new quest names haven't been documented, so the Classic flow is given here.
+Blizzard added **new NPCs, quests, profession hooks and small moments** to the Valley of Trials. Nobody has documented the exact new quest names, so this page gives the Classic sequence.
 
 <div class="steps" markdown>
 
 1.  **1**{ .lvl } **The Den**, Valley of Trials
 
-    Take the Rogue letter (*Encrypted Parchment*) to **Rwag**, the rogue trainer in the Den, and the first quests from Kaltunk and Gornek
+    Take the Rogue letter (*Encrypted Parchment*) to **Rwag**, the rogue trainer in the Den. Get the first quests from Kaltunk and Gornek
 
 2.  **1–5**{ .lvl } Valley of Trials
 
@@ -101,12 +101,12 @@ Blizzard added **new NPCs, quests, profession hooks and small moments** to the V
 
 7.  **10–12**{ .lvl } Orgrimmar and the Barrens border
 
-    Visit the **Cleft of Shadow** in Orgrimmar, then head west to the Crossroads
+    Visit the **Cleft of Shadow** in Orgrimmar, then go west to the Crossroads
 
 </div>
 
-- Tiragarde Keep's humans are perfect **Pick Pocket** targets.
-- **Blood Fury** on every pull from level 1 noticeably speeds up the Valley.
+- The humans at Tiragarde Keep are very good **Pick Pocket** targets.
+- Use **Blood Fury** on every pull from level 1. This makes the Valley noticeably faster.
 
 ## Route to 60 from Orgrimmar
 
@@ -158,17 +158,17 @@ Blizzard added **new NPCs, quests, profession hooks and small moments** to the V
 
 ## Faction notes
 
-- **Poison quest (20):** **Shenthul** in the Cleft of Shadow starts *The Shattered Salute* and *Deep Cover*, then *Mission: Possible But Not Probable* (Barrens) and *Hinott's Assistance* (Hillsbrad). Harder than the Alliance version. See the [main guide](index.md#the-poison-quest-level-20).
+- **Poison quest (20):** **Shenthul** in the Cleft of Shadow starts *The Shattered Salute* and *Deep Cover*, then *Mission: Possible But Not Probable* (Barrens) and *Hinott's Assistance* (Hillsbrad). This version is harder than the Alliance version. See the [main guide](index.md#the-poison-quest-level-20).
 - **Library books:** Owen Thadd in the Magic Quarter of Undercity. Take the zeppelin.
-- **Mount:** wolves from Ogunaro Wolfrunner in Orgrimmar. Honored with Orgrimmar gives 10% off.
-- **Reputation:** Orgrimmar. The **Durotar Supply and Logistics** crate camp is just west of the Crossroads.
-- **Darkspear Islands:** the Horde battleground faction is the **Darkspear Raiders**; queue at Merchant Coast or a battlemaster.
+- **Mount:** wolves from Ogunaro Wolfrunner in Orgrimmar. At Honored with Orgrimmar, you get a 10% discount.
+- **Reputation:** Orgrimmar. The **Durotar Supply and Logistics** crate camp is a short distance west of the Crossroads.
+- **Darkspear Islands:** the Horde battleground faction is the **Darkspear Raiders**. Queue at Merchant Coast or at a battlemaster.
 - **PvP:** Hall of Legends in Orgrimmar sells Honor gear.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**The best Horde Rogue for PvE, and excellent in PvP.** Blood Fury is a short, frequent burst cooldown, and Hardiness quietly wins Rogue duels. Pick Undead instead if fears worry you more than stuns, or Troll for Berserking.
+**The best Horde Rogue for PvE, and excellent in PvP.** Blood Fury is a short, frequent burst cooldown. Hardiness helps you win Rogue duels. If fears are a bigger problem for you than stuns, pick Undead. For Berserking, pick Troll.
 
 </div>

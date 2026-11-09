@@ -2,9 +2,9 @@
 
 ## Base access
 
-**WoW: Forever is included with any World of Warcraft subscription or Game Time.** You don't buy a box. One subscription covers retail, Classic and Forever.
+**Any World of Warcraft subscription or Game Time includes WoW: Forever.** You do not buy a box. One subscription gives access to retail, Classic and Forever.
 
-The **only paid gameplay content is the [Skyborne](../characters/races.md#skyborne) race**, which requires at least the Heroic Pack.
+The **only paid gameplay content is the [Skyborne](../characters/races.md#skyborne) race**. To play it, you must have the Heroic Pack or a higher edition.
 
 ## Editions
 
@@ -26,7 +26,7 @@ Each tier includes everything in the tier below it.
 
     ---
 
-    Everything in Heroic, plus **beta access**, the *Veteran Adventurer's Loyal Companion* mount, *Ensemble: Veteran Adventurer's Outdoor Wear*, the *Lordaeron Forever* and *Shen'dorei* tabards, four pets (Zergling Leash, Panda Collar, Diablo Stone, Pachimari), **30 days of game time** and 3 IaF codes in total.
+    Everything in Heroic, plus **beta access**, the *Veteran Adventurer's Loyal Companion* mount, *Ensemble: Veteran Adventurer's Outdoor Wear*, the *Lordaeron Forever* and *Shen'dorei* tabards, 4 pets (Zergling Leash, Panda Collar, Diablo Stone, Pachimari), **30 days of game time** and 3 IaF codes in total.
 
 -   **Warcraft Forever Collection** **Includes WC3**{ .pill .pill--official .pill--sm }
 
@@ -53,15 +53,15 @@ Each tier includes everything in the tier below it.
 - Ensembles: Shen'dorei Skyseer's Garb, Veteran Adventurer's Outdoor Wear
 - Veteran Adventurer's Rucksack, Shen'dorei Windwell (toy)
 - 30 days of game time
-- **Forever-only:** Skyborne race and Zephras Isle, Early Name Reservation, beta access, Lordaeron Forever Tabard, Shen'dorei Tabard, four pets, 3 IaF launch codes
+- **Forever-only:** Skyborne race and Zephras Isle, Early Name Reservation, beta access, Lordaeron Forever Tabard, Shen'dorei Tabard, 4 pets, 3 IaF launch codes
 - **Retail housing decor** (requires *Midnight*): Handmade Shen'dorei Pillow, Shen'dorei Standard, Windshaper's Chimes, Windwell, Zephras Drapery, Boardcraft Forsaken Figurine, Boardcraft Human Figurine
 
 Some cosmetics work in both retail and Forever. The pets and tabards are Forever-only.
 
 ## The "cash elves" controversy
 
-Putting a new playable race behind a $29.99 pack drew wide criticism. PC Gamer's headline said the hype was "dampened by $30 elves", and FinalBoss called it "a $30 trust problem". Blizzard defended Skyborne on story grounds and said offering it to both factions helps long-term population balance. As of 7 Nov 2026 Blizzard has announced **no change** to the paywall.
+Many players criticized the decision to put a new playable race behind a $29.99 pack. A PC Gamer headline said that the hype was "dampened by $30 elves". FinalBoss called it "a $30 trust problem". Blizzard defended Skyborne with reasons from the story. Blizzard also said that both factions can play Skyborne, and that this helps the population balance in the long term. Up to 7 Nov 2026, Blizzard has announced **no change** to the paywall.
 
 ## Minimum PC requirements
 
-Windows 10 64-bit and 8 GB RAM. See [Client & Tech](../systems/client.md) for more.
+Windows 10 64-bit and 8 GB RAM. See [Client & Tech](../systems/client.md) for more information.

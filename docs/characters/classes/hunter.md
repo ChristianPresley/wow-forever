@@ -13,7 +13,7 @@
 | **Armor** | **Mail**{ .pill .pill--mail } at 40 |
 | **Resource** | **Mana**{ .pill .pill--mana } |
 | **Races** | 8 combinations |
-| **Forever focus** | Petless MM; melee Survival |
+| **Forever focus** | Petless MM, melee Survival |
 | **Guide** | [Hunter guide](../../guides/hunter/index.md) |
 
 </aside>
@@ -33,7 +33,7 @@
 
 <div class="fc-cta" data-class="hunter" markdown>
 
-**Playing a Hunter?** The [Hunter guide](../../guides/hunter/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+**Do you play a Hunter?** The [Hunter guide](../../guides/hunter/index.md) explains talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
 
 <span class="fc-cta__label">Race add-ons</span> [Human](../../guides/hunter/human.md){ .fc-chip } [Dwarf](../../guides/hunter/dwarf.md){ .fc-chip } [Night Elf](../../guides/hunter/night-elf.md){ .fc-chip } [Skyborne (High Order)](../../guides/hunter/skyborne-high-order.md){ .fc-chip } [Orc](../../guides/hunter/orc.md){ .fc-chip } [Troll](../../guides/hunter/troll.md){ .fc-chip } [Tauren](../../guides/hunter/tauren.md){ .fc-chip } [Skyborne (Windshaper)](../../guides/hunter/skyborne-windshaper.md){ .fc-chip }
 
@@ -41,14 +41,14 @@
 
 ## Baseline changes
 
-- **Aimed Shot** is baseline at level 20 for all specs. Multi-Shot shares its cooldown; Arcane Shot has its own.
+- **Aimed Shot** is baseline at level 20 for all specs. Multi-Shot shares its cooldown. Arcane Shot has its own cooldown.
 - **Traps work in combat**, and all traps share a **30 s** cooldown.
-- Aspect of the Beast adds melee AP. Scorpid Sting gives −2% hit. Disengage drops more threat.
-- Pre-launch numbers: Aimed Shot +110% bonus damage, Arcane Shot +30% base damage, Serpent Sting buffed, Aspect of the Hawk ranks 20/35/50/70/90/110 RAP, Hunter's Mark ranks don't stack.
+- Aspect of the Beast adds melee AP. Scorpid Sting gives −2% hit. Disengage removes more threat.
+- Pre-launch numbers: Aimed Shot +110% bonus damage, Arcane Shot +30% base damage, Serpent Sting buffed, Aspect of the Hawk ranks 20/35/50/70/90/110 RAP, Hunter's Mark ranks do not stack.
 
 ## Pets
 
-- Pet stats **scale with the Hunter's gear**, and pets no longer receive player buffs.
+- Pet stats **scale with the Hunter's gear**, and pets no longer get player buffs.
 - Every family learns Bite or Claw, and Dive or Dash.
 - **New family: Fox** (*Trickster's Dance*: dodge and attack speed for 12 s).
 - **One unique ability per family:**
@@ -91,4 +91,4 @@
 
 Wyvern Sting · Killer Instinct · Improved Feign Death · Monster/Humanoid Slaying · Improved Hunter's Mark
 
-In the beta, Hunter was reported as the **fastest leveling class**.
+In the beta, reports said that Hunter was the **fastest leveling class**.

@@ -11,15 +11,15 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page covers only what changes for a Gnome.</p>
+<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page shows only the differences for a Gnome.</p>
 
 </div>
 
 ## Why this combo
 
-Gnome Rogue is a Classic combination. Forever gives it a new burst racial: **Eureka!** makes your direct abilities cost 10% less and hit 10% harder for 8 s, which is a strong window for a 5-point Eviscerate or Mutilate. **Escape Artist** remains the best snare breaker for a melee class, and **Expansive Mind** now raises max Energy. Method's leveling guide picks Gnome as the best Alliance Rogue.
+Gnome Rogue is a Classic combination. Forever gives it a new burst racial: **Eureka!**. For 8 s, your direct abilities cost 10% less and hit 10% harder. This is a strong window for a 5-point Eviscerate or Mutilate. **Escape Artist** is still the best snare breaker for a melee class. **Expansive Mind** now increases max Energy. The Method leveling guide selects Gnome as the best Alliance Rogue.
 
-**Best for:** PvP and players who like Engineering.
+**Best for:** PvP, and players who like Engineering.
 
 ## Racials in practice
 
@@ -28,31 +28,31 @@ Gnome Rogue is a Classic combination. Forever gives it a new burst racial: **Eur
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Escape Artist** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE</p>
-<p markdown>Removes roots and snares and gives 3 s of immunity. Breaks Frost Nova, Hamstring, Crippling Poison, Entangling Roots and Frostbolt slows, then lets you close the gap</p>
+<p markdown>Removes roots and snares and gives 3 s of immunity. Breaks Frost Nova, Hamstring, Crippling Poison, Entangling Roots and Frostbolt slows. Then you can go back to your target</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Eureka!** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 }</p>
-<p markdown>For 8 s your non-periodic abilities cost 10% less and deal 10% more. Rupture and Garrote ticks don't benefit; Sinister Strike, Mutilate, Ambush, Eviscerate and Shank do. Line it up with Cold Blood, Adrenaline Rush or a Stealth opener</p>
+<p markdown>For 8 s, your non-periodic abilities cost 10% less and do 10% more damage. Rupture and Garrote ticks do not get the bonus. Sinister Strike, Mutilate, Ambush, Eviscerate and Shank get it. Use it at the same time as Cold Blood, Adrenaline Rush or a Stealth opener</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Expansive Mind** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown>+5% maximum Energy. A bigger pool means a bigger opener and more pooling before a burst</p>
+<p markdown>+5% maximum Energy. A larger pool gives a stronger opener, and you can keep more Energy before a burst</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Engineering Specialization** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } with Engineering · — without</p>
-<p markdown>20% fewer device failures and backfires. It no longer adds skill points. Great if you use bombs and nets in PvP</p>
+<p markdown>20% fewer device failures and backfires. It no longer adds skill points. Very good if you use bombs and nets in PvP</p>
 </div>
 
 </div>
 
 !!! note "Unknown cooldown"
-    Eureka!'s cooldown hasn't been published. Check the tooltip, and use it in every fight if it's short.
+    The cooldown of Eureka! is not published. Look at the tooltip. If the cooldown is short, use Eureka! in each fight.
 
 ??? example "Macros"
 
@@ -63,7 +63,7 @@ Gnome Rogue is a Classic combination. Forever gives it a new burst racial: **Eur
     /cast Eviscerate
     ```
 
-    One button for a big crit finisher: press it at 5 combo points.
+    One button for a large crit finisher. Push it at 5 combo points.
 
     ```text
     #showtooltip Escape Artist
@@ -73,13 +73,13 @@ Gnome Rogue is a Classic combination. Forever gives it a new burst racial: **Eur
 
 ## Starting zone: Coldridge Valley and Dun Morogh (1–12)
 
-Gnomes share the Dwarf start in Coldridge Valley. Quest names are from Classic; Blizzard has not listed changes here.
+Gnomes and Dwarves start in the same place, Coldridge Valley. The quest names are from Classic. Blizzard has not listed changes here.
 
 <div class="steps" markdown>
 
 1.  **1**{ .lvl } **Anvilmar**, Coldridge Valley
 
-    *Dwarven Outfitters*, then the Rogue letter (*Encrypted Rune*) to **Solm Hargrin** inside Anvilmar
+    Do *Dwarven Outfitters*. Then take the Rogue letter (*Encrypted Rune*) to **Solm Hargrin** in Anvilmar
 
 2.  **1–5**{ .lvl } Coldridge Valley
 
@@ -91,20 +91,20 @@ Gnomes share the Dwarf start in Coldridge Valley. Quest names are from Classic; 
 
 4.  **5–10**{ .lvl } **Kharanos** and Dun Morogh
 
-    Rogue trainer **Hogral Bakkan** in the Thunderbrew Distillery. Gnome-specific quests around Gnomeregan's entrance and Brewnall Village; *Tools for Steelgrill* and *Gnomeregan* lore chains
+    Rogue trainer **Hogral Bakkan** is in the Thunderbrew Distillery. Do the gnome quests near the Gnomeregan entrance and Brewnall Village, and the *Tools for Steelgrill* and *Gnomeregan* lore chains
 
 5.  **10**{ .lvl } Hogral Bakkan
 
-    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+    **Slice and Dice**, **Sap**, **Sprint**. First talent point
 
-6.  **10–12**{ .lvl } Dun Morogh's east, then Loch Modan
+6.  **10–12**{ .lvl } East Dun Morogh, then Loch Modan
 
-    Finish the zone through the Gol'Bolar Quarry and Helm's Bed Lake
+    Complete the zone through the Gol'Bolar Quarry and Helm's Bed Lake
 
 </div>
 
-- Grab an Engineering trainer in Kharanos or Ironforge early if you plan on it. Explosives and target dummies are strong leveling tools and Engineering Specialization makes them more reliable.
-- **Expansive Mind** gives you a few extra Energy at the start of every pull; open with Sinister Strike + Sinister Strike from full.
+- If you plan to learn Engineering, go to an Engineering trainer in Kharanos or Ironforge early. Explosives and target dummies are strong tools when you level. Engineering Specialization makes them more reliable.
+- **Expansive Mind** gives you a little more Energy at the start of each pull. When you have full Energy, start with Sinister Strike + Sinister Strike.
 
 ## Route to 60 from Ironforge
 
@@ -136,7 +136,7 @@ Gnomes share the Dwarf start in Coldridge Valley. Quest names are from Classic; 
 
 7.  **29–38**{ .lvl } **Gnomeregan** dungeon
 
-    <span class="step-label">Hub / flight path</span> Dun Morogh. The Gnome homeland dungeon, with Engineering-flavored loot
+    <span class="step-label">Hub / flight path</span> Dun Morogh. The dungeon in the Gnome homeland, with loot that has an Engineering theme
 
 8.  **26–35**{ .lvl } Hillsbrad and the [City of Dalaran](../../content/dungeons/city-of-dalaran.md)
 
@@ -160,21 +160,21 @@ Gnomes share the Dwarf start in Coldridge Valley. Quest names are from Classic; 
 
 </div>
 
-**Class trainers:** Solm Hargrin (Anvilmar), Hogral Bakkan (Kharanos), and the rogue trainers in **Ironforge's Forlorn Cavern**. Ironforge's **Tinker Town** has the Engineering trainers.
+**Class trainers:** Solm Hargrin (Anvilmar), Hogral Bakkan (Kharanos), and the rogue trainers in the **Forlorn Cavern of Ironforge**. **Tinker Town** in Ironforge has the Engineering trainers.
 
 ## Faction notes
 
-- **Poison quest (20):** starts with Master Mathias Shaw in Stormwind's Old Town. See the [main guide](index.md#the-poison-quest-level-20).
+- **Poison quest (20):** It starts with Master Mathias Shaw in Old Town, Stormwind. See the [main guide](index.md#the-poison-quest-level-20).
 - **Library books:** Garion Wendell, Mage Quarter, Stormwind.
 - **Mount:** mechanostriders from Steelgrill's Depot in Dun Morogh. Honored with **Gnomeregan Exiles** gives 10% off.
 - **Reputation:** Gnomeregan Exiles.
-- **Engineering in PvP:** nets, bombs and Goblin Sapper-style explosives pair perfectly with Escape Artist and Eureka!.
-- **Lore:** Gnomeregan is still irradiated and occupied; the exiled Gnomes live in Tinker Town.
+- **Engineering in PvP:** Nets, bombs and explosives similar to the Goblin Sapper are very good with Escape Artist and Eureka!.
+- **Lore:** Gnomeregan still has radiation and enemies in it. The exiled Gnomes live in Tinker Town.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**The best Alliance PvP Rogue alongside Human, and a strong PvE burst pick.** Escape Artist keeps you on target, Eureka! gives you a second burst cooldown, and the extra Energy helps every opener. Choose Human if stuns worry you more than snares.
+**Together with Human, the best Alliance PvP Rogue, and a strong PvE burst choice.** Escape Artist keeps you on your target. Eureka! gives you a second burst cooldown, and the extra Energy helps each opener. If stuns are a larger problem for you than snares, select Human.
 
 </div>

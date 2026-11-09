@@ -78,3 +78,46 @@ The one remaining axe finding is `target-size` on sidebar links that are partial
 ## Visual element library (8 Nov 2026)
 
 `docs/stylesheets/components.css` adds pills (status, change, faction, class, armour, resource, difficulty, label-value; soft, solid and outline styles), spec strips, stat tiles, timelines, meters, pros/cons, price cards and labelled dividers. The live reference with copy-paste Markdown is the **Style guide** page (`docs/community/style-guide.md`).
+
+## Writing: Simplified Technical English (9 Nov 2026)
+
+All prose in `docs/` follows a Codex profile of ASD-STE100 Simplified Technical English (STE). The goal is text that is easy to read for every reader, including readers whose first language is not English and readers who use machine translation.
+
+### Scope
+
+- **Rewrite:** body text, list items, table cells that hold sentences, callout bodies, captions, `description:` front matter, and link text that is a sentence.
+- **Do not change:** Markdown and HTML markup, attribute lists (`{ .pill .pill--new }`), CSS classes, anchors (`{ #id }`), link targets, front-matter keys, tags, code blocks, macros, and file names.
+- **Technical names stay as they are:** spell, talent, item, quest, zone, NPC, faction, race, class, profession and stat names, game terms (DPS, aggro, kiting, pull, proc, tank, rotation, cooldown, haste), and quoted titles. A technical name can contain words that STE does not approve.
+- **Facts stay the same:** numbers, levels, prices, dates, sources and their attribution ("Warcraft Tavern says …"), and the meaning of every hedge ("reportedly", "not confirmed"). If a sentence is ambiguous, keep the ambiguity: do not invent a fact to make it simpler.
+- **Headings:** keep heading text when it is a technical name or when other pages link to its anchor. Otherwise make it short and simple. If a heading changes and it has no `{ #id }`, add the old anchor as `{ #old-slug }` so links do not break.
+
+### Word rules
+
+1. Use approved STE words with their approved meaning, where a simple word exists: *use* not *utilize*, *help* not *assist*, *start* not *commence*, *get* not *obtain*, *about* not *approximately*, *more than* not *in excess of*, *because* not *since* or *as* (for a reason), *if* or *when* not *in case*, *can* not *is able to*.
+2. Use one word for one meaning, and one meaning for one word. Use the same term for the same thing on every page.
+3. Do not use phrasal verbs when a single verb exists: *find* not *find out*, *leave* not *head off*, *continue* not *keep on*, *get* not *pick up* (except for game idioms such as *pick up a quest*).
+4. Do not use *-ing* forms as nouns or as modifiers in general prose (*Leveling* is a technical name and can stay). Write *when you level* not *while leveling*, where this makes the sentence clearer.
+5. Use only the simple tenses: present, simple past and future (*will*). Do not use *would*, *could*, *should*, *might* or *may* to give an instruction or a possibility. Write *can*, *must*, or a direct command.
+6. Do not use slang, jokes, idioms or metaphors: *strong* not *a beast*, *easy* not *a breeze*.
+7. Keep articles (*a*, *an*, *the*) and *that* where they make the meaning clear. Do not write telegraphic text in sentences.
+8. Write numbers as digits.
+
+### Sentence rules
+
+1. **Procedures** (steps, instructions): a maximum of **20 words** per sentence. Write one instruction per sentence. Start with a verb in the imperative (*Take the boat to Auberdine.*). If an action has a condition, put the condition first (*At level 10, train Frost Nova.*).
+2. **Descriptions:** a maximum of **25 words** per sentence. Write one topic per sentence.
+3. Use the **active voice**. Use the passive only in descriptions where the agent is unknown or not important.
+4. Put a **warning** or **caution** before the instruction it applies to. Start with the command, then give the reason in a second sentence.
+5. Do not use semicolons to join sentences. Make two sentences. Colons that introduce a list or an explanation are permitted.
+6. Do not use long noun clusters. Break a cluster of more than 3 nouns with *of*, *for* or a short clause.
+
+### Paragraph rules
+
+1. A paragraph has one topic.
+2. A paragraph has a maximum of **6 sentences**. The first sentence gives the topic.
+3. Use a list when you give 3 or more parallel items.
+
+### Lists, tables and fragments
+
+- Short list items, table cells and pros/cons items can be fragments (*Cloth armor and few escapes*). Do not make a fragment into a long sentence.
+- If a list item has a full sentence, it follows the sentence rules.

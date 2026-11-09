@@ -17,8 +17,8 @@
 
 </aside>
 
-A long-sealed prison on Alcaz Island has opened, and the **Defias Brotherhood** and **naga** are fighting over it. Blizzard says rumors point to high-value prisoners inside, possibly including **King Varian Wrynn**. In the original first year of WoW, the king was missing.
+A prison on Alcaz Island was sealed for a long time, and now it is open. The **Defias Brotherhood** and the **naga** fight for control of it. Blizzard says that rumors tell of high-value prisoners inside. Possibly, these include **King Varian Wrynn**. In the original first year of WoW, the king was missing.
 
 ## Known details
 
-- **Boss:** **Blazeroar** (revealed through a Legacy challenge). The rest of the roster is *unconfirmed*{ .unconfirmed }.
+- **Boss:** **Blazeroar** (a Legacy challenge revealed this name). The rest of the roster is *unconfirmed*{ .unconfirmed }.

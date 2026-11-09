@@ -17,11 +17,11 @@ tags:
 
 ## Why this combo
 
-The Darkspear headhunter. Troll Hunters existed in Classic, but Forever removed Bow Specialization and Throwing Specialization and gave Trolls a new self-heal. What's left still suits the class:
+The Darkspear headhunter. Troll Hunters were in Classic. Forever removed Bow Specialization and Throwing Specialization and gave Trolls a new self-heal. The remaining racials are still good for the class:
 
 - **Berserking**: +10% cast and attack speed for 15 s. More Auto Shots and faster Aimed Shots.
-- **Beast Slaying**: bonus damage to Beasts, the most common leveling enemy.
-- **Rapid Regeneration** *(new)*: 50% of your max health over 6 s, out of combat. Less eating.
+- **Beast Slaying**: bonus damage to Beasts, the most usual enemy when you level.
+- **Rapid Regeneration** *(new)*: 50% of your max health over 6 s, out of combat. You eat less.
 
 Trolls are also the faction of the new **Darkspear Islands** battleground and the Darkspear Raiders reputation.
 
@@ -32,28 +32,28 @@ Trolls are also the faction of the new **Darkspear Islands** battleground and th
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown><span class="ability-label">PvE</span> +10% cast and attack speed for 15 s. Stack with Rapid Fire; also shortens Aimed Shot and Sniper Shot casts</p>
+<p markdown><span class="ability-label">PvE</span> +10% cast and attack speed for 15 s. Stack it with Rapid Fire. It also makes Aimed Shot and Sniper Shot casts shorter</p>
 <p markdown><span class="ability-label">PvP</span> Faster Aimed Shot in a burst window</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Rapid Regeneration** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> Heals 50% of max health over 6 s, but **any action cancels it**. Use between pulls instead of eating</p>
+<p markdown><span class="ability-label">PvE</span> Heals 50% of max health over 6 s, but **all actions cancel it**. Use it between pulls, in place of food</p>
 <p markdown><span class="ability-label">PvP</span> Between fights only</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Beast Slaying** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } leveling</p>
-<p markdown><span class="ability-label">PvE</span> Bonus damage to Beasts (+5% in Classic; Forever's value isn't published). Strong in questing, rarely matters in raids</p>
-<p markdown><span class="ability-label">PvP</span> Hunter pets and Druid animal forms: unclear, *Classic-era rule says Druid forms aren't Beasts*</p>
+<p markdown><span class="ability-label">PvE</span> Bonus damage to Beasts (+5% in Classic. Nobody has published the Forever value). Strong when you do quests, but not often important in raids</p>
+<p markdown><span class="ability-label">PvP</span> Hunter pets and Druid animal forms: not clear. *The Classic-era rule says that Druid forms are not Beasts*</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Regeneration** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown><span class="ability-label">PvE</span> +20% health regen, part of it continuing in combat</p>
+<p markdown><span class="ability-label">PvE</span> +20% health regen. Part of it continues in combat</p>
 <p markdown><span class="ability-label">PvP</span> Small sustain</p>
 </div>
 
@@ -73,35 +73,35 @@ Trolls are also the faction of the new **Darkspear Islands** battleground and th
     /cast Rapid Regeneration
     ```
 
-    Sets the pet to Passive so it doesn't start a fight and cancel your regen. Set it back to Defensive afterwards.
+    This macro sets the pet to Passive, so that the pet does not start a fight and cancel your regen. After, set the pet to Defensive again.
 
 ## Starting zone walkthrough 1–12
 
-Trolls share the **Valley of Trials**, Durotar, with Orcs. Blizzard reworked the Valley with **new NPCs, quests, profession hooks and "small moments"**. The route below follows Classic where it still applies (*Classic-era*).
+Trolls and Orcs both start in the **Valley of Trials**, Durotar. Blizzard changed the Valley with **new NPCs, quests, profession hooks and "small moments"**. The route below follows Classic where Classic still applies (*Classic-era*).
 
 <div class="steps" markdown>
 
 1.  **1–5**{ .lvl } Valley of Trials
 
-    - Gornek's quests at the Den: mottled boars, scorpids, Sarkoth, Vile Familiars, cactus apples, lazy peons.
-    - The **Hunter trainer is near the Den** (Jen'shan in Classic, *Classic-era*). Train **Serpent Sting** at 4.
-    - Pick up the new Forever quests as you find them.
+    - The quests of Gornek at the Den: mottled boars, scorpids, Sarkoth, Vile Familiars, cactus apples, lazy peons.
+    - The **Hunter trainer is near the Den** (Jen'shan in Classic, *Classic-era*). At 4, train **Serpent Sting**.
+    - Get the new Forever quests when you find them.
 
 2.  **5–10**{ .lvl } Sen'jin Village and Razor Hill
 
-    - **Sen'jin Village** is the Darkspear home: quests on the **Echo Isles** against Zalazane's trolls, plus Tiragarde Keep and the Razor Hill quests.
-    - Take *The Great Outdoors* for [camping](../../systems/camping.md) and the starter gathering quest (Skinning).
+    - **Sen'jin Village** is the Darkspear home. Do the quests on the **Echo Isles** against the trolls of Zalazane. Also do Tiragarde Keep and the Razor Hill quests.
+    - Take *The Great Outdoors* for [camping](../../systems/camping.md), and the starter gathering quest (Skinning).
     - Train Arcane Shot and Hunter's Mark (6), Concussive Shot (8).
 
 3.  **10**{ .lvl } The first pet
 
-    - Same chain as Orcs: in Classic, **Thotar** at Razor Hill sent you after a **Dire Mottled Boar**, a **Surf Crawler** and an **Armored Scorpid** (*Classic-era*). Forever quest *Taming the Beast* (Orc/Troll; Warcraft Tavern gives 6062), then *Training the Beast* (6081).
-    - A boar for durability, a Durotar Tiger (cat) for damage. Beast Slaying makes your own beast-killing quests faster.
+    - The chain is the same as for Orcs. In Classic, **Thotar** at Razor Hill sent you to tame a **Dire Mottled Boar**, a **Surf Crawler** and an **Armored Scorpid** (*Classic-era*). The Forever quest is *Taming the Beast* (Orc/Troll; Warcraft Tavern gives 6062), then *Training the Beast* (6081).
+    - A boar for durability, a Durotar Tiger (cat) for damage. Beast Slaying makes your quests to kill beasts faster.
     - First talent: **Deadly Aspects**.
 
 4.  **10–12**{ .lvl } To the Barrens
 
-    - Finish Durotar, train in Orgrimmar, then head to the **Crossroads**.
+    - Complete Durotar. Train in Orgrimmar. Then go to the **Crossroads**.
 
 </div>
 
@@ -147,21 +147,21 @@ Trolls share the **Valley of Trials**, Durotar, with Orcs. Blizzard reworked the
 
 </div>
 
-Beast-heavy zones (the Barrens, Stonetalon, Stranglethorn, Feralas, Un'Goro, Winterspring) are where Beast Slaying pays off most.
+Beast Slaying gives the most value in zones with many beasts (the Barrens, Stonetalon, Stranglethorn, Feralas, Un'Goro, Winterspring).
 
 ## Faction-specific notes
 
-- **Mount:** Raptor from Sen'jin Village (*Classic-era location*) at 40. Home reputation is **Darkspear Trolls**; Honored saves 10%.
-- **Darkspear Islands:** the new battleground's Horde faction is the **Darkspear Raiders**. Exalted gives a tabard questline and **1 Legacy Point**.
+- **Mount:** Raptor from Sen'jin Village (*Classic-era location*) at 40. The home reputation is **Darkspear Trolls**. Honored gives a 10% discount.
+- **Darkspear Islands:** the Horde faction of the new battleground is the **Darkspear Raiders**. Exalted gives a tabard questline and **1 Legacy Point**.
 - **Library books:** Owen Thadd, Magic Quarter, Undercity.
 - **Crates:** Durotar Supply and Logistics, west of the Crossroads.
 - **PvP gear:** Hall of Legends, Orgrimmar.
-- **Lore:** Darkspear hunters and headhunters; the Echo Isles and the new battleground islands off Dustwallow tie the race to Forever's new PvP content.
+- **Lore:** Darkspear hunters and headhunters. The Echo Isles and the new battleground islands near Dustwallow connect the race to the new PvP content of Forever.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-A strong Horde Hunter, especially for **Marksmanship** raiding: Berserking keeps its full value with no pet, while Orc's Command doesn't. Leveling is quick thanks to Beast Slaying and Rapid Regeneration. Pick Orc for Beast Mastery and stun resistance, Troll for petless or haste-focused play.
+A strong Horde Hunter, especially for **Marksmanship** raids. Berserking keeps its full value with no pet, but the Orc racial Command does not. Leveling is fast because of Beast Slaying and Rapid Regeneration. Select Orc for Beast Mastery and stun resistance. Select Troll for play with no pet or with a focus on haste.
 
 </div>

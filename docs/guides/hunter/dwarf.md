@@ -11,16 +11,16 @@ tags:
 
 :codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Hunter guide](index.md).</p>
+<p class="gh-note" markdown>Read this page with the [Hunter guide](index.md).</p>
 
 </div>
 
 ## Why this combo
 
-The classic Alliance rifleman. Dwarf Hunters existed in Classic; Forever replaced their old racials (Gun Specialization and Frost Resistance are gone) with a set that's arguably better for Hunters:
+The classic Alliance rifleman. Dwarf Hunters existed in Classic. Forever replaced their old racials (Gun Specialization and Frost Resistance are gone) with a new set. This set is possibly better for Hunters:
 
 - **Artisan's Precision** gives +1% hit, which makes the hit cap easier for raids.
-- **Big Game Hunter** adds +5% damage against Beasts, the most common enemy type while leveling.
+- **Big Game Hunter** adds +5% damage against Beasts, the most common enemy type when you level.
 - **Stoneform** is now a real defensive: bleed, poison and disease cleanse with 10% physical damage reduction.
 
 Warcraft Tavern names Dwarf (with Human) as the best Alliance PvP Hunter.
@@ -32,14 +32,14 @@ Warcraft Tavern names Dwarf (with Human) as the best Alliance PvP Hunter.
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Stoneform** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
-<p markdown><span class="ability-label">PvE</span> Cleanses poisons, diseases and bleeds and grants immunity, plus −10% physical damage for 8 s. Great on Hardcore and against poison-heavy dungeon trash</p>
-<p markdown><span class="ability-label">PvP</span> Removes Rogue poisons, Rend, Rip, Garrote and Deep Wounds; −10% physical damage during a burst</p>
+<p markdown><span class="ability-label">PvE</span> Cleanses poisons, diseases and bleeds and gives immunity, plus −10% physical damage for 8 s. Very good on Hardcore and against dungeon trash that uses a lot of poison</p>
+<p markdown><span class="ability-label">PvP</span> Removes Rogue poisons, Rend, Rip, Garrote and Deep Wounds. −10% physical damage during a burst</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>Find Treasure <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown><span class="ability-label">PvE</span> Tracks chests and gives a chance of better loot. You can't run it with Track Beasts at the same time</p>
+<p markdown><span class="ability-label">PvE</span> Tracks chests and gives a chance of better loot. You cannot use it at the same time as Track Beasts</p>
 <p markdown><span class="ability-label">PvP</span> None</p>
 </div>
 
@@ -53,14 +53,14 @@ Warcraft Tavern names Dwarf (with Human) as the best Alliance PvP Hunter.
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Big Game Hunter** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } leveling</p>
-<p markdown><span class="ability-label">PvE</span> +5% damage to Beasts. Very strong while questing. In raids it only helps on Beast bosses (Onyxia and her whelps are Dragonkin), and Warcraft Tavern notes rare Beast bosses</p>
+<p markdown><span class="ability-label">PvE</span> +5% damage to Beasts. Very strong when you quest. In raids, it only helps against Beast bosses (Onyxia and her whelps are Dragonkin). Warcraft Tavern says that Beast bosses are rare</p>
 <p markdown><span class="ability-label">PvP</span> Druids in animal forms are not Beasts (*Classic-era rule*)</p>
 </div>
 
 </div>
 
 !!! conflict "Conflict"
-    Warcraft Tavern's Hunter overview still lists **Earth Fury** as a Dwarf racial. Earth Fury was a mid-beta racial that was replaced before launch; the live list is the one above (see [Races](../../characters/races.md#racial-abilities)).
+    Warcraft Tavern's Hunter overview still lists **Earth Fury** as a Dwarf racial. Earth Fury was a mid-beta racial. Blizzard replaced it before launch. The live list is the one above (see [Races](../../characters/races.md#racial-abilities)).
 
 ??? example "Macros"
 
@@ -70,36 +70,36 @@ Warcraft Tavern names Dwarf (with Human) as the best Alliance PvP Hunter.
     /cast Aspect of the Monkey
     ```
 
-    Emergency button when a Rogue or Warrior is on you: cleanse, then extra dodge. Swap back to Hawk once you're at range.
+    Use this in an emergency, when a Rogue or Warrior attacks you in melee: cleanse, then extra dodge. When you are at range again, change back to Hawk.
 
 ## Starting zone walkthrough 1–12
 
-Dwarves start in **Coldridge Valley**, Dun Morogh. Forever added the [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) dungeon (13–18) near Ironforge; the questing route is otherwise Classic (*Classic-era*).
+Dwarves start in **Coldridge Valley**, Dun Morogh. Forever added the [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) dungeon (13–18) near Ironforge. Apart from this, the quest route is the Classic route (*Classic-era*).
 
 <div class="steps" markdown>
 
 1.  **1–5**{ .lvl } Coldridge Valley
 
     - Start at Anvilmar. Quests: the Dwarven outfitters (wolf meat), the mail delivery chain, Rockjaw troggs, and the Frostmane trolls at Coldridge Pass.
-    - The **Hunter trainer is inside Anvilmar** (Thorgas Grimson in Classic; *Classic-era*). Train **Serpent Sting** at 4.
+    - The **Hunter trainer is inside Anvilmar** (Thorgas Grimson in Classic, *Classic-era*). Train **Serpent Sting** at 4.
     - Take *The Great Outdoors* near your level-5 hub to unlock [camping](../../systems/camping.md).
 
 2.  **5–10**{ .lvl } Kharanos
 
     - Go through the tunnel to **Kharanos** (Thunderbrew Distillery inn). Boar ribs, Steelgrill's tools, the Frostmane Hold cave, Brewnall Village and Shimmer Ridge.
-    - Take the starter gathering quest; Skinning fits Dun Morogh's boars, bears and leopards.
-    - Train Arcane Shot and Hunter's Mark (6), Concussive Shot (8). The Warcraft Wiki lists **Tordrin Sternblade** as a Dwarf hunter trainer; check where he stands in your zone.
+    - Take the starter gathering quest. Skinning is a good fit for the boars, bears and leopards of Dun Morogh.
+    - Train Arcane Shot and Hunter's Mark (6), Concussive Shot (8). The Warcraft Wiki lists **Tordrin Sternblade** as a Dwarf hunter trainer. Find his position in your zone.
 
 3.  **10**{ .lvl } The first pet
 
-    - In Classic, **Grif Wildheart** in Kharanos ran the Dwarf taming chain: a **Large Crag Boar**, a **Snow Leopard** and an **Ice Claw Bear** (*Classic-era*). The Forever version is quest *Taming the Beast* (Dwarf; Warcraft Tavern gives quest 6064), ending with *Training the Beast* (6086).
+    - In Classic, **Grif Wildheart** in Kharanos ran the Dwarf taming chain: a **Large Crag Boar**, a **Snow Leopard** and an **Ice Claw Bear** (*Classic-era*). The Forever version is the quest *Taming the Beast* (Dwarf version, quest 6064 per Warcraft Tavern). The chain ends with *Training the Beast* (6086).
     - Keep a boar or bear for durability, or tame a level-10 **Snow Leopard** (cat) for damage.
     - First talent: **Deadly Aspects**.
 
-4.  **10–12**{ .lvl } Off to Loch Modan
+4.  **10–12**{ .lvl } To Loch Modan
 
     - Finish Dun Morogh, then take the road east through the North Gate to **Loch Modan** (Thelsamar).
-    - Big Game Hunter shines here: Loch Modan is full of bears, boars and spiders.
+    - Big Game Hunter is very strong here: Loch Modan has many bears, boars and spiders.
 
 </div>
 
@@ -111,7 +111,7 @@ Dwarves start in **Coldridge Valley**, Dun Morogh. Forever added the [Hall of Th
 
 1.  **10–20**{ .lvl } Loch Modan, Westfall or Darkshore
 
-    <span class="step-label">Travel</span> Thelsamar FP; Deeprun Tram to Stormwind; **Stormwind Harbor → Auberdine** boat (new)
+    <span class="step-label">Travel</span> Thelsamar FP, Deeprun Tram to Stormwind, **Stormwind Harbor → Auberdine** boat (new)
 
 2.  **13–20**{ .lvl } [Hall of Thanes](../../content/dungeons/hall-of-thanes.md)
 
@@ -156,14 +156,14 @@ Dwarves start in **Coldridge Valley**, Dun Morogh. Forever added the [Hall of Th
 - **Mount:** Ram from Amberstill Ranch, east Dun Morogh (*Classic-era location*), at 40. **Honored with Ironforge** saves 10%.
 - **Library books:** Garion Wendell, Wizard's Sanctum, Stormwind.
 - **Crates:** Azeroth Commerce Authority at Three Corners, Redridge.
-- **PvP:** Theramore Expeditionary Force reputation from Darkspear Islands; queue at Northwatch or a battlemaster.
+- **PvP:** Theramore Expeditionary Force reputation from Darkspear Islands. Queue at Northwatch or at a battlemaster.
 - **Onyxia:** the Alliance attunement starts in the Burning Steppes, close to Ironforge.
-- **Lore:** Ironforge's mountaineers and riflemen. Guns fit the theme, though Gun Specialization no longer exists, so use whatever ranged weapon has the best damage.
+- **Lore:** the mountaineers and riflemen of Ironforge. Guns fit the theme, but Gun Specialization no longer exists. Thus, use the ranged weapon that has the best damage.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-The best Alliance race for hit-capped raiding and among the best for PvP. Big Game Hunter speeds leveling, and Stoneform is one of the strongest defensive racials for Hardcore. Night Elf and Human have more crit, but a Dwarf is never a wrong pick.
+The best Alliance race for raids at the hit cap, and one of the best for PvP. Big Game Hunter makes leveling faster, and Stoneform is one of the strongest defensive racials for Hardcore. Night Elf and Human have more crit, but a Dwarf is never a bad choice.
 
 </div>

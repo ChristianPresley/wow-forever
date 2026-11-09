@@ -11,20 +11,20 @@ tags:
 
 :codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Paladin guide](index.md). This page covers what changes when your paladin is a Dwarf.</p>
+<p class="gh-note" markdown>Read this page with the [Paladin guide](index.md). This page gives the differences for a Dwarf paladin.</p>
 
 </div>
 
 ## Why this combo
 
-The Dwarf paladin trains in Ironforge's Mystic Ward and has been in the game since Classic, so this is **not** a new combination. Forever's racial rework makes it the strongest PvE pick of the three paladin races:
+The Dwarf paladin trains in the Mystic Ward of Ironforge. It is in the game since Classic, so this is **not** a new combination. Because of the racial changes in Forever, it is the strongest PvE choice of the 3 paladin races:
 
-- **Artisan's Precision** (+1% hit) is a flat gain for every spec, and Retribution and Protection need hit at 60.
-- **Stoneform** now removes bleeds, poisons and diseases, makes you immune to them, and cuts physical damage taken by 10% for 8 s: a tank cooldown as well as a cleanse.
-- **Big Game Hunter** (+5% damage to Beasts) helps leveling, since many quest mobs are beasts.
-- The old Mace Specialization and Frost Resistance racials are **gone**, and the beta's *Earth Fury* was replaced by Artisan's Precision before launch.
+- **Artisan's Precision** (+1% hit) is a flat increase for all specs. Retribution and Protection need hit at 60.
+- **Stoneform** now removes bleeds, poisons and diseases and makes you immune to them. It also decreases physical damage taken by 10% for 8 s. Thus, it is a tank cooldown and a cleanse.
+- **Big Game Hunter** (+5% damage to Beasts) helps you level, because many quest mobs are beasts.
+- The old Mace Specialization and Frost Resistance racials are **removed**. Before launch, Artisan's Precision replaced the beta racial *Earth Fury*.
 
-Ironforge is also home to the new [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) dungeon (13–18).
+The new [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) dungeon (13–18) is also in Ironforge.
 
 ## Racials in practice
 
@@ -33,35 +33,35 @@ Ironforge is also home to the new [Hall of Thanes](../../content/dungeons/hall-o
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Stoneform** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown><span class="ability-label">PvE</span> Removes and blocks bleeds, poisons and diseases; −10% physical damage for 8 s. Use it as a short tank cooldown, or to clear diseases in Scholomance and Stratholme</p>
-<p markdown><span class="ability-label">PvP</span> Cleanses rogue poisons and warrior bleeds; the damage cut helps against burst</p>
+<p markdown><span class="ability-label">PvE</span> Removes and blocks bleeds, poisons and diseases; −10% physical damage for 8 s. Use it as a short tank cooldown, or to remove diseases in Scholomance and Stratholme</p>
+<p markdown><span class="ability-label">PvP</span> Removes rogue poisons and warrior bleeds. The damage reduction helps against burst</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Artisan's Precision** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
-<p markdown><span class="ability-label">PvE</span> +1% hit with attacks and spells. Fewer missed Judgements and Holy Strikes</p>
-<p markdown><span class="ability-label">PvP</span> Fewer misses on Hammer of Justice and Repentance</p>
+<p markdown><span class="ability-label">PvE</span> +1% hit with attacks and spells. Fewer Judgements and Holy Strikes miss</p>
+<p markdown><span class="ability-label">PvP</span> Fewer misses with Hammer of Justice and Repentance</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Big Game Hunter** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> +5% damage to Beasts. Strong while leveling; useful against beast bosses</p>
-<p markdown><span class="ability-label">PvP</span> Druids in animal forms are *not* confirmed to count as Beasts</p>
+<p markdown><span class="ability-label">PvE</span> +5% damage to Beasts. Strong while you level; useful against beast bosses</p>
+<p markdown><span class="ability-label">PvP</span> It is *not* confirmed that Druids in animal forms count as Beasts</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Find Treasure** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown><span class="ability-label">PvE</span> Tracks treasure chests, which have a chance for better loot</p>
+<p markdown><span class="ability-label">PvE</span> Shows treasure chests on the minimap. Chests can have better loot</p>
 <p markdown><span class="ability-label">PvP</span> —</p>
 </div>
 
 </div>
 
 !!! note "Cooldowns"
-    Stoneform's Forever cooldown isn't published. In Classic it was 3 minutes.
+    Blizzard has not published the Stoneform cooldown in Forever. In Classic it was 3 minutes.
 
 ??? example "Macros"
 
@@ -71,24 +71,24 @@ Ironforge is also home to the new [Hall of Thanes](../../content/dungeons/hall-o
     /cast Divine Protection
     ```
 
-    Don't chain Stoneform into Templar's Bulwark if you might need Divine Shield; Bulwark and Divine Shield share Forbearance.
+    If you possibly need Divine Shield, do not use Templar's Bulwark immediately after Stoneform. Bulwark and Divine Shield share Forbearance.
 
     ```
     #showtooltip Find Treasure
     /cast Find Treasure
     ```
 
-    Swap between Find Treasure and Find Minerals (Mining) as needed; you can only track one at a time.
+    Change between Find Treasure and Find Minerals (Mining) when necessary. You can track only one at a time.
 
 ## Starting zone walkthrough (1–12)
 
-You start in **Coldridge Valley**, Dun Morogh, alongside Gnome characters.
+You start in **Coldridge Valley**, Dun Morogh, together with Gnome characters.
 
 <div class="steps" markdown>
 
 1.  **1–5**{ .lvl } Coldridge Valley
 
-    **Bromos Grummner** (28.8, 68.2) trains you to level 6. Do the troll, wolf and boar quests (Big Game Hunter helps with the beasts)
+    **Bromos Grummner** (28.8, 68.2) trains you until level 6. Do the troll, wolf and boar quests (Big Game Hunter helps against the beasts)
 
 2.  **4**{ .lvl } Coldridge
 
@@ -96,11 +96,11 @@ You start in **Coldridge Valley**, Dun Morogh, alongside Gnome characters.
 
 3.  **5–6**{ .lvl } Kharanos
 
-    Take the tunnel to Kharanos. Pick up *The Great Outdoors* for camping and learn Cooking
+    Go through the tunnel to Kharanos. Get *The Great Outdoors* for camping and learn Cooking
 
 4.  **6–10**{ .lvl } Kharanos, Brewnall Village, Gnomeregan outskirts
 
-    **Azar Stronghammer** at the Thunderbrew Distillery (47.6, 52.0) is your trainer. Train **Holy Strike** at 6 and Hammer of Justice at 8
+    Your trainer is **Azar Stronghammer** at the Thunderbrew Distillery (47.6, 52.0). Train **Holy Strike** at 6 and Hammer of Justice at 8
 
 5.  **10**{ .lvl } Kharanos / Ironforge
 
@@ -108,7 +108,7 @@ You start in **Coldridge Valley**, Dun Morogh, alongside Gnome characters.
 
 6.  **10–12**{ .lvl } Ironforge, Loch Modan
 
-    Ironforge's **Mystic Ward** has three paladin trainers (Valgar Highforge, Brandur Ironhammer, Beldruk Doombrow, around 24, 6)
+    The **Mystic Ward** in Ironforge has 3 paladin trainers (Valgar Highforge, Brandur Ironhammer, Beldruk Doombrow, near 24, 6)
 
 7.  **12**{ .lvl } Ironforge
 
@@ -116,30 +116,30 @@ You start in **Coldridge Valley**, Dun Morogh, alongside Gnome characters.
 
 8.  **13–18**{ .lvl } Ironforge
 
-    [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) is your first dungeon, a good place to try Protection
+    [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) is your first dungeon. It is a good place to try Protection
 
 </div>
 
 !!! note "Classic-era detail"
-    The exact Alliance Redemption chain in Forever hasn't been documented by the sources we checked. In Classic, Dwarf and Human paladins had separate starts that end in the same spell.
+    The sources that we examined do not document the exact Alliance Redemption chain in Forever. In Classic, Dwarf and Human paladins had different first quests, but both chains gave the same spell.
 
 ## Route to 60
 
-Your trainers are in **Ironforge** (Mystic Ward) and Kharanos, plus Stormwind and Theramore.
+Your trainers are in **Ironforge** (Mystic Ward) and Kharanos, and also in Stormwind and Theramore.
 
 <div class="steps" markdown>
 
 1.  **10–20**{ .lvl } Loch Modan, Westfall, Darkshore
 
-    Thelsamar (Loch Modan) is the hub. The Deadmines' **Rhahk'Zor's Hammer** is a good early two-hander
+    Thelsamar (Loch Modan) is the hub. **Rhahk'Zor's Hammer** from the Deadmines is a good early two-hand weapon
 
 2.  **20**{ .lvl } Ironforge / Stormwind
 
-    **Verigan's Fist** class quest (Classic: *The Tome of Valor*). In Classic, the Ironforge chain went through Jordan Stilwell outside the gates and needed Deadmines, Shadowfang Keep and Blackfathom Deeps materials
+    **Verigan's Fist** class quest (Classic: *The Tome of Valor*). In Classic, the Ironforge chain went through Jordan Stilwell outside the gates. It needed materials from Deadmines, Shadowfang Keep and Blackfathom Deeps
 
 3.  **20–30**{ .lvl } Wetlands, Redridge, Duskwood, Ashenvale
 
-    **Menethil Harbor** (Wetlands) is a short walk; [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) is there, along with new Wetlands quests
+    **Menethil Harbor** (Wetlands) is a short walk. [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) is there, together with new Wetlands quests
 
 4.  **28–35**{ .lvl } Hillsbrad, Alterac Mountains
 
@@ -147,34 +147,34 @@ Your trainers are in **Ironforge** (Mystic Ward) and Kharanos, plus Stormwind an
 
 5.  **30–40**{ .lvl } Arathi, Stranglethorn, Desolace, Dustwallow
 
-    Gnomeregan (31–37) is nearby in Dun Morogh
+    Gnomeregan (31–37) is near, in Dun Morogh
 
 6.  **35–45**{ .lvl } [Riverglades](../../world/zones.md#riverglades), Badlands
 
-    From Loch Modan, head south through the Badlands toward the new passes into Riverglades. Uldaman (Badlands) suits Dwarf flavor
+    From Loch Modan, go south through the Badlands to the new passes into Riverglades. Uldaman (Badlands) has a Dwarf theme
 
 7.  **45–60**{ .lvl } Hinterlands, Searing Gorge, Burning Steppes, Plaguelands, Azshara, Un'Goro, Winterspring
 
-    Blackrock Mountain is close to Ironforge by flight
+    Blackrock Mountain is a short flight from Ironforge
 
 </div>
 
 **Travel tips**
 
-- Menethil Harbor's boats reach Auberdine and Theramore; a new Southshore pier joins the loop.
-- The Deeprun Tram links Ironforge and Stormwind.
+- The boats from Menethil Harbor go to Auberdine and Theramore. A new pier at Southshore is part of the same boat route.
+- The Deeprun Tram connects Ironforge and Stormwind.
 
 ## Faction-specific notes
 
-- **Mounts.** Your racial mount is a **ram** (100g with Apprentice Riding at 40). Alliance paladins also get the class **Warhorse** at 40 (*The Tome of Nobility* in Classic) and the epic **Charger** chain at 60, which runs through Stormwind's Cathedral of Light in Classic. Forever details are not yet confirmed.
-- **Reputation.** Ironforge is your home faction; Honored gives −10% on Riding and racial mounts.
-- **Library books** go to Garion Wendell in Stormwind's Wizard's Sanctum.
-- **Lore.** Dwarven paladins were trained by the Silver Hand after the Second War; Ironforge's Mystic Ward keeps that tradition.
+- **Mounts.** Your racial mount is a **ram** (100g with Apprentice Riding at 40). Alliance paladins also get the class **Warhorse** at 40 (*The Tome of Nobility* in Classic). At 60 they get the epic **Charger** chain, which in Classic goes through the Cathedral of Light in Stormwind. Details for Forever are not confirmed.
+- **Reputation.** Ironforge is your home faction. Honored gives −10% on Riding and racial mounts.
+- **Library books:** turn them in to Garion Wendell in the Wizard's Sanctum in Stormwind.
+- **Lore.** After the Second War, the Silver Hand trained Dwarven paladins. The Mystic Ward of Ironforge continues that tradition.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**The best PvE paladin.** Artisan's Precision is free hit for every spec, Stoneform is both a cleanse and a short defensive cooldown, and Big Game Hunter speeds up leveling. Humans win in PvP thanks to Will to Survive; for raiding and dungeon tanking, the Dwarf is the safer choice.
+**The best PvE paladin.** Artisan's Precision gives free hit to all specs. Stoneform is both a cleanse and a short defensive cooldown. Big Game Hunter makes leveling faster. Humans are better in PvP because of Will to Survive. For raids and dungeon tanking, the Dwarf is the safer choice.
 
 </div>

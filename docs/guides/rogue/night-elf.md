@@ -17,7 +17,7 @@ tags:
 
 ## Why this combo
 
-Night Elf Rogue is a Classic combination. In Forever it gains **Elune's Light**, +10% crit for 15 s, one of the strongest burst racials for a Rogue. Warcraft Tavern picks Night Elf as the best Alliance race for **short PvE fights**. **Shadowmeld** and **Quickness** still give extra stealth options and dodge. Night Elves start in **Shadowglen**, one of the Classic starting zones Blizzard reworked.
+Night Elf Rogue is a Classic combination. In Forever it gets **Elune's Light** (+10% crit for 15 s). This is one of the strongest burst racials for a Rogue. Warcraft Tavern picks Night Elf as the best Alliance race for **short PvE fights**. **Shadowmeld** and **Quickness** still give extra stealth options and dodge. Night Elves start in **Shadowglen**, one of the Classic starting zones that Blizzard reworked.
 
 **Best for:** dungeon and raid burst, open-world players who like a second stealth.
 
@@ -28,31 +28,31 @@ Night Elf Rogue is a Classic combination. In Forever it gains **Elune's Light**,
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Elune's Light** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 } PvE · **4/5**{ .stars .s4 } PvP</p>
-<p markdown>+10% crit for 15 s. With Seal Fate this means extra combo points; with Lethality it means huge Eviscerates. Use it with Adrenaline Rush or Cold Blood</p>
+<p markdown>+10% crit for 15 s. With Seal Fate, this gives extra combo points. With Lethality, it gives very large Eviscerates. Use it with Adrenaline Rush or Cold Blood</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Shadowmeld** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown>Stealth while standing still. A Rogue already has Stealth, but Shadowmeld works while Stealth is on cooldown and as a quick drink/eat-hide spot</p>
+<p markdown>Stealth when you do not move. A Rogue already has Stealth, but Shadowmeld works when Stealth is on cooldown. It also lets you hide quickly when you eat or drink</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Quickness** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown>+1% dodge and +2% run speed. The run speed is always welcome; the dodge stacks with Evasion</p>
+<p markdown>+1% dodge and +2% run speed. The run speed is always useful. The dodge stacks with Evasion</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Wisp Spirit** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **1/5**{ .stars .s1 }</p>
-<p markdown>Faster ghost. Only matters for corpse runs</p>
+<p markdown>Faster ghost. Only important for corpse runs</p>
 </div>
 
 </div>
 
 !!! note "Unconfirmed"
-    One source says Elune's Light has a **3-minute** cooldown. Others don't say. Plan around it as a long burst cooldown until the tooltip confirms.
+    One source says Elune's Light has a **3-minute** cooldown. Other sources do not give a cooldown. Until the tooltip confirms it, treat it as a long burst cooldown.
 
 ??? example "Macros"
 
@@ -62,7 +62,7 @@ Night Elf Rogue is a Classic combination. In Forever it gains **Elune's Light**,
     /cast Adrenaline Rush
     ```
 
-    Combat burst button. Swap Adrenaline Rush for Cold Blood as Assassination.
+    Combat burst button. As Assassination, replace Adrenaline Rush with Cold Blood.
 
     ```text
     #showtooltip Shadowmeld
@@ -72,13 +72,13 @@ Night Elf Rogue is a Classic combination. In Forever it gains **Elune's Light**,
 
 ## Starting zone: Shadowglen and Teldrassil (1–12)
 
-Blizzard reworked **Shadowglen** for Forever with new NPCs, quests, profession hooks and "small moments". Exact new quest names haven't been documented, so the Classic flow is given here.
+Blizzard reworked **Shadowglen** for Forever with new NPCs, quests, profession hooks and "small moments". Nobody has documented the exact new quest names, so this page gives the Classic sequence.
 
 <div class="steps" markdown>
 
 1.  **1**{ .lvl } **Aldrassil**, Shadowglen
 
-    Take the Rogue letter to **Frahun Shadewhisper** inside the great tree, and the first Shadowglen quests from Conservator Ilthalaine
+    Take the Rogue letter to **Frahun Shadewhisper** inside the great tree. Get the first Shadowglen quests from Conservator Ilthalaine
 
 2.  **1–5**{ .lvl } Shadowglen
 
@@ -106,7 +106,7 @@ Blizzard reworked **Shadowglen** for Forever with new NPCs, quests, profession h
 
 </div>
 
-- Teldrassil has few humanoids early, so **Pick Pocket** profits come later (the Gnarlpine and the Ban'ethil furbolgs are your best targets).
+- Teldrassil has few humanoids early, so you get **Pick Pocket** profits later (the Gnarlpine and the Ban'ethil furbolgs are your best targets).
 - Shadowmeld lets you sit and eat safely near patrols.
 
 ## Route to 60 from Darnassus
@@ -159,21 +159,21 @@ Blizzard reworked **Shadowglen** for Forever with new NPCs, quests, profession h
 
 </div>
 
-**Class trainers:** Frahun Shadewhisper (Aldrassil), Jannok Breezesong (Dolanaar), and the rogue trainers in **Darnassus**. Stormwind's Old Town trainers are an option once you're on the Eastern Kingdoms side.
+**Class trainers:** Frahun Shadewhisper (Aldrassil), Jannok Breezesong (Dolanaar), and the rogue trainers in **Darnassus**. When you are in the Eastern Kingdoms, you can also use the Old Town trainers in Stormwind.
 
 ## Faction notes
 
 - **Poison quest (20):** in Stormwind, not Darnassus. The new **Stormwind harbor boat** from Auberdine makes the trip much shorter than in Classic. See the [main guide](index.md#the-poison-quest-level-20).
 - **Library books:** Garion Wendell, Mage Quarter, Stormwind.
-- **Mount:** frostsabers from Rut'theran Village. Honored with Darnassus gives 10% off.
-- **Reputation:** Darnassus. Darnassus also gained a barbershop in Forever.
-- **Kalimdor endgame:** Azshara's [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) and the Mount Hyjal raids both sit close to Night Elf territory. The [Barrow Deeps](../../content/raids/barrow-deeps.md) is the Night Elf prison where Illidan was held.
+- **Mount:** frostsabers from Rut'theran Village. At Honored with Darnassus, you get a 10% discount.
+- **Reputation:** Darnassus. Darnassus also got a barbershop in Forever.
+- **Kalimdor endgame:** Azshara's [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) and the Mount Hyjal raids are both near Night Elf territory. The [Barrow Deeps](../../content/raids/barrow-deeps.md) is the Night Elf prison where Illidan was held.
 - **Skyborne kinship:** Skyborne speak Darnassian, and both factions' Skyborne descend from night-elf exiles.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**The Alliance burst pick.** Elune's Light is the best short-fight damage racial a Rogue has, and Quickness and Shadowmeld make leveling smoother. Pick Human or Gnome for PvP utility; pick Night Elf for parses and stealthy questing.
+**The Alliance burst pick.** Elune's Light is the best damage racial for short fights that a Rogue has. Quickness and Shadowmeld make leveling smoother. For PvP utility, pick Human or Gnome. For parses and stealthy questing, pick Night Elf.
 
 </div>

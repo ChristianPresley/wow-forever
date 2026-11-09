@@ -18,7 +18,7 @@ New characters introduced in Forever.
 | **High Priestess Lorthuna** | Al'Aketh temples | **Main villain** of Zephras |
 | Skypriest Aanders; Commanders Cyclas, Aanders, Haalien, Belguilos; Malduko Cloudcrash | Zephras | Cult lieutenants |
 | "Badwind" Bennic | Bandit Hideout | Bandit boss |
-| **Rohash, Lord of the East Wind** | Skywall | Elemental lord serving Al'Akir |
+| **Rohash, Lord of the East Wind** | Skywall | Elemental lord who serves Al'Akir |
 | Archmage Ansirem Runeweaver, Muln Earthfury | Zephras finale | Leaders of the faction reinforcements |
 
 ## Riverglades

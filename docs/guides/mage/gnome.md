@@ -11,13 +11,13 @@ tags:
 
 :codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Mage guide](index.md). This page covers only what changes when your Mage is a Gnome.</p>
+<p class="gh-note" markdown>Read with the [Mage guide](index.md). This page gives only the changes when your Mage is a Gnome.</p>
 
 </div>
 
 ## Why this combo
 
-Gnome Mage is the original "glass-cannon with an escape hatch". Forever adds **Eureka!**, an 8-second burst window for non-periodic spells, on top of Escape Artist and extra mana. Gnomes are also the smallest target in PvP and the best Engineers. If you want the highest burst on the Alliance side, this is it.
+Gnome Mage is the original "glass-cannon with an escape hatch": high damage, low health, and a good escape. Forever adds **Eureka!**, an 8-second burst window for non-periodic spells. You also keep Escape Artist and extra mana. Gnomes are also the smallest target in PvP and the best Engineers. For the highest burst on the Alliance side, select this combination.
 
 | | |
 |---|---|
@@ -34,32 +34,32 @@ Gnome Mage is the original "glass-cannon with an escape hatch". Forever adds **E
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Escape Artist** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE</p>
-<p markdown>Removes roots and snares and gives 3 s immunity. Breaks Frost Nova, Hamstring, Entangling Roots and Frostbite, then you Blink away</p>
+<p markdown>Removes roots and snares and gives 3 s immunity. Breaks Frost Nova, Hamstring, Entangling Roots and Frostbite. Then you Blink away</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Eureka!** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
-<p markdown>For 8 s, non-periodic abilities cost 10% less and deal 10% more. Fits Arcane Blast chains, Fireball/Pyroblast, Ice Lance shatters. It does not boost DoTs such as Ignite or Frostfire Bolt's tick</p>
+<p markdown>For 8 s, non-periodic abilities cost 10% less and do 10% more damage. Good for Arcane Blast chains, Fireball/Pyroblast, Ice Lance shatters. It does not increase DoTs such as Ignite or the tick of Frostfire Bolt</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Expansive Mind** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown>+5% maximum mana. More casts per drink and a bigger Arcane burn phase</p>
+<p markdown>+5% maximum mana. More casts for each drink and a bigger Arcane burn phase</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Engineering Specialization** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
-<p markdown>20% fewer device failures. Only matters if you take Engineering, but Engineering is a strong PvP pick</p>
+<p markdown>20% fewer device failures. Important only if you take Engineering, but Engineering is a strong PvP choice</p>
 </div>
 
 </div>
 
 ??? example "Macros"
 
-    Stack Eureka! with your burst cooldowns (exact GCD behavior of Eureka! is *not verified*):
+    Stack Eureka! with your burst cooldowns (the exact GCD behavior of Eureka! is *not verified*):
 
     === "Arcane"
 
@@ -92,17 +92,17 @@ Coldridge Valley and Dun Morogh follow the Classic layout. Quest names are Class
 
 <div class="steps" markdown>
 
-1.  **1–6**{ .lvl } **Coldridge Valley.** Start at Anvilmar. Your Mage trainer is **Marryk Nurribit** inside Anvilmar (Classic); check your bags for his class letter. Kill wolves, troggs and Frostmane trolls in the valley.
+1.  **1–6**{ .lvl } **Coldridge Valley.** Start at Anvilmar. Your Mage trainer is **Marryk Nurribit** in Anvilmar (Classic). Look in your bags for his class letter. Kill wolves, troggs and Frostmane trolls in the valley.
 2.  **4**{ .lvl } Train Frostbolt and Conjure Water.
-3.  **5–6**{ .lvl } Head through the tunnel to **Kharanos**. The Thunderbrew Distillery inn is your hub. Magis Sparkmantle trains Mages there (Classic).
-4.  **6–10**{ .lvl } **Kharanos.** Do the Brewnall Village, Shimmer Ridge and Gnomeregan-outskirts quests, plus the Frostmane troll cave. Polymorph at 8.
+3.  **5–6**{ .lvl } Go through the tunnel to **Kharanos**. The Thunderbrew Distillery inn is your hub. Magis Sparkmantle trains Mages there (Classic).
+4.  **6–10**{ .lvl } **Kharanos.** Do the Brewnall Village, Shimmer Ridge and Gnomeregan-outskirts quests, and the Frostmane troll cave. At 8, train Polymorph.
 5.  **10**{ .lvl } Frost Nova and your first talent point. Ironforge trainers are in the **Mystic Ward**. Tailoring is in the Great Forge area.
-6.  **10–12.** Finish Dun Morogh and move to Loch Modan via the North Gate pass.
+6.  **10–12.** Complete Dun Morogh. Then go to Loch Modan through the North Gate pass.
 
 </div>
 
 !!! tip "Hall of Thanes"
-    Forever's new dungeon [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–20) is in Ironforge itself. It's the easiest first dungeon for a Gnome.
+    The new Forever dungeon [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–20) is in Ironforge. It is the easiest first dungeon for a Gnome.
 
 ## Route to 60 from Ironforge
 
@@ -126,7 +126,7 @@ Coldridge Valley and Dun Morogh follow the Classic layout. Quest names are Class
 
 5.  **30–40**{ .lvl } Arathi, Stranglethorn, Desolace, Dustwallow
 
-    <span class="step-label">Travel</span> Gnomeregan (31–37) is your race's old city
+    <span class="step-label">Travel</span> Gnomeregan (31–37) is the old city of your race
 
 6.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)**
 
@@ -146,16 +146,16 @@ Coldridge Valley and Dun Morogh follow the Classic layout. Quest names are Class
 
 ## Faction-specific notes
 
-- **Reputation:** Gnomeregan Exiles Honored for 10% off riding and the Mechanostrider. Other races can only ride Mechanostriders at Exalted.
-- **Gnomeregan** (31–37) is where many Alliance quests point you; a Mage's AoE is welcome against the leper gnome packs.
-- **Kirin Tor:** Alliance-only reputation in Dalaran.
-- **Engineering:** nets, bombs and grenades are classic PvP tools; Engineering Specialization makes them fail less.
-- **Lore:** Gnome magi have studied in Dalaran since its founding; your Engineering and arcane background suit the restored city.
+- **Reputation:** at Honored with Gnomeregan Exiles, you get a 10% discount on riding and the Mechanostrider. Other races can ride Mechanostriders only at Exalted.
+- **Gnomeregan** (31–37) is the target of many Alliance quests. The AoE of a Mage is useful against the packs of leper gnomes.
+- **Kirin Tor:** reputation in Dalaran, only for the Alliance.
+- **Engineering:** nets, bombs and grenades are classic PvP tools. Engineering Specialization makes them fail less often.
+- **Lore:** Gnome magi have studied in Dalaran since the city was founded. Your Engineering and arcane background are a good match for the restored city.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-The best Alliance PvP Mage after the Human, and arguably the best for burst PvE thanks to Eureka!. Escape Artist turns every root into a wasted global for your opponent. If you like Engineering, take Gnome.
+The best Alliance PvP Mage after the Human. Because of Eureka!, it is possibly the best for burst PvE. With Escape Artist, each root that your opponent casts is a wasted global cooldown. If you like Engineering, select Gnome.
 
 </div>

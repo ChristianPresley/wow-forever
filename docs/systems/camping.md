@@ -1,18 +1,18 @@
 # Camping
 
 !!! forever "New in Forever"
-    **Camping** is a new social rest system built around shared campfires. Blizzard pitches it explicitly as a way to meet other players.
+    **Camping** is a new social rest system with shared campfires. Blizzard says clearly that it is a way to meet other players.
 
 ## Unlocking it
 
-At around level 5, take **The Great Outdoors** from an adventurer outside your starting hub. Learn Cooking and craft a **Basic Campfire Kit**. After that, each profession offers a "Camping 101" quest for its Tier-1 camp feature.
+At about level 5, take **The Great Outdoors** from an adventurer outside your starting hub. Learn Cooking and craft a **Basic Campfire Kit**. After that, each profession gives a "Camping 101" quest for its Tier-1 camp feature.
 
 ## How it works
 
-- Anyone can build a **campfire**. Nearby players can add up to **3 profession-crafted Camp Features**, one per player.
-- Sitting or crafting at a camp for **60 seconds** makes you rested and grants **1-hour** camp buffs.
-- **Camp buffs don't stack with the equivalent class buff.** For example, the Fish Bowl doesn't stack with Blessing of Kings.
-- **Tiers:** utility starts at skill 20. **Tier 2** and **Tier 3** blueprints drop from dungeon and raid bosses and need skill **140** and **300**. Higher tiers include the lower tiers' features.
+- All players can build a **campfire**. Nearby players can add up to **3 profession-crafted Camp Features**, one per player.
+- If you sit or craft at a camp for **60 seconds**, you become rested and get **1-hour** camp buffs.
+- **Camp buffs do not stack with the equivalent class buff.** For example, the Fish Bowl does not stack with Blessing of Kings.
+- **Tiers:** utility starts at skill 20. **Tier 2** and **Tier 3** blueprints drop from dungeon and raid bosses. They need skill **140** and **300**. Higher tiers include the features of the lower tiers.
 - **Campfires (Cooking):** Basic (60 min, 3 features), Journeyman (skill 90, 5 features), Expert (10 features), Iron Oven.
 - Legacy talents: *Field Guide* (shorter camp cooldowns), *Permanence* (longer camp buffs), *Reagent Economy* (Tier-1 features need no reagents).
 
@@ -20,7 +20,7 @@ At around level 5, take **The Great Outdoors** from an adventurer outside your s
 
 <div class="compare" markdown>
 
-| Profession | Tier 1 (effect; doesn't stack with) | Tier 2 | Tier 3 |
+| Profession | Tier 1 (effect, does not stack with) | Tier 2 | Tier 3 |
 |---|---|---|---|
 | Cooking | Basic Campfire | Journeyman Campfire; Cookie's Feast | Expert Campfire; Iron Oven |
 | First Aid | First Aid Kit: Stamina (Power Word: Fortitude) | Toxin Study | Plague Doctor's Laboratory |
@@ -53,4 +53,4 @@ At around level 5, take **The Great Outdoors** from an adventurer outside your s
 | Spinning Wheel | — | [City of Dalaran](../content/dungeons/city-of-dalaran.md) |
 
 !!! note
-    A Nov 6 hotfix lowered the Tanning Rack requirement from 140 to **125**. The **Pouch of Violet Dust** toy (a Twitch drop) colors campfire flames during the Launch Celebration.
+    A Nov 6 hotfix decreased the Tanning Rack requirement from 140 to **125**. During the Launch Celebration, the **Pouch of Violet Dust** toy (a Twitch drop) changes the color of campfire flames.

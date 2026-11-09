@@ -17,10 +17,10 @@ tags:
 
 ## Why this combo
 
-Forever gives Night Elves a proper damage cooldown: **Elune's Light**, +10% crit for 15 s. Crits generate +75% rage in Forever, so it's a rage cooldown too. **Shadowmeld** doubles as a threat drop in groups, and **Quickness** adds dodge for tanks.
+Forever gives Night Elves a proper damage cooldown: **Elune's Light**, +10% crit for 15 s. Crits give +75% rage in Forever, so it is also a rage cooldown. In groups, **Shadowmeld** is also a threat drop. **Quickness** adds dodge for tanks.
 
 - **Best at:** burst damage, and tanking with a little extra avoidance.
-- **Status:** available in Classic; not a new combination.
+- **Status:** available in Classic, not a new combination.
 
 ## Racials in practice
 
@@ -29,15 +29,15 @@ Forever gives Night Elves a proper damage cooldown: **Elune's Light**, +10% crit
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Elune's Light** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown><span class="ability-label">PvE</span> +10% crit for 15 s. Use it with Death Wish or Recklessness; tanks can use it for a rage and threat spike on a pull</p>
+<p markdown><span class="ability-label">PvE</span> +10% crit for 15 s. Use it with Death Wish or Recklessness. Tanks can use it for a fast increase of rage and threat on a pull</p>
 <p markdown><span class="ability-label">PvP</span> A burst window for Mortal Strike</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Shadowmeld** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> Drop out of combat to drink or eat, or dump threat as DPS *(Classic behavior; check in game)*</p>
-<p markdown><span class="ability-label">PvP</span> Ambush flag carriers; break targeting</p>
+<p markdown><span class="ability-label">PvE</span> Leave combat to drink or eat, or remove threat as DPS *(Classic behavior. Check in game)*</p>
+<p markdown><span class="ability-label">PvP</span> Ambush flag carriers. Break targeting</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -66,14 +66,14 @@ Forever gives Night Elves a proper damage cooldown: **Elune's Light**, +10% crit
 
 ## Starting zone walkthrough (1–12)
 
-Night Elves start in **Shadowglen**, **Teldrassil**. Blizzard says Shadowglen got the same refresh as the Valley of Trials, with new NPCs, quests and profession hooks. *Quest and NPC names are Classic-era; check in game.*
+Night Elves start in **Shadowglen**, **Teldrassil**. Blizzard says that Shadowglen got the same refresh as the Valley of Trials. It has new NPCs, quests and profession hooks. *Quest and NPC names are Classic-era. Check in game.*
 
 <div class="steps" markdown>
 
-1.  **1–5**{ .lvl } **Shadowglen.** Speak to the Warrior trainer near Aldrassil (Classic: Alyissia). Clear grells, nightsabers and the Webwood spiders. **Charge** and **Rend** at 4.
+1.  **1–5**{ .lvl } **Shadowglen.** Speak to the Warrior trainer near Aldrassil (Classic: Alyissia). Kill the grells, the nightsabers and the Webwood spiders. **Charge** and **Rend** at 4.
 2.  **~5**{ .lvl } **The Great Outdoors.** Camping intro and Cooking.
-3.  **5–10**{ .lvl } **Dolanaar.** Do the Dolanaar quests around the furbolgs and Ban'ethil Barrow Den. There's a Warrior trainer in Dolanaar. **Hamstring** at 8.
-4.  **10**{ .lvl } **Defensive Stance** quest from your trainer (it may send you to Darnassus).
+3.  **5–10**{ .lvl } **Dolanaar.** Do the Dolanaar quests around the furbolgs and Ban'ethil Barrow Den. There is a Warrior trainer in Dolanaar. **Hamstring** at 8.
+4.  **10**{ .lvl } **Defensive Stance** quest from your trainer (it can send you to Darnassus).
 5.  **First talent at 10.** Protection: **Shield Specialization**. Arms: **Improved Rend**.
 6.  **10–12.** Take the portal from Darnassus to Rut'theran and the boat to **Auberdine** (Darkshore).
 
@@ -97,7 +97,7 @@ Night Elves start in **Shadowglen**, **Teldrassil**. Blizzard says Shadowglen go
 
 4.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** or Dustwallow Marsh → Feralas
 
-    <span class="step-label">Flight paths / notes</span> The boat loop Auberdine–Menethil–Southshore is handy for crossing over
+    <span class="step-label">Flight paths / notes</span> The boat loop Auberdine–Menethil–Southshore is useful when you go to the other continent
 
 5.  **45–55**{ .lvl } Feralas → Tanaris → Azshara → Un'Goro
 
@@ -114,18 +114,18 @@ Night Elves start in **Shadowglen**, **Teldrassil**. Blizzard says Shadowglen go
 ## Faction-specific notes
 
 - **Mount:** Frostsaber, from Rut'theran Village. **Honored with Darnassus** gives 10% off. Darnassus also has a new barbershop.
-- **Travel:** the new Stormwind harbor boat and the Menethil–Southshore–Auberdine loop make Night Elf travel far less painful than in Classic.
-- **Lore:** Mount Hyjal, the Barrow Deeps and Hyjal Summit are Night Elf history. Your character has a direct stake in the endgame story.
+- **Travel:** the new Stormwind harbor boat and the Menethil–Southshore–Auberdine loop make Night Elf travel much easier than in Classic.
+- **Lore:** Mount Hyjal, the Barrow Deeps and Hyjal Summit are Night Elf history. Your character has a direct part in the endgame story.
 
 ## Spec fit
 
 | Spec | Fit | Why |
 |---|---|---|
-| **Fury** | **5/5**{ .stars .s5 } | Elune's Light's +10% crit feeds Flurry, Enrage and rage for 15 s: the strongest Alliance burst cooldown |
-| **Arms** | **4/5**{ .stars .s4 } | Big Mortal Strike crits; Shadowmeld ambushes in battlegrounds |
-| **Protection** | **4/5**{ .stars .s4 } | Quickness adds dodge; Elune's Light on the pull gives a fast threat lead |
+| **Fury** | **5/5**{ .stars .s5 } | Elune's Light's +10% crit increases Flurry, Enrage and rage for 15 s: the strongest Alliance burst cooldown |
+| **Arms** | **4/5**{ .stars .s4 } | Big Mortal Strike crits. Shadowmeld ambushes in battlegrounds |
+| **Protection** | **4/5**{ .stars .s4 } | Quickness adds dodge. Elune's Light on the pull gives a fast threat lead |
 
-**Group tip:** if Shadowmeld drops threat in Forever (as in Classic), use it as a DPS when you pull aggro off the tank. Test it on a trash mob first.
+**Group tip:** Shadowmeld possibly drops threat in Forever (as in Classic). If it does, use it as a DPS when you pull aggro off the tank. Test it on a trash mob first.
 
 ### Leveling checklist
 
@@ -133,13 +133,13 @@ Night Elves start in **Shadowglen**, **Teldrassil**. Blizzard says Shadowglen go
 - [ ] Cooking and *The Great Outdoors* for camping by level 5–6
 - [ ] First Aid trained early: it now makes health potions as well as bandages
 - [ ] Collect class library books for the quests at 20, 35 and 45
-- [ ] **Frostsaber** and Apprentice Riding at 40 (100g); plate and dual spec (50g) at the same time
+- [ ] **Frostsaber** and Apprentice Riding at 40 (100g), and plate and dual spec (50g) at the same time
 - [ ] Warrior Legacy Points at 25, 45 and 60 (account-wide, first Warrior only)
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-Strong in PvE thanks to Elune's Light, decent as a tank thanks to Quickness, and fun in PvP with Shadowmeld. It's a very good choice if you want a cooldown-heavy damage race on the Alliance side.
+Strong in PvE because of Elune's Light, good as a tank because of Quickness, and fun in PvP with Shadowmeld. If you want an Alliance damage race with strong cooldowns, it is a very good choice.
 
 </div>

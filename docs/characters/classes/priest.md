@@ -33,7 +33,7 @@
 
 <div class="fc-cta" data-class="priest" markdown>
 
-**Playing a Priest?** The [Priest guide](../../guides/priest/index.md) walks you through talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
+**Do you play a Priest?** The [Priest guide](../../guides/priest/index.md) explains talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep, PvP and gear.
 
 <span class="fc-cta__label">Race add-ons</span> [Human](../../guides/priest/human.md){ .fc-chip } [Dwarf](../../guides/priest/dwarf.md){ .fc-chip } [Gnome](../../guides/priest/gnome.md){ .fc-chip } [Night Elf](../../guides/priest/night-elf.md){ .fc-chip } [Troll](../../guides/priest/troll.md){ .fc-chip } [Undead](../../guides/priest/undead.md){ .fc-chip }
 
@@ -65,7 +65,7 @@
 
 === "Holy"
 
-    Twilight Focus (pushback protection) · Inspiration · Searing Light (redesigned) · Litany of Light · Spirit of Redemption (15 s) · **Holy Binding** (16: 50% of Flash Heal healing on others also heals you; replaced Binding Heal pre-launch) · **Prayer of Mending** (31: 5 bounces, 10 s cooldown)
+    Twilight Focus (pushback protection) · Inspiration · Searing Light (redesigned) · Litany of Light · Spirit of Redemption (15 s) · **Holy Binding** (16: 50% of Flash Heal healing on others also heals you, replaced Binding Heal pre-launch) · **Prayer of Mending** (31: 5 bounces, 10 s cooldown)
 
 === "Shadow"
 

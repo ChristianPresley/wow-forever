@@ -17,12 +17,12 @@ tags:
 
 ## Why this combo
 
-The Horde's signature Hunter. Warcraft Tavern calls Orc a top Horde Hunter race, and Method covers it as the main Horde pick. Two racials are built for the class:
+The signature Hunter of the Horde. Warcraft Tavern calls Orc a top Horde Hunter race, and Method shows it as the main Horde choice. 2 racials are made for the class:
 
-- **Command** gives **+5% pet damage**. It was re-added just before launch for Hunters and Warlocks.
-- **Blood Fury** is +10% Attack Power for 15 s, now on a **2-minute** cooldown (was 3).
+- **Command** gives **+5% pet damage**. Blizzard added it again for Hunters and Warlocks just before launch.
+- **Blood Fury** is +10% Attack Power for 15 s. It now has a **2-minute** cooldown (it was 3).
 
-Add **Hardiness** (−20% stun duration) and the new **Shatter Curse**, and Orc is strong in PvE and PvP alike.
+Add **Hardiness** (−20% stun duration) and the new **Shatter Curse**, and Orc is strong in both PvE and PvP.
 
 ## Racials in practice
 
@@ -31,21 +31,21 @@ Add **Hardiness** (−20% stun duration) and the new **Shatter Curse**, and Orc 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Blood Fury** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown><span class="ability-label">PvE</span> +10% AP (and spell power) for 15 s every 2 min. Pair with Rapid Fire and Summon Hawk</p>
+<p markdown><span class="ability-label">PvE</span> +10% AP (and spell power) for 15 s every 2 min. Use it together with Rapid Fire and Summon Hawk</p>
 <p markdown><span class="ability-label">PvP</span> Burst window for Aimed Shot + Arcane Shot</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Shatter Curse** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> Removes curses and Warlock **Banes**, and −5% magic damage taken for 8 s. Handy on cursed dungeon bosses</p>
-<p markdown><span class="ability-label">PvP</span> Cleanses Curse of Exhaustion and Banes; strong vs Warlocks</p>
+<p markdown><span class="ability-label">PvE</span> Removes curses and Warlock **Banes**, and gives −5% magic damage taken for 8 s. Useful against dungeon bosses that curse you</p>
+<p markdown><span class="ability-label">PvP</span> Removes Curse of Exhaustion and Banes. Strong against Warlocks</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Command** <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } BM</p>
-<p markdown><span class="ability-label">PvE</span> +5% pet damage. Best for Beast Mastery; worthless as a petless Lone Wolf</p>
+<p markdown><span class="ability-label">PvE</span> +5% pet damage. Best for Beast Mastery. No value for a Lone Wolf with no pet</p>
 <p markdown><span class="ability-label">PvP</span> More pet pressure</p>
 </div>
 
@@ -58,10 +58,10 @@ Add **Hardiness** (−20% stun duration) and the new **Shatter Curse**, and Orc 
 
 </div>
 
-Axe Specialization is gone.
+Axe Specialization is not in the game now.
 
 !!! conflict "Conflict"
-    Warcraft Tavern's Hunter overview lists Orc racials as "Blood Fury, Savage". *Savage* was a mid-beta racial replaced before launch. The live set (Blood Fury, Shatter Curse, Command, Hardiness) is listed by Method and the [Races](../../characters/races.md#racial-abilities) page.
+    The Warcraft Tavern Hunter overview gives the Orc racials as "Blood Fury, Savage". *Savage* was a mid-beta racial. Blizzard replaced it before launch. Method and the [Races](../../characters/races.md#racial-abilities) page give the live set (Blood Fury, Shatter Curse, Command, Hardiness).
 
 ??? example "Macros"
 
@@ -77,35 +77,35 @@ Axe Specialization is gone.
     /cast Bestial Wrath
     ```
 
-    Use the second only if you take Bestial Wrath in a deep-BM build (*Classic-era talent; not confirmed in Forever's BM tree*).
+    Use the second macro only if you take Bestial Wrath in a deep-BM build (*Classic-era talent; not confirmed in Forever's BM tree*).
 
 ## Starting zone walkthrough 1–12
 
-Orcs start in the **Valley of Trials**, Durotar. Blizzard reworked it with **new NPCs, quests, profession hooks and "small moments"**. New quest names aren't documented, so the route below follows Classic where it still applies (*Classic-era*).
+Orcs start in the **Valley of Trials**, Durotar. Blizzard changed it with **new NPCs, quests, profession hooks and "small moments"**. No source gives the names of the new quests. Thus the route below follows Classic where Classic still applies (*Classic-era*).
 
 <div class="steps" markdown>
 
 1.  **1–5**{ .lvl } Valley of Trials
 
     - Start with Kaltunk and Gornek at the Den. Mottled boars, scorpids, Sarkoth, Vile Familiars at Burning Blade Coven, cactus apples, and the lazy peons.
-    - The **Hunter trainer stands near the Den** (Jen'shan in Classic; *Classic-era*). Train **Serpent Sting** at 4.
-    - Watch for Blizzard's new Forever quests in the Valley and grab them.
+    - The **Hunter trainer stands near the Den** (Jen'shan in Classic; *Classic-era*). At 4, train **Serpent Sting**.
+    - Look for the new Forever quests from Blizzard in the Valley and get them.
 
 2.  **5–10**{ .lvl } Razor Hill and Sen'jin
 
-    - Go to **Razor Hill** (inn, flight path later). Take *The Great Outdoors* for [camping](../../systems/camping.md), and the starter gathering quest (Skinning).
-    - Quests at Sen'jin Village, Tiragarde Keep, Drygulch Ravine, Thunder Ridge and Skull Rock.
+    - Go to **Razor Hill** (inn, flight path later). Take *The Great Outdoors* for [camping](../../systems/camping.md). Also take the starter gathering quest (Skinning).
+    - Do the quests at Sen'jin Village, Tiragarde Keep, Drygulch Ravine, Thunder Ridge and Skull Rock.
     - Train Arcane Shot and Hunter's Mark (6), Concussive Shot (8).
 
 3.  **10**{ .lvl } The first pet
 
-    - In Classic, **Thotar** at Razor Hill gave the taming chain: **Dire Mottled Boar**, **Surf Crawler** (crab) and **Armored Scorpid** (*Classic-era*). The Forever quest is *Taming the Beast* (Orc/Troll; Warcraft Tavern gives 6062), ending with *Training the Beast* (6081).
-    - Keep a **Dire Mottled Boar** (Charge) or tame a **Durotar Tiger** (cat) for damage.
+    - In Classic, **Thotar** at Razor Hill gave the taming chain: **Dire Mottled Boar**, **Surf Crawler** (crab) and **Armored Scorpid** (*Classic-era*). The Forever quest is *Taming the Beast* (Orc/Troll; Warcraft Tavern gives 6062). The chain ends with *Training the Beast* (6081).
+    - Keep a **Dire Mottled Boar** (Charge), or tame a **Durotar Tiger** (cat) for damage.
     - First talent: **Deadly Aspects**.
 
-4.  **10–12**{ .lvl } Off to the Barrens
+4.  **10–12**{ .lvl } Go to the Barrens
 
-    - Finish Durotar, visit Orgrimmar to train, then go west through the gate to the **Crossroads**.
+    - Complete Durotar. Go to Orgrimmar to train. Then go west through the gate to the **Crossroads**.
 
 </div>
 
@@ -127,7 +127,7 @@ Orcs start in the **Valley of Trials**, Durotar. Blizzard reworked it with **new
 
     <span class="step-label">Travel</span> Sun Rock, Tarren Mill
 
-4.  **28–35**{ .lvl } Hillsbrad; Arathi (Hammerfall). Avoid Dalaran: Horde are attacked on sight
+4.  **28–35**{ .lvl } Hillsbrad; Arathi (Hammerfall). Do not go to Dalaran: the guards attack Horde players when they see them
 
     <span class="step-label">Travel</span> Hammerfall
 
@@ -155,17 +155,17 @@ Orcs start in the **Valley of Trials**, Durotar. Blizzard reworked it with **new
 
 ## Faction-specific notes
 
-- **Mount:** Wolf from the kennel outside Orgrimmar (*Classic-era location*) at 40. **Honored with Orgrimmar** saves 10%.
+- **Mount:** Wolf from the kennel outside Orgrimmar (*Classic-era location*) at 40. **Honored with Orgrimmar** gives a 10% discount.
 - **Library books:** Owen Thadd, Magic Quarter, Undercity.
 - **Crates:** Durotar Supply and Logistics, west of the Crossroads.
-- **PvP:** Hall of Legends in Orgrimmar (PvP vendors were unavailable on launch night; check they're back). Darkspear Islands reputation is the **Darkspear Raiders**; their portal base is **Merchant Coast**.
+- **PvP:** Hall of Legends in Orgrimmar. On launch night, the PvP vendors were not available. Make sure that they are back. The Darkspear Islands reputation is the **Darkspear Raiders**. Their portal base is **Merchant Coast**.
 - **Onyxia:** the Horde attunement starts with Warlord Goretooth in the Badlands and goes through Thrall in Orgrimmar.
-- **Lore:** Orc hunters follow the Rexxar tradition of beast companions. Rexxar himself is part of the Horde Onyxia chain in Desolace.
+- **Lore:** Orc hunters follow the Rexxar tradition of beast companions. Rexxar is part of the Horde Onyxia chain in Desolace.
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-The best Horde Hunter for **Beast Mastery** and an excellent PvP pick. Command and Blood Fury both line up with how the class plays, and Hardiness counters melee stuns. As a petless Lone Wolf Marksman you lose Command's value, so a Troll may edge it there.
+The best Horde Hunter for **Beast Mastery**, and a very good PvP choice. Command and Blood Fury both agree with how the class plays. Hardiness decreases melee stuns. As a Lone Wolf Marksman with no pet, Command has no value, so a Troll can be a little better there.
 
 </div>

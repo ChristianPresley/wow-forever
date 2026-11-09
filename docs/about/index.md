@@ -3,9 +3,9 @@
 **Also called:** WoW: Forever · Classic+ (before the reveal) · Camelot (internal codename)
 {: .fc-aka }
 
-**World of Warcraft: Forever** (also *WoW: Forever*) is a permanent, standalone branch of World of Warcraft that runs **alongside** modern ("retail") WoW and WoW Classic. Before the reveal, players called the idea "Classic+". Internally the project was codenamed **"Camelot"**.
+**World of Warcraft: Forever** (also *WoW: Forever*) is a permanent, standalone branch of World of Warcraft. It runs **alongside** modern ("retail") WoW and WoW Classic. Before the reveal, players called the idea "Classic+". The internal codename of the project was **"Camelot"**.
 
-It keeps the 2004 game's mechanics, art style and 1–60 leveling. On top of that it adds new zones, quests, dungeons, raids, a new race, new race/class combinations, reworked talents and new account-wide systems. **The level cap is 60 and will never rise.**
+It keeps the mechanics, art style and 1–60 leveling of the 2004 game. It also adds new zones, quests, dungeons, raids, a new race, new race/class combinations, reworked talents and new account-wide systems. **The level cap is 60 and will never increase.**
 
 > Blizzard describes Forever as *not a mode, a season, or a new version of Classic*. Lead Software Engineer Nora Mills called it a "completely separate third pillar" of World of Warcraft.
 
@@ -19,7 +19,7 @@ It keeps the 2004 game's mechanics, art style and 1–60 leveling. On top of tha
 
 -   :material-cash-multiple: **[Editions & Pricing](editions.md)**
 
-    What the subscription covers and what the Skyborne packs add.
+    What the subscription includes and what the Skyborne packs add.
 
 -   :material-server-network: **[Rulesets & Megaserver](rulesets.md)**
 
@@ -27,7 +27,7 @@ It keeps the 2004 game's mechanics, art style and 1–60 leveling. On top of tha
 
 -   :material-skull-crossbones: **[Hardcore](hardcore.md)**
 
-    The permadeath ruleset due winter 2026/27, and what is known so far.
+    The permadeath ruleset that is planned for winter 2026/27, and what we know at this time.
 
 -   :material-update: **[Patches & Builds](patches.md)**
 
@@ -35,11 +35,11 @@ It keeps the 2004 game's mechanics, art style and 1–60 leveling. On top of tha
 
 -   :material-chart-line: **[Launch & Reception](reception.md)**
 
-    Official claims, beta statistics, viewership and how launch went.
+    Official claims, beta statistics, viewership and how the launch went.
 
 -   :material-account-voice: **[Developers & Interviews](developers.md)**
 
-    Who is who on the team, and the interviews worth reading.
+    Who is who on the team, and the interviews to read.
 
 -   :material-frequently-asked-questions: **[FAQ](faq.md)**
 
@@ -51,7 +51,7 @@ It keeps the 2004 game's mechanics, art style and 1–60 leveling. On top of tha
 
 | | |
 |---|---|
-| **Developer / publisher** | Blizzard Entertainment (team drawn mostly from WoW Classic) |
+| **Developer / publisher** | Blizzard Entertainment (most of the team comes from WoW Classic) |
 | **Announced** | 12 September 2026, BlizzCon 2026 (Anaheim) |
 | **Launched** | 4 November 2026, 23:00 UTC (5 November in Europe and Asia) |
 | **Platforms** | Windows, macOS (Battle.net). No Steam or console release planned |
@@ -63,48 +63,48 @@ It keeps the 2004 game's mechanics, art style and 1–60 leveling. On top of tha
 
 ## Setting: the "time bubble"
 
-Forever takes place in the **first year of World of Warcraft (25 ADP)**: after the Warcraft III: Reforged campaign *Forsaken Kingdom* and before *The Burning Crusade*. Blizzard's launch article places it "after Forsaken Kingdom and before Molten Core".
+Forever occurs in the **first year of World of Warcraft (25 ADP)**. This is after the Warcraft III: Reforged campaign *Forsaken Kingdom* and before *The Burning Crusade*. The Blizzard launch article puts it "after Forsaken Kingdom and before Molten Core".
 
-The game stays in that period indefinitely. It is a **separate continuity** that never feeds into retail lore. Blizzard calls this a *time bubble*: it lets the team tell new stories without rewriting the original Azeroth. The tone is deliberately grounded, with everyday stories about ordinary people and how the war affected them rather than world-saving heroics. See [Lore & Story](../world/lore.md).
+The game stays in that period with no end date. It is a **separate continuity** that never becomes part of retail lore. Blizzard calls this a *time bubble*. It lets the team tell new stories and not change the original Azeroth. The tone is grounded on purpose. The stories are about the everyday lives of ordinary people and how the war affected them, not about heroes who save the world. See [Lore & Story](../world/lore.md).
 
 ## Design pillars
 
-The Warcraft Wiki lists four development pillars:
+The Warcraft Wiki lists 4 development pillars:
 
 1. **Approachable and familiar.** No flying mounts and no level scaling. Challenge comes from preparation and cooperation.
 2. **The world is the main character.** New zones, quests and rewards at every level.
-3. **Journey before destination.** The level cap never rises, and players catch up by leveling.
-4. **Protect and nurture social experiences.** Every quality-of-life change is weighed by its social impact.
+3. **Journey before destination.** The level cap never increases, and players catch up when they level.
+4. **Protect and nurture social experiences.** The team examines the social effect of every quality-of-life change.
 
 !!! conflict "Conflict"
-    Lead Game Designer Tim Jones listed only three pillars to Shacknews. He did not name "approachable and familiar".
+    Lead Game Designer Tim Jones listed only 3 pillars to Shacknews. He did not name "approachable and familiar".
 
-Other stated principles:
+Other principles that the developers stated as goals:
 
-- "Crunchier" systems and community building instead of automated matchmaking.
-- Every class and spec should be viable.
-- Rotations should be simple but not repetitive.
-- **Players should not need add-ons to play their class correctly.**
-- **No WoW Token and no character boosts**, now or as currently planned. Clay Stone: in Forever "the journey is the game".
-- Lighting and water were hand-improved by environment artists, not just upgraded by the engine.
-- Some content draws on a "WoW Mythos" of unfinished or cut original ideas.
+- "Crunchier" systems, and communities that players build, instead of automated matchmaking.
+- Every class and spec is viable.
+- Rotations are simple but not repetitive.
+- **Players can play their class correctly with no add-ons.**
+- **No WoW Token and no character boosts**, now or in the current plans. Clay Stone: in Forever "the journey is the game".
+- Environment artists improved the lighting and water by hand. It is not only an engine upgrade.
+- Some content uses a "WoW Mythos" of original ideas that were not finished or that were cut.
 
 ## Origins
 
 - Team members discussed a new version of the original game as early as **2020**.
-- **Season of Discovery** served as the testbed for how much change is too much.
-- Blizzard committed to the project around **2024**. Holly Longdale says that after the Classic Anniversary Edition, she and Ion Hazzikostas decided to "just do it".
+- **Season of Discovery** was the test for how much change is too much.
+- Blizzard made a commitment to the project in about **2024**. Holly Longdale says that after the Classic Anniversary Edition, she and Ion Hazzikostas decided to "just do it".
 
-## What's new, in one list
+## What is new, in one list { #whats-new-in-one-list }
 
 !!! forever "Only in Forever"
 
     - New race: **[Skyborne](../characters/races.md)** (High Order for the Alliance, Windshapers for the Horde)
     - New race/class combinations, including **Undead Paladin** and **Dwarf Shaman**
-    - New zones: **Mount Hyjal, the Riverglades, Shen'dralas, Zephras Isle**. **Dalaran** is relocated to the Alterac Mountains
+    - New zones: **Mount Hyjal, the Riverglades, Shen'dralas, Zephras Isle**. **Dalaran** moves to the Alterac Mountains
     - **1,000+ new quests**
-    - **9 new five-player dungeons** (32 in total) and new 10- and 20-player raids
+    - **9 new 5-player dungeons** (32 in total) and new 10- and 20-player raids
     - New battleground: **Battle for the Darkspear Islands** (15v15)
-    - **[Legacy system](../characters/legacy.md)**, account-wide, replacing achievements
+    - **[Legacy system](../characters/legacy.md)**, account-wide, replaces achievements
     - **[Camping](../systems/camping.md)**, **dual specialization** at level 40, account-wide **Collections**
     - SD/HD model toggle, experience presets, gamepad support (beta)

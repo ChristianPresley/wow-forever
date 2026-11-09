@@ -14,15 +14,15 @@
 
 </aside>
 
-A **titan facility overrun by dinosaurs**. A tar-pit path leads to the *Pillar of Assimilation*. The dungeon also contains a crystal cave and a titan building with a waterfall.
+A **titan facility that dinosaurs now control**. A tar-pit path leads to the *Pillar of Assimilation*. The dungeon also contains a crystal cave and a titan building with a waterfall.
 
 ### Signature mechanic: power crystals
 
-Bring **Un'Goro power crystals** (Blue, Green, Red, Yellow) into the dungeon and use them at consoles. How the consoles work has not been published.
+Bring **Un'Goro power crystals** (Blue, Green, Red, Yellow) into the dungeon and use them at consoles. There is no published information about how the consoles work.
 
 ### A future raid?
 
-A **gated "unknown raid portal"** inside has fueled speculation about a future raid. *unconfirmed*{ .unconfirmed }
+There is a **gated "unknown raid portal"** in the dungeon. Because of this portal, players speculate about a future raid. *unconfirmed*{ .unconfirmed }
 
 ## Bosses (known so far)
 

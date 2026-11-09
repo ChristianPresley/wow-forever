@@ -20,7 +20,7 @@ tags:
 
 ## Why this combo
 
-**NEW in Forever.** The Windshapers are the Horde branch of the Skyborne, descended from kaldorei citizens of Eldre'Thalas and tied to the Earthen Ring. Rogue is one of five Windshaper classes. Compared with the High Order, you swap Read Ley Line for **Skysight**, a +15% movement-speed burst (+30% when *Charged*), which is genuinely useful for a melee class that needs to catch people.
+**NEW in Forever.** The Windshapers are the Horde branch of the Skyborne. They descend from kaldorei citizens of Eldre'Thalas and have a connection to the Earthen Ring. Rogue is one of five Windshaper classes. Compared with the High Order, you get **Skysight** instead of Read Ley Line. Skysight is a +15% movement-speed burst (+30% when *Charged*). This is very useful for a melee class that must catch other players.
 
 **Best for:** world PvP chasers and flag carriers, players who want the new race on the Horde.
 
@@ -37,7 +37,7 @@ tags:
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Skysight** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 } PvP · **2/5**{ .stars .s2 } PvE</p>
-<p markdown>+15% movement speed for 15 s, +30% while *Charged* at an elemental convergence. Stack it with Sprint to catch kiting classes, or to run a flag</p>
+<p markdown>+15% movement speed for 15 s, +30% while *Charged* at an elemental convergence. Stack it with Sprint to catch kiting classes, or to carry a flag</p>
 </div>
 
 <div class="ability-card" markdown>
@@ -55,9 +55,9 @@ tags:
 </div>
 
 !!! conflict "Conflicts"
-    - **Wind Blessed:** 1%, 2% or 3% haste depending on the source; the latest official notes say **2%**.
+    - **Wind Blessed:** sources give 1%, 2% or 3% haste. The latest official notes say **2%**.
     - **Walk on Air** cooldown: 1.5 or 2 minutes.
-    - Whether Skysight stacks fully with Sprint is *unconfirmed*; test it.
+    - It is *unconfirmed* if Skysight stacks fully with Sprint. Test it.
 
 ??? example "Macros"
 
@@ -67,7 +67,7 @@ tags:
     /cast Sprint
     ```
 
-    The chase button. Split it if you want to save Sprint.
+    The chase button. To keep Sprint for later, make 2 separate macros.
 
     ```text
     #showtooltip Walk on Air
@@ -76,7 +76,7 @@ tags:
 
 ## Starting zone: Zephras Isle (1–12)
 
-Every Skyborne starts in **Thendal Village**, northwest Zephras Isle. Horde and Alliance share the zone but are phased apart. Full story: [Zephras Isle](../../world/zephras-isle.md).
+Every Skyborne starts in **Thendal Village**, northwest Zephras Isle. Horde and Alliance share the zone, but they are in different phases. Full story: [Zephras Isle](../../world/zephras-isle.md).
 
 <div class="steps" markdown>
 
@@ -102,7 +102,7 @@ Every Skyborne starts in **Thendal Village**, northwest Zephras Isle. Horde and 
 
 6.  **9–11**{ .lvl } Gustberry Lowlands
 
-    Windshaper chain *The Broken Construct*; Windfield Orchard; `/sing` at the frogs for the *Musical Gustjumper* pet
+    Windshaper chain *The Broken Construct*. Windfield Orchard. `/sing` at the frogs for the *Musical Gustjumper* pet
 
 7.  **10**{ .lvl } Valanaar
 
@@ -110,7 +110,7 @@ Every Skyborne starts in **Thendal Village**, northwest Zephras Isle. Horde and 
 
 8.  **10–12**{ .lvl } Shadowgale Forest
 
-    *In Service of Zephras* → *Blood for Blood*; Nightclaw druid quests and reputation
+    *In Service of Zephras* → *Blood for Blood*. Nightclaw druid quests and reputation
 
 9.  **12–14**{ .lvl } Shrine of Akir
 
@@ -118,12 +118,12 @@ Every Skyborne starts in **Thendal Village**, northwest Zephras Isle. Horde and 
 
 </div>
 
-- **Pick Pocket** the Al'Aketh cultists and bandits.
-- Skysight plus the tornado speed buff makes Zephras very quick to cross.
+- Use **Pick Pocket** on the Al'Aketh cultists and bandits.
+- With Skysight and the tornado speed buff, you can cross Zephras very quickly.
 
 ## Route to 60 from Thunder Bluff
 
-The Windshaper airship leaves the west Skydock and lands at **Skywatcher Plateau** in northwest Mulgore, just outside Thunder Bluff. There is a path from there toward Desolace.
+The Windshaper airship leaves the west Skydock and lands at **Skywatcher Plateau** in northwest Mulgore, near Thunder Bluff. There is a path from there toward Desolace.
 
 <div class="steps" markdown>
 
@@ -165,22 +165,22 @@ The Windshaper airship leaves the west Skydock and lands at **Skywatcher Plateau
 
 </div>
 
-**Class trainers:** Valanaar on Zephras Isle, then **Orgrimmar's Cleft of Shadow** or **Undercity's Rogues' Quarter**. Thunder Bluff had no rogue trainer in Classic; whether Forever added one for Skyborne is *unconfirmed*.
+**Class trainers:** Valanaar on Zephras Isle, then **Orgrimmar's Cleft of Shadow** or **Undercity's Rogues' Quarter**. Thunder Bluff had no rogue trainer in Classic. It is *unconfirmed* if Forever added one for Skyborne.
 
 ## Faction notes
 
 - **Poison quest (20):** Shenthul, Cleft of Shadow, Orgrimmar. See the [main guide](index.md#the-poison-quest-level-20).
 - **Library books:** Owen Thadd, Magic Quarter, Undercity.
-- **Mount:** **Galestriders** at **Fairweather Stables**, Zephras Isle (53.8, 81.3); Umber, Stormy and Empyrean with Swift versions. Windshaper reputation gives 5–20% off. Other Horde races can buy them at Exalted, earned partly through cloth turn-ins in Mulgore.
+- **Mount:** **Galestriders** at **Fairweather Stables**, Zephras Isle (53.8, 81.3). They come in Umber, Stormy and Empyrean, with Swift versions. Windshaper reputation gives a 5–20% discount. Other Horde races can buy them at Exalted. Cloth turn-ins in Mulgore give part of this reputation.
 - **Reputation:** Windshapers, plus the Nightclaw druids.
-- **Dalaran:** Horde players are attacked on sight in the city and can't earn Kirin Tor reputation.
-- **Language:** Darnassian and Orcish; you can speak Darnassian with High Order elves.
-- **Looks:** HD models only at launch; feathers, tattoos and blue skin options. See [Races](../../characters/races.md#skyborne).
+- **Dalaran:** Horde players are attacked on sight in the city. They cannot earn Kirin Tor reputation.
+- **Language:** Darnassian and Orcish. You can speak Darnassian with High Order elves.
+- **Looks:** HD models only at launch. Feathers, tattoos and blue skin options. See [Races](../../characters/races.md#skyborne).
 
 ## Verdict
 
 <div class="verdict" markdown>
 
-**A fun, mobile Horde Rogue.** Skysight is the best mobility racial a Horde Rogue can get, and Wind Blessed is a steady damage passive. Orc and Undead have stronger PvP or burst racials, but none of them can catch a kiting Mage as well. Pick Windshaper for the new race, the speed and the Galestrider.
+**A fun, mobile Horde Rogue.** Skysight is the best mobility racial that a Horde Rogue can get. Wind Blessed is a steady damage passive. Orc and Undead have stronger PvP or burst racials, but none of them can catch a kiting Mage as well. Pick Windshaper for the new race, the speed and the Galestrider.
 
 </div>

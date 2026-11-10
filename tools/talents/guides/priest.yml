@@ -1,0 +1,352 @@
+class: Priest
+badges: [heal, dps]
+description: "Priest talent guide for WoW: Forever: all 52 talents in Discipline, Holy and Shadow Magic with a rating, a talent for each level from 10 to 60, and level 60 builds for healers, Shadow and PvP."
+
+intro: |
+  The Priest has 2 healer trees and 1 damage tree in Forever. **Discipline** gives shields, Penance and mana talents. **Holy** gives the largest heals and Prayer of Mending. **Shadow Magic** is a full damage spec with Shadowform at 31 points. Each level 60 build puts about 20 points in a second tree, and Discipline is the usual second tree.
+
+card:
+  leveling: "Shadow Magic (fast) or Discipline (safe)"
+  pve: "Holy or Discipline to heal. Shadow Magic for damage"
+  pvp: "Shadow Magic with Silence, or Discipline to heal"
+
+quick:
+  - stage: "Level 10–39"
+    build: shadow-leveling
+    why: "Spirit Tap first. Mind Flay at level 20. Vampiric Embrace at 25. Warcraft Tavern says that it is weak before about level 28."
+  - stage: "Level 10–39, alternative"
+    build: disc-leveling
+    why: "Wand, shields and Penance at level 30. Safer, and it can heal dungeons."
+  - stage: "Level 40–59"
+    build: shadow-leveling
+    why: "Shadowform at 40. Then mana talents from Discipline. Keep a healer build in your second spec."
+  - stage: "Level 60: dungeons and 10-player raids, healer"
+    build: disc-raid
+    why: "Shields before the damage and Penance each 12 s. Strong on 1 tank."
+  - stage: "Level 60: raids, healer"
+    build: holy-raid
+    why: "Prayer of Mending, the largest heals and the best mana for long fights."
+  - stage: "Level 60: raids, damage"
+    build: shadow-raid
+    why: "The Shadow damage talents to Shadowform, with 30% less threat from Silent Resolve."
+  - stage: "Level 60: PvP"
+    build: shadow-pvp
+    why: "Blackout stuns, Silence, a shorter cooldown on Psychic Scream and a stronger shield."
+  - stage: "Hardcore"
+    build: disc-leveling
+    why: "The strongest shield and an instant heal. Slower than Shadow Magic, but safer."
+
+trees:
+  Discipline:
+    summary: |
+      Discipline is the shield and mana tree. **Soul Warding** opens at 15 points, **Penance** at 20 and **Power Infusion** at 30. The first 3 rows have the best mana talents of the class, so Holy and Shadow Magic builds also put about 20 points here. Power in Light and Holy Precision are damage talents. They give no value to a healer.
+    talents:
+      Power in Light:
+        {does: "Smite and Penance do +2–10% damage to targets that have your Holy Fire or Shadow Word: Pain", lvl: A, pve: C, pvp: C, note: "A damage talent. Take it in a Smite and Penance build. It gives no healing."}
+      Wand Specialization:
+        {does: "Wand damage +13/25%", lvl: A, pve: D, pvp: D, note: "Good before level 30, when the wand does a large part of your damage. No value at 60."}
+      Twin Disciplines:
+        {does: "Damage and healing of instant spells +1–5%", lvl: A, pve: A, pvp: A, note: "Useful for all 3 specs. It is not confirmed that Mind Flay, Penance and the absorb of Power Word: Shield get the bonus."}
+      Silent Resolve:
+        {does: "Threat of your spells −10/20/30%. Stun, Fear and Silence effects on you are 5/10/15% shorter", lvl: C, pve: B, pvp: A, note: "The only threat talent of the class. Take 3/3 in a Shadow Magic raid build."}
+      Holy Precision:
+        {does: "Hit chance of Holy spells +6/12/18%", lvl: B, pve: C, pvp: C, note: "Only for Smite and Holy Fire damage. Heals cannot miss, so a healer does not take it."}
+      Mental Strength:
+        {does: "Total Intellect +2–10%", lvl: A, pve: S, pvp: A, note: "More mana and more crit for each spec."}
+      Martyrdom:
+        {does: "50/100% chance to get Focused Casting for 6 s after a melee or ranged crit hits you. No pushback and +20% resistance to interrupts", lvl: C, pve: D, pvp: B, note: "Only for PvP against melee classes."}
+      Mental Agility:
+        {does: "Mana cost of Smite, Holy Fire and instant spells −3 to −10%", lvl: A, pve: A, pvp: A, note: "It applies to shields, Renew, DoTs and Prayer of Mending."}
+      Inner Focus:
+        {does: "Your next spell costs no mana and has +25% crit chance. 3 min cooldown", lvl: B, pve: A, pvp: A, note: "1 point for a free large heal or a free Mind Blast."}
+      "Improved Power Word: Shield":
+        {does: "Power Word: Shield absorbs 7–20% more damage", lvl: A, pve: A, pvp: S, note: "Soul Warding needs 3/3. Core for Discipline and for PvP."}
+      Meditation:
+        {does: "17/33/50% of your mana regeneration continues while you cast", lvl: A, pve: S, pvp: B, note: "Much stronger than in Classic. Each healer takes 3/3."}
+      Improved Inner Fire:
+        {does: "Armor bonus of Inner Fire +15/30/45%. Inner Fire gets 4/8/12 more charges", lvl: C, pve: D, pvp: B, note: "Only for PvP against physical damage and for Hardcore."}
+      Improved Mana Burn:
+        {does: "Cast time of Mana Burn −0.5/1 s", lvl: D, pve: D, pvp: A, note: "A PvP talent. Mana Burn has no use in dungeons and raids."}
+      Soul Warding:
+        {does: "Cooldown of Power Word: Shield −4 s. Mana cost −15%", lvl: A, pve: A, pvp: S, note: "Makes the shield your main spell. Renewed Hope needs it."}
+      Penance:
+        {does: "An instant spell with a 12 s cooldown. It hits an enemy or heals an ally 3 times in 2 s. Rank 1: 45 Holy damage or 134 healing for each hit", lvl: S, pve: S, pvp: S, note: "The core spell of Discipline. Available at level 30. Power Infusion needs it."}
+      Renewed Hope:
+        {does: "Flash Heal, Lesser Heal, Heal, Greater Heal and Penance get +2–10% crit chance on targets with Weakened Soul. Each heal makes Weakened Soul 1–5 s shorter", lvl: C, pve: A, pvp: B, note: "Take it when you shield and then heal the same target. It has small value when you level solo."}
+      Divine Aegis:
+        {does: "Non-periodic crit heals give the target a shield for 5/10/15% of the heal. Maximum 1200 damage, 12 s", lvl: C, pve: B, pvp: B, note: "The value depends on your crit chance. Discipline builds take it to open Power Infusion."}
+      Power Infusion:
+        {does: "The target does 20% more spell damage and healing for 15 s. 3 min cooldown", lvl: B, pve: A, pvp: A, note: "Use it on yourself or on a caster. It needs 30 Discipline points and Penance."}
+  Holy:
+    summary: |
+      Holy is the healing tree. **Holy Binding** opens at 15 points and **Prayer of Mending** at 30. Divine Fury, Improved Healing, Spiritual Guidance and Spiritual Healing make each heal faster, cheaper and larger. Divine Fury and Searing Light also help Smite and Holy Fire.
+    talents:
+      Twilight Focus:
+        {does: "All spells have a 23–70% chance to ignore pushback", lvl: B, pve: B, pvp: A, note: "Healing Focus from Classic, with 3 ranks. It now applies to damage spells also."}
+      Improved Renew:
+        {does: "Renew heals 5/10/15% more", lvl: C, pve: B, pvp: B, note: "For raid healers that use Renew much. Renew from different Priests stacks."}
+      Holy Specialization:
+        {does: "Crit chance of Holy spells +1–5%", lvl: B, pve: A, pvp: B, note: "Crit heals cause Inspiration and Divine Aegis. The usual way to open row 2."}
+      Spell Warding:
+        {does: "Spell damage that you take −2–10%", lvl: C, pve: C, pvp: A, note: "5 points for defense only. For PvP healers and Hardcore."}
+      Divine Fury:
+        {does: "Cast time of Smite, Holy Fire, Heal and Greater Heal −0.1 to −0.5 s", lvl: A, pve: S, pvp: B, note: "Core for each healer. Also the main Smite talent. Searing Light needs 5/5."}
+      Holy Nova:
+        {does: "An instant spell that causes no threat. It does Holy damage to enemies and heals party members within 10 yd. Rank 1: 26–30 damage, 50–57 healing", lvl: C, pve: C, pvp: C, note: "It costs much mana for a small effect. Take it with Searing Light or for stacked groups."}
+      Blessed Recovery:
+        {does: "After a melee or ranged crit, or a hit of more than 30% of your health, you heal 8–25% of that damage during 6 s", lvl: C, pve: D, pvp: B, note: "It only helps when enemies hit you. A healer in a raid does not take it."}
+      Inspiration:
+        {does: "Your non-periodic crit heals increase the armor of the target by 8–25% for 15 s", lvl: C, pve: S, pvp: B, note: "25% more armor on the tank. Take 3/3 in each healer build."}
+      Holy Reach:
+        {does: "Range of Smite and Holy Fire +10/20%. Radius of Prayer of Healing and Holy Nova +10/20%", lvl: C, pve: B, pvp: C, note: "Filler. Useful when the raid stands far apart."}
+      Improved Healing:
+        {does: "Mana cost of Lesser Heal, Heal, Greater Heal, Penance and Prayer of Mending −5/10/15%", lvl: C, pve: S, pvp: B, note: "The main mana talent for healers. It does not apply to Flash Heal."}
+      Searing Light:
+        {does: "Holy damage +2/5%. Each periodic hit of Holy Fire has a 5/10% chance to make your next Holy Nova free", lvl: B, pve: C, pvp: C, note: "A damage talent. Take it only in a Smite build. It gives no healing."}
+      Holy Binding:
+        {does: "When you heal a different player with Flash Heal, you get 50% of that healing. This causes no threat", lvl: C, pve: A, pvp: A, note: "It replaced Binding Heal before launch. 1 point for free self-healing."}
+      Litany of Light:
+        {does: "A healing spell gives back 5/10% of its base mana cost if your previous heal was a different spell", lvl: D, pve: A, pvp: C, note: "Use different heals in turn to get the refund."}
+      Spirit of Redemption:
+        {does: "When you die, you become a spirit for 15 s. You cannot move, and enemies cannot attack you. Your healing spells cost no mana", lvl: D, pve: B, pvp: C, note: "Prayer of Mending needs it. Do not use it as a reason to die in Hardcore."}
+      Spiritual Guidance:
+        {does: "Spell healing increases by 5–25% of your Spirit. Spell damage increases by 1–8% of your Spirit", lvl: C, pve: S, pvp: B, note: "Spirit gives regeneration with Meditation and healing with this talent."}
+      Spiritual Healing:
+        {does: "Healing of your spells +3–10%", lvl: C, pve: S, pvp: A, note: "Now 3 points for the same 10%."}
+      Prayer of Mending:
+        {does: "An instant spell with a 10 s cooldown. It heals the target at the next damage or direct heal, then jumps to a player within 20 yd. Maximum 5 jumps, 30 s for each", lvl: B, pve: S, pvp: A, note: "The reason to put 31 points in Holy. Keep it active on the tank."}
+  Shadow Magic:
+    summary: |
+      Shadow Magic is the damage tree. **Mind Flay** opens at 10 points, **Vampiric Embrace** at 15 and **Shadowform** at 30. Shadow Weaving and Darkness each add 10% Shadow damage. Blackout, Improved Psychic Scream and Silence are control talents for PvP.
+    talents:
+      Shadow Focus:
+        {does: "Hit chance of Shadow spells +1–5%", lvl: B, pve: S, pvp: B, note: "Core for raids. The hit cap of Forever is not confirmed."}
+      Blackout:
+        {does: "Shadow damage spells have a 2–10% chance to stun the target for 3 s", lvl: B, pve: D, pvp: S, note: "Bosses are immune to stuns. Each hit of Mind Flay can cause the stun."}
+      Spirit Tap:
+        {does: "20–100% chance for +100% Spirit for 15 s after a kill that gives XP or honor. 50% of your mana regeneration continues while you cast", lvl: S, pve: C, pvp: C, note: "The first 5 points when you level. It also procs when an enemy with your Vampiric Embrace dies. No value on a boss."}
+      Improved Mind Blast:
+        {does: "Cooldown of Mind Blast −0.5 to −2.5 s", lvl: A, pve: A, pvp: S, note: "More casts of your largest hit. Mind Blast makes much threat."}
+      "Improved Shadow Word: Pain":
+        {does: "Shadow Word: Pain lasts 3/6 s longer", lvl: A, pve: A, pvp: B, note: "2 more hits for the same mana."}
+      Shadow Reach:
+        {does: "Range of offensive Shadow spells +10/20%", lvl: B, pve: B, pvp: A, note: "Mind Flay has a range of only 20 yd without it."}
+      Improved Psychic Scream:
+        {does: "Cooldown of Psychic Scream −2/4 s", lvl: C, pve: D, pvp: A, note: "For PvP. It needs Blackout 5/5."}
+      Mind Flay:
+        {does: "A 3 s channel with a range of 20 yd. It does Shadow damage and slows the target by 50%. Rank 1: 63 damage", lvl: S, pve: S, pvp: A, note: "Your filler spell. Available at level 20."}
+      Improved Mind Flay:
+        {does: "Each hit of Mind Flay does 10/20% more damage than the hit before it", lvl: A, pve: S, pvp: B, note: "Channel Mind Flay to the end to get the full bonus."}
+      Dark Inspiration:
+        {does: "Mind Blast and a full channel of Mind Flay give you and your party +3–15% Spirit for 10 s", lvl: C, pve: C, pvp: D, note: "5 points for no damage. It helps healers that are in your party."}
+      Vampiric Embrace:
+        {does: "For 30 s, your Shadow damage on the target heals all party members for 20% of the damage. 30 s cooldown", lvl: S, pve: A, pvp: A, note: "Shadowform needs it. The cooldown is equal to the duration in the launch client."}
+      Shadow Weaving:
+        {does: "Shadow damage spells have a 33/66/100% chance to add a stack. Each stack increases your Shadow damage on the target by 2%. Maximum 5 stacks, 15 s", lvl: A, pve: S, pvp: A, note: "10% more damage at 5 stacks. It applies only to your spells."}
+      Silence:
+        {does: "Silences the target for 5 s and interrupts a spellcast for 3 s. 45 s cooldown, 20 yd range", lvl: B, pve: B, pvp: S, note: "It does not need Improved Psychic Scream now. Useful on caster mobs in dungeons."}
+      Devouring Contagion:
+        {does: "Mana cost of Devouring Plague −25/50%. When the target dies, the Plague jumps to 2 enemies within 5/10 yd for its remaining duration", lvl: A, pve: B, pvp: C, note: "A cheap Devouring Plague for each fight. The jump helps on groups of mobs."}
+      Early Demise:
+        {does: "Crit chance of Shadow Word: Death +15/30% on targets at or below 20% health", lvl: B, pve: B, pvp: A, note: "Strong with the crit damage of Shadowform. It only works in the last 20% of a fight."}
+      Darkness:
+        {does: "Shadow damage +2–10%", lvl: A, pve: S, pvp: S, note: "5 points for 10% damage."}
+      Shadowform:
+        {does: "Shadow damage +10%. Mana cost of Shadow spells −50%. Crit damage bonus of Shadow spells +100%. Physical damage that you take −15%. You cannot cast healing spells", lvl: S, pve: S, pvp: S, note: "The core talent of the spec. Available at level 40."}
+
+builds:
+  - id: shadow-leveling
+    name: "Shadow Magic (fast)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      Shadow Magic from level 10, as Mobalytics and Warcraft Tavern recommend. Spirit Tap gives mana after each kill, and Shadowform at level 40 makes Shadow spells cost 50% less. Warcraft Tavern says that the build is weak before about level 28, so use your wand much until then.
+    steps:
+      - [Spirit Tap, 5, "Mana regeneration after each kill"]
+      - ["Improved Shadow Word: Pain", 2, "More damage for the same mana"]
+      - [Shadow Focus, 3, "Fewer resists. Opens row 3"]
+      - [Mind Flay, 1, "Your filler spell. It slows mobs"]
+      - [Improved Mind Flay, 2, "More damage from each full channel"]
+      - [Shadow Focus, 2, "Opens row 4"]
+      - [Vampiric Embrace, 1, "Your Shadow damage heals you"]
+      - [Shadow Weaving, 3, "10% more Shadow damage at 5 stacks"]
+      - [Improved Mind Blast, 1, "The last point to open row 5"]
+      - [Devouring Contagion, 2, "Devouring Plague costs 50% less"]
+      - [Improved Mind Blast, 3, "Opens row 6"]
+      - [Darkness, 5, "10% more Shadow damage"]
+      - [Shadowform, 1, "Shadow spells cost 50% less and crit for more"]
+      - [Improved Mind Blast, 1, "The full 2.5 s off the cooldown of Mind Blast"]
+      - [Shadow Reach, 2, "More range for Mind Flay"]
+      - [Early Demise, 2, "Shadow Word: Death crits on targets with low health"]
+      - [Silence, 1, "Stops caster mobs"]
+      - [Twin Disciplines, 5, "5% damage for your instant Shadow spells"]
+      - [Mental Strength, 5, "10% Intellect"]
+      - [Mental Agility, 3, "Cheaper DoTs and shields"]
+      - [Inner Focus, 1, "A free Mind Blast each 3 min"]
+    notes:
+      - "At 40, buy dual spec for 50g. Make the second spec a healer build for dungeons."
+      - "You cannot cast healing spells in Shadowform. Vampiric Embrace and Power Word: Shield keep you alive."
+      - "For raids at 60, respec to the Shadow Magic raid build. It moves the Spirit Tap points to Silent Resolve and Meditation."
+
+  - id: disc-leveling
+    name: "Discipline (safe)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The Discipline route from Method, adjusted to the launch client. You kill with Shadow Word: Pain, Smite, Penance and your wand, behind a strong shield. Method says that the damage decreases in the late 30s. If that is a problem, change to Shadow Magic at 40.
+    steps:
+      - [Wand Specialization, 2, "The wand does much of your damage before level 30"]
+      - [Twin Disciplines, 3, "More damage from Shadow Word: Pain. Opens row 2"]
+      - [Holy Precision, 1, "6% hit for Smite and Holy Fire"]
+      - [Mental Strength, 4, "More mana. Opens row 3"]
+      - ["Improved Power Word: Shield", 3, "A larger shield. Soul Warding needs 3/3"]
+      - [Meditation, 2, "Mana regeneration while you cast. Opens row 4"]
+      - [Soul Warding, 1, "A cheaper shield with a shorter cooldown"]
+      - [Mental Agility, 3, "Cheaper Smite, Holy Fire and instant spells"]
+      - [Inner Focus, 1, "A free spell. The last point to open row 5"]
+      - [Penance, 1, "Instant damage or an instant heal each 12 s"]
+      - [Power in Light, 5, "10% more Smite and Penance damage on targets with your DoT"]
+      - [Twin Disciplines, 2, "5% for all instant spells"]
+      - [Mental Strength, 1, "10% Intellect"]
+      - [Meditation, 1, "The last point to open row 7"]
+      - [Power Infusion, 1, "20% more damage for 15 s"]
+      - [Holy Specialization, 5, "Crit for Smite, Holy Fire, Penance and heals"]
+      - [Divine Fury, 5, "A faster Smite and Holy Fire"]
+      - [Holy Precision, 2, "Hit for dungeons at 55+"]
+      - [Twilight Focus, 3, "Less pushback on all casts"]
+      - [Improved Renew, 2, "Opens Holy row 4"]
+      - [Searing Light, 2, "5% Holy damage"]
+      - [Holy Nova, 1, "Searing Light makes some casts free"]
+    notes:
+      - "At 40, buy dual spec for 50g. Use the second spec for Shadow Magic or for a full healer build."
+      - "If you heal many dungeons, take Renewed Hope before Power in Light."
+
+  - id: holy-raid
+    name: "Holy (raid healer)"
+    kind: endgame
+    role: "Raid healer"
+    summary: |
+      Deep Holy for Prayer of Mending, with the mana talents of Discipline. It is near the 19/32/0 split that fan guides gave from beta calculators. No source has tested it in the launch raids.
+    steps:
+      - [Holy Specialization, 5]
+      - [Improved Renew, 3, "You can move these points to Twilight Focus for fights with much pushback"]
+      - [Divine Fury, 5]
+      - [Inspiration, 3]
+      - [Improved Healing, 3]
+      - [Holy Binding, 1]
+      - [Litany of Light, 2]
+      - [Spirit of Redemption, 1]
+      - [Spiritual Guidance, 5]
+      - [Spiritual Healing, 3]
+      - [Prayer of Mending, 1]
+      - [Twin Disciplines, 5, "5% for Renew, Prayer of Mending and other instant heals"]
+      - [Mental Strength, 5]
+      - [Meditation, 3]
+      - [Mental Agility, 3]
+      - [Inner Focus, 1]
+      - [Silent Resolve, 2, "Less threat. You can move these points to Improved Power Word: Shield"]
+
+  - id: disc-raid
+    name: "Discipline (healer)"
+    kind: endgame
+    role: "Tank healer"
+    summary: |
+      The 31/20/0 build from the class guide. It has all shield talents, Penance and Power Infusion, with the Holy talents to row 4. Use it for dungeons, for 10-player raids and for tanks. It is also the usual healer build for PvP.
+    steps:
+      - [Twin Disciplines, 5]
+      - [Mental Strength, 5]
+      - ["Improved Power Word: Shield", 3]
+      - [Meditation, 3]
+      - [Soul Warding, 1]
+      - [Mental Agility, 3]
+      - [Inner Focus, 1]
+      - [Penance, 1]
+      - [Renewed Hope, 5]
+      - [Divine Aegis, 3, "It also opens Power Infusion"]
+      - [Power Infusion, 1]
+      - [Holy Specialization, 5, "Crit heals cause Divine Aegis and Inspiration"]
+      - [Twilight Focus, 3, "For PvP, keep it. For raids, you can use Improved Renew"]
+      - [Divine Fury, 5]
+      - [Inspiration, 3]
+      - [Improved Healing, 3, "Penance and Greater Heal cost 15% less"]
+      - [Holy Binding, 1]
+
+  - id: shadow-raid
+    name: "Shadow Magic (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      The main Shadow damage talents to Shadowform, with threat and mana talents from Discipline. It does not take Early Demise, because the tree needs 25 points below row 6. Exact splits for Shadow Magic are not published. This is a Codex build from the tooltips.
+    steps:
+      - [Shadow Focus, 5]
+      - [Improved Mind Blast, 5]
+      - ["Improved Shadow Word: Pain", 2]
+      - [Shadow Reach, 2]
+      - [Mind Flay, 1]
+      - [Improved Mind Flay, 2]
+      - [Vampiric Embrace, 1]
+      - [Shadow Weaving, 3]
+      - [Devouring Contagion, 2, "Devouring Plague costs 50% less"]
+      - [Silence, 1, "An interrupt for adds. It also opens row 6"]
+      - [Dark Inspiration, 1, "Filler to open row 6. You can use Spirit Tap for fights with adds"]
+      - [Darkness, 5]
+      - [Shadowform, 1]
+      - [Twin Disciplines, 5, "5% for Shadow Word: Pain, Devouring Plague and Shadow Word: Death"]
+      - [Silent Resolve, 3, "30% less threat"]
+      - [Mental Strength, 5]
+      - [Mental Agility, 3]
+      - [Inner Focus, 1]
+      - [Meditation, 3]
+
+  - id: shadow-pvp
+    name: "Shadow Magic (PvP)"
+    kind: endgame
+    role: "PvP"
+    summary: |
+      The control build for battlegrounds and world PvP. It takes Blackout, Silence and Improved Psychic Scream, and 18 Discipline points for a stronger shield and a faster Mana Burn.
+    steps:
+      - [Blackout, 5]
+      - [Improved Mind Blast, 5]
+      - [Shadow Reach, 2]
+      - ["Improved Shadow Word: Pain", 2]
+      - [Improved Psychic Scream, 2]
+      - [Mind Flay, 1]
+      - [Vampiric Embrace, 1]
+      - [Shadow Weaving, 3]
+      - [Silence, 1]
+      - [Improved Mind Flay, 2]
+      - [Shadow Focus, 1, "The last point to open row 6"]
+      - [Darkness, 5]
+      - [Early Demise, 2]
+      - [Shadowform, 1]
+      - [Twin Disciplines, 5]
+      - [Silent Resolve, 3, "Stuns, Fears and Silences on you are 15% shorter"]
+      - [Martyrdom, 2, "Against melee classes. You can move these points to Mental Strength"]
+      - ["Improved Power Word: Shield", 3]
+      - [Inner Focus, 1]
+      - [Mental Agility, 1, "The last point to open Soul Warding"]
+      - [Soul Warding, 1, "A cheaper shield with a shorter cooldown"]
+      - [Improved Mana Burn, 2, "Mana Burn casts 1 s faster"]
+    notes:
+      - "This build has only 1 point in Shadow Focus. If your spells miss too frequently, move the points from Improved Mana Burn to Shadow Focus."
+
+faq:
+  - q: "Is Power Infusion in the game?"
+    a: "Yes. In the launch client, Power Infusion is in Discipline row 7. It needs 30 Discipline points and Penance. The Blizzard deep dive did not mention it."
+  - q: "Where is Shadow Affinity?"
+    a: "The launch client has no Shadow Affinity talent. The only threat talent is Silent Resolve in Discipline row 2, which decreases the threat of all spells by 30%."
+  - q: "What is the cooldown of Vampiric Embrace?"
+    a: "The launch client shows a duration of 30 s and a cooldown of 30 s. Beta information gave a cooldown of 1 minute. Thus, you can keep it active on 1 target all the time."
+  - q: "Does Shadowform give crit chance or crit damage?"
+    a: "Crit damage. The client tooltip says that the crit damage bonus of Shadow spells increases by 100%. It also gives +10% Shadow damage and decreases the mana cost of Shadow spells by 50%."
+  - q: "Does a healer need Holy Precision?"
+    a: "No. Heals cannot miss. Holy Precision helps only Smite, Holy Fire, Holy Nova and Penance as damage spells."
+
+sources:
+  - {title: "Blizzard: Class Deep Dives, Priest and Warrior", url: "https://news.blizzard.com/en-us/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior"}
+  - {title: "Warcraft Tavern: Priest guide", url: "https://www.warcrafttavern.com/forever/guides/priest/"}
+  - {title: "Warcraft Tavern: Priest leveling guide", url: "https://www.warcrafttavern.com/forever/guides/priest-leveling/"}
+  - {title: "Method.gg: Priest leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents"}
+  - {title: "Mobalytics: Priest guides", url: "https://mobalytics.gg/wow-forever/priest-guides"}
+  - {title: "Icy Veins: Holy Priest healer guide", url: "https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide"}
+  - {title: "Icy Veins: Discipline Priest healer guide", url: "https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide"}

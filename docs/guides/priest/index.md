@@ -90,6 +90,9 @@ Skyborne, Orc and Tauren cannot be Priests. For all racial abilities, see [Races
 
 ## Specs & talents
 
+!!! tip "Full talent guide"
+    The [Priest talent guide](../../talents/priest.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+
 Talents start at **level 10**, with one point for each level. At 60, you have 51 points. Gold single-point tiers are at **11, 16, 21 and 31 points** spent in a tree. Without Legacy bonuses, the milestones are:
 
 <div class="milestones" markdown>

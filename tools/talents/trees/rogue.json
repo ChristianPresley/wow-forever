@@ -1,0 +1,422 @@
+{
+ "class": "rogue",
+ "trees": [
+  {
+   "name": "Assassination",
+   "talents": [
+    {
+     "name": "Improved Gouge",
+     "row": 1,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Remorseless Attacks",
+     "row": 1,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Malice",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Ruthlessness",
+     "row": 2,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Expose Armor",
+     "row": 2,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Slice and Dice",
+     "row": 2,
+     "col": 4,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Vigor",
+     "row": 3,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Blood Splatter",
+     "row": 3,
+     "col": 2,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Lethality",
+     "row": 3,
+     "col": 3,
+     "max": 2,
+     "status": "changed",
+     "requires": [
+      "Malice"
+     ]
+    },
+    {
+     "name": "Vile Poisons",
+     "row": 4,
+     "col": 1,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Cold Blood",
+     "row": 4,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Poisons",
+     "row": 4,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Relentless Strikes",
+     "row": 5,
+     "col": 1,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Venom",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Improved Kidney Shot",
+     "row": 5,
+     "col": 3,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Seal Fate",
+     "row": 6,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Mutilate",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Venom"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Combat",
+   "talents": [
+    {
+     "name": "Coup de Grace",
+     "row": 1,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Efficient Strikes",
+     "row": 1,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Lightning Reflexes",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Puncturing Wounds",
+     "row": 2,
+     "col": 1,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Deflection",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Precision",
+     "row": 2,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Sprint",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Endurance",
+     "row": 3,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Riposte",
+     "row": 3,
+     "col": 2,
+     "max": 1,
+     "status": "same",
+     "requires": [
+      "Deflection"
+     ]
+    },
+    {
+     "name": "Composure",
+     "row": 3,
+     "col": 4,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Improved Kick",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Flawless Execution",
+     "row": 4,
+     "col": 2,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Weapon Expertise",
+     "row": 4,
+     "col": 3,
+     "max": 2,
+     "status": "changed",
+     "requires": [
+      "Precision"
+     ]
+    },
+    {
+     "name": "Aggression",
+     "row": 4,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Dual Wield Specialization",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Blade Flurry",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Hack and Slash",
+     "row": 5,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Flash of Steel",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Adrenaline Rush",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "same",
+     "requires": [
+      "Blade Flurry"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Subtlety",
+   "talents": [
+    {
+     "name": "Setup",
+     "row": 1,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Master of Deception",
+     "row": 1,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Opportunity",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Dirty Deeds",
+     "row": 2,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Camouflage",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Ambush",
+     "row": 2,
+     "col": 3,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Dirty Tricks",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Initiative",
+     "row": 3,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Premeditation",
+     "row": 3,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Serrated Blades",
+     "row": 3,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Elusiveness",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Ghostly Strike",
+     "row": 4,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Quick Getaway",
+     "row": 4,
+     "col": 4,
+     "max": 2,
+     "status": "new",
+     "requires": [
+      "Dirty Tricks"
+     ]
+    },
+    {
+     "name": "Heightened Senses",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Preparation",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Hemorrhage",
+     "row": 5,
+     "col": 3,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Serrated Blades"
+     ]
+    },
+    {
+     "name": "Boot Knife",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Death Mark",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Preparation"
+     ]
+    }
+   ]
+  }
+ ]
+}

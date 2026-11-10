@@ -57,6 +57,8 @@
 
 ## Talents
 
+The [Warrior talent guide](../../talents/warrior.md) shows all 3 trees and gives a rating to each talent.
+
 === "Arms"
 
     Improved Tactical Mastery (5/10/15 rage) · Improved Overpower · **Spearing Strike** (16: 15 rage, 20 s cooldown, dismounts, double damage vs mounted targets, dragons and giants) · **Bloodthrill** (10/20%) · **Weaponmaster** (crit for axes and polearms, armor penetration for maces and staves, extra attacks for swords) · Improved Slam (does not reset the swing) · Iron Will

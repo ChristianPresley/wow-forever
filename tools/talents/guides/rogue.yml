@@ -1,0 +1,413 @@
+class: Rogue
+badges: [dps]
+description: "Rogue talent guide for WoW: Forever: all 55 talents in Assassination, Combat and Subtlety with a rating, a talent for each level from 10 to 60, and level 60 builds for raids and PvP."
+
+intro: |
+  Each Rogue tree is a damage spec in Forever. **Combat** is the easy tree for leveling and the default tree for raids. **Assassination** is the poison and crit tree, and it gets **Mutilate** at 30 points. **Subtlety** is the tree for openers, bleeds and PvP. The new ability **Shank** has a talent in each tree, so most builds put points in 2 or 3 trees.
+
+card:
+  leveling: "Combat with a slow main-hand weapon"
+  pve: "Combat or Assassination (Mutilate). Subtlety is not tested"
+  pvp: "Subtlety with Preparation and Death Mark"
+
+quick:
+  - stage: "Level 10–39"
+    build: combat-leveling
+    why: "Riposte at level 20. Blade Flurry at 30. Adrenaline Rush at 40. It works with each weapon type."
+  - stage: "Level 10–39, alternative with daggers"
+    build: assassination-leveling
+    why: "Backstab with much crit. Cold Blood at 25, Venom at 30 and Mutilate at 40."
+  - stage: "Level 40–59"
+    build: combat-leveling
+    why: "Flash of Steel gives more Energy from Shank. Then Malice and Lethality add crit."
+  - stage: "Level 60: dungeons and raids"
+    build: combat-raid
+    why: "Constant damage with each weapon type. Blade Flurry is strong on groups of 2 or more enemies."
+  - stage: "Level 60: raids, second option"
+    build: mutilate-raid
+    why: "Mutilate with Seal Fate and all the poison talents. It needs 2 good daggers."
+  - stage: "Level 60: raids, not tested"
+    build: subtlety-raid
+    why: "Garrote, Rupture and Death Mark. No source has tested this build in a raid."
+  - stage: "Level 60: PvP"
+    build: subtlety-pvp
+    why: "Strong openers, 2 Vanishes with Preparation, and burst from Cold Blood and Death Mark."
+  - stage: "Hardcore"
+    build: combat-leveling
+    why: "Deflection, Riposte and Endurance make bad pulls safer. Evasion and Sprint have a shorter cooldown."
+
+trees:
+  Assassination:
+    summary: |
+      Assassination is the crit and poison tree. **Venom** opens at 20 points and **Mutilate** at 30. The first 16 points are also the usual second tree for Combat and Subtlety builds, because Malice, Lethality and Cold Blood help all specs.
+    talents:
+      Improved Gouge:
+        {does: "Gouge lasts 0.5–1.5 s longer", lvl: B, pve: D, pvp: A, note: "More time to get behind the target or to use a bandage. No value on bosses."}
+      Remorseless Attacks:
+        {does: "After you kill an enemy that gives XP or Honor, your next Sinister Strike, Backstab, Ambush, Mutilate or Ghostly Strike has +20/40% crit chance. Lasts 20 s", lvl: A, pve: D, pvp: C, note: "Strong when you kill mobs one after the other. It does nothing in a boss fight."}
+      Malice:
+        {does: "Crit chance of all attacks and Poisons +1–5%", lvl: A, pve: S, pvp: S, note: "The first 5 Assassination points of almost each build. Lethality needs 5/5."}
+      Ruthlessness:
+        {does: "Finishing moves have a 20/40/60% chance to add a Combo Point to the target", lvl: A, pve: A, pvp: B, note: "A free start for the next finisher. Good in each spec."}
+      Improved Expose Armor:
+        {does: "Expose Armor costs 5/10 less Energy. It gives back 1/2 Combo Points when you use it with 5 Combo Points", lvl: D, pve: C, pvp: D, note: "Take it only if your raid makes you responsible for Expose Armor."}
+      Improved Slice and Dice:
+        {does: "Slice and Dice lasts 15/30/45% longer", lvl: B, pve: A, pvp: C, note: "Fewer Combo Points for Slice and Dice, thus more for damage. Best in long fights."}
+      Vigor:
+        {does: "Maximum Energy +5/10", lvl: B, pve: B, pvp: A, note: "It prevents Energy loss at the cap and makes openers stronger. It was a 1-point talent in Classic."}
+      Blood Splatter:
+        {does: "Rupture lasts 6 s longer and Garrote lasts 9 s longer", lvl: C, pve: B, pvp: B, note: "Core for the Subtlety bleed build. In other builds it is a 1-point filler to open row 4."}
+      Lethality:
+        {does: "Crit damage bonus of Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike and Hemorrhage +10/20%", lvl: A, pve: S, pvp: A, note: "Only 2 points in Forever. It helps the main attack of each spec."}
+      Vile Poisons:
+        {does: "Poison damage +4–20%. Your poisons have 8–40% more chance to resist dispels", lvl: C, pve: A, pvp: B, note: "Core for the Mutilate build. Combat builds do not go this deep."}
+      Cold Blood:
+        {does: "Your next Sinister Strike, Backstab, Ambush, Eviscerate or Mutilate has +100% crit chance. 3 min cooldown", lvl: A, pve: B, pvp: S, note: "1 sure crit each 3 min. Small in a long boss fight, very strong in PvP burst."}
+      Improved Poisons:
+        {does: "Chance to apply Poisons +2–10%. A Poison application has a 10–50% chance to use no charge", lvl: C, pve: A, pvp: B, note: "More poison hits and fewer poison applications to your weapons. For deep Assassination builds."}
+      Relentless Strikes:
+        {does: "Finishing moves have a 4–20% chance for each Combo Point to restore 25 Energy", lvl: B, pve: A, pvp: B, note: "At 5/5, a finisher with 5 Combo Points always restores 25 Energy. It costs 5 points in Forever."}
+      Venom:
+        {does: "Shank gives +30% Poison damage and +20% chance to apply Poisons for 6 s", lvl: B, pve: A, pvp: B, note: "A passive effect of Shank, not a finisher. Mutilate needs it."}
+      Improved Kidney Shot:
+        {does: "Targets that your Kidney Shot stuns take 5/10% more damage from your attacks and poisons", lvl: C, pve: D, pvp: A, note: "For PvP burst in deep Assassination builds. It has no effect on targets that are immune to stuns."}
+      Seal Fate:
+        {does: "Crits from abilities that add Combo Points have a 33–100% chance to add 1 more Combo Point", lvl: A, pve: S, pvp: A, note: "The reason to stack crit. A Mutilate crit gives 3 Combo Points."}
+      Mutilate:
+        {does: "60 Energy. Hits with the 2 weapons for 90% weapon damage plus 39.6 each. +20% damage against Poisoned targets. Gives 2 Combo Points", lvl: A, pve: S, pvp: A, note: "The core attack of the spec, available at level 40. The class guide says that it needs a dagger in each hand."}
+  Combat:
+    summary: |
+      Combat is the tree for constant melee damage with each weapon type. **Blade Flurry** opens at 20 points and **Adrenaline Rush** at 30. **Hack and Slash** gives a different bonus for each weapon type, and **Flash of Steel** makes Shank a large source of Energy. Rows 2 and 3 have many defensive talents that are for leveling and PvP.
+    talents:
+      Coup de Grace:
+        {does: "Eviscerate damage +7–20%. Damage and storage rate of Death Mark +7–20%", lvl: A, pve: A, pvp: A, note: "Improved Eviscerate in Classic. It now also helps Death Mark, thus Subtlety builds take 2 points."}
+      Efficient Strikes:
+        {does: "Sinister Strike and Hemorrhage cost 3/5 less Energy", lvl: S, pve: S, pvp: B, note: "Improved Sinister Strike in Classic. The first 2 points of each build that uses Sinister Strike."}
+      Lightning Reflexes:
+        {does: "Dodge chance +1–5%", lvl: B, pve: C, pvp: C, note: "No damage value. Use it as filler to open rows 2 and 3."}
+      Puncturing Wounds:
+        {does: "Backstab crit chance +10–30% and Mutilate crit chance +5–15%. Backstab has a 15–45% chance to add 1 more Combo Point", lvl: B, pve: A, pvp: A, note: "Core for each dagger build. No value if you use Sinister Strike or Hemorrhage."}
+      Deflection:
+        {does: "Parry chance +2/4/6%", lvl: A, pve: C, pvp: B, note: "Riposte needs 3/3. In raids the boss does not attack you, thus it has no value there."}
+      Precision:
+        {does: "Hit chance +1/2/3%", lvl: A, pve: S, pvp: B, note: "Take 3/3 in each raid build. It has 3 ranks in Forever, and Weapon Expertise needs it."}
+      Improved Sprint:
+        {does: "Sprint has a 50/100% chance to remove all effects that decrease your movement speed", lvl: C, pve: D, pvp: A, note: "A PvP talent against roots and slows."}
+      Endurance:
+        {does: "Cooldown of Sprint and Evasion −30/60%", lvl: B, pve: C, pvp: A, note: "Much stronger than in Classic. Good for solo play, Hardcore and PvP."}
+      Riposte:
+        {does: "10 Energy. Usable after you parry. Does 150% weapon damage and disarms the target for 6 s. 6 s cooldown", lvl: A, pve: C, pvp: A, note: "Cheap damage when mobs attack you. It is not confirmed that it can disarm raid bosses."}
+      Composure:
+        {does: "Poised decreases the Energy cost of your next ability by 5/10 more", lvl: B, pve: B, pvp: C, note: "Poised becomes a 20-Energy discount. The value depends on how frequently you can use Poised."}
+      Improved Kick:
+        {does: "Kick has a 50/100% chance to silence the target for 2 s", lvl: C, pve: C, pvp: A, note: "For PvP against casters. Useful on caster mobs in dungeons."}
+      Flawless Execution:
+        {does: "Eviscerate costs 15 less Energy", lvl: S, pve: S, pvp: A, note: "1 point for a much cheaper finisher. Take it in each build that has 15 Combat points."}
+      Weapon Expertise:
+        {does: "Enemies have 1/2% less chance to dodge or parry your attacks", lvl: B, pve: A, pvp: C, note: "It no longer gives weapon skill. Take it on the way to Blade Flurry."}
+      Aggression:
+        {does: "Damage of Sinister Strike and Eviscerate +5/10/15%", lvl: S, pve: S, pvp: B, note: "It opens at 15 points in Forever. Core for sword, axe and mace builds."}
+      Dual Wield Specialization:
+        {does: "Off-hand weapon damage +25/50%", lvl: A, pve: S, pvp: B, note: "Only 2 points in Forever. It also makes Shank stronger, because Shank uses the off-hand weapon."}
+      Blade Flurry:
+        {does: "25 Energy. Attack speed +20%, and your melee attacks also hit 1 more enemy near you. Lasts 15 s. 2 min cooldown", lvl: S, pve: S, pvp: B, note: "Your cooldown for 2 targets and for burst. Do not use it near Sapped or Polymorphed enemies."}
+      Hack and Slash:
+        {does: "Axe or sword: 1–5% chance for an extra attack. Dagger or fist weapon: crit chance +1–5%. Mace: your attacks ignore 3–15% of armor", lvl: A, pve: S, pvp: A, note: "It replaces the 4 weapon specializations. No source has tested which weapon type gives the most damage."}
+      Flash of Steel:
+        {does: "Shank gives 3–15 more Energy, and its cooldown is 0.4–2 s shorter", lvl: A, pve: S, pvp: B, note: "Shank goes from 25 Energy each 10 s to 40 Energy each 8 s at rank 2. The best new Combat talent."}
+      Adrenaline Rush:
+        {does: "Energy regeneration +100% for 15 s. 5 min cooldown", lvl: A, pve: A, pvp: A, note: "Use it together with Blade Flurry. The 5 min cooldown limits its value in short fights."}
+  Subtlety:
+    summary: |
+      Subtlety is the tree for Stealth, openers and bleeds. **Ghostly Strike** lets you use Ambush or Garrote without Stealth, and **Hemorrhage** increases your Rupture and Garrote damage. **Death Mark** at 30 points is a new finisher that stores your damage and releases it after 6 s. **Opportunity** in row 1 is important for each dagger build.
+    talents:
+      Setup:
+        {does: "15/30/45% chance to add a Combo Point after you dodge an attack or fully resist a spell", lvl: C, pve: D, pvp: B, note: "It needs enemies that attack you. Best with Evasion and Ghostly Strike in PvP."}
+      Master of Deception:
+        {does: "Enemies detect you in Stealth as if you were 1–3 levels higher", lvl: C, pve: D, pvp: S, note: "Only 3 points in Forever. Necessary for PvP, where the opener decides the fight."}
+      Opportunity:
+        {does: "Damage of Backstab, Garrote, Ambush and Mutilate +4–20%", lvl: A, pve: S, pvp: S, note: "It needs no position behind the target in Forever, and it includes Mutilate. No value for Sinister Strike builds."}
+      Dirty Deeds:
+        {does: "Cheap Shot and Garrote cost 10/20 less Energy. You can use Garrote from the front of the target", lvl: B, pve: B, pvp: A, note: "Core for the bleed build, because Ghostly Strike lets you use Garrote again in the fight."}
+      Camouflage:
+        {does: "The speed penalty of Stealth decreases by 5/10/15%. Stealth cooldown −2/4/6 s", lvl: B, pve: C, pvp: A, note: "Faster movement in Stealth. Filler in raid builds."}
+      Improved Ambush:
+        {does: "Ambush crit chance +15/30/45%", lvl: B, pve: C, pvp: A, note: "For builds that open with Ambush and use it again after Ghostly Strike."}
+      Dirty Tricks:
+        {does: "Sap and Blind cost 25/50% less Energy", lvl: C, pve: D, pvp: C, note: "It does not increase the range, as it did in Classic. Take it only for Quick Getaway."}
+      Initiative:
+        {does: "Ambush, Garrote and Cheap Shot have a 33–100% chance to add 1 more Combo Point", lvl: A, pve: B, pvp: S, note: "A faster first finisher. With Ghostly Strike you get the bonus more than 1 time in a fight."}
+      Premeditation:
+        {does: "Adds 2 Combo Points to the target from 20 yd. You must use or add to them in 20 s. 2 min cooldown", lvl: B, pve: C, pvp: A, note: "A 1-point start for Slice and Dice or Kidney Shot. The 2 min cooldown limits it in long fights."}
+      Serrated Blades:
+        {does: "Your attacks ignore 3/6/9% of armor. Rupture damage +10/20/30%", lvl: B, pve: A, pvp: A, note: "Hemorrhage needs 3/3. The armor value is a percentage in Forever, thus it is good against each target."}
+      Elusiveness:
+        {does: "Cooldown of Vanish and Blind −45/90 s", lvl: B, pve: C, pvp: S, note: "More escapes and more control. Also good for Hardcore."}
+      Ghostly Strike:
+        {does: "40 Energy. 125% weapon damage, or 180% with a dagger in the main hand. Dodge +15% for 7 s. Your next Ambush or Garrote in 7 s needs no Stealth. 20 s cooldown", lvl: A, pve: A, pvp: A, note: "It makes Ambush and Garrote part of the rotation. It opens at 15 points."}
+      Quick Getaway:
+        {does: "You can Sap 1 more target. Movement speed +15/30% for 3 s after you Sap a target", lvl: C, pve: C, pvp: B, note: "2 Sapped targets help in dungeons with many humanoids. It needs 2/2 Dirty Tricks."}
+      Heightened Senses:
+        {does: "You detect Stealth as if you were 1/3 levels higher. Spells and ranged attacks have 2/4% less chance to hit you", lvl: D, pve: D, pvp: B, note: "For PvP only. Best against other Rogues and Druids."}
+      Preparation:
+        {does: "Finishes the cooldown of your other Rogue abilities. 10 min cooldown", lvl: B, pve: B, pvp: S, note: "A second Vanish, Sprint, Evasion and Cold Blood. Death Mark needs it."}
+      Hemorrhage:
+        {does: "35 Energy. 100% weapon damage, or 145% with a dagger. The target takes 15% more damage from your Rupture and Garrote for 15 s. Gives 1 Combo Point", lvl: A, pve: A, pvp: A, note: "The bonus applies only to your bleeds, not to the raid. It needs no position behind the target."}
+      Boot Knife:
+        {does: "Shank has a 20–100% chance to add 2 Combo Points to the target", lvl: A, pve: S, pvp: A, note: "At 5/5, each Shank gives 2 Combo Points and Energy. The strongest reason to go deep in Subtlety."}
+      Death Mark:
+        {does: "A finisher with a 20 yd range and a 10 s cooldown. It stores 12% of your damage for each Combo Point, and bleeds count 2 times. After 6 s it does the stored damage, to a cap", lvl: B, pve: A, pvp: A, note: "The cap increases with Attack Power and crit chance. It is not confirmed how much damage it adds in raids."}
+
+builds:
+  - id: combat-leveling
+    name: "Combat (recommended)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      Method, Mobalytics and Warcraft Tavern say that Combat is the smoothest solo spec. Use a slow sword, axe or mace in the main hand and build Combo Points with Sinister Strike. The order follows the milestones of those guides, adjusted to the launch client.
+    steps:
+      - [Efficient Strikes, 2, "A cheaper Sinister Strike from the first point"]
+      - [Coup de Grace, 3, "20% more Eviscerate damage"]
+      - [Deflection, 3, "Mobs attack you, thus parry decreases the damage that you take"]
+      - [Precision, 2, "Fewer misses. Opens row 3"]
+      - [Riposte, 1, "Cheap damage and a disarm after each parry"]
+      - [Precision, 1, "3% hit"]
+      - [Composure, 2, "Poised makes your next ability 20 Energy cheaper"]
+      - [Endurance, 1, "Opens row 4. Evasion and Sprint have a shorter cooldown"]
+      - [Flawless Execution, 1, "Eviscerate costs 15 less Energy"]
+      - [Aggression, 3, "15% more damage for Sinister Strike and Eviscerate"]
+      - [Weapon Expertise, 1, "Opens row 5"]
+      - [Blade Flurry, 1, "Kill 2 mobs at the same time"]
+      - [Hack and Slash, 5, "The bonus for your weapon type"]
+      - [Dual Wield Specialization, 2, "More off-hand and Shank damage"]
+      - [Weapon Expertise, 1, "Fewer dodges and parries"]
+      - [Flash of Steel, 1, "The last point to open row 7"]
+      - [Adrenaline Rush, 1, "A second cooldown for dangerous pulls"]
+      - [Flash of Steel, 4, "Shank becomes a large source of Energy"]
+      - [Malice, 5, "5% crit"]
+      - [Ruthlessness, 3, "Free Combo Points after finishers"]
+      - [Improved Slice and Dice, 2, "Opens row 3"]
+      - [Lethality, 2, "Larger crits with Sinister Strike"]
+      - [Vigor, 2, "10 more Energy"]
+      - [Blood Splatter, 1, "Opens row 4"]
+      - [Cold Blood, 1, "A sure crit for Eviscerate"]
+    notes:
+      - "Before level 24 you do not have Shank. Flash of Steel has no effect until then."
+      - "If you use daggers, do not use this build. Use the Assassination build."
+      - "At level 60, respec to the Combat raid build. It moves the points from Deflection and Riposte."
+
+  - id: assassination-leveling
+    name: "Assassination (daggers)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      Method's plan for daggers: use Backstab until you get Mutilate, and do not depend on poisons at low levels. Warcraft Tavern takes Malice and Remorseless Attacks first and gets Mutilate at level 40. Use Gouge to get behind the target for Backstab.
+    steps:
+      - [Malice, 5, "5% crit"]
+      - [Remorseless Attacks, 2, "A probable crit on the first attack of the next fight"]
+      - [Ruthlessness, 3, "Free Combo Points after finishers"]
+      - [Lethality, 2, "Larger Backstab crits"]
+      - [Vigor, 2, "10 more Energy for the opener"]
+      - [Blood Splatter, 1, "Opens row 4. A longer Garrote and Rupture"]
+      - [Cold Blood, 1, "A sure crit each 3 min"]
+      - [Improved Slice and Dice, 3, "A longer Slice and Dice"]
+      - [Improved Poisons, 1, "Opens row 5"]
+      - [Venom, 1, "Shank makes your poisons stronger. Deadly Poison arrives at level 30"]
+      - [Relentless Strikes, 4, "Energy back from finishers"]
+      - [Seal Fate, 3, "Crits give 1 more Combo Point"]
+      - [Relentless Strikes, 1, "A finisher with 5 Combo Points always restores 25 Energy"]
+      - [Improved Poisons, 1, "The last point to open row 7"]
+      - [Mutilate, 1, "Your new main attack. It gives 2 Combo Points"]
+      - [Opportunity, 5, "20% more Mutilate, Ambush and Garrote damage"]
+      - [Coup de Grace, 3, "20% more Eviscerate damage"]
+      - [Lightning Reflexes, 2, "Opens Combat row 2"]
+      - [Puncturing Wounds, 3, "15% more crit for Mutilate"]
+      - [Precision, 3, "Hit for dungeons at 55+"]
+      - [Vile Poisons, 4, "More poison damage"]
+    notes:
+      - "Put Instant Poison on the main hand and Deadly Poison on the off hand from level 30."
+      - "At level 60, respec to the Mutilate raid build. It moves the points from Remorseless Attacks and Blood Splatter into Improved Poisons."
+
+  - id: subtlety-leveling
+    name: "Subtlety (groups)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      Method recommends Subtlety for group play. It is weaker solo, because you cannot get behind the target easily. The build opens with Ambush and uses Ghostly Strike to use Ambush again. From level 30, Hemorrhage is the main attack. Use daggers.
+    steps:
+      - [Opportunity, 5, "20% more Backstab, Ambush and Garrote damage"]
+      - [Camouflage, 3, "Faster movement in Stealth"]
+      - [Improved Ambush, 2, "Ambush arrives at level 18"]
+      - [Serrated Blades, 3, "Armor decrease and more Rupture damage"]
+      - [Initiative, 2, "More Combo Points from openers"]
+      - [Ghostly Strike, 1, "Ambush or Garrote without Stealth each 20 s"]
+      - [Initiative, 1, "Each opener gives 1 more Combo Point"]
+      - [Premeditation, 1, "2 free Combo Points for Slice and Dice"]
+      - [Elusiveness, 2, "Vanish more frequently. Opens row 5"]
+      - [Hemorrhage, 1, "Your new main attack. It needs no position behind the target"]
+      - [Preparation, 1, "A second Vanish, Sprint and Evasion"]
+      - [Improved Ambush, 1, "45% more Ambush crit"]
+      - [Dirty Deeds, 2, "A cheaper Cheap Shot, and Garrote from the front"]
+      - [Boot Knife, 5, "Each Shank gives 2 Combo Points"]
+      - [Death Mark, 1, "The burst finisher"]
+      - [Malice, 5, "5% crit"]
+      - [Ruthlessness, 3, "Free Combo Points after finishers"]
+      - [Improved Slice and Dice, 2, "Opens row 3"]
+      - [Lethality, 2, "Larger Hemorrhage crits"]
+      - [Vigor, 2, "10 more Energy"]
+      - [Blood Splatter, 1, "A longer Rupture and Garrote"]
+      - [Cold Blood, 1, "A sure crit for Ambush"]
+      - [Efficient Strikes, 2, "Hemorrhage costs 5 less Energy"]
+      - [Coup de Grace, 2, "More damage for Eviscerate and Death Mark"]
+    notes:
+      - "Boot Knife has no effect before level 24, when you learn Shank."
+      - "If you play solo most of the time, use the Combat build."
+
+  - id: combat-raid
+    name: "Combat (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      The default build for dungeons and raids. It works with swords, axes, maces and fist weapons. It takes all the damage talents of Combat and the first 16 points of Assassination for crit.
+    steps:
+      - [Efficient Strikes, 2]
+      - [Coup de Grace, 3]
+      - [Precision, 3]
+      - [Lightning Reflexes, 2, "Filler to open row 3. You can use Improved Sprint"]
+      - [Composure, 2]
+      - [Endurance, 2, "Filler to open row 4. For dungeons, you can move these points to Deflection and Riposte"]
+      - [Lightning Reflexes, 1]
+      - [Flawless Execution, 1]
+      - [Weapon Expertise, 2]
+      - [Aggression, 3]
+      - [Dual Wield Specialization, 2]
+      - [Blade Flurry, 1]
+      - [Hack and Slash, 5, "The bonus applies to the weapon that makes the attack. No source has tested the best weapon type"]
+      - [Flash of Steel, 5]
+      - [Adrenaline Rush, 1]
+      - [Malice, 5]
+      - [Ruthlessness, 3]
+      - [Improved Slice and Dice, 3]
+      - [Lethality, 2]
+      - [Vigor, 2]
+      - [Cold Blood, 1, "You can move this point to Blood Splatter if you use Rupture"]
+    notes:
+      - "With daggers and Backstab, move the points from Efficient Strikes, Aggression and Composure into Puncturing Wounds and Opportunity."
+      - "If your raid needs Expose Armor from you, move 2 points from Vigor to Improved Expose Armor."
+
+  - id: mutilate-raid
+    name: "Assassination (Mutilate)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      A deep Assassination build with a dagger in each hand. Mutilate crits give 3 Combo Points with Seal Fate. Venom, Vile Poisons and Improved Poisons make poisons a large part of your damage. It takes Opportunity and Puncturing Wounds, because they include Mutilate in Forever.
+    steps:
+      - [Malice, 5]
+      - [Ruthlessness, 3]
+      - [Improved Slice and Dice, 2]
+      - [Lethality, 2]
+      - [Vigor, 2]
+      - [Improved Slice and Dice, 1]
+      - [Cold Blood, 1]
+      - [Improved Poisons, 5]
+      - [Venom, 1]
+      - [Relentless Strikes, 5]
+      - [Seal Fate, 3]
+      - [Mutilate, 1]
+      - [Vile Poisons, 4, "4/5 leaves 1 point for Improved Slice and Dice. You can move it"]
+      - [Opportunity, 5, "20% more Mutilate damage for 5 points"]
+      - [Coup de Grace, 3]
+      - [Efficient Strikes, 2, "For the Sinister Strike that adds the last Combo Point. You can use Lightning Reflexes"]
+      - [Puncturing Wounds, 3, "15% more Mutilate crit, thus more Seal Fate procs"]
+      - [Precision, 3]
+    notes:
+      - "Use Shank each time it is ready. It starts Venom."
+      - "The build has no cooldown for 2 targets. For dungeons, the Combat build is better."
+
+  - id: subtlety-raid
+    name: "Subtlety (bleeds)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      A bleed build for players who want to try Subtlety in raids. Hemorrhage increases your Rupture and Garrote damage, and Ghostly Strike lets you apply Garrote again. Death Mark stores bleed damage at 2 times the rate. Icy Veins says that Subtlety can possibly become the strongest spec, but no source has tested it at level 60.
+    steps:
+      - [Opportunity, 5, "It includes Garrote"]
+      - [Dirty Deeds, 2, "Garrote from the front, for 20 less Energy"]
+      - [Improved Ambush, 3, "Filler. Use Ambush after Ghostly Strike when Garrote is active"]
+      - [Serrated Blades, 3]
+      - [Initiative, 3, "Each Garrote gives 2 Combo Points"]
+      - [Ghostly Strike, 1]
+      - [Premeditation, 1]
+      - [Elusiveness, 2, "Filler. A shorter Vanish cooldown gives more openers"]
+      - [Hemorrhage, 1]
+      - [Preparation, 1]
+      - [Camouflage, 3, "Filler to open row 6"]
+      - [Boot Knife, 5]
+      - [Death Mark, 1]
+      - [Malice, 5]
+      - [Ruthlessness, 3]
+      - [Improved Slice and Dice, 2]
+      - [Lethality, 2]
+      - [Blood Splatter, 1, "Rupture lasts 6 s longer and Garrote 9 s longer"]
+      - [Vigor, 2]
+      - [Cold Blood, 1]
+      - [Efficient Strikes, 2, "Hemorrhage costs 5 less Energy"]
+      - [Coup de Grace, 2, "More damage and a faster storage rate for Death Mark"]
+    notes:
+      - "It is not confirmed that raid bosses can bleed in each fight."
+      - "The damage cap of Death Mark limits its value. Read the tooltip for your cap."
+
+  - id: subtlety-pvp
+    name: "Subtlety (PvP)"
+    kind: endgame
+    role: "PvP"
+    summary: |
+      The control and burst build for battlegrounds and world PvP. It has the best Stealth, strong openers, and Preparation for a second Vanish, Blind and Cold Blood. Boot Knife and Initiative give Combo Points quickly for Kidney Shot.
+    steps:
+      - [Opportunity, 5]
+      - [Master of Deception, 3]
+      - [Camouflage, 3]
+      - [Improved Ambush, 3]
+      - [Dirty Deeds, 2, "Cheap Shot costs 20 less Energy"]
+      - [Initiative, 3]
+      - [Premeditation, 1]
+      - [Serrated Blades, 3]
+      - [Elusiveness, 2]
+      - [Ghostly Strike, 1]
+      - [Heightened Senses, 1, "A personal preference. You can move this point to Setup"]
+      - [Preparation, 1]
+      - [Hemorrhage, 1]
+      - [Boot Knife, 5]
+      - [Death Mark, 1]
+      - [Malice, 5]
+      - [Improved Gouge, 3, "Gouge lasts 1.5 s longer"]
+      - [Remorseless Attacks, 2, "Filler to open row 3. You can use Ruthlessness"]
+      - [Lethality, 2]
+      - [Vigor, 2]
+      - [Blood Splatter, 1, "Filler to open row 4"]
+      - [Cold Blood, 1, "A sure crit for Ambush or Eviscerate"]
+    notes:
+      - "The build has no Combat points. If you want Improved Sprint, you must remove 7 points from the other trees."
+
+faq:
+  - q: "Where are Mutilate and Venom in the tree?"
+    a: "In the launch client, Venom is in Assassination row 5 and needs 20 points. Mutilate is the last talent, needs 30 points and needs Venom. Some information from the beta gave Mutilate at 21 points and Venom as the last talent."
+  - q: "Is Venom a finisher or a passive talent?"
+    a: "It is a passive talent. Each Shank gives +30% Poison damage and +20% chance to apply Poisons for 6 s. Blizzard's deep dive from the beta described a 25-Energy finisher."
+  - q: "Is the last Subtlety talent Thousand Cuts or Death Mark?"
+    a: "It is Death Mark. The launch client has no Thousand Cuts, Quietus, Cutthroat, Improved Distract or Murder. Ghostly Strike now has the effect that lets you use Ambush or Garrote without Stealth."
+  - q: "Which weapon type is best for Hack and Slash?"
+    a: "It is not known. Axes and swords get extra attacks, daggers and fist weapons get crit, and maces ignore armor. No source has published simulations, thus use the best weapon that you have."
+  - q: "Why do builds take talents for Shank?"
+    a: "Shank has a talent in each tree. Venom makes poisons stronger, Flash of Steel gives 15 more Energy, and Boot Knife gives 2 Combo Points. Use Shank each time it is ready."
+
+sources:
+  - {title: "Warcraft Tavern: Rogue leveling guide", url: "https://www.warcrafttavern.com/forever/guides/rogue-leveling/"}
+  - {title: "Warcraft Tavern: Rogue guide", url: "https://www.warcrafttavern.com/forever/guides/rogue/"}
+  - {title: "Warcraft Tavern: Combat Rogue", url: "https://www.warcrafttavern.com/forever/guides/combat-rogue/"}
+  - {title: "Warcraft Tavern: Assassination Rogue", url: "https://www.warcrafttavern.com/forever/guides/assassination-rogue/"}
+  - {title: "Warcraft Tavern: Subtlety Rogue", url: "https://www.warcrafttavern.com/forever/guides/subtlety-rogue/"}
+  - {title: "Method: Rogue leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-rogue-leveling-guide-and-talents"}
+  - {title: "Mobalytics: Rogue leveling guide", url: "https://mobalytics.gg/wow-forever/classes/rogue-leveling-guide"}
+  - {title: "Blizzard: Class Deep Dives, Rogue and Warlock", url: "https://worldofwarcraft.blizzard.com/news/24310968"}
+  - {title: "Icy Veins: Will Rogues Sneak to the Top?", url: "https://www.icy-veins.com/wow-forever/news/countdown-to-forever-3-will-rogues-sneak-to-the-top/"}

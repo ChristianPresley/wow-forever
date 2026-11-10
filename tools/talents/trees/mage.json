@@ -1,0 +1,412 @@
+{
+ "class": "mage",
+ "trees": [
+  {
+   "name": "Arcane",
+   "talents": [
+    {
+     "name": "Wand Specialization",
+     "row": 1,
+     "col": 1,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Improved Channeling",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Arcane Resilience",
+     "row": 1,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Arcane Subtlety",
+     "row": 2,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Magic Absorption",
+     "row": 2,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Arcane Concentration",
+     "row": 2,
+     "col": 3,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Missile Barrage",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Arcane Geometry",
+     "row": 3,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Arcane Impact",
+     "row": 3,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Arcane Blast",
+     "row": 3,
+     "col": 4,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Arcane Shielding",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Counterspell",
+     "row": 4,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Arcane Meditation",
+     "row": 4,
+     "col": 3,
+     "max": 3,
+     "status": "changed",
+     "requires": [
+      "Arcane Concentration"
+     ]
+    },
+    {
+     "name": "Arcane Wrath",
+     "row": 4,
+     "col": 4,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Arcane Blast"
+     ]
+    },
+    {
+     "name": "Presence of Mind",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Arcane Mind",
+     "row": 5,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Arcane Instability",
+     "row": 6,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Arcane Power",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Presence of Mind"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Fire",
+   "talents": [
+    {
+     "name": "Incineration",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Accelerant",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Ignite",
+     "row": 2,
+     "col": 1,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Flame Throwing",
+     "row": 2,
+     "col": 2,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Impact",
+     "row": 2,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Burning Soul",
+     "row": 3,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Flamestrike",
+     "row": 3,
+     "col": 2,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Pyroblast",
+     "row": 3,
+     "col": 3,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Fire Blast",
+     "row": 3,
+     "col": 4,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Scorch",
+     "row": 4,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Fire Ward",
+     "row": 4,
+     "col": 2,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Heating Up",
+     "row": 4,
+     "col": 3,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Pyroblast"
+     ]
+    },
+    {
+     "name": "Master of Elements",
+     "row": 4,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Critical Mass",
+     "row": 5,
+     "col": 2,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Blast Wave",
+     "row": 5,
+     "col": 3,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Fire Power",
+     "row": 6,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Combustion",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Critical Mass"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Frost",
+   "talents": [
+    {
+     "name": "Frost Warding",
+     "row": 1,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Frostbolt",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Precision",
+     "row": 1,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Ice Shards",
+     "row": 2,
+     "col": 1,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Frostbite",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Frost Nova",
+     "row": 2,
+     "col": 3,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Permafrost",
+     "row": 2,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Frost Channeling",
+     "row": 3,
+     "col": 1,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Improved Blizzard",
+     "row": 3,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Ice Lance",
+     "row": 3,
+     "col": 3,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Arctic Reach",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Ice Block",
+     "row": 4,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Shatter",
+     "row": 4,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Cone of Cold",
+     "row": 5,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Cold Snap",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Fingers of Frost",
+     "row": 5,
+     "col": 3,
+     "max": 2,
+     "status": "new",
+     "requires": [
+      "Ice Lance"
+     ]
+    },
+    {
+     "name": "Winter's Chill",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Ice Barrier",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Cold Snap"
+     ]
+    }
+   ]
+  }
+ ]
+}

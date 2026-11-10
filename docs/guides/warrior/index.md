@@ -84,6 +84,9 @@ Skyborne Warriors are the only new Warrior combinations in Forever. You must hav
 
 ## Specs & talents
 
+!!! tip "Full talent guide"
+    The [Warrior talent guide](../../talents/warrior.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+
 Forever's Warrior trees keep the Classic shape, but many talents are different. The new **16-point tier** gives each tree a signature talent (Spearing Strike, Raging Blows, Vanguard). Exact point costs and positions still change from build to build. Thus the builds below give **priorities and milestones**, not a full list of points. Before you spend your points, compare the builds with a current talent calculator.
 
 !!! tip "Talent points earlier with Legacy"

@@ -49,6 +49,8 @@
 
 ## Talents
 
+The [Druid talent guide](../../talents/druid.md) shows all 3 trees and gives a rating to each talent.
+
 === "Balance"
 
     Genesis · Nature's Majesty · **Nature's Splendor** (11) · **Insect Swarm** (16, moved from Resto) · Overgrowth · **Eclipse** (Wrath speeds up your next Starfires) · improved Nature's Grace · **Moonkin Form** (party crit for spells and attacks, does not stack with Leader of the Pack)

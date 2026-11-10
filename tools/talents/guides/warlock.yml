@@ -1,0 +1,403 @@
+class: Warlock
+badges: [dps]
+description: "Warlock talent guide for WoW: Forever: all 53 talents in Affliction, Demonology and Destruction with a rating, a talent for each level from 10 to 60, and level 60 builds for raids and PvP."
+
+intro: |
+  Each Warlock tree is a full damage spec in Forever. **Affliction** is the tree for solo leveling. **Demonology** is the safest tree and the PvP tree. **Destruction** is the tree for dungeons and cleave. Most level 60 builds put points in 2 or 3 trees, because Suppression, Improved Corruption, Bane and Ruin help all specs. Blizzard announced an Affliction and Voidwalker hotfix for 10 November. Its effect on these talents is not confirmed.
+
+card:
+  leveling: "Affliction (fast solo) or Demonology (safe)"
+  pve: "Affliction, Demonology or Destruction. Destruction for dungeons"
+  pvp: "Demonology with Soul Link and Curse of Exhaustion"
+
+quick:
+  - stage: "Level 10–39"
+    build: affliction-leveling
+    why: "An almost instant Corruption at level 14. A stronger demon at 20. Drain Life as filler from 30."
+  - stage: "Level 10–39, safe alternative and Hardcore"
+    build: demonology-leveling
+    why: "Soul Link at level 30 and Demonic Pact at 40. The build with the most health."
+  - stage: "Level 10–59, dungeon groups"
+    build: destruction-leveling
+    why: "Conflagrate at 25, Bane of Havoc at 31 and Incinerate at 40. The best AoE and cleave."
+  - stage: "Level 40–59"
+    build: affliction-leveling
+    why: "Shadow Mastery at 43–47 and Wrack at 48. Drains keep your health full."
+  - stage: "Level 60: dungeons"
+    build: destruction-raid
+    why: "Bane of Havoc copies 15% of your damage to a second target. Shadowburn gives +20% Fire damage."
+  - stage: "Level 60: raids"
+    build: affliction-raid
+    why: "Wrack filler with Soul Siphon. Suppression gives 5% hit and less threat."
+  - stage: "Level 60: raids, second option"
+    build: demonology-raid
+    why: "2 demon bonuses at the same time with Demonic Pact. Soul Fire as the execute spell."
+  - stage: "Level 60: PvP"
+    build: soul-link-pvp
+    why: "Soul Link, 15% Stamina, a faster Spell Lock and Curse of Exhaustion."
+
+trees:
+  Affliction:
+    summary: |
+      Affliction is the DoT and drain tree. **Pandemic** doubles the crit bonus of DoTs, and **Soul Siphon** makes drains and **Wrack** stronger for each Affliction effect on the target. Row 1 has **Suppression** (5% hit) and **Improved Corruption**, so each raid build puts points here.
+    talents:
+      Improved Life Tap:
+        {does: "Life Tap gives 10/20% more mana", lvl: B, pve: A, pvp: B, note: "More mana for the same health. Each raid build takes 2/2."}
+      Suppression:
+        {does: "Hit chance +1–5%. All threat −4–20%", lvl: B, pve: S, pvp: B, note: "5% of the 17% hit that you need for raid bosses. Take 5/5 in each build that has 5 points for it."}
+      Improved Corruption:
+        {does: "Cast time of Corruption −0.4 to −2 s. Corruption damage +2–10%", lvl: S, pve: S, pvp: S, note: "The first 5 points of most builds. Corruption becomes almost instant."}
+      Grim Reach:
+        {does: "Range of Affliction spells +10/20%", lvl: C, pve: C, pvp: A, note: "For PvP, where range keeps melee enemies away. The talent is in the launch client."}
+      Soul Harvest:
+        {does: "A kill with Drain Soul on the target gives +50/100% mana regeneration for 10 s. 50/100% of the regeneration continues while you cast", lvl: C, pve: D, pvp: D, note: "Life Tap gives mana more quickly. No value on bosses."}
+      Improved Drains:
+        {does: "Drain Life, Drain Soul and Drain Mana do 7–20% more", lvl: A, pve: C, pvp: A, note: "Core when you level with Drain Life. The launch tooltip does not include Wrack."}
+      Improved Bane of Agony:
+        {does: "Bane of Agony damage +5/10%", lvl: B, pve: B, pvp: B, note: "Filler. It has no effect when you use Bane of Doom or Bane of Havoc."}
+      Fel Concentration:
+        {does: "Drain Life, Drain Mana, Drain Soul and Wrack have a 23–70% chance to ignore pushback", lvl: A, pve: C, pvp: A, note: "Take it when mobs or players hit you during drains. Bosses do not hit you frequently."}
+      Amplify Curse:
+        {does: "Instant, 3 min cooldown. Your next Curse of Weakness or Bane of Agony is 50% stronger, or your next Curse of Exhaustion is 20% stronger", lvl: B, pve: C, pvp: A, note: "Curse of Exhaustion needs it. The long cooldown makes the damage gain small."}
+      Pandemic:
+        {does: "Crit damage bonus of Corruption, Bane of Agony, Bane of Doom, Siphon Life, Wrack, Drain Soul and Drain Life +33–100%", lvl: A, pve: S, pvp: A, note: "DoTs can crit in Forever. Useful also for Destruction builds that have 13 points in Affliction."}
+      Malevolence:
+        {does: "Crit chance of Shadow spells +1–5%", lvl: B, pve: S, pvp: B, note: "Works with Pandemic and Ruin. Core for Affliction raid builds."}
+      Nightfall:
+        {does: "Corruption, Drain Soul, Drain Life and Wrack have a 2/4% chance on damage to make your next Shadow Bolt instant", lvl: B, pve: A, pvp: A, note: "Free damage. The instant Shadow Bolt can also apply Improved Shadow Bolt."}
+      Curse of Exhaustion:
+        {does: "An instant Curse. Movement speed of the target −30% for 12 s", lvl: C, pve: D, pvp: S, note: "The reason to put 17 points in Affliction for PvP. It needs Amplify Curse."}
+      Siphon Life:
+        {does: "An instant DoT for 30 s. It moves health from the target to you each 3 s (11 health at rank 1)", lvl: A, pve: A, pvp: A, note: "Wrack needs it. It also counts as an Affliction effect for Soul Siphon."}
+      Soul Siphon:
+        {does: "Drain Life, Drain Soul and Wrack do 4/8/12% more for each of your other Affliction effects on the target, to a maximum of +12/24/36%", lvl: A, pve: S, pvp: A, note: "3 other Affliction effects give the maximum. Core for the Wrack build."}
+      Shadow Mastery:
+        {does: "Shadow damage and life drained +2–10%", lvl: A, pve: S, pvp: A, note: "Applies to all Shadow spells. Take 5/5 in each deep Affliction build."}
+      Wrack:
+        {does: "200 mana, 30 yd. 86 Shadow damage each second for 6 s. The target takes 10% more damage from your other Shadow DoTs", lvl: A, pve: S, pvp: B, note: "The filler of the raid build. The launch tooltip says Instant, and other sources say channel. Its value after the 10 November hotfix is not confirmed."}
+  Demonology:
+    summary: |
+      Demonology is the demon tree and the tree with the most health. **Demonic Sacrifice** gives a 2-hour bonus, and **Demonic Pact** lets you keep that bonus with a different demon out. The PvE ratings are for damage. The notes tell you which talents are only for Voidwalker pet tanking.
+    talents:
+      Improved Health Funnel:
+        {does: "Health Funnel gives 20/40% more health, costs 15/30% less health and makes 50/100% less threat. You can use it at all demon health levels", lvl: B, pve: C, pvp: B, note: "For Voidwalker pet tanking and for PvP with Soul Link. No value for raid damage."}
+      Improved Imp:
+        {does: "Firebolt damage +10/20/30%. Fire Shield effect +10/20/30%", lvl: C, pve: A, pvp: D, note: "For builds that keep the Imp out. It does not affect Blood Pact."}
+      Demonic Embrace:
+        {does: "Stamina +3–15%", lvl: B, pve: C, pvp: S, note: "Core for PvP and Hardcore. It gives no damage."}
+      Unholy Power:
+        {does: "Damage of your Imp, Voidwalker, Succubus, Incubus and Felhunter +2–10%", lvl: A, pve: A, pvp: B, note: "The usual way to open Demonology row 2. Good in all builds that keep a demon out."}
+      Demonic Aegis:
+        {does: "Demon Skin and Demon Armor are 15/30% stronger", lvl: C, pve: D, pvp: B, note: "Filler for PvP. Do not take it for raids."}
+      Improved Voidwalker:
+        {does: "Torment, Consume Shadows, Sacrifice and Suffering are 10/20/30% stronger", lvl: B, pve: C, pvp: C, note: "Only for Voidwalker pet tanking. No value for damage."}
+      Fel Vitality:
+        {does: "Health and mana of your demon +5/10/15%. Your maximum mana +5/10/15%", lvl: A, pve: B, pvp: A, note: "A stronger demon and more mana for you. Helps a Voidwalker tank."}
+      Demonic Energies:
+        {does: "Your spell damage heals your demon for 8/15% of the damage. Life Tap gives your demon 50/100% of the mana that you get", lvl: A, pve: B, pvp: B, note: "Keeps the demon alive when you level. In raids it helps the demon against AoE damage."}
+      Improved Sayaad:
+        {does: "Lash of Pain and Soothing Kiss are 10/20/30% stronger. Seduction and Lesser Invisibility last 10/20/30% longer", lvl: B, pve: B, pvp: B, note: "For builds that keep the Succubus or Incubus out. The launch client confirms the talent."}
+      Demonic Sacrifice:
+        {does: "Sacrifice your demon for a 2-hour effect. Imp: +15% Shadow damage. Succubus or Incubus: +15% Fire damage. Voidwalker: 2% mana each 4 s. Felhunter: 3% health each 4 s", lvl: B, pve: S, pvp: A, note: "Soul Link needs it. Before you have Demonic Pact, a new demon cancels the effect."}
+      Master Summoner:
+        {does: "Cast time of demon summons −2/4 s. Mana cost −20/40%", lvl: B, pve: C, pvp: A, note: "Fel Domination needs 2/2. Useful when you sacrifice demons frequently."}
+      Decimation:
+        {does: "Soul Fire cooldown −45/90%. Shadow Bolt and Searing Pain do 3/6% more to targets below 35% health. For 10 s after that, Soul Fire casts 20/40% faster and costs no Soul Shard", lvl: C, pve: A, pvp: C, note: "The execute talent of the Demonology Fire build. Soul Fire comes at level 48."}
+      Fel Domination:
+        {does: "Your next demon summon is 5.5 s faster and costs 50% less mana. 5 min cooldown", lvl: B, pve: C, pvp: A, note: "A fast new demon when your demon dies. Important in PvP and Hardcore."}
+      Demonic Brand:
+        {does: "Searing Pain makes 17/33/50% less threat and brands the target for 10 s. The next 2/4/6 attacks of your demon do bonus Fire or Shadow damage (65–68 plus 7.8% of your spell power). Shadow hits make high threat", lvl: A, pve: S, pvp: C, note: "Core for Demonology damage. With a Voidwalker, the Shadow hits hold threat for pet tanking."}
+      Improved Felhunter:
+        {does: "Tainted Blood, Devour Magic and Paranoia are 10/20/30% stronger. Spell Lock cooldown −2/4/6 s", lvl: D, pve: C, pvp: S, note: "A PvP talent. In PvE, take it only when you must interrupt with Spell Lock."}
+      Soul Link:
+        {does: "Your demon takes 30% of the damage that you take. You and your demon do 3% more damage", lvl: S, pve: A, pvp: S, note: "The best defensive talent of the class. Demonic Pact needs it."}
+      Demonic Knowledge:
+        {does: "With a demon out, you and your demon get spell damage up to 33/67/100% of your level", lvl: A, pve: A, pvp: B, note: "A maximum of 60 spell damage at level 60. The tooltip says up to, and the exact rule is not confirmed."}
+      Master Demonologist:
+        {does: "An effect for you and your demon. Imp: Fire damage +2–10%. Succubus or Incubus: Shadow damage +2–10%. Voidwalker: physical damage taken −2–10%. Felhunter: magic damage taken −2–10%", lvl: A, pve: S, pvp: A, note: "10% damage for the school of your demon. The Felhunter effect is strong against casters in PvP."}
+      Demonic Pact:
+        {does: "A different demon does not cancel your Demonic Sacrifice effect. The sacrificed demon type still cancels it", lvl: A, pve: S, pvp: A, note: "You get the Demonic Sacrifice bonus and the Master Demonologist bonus at the same time."}
+  Destruction:
+    summary: |
+      Destruction is the direct damage tree. **Conflagrate** opens at 15 points, **Bane of Havoc** at 20 and **Incinerate** at 30. **Shadow and Flame** connects Conflagrate and Shadowburn to a 20% damage bonus. **Bane** and **Ruin** also help Shadow Bolt, so Affliction and Demonology builds put 18–21 points here.
+    talents:
+      Destructive Reach:
+        {does: "Range of Destruction spells +10/20%", lvl: C, pve: C, pvp: B, note: "A personal preference. It makes it easier to stay at range."}
+      Improved Shadow Bolt:
+        {does: "Shadow Bolt crits make the target take 4–20% more Shadow damage from your attacks for 12 s", lvl: B, pve: A, pvp: B, note: "For builds that cast Shadow Bolt. It has no value when Incinerate or Searing Pain is your filler. It applies only to your damage."}
+      Bane:
+        {does: "Cast time of Shadow Bolt, Immolate and Incinerate −0.1 to −0.5 s. Cast time of Soul Fire −0.4 to −2 s", lvl: S, pve: S, pvp: A, note: "The first 5 points of each build that has points in Destruction."}
+      Molten Skin:
+        {does: "All damage taken −2–10%", lvl: B, pve: C, pvp: A, note: "For PvP and Hardcore. In raids, take it only for fights with much damage to the raid."}
+      Cataclysm:
+        {does: "Mana cost of Destruction spells −3–10%", lvl: B, pve: B, pvp: C, note: "Filler to open row 3. Less Life Tap."}
+      Aftermath:
+        {does: "Initial damage of Immolate +10–50%. Conflagrate has a 20–100% chance to Daze the target (−50% speed, 5 s)", lvl: A, pve: A, pvp: A, note: "More damage on each Immolate. The Daze helps you kite when you level and in PvP."}
+      Ruin:
+        {does: "Crit damage bonus of Destruction spells +20–100%", lvl: A, pve: S, pvp: S, note: "Doubles the crit bonus. It is in row 3 now, so all specs can get it."}
+      Shadowburn:
+        {does: "Instant Shadow hit (65–74 at rank 1), 15 s cooldown. You get a Soul Shard if the target dies in 8 s", lvl: A, pve: S, pvp: A, note: "It costs a Soul Shard. With Shadow and Flame 5/5, it gives the shard back and gives +20% Fire damage."}
+      Intensity:
+        {does: "Destruction spells have a 23–70% chance to ignore pushback", lvl: B, pve: C, pvp: B, note: "Useful when mobs or players hit you. Pyroclasm needs 3/3."}
+      Agonizing Flames:
+        {does: "Crit chance of Searing Pain +3–10%. Damage of all Destruction spells +3–10%", lvl: A, pve: S, pvp: A, note: "10% damage for each Destruction spell. It also applies to Shadow Bolt in Affliction builds."}
+      Conflagrate:
+        {does: "Instant Fire hit (87–112 at rank 1) on a target with your Immolate. It consumes Immolate. 10 s cooldown", lvl: S, pve: S, pvp: A, note: "Available at level 25. With Shadow and Flame 5/5, it does not consume Immolate."}
+      Pyroclasm:
+        {does: "Soul Fire has a 13/26% chance to stun for 3 s. Rain of Fire and Hellfire have a 13/26% chance during their duration", lvl: C, pve: D, pvp: C, note: "Bosses are immune to stuns. It costs 5 points with Intensity."}
+      Bane of Havoc:
+        {does: "A Bane for 5 min on 1 target. The target also takes 15% of the damage that you do to other targets", lvl: A, pve: S, pvp: B, note: "Core for dungeons and cleave fights. No effect on a single target. Incinerate needs it."}
+      Fire and Brimstone:
+        {does: "Crit chance of Conflagrate +8–25%", lvl: B, pve: A, pvp: A, note: "Strong with Ruin. Conflagrate has only a 10 s cooldown."}
+      Shadow and Flame:
+        {does: "Conflagrate gives +4–20% Shadow damage for 20 s. Shadowburn gives +4–20% Fire damage for 20 s. Conflagrate has a 20–100% chance to keep Immolate. Shadowburn has a 20–100% chance to give back its Soul Shard", lvl: A, pve: S, pvp: A, note: "Take 5/5. Use Shadowburn on cooldown to keep the Fire bonus active."}
+      Incinerate:
+        {does: "A 2.5 s Fire spell, 30 yd (99–115 at rank 1). It does 25% more damage if Immolate is on the target", lvl: A, pve: S, pvp: C, note: "The Destruction filler from level 40. Bane makes it a 2 s cast."}
+
+builds:
+  - id: affliction-leveling
+    name: "Affliction (solo)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The build that all major guides recommend for solo leveling. The first 21 points follow the Warcraft Tavern order from the class guide. After that, this order takes Siphon Life and Wrack earlier and does not use Malediction, which is not in the launch client.
+    steps:
+      - [Improved Corruption, 5, "Corruption becomes almost instant"]
+      - [Suppression, 5, "Fewer misses and less threat for your demon"]
+      - [Unholy Power, 5, "A stronger demon"]
+      - [Demonic Energies, 2, "Your damage heals the demon"]
+      - [Improved Drains, 3, "A stronger Drain Life"]
+      - [Amplify Curse, 1, "A stronger Bane of Agony for hard pulls"]
+      - [Pandemic, 3, "DoT crits do double damage"]
+      - [Fel Concentration, 3, "Mobs do not interrupt your drains"]
+      - [Siphon Life, 1, "A DoT that heals you"]
+      - [Soul Siphon, 3, "Drain Life does more with DoTs on the target"]
+      - [Improved Life Tap, 2, "More mana. Opens row 6"]
+      - [Shadow Mastery, 5, "10% Shadow damage"]
+      - [Wrack, 1, "A new filler that makes your DoTs stronger"]
+      - [Malevolence, 5, "Shadow crit for Pandemic"]
+      - [Nightfall, 2, "Instant Shadow Bolts"]
+      - [Improved Bane of Agony, 2, "More Bane damage"]
+      - [Fel Vitality, 3, "More mana for you and more health for the demon"]
+    notes:
+      - "Use the Voidwalker until level 20, then the Succubus or Incubus."
+      - "Before level 30, use the wand while your DoTs are active. After 30, use Drain Life."
+      - "For raids at 60, respec to a level 60 build."
+
+  - id: demonology-leveling
+    name: "Demonology (safe)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The safe route to 60 and the route for Hardcore. It puts all points in Demonology from level 10. You get Soul Link at 30 and Demonic Pact at 40. The order follows the Warcraft Tavern Demonology build in the class guide.
+    steps:
+      - [Unholy Power, 5, "A stronger demon from the first point"]
+      - [Demonic Energies, 2, "Your damage heals the demon"]
+      - [Fel Vitality, 3, "More demon health and more mana for you"]
+      - [Master Summoner, 2, "A faster summon when the demon dies"]
+      - [Improved Sayaad, 3, "More Lash of Pain damage and a longer Seduction"]
+      - [Demonic Brand, 3, "Searing Pain gives bonus damage to your demon"]
+      - [Demonic Sacrifice, 1, "Soul Link needs it"]
+      - [Demonic Embrace, 1, "The last point to open row 5"]
+      - [Soul Link, 1, "The demon takes 30% of your damage"]
+      - [Demonic Knowledge, 3, "Spell damage that increases with your level"]
+      - [Fel Domination, 1, "An emergency summon"]
+      - [Master Demonologist, 5, "10% damage or 10% less damage taken"]
+      - [Demonic Pact, 1, "A Demonic Sacrifice bonus and a second demon"]
+      - [Improved Corruption, 5, "Corruption becomes almost instant"]
+      - [Improved Life Tap, 2, "More mana"]
+      - [Suppression, 5, "Hit for dungeons at 55+"]
+      - [Improved Drains, 3, "A stronger Drain Life"]
+      - [Pandemic, 3, "DoT crits do double damage"]
+      - [Malevolence, 2, "Shadow crit"]
+    notes:
+      - "From level 40, sacrifice the Imp for +15% Shadow damage. Then summon the Succubus, the Incubus or the Voidwalker."
+      - "For Hardcore, keep the Voidwalker out and put the last 2 points in Demonic Embrace."
+
+  - id: destruction-leveling
+    name: "Destruction (groups)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The build for players who level in dungeon groups. It has the best AoE and cleave, but it has less self-healing than Affliction. The order follows the Warcraft Tavern build in the class guide, with Ruin 5/5.
+    steps:
+      - [Bane, 5, "Faster Shadow Bolt and Immolate"]
+      - [Cataclysm, 3, "Less mana for each spell"]
+      - [Aftermath, 2, "More Immolate damage. Opens row 3"]
+      - [Shadowburn, 1, "An instant hit to finish mobs"]
+      - [Aftermath, 3, "Conflagrate will Daze the target"]
+      - [Ruin, 1, "Opens row 4"]
+      - [Conflagrate, 1, "An instant Fire hit at level 25"]
+      - [Ruin, 2, "Larger crits"]
+      - [Agonizing Flames, 3, "10% Destruction damage"]
+      - [Bane of Havoc, 1, "Cleave for dungeon pulls"]
+      - [Fire and Brimstone, 3, "25% crit for Conflagrate"]
+      - [Shadow and Flame, 5, "Conflagrate keeps Immolate. Shadowburn gives its shard back"]
+      - [Incinerate, 1, "Your new filler at level 40"]
+      - [Ruin, 2, "Full crit bonus"]
+      - [Improved Corruption, 5, "Corruption becomes almost instant"]
+      - [Suppression, 5, "Hit and less threat for dungeons"]
+      - [Improved Life Tap, 2, "More mana"]
+      - [Pandemic, 3, "DoT crits do double damage"]
+      - [Improved Imp, 3, "More Imp damage"]
+    notes:
+      - "Use Shadow Bolt as filler until you get Incinerate at level 40."
+      - "In dungeons, give the tank a few seconds before you use Conflagrate."
+
+  - id: affliction-raid
+    name: "Affliction: Wrack (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      The 33/0/18 split from the Warcraft Tavern Affliction guide. Wrack is the filler. You cast Shadow Bolt only when Nightfall makes it instant. Blizzard announced Affliction changes for 10 November, so the priority of this build is not confirmed after that date.
+    steps:
+      - [Improved Corruption, 5]
+      - [Suppression, 5]
+      - [Improved Life Tap, 2]
+      - [Pandemic, 3]
+      - [Amplify Curse, 1, "A stronger Bane of Agony at the start of a fight"]
+      - [Malevolence, 5]
+      - [Nightfall, 2]
+      - [Siphon Life, 1]
+      - [Soul Siphon, 3, "Up to +36% Wrack damage"]
+      - [Shadow Mastery, 5]
+      - [Wrack, 1]
+      - [Bane, 5, "A faster Immolate. Opens Destruction row 2"]
+      - [Improved Shadow Bolt, 5, "Instant Shadow Bolts from Nightfall can apply it"]
+      - [Ruin, 5]
+      - [Cataclysm, 3, "Filler. You can move these points to Molten Skin"]
+    notes:
+      - "The launch tooltip of Improved Drains does not include Wrack. Thus, this build does not take it."
+
+  - id: sm-ruin
+    name: "Affliction: SM/Ruin"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      The 30/0/21 split with Shadow Bolt as the filler. Warcraft Tavern puts it slightly lower than the Wrack build. It does more direct damage, so it is good in dungeons where mobs die quickly.
+    steps:
+      - [Improved Corruption, 5]
+      - [Suppression, 5]
+      - [Improved Life Tap, 2]
+      - [Improved Bane of Agony, 2]
+      - [Pandemic, 3]
+      - [Malevolence, 5]
+      - [Nightfall, 2]
+      - [Siphon Life, 1, "A personal preference. You can move this point to Amplify Curse"]
+      - [Shadow Mastery, 5]
+      - [Improved Shadow Bolt, 5]
+      - [Bane, 5]
+      - [Ruin, 5]
+      - [Agonizing Flames, 3, "10% Shadow Bolt damage"]
+      - [Shadowburn, 1, "An instant hit for dungeons"]
+      - [Cataclysm, 2]
+
+  - id: demonology-raid
+    name: "Demonology: Fire (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      The 2/31/18 split from the Warcraft Tavern Demonology guide. Sacrifice the Succubus or Incubus for +15% Fire damage, then keep the Imp out for 10% more. Searing Pain is the filler, and Soul Fire is the execute spell below 35%.
+    steps:
+      - [Unholy Power, 5]
+      - [Improved Imp, 3]
+      - [Fel Vitality, 3]
+      - [Demonic Energies, 2, "Heals the Imp against AoE damage"]
+      - [Demonic Sacrifice, 1]
+      - [Master Summoner, 2, "You summon 2 demons after each death. You can move these points to Demonic Embrace"]
+      - [Decimation, 2]
+      - [Demonic Brand, 3]
+      - [Soul Link, 1]
+      - [Demonic Knowledge, 3]
+      - [Master Demonologist, 5]
+      - [Demonic Pact, 1]
+      - [Improved Life Tap, 2]
+      - [Bane, 5, "Soul Fire casts 2 s faster"]
+      - [Cataclysm, 3, "Searing Pain uses much mana"]
+      - [Aftermath, 2, "Filler to open Destruction row 3"]
+      - [Ruin, 5]
+      - [Agonizing Flames, 3, "10% crit for Searing Pain and 10% Destruction damage"]
+    notes:
+      - "Shadow variant: sacrifice the Imp and keep the Succubus or Incubus out. Use Shadow Bolt as filler. Move the points from Improved Imp and Decimation into Improved Sayaad and Demonic Embrace."
+      - "This build has no points in Suppression. Get your hit from gear."
+      - "For Voidwalker pet tanking in dungeons, move the points from Improved Imp and Decimation into Improved Voidwalker and Improved Health Funnel. Pet tanking in raids is not confirmed."
+
+  - id: destruction-raid
+    name: "Destruction (raid and dungeons)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      The 14/4/33 split from the Warcraft Tavern Destruction guide, with the Succubus or Incubus out. Incinerate is the filler. Conflagrate and Shadowburn keep the 2 bonuses of Shadow and Flame active.
+    steps:
+      - [Bane, 5]
+      - [Aftermath, 5]
+      - [Ruin, 5]
+      - [Shadowburn, 1]
+      - [Cataclysm, 3]
+      - [Agonizing Flames, 3]
+      - [Conflagrate, 1]
+      - [Bane of Havoc, 1]
+      - [Fire and Brimstone, 3]
+      - [Shadow and Flame, 5]
+      - [Incinerate, 1]
+      - [Improved Corruption, 5]
+      - [Suppression, 5, "5% hit and 20% less threat"]
+      - [Improved Life Tap, 2]
+      - [Pandemic, 2, "Larger crits for Corruption and your Bane"]
+      - [Unholy Power, 4, "More demon damage"]
+    notes:
+      - "This build does not take Improved Shadow Bolt, because you do not cast Shadow Bolt at 60."
+      - "Imp variant: keep the Imp out and move 3 points from Unholy Power into Improved Imp. Warcraft Tavern puts its Imp build slightly lower."
+
+  - id: soul-link-pvp
+    name: "Soul Link (PvP)"
+    kind: endgame
+    role: "PvP"
+    summary: |
+      A 20/31/0 build for battlegrounds and world PvP. Soul Link and Demonic Embrace keep you alive. Demonic Pact lets you keep a Demonic Sacrifice bonus with the Felhunter out. 17 points in Affliction give Curse of Exhaustion.
+    steps:
+      - [Demonic Embrace, 5]
+      - [Fel Vitality, 3]
+      - [Demonic Aegis, 2]
+      - [Demonic Energies, 2]
+      - [Improved Health Funnel, 2, "Heal the demon that takes your Soul Link damage"]
+      - [Unholy Power, 2, "Filler to open row 5"]
+      - [Demonic Sacrifice, 1]
+      - [Master Summoner, 2]
+      - [Fel Domination, 1, "A fast new Felhunter"]
+      - [Soul Link, 1]
+      - [Improved Felhunter, 3, "Spell Lock cooldown −6 s"]
+      - [Demonic Knowledge, 1, "The last point to open row 6"]
+      - [Master Demonologist, 5, "10% less magic damage with the Felhunter"]
+      - [Demonic Pact, 1]
+      - [Improved Corruption, 5]
+      - [Improved Life Tap, 2]
+      - [Grim Reach, 2, "Range for DoTs, drains and curses"]
+      - [Improved Drains, 3]
+      - [Fel Concentration, 3]
+      - [Amplify Curse, 1]
+      - [Curse of Exhaustion, 1, "A 30% slow against melee classes and flag carriers"]
+      - [Pandemic, 3]
+    notes:
+      - "Sacrifice the Voidwalker for mana or the Imp for +15% Shadow damage. Then summon the Felhunter."
+
+faq:
+  - q: "Is Malediction in the Affliction tree?"
+    a: "No. Blizzard's deep dive from the beta listed Malediction with +5% periodic damage. The launch client has no talent with that name. Do not plan points for it."
+  - q: "Is Grim Reach removed?"
+    a: "No. The deep dive listed Grim Reach as removed, but the launch client has it in Affliction row 2 with 2 ranks. It gives +20% range to Affliction spells."
+  - q: "Does Improved Drains make Wrack stronger?"
+    a: "The launch tooltip lists only Drain Life, Drain Soul and Drain Mana. Soul Siphon and Fel Concentration do list Wrack. Thus, the Wrack raid build takes Soul Siphon and not Improved Drains."
+  - q: "Do I take Improved Shadow Bolt in a Destruction build?"
+    a: "Only if you cast Shadow Bolt. The effect comes only from Shadow Bolt crits and helps only your own Shadow damage. At 60, Destruction uses Incinerate, so the raid build does not take it."
+  - q: "Can a Warlock tank with these talents?"
+    a: "Demonic Brand gives a Voidwalker high threat, so pet tanking is an option in dungeons. Blizzard announced a Voidwalker hotfix for 10 November. Pet tanking in raids is not confirmed."
+
+sources:
+  - {title: "Blizzard: Class Deep Dives, Rogue and Warlock", url: "https://worldofwarcraft.blizzard.com/news/24310968"}
+  - {title: "Warcraft Tavern: Class tuning for Shamans, Warlocks and Hunter pets", url: "https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/"}
+  - {title: "Warcraft Tavern: Warlock leveling guide", url: "https://www.warcrafttavern.com/forever/guides/warlock-leveling/"}
+  - {title: "Warcraft Tavern: Affliction Warlock guide", url: "https://www.warcrafttavern.com/forever/guides/affliction-warlock/"}
+  - {title: "Warcraft Tavern: Demonology Warlock guide", url: "https://www.warcrafttavern.com/forever/guides/demonology-warlock/"}
+  - {title: "Warcraft Tavern: Destruction Warlock guide", url: "https://www.warcrafttavern.com/forever/guides/destruction-warlock/"}
+  - {title: "Method.gg: Warlock leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents"}

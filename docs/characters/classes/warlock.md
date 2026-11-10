@@ -51,6 +51,8 @@
 
 ## Talents
 
+The [Warlock talent guide](../../talents/warlock.md) shows all 3 trees and gives a rating to each talent.
+
 === "Affliction"
 
     Suppression · Improved Corruption · Malediction · Soul Harvest · Improved Drains · Improved Bane of Agony · **Pandemic** (DoT crit damage) · Nightfall · **Curse of Exhaustion** (16) · Malevolence · Soul Siphon · **Wrack** (31: ~86 dps base at level 60)

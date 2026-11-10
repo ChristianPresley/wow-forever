@@ -97,6 +97,9 @@ Weaknesses
 
 ## Specs & talents
 
+!!! tip "Full talent guide"
+    The [Warlock talent guide](../../talents/warlock.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+
 Talents start at level 10 (1 point per level, 51 at 60). Single-point **gold-medal** talents are at **11, 16, 21 and 31** points in a tree. If you put all points in 1 tree, you get them at about levels 20, 25, 30 and 40. The *Talented* [Legacy talent](../../characters/legacy.md) gives you your first point earlier. **Dual spec** unlocks at **level 40** for **50g** from all Warlock trainers. Respec fees decrease to 1g over time.
 
 | Spec | Capstones (11 / 16 / 21 / 31) | Plays like |

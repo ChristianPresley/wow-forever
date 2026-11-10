@@ -1,0 +1,370 @@
+class: Druid
+badges: [tank, heal, dps]
+description: "Druid talent guide for WoW: Forever: all 52 talents in Balance, Feral Combat and Restoration with a rating, a talent for each level from 10 to 60, and level 60 builds for tanks, healers, damage and PvP."
+
+intro: |
+  The Druid has 4 roles in 3 trees. **Feral Combat** is the tree for Cat damage and for the Bear tank. **Balance** is the caster damage tree, and **Restoration** is the healer tree. Some of the best talents for a role are in a different tree. For example, Heart of the Wild and Naturalist are in Restoration, but each Feral and Balance build takes them.
+
+card:
+  leveling: "Feral: Bear to level 19, Cat from level 20"
+  pve: "Bear tank, Cat or Moonkin damage, Restoration healer"
+  pvp: "Restoration with Feral Charge and Furor"
+
+quick:
+  - stage: "Level 10–39"
+    build: feral-leveling
+    why: "Thick Hide for Bear first. Cat talents from level 20. Leader of the Pack at 30. The safest route, and good for Hardcore."
+  - stage: "Level 10–39, alternative"
+    build: balance-leveling
+    why: "Insect Swarm at level 25 and Eclipse at 30. You must drink more than a Cat."
+  - stage: "Level 40–59"
+    build: feral-leveling
+    why: "Shifting Power at 40. Then Lacerate, Primal Bite, Heart of the Wild and Naturalist."
+  - stage: "Level 60: tank in dungeons and raids"
+    build: bear-tank
+    why: "All the armor, dodge and threat talents, with 20% Stamina from Heart of the Wild."
+  - stage: "Level 60: melee damage"
+    build: cat-raid
+    why: "All the Cat damage talents, 4% hit from Nature's Reach and 10% damage from Naturalist."
+  - stage: "Level 60: caster damage"
+    build: moonkin-raid
+    why: "Eclipse, Vengeance and Moonkin Form. The crit aura helps the full raid."
+  - stage: "Level 60: healer"
+    build: resto-raid
+    why: "Wild Growth, Swiftmend and Bloom, with all the HoT talents."
+  - stage: "Level 60: PvP"
+    build: resto-pvp
+    why: "Instant heals, Wild Growth, and Feral Charge to carry flags."
+
+trees:
+  Balance:
+    summary: |
+      Balance is the caster damage tree. **Eclipse** opens at 20 points and **Moonkin Form** at 30. Rows 1 and 2 are also useful for other roles: **Genesis** increases HoTs and bleeds, and **Nature's Reach** gives 4% hit. The PvE ratings in this table are for caster damage, unless the note gives a different role.
+    talents:
+      Improved Wrath:
+        {does: "Wrath cast time −0.1 to −0.5 s and mana cost −10–50%", lvl: S, pve: A, pvp: B, note: "The first 5 points of each Balance build. Wrath gives the Eclipse charges."}
+      Genesis:
+        {does: "Periodic damage and periodic healing of your spells and abilities +2–10%", lvl: B, pve: A, pvp: B, note: "Rated for Restoration and Cat, because HoTs and bleeds are periodic. It is filler for Moonkin. The effect on bleeds is not confirmed by tests."}
+      Moonglow:
+        {does: "Mana cost of damage spells −8% to −25%", lvl: A, pve: A, pvp: B, note: "The mana talent of Balance. It does not apply to healing spells."}
+      Improved Moonfire:
+        {does: "Moonfire damage and crit chance +5/10%", lvl: B, pve: A, pvp: A, note: "Vengeance needs 2/2. Thus, each deep Balance build takes it."}
+      "Nature's Majesty":
+        {does: "Crit chance of spells and melee attacks +2/4%", lvl: B, pve: A, pvp: B, note: "Good for Moonkin and for Cat. Crit for Cat also gives combo points with Blood Frenzy."}
+      "Nature's Reach":
+        {does: "Range of offensive Balance spells +10/20%. Hit chance +2/4%", lvl: C, pve: S, pvp: B, note: "The only hit talent of the class. The tooltip does not limit the hit to spells, and Warcraft Tavern uses it for Cat."}
+      Improved Entangling Roots:
+        {does: "Entangling Roots damage +25–75%. Rooted targets can take 25–75% more damage before the root breaks", lvl: B, pve: D, pvp: B, note: "For a root and DoT playstyle. Bosses are immune to roots."}
+      "Nature's Splendor":
+        {does: "Moonfire and Rejuvenation last 3 s longer. Regrowth lasts 6 s longer. Insect Swarm lasts 2 s longer", lvl: A, pve: A, pvp: B, note: "Much value for 1 point. A healer must spend 10 Balance points to get it."}
+      Insect Swarm:
+        {does: "Instant. The target has −2% hit chance and takes 48 Nature damage during 12 s (rank 1)", lvl: A, pve: A, pvp: A, note: "Available at level 25. A second DoT, and it decreases the damage that melee enemies do."}
+      Vengeance:
+        {does: "Crit damage bonus of Arcane and Nature spells +20–100%", lvl: A, pve: S, pvp: A, note: "It doubles the crit bonus. Core for Moonkin."}
+      Improved Starfire:
+        {does: "Starfire cast time −0.1 to −0.5 s. Starfire has a 3–15% chance to stun the target for 3 s", lvl: B, pve: S, pvp: A, note: "Starfire is the main raid spell with Eclipse. Bosses are immune to the stun."}
+      Overgrowth:
+        {does: "Entangling Roots can hold 1/2 more targets at the same time", lvl: B, pve: D, pvp: C, note: "For pulls of 2 or 3 mobs when you level as Balance. No value on bosses."}
+      "Nature's Grace":
+        {does: "Non-periodic spell crits make your casts 10% faster and your global cooldown 10% shorter for 3 s", lvl: A, pve: S, pvp: A, note: "1 point. Different from Classic, where it made the next spell 0.5 s faster."}
+      Eclipse:
+        {does: "Each Wrath makes your next 2 Starfires 0.17–0.5 s faster. Maximum 4 charges, 15 s", lvl: A, pve: S, pvp: B, note: "The core of the Balance rotation. With Improved Starfire, a Starfire can be 1 s faster."}
+      Moonfury:
+        {does: "Damage of Arcane and Nature spells +2–10%", lvl: A, pve: S, pvp: A, note: "Take 5/5 in each deep Balance build."}
+      Moonkin Form:
+        {does: "A caster form. Omen of Clarity procs 100% more frequently. Armor from items +360%. Party and raid members within 45 yd get +3% crit chance. You cannot cast healing spells", lvl: A, pve: S, pvp: A, note: "The aura is the reason that a raid brings a Moonkin. The class guide says that it does not stack with Leader of the Pack."}
+  Feral Combat:
+    summary: |
+      Feral Combat is the tree for Cat damage and for the Bear tank. **Leader of the Pack** opens at 20 points. **Shifting Power** for Cat and **Primal Bite** for Bear open at 30 points. The PvE rating of each talent is for the role that the talent helps, and the note names that role.
+    talents:
+      Ferocity:
+        {does: "Maul, Primal Bite, Swipe, Claw and Rake cost 1–5 less Rage or Energy", lvl: S, pve: S, pvp: A, note: "The first 5 points of each Feral build. It does not apply to Shred."}
+      Furor:
+        {does: "20–100% chance for 10 Rage when you go into Bear Form. Cat Form gives back 20–100% of your last Energy, plus 2–10 Energy for each second that you were not in Bear Form", lvl: B, pve: B, pvp: S, note: "It replaces powershifting. Strong when you shift frequently, as in PvP. A Cat that stays in form in a raid gets little from it."}
+      Feral Swiftness:
+        {does: "Cat Form speed +15/30%. Dodge chance +2/4%", lvl: S, pve: A, pvp: S, note: "Cat rating for the speed and Bear rating for the dodge. In Classic, the name was Feline Swiftness."}
+      Feral Instinct:
+        {does: "Swipe damage +10/20/30%. Enemies detect you in Prowl as if you were 1/2/3 levels higher", lvl: B, pve: A, pvp: B, note: "Bear rating. More Swipe damage is more threat on groups. It no longer gives a direct threat bonus."}
+      Brutal Impact:
+        {does: "Bash and Pounce stun for 0.5/1 s longer. Bash cooldown −15/30 s", lvl: C, pve: D, pvp: A, note: "A PvP talent. Bosses are immune to stuns, and Kami-labs does not take it for the Bear."}
+      Thick Hide:
+        {does: "In Bear, Cat, Dire Bear and Moonkin Form you get 1/2/3 base armor per level. You also get 0.67–2 base armor for each point of Defense skill above 5 times your level", lvl: A, pve: S, pvp: A, note: "Bear rating. Core for a tank, because the form multiplies the armor. For a Cat it is only filler."}
+      Shredding Attacks:
+        {does: "Shred costs 6/12/18 less Energy. Lacerate costs 1/2/3 less Rage", lvl: C, pve: S, pvp: B, note: "Cat rating. Core in groups, where you attack from behind. When you level alone, you seldom use Shred."}
+      Savage Fury:
+        {does: "Damage of Claw, Rake, Shred, Maul and Swipe +5/10%", lvl: S, pve: S, pvp: A, note: "For Cat and Bear. Lacerate needs 2/2."}
+      Feral Charge:
+        {does: "Bear ability. Charge an enemy at a maximum of 25 yd. It immobilizes the target and interrupts spells for 4 s. 15 s cooldown", lvl: B, pve: A, pvp: S, note: "Bear rating. Your interrupt and your pull. The client tooltip lists only Bear Form, so a Cat version is not confirmed."}
+      Sharpened Claws:
+        {does: "Crit chance in Bear, Dire Bear and Cat Form +3/6%", lvl: S, pve: S, pvp: A, note: "For Cat and Bear. Blood Frenzy needs 2/2."}
+      Predatory Strikes:
+        {does: "Attack Power in Cat, Bear and Dire Bear Form + 50/100/150% of your level", lvl: A, pve: S, pvp: A, note: "90 Attack Power at level 60. Rend and Tear needs 3/3."}
+      Lacerate:
+        {does: "Bear ability, 15 Rage. A bleed that does 20 damage during 15 s, plus 10% weapon damage for each stack on the target. High threat. Maximum 5 stacks", lvl: B, pve: S, pvp: C, note: "Bear rating. Available at level 25. It also makes the target bleed for Rend and Tear."}
+      Predatory Discipline:
+        {does: "Ferocious Bite does not use your extra Energy. It continues to do more damage for the extra Energy that you have", lvl: A, pve: S, pvp: A, note: "Cat rating. Shifting Power needs it."}
+      Blood Frenzy:
+        {does: "Bear crits have a 50/100% chance to give 5 more Rage. Cat crits with abilities that give combo points have a 50/100% chance to give 1 more combo point", lvl: S, pve: S, pvp: S, note: "The best talent of the tree for Cat and Bear. In Classic, the name was Primal Fury."}
+      Leader of the Pack:
+        {does: "In Cat, Bear and Dire Bear Form, party and raid members within 45 yd get +3% crit chance", lvl: A, pve: S, pvp: A, note: "It now applies to the full raid. Primal Bite needs it."}
+      Natural Instinct:
+        {does: "Crit damage bonus of melee abilities +10/20%. Spell healing + 12/25% of your Intellect", lvl: A, pve: A, pvp: B, note: "Cat and Bear rating for the crit damage. The healing bonus helps when you heal yourself between pulls."}
+      Rend and Tear:
+        {does: "Damage of melee abilities on Bleeding targets +3–15%", lvl: A, pve: S, pvp: A, note: "For Cat and Bear. Rake, Rip or Lacerate keeps the target Bleeding."}
+      Natural Reaction:
+        {does: "Dodge chance +1–5%. 20–100% chance to get 5 Rage when you dodge", lvl: C, pve: S, pvp: B, note: "Bear rating. Core for a tank. A Cat does not take it."}
+      Primal Bite:
+        {does: "Bear ability, 20 Rage, 6 s cooldown. It does 100% normal damage plus 42 and makes high threat", lvl: B, pve: S, pvp: B, note: "Bear rating. It replaces Mangle. The main threat ability of the tank."}
+      Shifting Power:
+        {does: "Cat ability. It changes 55% of your base mana into 40 Energy. 8 s cooldown. Talents that decrease the cost of shapeshifts also decrease its cost", lvl: A, pve: S, pvp: A, note: "Cat rating. It replaces Tiger's Fury. Your mana is the limit in long fights."}
+  Restoration:
+    summary: |
+      Restoration is the healer tree. **Swiftmend** opens at 15 points and **Wild Growth** at 30. The first 2 rows are important for all roles, because **Heart of the Wild** and **Naturalist** increase the stats and the damage of Cat, Bear and Moonkin. The PvE ratings are for healers, unless the note gives a different role.
+    talents:
+      "Nature's Focus":
+        {does: "Arcane and Nature spells have a 14–70% chance to ignore pushback", lvl: C, pve: C, pvp: A, note: "For PvP, where enemies attack you while you cast. In raids it is filler."}
+      Heart of the Wild:
+        {does: "Intellect +2–10%. Stamina in Bear and Dire Bear Form +4–20%. Strength in Cat Form +2–10%", lvl: A, pve: S, pvp: S, note: "Rated for all roles. It is in row 1, so each Druid build takes 5/5."}
+      Naturalist:
+        {does: "Cast time of Healing Touch and Wild Growth −0.1 to −0.5 s. All damage that you do +2–10%", lvl: A, pve: S, pvp: A, note: "Rated for all roles. 10% damage for Cat, Bear and Moonkin. Nature's Swiftness needs 5/5."}
+      Reflection:
+        {does: "17–50% of your mana regeneration continues while you cast", lvl: C, pve: S, pvp: B, note: "The mana talent for healers. It makes Spirit a strong stat."}
+      Natural Shapeshifter:
+        {does: "Mana cost of all shapeshifts −10/20/30%", lvl: B, pve: C, pvp: A, note: "For PvP, where you shift to break roots and slows. It also decreases the cost of Shifting Power."}
+      Subtlety:
+        {does: "Threat of Nature and Arcane spells −10/20/30%", lvl: D, pve: B, pvp: D, note: "For healers and for Moonkin in raids, where threat can be a limit."}
+      Gift of Nature:
+        {does: "Effect of all healing spells +2–10%", lvl: C, pve: S, pvp: A, note: "Take 5/5 in each healer build."}
+      Bloom:
+        {does: "When Rejuvenation or Regrowth ends at its full duration, the target gets a heal equal to 100% of your Spirit. If a dispel removes the spell, the heal is 50%", lvl: C, pve: A, pvp: A, note: "1 point. A hotfix on 6 November made the heal work. The value depends on your Spirit."}
+      Tranquil Spirit:
+        {does: "Mana cost of Healing Touch and Tranquility −2–10%", lvl: D, pve: B, pvp: C, note: "Filler to open the deep rows. Weaker in a build that uses HoTs more than Healing Touch."}
+      Improved Rejuvenation:
+        {does: "Effect of Rejuvenation +5/10/15%", lvl: C, pve: S, pvp: A, note: "Rejuvenation is your main spell. Improved Regrowth needs 3/3."}
+      Swiftmend:
+        {does: "An instant heal on a target that has your Rejuvenation or Regrowth. The heal is equal to the full periodic effect. 15 s cooldown", lvl: B, pve: S, pvp: S, note: "Your instant heal for sudden damage. It opens at 15 points. The class guide says that it removes the HoT, but the tooltip does not confirm this."}
+      "Nature's Swiftness":
+        {does: "Your next Nature spell is instant. 3 min cooldown", lvl: B, pve: A, pvp: S, note: "An instant Healing Touch for emergencies. It also works with Entangling Roots and Wrath."}
+      Living Spirit:
+        {does: "Spirit +5/10/15%", lvl: C, pve: A, pvp: B, note: "More mana with Reflection and a larger Bloom. Wild Growth needs 3/3."}
+      Improved Tranquility:
+        {does: "Tranquility threat −50/100% and cooldown −30/60%", lvl: D, pve: C, pvp: C, note: "A personal preference. Tranquility heals only your party."}
+      Improved Regrowth:
+        {does: "Crit chance of Regrowth +10–50%", lvl: C, pve: A, pvp: A, note: "It applies to the direct heal of Regrowth. Take it when Regrowth is a frequent spell for you."}
+      Wild Growth:
+        {does: "A 3 s cast with a 6 s cooldown. It heals the target and the party of the target for 336 during 7 s (rank 1). The heal is faster at the start", lvl: C, pve: S, pvp: B, note: "Your group heal. Naturalist makes the cast 2.5 s. It heals 1 party, not the full raid."}
+
+builds:
+  - id: feral-leveling
+    name: "Feral (Bear, then Cat)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The route that the class guide recommends. Play as Bear to level 19 and as Cat from level 20. The order follows the Feral timeline of the class guide, adjusted to the launch client. In the client, Leader of the Pack opens at 20 points, and Shifting Power and Primal Bite open at 30 points.
+    steps:
+      - [Ferocity, 5, "Cheaper Maul and Swipe now. Cheaper Claw and Rake from level 20"]
+      - [Thick Hide, 3, "Armor for Bear Form"]
+      - [Feral Swiftness, 2, "Dodge now. Cat speed from level 20"]
+      - [Sharpened Claws, 2, "6% crit when you get Cat Form"]
+      - [Savage Fury, 2, "10% damage for Claw and Rake"]
+      - [Feral Charge, 1, "An interrupt for dungeons. Opens row 4"]
+      - [Blood Frenzy, 2, "Crits give 2 combo points"]
+      - [Predatory Strikes, 3, "Attack Power that increases with your level"]
+      - [Leader of the Pack, 1, "3% crit for you and your party"]
+      - [Predatory Discipline, 1, "Ferocious Bite keeps your extra Energy"]
+      - [Natural Instinct, 2, "Larger crits and stronger heals"]
+      - [Feral Instinct, 1, "A safer Prowl. The last point to open row 6"]
+      - [Rend and Tear, 5, "15% damage on targets with Rake or Rip"]
+      - [Shifting Power, 1, "40 Energy for mana at level 40"]
+      - [Lacerate, 1, "Threat for dungeons with dual spec or as Bear"]
+      - [Primal Bite, 1, "The main threat ability of the Bear"]
+      - [Heart of the Wild, 5, "10% Strength in Cat Form and 20% Stamina in Bear Form"]
+      - [Naturalist, 5, "10% more damage"]
+      - [Furor, 5, "Keep your Energy when you shift out to heal"]
+      - [Shredding Attacks, 3, "A cheaper Shred for dungeons at level 58+"]
+    notes:
+      - "Before level 20 you have no Cat Form. Pull with Wrath and Moonfire, then fight as Bear."
+      - "This order is safe for Hardcore, because it takes Thick Hide first. Keep enough mana to shift and heal."
+      - "At level 60, respec to the Cat or the Bear build."
+
+  - id: balance-leveling
+    name: "Balance (caster)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The caster route. It is slower than Feral, because you use mana to kill and to heal. You get Insect Swarm at level 25, Eclipse at level 30 and Moonkin Form at level 40.
+    steps:
+      - [Improved Wrath, 5, "A faster Wrath for half the mana"]
+      - ["Nature's Majesty", 2, "4% crit"]
+      - [Improved Moonfire, 2, "Vengeance needs it"]
+      - [Moonglow, 1, "The last point to open row 3"]
+      - ["Nature's Splendor", 1, "A longer Moonfire and Rejuvenation"]
+      - [Moonglow, 2, "Less time to drink"]
+      - ["Nature's Reach", 2, "Fewer misses and more range"]
+      - [Insect Swarm, 1, "A second DoT at level 25"]
+      - [Vengeance, 4, "Larger crits"]
+      - [Eclipse, 3, "Wrath makes Starfire faster, from level 30"]
+      - [Vengeance, 1, "Opens row 6 with the next point"]
+      - ["Nature's Grace", 1, "Crits make your casts faster"]
+      - [Moonfury, 5, "10% damage"]
+      - [Moonkin Form, 1, "Armor, a crit aura and more Omen of Clarity procs"]
+      - [Improved Starfire, 5, "A faster Starfire with a stun chance"]
+      - [Heart of the Wild, 5, "10% Intellect"]
+      - [Naturalist, 5, "10% more damage"]
+      - [Genesis, 5, "Stronger DoTs and HoTs"]
+    notes:
+      - "If you pull 2 or 3 mobs with Entangling Roots, move 2 points from Genesis to Overgrowth."
+      - "You cannot heal in Moonkin Form. Shift out to cast Rejuvenation and Regrowth."
+
+  - id: cat-raid
+    name: "Cat (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      A Cat build with all the damage talents of the Feral Combat tree. It takes 9 Balance points for hit and crit, and 10 Restoration points for Strength and damage. Warcraft Tavern publishes a 9/37/5 hybrid that is similar.
+    steps:
+      - [Ferocity, 5]
+      - [Feral Swiftness, 2]
+      - [Thick Hide, 3, "Filler to open row 3. It helps when you tank an add. You can move these points to Furor"]
+      - [Shredding Attacks, 3]
+      - [Savage Fury, 2]
+      - [Sharpened Claws, 2]
+      - [Predatory Strikes, 3]
+      - [Predatory Discipline, 1]
+      - [Blood Frenzy, 2]
+      - [Leader of the Pack, 1]
+      - [Natural Instinct, 2]
+      - [Rend and Tear, 5]
+      - [Shifting Power, 1]
+      - [Genesis, 5, "10% more periodic damage for Rake and Rip. The effect on bleeds is not confirmed by tests"]
+      - ["Nature's Majesty", 2, "4% melee crit"]
+      - ["Nature's Reach", 2, "4% hit"]
+      - [Heart of the Wild, 5]
+      - [Naturalist, 5, "10% more damage"]
+    notes:
+      - "This build has no Lacerate and no Primal Bite. If you also tank, use the Bear build in your second spec."
+
+  - id: bear-tank
+    name: "Bear (tank)"
+    kind: endgame
+    role: "Tank"
+    summary: |
+      The tank build for dungeons and raids. It takes all the armor, dodge and threat talents, and it does not take Brutal Impact. It can also do Cat damage, but without Shifting Power.
+    steps:
+      - [Ferocity, 5]
+      - [Feral Swiftness, 2, "4% dodge"]
+      - [Feral Instinct, 3, "30% Swipe damage for threat on groups"]
+      - [Thick Hide, 3]
+      - [Shredding Attacks, 3, "Lacerate costs 3 less Rage. You can move these points to Furor"]
+      - [Savage Fury, 2]
+      - [Feral Charge, 1]
+      - [Sharpened Claws, 2]
+      - [Predatory Strikes, 3]
+      - [Lacerate, 1]
+      - [Blood Frenzy, 2]
+      - [Leader of the Pack, 1]
+      - [Natural Instinct, 2]
+      - [Rend and Tear, 5, "Lacerate keeps the target Bleeding"]
+      - [Natural Reaction, 5]
+      - [Primal Bite, 1]
+      - [Heart of the Wild, 5, "20% Stamina"]
+      - [Naturalist, 5, "10% more damage, thus more threat"]
+    notes:
+      - "If you miss too frequently, move the 5 points from Naturalist and 3 points from Shredding Attacks into Balance. Take Genesis 5, Nature's Reach 2 and Nature's Majesty 1."
+
+  - id: moonkin-raid
+    name: "Moonkin (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      A deep Balance build with Eclipse and Moonkin Form. It puts 15 points in Restoration for Intellect, damage, mana and less threat. It does not take the Entangling Roots talents, because bosses are immune to roots.
+    steps:
+      - [Improved Wrath, 5]
+      - [Moonglow, 3]
+      - [Improved Moonfire, 2]
+      - ["Nature's Majesty", 2]
+      - ["Nature's Reach", 2, "4% hit"]
+      - ["Nature's Splendor", 1]
+      - [Insect Swarm, 1]
+      - [Vengeance, 5]
+      - [Improved Starfire, 5]
+      - ["Nature's Grace", 1]
+      - [Eclipse, 3]
+      - [Moonfury, 5]
+      - [Moonkin Form, 1]
+      - [Heart of the Wild, 5]
+      - [Naturalist, 5, "10% more damage"]
+      - [Reflection, 3, "Mana regeneration while you cast"]
+      - [Subtlety, 2, "Less threat. Crits with Vengeance make much threat"]
+    notes:
+      - "If mana and threat are not a problem for you, move the 5 points from Reflection and Subtlety into Genesis."
+
+  - id: resto-raid
+    name: "Restoration (raid)"
+    kind: endgame
+    role: "Raid healer"
+    summary: |
+      The healer build for dungeons and raids. It takes all the HoT talents and Wild Growth, and Genesis from Balance for 10% more periodic healing.
+    steps:
+      - [Heart of the Wild, 5]
+      - [Naturalist, 5, "A 2.5 s Wild Growth and a faster Healing Touch"]
+      - [Reflection, 3]
+      - [Gift of Nature, 5]
+      - [Bloom, 1]
+      - [Subtlety, 3]
+      - [Improved Rejuvenation, 3]
+      - [Swiftmend, 1]
+      - [Tranquil Spirit, 5, "Filler to open the deep rows"]
+      - ["Nature's Swiftness", 1]
+      - [Living Spirit, 3]
+      - [Improved Tranquility, 2, "A personal preference"]
+      - [Improved Regrowth, 5]
+      - [Wild Growth, 1]
+      - ["Nature's Focus", 3, "Filler. It helps when you take damage during a cast"]
+      - [Genesis, 5, "10% more healing from Rejuvenation, Regrowth and Wild Growth"]
+    notes:
+      - "Alternative: take Nature's Splendor for longer HoTs. It costs 6 more Balance points. Take them from Nature's Focus, Improved Tranquility and Tranquil Spirit."
+
+  - id: resto-pvp
+    name: "Restoration (PvP)"
+    kind: endgame
+    role: "PvP"
+    summary: |
+      A healer and flag carrier for battlegrounds. It keeps Swiftmend, Nature's Swiftness and Wild Growth. It puts 13 points in Feral Combat for Feral Charge, Furor and a longer Bash.
+    steps:
+      - [Heart of the Wild, 5]
+      - ["Nature's Focus", 5, "Enemies attack you while you cast"]
+      - [Naturalist, 5]
+      - [Natural Shapeshifter, 3, "You shift frequently to break roots and slows"]
+      - [Gift of Nature, 5]
+      - [Bloom, 1, "It heals also when an enemy dispels your HoT"]
+      - [Improved Rejuvenation, 3]
+      - [Swiftmend, 1]
+      - ["Nature's Swiftness", 1]
+      - [Living Spirit, 3]
+      - [Wild Growth, 1]
+      - [Furor, 5, "Rage and Energy immediately after each shift"]
+      - [Feral Swiftness, 2]
+      - [Thick Hide, 3, "Armor when you carry the flag as Bear"]
+      - [Feral Charge, 1]
+      - [Brutal Impact, 2, "A longer Bash with a shorter cooldown"]
+      - [Genesis, 5]
+
+faq:
+  - q: "Where are Shifting Power and Primal Bite in the tree?"
+    a: "In the launch client, the 2 talents are in row 7 of Feral Combat and need 30 Feral points. Shifting Power needs Predatory Discipline, and Primal Bite needs Leader of the Pack. Beta-era guides put them at 16 points. The client also gives Shifting Power an 8 s cooldown."
+  - q: "Where is Gift of the Earthmother?"
+    a: "The launch client has no talent with this name. Row 3 of Restoration has Subtlety, Gift of Nature and Bloom. Gift of Nature increases all your healing by 10%."
+  - q: "Why does each Feral and Balance build put points in Restoration?"
+    a: "Heart of the Wild is now in row 1 of Restoration. It gives 20% Stamina to the Bear, 10% Strength to the Cat and 10% Intellect. Naturalist in row 2 increases all your damage by 10%. Thus, 10 Restoration points are good for each build."
+  - q: "Can I use Feral Charge in Cat Form?"
+    a: "This is not confirmed. Beta-era guides gave Feral Charge a Cat version. The tooltip in the launch client lists only Bear Form and Dire Bear Form."
+  - q: "Do I take Moonkin Form or Leader of the Pack for the raid aura?"
+    a: "The 2 auras give 3% crit chance to the party and raid within 45 yd. The class guide says that they do not stack. Thus, a raid needs only 1 of them."
+
+sources:
+  - {title: "Warcraft Tavern: Druid guide", url: "https://www.warcrafttavern.com/forever/guides/druid/"}
+  - {title: "Warcraft Tavern: Druid leveling guide", url: "https://www.warcrafttavern.com/forever/guides/druid-leveling/"}
+  - {title: "Warcraft Tavern: Feral Druid guide", url: "https://www.warcrafttavern.com/forever/guides/feral-druid/"}
+  - {title: "Method: Druid leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-druid-leveling-guide-and-talents"}
+  - {title: "Kami-labs: Guardian Druid PvE build", url: "https://kami-labs.fr/en/wow-forever/build-druide-gardien-wow-forever/"}

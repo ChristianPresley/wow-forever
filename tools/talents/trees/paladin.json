@@ -1,0 +1,398 @@
+{
+ "class": "paladin",
+ "trees": [
+  {
+   "name": "Holy",
+   "talents": [
+    {
+     "name": "Spiritual Focus",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Divine Strength",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Healing Light",
+     "row": 2,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Reverence",
+     "row": 2,
+     "col": 2,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Improved Seals",
+     "row": 2,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Purifying Power",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Divine Favor",
+     "row": 3,
+     "col": 1,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Illumination",
+     "row": 3,
+     "col": 2,
+     "max": 5,
+     "status": "changed",
+     "requires": [
+      "Reverence"
+     ]
+    },
+    {
+     "name": "Holy Conduit",
+     "row": 3,
+     "col": 3,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Divine Precision",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Infusion of Light",
+     "row": 4,
+     "col": 2,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Oath of Light",
+     "row": 4,
+     "col": 3,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Consecrated Ground",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Holy Shock",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Boundless Light",
+     "row": 5,
+     "col": 3,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Holy Power",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Light's Vigil",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Holy Shock"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Protection",
+   "talents": [
+    {
+     "name": "Divine Intellect",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Redoubt",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Precision",
+     "row": 2,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Guardian's Favor",
+     "row": 2,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Sacred Duty",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Templar's Bulwark",
+     "row": 3,
+     "col": 1,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Improved Hammer of Justice",
+     "row": 3,
+     "col": 2,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Shield Specialization",
+     "row": 3,
+     "col": 3,
+     "max": 2,
+     "status": "changed",
+     "requires": [
+      "Redoubt"
+     ]
+    },
+    {
+     "name": "Toughness",
+     "row": 3,
+     "col": 4,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Swift Judgement",
+     "row": 4,
+     "col": 1,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Templar's Bulwark"
+     ]
+    },
+    {
+     "name": "Improved Righteous Fury",
+     "row": 4,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Anticipation",
+     "row": 4,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Stoicism",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Holy Shield",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Reckoning",
+     "row": 5,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Iron Creed",
+     "row": 6,
+     "col": 3,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Shieldsworn",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Holy Shield"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Retribution",
+   "talents": [
+    {
+     "name": "Deflection",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Benediction",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Judgement",
+     "row": 2,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Conviction",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Sanctified Judgement",
+     "row": 2,
+     "col": 3,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Vindication",
+     "row": 3,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Unyielding Faith",
+     "row": 3,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Seal of Command",
+     "row": 3,
+     "col": 3,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Pursuit of Justice",
+     "row": 3,
+     "col": 4,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Eye for an Eye",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Sacred Arbiter",
+     "row": 4,
+     "col": 2,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Two-Handed Weapon Specialization",
+     "row": 4,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Turn Evil",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Repentance",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Vengeance",
+     "row": 5,
+     "col": 3,
+     "max": 3,
+     "status": "changed",
+     "requires": [
+      "Seal of Command"
+     ]
+    },
+    {
+     "name": "Champion of the Light",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Unsealed Wrath",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Repentance"
+     ]
+    }
+   ]
+  }
+ ]
+}

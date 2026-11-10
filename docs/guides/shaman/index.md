@@ -78,6 +78,9 @@ Weaknesses
 
 ## Specs & talents
 
+!!! tip "Full talent guide"
+    The [Shaman talent guide](../../talents/shaman.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+
 Talents start at **level 10** and give **51 points** by level 60. The single-point "gold medal" tiers are at **11, 16, 21 and 31** points. You change talents, and Legacy talents, at a class trainer in a major city. **Dual spec** unlocks at **level 40** for **50g** from your trainer. A talent change inside a spec still costs a respec fee. The fee for each spec decreases to 1g over time.
 
 === "Elemental"

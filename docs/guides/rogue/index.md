@@ -92,6 +92,9 @@ Blizzard rebuilt the racials for Forever: every race has two actives and two pas
 
 ## Specs & talents
 
+!!! tip "Full talent guide"
+    The [Rogue talent guide](../../talents/rogue.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+
 Talents start at level 10 and cap at 51 points. Single-point "gold medal" talents are at **11, 16 (new), 21 and 31** points. You respec at a class trainer in a major city. **Dual spec** unlocks at **level 40 for 50g**. Respec fees decrease to 1g again over time.
 
 === "Assassination"

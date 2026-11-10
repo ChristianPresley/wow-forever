@@ -1,0 +1,401 @@
+{
+ "class": "hunter",
+ "trees": [
+  {
+   "name": "Beast Mastery",
+   "talents": [
+    {
+     "name": "Deadly Aspects",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Endurance Training",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Focused Fire",
+     "row": 2,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Improved Aspect of the Monkey",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Revive Pet",
+     "row": 2,
+     "col": 3,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Pathfinding",
+     "row": 3,
+     "col": 1,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Bestial Swiftness",
+     "row": 3,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Unleashed Fury",
+     "row": 3,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Mend Pet",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Ferocity",
+     "row": 4,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Summon Hawk",
+     "row": 4,
+     "col": 4,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Spirit Bond",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Intimidation",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Bestial Swiftness"
+     ]
+    },
+    {
+     "name": "Bestial Discipline",
+     "row": 5,
+     "col": 4,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Frenzy",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "same",
+     "requires": [
+      "Ferocity"
+     ]
+    },
+    {
+     "name": "Bestial Wrath",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "same",
+     "requires": [
+      "Intimidation"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Marksmanship",
+   "talents": [
+    {
+     "name": "Hawk Eye",
+     "row": 1,
+     "col": 1,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Improved Concussive Shot",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Lethal Attacks",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Stings",
+     "row": 2,
+     "col": 1,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Efficiency",
+     "row": 2,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Careful Aim",
+     "row": 2,
+     "col": 3,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Rapid Killing",
+     "row": 3,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Improved Arcane Shot",
+     "row": 3,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Lone Wolf",
+     "row": 3,
+     "col": 4,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Trueshot Aura",
+     "row": 4,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Mortal Shots",
+     "row": 4,
+     "col": 3,
+     "max": 5,
+     "status": "changed",
+     "requires": [
+      "Careful Aim"
+     ]
+    },
+    {
+     "name": "Improved Serpent Sting",
+     "row": 4,
+     "col": 4,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Rapid Recuperation",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "new",
+     "requires": [
+      "Rapid Killing"
+     ]
+    },
+    {
+     "name": "Barrage",
+     "row": 5,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Scatter Shot",
+     "row": 5,
+     "col": 4,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Ranged Weapon Specialization",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Sniper Shot",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Trueshot Aura"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Survival",
+   "talents": [
+    {
+     "name": "Improved Tracking",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Deflection",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Entrapment",
+     "row": 2,
+     "col": 1,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Savage Strikes",
+     "row": 2,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Survivalist",
+     "row": 2,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Wing Clip",
+     "row": 2,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Clever Traps",
+     "row": 3,
+     "col": 1,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Surefooted",
+     "row": 3,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Deterrence",
+     "row": 3,
+     "col": 3,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Survival Tactics",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Predator's Edge",
+     "row": 4,
+     "col": 2,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Counterattack",
+     "row": 4,
+     "col": 3,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Deterrence"
+     ]
+    },
+    {
+     "name": "Resourcefulness",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Expose Prey",
+     "row": 5,
+     "col": 2,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Survivalist's Discipline",
+     "row": 5,
+     "col": 3,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Strider Kick",
+     "row": 5,
+     "col": 4,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Lightning Reflexes",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Lacerating Strikes",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Expose Prey"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -51,6 +51,8 @@
 
 ## Talents
 
+The [Rogue talent guide](../../talents/rogue.md) shows all 3 trees and gives a rating to each talent.
+
 === "Assassination"
 
     Malice (applies to poisons) · Murder (now hits Giants) · Improved Expose Armor · Lethality (2 pts, 10/20% crit damage) · **Cold Blood** (16) · Improved Poisons · Vigor · **Mutilate** (21: 60 Energy, 2 combo points, daggers, 90% weapon damage) · Seal Fate · **Venom** (31-point finisher: +30% poison damage, +10% application chance)

@@ -75,6 +75,8 @@
 
 ## Talents
 
+The [Hunter talent guide](../../talents/hunter.md) shows all 3 trees and gives a rating to each talent.
+
 === "Beast Mastery"
 
     Deadly Aspects · Endurance Training (absorbs Thick Hide) · Focused Fire · **Summon Hawk** (16: up to 2 hawks, shares Arcane Shot's cooldown) · Intimidation · Bestial Discipline (also restores mana)

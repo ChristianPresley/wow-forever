@@ -1,0 +1,342 @@
+class: Mage
+badges: [dps]
+description: "Mage talent guide for WoW: Forever: all 53 talents in Arcane, Fire and Frost with a rating, a talent for each level from 10 to 60, and level 60 builds for raids and PvP."
+
+intro: |
+  Each Mage tree is a full damage spec in Forever. **Frost** is the safe tree for leveling and the PvP tree. **Fire** and **Arcane** are the damage trees for raids. Some talents help spells from a different tree, so most builds put points in 2 or 3 trees.
+
+card:
+  leveling: "Frost (safe) or Arcane (fast solo)"
+  pve: "Fire or Arcane. Frost for fights with much Fire damage"
+  pvp: "Frost with Improved Counterspell"
+
+quick:
+  - stage: "Level 10–39"
+    build: frost-leveling
+    why: "Ice Lance at level 20. Ice Block at 26. Cold Snap at 30. The safest route."
+  - stage: "Level 10–39, alternative"
+    build: arcane-leveling
+    why: "Arcane Blast at level 20. Faster kills on single targets, but fewer escapes."
+  - stage: "Level 40–59"
+    build: frost-leveling
+    why: "Ice Barrier at 40. Then Precision and Arcane talents that save mana."
+  - stage: "Level 60: dungeons and raids"
+    build: fire-raid
+    why: "The build with the most crit. Heating Up makes Pyroblast a 1.5 s cast."
+  - stage: "Level 60: raids, second option"
+    build: arcane-raid
+    why: "Strong burst with Arcane Power. Good mana with Arcane Meditation."
+  - stage: "Level 60: Onyxia's Lair and Fire-resistant bosses"
+    build: frost-raid
+    why: "Frost damage is not affected by Fire resistance. Ice Block and Ice Barrier add safety."
+  - stage: "Level 60: PvP"
+    build: frost-pvp
+    why: "Shatter combos, 2 Ice Blocks with Cold Snap, and a 4 s silence on Counterspell."
+
+trees:
+  Arcane:
+    summary: |
+      Arcane is the burst and mana tree. **Arcane Blast** opens at 10 points and **Arcane Wrath** at 15. The first 2 rows are also useful for Fire and Frost builds, because Arcane Concentration and Missile Barrage work with spells from all trees.
+    talents:
+      Wand Specialization:
+        {does: "Wand damage +13/25%", lvl: B, pve: D, pvp: D, note: "Useful before level 30, when you use a wand to kill targets. No value at 60."}
+      Improved Channeling:
+        {does: "Arcane Missiles have a 20–100% chance to ignore pushback. Arcane Blast and Arcane Wrath have a 14–70% chance", lvl: C, pve: B, pvp: B, note: "Take it in a deep Arcane build. It is filler in other builds."}
+      Arcane Resilience:
+        {does: "Armor equal to 25/50/75% of your Intellect", lvl: B, pve: C, pvp: B, note: "The usual way to open row 2 when you level. It decreases physical damage."}
+      Arcane Subtlety:
+        {does: "Target resistance −8/15 for your spells. Arcane threat −15/30%", lvl: D, pve: B, pvp: C, note: "For raids, where threat is a limit."}
+      Magic Absorption:
+        {does: "All resistances +5/10. A spell that you fully resist restores 1/2% of your mana", lvl: D, pve: D, pvp: C, note: "Filler only."}
+      Arcane Concentration:
+        {does: "2–10% chance for Clearcasting after a damage spell hits. Your next damage spell is free", lvl: A, pve: S, pvp: B, note: "The best mana talent for all 3 specs. Arcane Meditation needs 5/5."}
+      Missile Barrage:
+        {does: "Arcane Blast has a 20/40% chance to make your next Arcane Missiles free and 50% shorter. Arcane Wrath, Fireball, Frostbolt and Frostfire Bolt have a 10/20% chance", lvl: A, pve: S, pvp: B, note: "It needs only 5 Arcane points. It gives free damage to Fire and Frost builds also."}
+      Arcane Geometry:
+        {does: "Range of Arcane spells +3/6 yd", lvl: C, pve: C, pvp: B, note: "A personal preference. It makes it easier to stay at range."}
+      Arcane Impact:
+        {does: "Crit chance of Arcane spells +2/4/6%", lvl: B, pve: A, pvp: B, note: "For builds that use Arcane Blast as the main spell."}
+      Arcane Blast:
+        {does: "A 1.5 s Arcane spell. Each cast gives 12% of your Intellect as spell damage and increases its mana cost by 100%. Maximum 4 stacks, 18 s", lvl: S, pve: S, pvp: B, note: "The core spell of the Arcane spec. Available at level 20."}
+      Arcane Shielding:
+        {does: "Mana Shield loses 17/33% less mana per point of damage. Mage Armor gives 25/50% more resistance", lvl: C, pve: D, pvp: B, note: "Filler for PvP and Hardcore."}
+      Improved Counterspell:
+        {does: "Counterspell also silences the target for 2/4 s", lvl: D, pve: C, pvp: S, note: "The reason to put 17 points in Arcane for PvP."}
+      Arcane Meditation:
+        {does: "17/33/50% of your mana regeneration continues while you cast", lvl: A, pve: S, pvp: B, note: "Much stronger than in Classic. Core for Arcane."}
+      Arcane Wrath:
+        {does: "A 3.5 s Arcane spell with a 6 s cooldown. It gets spell damage equal to 5% of your maximum mana", lvl: A, pve: A, pvp: B, note: "A large hit that can proc Missile Barrage. Accelerant in the Fire tree makes the cast 0.5 s shorter."}
+      Presence of Mind:
+        {does: "Your next spell with a cast time is instant. 3 min cooldown", lvl: A, pve: A, pvp: A, note: "Arcane Power needs it."}
+      Arcane Mind:
+        {does: "Intellect +2–10%. Crit damage bonus of Arcane spells +20–100%", lvl: A, pve: S, pvp: B, note: "Intellect also increases the bonus from Arcane Blast stacks."}
+      Arcane Instability:
+        {does: "Spell damage +1/2/3% and crit chance +1/2/3%", lvl: A, pve: S, pvp: A, note: "Applies to all spells."}
+      Arcane Power:
+        {does: "For 15 s, spells do 30% more damage and cost 30% more mana. 3 min cooldown", lvl: A, pve: S, pvp: A, note: "The burst cooldown of the tree."}
+  Fire:
+    summary: |
+      Fire is the crit tree. Crits give **Heating Up** stacks, and 3 stacks make Pyroblast a 1.5 s cast. **Incineration** and **Accelerant** in row 1 also help Arcane and Frost spells, so other builds often take them.
+    talents:
+      Incineration:
+        {does: "Crit chance of Fire Blast, Ice Lance, Arcane Blast and Scorch +2–10%", lvl: B, pve: S, pvp: A, note: "Useful for all 3 specs because of Ice Lance and Arcane Blast."}
+      Accelerant:
+        {does: "Cast time of Fireball, Frostfire Bolt and Arcane Wrath −0.1 to −0.5 s", lvl: A, pve: S, pvp: B, note: "Core for Fire. Good for Arcane because of Arcane Wrath."}
+      Ignite:
+        {does: "Fire crits burn the target for 8–40% of the damage during 4 s", lvl: A, pve: S, pvp: A, note: "Each Mage now has a separate Ignite."}
+      Flame Throwing:
+        {does: "Range of Fire spells +3/6 yd", lvl: C, pve: C, pvp: B, note: "A personal preference."}
+      Impact:
+        {does: "Fire spells have a 3/6/10% chance to stun the target for 2 s", lvl: C, pve: D, pvp: B, note: "Bosses are immune to stuns."}
+      Burning Soul:
+        {does: "Fire spells have a 23–70% chance to ignore pushback. Fire threat −10/20/30%", lvl: B, pve: A, pvp: B, note: "The threat decrease is important in raids."}
+      Improved Flamestrike:
+        {does: "Crit chance of Flamestrike +5/10/15%", lvl: C, pve: C, pvp: D, note: "Only for AoE farming."}
+      Pyroblast:
+        {does: "A 6 s cast that does a large Fire hit and damage during 12 s", lvl: B, pve: S, pvp: A, note: "Heating Up needs it. Use it before the pull."}
+      Improved Fire Blast:
+        {does: "Fire Blast cooldown −1/2 s and range +8/15 yd", lvl: B, pve: A, pvp: A, note: "Fire Blast gives a Heating Up stack each time it does damage. Thus, a shorter cooldown gives more fast Pyroblasts."}
+      Improved Scorch:
+        {does: "Scorch has a 33/66/100% chance to increase the Fire damage that you do to the target by 3%. Maximum 5 stacks, 30 s", lvl: C, pve: S, pvp: C, note: "Up to 15% more damage on a boss. It applies only to your spells."}
+      Improved Fire Ward:
+        {does: "Fire Ward has a 10/20% chance to reflect Fire spells", lvl: D, pve: D, pvp: C, note: "Do not take it for PvE."}
+      Heating Up:
+        {does: "Crits with Fireball, Frostfire Bolt, Fire Blast and Scorch make your next Pyroblast 25% faster. Maximum 3 stacks", lvl: A, pve: S, pvp: A, note: "The core talent of the Fire spec."}
+      Master of Elements:
+        {does: "Fire and Frost crits refund 10/20/30% of the base mana cost", lvl: B, pve: A, pvp: C, note: "The mana talent of the Fire spec. It also works for Frost crits."}
+      Critical Mass:
+        {does: "Crit chance of Fire spells +2/4/6%", lvl: A, pve: S, pvp: A, note: "Combustion needs 3/3."}
+      Blast Wave:
+        {does: "An instant AoE Fire hit that dazes enemies for 6 s. 45 s cooldown", lvl: B, pve: C, pvp: A, note: "For AoE pulls and for melee enemies in PvP."}
+      Fire Power:
+        {does: "Fire damage +1/2/3% for each of your Fire effects on the target, to a maximum of +4/8/12%", lvl: A, pve: S, pvp: A, note: "Ignite, Pyroblast and Fireball effects on the target give the maximum bonus."}
+      Combustion:
+        {does: "Each Fire hit gives +10% Fire crit chance until you get 3 crits. 3 min cooldown", lvl: A, pve: S, pvp: A, note: "Use it to get Heating Up stacks quickly."}
+  Frost:
+    summary: |
+      Frost is the control tree. **Ice Lance** does 300% more damage to Frozen targets, and **Shatter** adds 50% crit chance against them. The tree also has the defensive talents: Ice Block, Cold Snap and Ice Barrier. **Precision** in row 1 gives hit for all spells, so each raid build takes it.
+    talents:
+      Frost Warding:
+        {does: "Frost Armor and Ice Armor give 15/30% more armor and resistance. Ice Barrier and Frost Ward absorb 10/20% more", lvl: C, pve: C, pvp: B, note: "Filler. Better when you have Ice Barrier."}
+      Improved Frostbolt:
+        {does: "Cast time of Frostbolt −0.1 to −0.5 s", lvl: S, pve: S, pvp: S, note: "The first 5 points of each Frost build."}
+      Precision:
+        {does: "Hit chance of all spells +2/4/6%", lvl: C, pve: S, pvp: B, note: "Take 3/3 in each raid build. It applies to Arcane and Fire spells also."}
+      Ice Shards:
+        {does: "Crit damage bonus of Frost spells +20–100%", lvl: A, pve: S, pvp: S, note: "Doubles the crit bonus. Strong with Shatter."}
+      Frostbite:
+        {does: "Chill effects have a 5/10/15% chance to Freeze the target for 5 s", lvl: S, pve: C, pvp: A, note: "Free Shatter combos when you level. Bosses are immune to Freeze."}
+      Improved Frost Nova:
+        {does: "Frost Nova cooldown −2/4 s", lvl: A, pve: C, pvp: A, note: "More freezes for Ice Lance and for escapes."}
+      Permafrost:
+        {does: "Chill effects last 11/22/33% longer and slow by an additional 3/6/10%", lvl: B, pve: D, pvp: A, note: "For kiting."}
+      Frost Channeling:
+        {does: "Mana cost of Frost spells −5/10/15%. Frost threat −10/20/30%", lvl: B, pve: A, pvp: B, note: "The mana and threat talent of the Frost spec."}
+      Improved Blizzard:
+        {does: "Blizzard slows targets by 15/25/40% for 1.5 s", lvl: B, pve: C, pvp: C, note: "For AoE farming. The slow is weaker than in Classic."}
+      Ice Lance:
+        {does: "An instant Frost spell with an 8 s cooldown. It does 300% more damage to Frozen targets", lvl: S, pve: A, pvp: S, note: "Available at level 20. It has the same cooldown as Fire Blast."}
+      Arctic Reach:
+        {does: "Range of Frostbolt, Ice Lance and Blizzard +10/20%. Radius of Frost Nova and Cone of Cold +10/20%", lvl: B, pve: B, pvp: A, note: "A larger Frost Nova is safer."}
+      Ice Block:
+        {does: "You are immune to all damage for 10 s, but you cannot act. 5 min cooldown", lvl: S, pve: A, pvp: S, note: "The best defensive talent. It needs only 15 Frost points."}
+      Shatter:
+        {does: "Crit chance of all spells against Frozen targets +17/33/50%", lvl: S, pve: B, pvp: S, note: "In raids it works only with Fingers of Frost, because bosses are immune to Freeze."}
+      Improved Cone of Cold:
+        {does: "Cone of Cold damage +12/23/35%", lvl: C, pve: C, pvp: B, note: "Take it only with Winter's Chill."}
+      Cold Snap:
+        {does: "Finishes the cooldown of all your other Frost spells. 10 min cooldown", lvl: A, pve: B, pvp: S, note: "A second Ice Block and Frost Nova. Ice Barrier needs it."}
+      Fingers of Frost:
+        {does: "Chill effects have a 15% chance to make your next 1/2 spells treat the target as Frozen", lvl: A, pve: A, pvp: S, note: "It is not confirmed that Chill effects can proc it on raid bosses. Read the tooltip."}
+      Winter's Chill:
+        {does: "Frostbolt has a 20–100% chance to add a stack. Each stack makes your next Cone of Cold do 20% more damage. Maximum 5 stacks", lvl: C, pve: C, pvp: C, note: "It no longer gives crit to the raid. It costs 5 points for a Cone of Cold bonus."}
+      Ice Barrier:
+        {does: "A shield that absorbs damage. Frost damage +15% for 1 min, and +5% more while the shield holds. No pushback while shielded", lvl: S, pve: S, pvp: S, note: "A damage talent and a defensive talent in one."}
+
+builds:
+  - id: frost-leveling
+    name: "Frost (safe)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The safe route to 60. You get control first, then the defensive talents, then mana talents from Arcane. The order follows the Frost-first variant of the Warcraft Tavern leveling build, adjusted to the launch client.
+    steps:
+      - [Improved Frostbolt, 5, "Faster kills from the first point"]
+      - [Frostbite, 3, "Random freezes stop mobs before they get to you"]
+      - [Improved Frost Nova, 2, "Opens row 3. More freezes"]
+      - [Ice Lance, 1, "Instant damage on Frozen targets"]
+      - [Ice Shards, 5, "Larger crits"]
+      - [Ice Block, 1, "Your first emergency button"]
+      - [Shatter, 3, "50% crit chance on Frozen targets"]
+      - [Cold Snap, 1, "A second Ice Block and Frost Nova"]
+      - [Fingers of Frost, 2, "Shatter combos without a root"]
+      - [Frost Channeling, 3, "Less time to drink"]
+      - [Permafrost, 3, "Longer and stronger slows"]
+      - [Arctic Reach, 1, "The last point to open row 7"]
+      - [Ice Barrier, 1, "A shield and +15% Frost damage"]
+      - [Arctic Reach, 1, "More range"]
+      - [Precision, 3, "Fewer resists on mobs of a higher level and in dungeons"]
+      - [Arcane Resilience, 3, "Armor. Opens Arcane row 2"]
+      - [Wand Specialization, 2, "Opens Arcane row 2"]
+      - [Arcane Concentration, 5, "Free spells"]
+      - [Missile Barrage, 2, "Frostbolt gives free Arcane Missiles"]
+      - [Improved Blizzard, 3, "For AoE pulls in dungeons"]
+      - [Frost Warding, 1, "A stronger Ice Barrier"]
+    notes:
+      - "If you get dual spec at 40, keep this build as your solo build."
+      - "For raids at 60, respec. Move the points from Frostbite, Permafrost and Improved Blizzard into Incineration."
+
+  - id: arcane-leveling
+    name: "Arcane (fast solo)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      Warcraft Tavern says that Arcane is the best open-world solo build. It kills single targets quickly, but it has no Ice Block. Use Frostbolt or Fireball between casts of Arcane Blast to control the mana cost.
+    steps:
+      - [Arcane Resilience, 3, "Armor for the early levels"]
+      - [Wand Specialization, 2, "Wand damage is a large part of early kills"]
+      - [Missile Barrage, 2, "Free Arcane Missiles from Fireball and Frostbolt"]
+      - [Arcane Concentration, 3, "Free spells"]
+      - [Arcane Blast, 1, "Your new main spell at level 20"]
+      - [Arcane Concentration, 2, "Arcane Meditation needs 5/5"]
+      - [Arcane Impact, 2, "Crit for Arcane Blast"]
+      - [Arcane Wrath, 1, "A large hit each 6 s"]
+      - [Arcane Meditation, 3, "Mana regeneration while you cast"]
+      - [Arcane Impact, 1, "Opens row 5"]
+      - [Presence of Mind, 1, "An instant Arcane Wrath"]
+      - [Arcane Mind, 5, "Intellect and larger crits"]
+      - [Arcane Instability, 3, "Damage and crit for all spells"]
+      - [Arcane Geometry, 1, "The last point to open row 7"]
+      - [Arcane Power, 1, "The burst cooldown"]
+      - [Arcane Geometry, 1, "More range"]
+      - [Incineration, 5, "10% crit for Arcane Blast"]
+      - [Accelerant, 5, "A 3 s Arcane Wrath"]
+      - [Precision, 3, "Hit for dungeons at 55+"]
+      - [Arcane Subtlety, 2, "Less threat in dungeons"]
+      - [Improved Counterspell, 2, "A silence for casters"]
+      - [Arcane Shielding, 2, "A cheaper Mana Shield"]
+
+  - id: fire-raid
+    name: "Fire (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      A deep Fire build with all the crit talents. It takes Precision for hit and the 2 best Arcane talents for mana. Do not use it in fights with much Fire resistance.
+    steps:
+      - [Incineration, 5]
+      - [Accelerant, 5]
+      - [Ignite, 5]
+      - [Pyroblast, 1]
+      - [Burning Soul, 3, "Less threat. Ignite makes much threat"]
+      - [Improved Fire Blast, 2, "More Heating Up stacks from Fire Blast"]
+      - [Heating Up, 1]
+      - [Improved Scorch, 3]
+      - [Master of Elements, 3]
+      - [Critical Mass, 3]
+      - [Blast Wave, 1, "A personal preference. You can move this point to Flame Throwing"]
+      - [Fire Power, 3]
+      - [Combustion, 1]
+      - [Precision, 3, "6% hit for all spells"]
+      - [Arcane Resilience, 3]
+      - [Improved Channeling, 2, "Filler to open Arcane row 2"]
+      - [Arcane Concentration, 5]
+      - [Missile Barrage, 2, "Fireball gives free Arcane Missiles"]
+
+  - id: arcane-raid
+    name: "Arcane (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      A deep Arcane build for burst and long fights. It takes the 2 talents in Fire row 1, because they help Arcane Blast and Arcane Wrath.
+    steps:
+      - [Improved Channeling, 5]
+      - [Arcane Concentration, 5]
+      - [Missile Barrage, 2]
+      - [Arcane Subtlety, 2, "Less threat"]
+      - [Arcane Blast, 1]
+      - [Arcane Impact, 3]
+      - [Arcane Wrath, 1]
+      - [Arcane Meditation, 3]
+      - [Presence of Mind, 1]
+      - [Arcane Mind, 5]
+      - [Arcane Instability, 3]
+      - [Arcane Power, 1]
+      - [Arcane Geometry, 2, "A personal preference"]
+      - [Improved Counterspell, 2, "Utility. You can move these points to Arcane Resilience"]
+      - [Arcane Shielding, 2, "Filler"]
+      - [Incineration, 5, "10% crit for Arcane Blast"]
+      - [Accelerant, 5, "A 3 s Arcane Wrath"]
+      - [Precision, 3, "6% hit for all spells"]
+
+  - id: frost-raid
+    name: "Frost (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      A Frost build for Onyxia's Lair and for bosses that resist Fire. It does not take the control talents, because bosses are immune to Freeze.
+    steps:
+      - [Improved Frostbolt, 5]
+      - [Precision, 3]
+      - [Frost Warding, 2, "Filler that makes Ice Barrier stronger"]
+      - [Ice Shards, 5]
+      - [Improved Frost Nova, 2, "Filler. Useful on adds"]
+      - [Frost Channeling, 3]
+      - [Ice Lance, 1]
+      - [Arctic Reach, 2]
+      - [Ice Block, 1]
+      - [Shatter, 3, "For Fingers of Frost procs and for adds"]
+      - [Cold Snap, 1]
+      - [Fingers of Frost, 2]
+      - [Ice Barrier, 1, "+15% Frost damage"]
+      - [Arcane Resilience, 3]
+      - [Improved Channeling, 2, "Filler to open Arcane row 2"]
+      - [Arcane Concentration, 5]
+      - [Missile Barrage, 2, "Frostbolt gives free Arcane Missiles"]
+      - [Arcane Subtlety, 2, "Less threat"]
+      - [Magic Absorption, 1, "Filler"]
+      - [Incineration, 5, "10% crit for Ice Lance"]
+
+  - id: frost-pvp
+    name: "Frost (PvP)"
+    kind: endgame
+    role: "PvP"
+    summary: |
+      The control build for battlegrounds and world PvP. It puts 17 points in Arcane to get Improved Counterspell.
+    steps:
+      - [Improved Frostbolt, 5]
+      - [Precision, 3]
+      - [Ice Shards, 5]
+      - [Frostbite, 3]
+      - [Improved Frost Nova, 2]
+      - [Permafrost, 3]
+      - [Ice Lance, 1]
+      - [Frost Channeling, 2]
+      - [Arctic Reach, 2]
+      - [Ice Block, 1]
+      - [Shatter, 3]
+      - [Cold Snap, 1]
+      - [Fingers of Frost, 2]
+      - [Ice Barrier, 1]
+      - [Arcane Resilience, 3, "Armor against melee classes"]
+      - [Improved Channeling, 2, "Filler to open Arcane row 2"]
+      - [Magic Absorption, 2]
+      - [Arcane Concentration, 5]
+      - [Missile Barrage, 2]
+      - [Arcane Subtlety, 1, "Filler to open Arcane row 4"]
+      - [Improved Counterspell, 2, "A 4 s silence"]
+
+faq:
+  - q: "Where is Missile Barrage in the tree?"
+    a: "In the launch client, Missile Barrage is in Arcane row 2. It needs 5 Arcane points and has 2 ranks. Blizzard's deep dive from the beta gave a different position."
+  - q: "Is Winter's Chill a raid talent?"
+    a: "No. In Forever, Winter's Chill only increases the damage of your next Cone of Cold. It does not increase crit chance for the raid."
+  - q: "Do I need hit talents?"
+    a: "Precision in Frost row 1 gives 6% hit for all spells. The launch client has no Arcane Focus talent. Thus, each raid build takes Precision 3/3."
+  - q: "When do I respec?"
+    a: "Dual spec costs 50g at level 40. Keep the leveling build in one spec. Use the second spec for dungeons or PvP."
+
+sources:
+  - {title: "Warcraft Tavern: Mage leveling guide", url: "https://www.warcrafttavern.com/forever/guides/mage-leveling/"}
+  - {title: "Warcraft Tavern: Mage guide", url: "https://www.warcrafttavern.com/forever/guides/mage/"}
+  - {title: "Method.gg: Mage leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-mage-leveling-guide-and-talents"}
+  - {title: "Mobalytics: Arcane Mage guide", url: "https://mobalytics.gg/wow-forever/classes/arcane-mage-guide"}

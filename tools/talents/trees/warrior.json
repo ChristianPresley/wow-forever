@@ -1,0 +1,415 @@
+{
+ "class": "warrior",
+ "trees": [
+  {
+   "name": "Arms",
+   "talents": [
+    {
+     "name": "Improved Heroic Strike",
+     "row": 1,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Deflection",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Improved Rend",
+     "row": 1,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Charge",
+     "row": 2,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Tactical Mastery",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Overpower",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Anger Management",
+     "row": 3,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Improved Tactical Mastery"
+     ]
+    },
+    {
+     "name": "Deep Wounds",
+     "row": 3,
+     "col": 3,
+     "max": 3,
+     "status": "changed",
+     "requires": [
+      "Improved Rend"
+     ]
+    },
+    {
+     "name": "Spearing Strike",
+     "row": 4,
+     "col": 1,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Two-Handed Weapon Specialization",
+     "row": 4,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Impale",
+     "row": 4,
+     "col": 3,
+     "max": 2,
+     "status": "changed",
+     "requires": [
+      "Deep Wounds"
+     ]
+    },
+    {
+     "name": "Bloodthrill",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Sweeping Strikes",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Weaponmaster",
+     "row": 5,
+     "col": 3,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Improved Slam",
+     "row": 6,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Hamstring",
+     "row": 6,
+     "col": 3,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Mortal Strike",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "same",
+     "requires": [
+      "Sweeping Strikes"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Fury",
+   "talents": [
+    {
+     "name": "Booming Voice",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Cruelty",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Lingering Rage",
+     "row": 2,
+     "col": 2,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Unbridled Wrath",
+     "row": 2,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Furious Precision",
+     "row": 3,
+     "col": 1,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Piercing Howl",
+     "row": 3,
+     "col": 2,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Blood Craze",
+     "row": 3,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Enrage",
+     "row": 3,
+     "col": 4,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Dual Wield Specialization",
+     "row": 4,
+     "col": 1,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Reckless Swings",
+     "row": 4,
+     "col": 2,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Improved Execute",
+     "row": 4,
+     "col": 4,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Berserker Rage",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Death Wish",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Gore Drinker",
+     "row": 5,
+     "col": 3,
+     "max": 2,
+     "status": "new",
+     "requires": [
+      "Blood Craze"
+     ]
+    },
+    {
+     "name": "Improved Intercept",
+     "row": 5,
+     "col": 4,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Improved Whirlwind",
+     "row": 6,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Flurry",
+     "row": 6,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Bloodthirst",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Death Wish"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Protection",
+   "talents": [
+    {
+     "name": "Improved Bloodrage",
+     "row": 1,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Shield Specialization",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Iron Will",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Anticipation",
+     "row": 2,
+     "col": 1,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Revenge",
+     "row": 2,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Thunder Clap",
+     "row": 2,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Last Stand",
+     "row": 3,
+     "col": 1,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Master of Defense",
+     "row": 3,
+     "col": 2,
+     "max": 2,
+     "status": "new",
+     "requires": [
+      "Shield Specialization"
+     ]
+    },
+    {
+     "name": "Improved Disarm",
+     "row": 3,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Defiance",
+     "row": 3,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Sunder Armor",
+     "row": 4,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Vanguard",
+     "row": 4,
+     "col": 2,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Improved Shield Bash",
+     "row": 4,
+     "col": 3,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Shield Wall",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Concussion Blow",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Focused Rage",
+     "row": 5,
+     "col": 3,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Bastion",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Shield Slam",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Concussion Blow"
+     ]
+    }
+   ]
+  }
+ ]
+}

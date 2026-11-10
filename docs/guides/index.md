@@ -9,6 +9,8 @@ hide:
 
 Full walkthroughs for all **9 classes**, and a **race add-on** for each of the **56** race/class combinations. Select a class, then your race.
 
+The [Talent Guides](../talents/index.md) give a rating to each talent of each class, and a talent for each level from 10 to 60.
+
 ??? info "How the guides fit together · current as of 7 November 2026"
     - **Class guide:** the core walkthrough. It gives talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep for 9 December, PvP, gear and professions.
     - **Race add-on:** read it together with the class guide. It gives the racials for that class, the starting zone, the route from your capital and faction notes.

@@ -88,6 +88,9 @@ Full racial tables: [Races](../../characters/races.md#racial-abilities).
 
 ## Specs & talents
 
+!!! tip "Full talent guide"
+    The [Hunter talent guide](../../talents/hunter.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+
 Talent points start at **level 10**, 1 for each level, for a total of **51 points at 60**. The Legacy talent *Talented* can move your first point to level 5 (Warcraft Tavern counts this as a maximum of 5 extra points). Refer to [Professions & Legacy](#professions-legacy).
 
 === "Beast Mastery"

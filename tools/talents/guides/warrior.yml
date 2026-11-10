@@ -1,0 +1,389 @@
+class: Warrior
+badges: [tank, dps]
+description: "Warrior talent guide for WoW: Forever: all 53 talents in Arms, Fury and Protection with a rating, a talent for each level from 10 to 60, and level 60 builds for tanks, raid damage and PvP."
+
+intro: |
+  The Warrior has 2 damage trees and 1 tank tree in Forever. **Protection** is the tank tree and the safe tree for solo leveling. **Arms** is the two-hander tree for groups and PvP. **Fury** is the dual-wield tree for raids. Most damage builds put points in Arms and Fury, because Cruelty, Impale and Deep Wounds help both specs.
+
+card:
+  leveling: "Protection (solo) or Arms (groups)"
+  pve: "Protection to tank. Fury or Arms for damage"
+  pvp: "Arms with Mortal Strike"
+
+quick:
+  - stage: "Level 10–39, solo"
+    build: prot-leveling
+    why: "Shield Specialization gives rage from level 10. Vanguard at 25. Shield Slam at 40."
+  - stage: "Level 10–39, with a group or a healer"
+    build: arms-leveling
+    why: "Improved Overpower at 16. Sweeping Strikes at 30. Mortal Strike at 40."
+  - stage: "Level 40–59"
+    build: prot-leveling
+    why: "Stay in Defensive Stance. Cruelty and Unbridled Wrath add crit and rage."
+  - stage: "Level 40–59, with 2 good weapons"
+    build: fury-leveling
+    why: "Bloodthirst at 40. Weak at low levels, because missed attacks give no rage."
+  - stage: "Level 60: tank in dungeons and raids"
+    build: prot-tank
+    why: "All the threat and survival talents. Charge in Defensive Stance with Vanguard."
+  - stage: "Level 60: raid damage with 2 weapons"
+    build: fury-raid
+    why: "Bloodthirst, Flurry and Improved Whirlwind, with Impale from Arms."
+  - stage: "Level 60: raid damage with a two-hander"
+    build: arms-raid
+    why: "Mortal Strike, Improved Slam and Weaponmaster. Strong on 2 targets with Sweeping Strikes."
+  - stage: "Level 60: PvP"
+    build: arms-pvp
+    why: "Mortal Strike decreases healing by 50%. Spearing Strike dismounts riders."
+  - stage: "Hardcore"
+    build: prot-leveling
+    why: "A shield and Last Stand at 26. Slower kills, but much more safety."
+
+trees:
+  Arms:
+    summary: |
+      Arms is the two-hander tree. **Improved Overpower**, **Deep Wounds** and **Impale** make crits stronger, and **Mortal Strike** is the last talent. **Sweeping Strikes** opens at 20 points and Mortal Strike needs it. Fury builds put 17 points here to get Impale.
+    talents:
+      Improved Heroic Strike:
+        {does: "Rage cost of Heroic Strike −1 to −3", lvl: B, pve: B, pvp: C, note: "A good way to open row 2. Heroic Strike is the ability that uses extra rage."}
+      Deflection:
+        {does: "Parry chance +1–5%", lvl: C, pve: C, pvp: B, note: "No damage value. The tank build takes 5/5 for avoidance."}
+      Improved Rend:
+        {does: "Bleed damage of Rend +12–35%", lvl: A, pve: B, pvp: B, note: "Rend scales with attack power in Forever. Deep Wounds needs 3/3."}
+      Improved Charge:
+        {does: "Charge gives 3/6 more Rage", lvl: B, pve: C, pvp: A, note: "More rage at the start of each fight. Low value in a long boss fight."}
+      Improved Tactical Mastery:
+        {does: "You keep 5–15 more Rage when you change stance", lvl: A, pve: B, pvp: S, note: "It adds to the baseline 10 Rage. Anger Management needs 3/3."}
+      Improved Overpower:
+        {does: "Crit chance of Overpower +25/50%", lvl: S, pve: A, pvp: A, note: "Overpower is the main Arms ability when you level. Crits give 75% more rage."}
+      Anger Management:
+        {does: "1 Rage each 3 s in combat. You lose Rage 30% slower out of combat", lvl: A, pve: A, pvp: A, note: "Constant rage for 1 point. Take it in each build that has 10 Arms points."}
+      Deep Wounds:
+        {does: "Your crits cause a Bleed for 20–60% of your average weapon damage during 12 s", lvl: A, pve: S, pvp: A, note: "Core for Arms and Fury. Impale needs 3/3."}
+      Spearing Strike:
+        {does: "15 Rage, 20 s cooldown, Battle Stance. 75% weapon damage, and 75% more against Giants, Dragonkin and mounted targets. It dismounts the target", lvl: C, pve: C, pvp: A, note: "Take it for PvP. In PvE it is useful only against Giants and Dragonkin, such as Onyxia."}
+      Two-Handed Weapon Specialization:
+        {does: "Damage with two-handed weapons +2–6%", lvl: A, pve: S, pvp: A, note: "Core for each two-hander build. No value with 2 weapons or a shield."}
+      Impale:
+        {does: "Crit damage bonus of your abilities +10/20%", lvl: A, pve: S, pvp: A, note: "The reason that Fury builds put 17 points in Arms."}
+      Bloodthrill:
+        {does: "Main-hand attacks against a target with your Rend have a 10/20% chance to make Overpower available", lvl: A, pve: A, pvp: B, note: "Gives Overpower on targets that do not dodge. Keep Rend on the target."}
+      Sweeping Strikes:
+        {does: "30 Rage, 30 s cooldown, Battle Stance. Your next 5 melee attacks also hit a second enemy", lvl: S, pve: A, pvp: B, note: "The best talent for pulls of 2 mobs. Mortal Strike needs it."}
+      Weaponmaster:
+        {does: "Axe or polearm: crit chance +1–5%. Mace or staff: your attacks ignore 3–15% of armor. Sword: 1–5% chance for an extra attack", lvl: A, pve: S, pvp: A, note: "Replaces the Classic weapon specializations. Take 5/5 for the weapon type that you use."}
+      Improved Slam:
+        {does: "Slam cooldown −2.5/5 s. Cast time and global cooldown −0.25/0.5 s. Slam does not delay your swing", lvl: A, pve: S, pvp: A, note: "Makes Slam a 10 s cooldown ability that is safe to use between swings."}
+      Improved Hamstring:
+        {does: "Hamstring has a 5–15% chance to immobilize the target for 5 s", lvl: D, pve: D, pvp: B, note: "For PvP only. The chance is low for 3 points."}
+      Mortal Strike:
+        {does: "30 Rage, 6 s cooldown. Weapon damage plus 85. Healing on the target −50% for 10 s", lvl: S, pve: S, pvp: S, note: "The core ability of the Arms spec. Available at level 40."}
+  Fury:
+    summary: |
+      Fury is the dual-wield tree. **Furious Precision** and **Dual Wield Specialization** make the off-hand weapon useful, and **Flurry** and **Bloodthirst** are at the bottom. **Cruelty**, **Unbridled Wrath** and **Enrage** in the first 3 rows are good for each damage build.
+    talents:
+      Booming Voice:
+        {does: "Area of your Shouts +10–50%. Rage cost of Shouts and Howls −5–25%", lvl: D, pve: C, pvp: C, note: "Filler. It can help Battle Shout get to a full raid group."}
+      Cruelty:
+        {does: "Melee crit chance +1–5%", lvl: S, pve: S, pvp: A, note: "Crits give 75% more rage in Forever. Take 5/5 in each damage build."}
+      Lingering Rage:
+        {does: "Rage starts to decay 2–10 s later after you leave combat", lvl: C, pve: D, pvp: C, note: "It helps you keep rage between pulls. Unbridled Wrath is a better use of 5 points."}
+      Unbridled Wrath:
+        {does: "12–60% chance to get 1 more Rage when you do melee damage with a weapon", lvl: A, pve: A, pvp: B, note: "Much stronger than in Classic. Best with 2 fast weapons."}
+      Furious Precision:
+        {does: "Hit chance of off-hand attacks +4–10%", lvl: B, pve: S, pvp: D, note: "For dual-wield builds only. No value with a two-hander."}
+      Piercing Howl:
+        {does: "10 Rage. Dazes all enemies within 10 yd and slows them by 50% for 6 s", lvl: C, pve: D, pvp: S, note: "An AoE slow for PvP. It also helps you run from a bad pull."}
+      Blood Craze:
+        {does: "Restores 1–3% of your health during 6 s after a crit against you or a hit for more than 20% of your health", lvl: B, pve: D, pvp: B, note: "A small heal. Gore Drinker needs 3/3."}
+      Enrage:
+        {does: "After an attack does damage to you, 30% chance to do 2–10% more Physical damage for 12 s", lvl: S, pve: B, pvp: A, note: "Almost always active when mobs hit you. The uptime for damage dealers on raid bosses is not confirmed."}
+      Dual Wield Specialization:
+        {does: "Off-hand damage +5–25%. Rage from off-hand attacks +10–50%", lvl: A, pve: S, pvp: D, note: "Core for dual-wield Fury. Do not take it with a two-hander."}
+      Reckless Swings:
+        {does: "Your next 4 melee attacks give 5 more Rage. Lasts 8 s. 15 s cooldown", lvl: B, pve: A, pvp: B, note: "Up to 20 Rage each 15 s. The client shows the cost as 25% of base power, so the real cost is not confirmed."}
+      Improved Execute:
+        {does: "Rage cost of Execute −3/5", lvl: B, pve: A, pvp: B, note: "More rage becomes damage below 20% health."}
+      Improved Berserker Rage:
+        {does: "Berserker Rage gives 5/10 Rage and has a 50/100% chance to remove movement impairing effects", lvl: C, pve: B, pvp: A, note: "A little rage in PvE. A way to break roots and slows in PvP."}
+      Death Wish:
+        {does: "10 Rage, 3 min cooldown. For 30 s you do 20% more Physical damage and are immune to Fear, but you take 5% more damage", lvl: A, pve: S, pvp: A, note: "The damage cooldown of the tree. Bloodthirst needs it."}
+      Gore Drinker:
+        {does: "Enrage, Berserker Rage, Bloodrage, Death Wish, Reckless Swings and Bloodthirst make your next 3 melee attacks restore 0.5/1% of your health", lvl: A, pve: C, pvp: B, note: "Self-healing for solo play. Healers make it low value in raids."}
+      Improved Intercept:
+        {does: "Intercept cooldown −5/10 s", lvl: D, pve: D, pvp: A, note: "For PvP only."}
+      Improved Whirlwind:
+        {does: "Whirlwind cooldown −1/2 s. Damage to the closest enemy +15/30%", lvl: A, pve: S, pvp: B, note: "Makes Whirlwind a strong single-target ability also."}
+      Flurry:
+        {does: "After a melee crit, attack speed +10–30% for your next 3 swings", lvl: A, pve: S, pvp: B, note: "It does not need Death Wish in Forever. Faster swings also give more rage."}
+      Bloodthirst:
+        {does: "30 Rage, 6 s cooldown. Damage equal to 45% of your attack power plus 30. Movement speed +10% for 10 s", lvl: S, pve: S, pvp: B, note: "The core ability of the Fury spec. It does not heal in Forever."}
+  Protection:
+    summary: |
+      Protection is the tank tree, and the PvE ratings here are for tank value. **Shield Specialization** and **Master of Defense** give rage when you block, dodge and parry. **Vanguard** opens at 15 points and lets you Charge in Defensive Stance. Most talents here need a shield.
+    talents:
+      Improved Bloodrage:
+        {does: "Rage from Bloodrage +25/50%", lvl: B, pve: B, pvp: C, note: "More rage at the start of a pull. It opens row 2 after Shield Specialization."}
+      Shield Specialization:
+        {does: "Block chance +1–5%. 20–100% chance to get 5 Rage when you block", lvl: S, pve: S, pvp: C, note: "The first 5 points of each Protection build. Master of Defense needs 5/5."}
+      Iron Will:
+        {does: "Duration of Stun and Fear effects on you −3–15%", lvl: D, pve: C, pvp: B, note: "Much weaker than in Classic. It is in Protection row 1 in the launch client."}
+      Anticipation:
+        {does: "Defense skill +4–20", lvl: C, pve: S, pvp: C, note: "Core for raid tanks. Low value when you level solo."}
+      Improved Revenge:
+        {does: "Revenge damage +20–60%", lvl: A, pve: A, pvp: D, note: "The Classic stun is gone. More damage also gives more threat."}
+      Improved Thunder Clap:
+        {does: "Rage cost of Thunder Clap −2 to −6", lvl: A, pve: B, pvp: C, note: "Thunder Clap works in Defensive Stance with a 6 s cooldown. Good for pulls of 2–3 mobs."}
+      Last Stand:
+        {does: "Gives you 30% of your maximum health for 20 s. 3 min cooldown", lvl: A, pve: S, pvp: B, note: "An emergency button for 1 point. Important for Hardcore."}
+      Master of Defense:
+        {does: "With a shield, 50/100% chance to get 5 Rage when you dodge or parry", lvl: S, pve: A, pvp: D, note: "It gives rage, not avoidance. With Shield Specialization, each avoided attack gives rage."}
+      Improved Disarm:
+        {does: "Disarm cooldown −7 to −20 s", lvl: D, pve: C, pvp: B, note: "Useful only against enemies that use weapons."}
+      Defiance:
+        {does: "With a shield, threat in Defensive Stance +7–20%", lvl: B, pve: S, pvp: D, note: "Core for tanks in groups. It has no value for solo play."}
+      Improved Sunder Armor:
+        {does: "Rage cost of Sunder Armor −1 to −3", lvl: C, pve: A, pvp: D, note: "Tanks use Sunder Armor constantly. Take it at 60."}
+      Vanguard:
+        {does: "You can use Charge in Defensive Stance", lvl: S, pve: A, pvp: C, note: "You do not have to change stance to start a pull. Available at level 25."}
+      Improved Shield Bash:
+        {does: "Shield Bash has a 50/100% chance to silence the target for 3 s", lvl: B, pve: B, pvp: B, note: "Good against caster mobs. It is not confirmed that bosses can be silenced."}
+      Improved Shield Wall:
+        {does: "Shield Wall cooldown −5.5/11 min", lvl: C, pve: A, pvp: C, note: "The class guide gives Shield Wall a 15 min cooldown. Thus 2/2 makes it 4 min."}
+      Concussion Blow:
+        {does: "10 Rage, 45 s cooldown. Stuns the target for 5 s", lvl: A, pve: B, pvp: A, note: "Raid bosses are usually immune to stuns. Shield Slam needs it."}
+      Focused Rage:
+        {does: "Rage cost of your offensive abilities −1 to −3", lvl: A, pve: A, pvp: C, note: "It applies to each offensive ability, so it adds to the other cost talents."}
+      Bastion:
+        {does: "With a shield, all damage that you do +2–10%", lvl: A, pve: A, pvp: C, note: "It replaces One-Handed Weapon Specialization. More damage also gives more threat."}
+      Shield Slam:
+        {does: "20 Rage, 6 s cooldown. 421–439 damage plus your Block Value. 50% chance to dispel 1 magic effect. Very high threat", lvl: S, pve: S, pvp: B, note: "The core ability of the Protection spec. Available at level 40."}
+
+builds:
+  - id: prot-leveling
+    name: "Protection (solo)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The safe solo route. Method recommends Protection for solo play, and this order follows its milestones: Shield Specialization, Master of Defense, Vanguard, then Bastion and Focused Rage. Use a shield and stay in Defensive Stance after level 25.
+    steps:
+      - [Shield Specialization, 5, "5 Rage for each block"]
+      - [Improved Revenge, 3, "Revenge is a damage ability in Forever"]
+      - [Improved Bloodrage, 2, "More rage for the pull. Opens row 3"]
+      - [Master of Defense, 2, "5 Rage for each dodge and parry"]
+      - [Improved Thunder Clap, 3, "Cheaper Thunder Clap for pulls of 2–3 mobs"]
+      - [Vanguard, 1, "Charge in Defensive Stance"]
+      - [Last Stand, 1, "Your emergency button"]
+      - [Defiance, 3, "Threat for dungeons. Opens row 5"]
+      - [Focused Rage, 3, "Each offensive ability costs 3 less Rage"]
+      - [Concussion Blow, 1, "A 5 s stun. Shield Slam needs it"]
+      - [Anticipation, 1, "The last point to open row 6"]
+      - [Bastion, 5, "10% more damage with a shield"]
+      - [Shield Slam, 1, "Your new main ability at level 40"]
+      - [Cruelty, 5, "Crits give more damage and 75% more rage"]
+      - [Unbridled Wrath, 5, "More rage from each hit"]
+      - [Anticipation, 4, "Defense for dungeons at 55+"]
+      - [Improved Shield Bash, 2, "A silence for caster mobs"]
+      - [Improved Shield Wall, 2, "Shield Wall is available more frequently"]
+      - [Improved Sunder Armor, 2, "Cheaper threat in dungeons"]
+    notes:
+      - "Kills are slow before level 25. Get a good one-handed weapon and a shield with high armor."
+      - "If you get dual spec at 40, keep this build for solo play and for dungeons as a tank."
+      - "For raids at 60, respec to the Protection tank build."
+
+  - id: arms-leveling
+    name: "Arms (groups)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The two-hander route. It kills faster than Protection, but it takes more damage. Thus it is best with a healer or in dungeons. After Mortal Strike, the points go into Fury, as in Method's hybrid build.
+    steps:
+      - [Improved Rend, 3, "Rend scales with attack power"]
+      - [Improved Heroic Strike, 2, "Opens row 2"]
+      - [Improved Overpower, 2, "Overpower is your main ability from level 12"]
+      - [Improved Tactical Mastery, 3, "Keep more rage when you change stance"]
+      - [Anger Management, 1, "1 Rage each 3 s"]
+      - [Deep Wounds, 3, "A Bleed from each crit"]
+      - [Improved Charge, 1, "The last point to open row 4"]
+      - [Impale, 2, "Larger crits with abilities"]
+      - [Two-Handed Weapon Specialization, 3, "6% more damage"]
+      - [Sweeping Strikes, 1, "Hit 2 mobs at the same time"]
+      - [Bloodthrill, 2, "More Overpower uses on targets with Rend"]
+      - [Weaponmaster, 2, "Opens row 6"]
+      - [Improved Slam, 2, "Slam does not delay your swing"]
+      - [Weaponmaster, 3, "The full bonus for your weapon type"]
+      - [Mortal Strike, 1, "Your new main ability at level 40"]
+      - [Cruelty, 5, "5% crit"]
+      - [Unbridled Wrath, 5, "More rage from each hit"]
+      - [Enrage, 5, "10% more damage while mobs hit you"]
+      - [Improved Execute, 2, "A cheaper Execute"]
+      - [Piercing Howl, 1, "An AoE slow to escape a bad pull"]
+      - [Improved Charge, 1, "More rage at the pull"]
+      - [Improved Heroic Strike, 1, "Filler"]
+    notes:
+      - "Warcraft Tavern does not take Spearing Strike for leveling. This build agrees."
+      - "Take Weaponmaster for the weapon type that you use. Change weapons only for a clear upgrade."
+
+  - id: fury-leveling
+    name: "Fury (2 weapons)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      A dual-wield route. It works, but it is weak at low levels, because missed attacks give no rage. It is better after level 40 with 2 good weapons. Before that, you can use a two-hander with the same talents and move Furious Precision to later.
+    steps:
+      - [Cruelty, 5, "5% crit. Crits give 75% more rage"]
+      - [Unbridled Wrath, 5, "More rage from each hit"]
+      - [Enrage, 5, "10% more damage while mobs hit you"]
+      - [Furious Precision, 3, "10% hit for the off-hand weapon"]
+      - [Blood Craze, 2, "A small heal. Opens row 5"]
+      - [Death Wish, 1, "20% more damage for 30 s"]
+      - [Dual Wield Specialization, 4, "More off-hand damage and rage"]
+      - [Flurry, 3, "30% attack speed after a crit"]
+      - [Improved Whirlwind, 2, "Whirlwind comes at level 36"]
+      - [Bloodthirst, 1, "Your new main ability at level 40"]
+      - [Dual Wield Specialization, 1, "The last rank"]
+      - [Blood Craze, 1, "Gore Drinker needs 3/3"]
+      - [Gore Drinker, 2, "Your rage abilities heal you"]
+      - [Improved Execute, 2, "A cheaper Execute"]
+      - [Reckless Swings, 1, "More rage each 15 s"]
+      - [Improved Rend, 3, "Opens the Arms tree"]
+      - [Improved Heroic Strike, 2, "Cheaper use of extra rage"]
+      - [Improved Tactical Mastery, 3, "Keep more rage when you change stance"]
+      - [Improved Charge, 2, "More rage at the pull"]
+      - [Anger Management, 1, "1 Rage each 3 s"]
+      - [Deep Wounds, 2, "A Bleed from each crit"]
+    notes:
+      - "Death Wish increases the damage that you take by 5%. Do not use it on a dangerous pull."
+      - "For raids at 60, respec to the Fury raid build to get Impale."
+
+  - id: prot-tank
+    name: "Protection (tank)"
+    kind: endgame
+    role: "Tank"
+    summary: |
+      A deep Protection build for dungeons and raids. It takes each threat and survival talent in the tree. The last 10 points go into Deflection for parry and Cruelty for threat and rage.
+    steps:
+      - [Shield Specialization, 5]
+      - [Improved Bloodrage, 2]
+      - [Anticipation, 5]
+      - [Improved Revenge, 3]
+      - [Improved Thunder Clap, 2, "For threat on packs. You can move these points to Iron Will"]
+      - [Last Stand, 1]
+      - [Master of Defense, 2]
+      - [Defiance, 3]
+      - [Improved Sunder Armor, 3]
+      - [Vanguard, 1]
+      - [Improved Shield Bash, 2, "A silence for caster mobs in dungeons"]
+      - [Improved Shield Wall, 2]
+      - [Concussion Blow, 1]
+      - [Focused Rage, 3]
+      - [Bastion, 5, "More damage gives more threat"]
+      - [Shield Slam, 1]
+      - [Deflection, 5, "5% parry. Master of Defense gives rage for each parry"]
+      - [Cruelty, 5, "Crit for threat and rage. If threat is not a problem, move these points to Iron Will"]
+    notes:
+      - "Defiance, Bastion and Master of Defense need a shield."
+      - "No source has published a level 60 tank build. This build follows the direction of the class guide."
+
+  - id: fury-raid
+    name: "Fury (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      The dual-wield raid build. It takes all the Fury damage talents and puts 17 points in Arms for Deep Wounds and Impale. No simulations exist, so the filler points are a personal preference.
+    steps:
+      - [Improved Heroic Strike, 3]
+      - [Improved Rend, 3, "Deep Wounds needs 3/3"]
+      - [Improved Tactical Mastery, 3, "Anger Management needs 3/3"]
+      - [Improved Charge, 2, "Filler to open the next rows"]
+      - [Anger Management, 1]
+      - [Deep Wounds, 3]
+      - [Impale, 2]
+      - [Cruelty, 5]
+      - [Unbridled Wrath, 5]
+      - [Furious Precision, 3]
+      - [Enrage, 2, "Opens row 4"]
+      - [Dual Wield Specialization, 5]
+      - [Improved Execute, 2]
+      - [Reckless Swings, 1]
+      - [Death Wish, 1]
+      - [Improved Berserker Rage, 2, "10 Rage each time. You can move these points to Booming Voice"]
+      - [Flurry, 3]
+      - [Improved Whirlwind, 2]
+      - [Bloodthirst, 1]
+      - [Enrage, 2, "The uptime on raid bosses is not confirmed"]
+
+  - id: arms-raid
+    name: "Arms (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      The two-hander raid build. It takes all the Arms damage talents, then Cruelty, Unbridled Wrath and Enrage from Fury. The class guide says that Arms is probably competitive in the 10- and 20-player raids.
+    steps:
+      - [Improved Rend, 3]
+      - [Improved Heroic Strike, 3]
+      - [Improved Tactical Mastery, 3]
+      - [Improved Overpower, 2]
+      - [Improved Charge, 2, "Filler. More rage at the pull"]
+      - [Anger Management, 1]
+      - [Deep Wounds, 3]
+      - [Impale, 2]
+      - [Two-Handed Weapon Specialization, 3]
+      - [Sweeping Strikes, 1]
+      - [Bloodthrill, 2, "Bosses do not dodge frequently. This talent gives most of your Overpower uses"]
+      - [Weaponmaster, 5]
+      - [Improved Slam, 2]
+      - [Mortal Strike, 1]
+      - [Cruelty, 5]
+      - [Unbridled Wrath, 5]
+      - [Enrage, 5, "The uptime on raid bosses is not confirmed"]
+      - [Improved Execute, 2]
+      - [Reckless Swings, 1]
+    notes:
+      - "For Onyxia's Lair, you can move 1 point from Improved Charge to Spearing Strike. Onyxia is Dragonkin."
+
+  - id: arms-pvp
+    name: "Arms (PvP)"
+    kind: endgame
+    role: "PvP"
+    summary: |
+      The Mortal Strike build for battlegrounds and world PvP. It adds Spearing Strike to dismount riders and Piercing Howl to slow groups. You cannot get Death Wish and Mortal Strike in the same build, because they need 31 Arms points and 21 Fury points.
+    steps:
+      - [Improved Rend, 3]
+      - [Deflection, 2, "Opens row 2"]
+      - [Improved Tactical Mastery, 3]
+      - [Improved Charge, 2]
+      - [Improved Overpower, 2]
+      - [Anger Management, 1]
+      - [Deep Wounds, 3]
+      - [Spearing Strike, 1, "Dismounts riders and does double damage to them"]
+      - [Two-Handed Weapon Specialization, 3]
+      - [Impale, 2]
+      - [Bloodthrill, 2]
+      - [Sweeping Strikes, 1]
+      - [Weaponmaster, 5]
+      - [Improved Slam, 2]
+      - [Mortal Strike, 1]
+      - [Cruelty, 5]
+      - [Unbridled Wrath, 5]
+      - [Piercing Howl, 1, "An AoE slow"]
+      - [Enrage, 5, "Enemies hit you constantly in PvP"]
+      - [Improved Execute, 2, "You can move these points to Improved Hamstring"]
+
+faq:
+  - q: "Where are Raging Blows, Boundless Rage and Precision?"
+    a: "The launch client does not have them. Guides from the beta list them in the Fury tree. The launch Fury tree has Furious Precision, which gives hit chance only to off-hand attacks."
+  - q: "What does Reckless Swings do?"
+    a: "In the launch client, your next 4 melee attacks give 5 more Rage, with a 15 s cooldown. The heal that some sources describe is a different talent, Gore Drinker. The client shows the cost of Reckless Swings as 25% of base power, so the real cost is not confirmed."
+  - q: "Do the signature talents need 16 points?"
+    a: "No. Spearing Strike, Reckless Swings and Vanguard are in row 4, which opens at 15 points in the tree. The talent is your 16th point, so the earliest level is 25."
+  - q: "Is Iron Will in the Arms tree?"
+    a: "No. In the launch client, Iron Will is in Protection row 1. It decreases the duration of Stun and Fear effects by 3–15%. One-Handed Weapon Specialization is also not gone: it is now Bastion in Protection row 6."
+  - q: "Bloodthrill or Weaponmaster?"
+    a: "You can take the 2 talents. They are in the same row, and a full Arms build has the points for 2/2 Bloodthrill and 5/5 Weaponmaster. When you level, take Bloodthrill first."
+
+sources:
+  - {title: "Method: Warrior leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-warrior-leveling-guide-and-talents"}
+  - {title: "Warcraft Tavern: Warrior guide", url: "https://www.warcrafttavern.com/forever/guides/warrior/"}
+  - {title: "Warcraft Tavern: Priest & Warrior deep dive", url: "https://www.warcrafttavern.com/forever/news/rage-will-benefit-from-crit-priest-warrior-deep-dive-for-wow-forever/"}
+  - {title: "Warcraft Tavern: Pre-launch class changes", url: "https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/"}

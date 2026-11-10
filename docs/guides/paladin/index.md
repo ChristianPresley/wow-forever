@@ -80,6 +80,9 @@ Weaknesses
 
 ## Specs & talents
 
+!!! tip "Full talent guide"
+    The [Paladin talent guide](../../talents/paladin.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+
 Talents start at level 10, with one point per level, and 51 points at level 60. Each tree has "gold" talents with 1 point at **11, 16, 21 and 31** points. You buy a respec and dual spec from a paladin trainer.
 
 !!! warning "Builds are provisional"

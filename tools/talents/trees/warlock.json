@@ -1,0 +1,408 @@
+{
+ "class": "warlock",
+ "trees": [
+  {
+   "name": "Affliction",
+   "talents": [
+    {
+     "name": "Improved Life Tap",
+     "row": 1,
+     "col": 1,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Suppression",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Corruption",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Grim Reach",
+     "row": 2,
+     "col": 1,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Soul Harvest",
+     "row": 2,
+     "col": 2,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Improved Drains",
+     "row": 2,
+     "col": 3,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Improved Bane of Agony",
+     "row": 3,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Fel Concentration",
+     "row": 3,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Amplify Curse",
+     "row": 3,
+     "col": 3,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Pandemic",
+     "row": 3,
+     "col": 4,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Malevolence",
+     "row": 4,
+     "col": 1,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Nightfall",
+     "row": 4,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Curse of Exhaustion",
+     "row": 4,
+     "col": 3,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Amplify Curse"
+     ]
+    },
+    {
+     "name": "Siphon Life",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Soul Siphon",
+     "row": 5,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Shadow Mastery",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Wrack",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Siphon Life"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Demonology",
+   "talents": [
+    {
+     "name": "Improved Health Funnel",
+     "row": 1,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Imp",
+     "row": 1,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Demonic Embrace",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Unholy Power",
+     "row": 1,
+     "col": 4,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Demonic Aegis",
+     "row": 2,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Improved Voidwalker",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Fel Vitality",
+     "row": 2,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Demonic Energies",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Improved Sayaad",
+     "row": 3,
+     "col": 1,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Demonic Sacrifice",
+     "row": 3,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Master Summoner",
+     "row": 3,
+     "col": 3,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Decimation",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Fel Domination",
+     "row": 4,
+     "col": 3,
+     "max": 1,
+     "status": "same",
+     "requires": [
+      "Master Summoner"
+     ]
+    },
+    {
+     "name": "Demonic Brand",
+     "row": 4,
+     "col": 4,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Improved Felhunter",
+     "row": 5,
+     "col": 1,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Soul Link",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Demonic Sacrifice"
+     ]
+    },
+    {
+     "name": "Demonic Knowledge",
+     "row": 5,
+     "col": 3,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Master Demonologist",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Demonic Pact",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Soul Link"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Destruction",
+   "talents": [
+    {
+     "name": "Destructive Reach",
+     "row": 1,
+     "col": 1,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Improved Shadow Bolt",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Bane",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Molten Skin",
+     "row": 2,
+     "col": 1,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Cataclysm",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Aftermath",
+     "row": 2,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Ruin",
+     "row": 3,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Shadowburn",
+     "row": 3,
+     "col": 3,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Intensity",
+     "row": 4,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Agonizing Flames",
+     "row": 4,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Conflagrate",
+     "row": 4,
+     "col": 3,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Pyroclasm",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "changed",
+     "requires": [
+      "Intensity"
+     ]
+    },
+    {
+     "name": "Bane of Havoc",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Fire and Brimstone",
+     "row": 5,
+     "col": 3,
+     "max": 3,
+     "status": "new",
+     "requires": [
+      "Conflagrate"
+     ]
+    },
+    {
+     "name": "Shadow and Flame",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Incinerate",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Bane of Havoc"
+     ]
+    }
+   ]
+  }
+ ]
+}

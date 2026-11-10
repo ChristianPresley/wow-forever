@@ -121,3 +121,17 @@ All prose in `docs/` follows a Codex profile of ASD-STE100 Simplified Technical 
 
 - Short list items, table cells and pros/cons items can be fragments (*Cloth armor and few escapes*). Do not make a fragment into a long sentence.
 - If a list item has a full sentence, it follows the sentence rules.
+
+## Talent guides (10 Nov 2026)
+
+The pages in `docs/talents/` are **generated**. Do not edit them by hand.
+
+| File | What it does |
+|---|---|
+| `tools/talents/trees/<class>.json` | The tree layout from the game client: talent name, row, column, maximum rank, prerequisite. Source: wowforevertalents.com, client build 1.60.1.70862 |
+| `tools/talents/guides/<class>.yml` | Codex ratings (S–D for leveling, PvE and PvP), builds, and prose for one class |
+| `tools/talents/build.py` | Checks each build against the tree rules, then writes `docs/talents/<class>.md` and `docs/talents/index.md` |
+
+To change a rating or a build, edit the `.yml` file, then run `.venv/Scripts/python.exe tools/talents/build.py`. Use `--check` to validate only. The script stops if a build breaks a rule: 5 points for each row, prerequisites at maximum rank, and 51 points in total.
+
+The tree grid (`.ttree`) is in section 11 of `docs/stylesheets/guides.css`. The letter in each tile is the best of the 3 ratings of the talent.

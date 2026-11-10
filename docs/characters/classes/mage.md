@@ -48,6 +48,8 @@
 
 ## Talents
 
+The [Mage talent guide](../../talents/mage.md) shows all 3 trees and gives a rating to each talent.
+
 === "Arcane"
 
     Arcane Focus (hit) · Improved Channeling · Arcane Geometry · Arcane Impact (crit) · **Arcane Blast** (11: +100% mana cost per stack, 12% of Intellect as spell damage per stack, 18 s) · Arcane Shielding · **Missile Barrage** (16) · redesigned Arcane Mind · Arcane Resilience (3 pts, 75% of Intellect as armor)

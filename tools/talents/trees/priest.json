@@ -1,0 +1,408 @@
+{
+ "class": "priest",
+ "trees": [
+  {
+   "name": "Discipline",
+   "talents": [
+    {
+     "name": "Power in Light",
+     "row": 1,
+     "col": 1,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Wand Specialization",
+     "row": 1,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Twin Disciplines",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Silent Resolve",
+     "row": 2,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Holy Precision",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Mental Strength",
+     "row": 2,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Martyrdom",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Mental Agility",
+     "row": 3,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Inner Focus",
+     "row": 3,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Power Word: Shield",
+     "row": 3,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Meditation",
+     "row": 3,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Inner Fire",
+     "row": 4,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Mana Burn",
+     "row": 4,
+     "col": 2,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Soul Warding",
+     "row": 4,
+     "col": 3,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Improved Power Word: Shield"
+     ]
+    },
+    {
+     "name": "Penance",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Renewed Hope",
+     "row": 5,
+     "col": 3,
+     "max": 5,
+     "status": "new",
+     "requires": [
+      "Soul Warding"
+     ]
+    },
+    {
+     "name": "Divine Aegis",
+     "row": 6,
+     "col": 3,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Power Infusion",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Penance"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Holy",
+   "talents": [
+    {
+     "name": "Twilight Focus",
+     "row": 1,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Renew",
+     "row": 1,
+     "col": 2,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Holy Specialization",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Spell Warding",
+     "row": 2,
+     "col": 2,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Divine Fury",
+     "row": 2,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Holy Nova",
+     "row": 3,
+     "col": 1,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Blessed Recovery",
+     "row": 3,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Inspiration",
+     "row": 3,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Holy Reach",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Improved Healing",
+     "row": 4,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Searing Light",
+     "row": 4,
+     "col": 3,
+     "max": 2,
+     "status": "changed",
+     "requires": [
+      "Divine Fury"
+     ]
+    },
+    {
+     "name": "Holy Binding",
+     "row": 4,
+     "col": 4,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Litany of Light",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Spirit of Redemption",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Spiritual Guidance",
+     "row": 5,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Spiritual Healing",
+     "row": 6,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Prayer of Mending",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Spirit of Redemption"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Shadow Magic",
+   "talents": [
+    {
+     "name": "Shadow Focus",
+     "row": 1,
+     "col": 1,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Blackout",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Spirit Tap",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Mind Blast",
+     "row": 2,
+     "col": 1,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Improved Shadow Word: Pain",
+     "row": 2,
+     "col": 3,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Shadow Reach",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Psychic Scream",
+     "row": 3,
+     "col": 2,
+     "max": 2,
+     "status": "same",
+     "requires": [
+      "Blackout"
+     ]
+    },
+    {
+     "name": "Mind Flay",
+     "row": 3,
+     "col": 3,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Mind Flay",
+     "row": 3,
+     "col": 4,
+     "max": 2,
+     "status": "new",
+     "requires": [
+      "Mind Flay"
+     ]
+    },
+    {
+     "name": "Dark Inspiration",
+     "row": 4,
+     "col": 1,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Vampiric Embrace",
+     "row": 4,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Shadow Weaving",
+     "row": 4,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Silence",
+     "row": 5,
+     "col": 1,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Devouring Contagion",
+     "row": 5,
+     "col": 3,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Early Demise",
+     "row": 6,
+     "col": 1,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Darkness",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Shadowform",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Vampiric Embrace"
+     ]
+    }
+   ]
+  }
+ ]
+}

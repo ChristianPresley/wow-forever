@@ -53,6 +53,8 @@
 
 ## Talents
 
+The [Paladin talent guide](../../talents/paladin.md) shows all 3 trees and gives a rating to each talent.
+
 === "Holy"
 
     Improved Seals · Unyielding Faith · **Voice of Truth** (11: 6 s silence/interrupt immunity, 3 min cooldown) · Reverence · Purifying Power · Infusion of Light · **Divine Favor** (16) · Divine Precision (4/8% hit) · **Holy Shock** (21, 10 s cooldown) · Consecrated Ground · Holy Power (10–50% crit-heal bonus) · **Light's Vigil** (31) · *new pre-launch:* **Oath of Light**, **Boundless Light**

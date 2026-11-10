@@ -1,0 +1,391 @@
+{
+ "class": "shaman",
+ "trees": [
+  {
+   "name": "Elemental Combat",
+   "talents": [
+    {
+     "name": "Convection",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Concussion",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Elemental Devastation",
+     "row": 2,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Reverberation",
+     "row": 2,
+     "col": 2,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Elemental Alacrity",
+     "row": 2,
+     "col": 3,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Call of Flame",
+     "row": 2,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Elemental Focus",
+     "row": 3,
+     "col": 1,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Elemental Warding",
+     "row": 3,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Trial by Fire",
+     "row": 4,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Eye of the Storm",
+     "row": 4,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Earthbound",
+     "row": 4,
+     "col": 4,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Elemental Reach",
+     "row": 5,
+     "col": 1,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Call of Thunder",
+     "row": 5,
+     "col": 2,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Lightning Overload",
+     "row": 5,
+     "col": 3,
+     "max": 3,
+     "status": "new",
+     "requires": [
+      "Elemental Alacrity"
+     ]
+    },
+    {
+     "name": "Elemental Fury",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "changed",
+     "requires": [
+      "Lightning Overload"
+     ]
+    },
+    {
+     "name": "Lightning Mastery",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "changed",
+     "requires": [
+      "Call of Thunder"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Enhancement",
+   "talents": [
+    {
+     "name": "Earth's Grasp",
+     "row": 1,
+     "col": 1,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Thundering Strikes",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Ancestral Knowledge",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Guardian Totems",
+     "row": 2,
+     "col": 1,
+     "max": 2,
+     "status": "same"
+    },
+    {
+     "name": "Mental Dexterity",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Improved Lightning Shield",
+     "row": 2,
+     "col": 3,
+     "max": 3,
+     "status": "same"
+    },
+    {
+     "name": "Elemental Weapons",
+     "row": 3,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Shamanistic Focus",
+     "row": 3,
+     "col": 3,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Anticipation",
+     "row": 3,
+     "col": 4,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Toughness",
+     "row": 4,
+     "col": 1,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Flurry",
+     "row": 4,
+     "col": 2,
+     "max": 5,
+     "status": "changed",
+     "requires": [
+      "Mental Dexterity"
+     ]
+    },
+    {
+     "name": "Stormstrike",
+     "row": 4,
+     "col": 3,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Ghost Wolf",
+     "row": 4,
+     "col": 4,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Spirit Weapons",
+     "row": 5,
+     "col": 1,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Mental Quickness",
+     "row": 5,
+     "col": 2,
+     "max": 2,
+     "status": "new"
+    },
+    {
+     "name": "Improved Stormstrike",
+     "row": 5,
+     "col": 3,
+     "max": 2,
+     "status": "new",
+     "requires": [
+      "Stormstrike"
+     ]
+    },
+    {
+     "name": "Maelstrom Weapon",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "new"
+    },
+    {
+     "name": "Rage of the Farseer",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Mental Quickness"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Restoration",
+   "talents": [
+    {
+     "name": "Improved Healing Wave",
+     "row": 1,
+     "col": 2,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Tidal Focus",
+     "row": 1,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Mindfulness",
+     "row": 2,
+     "col": 1,
+     "max": 3,
+     "status": "new"
+    },
+    {
+     "name": "Natural Grace",
+     "row": 2,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Totemic Focus",
+     "row": 2,
+     "col": 3,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Improved Reincarnation",
+     "row": 2,
+     "col": 4,
+     "max": 2,
+     "status": "changed"
+    },
+    {
+     "name": "Ancestral Healing",
+     "row": 3,
+     "col": 1,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Healing Focus",
+     "row": 3,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Water Shield",
+     "row": 3,
+     "col": 3,
+     "max": 1,
+     "status": "new"
+    },
+    {
+     "name": "Tidal Mastery",
+     "row": 4,
+     "col": 1,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Restorative Totems",
+     "row": 4,
+     "col": 2,
+     "max": 5,
+     "status": "changed"
+    },
+    {
+     "name": "Mana Tide Totem",
+     "row": 4,
+     "col": 3,
+     "max": 1,
+     "status": "changed"
+    },
+    {
+     "name": "Healing Way",
+     "row": 5,
+     "col": 2,
+     "max": 3,
+     "status": "changed"
+    },
+    {
+     "name": "Nature's Swiftness",
+     "row": 5,
+     "col": 3,
+     "max": 1,
+     "status": "same"
+    },
+    {
+     "name": "Purification",
+     "row": 6,
+     "col": 3,
+     "max": 5,
+     "status": "same"
+    },
+    {
+     "name": "Riptide",
+     "row": 7,
+     "col": 2,
+     "max": 1,
+     "status": "new",
+     "requires": [
+      "Healing Way"
+     ]
+    }
+   ]
+  }
+ ]
+}

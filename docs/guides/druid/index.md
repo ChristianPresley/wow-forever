@@ -84,6 +84,9 @@ Community guides call the race differences **marginal**. Select your faction and
 
 ## Specs & talents
 
+!!! tip "Full talent guide"
+    The [Druid talent guide](../../talents/druid.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+
 Forever changed all 3 trees. It also added a **16-point tier** to the classic 11/21/31 tiers. **Dual spec** unlocks at **level 40** for **50g** from your class trainer. Use it: the usual pair is Feral (tank/cat) plus either Restoration or Balance.
 
 === "Balance"

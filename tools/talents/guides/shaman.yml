@@ -1,0 +1,369 @@
+class: Shaman
+badges: [heal, dps]
+description: "Shaman talent guide for WoW: Forever: all 51 talents in Elemental Combat, Enhancement and Restoration with a rating, a talent for each level from 10 to 60, and level 60 builds for raids and PvP."
+
+intro: |
+  The Shaman has 3 roles in Forever. **Elemental Combat** is the ranged damage tree, **Enhancement** is the melee damage tree, and **Restoration** is the healer tree. Each damage build also puts points in the first rows of the other trees, because Thundering Strikes, Tidal Focus, Mindfulness and Water Shield help all specs. The client has no full tank tree, but some Enhancement talents add threat and avoidance.
+
+card:
+  leveling: "Enhancement (fast and safe) or Elemental (ranged)"
+  pve: "Restoration to heal. Elemental or Enhancement for damage"
+  pvp: "Elemental with Nature's Swiftness, or Enhancement"
+
+quick:
+  - stage: "Level 10–39"
+    build: enhancement-leveling
+    why: "Shamanistic Focus at level 20. Stormstrike at 25. Flurry at 30. Low mana use."
+  - stage: "Level 10–39, alternative"
+    build: elemental-leveling
+    why: "Earthbound at level 25 for safe kiting. Call of Thunder at 30. You drink more often."
+  - stage: "Level 40–59"
+    build: enhancement-leveling
+    why: "Maelstrom Weapon is complete at 40. Rage of the Farseer at 41. Then hit and mana talents from Restoration."
+  - stage: "Level 60: dungeons and raids, healer"
+    build: restoration-raid
+    why: "Riptide, Healing Way and Purification. Groups always need healers."
+  - stage: "Level 60: raids, ranged DPS"
+    build: elemental-raid
+    why: "All the Lightning Bolt talents, 5% hit from Tidal Focus and Water Shield for mana."
+  - stage: "Level 60: raids, melee DPS"
+    build: enhancement-raid
+    why: "Stormstrike, Flurry, Maelstrom Weapon and Rage of the Farseer. Spirit Weapons decreases your threat."
+  - stage: "Level 60: PvP, caster"
+    build: elemental-pvp
+    why: "A 5 s root from Earthbound and an instant spell from Nature's Swiftness."
+  - stage: "Level 60: PvP, melee"
+    build: enhancement-pvp
+    why: "Burst from Stormstrike and Rage of the Farseer. A faster Ghost Wolf."
+
+trees:
+  Elemental Combat:
+    summary: |
+      Elemental Combat is the tree for Lightning Bolt and Chain Lightning. **Call of Thunder** and **Lightning Overload** open at 20 points, and **Lightning Mastery** is the cooldown at 30 points. **Elemental Devastation** in row 2 is for Enhancement builds, because it changes spell crits into melee crit chance.
+    talents:
+      Convection:
+        {does: "Mana cost of Shocks, Lightning Bolt and Chain Lightning −2–10%", lvl: A, pve: A, pvp: B, note: "Less time to drink. Elemental builds take 5/5."}
+      Concussion:
+        {does: "Damage of Lightning Bolt, Chain Lightning and Earth Shock +1–5%", lvl: A, pve: S, pvp: A, note: "The first 5 points of each Elemental build. Enhancement builds take it to open row 2."}
+      Elemental Devastation:
+        {does: "Crits with direct damage spells give +3/6/9% melee crit chance for 10 s", lvl: B, pve: B, pvp: C, note: "A talent for Enhancement only. It has no value for a caster build."}
+      Reverberation:
+        {does: "Cooldown of Shocks −0.2 to −1 s", lvl: B, pve: C, pvp: A, note: "More interrupts and more Frost Shocks in PvP. In raids, Lightning Bolt is the main spell."}
+      Elemental Alacrity:
+        {does: "Cast time of Lightning Bolt and Chain Lightning −0.17 to −0.5 s", lvl: S, pve: S, pvp: A, note: "Core for Elemental. Lightning Overload needs 3/3."}
+      Call of Flame:
+        {does: "Damage of Fire Totems, Flame Shock and Fire Nova +5/10/15%. Flame Shock lasts 3/6/9 s longer", lvl: B, pve: B, pvp: C, note: "Good filler. Searing Totem and Flame Shock are active in each long fight."}
+      Elemental Focus:
+        {does: "10% chance for Clearcasting after a Fire, Frost or Nature damage spell. Your next damage spell is free", lvl: A, pve: A, pvp: B, note: "1 point for less mana use. Take it in each Elemental build."}
+      Elemental Warding:
+        {does: "Damage that you take from Fire, Frost and Nature effects −3–10%", lvl: C, pve: C, pvp: A, note: "For PvP against casters. An option for fights with much Fire damage, such as Onyxia."}
+      Trial by Fire:
+        {does: "Fire Nova damage +10/20% and cooldown −2/4 s. Magma Totem lasts 10/20 s longer", lvl: B, pve: C, pvp: D, note: "Only for AoE pulls."}
+      Eye of the Storm:
+        {does: "Lightning Bolt and Chain Lightning have a 23–70% chance to ignore pushback", lvl: B, pve: B, pvp: A, note: "Useful when mobs or players hit you. Filler in raids."}
+      Earthbound:
+        {does: "Earthbind Totem roots nearby targets for 5 s when you cast it", lvl: A, pve: C, pvp: S, note: "A root for kiting and for escapes. It needs only 15 points."}
+      Elemental Reach:
+        {does: "Range of Lightning Bolt, Chain Lightning and Fire Nova +3/6 yd", lvl: C, pve: B, pvp: A, note: "A personal preference in PvE. More range is safer in PvP."}
+      Call of Thunder:
+        {does: "Crit chance of Lightning Bolt and Chain Lightning +5%", lvl: S, pve: S, pvp: S, note: "5% crit for 1 point. Lightning Mastery needs it."}
+      Lightning Overload:
+        {does: "Lightning Bolt and Chain Lightning have a 10/20/30% chance to cast a second, free spell that does half damage and no threat", lvl: S, pve: S, pvp: A, note: "Free damage. Elemental Fury needs 3/3."}
+      Elemental Fury:
+        {does: "Crit damage bonus of Fire, Frost and Nature spells and of Searing and Magma Totems +20–100%", lvl: A, pve: S, pvp: S, note: "Doubles the crit bonus. It costs 5 points."}
+      Lightning Mastery:
+        {does: "For 15 s, the cast time of Lightning Bolt is 0.5 s shorter and Chain Lightning has no cooldown. 3 min cooldown", lvl: A, pve: A, pvp: A, note: "The burst cooldown of the tree. It takes the position of Elemental Mastery."}
+  Enhancement:
+    summary: |
+      Enhancement is the melee tree. **Mental Dexterity** changes Intellect into attack power, and **Stormstrike** opens at 15 points. **Maelstrom Weapon** and **Rage of the Farseer** are deep in the tree. **Thundering Strikes** and **Ancestral Knowledge** in row 1 are useful for all 3 specs. Spirit Weapons, Anticipation and Toughness give threat and survival, but no source confirms the Shaman as a raid tank.
+    talents:
+      "Earth's Grasp":
+        {does: "Stoneclaw Totem health +25/50%. Earthbind Totem radius +10/20%", lvl: D, pve: D, pvp: C, note: "Do not take it for PvE. A minor option with Earthbound in PvP."}
+      Thundering Strikes:
+        {does: "Crit chance of all spells and attacks +1–5%", lvl: S, pve: S, pvp: A, note: "Elemental and Restoration builds also take 5/5."}
+      Ancestral Knowledge:
+        {does: "Intellect +2–10%", lvl: A, pve: A, pvp: A, note: "More mana for all specs. Stronger with Mental Dexterity and Mental Quickness."}
+      Guardian Totems:
+        {does: "Stoneskin Totem and Windwall Totem decrease 10/20% more damage. Grounding Totem cooldown −1/2 s", lvl: D, pve: C, pvp: B, note: "Filler. A shorter Grounding Totem cooldown has some value in PvP."}
+      Mental Dexterity:
+        {does: "Attack power equal to 50/100/150% of your Intellect", lvl: S, pve: S, pvp: A, note: "Core for Enhancement. Flurry needs 3/3."}
+      Improved Lightning Shield:
+        {does: "Damage of Lightning Shield orbs +5/10/15%", lvl: C, pve: D, pvp: C, note: "A small increase. Other talents give more damage for each point."}
+      Elemental Weapons:
+        {does: "Rockbiter Weapon attack power +7–20%. Windfury Weapon effect +13–40%. Flametongue and Frostbrand Weapon damage +5/10/15%", lvl: A, pve: S, pvp: A, note: "It helps each weapon imbue. The Windfury bonus starts at level 30."}
+      Shamanistic Focus:
+        {does: "Mana cost of Shocks and Lightning Shield −45%", lvl: S, pve: A, pvp: A, note: "1 point. It lets you use a Shock in each pull."}
+      Anticipation:
+        {does: "Dodge chance +2/4/6%", lvl: C, pve: C, pvp: C, note: "Survival only. A dodge can reset Stormstrike if you have Improved Stormstrike."}
+      Toughness:
+        {does: "Stamina +2–10%", lvl: C, pve: C, pvp: B, note: "Filler for melee survival. Stronger for PvP and Hardcore."}
+      Flurry:
+        {does: "After a melee crit, attack speed +6–30% for your next 3 swings", lvl: S, pve: S, pvp: A, note: "Core for Enhancement. Take it immediately after Stormstrike."}
+      Stormstrike:
+        {does: "An instant hit for 150% weapon damage. Your next Lightning Bolt, Chain Lightning or Earth Shock does 20% more damage to the target. 6 s cooldown", lvl: S, pve: S, pvp: S, note: "The main attack of the spec. Available at level 25."}
+      Improved Ghost Wolf:
+        {does: "Cast time of Ghost Wolf −1/3 s. You can use Ghost Wolf indoors", lvl: A, pve: D, pvp: S, note: "Faster travel from level 20 and an escape in PvP. No value in a raid."}
+      Spirit Weapons:
+        {does: "A chance to parry melee attacks. Threat −30% while Rockbiter Weapon is not active, and +30% while it is active", lvl: B, pve: A, pvp: B, note: "Less threat for melee DPS with Windfury Weapon. The Rockbiter bonus lets you hold threat as an emergency tank."}
+      Mental Quickness:
+        {does: "Spell damage and healing equal to 15/30% of your Intellect", lvl: A, pve: A, pvp: A, note: "Stronger Shocks, Lightning Bolts and heals. Rage of the Farseer needs 2/2."}
+      Improved Stormstrike:
+        {does: "Stormstrike has a 50/100% chance to let 50% of your mana regeneration continue while you cast for 15 s. A Dodge or Parry has a 50/100% chance to reset Stormstrike", lvl: A, pve: A, pvp: B, note: "The mana talent of the spec. Stormstrike needs 1/1 first."}
+      Maelstrom Weapon:
+        {does: "Melee hits have a chance to make your next Lightning Bolt 4–20% faster and cheaper. Maximum 5 stacks, 30 s", lvl: A, pve: S, pvp: A, note: "At 5/5, 5 stacks make Lightning Bolt instant and free. It works only with Lightning Bolt."}
+      Rage of the Farseer:
+        {does: "Attack speed +30% for 25 s. 3 min cooldown", lvl: A, pve: S, pvp: A, note: "The burst cooldown of the tree. Use it on elites, bosses and in PvP."}
+  Restoration:
+    summary: |
+      Restoration is the healer tree. **Healing Way** and **Purification** make Healing Wave much stronger, and **Riptide** at 30 points adds an instant heal that helps Chain Heal. The first 3 rows are also for damage builds: **Tidal Focus** gives 5% hit, **Mindfulness** gives mana regeneration, and **Water Shield** opens at 10 points.
+    talents:
+      Improved Healing Wave:
+        {does: "Cast time of Healing Wave −0.1 to −0.5 s", lvl: C, pve: S, pvp: B, note: "The first 5 points of each healer build. No value for damage builds."}
+      Tidal Focus:
+        {does: "Mana cost of healing spells −1–5%. Hit chance +1–5%", lvl: B, pve: A, pvp: B, note: "For healers, it saves mana. For damage builds, it is 5% hit. The tooltip does not limit the hit to spells or to melee."}
+      Mindfulness:
+        {does: "17–50% of your mana regeneration continues while you cast", lvl: B, pve: S, pvp: B, note: "The best mana talent for healers. Elemental builds also take it."}
+      Natural Grace:
+        {does: "Threat of your spells −5/10/15%", lvl: D, pve: B, pvp: D, note: "For raids, where threat is a limit. It applies to damage spells and to heals."}
+      Totemic Focus:
+        {does: "Mana cost of totems and of spells that summon or move them −5–25%", lvl: B, pve: B, pvp: B, note: "Good filler to open row 3. You use totems in each fight."}
+      Improved Reincarnation:
+        {does: "Reincarnation cooldown −10/20 min. Maximum health +2/4%. You reincarnate with 10/20% more health and mana", lvl: C, pve: C, pvp: B, note: "The health bonus is always active. An option to open row 3."}
+      Ancestral Healing:
+        {does: "A heal crit increases the armor of the target by 8–25% for 15 s", lvl: D, pve: A, pvp: B, note: "Less physical damage on the tank. Take it as a tank healer."}
+      Healing Focus:
+        {does: "Healing spells have a 23–70% chance to ignore pushback", lvl: C, pve: B, pvp: A, note: "Important when enemies hit you. Filler in raids."}
+      Water Shield:
+        {does: "3 globes for 10 min. A hit that you take or a crit with your spells uses 1 globe and restores 2% of your maximum mana", lvl: A, pve: S, pvp: A, note: "Useful for all specs. It replaces Lightning Shield, because only 1 Elemental Shield can be active."}
+      Tidal Mastery:
+        {does: "Crit chance of healing spells +1–5%", lvl: D, pve: A, pvp: B, note: "More Ancestral Healing procs and more Water Shield mana."}
+      Restorative Totems:
+        {does: "Mana Spring Totem effect +5–25%. Healing Stream Totem effect +10–50%", lvl: C, pve: B, pvp: C, note: "More mana for your group. Use it to fill the last points of a healer build."}
+      Mana Tide Totem:
+        {does: "A totem that restores 88 mana each 3 s to the group for 12 s. 5 min cooldown", lvl: C, pve: B, pvp: C, note: "It needs only 15 points now. It is not confirmed that the amount increases at level 60."}
+      Healing Way:
+        {does: "Healing Wave heals for 8–25% more", lvl: D, pve: S, pvp: B, note: "A direct bonus that is always active. Riptide needs 3/3."}
+      "Nature's Swiftness":
+        {does: "Your next Nature spell with a cast time is instant. 3 min cooldown", lvl: B, pve: A, pvp: S, note: "An emergency heal, or an instant Chain Lightning in PvP. It needs 20 points."}
+      Purification:
+        {does: "Effect of your healing spells +2–10%", lvl: C, pve: S, pvp: S, note: "Core for each healer build."}
+      Riptide:
+        {does: "An instant heal for 445 during 15 s. Chain Heal that you cast directly on that target heals for 25% more. 12 s cooldown", lvl: B, pve: S, pvp: S, note: "Your only instant heal with a short cooldown. Use it on the tank before Chain Heal."}
+
+builds:
+  - id: enhancement-leveling
+    name: "Enhancement (fast and safe)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The most common recommendation for the route to 60. It uses little mana and kills single targets quickly. The first 21 points follow the Mobalytics route to Spirit Weapons. The order after that is a Codex order for the launch client.
+    steps:
+      - [Thundering Strikes, 5, "5% crit for attacks and spells"]
+      - [Mental Dexterity, 3, "Intellect gives attack power"]
+      - [Ancestral Knowledge, 2, "Opens row 3. More Intellect"]
+      - [Shamanistic Focus, 1, "Shocks cost 45% less mana"]
+      - [Elemental Weapons, 3, "Stronger Rockbiter and Flametongue. Windfury at level 30"]
+      - [Ancestral Knowledge, 1, "The last point to open row 4"]
+      - [Stormstrike, 1, "Your main attack, with a 6 s cooldown"]
+      - [Flurry, 5, "30% attack speed after a crit"]
+      - [Spirit Weapons, 1, "Parry. Less threat in dungeons with Windfury Weapon"]
+      - [Improved Stormstrike, 2, "Mana regeneration after each Stormstrike"]
+      - [Mental Quickness, 2, "Stronger Shocks and heals"]
+      - [Maelstrom Weapon, 5, "Instant Lightning Bolts at 5 stacks"]
+      - [Rage of the Farseer, 1, "The burst cooldown"]
+      - [Improved Ghost Wolf, 2, "An instant Ghost Wolf that works indoors"]
+      - [Ancestral Knowledge, 2, "More Intellect"]
+      - [Tidal Focus, 5, "5% hit and cheaper heals"]
+      - [Mindfulness, 3, "Mana regeneration while you cast"]
+      - [Totemic Focus, 2, "Cheaper totems. Opens Restoration row 3"]
+      - [Water Shield, 1, "Mana in long fights"]
+      - [Concussion, 4, "More damage for Lightning Bolt and Earth Shock"]
+    notes:
+      - "Use a slow two-handed weapon. Use Rockbiter Weapon or Flametongue Weapon before level 30, then Windfury Weapon."
+      - "If you want faster travel, take Improved Ghost Wolf at level 26 and move Flurry 2 levels later."
+      - "The planned 10 November tuning for Enhancement is not in this data. Read the talent tooltips in the game before you spend points."
+
+  - id: elemental-leveling
+    name: "Elemental (ranged)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      A caster route to 60. It kills from range and kites with Earthbound, but it uses much mana. The first 21 points follow the Mobalytics direction, adjusted to the launch client. At 60, the build is the same as the Elemental raid build with small changes.
+    steps:
+      - [Concussion, 5, "More Lightning Bolt damage from the first point"]
+      - [Elemental Alacrity, 3, "A faster Lightning Bolt"]
+      - [Convection, 2, "Opens row 3. Cheaper spells"]
+      - [Elemental Focus, 1, "Free spells from Clearcasting"]
+      - [Convection, 3, "Less time to drink"]
+      - [Call of Flame, 1, "The last point to open row 4"]
+      - [Earthbound, 1, "A 5 s root for safe kiting"]
+      - [Eye of the Storm, 3, "Less pushback when mobs hit you"]
+      - [Call of Flame, 1, "The last point to open row 5"]
+      - [Call of Thunder, 1, "5% crit for Lightning Bolt"]
+      - [Lightning Overload, 3, "Free second bolts. Chain Lightning comes at level 32"]
+      - [Call of Flame, 1, "The last point to open row 6"]
+      - [Elemental Fury, 5, "Larger crits"]
+      - [Lightning Mastery, 1, "The burst cooldown, at level 40"]
+      - [Tidal Focus, 5, "5% hit and cheaper heals"]
+      - [Mindfulness, 3, "Mana regeneration while you cast"]
+      - [Totemic Focus, 2, "Cheaper totems. Opens Restoration row 3"]
+      - [Water Shield, 1, "Mana from your crits"]
+      - [Thundering Strikes, 5, "5% crit for all spells"]
+      - [Ancestral Knowledge, 4, "More Intellect and mana"]
+    notes:
+      - "Mana is the limit of this build. Use Mana Spring Totem and lower ranks of Lightning Bolt."
+      - "If you get dual spec at 40, make the second spec a Restoration spec for dungeons."
+
+  - id: elemental-raid
+    name: "Elemental (raid)"
+    kind: endgame
+    role: "Raid DPS (ranged)"
+    summary: |
+      A 31/9/11 build for Lightning Bolt damage. The split is from the Warcraft Tavern build from the beta, adjusted to the launch client. It takes 5% hit and the mana talents from Restoration, and crit and Intellect from Enhancement.
+    steps:
+      - [Convection, 5]
+      - [Concussion, 5]
+      - [Elemental Alacrity, 3]
+      - [Call of Flame, 3, "More damage for Searing Totem and Flame Shock"]
+      - [Elemental Focus, 1]
+      - [Eye of the Storm, 3, "Filler. For Onyxia, you can move these points to Elemental Warding"]
+      - [Call of Thunder, 1]
+      - [Lightning Overload, 3]
+      - [Elemental Reach, 1, "The last point to open row 6. A personal preference"]
+      - [Elemental Fury, 5]
+      - [Lightning Mastery, 1]
+      - [Tidal Focus, 5, "5% hit. The spell hit cap is high"]
+      - [Mindfulness, 3]
+      - [Natural Grace, 2, "Less threat. Opens Restoration row 3"]
+      - [Water Shield, 1, "Mana from your crits"]
+      - [Thundering Strikes, 5]
+      - [Ancestral Knowledge, 4]
+
+  - id: enhancement-raid
+    name: "Enhancement (raid)"
+    kind: endgame
+    role: "Raid DPS (melee)"
+    summary: |
+      An 8/35/8 build with all the core melee talents. The split is from the Warcraft Tavern build from the beta. Use Windfury Weapon, so that Spirit Weapons decreases your threat.
+    steps:
+      - [Thundering Strikes, 5]
+      - [Ancestral Knowledge, 4]
+      - [Mental Dexterity, 3]
+      - [Elemental Weapons, 3]
+      - [Shamanistic Focus, 1]
+      - [Flurry, 5]
+      - [Stormstrike, 1]
+      - [Toughness, 2, "Filler. You can move these points to Improved Ghost Wolf or Anticipation"]
+      - [Spirit Weapons, 1, "Threat −30% while Rockbiter Weapon is not active"]
+      - [Mental Quickness, 2]
+      - [Improved Stormstrike, 2]
+      - [Maelstrom Weapon, 5]
+      - [Rage of the Farseer, 1]
+      - [Concussion, 5, "Damage for Lightning Bolt and Earth Shock. Opens row 2"]
+      - [Elemental Devastation, 3, "Spell crits give 9% melee crit chance"]
+      - [Tidal Focus, 5, "5% hit"]
+      - [Mindfulness, 3, "It is not confirmed that it adds to the bonus of Improved Stormstrike"]
+    notes:
+      - "The planned 10 November tuning makes Strength the best stat for Enhancement. The value of the Intellect talents can change."
+
+  - id: restoration-raid
+    name: "Restoration (healer)"
+    kind: endgame
+    role: "Raid healer"
+    summary: |
+      A 0/10/41 build for dungeons and raids. The split is from the Warcraft Tavern build from the beta. It takes all the talents for Healing Wave, then Riptide for Chain Heal.
+    steps:
+      - [Improved Healing Wave, 5]
+      - [Tidal Focus, 5]
+      - [Mindfulness, 3]
+      - [Ancestral Healing, 3]
+      - [Water Shield, 1]
+      - [Healing Focus, 3, "For dungeons. In raids, you can move these points to Natural Grace or Totemic Focus"]
+      - [Tidal Mastery, 5]
+      - [Mana Tide Totem, 1]
+      - [Healing Way, 3]
+      - ["Nature's Swiftness", 1]
+      - [Purification, 5]
+      - [Riptide, 1]
+      - [Restorative Totems, 5, "A stronger Mana Spring Totem for your group"]
+      - [Thundering Strikes, 5, "5% crit for heals"]
+      - [Ancestral Knowledge, 5, "More Intellect and mana"]
+    notes:
+      - "This build also works as a battleground healer."
+
+  - id: elemental-pvp
+    name: "Elemental (PvP)"
+    kind: endgame
+    role: "PvP"
+    summary: |
+      A 30/0/21 caster build for battlegrounds and world PvP. It does not take Lightning Mastery. It takes Nature's Swiftness for an instant Chain Lightning or an instant heal. This split is a Codex build, not a published build.
+    steps:
+      - [Concussion, 5]
+      - [Convection, 4]
+      - [Elemental Alacrity, 3]
+      - [Reverberation, 3, "A shorter cooldown for Shocks"]
+      - [Elemental Focus, 1]
+      - [Eye of the Storm, 3]
+      - [Earthbound, 1, "A 5 s root"]
+      - [Call of Thunder, 1]
+      - [Lightning Overload, 3]
+      - [Elemental Reach, 1]
+      - [Elemental Fury, 5]
+      - [Improved Healing Wave, 5]
+      - [Tidal Focus, 5]
+      - [Healing Focus, 3, "Heals that ignore pushback"]
+      - [Water Shield, 1]
+      - [Mindfulness, 3]
+      - [Improved Reincarnation, 2, "4% health and a shorter Reincarnation cooldown"]
+      - [Mana Tide Totem, 1, "The last point to open row 5"]
+      - ["Nature's Swiftness", 1, "An instant Chain Lightning or heal each 3 min"]
+    notes:
+      - "If you prefer Lightning Mastery, use the Elemental raid build and move Call of Flame to Earthbound and Reverberation."
+
+  - id: enhancement-pvp
+    name: "Enhancement (PvP)"
+    kind: endgame
+    role: "PvP"
+    summary: |
+      A 0/40/11 melee build for battlegrounds and world PvP. It adds Improved Ghost Wolf and survival talents to the core melee talents. This split is a Codex build, not a published build.
+    steps:
+      - [Thundering Strikes, 5]
+      - [Ancestral Knowledge, 5]
+      - [Mental Dexterity, 3]
+      - [Guardian Totems, 2, "A shorter Grounding Totem cooldown"]
+      - [Elemental Weapons, 3]
+      - [Shamanistic Focus, 1]
+      - [Flurry, 5]
+      - [Stormstrike, 1]
+      - [Improved Ghost Wolf, 2, "A faster Ghost Wolf to get to your target"]
+      - [Spirit Weapons, 1]
+      - [Mental Quickness, 2]
+      - [Improved Stormstrike, 2]
+      - [Maelstrom Weapon, 5, "Instant Lightning Bolts and cheaper burst"]
+      - [Rage of the Farseer, 1]
+      - [Toughness, 2]
+      - [Tidal Focus, 5]
+      - [Mindfulness, 3]
+      - [Improved Reincarnation, 2, "4% health. Opens Restoration row 3"]
+      - [Water Shield, 1, "Mana when enemies hit you"]
+
+faq:
+  - q: "Can a Shaman tank?"
+    a: "The client has no full tank tree. Spirit Weapons gives +30% threat with Rockbiter Weapon, and Anticipation and Toughness add survival. No source confirms the Shaman as a raid tank. Use these talents to hold a mob in an emergency."
+  - q: "Where are Call of Thunder and Earthbound in the tree?"
+    a: "In the launch client, Earthbound is in row 4 and needs 15 points. Call of Thunder is in row 5 and needs 20 points. Guides from the beta gave Call of Thunder at 16 points and Earthbound at 21 points."
+  - q: "What does Lightning Mastery do?"
+    a: "It is a 3 min cooldown. For 15 s, Lightning Bolt casts 0.5 s faster and Chain Lightning has no cooldown. It replaces Elemental Mastery. The launch client has no Lava Burst."
+  - q: "Does Riptide help Chain Heal?"
+    a: "Yes. The client tooltip says that a Chain Heal that you cast directly on the Riptide target heals for 25% more. Riptide heals during 15 s and has no instant heal."
+  - q: "Which talents from other trees does each build take?"
+    a: "Thundering Strikes gives 5% crit for all spells and attacks. Tidal Focus gives 5% hit. Mindfulness and Water Shield give mana. Thus, most builds put 8 to 11 points in a second or third tree."
+
+sources:
+  - {title: "Warcraft Tavern: Shaman guide", url: "https://www.warcrafttavern.com/forever/guides/shaman/"}
+  - {title: "Warcraft Tavern: Shaman leveling guide", url: "https://www.warcrafttavern.com/forever/guides/shaman-leveling/"}
+  - {title: "Warcraft Tavern: Enhancement Shaman guide", url: "https://www.warcrafttavern.com/forever/guides/enhancement-shaman/"}
+  - {title: "Warcraft Tavern: Class tuning coming for Shamans, Warlocks and Hunter pets", url: "https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/"}
+  - {title: "Mobalytics: Shaman leveling guide", url: "https://mobalytics.gg/wow-forever/classes/shaman-leveling-guide"}
+  - {title: "Mobalytics: Elemental Shaman leveling guide", url: "https://mobalytics.gg/wow-forever/classes/elemental-shaman-leveling-guide"}
+  - {title: "Icy Veins: Enhancement Shaman leveling", url: "https://www.icy-veins.com/wow-forever/enhancement-shaman-leveling"}

@@ -57,6 +57,8 @@
 
 ## Talents
 
+The [Shaman talent guide](../../talents/shaman.md) shows all 3 trees and gives a rating to each talent.
+
 === "Elemental"
 
     Elemental Devastation · Elemental Alacrity · Improved Fire Nova · Eye of the Storm · **Call of Thunder** (16, +5% crit) · Elemental Reach · **Lightning Overload** (10/20/30%) · **Earthbound** (21: Earthbind roots for 5 s) · Elemental Fury · **Lightning Mastery** (the renamed Elemental Mastery slot, effect *unconfirmed*{ .unconfirmed })

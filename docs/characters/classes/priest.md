@@ -59,6 +59,8 @@
 
 ## Talents
 
+The [Priest talent guide](../../talents/priest.md) shows all 3 trees and gives a rating to each talent.
+
 === "Discipline"
 
     Power in Light · Twin Disciplines · Holy Precision (up to 18% hit) · Mental Agility · Mental Strength (now % Intellect) · **Soul Warding** (16: cheaper Power Word: Shield with a shorter cooldown) · **Penance** (21: 2 s channel, 12 s cooldown, heals or damages) · Renewed Hope · **Divine Aegis** (crit heals shield)

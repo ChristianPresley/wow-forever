@@ -200,6 +200,17 @@ nav:
       - Roadmap: content/roadmap.md
   - Class Guides:
       - guides/index.md
+      - Talent Guides:
+          - talents/index.md
+          - talents/druid.md
+          - talents/hunter.md
+          - talents/mage.md
+          - talents/paladin.md
+          - talents/priest.md
+          - talents/rogue.md
+          - talents/shaman.md
+          - talents/warlock.md
+          - talents/warrior.md
       - Druid:
           - guides/druid/index.md
           - "Night Elf": guides/druid/night-elf.md

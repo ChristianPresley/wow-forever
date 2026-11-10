@@ -1,0 +1,376 @@
+class: Paladin
+badges: [tank, heal, dps]
+description: "Paladin talent guide for WoW: Forever: all 51 talents in Holy, Protection and Retribution with a rating, a talent for each level from 10 to 60, and level 60 builds for tanks, healers, raid DPS and PvP."
+
+intro: |
+  Each Paladin tree has a different role in Forever. **Retribution** is the melee damage tree and the usual tree for leveling. **Protection** is a full tank tree with a taunt. **Holy** is the healer tree. Each tree also has talents that help a different role, so most builds put points in all 3 trees.
+
+card:
+  leveling: "Retribution. Protection if you level in dungeons"
+  pve: "Holy to heal, Protection to tank, Retribution for damage"
+  pvp: "Retribution with Repentance and Improved Hammer of Justice"
+
+quick:
+  - stage: "Level 10–39"
+    build: ret-leveling
+    why: "Seal of Command at level 20. Sacred Arbiter at 29. Repentance at 34."
+  - stage: "Level 10–39, if you tank dungeons"
+    build: prot-leveling
+    why: "Templar's Bulwark at level 20. Holy Shield at 30. Much mana from Shield Specialization."
+  - stage: "Level 40–59"
+    build: ret-leveling
+    why: "Unsealed Wrath at 40. Then Strength and seal damage from the Holy tree."
+  - stage: "Level 10–59, if you heal dungeons"
+    build: holy-leveling
+    why: "Strength and seal damage first, for quests. Holy Shock at 30. Light's Vigil at 40."
+  - stage: "Level 60: dungeons and raids, tank"
+    build: prot-tank
+    why: "All the damage reduction talents, Holy Shield and Shieldsworn. Parry and crit from Retribution."
+  - stage: "Level 60: raids, healer"
+    build: holy-raid
+    why: "Oath of Light on the tank. Crit talents that give back mana through Illumination."
+  - stage: "Level 60: raids, damage"
+    build: ret-raid
+    why: "Full Retribution to Unsealed Wrath, with Improved Seals and Precision."
+  - stage: "Level 60: PvP"
+    build: ret-pvp
+    why: "2 controls, a 45 s Hammer of Justice and Templar's Bulwark."
+
+trees:
+  Holy:
+    summary: |
+      Holy is the healer tree. **Oath of Light** opens at 15 points and **Holy Shock** at 20. The healing talents use crits: Illumination gives back mana, and Holy Power makes the crits larger. The tree also has talents for damage and threat. Divine Strength and Improved Seals are for Retribution and Protection builds.
+    talents:
+      Spiritual Focus:
+        {does: "Flash of Light, Holy Light and Light's Vigil have a 14–70% chance to ignore pushback", lvl: C, pve: B, pvp: A, note: "The first 5 points of a healer build. It has value only when enemies hit you."}
+      Divine Strength:
+        {does: "Strength +2–10%", lvl: A, pve: A, pvp: A, note: "A damage talent. Retribution builds take 5/5 to open Improved Seals. No value for a healer."}
+      Healing Light:
+        {does: "Healing of Holy Light, Flash of Light and Holy Shock +4/8/12%", lvl: C, pve: S, pvp: A, note: "Core for each healer build."}
+      Reverence:
+        {does: "15/30% of your mana regeneration continues while you cast", lvl: C, pve: S, pvp: B, note: "Illumination needs 2/2."}
+      Improved Seals:
+        {does: "Damage of Seals and Judgements +3–15%", lvl: A, pve: A, pvp: B, note: "A damage and threat talent. It applies to all Seals. Retribution builds take it after Unsealed Wrath."}
+      Purifying Power:
+        {does: "Mana cost of Cleanse and Purify −10/20%. Cooldown of Exorcism and Holy Wrath −17/33%", lvl: C, pve: C, pvp: C, note: "Filler for healers. Better in dungeons with many undead, such as Scholomance and Stratholme."}
+      Divine Favor:
+        {does: "Your next Flash of Light, Holy Light or Holy Shock is a crit. 2 min cooldown", lvl: C, pve: A, pvp: S, note: "A certain large heal. With Holy Shock it is also instant."}
+      Illumination:
+        {does: "Crit heals have a 20–100% chance to give back 50% of the base mana cost of the spell", lvl: C, pve: S, pvp: A, note: "The mana talent of the Holy spec. The refund was 100% in Classic."}
+      Holy Conduit:
+        {does: "Mana cost of Consecration, Holy Wrath, Exorcism and Hammer of Wrath −20/40%", lvl: B, pve: A, pvp: C, note: "A damage and threat talent. Consecration costs much mana, so tanks and AoE builds get the most from it."}
+      Divine Precision:
+        {does: "Hit chance of Holy spells +4/8%. Silence effects on you are 10/20% shorter", lvl: C, pve: B, pvp: B, note: "For damage, not for heals. It is not confirmed which Seal and Judgement effects are Holy spells for this talent."}
+      Infusion of Light:
+        {does: "Crits of Holy Shock and Flash of Light make your next Holy Light 0.5/1 s faster. The effect stays for 15 s", lvl: D, pve: A, pvp: B, note: "For healers only. It makes Holy Light a 1.5 s cast after a crit."}
+      Oath of Light:
+        {does: "An Oath on 1 ally for 5 min. Holy Light heals the ally for up to 400 more, Flash of Light for up to 115 more and Holy Shock for up to 230 more", lvl: C, pve: S, pvp: B, note: "Keep it on the tank. You can have only 1 Oath."}
+      Consecrated Ground:
+        {does: "Your Holy spells do 5/10% more damage to the first 4 enemies that enter your Consecration", lvl: C, pve: C, pvp: D, note: "A damage talent that needs 20 Holy points. Too deep in the tree for Retribution and Protection builds."}
+      Holy Shock:
+        {does: "An instant spell with a 10 s cooldown. It does 129–139 Holy damage to an enemy or heals an ally for 110–118", lvl: B, pve: S, pvp: S, note: "The only instant heal of the class. Light's Vigil needs it. The cooldown was 30 s in Classic."}
+      Boundless Light:
+        {does: "Crit chance of Holy Shock +15/30% on allies that do not have your Oath of Light", lvl: D, pve: A, pvp: A, note: "For heals on the raid and on PvP partners. It does not help the tank that has your Oath."}
+      Holy Power:
+        {does: "Crit bonus of your Holy heals +10–50%", lvl: D, pve: S, pvp: A, note: "Larger crit heals. A healer build needs these 5 points to open Light's Vigil."}
+      "Light's Vigil":
+        {does: "A 1.5 s cast with a 6 s cooldown. For 30 s, your next Holy Shock on the target has no cooldown and heals the target and its party for 325–344", lvl: D, pve: A, pvp: B, note: "The only group heal of the class. It costs 730 mana. Its value in raids is not confirmed."}
+  Protection:
+    summary: |
+      Protection is the tank tree. **Templar's Bulwark** opens at 10 points, **Holy Shield** at 20 and **Shieldsworn** at 30. Shield Specialization gives back mana when you block, so a tank has few mana problems. The first 3 rows also have talents for other roles: Divine Intellect, Precision, and the cooldown talents for PvP.
+    talents:
+      Divine Intellect:
+        {does: "Intellect +2–10%", lvl: B, pve: A, pvp: B, note: "A mana talent for healers and Retribution. Intellect also gives spell damage with Champion of the Light. Low value for a tank."}
+      Redoubt:
+        {does: "Melee hits against you have a 10% chance to give +6–30% block chance for 10 s or 5 blocks", lvl: B, pve: S, pvp: C, note: "The first 5 points of each tank build. Shield Specialization needs 5/5."}
+      Precision:
+        {does: "Hit chance +1/2/3%", lvl: B, pve: S, pvp: B, note: "For tanks and for Retribution. Hit gives threat and damage. No value for a healer."}
+      "Guardian's Favor":
+        {does: "Blessing of Protection cooldown −1/2 min. Blessing of Freedom lasts 3/6 s longer", lvl: D, pve: C, pvp: A, note: "A utility talent. Strong in PvP because of the longer Blessing of Freedom."}
+      Sacred Duty:
+        {does: "Cooldown of Divine Shield, Divine Protection and Templar's Bulwark −30/60 s. Forbearance is 5/10 s shorter", lvl: C, pve: B, pvp: A, note: "More emergency buttons. Good for tanks, PvP and Hardcore."}
+      "Templar's Bulwark":
+        {does: "A shield that absorbs damage equal to 100% of your maximum health for 8 s. 5 min cooldown. It causes Forbearance for 1 min", lvl: A, pve: S, pvp: A, note: "The emergency button of the tree. Swift Judgement needs it. You cannot use it during Forbearance."}
+      Improved Hammer of Justice:
+        {does: "Hammer of Justice cooldown −5/10/15 s", lvl: C, pve: D, pvp: S, note: "Core for PvP. Bosses are immune to stuns."}
+      Shield Specialization:
+        {does: "Your shield blocks 15/30% more damage. Blocks have a 50/100% chance to restore 4% of your maximum mana, one time each 3 s", lvl: A, pve: S, pvp: C, note: "The mana talent of the tank. It needs a shield."}
+      Toughness:
+        {does: "Armor from items +2–10%", lvl: C, pve: A, pvp: B, note: "Take 5/5 as a raid tank. Filler in other builds."}
+      Swift Judgement:
+        {does: "An instant Judgement with a 10 yd range and a 1 min cooldown. It does not remove the Seal and does not use the Judgement cooldown", lvl: B, pve: A, pvp: B, note: "With Seal of Fury, it is a second taunt."}
+      Improved Righteous Fury:
+        {does: "While Righteous Fury is active, you take 3/6/9% less damage", lvl: B, pve: S, pvp: C, note: "Core for tanks. It applies to all damage."}
+      Anticipation:
+        {does: "Defense skill +4–20", lvl: C, pve: S, pvp: C, note: "Defense prevents crits from bosses. Blizzard has not published the Defense target for Forever."}
+      Stoicism:
+        {does: "Stun and Charm effects on you are 10/20% shorter", lvl: D, pve: D, pvp: B, note: "For PvP only. It needs 20 Protection points, so few PvP builds can take it."}
+      Holy Shield:
+        {does: "Block chance +30% for 10 s. Each block does 75 Holy damage with 20% more threat. 4 charges, 10 s cooldown", lvl: A, pve: S, pvp: C, note: "Keep it active when you tank. Shieldsworn needs it."}
+      Reckoning:
+        {does: "8–40% chance for an extra attack after a block. 20–100% chance after an enemy crit on you. You can store 4 extra attacks", lvl: B, pve: A, pvp: A, note: "A threat talent for tanks, because blocks now trigger it. In PvP it punishes enemy crits."}
+      Iron Creed:
+        {does: "Holy Strike threat +10/20/30%. With Righteous Fury active, Holy Strike also makes you take 2/4/6% less damage for 6 s", lvl: B, pve: S, pvp: D, note: "Threat and damage reduction for tanks. With Shieldsworn, the effect is always active."}
+      Shieldsworn:
+        {does: "Holy Strike cooldown −4 s. Holy Strike triggers Holy Shield and Shield Specialization and uses no charges. You can block spells for 6 s", lvl: A, pve: S, pvp: C, note: "The last talent of the tank spec. It is not confirmed how the spell block works against boss spells."}
+  Retribution:
+    summary: |
+      Retribution is the melee damage tree for two-hand weapons. **Seal of Command** opens at 10 points, **Sacred Arbiter** at 15 and **Repentance** at 20. The first 2 rows are useful for all specs: Benediction saves mana, and Conviction gives crit for attacks and heals. **Unsealed Wrath** at 30 points replaces the seal twisting of Classic.
+    talents:
+      Deflection:
+        {does: "Parry chance +1–5%", lvl: C, pve: B, pvp: C, note: "A tank talent in the damage tree. Tanks use it to open row 2. No value for Retribution damage."}
+      Benediction:
+        {does: "Mana cost of all instant spells and abilities −2–10%", lvl: S, pve: A, pvp: A, note: "The first 5 points when you level. Seals, Judgement, Holy Strike, Consecration and Holy Shock are instant."}
+      Improved Judgement:
+        {does: "Judgement cooldown −1/2 s", lvl: A, pve: S, pvp: A, note: "More Judgements give more damage and more threat."}
+      Conviction:
+        {does: "Crit chance of all spells and attacks +2/4/6%", lvl: S, pve: S, pvp: S, note: "For all 3 specs. Heals also get the crit, which helps Illumination."}
+      Sanctified Judgement:
+        {does: "Judgement has a 33–100% chance to give back 20–60% of the mana cost of the Seal", lvl: A, pve: A, pvp: B, note: "The mana talent of the Retribution spec."}
+      Vindication:
+        {does: "Your melee hits have a chance to decrease the Strength and Agility of the target by 5% for 10 s", lvl: C, pve: C, pvp: B, note: "The tooltip shows the same 5% for all ranks and no proc chance. The effect on raid bosses is not confirmed."}
+      Unyielding Faith:
+        {does: "Fear and Disorient effects on you are 15/30% shorter", lvl: D, pve: D, pvp: B, note: "For PvP only."}
+      Seal of Command:
+        {does: "A Seal that has a chance to do Holy damage equal to 70% of weapon damage. Its Judgement does 74 Holy damage, or 136–148 to a stunned target", lvl: S, pve: S, pvp: S, note: "The main Seal for a slow two-hand weapon. Vengeance needs it."}
+      Pursuit of Justice:
+        {does: "Movement speed and mounted speed +8/15%. It does not stack with other speed effects", lvl: S, pve: B, pvp: S, note: "Less travel time when you level. The class has no slow, so speed is important in PvP."}
+      Eye for an Eye:
+        {does: "Enemy crits on you do 5/10% of the damage to the attacker", lvl: D, pve: D, pvp: B, note: "Filler for PvP."}
+      Sacred Arbiter:
+        {does: "Holy Strike damage +20%. Holy Strike refreshes all Judgement effects on the target", lvl: A, pve: S, pvp: A, note: "1 point for a large effect. It keeps your Judgement debuff on a boss."}
+      Two-Handed Weapon Specialization:
+        {does: "With a two-hand weapon: Physical and Holy damage +2/4/6% and threat −7 to −20%", lvl: S, pve: S, pvp: S, note: "Core for Retribution. The threat decrease is useful, because Blessing of Salvation is not in the game."}
+      Turn Evil:
+        {does: "Turn Undead cast time −0.5/1 s and cooldown −5/10 s. It also affects Demons", lvl: D, pve: C, pvp: C, note: "Crowd control for dungeons with undead or demons. In PvP it works on Warlock pets."}
+      Repentance:
+        {does: "Incapacitates a Humanoid for up to 6 s. Damage breaks the effect. 1 min cooldown", lvl: B, pve: B, pvp: S, note: "Unsealed Wrath needs it. In PvP it is your second control."}
+      Vengeance:
+        {does: "After a crit, Physical and Holy damage +1/2/3% for 30 s. Maximum 5 stacks", lvl: S, pve: S, pvp: A, note: "Up to 15% more damage at 3/3. Crit from Conviction keeps the stacks."}
+      Champion of the Light:
+        {does: "Spell damage equal to 12–60% of your Intellect. Hammer of Wrath cast time −0.2 to −1 s", lvl: A, pve: S, pvp: A, note: "It makes Intellect a damage stat. It opens Unsealed Wrath."}
+      Unsealed Wrath:
+        {does: "Melee hits store a copy of your Seal for 15 s, to a maximum of 3. A hit with a different Seal uses the copies. Each copy gets its usual proc chance", lvl: B, pve: A, pvp: B, note: "It rewards a change of Seals each few swings. No source has published tested numbers, so its value is not confirmed."}
+
+builds:
+  - id: ret-leveling
+    name: "Retribution (solo)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      The usual route to 60. The order follows the launch orders from Leprestore and Talents Forever, adjusted to the launch client. It finishes Retribution at level 40, then takes damage talents from Holy and Protection.
+    steps:
+      - [Benediction, 5, "Less mana for Seals, Judgement and Holy Strike"]
+      - [Conviction, 3, "6% crit for all attacks"]
+      - [Improved Judgement, 2, "Judgement 2 s more often"]
+      - [Seal of Command, 1, "Your main Seal with a slow two-hand weapon"]
+      - [Sanctified Judgement, 3, "Judgement gives back mana"]
+      - [Pursuit of Justice, 2, "15% more movement speed"]
+      - [Two-Handed Weapon Specialization, 3, "6% more damage"]
+      - [Sacred Arbiter, 1, "A stronger Holy Strike that refreshes your Judgement"]
+      - [Vengeance, 3, "Up to 15% more damage after crits"]
+      - [Vindication, 1, "The last point to open row 6 after Repentance"]
+      - [Repentance, 1, "A control for Humanoids. Unsealed Wrath needs it"]
+      - [Champion of the Light, 5, "Spell damage from Intellect"]
+      - [Unsealed Wrath, 1, "The last talent of the tree, at level 40"]
+      - [Divine Strength, 5, "10% more Strength"]
+      - [Improved Seals, 5, "15% more Seal and Judgement damage"]
+      - [Holy Conduit, 2, "Consecration and Exorcism cost 40% less mana"]
+      - [Divine Intellect, 5, "More mana and more spell damage"]
+      - [Precision, 3, "Hit for dungeons at 58+"]
+    notes:
+      - "If you already use a slow two-hand weapon, Seal of Command at level 20 is correct. With a fast weapon, continue to use Seal of Righteousness."
+      - "If you get dual spec at 40, keep this build for quests. Use the second spec to tank or to heal."
+
+  - id: prot-leveling
+    name: "Protection (dungeons)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      A route for players who tank dungeons while they level. This order is a Codex order. No source has published a full Protection order for the launch client. It kills single mobs more slowly than Retribution, but it is the safest route.
+    steps:
+      - [Redoubt, 5, "More blocks. Shield Specialization needs 5/5"]
+      - [Precision, 3, "Fewer misses, so more threat"]
+      - [Sacred Duty, 2, "Divine Protection 1 min more often"]
+      - ["Templar's Bulwark", 1, "Your emergency button at level 20"]
+      - [Shield Specialization, 2, "Blocks give back mana"]
+      - [Toughness, 2, "Armor. Opens row 4"]
+      - [Swift Judgement, 1, "A second Judgement for pulls and a second taunt"]
+      - [Improved Righteous Fury, 3, "9% less damage"]
+      - [Anticipation, 1, "The last point to open row 5"]
+      - [Holy Shield, 1, "30% more block chance and Holy damage on blocks"]
+      - [Reckoning, 4, "Extra attacks after blocks"]
+      - [Iron Creed, 3, "More Holy Strike threat and 6% less damage"]
+      - [Reckoning, 1, "Completes Reckoning"]
+      - [Anticipation, 1, "The last point to open row 7"]
+      - [Shieldsworn, 1, "Holy Strike each 6 s, at level 40"]
+      - [Anticipation, 3, "Defense for dungeons at 45+"]
+      - [Divine Intellect, 5, "More mana for pulls without blocks"]
+      - [Benediction, 5, "Less mana for instant abilities"]
+      - [Conviction, 3, "Crit gives threat"]
+      - [Improved Judgement, 2, "More Judgements"]
+      - [Toughness, 2, "More armor"]
+    notes:
+      - "Consecration at level 20 is your main AoE threat. It does full damage to only 4 targets."
+      - "The Hardcore ruleset is not available yet. When it comes, this build is the safest choice, because it has Templar's Bulwark at level 20."
+
+  - id: holy-leveling
+    name: "Holy (dungeon healer)"
+    kind: leveling
+    role: "Leveling"
+    summary: |
+      A route for players who heal dungeons from the first levels. This order is a Codex order. It takes Strength and seal damage first, because you also do quests alone. If you heal only at 40+, level as Retribution and use dual spec.
+    steps:
+      - [Divine Strength, 5, "Melee damage for quests"]
+      - [Improved Seals, 5, "15% more Seal and Judgement damage"]
+      - [Holy Conduit, 2, "A cheaper Consecration at level 20"]
+      - [Reverence, 2, "Mana regeneration while you cast. Illumination needs it"]
+      - [Divine Favor, 1, "A certain crit heal each 2 min"]
+      - [Oath of Light, 1, "Stronger heals on the tank"]
+      - [Illumination, 4, "Crit heals give back mana"]
+      - [Holy Shock, 1, "An instant heal or damage spell at level 30"]
+      - [Illumination, 1, "Completes Illumination"]
+      - [Healing Light, 3, "12% more healing"]
+      - [Holy Power, 5, "Larger crit heals. Opens row 7"]
+      - ["Light's Vigil", 1, "A group heal at level 40"]
+      - [Boundless Light, 2, "Holy Shock crits on party members without your Oath"]
+      - [Infusion of Light, 2, "A faster Holy Light after a crit"]
+      - [Benediction, 5, "A cheaper Holy Shock and cheaper Seals"]
+      - [Conviction, 3, "6% crit for heals and attacks"]
+      - [Improved Judgement, 2, "More damage for quests"]
+      - [Divine Intellect, 5, "More mana"]
+      - [Spiritual Focus, 1, "Filler"]
+    notes:
+      - "At 60, move the points from Divine Strength, Improved Seals and Holy Conduit to Spiritual Focus and to Protection utility. See the raid healer build."
+
+  - id: ret-raid
+    name: "Retribution (raid)"
+    kind: endgame
+    role: "Raid DPS"
+    summary: |
+      The level 60 build that sources give most often. It is the same build as the end of the Retribution leveling route. It is a snapshot of usage data. No source has tested it in raids.
+    steps:
+      - [Benediction, 5]
+      - [Improved Judgement, 2]
+      - [Conviction, 3]
+      - [Sanctified Judgement, 3]
+      - [Seal of Command, 1]
+      - [Pursuit of Justice, 2, "The usual way to open row 4. Faster movement between targets"]
+      - [Vindication, 1, "Filler to open row 6. You can move this point to Unyielding Faith"]
+      - [Sacred Arbiter, 1]
+      - [Two-Handed Weapon Specialization, 3]
+      - [Repentance, 1, "Unsealed Wrath needs it"]
+      - [Vengeance, 3]
+      - [Champion of the Light, 5]
+      - [Unsealed Wrath, 1]
+      - [Divine Strength, 5]
+      - [Improved Seals, 5]
+      - [Holy Conduit, 2, "Less mana for Consecration, Exorcism and Hammer of Wrath"]
+      - [Divine Intellect, 5, "Mana, and spell damage through Champion of the Light"]
+      - [Precision, 3, "3% hit"]
+    notes:
+      - "Blessing of Salvation is not in the game. Two-Handed Weapon Specialization decreases your threat by 20%."
+
+  - id: prot-tank
+    name: "Protection (tank)"
+    kind: endgame
+    role: "Tank"
+    summary: |
+      A deep Protection build for dungeons and raids. It takes all the damage reduction talents and the full Holy Strike package. The 12 points in Retribution give parry, crit and more Judgements. This split is a Codex choice, and it will change when raids open.
+    steps:
+      - [Redoubt, 5]
+      - [Precision, 3]
+      - [Sacred Duty, 2, "Templar's Bulwark each 4 min and Divine Protection 1 min more often"]
+      - ["Templar's Bulwark", 1]
+      - [Shield Specialization, 2]
+      - [Toughness, 5]
+      - [Swift Judgement, 1]
+      - [Improved Righteous Fury, 3]
+      - [Anticipation, 5]
+      - [Holy Shield, 1]
+      - [Reckoning, 5]
+      - [Iron Creed, 3]
+      - [Shieldsworn, 1]
+      - ["Guardian's Favor", 2, "Utility for the raid. You can move these points to Divine Intellect"]
+      - [Deflection, 5, "5% parry. It also opens Retribution row 2"]
+      - [Improved Judgement, 2, "More Judgements give more threat"]
+      - [Conviction, 3, "Crit gives threat"]
+      - [Sanctified Judgement, 2, "Mana when you do not block. You can move these points to Benediction"]
+    notes:
+      - "Templar's Bulwark and Divine Shield both cause Forbearance. Use one of them, not both."
+
+  - id: holy-raid
+    name: "Holy (raid healer)"
+    kind: endgame
+    role: "Raid healer"
+    summary: |
+      A deep Holy build with all the healing talents and Light's Vigil. It takes Conviction for crit, because crit heals give back mana through Illumination. The split follows the usage data in the class guide.
+    steps:
+      - [Spiritual Focus, 5]
+      - [Healing Light, 3]
+      - [Reverence, 2]
+      - [Divine Favor, 1]
+      - [Illumination, 5]
+      - [Infusion of Light, 2]
+      - [Oath of Light, 1]
+      - [Purifying Power, 2, "A cheaper Cleanse. Filler to open row 5"]
+      - [Divine Precision, 2, "Shorter silences. Filler to open row 6"]
+      - [Holy Shock, 1]
+      - [Boundless Light, 2]
+      - [Holy Power, 5]
+      - ["Light's Vigil", 1]
+      - [Divine Intellect, 5]
+      - ["Guardian's Favor", 2, "Blessing of Protection each 3 min"]
+      - [Sacred Duty, 2, "Shorter cooldowns on your defensive spells"]
+      - [Precision, 1, "Filler to open Protection row 3. Hit has no value for heals"]
+      - ["Templar's Bulwark", 1, "A shield for you when you get aggro"]
+      - [Benediction, 5, "A cheaper Holy Shock"]
+      - [Conviction, 3, "6% crit for heals"]
+
+  - id: ret-pvp
+    name: "Retribution (PvP)"
+    kind: endgame
+    role: "PvP"
+    summary: |
+      The burst and control build for battlegrounds and world PvP. It takes all the PvP talents in Retribution. The 14 points in Protection give a shorter Hammer of Justice, a longer Blessing of Freedom and Templar's Bulwark.
+    steps:
+      - [Benediction, 5]
+      - [Improved Judgement, 2]
+      - [Conviction, 3]
+      - [Sanctified Judgement, 3]
+      - [Seal of Command, 1]
+      - [Pursuit of Justice, 2]
+      - [Vindication, 3]
+      - [Unyielding Faith, 2, "Shorter fears"]
+      - [Sacred Arbiter, 1]
+      - [Two-Handed Weapon Specialization, 3]
+      - [Eye for an Eye, 2]
+      - [Repentance, 1]
+      - [Vengeance, 3]
+      - [Champion of the Light, 5]
+      - [Unsealed Wrath, 1]
+      - [Divine Intellect, 5, "Mana for long fights"]
+      - ["Guardian's Favor", 2, "Blessing of Freedom lasts 6 s longer"]
+      - [Sacred Duty, 2, "Divine Shield 1 min more often"]
+      - [Precision, 1, "The last point to open row 3"]
+      - ["Templar's Bulwark", 1]
+      - [Improved Hammer of Justice, 3, "A stun each 45 s"]
+
+faq:
+  - q: "Can I take Holy Shock and Unsealed Wrath in one build?"
+    a: "No. Holy Shock needs 21 Holy points and Unsealed Wrath needs 31 Retribution points. This is 52 points, and you have 51."
+  - q: "Where is Deflection?"
+    a: "In the launch client, Deflection is in Retribution row 1. The class guide lists it with the Protection talents. A tank can take it to open Retribution row 2."
+  - q: "When does Divine Favor open?"
+    a: "Divine Favor is in Holy row 3 and needs 10 Holy points. The class guide gives 16 points. Oath of Light is the talent that needs 15 Holy points."
+  - q: "What does Vindication do?"
+    a: "In the launch client, Vindication decreases the Strength and Agility of the target by 5% for 10 s. The tooltip shows the same text for all 3 ranks and gives no proc chance. The class guide says that it decreases attack power."
+  - q: "Are Twist of Light and Improved Seal of Fury in the game?"
+    a: "No. The launch client has neither talent. Unsealed Wrath is the last Retribution talent. The Protection talent at 10 points is Templar's Bulwark."
+
+sources:
+  - {title: "Talents Forever: Paladin leveling orders", url: "https://talentsforever.com/paladin/leveling"}
+  - {title: "Leprestore: Retribution Paladin guide", url: "https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-retribution-paladin-guide-best-builds-race-professions/"}
+  - {title: "Method: Paladin leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-paladin-leveling-guide-and-talents"}
+  - {title: "Warcraft Tavern: Seal Twisting & Shockadins, Paladin Deep Dive", url: "https://www.warcrafttavern.com/forever/news/seal-twisting-shockadins-paladin-deep-dive-for-wow-forever/"}
+  - {title: "Warcraft Tavern: Pre-Launch Class Changes", url: "https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/"}

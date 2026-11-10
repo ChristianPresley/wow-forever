@@ -91,6 +91,9 @@ Weaknesses
 
 ## Specs & talents
 
+!!! tip "Full talent guide"
+    The [Mage talent guide](../../talents/mage.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+
 Talents start at level 10 (or earlier with the *Talented* Legacy talent). At level 60 you have 51 points. Gold-medal talents with 1 point are at **11, 16, 21 and 31** points in a tree. **Dual spec** becomes available at **level 40** for **50g** from all Mage trainers. Respec costs decrease to 1g over time.
 
 === "Arcane"

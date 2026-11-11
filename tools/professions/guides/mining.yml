@@ -1,0 +1,148 @@
+profession: Mining
+kind: gathering
+icon: material-pickaxe
+description: "Mining guide for WoW: Forever: the path from skill 1 to 300, the new bars, the camp features and all 18 smelting and camp recipes."
+
+intro: |
+  Mining is a primary gathering profession. You mine ore and stone from veins, and you smelt the ore into bars at a forge. Blacksmithing and Engineering use most of the bars. In Forever, Mining also has 3 new smelting recipes and 3 camp features.
+
+card:
+  use: "Ore, stone and bars for Blacksmithing and Engineering. The Lodestone camp feature gives melee attack power."
+  pairs: "Blacksmithing or Engineering. Take a second gathering profession if you want to sell materials."
+
+glance:
+  - ["Best for", "Blacksmiths, Engineers and characters that sell materials"]
+  - ["Main materials", "Copper, Tin, Silver, Iron, Gold, Mithril, Truesilver and Thorium ore"]
+  - ["Tools", "A Mining Pick for veins. A forge for smelting"]
+  - ["Skill cap", "300"]
+  - ["Camp features", "Lodestone, Rock Garden, Molten Foundry"]
+
+new:
+  - "**3 new smelting recipes:** Smelt Azerothium, Smelt Heavy Thorium and Smelt Obsidian-Infused Thorium Bar. Blacksmithing and Engineering use Azerothium Bars and Heavy Thorium Bars in new recipes for skill 250 and above."
+  - "**New ore names in the reagents:** Pitchblende and Heavy Thorium Ore. The client data does not say where you get them."
+  - "Recipes of other professions also use Bauxite, Pyrite and Torbernite. The names suggest minerals. The client data does not say where you get them."
+  - "A starter quest lets you select a gathering profession, and it gives +2 skill."
+  - "**3 camp features.** The Lodestone gives a melee attack power buff at a camp. It does not stack with Blessing of Might. The wiki has no effect data for Rock Garden and Molten Foundry."
+  - "**Smelt Bronze** has the status changed in the client data. The data does not show what changed. It makes 2 bars from 1 Copper Bar and 1 Tin Bar."
+  - "The other 11 Classic smelting recipes are not changed. Forever removed no Classic recipe."
+  - "Gathering gives **Scarce materials** in Forever. The Legacy talent Bountiful Harvest increases them."
+
+path_intro: |
+  You get most Mining skill from ore veins. Smelting gives skill mainly at low skill, so the path uses only 2 smelting recipes, Smelt Bronze and Smelt Iron. The skill for each vein is the Classic-era value. It is not confirmed for Forever. The zones are Classic zones with their Classic ore.
+
+path:
+  - bracket: "Apprentice (1–75)"
+    intro: |
+      In Classic, a trade supplies vendor sells the Mining Pick. Use Find Minerals to show veins on the minimap.
+    steps:
+      - {from: 1, to: 25, gather: "Copper Vein (skill 1)", where: "Dun Morogh, Elwynn Forest, Durotar, Mulgore, Tirisfal Glades, Darkshore", basis: classic, note: "Smelt all Copper Ore. Smelt Copper is orange until 25. Keep 1 Rough Stone and 1 Copper Bar for the Lodestone"}
+      - {from: 25, to: 65, gather: "Copper Vein (skill 1)", where: "Dun Morogh, Elwynn Forest, Durotar, Mulgore, Tirisfal Glades, Darkshore", basis: classic, note: "Smelt Copper is yellow until 48 and green until 70. Keep Copper Bars for Smelt Bronze"}
+      - {from: 65, to: 75, craft: "Smelt Bronze", learn: 65, learn_basis: classic, note: "Yellow from 65. First mine Tin Veins (skill 65) and smelt the tin. Smelt Tin is green here and can give a point. Tin Veins also give skill"}
+    notes:
+      - "At skill 50, train Journeyman at a Mining trainer. This is the Classic-era value."
+      - "In Classic, a trainer teaches Smelt Tin at skill 65. In the client data it is yellow at 50 and green at 63, so it gives few points."
+      - "A trainer teaches the Lodestone camp feature. It is yellow at skill 20. The client does not hold the trainer skill."
+  - bracket: "Journeyman (75–150)"
+    intro: |
+      In Classic, Tin and Silver are in zones of level 10 to 30. Iron starts in zones of level 30.
+    steps:
+      - {from: 75, to: 90, craft: "Smelt Bronze", learn: 65, learn_basis: classic, note: "Yellow until 90. Mine Tin Veins at the same time"}
+      - {from: 90, to: 125, gather: "Tin Vein (skill 65) and Silver Vein (skill 75)", where: "Hillsbrad Foothills, Redridge Mountains, Wetlands, Ashenvale, Stonetalon Mountains, The Barrens", basis: classic, note: "Smelt Silver is orange until 100, but Silver Ore is rare. Keep 1 Silver Bar for Rock Garden"}
+      - {from: 125, to: 130, craft: "Smelt Iron", learn: 125, learn_basis: classic, note: "Orange until 130. Mine Iron Deposits (skill 125) for the ore. Keep 1 Iron Ore and 2 Heavy Stone for Rock Garden"}
+      - {from: 130, to: 150, gather: "Iron Deposit (skill 125)", where: "Arathi Highlands, Thousand Needles, Desolace, Alterac Mountains", basis: classic}
+    notes:
+      - "At skill 125, train Expert at a Mining trainer. In Classic, this needs character level 20."
+      - "Rock Garden needs skill 140. Its blueprint drops from the Relic Guardian in Excavation Site: Wetlands."
+  - bracket: "Expert (150–225)"
+    intro: |
+      Continue to mine Iron until you can mine Mithril. In Classic, Gold Veins are rare and are in the same zones.
+    steps:
+      - {from: 150, to: 175, gather: "Iron Deposit (skill 125) and Gold Vein (skill 155)", where: "Arathi Highlands, Desolace, Stranglethorn Vale, Badlands", basis: classic, note: "Smelt Gold is orange until 170 if you have Gold Ore"}
+      - {from: 175, to: 225, gather: "Mithril Deposit (skill 175)", where: "Badlands, Tanaris, The Hinterlands, Searing Gorge", basis: classic}
+    notes:
+      - "At skill 200, train Artisan at a Mining trainer. In Classic, this needs character level 35."
+      - "Smelt Mithril is grey at 175. In Classic, a trainer teaches it at 175, so it gives no skill."
+      - "Smelt Steel is grey at 165. In Classic, a trainer teaches it at 125, so it is orange from 125 to 165. The client does not hold the Forever trainer skill."
+  - bracket: "Artisan (225–300)"
+    intro: |
+      In this bracket, the path uses only veins. The client does not hold the trainer skill of Smelt Thorium, Smelt Azerothium and Smelt Heavy Thorium. They are grey from 250 and 275, and yellow from 300. Each one is orange below that skill if a trainer teaches it earlier.
+    steps:
+      - {from: 225, to: 245, gather: "Mithril Deposit (skill 175) and Truesilver Deposit (skill 230)", where: "Tanaris, The Hinterlands, Searing Gorge, Felwood", basis: classic, note: "Keep 1 Truesilver Bar for Molten Foundry"}
+      - {from: 245, to: 275, gather: "Small Thorium Vein (skill 245)", where: "Un'Goro Crater, Felwood, Burning Steppes, Western Plaguelands, Azshara", basis: classic, note: "Keep 5 Thorium Bars and 2 Dense Stone for Molten Foundry. In Classic, Thorium Veins give Dense Stone"}
+      - {from: 275, to: 300, gather: "Rich Thorium Vein (skill 275) and Small Thorium Vein", where: "Un'Goro Crater, Winterspring, Eastern Plaguelands, Silithus, Burning Steppes", basis: classic, note: "Small Thorium Veins continue to give skill, but less frequently"}
+    notes:
+      - "Smelt Dark Iron and Smelt Truesilver are grey from skill 230."
+      - "In Classic, a trainer teaches Smelt Thorium at 230. If Forever is the same, it is orange until 250. This is not confirmed."
+      - "If the trainer teaches Smelt Heavy Thorium below 300, each smelt gives 1 point. This is not confirmed, and the source of Heavy Thorium Ore is not known."
+      - "In Classic, Dark Iron Deposits need skill 230. They are in Burning Steppes, Searing Gorge and Blackrock Depths."
+      - "The client data does not say which veins give Pitchblende or Heavy Thorium Ore."
+
+picks_intro: |
+  A trainer teaches almost all smelting recipes, so learn each one when you can. These are the recipes that matter most. The source column shows where each recipe comes from.
+
+picks:
+  - title: "Bars for leveling a crafting profession"
+    intro: |
+      In Classic, Blacksmithing and Engineering use these bars from skill 1 to 300.
+    items:
+      - {recipe: "Smelt Copper", why: "The first bar. It gives skill until 70"}
+      - {recipe: "Smelt Bronze", why: "Makes 2 bars for each craft. It gives skill until 115"}
+      - {recipe: "Smelt Iron", why: "The bar for the middle levels. Smelt Steel also needs it"}
+      - {recipe: "Smelt Steel", why: "Coal comes from a vendor in Classic. The recipe is grey at 165"}
+      - {recipe: "Smelt Mithril", why: "In Classic, the bar for the higher recipes of Blacksmithing and Engineering before Thorium"}
+      - {recipe: "Smelt Thorium", why: "The standard bar at level 60 in Classic. Molten Foundry needs 5"}
+  - title: "Rare bars"
+    intro: |
+      These ores are rare. In Classic, the bars sell for more gold than the common bars. The client data holds no prices.
+    items:
+      - {recipe: "Smelt Silver", why: "Orange until 100. Rock Garden needs 1 Silver Bar"}
+      - {recipe: "Smelt Gold", why: "Orange until 170"}
+      - {recipe: "Smelt Truesilver", why: "Molten Foundry needs 1 Truesilver Bar"}
+      - {recipe: "Smelt Dark Iron", why: "8 ore for each bar. In Classic, it is for fire resistance gear and you smelt it at the Black Forge"}
+  - title: "New in Forever"
+    intro: |
+      New high-skill recipes of Blacksmithing and Engineering use Azerothium Bars and Heavy Thorium Bars. The recipe data of the crafting professions shows the reagents. The counts below are from that data.
+    items:
+      - {recipe: "Smelt Heavy Thorium", why: "New. 37 Blacksmithing recipes and 4 Engineering recipes use the bar. Alchemy uses it for Transmute: Legionite. The recipe is orange until 300, and the trainer skill is not in the client data"}
+      - {recipe: "Smelt Azerothium", why: "New. 10 Blacksmithing recipes, 3 Engineering recipes and 1 Enchanting recipe use the bar. Coal comes from a vendor in Classic. The recipe is grey from 275, so it gives skill only if the trainer teaches it below 275"}
+      - {recipe: "Smelt Obsidian-Infused Thorium Bar", why: "New recipe. The recipe item binds when you pick it up. It uses Enchanted Thorium Bars and Large Obsidian Shards. No crafting recipe in the client data uses this bar"}
+  - title: "Raid and legendary"
+    items:
+      - {recipe: "Smelt Elementium", why: "Not changed from Classic. In Classic, the bars are for the legendary sword Thunderfury. The client data lists a trainer as the source"}
+  - title: "Camp features"
+    items:
+      - {recipe: "Lodestone", why: "The first feature. It gives a melee attack power buff at a camp"}
+      - {recipe: "Rock Garden", why: "The Tier 2 feature. The Relic Guardian in Excavation Site: Wetlands drops the blueprint. It includes the Lodestone effect"}
+      - {recipe: "Molten Foundry", why: "The Tier 3 feature at skill 300. It includes the lower features. Its own effect is not known"}
+
+sources_note: |
+  The client data lists a trainer as the source of 15 of the 18 recipes. For 14 of them, the client does not hold the skill that the trainer asks for. The path uses Classic-era values for Smelt Bronze and Smelt Iron. Smelt Copper has a learn skill of 1 in the client. Recipe items teach Rock Garden, Molten Foundry and Smelt Obsidian-Infused Thorium Bar. The recipe item for Smelt Obsidian-Infused Thorium Bar binds when you pick it up. The client data does not say where this recipe item drops. The client data lists no Mining recipe that you buy with Merchant's Favor.
+
+  The client data lists a trainer for Smelt Dark Iron and Smelt Elementium. In Classic, a quest in Blackrock Depths and an enemy in Blackwing Lair teach them. It is not confirmed how Forever teaches them.
+
+camp_note: |
+  A trainer teaches the Lodestone. It is yellow at skill 20, and the client does not hold the trainer skill. Blueprints teach Rock Garden at skill 140 and Molten Foundry at skill 300. Blueprint: Rock Garden drops from the Relic Guardian in Excavation Site: Wetlands. The source of the Molten Foundry blueprint is not known. Tier 2 and Tier 3 blueprints drop from dungeon and raid bosses.
+
+tips:
+  - "Smelt Copper is grey at 70, Smelt Tin at 75, Smelt Bronze at 115 and Smelt Iron at 140. Smelt your ore before these values to get skill from it. You can smelt grey recipes later, but they give no skill."
+  - "Keep Find Minerals on when you level your character. You then get skill during quests."
+  - "Mine each vein until it is empty. In Classic, each hit can give a skill point."
+  - "Keep stone for the camp features. Lodestone needs 1 Rough Stone, Rock Garden needs 2 Heavy Stone, and Molten Foundry needs 2 Dense Stone."
+  - "Keep some Pitchblende as ore. The Engineering recipe Ultrasafe Rechargeable Battery uses 1 Pitchblende."
+  - "Smelt Elementium is yellow at 310 and Smelt Obsidian-Infused Thorium Bar at 315. The skill cap is 300, so they stay orange."
+
+faq:
+  - q: "Can I get to 300 with smelting only?"
+    a: "Not with the recipes that are confirmed. Smelt Gold is grey at 185. Smelt Heavy Thorium is orange until 300, but the client data does not give its trainer skill or the source of its ore."
+  - q: "What are the new bars for?"
+    a: "Blacksmithing and Engineering use Heavy Thorium Bars and Azerothium Bars in new high-skill recipes. No crafting recipe in the client data uses the Obsidian-Infused Thorium Bar."
+  - q: "What skill do I need for each vein?"
+    a: "The client data does not hold vein skills. The path uses the Classic-era values, and it marks them as Classic values."
+  - q: "Where do I get Pitchblende and Heavy Thorium Ore?"
+    a: "The client data does not say. It only shows them as reagents of Smelt Azerothium and Smelt Heavy Thorium."
+  - q: "Does Mining give Legacy points?"
+    a: "No. Only the 6 crafting professions give Legacy points for skill 150, 225 and 300."
+  - q: "Can I buy Mining recipes with Merchant's Favor?"
+    a: "No. The client data lists no Mining recipe for Merchant's Favor. The merchants sell recipes for the 6 crafting professions. Some of the Blacksmithing and Engineering recipes use Heavy Thorium Bars and Azerothium Bars."
+
+sources: []

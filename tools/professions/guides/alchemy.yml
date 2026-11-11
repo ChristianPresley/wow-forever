@@ -1,0 +1,262 @@
+profession: Alchemy
+kind: crafting
+icon: material-flask
+description: "Alchemy guide for WoW: Forever: a path from skill 1 to 300, the new potion and elixir lines, Merchant's Favor recipes, flasks and transmutations."
+
+intro: |
+  Alchemy changes herbs and vials into potions, elixirs, flasks, weapon oils and draughts. It also transmutes metals and elemental materials. In Forever, the Classic healing potions are First Aid recipes. Alchemy has new lines in their place: **Discolored** healing potions, **Mender's**, **Spellblasting** and **Frenzy** potions, many new elixirs, and dyes.
+
+card:
+  use: "Potions, elixirs, flasks and transmutations from herbs. Each class and each raid uses them."
+  pairs: "Herbalism gives the herbs. Fishing gives the fish for the oils."
+
+glance:
+  - ["Best for", "All classes. In the class guides, only Shaman gives it rank S"]
+  - ["Main materials", "Herbs, vials from a vendor, some fish and Murloc Eye"]
+  - ["Best pair", "Herbalism"]
+  - ["Skill cap", "300"]
+  - ["Camp features", "Mana Well, Fermenter, Alchemy Laboratory"]
+  - ["Merchant's Favor", "28 recipes from Nina Surefire"]
+
+new:
+  - "**The 6 Classic healing potions are gone from Alchemy.** They are First Aid recipes now. Elixir of Poison Resistance, Cowardly Flight Potion and Purification Potion are also not in Forever."
+  - "**Discolored healing potions:** 6 ranks from Minor to Major. Each needs a vial, 1 herb and 1 Murloc Eye. A trainer teaches 4 of them. 5 ranks are new. The Minor rank makes the Classic Discolored Healing Potion."
+  - "**3 new potion lines:** Mender's, Spellblasting and Frenzy. Each line has 6 ranks from Minor to Major. The client data does not give their effects."
+  - "**Many new elixirs**, for example the Mageblood and Cleric's lines, Elixir of Cunning, Elixir of Ferocity and Elixir of the Owl. Merchant's Favor buys most of the high ranks."
+  - "**Many Classic elixirs have new names.** For example, Elixir of Greater Strength makes the Classic item of Elixir of Giants. The data marks these recipes as changed, so read the tooltip in the game."
+  - "**28 recipes cost Merchant's Favor.** Nina Surefire at Three Corners sells them. All 28 recipe items bind when you pick them up. The wiki says that high-end recipes also need reputation."
+  - "**Dyes and acid:** Cerulean Dye, Magenta Dye, Viridian Dye and Sulfuric Acid are new trainer recipes under Reagents. Recipes of 5 other professions use them."
+  - "**Draughts** are a new heading. The Classic detection and water elixirs have new names, for example Draught of Detect Undead and Draught of Water Breathing."
+  - "**4 new flasks** with the name Flask of Natural. They use the new materials Death Lotus, Demonsage and Marefoil. The names suggest herbs."
+  - "**Transmute: Legionite** is new. It uses 1 Heavy Thorium Bar and 1 Fel Crystal."
+  - "**6 recipes make 2 for each craft:** Fire Oil, Stonescale Oil, Shadow Oil, Frost Oil, Goblin Rocket Fuel and Ghost Dye. Blackmouth Oil makes 1."
+  - "**3 camp features:** Mana Well, Fermenter and Alchemy Laboratory."
+
+path_intro: |
+  This path uses trainer recipes to skill 285. Only the last step needs a recipe item. The client does not hold the skill that the trainer asks for. The path uses the Classic-era trainer skill of the same recipe, and it marks each value. Vials come from a vendor in Classic: Empty Vial, Leaded Vial, Crystal Vial and Imbued Vial. The path does not use Imbued Vial.
+
+path:
+  - bracket: "Apprentice (1–75)"
+    intro: |
+      Peacebloom, Silverleaf and Mageroyal are the first herbs in Classic. They grow in the zones for levels 1 to 20. You need Journeyman Alchemy to continue above skill 75.
+    steps:
+      - {from: 1, to: 55, craft: "Elixir of Minor Defense", note: "Orange for the full step. It uses 1 Silverleaf and 1 Peacebloom"}
+      - {from: 55, to: 75, craft: "Minor Rejuvenation Potion", note: "Yellow from 70"}
+    notes:
+      - "At skill 50 and level 10, train Journeyman at an Alchemy trainer. The skill is the Classic-era value. It is not confirmed for Forever."
+      - "Elixir of Minor Force and Minor Arcane Elixir use only 1 herb, but they are grey at skill 15."
+      - "A Camping 101 quest leads to Mana Well, the first camp feature. A trainer teaches it. It is grey at skill 25."
+  - bracket: "Journeyman (75–150)"
+    intro: |
+      You need Mageroyal, Peacebloom, Briarthorn, Stranglekelp and some Wild Steelbloom. In Classic, these herbs grow in the zones for levels 10 to 30. In Classic, Stranglekelp grows in water near the coast.
+    steps:
+      - {from: 75, to: 90, craft: "Minor Rejuvenation Potion", note: "Yellow. It becomes green at 90"}
+      - {from: 90, to: 120, craft: "Elixir of Wisdom", learn: 90, learn_basis: classic, note: "Orange for the full step. It uses 2 Briarthorn and 1 Mageroyal"}
+      - {from: 120, to: 145, craft: "Lesser Mana Potion", learn: 120, learn_basis: classic, note: "Orange for the full step"}
+      - {from: 145, to: 150, craft: "Elixir of Lesser Defense", learn: 130, learn_basis: classic, note: "This is Elixir of Defense from Classic with a new name"}
+    notes:
+      - "At skill 125 and level 20, train Expert at an Alchemy trainer. The skill is the Classic-era value. It is not confirmed for Forever."
+      - "Minor Rejuvenation Potion is yellow from 75 to 90. If you have Murloc Eye, Lesser Discolored Healing Potion is orange until 85."
+      - "The client does not hold the skill at which the trainer teaches Lesser Discolored Healing Potion."
+      - "Discolored Healing Potion is a second trainer alternative. It is orange until 135 and needs 1 Murloc Eye for each craft."
+      - "A blueprint teaches the Fermenter camp feature at skill 140."
+  - bracket: "Expert (150–225)"
+    intro: |
+      You need Wild Steelbloom, Stranglekelp, Kingsblood, Goldthorn and Khadgar's Whisker. Goldthorn is in 3 of the 5 recipes. In Classic, these herbs grow in the zones for levels 25 to 45, for example Arathi Highlands and Stranglethorn Vale. This is not confirmed for Forever.
+    steps:
+      - {from: 150, to: 160, craft: "Elixir of Lesser Defense", learn: 130, learn_basis: classic, note: "Yellow from 155"}
+      - {from: 160, to: 185, craft: "Mana Potion", learn: 160, learn_basis: classic, note: "Yellow from 180"}
+      - {from: 185, to: 205, craft: "Elixir of Agility", learn: 185, learn_basis: classic, note: "Orange for the full step"}
+      - {from: 205, to: 215, craft: "Elixir of Defense", learn: 195, learn_basis: classic, note: "This is Elixir of Greater Defense from Classic with a new name"}
+      - {from: 215, to: 225, craft: "Greater Mana Potion", learn: 205, learn_basis: classic, note: "Yellow from 220"}
+    notes:
+      - "At skill 200 and level 35, train Artisan at an Alchemy trainer. The skill is the Classic-era value. It is not confirmed for Forever."
+      - "In Classic, only 1 trainer for each faction teaches Artisan Alchemy. This is not confirmed for Forever."
+      - "Crafting professions give Legacy Points at skill 150, 225 and 300."
+  - bracket: "Artisan (225–300)"
+    intro: |
+      You need Khadgar's Whisker, Goldthorn, Arthas' Tears, Sungrass, Gromsblood and Blindweed. In Classic, they grow in the zones for levels 35 to 55, for example Felwood, The Hinterlands and Swamp of Sorrows. This is not confirmed for Forever. The trainer recipes stop at Draught of Detect Demon, which is green from 285.
+    steps:
+      - {from: 225, to: 230, craft: "Greater Mana Potion", learn: 205, learn_basis: classic, note: "Yellow"}
+      - {from: 230, to: 245, craft: "Draught of Detect Undead", learn: 230, learn_basis: classic, note: "Orange for the full step. It uses only 1 Arthas' Tears"}
+      - {from: 245, to: 255, craft: "Elixir of Greater Agility", learn: 240, learn_basis: classic, note: "Orange for the full step"}
+      - {from: 255, to: 285, craft: "Draught of Detect Demon", learn: 250, learn_basis: classic, note: "Yellow from 265. It uses 2 Gromsblood. No other trainer recipe is yellow above 275, so this step is long"}
+      - {from: 285, to: 300, craft: "Superior Mana Potion", note: "A recipe item teaches it. No trainer recipe is yellow here. It is green from 295 to 300"}
+    notes:
+      - "If you do not have the Superior Mana Potion recipe, continue with Draught of Detect Demon. It is green from 285, so it needs more crafts."
+      - "In Classic, alchemy supply vendors in Undercity and Darnassus sell the Superior Mana Potion recipe in limited supply. This is not confirmed for Forever."
+      - "If you have the recipe at 265, use Superior Mana Potion from 265 to 275. It is orange there, and Draught of Detect Demon is yellow."
+      - "Elixir of the Sages is a better option for 285 to 300 if you have the recipe item. It is yellow to 300 and uses 3 herbs."
+      - "Do not confuse it with Elixir of Sages. That recipe is new, costs Merchant's Favor and is grey at 285."
+      - "Elixir of Greater Defense is also yellow to 300. A recipe item teaches it, and it needs 2 Stonescale Oil."
+      - "The 6 Greater Protection Potions are orange from 290 to 300. A recipe item teaches each one, and each needs 1 Dreamfoil and 1 more material."
+      - "Dreamless Sleep Potion, Arcane Elixir and Elixir of Greater Intellect are other trainer recipes for 245 to 265."
+
+picks_intro: |
+  The path does not use most of these recipes. Get them for the items that they make. The effects of items that are new in Forever are not in the client data. Read the tooltip in the game.
+
+picks:
+  - title: "Mana and recovery potions"
+    intro: |
+      Most mana potions are unchanged from Classic. The data marks Minor Mana Potion as changed. 5 of the 6 Discolored healing potions are new. The Minor rank makes the Classic Discolored Healing Potion.
+    items:
+      - {recipe: "Lesser Discolored Healing Potion", why: "The first Discolored potion from a trainer. The client data does not give its effect"}
+      - {recipe: "Superior Discolored Healing Potion", why: "The highest Discolored potion from a trainer"}
+      - {recipe: "Major Discolored Healing Potion", why: "The highest rank of the line. The recipe item binds when you pick it up"}
+      - {recipe: "Superior Mana Potion", why: "The path uses it. Casters use it from level 41 in Classic"}
+      - {recipe: "Major Mana Potion", why: "The raid mana potion in Classic. It is orange from 295 to 300. The recipe item binds when you pick it up"}
+      - {recipe: "Major Rejuvenation Potion", why: "Gives health and mana in Classic. It gives no skill points, because it needs skill 300"}
+      - {recipe: "Dreamless Sleep Potion", why: "A trainer recipe. In Classic, you sleep and get health and mana"}
+  - title: "New potion lines"
+    intro: |
+      Mender's, Spellblasting and Frenzy each have 6 ranks. Recipe items teach all of them. The names suggest a heal line, a spell line and a melee line, but the client data does not confirm it.
+    items:
+      - {recipe: "Minor Mender's Potion", why: "The first rank of the Mender's line. It becomes grey 10 points after you learn it"}
+      - {recipe: "Minor Spellblasting Potion", why: "The first rank of the Spellblasting line"}
+      - {recipe: "Minor Frenzy Potion", why: "The first rank of the Frenzy line"}
+      - {recipe: "Superior Mender's Potion", why: "The highest Mender's rank that does not need Merchant's Favor"}
+      - {recipe: "Superior Spellblasting Potion", why: "The highest Spellblasting rank that does not need Merchant's Favor"}
+      - {recipe: "Superior Frenzy Potion", why: "The highest Frenzy rank that does not need Merchant's Favor"}
+      - {recipe: "Potion of Beast Slaying", why: "New. The name suggests more damage to beasts. The client data does not confirm it"}
+  - title: "Merchant's Favor recipes to buy first"
+    intro: |
+      Nina Surefire sells 28 recipes. On the beta, the prices were 45, 120, 180 or 240 Merchant's Favor. Merchant's Favor is a character-bound currency, so read each tooltip before you buy. Each recipe becomes grey 10 points after you learn it. Buy these recipes for the item, not for skill points. The wiki says that high-end recipes also need reputation.
+    items:
+      - {recipe: "Major Mender's Potion", why: "The highest rank of the Mender's line"}
+      - {recipe: "Major Spellblasting Potion", why: "The highest rank of the Spellblasting line"}
+      - {recipe: "Major Frenzy Potion", why: "The highest rank of the Frenzy line. It is one of the 2 recipes with the highest price"}
+      - {recipe: "Elixir of Cunning", why: "New. The client data does not give its effect. Read the tooltip before you spend Favor"}
+      - {recipe: "Elixir of Ferocity", why: "New. The name suggests a melee elixir. The client data does not confirm it"}
+      - {recipe: "Elixir of the Owl", why: "New. The name suggests a link to the Classic animal names on gear. The client data does not confirm it"}
+      - {recipe: "Elixir of the Whale", why: "New. The name suggests a link to the Classic animal names on gear. The client data does not confirm it"}
+      - {recipe: "Elixir of Nature Power", why: "The name suggests a nature damage elixir, like the Classic power elixirs"}
+      - {recipe: "Elixir of the Grizzly", why: "The last Favor recipe. It needs skill 300 and has the highest price"}
+      - {recipe: "Dragonfire Potion", why: "New. The name suggests fire damage. The client data does not confirm it"}
+      - {recipe: "Elixir of Lesser Spirit", why: "The first Favor recipe. It has the lowest price tier"}
+  - title: "Raid elixirs from Classic"
+    intro: |
+      These recipes are unchanged from Classic, so the effects are Classic-era values. They are not confirmed for Forever.
+    items:
+      - {recipe: "Elixir of the Mongoose", why: "Agility and critical strike in Classic. The standard melee and Hunter elixir"}
+      - {recipe: "Greater Arcane Elixir", why: "Spell damage in Classic. The standard caster elixir"}
+      - {recipe: "Elixir of Brute Force", why: "Strength and Stamina in Classic"}
+      - {recipe: "Elixir of the Sages", why: "Intellect and Spirit in Classic. Also an option for the path from 285"}
+      - {recipe: "Elixir of Shadow Power", why: "Shadow damage in Classic. For Warlocks and Shadow Priests"}
+      - {recipe: "Elixir of Greater Agility", why: "A trainer recipe. The path uses it"}
+      - {recipe: "Gift of Arthas", why: "Shadow resistance and a disease on attackers in Classic"}
+  - title: "Classic elixirs with new names"
+    intro: |
+      The data marks these recipes as changed. Each one makes a Classic item, but the name is new. The effects are not confirmed for Forever. Read the tooltip in the game.
+    items:
+      - {recipe: "Elixir of Greater Strength", why: "It makes the Classic item of Elixir of Giants. That elixir gives Strength in Classic"}
+      - {recipe: "Elixir of Holy Power", why: "It makes the Classic item of Elixir of Greater Firepower. The new name suggests a different effect"}
+      - {recipe: "Elixir of Greater Defense", why: "It makes the Classic item of Elixir of Superior Defense. That elixir gives armor in Classic"}
+      - {recipe: "Mageblood Elixir", why: "It makes the Classic item of Mageblood Potion. That potion gives mana regeneration in Classic"}
+      - {recipe: "Major Troll's Blood Elixir", why: "It makes the Classic item of Major Troll's Blood Potion. That potion gives health regeneration in Classic"}
+      - {recipe: "Potion of Demon Slaying", why: "It makes the Classic item of Elixir of Demonslaying. That elixir gives attack power against demons in Classic"}
+  - title: "Elixirs for leveling"
+    intro: |
+      A trainer teaches the first 4 recipes. Recipe items teach the last 3. The effects are Classic-era values. They are not confirmed for Forever.
+    items:
+      - {recipe: "Elixir of Minor Strength", why: "It makes the Classic item of Elixir of Lion's Strength. The data marks it as changed"}
+      - {recipe: "Elixir of Wisdom", why: "Intellect in Classic. The path uses it"}
+      - {recipe: "Elixir of Agility", why: "Agility in Classic. The path uses it"}
+      - {recipe: "Elixir of Fire Power", why: "It makes the Classic item of Elixir of Firepower. That elixir gives fire damage in Classic"}
+      - {recipe: "Elixir of Minor Fortitude", why: "More health in Classic"}
+      - {recipe: "Elixir of Lesser Agility", why: "Agility in Classic"}
+      - {recipe: "Elixir of Ogre Strength", why: "It makes the Classic item of Elixir of Ogre's Strength. The data marks it as changed"}
+  - title: "Protection and utility potions"
+    intro: |
+      These recipes are unchanged from Classic.
+    items:
+      - {recipe: "Free Action Potion", why: "Gives immunity to stun and movement effects in Classic. Strong in PvP"}
+      - {recipe: "Limited Invulnerability Potion", why: "Gives immunity to physical attacks for 6 seconds in Classic"}
+      - {recipe: "Swiftness Potion", why: "Increases run speed for a short time in Classic"}
+      - {recipe: "Restorative Potion", why: "A trainer recipe. Removes magic, curse, poison and disease effects in Classic"}
+      - {recipe: "Greater Fire Protection Potion", why: "Absorbs fire damage in Classic. Orange from 290 to 300"}
+      - {recipe: "Greater Shadow Protection Potion", why: "Absorbs shadow damage in Classic. It needs 1 Shadow Oil"}
+      - {recipe: "Greater Stoneshield Potion", why: "Increases armor in Classic. It needs 3 Stonescale Oil"}
+      - {recipe: "Mighty Rage Potion", why: "Gives rage and Strength in Classic. For Warriors"}
+  - title: "Flasks"
+    intro: |
+      All flask recipes need skill 300, the skill cap, so they give no skill points. In Classic, you make flasks at an alchemy lab in a dungeon. This is not confirmed for Forever. Forever adds the Alchemy Laboratory camp feature. The data does not say if it replaces the dungeon lab. The recipe items of the 4 Flask of Natural recipes bind when you pick them up.
+    items:
+      - {recipe: "Flask of the Titans", why: "Increases maximum health in Classic. For tanks"}
+      - {recipe: "Flask of Supreme Power", why: "Increases spell damage in Classic"}
+      - {recipe: "Flask of Distilled Wisdom", why: "Increases maximum mana in Classic. For healers"}
+      - {recipe: "Flask of Natural Accuracy", why: "New. The client data does not give its effect. Read the tooltip in the game"}
+      - {recipe: "Flask of Natural Aggression", why: "New. The client data does not give its effect. Read the tooltip in the game"}
+      - {recipe: "Flask of Natural Precision", why: "New. The client data does not give its effect. Read the tooltip in the game"}
+      - {recipe: "Flask of Natural Swiftness", why: "New. The client data does not give its effect. Read the tooltip in the game"}
+  - title: "Transmutations and gold"
+    intro: |
+      In Classic, each transmutation needs a Philosopher's Stone and has a cooldown. The client data does not hold the cooldowns for Forever.
+    items:
+      - {recipe: "Philosopher's Stone", why: "The tool for transmutations in Classic. Make it first"}
+      - {recipe: "Transmute: Arcanite", why: "Makes an Arcanite Bar from 1 Thorium Bar and 1 Arcane Crystal. A stable source of gold in Classic"}
+      - {recipe: "Transmute: Legionite", why: "New. It is under Greater Transmutations with Arcanite"}
+      - {recipe: "Transmute: Iron to Gold", why: "The first transmutation. It gives no points after 280"}
+      - {recipe: "Transmute: Earth to Life", why: "Changes 1 Essence of Earth into a Living Essence"}
+      - {recipe: "Transmute: Elemental Fire", why: "Makes 3 from 1 Heart of Fire. The recipe item binds when you pick it up"}
+      - {recipe: "Alchemist's Stone", why: "Changed in Forever. It needs 8 each of 4 essences and Living Essence, and 4 Black Lotus"}
+  - title: "Oils, dyes and reagents"
+    intro: |
+      Other recipes and other professions use these items. Tailoring, Enchanting and Engineering recipes use the 3 dyes. Leatherworking recipes use Cerulean Dye. Blacksmithing, Leatherworking, Enchanting and Engineering recipes use Sulfuric Acid. The client data does not say where Frilled Lichen, Pyrite, Rosecap and Stranglevine come from.
+    items:
+      - {recipe: "Blackmouth Oil", why: "A trainer recipe. Free Action Potion and the water draughts need it"}
+      - {recipe: "Fire Oil", why: "A trainer recipe. Elixir of Fire Power and Elixir of Holy Power need it"}
+      - {recipe: "Stonescale Oil", why: "A trainer recipe. Greater Stoneshield Potion and 2 flasks need it"}
+      - {recipe: "Shadow Oil", why: "Greater Shadow Protection Potion needs it. The recipe item binds when you pick it up"}
+      - {recipe: "Frost Oil", why: "A weapon oil. The recipe item binds when you pick it up"}
+      - {recipe: "Cerulean Dye", why: "New. Tailoring recipes use it most. Enchanting, Leatherworking and Engineering recipes also use it"}
+      - {recipe: "Magenta Dye", why: "New. Tailoring, Enchanting and Engineering recipes use it"}
+      - {recipe: "Viridian Dye", why: "New. Tailoring, Enchanting and Engineering recipes use it"}
+      - {recipe: "Sulfuric Acid", why: "New. Blacksmithing recipes use it most. Leatherworking, Enchanting and Engineering recipes also use it"}
+      - {recipe: "Goblin Rocket Fuel", why: "Engineering uses it in Classic"}
+  - title: "Draughts"
+    intro: |
+      Most draughts are Classic elixirs with a new name. The effects are Classic-era values.
+    items:
+      - {recipe: "Draught of Water Breathing", why: "A trainer recipe. You can breathe in water in Classic"}
+      - {recipe: "Catseye Draught", why: "A trainer recipe. It shows stealth units in Classic"}
+      - {recipe: "Draught of Detect Undead", why: "A trainer recipe. The path uses it because it needs only 1 herb"}
+      - {recipe: "Draught of Tongues", why: "The data marks it as new, but it uses the item of Elixir of Tongues from Classic. Read the tooltip in the game"}
+      - {recipe: "Potion of Predatory Senses", why: "New. The client data does not give its effect"}
+
+sources_note: |
+  A trainer teaches the basic recipes of each heading. The client does not hold the skill that the trainer asks for, so the path uses Classic-era values. Recipe items teach most of the other recipes. The client does not say where these items come from. Many recipe items bind when you pick them up, so you cannot buy them from a different player.
+
+  Nina Surefire at Three Corners in the Redridge Mountains sells 28 recipes for Merchant's Favor. On the beta, 8 cost 45 Favor, 5 cost 120, 13 cost 180 and 2 cost 240. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes need Merchant's Favor and reputation with the crate faction. The data does not give the reputation rank for each recipe. Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant.
+
+  The client also holds 15 Alchemy recipes from Season of Discovery under a separate heading. No merchant sells them, so this guide does not list them.
+
+camp_note: |
+  A trainer teaches Mana Well. It uses 1 Peacebloom and 1 Empty Vial. Its buff does not stack with Blessing of Wisdom. The Fermenter blueprint drops from Rath'mael in Ruins of Lordaeron and needs skill 140. The Alchemy Laboratory blueprint needs skill 300. Tier 3 blueprints drop from dungeon and raid bosses. The wiki does not name the boss for Alchemy Laboratory. It needs 1 Lich's Index Finger, 1 Crystal Vial and 2 Dreamfoil. The data does not give the effects of Fermenter and Alchemy Laboratory. A higher tier includes the features of the lower tiers.
+
+tips:
+  - "Learn Herbalism with Alchemy. The path uses herbs in each step."
+  - "Keep Murloc Eye when you find it. Each Discolored healing potion needs 1."
+  - "Buy vials before you start a step. Each craft uses 1 vial."
+  - "The new potion ranks become grey 10 points after you learn them. Use them for the item, not for skill points."
+  - "Make Fire Oil and Stonescale Oil when you have the fish. Each craft makes 2."
+  - "The flasks, Refined Scale of Onyxia, Gurubashi Mojo Madness and Alchemist's Stone are yellow above skill 300 in the client."
+  - "Revealing Draught makes an item that has no name in the launch client."
+  - "Elixir of Sages and Elixir of the Sages are 2 different recipes. Elixir of Sages is new and costs Merchant's Favor. Elixir of the Sages is the Classic recipe."
+  - "11 recipes need an Imbued Vial. In Classic, alchemy supply vendors sell it. This is not confirmed for Forever."
+  - "Recipes of Tailoring, Blacksmithing, Leatherworking, Enchanting and Engineering use the dyes and Sulfuric Acid. Make them for the crafters of these professions."
+
+faq:
+  - q: "Does Alchemy still make healing potions?"
+    a: "Not the Classic ones. The 6 Classic healing potions are First Aid recipes. Alchemy makes the Discolored healing potions, and the client data does not give their effect."
+  - q: "Do I need Merchant's Favor to get to skill 300?"
+    a: "No. The path uses trainer recipes to 285 and 1 recipe item after that. The Favor recipes become grey quickly."
+  - q: "Are there Alchemy specializations?"
+    a: "The client data shows no Alchemy specializations."
+  - q: "At what skill do I learn each trainer recipe?"
+    a: "The client does not hold the trainer skill. The path uses the Classic-era values, and it marks them as Classic values."
+  - q: "How many herbs do I need for 1 to 300?"
+    a: "The materials table gives the estimate for each bracket. The real number changes, because yellow and green recipes do not always give a point."
+  - q: "Where do I get Death Lotus, Demonsage and Marefoil?"
+    a: "The client data does not say. The names suggest herbs, and they are new in Forever. In Alchemy, only the 4 new flasks use them."
+
+sources: []

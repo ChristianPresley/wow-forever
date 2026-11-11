@@ -1,0 +1,98 @@
+{
+"profession": "herbalism",
+"recipes": [
+{
+"id": "1229705",
+"name": "Incense Candle",
+"group": "Camping",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 4,
+"makes": "1",
+"reagents": [
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Silverleaf"
+]
+],
+"item": "279962",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1262980",
+"name": "Greenhouse",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+2,
+"Simple Wood"
+],
+[
+1,
+"Arthas' Tears"
+],
+[
+1,
+"Purple Lotus"
+]
+],
+"item": "279964",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263070",
+"name": "Seed Hybridizer",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 300,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+4,
+"Mountain Silversage"
+],
+[
+1,
+"Crystal Vial"
+],
+[
+2,
+"Runecloth"
+]
+],
+"item": "279947",
+"item_db": "forever",
+"bop_recipe": false
+}
+],
+"removed": []
+}

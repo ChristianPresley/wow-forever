@@ -1,0 +1,262 @@
+profession: Enchanting
+kind: crafting
+icon: material-auto-fix
+description: "Enchanting guide for WoW: Forever: a path from skill 1 to 300, the necklace and off-hand enchants, the Merchant's Favor recipes, and all 225 recipes."
+
+intro: |
+  Enchanting puts permanent enchants on armor and weapons. Its **Disenchant** ability destroys an item of green quality or better and gives dusts, essences and shards. In Forever it also makes wands, staves, off-hand items, relics, weapon oils and 3 camp features. Most recipes are enchants that make no item, so the recipe name is the only data on the effect.
+
+card:
+  use: "Enchants for each gear slot, wands, staves, relics and weapon oils. Disenchant changes unwanted gear into materials."
+  pairs: "Tailoring makes cheap items to disenchant. Blacksmithing makes the inert rods."
+
+glance:
+  - ["Best for", "Mages, Priests and Warlocks. All classes use the enchants"]
+  - ["Main materials", "Dusts, essences and shards from Disenchant"]
+  - ["Tools", "A runed rod. Blacksmithing makes the inert rod for it"]
+  - ["Skill cap", "300"]
+  - ["Camp features", "Enchanted Lute, Arcane Salvager, Arcane Forge"]
+
+new:
+  - "**Copper Rod is now a Blacksmithing recipe.** Each Runed rod needs an inert rod: Copper Rod, Silver Rod, Golden Rod, Truesilver Rod or Arcanite Rod. Blacksmithing makes all 5 under the heading *Inert Enchanting Rods*. Only Copper Rod is new there."
+  - "**Dust to Motes** is a new trainer recipe. It changes 1 Strange Dust into 3 Mote of Magic. The first rod, the first bracer enchant and the first wand use motes."
+  - "**Cheaper early enchants.** 116 of the 225 recipes are changed from Classic Era. Many early enchants now use 1 or 2 dusts or essences."
+  - "**Stamina and Intellect names.** The list has no enchants with Health or Mana in the name. The Stamina and Intellect chest enchants have the skill colours of the Classic Health and Mana chest enchants. The client data thus shows a rename. The names suggest Stamina and Intellect in place of Health and Mana."
+  - "**New enchant slots:** 5 necklace enchants and 3 off-hand enchants. The bracer, glove, boots, shield, cloak and weapon lists also have new enchants."
+  - "**New item lines:** 4 staves, 4 off-hand items, 14 relics, 7 new wands and 3 new Heart of the Mountain curios."
+  - "**39 recipes cost Merchant's Favor.** The Alliance merchant Alynsia at Three Corners in Redridge Mountains sells them. The Horde camp is west of the Crossroads in the Barrens."
+  - "**3 camp features:** Enchanted Lute, Arcane Salvager and Arcane Forge."
+  - "The client lists 1 Classic recipe as removed: Charged Scale of Onyxia."
+
+path_intro: |
+  This path uses trainer recipes until skill 270. Each step uses 1 or 2 materials from Disenchant, so the enchants of the path use no shards. The materials table does not include the rods. You put the enchants on your own gear, and a new enchant replaces the old one.
+
+  The client does not hold the skill that a trainer asks for. For a recipe with the same name as in Classic Era, the path uses the Classic-era value. For a renamed recipe, the path gives an estimate. The estimate is the Classic-era value of the recipe with the same skill colours.
+
+path:
+  - bracket: "Apprentice (1–75)"
+    intro: |
+      You need Strange Dust. In Classic, Strange Dust comes from green armor and weapons of item level 5 to 20. This is a Classic-era value. It is not confirmed for Forever.
+    steps:
+      - {from: 1, to: 10, craft: "Dust to Motes", note: "Each craft makes 3 Mote of Magic. Keep these for the rod and the next step"}
+      - {from: 10, to: 20, craft: "Enchant Bracer - Inferior Stamina", note: "Uses the motes from the first step"}
+      - {from: 20, to: 70, craft: "Enchant Chest - Inferior Stamina", learn: 15, learn_basis: estimate, note: "Orange for the full step. The name is new in Forever"}
+      - {from: 70, to: 75, craft: "Enchant Bracer - Minor Stamina", learn: 50, learn_basis: classic}
+    notes:
+      - "Make 1 Runed Copper Rod before the first enchant. It needs 1 Copper Rod from a Blacksmith and 1 Mote of Magic."
+      - "Enchant Bracer - Minor Deflect is an alternative for skill 20 to 80. The client gives learn skill 1 for it, and it is orange until 80."
+      - "Each craft of Enchant Bracer - Minor Deflect uses 1 Lesser Magic Essence. Use it when you have more essences than dust."
+      - "Train Journeyman at an Enchanting trainer before skill 75. In Classic, the trainer asks for skill 50."
+  - bracket: "Journeyman (75–150)"
+    intro: |
+      You need Strange Dust, Lesser Magic Essence, Lesser Astral Essence and Soul Dust. In Classic, Soul Dust comes from green items of item level 21 to 30. In Classic, the essences come mostly from green weapons, and the dusts from green armor. These are Classic-era values. They are not confirmed for Forever.
+    steps:
+      - {from: 75, to: 110, craft: "Enchant Bracer - Minor Stamina", learn: 50, learn_basis: classic, note: "Yellow from 100"}
+      - {from: 110, to: 120, craft: "Enchant Bracer - Minor Agility", learn: 80, learn_basis: classic, note: "Yellow from 115"}
+      - {from: 120, to: 130, craft: "Enchant Chest - Stamina", learn: 120, learn_basis: estimate, note: "Needs 1 Lesser Astral Essence for each craft"}
+      - {from: 130, to: 150, craft: "Enchant Bracer - Lesser Stamina", learn: 130, learn_basis: classic, note: "1 Soul Dust for each craft"}
+    notes:
+      - "Make the Runed Silver Rod when the trainer teaches it. In Classic, that is skill 100. A Blacksmith makes the Silver Rod."
+      - "The Runed Silver Rod needs 1 Silver Rod, 3 Strange Dust, 4 Lesser Magic Essence and 1 Shadowgem."
+      - "In Classic, a higher enchant needs a higher rod. The client data does not give the rod for each enchant."
+      - "Train Expert before skill 150. In Classic, the trainer asks for skill 125."
+  - bracket: "Expert (150–225)"
+    intro: |
+      You need Soul Dust and Vision Dust. In Classic, Vision Dust comes from green items of item level 31 to 40. This is a Classic-era value. It is not confirmed for Forever.
+    steps:
+      - {from: 150, to: 160, craft: "Enchant Bracer - Lesser Stamina", learn: 130, learn_basis: classic, note: "Yellow from 155"}
+      - {from: 160, to: 180, craft: "Enchant Boots - Lesser Agility", learn: 160, learn_basis: classic, note: "1 Soul Dust for each craft"}
+      - {from: 180, to: 205, craft: "Enchant Bracer - Strength", learn: 180, learn_basis: classic, note: "1 Vision Dust for each craft. Yellow from 200"}
+      - {from: 205, to: 225, craft: "Enchant Cloak - Greater Defense", learn: 205, learn_basis: classic, note: "1 Vision Dust for each craft"}
+    notes:
+      - "Make the Runed Golden Rod when the trainer teaches it. In Classic, that is skill 150. It needs 1 Golden Rod, 1 Iridescent Pearl, 1 Greater Astral Essence and 1 Soul Dust."
+      - "Make the Runed Truesilver Rod when the trainer teaches it. In Classic, that is skill 200. It needs 1 Truesilver Rod, 1 Black Pearl, 1 Greater Mystic Essence and 1 Vision Dust."
+      - "Train Artisan before skill 225. In Classic, the trainer asks for skill 200. It is not confirmed for Forever."
+  - bracket: "Artisan (225–300)"
+    intro: |
+      You need Vision Dust, Dream Dust, Lesser Nether Essence and Illusion Dust. In Classic, Dream Dust comes from green items of item level 41 to 50, and Illusion Dust from item level 51 to 60. These are Classic-era values. They are not confirmed for Forever.
+    steps:
+      - {from: 225, to: 250, craft: "Enchant Gloves - Agility", learn: 210, learn_basis: classic, note: "1 Vision Dust for each craft. Yellow from 230"}
+      - {from: 250, to: 270, craft: "Enchant Bracer - Greater Strength", learn: 240, learn_basis: classic, note: "Yellow from 260"}
+      - {from: 270, to: 290, craft: "Enchant Boots - Greater Stamina", note: "A recipe item teaches it. No trainer recipe is orange here. Yellow from 280"}
+      - {from: 290, to: 300, craft: "Enchant Cloak - Superior Defense", note: "A recipe item teaches it. The trainer recipes are green here. Orange for the full step"}
+    notes:
+      - "Without a recipe item, stay on Enchant Bracer - Greater Strength until 280. It is yellow until 280."
+      - "The trainer alternatives after 280 are Enchant Weapon - Greater Striking, Enchant Chest - Stats and Enchant Gloves - Minor Haste. They are yellow until 285, 285 and 290. Each craft uses 1 Large Radiant Shard."
+      - "3 other recipes from recipe items are orange in this bracket. Enchant Gloves - Greater Agility is orange from 270 to 290. Enchant Chest - Major Stamina is orange from 275 to 295. Enchant Shield - Superior Spirit is orange from 280 to 300."
+      - "The recipe items of these 3 recipes do not bind on pickup, so other players can sell them to you."
+      - "If you do not have Enchant Cloak - Superior Defense, continue Enchant Boots - Greater Stamina to 300. It is yellow until 300."
+      - "In Classic, Enchant Cloak - Superior Defense needs a Runed Arcanite Rod. This is not confirmed for Forever. If you do not have the rod, also continue Enchant Boots - Greater Stamina."
+      - "The recipe item for Runed Arcanite Rod binds when you pick it up. The client gives learn skill 290 for it."
+      - "The Runed Arcanite Rod needs 1 Arcanite Rod, 1 Golden Pearl, 10 Illusion Dust, 4 Greater Eternal Essence, 4 Small Brilliant Shard and 2 Large Brilliant Shard."
+      - "The client does not say where the 2 recipe items for this bracket come from."
+
+picks_intro: |
+  These recipes are not necessary for the path, but they are useful. An enchant makes no item, so the client data gives no effect for it. The name of an enchant gives the slot and the statistic.
+
+picks:
+  - title: "Rods and reagents"
+    intro: |
+      You need the rods to enchant. The 2 reagent recipes make materials for other professions in Classic.
+    items:
+      - {recipe: "Runed Copper Rod", why: "The first rod. Make it before the first enchant"}
+      - {recipe: "Runed Silver Rod", why: "The second rod. It also needs 1 Shadowgem"}
+      - {recipe: "Runed Golden Rod", why: "The third rod"}
+      - {recipe: "Runed Truesilver Rod", why: "The fourth rod"}
+      - {recipe: "Runed Arcanite Rod", why: "The last rod. In Classic, the best enchants need it"}
+      - {recipe: "Dust to Motes", why: "New. It makes Mote of Magic for the first recipes"}
+      - {recipe: "Enchanted Thorium", why: "Not changed from Classic. In Classic, Blacksmithing uses it"}
+      - {recipe: "Enchanted Leather", why: "Not changed from Classic. In Classic, Leatherworking and Tailoring use it"}
+  - title: "Wands"
+    intro: |
+      A wand is useful for a Mage, a Priest or a Warlock at a low level. The client data does not give the damage of the new wands.
+    items:
+      - {recipe: "Novice's Practice Wand", why: "New. The first wand, before Lesser Magic Wand"}
+      - {recipe: "Lesser Magic Wand", why: "Not changed from Classic. In Classic, the trainer teaches it at skill 10"}
+      - {recipe: "Greater Magic Wand", why: "In Classic, the trainer teaches it at skill 70"}
+      - {recipe: "Lesser Mystic Wand", why: "The first wand that uses Star Wood"}
+      - {recipe: "Greater Mystic Wand", why: "The last wand from a trainer"}
+      - {recipe: "Twisted Nether Wand", why: "New. The first of 6 new wands with a recipe item that binds on pickup. 1 of the 6 costs Merchant's Favor"}
+      - {recipe: "Greater Eternal Wand", why: "New. Item level 60 and uncommon quality"}
+      - {recipe: "Torch of Light", why: "New. Epic quality and item level 65. It uses 2 Malleable Essence of Nature"}
+  - title: "Enchants for leveling"
+    intro: |
+      A trainer teaches all of these. Each one uses 1 to 3 materials. Some use a shard.
+    items:
+      - {recipe: "Enchant Chest - Inferior Stamina", why: "The first chest enchant. It uses only 1 dust"}
+      - {recipe: "Enchant Weapon - Minor Striking", why: "The first weapon enchant from a trainer"}
+      - {recipe: "Enchant 2H Weapon - Minor Impact", why: "The first trainer enchant for a 2-handed weapon"}
+      - {recipe: "Enchant Chest - Minor Stats", why: "The first chest enchant with the name Stats"}
+      - {recipe: "Enchant Boots - Minor Speed", why: "In Classic, Minor Speed increases the run speed. The effect in Forever is not confirmed"}
+      - {recipe: "Enchant Weapon - Striking", why: "The middle weapon enchant from a trainer"}
+      - {recipe: "Enchant 2H Weapon - Greater Impact", why: "The trainer enchant with the highest skill for 2-handed weapons"}
+      - {recipe: "Enchant Chest - Stats", why: "The trainer enchant with the highest skill for the chest"}
+  - title: "Level 60 enchants from Classic"
+    intro: |
+      A recipe item teaches each one. 9 of these 10 recipes are not changed from Classic Era in the client data. The recipes with learn skill 300 give no skill points, because the skill cap is 300.
+    items:
+      - {recipe: "Enchant Weapon - Crusader", why: "The standard melee weapon enchant in Classic. It uses 2 Righteous Orb"}
+      - {recipe: "Enchant Weapon - Fiery Weapon", why: "Changed from Classic: the reagents are different. It is orange until skill 285 and yellow until 305"}
+      - {recipe: "Enchant Weapon - Lifestealing", why: "Not changed from Classic"}
+      - {recipe: "Enchant Weapon - Agility", why: "Not changed from Classic. The recipe item binds on pickup"}
+      - {recipe: "Enchant Weapon - Mighty Intellect", why: "Not changed from Classic. It uses 15 Large Brilliant Shard"}
+      - {recipe: "Enchant Chest - Greater Stats", why: "The top chest enchant in the list"}
+      - {recipe: "Enchant Boots - Greater Agility", why: "Not changed from Classic"}
+      - {recipe: "Enchant Gloves - Threat", why: "A tank enchant in Classic. Not changed"}
+      - {recipe: "Enchant Cloak - Subtlety", why: "In Classic, it decreases threat. Not changed"}
+      - {recipe: "Enchant Cloak - Greater Fire Resistance", why: "Not changed from Classic. Useful where a raid needs fire resistance"}
+  - title: "New enchants from recipe items"
+    intro: |
+      These enchants are new in Forever. All recipe items bind on pickup, but not the item for Enchant Boots - Speed. The client does not say where the recipe items come from. The client data does not give the effects.
+    items:
+      - {recipe: "Enchant Bracer - Minor Healing Power", why: "The name suggests a healing enchant for low levels"}
+      - {recipe: "Enchant Bracer - Agility", why: "A new Agility enchant for bracers, between Lesser Agility and Greater Agility"}
+      - {recipe: "Enchant Bracer - Superior Agility", why: "The top Agility enchant for bracers in the list"}
+      - {recipe: "Enchant 2H Weapon - Lesser Agility", why: "The name suggests an enchant for Hunters"}
+      - {recipe: "Enchant 2H Weapon - Strength", why: "The name suggests Strength. It turns grey at skill 300, so do not use it for skill points"}
+      - {recipe: "Enchant Gloves - Lotus Claw", why: "The name does not make the effect plain. It turns grey at skill 300"}
+      - {recipe: "Enchant Gloves - Advanced Skinning", why: "The name suggests a Skinning skill enchant"}
+      - {recipe: "Enchant Boots - Speed", why: "The name suggests a higher rank of Minor Speed. This recipe item does not bind on pickup"}
+      - {recipe: "Enchant Shield - Critical Strike", why: "The name suggests a critical strike bonus on a shield"}
+      - {recipe: "Enchant Shield - Excellent Stamina", why: "The top Stamina enchant for shields in the list"}
+      - {recipe: "Enchant Off-Hand - Superior Intellect", why: "1 of 3 enchants for the new off-hand slot"}
+      - {recipe: "Enchant Off-Hand - Excellent Spirit", why: "An off-hand enchant. The name suggests Spirit"}
+  - title: "Merchant's Favor: buy these first"
+    intro: |
+      The Alliance merchant Alynsia sells 39 Enchanting recipes for Merchant's Favor. On the beta, 10 recipes cost 45 Favor, 13 cost 120, 1 cost 180 and 15 cost 240. The prices are from a beta log of 20 September 2026, not from the client. All 39 recipe items bind on pickup.
+    items:
+      - {recipe: "Enchant Weapon - Insight", why: "45 Favor on the beta. 1 of 3 new weapon enchants at the lowest price. The names do not make the effects plain"}
+      - {recipe: "Enchant Weapon - Recovery", why: "45 Favor on the beta. The name does not make the effect plain"}
+      - {recipe: "Enchant Weapon - Revelation", why: "45 Favor on the beta. The name does not make the effect plain"}
+      - {recipe: "Orb of Souls", why: "45 Favor on the beta. A rare off-hand item of item level 30. It uses no reagents from other professions"}
+      - {recipe: "Enchant Necklace - Spell Power", why: "120 Favor on the beta. The necklace slot is new, so it has no other enchants"}
+      - {recipe: "Enchant Necklace - Healing Power", why: "120 Favor on the beta. For healers"}
+      - {recipe: "Enchant Necklace - Strength", why: "120 Favor on the beta. For melee classes"}
+      - {recipe: "Enchant Necklace - Agility", why: "120 Favor on the beta. For Rogues, Hunters and Feral Druids"}
+      - {recipe: "Enchant Necklace - Deflection", why: "120 Favor on the beta. The name suggests a tank enchant"}
+      - {recipe: "Enchant Chest - Absorption", why: "120 Favor on the beta. The only new chest enchant. The name does not make the effect plain"}
+      - {recipe: "Enchant Cloak - Agility", why: "240 Favor on the beta. It uses no shards and no crystals"}
+      - {recipe: "Enchant Bracer - Greater Spellpower", why: "240 Favor on the beta. For casters"}
+      - {recipe: "Enchant Bracer - Superior Intellect", why: "240 Favor on the beta. For casters. It uses only 1 type of material"}
+      - {recipe: "Enchant Gloves - Superior Strength", why: "240 Favor on the beta. For melee classes"}
+      - {recipe: "Enchant 2H Weapon - Spellblasting", why: "240 Favor on the beta. The name suggests a caster enchant for staves"}
+  - title: "Merchant's Favor: staves, off-hands and relics"
+    intro: |
+      These recipes make items of rare quality. The client data does not give their statistics. The names Idol, Libram and Totem suggest relics for Druids, Paladins and Shamans.
+    items:
+      - {recipe: "Glimmering Staff", why: "Item level 30. 1 of 2 staves at skill 140"}
+      - {recipe: "Soulstaff", why: "Item level 30. The second staff of this tier"}
+      - {recipe: "Radiant Staff", why: "Item level 50. 1 of 2 staves at skill 220"}
+      - {recipe: "Dreamstaff", why: "Item level 50"}
+      - {recipe: "Truesilver Conduit", why: "An off-hand item of item level 50"}
+      - {recipe: "Brilliant Wand", why: "180 Favor on the beta. A rare wand of item level 60. It is orange from skill 275 to 300, so each craft gives a point"}
+      - {recipe: "Mystic Mushroom", why: "A relic of item level 25. 1 of 3 relics at skill 130"}
+      - {recipe: "Talons of Wrath", why: "A relic of item level 45"}
+      - {recipe: "Idol of the Dream", why: "A relic of item level 60"}
+      - {recipe: "Libram of Holy Alacrity", why: "A relic of item level 60"}
+      - {recipe: "Totem of Thunder", why: "A relic of item level 65"}
+  - title: "Epic relics and curios"
+    intro: |
+      The 5 epic relics have the same reagents. Each one uses 1 Malleable Essence of Nature and 1 Nexus Crystal. The recipe items of the 5 relics and of the 3 new Hearts bind on pickup.
+    items:
+      - {recipe: "Idol of Swiftness", why: "New. Epic quality and item level 65"}
+      - {recipe: "Idol of the Ursine Twins", why: "New. Epic quality and item level 65"}
+      - {recipe: "Libram of Infusion", why: "New. Epic quality and item level 65"}
+      - {recipe: "Steadfast Libram", why: "New. Epic quality and item level 65"}
+      - {recipe: "Totem of Urgency", why: "New. Epic quality and item level 65"}
+      - {recipe: "Smoking Heart of the Mountain", why: "Not changed from Classic. In Classic, it is a trinket with fire resistance"}
+      - {recipe: "Frozen Heart of the Mountain", why: "New. 1 of 3 new Hearts. Each uses a different elemental essence"}
+  - title: "Oils and profession gloves"
+    intro: |
+      The oils are items that you can sell. Each oil needs a vial and 1 type of herb or seed.
+    items:
+      - {recipe: "Minor Wizard Oil", why: "The first oil. The reagents are changed from Classic"}
+      - {recipe: "Lesser Mana Oil", why: "A mana oil for healers in Classic. The reagents are changed in Forever"}
+      - {recipe: "Wizard Oil", why: "Not changed from Classic"}
+      - {recipe: "Brilliant Wizard Oil", why: "Not changed from Classic. The raid oil for damage casters in Classic"}
+      - {recipe: "Brilliant Mana Oil", why: "Not changed from Classic. The raid oil for healers in Classic"}
+      - {recipe: "Enchant Gloves - Herbalism", why: "The name suggests a Herbalism skill bonus"}
+      - {recipe: "Enchant Gloves - Mining", why: "The name suggests a Mining skill bonus"}
+      - {recipe: "Enchant Gloves - Riding Skill", why: "In Classic, it increases the mount speed. The effect in Forever is not confirmed"}
+
+sources_note: |
+  A trainer teaches 65 of the 225 recipes. The client holds the learn skill for only 5 of them, and all 5 are skill 1 recipes. For the other 60, the server holds the skill that the trainer asks for.
+
+  Recipe items teach the other 160 recipes. The client does not say where these items come from. 94 of the recipe items bind when you pick them up, so you cannot buy them from other players.
+
+  39 of these 94 recipes cost [Merchant's Favor](../systems/economy.md). The Alliance merchant Alynsia sells them at Three Corners in Redridge Mountains, the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes also need reputation.
+
+  The client also holds 37 Enchanting recipes from Season of Discovery under a separate heading. No merchant sells them, so this guide does not list them.
+
+camp_note: |
+  A trainer teaches the Enchanted Lute. The client does not hold the trainer skill, and the recipe is yellow at skill 20. Blueprints teach the Arcane Salvager at skill 140 and the Arcane Forge at skill 300. The Arcane Salvager blueprint drops from Rath'mael in the Ruins of Lordaeron. The wiki does not give the drop source of the Arcane Forge blueprint.
+
+  The Enchanted Lute gives armor, statistics and resistances. It does not stack with Mark of the Wild. The wiki and the client data do not give the effects of the Arcane Salvager and the Arcane Forge. The Arcane Forge uses 1 Maker's Spark. The client data does not give the source of Maker's Spark.
+
+tips:
+  - "Disenchant each green item that you do not use. The path needs many dusts, and few essences."
+  - "Put the path enchants on your own bracers, chest, boots, cloak and gloves. A new enchant replaces the old one."
+  - "Find a Blacksmith for the inert rods before you start. You cannot enchant without a runed rod."
+  - "Keep the Mote of Magic from Dust to Motes. The Runed Copper Rod and the Novice's Practice Wand also use motes."
+  - "Simple Wood and Star Wood are reagents for the wands, the staves and the Enchanted Lute. In Classic, trade supplies vendors sell Simple Wood and Star Wood. This is not confirmed for Forever."
+  - "Many recipes have learn skill 300. They give no skill points, because the skill cap is 300."
+  - "Do not buy Enchant 2H Weapon - Strength or Enchant Gloves - Lotus Claw for skill points. They turn grey at skill 300, and they use shards."
+  - "Dusts, essences and shards come from Disenchant, not from a gathering profession. Tailoring makes items to disenchant."
+  - "The Merchant's Favor recipes use reagents from other professions, for example dyes, Sulfuric Acid, Pyrite and scrolls. Read the reagents before you buy a recipe."
+  - "Skill 150, 225 and 300 in Enchanting each count for the Tradeskills points of [Legacy](../characters/legacy.md)."
+
+faq:
+  - q: "Where do I get an enchanting rod?"
+    a: "You make the Runed rod from an inert rod and enchanting materials. Blacksmithing makes the inert rods. Copper Rod is new as a Blacksmithing recipe. A trainer teaches the first 4 Runed rods. A recipe item teaches the Runed Arcanite Rod."
+  - q: "What do the new enchants do?"
+    a: "The client data does not give the effect of an enchant. The recipe name gives the slot and the statistic. Read the tooltip in the game for the number."
+  - q: "Where are the Health and Mana enchants?"
+    a: "They are not in the recipe list. The Stamina and Intellect chest enchants have the skill colours of the Classic Health and Mana chest enchants. This is a comparison with Classic-era values. The names suggest Stamina and Intellect in place of Health and Mana."
+  - q: "At what skill does the trainer teach each enchant?"
+    a: "The client does not hold the trainer skill. The path uses Classic-era values for recipes with a Classic name, and it marks the other values as estimates."
+  - q: "Can I get to 300 with trainer recipes only?"
+    a: "Yes, but it is slow. From skill 290, each trainer recipe is green or grey, and a green recipe gives few points. The path uses 2 recipe items for the last 30 points."
+  - q: "How many materials do I need for 1 to 300?"
+    a: "The materials table gives the estimate for each bracket. The real number changes, because yellow recipes do not always give a point."
+
+sources: []

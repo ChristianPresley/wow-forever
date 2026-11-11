@@ -166,6 +166,27 @@ nav:
           - Warrior: characters/classes/warrior.md
       - Legacy System: characters/legacy.md
       - Professions: characters/professions.md
+      - Profession Guides:
+          - professions/index.md
+          - professions/alchemy.md
+          - professions/alchemy-recipes.md
+          - professions/blacksmithing.md
+          - professions/blacksmithing-recipes.md
+          - professions/enchanting.md
+          - professions/enchanting-recipes.md
+          - professions/engineering.md
+          - professions/engineering-recipes.md
+          - professions/leatherworking.md
+          - professions/leatherworking-recipes.md
+          - professions/tailoring.md
+          - professions/tailoring-recipes.md
+          - professions/herbalism.md
+          - professions/mining.md
+          - professions/skinning.md
+          - professions/cooking.md
+          - professions/cooking-recipes.md
+          - professions/first-aid.md
+          - professions/fishing.md
       - Leveling, Mounts & Rep: characters/leveling.md
       - Customization & Transmog: characters/customization.md
   - World:

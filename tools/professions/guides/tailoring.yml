@@ -1,0 +1,281 @@
+profession: Tailoring
+kind: crafting
+icon: material-needle
+description: "Tailoring guide for WoW: Forever: a path from skill 1 to 300, the bags and reagent bags, the Merchant's Favor patterns, and all 417 recipes."
+
+intro: |
+  Tailoring changes cloth into bolts, and bolts into bags and cloth armor. It needs no gathering profession, because cloth drops from humanoids. In Forever it also makes the bags for the new **reagent bag** slot. It has 183 new recipes, and most of them are cloth armor.
+
+card:
+  use: "Bags, reagent bags and cloth armor from cloth. The best crafting profession for Mages, Priests and Warlocks."
+  pairs: "Enchanting, which disenchants the armor that you make. First Aid uses the same cloth."
+
+glance:
+  - ["Best for", "Mages, Priests and Warlocks. Each class can use the bags"]
+  - ["Main materials", "Linen, Wool, Silk, Mageweave and Runecloth, with thread and dye"]
+  - ["Skill cap", "300"]
+  - ["Camp features", "Faction Banner, Spinning Wheel, Loom"]
+
+new:
+  - "**Reagent bags.** Forever has a reagent bag slot. Tailoring makes 7 bags for it, from the Linen Reagent Bag at skill 5 to the Bottomless Reagent Bag at skill 300."
+  - "**183 new recipes.** Almost all of them are cloth armor. Recipe items teach them, and a trainer teaches only the 2 Faction Banners."
+  - "**67 Merchant's Favor patterns.** Mivin Shadowweave sells them at Three Corners, the Alliance camp. They include 6 color sets for skill 60 to 125 and 2 reagent bags."
+  - "**16 Stormsewn patterns** (Azure and Cloudy). They make uncommon armor from skill 50, and the recipe items bind when you pick them up."
+  - "**18 Filigreed patterns** make rare gowns, leggings and circlets at skill 75, 100 and 125."
+  - "**New level 60 epics.** The Conviction, Manaflare and Demonheart patterns and 5 other epics use a new reagent, Malleable Essence of Nature."
+  - "**Changed recipes.** 209 Classic recipes changed. The client data does not say what changed in each recipe. Runecloth Belt, for example, turns yellow at 225, and its Classic-era value is 270."
+  - "**Mooncloth** has learn skill 230 and stays orange until 270. It needs 2 Felcloth, as in Classic. Its recipe item binds when you pick it up. The client data does not give a cooldown."
+  - "**3 camp features.** The Faction Banner gives a Spirit buff at a camp."
+  - "No Classic recipe is gone. 25 recipes are the same as in Classic."
+
+path_intro: |
+  The path uses trainer recipes to skill 240. After that, the trainer has no recipe that gives points at a low cost, so the path uses 3 recipe items.
+
+  The client does not hold the skill that the trainer asks for. Each learn skill with the label *estimate* is the yellow skill minus the Classic-era difference between learn and yellow for that recipe. The Warcraft Wiki pattern list gives the same numbers for the bolts, Woolen Cape, Black Mageweave Leggings and Runecloth Belt. If the trainer does not offer a recipe, continue the step before it.
+
+  Make bolts only when you need them. Bolts of each cloth also give skill points for a short range, and each step note shows that range.
+
+path:
+  - bracket: "Apprentice (1–75)"
+    intro: |
+      Linen Cloth drops from humanoids of level 1 to 19, as Warcraft Tavern reports. Buy Coarse Thread from a trade supplies vendor.
+    steps:
+      - {from: 1, to: 30, craft: "Bolt of Linen Cloth", note: "Yellow from 25. Keep all the bolts for the next steps"}
+      - {from: 30, to: 50, craft: "Linen Belt", learn: 15, learn_basis: classic, note: "1 bolt and 1 Coarse Thread. Orange for the full step"}
+      - {from: 50, to: 60, craft: "Reinforced Linen Cape", learn: 35, learn_basis: estimate, note: "2 bolts and 3 Coarse Thread"}
+      - {from: 60, to: 75, craft: "Bolt of Woolen Cloth", learn: 55, learn_basis: estimate, note: "Yellow from 70. Keep the bolts. If the trainer does not offer it, make Simple Kilt, which is orange until 75"}
+    notes:
+      - "At skill 50, train Journeyman at a Tailoring trainer. This is the Classic-era value, and it needs character level 10."
+      - "Make a Linen Reagent Bag when you have the pattern. It is orange until skill 30, and it fills your reagent bag slot."
+      - "The trainer teaches the Faction Banner for your camp. It needs 1 linen bolt and 1 Coarse Thread, and it is grey at skill 25."
+  - bracket: "Journeyman (75–150)"
+    intro: |
+      Wool Cloth drops from humanoids of level 15 to 30, and Silk Cloth from level 26 to 40. These are the ranges from Warcraft Tavern. In Classic, Wool Cloth is the cloth with the shortest supply. This is not confirmed for Forever. This bracket uses few woolen bolts.
+    steps:
+      - {from: 75, to: 95, craft: "Woolen Cape", learn: 55, learn_basis: estimate, note: "1 woolen bolt and 1 Fine Thread. Yellow from 80, but it is the cheapest wool recipe"}
+      - {from: 95, to: 100, craft: "Double-stitched Woolen Shoulders", learn: 85, learn_basis: estimate, note: "3 woolen bolts and 2 Fine Thread. Orange for the full step"}
+      - {from: 100, to: 110, craft: "Bolt of Silk Cloth", learn: 100, learn_basis: estimate, note: "Orange for the full step. Keep all the bolts. If the trainer does not offer it, continue Double-stitched Woolen Shoulders"}
+      - {from: 110, to: 120, craft: "Double-stitched Woolen Shoulders", learn: 85, learn_basis: estimate, note: "Yellow for the full step"}
+      - {from: 120, to: 135, craft: "Azure Silk Hood", learn: 120, learn_basis: estimate, note: "2 silk bolts, 2 Blue Dye and 1 Fine Thread. Yellow from 130"}
+      - {from: 135, to: 145, craft: "Formal White Shirt", learn: 135, learn_basis: estimate, note: "In Classic, a vendor sells Bleach. If you have Mageweave Cloth, make Bolts of Mageweave from 140 to 145 in place of shirts. They are orange in that range"}
+      - {from: 145, to: 150, craft: "Red Swashbuckler's Shirt", learn: 140, learn_basis: estimate, note: "Orange until 150"}
+    notes:
+      - "At skill 125, train Expert. This is the Classic-era value, and it needs character level 20."
+      - "The estimate for Bolt of Silk Cloth is skill 100, and for Bolt of Mageweave skill 140. Bolt of Mageweave is grey at 150."
+      - "If you have no Mageweave Cloth at skill 140, do not stop. The path needs no mageweave before skill 170."
+      - "Keep 5 silk bolts for the Spinning Wheel. Its blueprint needs skill 140."
+  - bracket: "Expert (150–225)"
+    intro: |
+      Mageweave Cloth drops from humanoids of level 41 to 50, and Runecloth from level 51 to 60. These are the ranges from Warcraft Tavern.
+    steps:
+      - {from: 150, to: 170, craft: "Crimson Silk Vest", learn: 150, learn_basis: estimate, note: "4 silk bolts, 2 Red Dye and 2 Fine Thread. Orange for the full step"}
+      - {from: 170, to: 185, craft: "Black Mageweave Leggings", learn: 170, learn_basis: estimate, note: "2 mageweave bolts and 3 Silken Thread. Black Mageweave Vest has the same reagents and the same colors"}
+      - {from: 185, to: 200, craft: "Black Mageweave Gloves", learn: 180, learn_basis: estimate, note: "Yellow from 195"}
+      - {from: 200, to: 205, craft: "Black Mageweave Headband", learn: 190, learn_basis: estimate, note: "Orange for the full step. Black Mageweave Shoulders has the same reagents and the same colors"}
+      - {from: 205, to: 210, craft: "Bolt of Runecloth", learn: 205, learn_basis: estimate, note: "Orange for the full step. Keep the bolts for Runecloth Belt. If the trainer does not offer it, continue Black Mageweave Headband"}
+      - {from: 210, to: 225, craft: "Runecloth Belt", learn: 210, learn_basis: estimate, note: "3 runecloth bolts and 1 Rune Thread. Orange for the full step"}
+    notes:
+      - "At skill 200, train Artisan. This is the Classic-era value, and it needs character level 35. In Classic, only 1 trainer for each faction teaches Artisan. This is not confirmed for Forever."
+      - "The estimate for Bolt of Runecloth is skill 205. It is orange only until 210 and grey at 215."
+      - "If you have no Runecloth at skill 205, continue Black Mageweave Headband. It is yellow from 205 and green at 220."
+      - "If the trainer does not offer Black Mageweave Leggings at 170, make Crimson Silk Pantaloons. They are orange until 180."
+  - bracket: "Artisan (225–300)"
+    intro: |
+      This bracket is the most expensive part. Runecloth Belt is the last trainer recipe that gives points at a low cost. The 3 recipes after it come from recipe items, and these recipe items do not bind. The client does not say where the recipe items come from. The Warcraft Wiki pattern list shows them as drops.
+    steps:
+      - {from: 225, to: 240, craft: "Runecloth Belt", learn: 210, learn_basis: estimate, note: "Yellow for the full step. Green at 240"}
+      - {from: 240, to: 250, craft: "Wizardweave Leggings", note: "A recipe item teaches it, because the trainer has no recipe for this range. Yellow from 245. Each craft needs 1 Dream Dust"}
+      - {from: 250, to: 275, craft: "Runecloth Headband", note: "A recipe item teaches it. Yellow from 265. Each craft needs 2 Ironweb Spider Silk"}
+      - {from: 275, to: 300, craft: "Runecloth Shoulders", note: "A recipe item teaches it. Yellow until 290, then green. The last 10 points need many crafts"}
+    notes:
+      - "If you do not have Wizardweave Leggings, Runecloth Pants is orange from 240 to 255. It needs 2 Ironweb Spider Silk for each craft."
+      - "If you do not have Runecloth Headband, use Runecloth Pants to 270. Ghostweave Mantle and Earthenweave Vest are also orange from 250 to 265."
+      - "If you do not have Runecloth Shoulders, use Ghostweave Hood, Earthenweave Crown or Wizardweave Turban. They have the same colors, and their recipe items do not bind."
+      - "Mooncloth is orange from skill 230 to 270. Each Mooncloth that you make in this range gives 1 point. The client data does not give a cooldown."
+      - "Mooncloth Shoulders stays yellow from 290 to 300, but each craft needs 5 Mooncloth. Use it only if Felcloth is cheap on your realm."
+      - "The client data shows no recipe item for Mooncloth Boots, which is yellow from 285. In Classic, a quest teaches it, not a trainer. This is not confirmed for Forever. Each craft needs 4 Mooncloth and 2 Black Pearl."
+      - "Wowhead's guide uses a different route from 234: Runecloth Cloak, Runecloth Boots, Runecloth Cuffs, Wisdom of the Timbermaw, and then the 3 Venomspew recipes. It says that vendors sell these patterns. Their recipe items bind when you pick them up. The guide does not say which reputation each vendor asks for."
+
+picks_intro: |
+  These recipes are not necessary for the path, but they are useful. The source column shows where each recipe comes from. The client data does not give the stats of an item, so read the tooltip in the game before you buy materials.
+
+picks:
+  - title: "Bags"
+    intro: |
+      Each new character needs bags. The bag recipes changed from Classic. The client data does not give the number of slots.
+    items:
+      - {recipe: "Linen Bag", why: "The first bag. You can make it at skill 1"}
+      - {recipe: "Woolen Bag", why: "A trainer teaches it. It is yellow at 75"}
+      - {recipe: "Small Silk Pack", why: "The trainer bag for the silk tier"}
+      - {recipe: "Mageweave Bag", why: "The trainer bag for the mageweave tier. It needs only bolts and thread"}
+      - {recipe: "Runecloth Bag", why: "The first runecloth bag. It needs Magenta Dye and Cerulean Dye"}
+      - {recipe: "Mooncloth Bag", why: "Needs 1 Mooncloth"}
+      - {recipe: "Bottomless Bag", why: "The largest bag in Classic. Its learn skill is 300, the skill cap, so it gives no skill points. It needs 12 Mooncloth"}
+  - title: "Reagent bags"
+    intro: |
+      These bags go in the new reagent bag slot. The wiki gives 6 slots for the Linen Reagent Bag. The client data does not give the slots of the other bags.
+    items:
+      - {recipe: "Linen Reagent Bag", why: "Make it first. The Warcraft Wiki pattern list says that a vendor sells the pattern"}
+      - {recipe: "Woolen Reagent Bag", why: "The next reagent bag. It needs 1 Cerulean Dye"}
+      - {recipe: "Silk Reagent Bag", why: "The Warcraft Wiki pattern list gives a quest as the source"}
+      - {recipe: "Mageweave Reagent Bag", why: "Costs 60 Merchant's Favor. Buy it before the armor patterns"}
+      - {recipe: "Runecloth Reagent Bag", why: "Costs 60 Merchant's Favor"}
+      - {recipe: "Mooncloth Reagent Bag", why: "Needs 1 Mooncloth and 10 Viridian Dye"}
+      - {recipe: "Bottomless Reagent Bag", why: "The last reagent bag. It needs 12 Mooncloth"}
+  - title: "Bags for one profession or class"
+    intro: |
+      Most of these bags are Classic recipes with changed reagents or skills. In Classic they hold enchanting materials, herbs or soul shards.
+    items:
+      - {recipe: "Enchanted Mageweave Pouch", why: "The first bag for enchanting materials in Classic"}
+      - {recipe: "Enchanted Runecloth Bag", why: "The next bag for enchanting materials in Classic"}
+      - {recipe: "Big Bag of Enchantment", why: "The largest bag for enchanting materials in Classic"}
+      - {recipe: "Cenarion Herb Bag", why: "A herb bag in Classic"}
+      - {recipe: "Satchel of Cenarius", why: "The largest herb bag in Classic. It needs 1 Black Lotus"}
+      - {recipe: "Soul Pouch", why: "The first soul shard bag for Warlocks in Classic"}
+      - {recipe: "Felcloth Bag", why: "The client gives learn skill 285 but yellow at 260, so it is green when you learn it"}
+      - {recipe: "Core Felcloth Bag", why: "The same as in Classic. The largest soul shard bag in Classic"}
+      - {recipe: "Felblood Soul Bag", why: "New and epic. The name suggests a soul shard bag. It needs only Felcloth and runecloth bolts"}
+  - title: "Linen and wool armor"
+    intro: |
+      The Stormsewn recipe items bind when you pick them up. The Warcraft Wiki pattern list says that vendors sell them. The Azure and Cloudy pieces of a slot have the same reagents at this tier.
+
+      The Filigreed and Novice recipes give points for only 5 skill levels after you learn them. Make them for the item, not for skill.
+    items:
+      - {recipe: "Azure Stormsewn Cuffs", why: "The first Stormsewn piece. Only linen bolts and Coarse Thread"}
+      - {recipe: "Azure Stormsewn Handwraps", why: "The Stormsewn gloves"}
+      - {recipe: "Azure Stormsewn Vest", why: "The Stormsewn chest piece. It is grey at 70, so make it early"}
+      - {recipe: "Cloudy Stormsewn Leggings", why: "The Cloudy leggings. Read the tooltips to compare Azure and Cloudy"}
+      - {recipe: "Novice Arcanist's Sash", why: "A rare belt at skill 50. It needs 2 Minor Mana Potion"}
+      - {recipe: "Novice Ardent's Sash", why: "A rare belt at skill 50. It needs 2 Minor Healing Potion, which First Aid makes"}
+      - {recipe: "Filigreed Shadow Gown", why: "A rare chest piece. Warcraft Tavern says that the Filigreed recipes drop in low-level dungeons"}
+      - {recipe: "Phoenix Bindings", why: "New rare bracers. They need woolen bolts and Flask of Oil"}
+  - title: "Silk and mageweave armor"
+    intro: |
+      The Filigreed recipes in this tier also give points for only 5 skill levels.
+    items:
+      - {recipe: "Filigreed Shadow Leggings", why: "Rare leggings at skill 100. The 6 Filigreed variants differ in 1 reagent"}
+      - {recipe: "Spidersilk Boots", why: "A rare recipe from Classic. The client data shows no recipe item for it"}
+      - {recipe: "Filigreed Shadow Circlet", why: "A rare head piece at skill 125"}
+      - {recipe: "Invoker's Mantle", why: "New shoulders. They need only silk bolts, thread and dye"}
+      - {recipe: "Invoker's Cord", why: "The belt that goes with Invoker's Mantle"}
+      - {recipe: "Earthen Silk Gloves", why: "One of 6 new Earthen silk recipes. Each needs Elemental Earth"}
+      - {recipe: "Azure Stormsewn Cowl", why: "The Stormsewn head piece for the silk tier"}
+      - {recipe: "Cloudy Stormsewn Epaulets", why: "The Stormsewn shoulders for the silk tier. Cloudy uses Bleach, and Azure uses Blue Dye"}
+      - {recipe: "Robe of Power", why: "A rare trainer robe from Classic. It needs 2 of each elemental"}
+      - {recipe: "Gilded Slippers", why: "One of 6 rare Slippers. It gives points only from 140 to 145"}
+      - {recipe: "Gilded Handwraps", why: "Of the 6 rare mageweave Handwraps, only this pattern does not cost Merchant's Favor. Its recipe item does not bind"}
+      - {recipe: "Dreamweave Circlet", why: "A rare trainer recipe from Classic"}
+  - title: "Merchant's Favor patterns"
+    intro: |
+      Mivin Shadowweave at Three Corners, the Alliance camp, sells 67 patterns. The data does not name the Horde merchant. The prices are from a beta merchant window of 20 September 2026. All these recipe items bind when you pick them up. Each set has color variants that differ in 1 reagent. Warcraft Tavern says that the variants are for different types of damage or healing. Buy the 2 reagent bags first, then 1 color set for your class.
+    items:
+      - {recipe: "Shadow Boots", why: "30 Favor. The first piece of a color set, at skill 60"}
+      - {recipe: "Shadow Gloves", why: "30 Favor. The color sets are Flame, Pearly, Pristine, Shadow, Shining and Silky"}
+      - {recipe: "Shadow Sash", why: "30 Favor. The first piece that uses silk bolts"}
+      - {recipe: "Shadow Circlet", why: "30 Favor. It needs 2 Greater Astral Essence and 1 Silver Bar"}
+      - {recipe: "Shadow Gown", why: "30 Favor. The chest piece of the set"}
+      - {recipe: "Shadow Leggings", why: "30 Favor. The last piece of the set, at skill 125"}
+      - {recipe: "Fiery Handwraps", why: "60 Favor. Rare gloves from 12 mageweave bolts"}
+      - {recipe: "Netherflame Shoulders", why: "60 Favor. One of 6 Nether shoulders. Each needs 8 of a rare material"}
+      - {recipe: "Netherflame Cuffs", why: "60 Favor. Each craft needs 18 mageweave bolts"}
+      - {recipe: "Fiery Waistcord", why: "60 Favor. A rare belt for the runecloth tier"}
+      - {recipe: "Fiery Sandals", why: "90 Favor. The most expensive Tailoring pattern from this merchant"}
+  - title: "Runecloth armor"
+    intro: |
+      The Earthenweave recipes are new. Each needs Essence of Earth. Their recipe items do not bind.
+    items:
+      - {recipe: "Earthenweave Gloves", why: "The first Earthenweave piece, with Earthenweave Cord"}
+      - {recipe: "Earthenweave Vest", why: "The Earthenweave chest piece"}
+      - {recipe: "Ghostweave Mantle", why: "New. It adds a shoulder piece to the Classic Ghostweave recipes"}
+      - {recipe: "Runecloth Cuffs", why: "New bracers. Wowhead's guide uses them from 260 to 280"}
+      - {recipe: "Gilded Gloves", why: "One of 6 rare Gloves. It gives points only from 235 to 240"}
+      - {recipe: "Swarmtender's Gloves", why: "New and rare. The 3 Swarmtender's recipes need Essence of Water"}
+      - {recipe: "Venomspew Gloves", why: "New and rare. The 3 Venomspew recipes need Essence of Air"}
+      - {recipe: "Robe of Winter Night", why: "A rare Classic robe that needs 12 Felcloth"}
+  - title: "Level 60 gear from Classic"
+    intro: |
+      These recipes are in Classic too. Most of them have changed skill numbers. It is not confirmed that their stats are the same.
+    items:
+      - {recipe: "Truefaith Vestments", why: "The epic healer robe in Classic"}
+      - {recipe: "Robe of the Archmage", why: "The epic Mage robe in Classic"}
+      - {recipe: "Robe of the Void", why: "The epic Warlock robe in Classic"}
+      - {recipe: "Gloves of Spell Mastery", why: "Epic gloves in Classic"}
+      - {recipe: "Mooncloth Robe", why: "A rare robe from 4 Mooncloth"}
+      - {recipe: "Cloak of Warding", why: "A rare cloak for tanks in Classic"}
+      - {recipe: "Flarecore Gloves", why: "Fire resistance in Classic. The same as in Classic"}
+      - {recipe: "Glacial Vest", why: "Frost resistance in Classic. The same as in Classic"}
+      - {recipe: "Sylvan Vest", why: "Nature resistance in Classic. The same as in Classic"}
+      - {recipe: "Bloodvine Vest", why: "A caster damage set in Classic. The same as in Classic"}
+  - title: "New level 60 epics"
+    intro: |
+      21 new recipes need Malleable Essence of Nature. The client data does not give the source of this reagent or the stats of the items. All these recipe items bind when you pick them up. You learn all these recipes at skill 300, so they give no skill points.
+    items:
+      - {recipe: "Manaflare Mantle", why: "One of 4 Manaflare pieces: shoulders, gloves, pants and boots"}
+      - {recipe: "Demonheart Spaulders", why: "One of 4 Demonheart pieces"}
+      - {recipe: "Mantle of Conviction", why: "One of 8 Conviction pieces. Each slot has 2 recipes with the same reagents"}
+      - {recipe: "Pauldrons of Conviction", why: "The second Conviction shoulder recipe"}
+      - {recipe: "Robes of Fiery Devastation", why: "Item level 65. The name suggests fire damage"}
+      - {recipe: "Mana-infused Cord", why: "An item level 65 belt"}
+      - {recipe: "Rime-encrusted Boots", why: "Item level 65 boots. The name suggests frost"}
+      - {recipe: "Cloak of Earth and Sky", why: "An item level 65 cloak. It needs only 1 Malleable Essence of Nature"}
+      - {recipe: "Fel Cape", why: "An item level 65 cloak with the same reagents as Cloak of Earth and Sky"}
+  - title: "Reagents"
+    items:
+      - {recipe: "Mooncloth", why: "Many level 60 recipes and 5 bags need it. Get the recipe at skill 230, because it is orange until 270"}
+  - title: "Shirts and clothes without stats"
+    intro: |
+      Most of these recipes are from Classic. They are for appearance.
+    items:
+      - {recipe: "Tuxedo Shirt", why: "Part of the Tuxedo, with Tuxedo Pants and Tuxedo Jacket"}
+      - {recipe: "White Wedding Dress", why: "A dress for events"}
+      - {recipe: "Black Swashbuckler's Shirt", why: "A black shirt from Classic. The recipe item binds when you pick it up"}
+      - {recipe: "Admiral's Hat", why: "A hat that needs 6 Long Elegant Feather"}
+      - {recipe: "Red Winter Clothes", why: "New in the client data. The name suggests the winter holiday"}
+      - {recipe: "Festival Dress", why: "A holiday dress in Classic"}
+      - {recipe: "Gordok Ogre Suit", why: "A disguise for Dire Maul in Classic. The same as in Classic"}
+
+sources_note: |
+  A trainer teaches 85 of the 417 recipes. The client does not hold the skill that the trainer asks for. Recipe items teach the other recipes, and the client does not say where these items come from.
+
+  The recipe items for 161 recipes bind when you pick them up. Mivin Shadowweave sells 67 of them for Merchant's Favor at Three Corners in Redridge Mountains. Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes also need reputation. The other 94 include the Stormsewn, Swarmtender's, Venomspew, Conviction, Manaflare and Demonheart patterns and Mooncloth.
+
+  The Warcraft Wiki pattern list gives a vendor as the source of the Stormsewn, Swarmtender's, Venomspew, Conviction, Manaflare and Demonheart patterns. It gives drops as the source of the Filigreed patterns. These sources are not in the client data.
+
+  The client data shows no recipe item for Mooncloth Boots and Gordok Ogre Suit. In Classic, quests teach these 2 recipes. This is not confirmed for Forever.
+
+  The client also holds 54 Tailoring recipes from Season of Discovery. No merchant sells them, so this guide does not list them.
+
+camp_note: |
+  A trainer teaches the Faction Banner. It has a Horde recipe and an Alliance recipe. Blueprints teach the Spinning Wheel at skill 140 and the Loom at skill 300. The Spinning Wheel blueprint drops in the City of Dalaran dungeon. The source of the Loom blueprint is not known.
+
+  The Faction Banner gives a Spirit buff at a camp. The client data and the wiki do not give the effect of the Spinning Wheel or the Loom. The Loom needs Bottled Screams and Simple Wood. The client data does not give the source of Bottled Screams. In Classic, trade supplies vendors sell Simple Wood and Star Wood. This is not confirmed for Forever.
+
+tips:
+  - "Keep 2 stacks of each cloth for First Aid. Tailoring uses much more cloth than First Aid."
+  - "Do not sell bolts. Almost all recipes use bolts, not cloth."
+  - "In Classic, a trade supplies vendor sells thread, Bleach and the basic dyes. Cerulean Dye, Magenta Dye and Viridian Dye are new Alchemy trainer recipes. Buy them from an Alchemist."
+  - "Collect Wool Cloth early. In Classic, Wool Cloth has the shortest supply of all cloth. This is not confirmed for Forever."
+  - "Make the trainer bag of each tier for your characters: Woolen Bag, Small Silk Pack and Mageweave Bag. The client data does not give prices."
+  - "Boots of Darkness is yellow when you learn it, and Felcloth Bag is green. Do not use them for skill points."
+  - "If you have Enchanting, disenchant the uncommon armor that you make."
+  - "Tailoring gives 1 Legacy point each at skill 150, 225 and 300."
+  - "Before you buy a Merchant's Favor pattern, read its reagents. Some pieces need 8 or more of a rare material."
+
+faq:
+  - q: "Does Tailoring need a gathering profession?"
+    a: "No. Cloth drops from humanoids. Enchanting is the usual second profession. A gathering profession is a second option."
+  - q: "At what skill do I learn each trainer recipe?"
+    a: "The client does not hold the trainer skill. The path gives estimates from the Classic-era values and marks them as estimates."
+  - q: "Why does the path use recipe items after skill 240?"
+    a: "Runecloth Belt is green at 240 and grey at 255. Above that skill, the data shows only 2 other recipes without a recipe item, Mooncloth Boots and Gordok Ogre Suit. In Classic, quests teach them, and they need rare materials."
+  - q: "Does Mooncloth have a cooldown?"
+    a: "The client data does not say. In Classic, Mooncloth has a cooldown of 4 days and you make it at a moonwell. It is not confirmed for Forever."
+  - q: "Which Merchant's Favor patterns do I buy first?"
+    a: "Buy the Mageweave Reagent Bag and the Runecloth Reagent Bag first. Then buy 1 color set for your class."
+  - q: "How much cloth do I need for 1 to 300?"
+    a: "The materials table gives the estimate for each bracket. The real number changes, because yellow and green recipes do not always give a point."
+
+sources:
+  - {title: "Wowhead: WoW Forever Tailoring Leveling Guide 1-300", url: "https://www.wowhead.com/forever/profession-leveling-guides/tailoring"}
+  - {title: "Warcraft Wiki: Forever tailoring patterns", url: "https://warcraft.wiki.gg/wiki/Forever_tailoring_patterns"}
+  - {title: "Warcraft Tavern: Tailoring Overview", url: "https://www.warcrafttavern.com/forever/guides/tailoring/"}

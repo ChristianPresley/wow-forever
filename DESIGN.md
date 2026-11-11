@@ -135,3 +135,17 @@ The pages in `docs/talents/` are **generated**. Do not edit them by hand.
 To change a rating or a build, edit the `.yml` file, then run `.venv/Scripts/python.exe tools/talents/build.py`. Use `--check` to validate only. The script stops if a build breaks a rule: 5 points for each row, prerequisites at maximum rank, and 51 points in total.
 
 The tree grid (`.ttree`) is in section 11 of `docs/stylesheets/guides.css`. The letter in each tile is the best of the 3 ratings of the talent.
+
+## Profession guides (10 Nov 2026)
+
+The pages in `docs/professions/` are **generated**. Do not edit them by hand.
+
+| File | What it does |
+|---|---|
+| `tools/professions/recipes/<slug>.json` | Each recipe from the game client: heading, learn skill, yellow, green and grey skill, reagents, source, status against Classic. Source: wowforevertalents.com, client build 1.60.1.70862 |
+| `tools/professions/guides/<slug>.yml` | The Codex guide for one profession: prose, the path from 1 to 300, recipe picks, tips and FAQ |
+| `tools/professions/build.py` | Checks each path against the recipe data, computes the crafts and the materials, then writes the guide, the recipe list and the hub |
+
+To change a guide, edit the `.yml` file, then run `.venv/Scripts/python.exe tools/professions/build.py`. Use `--check` to validate only. A profession with more than 60 recipes gets a separate `<slug>-recipes.md` page.
+
+The script stops if a path has a gap, names a recipe that does not exist, starts a recipe below its learn skill, or continues a recipe to its grey skill. The client does not hold trainer skill requirements. Thus, a step with a trainer recipe must give `learn` and `learn_basis` (`classic` or `estimate`), and the page shows this label.

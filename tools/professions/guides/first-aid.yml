@@ -1,0 +1,115 @@
+profession: First Aid
+kind: secondary
+icon: material-medical-bag
+description: "First Aid guide for WoW: Forever: a path from skill 1 to 300 with the cloth that you need, the healing potions that moved from Alchemy, the new curatives, and all 32 recipes."
+
+intro: |
+  First Aid is a secondary skill, so each character can learn it with 2 primary professions. It changes cloth into bandages. In Forever it also makes the **healing potions** that Alchemy made in Classic, and a new group of **curatives**. Each class gets value from it, and classes without a heal get the most.
+
+card:
+  use: "Bandages, healing potions and curatives from cloth and herbs. Useful for each class."
+  pairs: "All professions. Tailoring uses the same cloth. Herbalism gives the herbs for the healing potions."
+
+glance:
+  - ["Best for", "All classes. Warriors, Rogues, Hunters and Mages get the most value"]
+  - ["Main materials", "Linen, Wool, Silk, Mageweave and Runecloth"]
+  - ["Skill cap", "300"]
+  - ["Camp features", "First Aid Kit, Toxin Study, Plague Doctor's Laboratory"]
+
+new:
+  - "**Healing potions are First Aid recipes.** The 6 potions from Minor Healing Potion to Major Healing Potion moved here from Alchemy. Each needs a vial, spices and 1 herb."
+  - "**New curatives:** 4 poultices and 3 tourniquets. The client data does not give their effects. Read the tooltip in the game."
+  - "**More Anti-Venom ranks:** Potent Anti-Venom is new. Anti-Venom and Strong Anti-Venom now make 3 for each craft."
+  - "**Dense Runecloth Bandage** is a new bandage at skill 300. It uses 2 Heavy Runecloth Bandages."
+  - "**3 camp features.** The First Aid Kit gives a Stamina buff at a camp."
+  - "The 10 Classic bandages from Linen to Heavy Runecloth are not changed."
+
+path_intro: |
+  You level First Aid with bandages only. The potions and curatives are useful, but they need herbs, spices and drinks, so they cost more for each skill point.
+
+path:
+  - bracket: "Apprentice (1–75)"
+    intro: |
+      In Classic, Linen Cloth drops from humanoids of level 1 to 19. This is not confirmed for Forever. You need Journeyman First Aid to continue above skill 75.
+    steps:
+      - {from: 1, to: 40, craft: "Linen Bandage", note: "Yellow from 30. Continue to 40"}
+      - {from: 40, to: 75, craft: "Heavy Linen Bandage", learn: 40, learn_basis: classic, note: "2 Linen Cloth for each bandage"}
+    notes:
+      - "At skill 50, train Journeyman at a First Aid trainer. This is the Classic-era value."
+  - bracket: "Journeyman (75–150)"
+    intro: |
+      In Classic, Wool Cloth drops from humanoids of level 15 to 30. In Classic, wool has the shortest supply, so collect it early.
+    steps:
+      - {from: 75, to: 80, craft: "Heavy Linen Bandage", learn: 40, learn_basis: classic}
+      - {from: 80, to: 115, craft: "Wool Bandage", learn: 80, learn_basis: classic, note: "Yellow from the start"}
+      - {from: 115, to: 150, craft: "Heavy Wool Bandage", learn: 115, learn_basis: classic}
+    notes:
+      - "In Classic, a vendor book teaches Expert First Aid at skill 125. It is not confirmed that Forever uses the same book."
+  - bracket: "Expert (150–225)"
+    intro: |
+      In Classic, Silk Cloth drops from humanoids of level 26 to 40, and Mageweave Cloth from level 41 to 50.
+    steps:
+      - {from: 150, to: 180, craft: "Silk Bandage", learn: 150, learn_basis: classic}
+      - {from: 180, to: 210, craft: "Heavy Silk Bandage", note: "A recipe item teaches it"}
+      - {from: 210, to: 225, craft: "Mageweave Bandage", note: "A recipe item teaches it"}
+    notes:
+      - "In Classic, a quest at skill 225 and level 35 gives Artisan First Aid. It is not confirmed for Forever."
+  - bracket: "Artisan (225–300)"
+    intro: |
+      In Classic, Runecloth drops from humanoids of level 51 and above.
+    steps:
+      - {from: 225, to: 240, craft: "Mageweave Bandage"}
+      - {from: 240, to: 260, craft: "Heavy Mageweave Bandage", learn: 240, learn_basis: classic}
+      - {from: 260, to: 290, craft: "Runecloth Bandage", learn: 260, learn_basis: classic}
+      - {from: 290, to: 300, craft: "Heavy Runecloth Bandage", learn: 290, learn_basis: classic, note: "The best bandage for all content"}
+
+picks_intro: |
+  These recipes are not necessary for the path, but they are useful. The source column shows where each recipe comes from.
+
+picks:
+  - title: "Healing potions"
+    intro: |
+      These are the Classic healing potions. Each craft needs a vial from a vendor, spices and 1 herb.
+    items:
+      - {recipe: "Minor Healing Potion", why: "The first potion. A trainer teaches it"}
+      - {recipe: "Lesser Healing Potion", why: "For levels 10 to 20. A trainer teaches it"}
+      - {recipe: "Healing Potion", why: "For levels 20 to 30. A trainer teaches it"}
+      - {recipe: "Greater Healing Potion", why: "The first potion that needs a recipe item"}
+      - {recipe: "Superior Healing Potion", why: "For levels 45 to 55"}
+      - {recipe: "Major Healing Potion", why: "The raid healing potion at level 60"}
+  - title: "Bandages at 300"
+    items:
+      - {recipe: "Heavy Runecloth Bandage", why: "The standard bandage at level 60"}
+      - {recipe: "Dense Runecloth Bandage", why: "New. It is yellow until 315, so it gives no skill points that you can use. Read the tooltip for its effect"}
+  - title: "Curatives"
+    intro: |
+      The client data does not give the effects of the new poultices and tourniquets.
+    items:
+      - {recipe: "Anti-Venom", why: "Makes 3 from 1 Small Venom Sac. Removes poisons in Classic"}
+      - {recipe: "Strong Anti-Venom", why: "Makes 3. Toxin Study needs 1"}
+      - {recipe: "Simple Poultice", why: "The first poultice. A trainer teaches it"}
+      - {recipe: "Woolen Tourniquet", why: "The first tourniquet. A trainer teaches it"}
+
+sources_note: |
+  A trainer teaches 14 of the 32 recipes. The client does not hold the skill that the trainer asks for, so the guide uses Classic-era values for the Classic bandages. Recipe items teach the other 18 recipes. The client does not say where these items come from. The recipe items for Crystal Infused Bandage and Powerful Anti-Venom bind when you pick them up.
+
+camp_note: |
+  The First Aid Kit is the first feature, and a trainer teaches it. Blueprints teach Toxin Study at skill 140 and Plague Doctor's Laboratory at skill 300.
+
+tips:
+  - "Keep 2 stacks of cloth of each type when you level. It is cheaper than to buy cloth later."
+  - "If you are a Tailor, keep 2 stacks of each cloth for First Aid. Tailoring uses much more cloth."
+  - "Use a bandage after a fight, not during it. Damage stops the bandage."
+  - "Crystal Infused Bandage lists a reagent with the name DEPRECATED ITEM in the client. It is possible that you cannot make it."
+
+faq:
+  - q: "Do healing potions still come from Alchemy?"
+    a: "No. In the launch client, the 6 healing potions are First Aid recipes. Alchemy has a different group of potions with the name Discolored Healing Potion."
+  - q: "How much cloth do I need for 1 to 300?"
+    a: "The materials table gives the estimate for each bracket. The real number changes, because yellow and green recipes do not always give a point."
+  - q: "At what skill do I learn each bandage?"
+    a: "The client does not hold the trainer skill. The path uses the Classic-era values, and it marks them as Classic values."
+  - q: "Does First Aid give Legacy Points?"
+    a: "No. Legacy Points come from skill 150, 225 and 300 in the 6 crafting professions."
+
+sources: []

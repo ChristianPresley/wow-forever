@@ -1,0 +1,210 @@
+profession: Cooking
+kind: secondary
+icon: material-pot-steam
+description: "Cooking guide for WoW: Forever: a path from skill 1 to 300, the campfires, the new teas and smoothies, and all 125 recipes."
+
+intro: |
+  Cooking is a secondary skill, so each character can learn it with 2 primary professions. It changes meat, eggs and fish into food. In Forever it also makes the **campfires** of the camping system, and 2 new groups of drinks. The client sorts most food below a heading that names a stat, for example Stamina Food and Strength Food.
+
+card:
+  use: "Stat food, campfires for the camping system, and new teas and smoothies. Useful for each class."
+  pairs: "Fishing gives the fish for more than 20 recipes. Herbalism gives the herbs for the teas."
+
+glance:
+  - ["Best for", "All classes. Cooking makes the campfires of the camping system"]
+  - ["Main materials", "Meat, eggs, clam meat, fish and vendor spices"]
+  - ["Skill cap", "300"]
+  - ["Camp features", "Basic Campfire, Journeyman Campfire, Cookie's Feast, Expert Campfire, Iron Oven"]
+  - ["Pairs with", "Fishing"]
+
+new:
+  - "**Campfires are Cooking recipes.** The Camping heading has 5 new recipes: Basic Campfire, Journeyman Campfire, Cookie's Feast, Expert Campfire and Iron Oven. The 3 campfires use wood. Cookie's Feast and Iron Oven use food reagents."
+  - "**Headings by stat.** The client puts most food below a heading such as Stamina Food, Strength Food, Agility Food, Intellect Food or Spell Damage Food."
+  - "**New drinks:** 6 teas (Soothing Drinks) and 6 smoothies (Delightful Drinks). The client data does not give their effects. Read the tooltip in the game."
+  - "**44 new recipes in total.** A recipe item teaches 42 of them, and 33 of these recipe items bind when you pick them up. A trainer teaches the other 2: Basic Campfire and Spinefin Halibut."
+  - "**Spinefin Halibut** is a new trainer recipe below the Fisherman's Delights heading. It uses 1 Raw Spinefin Halibut. The client does not hold its trainer skill, and it is grey at 220."
+  - "**New food at skill 275:** 10 recipes, for example Bear Bruscitti, Swiftstrike Steak and Bat Hachee. Each uses 3 pieces of 1 main reagent and Soothing Spices."
+  - "**21 Classic recipes changed.** The client data does not say what changed in each recipe. 13 of them make more than 1 food for each craft. Goldthorn Tea makes 4."
+  - "**Simple Flour** is a new reagent. Skywall Souffle, Pincer Bites, Critter Cookie and Iron Oven use it."
+  - "**Removed:** Crystal Throat Lozenge is not in Forever."
+  - "60 Classic recipes are not changed."
+
+path_intro: |
+  This path uses trainer recipes for most skill points. Only skill 240 to 285 uses recipe items, because no trainer recipe is orange there. In Classic, vendors sell spices and Refreshing Spring Water. The meat comes from beasts, so collect it when you level.
+
+path:
+  - bracket: "Apprentice (1–75)"
+    intro: |
+      Chunk of Boar Meat and Stringy Wolf Meat drop from boars and wolves in the first zones. These are Classic-era drops. In Classic, you need Journeyman Cooking to continue above skill 75.
+    steps:
+      - {from: 1, to: 40, craft: "Roasted Boar Meat", note: "Charred Wolf Meat has the same skill values. Use the meat that you have"}
+      - {from: 40, to: 50, craft: "Spiced Wolf Meat", learn: 10, learn_basis: classic, note: "Needs Mild Spices from a vendor"}
+      - {from: 50, to: 75, craft: "Coyote Steak", learn: 50, learn_basis: classic, note: "Boiled Clams is the alternative. It has the same skill values"}
+    notes:
+      - "Make 1 Basic Campfire for the camping quest *The Great Outdoors*. It is grey at skill 5, so it is not a step of the path."
+      - "The Camping page calls the item Basic Campfire Kit."
+      - "At skill 50, train Journeyman at a Cooking trainer. This is the Classic-era value."
+  - bracket: "Journeyman (75–150)"
+    intro: |
+      In Classic, Coyote Meat drops in Westfall and Mulgore, and Boar Ribs drop from boars of level 15 to 30. Tangy Clam Meat comes from Thick-shelled Clams. These locations are not confirmed for Forever.
+    steps:
+      - {from: 75, to: 90, craft: "Coyote Steak", learn: 50, learn_basis: classic}
+      - {from: 90, to: 125, craft: "Dry Pork Ribs", learn: 80, learn_basis: classic, note: "Yellow from 120. Crab Cake is the alternative from 90 to 115"}
+      - {from: 125, to: 150, craft: "Goblin Deviled Clams", learn: 125, learn_basis: classic, note: "Needs Hot Spices from a vendor"}
+    notes:
+      - "At skill 90, you can learn Journeyman Campfire from its recipe item."
+      - "In Classic, a vendor book teaches Expert Cooking at skill 125. It is not confirmed that Forever uses the same book."
+  - bracket: "Expert (150–225)"
+    intro: |
+      Goldthorn is a herb. In Classic, it grows in zones of level 30 to 45, and White Spider Meat drops from spiders of level 40 to 55. Buy Goldthorn if you are not a Herbalist.
+    steps:
+      - {from: 150, to: 175, craft: "Goblin Deviled Clams", learn: 125, learn_basis: classic, note: "Yellow from 165"}
+      - {from: 175, to: 200, craft: "Goldthorn Tea", learn: 175, learn_basis: classic, note: "Makes 4 for each craft. In Classic, an NPC in Razorfen Downs teaches it"}
+      - {from: 200, to: 225, craft: "Spider Sausage", learn: 200, learn_basis: classic, note: "2 White Spider Meat for each craft"}
+    notes:
+      - "If you cannot learn Goldthorn Tea, use a recipe item for skill 175 to 200. Soothing Turtle Bisque, Giant Clam Scorcho and Mithril Headed Trout are orange in this range."
+      - "Goblin Deviled Clams is green from 185 to 205. It gives points slowly, so do not use it to 200."
+      - "In Classic, a quest in Tanaris at skill 225 gives Artisan Cooking. It is not confirmed for Forever."
+      - "In Classic, this quest needs Giant Egg, Zesty Clam Meat and Alterac Swiss. Keep Giant Egg, because Monster Omelet also uses it."
+  - bracket: "Artisan (225–300)"
+    intro: |
+      No trainer recipe is orange from skill 240 to 285, so this bracket uses 2 recipe items. In Classic, vendors sell these 2 recipe items. The client data does not say where they come from in Forever.
+
+      In Classic, vendors sell Soothing Spices, and Giant Egg drops from large birds in zones of level 40 to 60. Raw Sunscale Salmon comes from Fishing, and Sandworm Meat drops from sandworms in Silithus. These locations are not confirmed for Forever.
+    steps:
+      - {from: 225, to: 240, craft: "Spider Sausage", learn: 200, learn_basis: classic}
+      - {from: 240, to: 265, craft: "Monster Omelet", note: "A recipe item teaches it. No trainer recipe is orange in this range. Tender Wolf Steak has the same skill values"}
+      - {from: 265, to: 285, craft: "Poached Sunscale Salmon", note: "A recipe item teaches it. It needs fish only. Without fish, continue Monster Omelet, which is yellow"}
+      - {from: 285, to: 300, craft: "Smoked Desert Dumplings", learn: 285, learn_basis: classic, note: "Orange to 300. In Classic, a quest in Silithus teaches it. Not confirmed for Forever"}
+    notes:
+      - "Smoked Desert Dumplings is yellow at 325 in the client data, which is above the skill cap. As a result, each craft gives a point."
+      - "Nightfin Soup has the same skill values as Poached Sunscale Salmon. Use the fish that you have."
+      - "Without a recipe item, Spider Sausage is yellow to 260 and green to 280. This is slow."
+      - "Spotted Yellowtail has the same skill values as Monster Omelet. It needs 1 fish and no spices."
+      - "If you cannot learn Smoked Desert Dumplings, continue Poached Sunscale Salmon or Nightfin Soup to 300. They are yellow from 290."
+      - "Baked Salmon, Lobster Stew and Mightfish Steak are orange from 275 to 300, but they need recipe items."
+
+picks_intro: |
+  These recipes are not necessary for the path, but they are useful. Most client headings name a stat, for example Stamina Food. The client data does not give the effect or its quantity, so read the tooltip in the game.
+
+picks:
+  - title: "Campfires and camp features"
+    intro: |
+      A campfire is the base of a camp. Refer to the Camping page for the rules.
+    items:
+      - {recipe: "Basic Campfire", why: "The first campfire. It holds 3 camp features and burns for 60 minutes"}
+      - {recipe: "Journeyman Campfire", why: "Holds 5 camp features. Lord Serpentis in Wailing Caverns drops the blueprint"}
+      - {recipe: "Cookie's Feast", why: "A Tier 2 camp feature. Cookie in The Deadmines drops the blueprint"}
+      - {recipe: "Expert Campfire", why: "Holds 10 camp features"}
+      - {recipe: "Iron Oven", why: "The camp feature at skill 300. It gives no skill points"}
+  - title: "Stamina Food"
+    items:
+      - {recipe: "Herb Baked Egg", why: "The first Stamina food. Small Egg is easy to get"}
+      - {recipe: "Roasted Kodo Meat", why: "Makes 2 for each craft"}
+      - {recipe: "Monster Omelet", why: "A Classic recipe that is not changed. It is also a step of the path"}
+      - {recipe: "Savory Turtle Stew", why: "New at skill 275. The highest Stamina food by item level"}
+  - title: "Strength Food"
+    items:
+      - {recipe: "Roasted Boar Meat", why: "A trainer teaches it at skill 1"}
+      - {recipe: "Blood Sausage", why: "Makes 2 for each craft"}
+      - {recipe: "Smoked Desert Dumplings", why: "A trainer recipe. It is also the last step of the path"}
+      - {recipe: "Bear Bruscitti", why: "New at skill 275. Uses Big Bear Meat"}
+      - {recipe: "Steaming Stag Steak", why: "New at skill 275. Uses Stag Meat"}
+  - title: "Agility Food"
+    items:
+      - {recipe: "Spiced Wolf Meat", why: "A trainer recipe for the first levels"}
+      - {recipe: "Seasoned Wolf Kabob", why: "Makes 3 for each craft"}
+      - {recipe: "Tender Wolf Steak", why: "A Classic recipe that is not changed"}
+      - {recipe: "Swiftstrike Steak", why: "New at skill 275. Uses Tiger Meat"}
+      - {recipe: "Flank au Poivre", why: "New at skill 275. Uses Red Wolf Meat"}
+  - title: "Intellect Food"
+    items:
+      - {recipe: "Crab Cake", why: "A trainer recipe"}
+      - {recipe: "Strider Stew", why: "Makes 2 for each craft"}
+      - {recipe: "Runn Tum Tuber Surprise", why: "A Classic recipe that is not changed. The tubers come from Dire Maul in Classic"}
+      - {recipe: "Prehistoric Pulled Raptor", why: "New at skill 275. Uses Raptor Flesh"}
+      - {recipe: "Bat Hachee", why: "New at skill 275. Uses Meaty Bat Wing"}
+  - title: "Spell Damage and Attack Power Food"
+    intro: |
+      All recipes below these 2 headings use fish, except Briny Seafood Stew. Level Fishing or buy the fish.
+    items:
+      - {recipe: "Rainbow Fin Albacore", why: "The first recipe below the Spell Damage Food heading. Needs 1 fish and no spices"}
+      - {recipe: "Smoked Sagefish", why: "A Classic recipe that is not changed. In Classic it gives mana regeneration. The effect is not confirmed for Forever"}
+      - {recipe: "Sagefish Delight", why: "The second Sagefish recipe"}
+      - {recipe: "Nightfin Soup", why: "A Classic recipe that is not changed. In Classic it gives mana regeneration. The Forever heading is Spell Damage Food, so the effect is not confirmed for Forever"}
+      - {recipe: "Baked Salmon", why: "Skill 275. It is orange to 300"}
+      - {recipe: "Poached Sunscale Salmon", why: "Needs 1 fish and no spices. It is also a step of the path"}
+      - {recipe: "Mightfish Steak", why: "Skill 275. It is orange to 300"}
+  - title: "Combat Prowess and Armor Food"
+    items:
+      - {recipe: "Grilled Squid", why: "A Classic recipe that is not changed. In Classic it gives Agility. The Forever heading is Combat Prowess Food, so the effect is not confirmed for Forever"}
+      - {recipe: "Hot Smoked Bass", why: "A Classic recipe that is not changed. In Classic it gives Spirit. The Forever heading is Combat Prowess Food, so the effect is not confirmed for Forever"}
+      - {recipe: "Plated Armorfish", why: "New. It is the only recipe below the Armor Food heading"}
+  - title: "Fisherman's Delights"
+    intro: |
+      The client data does not give the effect of this heading. Read the tooltip in the game.
+    items:
+      - {recipe: "Spinefin Halibut", why: "New. The only new food recipe that a trainer teaches. The item level is 55"}
+      - {recipe: "Fillet of Frenzy", why: "Makes 2 for each craft"}
+      - {recipe: "Bristle Whisker Catfish", why: "Needs 1 fish and no spices"}
+      - {recipe: "Rockscale Cod", why: "Needs 1 fish and no spices"}
+      - {recipe: "Filet of Redgill", why: "A Classic recipe that is not changed"}
+  - title: "Teas and smoothies"
+    intro: |
+      These 12 drinks are new. Each tea uses 1 vendor drink and 2 herbs. Each smoothie uses 1 vendor drink, spices and 1 beast part. The client data does not give their effects.
+    items:
+      - {recipe: "Peace Tea", why: "The first tea. Uses Peacebloom"}
+      - {recipe: "Root Tea", why: "Uses Liferoot"}
+      - {recipe: "Sage's Tea", why: "The last tea. Uses Mountain Silversage"}
+      - {recipe: "Venomous Smoothie", why: "The first smoothie. Uses 1 Small Venom Sac"}
+      - {recipe: "Spicy Smoothie", why: "Uses 1 Small Flame Sac"}
+      - {recipe: "Wicked Smoothie", why: "The last smoothie. Uses 1 Wicked Claw"}
+  - title: "Everyday Meals and other recipes"
+    items:
+      - {recipe: "Goldthorn Tea", why: "A trainer recipe that makes 4 for each craft"}
+      - {recipe: "Thistle Tea", why: "A Classic recipe that is not changed. It gives Energy to Rogues in Classic. Not confirmed for Forever"}
+      - {recipe: "Savory Deviate Delight", why: "A Classic recipe that is not changed. It changes your appearance in Classic. Not confirmed for Forever"}
+      - {recipe: "Savory Whimsyfin Delight", why: "New. It has the same skill values as Savory Deviate Delight. The client data does not give its effect"}
+      - {recipe: "Clam Linguine", why: "New at skill 275. Uses Zesty Clam Meat"}
+      - {recipe: "Sweetpaw Jam", why: "New at skill 275. Uses Hyjal Berries. The client data does not give its effect"}
+      - {recipe: "Dirge's Kickin' Chimaerok Chops", why: "Makes 5 for each craft. It needs skill 300"}
+
+sources_note: |
+  A trainer teaches 13 of the 125 recipes. The client does not hold the skill that the trainer asks for, so the path uses Classic-era values. Recipe items teach the other 112 recipes. The client does not say where these items come from. 47 of the recipe items bind when you pick them up, and 33 of these teach new recipes. Other players cannot sell you a recipe item that binds when you pick it up. You must get it yourself. No Cooking recipe is on the list of a Merchant's Favor merchant.
+
+  The client also holds 7 Cooking recipes from Season of Discovery under a separate heading. No merchant sells them, so this guide does not list them.
+
+camp_note: |
+  A trainer teaches Basic Campfire at skill 1. Recipe items teach Journeyman Campfire at skill 90, Cookie's Feast at skill 140, Expert Campfire at skill 200 and Iron Oven at skill 300. The campfires use Simple Wood, Star Wood and Thick Logs. In Classic, trade supplies vendors sell Simple Wood and Star Wood. This is not confirmed for Forever. The client data does not give the source of Thick Logs.
+
+  Lord Serpentis in Wailing Caverns drops the Journeyman Campfire blueprint. Cookie in The Deadmines drops the Cookie's Feast blueprint. Tier 2 and Tier 3 blueprints drop from dungeon and raid bosses. The bosses for Expert Campfire and Iron Oven are not known. The client data does not give the effects of Cookie's Feast and Iron Oven. It also does not say where Simple Flour comes from.
+
+tips:
+  - "Keep low-level meat. The new recipes at skill 275 use 3 pieces of meat such as Meaty Bat Wing, Raptor Flesh, Big Bear Meat, Stag Meat or Tiger Meat."
+  - "Keep 2 Mystery Meat and 1 Heavy Kodo Meat for Cookie's Feast."
+  - "Count your meat before you buy spices. The new recipes at skill 275 use 1 to 4 Soothing Spices for each craft."
+  - "The Legacy talent Master Chef gives a 10% chance of an extra cooking result. Working Overtime increases the skill-up chance by 4% for each rank."
+  - "Level Fishing with Cooking. Fish recipes with 1 reagent are cheap skill points."
+  - "Goldthorn Tea makes 4 for each craft, so 1 stack of Goldthorn gives many drinks."
+  - "You learn Raging Raptor Ribs at skill 180, but it is yellow at 280 in the client data. If this is correct, it is orange for 100 points."
+  - "The recipe item of Raging Raptor Ribs binds when you pick it up, and the client does not say where it drops. The path does not use it."
+  - "Gingerbread Cookie and Egg Nog are below the Winter Veil Treats heading. They use Holiday Spices, which is a Winter Veil reagent in Classic."
+  - "Iron Oven is yellow, green and grey at 300 in the client data. It gives no skill points."
+  - "Cleansing Stew has no skill values and no item name in the client data. It is possible that you cannot make it at this time."
+  - "The item that Critter Cookie makes has no name in the client data. The recipe is yellow at 80 and grey at 85."
+
+faq:
+  - q: "Do I need Cooking for the camping system?"
+    a: "Cooking makes the campfires, and a trainer teaches Basic Campfire at skill 1. The quest The Great Outdoors tells you to learn Cooking. The client data does not say if a campfire binds to the player who makes it. Other players can add their camp features to your campfire."
+  - q: "At what skill do I learn each trainer recipe?"
+    a: "The client does not hold the trainer skill. The path uses the Classic-era values, and it marks them as Classic values."
+  - q: "What do the new teas and smoothies do?"
+    a: "The client data does not give their effects. Read the tooltip in the game."
+  - q: "Can I get to 300 without Fishing?"
+    a: "Yes. Continue Monster Omelet from 265 to 285, where it is yellow. Then make Smoked Desert Dumplings to 300."
+  - q: "Does a Merchant's Favor merchant sell Cooking recipes?"
+    a: "No. The beta stock shows recipes for 6 crafting professions. Cooking is not one of them."
+  - q: "Does Cooking give Legacy Points?"
+    a: "No. Legacy Points come from skill 150, 225 and 300 in the 6 crafting professions."
+
+sources: []

@@ -1,0 +1,296 @@
+profession: Engineering
+kind: crafting
+icon: material-cog
+description: "Engineering guide for WoW: Forever, with a path from skill 1 to 300, the new SAF-T and EZ-Thro lines, the specializations and all 247 recipes."
+
+intro: |
+  Engineering changes metal bars, stone and cloth into explosives, guns, scopes, ammunition, goggles and devices. In Forever it also makes 3 camp features and 2 new lines of parts with the names **SAF-T** and **EZ-Thro**. Most Classic explosives and all ammunition now make more items for each craft. The profession uses many bars and stones, so Mining is the usual second profession.
+
+card:
+  use: "Explosives, guns, scopes, ammunition, goggles and devices from bars, stone and cloth. Makes the Reagent Bot and the Repair Bot for a camp."
+  pairs: "Mining, for the bars and the stone."
+
+glance:
+  - ["Best for", "Hunters, for guns, scopes and ammunition. In the class guides, Hunter, Paladin, Rogue, Warlock and Warrior give it rank A. No class gives it rank S"]
+  - ["Main materials", "Copper, Bronze, Iron, Mithril and Thorium Bars. Rough to Dense Stone. Linen to Runecloth"]
+  - ["Skill cap", "300"]
+  - ["Specializations", "Gnomish Engineer, Goblin Engineer"]
+  - ["Camp features", "Reagent Bot, Repair Bot, Anarchist's Workbench"]
+  - ["Merchant's Favor", "Fritz Fizzle at Three Corners, Redridge Mountains. This is the Alliance camp of the Azeroth Commerce Authority"]
+
+new:
+  - "**More items for each craft.** Rough Dynamite, Coarse Dynamite and Solid Dynamite make 2. Heavy Dynamite, Large Copper Bomb, Big Bronze Bomb and Iron Grenade make 3. Hi-Explosive Bomb makes 4."
+  - "**Ammunition makes 200 for each craft.** Explosive Arrow makes 100 from 100 Razor Arrows."
+  - "**Silver Contact makes 5 and Gold Power Core makes 3** from 1 bar."
+  - "**SAF-T and EZ-Thro lines.** New parts, such as SAF-T Tabs, EZ-Thro Wrap, SAF-T Casing and EZ-Thro Shell, go into new versions of the Classic explosives. The client data does not give their effects."
+  - "**Satchels of bombs.** 4 new recipes each use 20 bombs of 1 type. The client puts them under the Ranged Weapons heading."
+  - "**Field devices at skill 300.** 6 new consumable devices use a transporter or a \"Schematic: Tinker\" item as a reagent, together with SAF-T Tube or EZ-Thro Shell."
+  - "**New items at skill 300:** Hyper Deluxe Sniper Rifle Mk XVII, SAF-T Ultra Precision Scope, Swiftfeather Arrow, Swiftstrike Shot, Dimensional Transporter - Mt. Hyjal and Gnomish Weather Machine."
+  - "**New materials:** Legionite Bar, Azerothium Bar, Heavy Thorium Bar, Bauxite, Pyrite, Pitchblende, Torbernite and Death Lotus are reagents in the new recipes."
+  - "**New headgear.** Merchant's Favor schematics teach 4 goggles, 1 for each armor type. They also teach Clanking Cord, Gizmo Girdle and Whimsical Waistwrap. The names suggest belts."
+  - "**New devices from recipe items that bind:** Harvester Override Signalcaster, 9-60 Battery Pack, Hoof-Shaped Foot Pedal and Centaur Banner Deployment Device. Shredder Autosalvage Unit is also new, and its recipe item does not bind. The client data does not give their effects or their sources."
+  - "**New Merchant's Favor gadgets:** Compact Critter Carrier, Emergency Field Cloak and SAF-T Disposable Parachute. The client data does not give their effects."
+  - "**3 camp features:** Reagent Bot, Repair Bot and Anarchist's Workbench."
+  - "**Purple, white and yellow fireworks** are new for each rocket size."
+  - "**Recipe items at high skill.** The client data shows recipe items for Thorium Widget, Thorium Grenade and Thorium Shells. In Classic, a trainer also teaches them. This is not confirmed for Forever."
+  - "The client data removes no Classic recipe. Forever does not change 120 recipes."
+
+path_intro: |
+  This path uses trainer recipes to skill 260. Above 260, the client data shows recipe items for the 2 best recipes. In Classic, a trainer also teaches them, so ask the trainer first. This is not confirmed for Forever. The trainer skills are Classic-era values, because the client does not hold them.
+
+path:
+  - bracket: "Apprentice (1–75)"
+    intro: |
+      You need Copper Bars, Rough Stone and some Linen Cloth. Buy Weak Flux from a trade vendor. In Classic, Copper Veins give Copper Ore and Rough Stone, and humanoids of low level drop Linen Cloth. These sources are not confirmed for Forever.
+    steps:
+      - {from: 1, to: 30, craft: "Rough Blasting Powder", note: "Yellow from 20. Keep the powder for Rough Copper Bomb"}
+      - {from: 30, to: 50, craft: "Handful of Copper Bolts", learn: 30, learn_basis: classic, note: "Keep these. Many later recipes use them"}
+      - {from: 50, to: 51, craft: "Arclight Spanner", learn: 50, learn_basis: classic, note: "Make 1. In Classic it is a necessary tool. This is not confirmed for Forever"}
+      - {from: 51, to: 60, craft: "Rough Copper Bomb", learn: 30, learn_basis: classic, note: "Uses the powder and the bolts from the first steps. Makes 2"}
+      - {from: 60, to: 75, craft: "Copper Tube", learn: 50, learn_basis: classic, note: "Keep 1 for the Reagent Bot"}
+    notes:
+      - "At skill 50, train Journeyman at an Engineering trainer. This is the Classic-era value."
+      - "A trainer teaches the Reagent Bot. It is grey at skill 25, so make it for the camp, not for skill points."
+  - bracket: "Journeyman (75–150)"
+    intro: |
+      You need Coarse and Heavy Stone, Copper, Bronze and Silver Bars, Linen and Wool Cloth, and Weak Flux. In Classic, Tin Veins give Coarse Stone and Iron Deposits give Heavy Stone. A miner smelts Copper Bars and Tin Bars into Bronze Bars. These are Classic-era values.
+    steps:
+      - {from: 75, to: 85, craft: "Coarse Blasting Powder", learn: 75, learn_basis: classic, note: "No later step of the path uses the powder. Sell it, or make Crafted Heavy Shot for a Hunter"}
+      - {from: 85, to: 95, craft: "Copper Modulator", learn: 65, learn_basis: classic, note: "Uses 2 Handful of Copper Bolts for each craft"}
+      - {from: 95, to: 105, craft: "Silver Contact", learn: 90, learn_basis: classic, note: "Makes 5. Keep some, because Big Iron Bomb uses 1 for each craft. If you have no Silver Bars, continue Copper Modulator to 100 and then make Practice Lock"}
+      - {from: 105, to: 115, craft: "Practice Lock", learn: 100, learn_basis: classic, note: "Orange for the full step"}
+      - {from: 115, to: 125, craft: "Bronze Tube", learn: 105, learn_basis: classic, note: "Yellow. Keep 1 for the Repair Bot"}
+      - {from: 125, to: 135, craft: "Heavy Blasting Powder", learn: 125, learn_basis: classic, note: "Yellow. Keep all of it and make more. Explosive Sheep, Iron Grenade and Big Iron Bomb use it"}
+      - {from: 135, to: 150, craft: "Whirring Bronze Gizmo", learn: 125, learn_basis: classic, note: "Yellow. Keep these for Explosive Sheep and the Repair Bot"}
+    notes:
+      - "At skill 125, train Expert. This is the Classic-era value, and it is not confirmed for Forever."
+      - "The Repair Bot blueprint needs skill 140. The recipe is grey at 145."
+  - bracket: "Expert (150–225)"
+    intro: |
+      You need Bronze, Iron and Mithril Bars, Heavy and Solid Stone, Wool, Silk and Mageweave Cloth, and some Medium Leather. The Gyromatic Micro-Adjustor uses 4 Steel Bars. In Classic, Iron Deposits give Heavy Stone and Mithril Deposits give Solid Stone. A miner smelts Steel Bars from Iron Bars and Coal. These are Classic-era values.
+    steps:
+      - {from: 150, to: 160, craft: "Bronze Framework", learn: 145, learn_basis: classic, note: "Yellow. Keep these for Explosive Sheep"}
+      - {from: 160, to: 175, craft: "Explosive Sheep", learn: 150, learn_basis: classic, note: "Orange for the full step. Uses the frameworks, the gizmos and the Heavy Blasting Powder"}
+      - {from: 175, to: 176, craft: "Gyromatic Micro-Adjustor", learn: 175, learn_basis: classic, note: "Yellow. Make 1 for the tool. If it gives no point, make 1 Solid Blasting Powder more. In Classic it is a necessary tool. This is not confirmed for Forever"}
+      - {from: 176, to: 185, craft: "Solid Blasting Powder", learn: 175, learn_basis: classic, note: "Yellow. Keep all of it and make more. Unstable Trigger, Hi-Explosive Bomb and Mithril Gyro-Shot use it"}
+      - {from: 185, to: 190, craft: "Iron Grenade", learn: 175, learn_basis: classic, note: "Yellow. Makes 3"}
+      - {from: 190, to: 200, craft: "Big Iron Bomb", learn: 190, learn_basis: classic, note: "Yellow. Uses 1 Silver Contact. Makes 2"}
+      - {from: 200, to: 215, craft: "Unstable Trigger", learn: 200, learn_basis: classic, note: "Yellow. Keep these for Hi-Explosive Bomb"}
+      - {from: 215, to: 225, craft: "Mithril Casing", learn: 215, learn_basis: classic, note: "Yellow. Keep these. Each Hi-Explosive Bomb uses 2"}
+    notes:
+      - "In Classic, you train Artisan at skill 200 and level 35. This is not confirmed for Forever."
+      - "In Classic, you select Gnomish or Goblin Engineering at skill 200. See the Specializations section."
+  - bracket: "Artisan (225–300)"
+    intro: |
+      You need Mithril and Thorium Bars, Solid and Dense Stone, and Runecloth. In Classic, Thorium Veins give Dense Stone, and humanoids of level 51 and above drop Runecloth. These values are not confirmed for Forever. The client data shows recipe items for the last 2 steps.
+    steps:
+      - {from: 225, to: 235, craft: "Mithril Casing", learn: 215, learn_basis: classic, note: "Yellow, then green at 235. Each Hi-Explosive Bomb uses 2 casings"}
+      - {from: 235, to: 245, craft: "Hi-Explosive Bomb", learn: 235, learn_basis: classic, note: "Yellow. Uses 2 Mithril Casings, 1 Unstable Trigger and 2 Solid Blasting Powder. Makes 4"}
+      - {from: 245, to: 260, craft: "Mithril Gyro-Shot", learn: 245, learn_basis: classic, note: "Yellow. Makes 200. It uses fewer Mithril Bars than Hi-Explosive Bomb. Sell it to Hunters"}
+      - {from: 260, to: 285, craft: "Thorium Widget", note: "The client holds a recipe item for it. In Classic a trainer teaches it at 260, so ask the trainer first. Orange to 280. Keep 2 widgets for Anarchist's Workbench"}
+      - {from: 285, to: 300, craft: "Thorium Shells", note: "The client holds a recipe item for it. In Classic a trainer teaches it at 285, so ask the trainer first. Orange for the full step. Makes 200"}
+    notes:
+      - "The recipe items for Thorium Widget and Thorium Shells do not bind, so you can buy them from other players."
+      - "If you cannot get the Thorium Widget recipe, a trainer teaches Salt Shaker. It is orange to 270, but it uses 4 Unstable Triggers for each craft."
+      - "If you cannot get the Thorium Shells recipe, continue with Thorium Widget. It is yellow from 280 and green from 290, so the last points are slow."
+      - "Dense Dynamite is a trainer recipe at skill 250 in Classic. It is green from 260, so it is not a good step."
+
+picks_intro: |
+  These recipes are not necessary for the path. The client data does not give the effect of an item. For a recipe that is not changed from Classic, the text gives the Classic-era use.
+
+picks:
+  - title: "Parts to keep"
+    intro: |
+      Many recipes use these parts. Make them when you have spare bars.
+    items:
+      - {recipe: "Handful of Copper Bolts", why: "A reagent of many copper and bronze recipes, and of the Reagent Bot"}
+      - {recipe: "Silver Contact", why: "Makes 5. Each bomb from Large Copper Bomb to Big Iron Bomb uses 1"}
+      - {recipe: "Gold Power Core", why: "Makes 3. A reagent of Gyrochronatom and of many devices"}
+      - {recipe: "Gyrochronatom", why: "A reagent of Mechanical Dragonling, Advanced Target Dummy and the Favor goggles"}
+      - {recipe: "Unstable Trigger", why: "A reagent of most mithril bombs, guns and devices"}
+      - {recipe: "Thorium Widget", why: "A reagent of many recipes from skill 260"}
+      - {recipe: "Sandpaper", why: "New trainer recipe. It uses Bauxite. SAF-T Bell uses it"}
+  - title: "Explosives"
+    intro: |
+      The Classic explosives are in the game, and most of them make 2 to 4 for each craft.
+    items:
+      - {recipe: "Heavy Dynamite", why: "Makes 3 from cheap stone and Wool Cloth"}
+      - {recipe: "Iron Grenade", why: "Makes 3 from 1 Iron Bar, 1 Heavy Blasting Powder and 1 Silk Cloth"}
+      - {recipe: "Big Iron Bomb", why: "Makes 2. Satchel of Iron Bombs and Pet Bombling use it"}
+      - {recipe: "Hi-Explosive Bomb", why: "Makes 4. A trainer teaches it"}
+      - {recipe: "Thorium Grenade", why: "Makes 3. The last grenade of the Classic list"}
+      - {recipe: "Dense Dynamite", why: "Makes 2. A trainer teaches it"}
+      - {recipe: "Goblin Sapper Charge", why: "In Classic it is a strong area explosive for PvP and raids"}
+      - {recipe: "Dark Iron Bomb", why: "Makes 3. Orange from 285 to the skill cap, but the reagents are costly. Satchel of Dark Iron Bombs uses 20"}
+      - {recipe: "Arcane Bomb", why: "Makes 3. You learn it at the skill cap, so it gives no skill point. It uses 1 Delicate Arcanite Converter"}
+      - {recipe: "Unsanctified Grenade", why: "New. Makes 3. The client data does not give the effect"}
+  - title: "SAF-T and EZ-Thro lines"
+    intro: |
+      These recipes are new. Each one adds a SAF-T or EZ-Thro part to a Classic explosive. The client data does not give the effects, so read the tooltip in the game. Recipe items teach SAF-T Casing, EZ-Thro Tru-Trigger, SAF-T Tube and EZ-Thro Shell. The client does not say where these items come from.
+    items:
+      - {recipe: "EZ-Thro Dynamite", why: "A Classic recipe that now needs EZ-Thro Wrap. Makes 2"}
+      - {recipe: "SAF-T Bronze Bomb", why: "Needs No Slip SAF-T Padding"}
+      - {recipe: "Shafety Sheep", why: "Explosive Sheep with a SAF-T Bell"}
+      - {recipe: "EZ-Thro Grenade", why: "Iron Grenade with an EZ-Thro Fireproof Fuse"}
+      - {recipe: "SAF-T Casing", why: "A part for SAF-T Bomb, Emergency Field Cloak and SAF-T Disposable Parachute"}
+      - {recipe: "Tru-Trigger Frag Bomb", why: "Mithril Frag Bomb with an EZ-Thro Tru-Trigger"}
+      - {recipe: "SAF-T Tube", why: "A part for SAF-T Clever Dynamite and the SAF-T field devices. It uses 1 Azerothium Bar"}
+      - {recipe: "EZ-Thro Shell", why: "A part for EZ-Thro Thorium Grenade and the EZ-Thro field devices"}
+      - {recipe: "EZ-Thro Thorium Grenade", why: "Thorium Grenade with an EZ-Thro Shell. It makes 1, not 3"}
+  - title: "Guns, scopes and ammunition"
+    intro: |
+      Hunters use most of these items. The scopes also fit the guns and bows of other classes in Classic.
+    items:
+      - {recipe: "Rough Boomstick", why: "The first gun. A trainer teaches it"}
+      - {recipe: "Deadly Blunderbuss", why: "The second trainer gun"}
+      - {recipe: "Silver-plated Shotgun", why: "A trainer gun that uses 3 Silver Bars"}
+      - {recipe: "Mithril Blunderbuss", why: "The last trainer gun"}
+      - {recipe: "Thorium Rifle", why: "A gun of item level 52. It uses 1 Deadly Scope"}
+      - {recipe: "Hyper Deluxe Sniper Rifle Mk XVII", why: "New Epic gun of item level 65. It uses Legionite Bars and Heavy Thorium Bars"}
+      - {recipe: "Core Marksman Rifle", why: "The Classic Epic gun. It uses Fiery Cores and Lava Cores"}
+      - {recipe: "Standard Scope", why: "A cheap trainer scope"}
+      - {recipe: "Sniper Scope", why: "The best Classic scope before the Accurascope"}
+      - {recipe: "SAF-T Ultra Precision Scope", why: "New Rare scope of item level 65. The client data does not give the effect"}
+      - {recipe: "Hi-Impact Mithril Slugs", why: "Makes 200 from 1 Mithril Bar and 1 Solid Blasting Powder"}
+      - {recipe: "Mithril Gyro-Shot", why: "Makes 200. A trainer teaches it"}
+      - {recipe: "Thorium Shells", why: "Makes 200. The last bullet of the Classic list"}
+      - {recipe: "Swiftstrike Shot", why: "New Epic bullet. Makes 200. It uses 8 Heavy Thorium Bars"}
+      - {recipe: "Swiftfeather Arrow", why: "New Epic arrow. Makes 200. It uses 8 Heavy Thorium Bars"}
+  - title: "Goggles and headgear"
+    intro: |
+      Engineering makes head armor for each level range. Some goggles are reagents of later goggles.
+    items:
+      - {recipe: "Flying Tiger Goggles", why: "The first goggles. Green Tinted Goggles uses 1"}
+      - {recipe: "Green Tinted Goggles", why: "A trainer recipe. Fire Goggles uses 1"}
+      - {recipe: "Fire Goggles", why: "A trainer recipe. Gnomish Goggles and Master Engineer's Goggles use 1"}
+      - {recipe: "Catseye Ultra Goggles", why: "In Classic they increase stealth detection"}
+      - {recipe: "Spellpower Goggles Xtreme Plus", why: "Caster goggles. They use 1 Spellpower Goggles Xtreme"}
+      - {recipe: "Green Lens", why: "A Rare trainer recipe with random stats in Classic"}
+      - {recipe: "Master Engineer's Goggles", why: "The last Classic goggles before the Bloodvine recipes"}
+      - {recipe: "Floppy Goggles", why: "New cloth goggles of item level 45 from Merchant's Favor"}
+      - {recipe: "Bent Goggles", why: "New leather goggles of item level 45 from Merchant's Favor"}
+      - {recipe: "Stuckbutton Goggles", why: "New mail goggles of item level 45 from Merchant's Favor"}
+      - {recipe: "Dented Goggles", why: "New plate goggles of item level 45 from Merchant's Favor"}
+  - title: "Devices and gadgets"
+    intro: |
+      These are Classic devices. The client data shows no change to them.
+    items:
+      - {recipe: "Target Dummy", why: "In Classic it pulls enemies away from you. A trainer teaches it"}
+      - {recipe: "Advanced Target Dummy", why: "The stronger dummy. A trainer teaches it"}
+      - {recipe: "Discombobulator Ray", why: "In Classic it makes the target small and slow"}
+      - {recipe: "Goblin Jumper Cables", why: "In Classic it has a chance to bring a dead player to life"}
+      - {recipe: "Goblin Jumper Cables XL", why: "The Classic upgrade of the jumper cables"}
+      - {recipe: "Parachute Cloak", why: "In Classic it decreases your fall speed. SAF-T Disposable Parachute uses 1"}
+      - {recipe: "Gyrofreeze Ice Reflector", why: "In Classic this trinket reflects Frost spells"}
+      - {recipe: "Hyper-Radiant Flame Reflector", why: "In Classic this trinket reflects Fire spells"}
+      - {recipe: "Field Repair Bot 74A", why: "In Classic it repairs the equipment of a raid"}
+      - {recipe: "Force Reactive Disk", why: "The Classic Epic shield for tanks"}
+      - {recipe: "Major Recombobulator", why: "In Classic it removes Polymorph and restores health and mana"}
+  - title: "Field devices at skill 300"
+    intro: |
+      These new recipes use a device or a "Schematic: Tinker" item as a reagent. The names suggest a consumable version of that device or tinker. The client data does not give the effects.
+    items:
+      - {recipe: "EZ-Thro Field Transporter: Gadgetzan", why: "Uses 1 Ultrasafe Transporter: Gadgetzan and 1 EZ-Thro Shell"}
+      - {recipe: "SAF-T Emergency Ripper: Everlook", why: "Uses 1 Dimensional Ripper - Everlook and 2 SAF-T Tubes"}
+      - {recipe: "EZ and SAF Field Transporter: Mt. Hyjal", why: "Uses 1 Dimensional Transporter - Mt. Hyjal"}
+      - {recipe: "SAF-T Nitro Boosts", why: "Uses a Schematic: Tinker: Nitro Boosts item"}
+      - {recipe: "SAF-T Teleport", why: "Uses a Schematic: Tinker: Teleport item"}
+      - {recipe: "EZ-Thro Magnetic Displacer", why: "Uses a Schematic: Tinker: Magnetic Displacement item"}
+      - {recipe: "Dimensional Transporter - Mt. Hyjal", why: "New device. The name suggests a transport to Mt. Hyjal. It uses 2 Legionite Bars"}
+  - title: "Merchant's Favor: buy these first"
+    intro: |
+      Fritz Fizzle sells 28 schematics. The first 4 parts in this list are necessary for other new recipes, so they give the most value. The other rows show the remaining new devices and gadgets.
+    items:
+      - {recipe: "EZ-Thro Wrap", why: "EZ-Thro Dynamite and EZ-Thro Copper Bomb XL need it. It costs 45 Favor"}
+      - {recipe: "No Slip SAF-T Padding", why: "SAF-T Bronze Bomb and SAF-T Jumbo Dynamite need it. It costs 45 Favor"}
+      - {recipe: "SAF-T Bell", why: "Shafety Sheep needs it. It costs 180 Favor"}
+      - {recipe: "EZ-Thro Fireproof Fuse", why: "EZ-Thro Grenade, EZ-Thro Dynamite II and EZ-Thro Bronze Mortar need it. It costs 180 Favor"}
+      - {recipe: "Loot-A-Rang", why: "A Rare device. The client data does not give the effect. It costs 270 Favor"}
+      - {recipe: "Gnomish Army Knife", why: "It uses 1 Mithril Casing, 1 Gold Power Core and 2 Thorium Widgets. The client data does not give the effect. It costs 270 Favor"}
+      - {recipe: "Ultralight Goblin Glider", why: "The name suggests a glider. It costs 360 Favor"}
+      - {recipe: "Stealthman 52", why: "The client data does not give the effect. It costs 360 Favor"}
+      - {recipe: "Ultrasafe Rechargeable Battery", why: "The client data does not give the effect. It costs 360 Favor"}
+      - {recipe: "Satchel of Iron Bombs", why: "Uses 20 Big Iron Bombs. It costs 270 Favor"}
+      - {recipe: "Clanking Cord", why: "New Uncommon item of item level 35. The name suggests a belt. It costs 180 Favor"}
+      - {recipe: "Gizmo Girdle", why: "New Uncommon item of item level 35. The name suggests a belt. It costs 180 Favor"}
+      - {recipe: "Whimsical Waistwrap", why: "New Uncommon item of item level 35. The name suggests a belt. It costs 180 Favor"}
+      - {recipe: "Emergency Field Cloak", why: "It uses 1 Gnomish Cloaking Device and 1 SAF-T Casing. The client data does not give the effect. It costs 270 Favor"}
+      - {recipe: "SAF-T Disposable Parachute", why: "It uses 1 Parachute Cloak and 1 SAF-T Casing. The name suggests a parachute for 1 use. It costs 270 Favor"}
+      - {recipe: "Compact Critter Carrier", why: "The client data does not give the effect. It costs 270 Favor"}
+  - title: "Gnomish and Goblin recipes"
+    intro: |
+      Most of these recipes have Gnomish or Goblin in the name. In Classic, each group needs its specialization to make or to use the item. This is not confirmed for Forever.
+    items:
+      - {recipe: "Gnomish Shrink Ray", why: "Gnomish. In Classic it decreases the attack power of the target, with a chance to fail"}
+      - {recipe: "Gnomish Net-o-Matic Projector", why: "Gnomish. In Classic it roots the target"}
+      - {recipe: "Gnomish Mind Control Cap", why: "Gnomish. In Classic it controls a humanoid target"}
+      - {recipe: "Gnomish Battle Chicken", why: "Gnomish. In Classic this trinket calls a guardian"}
+      - {recipe: "Gnomish Death Ray", why: "Gnomish. In Classic it does much damage and also hurts you"}
+      - {recipe: "Ultrasafe Transporter - Gadgetzan", why: "Gnomish in Classic. A trainer teaches it. It moves you to Gadgetzan"}
+      - {recipe: "Goblin Sapper Charge", why: "Goblin. In Classic it is the main reason to select Goblin Engineering"}
+      - {recipe: "The Big One", why: "Goblin. Makes 2. Dimensional Ripper - Everlook uses 1"}
+      - {recipe: "Goblin Rocket Helmet", why: "Goblin. In Classic it charges at a target and stuns it"}
+      - {recipe: "Goblin Dragon Gun", why: "Goblin. In Classic this trinket does Fire damage in a cone"}
+      - {recipe: "Dimensional Ripper - Everlook", why: "Goblin in Classic. A trainer teaches it. It moves you to Everlook"}
+      - {recipe: "Gnomish Weather Machine", why: "New. The client data does not give the effect"}
+      - {recipe: "Gnomish Poultryizer", why: "New Rare gadget from Merchant's Favor. The client data does not give the effect"}
+  - title: "Pets and fireworks"
+    items:
+      - {recipe: "Mechanical Squirrel", why: "A companion pet from cheap copper parts"}
+      - {recipe: "Lifelike Mechanical Toad", why: "A companion pet"}
+      - {recipe: "Lil' Smoky", why: "A companion pet. Gnomish in Classic"}
+      - {recipe: "Pet Bombling", why: "A companion pet. Goblin in Classic. It uses 1 Big Iron Bomb"}
+      - {recipe: "Tranquil Mechanical Yeti", why: "A companion pet. In Classic a quest in Winterspring teaches it"}
+      - {recipe: "Mechanical Dragonling", why: "In Classic this trinket calls a dragonling that fights for you"}
+      - {recipe: "Blue Firework", why: "Makes 3. The recipe item does not bind when you get it"}
+      - {recipe: "Firework Launcher", why: "The name suggests that it fires the rockets"}
+      - {recipe: "Snowmaster 9000", why: "A device that uses 4 Snowballs and 1 Frost Oil"}
+
+sources_note: |
+  A trainer teaches 71 of the 247 recipes. The client does not hold the skill that the trainer asks for, so the guide uses Classic-era values. Recipe items teach the other 176 recipes, and the client does not say where these items come from. 97 of the recipe items bind when you get them, so you cannot buy them from other players.
+
+  Fritz Fizzle at Three Corners in Redridge Mountains sells 28 schematics for Merchant's Favor. Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes also need reputation. See the Economy page. In the beta, the schematics cost 45, 180, 270 or 360 Favor. The price increases with the skill of the recipe.
+
+  8 of the 28 Favor schematics do not bind, so you can buy them from other players. These include SAF-T Tabs, EZ-Thro Wrap, No Slip SAF-T Padding, SAF-T Bell and EZ-Thro Fireproof Fuse.
+
+  The client also holds 28 Engineering recipes from Season of Discovery. No merchant sells them in the beta data, so this guide does not list them.
+
+specializations_intro: |
+  The client has 2 specializations. It does not say which recipes each one needs, or how you select one. In Classic, you select one at skill 200 with a quest, and the recipes with Gnomish or Goblin in the name follow that selection. This is not confirmed for Forever.
+
+specializations:
+  - name: "Gnomish Engineer"
+    text: "The client text says that it lets an engineer make \"fantastic, yet unreliable gnomish devices\". The Gnomish recipes are gadgets, such as Gnomish Shrink Ray, Gnomish Cloaking Device, Gnomish Mind Control Cap and Gnomish Battle Chicken. In Classic, Ultrasafe Transporter - Gadgetzan is also Gnomish. New recipes with Gnomish in the name are Gnomish Army Knife, Gnomish Poultryizer and Gnomish Weather Machine. The client does not say that they need the specialization."
+  - name: "Goblin Engineer"
+    text: "The client text says that it lets an engineer make \"lethal goblin devices\". The Goblin recipes are mostly explosives, such as Goblin Sapper Charge, The Big One, Goblin Mortar and Goblin Bomb Dispenser. In Classic, Dimensional Ripper - Everlook is also Goblin. Ultralight Goblin Glider is a new recipe with Goblin in the name. The client does not say that it needs the specialization."
+
+camp_note: |
+  A trainer teaches the Reagent Bot, and it uses 1 Handful of Copper Bolts and 1 Copper Tube. The Camping page says that a "Camping 101" quest gives the Tier 1 feature of each profession. The Repair Bot blueprint drops from Sneed in The Deadmines and needs skill 140. The Repair Bot uses 2 Whirring Bronze Gizmos, 1 Bronze Tube and 1 Heavy Leather. A blueprint teaches Anarchist's Workbench at skill 300, and it uses 1 Essence of Anarchy and 2 Thorium Widgets. Tier 3 blueprints drop from dungeon and raid bosses. The boss for Anarchist's Workbench is not known. A higher tier includes the features of the lower tiers. The Legacy talent Reagent Economy removes the reagents of Tier 1 features. The client data does not give the effects of the 3 features.
+
+tips:
+  - "Mine and smelt your own bars. The path uses bars of each tier, and stone for all blasting powder."
+  - "Keep the stone that you mine. Each tier of blasting powder uses a different stone."
+  - "Make the parts for a step before you start it. Explosive Sheep and Hi-Explosive Bomb each use 3 different parts."
+  - "Keep spare Silver Contacts and Gold Power Cores. 1 bar now makes many of them."
+  - "Gnomes have Engineering Specialization. It gives 20% fewer device failures."
+  - "Engineering gives Legacy Points at skill 150, 225 and 300."
+  - "Many recipes need skill 300 and turn yellow at 320. The skill cap is 300, so they give no skill point that you can use."
+  - "The Mortar: Reloaded has no skill colours in the client. The client data does not show if it gives skill points."
+  - "Goblin Jumper Cables asks for skill 165, but it is yellow at 160. It is never orange."
+  - "Serrated Strap makes an item that has no name in the launch client."
+
+faq:
+  - q: "Do I need Mining for Engineering?"
+    a: "No, but Mining saves much gold. Most recipes use bars, and all blasting powder uses stone from mining nodes."
+  - q: "Where do I get the Thorium Widget and Thorium Shells recipes?"
+    a: "Ask the trainer first. In Classic, a trainer teaches the 2 recipes, but this is not confirmed for Forever. The client data shows recipe items for them, and it does not say where the items come from. The 2 recipe items do not bind, so you can buy them from other players."
+  - q: "What do the SAF-T and EZ-Thro items do?"
+    a: "The client data does not give the effects. Each item is a Classic explosive or device with a new part added. Read the tooltip in the game."
+  - q: "Gnomish or Goblin Engineering?"
+    a: "In Classic, Gnomish gives gadgets and Goblin gives explosives, such as Goblin Sapper Charge. The client does not confirm that Forever uses the same rules."
+  - q: "At what skill do I learn each trainer recipe?"
+    a: "The client does not hold the trainer skill. The path uses the Classic-era values, and it marks them as Classic values."
+  - q: "Can I level to 300 with trainer recipes only?"
+    a: "The client data does not confirm it. The trainer recipes above 260 are Salt Shaker, the 2 transporters and Tranquil Mechanical Yeti. Salt Shaker is orange to 270 and yellow to 280. In Classic, each transporter needs a different specialization. All of these recipes use many costly reagents, so the path uses Thorium Widget and Thorium Shells."
+
+sources: []

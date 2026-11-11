@@ -1,0 +1,285 @@
+profession: Blacksmithing
+kind: crafting
+icon: material-anvil
+description: "Blacksmithing guide for WoW: Forever: a path from skill 1 to 300, Merchant's Favor plans, specializations and all 441 recipes."
+
+intro: |
+  Blacksmithing changes metal bars and stones into mail armor, plate armor, weapons and weapon stones. It also makes the Inert Enchanting Rods that Enchanters need. In Forever, Copper Rod is a new recipe in this group. The launch client holds 441 recipes, and 197 of them are new. Most new plans bind when you pick them up, so you must find them yourself.
+
+card:
+  use: "Mail and plate armor, weapons, weapon stones, skeleton keys and rods for Enchanters."
+  pairs: "Mining. It supplies the bars and the stones for almost all recipes."
+
+glance:
+  - ["Best for", "Warriors and Paladins. Shamans and Hunters can use the mail armor"]
+  - ["Main materials", "Copper, Bronze, Iron, Steel, Mithril and Thorium Bars, and stones"]
+  - ["Skill cap", "300"]
+  - ["Specializations", "Armorsmith, Weaponsmith, Master Axesmith, Master Hammersmith, Master Swordsmith"]
+  - ["Merchant's Favor", "61 plans. On the beta, Stondry Darkhammer sold them at Three Corners, Redridge Mountains. This is the Alliance camp of the Azeroth Commerce Authority"]
+  - ["Camp features", "Sharpening Wheel, Anvil, Master Forge"]
+
+new:
+  - "**197 new recipes.** 193 of them come from plans that bind when you pick them up."
+  - "**The skill colours moved down.** 186 Classic recipes have different values. Most recipes turn yellow and grey at a lower skill than in Classic."
+  - "**61 Merchant's Favor plans.** They include 5 low-level mail sets, 5 high-level sets, 3 Enriched Thorium pieces, Thorium Cestus, Thorium Greatmace and Legionite Glaive."
+  - "**New reagents:** Heavy Thorium Bar, Legionite Bar, Azerothium Bar, Malleable Essence of Nature, Pristine Leather, Sandpaper and Sulfuric Acid. Most new recipes at skill 300 and the Favor sets use them."
+  - "**New armor lines:** Skyforged, Sterling Silver, Hard Gold, Shining Mithril and Blessed Plate, and the Justice and Glory epics."
+  - "**2 Rare plate lines near skill 290:** Clutchlord's and Goregasher. Each line has gloves, a belt and boots. The plans bind when you pick them up."
+  - "**3 Rare copper boots at skill 35:** Gemmed Copper Boots, Glowing Copper Boots and Strange Copper Boots."
+  - "**More fist weapons, polearms and thrown weapons.** There are 5 new fist weapons and 4 new polearms. The 3 thrown Blacksmith Hammers are a new weapon type for the profession."
+  - "**Copper Rod is a Blacksmithing recipe.** The 5 Inert Enchanting Rods have their own heading."
+  - "**3 camp features:** Sharpening Wheel, Anvil and Master Forge."
+  - "**6 Classic plans moved to Leatherworking:** Wildthorn Mail, Heavy Timbermaw Belt, Storm Gauntlets, Heavy Timbermaw Boots, Helm of the Great Chief and Invulnerable Mail. They are not Blacksmithing recipes in Forever."
+
+path_intro: |
+  This path uses trainer recipes to skill 240. The client does not hold the skill that the trainer asks for. The path uses the Classic-era value when that value is not above the yellow skill. For 5 mithril and steel recipes it uses the yellow skill as an estimate. Because the colours moved down, it is possible that the trainer teaches these recipes earlier. Go to the trainer each time you get 5 points. A recipe that you learn earlier stays orange longer. If the trainer does not teach a recipe at the skill in the table, continue with the recipe from the step before. Steel Breastplate and Heavy Mithril Axe are other trainer options. Their Classic trainer skills are 200 and 210.
+
+path:
+  - bracket: "Apprentice (1–75)"
+    intro: |
+      You need Rough Stone and Copper Bars. Miners get Rough Stone from copper veins. You need Journeyman Blacksmithing to continue above skill 75.
+    steps:
+      - {from: 1, to: 25, craft: "Rough Sharpening Stone", note: "1 Rough Stone for each craft. Yellow from 15"}
+      - {from: 25, to: 45, craft: "Rough Grinding Stone", learn: 25, learn_basis: classic, note: "Orange for the full step. The path does not use these stones later. Sell them, or keep them for other recipes"}
+      - {from: 45, to: 75, craft: "Copper Chain Belt", learn: 35, learn_basis: classic, note: "Orange until 70"}
+    notes:
+      - "At skill 50, train Journeyman at a Blacksmithing trainer. This is the Classic-era value."
+  - bracket: "Journeyman (75–150)"
+    intro: |
+      You change from copper to bronze in this bracket. A Miner makes Bronze Bars from Copper Bars and Tin Bars. Bronze Warhammer also needs Strong Flux from a vendor and Medium Leather.
+    steps:
+      - {from: 75, to: 80, craft: "Copper Chain Belt", learn: 35, learn_basis: classic, note: "Yellow"}
+      - {from: 80, to: 95, craft: "Runed Copper Belt", note: "Orange until 85, then yellow"}
+      - {from: 95, to: 125, craft: "Rough Bronze Leggings", note: "Orange until 120. It needs only Bronze Bars"}
+      - {from: 125, to: 150, craft: "Bronze Warhammer", learn: 125, learn_basis: classic, note: "Orange for the full step. This recipe is not changed from Classic"}
+    notes:
+      - "In Classic, a trainer teaches Expert Blacksmithing at skill 125 and level 20. It is not confirmed for Forever."
+      - "Bronze Mace is a trainer recipe that is orange from 75 to 115. Use it in place of Runed Copper Belt if you have Bronze Bars, Weak Flux and Medium Leather."
+      - "Coarse Grinding Stone and Heavy Grinding Stone are not good for skill points in Forever. They are grey at 75 and at 125."
+      - "Keep 5 Bronze Bars, 2 Coarse Grinding Stones and 2 Medium Leather for the Anvil at skill 140. A blueprint teaches the Anvil."
+  - bracket: "Expert (150–225)"
+    intro: |
+      You use Iron Bars, then Steel Bars and Mithril Bars. The last step uses Steel Bars again. Green Dye comes from a vendor. Each Heavy Grinding Stone needs 3 Heavy Stone, and each Solid Grinding Stone needs 4 Solid Stone. A Miner makes Steel Bars from Iron Bars and Coal. In Classic, Coal comes from a vendor. Heavy Mithril Gauntlet needs Mageweave Cloth. In Classic, Mageweave Cloth comes from humanoids of level 41 to 50.
+    steps:
+      - {from: 150, to: 155, craft: "Bronze Warhammer", learn: 125, learn_basis: classic, note: "The last orange points"}
+      - {from: 155, to: 165, craft: "Green Iron Leggings", learn: 155, learn_basis: classic, note: "Yellow from the start"}
+      - {from: 165, to: 178, craft: "Green Iron Bracers", learn: 165, learn_basis: classic, note: "Yellow for the full step"}
+      - {from: 178, to: 185, craft: "Green Iron Helm", learn: 170, learn_basis: classic, note: "Yellow until 183. Each craft needs 1 Citrine. If you have no Citrine, continue with Green Iron Bracers, which are green"}
+      - {from: 185, to: 200, craft: "Golden Scale Bracers", learn: 185, learn_basis: classic, note: "Yellow until 198"}
+      - {from: 200, to: 210, craft: "Heavy Mithril Gauntlet", learn: 200, learn_basis: estimate, note: "The Classic trainer skill is 205, which is above the yellow skill in Forever. The guide uses 200. If the trainer does not teach it at 200, make Steel Breastplate to 205. Steel Breastplate is yellow until 213"}
+      - {from: 210, to: 215, craft: "Mithril Plate Pants", learn: 205, learn_basis: estimate, note: "Yellow. It needs only Mithril Bars. The Classic trainer skill of 210 is above the yellow skill"}
+      - {from: 215, to: 225, craft: "Steel Plate Helm", learn: 210, learn_basis: estimate, note: "The Classic trainer skill is 215. Yellow until 220, then green. If the trainer teaches Mithril Coif before 225, make that"}
+    notes:
+      - "In Classic, a trainer teaches Artisan Blacksmithing at skill 200 and level 35. It is not confirmed for Forever."
+      - "Go to the trainer at 178. If the trainer teaches Golden Scale Bracers before 185, make them. They are orange until 185."
+      - "The trainer recipes from 165 to 225 are yellow or green in this path. Plans such as Golden Scale Leggings, Steel Weapon Chain and Mithril Spurs stay orange longer. The client does not say where these plans come from."
+  - bracket: "Artisan (225–300)"
+    intro: |
+      The trainer has no cheap recipe above skill 240. The last 3 steps use plans that do not bind when you pick them up. The client does not say where these plans come from. In Classic they are world drops, so look in the auction house. You need Mithril Bars, then Thorium Bars. Mithril Coif needs Mageweave Cloth, and Heavy Mithril Boots need Thick Leather. Thorium Greatsword needs Rugged Leather and Dense Grinding Stones. Each Dense Grinding Stone needs 4 Dense Stone. In Classic, a Skinner gets Thick Leather and Rugged Leather.
+    steps:
+      - {from: 225, to: 235, craft: "Mithril Coif", learn: 225, learn_basis: estimate, note: "The Classic trainer skill is 230, which is above the yellow skill in Forever. The guide uses 225. Yellow. If the trainer does not teach it at 225, make Mithril Spurs from a plan, or Heavy Mithril Axe, which is green"}
+      - {from: 235, to: 240, craft: "Heavy Mithril Boots", learn: 230, learn_basis: estimate, note: "The Classic trainer skill is 235. Yellow"}
+      - {from: 240, to: 260, craft: "Thorium Bracers", note: "A plan teaches it. There is no cheap trainer recipe here. Orange until 250, then yellow. It needs 4 Blue Power Crystal"}
+      - {from: 260, to: 275, craft: "Thorium Greatsword", note: "A plan teaches it. Yellow until 273. It needs Dense Grinding Stones and Rugged Leather, but no crystals"}
+      - {from: 275, to: 300, craft: "Thorium Leggings", note: "A plan teaches it. Orange until 295. It needs 4 Red Power Crystal"}
+    notes:
+      - "If you have the plan for Thorium Bracers at skill 230, start it then. It is orange from 230 to 250."
+      - "If you do not have the plan for Thorium Bracers, make Heavy Mithril Boots to 245. The boots are green from 240. Thorium Belt is a second option. A plan teaches it, and it is orange from 225 to 245."
+      - "Go to the trainer at 225. If the trainer teaches Dense Sharpening Stone or Dense Grinding Stone, make them to 230. They are orange until 230. The client does not hold the trainer skill. Keep the Dense Grinding Stones for Thorium Greatsword."
+      - "Thorium Boots and Thorium Helm are orange from 255 to 275. Use one of them if you do not have the plan for Thorium Greatsword."
+      - "If you do not have the plan for Thorium Leggings, use Radiant Circlet and then Radiant Leggings. Radiant Circlet is orange from 270 to 290. Radiant Leggings are orange from 280 to 300. Plans teach these recipes also, and each craft needs 4 Heart of Fire."
+      - "In Classic, Power Crystals come from Un'Goro Crater. It is not confirmed for Forever."
+
+picks_intro: |
+  These recipes are not necessary for the path, but they are useful. The client data does not give item stats. Read the tooltip in the game before you buy materials.
+
+picks:
+  - title: "Weapon stones"
+    intro: |
+      In Classic, a sharpening stone increases the damage of a sharp weapon for a time. A weightstone does the same for a blunt weapon. These effects are not confirmed for Forever.
+    items:
+      - {recipe: "Rough Sharpening Stone", why: "The first stone. It is not changed from Classic"}
+      - {recipe: "Heavy Sharpening Stone", why: "In Classic, a stone for mid-level weapons. Make it for use, not for skill points"}
+      - {recipe: "Solid Sharpening Stone", why: "In Classic, the stone for the level 35 to 45 range"}
+      - {recipe: "Dense Sharpening Stone", why: "In Classic, the standard stone at level 60. It is not confirmed for Forever"}
+      - {recipe: "Dense Weightstone", why: "In Classic, the standard stone for maces at level 60. It is not confirmed for Forever"}
+      - {recipe: "Elemental Sharpening Stone", why: "In Classic, the best stone. It is not confirmed for Forever. It turns yellow at 275, but you learn it at 300"}
+  - title: "Inert Enchanting Rods"
+    intro: |
+      The Enchanting recipes for runed rods use these rods as a reagent.
+    items:
+      - {recipe: "Copper Rod", why: "New as a Blacksmithing recipe. It gives fast points from 1 to 10"}
+      - {recipe: "Silver Rod", why: "The reagent for Runed Silver Rod"}
+      - {recipe: "Golden Rod", why: "The reagent for Runed Golden Rod"}
+      - {recipe: "Truesilver Rod", why: "The reagent for Runed Truesilver Rod"}
+      - {recipe: "Arcanite Rod", why: "The last rod. It is the reagent for Runed Arcanite Rod"}
+  - title: "Keys, buckles and weapon parts"
+    intro: |
+      In Classic, a skeleton key opens a locked chest or door. The client data does not give the effects of the other items. The 4 skeleton keys and Iron Buckle make 2 for each craft. The client data does not show if this is new in Forever.
+    items:
+      - {recipe: "Silver Skeleton Key", why: "Makes 2 for each craft"}
+      - {recipe: "Golden Skeleton Key", why: "Makes 2 for each craft"}
+      - {recipe: "Truesilver Skeleton Key", why: "Makes 2 for each craft"}
+      - {recipe: "Arcanite Skeleton Key", why: "Makes 2 for each craft"}
+      - {recipe: "Iron Buckle", why: "Makes 2. Blessed Plate Belt uses 1"}
+      - {recipe: "Inlaid Mithril Cylinder", why: "A reagent for Engineering recipes such as Gnomish Death Ray and Mithril Mechanical Dragonling. No Blacksmithing recipe uses it"}
+      - {recipe: "Mithril Spurs", why: "Orange from 210 to 230 with only Mithril Bars and Solid Grinding Stones. Good for skill points"}
+      - {recipe: "Thorium Shield Spike", why: "The last shield spike. Read the tooltip for its effect"}
+      - {recipe: "Steel Weapon Chain", why: "The name suggests an item that you attach to a weapon. Read the tooltip"}
+  - title: "Mail and plate for leveling"
+    intro: |
+      These recipes make armor for your character during leveling. The plans for the Skyforged, Sterling Silver, Hard Gold, Shining Mithril and Blessed Plate lines bind when you pick them up. The 3 Rare copper boots turn grey 5 points after you learn them, so each gives only 5 points.
+    items:
+      - {recipe: "Rough Copper Vest", why: "A chest piece at skill 1. It is not changed from Classic"}
+      - {recipe: "Glowing Copper Boots", why: "New. One of 3 Rare mail boots at skill 35. The plan binds when you pick it up"}
+      - {recipe: "Copper Chain Pants", why: "Cheap trainer legs. The recipe is not changed from Classic"}
+      - {recipe: "Azure Skyforged Chainmail", why: "New. One of 16 Skyforged recipes. The first group starts at skill 50"}
+      - {recipe: "Rough Bronze Cuirass", why: "A trainer chest piece that needs only Bronze Bars"}
+      - {recipe: "Sterling Silver Breastplate", why: "New. The Sterling Silver line uses Silver Bars as the main material"}
+      - {recipe: "Green Iron Hauberk", why: "A Rare chest piece from the trainer"}
+      - {recipe: "Hard Gold Cuirass", why: "New. The Hard Gold line uses Gold Bars as the main material"}
+      - {recipe: "Steel Breastplate", why: "A trainer chest piece from Steel Bars"}
+      - {recipe: "Heavy Mithril Breastplate", why: "A trainer plate chest piece that needs only Mithril Bars"}
+      - {recipe: "Shining Mithril Breastplate", why: "New. The Shining Mithril line uses Truesilver Bars"}
+      - {recipe: "Blessed Plate Chest", why: "New. The Blessed Plate line uses Thorium Bars and Blue Sapphires"}
+      - {recipe: "Clutchlord's Grips", why: "New. One of 6 Rare plate recipes in the Clutchlord's and Goregasher lines. The client data does not give the stats"}
+  - title: "Merchant's Favor: low-level mail sets"
+    intro: |
+      On the beta, Stondry Darkhammer sold 6 plans for each of 5 Rare mail sets. Each plan cost 30 Merchant's Favor. 1 material is different in each set: Shadowgem (Guard's), Tigerseye (Protector's), Strange Dust (Acolyte's), Lesser Magic Essence (Crusader's) or Small Lustrous Pearl (Veteran's). Choose the set by the stats in the tooltip. Each set also has a Chain Shirt, Chain Leggings and a Chain Helm that are not Favor plans. These plans bind when you pick them up, and the client does not say where they come from. Each of these recipes turns grey 5 points after you learn it, so it gives only 5 points.
+    items:
+      - {recipe: "Guard's Chain Belt", why: "The first piece of each set. Buy this plan first if you level a mail character"}
+      - {recipe: "Guard's Gloves", why: "The same recipe is in each of the 5 sets"}
+      - {recipe: "Guard's Boots", why: "The third Favor piece of the set"}
+      - {recipe: "Guard's Silvered Chain Helm", why: "Item level 25"}
+      - {recipe: "Guard's Silvered Chain Shirt", why: "Item level 27"}
+      - {recipe: "Guard's Silvered Chain Leggings", why: "Item level 30. The last piece of the set"}
+      - {recipe: "Guard's Chain Shirt", why: "Not a Favor plan. The plan binds when you pick it up"}
+      - {recipe: "Guard's Chain Leggings", why: "Not a Favor plan. The plan binds when you pick it up"}
+      - {recipe: "Guard's Chain Helm", why: "Not a Favor plan. The plan binds when you pick it up"}
+  - title: "Merchant's Favor: high-level sets"
+    intro: |
+      The Justicar's, Officer's, Prefect's, Sentinel's and Warder's sets have 5 Favor plans each. On the beta, the plans cost 60 or 90 Merchant's Favor. 1 material is different in each set: Globe of Water, Jade, Golden Pearl, Purple Lotus or Black Pearl. Each set also has a Belt, Boots and Gloves that are not Favor plans. These plans bind when you pick them up. Each of these recipes also turns grey 5 points after you learn it.
+    items:
+      - {recipe: "Officer's Gauntlet", why: "The first Favor piece. It is mail, and the later pieces are plate"}
+      - {recipe: "Officer's Pauldrons", why: "Plate shoulders, item level 47"}
+      - {recipe: "Officer's Wristguards", why: "Plate bracers, item level 50"}
+      - {recipe: "Officer's Sabatons", why: "Plate boots, item level 52"}
+      - {recipe: "Officer's Waistguard", why: "Plate belt, item level 55"}
+      - {recipe: "Officer's Belt", why: "Not a Favor plan. The plan binds when you pick it up"}
+      - {recipe: "Officer's Boots", why: "Not a Favor plan. The plan binds when you pick it up"}
+      - {recipe: "Officer's Gloves", why: "Not a Favor plan. The plan binds when you pick it up"}
+  - title: "Merchant's Favor: skill 250 and 300"
+    intro: |
+      On the beta, the 2 plans at skill 250 cost 90 Merchant's Favor, and the 4 plans at skill 300 cost 120.
+    items:
+      - {recipe: "Thorium Cestus", why: "A Rare fist weapon"}
+      - {recipe: "Thorium Greatmace", why: "A Rare two-handed mace"}
+      - {recipe: "Enriched Thorium Breastplate", why: "A Rare plate chest piece"}
+      - {recipe: "Enriched Thorium Helm", why: "A Rare plate helm"}
+      - {recipe: "Enriched Thorium Leggings", why: "Rare plate legs"}
+      - {recipe: "Legionite Glaive", why: "A Rare polearm"}
+  - title: "New epics at skill 300"
+    intro: |
+      All these plans bind when you pick them up, and the client does not say where they come from. All are yellow above 300, so they give no skill points that you can use.
+    items:
+      - {recipe: "Stalwart Helm", why: "An Epic plate helm"}
+      - {recipe: "Breastplate of Salvation", why: "An Epic plate chest piece"}
+      - {recipe: "Champion's Legplates", why: "Epic plate legs"}
+      - {recipe: "Martyr's Legplates", why: "Epic plate legs"}
+      - {recipe: "Justice Pauldrons", why: "One of 20 Justice and Glory recipes"}
+      - {recipe: "Legplates of Glory", why: "The Glory line has the same reagents as the Justice line"}
+      - {recipe: "Azerothium Legplates", why: "Item level 65. One of 7 recipes that need 1 Legionite Bar and Malleable Essence of Nature"}
+      - {recipe: "Heavy Thorium Gauntlets", why: "Item level 65 plate gloves"}
+      - {recipe: "Depleted Thorium Sabatons", why: "Item level 65 plate boots"}
+      - {recipe: "Evergreen Shield", why: "Item level 65. One of only 2 shields in the profession"}
+  - title: "Classic plate and resistance armor"
+    intro: |
+      These recipes are not changed from Classic.
+    items:
+      - {recipe: "Lionheart Helm", why: "The Classic Epic helm for melee damage"}
+      - {recipe: "Stronghold Gauntlets", why: "Classic Epic plate gloves for tanks"}
+      - {recipe: "Titanic Leggings", why: "Classic Epic plate legs for melee damage"}
+      - {recipe: "Dark Iron Helm", why: "Fire resistance in Classic"}
+      - {recipe: "Dark Iron Gauntlets", why: "Fire resistance in Classic"}
+      - {recipe: "Icebane Breastplate", why: "Frost resistance in Classic"}
+      - {recipe: "Ironvine Breastplate", why: "Nature resistance in Classic"}
+      - {recipe: "Thick Obsidian Breastplate", why: "A Classic Epic chest piece from obsidian shards"}
+  - title: "Weapons"
+    intro: |
+      The recipes at skill 300 in this list are not changed from Classic, unless the row says that the recipe is new or changed.
+    items:
+      - {recipe: "Arcanite Reaper", why: "A Classic two-handed axe that many Warriors use"}
+      - {recipe: "Arcanite Champion", why: "A Classic two-handed sword"}
+      - {recipe: "Hammer of the Titans", why: "A Classic two-handed mace"}
+      - {recipe: "Masterwork Stormhammer", why: "A Classic one-handed mace"}
+      - {recipe: "Frostguard", why: "A Classic one-handed sword"}
+      - {recipe: "Heartseeker", why: "A Classic dagger"}
+      - {recipe: "Annihilator", why: "A Classic one-handed axe. The recipe is changed. In Forever it turns yellow at 295"}
+      - {recipe: "Sulfuron Hammer", why: "In Classic, you need it for the legendary mace Sulfuras"}
+      - {recipe: "Mithril Claymore", why: "New. One of the new mithril weapons. The plans bind when you pick them up"}
+      - {recipe: "Stormcarver", why: "New. A Rare two-handed axe"}
+      - {recipe: "Forest Defender's Axe", why: "New. An Epic two-handed axe, item level 65"}
+      - {recipe: "Ironwood Blade", why: "New. An Epic one-handed sword, item level 65"}
+      - {recipe: "Greenhammer", why: "New. An Epic one-handed mace, item level 65"}
+  - title: "New fist weapons, polearms and thrown weapons"
+    items:
+      - {recipe: "Brass Knuckles", why: "The first of 5 new fist weapons"}
+      - {recipe: "Mithril Claws", why: "A fist weapon from Mithril Bars"}
+      - {recipe: "Bagh Nakh", why: "A Rare fist weapon at skill 300"}
+      - {recipe: "Bronze Dory", why: "The first of 4 new polearms"}
+      - {recipe: "Thorium Poleaxe", why: "A Rare polearm"}
+      - {recipe: "Cracked Blacksmith Hammer", why: "A thrown weapon. It gives 5 orange points at skill 110"}
+      - {recipe: "Arcanite Blacksmith Hammer", why: "A Rare thrown weapon"}
+
+sources_note: |
+  A trainer teaches 83 of the 441 recipes. For 66 of them, the client does not hold the skill that the trainer asks for. Plans teach the other 358 recipes, and 262 of these plans bind when you pick them up. The client does not say where the plans come from. On the beta, Stondry Darkhammer sold 61 plans for Merchant's Favor at Three Corners in Redridge Mountains. This is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes need Favor and reputation. The data does not give the reputation rank for each plan. The Favor prices in this guide come from the beta, not from the launch client.
+
+  The Blacksmithing data does not show where the new reagents come from. The data of other professions shows some sources. Sulfuric Acid is an Alchemy trainer recipe. Sandpaper is an Engineering trainer recipe. Mining has the recipes Smelt Heavy Thorium and Smelt Azerothium. Alchemy has the recipe Transmute: Legionite. The data does not show the source of Pristine Leather, Malleable Essence of Nature, Torbernite, Death Lotus or Golem Heart.
+
+specializations_intro: |
+  The client holds 5 specialization abilities. It does not say which recipes need a specialization, or how you get one. In Classic, you select Armorsmith or Weaponsmith at skill 200 and level 40 with a quest. A Weaponsmith can then select 1 master specialization at skill 250 and level 50. These rules are not confirmed for Forever.
+
+specializations:
+  - name: "Armorsmith"
+    text: "The client says that an Armorsmith can make special armors. In Classic, Lionheart Helm and Stronghold Gauntlets need Armorsmith."
+  - name: "Weaponsmith"
+    text: "The client says that a Weaponsmith can make special weapons. In Classic, you need it before you can select a master specialization."
+  - name: "Master Axesmith"
+    text: "The client says that a Master Axesmith can make special axes. In Classic, Arcanite Reaper needs it."
+  - name: "Master Hammersmith"
+    text: "The client says that a Master Hammersmith can make special maces and hammers. In Classic, Hammer of the Titans and Masterwork Stormhammer need it."
+  - name: "Master Swordsmith"
+    text: "The client says that a Master Swordsmith can make special swords. In Classic, Arcanite Champion and Frostguard need it."
+
+camp_note: |
+  A trainer teaches the Sharpening Wheel. The client does not hold the trainer skill. The wiki says that utility features start at skill 20. The Sharpening Wheel gives a Strength buff at a camp, and the buff does not stack with Strength of Earth. A blueprint from Gilnid in The Deadmines teaches the Anvil at skill 140. A blueprint teaches the Master Forge at skill 300, and it needs 1 Golem Heart. The wiki does not give the source of this blueprint. It also does not give the effects of the Anvil and the Master Forge. Higher tiers include the features of the lower tiers.
+
+tips:
+  - "Learn Mining with Blacksmithing. The path needs many bars and stones, and a Miner gets them without the auction house."
+  - "Make Copper Rod for the first 10 points if you have Copper Bars. It is orange until 10."
+  - "Keep all stones when you mine. Grinding stones are reagents for many recipes."
+  - "Make the Sharpening Wheel when the trainer teaches it. It turns yellow at 20 and grey at 25."
+  - "Offer Inert Enchanting Rods and skeleton keys to other players. Most need only 1 bar and 1 or 2 grinding stones. Arcanite Rod needs 3 Arcanite Bars."
+  - "Do not use Coarse Sharpening Stone or Heavy Sharpening Stone for skill points. Each is grey at the skill where you learn it."
+  - "The client shows 88 recipes that turn yellow above skill 300. Make them for the item, not for skill points."
+  - "Before you buy a Favor plan, read the tooltip of the item. The client data does not give the stats."
+  - "Before you buy a Favor set plan, make sure that you can get Sandpaper, Sulfuric Acid and Pristine Leather."
+  - "Blacksmithing gives 1 Legacy Point each at skill 150, 225 and 300."
+
+faq:
+  - q: "Which specialization is best?"
+    a: "The client does not say which recipes need a specialization. In Classic, Armorsmith makes special armor and Weaponsmith makes special weapons. Read the recipes at your trainer first."
+  - q: "Can I level with sharpening stones and grinding stones as in Classic?"
+    a: "Only at the start. In Forever, most stones turn grey much earlier. Dense Sharpening Stone is grey at 235."
+  - q: "At what skill does the trainer teach each recipe?"
+    a: "The client does not hold the trainer skill for 66 recipes. The path uses Classic-era values or estimates, and it marks them."
+  - q: "Where do the new plans come from?"
+    a: "The client does not say. It shows only that 262 plans bind when you pick them up. On the beta, Stondry Darkhammer sold 61 plans for Merchant's Favor at the Alliance camp."
+  - q: "Which Merchant's Favor plans do I buy first?"
+    a: "For a mail character that levels, buy the Chain Belt and Gloves of 1 low-level set. At level 60, compare the Enriched Thorium pieces and the weapons in the game. The wiki says that high-end recipes also need reputation."
+  - q: "Are the Season of Discovery recipes in Forever?"
+    a: "The client holds 65 Blacksmithing recipes from Season of Discovery under a separate heading. No merchant sells them, and the client does not say if a trainer teaches them. This guide does not include them."
+  - q: "How many bars do I need for 1 to 300?"
+    a: "The materials table gives the estimate for each bracket. The real number changes, because yellow and green recipes do not always give a point."
+
+sources: []

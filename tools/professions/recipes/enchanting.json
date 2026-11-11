@@ -1,0 +1,6931 @@
+{
+"profession": "enchanting",
+"recipes": [
+{
+"id": "1230643",
+"name": "Enchanted Lute",
+"group": "Camping",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 4,
+"makes": "1",
+"reagents": [
+[
+1,
+"Simple Wood"
+],
+[
+1,
+"Strange Dust"
+]
+],
+"item": "279976",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263056",
+"name": "Arcane Salvager",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+2,
+"Vision Dust"
+],
+[
+1,
+"Lesser Nether Essence"
+]
+],
+"item": "279985",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263082",
+"name": "Arcane Forge",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 300,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Maker's Spark"
+],
+[
+2,
+"Large Brilliant Shard"
+],
+[
+4,
+"Greater Eternal Essence"
+]
+],
+"item": "279987",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1245320",
+"name": "Dust to Motes",
+"group": "Reagents",
+"status": "new",
+"src": "trainer",
+"learn": 1,
+"yellow": 10,
+"green": 13,
+"grey": 15,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "3",
+"reagents": [
+[
+1,
+"Strange Dust"
+]
+],
+"item": "247786",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "17181",
+"name": "Enchanted Leather",
+"group": "Reagents",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 255,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Rugged Leather"
+],
+[
+1,
+"Lesser Eternal Essence"
+]
+],
+"item": "12810",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17180",
+"name": "Enchanted Thorium",
+"group": "Reagents",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 255,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Thorium Bar"
+],
+[
+3,
+"Dream Dust"
+]
+],
+"item": "12655",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7421",
+"name": "Runed Copper Rod",
+"group": "Runed Enchanting Rods",
+"status": "changed",
+"src": "trainer",
+"learn": 1,
+"yellow": 5,
+"green": 8,
+"grey": 10,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Copper Rod"
+],
+[
+1,
+"Mote of Magic"
+]
+],
+"item": "6218",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7795",
+"name": "Runed Silver Rod",
+"group": "Runed Enchanting Rods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 130,
+"green": 150,
+"grey": 170,
+"favor": false,
+"quality": "Common",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+1,
+"Silver Rod"
+],
+[
+3,
+"Strange Dust"
+],
+[
+4,
+"Lesser Magic Essence"
+],
+[
+1,
+"Shadowgem"
+]
+],
+"item": "6339",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "13628",
+"name": "Runed Golden Rod",
+"group": "Runed Enchanting Rods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Common",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+1,
+"Golden Rod"
+],
+[
+1,
+"Iridescent Pearl"
+],
+[
+1,
+"Greater Astral Essence"
+],
+[
+1,
+"Soul Dust"
+]
+],
+"item": "11130",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "13702",
+"name": "Runed Truesilver Rod",
+"group": "Runed Enchanting Rods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 220,
+"green": 240,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+1,
+"Truesilver Rod"
+],
+[
+1,
+"Black Pearl"
+],
+[
+1,
+"Greater Mystic Essence"
+],
+[
+1,
+"Vision Dust"
+]
+],
+"item": "11145",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "20051",
+"name": "Runed Arcanite Rod",
+"group": "Runed Enchanting Rods",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 310,
+"green": 330,
+"grey": 350,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+1,
+"Arcanite Rod"
+],
+[
+1,
+"Golden Pearl"
+],
+[
+10,
+"Illusion Dust"
+],
+[
+4,
+"Greater Eternal Essence"
+],
+[
+4,
+"Small Brilliant Shard"
+],
+[
+2,
+"Large Brilliant Shard"
+]
+],
+"item": "16207",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "25124",
+"name": "Minor Wizard Oil",
+"group": "Wizard Oils",
+"status": "changed",
+"src": "item",
+"learn": 5,
+"yellow": 30,
+"green": 48,
+"grey": 65,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+1,
+"Strange Dust"
+],
+[
+1,
+"Maple Seed"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "20744",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "25125",
+"name": "Minor Mana Oil",
+"group": "Wizard Oils",
+"status": "changed",
+"src": "item",
+"learn": 150,
+"yellow": 160,
+"green": 170,
+"grey": 180,
+"favor": false,
+"quality": "Common",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+1,
+"Soul Dust"
+],
+[
+2,
+"Maple Seed"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "20745",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "25126",
+"name": "Lesser Wizard Oil",
+"group": "Wizard Oils",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 210,
+"green": 220,
+"grey": 230,
+"favor": false,
+"quality": "Common",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+1,
+"Vision Dust"
+],
+[
+2,
+"Stranglethorn Seed"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "20746",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "25127",
+"name": "Lesser Mana Oil",
+"group": "Wizard Oils",
+"status": "changed",
+"src": "item",
+"learn": 250,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+1,
+"Dream Dust"
+],
+[
+1,
+"Purple Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "20747",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "25128",
+"name": "Wizard Oil",
+"group": "Wizard Oils",
+"status": "unchanged",
+"src": "item",
+"learn": 275,
+"yellow": 285,
+"green": 295,
+"grey": 305,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+3,
+"Illusion Dust"
+],
+[
+2,
+"Firebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "20750",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "25130",
+"name": "Brilliant Mana Oil",
+"group": "Wizard Oils",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 320,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Large Brilliant Shard"
+],
+[
+3,
+"Purple Lotus"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "20748",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "25129",
+"name": "Brilliant Wizard Oil",
+"group": "Wizard Oils",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 320,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Large Brilliant Shard"
+],
+[
+3,
+"Firebloom"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "20749",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "7420",
+"name": "Enchant Chest - Inferior Stamina",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 70,
+"green": 90,
+"grey": 110,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Strange Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7443",
+"name": "Enchant Chest - Minor Intellect",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "item",
+"learn": 20,
+"yellow": 80,
+"green": 100,
+"grey": 120,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7426",
+"name": "Enchant Chest - Minor Absorption",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 90,
+"green": 110,
+"grey": 130,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7748",
+"name": "Enchant Chest - Lesser Stamina",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 105,
+"green": 125,
+"grey": 145,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Strange Dust"
+],
+[
+1,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7776",
+"name": "Enchant Chest - Lesser Intellect",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "item",
+"learn": 80,
+"yellow": 115,
+"green": 135,
+"grey": 155,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7857",
+"name": "Enchant Chest - Stamina",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 145,
+"green": 165,
+"grey": 185,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Strange Dust"
+],
+[
+1,
+"Lesser Astral Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13538",
+"name": "Enchant Chest - Lesser Absorption",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 165,
+"green": 185,
+"grey": 205,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Strange Dust"
+],
+[
+1,
+"Lesser Astral Essence"
+],
+[
+1,
+"Large Glimmering Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13607",
+"name": "Enchant Chest - Intellect",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 170,
+"green": 190,
+"grey": 210,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Greater Astral Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13626",
+"name": "Enchant Chest - Minor Stats",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Astral Essence"
+],
+[
+1,
+"Soul Dust"
+],
+[
+1,
+"Large Glimmering Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13640",
+"name": "Enchant Chest - Greater Stamina",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 180,
+"green": 200,
+"grey": 220,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Soul Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13663",
+"name": "Enchant Chest - Greater Intellect",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 225,
+"grey": 245,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Mystic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13700",
+"name": "Enchant Chest - Lesser Stats",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 220,
+"green": 240,
+"grey": 260,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Greater Mystic Essence"
+],
+[
+1,
+"Vision Dust"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1249071",
+"name": "Enchant Chest - Absorption",
+"group": "Chest Enchants",
+"status": "new",
+"src": "item",
+"learn": 220,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+10,
+"Dream Dust"
+],
+[
+4,
+"Greater Nether Essence"
+],
+[
+2,
+"Large Radiant Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "13858",
+"name": "Enchant Chest - Superior Stamina",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 240,
+"green": 260,
+"grey": 280,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13917",
+"name": "Enchant Chest - Superior Intellect",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 270,
+"grey": 290,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Greater Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13941",
+"name": "Enchant Chest - Stats",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 265,
+"green": 285,
+"grey": 305,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Radiant Shard"
+],
+[
+1,
+"Dream Dust"
+],
+[
+1,
+"Greater Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20026",
+"name": "Enchant Chest - Major Stamina",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 295,
+"green": 315,
+"grey": 335,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Illusion Dust"
+],
+[
+1,
+"Small Brilliant Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20028",
+"name": "Enchant Chest - Major Intellect",
+"group": "Chest Enchants",
+"status": "changed",
+"src": "item",
+"learn": 290,
+"yellow": 310,
+"green": 330,
+"grey": 350,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Greater Eternal Essence"
+],
+[
+1,
+"Small Brilliant Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20025",
+"name": "Enchant Chest - Greater Stats",
+"group": "Chest Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Brilliant Shard"
+],
+[
+15,
+"Illusion Dust"
+],
+[
+10,
+"Greater Eternal Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7418",
+"name": "Enchant Bracer - Inferior Stamina",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": 1,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Mote of Magic"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7428",
+"name": "Enchant Bracer - Minor Deflect",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": 1,
+"yellow": 80,
+"green": 100,
+"grey": 120,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7457",
+"name": "Enchant Bracer - Minor Stamina",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 100,
+"green": 120,
+"grey": 140,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Strange Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7766",
+"name": "Enchant Bracer - Minor Spirit",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 60,
+"yellow": 105,
+"green": 125,
+"grey": 145,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248458",
+"name": "Enchant Bracer - Minor Intellect",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 70,
+"yellow": 110,
+"green": 130,
+"grey": 150,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "7779",
+"name": "Enchant Bracer - Minor Agility",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 115,
+"green": 135,
+"grey": 155,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Strange Dust"
+],
+[
+2,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7782",
+"name": "Enchant Bracer - Minor Strength",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 80,
+"yellow": 115,
+"green": 135,
+"grey": 155,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Strange Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248459",
+"name": "Enchant Bracer - Minor Healing Power",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 90,
+"yellow": 120,
+"green": 140,
+"grey": 160,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "7859",
+"name": "Enchant Bracer - Lesser Spirit",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 120,
+"yellow": 145,
+"green": 165,
+"grey": 185,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Astral Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13501",
+"name": "Enchant Bracer - Lesser Stamina",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 155,
+"green": 175,
+"grey": 195,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Soul Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248460",
+"name": "Enchant Bracer - Lesser Agility",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 165,
+"green": 185,
+"grey": 205,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Mystic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "13536",
+"name": "Enchant Bracer - Lesser Strength",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 165,
+"green": 185,
+"grey": 205,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Soul Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13622",
+"name": "Enchant Bracer - Lesser Intellect",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Greater Astral Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13642",
+"name": "Enchant Bracer - Spirit",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 185,
+"green": 205,
+"grey": 225,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Mystic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13646",
+"name": "Enchant Bracer - Lesser Deflection",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 170,
+"yellow": 190,
+"green": 210,
+"grey": 230,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Mystic Essence"
+],
+[
+1,
+"Soul Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "13648",
+"name": "Enchant Bracer - Stamina",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 190,
+"green": 210,
+"grey": 230,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Soul Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13661",
+"name": "Enchant Bracer - Strength",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 200,
+"green": 220,
+"grey": 240,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248497",
+"name": "Enchant Bracer - Agility",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248498",
+"name": "Enchant Bracer - Lesser Healing Power",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 205,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Mystic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "13822",
+"name": "Enchant Bracer - Intellect",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 250,
+"grey": 270,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13846",
+"name": "Enchant Bracer - Greater Spirit",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 220,
+"yellow": 240,
+"green": 260,
+"grey": 280,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Nether Essence"
+],
+[
+1,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13931",
+"name": "Enchant Bracer - Deflection",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 235,
+"yellow": 255,
+"green": 275,
+"grey": 295,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Nether Essence"
+],
+[
+1,
+"Dream Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248500",
+"name": "Enchant Bracer - Greater Agility",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 280,
+"grey": 300,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Dream Dust"
+],
+[
+1,
+"Lesser Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "13939",
+"name": "Enchant Bracer - Greater Strength",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 260,
+"green": 280,
+"grey": 300,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Dream Dust"
+],
+[
+2,
+"Lesser Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13945",
+"name": "Enchant Bracer - Greater Stamina",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 265,
+"green": 285,
+"grey": 305,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Dream Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20008",
+"name": "Enchant Bracer - Greater Intellect",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 275,
+"green": 295,
+"grey": 315,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Eternal Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20009",
+"name": "Enchant Bracer - Superior Spirit",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 310,
+"grey": 330,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Eternal Essence"
+],
+[
+7,
+"Dream Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "23801",
+"name": "Enchant Bracer - Mana Regeneration",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 290,
+"yellow": 310,
+"green": 330,
+"grey": 350,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+16,
+"Illusion Dust"
+],
+[
+4,
+"Greater Eternal Essence"
+],
+[
+2,
+"Essence of Water"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248599",
+"name": "Enchant Bracer - Superior Agility",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 295,
+"yellow": 315,
+"green": 335,
+"grey": 355,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Illusion Dust"
+],
+[
+3,
+"Greater Eternal Essence"
+],
+[
+1,
+"Large Brilliant Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "20010",
+"name": "Enchant Bracer - Superior Strength",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 295,
+"yellow": 315,
+"green": 335,
+"grey": 355,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Illusion Dust"
+],
+[
+6,
+"Greater Eternal Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1220624",
+"name": "Enchant Bracer - Greater Spellpower",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Greater Eternal Essence"
+],
+[
+9,
+"Illusion Dust"
+],
+[
+12,
+"Essence of Undeath"
+],
+[
+2,
+"Purple Lotus"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "23802",
+"name": "Enchant Bracer - Healing Power",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Large Brilliant Shard"
+],
+[
+20,
+"Illusion Dust"
+],
+[
+4,
+"Greater Eternal Essence"
+],
+[
+6,
+"Living Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248665",
+"name": "Enchant Bracer - Superior Deflection",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Large Brilliant Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248661",
+"name": "Enchant Bracer - Superior Intellect",
+"group": "Bracer Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+10,
+"Greater Eternal Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "20011",
+"name": "Enchant Bracer - Superior Stamina",
+"group": "Bracer Enchants",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+15,
+"Illusion Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13620",
+"name": "Enchant Gloves - Fishing",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 145,
+"yellow": 170,
+"green": 190,
+"grey": 210,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Soul Dust"
+],
+[
+1,
+"Blackmouth Oil"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13617",
+"name": "Enchant Gloves - Herbalism",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 145,
+"yellow": 170,
+"green": 190,
+"grey": 210,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Soul Dust"
+],
+[
+1,
+"Kingsblood"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13612",
+"name": "Enchant Gloves - Mining",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 145,
+"yellow": 170,
+"green": 190,
+"grey": 210,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Soul Dust"
+],
+[
+1,
+"Iron Ore"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13698",
+"name": "Enchant Gloves - Skinning",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 220,
+"green": 240,
+"grey": 260,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Vision Dust"
+],
+[
+1,
+"Green Whelp Scale"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13815",
+"name": "Enchant Gloves - Agility",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 250,
+"grey": 270,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13841",
+"name": "Enchant Gloves - Advanced Mining",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 215,
+"yellow": 235,
+"green": 255,
+"grey": 275,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Vision Dust"
+],
+[
+1,
+"Truesilver Bar"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13868",
+"name": "Enchant Gloves - Advanced Herbalism",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 245,
+"green": 265,
+"grey": 285,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Vision Dust"
+],
+[
+1,
+"Sungrass"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13887",
+"name": "Enchant Gloves - Strength",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 245,
+"green": 265,
+"grey": 285,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Nether Essence"
+],
+[
+2,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248528",
+"name": "Enchant Gloves - Advanced Skinning",
+"group": "Glove Enchants",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 290,
+"grey": 310,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Dream Dust"
+],
+[
+1,
+"Cured Rugged Hide"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "13948",
+"name": "Enchant Gloves - Minor Haste",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 270,
+"green": 290,
+"grey": 310,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Radiant Shard"
+],
+[
+1,
+"Wildvine"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13947",
+"name": "Enchant Gloves - Riding Skill",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 290,
+"grey": 310,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Radiant Shard"
+],
+[
+2,
+"Dream Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20012",
+"name": "Enchant Gloves - Greater Agility",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 310,
+"grey": 330,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Eternal Essence"
+],
+[
+2,
+"Illusion Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1294054",
+"name": "Enchant Gloves - Lotus Claw",
+"group": "Glove Enchants",
+"status": "new",
+"src": "item",
+"learn": 295,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Death Lotus"
+],
+[
+2,
+"Small Brilliant Shard"
+],
+[
+12,
+"Illusion Dust"
+],
+[
+4,
+"Lesser Eternal Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "20013",
+"name": "Enchant Gloves - Greater Strength",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 295,
+"yellow": 315,
+"green": 335,
+"grey": 355,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Greater Eternal Essence"
+],
+[
+4,
+"Illusion Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1213626",
+"name": "Enchant Gloves - Arcane Power",
+"group": "Glove Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Nexus Crystal"
+],
+[
+5,
+"Large Brilliant Shard"
+],
+[
+2,
+"Skin of Shadow"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25078",
+"name": "Enchant Gloves - Fire Power",
+"group": "Glove Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Nexus Crystal"
+],
+[
+10,
+"Large Brilliant Shard"
+],
+[
+4,
+"Essence of Fire"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25074",
+"name": "Enchant Gloves - Frost Power",
+"group": "Glove Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Nexus Crystal"
+],
+[
+10,
+"Large Brilliant Shard"
+],
+[
+4,
+"Essence of Water"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25079",
+"name": "Enchant Gloves - Healing Power",
+"group": "Glove Enchants",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Nexus Crystal"
+],
+[
+8,
+"Large Brilliant Shard"
+],
+[
+1,
+"Righteous Orb"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1213622",
+"name": "Enchant Gloves - Holy Power",
+"group": "Glove Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Nexus Crystal"
+],
+[
+5,
+"Large Brilliant Shard"
+],
+[
+5,
+"Stratholme Holy Water"
+],
+[
+2,
+"Frayed Abomination Stitching"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248645",
+"name": "Enchant Gloves - Natural Power",
+"group": "Glove Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Nexus Crystal"
+],
+[
+5,
+"Large Brilliant Shard"
+],
+[
+4,
+"Death Lotus"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25073",
+"name": "Enchant Gloves - Shadow Power",
+"group": "Glove Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Nexus Crystal"
+],
+[
+10,
+"Large Brilliant Shard"
+],
+[
+6,
+"Essence of Undeath"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25080",
+"name": "Enchant Gloves - Superior Agility",
+"group": "Glove Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Nexus Crystal"
+],
+[
+8,
+"Large Brilliant Shard"
+],
+[
+4,
+"Essence of Air"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248640",
+"name": "Enchant Gloves - Superior Strength",
+"group": "Glove Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Nexus Crystal"
+],
+[
+8,
+"Greater Eternal Essence"
+],
+[
+4,
+"Essence of Earth"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25072",
+"name": "Enchant Gloves - Threat",
+"group": "Glove Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Nexus Crystal"
+],
+[
+6,
+"Large Brilliant Shard"
+],
+[
+8,
+"Larval Acid"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "7867",
+"name": "Enchant Boots - Minor Agility",
+"group": "Boots Enchants",
+"status": "changed",
+"src": "item",
+"learn": 125,
+"yellow": 150,
+"green": 170,
+"grey": 190,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Strange Dust"
+],
+[
+1,
+"Lesser Astral Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7863",
+"name": "Enchant Boots - Minor Stamina",
+"group": "Boots Enchants",
+"status": "changed",
+"src": "item",
+"learn": 125,
+"yellow": 150,
+"green": 170,
+"grey": 190,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Strange Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13637",
+"name": "Enchant Boots - Lesser Agility",
+"group": "Boots Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 180,
+"green": 200,
+"grey": 220,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Soul Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13644",
+"name": "Enchant Boots - Lesser Stamina",
+"group": "Boots Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 190,
+"green": 210,
+"grey": 230,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Soul Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13687",
+"name": "Enchant Boots - Lesser Spirit",
+"group": "Boots Enchants",
+"status": "changed",
+"src": "item",
+"learn": 190,
+"yellow": 210,
+"green": 230,
+"grey": 250,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Mystic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13836",
+"name": "Enchant Boots - Stamina",
+"group": "Boots Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 235,
+"green": 255,
+"grey": 275,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13890",
+"name": "Enchant Boots - Minor Speed",
+"group": "Boots Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 245,
+"green": 265,
+"grey": 285,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Small Radiant Shard"
+],
+[
+1,
+"Aquamarine"
+],
+[
+1,
+"Lesser Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13935",
+"name": "Enchant Boots - Agility",
+"group": "Boots Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 255,
+"green": 275,
+"grey": 295,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Greater Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20020",
+"name": "Enchant Boots - Greater Stamina",
+"group": "Boots Enchants",
+"status": "changed",
+"src": "item",
+"learn": 260,
+"yellow": 280,
+"green": 300,
+"grey": 320,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Dream Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1328948",
+"name": "Enchant Boots - Speed",
+"group": "Boots Enchants",
+"status": "new",
+"src": "item",
+"learn": 280,
+"yellow": 280,
+"green": 290,
+"grey": 300,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Large Radiant Shard"
+],
+[
+8,
+"Dream Dust"
+],
+[
+2,
+"Greater Nether Essence"
+],
+[
+1,
+"Blue Sapphire"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20024",
+"name": "Enchant Boots - Spirit",
+"group": "Boots Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 275,
+"yellow": 295,
+"green": 315,
+"grey": 335,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Greater Eternal Essence"
+],
+[
+1,
+"Lesser Eternal Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20023",
+"name": "Enchant Boots - Greater Agility",
+"group": "Boots Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 295,
+"yellow": 315,
+"green": 335,
+"grey": 355,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+8,
+"Greater Eternal Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7793",
+"name": "Enchant 2H Weapon - Lesser Intellect",
+"group": "Two-Handed Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 100,
+"yellow": 130,
+"green": 150,
+"grey": 170,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7745",
+"name": "Enchant 2H Weapon - Minor Impact",
+"group": "Two-Handed Weapon Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 130,
+"green": 150,
+"grey": 170,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Strange Dust"
+],
+[
+1,
+"Small Glimmering Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13380",
+"name": "Enchant 2H Weapon - Lesser Spirit",
+"group": "Two-Handed Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 110,
+"yellow": 135,
+"green": 155,
+"grey": 175,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Astral Essence"
+],
+[
+3,
+"Strange Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13529",
+"name": "Enchant 2H Weapon - Lesser Impact",
+"group": "Two-Handed Weapon Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 170,
+"green": 190,
+"grey": 210,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Soul Dust"
+],
+[
+1,
+"Large Glimmering Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13695",
+"name": "Enchant 2H Weapon - Impact",
+"group": "Two-Handed Weapon Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 220,
+"green": 240,
+"grey": 260,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Vision Dust"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248510",
+"name": "Enchant 2H Weapon - Lesser Agility",
+"group": "Two-Handed Weapon Enchants",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 250,
+"grey": 270,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Vision Dust"
+],
+[
+1,
+"Large Glowing Shard"
+],
+[
+1,
+"Lesser Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248511",
+"name": "Enchant 2H Weapon - Lesser Strength",
+"group": "Two-Handed Weapon Enchants",
+"status": "new",
+"src": "item",
+"learn": 220,
+"yellow": 240,
+"green": 260,
+"grey": 280,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Vision Dust"
+],
+[
+1,
+"Large Glowing Shard"
+],
+[
+2,
+"Lesser Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "13937",
+"name": "Enchant 2H Weapon - Greater Impact",
+"group": "Two-Handed Weapon Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 260,
+"green": 280,
+"grey": 300,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Radiant Shard"
+],
+[
+1,
+"Dream Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248668",
+"name": "Enchant 2H Weapon - Strength",
+"group": "Two-Handed Weapon Enchants",
+"status": "new",
+"src": "item",
+"learn": 290,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+8,
+"Large Brilliant Shard"
+],
+[
+10,
+"Greater Eternal Essence"
+],
+[
+8,
+"Illusion Dust"
+],
+[
+4,
+"Arcane Crystal"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "27837",
+"name": "Enchant 2H Weapon - Agility",
+"group": "Two-Handed Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 310,
+"green": 330,
+"grey": 350,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+10,
+"Large Brilliant Shard"
+],
+[
+6,
+"Greater Eternal Essence"
+],
+[
+14,
+"Illusion Dust"
+],
+[
+4,
+"Essence of Air"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "20030",
+"name": "Enchant 2H Weapon - Superior Impact",
+"group": "Two-Handed Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 295,
+"yellow": 315,
+"green": 335,
+"grey": 355,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Brilliant Shard"
+],
+[
+10,
+"Illusion Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20036",
+"name": "Enchant 2H Weapon - Major Intellect",
+"group": "Two-Handed Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+12,
+"Greater Eternal Essence"
+],
+[
+2,
+"Large Brilliant Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20035",
+"name": "Enchant 2H Weapon - Major Spirit",
+"group": "Two-Handed Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+12,
+"Greater Eternal Essence"
+],
+[
+2,
+"Large Brilliant Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248636",
+"name": "Enchant 2H Weapon - Mighty Healing Power",
+"group": "Two-Handed Weapon Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Fel Crystal"
+],
+[
+6,
+"Greater Eternal Essence"
+],
+[
+4,
+"Azerothium Bar"
+],
+[
+4,
+"Stranglevine"
+],
+[
+4,
+"Nexus Crystal"
+],
+[
+4,
+"Torbernite"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248607",
+"name": "Enchant 2H Weapon - Mighty Spell Power",
+"group": "Two-Handed Weapon Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Fel Crystal"
+],
+[
+6,
+"Greater Eternal Essence"
+],
+[
+4,
+"Essence of Earth"
+],
+[
+4,
+"Essence of Undeath"
+],
+[
+4,
+"Nexus Crystal"
+],
+[
+2,
+"Torbernite"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1219580",
+"name": "Enchant 2H Weapon - Spellblasting",
+"group": "Two-Handed Weapon Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Nexus Crystal"
+],
+[
+24,
+"Illusion Dust"
+],
+[
+1,
+"Blood of Heroes"
+],
+[
+6,
+"Purple Lotus"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "7786",
+"name": "Enchant Weapon - Minor Beastslayer",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 90,
+"yellow": 120,
+"green": 140,
+"grey": 160,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Strange Dust"
+],
+[
+1,
+"Greater Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7788",
+"name": "Enchant Weapon - Minor Striking",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 120,
+"green": 140,
+"grey": 160,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Strange Dust"
+],
+[
+1,
+"Lesser Magic Essence"
+],
+[
+1,
+"Small Glimmering Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1248757",
+"name": "Enchant Weapon - Insight",
+"group": "Weapon Enchants",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+10,
+"Strange Dust"
+],
+[
+4,
+"Large Glimmering Shard"
+],
+[
+4,
+"Greater Astral Essence"
+],
+[
+4,
+"Pyrite"
+],
+[
+4,
+"Frilled Lichen"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248760",
+"name": "Enchant Weapon - Recovery",
+"group": "Weapon Enchants",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Soul Dust"
+],
+[
+4,
+"Large Glimmering Shard"
+],
+[
+6,
+"Greater Astral Essence"
+],
+[
+4,
+"Pyrite"
+],
+[
+4,
+"Silver Ore"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248805",
+"name": "Enchant Weapon - Revelation",
+"group": "Weapon Enchants",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+8,
+"Soul Dust"
+],
+[
+6,
+"Large Glimmering Shard"
+],
+[
+2,
+"Greater Astral Essence"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Sulfuric Acid"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "13503",
+"name": "Enchant Weapon - Lesser Striking",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 165,
+"green": 185,
+"grey": 205,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Soul Dust"
+],
+[
+1,
+"Large Glimmering Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13653",
+"name": "Enchant Weapon - Lesser Beastslayer",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 175,
+"yellow": 195,
+"green": 215,
+"grey": 235,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Fang"
+],
+[
+1,
+"Small Glowing Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13655",
+"name": "Enchant Weapon - Lesser Elemental Slayer",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 175,
+"yellow": 195,
+"green": 215,
+"grey": 235,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Elemental Earth"
+],
+[
+1,
+"Small Glowing Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "21931",
+"name": "Enchant Weapon - Winter's Might",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 190,
+"yellow": 210,
+"green": 230,
+"grey": 250,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Greater Mystic Essence"
+],
+[
+1,
+"Vision Dust"
+],
+[
+1,
+"Large Glowing Shard"
+],
+[
+1,
+"Wintersbite"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13693",
+"name": "Enchant Weapon - Striking",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 215,
+"green": 235,
+"grey": 255,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Greater Mystic Essence"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13915",
+"name": "Enchant Weapon - Demonslaying",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 250,
+"green": 270,
+"grey": 290,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Small Radiant Shard"
+],
+[
+1,
+"Dream Dust"
+],
+[
+1,
+"Potion of Demon Slaying"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13943",
+"name": "Enchant Weapon - Greater Striking",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 265,
+"green": 285,
+"grey": 305,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Radiant Shard"
+],
+[
+1,
+"Greater Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13898",
+"name": "Enchant Weapon - Fiery Weapon",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 305,
+"grey": 325,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Small Radiant Shard"
+],
+[
+1,
+"Essence of Fire"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20029",
+"name": "Enchant Weapon - Icy Chill",
+"group": "Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 285,
+"yellow": 305,
+"green": 325,
+"grey": 345,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Small Brilliant Shard"
+],
+[
+1,
+"Essence of Water"
+],
+[
+1,
+"Essence of Air"
+],
+[
+1,
+"Icecap"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "23800",
+"name": "Enchant Weapon - Agility",
+"group": "Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 310,
+"green": 330,
+"grey": 350,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Large Brilliant Shard"
+],
+[
+6,
+"Greater Eternal Essence"
+],
+[
+4,
+"Illusion Dust"
+],
+[
+2,
+"Essence of Air"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "23799",
+"name": "Enchant Weapon - Strength",
+"group": "Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 310,
+"green": 330,
+"grey": 350,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Large Brilliant Shard"
+],
+[
+6,
+"Greater Eternal Essence"
+],
+[
+4,
+"Illusion Dust"
+],
+[
+2,
+"Essence of Earth"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "20033",
+"name": "Enchant Weapon - Unholy Weapon",
+"group": "Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 295,
+"yellow": 315,
+"green": 335,
+"grey": 355,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Brilliant Shard"
+],
+[
+4,
+"Essence of Undeath"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20034",
+"name": "Enchant Weapon - Crusader",
+"group": "Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Brilliant Shard"
+],
+[
+2,
+"Righteous Orb"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "22750",
+"name": "Enchant Weapon - Healing Power",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Brilliant Shard"
+],
+[
+8,
+"Greater Eternal Essence"
+],
+[
+6,
+"Living Essence"
+],
+[
+6,
+"Essence of Water"
+],
+[
+1,
+"Righteous Orb"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "20032",
+"name": "Enchant Weapon - Lifestealing",
+"group": "Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Large Brilliant Shard"
+],
+[
+6,
+"Essence of Undeath"
+],
+[
+6,
+"Living Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "23804",
+"name": "Enchant Weapon - Mighty Intellect",
+"group": "Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+15,
+"Large Brilliant Shard"
+],
+[
+12,
+"Greater Eternal Essence"
+],
+[
+20,
+"Illusion Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "23803",
+"name": "Enchant Weapon - Mighty Spirit",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+10,
+"Large Brilliant Shard"
+],
+[
+8,
+"Greater Eternal Essence"
+],
+[
+15,
+"Illusion Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "22749",
+"name": "Enchant Weapon - Spell Power",
+"group": "Weapon Enchants",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Brilliant Shard"
+],
+[
+12,
+"Greater Eternal Essence"
+],
+[
+4,
+"Essence of Fire"
+],
+[
+4,
+"Essence of Water"
+],
+[
+4,
+"Essence of Air"
+],
+[
+2,
+"Golden Pearl"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "20031",
+"name": "Enchant Weapon - Superior Striking",
+"group": "Weapon Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Large Brilliant Shard"
+],
+[
+10,
+"Greater Eternal Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13378",
+"name": "Enchant Shield - Minor Stamina",
+"group": "Shield Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 130,
+"green": 150,
+"grey": 170,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Astral Essence"
+],
+[
+1,
+"Strange Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13464",
+"name": "Enchant Shield - Lesser Protection",
+"group": "Shield Enchants",
+"status": "changed",
+"src": "item",
+"learn": 115,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Strange Dust"
+],
+[
+1,
+"Small Glimmering Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13485",
+"name": "Enchant Shield - Lesser Spirit",
+"group": "Shield Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 155,
+"green": 175,
+"grey": 195,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Astral Essence"
+],
+[
+2,
+"Strange Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13631",
+"name": "Enchant Shield - Lesser Stamina",
+"group": "Shield Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Mystic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13659",
+"name": "Enchant Shield - Spirit",
+"group": "Shield Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 200,
+"green": 220,
+"grey": 240,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Mystic Essence"
+],
+[
+1,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13689",
+"name": "Enchant Shield - Lesser Block",
+"group": "Shield Enchants",
+"status": "changed",
+"src": "item",
+"learn": 195,
+"yellow": 215,
+"green": 235,
+"grey": 255,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Greater Mystic Essence"
+],
+[
+1,
+"Vision Dust"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13817",
+"name": "Enchant Shield - Stamina",
+"group": "Shield Enchants",
+"status": "changed",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 250,
+"grey": 270,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13905",
+"name": "Enchant Shield - Greater Spirit",
+"group": "Shield Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 270,
+"grey": 290,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Nether Essence"
+],
+[
+1,
+"Dream Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13933",
+"name": "Enchant Shield - Frost Resistance",
+"group": "Shield Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 235,
+"yellow": 255,
+"green": 275,
+"grey": 295,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Radiant Shard"
+],
+[
+1,
+"Frost Oil"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20017",
+"name": "Enchant Shield - Greater Stamina",
+"group": "Shield Enchants",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 305,
+"grey": 325,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Dream Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "20016",
+"name": "Enchant Shield - Superior Spirit",
+"group": "Shield Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 280,
+"yellow": 300,
+"green": 320,
+"grey": 340,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Greater Eternal Essence"
+],
+[
+4,
+"Illusion Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1220623",
+"name": "Enchant Shield - Critical Strike",
+"group": "Shield Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+5,
+"Large Brilliant Shard"
+],
+[
+15,
+"Illusion Dust"
+],
+[
+1,
+"Blood of Heroes"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1219581",
+"name": "Enchant Shield - Excellent Stamina",
+"group": "Shield Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Large Brilliant Shard"
+],
+[
+18,
+"Illusion Dust"
+],
+[
+2,
+"Essence of Earth"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1219578",
+"name": "Enchant Off-Hand - Excellent Spirit",
+"group": "Off-Hand Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Nexus Crystal"
+],
+[
+18,
+"Illusion Dust"
+],
+[
+2,
+"Essence of Water"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1219577",
+"name": "Enchant Off-Hand - Superior Intellect",
+"group": "Off-Hand Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Nexus Crystal"
+],
+[
+18,
+"Illusion Dust"
+],
+[
+2,
+"Essence of Air"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1219579",
+"name": "Enchant Off-Hand - Wisdom",
+"group": "Off-Hand Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+6,
+"Large Brilliant Shard"
+],
+[
+18,
+"Illusion Dust"
+],
+[
+1,
+"Essence of Air"
+],
+[
+1,
+"Essence of Water"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1249059",
+"name": "Enchant Necklace - Agility",
+"group": "Amulet Enchants",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Greater Nether Essence"
+],
+[
+8,
+"Large Radiant Shard"
+],
+[
+6,
+"Dream Dust"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+4,
+"Magenta Dye"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1249060",
+"name": "Enchant Necklace - Deflection",
+"group": "Amulet Enchants",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+8,
+"Greater Nether Essence"
+],
+[
+2,
+"Large Radiant Shard"
+],
+[
+2,
+"Dream Dust"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Magenta Dye"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1249058",
+"name": "Enchant Necklace - Healing Power",
+"group": "Amulet Enchants",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Greater Nether Essence"
+],
+[
+5,
+"Large Radiant Shard"
+],
+[
+4,
+"Dream Dust"
+],
+[
+4,
+"Pyrite"
+],
+[
+4,
+"Rosecap"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1249057",
+"name": "Enchant Necklace - Spell Power",
+"group": "Amulet Enchants",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+5,
+"Greater Nether Essence"
+],
+[
+3,
+"Large Radiant Shard"
+],
+[
+8,
+"Dream Dust"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Magenta Dye"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1249019",
+"name": "Enchant Necklace - Strength",
+"group": "Amulet Enchants",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Greater Nether Essence"
+],
+[
+4,
+"Large Radiant Shard"
+],
+[
+10,
+"Dream Dust"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+4,
+"Bauxite"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "7454",
+"name": "Enchant Cloak - Minor Resistance",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 95,
+"green": 115,
+"grey": 135,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Strange Dust"
+],
+[
+1,
+"Lesser Magic Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7771",
+"name": "Enchant Cloak - Minor Protection",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "item",
+"learn": 90,
+"yellow": 110,
+"green": 130,
+"grey": 150,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Strange Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13419",
+"name": "Enchant Cloak - Minor Agility",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "item",
+"learn": 110,
+"yellow": 135,
+"green": 155,
+"grey": 175,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Astral Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "13421",
+"name": "Enchant Cloak - Lesser Protection",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Strange Dust"
+],
+[
+1,
+"Small Glimmering Shard"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "7861",
+"name": "Enchant Cloak - Lesser Fire Resistance",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 150,
+"green": 170,
+"grey": 190,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Fire Oil"
+],
+[
+1,
+"Lesser Astral Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13522",
+"name": "Enchant Cloak - Lesser Shadow Resistance",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "item",
+"learn": 135,
+"yellow": 160,
+"green": 180,
+"grey": 200,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Astral Essence"
+],
+[
+1,
+"Shadow Protection Potion"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13635",
+"name": "Enchant Cloak - Defense",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Small Glowing Shard"
+],
+[
+1,
+"Soul Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13657",
+"name": "Enchant Cloak - Fire Resistance",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 195,
+"green": 215,
+"grey": 235,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Mystic Essence"
+],
+[
+1,
+"Elemental Fire"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13746",
+"name": "Enchant Cloak - Greater Defense",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Vision Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13794",
+"name": "Enchant Cloak - Resistance",
+"group": "Cloak Enchants",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "13882",
+"name": "Enchant Cloak - Lesser Agility",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 245,
+"green": 265,
+"grey": 285,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Nether Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20014",
+"name": "Enchant Cloak - Greater Resistance",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 305,
+"grey": 325,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Eternal Essence"
+],
+[
+1,
+"Heart of Fire"
+],
+[
+1,
+"Core of Earth"
+],
+[
+1,
+"Globe of Water"
+],
+[
+1,
+"Breath of Wind"
+],
+[
+1,
+"Ichor of Undeath"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "20015",
+"name": "Enchant Cloak - Superior Defense",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "item",
+"learn": 285,
+"yellow": 305,
+"green": 325,
+"grey": 345,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+8,
+"Illusion Dust"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false
+},
+{
+"id": "1219587",
+"name": "Enchant Cloak - Agility",
+"group": "Cloak Enchants",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Greater Eternal Essence"
+],
+[
+9,
+"Illusion Dust"
+],
+[
+1,
+"Essence of Fire"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25086",
+"name": "Enchant Cloak - Dodge",
+"group": "Cloak Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Nexus Crystal"
+],
+[
+8,
+"Large Brilliant Shard"
+],
+[
+8,
+"Guardian Stone"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25081",
+"name": "Enchant Cloak - Greater Fire Resistance",
+"group": "Cloak Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Nexus Crystal"
+],
+[
+8,
+"Large Brilliant Shard"
+],
+[
+4,
+"Essence of Fire"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25082",
+"name": "Enchant Cloak - Greater Nature Resistance",
+"group": "Cloak Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+2,
+"Nexus Crystal"
+],
+[
+8,
+"Large Brilliant Shard"
+],
+[
+4,
+"Living Essence"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25083",
+"name": "Enchant Cloak - Stealth",
+"group": "Cloak Enchants",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Nexus Crystal"
+],
+[
+8,
+"Large Brilliant Shard"
+],
+[
+2,
+"Black Lotus"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "25084",
+"name": "Enchant Cloak - Subtlety",
+"group": "Cloak Enchants",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": false,
+"quality": "Enchantment",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+4,
+"Nexus Crystal"
+],
+[
+6,
+"Large Brilliant Shard"
+],
+[
+2,
+"Black Diamond"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": true
+},
+{
+"id": "1248752",
+"name": "Mystic Mushroom",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 130,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+1,
+"Small Glimmering Shard"
+],
+[
+2,
+"Greater Magic Essence"
+],
+[
+5,
+"Strange Dust"
+],
+[
+1,
+"Red-speckled Mushroom"
+]
+],
+"item": "249396",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248755",
+"name": "Polished Driftwood Icon",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 130,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Glimmering Shard"
+],
+[
+2,
+"Greater Magic Essence"
+],
+[
+3,
+"Strange Dust"
+],
+[
+1,
+"Simple Wood"
+]
+],
+"item": "249398",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248754",
+"name": "Tenets of the Silver Hand",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 130,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Glimmering Shard"
+],
+[
+1,
+"Greater Magic Essence"
+],
+[
+2,
+"Strange Dust"
+],
+[
+5,
+"Scroll of Protection"
+]
+],
+"item": "249397",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1249006",
+"name": "Libram of Invocation",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+3,
+"Large Radiant Shard"
+],
+[
+3,
+"Greater Nether Essence"
+],
+[
+4,
+"Dream Dust"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+4,
+"Scroll of Strength II"
+]
+],
+"item": "249442",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248974",
+"name": "Talons of Wrath",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+2,
+"Large Radiant Shard"
+],
+[
+4,
+"Greater Nether Essence"
+],
+[
+6,
+"Dream Dust"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+1,
+"Star Wood"
+]
+],
+"item": "249441",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1249015",
+"name": "Totem of Ancestral Protection",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Radiant Shard"
+],
+[
+2,
+"Greater Nether Essence"
+],
+[
+2,
+"Dream Dust"
+],
+[
+4,
+"Sandpaper"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+2,
+"Star Wood"
+]
+],
+"item": "249443",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1306524",
+"name": "Idol of Swiftness",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+1,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Nexus Crystal"
+],
+[
+2,
+"Greater Eternal Essence"
+],
+[
+12,
+"Illusion Dust"
+]
+],
+"item": "279250",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1306525",
+"name": "Idol of the Ursine Twins",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+1,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Nexus Crystal"
+],
+[
+2,
+"Greater Eternal Essence"
+],
+[
+12,
+"Illusion Dust"
+]
+],
+"item": "279251",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1306522",
+"name": "Libram of Infusion",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+1,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Nexus Crystal"
+],
+[
+2,
+"Greater Eternal Essence"
+],
+[
+12,
+"Illusion Dust"
+]
+],
+"item": "279248",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1306521",
+"name": "Steadfast Libram",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+1,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Nexus Crystal"
+],
+[
+2,
+"Greater Eternal Essence"
+],
+[
+12,
+"Illusion Dust"
+]
+],
+"item": "279247",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1306523",
+"name": "Totem of Urgency",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+1,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Nexus Crystal"
+],
+[
+2,
+"Greater Eternal Essence"
+],
+[
+12,
+"Illusion Dust"
+]
+],
+"item": "279249",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1249128",
+"name": "Idol of the Dream",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Rare",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+2,
+"Large Brilliant Shard"
+],
+[
+4,
+"Greater Eternal Essence"
+],
+[
+6,
+"Illusion Dust"
+],
+[
+8,
+"Viridian Dye"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Star Wood"
+]
+],
+"item": "220606",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1249152",
+"name": "Libram of Holy Alacrity",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Rare",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Brilliant Shard"
+],
+[
+3,
+"Greater Eternal Essence"
+],
+[
+4,
+"Illusion Dust"
+],
+[
+8,
+"Viridian Dye"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Scroll of Intellect IV"
+]
+],
+"item": "228175",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1249154",
+"name": "Totem of Thunder",
+"group": "Relics",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Brilliant Shard"
+],
+[
+8,
+"Greater Eternal Essence"
+],
+[
+10,
+"Illusion Dust"
+],
+[
+8,
+"Viridian Dye"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Star Wood"
+]
+],
+"item": "228176",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1249114",
+"name": "Dormant Heart of the Mountain",
+"group": "Curios",
+"status": "new",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 305,
+"grey": 325,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Blood of the Mountain"
+],
+[
+1,
+"Essence of Water"
+],
+[
+3,
+"Small Brilliant Shard"
+]
+],
+"item": "249473",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1249107",
+"name": "Frozen Heart of the Mountain",
+"group": "Curios",
+"status": "new",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 305,
+"grey": 325,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Blood of the Mountain"
+],
+[
+1,
+"Essence of Undeath"
+],
+[
+3,
+"Small Brilliant Shard"
+]
+],
+"item": "249469",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1249112",
+"name": "Molten Heart of the Mountain",
+"group": "Curios",
+"status": "new",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 305,
+"grey": 325,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Blood of the Mountain"
+],
+[
+1,
+"Essence of Earth"
+],
+[
+3,
+"Small Brilliant Shard"
+]
+],
+"item": "249470",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "15596",
+"name": "Smoking Heart of the Mountain",
+"group": "Curios",
+"status": "unchanged",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 305,
+"grey": 325,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Blood of the Mountain"
+],
+[
+1,
+"Essence of Fire"
+],
+[
+3,
+"Small Brilliant Shard"
+]
+],
+"item": "11811",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1248703",
+"name": "Glimmering Staff",
+"group": "Staves",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Glimmering Shard"
+],
+[
+2,
+"Small Glimmering Shard"
+],
+[
+4,
+"Star Wood"
+],
+[
+1,
+"Greater Astral Essence"
+],
+[
+5,
+"Strange Dust"
+],
+[
+3,
+"Pyrite"
+]
+],
+"item": "249392",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248739",
+"name": "Soulstaff",
+"group": "Staves",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+2,
+"Large Glimmering Shard"
+],
+[
+1,
+"Small Glimmering Shard"
+],
+[
+4,
+"Star Wood"
+],
+[
+1,
+"Greater Astral Essence"
+],
+[
+6,
+"Soul Dust"
+],
+[
+2,
+"Shadowgem"
+]
+],
+"item": "249393",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1249064",
+"name": "Dreamstaff",
+"group": "Staves",
+"status": "new",
+"src": "item",
+"learn": 220,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+4,
+"Large Radiant Shard"
+],
+[
+4,
+"Small Radiant Shard"
+],
+[
+4,
+"Star Wood"
+],
+[
+6,
+"Greater Nether Essence"
+],
+[
+8,
+"Dream Dust"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Magenta Dye"
+]
+],
+"item": "249454",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1249061",
+"name": "Radiant Staff",
+"group": "Staves",
+"status": "new",
+"src": "item",
+"learn": 220,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+6,
+"Large Radiant Shard"
+],
+[
+2,
+"Small Radiant Shard"
+],
+[
+4,
+"Star Wood"
+],
+[
+4,
+"Greater Nether Essence"
+],
+[
+6,
+"Dream Dust"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Magenta Dye"
+]
+],
+"item": "249453",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1245321",
+"name": "Novice's Practice Wand",
+"group": "Wands",
+"status": "new",
+"src": "trainer",
+"learn": 1,
+"yellow": 10,
+"green": 13,
+"grey": 15,
+"favor": false,
+"quality": "Common",
+"ilvl": 6,
+"makes": "1",
+"reagents": [
+[
+1,
+"Simple Wood"
+],
+[
+1,
+"Mote of Magic"
+]
+],
+"item": "247789",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "14293",
+"name": "Lesser Magic Wand",
+"group": "Wands",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 75,
+"green": 95,
+"grey": 115,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+1,
+"Simple Wood"
+],
+[
+1,
+"Lesser Magic Essence"
+]
+],
+"item": "11287",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "14807",
+"name": "Greater Magic Wand",
+"group": "Wands",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 110,
+"green": 130,
+"grey": 150,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 23,
+"makes": "1",
+"reagents": [
+[
+1,
+"Simple Wood"
+],
+[
+2,
+"Lesser Magic Essence"
+]
+],
+"item": "11288",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "14809",
+"name": "Lesser Mystic Wand",
+"group": "Wands",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 31,
+"makes": "1",
+"reagents": [
+[
+1,
+"Star Wood"
+],
+[
+1,
+"Lesser Mystic Essence"
+]
+],
+"item": "11289",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "14810",
+"name": "Greater Mystic Wand",
+"group": "Wands",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 195,
+"green": 215,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+1,
+"Star Wood"
+],
+[
+1,
+"Lesser Mystic Essence"
+],
+[
+1,
+"Vision Dust"
+]
+],
+"item": "217287",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1248461",
+"name": "Twisted Nether Wand",
+"group": "Wands",
+"status": "new",
+"src": "item",
+"learn": 185,
+"yellow": 205,
+"green": 225,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Nether Essence"
+],
+[
+1,
+"Dream Dust"
+],
+[
+1,
+"Star Wood"
+]
+],
+"item": "249144",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248509",
+"name": "Dreambough Wand",
+"group": "Wands",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 235,
+"green": 255,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+2,
+"Lesser Nether Essence"
+],
+[
+1,
+"Vision Dust"
+],
+[
+1,
+"Star Wood"
+]
+],
+"item": "249234",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248505",
+"name": "Lesser Eternal Wand",
+"group": "Wands",
+"status": "new",
+"src": "item",
+"learn": 245,
+"yellow": 265,
+"green": 285,
+"grey": 305,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lesser Eternal Essence"
+],
+[
+1,
+"Dream Dust"
+],
+[
+1,
+"Star Wood"
+]
+],
+"item": "249232",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248515",
+"name": "Greater Eternal Wand",
+"group": "Wands",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 285,
+"green": 295,
+"grey": 305,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+2,
+"Greater Eternal Essence"
+],
+[
+1,
+"Illusion Dust"
+],
+[
+1,
+"Star Wood"
+]
+],
+"item": "249237",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1306520",
+"name": "Torch of Light",
+"group": "Wands",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+2,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Nexus Crystal"
+],
+[
+6,
+"Large Brilliant Shard"
+],
+[
+5,
+"Lesser Eternal Essence"
+]
+],
+"item": "279246",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248650",
+"name": "Brilliant Wand",
+"group": "Wands",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 320,
+"green": 340,
+"grey": 360,
+"favor": true,
+"quality": "Rare",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Greater Eternal Essence"
+],
+[
+3,
+"Illusion Dust"
+],
+[
+2,
+"Large Brilliant Shard"
+],
+[
+1,
+"Star Wood"
+]
+],
+"item": "249385",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248745",
+"name": "Orb of Mystic Insight",
+"group": "Off-Hands",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+2,
+"Small Glimmering Shard"
+],
+[
+2,
+"Greater Astral Essence"
+],
+[
+5,
+"Strange Dust"
+]
+],
+"item": "249394",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1248748",
+"name": "Orb of Souls",
+"group": "Off-Hands",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 160,
+"grey": 180,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+2,
+"Small Glimmering Shard"
+],
+[
+2,
+"Greater Astral Essence"
+],
+[
+2,
+"Soul Dust"
+]
+],
+"item": "249395",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1249069",
+"name": "Truesilver Conduit",
+"group": "Off-Hands",
+"status": "new",
+"src": "item",
+"learn": 220,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+3,
+"Large Radiant Shard"
+],
+[
+1,
+"Small Radiant Shard"
+],
+[
+2,
+"Star Wood"
+],
+[
+2,
+"Greater Nether Essence"
+],
+[
+3,
+"Dream Dust"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+2,
+"Magenta Dye"
+]
+],
+"item": "249455",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1249070",
+"name": "Twisting Essence Jar",
+"group": "Off-Hands",
+"status": "new",
+"src": "item",
+"learn": 220,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+4,
+"Truesilver Bar"
+],
+[
+12,
+"Greater Nether Essence"
+],
+[
+12,
+"Greater Mystic Essence"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+2,
+"Magenta Dye"
+]
+],
+"item": "249456",
+"item_db": "forever",
+"bop_recipe": true
+}
+],
+"removed": [
+{
+"name": "Charged Scale of Onyxia",
+"group": "Not in Forever"
+}
+]
+}

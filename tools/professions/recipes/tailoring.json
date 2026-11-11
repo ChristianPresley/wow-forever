@@ -1,0 +1,14662 @@
+{
+"profession": "tailoring",
+"recipes": [
+{
+"id": "1229504",
+"name": "Faction Banner ★ Horde",
+"group": "Camping",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 4,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "279972",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263425",
+"name": "Faction Banner ★ Alliance",
+"group": "Camping",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 4,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "279973",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263032",
+"name": "Spinning Wheel",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+2,
+"Simple Wood"
+],
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+3,
+"Fine Thread"
+]
+],
+"item": "279943",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263080",
+"name": "Loom",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 300,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bottled Screams"
+],
+[
+4,
+"Bolt of Runecloth"
+],
+[
+4,
+"Simple Wood"
+]
+],
+"item": "279959",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "2963",
+"name": "Bolt of Linen Cloth",
+"group": "Reagents",
+"status": "unchanged",
+"src": "trainer",
+"learn": 1,
+"yellow": 25,
+"green": 38,
+"grey": 50,
+"favor": false,
+"quality": "Common",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+2,
+"Linen Cloth"
+]
+],
+"item": "2996",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2964",
+"name": "Bolt of Woolen Cloth",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 70,
+"green": 78,
+"grey": 85,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+3,
+"Wool Cloth"
+]
+],
+"item": "2997",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3839",
+"name": "Bolt of Silk Cloth",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 110,
+"green": 115,
+"grey": 120,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Silk Cloth"
+]
+],
+"item": "4305",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3865",
+"name": "Bolt of Mageweave",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 145,
+"green": 148,
+"grey": 150,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+5,
+"Mageweave Cloth"
+]
+],
+"item": "4339",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18401",
+"name": "Bolt of Runecloth",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 210,
+"green": 213,
+"grey": 215,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+5,
+"Runecloth"
+]
+],
+"item": "14048",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18560",
+"name": "Mooncloth",
+"group": "Reagents",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Felcloth"
+]
+],
+"item": "14342",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "3755",
+"name": "Linen Bag",
+"group": "Bags",
+"status": "changed",
+"src": "trainer",
+"learn": 1,
+"yellow": 30,
+"green": 48,
+"grey": 65,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+3,
+"Coarse Thread"
+]
+],
+"item": "4238",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "6686",
+"name": "Red Linen Bag",
+"group": "Bags",
+"status": "changed",
+"src": "item",
+"learn": 50,
+"yellow": 75,
+"green": 93,
+"grey": 110,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Fine Thread"
+],
+[
+1,
+"Red Dye"
+]
+],
+"item": "5762",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3757",
+"name": "Woolen Bag",
+"group": "Bags",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 75,
+"green": 93,
+"grey": 110,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Woolen Cloth"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "4240",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3758",
+"name": "Green Woolen Bag",
+"group": "Bags",
+"status": "changed",
+"src": "item",
+"learn": 75,
+"yellow": 100,
+"green": 118,
+"grey": 135,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+1,
+"Green Dye"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "4241",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "6688",
+"name": "Red Woolen Bag",
+"group": "Bags",
+"status": "changed",
+"src": "item",
+"learn": 90,
+"yellow": 115,
+"green": 133,
+"grey": 150,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+1,
+"Red Dye"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "5763",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3813",
+"name": "Small Silk Pack",
+"group": "Bags",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Heavy Leather"
+],
+[
+3,
+"Fine Thread"
+]
+],
+"item": "4245",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "6693",
+"name": "Green Silk Pack",
+"group": "Bags",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 160,
+"green": 175,
+"grey": 190,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+3,
+"Heavy Leather"
+],
+[
+3,
+"Fine Thread"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "5764",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "6695",
+"name": "Black Silk Pack",
+"group": "Bags",
+"status": "changed",
+"src": "item",
+"learn": 150,
+"yellow": 170,
+"green": 185,
+"grey": 200,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Black Dye"
+],
+[
+4,
+"Fine Thread"
+]
+],
+"item": "5765",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12065",
+"name": "Mageweave Bag",
+"group": "Bags",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "10050",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12079",
+"name": "Red Mageweave Bag",
+"group": "Bags",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 210,
+"green": 225,
+"grey": 240,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+2,
+"Red Dye"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10051",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18405",
+"name": "Runecloth Bag",
+"group": "Bags",
+"status": "changed",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+2,
+"Rugged Leather"
+],
+[
+1,
+"Rune Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+]
+],
+"item": "14046",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18445",
+"name": "Mooncloth Bag",
+"group": "Bags",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+1,
+"Mooncloth"
+],
+[
+1,
+"Rune Thread"
+],
+[
+10,
+"Viridian Dye"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+]
+],
+"item": "14155",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18455",
+"name": "Bottomless Bag",
+"group": "Bags",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Rare",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+12,
+"Mooncloth"
+],
+[
+2,
+"Large Brilliant Shard"
+],
+[
+5,
+"Pristine Scale"
+],
+[
+5,
+"Pristine Hide"
+],
+[
+8,
+"Viridian Dye"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "14156",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257013",
+"name": "Linen Reagent Bag",
+"group": "Specialty Bags",
+"status": "new",
+"src": "item",
+"learn": 5,
+"yellow": 30,
+"green": 48,
+"grey": 65,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Linen Cloth"
+],
+[
+6,
+"Coarse Thread"
+]
+],
+"item": "253664",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257017",
+"name": "Woolen Reagent Bag",
+"group": "Specialty Bags",
+"status": "new",
+"src": "item",
+"learn": 70,
+"yellow": 75,
+"green": 93,
+"grey": 110,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Woolen Cloth"
+],
+[
+1,
+"Fine Thread"
+],
+[
+1,
+"Cerulean Dye"
+]
+],
+"item": "253667",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257412",
+"name": "Silk Reagent Bag",
+"group": "Specialty Bags",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 135,
+"green": 138,
+"grey": 140,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Heavy Leather"
+],
+[
+3,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+]
+],
+"item": "253973",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "27658",
+"name": "Enchanted Mageweave Pouch",
+"group": "Specialty Bags",
+"status": "changed",
+"src": "item",
+"learn": 190,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+4,
+"Vision Dust"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "22246",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257443",
+"name": "Mageweave Reagent Bag",
+"group": "Specialty Bags",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 205,
+"green": 210,
+"grey": 215,
+"favor": true,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+2,
+"Heavy Silken Thread"
+],
+[
+1,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+]
+],
+"item": "254035",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257465",
+"name": "Runecloth Reagent Bag",
+"group": "Specialty Bags",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": true,
+"quality": "Common",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+2,
+"Rugged Leather"
+],
+[
+1,
+"Rune Thread"
+],
+[
+1,
+"Viridian Dye"
+]
+],
+"item": "254079",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "26085",
+"name": "Soul Pouch",
+"group": "Specialty Bags",
+"status": "changed",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Rugged Leather"
+],
+[
+2,
+"Ichor of Undeath"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "21340",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "27724",
+"name": "Cenarion Herb Bag",
+"group": "Specialty Bags",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 245,
+"green": 260,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+10,
+"Purple Lotus"
+],
+[
+8,
+"Morrowgrain"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "22251",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "27659",
+"name": "Enchanted Runecloth Bag",
+"group": "Specialty Bags",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 245,
+"green": 260,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+2,
+"Greater Eternal Essence"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "22248",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "27660",
+"name": "Big Bag of Enchantment",
+"group": "Specialty Bags",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Large Brilliant Shard"
+],
+[
+4,
+"Enchanted Leather"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "22249",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257492",
+"name": "Mooncloth Reagent Bag",
+"group": "Specialty Bags",
+"status": "new",
+"src": "item",
+"learn": 255,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+1,
+"Mooncloth"
+],
+[
+1,
+"Rune Thread"
+],
+[
+10,
+"Viridian Dye"
+],
+[
+1,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+]
+],
+"item": "254133",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "27725",
+"name": "Satchel of Cenarius",
+"group": "Specialty Bags",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+2,
+"Mooncloth"
+],
+[
+1,
+"Black Lotus"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "22252",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "26086",
+"name": "Felcloth Bag",
+"group": "Specialty Bags",
+"status": "changed",
+"src": "item",
+"learn": 285,
+"yellow": 260,
+"green": 275,
+"grey": 290,
+"favor": false,
+"quality": "Rare",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+12,
+"Felcloth"
+],
+[
+6,
+"Enchanted Leather"
+],
+[
+2,
+"Dark Rune"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "21341",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1306545",
+"name": "Felblood Soul Bag",
+"group": "Specialty Bags",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+8,
+"Felcloth"
+],
+[
+6,
+"Bolt of Runecloth"
+]
+],
+"item": "279271",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257495",
+"name": "Bottomless Reagent Bag",
+"group": "Specialty Bags",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Common",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+12,
+"Mooncloth"
+],
+[
+2,
+"Large Brilliant Shard"
+],
+[
+5,
+"Pristine Leather"
+],
+[
+2,
+"Rune Thread"
+],
+[
+5,
+"Pristine Hide"
+],
+[
+5,
+"Pristine Scale"
+]
+],
+"item": "254139",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "26087",
+"name": "Core Felcloth Bag",
+"group": "Specialty Bags",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Epic",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+20,
+"Felcloth"
+],
+[
+16,
+"Core Leather"
+],
+[
+8,
+"Bloodvine"
+],
+[
+4,
+"Essence of Fire"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "21342",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2387",
+"name": "Linen Cloak",
+"group": "Cloaks",
+"status": "unchanged",
+"src": "trainer",
+"learn": 1,
+"yellow": 35,
+"green": 48,
+"grey": 60,
+"favor": false,
+"quality": "Common",
+"ilvl": 6,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "2570",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2397",
+"name": "Reinforced Linen Cape",
+"group": "Cloaks",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 60,
+"green": 78,
+"grey": 95,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Linen Cloth"
+],
+[
+3,
+"Coarse Thread"
+]
+],
+"item": "2580",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2402",
+"name": "Woolen Cape",
+"group": "Cloaks",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 80,
+"green": 98,
+"grey": 115,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 16,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Woolen Cloth"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "2584",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "6521",
+"name": "Pearl-clasped Cloak",
+"group": "Cloaks",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 95,
+"green": 113,
+"grey": 130,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 19,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+1,
+"Small Lustrous Pearl"
+]
+],
+"item": "5542",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3844",
+"name": "Heavy Woolen Cloak",
+"group": "Cloaks",
+"status": "changed",
+"src": "item",
+"learn": 80,
+"yellow": 105,
+"green": 123,
+"grey": 140,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 21,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Small Lustrous Pearl"
+]
+],
+"item": "4311",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8786",
+"name": "Azure Silk Cloak",
+"group": "Cloaks",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 160,
+"green": 175,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Blue Dye"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "7053",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "8789",
+"name": "Crimson Silk Cloak",
+"group": "Cloaks",
+"status": "changed",
+"src": "item",
+"learn": 145,
+"yellow": 165,
+"green": 180,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Red Dye"
+],
+[
+2,
+"Fire Oil"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "7056",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "3861",
+"name": "Long Silken Cloak",
+"group": "Cloaks",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 170,
+"green": 185,
+"grey": 200,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Mana Potion"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "4326",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3862",
+"name": "Icy Cloak",
+"group": "Cloaks",
+"status": "changed",
+"src": "item",
+"learn": 165,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": false,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Silken Thread"
+],
+[
+1,
+"Frost Oil"
+],
+[
+2,
+"Thick Spider's Silk"
+]
+],
+"item": "4327",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18409",
+"name": "Runecloth Cloak",
+"group": "Cloaks",
+"status": "changed",
+"src": "item",
+"learn": 220,
+"yellow": 240,
+"green": 255,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 53,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13860",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "18420",
+"name": "Brightcloth Cloak",
+"group": "Cloaks",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 245,
+"green": 260,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Gold Bar"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14103",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18418",
+"name": "Cindercloth Cloak",
+"group": "Cloaks",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 245,
+"green": 260,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+1,
+"Essence of Fire"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14044",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18422",
+"name": "Cloak of Fire",
+"group": "Cloaks",
+"status": "changed",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Essence of Fire"
+],
+[
+4,
+"Heart of Fire"
+],
+[
+4,
+"Elemental Fire"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14134",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "22870",
+"name": "Cloak of Warding",
+"group": "Cloaks",
+"status": "changed",
+"src": "item",
+"learn": 280,
+"yellow": 295,
+"green": 310,
+"grey": 325,
+"favor": false,
+"quality": "Rare",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Runecloth"
+],
+[
+4,
+"Guardian Stone"
+],
+[
+1,
+"Arcanite Bar"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "18413",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1306544",
+"name": "Cloak of Earth and Sky",
+"group": "Cloaks",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+1,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Mooncloth"
+],
+[
+5,
+"Bolt of Runecloth"
+]
+],
+"item": "279270",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1306543",
+"name": "Fel Cape",
+"group": "Cloaks",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+1,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Mooncloth"
+],
+[
+5,
+"Bolt of Runecloth"
+]
+],
+"item": "279269",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "28210",
+"name": "Gaea's Embrace",
+"group": "Cloaks",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Rare",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bloodvine"
+],
+[
+2,
+"Mooncloth"
+],
+[
+4,
+"Living Essence"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "22660",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "28208",
+"name": "Glacial Cloak",
+"group": "Cloaks",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Epic",
+"ilvl": 80,
+"makes": "1",
+"reagents": [
+[
+5,
+"Frozen Rune"
+],
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Essence of Water"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "22658",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1257402",
+"name": "Flame Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 125,
+"green": 143,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Fire Oil"
+],
+[
+1,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253953",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257404",
+"name": "Pearly Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 125,
+"green": 143,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Small Lustrous Pearl"
+],
+[
+1,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253957",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257400",
+"name": "Pristine Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 125,
+"green": 143,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+1,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253949",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257403",
+"name": "Shadow Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 125,
+"green": 143,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Shadowgem"
+],
+[
+1,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253955",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257405",
+"name": "Shining Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 125,
+"green": 143,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Pyrite"
+],
+[
+1,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253959",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257401",
+"name": "Silky Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 125,
+"green": 143,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Spider's Silk"
+],
+[
+1,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253951",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "8760",
+"name": "Azure Silk Hood",
+"group": "Hoods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 130,
+"green": 135,
+"grey": 140,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 29,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Blue Dye"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "7048",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257415",
+"name": "Filigreed Flame Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+6,
+"Fire Oil"
+]
+],
+"item": "253979",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257417",
+"name": "Filigreed Pearly Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+6,
+"Small Lustrous Pearl"
+]
+],
+"item": "253983",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257413",
+"name": "Filigreed Pristine Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+6,
+"Pristine Leather"
+]
+],
+"item": "253975",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257416",
+"name": "Filigreed Shadow Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+6,
+"Shadowgem"
+]
+],
+"item": "253981",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257418",
+"name": "Filigreed Shining Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+6,
+"Pyrite"
+]
+],
+"item": "253985",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257414",
+"name": "Filigreed Silky Circlet",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+6,
+"Spider's Silk"
+]
+],
+"item": "253977",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "8762",
+"name": "Silk Headband",
+"group": "Hoods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 135,
+"green": 140,
+"grey": 145,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 32,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "7050",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3857",
+"name": "Enchanter's Cowl",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 130,
+"yellow": 150,
+"green": 165,
+"grey": 180,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 33,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Thick Spider's Silk"
+]
+],
+"item": "4322",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "3858",
+"name": "Shadow Hood",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 135,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 34,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Silken Thread"
+],
+[
+1,
+"Shadow Oil"
+]
+],
+"item": "4323",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257433",
+"name": "Earthen Silk Hood",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 170,
+"green": 185,
+"grey": 200,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Elemental Earth"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "254015",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1301540",
+"name": "Azure Stormsewn Cowl",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 185,
+"green": 188,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+7,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Lesser Mystic Essence"
+],
+[
+1,
+"Heavy Silken Thread"
+],
+[
+4,
+"Blue Dye"
+]
+],
+"item": "277054",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301532",
+"name": "Cloudy Stormsewn Cowl",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 185,
+"green": 188,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+7,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Lesser Mystic Essence"
+],
+[
+1,
+"Heavy Silken Thread"
+],
+[
+8,
+"Bleach"
+]
+],
+"item": "277046",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "12059",
+"name": "White Bandit Mask",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 180,
+"yellow": 185,
+"green": 190,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Mageweave"
+],
+[
+1,
+"Bleach"
+],
+[
+1,
+"Heavy Silken Thread"
+]
+],
+"item": "10008",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12072",
+"name": "Black Mageweave Headband",
+"group": "Hoods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 46,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10024",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12081",
+"name": "Admiral's Hat",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 215,
+"green": 230,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+6,
+"Long Elegant Feather"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10030",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12084",
+"name": "Red Mageweave Headband",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 215,
+"green": 230,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+2,
+"Red Dye"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10033",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12086",
+"name": "Shadoweave Mask",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 215,
+"green": 230,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Mageweave"
+],
+[
+8,
+"Shadow Silk"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10025",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12083",
+"name": "Stormcloth Headband",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 215,
+"green": 230,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+4,
+"Globe of Water"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10032",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12092",
+"name": "Dreamweave Circlet",
+"group": "Hoods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": false,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Mageweave"
+],
+[
+4,
+"Wildvine"
+],
+[
+2,
+"Heart of the Wild"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+1,
+"Truesilver Bar"
+],
+[
+1,
+"Jade"
+]
+],
+"item": "10041",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18442",
+"name": "Felcloth Hood",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 260,
+"green": 275,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+4,
+"Felcloth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14111",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18444",
+"name": "Runecloth Headband",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 250,
+"yellow": 265,
+"green": 280,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13866",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257494",
+"name": "Earthenweave Crown",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 260,
+"yellow": 275,
+"green": 290,
+"grey": 305,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+3,
+"Essence of Earth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254137",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257493",
+"name": "Ghostweave Hood",
+"group": "Hoods",
+"status": "new",
+"src": "item",
+"learn": 260,
+"yellow": 275,
+"green": 290,
+"grey": 305,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+3,
+"Ghost Dye"
+],
+[
+2,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254135",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "18450",
+"name": "Wizardweave Turban",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 260,
+"yellow": 275,
+"green": 290,
+"grey": 305,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Dream Dust"
+],
+[
+1,
+"Star Ruby"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14130",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18452",
+"name": "Mooncloth Circlet",
+"group": "Hoods",
+"status": "changed",
+"src": "item",
+"learn": 280,
+"yellow": 295,
+"green": 310,
+"grey": 325,
+"favor": false,
+"quality": "Rare",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+6,
+"Mooncloth"
+],
+[
+1,
+"Azerothian Diamond"
+],
+[
+2,
+"Enchanted Leather"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "14140",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "28481",
+"name": "Sylvan Crown",
+"group": "Hoods",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Rare",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Mooncloth"
+],
+[
+2,
+"Living Essence"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "22757",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "3848",
+"name": "Double-stitched Woolen Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "4314",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3849",
+"name": "Reinforced Woolen Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 95,
+"yellow": 120,
+"green": 138,
+"grey": 155,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 24,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Medium Leather"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "4315",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8774",
+"name": "Green Silken Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 165,
+"green": 180,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "7057",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "435848",
+"name": "Invoker's Mantle",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 170,
+"green": 185,
+"grey": 200,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Gray Dye"
+],
+[
+1,
+"Fine Thread"
+],
+[
+4,
+"Blue Dye"
+]
+],
+"item": "215365",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8795",
+"name": "Azure Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 155,
+"yellow": 175,
+"green": 190,
+"grey": 205,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Naga Scale"
+],
+[
+2,
+"Blue Dye"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "7060",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8793",
+"name": "Crimson Silk Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 155,
+"yellow": 175,
+"green": 190,
+"grey": 205,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Fire Oil"
+],
+[
+2,
+"Red Dye"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "7059",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301541",
+"name": "Azure Stormsewn Epaulets",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 185,
+"green": 188,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Lesser Mystic Essence"
+],
+[
+1,
+"Heavy Silken Thread"
+],
+[
+3,
+"Blue Dye"
+]
+],
+"item": "277055",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301533",
+"name": "Cloudy Stormsewn Epaulets",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 185,
+"green": 188,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Lesser Mystic Essence"
+],
+[
+1,
+"Heavy Silken Thread"
+],
+[
+6,
+"Bleach"
+]
+],
+"item": "277047",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257442",
+"name": "Earthen Silk Shoulders",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 170,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Elemental Earth"
+],
+[
+3,
+"Silken Thread"
+]
+],
+"item": "254033",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "12074",
+"name": "Black Mageweave Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 46,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10027",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257452",
+"name": "Netherflame Shoulders",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 210,
+"green": 225,
+"grey": 240,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+16,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+8,
+"Heart of Fire"
+],
+[
+2,
+"Greater Nether Essence"
+]
+],
+"item": "254053",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257451",
+"name": "Netherfroth Shoulders",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 210,
+"green": 225,
+"grey": 240,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+16,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+8,
+"Globe of Water"
+],
+[
+2,
+"Greater Nether Essence"
+]
+],
+"item": "254051",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257450",
+"name": "Nethergeld Shoulders",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 210,
+"green": 225,
+"grey": 240,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+16,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+8,
+"Gold Bar"
+],
+[
+2,
+"Greater Nether Essence"
+]
+],
+"item": "254049",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257455",
+"name": "Netherlight Shoulders",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 210,
+"green": 225,
+"grey": 240,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+16,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+8,
+"Large Radiant Shard"
+],
+[
+2,
+"Greater Nether Essence"
+]
+],
+"item": "254059",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257453",
+"name": "Netherpearl Shoulders",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 210,
+"green": 225,
+"grey": 240,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+16,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+8,
+"Black Pearl"
+],
+[
+2,
+"Greater Nether Essence"
+]
+],
+"item": "254055",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257454",
+"name": "Nethershine Shoulders",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 210,
+"green": 225,
+"grey": 240,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+16,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+8,
+"Golden Pearl"
+],
+[
+2,
+"Greater Nether Essence"
+]
+],
+"item": "254057",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "12078",
+"name": "Red Mageweave Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 195,
+"yellow": 210,
+"green": 225,
+"grey": 240,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+2,
+"Red Dye"
+],
+[
+3,
+"Heavy Silken Thread"
+]
+],
+"item": "10029",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12076",
+"name": "Shadoweave Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 210,
+"green": 225,
+"grey": 240,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Mageweave"
+],
+[
+4,
+"Shadow Silk"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10028",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12087",
+"name": "Stormcloth Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 215,
+"green": 230,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Mageweave"
+],
+[
+6,
+"Globe of Water"
+],
+[
+3,
+"Heavy Silken Thread"
+]
+],
+"item": "10038",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257485",
+"name": "Earthenweave Mantle",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 255,
+"green": 270,
+"grey": 285,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+1,
+"Essence of Earth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254119",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257489",
+"name": "Ghostweave Mantle",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 265,
+"green": 280,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+3,
+"Ghost Dye"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254127",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "18449",
+"name": "Runecloth Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 260,
+"yellow": 275,
+"green": 290,
+"grey": 305,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+7,
+"Bolt of Runecloth"
+],
+[
+2,
+"Ironweb Spider Silk"
+],
+[
+4,
+"Rugged Leather"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13867",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18453",
+"name": "Felcloth Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 280,
+"green": 295,
+"grey": 310,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+7,
+"Bolt of Runecloth"
+],
+[
+6,
+"Felcloth"
+],
+[
+4,
+"Demonic Rune"
+],
+[
+4,
+"Rugged Leather"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "14112",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18448",
+"name": "Mooncloth Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 290,
+"green": 305,
+"grey": 320,
+"favor": false,
+"quality": "Rare",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+5,
+"Mooncloth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14139",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "23665",
+"name": "Argent Shoulders",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 290,
+"yellow": 305,
+"green": 320,
+"grey": 335,
+"favor": false,
+"quality": "Rare",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Mooncloth"
+],
+[
+2,
+"Guardian Stone"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "19059",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "23663",
+"name": "Mantle of the Timbermaw",
+"group": "Spaulders",
+"status": "changed",
+"src": "item",
+"learn": 290,
+"yellow": 305,
+"green": 320,
+"grey": 334,
+"favor": false,
+"quality": "Rare",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Mooncloth"
+],
+[
+5,
+"Essence of Earth"
+],
+[
+5,
+"Living Essence"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "19050",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "20848",
+"name": "Flarecore Mantle",
+"group": "Spaulders",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Runecloth"
+],
+[
+4,
+"Fiery Core"
+],
+[
+4,
+"Lava Core"
+],
+[
+6,
+"Enchanted Leather"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "16980",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "28482",
+"name": "Sylvan Shoulders",
+"group": "Spaulders",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Rare",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Runecloth"
+],
+[
+4,
+"Living Essence"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "22758",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1292979",
+"name": "Demonheart Spaulders",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273942",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292943",
+"name": "Manaflare Mantle",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273906",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292959",
+"name": "Mantle of Conviction",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273922",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292963",
+"name": "Pauldrons of Conviction",
+"group": "Spaulders",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273926",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2385",
+"name": "Brown Linen Vest",
+"group": "Robes and Vests",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 45,
+"green": 58,
+"grey": 70,
+"favor": false,
+"quality": "Common",
+"ilvl": 8,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "2568",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7623",
+"name": "Brown Linen Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "6238",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2389",
+"name": "Red Linen Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 25,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Coarse Thread"
+],
+[
+2,
+"Red Dye"
+]
+],
+"item": "2572",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7624",
+"name": "White Linen Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+],
+[
+1,
+"Bleach"
+]
+],
+"item": "6241",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7630",
+"name": "Blue Linen Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 35,
+"yellow": 60,
+"green": 78,
+"grey": 95,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+],
+[
+1,
+"Blue Dye"
+]
+],
+"item": "6240",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7629",
+"name": "Red Linen Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 35,
+"yellow": 60,
+"green": 78,
+"grey": 95,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+],
+[
+1,
+"Red Dye"
+]
+],
+"item": "6239",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301463",
+"name": "Azure Stormsewn Vest",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 65,
+"green": 68,
+"grey": 70,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Coarse Thread"
+]
+],
+"item": "277034",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2395",
+"name": "Barbaric Linen Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 65,
+"green": 83,
+"grey": 100,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 14,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Light Leather"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "2578",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301439",
+"name": "Cloudy Stormsewn Vest",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 65,
+"green": 68,
+"grey": 70,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Coarse Thread"
+]
+],
+"item": "277010",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "7633",
+"name": "Blue Linen Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 45,
+"yellow": 70,
+"green": 88,
+"grey": 105,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 14,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Coarse Thread"
+],
+[
+2,
+"Blue Dye"
+]
+],
+"item": "6242",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257378",
+"name": "Filigreed Flame Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 80,
+"green": 80,
+"grey": 80,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Fire Oil"
+]
+],
+"item": "253905",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257380",
+"name": "Filigreed Pearly Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 80,
+"green": 80,
+"grey": 80,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Small Lustrous Pearl"
+]
+],
+"item": "253909",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257376",
+"name": "Filigreed Pristine Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 80,
+"green": 80,
+"grey": 80,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Pristine Leather"
+]
+],
+"item": "253901",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257379",
+"name": "Filigreed Shadow Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 80,
+"green": 80,
+"grey": 80,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Shadowgem"
+]
+],
+"item": "253907",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257381",
+"name": "Filigreed Shining Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 80,
+"green": 80,
+"grey": 80,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Pyrite"
+]
+],
+"item": "253911",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257377",
+"name": "Filigreed Silky Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 80,
+"green": 80,
+"grey": 80,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Spider's Silk"
+]
+],
+"item": "253903",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "2399",
+"name": "Green Woolen Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 85,
+"green": 103,
+"grey": 120,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "2582",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7636",
+"name": "Green Woolen Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 90,
+"yellow": 90,
+"green": 108,
+"grey": 125,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 18,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "6243",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7639",
+"name": "Blue Overalls",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 75,
+"yellow": 100,
+"green": 118,
+"grey": 135,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Blue Dye"
+]
+],
+"item": "6263",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2403",
+"name": "Gray Woolen Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 80,
+"yellow": 105,
+"green": 123,
+"grey": 140,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 21,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+3,
+"Fine Thread"
+],
+[
+1,
+"Gray Dye"
+]
+],
+"item": "2585",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7643",
+"name": "Greater Adept's Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 90,
+"yellow": 115,
+"green": 133,
+"grey": 150,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 23,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Woolen Cloth"
+],
+[
+3,
+"Fine Thread"
+],
+[
+3,
+"Red Dye"
+]
+],
+"item": "6264",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257408",
+"name": "Flame Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+6,
+"Fire Oil"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253965",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "6690",
+"name": "Lesser Wizard's Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Spider's Silk"
+]
+],
+"item": "5766",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257410",
+"name": "Pearly Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+6,
+"Small Lustrous Pearl"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253969",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257406",
+"name": "Pristine Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253961",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257409",
+"name": "Shadow Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+6,
+"Shadowgem"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253967",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257411",
+"name": "Shining Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+6,
+"Pyrite"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253971",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257407",
+"name": "Silky Gown",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Silken Thread"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+6,
+"Spider's Silk"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Greater Astral Essence"
+]
+],
+"item": "253963",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3859",
+"name": "Azure Silk Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Blue Dye"
+]
+],
+"item": "4324",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "6692",
+"name": "Robes of Arcana",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 125,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Spider's Silk"
+]
+],
+"item": "5770",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8784",
+"name": "Green Silk Armor",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 130,
+"yellow": 150,
+"green": 165,
+"grey": 180,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 33,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Green Dye"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "7065",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8764",
+"name": "Earthen Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 34,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Elemental Earth"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "7051",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8791",
+"name": "Crimson Silk Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 170,
+"green": 180,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Red Dye"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "7058",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8770",
+"name": "Robe of Power",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 190,
+"grey": 205,
+"favor": false,
+"quality": "Rare",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Mageweave"
+],
+[
+2,
+"Elemental Earth"
+],
+[
+2,
+"Elemental Water"
+],
+[
+2,
+"Elemental Fire"
+],
+[
+2,
+"Elemental Air"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "7054",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12048",
+"name": "Black Mageweave Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Mageweave"
+],
+[
+3,
+"Silken Thread"
+]
+],
+"item": "9998",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8802",
+"name": "Crimson Silk Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 170,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Elemental Fire"
+],
+[
+2,
+"Mana Potion"
+],
+[
+4,
+"Red Dye"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "7063",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "12050",
+"name": "Black Mageweave Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 190,
+"green": 205,
+"grey": 220,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+1,
+"Heavy Silken Thread"
+]
+],
+"item": "10001",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12056",
+"name": "Red Mageweave Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 180,
+"yellow": 195,
+"green": 210,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Red Dye"
+],
+[
+1,
+"Heavy Silken Thread"
+]
+],
+"item": "10007",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12055",
+"name": "Shadoweave Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 195,
+"green": 210,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Shadow Silk"
+],
+[
+1,
+"Heavy Silken Thread"
+]
+],
+"item": "10004",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12069",
+"name": "Cindercloth Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Mageweave"
+],
+[
+2,
+"Heart of Fire"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10042",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12070",
+"name": "Dreamweave Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Mageweave"
+],
+[
+6,
+"Wildvine"
+],
+[
+2,
+"Heart of the Wild"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10021",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12068",
+"name": "Stormcloth Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 190,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Mageweave"
+],
+[
+3,
+"Globe of Water"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10020",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18404",
+"name": "Frostweave Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 240,
+"grey": 255,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 51,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+2,
+"Globe of Water"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13868",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18403",
+"name": "Frostweave Tunic",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 240,
+"grey": 255,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 51,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+2,
+"Globe of Water"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13869",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18408",
+"name": "Cindercloth Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+3,
+"Heart of Fire"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14042",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18406",
+"name": "Runecloth Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13858",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "18407",
+"name": "Runecloth Tunic",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13857",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18414",
+"name": "Brightcloth Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 240,
+"green": 255,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+2,
+"Gold Bar"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14100",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18416",
+"name": "Ghostweave Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 240,
+"green": 255,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Ghost Dye"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14141",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "44950",
+"name": "Green Winter Clothes",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 250,
+"green": 253,
+"grey": 255,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+1,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Green Dye"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "34087",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "44958",
+"name": "Red Winter Clothes",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 250,
+"green": 253,
+"grey": 255,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+1,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Red Dye"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "34085",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "18436",
+"name": "Robe of Winter Night",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 260,
+"green": 275,
+"grey": 290,
+"favor": false,
+"quality": "Rare",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Runecloth"
+],
+[
+12,
+"Felcloth"
+],
+[
+4,
+"Essence of Undeath"
+],
+[
+4,
+"Essence of Water"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14136",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1257486",
+"name": "Earthenweave Vest",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 265,
+"green": 280,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+1,
+"Essence of Earth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254121",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "18446",
+"name": "Wizardweave Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+2,
+"Dream Dust"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14128",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18451",
+"name": "Felcloth Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 260,
+"yellow": 275,
+"green": 290,
+"grey": 305,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+8,
+"Felcloth"
+],
+[
+4,
+"Demonic Rune"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "14106",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18447",
+"name": "Mooncloth Vest",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 285,
+"green": 300,
+"grey": 315,
+"favor": false,
+"quality": "Rare",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Mooncloth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14138",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "22902",
+"name": "Mooncloth Robe",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 290,
+"green": 305,
+"grey": 320,
+"favor": false,
+"quality": "Rare",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Mooncloth"
+],
+[
+2,
+"Golden Pearl"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "18486",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18457",
+"name": "Robe of the Archmage",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 295,
+"yellow": 310,
+"green": 325,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Runecloth"
+],
+[
+8,
+"Essence of Fire"
+],
+[
+8,
+"Essence of Air"
+],
+[
+8,
+"Essence of Earth"
+],
+[
+8,
+"Essence of Water"
+],
+[
+2,
+"Rune Thread"
+],
+[
+10,
+"Viridian Dye"
+]
+],
+"item": "14152",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18458",
+"name": "Robe of the Void",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 295,
+"yellow": 310,
+"green": 325,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Runecloth"
+],
+[
+20,
+"Demonic Rune"
+],
+[
+40,
+"Felcloth"
+],
+[
+8,
+"Essence of Fire"
+],
+[
+8,
+"Essence of Undeath"
+],
+[
+2,
+"Rune Thread"
+],
+[
+10,
+"Viridian Dye"
+]
+],
+"item": "14153",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1306540",
+"name": "Robes of Fiery Devastation",
+"group": "Robes and Vests",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+3,
+"Mooncloth"
+],
+[
+9,
+"Bolt of Runecloth"
+]
+],
+"item": "279266",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "18456",
+"name": "Truefaith Vestments",
+"group": "Robes and Vests",
+"status": "changed",
+"src": "item",
+"learn": 295,
+"yellow": 310,
+"green": 325,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Runecloth"
+],
+[
+8,
+"Mooncloth"
+],
+[
+2,
+"Righteous Orb"
+],
+[
+2,
+"Golden Pearl"
+],
+[
+8,
+"Ghost Dye"
+],
+[
+2,
+"Rune Thread"
+],
+[
+10,
+"Viridian Dye"
+]
+],
+"item": "14154",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "24091",
+"name": "Bloodvine Vest",
+"group": "Robes and Vests",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+3,
+"Mooncloth"
+],
+[
+5,
+"Bloodvine"
+],
+[
+4,
+"Powerful Mojo"
+],
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "19682",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "23666",
+"name": "Flarecore Robe",
+"group": "Robes and Vests",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Epic",
+"ilvl": 66,
+"makes": "1",
+"reagents": [
+[
+10,
+"Mooncloth"
+],
+[
+2,
+"Fiery Core"
+],
+[
+3,
+"Lava Core"
+],
+[
+6,
+"Essence of Fire"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "19156",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "28207",
+"name": "Glacial Vest",
+"group": "Robes and Vests",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Epic",
+"ilvl": 80,
+"makes": "1",
+"reagents": [
+[
+7,
+"Frozen Rune"
+],
+[
+8,
+"Bolt of Runecloth"
+],
+[
+6,
+"Essence of Water"
+],
+[
+8,
+"Ironweb Spider Silk"
+]
+],
+"item": "22652",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "28480",
+"name": "Sylvan Vest",
+"group": "Robes and Vests",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Rare",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Bloodvine"
+],
+[
+2,
+"Living Essence"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "22756",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1301464",
+"name": "Azure Stormsewn Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 58,
+"grey": 60,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+3,
+"Coarse Thread"
+]
+],
+"item": "277035",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301440",
+"name": "Cloudy Stormsewn Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 58,
+"grey": 60,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+3,
+"Coarse Thread"
+]
+],
+"item": "277011",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3841",
+"name": "Green Linen Bracers",
+"group": "Bracers",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 60,
+"green": 78,
+"grey": 95,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Coarse Thread"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "4308",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "428424",
+"name": "Phoenix Bindings",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 125,
+"green": 138,
+"grey": 150,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Flask of Oil"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "210781",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1257435",
+"name": "Earthen Silk Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Elemental Earth"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "254019",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257458",
+"name": "Netherflame Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 205,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+18,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+10,
+"Heart of Fire"
+],
+[
+4,
+"Greater Nether Essence"
+]
+],
+"item": "254065",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257457",
+"name": "Netherfroth Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 205,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+18,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+10,
+"Globe of Water"
+],
+[
+4,
+"Greater Nether Essence"
+]
+],
+"item": "254063",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257456",
+"name": "Nethergeld Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 205,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+18,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+10,
+"Gold Bar"
+],
+[
+4,
+"Greater Nether Essence"
+]
+],
+"item": "254061",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257461",
+"name": "Netherlight Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 205,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+18,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+10,
+"Large Radiant Shard"
+],
+[
+4,
+"Greater Nether Essence"
+]
+],
+"item": "254071",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257459",
+"name": "Netherpearl Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 205,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+18,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+10,
+"Black Pearl"
+],
+[
+4,
+"Greater Nether Essence"
+]
+],
+"item": "254067",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257460",
+"name": "Nethershine Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 205,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+18,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+10,
+"Golden Pearl"
+],
+[
+4,
+"Greater Nether Essence"
+]
+],
+"item": "254069",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257487",
+"name": "Runecloth Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 265,
+"green": 280,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254123",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257491",
+"name": "Earthenweave Cuffs",
+"group": "Bracers",
+"status": "new",
+"src": "item",
+"learn": 255,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+1,
+"Essence of Earth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254131",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "28209",
+"name": "Glacial Wrists",
+"group": "Bracers",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Epic",
+"ilvl": 80,
+"makes": "1",
+"reagents": [
+[
+4,
+"Frozen Rune"
+],
+[
+2,
+"Bolt of Runecloth"
+],
+[
+2,
+"Essence of Water"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "22655",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "22759",
+"name": "Flarecore Wraps",
+"group": "Bracers",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 335,
+"grey": 350,
+"favor": false,
+"quality": "Epic",
+"ilvl": 64,
+"makes": "1",
+"reagents": [
+[
+6,
+"Mooncloth"
+],
+[
+8,
+"Fiery Core"
+],
+[
+2,
+"Essence of Fire"
+],
+[
+6,
+"Enchanted Leather"
+],
+[
+4,
+"Rune Thread"
+]
+],
+"item": "18263",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3840",
+"name": "Heavy Linen Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "4307",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301465",
+"name": "Azure Stormsewn Handwraps",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 55,
+"yellow": 60,
+"green": 63,
+"grey": 65,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Linen Cloth"
+],
+[
+4,
+"Coarse Thread"
+]
+],
+"item": "277036",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301441",
+"name": "Cloudy Stormsewn Handwraps",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 55,
+"yellow": 60,
+"green": 63,
+"grey": 65,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Linen Cloth"
+],
+[
+4,
+"Coarse Thread"
+]
+],
+"item": "277012",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3843",
+"name": "Heavy Woolen Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 85,
+"green": 103,
+"grey": 120,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Woolen Cloth"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "4310",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257384",
+"name": "Flame Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 100,
+"green": 118,
+"grey": 135,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+2,
+"Fire Oil"
+]
+],
+"item": "253917",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257386",
+"name": "Pearly Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 100,
+"green": 118,
+"grey": 135,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+2,
+"Small Lustrous Pearl"
+]
+],
+"item": "253921",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257382",
+"name": "Pristine Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 100,
+"green": 118,
+"grey": 135,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+2,
+"Pristine Leather"
+]
+],
+"item": "253913",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257385",
+"name": "Shadow Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 100,
+"green": 118,
+"grey": 135,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+2,
+"Shadowgem"
+]
+],
+"item": "253919",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257387",
+"name": "Shining Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 100,
+"green": 118,
+"grey": 135,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+2,
+"Pyrite"
+]
+],
+"item": "253923",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257383",
+"name": "Silky Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 100,
+"green": 118,
+"grey": 135,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+2,
+"Spider's Silk"
+]
+],
+"item": "253915",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3852",
+"name": "Gloves of Meditation",
+"group": "Gloves",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 125,
+"green": 140,
+"grey": 155,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 26,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+3,
+"Fine Thread"
+],
+[
+1,
+"Elixir of Wisdom"
+]
+],
+"item": "4318",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3868",
+"name": "Phoenix Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 100,
+"yellow": 125,
+"green": 143,
+"grey": 160,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+1,
+"Iridescent Pearl"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Bleach"
+]
+],
+"item": "4331",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3854",
+"name": "Azure Silk Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 120,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 29,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Heavy Leather"
+],
+[
+2,
+"Blue Dye"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "4319",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "8780",
+"name": "Hands of Darkness",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 120,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 29,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Heavy Leather"
+],
+[
+2,
+"Shadow Protection Potion"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "7047",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8782",
+"name": "Truefaith Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 125,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Heavy Leather"
+],
+[
+4,
+"Healing Potion"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "7049",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257434",
+"name": "Earthen Silk Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 160,
+"yellow": 180,
+"green": 195,
+"grey": 210,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 39,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Elemental Earth"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "254017",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257439",
+"name": "Black Handwraps",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+4,
+"Black Pearl"
+]
+],
+"item": "254027",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257438",
+"name": "Fiery Handwraps",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+4,
+"Heart of Fire"
+]
+],
+"item": "254025",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257437",
+"name": "Frothing Handwraps",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+4,
+"Globe of Water"
+]
+],
+"item": "254023",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257436",
+"name": "Gilded Handwraps",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": false,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+4,
+"Gold Bar"
+]
+],
+"item": "254021",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257440",
+"name": "Golden Handwraps",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+4,
+"Golden Pearl"
+]
+],
+"item": "254029",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257441",
+"name": "Radiant Handwraps",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+1,
+"Cerulean Dye"
+],
+[
+4,
+"Large Radiant Shard"
+]
+],
+"item": "254031",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "8804",
+"name": "Crimson Silk Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 190,
+"green": 205,
+"grey": 220,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Elemental Fire"
+],
+[
+2,
+"Fire Oil"
+],
+[
+2,
+"Thick Leather"
+],
+[
+4,
+"Red Dye"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "7064",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12053",
+"name": "Black Mageweave Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 195,
+"green": 210,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Mageweave"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10003",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12063",
+"name": "Stormcloth Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 185,
+"yellow": 200,
+"green": 215,
+"grey": 230,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 44,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Globe of Water"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10011",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "12067",
+"name": "Dreamweave Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+4,
+"Wildvine"
+],
+[
+2,
+"Heart of the Wild"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10019",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12066",
+"name": "Red Mageweave Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 190,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Red Dye"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10018",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12071",
+"name": "Shadoweave Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Mageweave"
+],
+[
+5,
+"Shadow Silk"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10023",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257463",
+"name": "Earthenweave Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+1,
+"Essence of Earth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254075",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "18411",
+"name": "Frostweave Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 53,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Runecloth"
+],
+[
+1,
+"Essence of Water"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13870",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257476",
+"name": "Black Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 240,
+"green": 240,
+"grey": 240,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Black Pearl"
+]
+],
+"item": "254101",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "18415",
+"name": "Brightcloth Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 240,
+"green": 255,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Gold Bar"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14101",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18412",
+"name": "Cindercloth Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 240,
+"green": 255,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+3,
+"Heart of Fire"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14043",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257475",
+"name": "Fiery Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 240,
+"green": 240,
+"grey": 240,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Heart of Fire"
+]
+],
+"item": "254099",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257474",
+"name": "Frothing Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 240,
+"green": 240,
+"grey": 240,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Globe of Water"
+]
+],
+"item": "254097",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "18413",
+"name": "Ghostweave Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 240,
+"green": 255,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Ghost Dye"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14142",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257473",
+"name": "Gilded Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 240,
+"green": 240,
+"grey": 240,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Gold Bar"
+]
+],
+"item": "254095",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257477",
+"name": "Golden Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 240,
+"green": 240,
+"grey": 240,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Golden Pearl"
+]
+],
+"item": "254103",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257478",
+"name": "Radiant Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 240,
+"green": 240,
+"grey": 240,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+4,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+4,
+"Large Radiant Shard"
+]
+],
+"item": "254105",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "18417",
+"name": "Runecloth Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 245,
+"green": 260,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+4,
+"Rugged Leather"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13863",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1297123",
+"name": "Swarmtender's Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 285,
+"yellow": 290,
+"green": 293,
+"grey": 295,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+1,
+"Small Brilliant Shard"
+],
+[
+3,
+"Essence of Water"
+],
+[
+6,
+"Rune Thread"
+]
+],
+"item": "275607",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1297120",
+"name": "Venomspew Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 285,
+"yellow": 290,
+"green": 293,
+"grey": 295,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+1,
+"Small Brilliant Shard"
+],
+[
+3,
+"Essence of Air"
+],
+[
+6,
+"Rune Thread"
+]
+],
+"item": "275604",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "22867",
+"name": "Felcloth Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 280,
+"yellow": 295,
+"green": 310,
+"grey": 325,
+"favor": false,
+"quality": "Rare",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Runecloth"
+],
+[
+20,
+"Felcloth"
+],
+[
+6,
+"Demonic Rune"
+],
+[
+8,
+"Essence of Undeath"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "18407",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "22868",
+"name": "Inferno Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 280,
+"yellow": 295,
+"green": 310,
+"grey": 325,
+"favor": false,
+"quality": "Rare",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Runecloth"
+],
+[
+10,
+"Essence of Fire"
+],
+[
+2,
+"Star Ruby"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "18408",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "22869",
+"name": "Mooncloth Gloves",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 280,
+"yellow": 295,
+"green": 310,
+"grey": 325,
+"favor": false,
+"quality": "Rare",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Runecloth"
+],
+[
+6,
+"Mooncloth"
+],
+[
+2,
+"Golden Pearl"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "18409",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "18454",
+"name": "Gloves of Spell Mastery",
+"group": "Gloves",
+"status": "changed",
+"src": "item",
+"learn": 295,
+"yellow": 310,
+"green": 325,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Runecloth"
+],
+[
+8,
+"Mooncloth"
+],
+[
+8,
+"Ghost Dye"
+],
+[
+4,
+"Golden Pearl"
+],
+[
+4,
+"Huge Emerald"
+],
+[
+6,
+"Enchanted Leather"
+],
+[
+2,
+"Rune Thread"
+],
+[
+10,
+"Viridian Dye"
+]
+],
+"item": "14146",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "20849",
+"name": "Flarecore Gloves",
+"group": "Gloves",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Epic",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+6,
+"Fiery Core"
+],
+[
+4,
+"Essence of Fire"
+],
+[
+2,
+"Enchanted Leather"
+],
+[
+2,
+"Rune Thread"
+]
+],
+"item": "16979",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "28205",
+"name": "Glacial Gloves",
+"group": "Gloves",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Epic",
+"ilvl": 80,
+"makes": "1",
+"reagents": [
+[
+5,
+"Frozen Rune"
+],
+[
+4,
+"Bolt of Runecloth"
+],
+[
+4,
+"Essence of Water"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "22654",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1292978",
+"name": "Demonheart Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273941",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292958",
+"name": "Gloves of Conviction",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273921",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292962",
+"name": "Handguards of Conviction",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273925",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292942",
+"name": "Manaflare Gloves",
+"group": "Gloves",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273905",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "8776",
+"name": "Linen Belt",
+"group": "Belts",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Common",
+"ilvl": 9,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "7026",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301466",
+"name": "Azure Stormsewn Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 58,
+"grey": 60,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+3,
+"Coarse Thread"
+]
+],
+"item": "277037",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301442",
+"name": "Cloudy Stormsewn Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 58,
+"grey": 60,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+3,
+"Coarse Thread"
+]
+],
+"item": "277013",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257368",
+"name": "Novice Arcanist's Sash",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 55,
+"grey": 55,
+"favor": false,
+"quality": "Rare",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Minor Mana Potion"
+]
+],
+"item": "253885",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257369",
+"name": "Novice Ardent's Sash",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 55,
+"grey": 55,
+"favor": false,
+"quality": "Rare",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Minor Healing Potion"
+]
+],
+"item": "253887",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257390",
+"name": "Flame Sash",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+3,
+"Fire Oil"
+]
+],
+"item": "253929",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257392",
+"name": "Pearly Sash",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+3,
+"Small Lustrous Pearl"
+]
+],
+"item": "253933",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257388",
+"name": "Pristine Sash",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+3,
+"Pristine Leather"
+]
+],
+"item": "253925",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257391",
+"name": "Shadow Sash",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+3,
+"Shadowgem"
+]
+],
+"item": "253931",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257393",
+"name": "Shining Sash",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+3,
+"Pyrite"
+]
+],
+"item": "253935",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257389",
+"name": "Silky Sash",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+3,
+"Cerulean Dye"
+],
+[
+3,
+"Spider's Silk"
+]
+],
+"item": "253927",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "8766",
+"name": "Azure Silk Belt",
+"group": "Belts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 160,
+"green": 175,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Elemental Water"
+],
+[
+2,
+"Blue Dye"
+],
+[
+2,
+"Fine Thread"
+],
+[
+1,
+"Iron Buckle"
+]
+],
+"item": "7052",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8772",
+"name": "Crimson Silk Belt",
+"group": "Belts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 160,
+"green": 175,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Iron Buckle"
+],
+[
+2,
+"Red Dye"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "7055",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3863",
+"name": "Spider Belt",
+"group": "Belts",
+"status": "changed",
+"src": "item",
+"learn": 145,
+"yellow": 165,
+"green": 180,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Thick Spider's Silk"
+],
+[
+1,
+"Iron Buckle"
+]
+],
+"item": "4328",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "435841",
+"name": "Invoker's Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 170,
+"green": 185,
+"grey": 200,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Shadowgem"
+],
+[
+1,
+"Fine Thread"
+],
+[
+1,
+"Gray Dye"
+]
+],
+"item": "215366",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8797",
+"name": "Earthen Silk Belt",
+"group": "Belts",
+"status": "changed",
+"src": "item",
+"learn": 160,
+"yellow": 180,
+"green": 195,
+"grey": 210,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 39,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Elemental Earth"
+],
+[
+4,
+"Heavy Leather"
+],
+[
+1,
+"Iron Buckle"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "7061",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3864",
+"name": "Star Belt",
+"group": "Belts",
+"status": "changed",
+"src": "item",
+"learn": 165,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Leather"
+],
+[
+1,
+"Citrine"
+],
+[
+1,
+"Iron Buckle"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "4329",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257447",
+"name": "Black Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 195,
+"green": 195,
+"grey": 195,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+28,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+12,
+"Black Pearl"
+]
+],
+"item": "254043",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257446",
+"name": "Fiery Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 195,
+"green": 195,
+"grey": 195,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+28,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+12,
+"Heart of Fire"
+]
+],
+"item": "254041",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257445",
+"name": "Frothing Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 195,
+"green": 195,
+"grey": 195,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+28,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+12,
+"Globe of Water"
+]
+],
+"item": "254039",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257444",
+"name": "Gilded Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 195,
+"green": 195,
+"grey": 195,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+28,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+12,
+"Gold Bar"
+]
+],
+"item": "254037",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257448",
+"name": "Golden Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 195,
+"green": 195,
+"grey": 195,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+28,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+12,
+"Golden Pearl"
+]
+],
+"item": "254045",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257449",
+"name": "Radiant Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 195,
+"green": 195,
+"grey": 195,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+28,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+6,
+"Magenta Dye"
+],
+[
+4,
+"Cerulean Dye"
+],
+[
+12,
+"Large Radiant Shard"
+]
+],
+"item": "254047",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "18402",
+"name": "Runecloth Belt",
+"group": "Belts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 225,
+"green": 240,
+"grey": 255,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 51,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Runecloth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13856",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257469",
+"name": "Black Waistcord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+8,
+"Magenta Dye"
+],
+[
+5,
+"Cerulean Dye"
+],
+[
+12,
+"Black Pearl"
+]
+],
+"item": "254087",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257464",
+"name": "Earthenweave Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Essence of Earth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254077",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257468",
+"name": "Fiery Waistcord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+8,
+"Magenta Dye"
+],
+[
+5,
+"Cerulean Dye"
+],
+[
+12,
+"Heart of Fire"
+]
+],
+"item": "254085",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257467",
+"name": "Frothing Waistcord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+8,
+"Magenta Dye"
+],
+[
+5,
+"Cerulean Dye"
+],
+[
+12,
+"Globe of Water"
+]
+],
+"item": "254083",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257462",
+"name": "Ghostweave Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+1,
+"Ghost Dye"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254073",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257466",
+"name": "Gilded Waistcord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+8,
+"Magenta Dye"
+],
+[
+5,
+"Cerulean Dye"
+],
+[
+12,
+"Gold Bar"
+]
+],
+"item": "254081",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257470",
+"name": "Golden Waistcord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+8,
+"Magenta Dye"
+],
+[
+5,
+"Cerulean Dye"
+],
+[
+12,
+"Golden Pearl"
+]
+],
+"item": "254089",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257471",
+"name": "Radiant Waistcord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 245,
+"grey": 260,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+8,
+"Magenta Dye"
+],
+[
+5,
+"Cerulean Dye"
+],
+[
+12,
+"Large Radiant Shard"
+]
+],
+"item": "254091",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "18410",
+"name": "Ghostweave Belt",
+"group": "Belts",
+"status": "changed",
+"src": "item",
+"learn": 220,
+"yellow": 235,
+"green": 250,
+"grey": 265,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 53,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Runecloth"
+],
+[
+2,
+"Ghost Dye"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14143",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "23662",
+"name": "Wisdom of the Timbermaw",
+"group": "Belts",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Runecloth"
+],
+[
+3,
+"Essence of Earth"
+],
+[
+3,
+"Living Essence"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "19047",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1297124",
+"name": "Swarmtender's Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 290,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+1,
+"Small Brilliant Shard"
+],
+[
+3,
+"Essence of Water"
+],
+[
+6,
+"Rune Thread"
+]
+],
+"item": "275608",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1297121",
+"name": "Venomspew Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 290,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+1,
+"Small Brilliant Shard"
+],
+[
+3,
+"Essence of Air"
+],
+[
+6,
+"Rune Thread"
+]
+],
+"item": "275605",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "24902",
+"name": "Runed Stygian Belt",
+"group": "Belts",
+"status": "changed",
+"src": "item",
+"learn": 285,
+"yellow": 300,
+"green": 315,
+"grey": 330,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Runecloth"
+],
+[
+6,
+"Dark Rune"
+],
+[
+2,
+"Felcloth"
+],
+[
+2,
+"Enchanted Leather"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "20539",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "22866",
+"name": "Belt of the Archmage",
+"group": "Belts",
+"status": "changed",
+"src": "item",
+"learn": 295,
+"yellow": 310,
+"green": 325,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Ghost Dye"
+],
+[
+8,
+"Mooncloth"
+],
+[
+10,
+"Essence of Water"
+],
+[
+10,
+"Essence of Fire"
+],
+[
+4,
+"Large Brilliant Shard"
+],
+[
+6,
+"Rune Thread"
+],
+[
+10,
+"Viridian Dye"
+]
+],
+"item": "18405",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1306541",
+"name": "Mana-infused Cord",
+"group": "Belts",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+2,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+7,
+"Bolt of Runecloth"
+]
+],
+"item": "279267",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "12044",
+"name": "Simple Linen Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "trainer",
+"learn": 1,
+"yellow": 40,
+"green": 50,
+"grey": 60,
+"favor": false,
+"quality": "Common",
+"ilvl": 7,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "10045",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3914",
+"name": "Brown Linen Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "4343",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301468",
+"name": "Azure Stormsewn Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 65,
+"green": 68,
+"grey": 70,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Coarse Thread"
+]
+],
+"item": "277038",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301443",
+"name": "Cloudy Stormsewn Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 65,
+"green": 68,
+"grey": 70,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Coarse Thread"
+]
+],
+"item": "277014",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3842",
+"name": "Handstitched Linen Britches",
+"group": "Leggings",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 70,
+"green": 88,
+"grey": 105,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 14,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "4309",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12046",
+"name": "Simple Kilt",
+"group": "Leggings",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 75,
+"green": 93,
+"grey": 110,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "10047",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12047",
+"name": "Colorful Kilt",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 70,
+"yellow": 95,
+"green": 113,
+"grey": 130,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 19,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Woolen Cloth"
+],
+[
+3,
+"Red Dye"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "10048",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257396",
+"name": "Filigreed Flame Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 105,
+"green": 105,
+"grey": 105,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Fire Oil"
+]
+],
+"item": "253941",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257398",
+"name": "Filigreed Pearly Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 105,
+"green": 105,
+"grey": 105,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Small Lustrous Pearl"
+]
+],
+"item": "253945",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257394",
+"name": "Filigreed Pristine Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 105,
+"green": 105,
+"grey": 105,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "253937",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257397",
+"name": "Filigreed Shadow Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 105,
+"green": 105,
+"grey": 105,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Shadowgem"
+]
+],
+"item": "253943",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257399",
+"name": "Filigreed Shining Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 105,
+"green": 105,
+"grey": 105,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Pyrite"
+]
+],
+"item": "253947",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257395",
+"name": "Filigreed Silky Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 105,
+"green": 105,
+"grey": 105,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+4,
+"Spider's Silk"
+]
+],
+"item": "253939",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "3850",
+"name": "Heavy Woolen Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Fine Thread"
+]
+],
+"item": "4316",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3851",
+"name": "Phoenix Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 100,
+"yellow": 125,
+"green": 143,
+"grey": 160,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Woolen Cloth"
+],
+[
+1,
+"Iridescent Pearl"
+],
+[
+3,
+"Fine Thread"
+]
+],
+"item": "4317",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8758",
+"name": "Azure Silk Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 135,
+"green": 150,
+"grey": 165,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Blue Dye"
+],
+[
+3,
+"Fine Thread"
+]
+],
+"item": "7046",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257421",
+"name": "Flame Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+14,
+"Bolt of Silk Cloth"
+],
+[
+3,
+"Fine Thread"
+],
+[
+8,
+"Cerulean Dye"
+],
+[
+8,
+"Fire Oil"
+],
+[
+2,
+"Silver Bar"
+],
+[
+3,
+"Greater Astral Essence"
+]
+],
+"item": "253991",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257423",
+"name": "Pearly Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+14,
+"Bolt of Silk Cloth"
+],
+[
+3,
+"Fine Thread"
+],
+[
+8,
+"Cerulean Dye"
+],
+[
+8,
+"Small Lustrous Pearl"
+],
+[
+2,
+"Silver Bar"
+],
+[
+3,
+"Greater Astral Essence"
+]
+],
+"item": "253995",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257419",
+"name": "Pristine Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+14,
+"Bolt of Silk Cloth"
+],
+[
+3,
+"Fine Thread"
+],
+[
+8,
+"Cerulean Dye"
+],
+[
+8,
+"Pristine Leather"
+],
+[
+2,
+"Silver Bar"
+],
+[
+3,
+"Greater Astral Essence"
+]
+],
+"item": "253987",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257422",
+"name": "Shadow Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+14,
+"Bolt of Silk Cloth"
+],
+[
+3,
+"Fine Thread"
+],
+[
+8,
+"Cerulean Dye"
+],
+[
+8,
+"Shadowgem"
+],
+[
+2,
+"Silver Bar"
+],
+[
+3,
+"Greater Astral Essence"
+]
+],
+"item": "253993",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257424",
+"name": "Shining Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+14,
+"Bolt of Silk Cloth"
+],
+[
+3,
+"Fine Thread"
+],
+[
+8,
+"Cerulean Dye"
+],
+[
+8,
+"Pyrite"
+],
+[
+2,
+"Silver Bar"
+],
+[
+3,
+"Greater Astral Essence"
+]
+],
+"item": "253997",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257420",
+"name": "Silky Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+14,
+"Bolt of Silk Cloth"
+],
+[
+3,
+"Fine Thread"
+],
+[
+8,
+"Cerulean Dye"
+],
+[
+8,
+"Spider's Silk"
+],
+[
+2,
+"Silver Bar"
+],
+[
+3,
+"Greater Astral Essence"
+]
+],
+"item": "253989",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257425",
+"name": "Earthen Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 160,
+"green": 175,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Elemental Earth"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "253999",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "8799",
+"name": "Crimson Silk Pantaloons",
+"group": "Leggings",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 180,
+"green": 190,
+"grey": 200,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 39,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Red Dye"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "7062",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12049",
+"name": "Black Mageweave Leggings",
+"group": "Leggings",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 185,
+"green": 200,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Mageweave"
+],
+[
+3,
+"Silken Thread"
+]
+],
+"item": "9999",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12052",
+"name": "Shadoweave Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 190,
+"green": 205,
+"grey": 220,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Shadow Silk"
+],
+[
+1,
+"Heavy Silken Thread"
+]
+],
+"item": "10002",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12060",
+"name": "Red Mageweave Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 180,
+"yellow": 195,
+"green": 210,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Red Dye"
+],
+[
+1,
+"Heavy Silken Thread"
+]
+],
+"item": "10009",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12062",
+"name": "Stormcloth Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 185,
+"yellow": 200,
+"green": 215,
+"grey": 230,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 44,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+2,
+"Globe of Water"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10010",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18419",
+"name": "Felcloth Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 245,
+"green": 260,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+4,
+"Felcloth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14107",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "18421",
+"name": "Wizardweave Leggings",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 245,
+"green": 260,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+1,
+"Dream Dust"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14132",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18434",
+"name": "Cindercloth Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+1,
+"Essence of Fire"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14045",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18424",
+"name": "Frostweave Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+1,
+"Essence of Water"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13871",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18438",
+"name": "Runecloth Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 240,
+"yellow": 255,
+"green": 270,
+"grey": 285,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+2,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13865",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18439",
+"name": "Brightcloth Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 260,
+"green": 275,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Gold Bar"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14104",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257488",
+"name": "Earthenweave Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 245,
+"yellow": 260,
+"green": 275,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+2,
+"Essence of Earth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254125",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "18441",
+"name": "Ghostweave Pants",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 260,
+"green": 275,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Ghost Dye"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14144",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18440",
+"name": "Mooncloth Leggings",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Mooncloth"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14137",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "24901",
+"name": "Runed Stygian Leggings",
+"group": "Leggings",
+"status": "changed",
+"src": "item",
+"learn": 285,
+"yellow": 300,
+"green": 315,
+"grey": 330,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+8,
+"Dark Rune"
+],
+[
+6,
+"Felcloth"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "20538",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "24092",
+"name": "Bloodvine Leggings",
+"group": "Leggings",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+4,
+"Mooncloth"
+],
+[
+4,
+"Bloodvine"
+],
+[
+4,
+"Powerful Mojo"
+],
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "19683",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "23667",
+"name": "Flarecore Leggings",
+"group": "Leggings",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Epic",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+8,
+"Mooncloth"
+],
+[
+5,
+"Fiery Core"
+],
+[
+3,
+"Lava Core"
+],
+[
+10,
+"Essence of Fire"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "19165",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1292977",
+"name": "Demonheart Leggings",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Malleable Essence of Nature"
+],
+[
+3,
+"Mooncloth"
+],
+[
+22,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273940",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292961",
+"name": "Leggings of Conviction",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Malleable Essence of Nature"
+],
+[
+3,
+"Mooncloth"
+],
+[
+22,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273924",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292941",
+"name": "Manaflare Pants",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Malleable Essence of Nature"
+],
+[
+3,
+"Mooncloth"
+],
+[
+22,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273904",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292957",
+"name": "Pants of Conviction",
+"group": "Leggings",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Malleable Essence of Nature"
+],
+[
+3,
+"Mooncloth"
+],
+[
+22,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273920",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "12045",
+"name": "Simple Linen Boots",
+"group": "Shoes",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Common",
+"ilvl": 9,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Light Leather"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "10046",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301469",
+"name": "Azure Stormsewn Shoes",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 55,
+"yellow": 60,
+"green": 63,
+"grey": 65,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Linen Cloth"
+],
+[
+3,
+"Coarse Thread"
+]
+],
+"item": "277039",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301444",
+"name": "Cloudy Stormsewn Shoes",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 55,
+"yellow": 60,
+"green": 63,
+"grey": 65,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Linen Cloth"
+],
+[
+3,
+"Coarse Thread"
+]
+],
+"item": "277015",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2386",
+"name": "Linen Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 65,
+"green": 83,
+"grey": 100,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 13,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+],
+[
+1,
+"Light Leather"
+]
+],
+"item": "2569",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3847",
+"name": "Red Woolen Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "item",
+"learn": 75,
+"yellow": 80,
+"green": 98,
+"grey": 115,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Light Leather"
+],
+[
+1,
+"Fine Thread"
+],
+[
+2,
+"Red Dye"
+]
+],
+"item": "4313",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3845",
+"name": "Soft-soled Linen Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 80,
+"green": 98,
+"grey": 115,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 16,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Linen Cloth"
+],
+[
+2,
+"Light Leather"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "4312",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257372",
+"name": "Flame Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 85,
+"green": 103,
+"grey": 120,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+1,
+"Fire Oil"
+]
+],
+"item": "253893",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257374",
+"name": "Pearly Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 85,
+"green": 103,
+"grey": 120,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+1,
+"Small Lustrous Pearl"
+]
+],
+"item": "253897",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257370",
+"name": "Pristine Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 85,
+"green": 103,
+"grey": 120,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+1,
+"Pristine Leather"
+]
+],
+"item": "253889",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257373",
+"name": "Shadow Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 85,
+"green": 103,
+"grey": 120,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+1,
+"Shadowgem"
+]
+],
+"item": "253895",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257375",
+"name": "Shining Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 85,
+"green": 103,
+"grey": 120,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+1,
+"Pyrite"
+]
+],
+"item": "253899",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257371",
+"name": "Silky Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 85,
+"green": 103,
+"grey": 120,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+1,
+"Spider's Silk"
+]
+],
+"item": "253891",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2401",
+"name": "Woolen Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 95,
+"green": 113,
+"grey": 130,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 19,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Light Leather"
+]
+],
+"item": "2583",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3855",
+"name": "Spidersilk Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 125,
+"green": 143,
+"grey": 160,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Medium Leather"
+],
+[
+4,
+"Spider's Silk"
+],
+[
+1,
+"Iridescent Pearl"
+]
+],
+"item": "4320",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3856",
+"name": "Spider Silk Slippers",
+"group": "Shoes",
+"status": "changed",
+"src": "item",
+"learn": 115,
+"yellow": 135,
+"green": 148,
+"grey": 160,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Spider's Silk"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "4321",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8778",
+"name": "Boots of Darkness",
+"group": "Shoes",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 135,
+"green": 150,
+"grey": 165,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Medium Leather"
+],
+[
+1,
+"Shadow Protection Potion"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "7027",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257429",
+"name": "Black Slippers",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 145,
+"green": 145,
+"grey": 145,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Black Pearl"
+]
+],
+"item": "254007",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257428",
+"name": "Fiery Slippers",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 145,
+"green": 145,
+"grey": 145,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Heart of Fire"
+]
+],
+"item": "254005",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257427",
+"name": "Frothing Slippers",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 145,
+"green": 145,
+"grey": 145,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Globe of Water"
+]
+],
+"item": "254003",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257426",
+"name": "Gilded Slippers",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 145,
+"green": 145,
+"grey": 145,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Gold Bar"
+]
+],
+"item": "254001",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257430",
+"name": "Golden Slippers",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 145,
+"green": 145,
+"grey": 145,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Golden Pearl"
+]
+],
+"item": "254009",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257431",
+"name": "Radiant Slippers",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 145,
+"green": 145,
+"grey": 145,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bolt of Mageweave"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+2,
+"Magenta Dye"
+],
+[
+2,
+"Cerulean Dye"
+],
+[
+2,
+"Large Radiant Shard"
+]
+],
+"item": "254011",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "3860",
+"name": "Boots of the Enchanter",
+"group": "Shoes",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 160,
+"green": 175,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Silken Thread"
+],
+[
+2,
+"Thick Spider's Silk"
+]
+],
+"item": "4325",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257432",
+"name": "Earthen Silk Slippers",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 145,
+"yellow": 165,
+"green": 180,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Elemental Earth"
+],
+[
+2,
+"Fine Thread"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "254013",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "12073",
+"name": "Black Mageweave Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 220,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 46,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+2,
+"Heavy Silken Thread"
+],
+[
+2,
+"Thick Leather"
+]
+],
+"item": "10026",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12088",
+"name": "Cindercloth Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 215,
+"green": 230,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Mageweave"
+],
+[
+1,
+"Heart of Fire"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+2,
+"Thick Leather"
+]
+],
+"item": "10044",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12082",
+"name": "Shadoweave Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 215,
+"green": 230,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Mageweave"
+],
+[
+6,
+"Shadow Silk"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+2,
+"Thick Leather"
+]
+],
+"item": "10031",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12090",
+"name": "Stormcloth Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "item",
+"learn": 205,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Mageweave"
+],
+[
+6,
+"Globe of Water"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+2,
+"Thick Leather"
+]
+],
+"item": "10039",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257472",
+"name": "Earthenweave Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 225,
+"yellow": 240,
+"green": 255,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Essence of Earth"
+],
+[
+2,
+"Rugged Leather"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254093",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1257482",
+"name": "Black Sandals",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+10,
+"Magenta Dye"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+14,
+"Black Pearl"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "254113",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257481",
+"name": "Fiery Sandals",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+10,
+"Magenta Dye"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+14,
+"Heart of Fire"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "254111",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257480",
+"name": "Frothing Sandals",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+10,
+"Magenta Dye"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+14,
+"Globe of Water"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "254109",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257479",
+"name": "Gilded Sandals",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+10,
+"Magenta Dye"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+14,
+"Gold Bar"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "254107",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257483",
+"name": "Golden Sandals",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+10,
+"Magenta Dye"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+14,
+"Golden Pearl"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "254115",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1257484",
+"name": "Radiant Sandals",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bolt of Runecloth"
+],
+[
+4,
+"Heavy Silken Thread"
+],
+[
+10,
+"Magenta Dye"
+],
+[
+6,
+"Cerulean Dye"
+],
+[
+14,
+"Large Radiant Shard"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "254117",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "18423",
+"name": "Runecloth Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 265,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Ironweb Spider Silk"
+],
+[
+4,
+"Rugged Leather"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "13864",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "18437",
+"name": "Felcloth Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "item",
+"learn": 240,
+"yellow": 255,
+"green": 270,
+"grey": 285,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Felcloth"
+],
+[
+4,
+"Rugged Leather"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "14108",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1257490",
+"name": "Ghostweave Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 255,
+"yellow": 265,
+"green": 280,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Ghost Dye"
+],
+[
+1,
+"Ironweb Spider Silk"
+],
+[
+2,
+"Rugged Leather"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "254129",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "23664",
+"name": "Argent Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 270,
+"green": 285,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Enchanted Leather"
+],
+[
+2,
+"Golden Pearl"
+],
+[
+2,
+"Guardian Stone"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "19056",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "19435",
+"name": "Mooncloth Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 285,
+"green": 300,
+"grey": 315,
+"favor": false,
+"quality": "Rare",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bolt of Runecloth"
+],
+[
+4,
+"Mooncloth"
+],
+[
+2,
+"Black Pearl"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "15802",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1297125",
+"name": "Swarmtender's Footpads",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 295,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+1,
+"Small Brilliant Shard"
+],
+[
+3,
+"Essence of Water"
+],
+[
+6,
+"Rune Thread"
+]
+],
+"item": "275609",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1297122",
+"name": "Venomspew Footpads",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 295,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Runecloth"
+],
+[
+1,
+"Small Brilliant Shard"
+],
+[
+3,
+"Essence of Air"
+],
+[
+6,
+"Rune Thread"
+]
+],
+"item": "275606",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "24903",
+"name": "Runed Stygian Boots",
+"group": "Shoes",
+"status": "changed",
+"src": "item",
+"learn": 285,
+"yellow": 300,
+"green": 315,
+"grey": 330,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+6,
+"Dark Rune"
+],
+[
+4,
+"Felcloth"
+],
+[
+2,
+"Enchanted Leather"
+],
+[
+2,
+"Ironweb Spider Silk"
+]
+],
+"item": "20537",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1306542",
+"name": "Rime-encrusted Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+2,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+7,
+"Bolt of Runecloth"
+]
+],
+"item": "279268",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "24093",
+"name": "Bloodvine Boots",
+"group": "Shoes",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 330,
+"grey": 345,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+3,
+"Mooncloth"
+],
+[
+3,
+"Bloodvine"
+],
+[
+4,
+"Enchanted Leather"
+],
+[
+4,
+"Bolt of Runecloth"
+],
+[
+4,
+"Ironweb Spider Silk"
+]
+],
+"item": "19684",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1292964",
+"name": "Boots of Conviction",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273927",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292980",
+"name": "Demonheart Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273943",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292944",
+"name": "Manaflare Boots",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273907",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292960",
+"name": "Treads of Conviction",
+"group": "Shoes",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Mooncloth"
+],
+[
+16,
+"Bolt of Runecloth"
+],
+[
+8,
+"Rune Thread"
+]
+],
+"item": "273923",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3915",
+"name": "Brown Linen Shirt",
+"group": "Shirts",
+"status": "unchanged",
+"src": "trainer",
+"learn": 1,
+"yellow": 35,
+"green": 48,
+"grey": 60,
+"favor": false,
+"quality": "Common",
+"ilvl": 7,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+]
+],
+"item": "4344",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2393",
+"name": "White Linen Shirt",
+"group": "Shirts",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 35,
+"green": 48,
+"grey": 60,
+"favor": false,
+"quality": "Common",
+"ilvl": 7,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+],
+[
+1,
+"Bleach"
+]
+],
+"item": "2576",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2394",
+"name": "Blue Linen Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Common",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+],
+[
+1,
+"Blue Dye"
+]
+],
+"item": "2577",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2392",
+"name": "Red Linen Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Common",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+],
+[
+1,
+"Red Dye"
+]
+],
+"item": "2575",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2396",
+"name": "Green Linen Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 65,
+"green": 83,
+"grey": 100,
+"favor": false,
+"quality": "Common",
+"ilvl": 14,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Fine Thread"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "2579",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2406",
+"name": "Gray Woolen Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 90,
+"green": 100,
+"grey": 110,
+"favor": false,
+"quality": "Common",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Woolen Cloth"
+],
+[
+1,
+"Fine Thread"
+],
+[
+1,
+"Gray Dye"
+]
+],
+"item": "2587",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3866",
+"name": "Stylish Red Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Red Dye"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "4330",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3869",
+"name": "Bright Yellow Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 110,
+"yellow": 120,
+"green": 125,
+"grey": 130,
+"favor": false,
+"quality": "Common",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Yellow Dye"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "4332",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "7892",
+"name": "Stylish Blue Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 95,
+"yellow": 120,
+"green": 138,
+"grey": 155,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Blue Dye"
+],
+[
+1,
+"Gray Dye"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "6384",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7893",
+"name": "Stylish Green Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 95,
+"yellow": 120,
+"green": 138,
+"grey": 155,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Woolen Cloth"
+],
+[
+2,
+"Green Dye"
+],
+[
+1,
+"Gray Dye"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "6385",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3870",
+"name": "Dark Silk Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 120,
+"yellow": 130,
+"green": 135,
+"grey": 140,
+"favor": false,
+"quality": "Common",
+"ilvl": 31,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Gray Dye"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "4333",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "8483",
+"name": "White Swashbuckler's Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 135,
+"green": 140,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 32,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Bleach"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "6795",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3871",
+"name": "Formal White Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 145,
+"green": 150,
+"grey": 155,
+"favor": false,
+"quality": "Common",
+"ilvl": 34,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Bleach"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "4334",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8489",
+"name": "Red Swashbuckler's Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 150,
+"green": 155,
+"grey": 160,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Silk Cloth"
+],
+[
+2,
+"Red Dye"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "6796",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3872",
+"name": "Rich Purple Silk Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 150,
+"yellow": 160,
+"green": 165,
+"grey": 170,
+"favor": false,
+"quality": "Common",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Purple Dye"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "4335",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "21945",
+"name": "Green Holiday Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 155,
+"yellow": 165,
+"green": 170,
+"grey": 175,
+"favor": false,
+"quality": "Common",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+4,
+"Green Dye"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "17723",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3873",
+"name": "Black Swashbuckler's Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 165,
+"yellow": 175,
+"green": 180,
+"grey": 185,
+"favor": false,
+"quality": "Common",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Silk Cloth"
+],
+[
+1,
+"Black Dye"
+],
+[
+1,
+"Silken Thread"
+]
+],
+"item": "4336",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "12061",
+"name": "Orange Mageweave Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 185,
+"green": 190,
+"grey": 195,
+"favor": false,
+"quality": "Common",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bolt of Mageweave"
+],
+[
+1,
+"Orange Dye"
+],
+[
+1,
+"Heavy Silken Thread"
+]
+],
+"item": "10056",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12064",
+"name": "Orange Martial Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 185,
+"yellow": 190,
+"green": 195,
+"grey": 200,
+"favor": false,
+"quality": "Common",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Mageweave"
+],
+[
+2,
+"Orange Dye"
+],
+[
+1,
+"Heavy Silken Thread"
+]
+],
+"item": "10052",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12075",
+"name": "Lavender Mageweave Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 190,
+"yellow": 195,
+"green": 200,
+"grey": 205,
+"favor": false,
+"quality": "Common",
+"ilvl": 46,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Mageweave"
+],
+[
+2,
+"Purple Dye"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10054",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12080",
+"name": "Pink Mageweave Shirt",
+"group": "Shirts",
+"status": "changed",
+"src": "item",
+"learn": 195,
+"yellow": 200,
+"green": 205,
+"grey": 210,
+"favor": false,
+"quality": "Common",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+1,
+"Pink Dye"
+],
+[
+1,
+"Heavy Silken Thread"
+]
+],
+"item": "10055",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8465",
+"name": "Simple Dress",
+"group": "Dressed for the Occasion",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 68,
+"grey": 85,
+"favor": false,
+"quality": "Common",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Linen Cloth"
+],
+[
+1,
+"Coarse Thread"
+],
+[
+1,
+"Blue Dye"
+],
+[
+1,
+"Bleach"
+]
+],
+"item": "6786",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8467",
+"name": "White Woolen Dress",
+"group": "Dressed for the Occasion",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 110,
+"green": 128,
+"grey": 145,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Woolen Cloth"
+],
+[
+4,
+"Bleach"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "6787",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12091",
+"name": "White Wedding Dress",
+"group": "Dressed for the Occasion",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 145,
+"green": 150,
+"grey": 155,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+],
+[
+1,
+"Bleach"
+]
+],
+"item": "10040",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12093",
+"name": "Tuxedo Jacket",
+"group": "Dressed for the Occasion",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+]
+],
+"item": "10036",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12077",
+"name": "Simple Black Dress",
+"group": "Dressed for the Occasion",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 200,
+"green": 205,
+"grey": 210,
+"favor": false,
+"quality": "Common",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+3,
+"Bolt of Mageweave"
+],
+[
+1,
+"Black Dye"
+],
+[
+1,
+"Heavy Silken Thread"
+],
+[
+1,
+"Bleach"
+]
+],
+"item": "10053",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12089",
+"name": "Tuxedo Pants",
+"group": "Dressed for the Occasion",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 205,
+"green": 210,
+"grey": 215,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+3,
+"Heavy Silken Thread"
+]
+],
+"item": "10035",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12085",
+"name": "Tuxedo Shirt",
+"group": "Dressed for the Occasion",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 205,
+"green": 210,
+"grey": 215,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Mageweave"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "10034",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "26403",
+"name": "Festival Dress",
+"group": "Dressed for the Occasion",
+"status": "changed",
+"src": "item",
+"learn": 205,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Firebloom"
+],
+[
+2,
+"Red Dye"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "21154",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "26407",
+"name": "Festival Suit",
+"group": "Dressed for the Occasion",
+"status": "changed",
+"src": "item",
+"learn": 205,
+"yellow": 220,
+"green": 235,
+"grey": 250,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bolt of Runecloth"
+],
+[
+2,
+"Firebloom"
+],
+[
+2,
+"Red Dye"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "21542",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "22813",
+"name": "Gordok Ogre Suit",
+"group": "Miscellaneous",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 285,
+"green": 290,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bolt of Runecloth"
+],
+[
+4,
+"Rugged Leather"
+],
+[
+1,
+"Ogre Tannin"
+],
+[
+1,
+"Rune Thread"
+]
+],
+"item": "18258",
+"item_db": "classic",
+"bop_recipe": false
+}
+],
+"removed": []
+}

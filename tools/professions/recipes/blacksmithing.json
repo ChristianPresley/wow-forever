@@ -1,0 +1,15107 @@
+{
+"profession": "blacksmithing",
+"recipes": [
+{
+"id": "1230171",
+"name": "Sharpening Wheel",
+"group": "Camping",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 4,
+"makes": "1",
+"reagents": [
+[
+1,
+"Rough Stone"
+],
+[
+1,
+"Copper Bar"
+]
+],
+"item": "279944",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263041",
+"name": "Anvil",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "279988",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263073",
+"name": "Master Forge",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 300,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Golem Heart"
+],
+[
+5,
+"Thorium Bar"
+],
+[
+2,
+"Rugged Leather"
+]
+],
+"item": "279955",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "3320",
+"name": "Rough Grinding Stone",
+"group": "Reagents",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 45,
+"green": 65,
+"grey": 85,
+"favor": false,
+"quality": "Common",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+2,
+"Rough Stone"
+]
+],
+"item": "3470",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3326",
+"name": "Coarse Grinding Stone",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 63,
+"grey": 75,
+"favor": false,
+"quality": "Common",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+2,
+"Coarse Stone"
+]
+],
+"item": "3478",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3337",
+"name": "Heavy Grinding Stone",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 100,
+"green": 113,
+"grey": 125,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+3,
+"Heavy Stone"
+]
+],
+"item": "3486",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8768",
+"name": "Iron Buckle",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 125,
+"green": 128,
+"grey": 130,
+"favor": false,
+"quality": "Common",
+"ilvl": 30,
+"makes": "2",
+"reagents": [
+[
+1,
+"Iron Bar"
+]
+],
+"item": "7071",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9920",
+"name": "Solid Grinding Stone",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 180,
+"grey": 185,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+4,
+"Solid Stone"
+]
+],
+"item": "7966",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11454",
+"name": "Inlaid Mithril Cylinder",
+"group": "Reagents",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": false,
+"quality": "Common",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+5,
+"Mithril Bar"
+],
+[
+1,
+"Gold Bar"
+],
+[
+1,
+"Truesilver Bar"
+]
+],
+"item": "9060",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16639",
+"name": "Dense Grinding Stone",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 233,
+"grey": 235,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Dense Stone"
+]
+],
+"item": "12644",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2660",
+"name": "Rough Sharpening Stone",
+"group": "Weapon Stones",
+"status": "unchanged",
+"src": "trainer",
+"learn": 1,
+"yellow": 15,
+"green": 35,
+"grey": 55,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Rough Stone"
+]
+],
+"item": "2862",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3115",
+"name": "Rough Weightstone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "trainer",
+"learn": 1,
+"yellow": 15,
+"green": 35,
+"grey": 55,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Rough Stone"
+]
+],
+"item": "3239",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3116",
+"name": "Coarse Weightstone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 40,
+"green": 48,
+"grey": 55,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+1,
+"Coarse Stone"
+]
+],
+"item": "3240",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2665",
+"name": "Coarse Sharpening Stone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "trainer",
+"learn": 75,
+"yellow": 40,
+"green": 48,
+"grey": 55,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+1,
+"Coarse Stone"
+]
+],
+"item": "2863",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3117",
+"name": "Heavy Weightstone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 100,
+"green": 108,
+"grey": 115,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+1,
+"Heavy Stone"
+]
+],
+"item": "3241",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2674",
+"name": "Heavy Sharpening Stone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "trainer",
+"learn": 125,
+"yellow": 100,
+"green": 108,
+"grey": 115,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+1,
+"Heavy Stone"
+]
+],
+"item": "2871",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9918",
+"name": "Solid Sharpening Stone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 180,
+"grey": 185,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+1,
+"Solid Stone"
+]
+],
+"item": "7964",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9921",
+"name": "Solid Weightstone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 180,
+"grey": 185,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+1,
+"Solid Stone"
+]
+],
+"item": "7965",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16641",
+"name": "Dense Sharpening Stone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 233,
+"grey": 235,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+1,
+"Dense Stone"
+]
+],
+"item": "12404",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16640",
+"name": "Dense Weightstone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 233,
+"grey": 235,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+1,
+"Dense Stone"
+]
+],
+"item": "12643",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "22757",
+"name": "Elemental Sharpening Stone",
+"group": "Weapon Stones",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 275,
+"green": 285,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+2,
+"Elemental Earth"
+],
+[
+3,
+"Dense Stone"
+]
+],
+"item": "18262",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "9935",
+"name": "Steel Plate Helm",
+"group": "Plate Helmets",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 210,
+"green": 220,
+"grey": 230,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+14,
+"Steel Bar"
+],
+[
+1,
+"Solid Grinding Stone"
+]
+],
+"item": "7922",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9970",
+"name": "Heavy Mithril Helm",
+"group": "Plate Helmets",
+"status": "changed",
+"src": "item",
+"learn": 220,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+14,
+"Mithril Bar"
+],
+[
+1,
+"Aquamarine"
+]
+],
+"item": "7934",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252292",
+"name": "Shining Mithril Helm",
+"group": "Plate Helmets",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 235,
+"green": 245,
+"grey": 255,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+8,
+"Mithril Bar"
+],
+[
+9,
+"Truesilver Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Core of Earth"
+]
+],
+"item": "250543",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9980",
+"name": "Ornate Mithril Helm",
+"group": "Plate Helmets",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 240,
+"green": 250,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+16,
+"Mithril Bar"
+],
+[
+2,
+"Truesilver Bar"
+],
+[
+1,
+"Black Pearl"
+],
+[
+1,
+"Solid Grinding Stone"
+]
+],
+"item": "7937",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16653",
+"name": "Thorium Helm",
+"group": "Plate Helmets",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 275,
+"green": 285,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+24,
+"Thorium Bar"
+],
+[
+1,
+"Star Ruby"
+],
+[
+4,
+"Yellow Power Crystal"
+]
+],
+"item": "12410",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16658",
+"name": "Imperial Plate Helm",
+"group": "Plate Helmets",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 300,
+"grey": 310,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+34,
+"Thorium Bar"
+],
+[
+2,
+"Star Ruby"
+]
+],
+"item": "12427",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252342",
+"name": "Blessed Plate Helm",
+"group": "Plate Helmets",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 295,
+"green": 305,
+"grey": 315,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+30,
+"Thorium Bar"
+],
+[
+2,
+"Blue Sapphire"
+]
+],
+"item": "250593",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16726",
+"name": "Runic Plate Helm",
+"group": "Plate Helmets",
+"status": "changed",
+"src": "item",
+"learn": 280,
+"yellow": 300,
+"green": 310,
+"grey": 320,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+30,
+"Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+2,
+"Truesilver Bar"
+],
+[
+1,
+"Huge Emerald"
+]
+],
+"item": "12612",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16724",
+"name": "Whitesoul Helm",
+"group": "Plate Helmets",
+"status": "changed",
+"src": "item",
+"learn": 290,
+"yellow": 310,
+"green": 320,
+"grey": 330,
+"favor": false,
+"quality": "Rare",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+4,
+"Enchanted Thorium Bar"
+],
+[
+6,
+"Truesilver Bar"
+],
+[
+6,
+"Gold Bar"
+],
+[
+2,
+"Azerothian Diamond"
+]
+],
+"item": "12633",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "23636",
+"name": "Dark Iron Helm",
+"group": "Plate Helmets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 66,
+"makes": "1",
+"reagents": [
+[
+4,
+"Lava Core"
+],
+[
+2,
+"Fiery Core"
+],
+[
+4,
+"Dark Iron Bar"
+]
+],
+"item": "19148",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "24913",
+"name": "Darkrune Helm",
+"group": "Plate Helmets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+8,
+"Dark Rune"
+],
+[
+8,
+"Truesilver Bar"
+],
+[
+1,
+"Black Diamond"
+]
+],
+"item": "20551",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16742",
+"name": "Enchanted Thorium Helm",
+"group": "Plate Helmets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+6,
+"Arcanite Bar"
+],
+[
+16,
+"Enchanted Thorium Bar"
+],
+[
+6,
+"Essence of Earth"
+],
+[
+2,
+"Large Opal"
+],
+[
+1,
+"Azerothian Diamond"
+]
+],
+"item": "12620",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252346",
+"name": "Enriched Thorium Helm",
+"group": "Plate Helmets",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": true,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+6,
+"Legionite Bar"
+],
+[
+16,
+"Heavy Thorium Bar"
+],
+[
+6,
+"Essence of Fire"
+],
+[
+3,
+"Azerothium Bar"
+]
+],
+"item": "250597",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16729",
+"name": "Lionheart Helm",
+"group": "Plate Helmets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+80,
+"Thorium Bar"
+],
+[
+12,
+"Arcanite Bar"
+],
+[
+40,
+"Wicked Claw"
+],
+[
+10,
+"Blue Sapphire"
+],
+[
+4,
+"Azerothian Diamond"
+]
+],
+"item": "12640",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252348",
+"name": "Stalwart Helm",
+"group": "Plate Helmets",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+12,
+"Legionite Bar"
+],
+[
+80,
+"Thorium Bar"
+],
+[
+10,
+"Star Ruby"
+],
+[
+4,
+"Azerothian Diamond"
+],
+[
+20,
+"Black Pearl"
+]
+],
+"item": "250599",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9926",
+"name": "Heavy Mithril Shoulder",
+"group": "Plate Pauldrons",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 200,
+"green": 210,
+"grey": 220,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+8,
+"Mithril Bar"
+],
+[
+6,
+"Heavy Leather"
+]
+],
+"item": "7918",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252290",
+"name": "Shining Mithril Pauldrons",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 215,
+"green": 225,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+6,
+"Mithril Bar"
+],
+[
+3,
+"Truesilver Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Thick Leather"
+]
+],
+"item": "250541",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9952",
+"name": "Ornate Mithril Shoulders",
+"group": "Plate Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 220,
+"green": 230,
+"grey": 240,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+12,
+"Mithril Bar"
+],
+[
+1,
+"Truesilver Bar"
+],
+[
+6,
+"Thick Leather"
+]
+],
+"item": "7928",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252329",
+"name": "Justicar's Pauldrons",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+20,
+"Mithril Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+8,
+"Globe of Water"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250580",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252325",
+"name": "Officer's Pauldrons",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+20,
+"Mithril Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+8,
+"Jade"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250576",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252328",
+"name": "Prefect's Pauldrons",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+20,
+"Mithril Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+8,
+"Golden Pearl"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250579",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252326",
+"name": "Sentinel's Pauldrons",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+20,
+"Mithril Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+8,
+"Purple Lotus"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250577",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252327",
+"name": "Warder's Pauldrons",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": true,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+20,
+"Mithril Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+8,
+"Black Pearl"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250578",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252335",
+"name": "Blessed Plate Pauldrons",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+1,
+"Blue Sapphire"
+],
+[
+6,
+"Rugged Leather"
+]
+],
+"item": "250586",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16646",
+"name": "Imperial Plate Shoulders",
+"group": "Plate Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 53,
+"makes": "1",
+"reagents": [
+[
+24,
+"Thorium Bar"
+],
+[
+6,
+"Rugged Leather"
+],
+[
+2,
+"Citrine"
+]
+],
+"item": "12428",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "15295",
+"name": "Dark Iron Shoulders",
+"group": "Plate Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 275,
+"green": 285,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+6,
+"Dark Iron Bar"
+],
+[
+1,
+"Heart of Fire"
+]
+],
+"item": "11605",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16660",
+"name": "Dawnbringer Shoulders",
+"group": "Plate Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 295,
+"grey": 305,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+4,
+"Arcanite Bar"
+],
+[
+2,
+"Huge Emerald"
+],
+[
+2,
+"Essence of Water"
+]
+],
+"item": "12625",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16664",
+"name": "Runic Plate Shoulders",
+"group": "Plate Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 295,
+"green": 305,
+"grey": 315,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+6,
+"Gold Bar"
+]
+],
+"item": "12610",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "24141",
+"name": "Darksoul Shoulders",
+"group": "Plate Pauldrons",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+10,
+"Souldarite"
+],
+[
+1,
+"Large Opal"
+]
+],
+"item": "19695",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1292951",
+"name": "Justice Epaulets",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273914",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292955",
+"name": "Justice Pauldrons",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273918",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292947",
+"name": "Justice Spaulders",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273910",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292987",
+"name": "Pauldrons of Glory",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273950",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292983",
+"name": "Shoulders of Glory",
+"group": "Plate Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273946",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252289",
+"name": "Shining Mithril Breastplate",
+"group": "Plate Chestguards",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 215,
+"green": 225,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+8,
+"Mithril Bar"
+],
+[
+9,
+"Truesilver Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Black Pearl"
+]
+],
+"item": "250540",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9959",
+"name": "Heavy Mithril Breastplate",
+"group": "Plate Chestguards",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 225,
+"green": 235,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 46,
+"makes": "1",
+"reagents": [
+[
+16,
+"Mithril Bar"
+]
+],
+"item": "7930",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9972",
+"name": "Ornate Mithril Breastplate",
+"group": "Plate Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 240,
+"yellow": 235,
+"green": 245,
+"grey": 255,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+16,
+"Mithril Bar"
+],
+[
+6,
+"Truesilver Bar"
+],
+[
+1,
+"Heart of Fire"
+],
+[
+1,
+"Solid Grinding Stone"
+]
+],
+"item": "7935",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "9974",
+"name": "Truesilver Breastplate",
+"group": "Plate Chestguards",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 240,
+"green": 250,
+"grey": 260,
+"favor": false,
+"quality": "Rare",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+12,
+"Mithril Bar"
+],
+[
+24,
+"Truesilver Bar"
+],
+[
+4,
+"Star Ruby"
+],
+[
+4,
+"Black Pearl"
+],
+[
+2,
+"Solid Grinding Stone"
+]
+],
+"item": "7939",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16642",
+"name": "Thorium Armor",
+"group": "Plate Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 245,
+"green": 255,
+"grey": 265,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+1,
+"Blue Sapphire"
+],
+[
+4,
+"Yellow Power Crystal"
+]
+],
+"item": "12405",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "15296",
+"name": "Dark Iron Plate",
+"group": "Plate Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 260,
+"yellow": 280,
+"green": 290,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+20,
+"Dark Iron Bar"
+],
+[
+8,
+"Heart of Fire"
+]
+],
+"item": "11604",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16667",
+"name": "Demon Forged Breastplate",
+"group": "Plate Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 260,
+"yellow": 280,
+"green": 290,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+40,
+"Thorium Bar"
+],
+[
+10,
+"Demonic Rune"
+],
+[
+4,
+"Blue Sapphire"
+],
+[
+4,
+"Star Ruby"
+]
+],
+"item": "12628",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16663",
+"name": "Imperial Plate Chest",
+"group": "Plate Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 295,
+"green": 305,
+"grey": 315,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+40,
+"Thorium Bar"
+],
+[
+2,
+"Star Ruby"
+]
+],
+"item": "12422",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252343",
+"name": "Blessed Plate Chest",
+"group": "Plate Chestguards",
+"status": "new",
+"src": "item",
+"learn": 280,
+"yellow": 300,
+"green": 310,
+"grey": 320,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+36,
+"Thorium Bar"
+],
+[
+2,
+"Blue Sapphire"
+]
+],
+"item": "250594",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16731",
+"name": "Runic Breastplate",
+"group": "Plate Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 285,
+"yellow": 305,
+"green": 315,
+"grey": 325,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+40,
+"Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+1,
+"Star Ruby"
+]
+],
+"item": "12613",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252350",
+"name": "Breastplate of Salvation",
+"group": "Plate Chestguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+12,
+"Legionite Bar"
+],
+[
+80,
+"Thorium Bar"
+],
+[
+10,
+"Blue Sapphire"
+],
+[
+4,
+"Azerothian Diamond"
+],
+[
+20,
+"Demonic Rune"
+]
+],
+"item": "250601",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "24914",
+"name": "Darkrune Breastplate",
+"group": "Plate Chestguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+10,
+"Dark Rune"
+],
+[
+10,
+"Truesilver Bar"
+]
+],
+"item": "20550",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "24139",
+"name": "Darksoul Breastplate",
+"group": "Plate Chestguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+14,
+"Souldarite"
+],
+[
+2,
+"Large Opal"
+]
+],
+"item": "19693",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16745",
+"name": "Enchanted Thorium Breastplate",
+"group": "Plate Chestguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+8,
+"Arcanite Bar"
+],
+[
+24,
+"Enchanted Thorium Bar"
+],
+[
+4,
+"Essence of Earth"
+],
+[
+4,
+"Essence of Water"
+],
+[
+2,
+"Huge Emerald"
+],
+[
+2,
+"Azerothian Diamond"
+]
+],
+"item": "12618",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252344",
+"name": "Enriched Thorium Breastplate",
+"group": "Plate Chestguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": true,
+"quality": "Rare",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+8,
+"Legionite Bar"
+],
+[
+24,
+"Heavy Thorium Bar"
+],
+[
+4,
+"Essence of Air"
+],
+[
+4,
+"Essence of Fire"
+],
+[
+4,
+"Azerothium Bar"
+]
+],
+"item": "250595",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "28242",
+"name": "Icebane Breastplate",
+"group": "Plate Chestguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 80,
+"makes": "1",
+"reagents": [
+[
+7,
+"Frozen Rune"
+],
+[
+16,
+"Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+4,
+"Essence of Water"
+]
+],
+"item": "22669",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "28461",
+"name": "Ironvine Breastplate",
+"group": "Plate Chestguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+12,
+"Enchanted Thorium Bar"
+],
+[
+2,
+"Bloodvine"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+2,
+"Living Essence"
+]
+],
+"item": "22762",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "27587",
+"name": "Thick Obsidian Breastplate",
+"group": "Plate Chestguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 72,
+"makes": "1",
+"reagents": [
+[
+18,
+"Large Obsidian Shard"
+],
+[
+40,
+"Small Obsidian Shard"
+],
+[
+12,
+"Enchanted Thorium Bar"
+],
+[
+10,
+"Essence of Earth"
+],
+[
+4,
+"Huge Emerald"
+]
+],
+"item": "22196",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252334",
+"name": "Justicar's Wristguards",
+"group": "Plate Bracers",
+"status": "new",
+"src": "item",
+"learn": 225,
+"yellow": 250,
+"green": 263,
+"grey": 275,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Globe of Water"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250585",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252330",
+"name": "Officer's Wristguards",
+"group": "Plate Bracers",
+"status": "new",
+"src": "item",
+"learn": 225,
+"yellow": 250,
+"green": 263,
+"grey": 275,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Jade"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250581",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252333",
+"name": "Prefect's Wristguards",
+"group": "Plate Bracers",
+"status": "new",
+"src": "item",
+"learn": 225,
+"yellow": 250,
+"green": 263,
+"grey": 275,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Golden Pearl"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250584",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252331",
+"name": "Sentinel's Wristguards",
+"group": "Plate Bracers",
+"status": "new",
+"src": "item",
+"learn": 225,
+"yellow": 250,
+"green": 263,
+"grey": 275,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Purple Lotus"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250582",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16644",
+"name": "Thorium Bracers",
+"group": "Plate Bracers",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 250,
+"green": 260,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 51,
+"makes": "1",
+"reagents": [
+[
+12,
+"Thorium Bar"
+],
+[
+4,
+"Blue Power Crystal"
+]
+],
+"item": "12408",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252332",
+"name": "Warder's Wristguards",
+"group": "Plate Bracers",
+"status": "new",
+"src": "item",
+"learn": 225,
+"yellow": 250,
+"green": 263,
+"grey": 275,
+"favor": true,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Black Pearl"
+],
+[
+1,
+"Large Glowing Shard"
+]
+],
+"item": "250583",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16649",
+"name": "Imperial Plate Bracers",
+"group": "Plate Bracers",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 265,
+"green": 275,
+"grey": 285,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+1,
+"Star Ruby"
+]
+],
+"item": "12425",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252339",
+"name": "Blessed Plate Bracers",
+"group": "Plate Bracers",
+"status": "new",
+"src": "item",
+"learn": 255,
+"yellow": 275,
+"green": 285,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+1,
+"Blue Sapphire"
+]
+],
+"item": "250590",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "20874",
+"name": "Dark Iron Bracers",
+"group": "Plate Bracers",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 300,
+"grey": 310,
+"favor": false,
+"quality": "Epic",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+4,
+"Dark Iron Bar"
+],
+[
+2,
+"Fiery Core"
+],
+[
+2,
+"Lava Core"
+]
+],
+"item": "17014",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "28244",
+"name": "Icebane Bracers",
+"group": "Plate Bracers",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 80,
+"makes": "1",
+"reagents": [
+[
+4,
+"Frozen Rune"
+],
+[
+12,
+"Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+2,
+"Essence of Water"
+]
+],
+"item": "22671",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "9928",
+"name": "Heavy Mithril Gauntlet",
+"group": "Plate Gauntlets",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 200,
+"green": 210,
+"grey": 220,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+6,
+"Mithril Bar"
+],
+[
+4,
+"Mageweave Cloth"
+]
+],
+"item": "7919",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9950",
+"name": "Ornate Mithril Gloves",
+"group": "Plate Gauntlets",
+"status": "changed",
+"src": "item",
+"learn": 195,
+"yellow": 215,
+"green": 225,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 44,
+"makes": "1",
+"reagents": [
+[
+10,
+"Mithril Bar"
+],
+[
+6,
+"Mageweave Cloth"
+],
+[
+1,
+"Truesilver Bar"
+],
+[
+1,
+"Solid Grinding Stone"
+]
+],
+"item": "7927",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "9954",
+"name": "Truesilver Gauntlets",
+"group": "Plate Gauntlets",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 220,
+"green": 230,
+"grey": 240,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+10,
+"Mithril Bar"
+],
+[
+8,
+"Truesilver Bar"
+],
+[
+3,
+"Aquamarine"
+],
+[
+3,
+"Citrine"
+],
+[
+1,
+"Guardian Gloves"
+],
+[
+2,
+"Solid Grinding Stone"
+]
+],
+"item": "7938",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252294",
+"name": "Shining Mithril Gauntlet",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 220,
+"yellow": 240,
+"green": 250,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+5,
+"Mithril Bar"
+],
+[
+6,
+"Truesilver Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Aquamarine"
+]
+],
+"item": "250545",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252304",
+"name": "Justicar's Gloves",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 255,
+"green": 255,
+"grey": 255,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+4,
+"Globe of Water"
+]
+],
+"item": "250555",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252300",
+"name": "Officer's Gloves",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 255,
+"green": 255,
+"grey": 255,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+4,
+"Jade"
+]
+],
+"item": "250551",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252303",
+"name": "Prefect's Gloves",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 255,
+"green": 255,
+"grey": 255,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+4,
+"Golden Pearl"
+]
+],
+"item": "250554",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252301",
+"name": "Sentinel's Gloves",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 255,
+"green": 255,
+"grey": 255,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+4,
+"Purple Lotus"
+]
+],
+"item": "250552",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252302",
+"name": "Warder's Gloves",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 255,
+"green": 255,
+"grey": 255,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+8,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+4,
+"Black Pearl"
+]
+],
+"item": "250553",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252337",
+"name": "Blessed Plate Gauntlet",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 245,
+"yellow": 265,
+"green": 275,
+"grey": 285,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+2,
+"Blue Sapphire"
+]
+],
+"item": "250588",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252338",
+"name": "Imperial Plate Gauntlets",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 255,
+"yellow": 275,
+"green": 285,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+24,
+"Thorium Bar"
+],
+[
+1,
+"Star Ruby"
+]
+],
+"item": "250589",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16655",
+"name": "Fiery Plate Gauntlets",
+"group": "Plate Gauntlets",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 295,
+"grey": 305,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+6,
+"Enchanted Thorium Bar"
+],
+[
+2,
+"Essence of Fire"
+],
+[
+4,
+"Star Ruby"
+]
+],
+"item": "12631",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1297141",
+"name": "Clutchlord's Grips",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 285,
+"yellow": 290,
+"green": 293,
+"grey": 295,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+7,
+"Thorium Bar"
+],
+[
+5,
+"Enchanted Thorium Bar"
+],
+[
+3,
+"Essence of Earth"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "275625",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1297138",
+"name": "Goregasher Grips",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 285,
+"yellow": 290,
+"green": 293,
+"grey": 295,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+7,
+"Thorium Bar"
+],
+[
+5,
+"Enchanted Thorium Bar"
+],
+[
+3,
+"Essence of Fire"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "275622",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1306538",
+"name": "Heavy Thorium Gauntlets",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+2,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Legionite Bar"
+],
+[
+14,
+"Heavy Thorium Bar"
+]
+],
+"item": "279264",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "23637",
+"name": "Dark Iron Gauntlets",
+"group": "Plate Gauntlets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+3,
+"Lava Core"
+],
+[
+5,
+"Fiery Core"
+],
+[
+4,
+"Core Leather"
+],
+[
+4,
+"Dark Iron Bar"
+],
+[
+2,
+"Blood of the Mountain"
+]
+],
+"item": "19164",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "24912",
+"name": "Darkrune Gauntlets",
+"group": "Plate Gauntlets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+12,
+"Thorium Bar"
+],
+[
+6,
+"Dark Rune"
+],
+[
+6,
+"Truesilver Bar"
+],
+[
+2,
+"Enchanted Leather"
+]
+],
+"item": "20549",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1292982",
+"name": "Gauntlets of Glory",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273945",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "23633",
+"name": "Gloves of the Dawn",
+"group": "Plate Gauntlets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+2,
+"Arcanite Bar"
+],
+[
+10,
+"Truesilver Bar"
+],
+[
+1,
+"Righteous Orb"
+]
+],
+"item": "19057",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1292986",
+"name": "Handguards of Glory",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273949",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "28243",
+"name": "Icebane Gauntlets",
+"group": "Plate Gauntlets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 80,
+"makes": "1",
+"reagents": [
+[
+5,
+"Frozen Rune"
+],
+[
+12,
+"Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+2,
+"Essence of Water"
+]
+],
+"item": "22670",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "28462",
+"name": "Ironvine Gloves",
+"group": "Plate Gauntlets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+8,
+"Enchanted Thorium Bar"
+],
+[
+1,
+"Bloodvine"
+],
+[
+2,
+"Living Essence"
+]
+],
+"item": "22763",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1292946",
+"name": "Justice Gauntlets",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273909",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292950",
+"name": "Justice Gloves",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273913",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292954",
+"name": "Justice Handguards",
+"group": "Plate Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273917",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16741",
+"name": "Stronghold Gauntlets",
+"group": "Plate Gauntlets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+15,
+"Arcanite Bar"
+],
+[
+20,
+"Enchanted Thorium Bar"
+],
+[
+10,
+"Essence of Earth"
+],
+[
+4,
+"Blue Sapphire"
+],
+[
+4,
+"Large Opal"
+]
+],
+"item": "12639",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16643",
+"name": "Thorium Belt",
+"group": "Plate Belts",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 245,
+"green": 255,
+"grey": 265,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+12,
+"Thorium Bar"
+],
+[
+4,
+"Red Power Crystal"
+]
+],
+"item": "12406",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16647",
+"name": "Imperial Plate Belt",
+"group": "Plate Belts",
+"status": "changed",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 53,
+"makes": "1",
+"reagents": [
+[
+22,
+"Thorium Bar"
+],
+[
+6,
+"Rugged Leather"
+],
+[
+1,
+"Aquamarine"
+]
+],
+"item": "12424",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252324",
+"name": "Justicar's Waistguard",
+"group": "Plate Belts",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 280,
+"grey": 290,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+24,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+6,
+"Sulfuric Acid"
+],
+[
+10,
+"Globe of Water"
+]
+],
+"item": "250575",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252320",
+"name": "Officer's Waistguard",
+"group": "Plate Belts",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 280,
+"grey": 290,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+24,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+6,
+"Sulfuric Acid"
+],
+[
+10,
+"Jade"
+]
+],
+"item": "250571",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252323",
+"name": "Prefect's Waistguard",
+"group": "Plate Belts",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 280,
+"grey": 290,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+24,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+6,
+"Sulfuric Acid"
+],
+[
+10,
+"Golden Pearl"
+]
+],
+"item": "250574",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252321",
+"name": "Sentinel's Waistguard",
+"group": "Plate Belts",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 280,
+"grey": 290,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+24,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+6,
+"Sulfuric Acid"
+],
+[
+10,
+"Purple Lotus"
+]
+],
+"item": "250572",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252322",
+"name": "Warder's Waistguard",
+"group": "Plate Belts",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 280,
+"grey": 290,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+24,
+"Thorium Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+6,
+"Sandpaper"
+],
+[
+6,
+"Sulfuric Acid"
+],
+[
+10,
+"Black Pearl"
+]
+],
+"item": "250573",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "23632",
+"name": "Girdle of the Dawn",
+"group": "Plate Belts",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 295,
+"grey": 305,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+8,
+"Thorium Bar"
+],
+[
+6,
+"Truesilver Bar"
+],
+[
+1,
+"Righteous Orb"
+]
+],
+"item": "19051",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252341",
+"name": "Blessed Plate Belt",
+"group": "Plate Belts",
+"status": "new",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 300,
+"grey": 310,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+18,
+"Thorium Bar"
+],
+[
+1,
+"Blue Sapphire"
+],
+[
+1,
+"Iron Buckle"
+],
+[
+6,
+"Rugged Leather"
+]
+],
+"item": "250592",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1297142",
+"name": "Clutchlord's Support",
+"group": "Plate Belts",
+"status": "new",
+"src": "item",
+"learn": 290,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+11,
+"Thorium Bar"
+],
+[
+5,
+"Enchanted Thorium Bar"
+],
+[
+3,
+"Essence of Earth"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "275626",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1297139",
+"name": "Goregasher Support",
+"group": "Plate Belts",
+"status": "new",
+"src": "item",
+"learn": 290,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+11,
+"Thorium Bar"
+],
+[
+5,
+"Enchanted Thorium Bar"
+],
+[
+3,
+"Essence of Fire"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "275623",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "27585",
+"name": "Heavy Obsidian Belt",
+"group": "Plate Belts",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 68,
+"makes": "1",
+"reagents": [
+[
+14,
+"Small Obsidian Shard"
+],
+[
+4,
+"Enchanted Thorium Bar"
+],
+[
+2,
+"Essence of Earth"
+]
+],
+"item": "22197",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "28463",
+"name": "Ironvine Belt",
+"group": "Plate Belts",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+6,
+"Enchanted Thorium Bar"
+],
+[
+2,
+"Living Essence"
+]
+],
+"item": "22764",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "9933",
+"name": "Heavy Mithril Pants",
+"group": "Plate Legguards",
+"status": "changed",
+"src": "item",
+"learn": 185,
+"yellow": 205,
+"green": 215,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+10,
+"Mithril Bar"
+],
+[
+2,
+"Lesser Moonstone"
+]
+],
+"item": "7921",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9945",
+"name": "Ornate Mithril Pants",
+"group": "Plate Legguards",
+"status": "changed",
+"src": "item",
+"learn": 195,
+"yellow": 215,
+"green": 225,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 44,
+"makes": "1",
+"reagents": [
+[
+12,
+"Mithril Bar"
+],
+[
+1,
+"Truesilver Bar"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+1,
+"Aquamarine"
+]
+],
+"item": "7926",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252293",
+"name": "Shining Mithril Pants",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 220,
+"yellow": 240,
+"green": 250,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+6,
+"Mithril Bar"
+],
+[
+9,
+"Truesilver Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Core of Earth"
+]
+],
+"item": "250544",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252340",
+"name": "Blessed Plate Leggings",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 300,
+"grey": 310,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+40,
+"Thorium Bar"
+],
+[
+2,
+"Blue Sapphire"
+]
+],
+"item": "250591",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16662",
+"name": "Thorium Leggings",
+"group": "Plate Legguards",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 295,
+"green": 305,
+"grey": 315,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+26,
+"Thorium Bar"
+],
+[
+4,
+"Red Power Crystal"
+]
+],
+"item": "12414",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16730",
+"name": "Imperial Plate Leggings",
+"group": "Plate Legguards",
+"status": "changed",
+"src": "item",
+"learn": 280,
+"yellow": 300,
+"green": 310,
+"grey": 320,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+44,
+"Thorium Bar"
+],
+[
+2,
+"Star Ruby"
+]
+],
+"item": "12429",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16732",
+"name": "Runic Plate Leggings",
+"group": "Plate Legguards",
+"status": "changed",
+"src": "item",
+"learn": 285,
+"yellow": 305,
+"green": 315,
+"grey": 325,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+40,
+"Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+1,
+"Star Ruby"
+]
+],
+"item": "12614",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1306539",
+"name": "Azerothium Legplates",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Legionite Bar"
+],
+[
+18,
+"Heavy Thorium Bar"
+]
+],
+"item": "279265",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252347",
+"name": "Champion's Legplates",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+12,
+"Legionite Bar"
+],
+[
+20,
+"Heavy Thorium Bar"
+],
+[
+10,
+"Essence of Air"
+],
+[
+2,
+"Flask of Supreme Power"
+]
+],
+"item": "250598",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "20876",
+"name": "Dark Iron Leggings",
+"group": "Plate Legguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+16,
+"Dark Iron Bar"
+],
+[
+4,
+"Fiery Core"
+],
+[
+6,
+"Lava Core"
+]
+],
+"item": "17013",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "24140",
+"name": "Darksoul Leggings",
+"group": "Plate Legguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+18,
+"Thorium Bar"
+],
+[
+12,
+"Souldarite"
+],
+[
+2,
+"Large Opal"
+]
+],
+"item": "19694",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16744",
+"name": "Enchanted Thorium Leggings",
+"group": "Plate Legguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+10,
+"Arcanite Bar"
+],
+[
+20,
+"Enchanted Thorium Bar"
+],
+[
+6,
+"Essence of Water"
+],
+[
+2,
+"Blue Sapphire"
+],
+[
+1,
+"Huge Emerald"
+]
+],
+"item": "12619",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252345",
+"name": "Enriched Thorium Leggings",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": true,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+10,
+"Legionite Bar"
+],
+[
+20,
+"Heavy Thorium Bar"
+],
+[
+6,
+"Essence of Air"
+],
+[
+3,
+"Azerothium Bar"
+]
+],
+"item": "250596",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292945",
+"name": "Justice Leggings",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Malleable Essence of Nature"
+],
+[
+4,
+"Arcanite Bar"
+],
+[
+18,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273908",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292953",
+"name": "Justice Legguards",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Malleable Essence of Nature"
+],
+[
+4,
+"Arcanite Bar"
+],
+[
+18,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273916",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292949",
+"name": "Justice Legplates",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Malleable Essence of Nature"
+],
+[
+4,
+"Arcanite Bar"
+],
+[
+18,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273912",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292985",
+"name": "Legguards of Glory",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Malleable Essence of Nature"
+],
+[
+4,
+"Arcanite Bar"
+],
+[
+18,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273948",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292981",
+"name": "Legplates of Glory",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+5,
+"Malleable Essence of Nature"
+],
+[
+4,
+"Arcanite Bar"
+],
+[
+18,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273944",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252349",
+"name": "Martyr's Legplates",
+"group": "Plate Legguards",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+12,
+"Legionite Bar"
+],
+[
+20,
+"Heavy Thorium Bar"
+],
+[
+10,
+"Essence of Fire"
+],
+[
+2,
+"Flask of Distilled Wisdom"
+]
+],
+"item": "250600",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "27829",
+"name": "Titanic Leggings",
+"group": "Plate Legguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+12,
+"Arcanite Bar"
+],
+[
+20,
+"Enchanted Thorium Bar"
+],
+[
+10,
+"Essence of Earth"
+],
+[
+2,
+"Flask of the Titans"
+]
+],
+"item": "22385",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252299",
+"name": "Justicar's Boots",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 200,
+"yellow": 205,
+"green": 205,
+"grey": 205,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Globe of Water"
+]
+],
+"item": "250550",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252295",
+"name": "Officer's Boots",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 200,
+"yellow": 205,
+"green": 205,
+"grey": 205,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Jade"
+]
+],
+"item": "250546",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252298",
+"name": "Prefect's Boots",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 200,
+"yellow": 205,
+"green": 205,
+"grey": 205,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Golden Pearl"
+]
+],
+"item": "250549",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252296",
+"name": "Sentinel's Boots",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 200,
+"yellow": 205,
+"green": 205,
+"grey": 205,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Purple Lotus"
+]
+],
+"item": "250547",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252297",
+"name": "Warder's Boots",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 200,
+"yellow": 205,
+"green": 205,
+"grey": 205,
+"favor": false,
+"quality": "Rare",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Black Pearl"
+]
+],
+"item": "250548",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252291",
+"name": "Shining Mithril Boots",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 200,
+"yellow": 220,
+"green": 230,
+"grey": 240,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Mithril Bar"
+],
+[
+3,
+"Truesilver Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Thick Leather"
+]
+],
+"item": "250542",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9968",
+"name": "Heavy Mithril Boots",
+"group": "Plate Boots",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+14,
+"Mithril Bar"
+],
+[
+4,
+"Thick Leather"
+]
+],
+"item": "7933",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9979",
+"name": "Ornate Mithril Boots",
+"group": "Plate Boots",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 240,
+"green": 250,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+14,
+"Mithril Bar"
+],
+[
+2,
+"Truesilver Bar"
+],
+[
+4,
+"Thick Leather"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+1,
+"Aquamarine"
+]
+],
+"item": "7936",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252336",
+"name": "Blessed Plate Boots",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+24,
+"Thorium Bar"
+],
+[
+1,
+"Blue Sapphire"
+],
+[
+6,
+"Rugged Leather"
+]
+],
+"item": "250587",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252314",
+"name": "Justicar's Sabatons",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+3,
+"Solid Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Globe of Water"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "250565",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252310",
+"name": "Officer's Sabatons",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+3,
+"Solid Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Jade"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "250561",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252313",
+"name": "Prefect's Sabatons",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+3,
+"Solid Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Golden Pearl"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "250564",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252311",
+"name": "Sentinel's Sabatons",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+3,
+"Solid Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Purple Lotus"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "250562",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252312",
+"name": "Warder's Sabatons",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": true,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+3,
+"Solid Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+4,
+"Sulfuric Acid"
+],
+[
+6,
+"Black Pearl"
+],
+[
+4,
+"Pristine Leather"
+]
+],
+"item": "250563",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16652",
+"name": "Thorium Boots",
+"group": "Plate Boots",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 275,
+"green": 285,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+8,
+"Rugged Leather"
+],
+[
+4,
+"Green Power Crystal"
+]
+],
+"item": "12409",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16656",
+"name": "Radiant Boots",
+"group": "Plate Boots",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 285,
+"green": 295,
+"grey": 305,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+14,
+"Thorium Bar"
+],
+[
+4,
+"Heart of Fire"
+]
+],
+"item": "12419",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16657",
+"name": "Imperial Plate Boots",
+"group": "Plate Boots",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 300,
+"grey": 310,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+34,
+"Thorium Bar"
+],
+[
+1,
+"Star Ruby"
+],
+[
+1,
+"Aquamarine"
+]
+],
+"item": "12426",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1297143",
+"name": "Clutchlord's Stompers",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 295,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+9,
+"Thorium Bar"
+],
+[
+5,
+"Enchanted Thorium Bar"
+],
+[
+3,
+"Essence of Earth"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "275627",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1297140",
+"name": "Goregasher Stompers",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 295,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+9,
+"Thorium Bar"
+],
+[
+5,
+"Enchanted Thorium Bar"
+],
+[
+3,
+"Essence of Fire"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "275624",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16665",
+"name": "Runic Plate Boots",
+"group": "Plate Boots",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 295,
+"green": 305,
+"grey": 315,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+10,
+"Silver Bar"
+]
+],
+"item": "12611",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1306537",
+"name": "Depleted Thorium Sabatons",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+2,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Legionite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+]
+],
+"item": "279263",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "24399",
+"name": "Dark Iron Boots",
+"group": "Plate Boots",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+3,
+"Lava Core"
+],
+[
+3,
+"Fiery Core"
+],
+[
+4,
+"Core Leather"
+],
+[
+6,
+"Dark Iron Bar"
+]
+],
+"item": "20039",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1292984",
+"name": "Greaves of Glory",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273947",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292948",
+"name": "Justice Greaves",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273911",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292956",
+"name": "Justice Sabatons",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273919",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292952",
+"name": "Justice Treads",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273915",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1292988",
+"name": "Sabatons of Glory",
+"group": "Plate Boots",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Epic",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+3,
+"Malleable Essence of Nature"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+12,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Elemental Flux"
+]
+],
+"item": "273951",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252280",
+"name": "Acolyte's Silvered Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 125,
+"green": 140,
+"grey": 155,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+15,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Silver Bar"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+6,
+"Strange Dust"
+]
+],
+"item": "250531",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252281",
+"name": "Crusader's Silvered Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 125,
+"green": 140,
+"grey": 155,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+15,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Silver Bar"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+6,
+"Lesser Magic Essence"
+]
+],
+"item": "250532",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252278",
+"name": "Guard's Silvered Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 125,
+"green": 140,
+"grey": 155,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+15,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Silver Bar"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+6,
+"Shadowgem"
+]
+],
+"item": "250529",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252279",
+"name": "Protector's Silvered Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 125,
+"green": 140,
+"grey": 155,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+15,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Silver Bar"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+6,
+"Tigerseye"
+]
+],
+"item": "250530",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252277",
+"name": "Veteran's Silvered Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 125,
+"green": 140,
+"grey": 155,
+"favor": true,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+15,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Silver Bar"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+6,
+"Small Lustrous Pearl"
+]
+],
+"item": "250528",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252250",
+"name": "Acolyte's Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Strange Dust"
+]
+],
+"item": "250501",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252251",
+"name": "Crusader's Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Lesser Magic Essence"
+]
+],
+"item": "250502",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252248",
+"name": "Guard's Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Shadowgem"
+]
+],
+"item": "250499",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252249",
+"name": "Protector's Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Tigerseye"
+]
+],
+"item": "250500",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252247",
+"name": "Veteran's Chain Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 130,
+"green": 130,
+"grey": 130,
+"favor": false,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Small Lustrous Pearl"
+]
+],
+"item": "250498",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3502",
+"name": "Green Iron Helm",
+"group": "Mail Helmets",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 170,
+"green": 183,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 34,
+"makes": "1",
+"reagents": [
+[
+12,
+"Iron Bar"
+],
+[
+1,
+"Citrine"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "3836",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9814",
+"name": "Barbaric Iron Helm",
+"group": "Mail Helmets",
+"status": "changed",
+"src": "item",
+"learn": 150,
+"yellow": 175,
+"green": 188,
+"grey": 200,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+10,
+"Iron Bar"
+],
+[
+2,
+"Large Fang"
+],
+[
+2,
+"Sharp Claw"
+]
+],
+"item": "7915",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301534",
+"name": "Azure Skyforged Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 185,
+"green": 188,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+18,
+"Iron Bar"
+],
+[
+5,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Aquamarine"
+]
+],
+"item": "277048",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301526",
+"name": "Cloudy Skyforged Helm",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 185,
+"green": 188,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+18,
+"Iron Bar"
+],
+[
+5,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Small Lustrous Pearl"
+]
+],
+"item": "277040",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3503",
+"name": "Golden Scale Coif",
+"group": "Mail Helmets",
+"status": "changed",
+"src": "item",
+"learn": 165,
+"yellow": 190,
+"green": 203,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+8,
+"Steel Bar"
+],
+[
+2,
+"Gold Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "3837",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252286",
+"name": "Hard Gold Coif",
+"group": "Mail Helmets",
+"status": "new",
+"src": "item",
+"learn": 170,
+"yellow": 195,
+"green": 208,
+"grey": 220,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+10,
+"Gold Bar"
+],
+[
+2,
+"Steel Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "250537",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9961",
+"name": "Mithril Coif",
+"group": "Mail Helmets",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 225,
+"green": 235,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 46,
+"makes": "1",
+"reagents": [
+[
+10,
+"Mithril Bar"
+],
+[
+6,
+"Mageweave Cloth"
+]
+],
+"item": "7931",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16659",
+"name": "Radiant Circlet",
+"group": "Mail Helmets",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 300,
+"grey": 310,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+18,
+"Thorium Bar"
+],
+[
+4,
+"Heart of Fire"
+]
+],
+"item": "12417",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3328",
+"name": "Rough Bronze Shoulders",
+"group": "Mail Pauldrons",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 115,
+"green": 130,
+"grey": 145,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bronze Bar"
+],
+[
+1,
+"Shadowgem"
+],
+[
+1,
+"Coarse Grinding Stone"
+]
+],
+"item": "3480",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3330",
+"name": "Silvered Bronze Shoulders",
+"group": "Mail Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 100,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+]
+],
+"item": "3481",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252235",
+"name": "Sterling Silver Shoulders",
+"group": "Mail Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+6,
+"Silver Bar"
+],
+[
+2,
+"Copper Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+]
+],
+"item": "250486",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9811",
+"name": "Barbaric Iron Shoulders",
+"group": "Mail Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 135,
+"yellow": 160,
+"green": 173,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 32,
+"makes": "1",
+"reagents": [
+[
+8,
+"Iron Bar"
+],
+[
+4,
+"Sharp Claw"
+],
+[
+2,
+"Shadowgem"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "7913",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3504",
+"name": "Green Iron Shoulders",
+"group": "Mail Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 135,
+"yellow": 160,
+"green": 173,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 32,
+"makes": "1",
+"reagents": [
+[
+7,
+"Iron Bar"
+],
+[
+1,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "3840",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3505",
+"name": "Golden Scale Shoulders",
+"group": "Mail Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 150,
+"yellow": 175,
+"green": 188,
+"grey": 200,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+6,
+"Steel Bar"
+],
+[
+2,
+"Gold Bar"
+],
+[
+1,
+"Heavy Grinding Stone"
+]
+],
+"item": "3841",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301535",
+"name": "Azure Skyforged Pauldrons",
+"group": "Mail Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 185,
+"green": 188,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+14,
+"Iron Bar"
+],
+[
+3,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Aquamarine"
+]
+],
+"item": "277049",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301527",
+"name": "Cloudy Skyforged Pauldrons",
+"group": "Mail Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 185,
+"green": 188,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+14,
+"Iron Bar"
+],
+[
+3,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Small Lustrous Pearl"
+]
+],
+"item": "277041",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252288",
+"name": "Hard Gold Pauldrons",
+"group": "Mail Pauldrons",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+8,
+"Gold Bar"
+],
+[
+2,
+"Steel Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "250539",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9966",
+"name": "Mithril Plate Shoulders",
+"group": "Mail Pauldrons",
+"status": "changed",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+14,
+"Mithril Bar"
+],
+[
+4,
+"Thick Leather"
+],
+[
+4,
+"Citrine"
+]
+],
+"item": "7932",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "24137",
+"name": "Bloodsoul Shoulders",
+"group": "Mail Pauldrons",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+8,
+"Souldarite"
+],
+[
+2,
+"Bloodvine"
+],
+[
+1,
+"Star Ruby"
+]
+],
+"item": "19691",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "20873",
+"name": "Fiery Chain Shoulders",
+"group": "Mail Pauldrons",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 62,
+"makes": "1",
+"reagents": [
+[
+16,
+"Dark Iron Bar"
+],
+[
+4,
+"Fiery Core"
+],
+[
+5,
+"Lava Core"
+]
+],
+"item": "16988",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "12260",
+"name": "Rough Copper Vest",
+"group": "Mail Chestguards",
+"status": "unchanged",
+"src": "trainer",
+"learn": 1,
+"yellow": 15,
+"green": 35,
+"grey": 55,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+4,
+"Copper Bar"
+]
+],
+"item": "10421",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301445",
+"name": "Azure Skyforged Chainmail",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 65,
+"green": 68,
+"grey": 70,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+8,
+"Copper Bar"
+],
+[
+1,
+"Weak Flux"
+]
+],
+"item": "277016",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301421",
+"name": "Cloudy Skyforged Chainmail",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 65,
+"green": 68,
+"grey": 70,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+8,
+"Copper Bar"
+],
+[
+1,
+"Weak Flux"
+]
+],
+"item": "276992",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3321",
+"name": "Copper Chain Vest",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 30,
+"yellow": 70,
+"green": 90,
+"grey": 110,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+8,
+"Copper Bar"
+],
+[
+1,
+"Malachite"
+],
+[
+2,
+"Rough Grinding Stone"
+]
+],
+"item": "3471",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8366",
+"name": "Ironforge Chain",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 70,
+"yellow": 80,
+"green": 100,
+"grey": 120,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 16,
+"makes": "1",
+"reagents": [
+[
+12,
+"Copper Bar"
+],
+[
+2,
+"Malachite"
+],
+[
+2,
+"Rough Grinding Stone"
+]
+],
+"item": "6730",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252240",
+"name": "Acolyte's Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 85,
+"green": 85,
+"grey": 85,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bronze Bar"
+],
+[
+2,
+"Rough Grinding Stone"
+],
+[
+2,
+"Strange Dust"
+]
+],
+"item": "250491",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252241",
+"name": "Crusader's Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 85,
+"green": 85,
+"grey": 85,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bronze Bar"
+],
+[
+2,
+"Rough Grinding Stone"
+],
+[
+2,
+"Lesser Magic Essence"
+]
+],
+"item": "250492",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252238",
+"name": "Guard's Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 85,
+"green": 85,
+"grey": 85,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bronze Bar"
+],
+[
+2,
+"Rough Grinding Stone"
+],
+[
+2,
+"Shadowgem"
+]
+],
+"item": "250489",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252239",
+"name": "Protector's Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 85,
+"green": 85,
+"grey": 85,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bronze Bar"
+],
+[
+2,
+"Rough Grinding Stone"
+],
+[
+2,
+"Tigerseye"
+]
+],
+"item": "250490",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252237",
+"name": "Veteran's Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 85,
+"green": 85,
+"grey": 85,
+"favor": false,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bronze Bar"
+],
+[
+2,
+"Rough Grinding Stone"
+],
+[
+2,
+"Small Lustrous Pearl"
+]
+],
+"item": "250488",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2667",
+"name": "Runed Copper Breastplate",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 90,
+"yellow": 95,
+"green": 115,
+"grey": 135,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 18,
+"makes": "1",
+"reagents": [
+[
+12,
+"Copper Bar"
+],
+[
+1,
+"Shadowgem"
+],
+[
+2,
+"Rough Grinding Stone"
+]
+],
+"item": "2864",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "8367",
+"name": "Ironforge Breastplate",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 100,
+"yellow": 115,
+"green": 135,
+"grey": 155,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+16,
+"Copper Bar"
+],
+[
+2,
+"Tigerseye"
+],
+[
+3,
+"Rough Grinding Stone"
+]
+],
+"item": "6731",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2670",
+"name": "Rough Bronze Cuirass",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "trainer",
+"learn": 105,
+"yellow": 120,
+"green": 135,
+"grey": 150,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 23,
+"makes": "1",
+"reagents": [
+[
+7,
+"Bronze Bar"
+]
+],
+"item": "2866",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2673",
+"name": "Silvered Bronze Breastplate",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 105,
+"yellow": 135,
+"green": 150,
+"grey": 165,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 26,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bronze Bar"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+1,
+"Lesser Moonstone"
+]
+],
+"item": "2869",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252270",
+"name": "Acolyte's Silvered Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+5,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Strange Dust"
+]
+],
+"item": "250521",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252271",
+"name": "Crusader's Silvered Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+5,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Lesser Magic Essence"
+]
+],
+"item": "250522",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252268",
+"name": "Guard's Silvered Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+5,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Shadowgem"
+]
+],
+"item": "250519",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252269",
+"name": "Protector's Silvered Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+5,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Tigerseye"
+]
+],
+"item": "250520",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252267",
+"name": "Veteran's Silvered Chain Shirt",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": true,
+"quality": "Rare",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+6,
+"Coarse Grinding Stone"
+],
+[
+5,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Small Lustrous Pearl"
+]
+],
+"item": "250518",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2675",
+"name": "Shining Silver Breastplate",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "trainer",
+"learn": 135,
+"yellow": 150,
+"green": 165,
+"grey": 180,
+"favor": false,
+"quality": "Rare",
+"ilvl": 29,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+2,
+"Moss Agate"
+],
+[
+2,
+"Lesser Moonstone"
+],
+[
+2,
+"Iridescent Pearl"
+],
+[
+4,
+"Silver Bar"
+]
+],
+"item": "2870",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252236",
+"name": "Sterling Silver Breastplate",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+12,
+"Silver Bar"
+],
+[
+4,
+"Copper Bar"
+],
+[
+3,
+"Coarse Grinding Stone"
+]
+],
+"item": "250487",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9813",
+"name": "Barbaric Iron Breastplate",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 135,
+"yellow": 160,
+"green": 173,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 32,
+"makes": "1",
+"reagents": [
+[
+20,
+"Iron Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+]
+],
+"item": "7914",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252282",
+"name": "Hard Gold Cuirass",
+"group": "Mail Chestguards",
+"status": "new",
+"src": "item",
+"learn": 145,
+"yellow": 170,
+"green": 183,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 34,
+"makes": "1",
+"reagents": [
+[
+12,
+"Gold Bar"
+],
+[
+3,
+"Steel Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "250533",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3508",
+"name": "Green Iron Hauberk",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 180,
+"green": 193,
+"grey": 205,
+"favor": false,
+"quality": "Rare",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+20,
+"Iron Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Jade"
+],
+[
+2,
+"Moss Agate"
+],
+[
+1,
+"Green Leather Armor"
+]
+],
+"item": "3844",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3511",
+"name": "Golden Scale Cuirass",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 170,
+"yellow": 195,
+"green": 208,
+"grey": 220,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+12,
+"Steel Bar"
+],
+[
+2,
+"Gold Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Jade"
+]
+],
+"item": "3845",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9916",
+"name": "Steel Breastplate",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+16,
+"Steel Bar"
+],
+[
+3,
+"Heavy Grinding Stone"
+]
+],
+"item": "7963",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "15293",
+"name": "Dark Iron Mail",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 265,
+"green": 275,
+"grey": 285,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+10,
+"Dark Iron Bar"
+],
+[
+2,
+"Heart of Fire"
+]
+],
+"item": "11606",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16648",
+"name": "Radiant Breastplate",
+"group": "Mail Chestguards",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 265,
+"green": 275,
+"grey": 285,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+18,
+"Thorium Bar"
+],
+[
+2,
+"Heart of Fire"
+],
+[
+1,
+"Star Ruby"
+]
+],
+"item": "12415",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "24136",
+"name": "Bloodsoul Breastplate",
+"group": "Mail Chestguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+10,
+"Souldarite"
+],
+[
+2,
+"Bloodvine"
+],
+[
+2,
+"Star Ruby"
+]
+],
+"item": "19690",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "27590",
+"name": "Obsidian Mail Tunic",
+"group": "Mail Chestguards",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 72,
+"makes": "1",
+"reagents": [
+[
+15,
+"Large Obsidian Shard"
+],
+[
+36,
+"Small Obsidian Shard"
+],
+[
+12,
+"Enchanted Leather"
+],
+[
+10,
+"Guardian Stone"
+],
+[
+4,
+"Azerothian Diamond"
+]
+],
+"item": "22191",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "2663",
+"name": "Copper Bracers",
+"group": "Mail Bracers",
+"status": "unchanged",
+"src": "trainer",
+"learn": 1,
+"yellow": 20,
+"green": 40,
+"grey": 60,
+"favor": false,
+"quality": "Common",
+"ilvl": 7,
+"makes": "1",
+"reagents": [
+[
+2,
+"Copper Bar"
+]
+],
+"item": "2853",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301446",
+"name": "Azure Skyforged Wristguards",
+"group": "Mail Bracers",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 58,
+"grey": 60,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+5,
+"Copper Bar"
+]
+],
+"item": "277017",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301422",
+"name": "Cloudy Skyforged Wristguards",
+"group": "Mail Bracers",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 58,
+"grey": 60,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+5,
+"Copper Bar"
+]
+],
+"item": "276993",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2664",
+"name": "Runed Copper Bracers",
+"group": "Mail Bracers",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 90,
+"green": 103,
+"grey": 115,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 19,
+"makes": "1",
+"reagents": [
+[
+10,
+"Copper Bar"
+],
+[
+3,
+"Rough Grinding Stone"
+]
+],
+"item": "2854",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2671",
+"name": "Rough Bronze Bracers",
+"group": "Mail Bracers",
+"status": "changed",
+"src": "item",
+"learn": 100,
+"yellow": 115,
+"green": 130,
+"grey": 145,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 23,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bronze Bar"
+]
+],
+"item": "2867",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2672",
+"name": "Patterned Bronze Bracers",
+"group": "Mail Bracers",
+"status": "changed",
+"src": "trainer",
+"learn": 120,
+"yellow": 125,
+"green": 140,
+"grey": 155,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+]
+],
+"item": "2868",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3501",
+"name": "Green Iron Bracers",
+"group": "Mail Bracers",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 165,
+"green": 178,
+"grey": 190,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 33,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "3835",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7223",
+"name": "Golden Scale Bracers",
+"group": "Mail Bracers",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 185,
+"green": 198,
+"grey": 210,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+5,
+"Steel Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "6040",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252284",
+"name": "Hard Gold Bracers",
+"group": "Mail Bracers",
+"status": "new",
+"src": "item",
+"learn": 160,
+"yellow": 185,
+"green": 198,
+"grey": 210,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+6,
+"Gold Bar"
+],
+[
+1,
+"Steel Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "250535",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9937",
+"name": "Mithril Plate Bracers",
+"group": "Mail Bracers",
+"status": "changed",
+"src": "item",
+"learn": 190,
+"yellow": 210,
+"green": 220,
+"grey": 230,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+8,
+"Mithril Bar"
+],
+[
+2,
+"Citrine"
+]
+],
+"item": "7924",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1301447",
+"name": "Azure Skyforged Gauntlets",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 55,
+"yellow": 60,
+"green": 63,
+"grey": 65,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+7,
+"Copper Bar"
+]
+],
+"item": "277018",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301423",
+"name": "Cloudy Skyforged Gauntlets",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 55,
+"yellow": 60,
+"green": 63,
+"grey": 65,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+7,
+"Copper Bar"
+]
+],
+"item": "276994",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3325",
+"name": "Gemmed Copper Gauntlets",
+"group": "Mail Gauntlets",
+"status": "changed",
+"src": "item",
+"learn": 35,
+"yellow": 75,
+"green": 95,
+"grey": 115,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+8,
+"Copper Bar"
+],
+[
+1,
+"Tigerseye"
+],
+[
+1,
+"Malachite"
+]
+],
+"item": "3474",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3323",
+"name": "Runed Copper Gauntlets",
+"group": "Mail Gauntlets",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 75,
+"green": 95,
+"grey": 115,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+8,
+"Copper Bar"
+],
+[
+2,
+"Rough Grinding Stone"
+]
+],
+"item": "3472",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252260",
+"name": "Acolyte's Gloves",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 110,
+"green": 125,
+"grey": 140,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bronze Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+3,
+"Strange Dust"
+]
+],
+"item": "250511",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252261",
+"name": "Crusader's Gloves",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 110,
+"green": 125,
+"grey": 140,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bronze Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+3,
+"Lesser Magic Essence"
+]
+],
+"item": "250512",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252258",
+"name": "Guard's Gloves",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 110,
+"green": 125,
+"grey": 140,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bronze Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+3,
+"Shadowgem"
+]
+],
+"item": "250509",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252259",
+"name": "Protector's Gloves",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 110,
+"green": 125,
+"grey": 140,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bronze Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+3,
+"Tigerseye"
+]
+],
+"item": "250510",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252257",
+"name": "Veteran's Gloves",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 110,
+"green": 125,
+"grey": 140,
+"favor": true,
+"quality": "Rare",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bronze Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+3,
+"Small Lustrous Pearl"
+]
+],
+"item": "250508",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252234",
+"name": "Sterling Silver Gauntlet",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 105,
+"yellow": 135,
+"green": 150,
+"grey": 165,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 26,
+"makes": "1",
+"reagents": [
+[
+6,
+"Silver Bar"
+],
+[
+2,
+"Copper Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+]
+],
+"item": "250485",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "8368",
+"name": "Ironforge Gauntlets",
+"group": "Mail Gauntlets",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+3,
+"Shadowgem"
+],
+[
+4,
+"Coarse Grinding Stone"
+]
+],
+"item": "6733",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3333",
+"name": "Silvered Bronze Gauntlets",
+"group": "Mail Gauntlets",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+1,
+"Silver Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+]
+],
+"item": "3483",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3336",
+"name": "Green Iron Gauntlets",
+"group": "Mail Gauntlets",
+"status": "changed",
+"src": "item",
+"learn": 125,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+4,
+"Iron Bar"
+],
+[
+2,
+"Small Lustrous Pearl"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "3485",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9820",
+"name": "Barbaric Iron Gloves",
+"group": "Mail Gauntlets",
+"status": "changed",
+"src": "item",
+"learn": 160,
+"yellow": 185,
+"green": 198,
+"grey": 210,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+14,
+"Iron Bar"
+],
+[
+3,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Large Fang"
+]
+],
+"item": "7917",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11643",
+"name": "Golden Scale Gauntlets",
+"group": "Mail Gauntlets",
+"status": "changed",
+"src": "item",
+"learn": 180,
+"yellow": 200,
+"green": 210,
+"grey": 220,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+4,
+"Gold Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Citrine"
+]
+],
+"item": "9366",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252287",
+"name": "Hard Gold Gauntlet",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+8,
+"Gold Bar"
+],
+[
+2,
+"Steel Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "250538",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252319",
+"name": "Justicar's Gauntlet",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+4,
+"Globe of Water"
+]
+],
+"item": "250570",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252315",
+"name": "Officer's Gauntlet",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+4,
+"Jade"
+]
+],
+"item": "250566",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252318",
+"name": "Prefect's Gauntlet",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+4,
+"Golden Pearl"
+]
+],
+"item": "250569",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252316",
+"name": "Sentinel's Gauntlet",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+4,
+"Purple Lotus"
+]
+],
+"item": "250567",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252317",
+"name": "Warder's Gauntlet",
+"group": "Mail Gauntlets",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": true,
+"quality": "Rare",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Sandpaper"
+],
+[
+2,
+"Sulfuric Acid"
+],
+[
+4,
+"Black Pearl"
+]
+],
+"item": "250568",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9942",
+"name": "Mithril Plate Gloves",
+"group": "Mail Gauntlets",
+"status": "changed",
+"src": "item",
+"learn": 220,
+"yellow": 215,
+"green": 225,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 44,
+"makes": "1",
+"reagents": [
+[
+8,
+"Mithril Bar"
+],
+[
+6,
+"Heavy Leather"
+],
+[
+4,
+"Mageweave Cloth"
+]
+],
+"item": "7925",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16654",
+"name": "Radiant Gloves",
+"group": "Mail Gauntlets",
+"status": "changed",
+"src": "item",
+"learn": 260,
+"yellow": 280,
+"green": 290,
+"grey": 300,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+18,
+"Thorium Bar"
+],
+[
+4,
+"Heart of Fire"
+]
+],
+"item": "12418",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "27589",
+"name": "Black Grasp of the Destroyer",
+"group": "Mail Gauntlets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+8,
+"Large Obsidian Shard"
+],
+[
+24,
+"Small Obsidian Shard"
+],
+[
+8,
+"Enchanted Leather"
+],
+[
+1,
+"Flask of Supreme Power"
+]
+],
+"item": "22194",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "24138",
+"name": "Bloodsoul Gauntlets",
+"group": "Mail Gauntlets",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+12,
+"Thorium Bar"
+],
+[
+6,
+"Souldarite"
+],
+[
+2,
+"Bloodvine"
+],
+[
+4,
+"Enchanted Leather"
+]
+],
+"item": "19692",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1301448",
+"name": "Azure Skyforged Chain",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 58,
+"grey": 60,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+6,
+"Copper Bar"
+]
+],
+"item": "277019",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301424",
+"name": "Cloudy Skyforged Chain",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 58,
+"grey": 60,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+6,
+"Copper Bar"
+]
+],
+"item": "276995",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2661",
+"name": "Copper Chain Belt",
+"group": "Mail Belts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 70,
+"green": 90,
+"grey": 110,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+6,
+"Copper Bar"
+]
+],
+"item": "2851",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252265",
+"name": "Acolyte's Chain Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 45,
+"yellow": 85,
+"green": 105,
+"grey": 125,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+12,
+"Copper Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Pristine Leather"
+],
+[
+2,
+"Strange Dust"
+]
+],
+"item": "250516",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252266",
+"name": "Crusader's Chain Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 45,
+"yellow": 85,
+"green": 105,
+"grey": 125,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+12,
+"Copper Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Pristine Leather"
+],
+[
+2,
+"Lesser Magic Essence"
+]
+],
+"item": "250517",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252263",
+"name": "Guard's Chain Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 45,
+"yellow": 85,
+"green": 105,
+"grey": 125,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+12,
+"Copper Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Pristine Leather"
+],
+[
+2,
+"Shadowgem"
+]
+],
+"item": "250514",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252264",
+"name": "Protector's Chain Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 45,
+"yellow": 85,
+"green": 105,
+"grey": 125,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+12,
+"Copper Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Pristine Leather"
+],
+[
+2,
+"Tigerseye"
+]
+],
+"item": "250515",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2666",
+"name": "Runed Copper Belt",
+"group": "Mail Belts",
+"status": "changed",
+"src": "trainer",
+"learn": 80,
+"yellow": 85,
+"green": 105,
+"grey": 125,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 18,
+"makes": "1",
+"reagents": [
+[
+10,
+"Copper Bar"
+]
+],
+"item": "2857",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252262",
+"name": "Veteran's Chain Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 45,
+"yellow": 85,
+"green": 105,
+"grey": 125,
+"favor": true,
+"quality": "Rare",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+12,
+"Copper Bar"
+],
+[
+4,
+"Rough Grinding Stone"
+],
+[
+2,
+"Pristine Leather"
+],
+[
+2,
+"Small Lustrous Pearl"
+]
+],
+"item": "250513",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252309",
+"name": "Justicar's Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 155,
+"green": 155,
+"grey": 155,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Globe of Water"
+]
+],
+"item": "250560",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252305",
+"name": "Officer's Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 155,
+"green": 155,
+"grey": 155,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Jade"
+]
+],
+"item": "250556",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252308",
+"name": "Prefect's Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 155,
+"green": 155,
+"grey": 155,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Golden Pearl"
+]
+],
+"item": "250559",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252306",
+"name": "Sentinel's Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 155,
+"green": 155,
+"grey": 155,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Purple Lotus"
+]
+],
+"item": "250557",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252307",
+"name": "Warder's Belt",
+"group": "Mail Belts",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 155,
+"green": 155,
+"grey": 155,
+"favor": false,
+"quality": "Rare",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Black Pearl"
+]
+],
+"item": "250558",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16645",
+"name": "Radiant Belt",
+"group": "Mail Belts",
+"status": "changed",
+"src": "item",
+"learn": 235,
+"yellow": 255,
+"green": 265,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+10,
+"Thorium Bar"
+],
+[
+2,
+"Heart of Fire"
+]
+],
+"item": "12416",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "20872",
+"name": "Fiery Chain Girdle",
+"group": "Mail Belts",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 300,
+"grey": 310,
+"favor": false,
+"quality": "Epic",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+6,
+"Dark Iron Bar"
+],
+[
+3,
+"Fiery Core"
+],
+[
+3,
+"Lava Core"
+]
+],
+"item": "16989",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "27588",
+"name": "Light Obsidian Belt",
+"group": "Mail Belts",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 68,
+"makes": "1",
+"reagents": [
+[
+14,
+"Small Obsidian Shard"
+],
+[
+4,
+"Enchanted Leather"
+]
+],
+"item": "22195",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "2662",
+"name": "Copper Chain Pants",
+"group": "Mail Legguards",
+"status": "unchanged",
+"src": "trainer",
+"learn": 40,
+"yellow": 50,
+"green": 70,
+"grey": 90,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+4,
+"Copper Bar"
+]
+],
+"item": "2852",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1301449",
+"name": "Azure Skyforged Legguards",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 65,
+"green": 68,
+"grey": 70,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+8,
+"Copper Bar"
+],
+[
+1,
+"Weak Flux"
+]
+],
+"item": "277020",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301425",
+"name": "Cloudy Skyforged Legguards",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 60,
+"yellow": 65,
+"green": 68,
+"grey": 70,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+8,
+"Copper Bar"
+],
+[
+1,
+"Weak Flux"
+]
+],
+"item": "276996",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3324",
+"name": "Runed Copper Pants",
+"group": "Mail Legguards",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 75,
+"green": 95,
+"grey": 115,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 13,
+"makes": "1",
+"reagents": [
+[
+8,
+"Copper Bar"
+],
+[
+3,
+"Coarse Thread"
+],
+[
+3,
+"Rough Grinding Stone"
+]
+],
+"item": "3473",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252245",
+"name": "Acolyte's Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 100,
+"green": 100,
+"grey": 100,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Strange Dust"
+]
+],
+"item": "250496",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252246",
+"name": "Crusader's Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 100,
+"green": 100,
+"grey": 100,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Lesser Magic Essence"
+]
+],
+"item": "250497",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252243",
+"name": "Guard's Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 100,
+"green": 100,
+"grey": 100,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Shadowgem"
+]
+],
+"item": "250494",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252244",
+"name": "Protector's Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 100,
+"green": 100,
+"grey": 100,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Tigerseye"
+]
+],
+"item": "250495",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252242",
+"name": "Veteran's Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 100,
+"green": 100,
+"grey": 100,
+"favor": false,
+"quality": "Rare",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Small Lustrous Pearl"
+]
+],
+"item": "250493",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "2668",
+"name": "Rough Bronze Leggings",
+"group": "Mail Legguards",
+"status": "changed",
+"src": "trainer",
+"learn": 95,
+"yellow": 120,
+"green": 135,
+"grey": 150,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 21,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+]
+],
+"item": "2865",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252233",
+"name": "Sterling Silver Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 105,
+"yellow": 135,
+"green": 150,
+"grey": 165,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 26,
+"makes": "1",
+"reagents": [
+[
+10,
+"Silver Bar"
+],
+[
+3,
+"Copper Bar"
+],
+[
+3,
+"Coarse Grinding Stone"
+]
+],
+"item": "250484",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252275",
+"name": "Acolyte's Silvered Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+8,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Strange Dust"
+]
+],
+"item": "250526",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252276",
+"name": "Crusader's Silvered Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+8,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Lesser Magic Essence"
+]
+],
+"item": "250527",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3506",
+"name": "Green Iron Leggings",
+"group": "Mail Legguards",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 155,
+"green": 168,
+"grey": 180,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 31,
+"makes": "1",
+"reagents": [
+[
+8,
+"Iron Bar"
+],
+[
+1,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "3842",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252273",
+"name": "Guard's Silvered Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+8,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Shadowgem"
+]
+],
+"item": "250524",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252274",
+"name": "Protector's Silvered Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+8,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Tigerseye"
+]
+],
+"item": "250525",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "12259",
+"name": "Silvered Bronze Leggings",
+"group": "Mail Legguards",
+"status": "changed",
+"src": "item",
+"learn": 130,
+"yellow": 155,
+"green": 168,
+"grey": 180,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 31,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bronze Bar"
+],
+[
+4,
+"Silver Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+]
+],
+"item": "10423",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252272",
+"name": "Veteran's Silvered Chain Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 125,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": true,
+"quality": "Rare",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+20,
+"Bronze Bar"
+],
+[
+8,
+"Coarse Grinding Stone"
+],
+[
+6,
+"Silver Bar"
+],
+[
+6,
+"Pristine Leather"
+],
+[
+8,
+"Small Lustrous Pearl"
+]
+],
+"item": "250523",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3507",
+"name": "Golden Scale Leggings",
+"group": "Mail Legguards",
+"status": "changed",
+"src": "item",
+"learn": 145,
+"yellow": 170,
+"green": 183,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 34,
+"makes": "1",
+"reagents": [
+[
+10,
+"Iron Bar"
+],
+[
+2,
+"Gold Bar"
+],
+[
+1,
+"Heavy Grinding Stone"
+]
+],
+"item": "3843",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252285",
+"name": "Hard Gold Leggings",
+"group": "Mail Legguards",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 190,
+"green": 203,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+10,
+"Gold Bar"
+],
+[
+2,
+"Steel Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "250536",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9931",
+"name": "Mithril Plate Pants",
+"group": "Mail Legguards",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 215,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+12,
+"Mithril Bar"
+]
+],
+"item": "7920",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9957",
+"name": "Orcish War Leggings",
+"group": "Mail Legguards",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 225,
+"green": 235,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+12,
+"Mithril Bar"
+],
+[
+1,
+"Elemental Earth"
+]
+],
+"item": "7929",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16725",
+"name": "Radiant Leggings",
+"group": "Mail Legguards",
+"status": "changed",
+"src": "item",
+"learn": 280,
+"yellow": 300,
+"green": 310,
+"grey": 320,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 61,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+4,
+"Heart of Fire"
+]
+],
+"item": "12420",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252229",
+"name": "Gemmed Copper Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 35,
+"yellow": 40,
+"green": 40,
+"grey": 40,
+"favor": false,
+"quality": "Rare",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+2,
+"Copper Bar"
+],
+[
+2,
+"Tigerseye"
+],
+[
+2,
+"Malachite"
+],
+[
+4,
+"Light Leather"
+]
+],
+"item": "250620",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252231",
+"name": "Glowing Copper Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 35,
+"yellow": 40,
+"green": 40,
+"grey": 40,
+"favor": false,
+"quality": "Rare",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+2,
+"Copper Bar"
+],
+[
+4,
+"Lesser Magic Essence"
+],
+[
+2,
+"Light Leather"
+]
+],
+"item": "250482",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252230",
+"name": "Strange Copper Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 35,
+"yellow": 40,
+"green": 40,
+"grey": 40,
+"favor": false,
+"quality": "Rare",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+2,
+"Copper Bar"
+],
+[
+4,
+"Strange Dust"
+],
+[
+2,
+"Light Leather"
+]
+],
+"item": "250621",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301450",
+"name": "Azure Skyforged Greaves",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 55,
+"yellow": 60,
+"green": 63,
+"grey": 65,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+7,
+"Copper Bar"
+]
+],
+"item": "277021",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1301426",
+"name": "Cloudy Skyforged Greaves",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 55,
+"yellow": 60,
+"green": 63,
+"grey": 65,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+7,
+"Copper Bar"
+]
+],
+"item": "276997",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3319",
+"name": "Copper Chain Boots",
+"group": "Mail Boots",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 60,
+"green": 80,
+"grey": 100,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+8,
+"Copper Bar"
+]
+],
+"item": "3469",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1302598",
+"name": "Rough Copper Chain Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 50,
+"yellow": 60,
+"green": 65,
+"grey": 70,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+9,
+"Copper Bar"
+]
+],
+"item": "277672",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "7817",
+"name": "Rough Bronze Boots",
+"group": "Mail Boots",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 100,
+"green": 115,
+"grey": 130,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 18,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+6,
+"Rough Grinding Stone"
+]
+],
+"item": "6350",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252255",
+"name": "Acolyte's Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 115,
+"green": 130,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+5,
+"Strange Dust"
+]
+],
+"item": "250506",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252256",
+"name": "Crusader's Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 115,
+"green": 130,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+5,
+"Lesser Magic Essence"
+]
+],
+"item": "250507",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252253",
+"name": "Guard's Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 115,
+"green": 130,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+5,
+"Shadowgem"
+]
+],
+"item": "250504",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252254",
+"name": "Protector's Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 115,
+"green": 130,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+5,
+"Tigerseye"
+]
+],
+"item": "250505",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252252",
+"name": "Veteran's Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 115,
+"green": 130,
+"grey": 145,
+"favor": true,
+"quality": "Rare",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bronze Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+4,
+"Pristine Leather"
+],
+[
+5,
+"Small Lustrous Pearl"
+]
+],
+"item": "250503",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252232",
+"name": "Sterling Silver Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 100,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+6,
+"Silver Bar"
+],
+[
+2,
+"Copper Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "250483",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3331",
+"name": "Silvered Bronze Boots",
+"group": "Mail Boots",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 135,
+"green": 150,
+"grey": 165,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 26,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+1,
+"Silver Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+]
+],
+"item": "3482",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3334",
+"name": "Green Iron Boots",
+"group": "Mail Boots",
+"status": "changed",
+"src": "item",
+"learn": 120,
+"yellow": 150,
+"green": 165,
+"grey": 180,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 29,
+"makes": "1",
+"reagents": [
+[
+4,
+"Iron Bar"
+],
+[
+2,
+"Lesser Moonstone"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+1,
+"Green Dye"
+]
+],
+"item": "3484",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252283",
+"name": "Hard Gold Boots",
+"group": "Mail Boots",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 175,
+"green": 188,
+"grey": 200,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+6,
+"Gold Bar"
+],
+[
+2,
+"Steel Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "250534",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "9818",
+"name": "Barbaric Iron Boots",
+"group": "Mail Boots",
+"status": "changed",
+"src": "item",
+"learn": 155,
+"yellow": 180,
+"green": 193,
+"grey": 205,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+12,
+"Iron Bar"
+],
+[
+4,
+"Large Fang"
+],
+[
+4,
+"Tigerseye"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "7916",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3513",
+"name": "Polished Steel Boots",
+"group": "Mail Boots",
+"status": "changed",
+"src": "item",
+"learn": 160,
+"yellow": 185,
+"green": 198,
+"grey": 210,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+8,
+"Steel Bar"
+],
+[
+1,
+"Citrine"
+],
+[
+1,
+"Lesser Moonstone"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "3846",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3515",
+"name": "Golden Scale Boots",
+"group": "Mail Boots",
+"status": "changed",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+4,
+"Gold Bar"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Citrine"
+]
+],
+"item": "3847",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3293",
+"name": "Copper Battle Axe",
+"group": "Two-Handed Axes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 70,
+"green": 90,
+"grey": 110,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 13,
+"makes": "1",
+"reagents": [
+[
+12,
+"Copper Bar"
+],
+[
+2,
+"Weak Flux"
+],
+[
+2,
+"Malachite"
+],
+[
+2,
+"Rough Grinding Stone"
+],
+[
+2,
+"Light Leather"
+]
+],
+"item": "3488",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9987",
+"name": "Bronze Battle Axe",
+"group": "Two-Handed Axes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 140,
+"green": 155,
+"grey": 170,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+14,
+"Bronze Bar"
+],
+[
+1,
+"Strong Flux"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "7958",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3498",
+"name": "Massive Iron Axe",
+"group": "Two-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 160,
+"yellow": 185,
+"green": 198,
+"grey": 210,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+14,
+"Iron Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Gold Bar"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "3855",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "3500",
+"name": "Shadow Crescent Axe",
+"group": "Two-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+3,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Citrine"
+],
+[
+1,
+"Shadow Oil"
+],
+[
+3,
+"Heavy Leather"
+]
+],
+"item": "3856",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252361",
+"name": "Charged Mithril Battleaxe",
+"group": "Two-Handed Axes",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 235,
+"green": 245,
+"grey": 255,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+20,
+"Mithril Bar"
+],
+[
+6,
+"Essence of Air"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+4,
+"Heavy Leather"
+]
+],
+"item": "250612",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16965",
+"name": "Bleakwood Hew",
+"group": "Two-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 270,
+"green": 283,
+"grey": 295,
+"favor": false,
+"quality": "Rare",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+30,
+"Thorium Bar"
+],
+[
+6,
+"Living Essence"
+],
+[
+6,
+"Wildvine"
+],
+[
+6,
+"Large Opal"
+],
+[
+2,
+"Dense Grinding Stone"
+],
+[
+8,
+"Rugged Leather"
+]
+],
+"item": "12769",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "15294",
+"name": "Dark Iron Sunderer",
+"group": "Two-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 280,
+"grey": 290,
+"favor": false,
+"quality": "Rare",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+26,
+"Dark Iron Bar"
+],
+[
+4,
+"Heart of Fire"
+]
+],
+"item": "11607",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16971",
+"name": "Huge Thorium Battleaxe",
+"group": "Two-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 280,
+"green": 293,
+"grey": 305,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+40,
+"Thorium Bar"
+],
+[
+6,
+"Dense Grinding Stone"
+],
+[
+6,
+"Rugged Leather"
+]
+],
+"item": "12775",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "23653",
+"name": "Nightfall",
+"group": "Two-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 295,
+"green": 305,
+"grey": 315,
+"favor": false,
+"quality": "Epic",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+8,
+"Lava Core"
+],
+[
+5,
+"Fiery Core"
+],
+[
+10,
+"Arcanite Bar"
+],
+[
+12,
+"Dark Iron Bar"
+],
+[
+4,
+"Huge Emerald"
+]
+],
+"item": "19169",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1306534",
+"name": "Forest Defender's Axe",
+"group": "Two-Handed Axes",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+4,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Legionite Bar"
+],
+[
+20,
+"Heavy Thorium Bar"
+]
+],
+"item": "279260",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16994",
+"name": "Arcanite Reaper",
+"group": "Two-Handed Axes",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+20,
+"Arcanite Bar"
+],
+[
+6,
+"Enchanted Leather"
+],
+[
+2,
+"Dense Grinding Stone"
+]
+],
+"item": "12784",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252366",
+"name": "Stormcarver",
+"group": "Two-Handed Axes",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+20,
+"Legionite Bar"
+],
+[
+10,
+"Azerothium Bar"
+],
+[
+2,
+"Dense Grinding Stone"
+]
+],
+"item": "250617",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "7408",
+"name": "Heavy Copper Maul",
+"group": "Two-Handed Maces",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 80,
+"green": 100,
+"grey": 120,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 16,
+"makes": "1",
+"reagents": [
+[
+12,
+"Copper Bar"
+],
+[
+2,
+"Weak Flux"
+],
+[
+2,
+"Light Leather"
+]
+],
+"item": "6214",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9985",
+"name": "Bronze Warhammer",
+"group": "Two-Handed Maces",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+1,
+"Strong Flux"
+],
+[
+1,
+"Medium Leather"
+]
+],
+"item": "7956",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3494",
+"name": "Solid Iron Maul",
+"group": "Two-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 130,
+"yellow": 155,
+"green": 168,
+"grey": 180,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 31,
+"makes": "1",
+"reagents": [
+[
+8,
+"Iron Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+1,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Silver Bar"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "3851",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "3495",
+"name": "Golden Iron Destroyer",
+"group": "Two-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 145,
+"yellow": 170,
+"green": 183,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 34,
+"makes": "1",
+"reagents": [
+[
+10,
+"Iron Bar"
+],
+[
+4,
+"Gold Bar"
+],
+[
+2,
+"Lesser Moonstone"
+],
+[
+2,
+"Strong Flux"
+],
+[
+2,
+"Heavy Leather"
+],
+[
+2,
+"Heavy Grinding Stone"
+]
+],
+"item": "3852",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252357",
+"name": "Mithril Warhammer",
+"group": "Two-Handed Maces",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 210,
+"green": 220,
+"grey": 230,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+12,
+"Mithril Bar"
+],
+[
+2,
+"Citrine"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+4,
+"Heavy Leather"
+]
+],
+"item": "250608",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "15292",
+"name": "Dark Iron Pulverizer",
+"group": "Two-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 240,
+"yellow": 260,
+"green": 270,
+"grey": 280,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+18,
+"Dark Iron Bar"
+],
+[
+4,
+"Heart of Fire"
+]
+],
+"item": "11608",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16967",
+"name": "Inlaid Thorium Hammer",
+"group": "Two-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 270,
+"yellow": 270,
+"green": 283,
+"grey": 295,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+30,
+"Thorium Bar"
+],
+[
+4,
+"Gold Bar"
+],
+[
+2,
+"Truesilver Bar"
+],
+[
+2,
+"Blue Sapphire"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "12772",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252362",
+"name": "Thorium Greatmace",
+"group": "Two-Handed Maces",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 280,
+"grey": 290,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+30,
+"Thorium Bar"
+],
+[
+4,
+"Heavy Thorium Bar"
+],
+[
+4,
+"Essence of Earth"
+],
+[
+10,
+"Azerothium Bar"
+],
+[
+2,
+"Dense Grinding Stone"
+]
+],
+"item": "250613",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16973",
+"name": "Enchanted Battlehammer",
+"group": "Two-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 280,
+"green": 293,
+"grey": 305,
+"favor": false,
+"quality": "Rare",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+6,
+"Enchanted Thorium Bar"
+],
+[
+2,
+"Huge Emerald"
+],
+[
+4,
+"Powerful Mojo"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "12776",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16988",
+"name": "Hammer of the Titans",
+"group": "Two-Handed Maces",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+50,
+"Thorium Bar"
+],
+[
+15,
+"Arcanite Bar"
+],
+[
+4,
+"Guardian Stone"
+],
+[
+6,
+"Enchanted Leather"
+],
+[
+10,
+"Essence of Earth"
+]
+],
+"item": "12796",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "21161",
+"name": "Sulfuron Hammer",
+"group": "Two-Handed Maces",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 325,
+"green": 338,
+"grey": 350,
+"favor": false,
+"quality": "Epic",
+"ilvl": 67,
+"makes": "1",
+"reagents": [
+[
+8,
+"Sulfuron Ingot"
+],
+[
+20,
+"Dark Iron Bar"
+],
+[
+50,
+"Arcanite Bar"
+],
+[
+25,
+"Essence of Fire"
+],
+[
+10,
+"Blood of the Mountain"
+],
+[
+10,
+"Lava Core"
+],
+[
+10,
+"Fiery Core"
+]
+],
+"item": "17193",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252352",
+"name": "Bronze Dory",
+"group": "Polearms",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 125,
+"green": 140,
+"grey": 155,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+4,
+"Weak Flux"
+],
+[
+1,
+"Medium Leather"
+]
+],
+"item": "250603",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252354",
+"name": "Steel Spear",
+"group": "Polearms",
+"status": "new",
+"src": "item",
+"learn": 160,
+"yellow": 185,
+"green": 198,
+"grey": 210,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+1,
+"Elemental Air"
+],
+[
+4,
+"Heavy Grinding Stone"
+],
+[
+1,
+"Heavy Leather"
+]
+],
+"item": "250605",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "10011",
+"name": "Blight",
+"group": "Polearms",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 263,
+"grey": 275,
+"favor": false,
+"quality": "Rare",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+28,
+"Mithril Bar"
+],
+[
+10,
+"Ichor of Undeath"
+],
+[
+10,
+"Truesilver Bar"
+],
+[
+6,
+"Solid Grinding Stone"
+],
+[
+6,
+"Thick Leather"
+]
+],
+"item": "7959",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252364",
+"name": "Thorium Poleaxe",
+"group": "Polearms",
+"status": "new",
+"src": "item",
+"learn": 260,
+"yellow": 280,
+"green": 293,
+"grey": 305,
+"favor": false,
+"quality": "Rare",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+6,
+"Heavy Thorium Bar"
+],
+[
+10,
+"Azerothium Bar"
+],
+[
+4,
+"Living Essence"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "250615",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "23639",
+"name": "Blackfury",
+"group": "Polearms",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 66,
+"makes": "1",
+"reagents": [
+[
+5,
+"Lava Core"
+],
+[
+2,
+"Fiery Core"
+],
+[
+16,
+"Arcanite Bar"
+],
+[
+6,
+"Dark Iron Bar"
+]
+],
+"item": "19167",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252368",
+"name": "Legionite Glaive",
+"group": "Polearms",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": true,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+15,
+"Legionite Bar"
+],
+[
+8,
+"Heavy Thorium Bar"
+],
+[
+10,
+"Azerothium Bar"
+],
+[
+4,
+"Torbernite"
+],
+[
+1,
+"Death Lotus"
+]
+],
+"item": "250619",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16987",
+"name": "Darkspear",
+"group": "Polearms",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 325,
+"green": 338,
+"grey": 350,
+"favor": false,
+"quality": "Rare",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+20,
+"Enchanted Thorium Bar"
+],
+[
+20,
+"Powerful Mojo"
+],
+[
+2,
+"Huge Emerald"
+],
+[
+2,
+"Azerothian Diamond"
+],
+[
+2,
+"Dense Grinding Stone"
+]
+],
+"item": "12802",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9983",
+"name": "Copper Claymore",
+"group": "Two-Handed Swords",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 65,
+"green": 85,
+"grey": 105,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+10,
+"Copper Bar"
+],
+[
+2,
+"Weak Flux"
+],
+[
+1,
+"Rough Grinding Stone"
+],
+[
+1,
+"Light Leather"
+]
+],
+"item": "7955",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3292",
+"name": "Heavy Copper Broadsword",
+"group": "Two-Handed Swords",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 110,
+"green": 130,
+"grey": 150,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 19,
+"makes": "1",
+"reagents": [
+[
+14,
+"Copper Bar"
+],
+[
+2,
+"Weak Flux"
+],
+[
+2,
+"Tigerseye"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "3487",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9986",
+"name": "Bronze Greatsword",
+"group": "Two-Handed Swords",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 135,
+"green": 150,
+"grey": 165,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 26,
+"makes": "1",
+"reagents": [
+[
+12,
+"Bronze Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "7957",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3496",
+"name": "Moonsteel Broadsword",
+"group": "Two-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 155,
+"yellow": 180,
+"green": 193,
+"grey": 205,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+8,
+"Steel Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+3,
+"Lesser Moonstone"
+],
+[
+3,
+"Heavy Leather"
+]
+],
+"item": "3853",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "3497",
+"name": "Frost Tiger Blade",
+"group": "Two-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 175,
+"yellow": 200,
+"green": 213,
+"grey": 225,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+8,
+"Steel Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Jade"
+],
+[
+1,
+"Frost Oil"
+],
+[
+4,
+"Heavy Leather"
+]
+],
+"item": "3854",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252359",
+"name": "Mithril Claymore",
+"group": "Two-Handed Swords",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 215,
+"green": 225,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+16,
+"Mithril Bar"
+],
+[
+6,
+"Gold Bar"
+],
+[
+2,
+"Solid Grinding Stone"
+],
+[
+4,
+"Heavy Leather"
+]
+],
+"item": "250610",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16960",
+"name": "Thorium Greatsword",
+"group": "Two-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 260,
+"yellow": 260,
+"green": 273,
+"grey": 285,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+16,
+"Thorium Bar"
+],
+[
+2,
+"Dense Grinding Stone"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "12764",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "10015",
+"name": "Truesilver Champion",
+"group": "Two-Handed Swords",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 260,
+"green": 273,
+"grey": 285,
+"favor": false,
+"quality": "Rare",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+30,
+"Mithril Bar"
+],
+[
+16,
+"Truesilver Bar"
+],
+[
+6,
+"Star Ruby"
+],
+[
+4,
+"Breath of Wind"
+],
+[
+8,
+"Solid Grinding Stone"
+],
+[
+6,
+"Thick Leather"
+]
+],
+"item": "7960",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16985",
+"name": "Corruption",
+"group": "Two-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 290,
+"green": 303,
+"grey": 315,
+"favor": false,
+"quality": "Rare",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+40,
+"Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+16,
+"Demonic Rune"
+],
+[
+8,
+"Essence of Undeath"
+],
+[
+2,
+"Blue Sapphire"
+],
+[
+2,
+"Dense Grinding Stone"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "12782",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16990",
+"name": "Arcanite Champion",
+"group": "Two-Handed Swords",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+15,
+"Arcanite Bar"
+],
+[
+8,
+"Azerothian Diamond"
+],
+[
+1,
+"Righteous Orb"
+],
+[
+4,
+"Large Opal"
+],
+[
+8,
+"Enchanted Leather"
+],
+[
+2,
+"Dense Grinding Stone"
+]
+],
+"item": "12790",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2738",
+"name": "Copper Axe",
+"group": "One-Handed Axes",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 60,
+"green": 80,
+"grey": 100,
+"favor": false,
+"quality": "Common",
+"ilvl": 9,
+"makes": "1",
+"reagents": [
+[
+6,
+"Copper Bar"
+],
+[
+1,
+"Weak Flux"
+],
+[
+2,
+"Linen Cloth"
+]
+],
+"item": "2845",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3294",
+"name": "Thick War Axe",
+"group": "One-Handed Axes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 85,
+"green": 105,
+"grey": 125,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 17,
+"makes": "1",
+"reagents": [
+[
+10,
+"Copper Bar"
+],
+[
+2,
+"Weak Flux"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Rough Grinding Stone"
+],
+[
+2,
+"Light Leather"
+]
+],
+"item": "3489",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2741",
+"name": "Bronze Axe",
+"group": "One-Handed Axes",
+"status": "changed",
+"src": "trainer",
+"learn": 85,
+"yellow": 120,
+"green": 135,
+"grey": 150,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 23,
+"makes": "1",
+"reagents": [
+[
+7,
+"Bronze Bar"
+],
+[
+4,
+"Weak Flux"
+],
+[
+1,
+"Medium Leather"
+]
+],
+"item": "2849",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "21913",
+"name": "Edge of Winter",
+"group": "One-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 165,
+"yellow": 190,
+"green": 203,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+1,
+"Frost Oil"
+],
+[
+2,
+"Elemental Water"
+],
+[
+2,
+"Elemental Air"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "17704",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9993",
+"name": "Heavy Mithril Axe",
+"group": "One-Handed Axes",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 210,
+"green": 223,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+12,
+"Mithril Bar"
+],
+[
+2,
+"Citrine"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+4,
+"Heavy Leather"
+]
+],
+"item": "7941",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9995",
+"name": "Blue Glittering Axe",
+"group": "One-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 195,
+"yellow": 220,
+"green": 233,
+"grey": 245,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 44,
+"makes": "1",
+"reagents": [
+[
+16,
+"Mithril Bar"
+],
+[
+2,
+"Aquamarine"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+4,
+"Thick Leather"
+]
+],
+"item": "7942",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16970",
+"name": "Dawn's Edge",
+"group": "One-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 250,
+"yellow": 275,
+"green": 288,
+"grey": 300,
+"favor": false,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+30,
+"Thorium Bar"
+],
+[
+4,
+"Enchanted Thorium Bar"
+],
+[
+4,
+"Star Ruby"
+],
+[
+4,
+"Blue Sapphire"
+],
+[
+2,
+"Dense Grinding Stone"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "12774",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16969",
+"name": "Ornate Thorium Handaxe",
+"group": "One-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 250,
+"yellow": 275,
+"green": 288,
+"grey": 300,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+2,
+"Large Opal"
+],
+[
+2,
+"Dense Grinding Stone"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "12773",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16980",
+"name": "Rune Edge",
+"group": "One-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 285,
+"yellow": 285,
+"green": 298,
+"grey": 310,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+30,
+"Thorium Bar"
+],
+[
+2,
+"Large Opal"
+],
+[
+2,
+"Dense Grinding Stone"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "12779",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16991",
+"name": "Annihilator",
+"group": "One-Handed Axes",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 295,
+"green": 305,
+"grey": 315,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+40,
+"Thorium Bar"
+],
+[
+12,
+"Arcanite Bar"
+],
+[
+10,
+"Essence of Undeath"
+],
+[
+8,
+"Huge Emerald"
+],
+[
+2,
+"Dense Grinding Stone"
+],
+[
+4,
+"Enchanted Leather"
+]
+],
+"item": "12798",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "20897",
+"name": "Dark Iron Destroyer",
+"group": "One-Handed Axes",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+18,
+"Dark Iron Bar"
+],
+[
+12,
+"Lava Core"
+],
+[
+2,
+"Blood of the Mountain"
+],
+[
+2,
+"Enchanted Leather"
+]
+],
+"item": "17016",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "8880",
+"name": "Copper Dagger",
+"group": "Daggers",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 65,
+"green": 85,
+"grey": 105,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 11,
+"makes": "1",
+"reagents": [
+[
+6,
+"Copper Bar"
+],
+[
+1,
+"Weak Flux"
+],
+[
+1,
+"Rough Grinding Stone"
+],
+[
+1,
+"Light Leather"
+]
+],
+"item": "7166",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3491",
+"name": "Big Bronze Knife",
+"group": "Daggers",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 110,
+"green": 125,
+"grey": 140,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+4,
+"Weak Flux"
+],
+[
+2,
+"Rough Grinding Stone"
+],
+[
+1,
+"Tigerseye"
+],
+[
+1,
+"Medium Leather"
+]
+],
+"item": "3848",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "6517",
+"name": "Pearl-handled Dagger",
+"group": "Daggers",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 115,
+"green": 130,
+"grey": 145,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 23,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+1,
+"Strong Flux"
+],
+[
+2,
+"Small Lustrous Pearl"
+],
+[
+2,
+"Coarse Grinding Stone"
+]
+],
+"item": "5540",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3295",
+"name": "Deadly Bronze Poniard",
+"group": "Daggers",
+"status": "changed",
+"src": "item",
+"learn": 100,
+"yellow": 130,
+"green": 145,
+"grey": 160,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+4,
+"Bronze Bar"
+],
+[
+1,
+"Strong Flux"
+],
+[
+1,
+"Swiftness Potion"
+],
+[
+2,
+"Shadowgem"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "3490",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "15972",
+"name": "Glinting Steel Dagger",
+"group": "Daggers",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 180,
+"green": 193,
+"grey": 205,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+1,
+"Moss Agate"
+],
+[
+1,
+"Elemental Earth"
+],
+[
+1,
+"Heavy Leather"
+]
+],
+"item": "12259",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "15973",
+"name": "Searing Golden Blade",
+"group": "Daggers",
+"status": "changed",
+"src": "item",
+"learn": 165,
+"yellow": 190,
+"green": 203,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 39,
+"makes": "1",
+"reagents": [
+[
+10,
+"Steel Bar"
+],
+[
+4,
+"Gold Bar"
+],
+[
+2,
+"Elemental Fire"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "12260",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252356",
+"name": "Mithril Shortsword",
+"group": "Daggers",
+"status": "new",
+"src": "item",
+"learn": 180,
+"yellow": 200,
+"green": 210,
+"grey": 220,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+8,
+"Mithril Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Lesser Moonstone"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "250607",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252360",
+"name": "Mithril Stiletto",
+"group": "Daggers",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+16,
+"Mithril Bar"
+],
+[
+6,
+"Shadowgem"
+],
+[
+2,
+"Gold Bar"
+],
+[
+1,
+"Solid Grinding Stone"
+]
+],
+"item": "250611",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "10013",
+"name": "Ebon Shiv",
+"group": "Daggers",
+"status": "changed",
+"src": "item",
+"learn": 230,
+"yellow": 255,
+"green": 268,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 51,
+"makes": "1",
+"reagents": [
+[
+12,
+"Mithril Bar"
+],
+[
+6,
+"Truesilver Bar"
+],
+[
+2,
+"Star Ruby"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+2,
+"Thick Leather"
+]
+],
+"item": "7947",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1252365",
+"name": "Bold Dirk",
+"group": "Daggers",
+"status": "new",
+"src": "item",
+"learn": 270,
+"yellow": 290,
+"green": 300,
+"grey": 310,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+30,
+"Thorium Bar"
+],
+[
+4,
+"Essence of Air"
+],
+[
+10,
+"Azerothium Bar"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "250616",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "23638",
+"name": "Black Amnesty",
+"group": "Daggers",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 66,
+"makes": "1",
+"reagents": [
+[
+3,
+"Lava Core"
+],
+[
+6,
+"Fiery Core"
+],
+[
+12,
+"Arcanite Bar"
+],
+[
+1,
+"Blood of the Mountain"
+],
+[
+4,
+"Dark Iron Bar"
+]
+],
+"item": "19166",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16995",
+"name": "Heartseeker",
+"group": "Daggers",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+10,
+"Arcanite Bar"
+],
+[
+10,
+"Enchanted Thorium Bar"
+],
+[
+2,
+"Enchanted Leather"
+],
+[
+6,
+"Star Ruby"
+],
+[
+6,
+"Azerothian Diamond"
+],
+[
+6,
+"Large Opal"
+],
+[
+4,
+"Dense Grinding Stone"
+]
+],
+"item": "12783",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252351",
+"name": "Brass Knuckles",
+"group": "Fist Weapons",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 110,
+"green": 125,
+"grey": 140,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 21,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+4,
+"Weak Flux"
+],
+[
+2,
+"Rough Grinding Stone"
+],
+[
+2,
+"Shadowgem"
+],
+[
+1,
+"Medium Leather"
+]
+],
+"item": "250602",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252353",
+"name": "Iron Fists",
+"group": "Fist Weapons",
+"status": "new",
+"src": "item",
+"learn": 130,
+"yellow": 155,
+"green": 168,
+"grey": 180,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 31,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+1,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Silver Bar"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "250604",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252358",
+"name": "Mithril Claws",
+"group": "Fist Weapons",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 215,
+"green": 225,
+"grey": 235,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+8,
+"Mithril Bar"
+],
+[
+1,
+"Jade"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "250609",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252363",
+"name": "Thorium Cestus",
+"group": "Fist Weapons",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 280,
+"grey": 290,
+"favor": true,
+"quality": "Rare",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+20,
+"Thorium Bar"
+],
+[
+8,
+"Heavy Thorium Bar"
+],
+[
+4,
+"Essence of Air"
+],
+[
+10,
+"Azerothium Bar"
+],
+[
+1,
+"Dense Grinding Stone"
+]
+],
+"item": "250614",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1252367",
+"name": "Bagh Nakh",
+"group": "Fist Weapons",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+10,
+"Legionite Bar"
+],
+[
+10,
+"Heavy Thorium Bar"
+],
+[
+10,
+"Azerothium Bar"
+],
+[
+4,
+"Star Ruby"
+],
+[
+4,
+"Blue Sapphire"
+]
+],
+"item": "250618",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16986",
+"name": "Blood Talon",
+"group": "Fist Weapons",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 325,
+"green": 338,
+"grey": 350,
+"favor": false,
+"quality": "Rare",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+10,
+"Enchanted Thorium Bar"
+],
+[
+10,
+"Arcanite Bar"
+],
+[
+8,
+"Demonic Rune"
+],
+[
+10,
+"Star Ruby"
+],
+[
+2,
+"Dense Grinding Stone"
+]
+],
+"item": "12795",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2737",
+"name": "Copper Mace",
+"group": "One-Handed Maces",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 55,
+"green": 75,
+"grey": 95,
+"favor": false,
+"quality": "Common",
+"ilvl": 9,
+"makes": "1",
+"reagents": [
+[
+6,
+"Copper Bar"
+],
+[
+1,
+"Weak Flux"
+],
+[
+2,
+"Linen Cloth"
+]
+],
+"item": "2844",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2740",
+"name": "Bronze Mace",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "trainer",
+"learn": 75,
+"yellow": 115,
+"green": 130,
+"grey": 145,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+6,
+"Bronze Bar"
+],
+[
+4,
+"Weak Flux"
+],
+[
+1,
+"Medium Leather"
+]
+],
+"item": "2848",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3296",
+"name": "Heavy Bronze Mace",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 135,
+"green": 150,
+"grey": 165,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+8,
+"Bronze Bar"
+],
+[
+1,
+"Strong Flux"
+],
+[
+1,
+"Moss Agate"
+],
+[
+1,
+"Shadowgem"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "3491",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "6518",
+"name": "Iridescent Hammer",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 115,
+"yellow": 145,
+"green": 160,
+"grey": 175,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+10,
+"Bronze Bar"
+],
+[
+1,
+"Strong Flux"
+],
+[
+1,
+"Iridescent Pearl"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "5541",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3297",
+"name": "Mighty Iron Hammer",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 120,
+"yellow": 150,
+"green": 165,
+"grey": 180,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+1,
+"Elixir of Ogre Strength"
+],
+[
+2,
+"Lesser Moonstone"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "3492",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1252355",
+"name": "Iron Morningstar",
+"group": "One-Handed Maces",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 190,
+"green": 203,
+"grey": 215,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+14,
+"Iron Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Citrine"
+],
+[
+2,
+"Heavy Leather"
+]
+],
+"item": "250606",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "10001",
+"name": "Big Black Mace",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 243,
+"grey": 255,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 46,
+"makes": "1",
+"reagents": [
+[
+16,
+"Mithril Bar"
+],
+[
+1,
+"Black Pearl"
+],
+[
+4,
+"Shadowgem"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+2,
+"Thick Leather"
+]
+],
+"item": "7945",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "10003",
+"name": "The Shatterer",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 235,
+"green": 248,
+"grey": 260,
+"favor": false,
+"quality": "Rare",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+24,
+"Mithril Bar"
+],
+[
+4,
+"Core of Earth"
+],
+[
+6,
+"Truesilver Bar"
+],
+[
+5,
+"Citrine"
+],
+[
+5,
+"Jade"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+4,
+"Thick Leather"
+]
+],
+"item": "7954",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "10009",
+"name": "Runed Mithril Hammer",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 220,
+"yellow": 245,
+"green": 258,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+18,
+"Mithril Bar"
+],
+[
+2,
+"Core of Earth"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+4,
+"Thick Leather"
+]
+],
+"item": "7946",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16983",
+"name": "Serenity",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 260,
+"yellow": 285,
+"green": 298,
+"grey": 310,
+"favor": false,
+"quality": "Rare",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+6,
+"Enchanted Thorium Bar"
+],
+[
+2,
+"Arcanite Bar"
+],
+[
+4,
+"Powerful Mojo"
+],
+[
+2,
+"Large Opal"
+],
+[
+2,
+"Blue Sapphire"
+],
+[
+1,
+"Huge Emerald"
+]
+],
+"item": "12781",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16984",
+"name": "Volcanic Hammer",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 290,
+"green": 303,
+"grey": 315,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+30,
+"Thorium Bar"
+],
+[
+4,
+"Heart of Fire"
+],
+[
+4,
+"Star Ruby"
+],
+[
+4,
+"Rugged Leather"
+]
+],
+"item": "12792",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "23650",
+"name": "Ebon Hand",
+"group": "One-Handed Maces",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 295,
+"green": 305,
+"grey": 315,
+"favor": false,
+"quality": "Epic",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+4,
+"Lava Core"
+],
+[
+7,
+"Fiery Core"
+],
+[
+12,
+"Arcanite Bar"
+],
+[
+8,
+"Dark Iron Bar"
+],
+[
+4,
+"Azerothian Diamond"
+]
+],
+"item": "19170",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1306535",
+"name": "Greenhammer",
+"group": "One-Handed Maces",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+2,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Legionite Bar"
+],
+[
+16,
+"Heavy Thorium Bar"
+]
+],
+"item": "279261",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "16993",
+"name": "Masterwork Stormhammer",
+"group": "One-Handed Maces",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+20,
+"Enchanted Thorium Bar"
+],
+[
+8,
+"Huge Emerald"
+],
+[
+8,
+"Large Opal"
+],
+[
+6,
+"Essence of Earth"
+],
+[
+4,
+"Enchanted Leather"
+]
+],
+"item": "12794",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "27830",
+"name": "Persuader",
+"group": "One-Handed Maces",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+15,
+"Arcanite Bar"
+],
+[
+10,
+"Dark Iron Bar"
+],
+[
+20,
+"Essence of Undeath"
+],
+[
+20,
+"Dark Rune"
+],
+[
+10,
+"Devilsaur Leather"
+],
+[
+2,
+"Skin of Shadow"
+]
+],
+"item": "22384",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2739",
+"name": "Copper Shortsword",
+"group": "One-Handed Swords",
+"status": "unchanged",
+"src": "trainer",
+"learn": 40,
+"yellow": 65,
+"green": 85,
+"grey": 105,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+6,
+"Copper Bar"
+],
+[
+1,
+"Weak Flux"
+],
+[
+2,
+"Linen Cloth"
+]
+],
+"item": "2847",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2742",
+"name": "Bronze Shortsword",
+"group": "One-Handed Swords",
+"status": "changed",
+"src": "trainer",
+"learn": 95,
+"yellow": 125,
+"green": 140,
+"grey": 155,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 24,
+"makes": "1",
+"reagents": [
+[
+5,
+"Bronze Bar"
+],
+[
+4,
+"Weak Flux"
+],
+[
+2,
+"Medium Leather"
+]
+],
+"item": "2850",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3492",
+"name": "Hardened Iron Shortsword",
+"group": "One-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 135,
+"yellow": 160,
+"green": 173,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 32,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+1,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Lesser Moonstone"
+],
+[
+3,
+"Heavy Leather"
+]
+],
+"item": "3849",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3493",
+"name": "Jade Serpentblade",
+"group": "One-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 150,
+"yellow": 175,
+"green": 188,
+"grey": 200,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+8,
+"Iron Bar"
+],
+[
+2,
+"Strong Flux"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+2,
+"Jade"
+],
+[
+3,
+"Heavy Leather"
+]
+],
+"item": "3850",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9997",
+"name": "Wicked Mithril Blade",
+"group": "One-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 225,
+"green": 238,
+"grey": 250,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+14,
+"Mithril Bar"
+],
+[
+4,
+"Truesilver Bar"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+2,
+"Thick Leather"
+]
+],
+"item": "7943",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "10005",
+"name": "Dazzling Mithril Rapier",
+"group": "One-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 215,
+"yellow": 240,
+"green": 253,
+"grey": 265,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+14,
+"Mithril Bar"
+],
+[
+1,
+"Aquamarine"
+],
+[
+2,
+"Lesser Moonstone"
+],
+[
+2,
+"Moss Agate"
+],
+[
+1,
+"Solid Grinding Stone"
+],
+[
+2,
+"Mageweave Cloth"
+]
+],
+"item": "7944",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "10007",
+"name": "Phantom Blade",
+"group": "One-Handed Swords",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 245,
+"green": 258,
+"grey": 270,
+"favor": false,
+"quality": "Rare",
+"ilvl": 49,
+"makes": "1",
+"reagents": [
+[
+28,
+"Mithril Bar"
+],
+[
+6,
+"Breath of Wind"
+],
+[
+8,
+"Truesilver Bar"
+],
+[
+2,
+"Lesser Invisibility Potion"
+],
+[
+6,
+"Aquamarine"
+],
+[
+4,
+"Solid Grinding Stone"
+],
+[
+2,
+"Thick Leather"
+]
+],
+"item": "7961",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16978",
+"name": "Blazing Rapier",
+"group": "One-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 255,
+"yellow": 280,
+"green": 293,
+"grey": 305,
+"favor": false,
+"quality": "Rare",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+10,
+"Enchanted Thorium Bar"
+],
+[
+4,
+"Essence of Fire"
+],
+[
+4,
+"Heart of Fire"
+],
+[
+2,
+"Azerothian Diamond"
+],
+[
+2,
+"Dense Grinding Stone"
+]
+],
+"item": "12777",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "23652",
+"name": "Blackguard",
+"group": "One-Handed Swords",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 295,
+"green": 305,
+"grey": 315,
+"favor": false,
+"quality": "Epic",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+6,
+"Lava Core"
+],
+[
+6,
+"Fiery Core"
+],
+[
+10,
+"Arcanite Bar"
+],
+[
+6,
+"Dark Iron Bar"
+],
+[
+12,
+"Guardian Stone"
+]
+],
+"item": "19168",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1306533",
+"name": "Ironwood Blade",
+"group": "One-Handed Swords",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+2,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Legionite Bar"
+],
+[
+14,
+"Heavy Thorium Bar"
+]
+],
+"item": "279259",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "20890",
+"name": "Dark Iron Reaver",
+"group": "One-Handed Swords",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+16,
+"Dark Iron Bar"
+],
+[
+12,
+"Fiery Core"
+],
+[
+2,
+"Blood of the Mountain"
+],
+[
+2,
+"Enchanted Leather"
+]
+],
+"item": "17015",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "16992",
+"name": "Frostguard",
+"group": "One-Handed Swords",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Rare",
+"ilvl": 63,
+"makes": "1",
+"reagents": [
+[
+18,
+"Arcanite Bar"
+],
+[
+8,
+"Blue Sapphire"
+],
+[
+8,
+"Azerothian Diamond"
+],
+[
+4,
+"Essence of Water"
+],
+[
+2,
+"Dense Grinding Stone"
+],
+[
+4,
+"Enchanted Leather"
+]
+],
+"item": "12797",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "27832",
+"name": "Sageblade",
+"group": "One-Handed Swords",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 64,
+"makes": "1",
+"reagents": [
+[
+12,
+"Arcanite Bar"
+],
+[
+2,
+"Nexus Crystal"
+],
+[
+2,
+"Flask of Supreme Power"
+],
+[
+4,
+"Enchanted Leather"
+]
+],
+"item": "22383",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1306536",
+"name": "Evergreen Shield",
+"group": "Shields",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 318,
+"grey": 325,
+"favor": false,
+"quality": "Epic",
+"ilvl": 65,
+"makes": "1",
+"reagents": [
+[
+2,
+"Malleable Essence of Nature"
+],
+[
+1,
+"Legionite Bar"
+],
+[
+10,
+"Heavy Thorium Bar"
+]
+],
+"item": "279262",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "27586",
+"name": "Jagged Obsidian Shield",
+"group": "Shields",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 330,
+"grey": 340,
+"favor": false,
+"quality": "Epic",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+8,
+"Large Obsidian Shard"
+],
+[
+24,
+"Small Obsidian Shard"
+],
+[
+8,
+"Enchanted Thorium Bar"
+],
+[
+4,
+"Essence of Earth"
+]
+],
+"item": "22198",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1317962",
+"name": "Cracked Blacksmith Hammer",
+"group": "Thrown",
+"status": "new",
+"src": "item",
+"learn": 110,
+"yellow": 115,
+"green": 118,
+"grey": 120,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+18,
+"Bronze Bar"
+],
+[
+2,
+"Silver Bar"
+],
+[
+1,
+"Tigerseye"
+]
+],
+"item": "285279",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1317963",
+"name": "Mithril Blacksmith Hammer",
+"group": "Thrown",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 200,
+"green": 203,
+"grey": 205,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 39,
+"makes": "1",
+"reagents": [
+[
+10,
+"Mithril Bar"
+],
+[
+2,
+"Gold Bar"
+],
+[
+1,
+"Star Ruby"
+]
+],
+"item": "285280",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1317964",
+"name": "Arcanite Blacksmith Hammer",
+"group": "Thrown",
+"status": "new",
+"src": "item",
+"learn": 270,
+"yellow": 275,
+"green": 278,
+"grey": 280,
+"favor": false,
+"quality": "Rare",
+"ilvl": 54,
+"makes": "1",
+"reagents": [
+[
+4,
+"Dark Iron Bar"
+],
+[
+1,
+"Arcanite Bar"
+],
+[
+1,
+"Blue Sapphire"
+]
+],
+"item": "285281",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "19666",
+"name": "Silver Skeleton Key",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 75,
+"green": 85,
+"grey": 95,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 20,
+"makes": "2",
+"reagents": [
+[
+1,
+"Silver Bar"
+],
+[
+1,
+"Rough Grinding Stone"
+]
+],
+"item": "15869",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "19667",
+"name": "Golden Skeleton Key",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 125,
+"green": 135,
+"grey": 145,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "2",
+"reagents": [
+[
+1,
+"Gold Bar"
+],
+[
+1,
+"Heavy Grinding Stone"
+]
+],
+"item": "15870",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7221",
+"name": "Iron Shield Spike",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "item",
+"learn": 125,
+"yellow": 155,
+"green": 170,
+"grey": 185,
+"favor": false,
+"quality": "Common",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+6,
+"Iron Bar"
+],
+[
+4,
+"Coarse Grinding Stone"
+]
+],
+"item": "6042",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7222",
+"name": "Iron Counterweight",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "item",
+"learn": 140,
+"yellow": 165,
+"green": 178,
+"grey": 190,
+"favor": false,
+"quality": "Common",
+"ilvl": 33,
+"makes": "1",
+"reagents": [
+[
+4,
+"Iron Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+],
+[
+1,
+"Lesser Moonstone"
+]
+],
+"item": "6043",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "19668",
+"name": "Truesilver Skeleton Key",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 185,
+"grey": 195,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 40,
+"makes": "2",
+"reagents": [
+[
+1,
+"Truesilver Bar"
+],
+[
+1,
+"Solid Grinding Stone"
+]
+],
+"item": "15871",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7224",
+"name": "Steel Weapon Chain",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "item",
+"learn": 165,
+"yellow": 190,
+"green": 203,
+"grey": 215,
+"favor": false,
+"quality": "Common",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+8,
+"Steel Bar"
+],
+[
+2,
+"Heavy Grinding Stone"
+],
+[
+4,
+"Heavy Leather"
+]
+],
+"item": "6041",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9939",
+"name": "Mithril Shield Spike",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "item",
+"learn": 190,
+"yellow": 210,
+"green": 220,
+"grey": 230,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+4,
+"Mithril Bar"
+],
+[
+2,
+"Truesilver Bar"
+],
+[
+4,
+"Solid Grinding Stone"
+]
+],
+"item": "7967",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "9964",
+"name": "Mithril Spurs",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "item",
+"learn": 210,
+"yellow": 230,
+"green": 240,
+"grey": 250,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+4,
+"Mithril Bar"
+],
+[
+3,
+"Solid Grinding Stone"
+]
+],
+"item": "7969",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "19669",
+"name": "Arcanite Skeleton Key",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 255,
+"grey": 260,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "2",
+"reagents": [
+[
+1,
+"Arcanite Bar"
+],
+[
+1,
+"Dense Grinding Stone"
+]
+],
+"item": "15872",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16651",
+"name": "Thorium Shield Spike",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "item",
+"learn": 250,
+"yellow": 270,
+"green": 280,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+4,
+"Thorium Bar"
+],
+[
+4,
+"Dense Grinding Stone"
+],
+[
+2,
+"Essence of Earth"
+]
+],
+"item": "12645",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1245287",
+"name": "Copper Rod",
+"group": "Inert Enchanting Rods",
+"status": "new",
+"src": "trainer",
+"learn": 1,
+"yellow": 10,
+"green": 13,
+"grey": 15,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Copper Bar"
+]
+],
+"item": "6217",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7818",
+"name": "Silver Rod",
+"group": "Inert Enchanting Rods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 80,
+"green": 83,
+"grey": 85,
+"favor": false,
+"quality": "Common",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+1,
+"Silver Bar"
+],
+[
+2,
+"Rough Grinding Stone"
+]
+],
+"item": "6338",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "14379",
+"name": "Golden Rod",
+"group": "Inert Enchanting Rods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 130,
+"green": 133,
+"grey": 135,
+"favor": false,
+"quality": "Common",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+1,
+"Gold Bar"
+],
+[
+2,
+"Coarse Grinding Stone"
+]
+],
+"item": "11128",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "14380",
+"name": "Truesilver Rod",
+"group": "Inert Enchanting Rods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 180,
+"green": 183,
+"grey": 185,
+"favor": false,
+"quality": "Common",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+1,
+"Truesilver Bar"
+],
+[
+1,
+"Heavy Grinding Stone"
+]
+],
+"item": "11144",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "20201",
+"name": "Arcanite Rod",
+"group": "Inert Enchanting Rods",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 255,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Arcanite Bar"
+],
+[
+1,
+"Dense Grinding Stone"
+]
+],
+"item": "16206",
+"item_db": "classic",
+"bop_recipe": false
+}
+],
+"removed": [
+{
+"name": "Wildthorn Mail",
+"group": "Not in Forever"
+},
+{
+"name": "Heavy Timbermaw Belt",
+"group": "Not in Forever"
+},
+{
+"name": "Storm Gauntlets",
+"group": "Not in Forever"
+},
+{
+"name": "Heavy Timbermaw Boots",
+"group": "Not in Forever"
+},
+{
+"name": "Helm of the Great Chief",
+"group": "Not in Forever"
+},
+{
+"name": "Invulnerable Mail",
+"group": "Not in Forever"
+}
+]
+}

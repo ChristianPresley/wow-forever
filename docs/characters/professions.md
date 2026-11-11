@@ -1,5 +1,7 @@
 # Professions
 
+This page gives the rules of professions. For a path from skill 1 to 300 and the full recipe list of each profession, see the [Profession Guides](../professions/index.md).
+
 ## Unchanged from Classic
 
 - **9 primary professions:** Alchemy, Blacksmithing, Enchanting, Engineering, Herbalism, Leatherworking, Mining, Skinning, Tailoring. A character can have **2**.

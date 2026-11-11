@@ -1,0 +1,98 @@
+{
+"profession": "skinning",
+"recipes": [
+{
+"id": "1229517",
+"name": "Camp Chair",
+"group": "Camping",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 4,
+"makes": "1",
+"reagents": [
+[
+3,
+"Light Leather"
+],
+[
+2,
+"Simple Wood"
+]
+],
+"item": "279979",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1262985",
+"name": "Field Guide",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+3,
+"Medium Leather"
+],
+[
+2,
+"Slimy Murloc Scale"
+],
+[
+1,
+"Fine Thread"
+]
+],
+"item": "279969",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1262982",
+"name": "Trapper's Workbench",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 300,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+2,
+"Simple Wood"
+],
+[
+4,
+"Heavy Leather"
+],
+[
+1,
+"Iron Bar"
+]
+],
+"item": "279938",
+"item_db": "forever",
+"bop_recipe": false
+}
+],
+"removed": []
+}

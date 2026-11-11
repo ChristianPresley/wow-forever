@@ -1,0 +1,5650 @@
+{
+"profession": "alchemy",
+"recipes": [
+{
+"id": "1230564",
+"name": "Mana Well",
+"group": "Camping",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 4,
+"makes": "1",
+"reagents": [
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "279956",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263005",
+"name": "Fermenter",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+1,
+"Leaded Vial"
+],
+[
+1,
+"Kingsblood"
+],
+[
+1,
+"Swiftthistle"
+]
+],
+"item": "279970",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263078",
+"name": "Alchemy Laboratory",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 300,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Lich's Index Finger"
+],
+[
+1,
+"Crystal Vial"
+],
+[
+2,
+"Dreamfoil"
+]
+],
+"item": "279990",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1249630",
+"name": "Cerulean Dye",
+"group": "Reagents",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 70,
+"grey": 90,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+2,
+"Frilled Lichen"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "249409",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1249633",
+"name": "Sulfuric Acid",
+"group": "Reagents",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 70,
+"grey": 90,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+2,
+"Pyrite"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "249410",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "7836",
+"name": "Blackmouth Oil",
+"group": "Reagents",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 80,
+"green": 90,
+"grey": 100,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+2,
+"Oily Blackmouth"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "6370",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1249631",
+"name": "Magenta Dye",
+"group": "Reagents",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 130,
+"green": 143,
+"grey": 155,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+2,
+"Rosecap"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "249430",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "7837",
+"name": "Fire Oil",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 150,
+"green": 160,
+"grey": 170,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "2",
+"reagents": [
+[
+2,
+"Firefin Snapper"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "6371",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11456",
+"name": "Goblin Rocket Fuel",
+"group": "Reagents",
+"status": "changed",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": false,
+"quality": "Common",
+"ilvl": 42,
+"makes": "2",
+"reagents": [
+[
+1,
+"Firebloom"
+],
+[
+1,
+"Volatile Rum"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "9061",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1249632",
+"name": "Viridian Dye",
+"group": "Reagents",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 250,
+"grey": 270,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+2,
+"Stranglevine"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "249431",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "17551",
+"name": "Stonescale Oil",
+"group": "Reagents",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 255,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "2",
+"reagents": [
+[
+1,
+"Stonescale Eel"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "13423",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11473",
+"name": "Ghost Dye",
+"group": "Reagents",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 260,
+"green": 280,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 49,
+"makes": "2",
+"reagents": [
+[
+2,
+"Ghost Mushroom"
+],
+[
+1,
+"Purple Dye"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9210",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "22430",
+"name": "Refined Scale of Onyxia",
+"group": "Reagents",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 315,
+"green": 323,
+"grey": 330,
+"favor": false,
+"quality": "Rare",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Scale of Onyxia"
+]
+],
+"item": "17967",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "4508",
+"name": "Minor Discolored Healing Potion",
+"group": "Recovery Potions",
+"status": "changed",
+"src": "item",
+"learn": 50,
+"yellow": 55,
+"green": 75,
+"grey": 95,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+1,
+"Empty Vial"
+],
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Murloc Eye"
+]
+],
+"item": "4596",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "2331",
+"name": "Minor Mana Potion",
+"group": "Recovery Potions",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 65,
+"green": 85,
+"grey": 105,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+1,
+"Mageroyal"
+],
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "2455",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2332",
+"name": "Minor Rejuvenation Potion",
+"group": "Recovery Potions",
+"status": "unchanged",
+"src": "trainer",
+"learn": 40,
+"yellow": 70,
+"green": 90,
+"grey": 110,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+2,
+"Mageroyal"
+],
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "2456",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244645",
+"name": "Lesser Discolored Healing Potion",
+"group": "Recovery Potions",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 85,
+"green": 105,
+"grey": 125,
+"favor": false,
+"quality": "Common",
+"ilvl": 13,
+"makes": "1",
+"reagents": [
+[
+1,
+"Empty Vial"
+],
+[
+1,
+"Briarthorn"
+],
+[
+1,
+"Murloc Eye"
+]
+],
+"item": "247239",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1244646",
+"name": "Discolored Healing Potion",
+"group": "Recovery Potions",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 135,
+"green": 155,
+"grey": 175,
+"favor": false,
+"quality": "Common",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+1,
+"Leaded Vial"
+],
+[
+1,
+"Bruiseweed"
+],
+[
+1,
+"Murloc Eye"
+]
+],
+"item": "247240",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "3173",
+"name": "Lesser Mana Potion",
+"group": "Recovery Potions",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 145,
+"green": 165,
+"grey": 185,
+"favor": false,
+"quality": "Common",
+"ilvl": 24,
+"makes": "1",
+"reagents": [
+[
+1,
+"Mageroyal"
+],
+[
+1,
+"Stranglekelp"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "3385",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244647",
+"name": "Greater Discolored Healing Potion",
+"group": "Recovery Potions",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Common",
+"ilvl": 31,
+"makes": "1",
+"reagents": [
+[
+1,
+"Leaded Vial"
+],
+[
+1,
+"Kingsblood"
+],
+[
+1,
+"Murloc Eye"
+]
+],
+"item": "247241",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "3452",
+"name": "Mana Potion",
+"group": "Recovery Potions",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 180,
+"green": 200,
+"grey": 220,
+"favor": false,
+"quality": "Common",
+"ilvl": 32,
+"makes": "1",
+"reagents": [
+[
+1,
+"Stranglekelp"
+],
+[
+1,
+"Kingsblood"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3827",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11448",
+"name": "Greater Mana Potion",
+"group": "Recovery Potions",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 220,
+"green": 240,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+1,
+"Khadgar's Whisker"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "6149",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11458",
+"name": "Wildvine Potion",
+"group": "Recovery Potions",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 225,
+"green": 238,
+"grey": 250,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+1,
+"Wildvine"
+],
+[
+1,
+"Purple Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9144",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244648",
+"name": "Superior Discolored Healing Potion",
+"group": "Recovery Potions",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 250,
+"grey": 270,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+1,
+"Crystal Vial"
+],
+[
+1,
+"Sungrass"
+],
+[
+1,
+"Murloc Eye"
+]
+],
+"item": "247242",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "15833",
+"name": "Dreamless Sleep Potion",
+"group": "Recovery Potions",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 245,
+"green": 265,
+"grey": 285,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+3,
+"Purple Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "12190",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17553",
+"name": "Superior Mana Potion",
+"group": "Recovery Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 260,
+"yellow": 275,
+"green": 295,
+"grey": 315,
+"favor": false,
+"quality": "Common",
+"ilvl": 51,
+"makes": "1",
+"reagents": [
+[
+2,
+"Sungrass"
+],
+[
+2,
+"Blindweed"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13443",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "24366",
+"name": "Greater Dreamless Sleep Potion",
+"group": "Recovery Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 275,
+"yellow": 290,
+"green": 310,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+2,
+"Dreamfoil"
+],
+[
+1,
+"Golden Sansam"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "20002",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1231583",
+"name": "Major Discolored Healing Potion",
+"group": "Recovery Potions",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 290,
+"green": 310,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+1,
+"Crystal Vial"
+],
+[
+1,
+"Plaguebloom"
+],
+[
+1,
+"Murloc Eye"
+]
+],
+"item": "241650",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17580",
+"name": "Major Mana Potion",
+"group": "Recovery Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 295,
+"yellow": 310,
+"green": 330,
+"grey": 350,
+"favor": false,
+"quality": "Common",
+"ilvl": 59,
+"makes": "1",
+"reagents": [
+[
+3,
+"Dreamfoil"
+],
+[
+2,
+"Icecap"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13444",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "22732",
+"name": "Major Rejuvenation Potion",
+"group": "Recovery Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 310,
+"green": 320,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Heart of the Wild"
+],
+[
+4,
+"Golden Sansam"
+],
+[
+4,
+"Dreamfoil"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "18253",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251741",
+"name": "Minor Mender's Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 30,
+"yellow": 35,
+"green": 38,
+"grey": 40,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Mageroyal"
+],
+[
+1,
+"Bruiseweed"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250944",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1251729",
+"name": "Minor Spellblasting Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 35,
+"yellow": 40,
+"green": 43,
+"grey": 45,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+1,
+"Silverleaf"
+],
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250932",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1251735",
+"name": "Minor Frenzy Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 40,
+"yellow": 45,
+"green": 48,
+"grey": 50,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+1,
+"Earthroot"
+],
+[
+1,
+"Silverleaf"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250938",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1251742",
+"name": "Lesser Mender's Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 80,
+"yellow": 85,
+"green": 88,
+"grey": 90,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Kingsblood"
+],
+[
+2,
+"Liferoot"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250945",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1251730",
+"name": "Lesser Spellblasting Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 85,
+"yellow": 90,
+"green": 93,
+"grey": 95,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Mageroyal"
+],
+[
+2,
+"Silverleaf"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250933",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "6617",
+"name": "Rage Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 60,
+"yellow": 90,
+"green": 110,
+"grey": 130,
+"favor": false,
+"quality": "Common",
+"ilvl": 14,
+"makes": "1",
+"reagents": [
+[
+1,
+"Sharp Claw"
+],
+[
+1,
+"Briarthorn"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "5631",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2335",
+"name": "Swiftness Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 60,
+"yellow": 90,
+"green": 110,
+"grey": 130,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+1,
+"Swiftthistle"
+],
+[
+1,
+"Briarthorn"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "2459",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251736",
+"name": "Lesser Frenzy Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 90,
+"yellow": 95,
+"green": 98,
+"grey": 100,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+1,
+"Briarthorn"
+],
+[
+2,
+"Earthroot"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250939",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "7255",
+"name": "Holy Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 100,
+"yellow": 130,
+"green": 150,
+"grey": 170,
+"favor": false,
+"quality": "Common",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+1,
+"Bruiseweed"
+],
+[
+1,
+"Swiftthistle"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "6051",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "7841",
+"name": "Swim Speed Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 130,
+"green": 150,
+"grey": 170,
+"favor": false,
+"quality": "Common",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+1,
+"Swiftthistle"
+],
+[
+1,
+"Blackmouth Oil"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "6372",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251743",
+"name": "Mender's Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 130,
+"yellow": 135,
+"green": 138,
+"grey": 140,
+"favor": true,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+2,
+"Wintersbite"
+],
+[
+2,
+"Firebloom"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250946",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3172",
+"name": "Minor Magic Resistance Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 110,
+"yellow": 135,
+"green": 155,
+"grey": 175,
+"favor": false,
+"quality": "Common",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+3,
+"Mageroyal"
+],
+[
+1,
+"Wild Steelbloom"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "3384",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251731",
+"name": "Spellblasting Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 135,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": true,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Wild Steelbloom"
+],
+[
+1,
+"Grave Moss"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250934",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1251737",
+"name": "Frenzy Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 145,
+"green": 148,
+"grey": 150,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Fadeleaf"
+],
+[
+2,
+"Briarthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250940",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "7256",
+"name": "Shadow Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 135,
+"yellow": 160,
+"green": 180,
+"grey": 200,
+"favor": false,
+"quality": "Common",
+"ilvl": 27,
+"makes": "1",
+"reagents": [
+[
+1,
+"Grave Moss"
+],
+[
+1,
+"Kingsblood"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "6048",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "6624",
+"name": "Free Action Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 150,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Common",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+2,
+"Blackmouth Oil"
+],
+[
+1,
+"Stranglekelp"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "5634",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251744",
+"name": "Greater Mender's Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 180,
+"yellow": 185,
+"green": 188,
+"grey": 190,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+2,
+"Arthas' Tears"
+],
+[
+1,
+"Purple Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250947",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3448",
+"name": "Lesser Invisibility Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 185,
+"green": 205,
+"grey": 225,
+"favor": false,
+"quality": "Common",
+"ilvl": 33,
+"makes": "1",
+"reagents": [
+[
+1,
+"Fadeleaf"
+],
+[
+1,
+"Wild Steelbloom"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3823",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251732",
+"name": "Greater Spellblasting Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 185,
+"yellow": 190,
+"green": 193,
+"grey": 195,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Kingsblood"
+],
+[
+1,
+"Fadeleaf"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250935",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "6618",
+"name": "Great Rage Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 175,
+"yellow": 195,
+"green": 215,
+"grey": 235,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+1,
+"Large Fang"
+],
+[
+1,
+"Kingsblood"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "5633",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251738",
+"name": "Greater Frenzy Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 190,
+"yellow": 195,
+"green": 198,
+"grey": 200,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+3,
+"Firebloom"
+],
+[
+2,
+"Fadeleaf"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250941",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "7258",
+"name": "Frost Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 190,
+"yellow": 205,
+"green": 225,
+"grey": 245,
+"favor": false,
+"quality": "Common",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+1,
+"Wintersbite"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "6050",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "7257",
+"name": "Fire Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 165,
+"yellow": 210,
+"green": 230,
+"grey": 250,
+"favor": false,
+"quality": "Common",
+"ilvl": 33,
+"makes": "1",
+"reagents": [
+[
+1,
+"Small Flame Sac"
+],
+[
+1,
+"Fire Oil"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "6049",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "7259",
+"name": "Nature Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 190,
+"yellow": 210,
+"green": 230,
+"grey": 250,
+"favor": false,
+"quality": "Common",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+1,
+"Liferoot"
+],
+[
+1,
+"Stranglekelp"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "6052",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "11451",
+"name": "Oil of Immolation",
+"group": "Potions",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 220,
+"green": 240,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 41,
+"makes": "1",
+"reagents": [
+[
+1,
+"Firebloom"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "8956",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11453",
+"name": "Magic Resistance Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": false,
+"quality": "Common",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+1,
+"Khadgar's Whisker"
+],
+[
+1,
+"Purple Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9036",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11452",
+"name": "Restorative Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 225,
+"green": 245,
+"grey": 265,
+"favor": false,
+"quality": "Common",
+"ilvl": 42,
+"makes": "1",
+"reagents": [
+[
+1,
+"Elemental Earth"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9030",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "4942",
+"name": "Lesser Stoneshield Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 250,
+"grey": 270,
+"favor": false,
+"quality": "Common",
+"ilvl": 43,
+"makes": "1",
+"reagents": [
+[
+1,
+"Mithril Ore"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "4623",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251745",
+"name": "Superior Mender's Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 230,
+"yellow": 235,
+"green": 238,
+"grey": 240,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Sungrass"
+],
+[
+1,
+"Arthas' Tears"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250948",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1251733",
+"name": "Superior Spellblasting Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 235,
+"yellow": 240,
+"green": 243,
+"grey": 245,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Wintersbite"
+],
+[
+2,
+"Khadgar's Whisker"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250936",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1251739",
+"name": "Superior Frenzy Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 240,
+"yellow": 245,
+"green": 248,
+"grey": 250,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Blindweed"
+],
+[
+2,
+"Firebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250942",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1251751",
+"name": "Dragonfire Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 245,
+"yellow": 250,
+"green": 253,
+"grey": 255,
+"favor": true,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+2,
+"Mountain Silversage"
+],
+[
+2,
+"Firebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250953",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "11464",
+"name": "Invisibility Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 235,
+"yellow": 250,
+"green": 270,
+"grey": 290,
+"favor": false,
+"quality": "Common",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+1,
+"Ghost Mushroom"
+],
+[
+1,
+"Sungrass"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9172",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251749",
+"name": "Caustic Smog Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 265,
+"yellow": 270,
+"green": 273,
+"grey": 275,
+"favor": true,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+2,
+"Ghost Mushroom"
+],
+[
+2,
+"Grave Moss"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250951",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "17552",
+"name": "Mighty Rage Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 255,
+"yellow": 270,
+"green": 290,
+"grey": 310,
+"favor": false,
+"quality": "Common",
+"ilvl": 51,
+"makes": "1",
+"reagents": [
+[
+3,
+"Gromsblood"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13442",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3175",
+"name": "Limited Invulnerability Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 250,
+"yellow": 275,
+"green": 295,
+"grey": 315,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+2,
+"Blindweed"
+],
+[
+1,
+"Ghost Mushroom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "3387",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251748",
+"name": "Potion of Venomous Blood",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 280,
+"green": 283,
+"grey": 285,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Gromsblood"
+],
+[
+2,
+"Plaguebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250950",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1251747",
+"name": "Major Mender's Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 280,
+"yellow": 285,
+"green": 288,
+"grey": 290,
+"favor": true,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+3,
+"Dreamfoil"
+],
+[
+1,
+"Sungrass"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "250949",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1251753",
+"name": "Potion of Beast Slaying",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 280,
+"yellow": 285,
+"green": 288,
+"grey": 290,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Gromsblood"
+],
+[
+2,
+"Plaguebloom"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "250955",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1251752",
+"name": "Potion of Elemental Purging",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 280,
+"yellow": 285,
+"green": 288,
+"grey": 290,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Firebloom"
+],
+[
+2,
+"Wintersbite"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250954",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1251734",
+"name": "Major Spellblasting Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 285,
+"yellow": 290,
+"green": 293,
+"grey": 295,
+"favor": true,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+2,
+"Dreamfoil"
+],
+[
+1,
+"Mountain Silversage"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "250937",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "17570",
+"name": "Greater Stoneshield Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 280,
+"yellow": 295,
+"green": 315,
+"grey": 335,
+"favor": false,
+"quality": "Common",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+3,
+"Stonescale Oil"
+],
+[
+1,
+"Thorium Ore"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13455",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1251740",
+"name": "Major Frenzy Potion",
+"group": "Potions",
+"status": "new",
+"src": "item",
+"learn": 290,
+"yellow": 295,
+"green": 298,
+"grey": 300,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Plaguebloom"
+],
+[
+2,
+"Blindweed"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "250943",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "24367",
+"name": "Living Action Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 285,
+"yellow": 300,
+"green": 320,
+"grey": 340,
+"favor": false,
+"quality": "Common",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+2,
+"Icecap"
+],
+[
+2,
+"Mountain Silversage"
+],
+[
+2,
+"Heart of the Wild"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "20008",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17577",
+"name": "Greater Arcane Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 305,
+"green": 325,
+"grey": 345,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+1,
+"Dream Dust"
+],
+[
+1,
+"Dreamfoil"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13461",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17574",
+"name": "Greater Fire Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 305,
+"green": 325,
+"grey": 345,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+1,
+"Elemental Fire"
+],
+[
+1,
+"Dreamfoil"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13457",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17575",
+"name": "Greater Frost Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 305,
+"green": 325,
+"grey": 345,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+1,
+"Elemental Water"
+],
+[
+1,
+"Dreamfoil"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13456",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17579",
+"name": "Greater Holy Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 305,
+"green": 325,
+"grey": 345,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+1,
+"Elemental Air"
+],
+[
+1,
+"Dreamfoil"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13460",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17576",
+"name": "Greater Nature Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 305,
+"green": 325,
+"grey": 345,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+1,
+"Elemental Earth"
+],
+[
+1,
+"Dreamfoil"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13458",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17578",
+"name": "Greater Shadow Protection Potion",
+"group": "Potions",
+"status": "unchanged",
+"src": "item",
+"learn": 290,
+"yellow": 305,
+"green": 325,
+"grey": 345,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+1,
+"Shadow Oil"
+],
+[
+1,
+"Dreamfoil"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13459",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1245250",
+"name": "Elixir of Minor Force",
+"group": "Elixirs",
+"status": "new",
+"src": "trainer",
+"learn": 1,
+"yellow": 10,
+"green": 13,
+"grey": 15,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Silverleaf"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "247755",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1245246",
+"name": "Minor Arcane Elixir",
+"group": "Elixirs",
+"status": "new",
+"src": "trainer",
+"learn": 1,
+"yellow": 10,
+"green": 13,
+"grey": 15,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "247754",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1250793",
+"name": "Elixir of Minor Spirit",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 15,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+2,
+"Earthroot"
+],
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250344",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1250788",
+"name": "Minor Mageblood Elixir",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 25,
+"yellow": 30,
+"green": 33,
+"grey": 35,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+2,
+"Mageroyal"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250339",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1250779",
+"name": "Minor Cleric's Elixir",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 45,
+"yellow": 50,
+"green": 53,
+"grey": 55,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+2,
+"Mageroyal"
+],
+[
+1,
+"Bruiseweed"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250330",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "7183",
+"name": "Elixir of Minor Defense",
+"group": "Elixirs",
+"status": "changed",
+"src": "trainer",
+"learn": 1,
+"yellow": 55,
+"green": 75,
+"grey": 95,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Silverleaf"
+],
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "5997",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2329",
+"name": "Elixir of Minor Strength",
+"group": "Elixirs",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 55,
+"green": 75,
+"grey": 95,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Earthroot"
+],
+[
+1,
+"Silverleaf"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "2454",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3170",
+"name": "Minor Troll's Blood Elixir",
+"group": "Elixirs",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 60,
+"green": 80,
+"grey": 100,
+"favor": false,
+"quality": "Common",
+"ilvl": 8,
+"makes": "1",
+"reagents": [
+[
+1,
+"Peacebloom"
+],
+[
+2,
+"Earthroot"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "3382",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250794",
+"name": "Elixir of Lesser Spirit",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 65,
+"yellow": 70,
+"green": 73,
+"grey": 75,
+"favor": true,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+2,
+"Wild Steelbloom"
+],
+[
+1,
+"Mageroyal"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250345",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3230",
+"name": "Elixir of Minor Agility",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 50,
+"yellow": 80,
+"green": 100,
+"grey": 120,
+"favor": false,
+"quality": "Common",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+1,
+"Swiftthistle"
+],
+[
+1,
+"Silverleaf"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "2457",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2334",
+"name": "Elixir of Minor Fortitude",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 50,
+"yellow": 80,
+"green": 100,
+"grey": 120,
+"favor": false,
+"quality": "Common",
+"ilvl": 12,
+"makes": "1",
+"reagents": [
+[
+2,
+"Earthroot"
+],
+[
+1,
+"Peacebloom"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "2458",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250789",
+"name": "Lesser Mageblood Elixir",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 75,
+"yellow": 80,
+"green": 83,
+"grey": 85,
+"favor": true,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+3,
+"Kingsblood"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "250340",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1250801",
+"name": "Elixir of Lesser Intellect",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 100,
+"green": 103,
+"grey": 105,
+"favor": true,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+3,
+"Kingsblood"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250353",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1250780",
+"name": "Lesser Cleric's Elixir",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 95,
+"yellow": 100,
+"green": 103,
+"grey": 105,
+"favor": true,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+2,
+"Kingsblood"
+],
+[
+2,
+"Liferoot"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250331",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "8240",
+"name": "Elixir of Giant Growth",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 90,
+"yellow": 120,
+"green": 140,
+"grey": 160,
+"favor": false,
+"quality": "Common",
+"ilvl": 18,
+"makes": "1",
+"reagents": [
+[
+1,
+"Deviate Fish"
+],
+[
+1,
+"Earthroot"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "6662",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250795",
+"name": "Elixir of Spirit",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 115,
+"yellow": 120,
+"green": 123,
+"grey": 125,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+3,
+"Khadgar's Whisker"
+],
+[
+1,
+"Kingsblood"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250346",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "3171",
+"name": "Elixir of Wisdom",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 120,
+"green": 140,
+"grey": 160,
+"favor": false,
+"quality": "Common",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+1,
+"Mageroyal"
+],
+[
+2,
+"Briarthorn"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "3383",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250791",
+"name": "Lesser Arcane Elixir",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 120,
+"yellow": 125,
+"green": 128,
+"grey": 130,
+"favor": true,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+4,
+"Kingsblood"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250342",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1250802",
+"name": "Elixir of Intellect",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 135,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+3,
+"Khadgar's Whisker"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250354",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1250781",
+"name": "Cleric's Elixir",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 145,
+"yellow": 150,
+"green": 153,
+"grey": 155,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+2,
+"Wintersbite"
+],
+[
+2,
+"Firebloom"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250332",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "3176",
+"name": "Lesser Troll's Blood Elixir",
+"group": "Elixirs",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 150,
+"green": 170,
+"grey": 190,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "1",
+"reagents": [
+[
+2,
+"Bruiseweed"
+],
+[
+2,
+"Briarthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3388",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250783",
+"name": "Elixir of Fortitude",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 155,
+"green": 158,
+"grey": 160,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Goldthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250334",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "3177",
+"name": "Elixir of Lesser Defense",
+"group": "Elixirs",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 155,
+"green": 175,
+"grey": 195,
+"favor": false,
+"quality": "Common",
+"ilvl": 26,
+"makes": "1",
+"reagents": [
+[
+1,
+"Wild Steelbloom"
+],
+[
+1,
+"Stranglekelp"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3389",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250798",
+"name": "Elixir of Strength",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 150,
+"yellow": 155,
+"green": 158,
+"grey": 160,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+3,
+"Wild Steelbloom"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250349",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "7845",
+"name": "Elixir of Fire Power",
+"group": "Elixirs",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 165,
+"green": 185,
+"grey": 205,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+2,
+"Fire Oil"
+],
+[
+1,
+"Kingsblood"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "6373",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2333",
+"name": "Elixir of Lesser Agility",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 140,
+"yellow": 165,
+"green": 185,
+"grey": 205,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+1,
+"Wild Steelbloom"
+],
+[
+1,
+"Swiftthistle"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3390",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250796",
+"name": "Elixir of Greater Spirit",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 165,
+"yellow": 170,
+"green": 173,
+"grey": 175,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Arthas' Tears"
+],
+[
+2,
+"Purple Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250347",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3188",
+"name": "Elixir of Ogre Strength",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 150,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Common",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+1,
+"Earthroot"
+],
+[
+1,
+"Kingsblood"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3391",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250790",
+"name": "Greater Mageblood Elixir",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 175,
+"yellow": 180,
+"green": 183,
+"grey": 185,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Blindweed"
+],
+[
+2,
+"Arthas' Tears"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250341",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3450",
+"name": "Elixir of Lesser Fortitude",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 175,
+"yellow": 195,
+"green": 215,
+"grey": 235,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+1,
+"Wild Steelbloom"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3825",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250782",
+"name": "Greater Cleric's Elixir",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 200,
+"green": 203,
+"grey": 205,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Arthas' Tears"
+],
+[
+1,
+"Purple Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250333",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3451",
+"name": "Troll's Blood Elixir",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 180,
+"yellow": 200,
+"green": 220,
+"grey": 240,
+"favor": false,
+"quality": "Common",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+1,
+"Liferoot"
+],
+[
+1,
+"Bruiseweed"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3826",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11449",
+"name": "Elixir of Agility",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 205,
+"green": 225,
+"grey": 245,
+"favor": false,
+"quality": "Common",
+"ilvl": 37,
+"makes": "1",
+"reagents": [
+[
+1,
+"Stranglekelp"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "8949",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250784",
+"name": "Elixir of Greater Fortitude",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 200,
+"yellow": 205,
+"green": 208,
+"grey": 210,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+4,
+"Sungrass"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250335",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "21923",
+"name": "Elixir of Frost Power",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 190,
+"yellow": 210,
+"green": 230,
+"grey": 250,
+"favor": false,
+"quality": "Common",
+"ilvl": 38,
+"makes": "1",
+"reagents": [
+[
+2,
+"Wintersbite"
+],
+[
+1,
+"Khadgar's Whisker"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "17708",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11450",
+"name": "Elixir of Defense",
+"group": "Elixirs",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 215,
+"green": 235,
+"grey": 255,
+"favor": false,
+"quality": "Common",
+"ilvl": 39,
+"makes": "1",
+"reagents": [
+[
+1,
+"Wild Steelbloom"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "8951",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11461",
+"name": "Arcane Elixir",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 270,
+"grey": 290,
+"favor": false,
+"quality": "Common",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+1,
+"Blindweed"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9155",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11465",
+"name": "Elixir of Greater Intellect",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 270,
+"grey": 290,
+"favor": false,
+"quality": "Common",
+"ilvl": 47,
+"makes": "1",
+"reagents": [
+[
+1,
+"Blindweed"
+],
+[
+1,
+"Khadgar's Whisker"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9179",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11467",
+"name": "Elixir of Greater Agility",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 255,
+"green": 275,
+"grey": 295,
+"favor": false,
+"quality": "Common",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+1,
+"Sungrass"
+],
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9187",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250778",
+"name": "Elixir of the Phalanx",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 255,
+"green": 258,
+"grey": 260,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Golden Sansam"
+],
+[
+4,
+"Sungrass"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250329",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "11466",
+"name": "Gift of Arthas",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 240,
+"yellow": 255,
+"green": 275,
+"grey": 295,
+"favor": false,
+"quality": "Common",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+1,
+"Arthas' Tears"
+],
+[
+1,
+"Blindweed"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9088",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244421",
+"name": "Distilled Firewater",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 250,
+"yellow": 260,
+"green": 265,
+"grey": 270,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Wintersbite"
+],
+[
+2,
+"Gromsblood"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "246948",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "11472",
+"name": "Elixir of Greater Strength",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 245,
+"yellow": 260,
+"green": 280,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+1,
+"Sungrass"
+],
+[
+1,
+"Gromsblood"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9206",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "26277",
+"name": "Elixir of Holy Power",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 250,
+"yellow": 265,
+"green": 285,
+"grey": 305,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+3,
+"Fire Oil"
+],
+[
+3,
+"Firebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "21546",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11476",
+"name": "Elixir of Shadow Power",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 250,
+"yellow": 265,
+"green": 285,
+"grey": 305,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+3,
+"Ghost Mushroom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9264",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11477",
+"name": "Potion of Demon Slaying",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 250,
+"yellow": 265,
+"green": 285,
+"grey": 305,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+1,
+"Gromsblood"
+],
+[
+1,
+"Ghost Mushroom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9224",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "1250777",
+"name": "Elixir of Cunning",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 280,
+"green": 283,
+"grey": 285,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Dreamfoil"
+],
+[
+2,
+"Gromsblood"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250328",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1250799",
+"name": "Elixir of Ferocity",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 280,
+"green": 283,
+"grey": 285,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Gromsblood"
+],
+[
+1,
+"Ghost Mushroom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250350",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "17554",
+"name": "Elixir of Greater Defense",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 265,
+"yellow": 280,
+"green": 300,
+"grey": 320,
+"favor": false,
+"quality": "Common",
+"ilvl": 53,
+"makes": "1",
+"reagents": [
+[
+2,
+"Stonescale Oil"
+],
+[
+1,
+"Sungrass"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13445",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250787",
+"name": "Elixir of Sages",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 280,
+"green": 283,
+"grey": 285,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+4,
+"Dreamfoil"
+],
+[
+2,
+"Golden Sansam"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "250338",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1250797",
+"name": "Elixir of the Whale",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 280,
+"green": 283,
+"grey": 285,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Dreamfoil"
+],
+[
+1,
+"Gromsblood"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250348",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1250786",
+"name": "Elixir of the Owl",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 280,
+"yellow": 285,
+"green": 288,
+"grey": 290,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+4,
+"Dreamfoil"
+],
+[
+2,
+"Mountain Silversage"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "250337",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "17555",
+"name": "Elixir of the Sages",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 270,
+"yellow": 285,
+"green": 305,
+"grey": 325,
+"favor": false,
+"quality": "Common",
+"ilvl": 44,
+"makes": "1",
+"reagents": [
+[
+1,
+"Dreamfoil"
+],
+[
+2,
+"Plaguebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13447",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17557",
+"name": "Elixir of Brute Force",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 275,
+"yellow": 290,
+"green": 310,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Gromsblood"
+],
+[
+2,
+"Plaguebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13453",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250792",
+"name": "Elixir of Nature Power",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 285,
+"yellow": 290,
+"green": 293,
+"grey": 295,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+4,
+"Golden Sansam"
+],
+[
+2,
+"Sungrass"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250343",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1250785",
+"name": "Elixir of Wicked Regeneration",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 285,
+"yellow": 290,
+"green": 293,
+"grey": 295,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Golden Sansam"
+],
+[
+2,
+"Dreamfoil"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250336",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "24365",
+"name": "Mageblood Elixir",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 290,
+"green": 310,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+1,
+"Dreamfoil"
+],
+[
+2,
+"Plaguebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "20007",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17571",
+"name": "Elixir of the Mongoose",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 280,
+"yellow": 295,
+"green": 315,
+"grey": 335,
+"favor": false,
+"quality": "Common",
+"ilvl": 56,
+"makes": "1",
+"reagents": [
+[
+2,
+"Mountain Silversage"
+],
+[
+2,
+"Plaguebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13452",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17573",
+"name": "Greater Arcane Elixir",
+"group": "Elixirs",
+"status": "unchanged",
+"src": "item",
+"learn": 285,
+"yellow": 300,
+"green": 320,
+"grey": 340,
+"favor": false,
+"quality": "Common",
+"ilvl": 57,
+"makes": "1",
+"reagents": [
+[
+3,
+"Dreamfoil"
+],
+[
+1,
+"Mountain Silversage"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13454",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250800",
+"name": "Elixir of the Grizzly",
+"group": "Elixirs",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 305,
+"green": 308,
+"grey": 310,
+"favor": true,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+3,
+"Gromsblood"
+],
+[
+1,
+"Blindweed"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "250351",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "24368",
+"name": "Major Troll's Blood Elixir",
+"group": "Elixirs",
+"status": "changed",
+"src": "item",
+"learn": 290,
+"yellow": 305,
+"green": 325,
+"grey": 345,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+1,
+"Gromsblood"
+],
+[
+2,
+"Plaguebloom"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "20004",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17638",
+"name": "Flask of Chromatic Resistance",
+"group": "Flasks",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 323,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+30,
+"Icecap"
+],
+[
+10,
+"Mountain Silversage"
+],
+[
+1,
+"Black Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13513",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17636",
+"name": "Flask of Distilled Wisdom",
+"group": "Flasks",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 323,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+30,
+"Dreamfoil"
+],
+[
+10,
+"Icecap"
+],
+[
+1,
+"Black Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13511",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17634",
+"name": "Flask of Petrification",
+"group": "Flasks",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 323,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+30,
+"Stonescale Oil"
+],
+[
+10,
+"Mountain Silversage"
+],
+[
+1,
+"Black Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13506",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17637",
+"name": "Flask of Supreme Power",
+"group": "Flasks",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 323,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+30,
+"Dreamfoil"
+],
+[
+10,
+"Mountain Silversage"
+],
+[
+1,
+"Black Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13512",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17635",
+"name": "Flask of the Titans",
+"group": "Flasks",
+"status": "unchanged",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 323,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+30,
+"Gromsblood"
+],
+[
+10,
+"Stonescale Oil"
+],
+[
+1,
+"Black Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "13510",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1293559",
+"name": "Flask of Natural Accuracy",
+"group": "Flasks",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Death Lotus"
+],
+[
+12,
+"Demonsage"
+],
+[
+9,
+"Golden Sansam"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "274273",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1293560",
+"name": "Flask of Natural Aggression",
+"group": "Flasks",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Death Lotus"
+],
+[
+18,
+"Demonsage"
+],
+[
+6,
+"Mountain Silversage"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "274274",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1293561",
+"name": "Flask of Natural Precision",
+"group": "Flasks",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Death Lotus"
+],
+[
+12,
+"Marefoil"
+],
+[
+9,
+"Dreamfoil"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "274275",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "1293562",
+"name": "Flask of Natural Swiftness",
+"group": "Flasks",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 320,
+"green": 325,
+"grey": 330,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Death Lotus"
+],
+[
+18,
+"Marefoil"
+],
+[
+6,
+"Icecap"
+],
+[
+1,
+"Imbued Vial"
+]
+],
+"item": "274276",
+"item_db": "forever",
+"bop_recipe": true
+},
+{
+"id": "3449",
+"name": "Shadow Oil",
+"group": "Weapon Oils",
+"status": "changed",
+"src": "item",
+"learn": 165,
+"yellow": 190,
+"green": 210,
+"grey": 230,
+"favor": false,
+"quality": "Common",
+"ilvl": 34,
+"makes": "2",
+"reagents": [
+[
+4,
+"Fadeleaf"
+],
+[
+4,
+"Grave Moss"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3824",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "3454",
+"name": "Frost Oil",
+"group": "Weapon Oils",
+"status": "changed",
+"src": "item",
+"learn": 200,
+"yellow": 220,
+"green": 240,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 40,
+"makes": "2",
+"reagents": [
+[
+4,
+"Khadgar's Whisker"
+],
+[
+2,
+"Wintersbite"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3829",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "2365",
+"name": "Draught of Tongues",
+"group": "Draughts",
+"status": "new",
+"src": "item",
+"learn": 70,
+"yellow": 100,
+"green": 120,
+"grey": 140,
+"favor": false,
+"quality": "Common",
+"ilvl": 15,
+"makes": "1",
+"reagents": [
+[
+2,
+"Earthroot"
+],
+[
+2,
+"Mageroyal"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "2460",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7179",
+"name": "Draught of Water Breathing",
+"group": "Draughts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 120,
+"green": 140,
+"grey": 160,
+"favor": false,
+"quality": "Common",
+"ilvl": 18,
+"makes": "1",
+"reagents": [
+[
+1,
+"Stranglekelp"
+],
+[
+2,
+"Blackmouth Oil"
+],
+[
+1,
+"Empty Vial"
+]
+],
+"item": "5996",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11447",
+"name": "Draught of Water Walking",
+"group": "Draughts",
+"status": "changed",
+"src": "item",
+"learn": null,
+"yellow": 190,
+"green": 210,
+"grey": 230,
+"favor": false,
+"quality": "Common",
+"ilvl": 34,
+"makes": "1",
+"reagents": [
+[
+1,
+"Blackmouth Oil"
+],
+[
+1,
+"Liferoot"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "8827",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1250776",
+"name": "Potion of Predatory Senses",
+"group": "Draughts",
+"status": "new",
+"src": "item",
+"learn": 195,
+"yellow": 200,
+"green": 203,
+"grey": 205,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+2,
+"Fadeleaf"
+],
+[
+2,
+"Goldthorn"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "250327",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1250775",
+"name": "Revealing Draught",
+"group": "Draughts",
+"status": "new",
+"src": "item",
+"learn": null,
+"yellow": 205,
+"green": 208,
+"grey": 210,
+"favor": false,
+"quality": "Makes 1",
+"ilvl": null,
+"makes": "1",
+"reagents": [
+[
+3,
+"Fadeleaf"
+],
+[
+1,
+"Khadgar's Whisker"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": null,
+"item_db": null,
+"bop_recipe": false,
+"tags": [
+"Item unnamed in the client; the recipe's name is used"
+]
+},
+{
+"id": "3453",
+"name": "Draught of Detect Lesser Invisibility",
+"group": "Draughts",
+"status": "changed",
+"src": "item",
+"learn": 195,
+"yellow": 215,
+"green": 235,
+"grey": 255,
+"favor": false,
+"quality": "Common",
+"ilvl": 39,
+"makes": "1",
+"reagents": [
+[
+1,
+"Khadgar's Whisker"
+],
+[
+1,
+"Fadeleaf"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "3828",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "12609",
+"name": "Catseye Draught",
+"group": "Draughts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 220,
+"green": 240,
+"grey": 260,
+"favor": false,
+"quality": "Common",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+1,
+"Goldthorn"
+],
+[
+1,
+"Fadeleaf"
+],
+[
+1,
+"Leaded Vial"
+]
+],
+"item": "10592",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "22808",
+"name": "Draught of Greater Water Breathing",
+"group": "Draughts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 250,
+"grey": 270,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+1,
+"Ichor of Undeath"
+],
+[
+2,
+"Purple Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "18294",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11460",
+"name": "Draught of Detect Undead",
+"group": "Draughts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 245,
+"green": 265,
+"grey": 285,
+"favor": false,
+"quality": "Common",
+"ilvl": 46,
+"makes": "1",
+"reagents": [
+[
+1,
+"Arthas' Tears"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9154",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11468",
+"name": "Draught of Dream Vision",
+"group": "Draughts",
+"status": "changed",
+"src": "item",
+"learn": 240,
+"yellow": 255,
+"green": 275,
+"grey": 295,
+"favor": false,
+"quality": "Common",
+"ilvl": 48,
+"makes": "1",
+"reagents": [
+[
+3,
+"Purple Lotus"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9197",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11478",
+"name": "Draught of Detect Demon",
+"group": "Draughts",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 265,
+"green": 285,
+"grey": 305,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+2,
+"Gromsblood"
+],
+[
+1,
+"Crystal Vial"
+]
+],
+"item": "9233",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11479",
+"name": "Transmute: Iron to Gold",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 240,
+"green": 260,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+1,
+"Iron Bar"
+]
+],
+"item": "3577",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "11480",
+"name": "Transmute: Mithril to Truesilver",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 240,
+"green": 260,
+"grey": 280,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+1,
+"Mithril Bar"
+]
+],
+"item": "6037",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17559",
+"name": "Transmute: Air to Fire",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Essence of Air"
+]
+],
+"item": "7078",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17566",
+"name": "Transmute: Earth to Life",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Essence of Earth"
+]
+],
+"item": "12803",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17561",
+"name": "Transmute: Earth to Water",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Essence of Earth"
+]
+],
+"item": "7080",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17560",
+"name": "Transmute: Fire to Earth",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Essence of Fire"
+]
+],
+"item": "7076",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17565",
+"name": "Transmute: Life to Earth",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Living Essence"
+]
+],
+"item": "7076",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17563",
+"name": "Transmute: Undeath to Water",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Essence of Undeath"
+]
+],
+"item": "7080",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17562",
+"name": "Transmute: Water to Air",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Essence of Water"
+]
+],
+"item": "7082",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17564",
+"name": "Transmute: Water to Undeath",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Essence of Water"
+]
+],
+"item": "12808",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "25146",
+"name": "Transmute: Elemental Fire",
+"group": "Lesser Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 301,
+"green": 306,
+"grey": 310,
+"favor": false,
+"quality": "Common",
+"ilvl": 25,
+"makes": "3",
+"reagents": [
+[
+1,
+"Heart of Fire"
+]
+],
+"item": "7068",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "17187",
+"name": "Transmute: Arcanite",
+"group": "Greater Transmutations",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Thorium Bar"
+],
+[
+1,
+"Arcane Crystal"
+]
+],
+"item": "12360",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1317279",
+"name": "Transmute: Legionite",
+"group": "Greater Transmutations",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 275,
+"green": 283,
+"grey": 290,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Heavy Thorium Bar"
+],
+[
+1,
+"Fel Crystal"
+]
+],
+"item": "251290",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "11459",
+"name": "Philosopher's Stone",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "item",
+"learn": 225,
+"yellow": 240,
+"green": 260,
+"grey": 280,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+4,
+"Iron Bar"
+],
+[
+1,
+"Black Vitriol"
+],
+[
+4,
+"Purple Lotus"
+],
+[
+4,
+"Firebloom"
+]
+],
+"item": "9149",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "17632",
+"name": "Alchemist's Stone",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "item",
+"learn": 275,
+"yellow": 315,
+"green": 323,
+"grey": 330,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+8,
+"Essence of Fire"
+],
+[
+8,
+"Essence of Earth"
+],
+[
+8,
+"Essence of Air"
+],
+[
+8,
+"Essence of Water"
+],
+[
+8,
+"Living Essence"
+],
+[
+2,
+"Black Vitriol"
+],
+[
+4,
+"Black Lotus"
+]
+],
+"item": "13503",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "24266",
+"name": "Gurubashi Mojo Madness",
+"group": "Miscellaneous",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 315,
+"green": 323,
+"grey": 330,
+"favor": false,
+"quality": "Rare",
+"ilvl": 1,
+"makes": "3",
+"reagents": [
+[
+1,
+"Blood of Heroes"
+],
+[
+1,
+"Massive Mojo"
+],
+[
+6,
+"Powerful Mojo"
+],
+[
+1,
+"Black Lotus"
+]
+],
+"item": "19931",
+"item_db": "classic",
+"bop_recipe": false
+}
+],
+"removed": [
+{
+"name": "Minor Healing Potion",
+"group": "Not in Forever"
+},
+{
+"name": "Lesser Healing Potion",
+"group": "Not in Forever"
+},
+{
+"name": "Elixir of Tongues",
+"group": "Not in Forever"
+},
+{
+"name": "Healing Potion",
+"group": "Not in Forever"
+},
+{
+"name": "Elixir of Poison Resistance",
+"group": "Not in Forever"
+},
+{
+"name": "Cowardly Flight Potion",
+"group": "Not in Forever"
+},
+{
+"name": "Greater Healing Potion",
+"group": "Not in Forever"
+},
+{
+"name": "Superior Healing Potion",
+"group": "Not in Forever"
+},
+{
+"name": "Major Healing Potion",
+"group": "Not in Forever"
+},
+{
+"name": "Purification Potion",
+"group": "Not in Forever"
+}
+]
+}

@@ -1,0 +1,894 @@
+{
+"profession": "first-aid",
+"recipes": [
+{
+"id": "1230117",
+"name": "First Aid Kit",
+"group": "Camping",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 4,
+"makes": "1",
+"reagents": [
+[
+3,
+"Linen Bandage"
+],
+[
+1,
+"Refreshing Spring Water"
+]
+],
+"item": "279968",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1262996",
+"name": "Toxin Study",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+1,
+"Anti-Venom"
+],
+[
+2,
+"Mageweave Bandage"
+],
+[
+2,
+"Simple Wood"
+]
+],
+"item": "279940",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263001",
+"name": "Plague Doctor's Laboratory",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 300,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+2,
+"Simple Wood"
+],
+[
+2,
+"Strong Anti-Venom"
+],
+[
+5,
+"Heavy Runecloth Bandage"
+]
+],
+"item": "279951",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "3275",
+"name": "Linen Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "trainer",
+"learn": 1,
+"yellow": 30,
+"green": 45,
+"grey": 60,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+1,
+"Linen Cloth"
+]
+],
+"item": "1251",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3276",
+"name": "Heavy Linen Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 75,
+"grey": 100,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+2,
+"Linen Cloth"
+]
+],
+"item": "2581",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3277",
+"name": "Wool Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 80,
+"green": 115,
+"grey": 150,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+1,
+"Wool Cloth"
+]
+],
+"item": "3530",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3278",
+"name": "Heavy Wool Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 115,
+"green": 150,
+"grey": 185,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+2,
+"Wool Cloth"
+]
+],
+"item": "3531",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7928",
+"name": "Silk Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 150,
+"green": 180,
+"grey": 210,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+1,
+"Silk Cloth"
+]
+],
+"item": "6450",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7929",
+"name": "Heavy Silk Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "item",
+"learn": 180,
+"yellow": 180,
+"green": 210,
+"grey": 240,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+2,
+"Silk Cloth"
+]
+],
+"item": "6451",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "10840",
+"name": "Mageweave Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "item",
+"learn": 210,
+"yellow": 210,
+"green": 240,
+"grey": 270,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+1,
+"Mageweave Cloth"
+]
+],
+"item": "8544",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "10841",
+"name": "Heavy Mageweave Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 240,
+"green": 270,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 1,
+"makes": "1",
+"reagents": [
+[
+2,
+"Mageweave Cloth"
+]
+],
+"item": "8545",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18629",
+"name": "Runecloth Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 260,
+"green": 290,
+"grey": 320,
+"favor": false,
+"quality": "Common",
+"ilvl": 52,
+"makes": "1",
+"reagents": [
+[
+1,
+"Runecloth"
+]
+],
+"item": "14529",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "18630",
+"name": "Heavy Runecloth Bandage",
+"group": "Bandages",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 290,
+"green": 320,
+"grey": 350,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+2,
+"Runecloth"
+]
+],
+"item": "14530",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "30021",
+"name": "Crystal Infused Bandage",
+"group": "Bandages",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 330,
+"grey": 360,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "4",
+"reagents": [
+[
+1,
+"DEPRECATED ITEM"
+],
+[
+10,
+"Runecloth"
+]
+],
+"item": "23684",
+"item_db": "classic",
+"bop_recipe": true
+},
+{
+"id": "470349",
+"name": "Dense Runecloth Bandage",
+"group": "Bandages",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 328,
+"grey": 340,
+"favor": false,
+"quality": "Common",
+"ilvl": 70,
+"makes": "1",
+"reagents": [
+[
+2,
+"Heavy Runecloth Bandage"
+]
+],
+"item": "232433",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244431",
+"name": "Minor Healing Potion",
+"group": "Healing Potions",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 55,
+"green": 75,
+"grey": 95,
+"favor": false,
+"quality": "Common",
+"ilvl": 5,
+"makes": "1",
+"reagents": [
+[
+1,
+"Empty Vial"
+],
+[
+1,
+"Mild Spices"
+],
+[
+1,
+"Peacebloom"
+]
+],
+"item": "118",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244432",
+"name": "Lesser Healing Potion",
+"group": "Healing Potions",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 85,
+"green": 105,
+"grey": 125,
+"favor": false,
+"quality": "Common",
+"ilvl": 13,
+"makes": "1",
+"reagents": [
+[
+1,
+"Empty Vial"
+],
+[
+2,
+"Mild Spices"
+],
+[
+1,
+"Briarthorn"
+]
+],
+"item": "858",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244433",
+"name": "Healing Potion",
+"group": "Healing Potions",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 135,
+"green": 155,
+"grey": 175,
+"favor": false,
+"quality": "Common",
+"ilvl": 22,
+"makes": "1",
+"reagents": [
+[
+1,
+"Leaded Vial"
+],
+[
+1,
+"Hot Spices"
+],
+[
+1,
+"Bruiseweed"
+]
+],
+"item": "929",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244434",
+"name": "Greater Healing Potion",
+"group": "Healing Potions",
+"status": "new",
+"src": "item",
+"learn": 155,
+"yellow": 175,
+"green": 195,
+"grey": 215,
+"favor": false,
+"quality": "Common",
+"ilvl": 31,
+"makes": "1",
+"reagents": [
+[
+1,
+"Leaded Vial"
+],
+[
+3,
+"Hot Spices"
+],
+[
+1,
+"Liferoot"
+]
+],
+"item": "1710",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244435",
+"name": "Superior Healing Potion",
+"group": "Healing Potions",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 250,
+"grey": 270,
+"favor": false,
+"quality": "Common",
+"ilvl": 45,
+"makes": "1",
+"reagents": [
+[
+1,
+"Crystal Vial"
+],
+[
+1,
+"Soothing Spices"
+],
+[
+1,
+"Sungrass"
+]
+],
+"item": "3928",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1244436",
+"name": "Major Healing Potion",
+"group": "Healing Potions",
+"status": "new",
+"src": "item",
+"learn": 275,
+"yellow": 290,
+"green": 310,
+"grey": 330,
+"favor": false,
+"quality": "Common",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+1,
+"Crystal Vial"
+],
+[
+3,
+"Soothing Spices"
+],
+[
+1,
+"Golden Sansam"
+]
+],
+"item": "13446",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "7934",
+"name": "Anti-Venom",
+"group": "Curatives",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 80,
+"green": 115,
+"grey": 150,
+"favor": false,
+"quality": "Common",
+"ilvl": 16,
+"makes": "3",
+"reagents": [
+[
+1,
+"Small Venom Sac"
+]
+],
+"item": "6452",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1259342",
+"name": "Simple Poultice",
+"group": "Curatives",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 90,
+"green": 125,
+"grey": 160,
+"favor": false,
+"quality": "Common",
+"ilvl": 16,
+"makes": "3",
+"reagents": [
+[
+1,
+"Spider Ichor"
+],
+[
+1,
+"Mild Spices"
+],
+[
+1,
+"Bottle of Dalaran Noir"
+]
+],
+"item": "255716",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1259347",
+"name": "Woolen Tourniquet",
+"group": "Curatives",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 120,
+"green": 155,
+"grey": 190,
+"favor": false,
+"quality": "Common",
+"ilvl": 21,
+"makes": "1",
+"reagents": [
+[
+2,
+"Wool Cloth"
+],
+[
+2,
+"Fine Thread"
+]
+],
+"item": "255720",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "7935",
+"name": "Strong Anti-Venom",
+"group": "Curatives",
+"status": "changed",
+"src": "item",
+"learn": 130,
+"yellow": 130,
+"green": 165,
+"grey": 200,
+"favor": false,
+"quality": "Common",
+"ilvl": 26,
+"makes": "3",
+"reagents": [
+[
+1,
+"Large Venom Sac"
+]
+],
+"item": "6453",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1259343",
+"name": "Clever Poultice",
+"group": "Curatives",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 160,
+"green": 190,
+"grey": 220,
+"favor": false,
+"quality": "Common",
+"ilvl": 26,
+"makes": "3",
+"reagents": [
+[
+1,
+"Murloc Fin"
+],
+[
+1,
+"Soothing Spices"
+],
+[
+1,
+"Thunder Ale"
+]
+],
+"item": "255717",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1259348",
+"name": "Leather Tourniquet",
+"group": "Curatives",
+"status": "new",
+"src": "item",
+"learn": 200,
+"yellow": 220,
+"green": 250,
+"grey": 280,
+"favor": false,
+"quality": "Common",
+"ilvl": 36,
+"makes": "1",
+"reagents": [
+[
+2,
+"Thick Leather"
+],
+[
+2,
+"Silken Thread"
+]
+],
+"item": "255721",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1259344",
+"name": "Superior Poultice",
+"group": "Curatives",
+"status": "new",
+"src": "item",
+"learn": 210,
+"yellow": 225,
+"green": 255,
+"grey": 285,
+"favor": false,
+"quality": "Common",
+"ilvl": 36,
+"makes": "3",
+"reagents": [
+[
+1,
+"Elemental Water"
+],
+[
+1,
+"Hot Spices"
+],
+[
+1,
+"Skin of Dwarven Stout"
+]
+],
+"item": "255718",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1259341",
+"name": "Potent Anti-Venom",
+"group": "Curatives",
+"status": "new",
+"src": "item",
+"learn": 215,
+"yellow": 230,
+"green": 260,
+"grey": 290,
+"favor": false,
+"quality": "Common",
+"ilvl": 36,
+"makes": "3",
+"reagents": [
+[
+1,
+"Swollen Venom Sac"
+]
+],
+"item": "255715",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1259349",
+"name": "Surgical Tourniquet",
+"group": "Curatives",
+"status": "new",
+"src": "item",
+"learn": 265,
+"yellow": 280,
+"green": 310,
+"grey": 340,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "1",
+"reagents": [
+[
+2,
+"Rugged Leather"
+],
+[
+2,
+"Runecloth"
+],
+[
+2,
+"Heavy Silken Thread"
+]
+],
+"item": "255722",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1259345",
+"name": "Powerful Poultice",
+"group": "Curatives",
+"status": "new",
+"src": "item",
+"learn": 280,
+"yellow": 295,
+"green": 325,
+"grey": 355,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "3",
+"reagents": [
+[
+1,
+"Essence of Water"
+],
+[
+1,
+"Hot Spices"
+],
+[
+1,
+"Flagon of Dwarven Honeymead"
+]
+],
+"item": "255719",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "23787",
+"name": "Powerful Anti-Venom",
+"group": "Curatives",
+"status": "changed",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 330,
+"grey": 360,
+"favor": false,
+"quality": "Common",
+"ilvl": 58,
+"makes": "3",
+"reagents": [
+[
+1,
+"Huge Venom Sac"
+]
+],
+"item": "19440",
+"item_db": "classic",
+"bop_recipe": true
+}
+],
+"removed": []
+}

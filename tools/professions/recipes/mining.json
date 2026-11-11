@@ -1,0 +1,487 @@
+{
+"profession": "mining",
+"recipes": [
+{
+"id": "1230161",
+"name": "Lodestone",
+"group": "Camping",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 20,
+"green": 23,
+"grey": 25,
+"favor": false,
+"quality": "Common",
+"ilvl": 4,
+"makes": "1",
+"reagents": [
+[
+1,
+"Rough Stone"
+],
+[
+1,
+"Copper Bar"
+]
+],
+"item": "279960",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1262975",
+"name": "Rock Garden",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 140,
+"yellow": 140,
+"green": 143,
+"grey": 145,
+"favor": false,
+"quality": "Common",
+"ilvl": 28,
+"makes": "1",
+"reagents": [
+[
+2,
+"Heavy Stone"
+],
+[
+1,
+"Iron Ore"
+],
+[
+1,
+"Silver Bar"
+]
+],
+"item": "279948",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1263071",
+"name": "Molten Foundry",
+"group": "Camping",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 300,
+"green": 300,
+"grey": 300,
+"favor": false,
+"quality": "Common",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+5,
+"Thorium Bar"
+],
+[
+2,
+"Dense Stone"
+],
+[
+1,
+"Truesilver Bar"
+]
+],
+"item": "279952",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "2657",
+"name": "Smelt Copper",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": 1,
+"yellow": 25,
+"green": 48,
+"grey": 70,
+"favor": false,
+"quality": "Common",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+1,
+"Copper Ore"
+]
+],
+"item": "2840",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3304",
+"name": "Smelt Tin",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 50,
+"green": 63,
+"grey": 75,
+"favor": false,
+"quality": "Common",
+"ilvl": 20,
+"makes": "1",
+"reagents": [
+[
+1,
+"Tin Ore"
+]
+],
+"item": "3576",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2659",
+"name": "Smelt Bronze",
+"group": "Smelted Bars",
+"status": "changed",
+"src": "trainer",
+"learn": null,
+"yellow": 65,
+"green": 90,
+"grey": 115,
+"favor": false,
+"quality": "Common",
+"ilvl": 20,
+"makes": "2",
+"reagents": [
+[
+1,
+"Copper Bar"
+],
+[
+1,
+"Tin Bar"
+]
+],
+"item": "2841",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "2658",
+"name": "Smelt Silver",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 100,
+"green": 113,
+"grey": 125,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 10,
+"makes": "1",
+"reagents": [
+[
+1,
+"Silver Ore"
+]
+],
+"item": "2842",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3307",
+"name": "Smelt Iron",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 130,
+"green": 135,
+"grey": 140,
+"favor": false,
+"quality": "Common",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+1,
+"Iron Ore"
+]
+],
+"item": "3575",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3569",
+"name": "Smelt Steel",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 165,
+"green": 165,
+"grey": 165,
+"favor": false,
+"quality": "Common",
+"ilvl": 35,
+"makes": "1",
+"reagents": [
+[
+1,
+"Iron Bar"
+],
+[
+1,
+"Coal"
+]
+],
+"item": "3859",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "3308",
+"name": "Smelt Gold",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 170,
+"green": 178,
+"grey": 185,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 30,
+"makes": "1",
+"reagents": [
+[
+1,
+"Gold Ore"
+]
+],
+"item": "3577",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "10097",
+"name": "Smelt Mithril",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 175,
+"green": 175,
+"grey": 175,
+"favor": false,
+"quality": "Common",
+"ilvl": 40,
+"makes": "1",
+"reagents": [
+[
+1,
+"Mithril Ore"
+]
+],
+"item": "3860",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "14891",
+"name": "Smelt Dark Iron",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 230,
+"grey": 230,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+8,
+"Dark Iron Ore"
+]
+],
+"item": "11371",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "10098",
+"name": "Smelt Truesilver",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 230,
+"green": 230,
+"grey": 230,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+1,
+"Truesilver Ore"
+]
+],
+"item": "6037",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "16153",
+"name": "Smelt Thorium",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 250,
+"green": 250,
+"grey": 250,
+"favor": false,
+"quality": "Common",
+"ilvl": 50,
+"makes": "1",
+"reagents": [
+[
+1,
+"Thorium Ore"
+]
+],
+"item": "12359",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1249637",
+"name": "Smelt Azerothium",
+"group": "Smelted Bars",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 275,
+"green": 275,
+"grey": 275,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 55,
+"makes": "1",
+"reagents": [
+[
+2,
+"Pitchblende"
+],
+[
+1,
+"Coal"
+]
+],
+"item": "249726",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "1306126",
+"name": "Smelt Heavy Thorium",
+"group": "Smelted Bars",
+"status": "new",
+"src": "trainer",
+"learn": null,
+"yellow": 300,
+"green": 308,
+"grey": 315,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Heavy Thorium Ore"
+]
+],
+"item": "251291",
+"item_db": "forever",
+"bop_recipe": false
+},
+{
+"id": "22967",
+"name": "Smelt Elementium",
+"group": "Smelted Bars",
+"status": "unchanged",
+"src": "trainer",
+"learn": null,
+"yellow": 310,
+"green": 315,
+"grey": 320,
+"favor": false,
+"quality": "Legendary",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+1,
+"Elementium Ore"
+],
+[
+10,
+"Arcanite Bar"
+],
+[
+1,
+"Fiery Core"
+],
+[
+3,
+"Elemental Flux"
+]
+],
+"item": "17771",
+"item_db": "classic",
+"bop_recipe": false
+},
+{
+"id": "1213638",
+"name": "Smelt Obsidian-Infused Thorium Bar",
+"group": "Other",
+"status": "new",
+"src": "item",
+"learn": 300,
+"yellow": 315,
+"green": 323,
+"grey": 330,
+"favor": false,
+"quality": "Uncommon",
+"ilvl": 60,
+"makes": "1",
+"reagents": [
+[
+2,
+"Enchanted Thorium Bar"
+],
+[
+2,
+"Large Obsidian Shard"
+]
+],
+"item": "234003",
+"item_db": "classic",
+"bop_recipe": true,
+"kind": "other"
+}
+],
+"removed": []
+}

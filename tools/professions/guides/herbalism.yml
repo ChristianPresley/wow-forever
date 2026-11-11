@@ -1,0 +1,124 @@
+profession: Herbalism
+kind: gathering
+icon: material-leaf
+description: "Herbalism guide for WoW: Forever, with a path from skill 1 to 300, the herbs and zones for each skill range, and the 3 camp features."
+
+intro: |
+  Herbalism is a primary gathering profession. You pick herbs from nodes in the world, and **Find Herbs** shows the nodes near you on the minimap. Alchemy uses most herbs, and in Forever the First Aid healing potions use herbs too. The launch client has only 3 Herbalism recipes, and all 3 are **camp features**.
+
+card:
+  use: "Herbs for Alchemy and for First Aid potions. Camp features that start with the Incense Candle."
+  pairs: "Alchemy for your own potions. Skinning for more materials, because it needs no tracking. First Aid and Cooking also use herbs."
+
+glance:
+  - ["Best for", "Alchemists, and characters that want to sell materials while they level"]
+  - ["Main materials", "Herbs from nodes. The camp features also need Simple Wood, a Crystal Vial and Runecloth"]
+  - ["Skill cap", "300"]
+  - ["Abilities", "Find Herbs, Gardening"]
+  - ["Camp features", "Incense Candle, Greenhouse, Seed Hybridizer"]
+
+new:
+  - "**Gardening is a new ability.** It lets the herbalist add features to a wilderness camp."
+  - "**3 new recipes, all camp features:** Incense Candle, Greenhouse and Seed Hybridizer. Classic Era Herbalism has no recipes."
+  - "**Incense Candle** gives an Intellect buff at a camp. The buff does not stack with Arcane Intellect."
+  - "**Greenhouse** and **Seed Hybridizer** come from recipe items at skill 140 and skill 300. The client data does not give their effects."
+  - "**More professions use herbs.** The First Aid healing potions, the new Cooking teas and the new Blacksmithing Sentinel's armor all list herbs as reagents."
+  - "**New reagents with plant names.** Alchemy recipes use Death Lotus, Demonsage, Marefoil, Frilled Lichen, Rosecap and Stranglevine. The names suggest herbs. The client data does not say how you get them."
+  - "A starter quest lets you select a gathering profession, and it gives +2 skill."
+  - "The client data removes no Classic recipe, because Classic Herbalism has none."
+  - "The client data does not hold herb nodes. The guide uses Classic-era node skills, and they are not confirmed for Forever."
+
+path_intro: |
+  You level Herbalism with herbs, not with recipes. Each herb needs a minimum skill, and the path gives that skill as a Classic-era value. In Classic, a node gives a point each time for the first 25 points above its skill. Then the chance decreases, and the node is grey 100 points above its skill. The training skills and character levels in the notes are Classic-era values too. These rules and values are not confirmed for Forever.
+
+path:
+  - bracket: "Apprentice (1–75)"
+    intro: |
+      Start in the zone where your character starts. Turn on Find Herbs and pick each node that you see.
+    steps:
+      - {from: 1, to: 50, gather: "Peacebloom and Silverleaf (skill 1), Earthroot (skill 15)", where: "Elwynn Forest, Dun Morogh, Teldrassil, Durotar, Mulgore, Tirisfal Glades", basis: classic, note: "In Classic, Earthroot grows near cliffs and hills"}
+      - {from: 50, to: 75, gather: "Mageroyal (skill 50), Briarthorn (skill 70), Earthroot", where: "Westfall, Loch Modan, Darkshore, The Barrens, Silverpine Forest", basis: classic, note: "In Classic, Briarthorn grows near trees. Mageroyal and Briarthorn nodes sometimes give Swiftthistle"}
+    notes:
+      - "At skill 50, train Journeyman at an Herbalism trainer. Without it, your skill stops at 75. In Classic, it needs level 10."
+      - "Incense Candle comes from a trainer, and it is yellow at skill 20. The client does not hold the exact trainer skill."
+      - "The wiki has no herb data for Zephras Isle. If you start there, pick the nodes that Find Herbs shows."
+  - bracket: "Journeyman (75–150)"
+    intro: |
+      Stay in the zones for levels 10 to 30. These are Classic-era levels. In Classic, Stranglekelp grows only in water near the coast.
+    steps:
+      - {from: 75, to: 100, gather: "Briarthorn (skill 70), Mageroyal, Stranglekelp (skill 85)", where: "Westfall, Loch Modan, Darkshore, The Barrens, Silverpine Forest, Redridge Mountains", basis: classic}
+      - {from: 100, to: 125, gather: "Bruiseweed (skill 100), Wild Steelbloom (skill 115), Grave Moss (skill 120)", where: "Ashenvale, Stonetalon Mountains, Hillsbrad Foothills, Wetlands, Duskwood", basis: classic, note: "In Classic, Grave Moss grows only near graves"}
+      - {from: 125, to: 150, gather: "Kingsblood (skill 125), Wild Steelbloom, Grave Moss", where: "Wetlands, Hillsbrad Foothills, Ashenvale, Duskwood, Stonetalon Mountains", basis: classic}
+    notes:
+      - "At skill 125, train Expert at an Herbalism trainer. Without it, your skill stops at 150. In Classic, it needs level 20."
+      - "At skill 140, you can learn Greenhouse from its recipe item. It is grey at 145 and gives few skill points."
+      - "The Greenhouse herbs need Classic skill 210 and 220. Buy them, or make the Greenhouse later."
+  - bracket: "Expert (150–225)"
+    intro: |
+      Go to the zones for levels 20 to 50. These are Classic-era levels. In Classic, Liferoot grows near water.
+    steps:
+      - {from: 150, to: 170, gather: "Liferoot (skill 150), Fadeleaf (skill 160), Kingsblood", where: "Wetlands, Arathi Highlands, Stranglethorn Vale, Swamp of Sorrows", basis: classic}
+      - {from: 170, to: 205, gather: "Goldthorn (skill 170), Khadgar's Whisker (skill 185), Fadeleaf", where: "Arathi Highlands, Stranglethorn Vale, Alterac Mountains, Swamp of Sorrows, Dustwallow Marsh", basis: classic, note: "In Classic, Wintersbite (skill 195) grows only in Alterac Mountains"}
+      - {from: 205, to: 225, gather: "Firebloom (skill 205), Purple Lotus (skill 210), Khadgar's Whisker", where: "Tanaris, Badlands, Searing Gorge, Feralas, The Hinterlands", basis: classic, note: "Keep 1 Purple Lotus for the Greenhouse"}
+    notes:
+      - "At skill 200, train Artisan at an Herbalism trainer. Without it, your skill stops at 225. In Classic, it needs level 35."
+      - "Riverglades is a new zone for levels 35 to 45. The wiki has no herb data for it."
+  - bracket: "Artisan (225–300)"
+    intro: |
+      Go to the zones for levels 35 to 60. These are Classic-era levels.
+    steps:
+      - {from: 225, to: 250, gather: "Arthas' Tears (skill 220), Sungrass (skill 230), Blindweed (skill 235), Purple Lotus", where: "Feralas, The Hinterlands, Swamp of Sorrows, Western Plaguelands, Azshara", basis: classic, note: "Keep 1 Arthas' Tears for the Greenhouse. In Classic, Ghost Mushroom (skill 245) grows in caves"}
+      - {from: 250, to: 270, gather: "Gromsblood (skill 250), Golden Sansam (skill 260), Sungrass", where: "Felwood, Blasted Lands, Un'Goro Crater, Azshara, Burning Steppes", basis: classic}
+      - {from: 270, to: 285, gather: "Dreamfoil (skill 270), Mountain Silversage (skill 280), Golden Sansam", where: "Un'Goro Crater, Azshara, Felwood, Burning Steppes, Western Plaguelands, Winterspring", basis: classic, note: "Keep 4 Mountain Silversage for the Seed Hybridizer"}
+      - {from: 285, to: 300, gather: "Plaguebloom (skill 285), Icecap (skill 290), Dreamfoil, Mountain Silversage", where: "Eastern Plaguelands, Western Plaguelands, Felwood, Winterspring", basis: classic, note: "Icecap grows only in Winterspring in Classic"}
+    notes:
+      - "Mount Hyjal is a new zone for level 60. The wiki has no herb data for it."
+      - "In Classic, Black Lotus needs skill 300. It is not confirmed for Forever."
+
+picks_intro: |
+  Herbalism has 3 recipes, and each one makes a camp feature. Each player can add 1 feature to a camp. A Basic Campfire holds 3 features.
+
+picks:
+  - title: "Camp features"
+    intro: |
+      The wiki gives the effect of the Incense Candle only. Read the tooltip in the game for the other 2 features. Higher tiers include the features of the lower tiers.
+    items:
+      - {recipe: "Incense Candle", why: "Tier 1. It gives an Intellect buff at a camp. The buff does not stack with Arcane Intellect"}
+      - {recipe: "Greenhouse", why: "Tier 2. The client data does not give its effect"}
+      - {recipe: "Seed Hybridizer", why: "Tier 3. The client data does not give its effect. It gives no skill points, because it is grey at 300"}
+
+sources_note: |
+  A trainer teaches Incense Candle. The client does not hold the skill that the trainer asks for. The wiki says that camp utility starts at skill 20, and the recipe is yellow at 20. The wiki also says that each profession gives a Camping 101 quest for its Tier-1 feature. You unlock camping first with the quest The Great Outdoors. Recipe items teach Greenhouse at skill 140 and Seed Hybridizer at skill 300. The wiki says that the Greenhouse blueprint drops from the Relic Guardian in Excavation Site. The wiki says that Tier 3 blueprints drop from dungeon and raid bosses. It does not name the boss for the Seed Hybridizer. No Herbalism recipe uses Merchant's Favor. The data shows no Herbalism recipe item that binds on pickup.
+
+camp_note: |
+  To unlock camping, do the quest The Great Outdoors at about level 5. The quest asks you to learn Cooking and make a Basic Campfire. The camp buff lasts 1 hour. You get it when you sit or craft at a camp for 60 seconds. The Greenhouse lists Arthas' Tears and Purple Lotus as reagents. In Classic, these herbs need skill 220 and 210, but the recipe needs only skill 140. Buy these herbs, or make the Greenhouse later. The Greenhouse also needs Simple Wood. The Seed Hybridizer needs Mountain Silversage, a Crystal Vial and Runecloth. In Classic, trade supplies vendors sell Simple Wood and Star Wood. This is not confirmed for Forever. In Classic, vendors sell Crystal Vials, and humanoids of level 51 and above drop Runecloth. These sources are not confirmed for Forever.
+
+tips:
+  - "Keep Find Herbs on. You can track only 1 type of thing at a time."
+  - "Mining uses Find Minerals. If you have Mining too, switch between Find Herbs and Find Minerals."
+  - "Pick each node that gives a point, even if you do not need the herb. Alchemy uses most herbs."
+  - "The Incense Candle does not stack with Arcane Intellect. If your group has a Mage, a different feature gives more value."
+  - "Each player adds 1 feature to a camp. If you also have Alchemy, choose between the Incense Candle and the Mana Well."
+  - "Tauren have Cultivation. It grows an herb that all players can pick, and Herbalists get a bonus yield."
+  - "The Legacy talent Bountiful Harvest gives +20% Scarce materials from Mining, Herbalism and Skinning."
+  - "The Legacy talent Reagent Economy removes the reagents from Tier-1 camp features. The Incense Candle is a Tier-1 feature."
+  - "The 6 First Aid healing potions use Peacebloom, Briarthorn, Bruiseweed, Liferoot, Sungrass and Golden Sansam."
+  - "The 6 new Cooking teas use Peacebloom, Mageroyal, Liferoot, Fadeleaf, Sungrass and Mountain Silversage."
+  - "The 8 new Blacksmithing Sentinel's recipes and 2 new Enchanting recipes use Purple Lotus."
+  - "Keep the herbs that you use, and sell the others. The client data gives no prices."
+
+faq:
+  - q: "Does Herbalism have recipes in Forever?"
+    a: "Yes. The launch client has 3 recipes, and all 3 make camp features. Classic Herbalism has no recipes."
+  - q: "What skill does each herb need?"
+    a: "The client data does not hold node skills. The path uses Classic-era values, and they are not confirmed for Forever."
+  - q: "Do the new zones have herbs?"
+    a: "The wiki has no herb data for Zephras Isle, Riverglades, Shen'dralas or Mount Hyjal. The path uses Classic zones only."
+  - q: "Can I level with the camp features?"
+    a: "Not in practice. Incense Candle is yellow at 20 and grey at 25, and the client does not hold its trainer skill. Greenhouse is grey at 145, and Seed Hybridizer is grey at 300. Herb nodes are faster."
+  - q: "Is there a Merchant's Favor merchant for Herbalism?"
+    a: "The merchant data lists recipes for 6 crafting professions only. It lists no Herbalism recipe."
+  - q: "Does Herbalism give Legacy Points?"
+    a: "No. Legacy Points come from skill 150, 225 and 300 in the 6 crafting professions."
+
+sources: []

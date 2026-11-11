@@ -1,7 +1,7 @@
-{#- Forever Codex override: race add-ons are listed by full name ("Orc Rogue"), as chips -#}
+{#- Forever Codex override: add-ons are listed by full name ("Orc Rogue", "Mage Talents"), as chips -#}
 {% macro label(item) -%}
-  {%- if item.url and item.url.startswith('guides/') and item.url.count('/') == 3 and item.parent -%}
-    {{ item.title }} {{ item.parent.title }}
+  {%- if item.url and item.url.startswith('guides/') and item.url.count('/') == 3 and item.parent and not item.is_index -%}
+    {%- if item.url.split('/')[2] in ['talents', 'equipment'] -%}{{ item.parent.title }} {{ item.title }}{%- else -%}{{ item.title }} {{ item.parent.title }}{%- endif -%}
   {%- else -%}{{ item.title }}{%- endif -%}
 {%- endmacro %}
 {% macro render(listing) %}

@@ -7,13 +7,10 @@ tags:
 
 # Human Warlock
 
-<div class="guide-head" data-class="warlock" markdown>
+:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="warlock" }
 
-:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Warlock progression](index.md). This page covers only what changes when your Warlock is a Human.</p>
-
-</div>
+Read with the [Warlock progression](index.md). This page covers only what changes when your Warlock is a Human.
 
 ## Why this combo
 

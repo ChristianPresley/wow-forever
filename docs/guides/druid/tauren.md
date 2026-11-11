@@ -7,13 +7,10 @@ tags:
 
 # Tauren Druid
 
-<div class="guide-head" data-class="druid" markdown>
+:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="druid" }
 
-:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read this page with the [Druid guide](index.md). This page gives only the differences for a Tauren.</p>
-
-</div>
+Read this page with the [Druid guide](index.md). This page gives only the differences for a Tauren.
 
 ## Why this combo
 

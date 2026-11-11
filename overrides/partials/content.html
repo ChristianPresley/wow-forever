@@ -1,13 +1,17 @@
-{#- Forever Codex override: injects the guide combo switcher right after the H1 -#}
-{% include "partials/tags.html" %}
-{% include "partials/actions.html" %}
+{#- Forever Codex override: the switcher line in the header of an add-on page, and one quiet
+    article footer (tags, date, edit link) in place of the tags above the H1 and the edit icon -#}
 {% if "<h1" not in page.content %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
 {% set fc_is_addon = page.url.startswith('guides/') and page.url.count('/') == 3 %}
-{% set fc_is_class = page.url.startswith('guides/') and page.url.count('/') == 2 and page.is_index %}
-{#- the progression page (fc_is_class) carries its own add-on picker, so only add-on pages get the switcher -#}
-{% if fc_is_addon and "</h1>" in page.content %}
+{#- An add-on page: H1, the meta row (p.fc-meta), then the switcher. The progression page has the picker, not the switcher. -#}
+{% if fc_is_addon and '<p class="fc-meta"' in page.content %}
+  {% set head = page.content.split('<p class="fc-meta"', 1) %}
+  {% set rest = head[1].split('</p>', 1) %}
+  {{ head[0] }}<p class="fc-meta"{{ rest[0] }}</p>
+  {% include "partials/combo-switcher.html" %}
+  {{ rest[1] }}
+{% elif fc_is_addon and "</h1>" in page.content %}
   {% set parts = page.content.split('</h1>', 1) %}
   {{ parts[0] }}</h1>
   {% include "partials/combo-switcher.html" %}
@@ -15,6 +19,8 @@
 {% else %}
   {{ page.content }}
 {% endif %}
+{#- front matter "wide: true": a data page gets a wider content column (extra.css, section 4) -#}
+{% if page.meta and page.meta.wide %}<span class="fc-wide" hidden></span>{% endif %}
 {% include "partials/source-file.html" %}
 {% include "partials/feedback.html" %}
 {% include "partials/comments.html" %}

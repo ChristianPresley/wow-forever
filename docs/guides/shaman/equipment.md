@@ -2,24 +2,16 @@
 description: "Shaman equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."
 tags:
   - Shaman
+generated: true
+wide: true
 ---
 
 # Shaman Equipment
 
 <!-- This page is generated. Edit tools/classes/guides/shaman.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="shaman" markdown>
-
-:codex-shaman:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Equipment</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Shaman progression](index.md). This page gives the full equipment data for each set.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#twohand">Two-hand weapon (Enhancement)</a> <a href="#caster">One-hand and shield (Elemental)</a> <a href="#healer">Healer (Restoration)</a> <a href="#enchants-and-consumables">Enchants</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
+:codex-shaman:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Equipment</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="shaman" }
 
 A Shaman wears leather to level 39 and can wear mail from level 40. Mixed armor types have no penalty, so take each item for its stats. Each spec uses a different weapon type, and dual spec at level 40 means that you carry 2 sets.
 
@@ -27,11 +19,15 @@ About 40% of the items of Forever had hidden stats at launch. No person has publ
 
 ## Equipment sets
 
+<div class="fc-stack" markdown>
+
 | Set | Use it for | Stat priority |
 |---|---|---|
 | [Two-hand weapon (Enhancement)](#twohand) | A slow two-hand mace or axe with Strength and attack power armor. It is the only melee damage set, because the launch client has no dual wield. The item names come from Timesaver.gg and Method.gg. | Leveling: weapon damage > Strength > Intellect > Agility and crit > Stamina. Level 60: weapon damage > hit > Strength and attack power > Intellect > crit > Agility |
 | [One-hand and shield (Elemental)](#caster) | A one-hand weapon with spell damage and a shield, with Intellect armor. Warcraft Tavern says that one-hand and shield is usually best. A staff is acceptable if it is better. | Leveling: spell damage and Intellect > crit > Stamina and Spirit. Level 60: spell damage first, and hit to the cap for raids |
 | [Healer (Restoration)](#healer) | A one-hand weapon with healing power and a shield, or a healing staff. From level 40 it is the usual set for your second spec. Healing items also give some spell damage. | Healing power > Intellect > mana per 5 seconds > Spirit > crit (Warcraft Tavern, beta data). Warcraft Tavern also names haste, but no source found haste on items |
+
+</div>
 
 ## What a Shaman can equip { #proficiencies }
 
@@ -93,7 +89,7 @@ Weapon damage is your most important stat, and slow weapons are best. The first 
 | Two-hand mace | **Ironforge Greathammer** | Quest: *Old Ironforge Incursion*, a Hall of Thanes quest (Alliance) |
 | Two-hand axe | **Axe of Orgrimmar** | Quest: *Hidden Enemies*, Ragefire Chasm (Horde) |
 | Two-hand | **Segmented Spider Leg** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md): Witherfang. It has Agility and Spirit |
-| Feet | **Dark Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 35 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Dark Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 35 **New**{ .pill .pill--new } |
 | Hands | **Flamefist Grips** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) |
 
 ### Levels 20–29 { #twohand-l20 }
@@ -107,7 +103,7 @@ Deadmines and Wailing Caverns give the weapons for these levels. The Fang items 
 | Two-hand axe | **Forsaken Greataxe** | Quest: *The Wrath of Rath'mael*, Brill (Horde) |
 | Two-hand axe | **Reef Axe** | Blackfathom Deeps, Gelihast |
 | Chest | **Armor of the Fang** | Wailing Caverns |
-| Head | **Defender's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Defender's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
 
 ### Levels 30–39 { #twohand-l30 }
 
@@ -132,11 +128,11 @@ You can wear mail now. Leatherworking makes new mail with role names. The Skirmi
 |---|---|---|
 | Two-hand axe | **Ravager** | Scarlet Monastery, Armory, Herod |
 | Two-hand | **Abandoned Ferocity** | Quest: *Khan Jehn*, Desolace (Horde) |
-| Two-hand mace | **Mithril Warhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 190 **New**{ .pill .pill--new .pill--sm } |
-| Two-hand axe | **Charged Mithril Battleaxe** | [Blacksmithing](../../professions/blacksmithing.md), skill 215 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Skirmisher's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Skirmisher's Mail Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Skirmisher's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
+| Two-hand mace | **Mithril Warhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 190 **New**{ .pill .pill--new } |
+| Two-hand axe | **Charged Mithril Battleaxe** | [Blacksmithing](../../professions/blacksmithing.md), skill 215 **New**{ .pill .pill--new } |
+| Feet | **Skirmisher's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new } |
+| Shoulders | **Skirmisher's Mail Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new } |
+| Wrist | **Skirmisher's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
 | Feet | **Manascale Treads** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Mana Devourer. Timesaver.gg lists it from level 40 to 55 |
 | Waist | **Saltscale Girdle** | [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md): Saltspine. Timesaver.gg lists it from level 40 to 55 |
 | Legs | **Gnoll Crusher Leggings** | Quest: *Snargl's Snout*, Riverglades |
@@ -147,11 +143,11 @@ Thorium Greatmace is the two-hand weapon with the best data for these levels. Ti
 
 | Slot | Item | Source |
 |---|---|---|
-| Two-hand mace | **Thorium Greatmace** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
+| Two-hand mace | **Thorium Greatmace** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new } |
 | Staff | **Enchanted Azsharite Felbane Staff** | Quest: *Enchanted Azsharite Fel Weaponry*, level 53 to 55. It is fast for Windfury Weapon |
 | Two-hand | **Beastslayer** | Quest: *The Mighty U'cha*, Un'Goro Crater |
-| Waist | **Skirmisher's Mail Belt** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Skirmisher's Mail Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Skirmisher's Mail Belt** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
+| Hands | **Skirmisher's Mail Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
 | Chest | **Prismscale Hauberk** | Quest: *Tremors of the Earth* (Alliance) or *Broken Alliances* (Horde), Badlands |
 | Feet | **Boots of Elements** | Lower Blackrock Spire, Highlord Omokk |
 
@@ -161,14 +157,14 @@ No source has a tested list for level 60. The list of Timesaver.gg comes from an
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Black Dragonscale Helm** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Black Dragonscale Helm** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 | Chest | **Vest of Elements** | Upper Blackrock Spire, General Drakkisath |
 | Shoulders | **Ironfeather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 245 |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 | Legs | **Devilsaur Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 290 |
 | Neck | **Beads of Ogre Might** | Quest: *Falrin's Vendetta*, Dire Maul |
 | Trinket | **Shard of the Splithooves** | Quest: *Heroes of Old*, Blasted Lands |
-| Set | **The Five Thunders** | Vendor: Dungeon Set 2. One source names vendors. The cost is not known **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Set | **The Five Thunders** | Vendor: Dungeon Set 2. One source names vendors. The cost is not known **Not confirmed**{ .pill } |
 
 ### Raids and PvP { #twohand-raid }
 
@@ -176,10 +172,10 @@ Forest Defender's Axe is the crafted epic weapon. Its reagent, Malleable Essence
 
 | Slot | Item | Source |
 |---|---|---|
-| Two-hand axe | **Forest Defender's Axe** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Tranquil Wristguards** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Spiritcaller Kilt, Leggings or Pants** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Spiritcaller Gauntlets, Gloves or Grips** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Two-hand axe | **Forest Defender's Axe** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Wrist | **Tranquil Wristguards** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Spiritcaller Kilt, Leggings or Pants** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Hands | **Spiritcaller Gauntlets, Gloves or Grips** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 
 ## One-hand and shield (Elemental) { #caster }
 
@@ -195,7 +191,7 @@ Few caster items exist at these levels. Use a staff or a mace with a shield. A s
 |---|---|---|
 | Chest | **Bandit's Jerkin** | Quest: *The Criminal Element*, Zephras Isle |
 | Feet | **Rainwalker Boots** | Quest: *Rite of Vision*, Mulgore |
-| Wrist | **Azure Gustwoven Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Azure Gustwoven Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 50 **New**{ .pill .pill--new } |
 
 ### Levels 10–19 { #caster-l10 }
 
@@ -223,8 +219,8 @@ Wailing Caverns gives a shield, and Blackfathom Deeps gives a staff. The ring fr
 | Staff | **Rod of the Sleepwalker** | Blackfathom Deeps, Twilight Lord Kelris |
 | Shield | **Seedcloud Buckler** | Wailing Caverns, Verdan the Everliving |
 | Ring | **Ring of Power Regulation** | [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md): Relic Guardian |
-| Head | **Totemic Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Polished Driftwood Icon** | [Enchanting](../../professions/enchanting.md), skill 130 **New**{ .pill .pill--new .pill--sm }: Warcraft Tavern says that the item binds when you make it, so only an Enchanter can use it |
+| Head | **Totemic Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Relic | **Polished Driftwood Icon** | [Enchanting](../../professions/enchanting.md), skill 130 **New**{ .pill .pill--new }: Warcraft Tavern says that the item binds when you make it, so only an Enchanter can use it |
 
 ### Levels 30–39 { #caster-l30 }
 
@@ -238,7 +234,7 @@ Lightning's Grasp from the Call of Air chain is a main-hand fist weapon. It has 
 | Shield | **Painwalker Buckler** | Scarlet Monastery, Graveyard, Interrogator Vishas |
 | Neck | **Archmagister's Faceted Pendant** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
 | Shoulders | **Spellguard Pauldrons** | Quest: *Heart of Disruption*, City of Dalaran |
-| Staff | **Glimmering Staff** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new .pill--sm } |
+| Staff | **Glimmering Staff** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new } |
 
 ### Levels 40–49 { #caster-l40 }
 
@@ -248,11 +244,11 @@ You can wear mail now. The Skycaller's mail of Leatherworking is probably the ca
 |---|---|---|
 | Mace | **Hand of Righteousness** | Scarlet Monastery, Cathedral, High Inquisitor Whitemane |
 | Mace | **Galgann's Firehammer** | Uldaman, Galgann Firehammer |
-| Feet | **Skycaller's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Skycaller's Mail Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Skycaller's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Skycaller's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new } |
+| Shoulders | **Skycaller's Mail Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new } |
+| Wrist | **Skycaller's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
 | Neck | **Triune Amulet** | Scarlet Monastery, Cathedral |
-| Relic | **Totem of Ancestral Protection** | [Enchanting](../../professions/enchanting.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
+| Relic | **Totem of Ancestral Protection** | [Enchanting](../../professions/enchanting.md), skill 210 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #caster-l50 }
 
@@ -261,9 +257,9 @@ Few caster weapons with a name exist for these levels. Thorium Cestus is a new c
 | Slot | Item | Source |
 |---|---|---|
 | Dagger | **Black Crystal Dagger** | Quest: *Wanted - Deathclasp*, Silithus |
-| Fist weapon | **Thorium Cestus** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Skycaller's Mail Belt** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Skycaller's Mail Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
+| Fist weapon | **Thorium Cestus** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new } |
+| Waist | **Skycaller's Mail Belt** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
+| Hands | **Skycaller's Mail Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
 | Neck | **Woven Ivy Necklace** | Quest: *Wanted: Vile Priestess Hexx and Her Minions*, the Hinterlands |
 | Trinket | **Shard of the Splithooves** | Quest: *Heroes of Old*, Blasted Lands |
 
@@ -281,8 +277,8 @@ No source has a tested list for level 60. The Elements set is the base of the li
 | Waist | **Girdle of Insight** | [Leatherworking](../../professions/leatherworking.md), skill 290 |
 | Shield | **Rhombeard Protector** | Lower Blackrock Spire. wowtbc.gg names Gizrul as the boss |
 | Ring | **Warden's Signet of Brilliance** | Reputation: The Watchers, Exalted |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Totem of Thunder** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
+| Relic | **Totem of Thunder** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
 
 ### Raids and PvP { #caster-raid }
 
@@ -290,11 +286,11 @@ Evergreen Shield and Cloak of Earth and Sky need Malleable Essence of Nature. Re
 
 | Slot | Item | Source |
 |---|---|---|
-| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Back | **Cloak of Earth and Sky** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Totem of Urgency** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Spiritcaller Epaulets, Mantle or Spaulders** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Spiritcaller Boots, Greaves or Treads** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Back | **Cloak of Earth and Sky** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Relic | **Totem of Urgency** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
+| Shoulders | **Spiritcaller Epaulets, Mantle or Spaulders** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Feet | **Spiritcaller Boots, Greaves or Treads** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Healer (Restoration) { #healer }
 
@@ -322,7 +318,7 @@ The quests of Excavation Site give the Healer's Staff to each faction. Timesaver
 | Slot | Item | Source |
 |---|---|---|
 | Staff | **Healer's Staff** | Quest: *Prehistoric Prism* (Alliance) or *Earthen Echo* (Horde), Excavation Site |
-| Head | **Wisdom's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Wisdom's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
 | Shield | **Seedcloud Buckler** | Wailing Caverns, Verdan the Everliving |
 | Staff | **Living Root** | Wailing Caverns, Verdan the Everliving |
 
@@ -345,9 +341,9 @@ Dual spec makes this set necessary. The Mender's mail of Leatherworking is proba
 | Slot | Item | Source |
 |---|---|---|
 | Mace | **Hand of Righteousness** | Scarlet Monastery, Cathedral, High Inquisitor Whitemane |
-| Feet | **Mender's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Mender's Mail Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Mender's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Mender's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new } |
+| Shoulders | **Mender's Mail Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new } |
+| Wrist | **Mender's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #healer-l50 }
 
@@ -355,8 +351,8 @@ Heal the level 50 dungeons and take the items with healing power. The public dat
 
 | Slot | Item | Source |
 |---|---|---|
-| Waist | **Mender's Mail Belt** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Mender's Mail Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Mender's Mail Belt** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
+| Hands | **Mender's Mail Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
 | Ring | **Glowing Crystal Ring or Ring of Living Stone** | Quest: *Uncovering Past Secrets*, Moonglade |
 
 ### Level 60 { #healer-l60 }
@@ -365,11 +361,11 @@ No source has a tested list for level 60. The healer list of Timesaver.gg has cl
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Living Crown** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Living Crown** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 | Chest | **Vest of Elements** | Upper Blackrock Spire, General Drakkisath |
 | Back | **Hide of the Wild** | [Leatherworking](../../professions/leatherworking.md), skill 300 |
 | Hands | **Green Dragonscale Gauntlets** | [Leatherworking](../../professions/leatherworking.md), trainer recipe |
-| Wrist | **Mender's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Mender's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
 | Staff | **Ironbark Staff** | Reputation: League of Arathor, Exalted (Alliance) |
 
 ### Raids and PvP { #healer-raid }
@@ -378,11 +374,13 @@ The crafted epic items need Malleable Essence of Nature from raid items. The Res
 
 | Slot | Item | Source |
 |---|---|---|
-| Waist | **Elderwild Waistcord** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Totem of Urgency** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Elderwild Waistcord** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Relic | **Totem of Urgency** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Enchants and consumables
+
+<div class="fc-stack" markdown>
 
 | Slot | Enchant | Notes |
 |---|---|---|
@@ -405,7 +403,11 @@ The crafted epic items need Malleable Essence of Nature from raid items. The Res
 | Onyxia's Lair | **Greater Fire Protection Potion** | Alchemy skill 290. Fire Resistance Totem covers the raid |
 | All levels | **Ankh, Shiny Fish Scales, Fish Oil** | Reagents for Reincarnation, Water Breathing and Water Walking. Reagent Economy removes the need |
 
-## Sources
+</div>
+
+## Data and sources { #sources }
+
+The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
 
 - [Warcraft Tavern: Shaman guide](https://www.warcrafttavern.com/forever/guides/shaman/)
 - [Warcraft Tavern: Shaman leveling guide](https://www.warcrafttavern.com/forever/guides/shaman-leveling/)
@@ -419,3 +421,4 @@ The crafted epic items need Malleable Essence of Nature from raid items. The Res
 - [Method.gg: Shaman leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents)
 - [Method.gg: itemization updates](https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more)
 - [ConquestCapped: tier sets and crafted tier items (commercial site)](https://conquestcapped.com/guides/wow-forever/wow-forever-tier-sets-1/)
+- [Shaman progression: data and sources](index.md#sources)

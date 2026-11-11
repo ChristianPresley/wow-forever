@@ -98,8 +98,29 @@ def source_text(r):
     return s
 
 
+NA = '<span class="fc-na">—</span>'
+
+
+def num(v):
+    """A number cell. A dash shows that the client has no value."""
+    return str(v) if v is not None else NA
+
+
 def learn_text(r):
-    return str(r["learn"]) if r["learn"] is not None else "—"
+    return num(r["learn"])
+
+
+def data_table(rows, prose):
+    """A data table: full width, and on phones only the columns in `prose` wrap (extra.css, section 7)."""
+    return [f'<div class="fc-data" data-prose="{prose}" markdown>', ""] + rows + ["", "</div>", ""]
+
+
+def meta_row(icon, kind, tag=""):
+    """The one header row under the H1: kind, tag, date and the link to the sources (the same row as the class pages)."""
+    tag = f" **{tag}**{{ .badge }}" if tag else ""
+    return [f':{icon}:{{ aria-hidden="true" }} <span class="fc-meta__kind">{kind}</span>{tag} '
+            f'<span class="fc-meta__date">Updated {PAGE_DATE}</span> [Data and sources](#sources)',
+            "{: .fc-meta }", ""]
 
 
 def name_text(r):
@@ -115,12 +136,11 @@ def recipe_tables(recipes, level="##"):
         groups.setdefault(r["group"], []).append(r)
     out = []
     for g, rs in groups.items():
-        out += [f"{level} {g}", "", "| Recipe | Learn | Yellow | Grey | Reagents | Source | Forever |", "|---|---|---|---|---|---|---|"]
+        rows = ["| Recipe | Learn | Yellow | Grey | Reagents | Source |", "|---|---:|---:|---:|---|---|"]
         for r in rs:
-            st = {"new": "New", "changed": "Changed"}.get(r["status"], "—")
-            out.append(f"| **{name_text(r)}** | {learn_text(r)} | {r['yellow'] if r['yellow'] is not None else '—'} | "
-                       f"{r['grey'] if r['grey'] is not None else '—'} | {reagent_text(r)} | {source_text(r)} | {st} |")
-        out.append("")
+            st = {"new": " **New**{ .pill .pill--new }", "changed": " **Changed**{ .pill .pill--changed }"}.get(r["status"], "")
+            rows.append(f"| {name_text(r)}{st} | {learn_text(r)} | {num(r['yellow'])} | {num(r['grey'])} | {reagent_text(r)} | {source_text(r)} |")
+        out += [f"{level} {g}", ""] + data_table(rows, "1 5")
     return out
 
 
@@ -169,7 +189,7 @@ def check_path(slug, guide, by_name, errors):
                 rows.append(f"| {lo}–{hi} | **{name_text(r)}** | {n} | {reagent_text(r)} | {col} | {source_text(r)}, learn {lt} | {st.get('note', '')} |")
             elif "gather" in st:
                 basis = {"classic": "Classic-era value", "forever": "Forever source"}.get(st.get("basis", "classic"), "Classic-era value")
-                rows.append(f"| {lo}–{hi} | **{st['gather']}** | — | — | — | {st.get('where', '')} ({basis}) | {st.get('note', '')} |")
+                rows.append(f"| {lo}–{hi} | **{st['gather']}** | {NA} | {NA} | {NA} | {st.get('where', '')} ({basis}) | {st.get('note', '')} |")
             else:
                 errors.append(f"{where}: a step needs 'craft' or 'gather'")
         rendered.append((b, rows, mats))
@@ -182,7 +202,7 @@ def check_path(slug, guide, by_name, errors):
 
 
 def mats_table(mats):
-    out = ["| Material | Amount |", "|---|---|"]
+    out = ["| Material | Amount |", "|---|---:|"]
     for name, n in sorted(mats.items(), key=lambda kv: (-kv[1], kv[0])):
         out.append(f"| {name} | {n} |")
     return out
@@ -219,25 +239,11 @@ def render(slug, data, guide, errors):
     has_picks = bool(guide.get("picks"))
     camp = [r for r in recipes if r["group"] == "Camping"]
 
-    jump = ['<a href="#new-in-forever">New</a>', '<a href="#level-1-to-300">1–300</a>']
-    if has_picks:
-        jump.append('<a href="#recipes-to-get">Recipes to get</a>')
-    if camp:
-        jump.append('<a href="#camp-features">Camp</a>')
-    jump.append('<a href="#all-recipes">All recipes</a>')
-
     o = [
-        "---", f'description: "{guide["description"]}"', "tags:", "  - Professions", "search:", "  boost: 2", "---", "",
+        "---", f'description: "{guide["description"]}"', "tags:", "  - Professions", "search:", "  boost: 2", "generated: true", "wide: true", "---", "",
         f"# {name} Guide", "",
         f"<!-- This page is generated. Edit tools/professions/guides/{slug}.yml, then run tools/professions/build.py. -->", "",
-        '<div class="guide-head" markdown>', "",
-        f':{guide["icon"]}:{{ aria-hidden="true" }} <span class="gh-kind">Profession guide</span> **{KINDS[guide["kind"]]}**{{ .badge }}', "",
-        f'<nav class="gh-jump" aria-label="Jump to section">{" ".join(jump)}</nav>', "", "</div>", "",
-        f'!!! info "Current as of {PAGE_DATE}"',
-        f"    The recipe data is from the game client, build {CLIENT_BUILD}. [wowforevertalents.com]({SITE}/professions/{slug}/) reads this data from the client. "
-        "The client does not hold the skill that a trainer asks for, the prices, or the drop locations. "
-        "The path and the recipe picks are Codex recommendations.", "",
-        guide["intro"].strip(), "",
+    ] + meta_row(guide["icon"], "Profession guide", KINDS[guide["kind"]]) + [
         '<aside class="infobox" markdown>', f'<p class="infobox-title">{name} at a glance</p>', "", "| | |", "|---|---|",
         f"| **Type** | {KINDS[guide['kind']]} |",
     ]
@@ -250,7 +256,7 @@ def render(slug, data, guide, errors):
     ]
     if n_fav:
         o.append(f"| **Merchant's Favor** | {n_fav} recipes |")
-    o += ["", "</aside>", "", "## New in Forever", ""]
+    o += ["", "</aside>", "", guide["intro"].strip(), "", "## New in Forever", ""]
     o += [f"- {b}" for b in guide["new"]] + [""]
 
     o += ["## Level 1 to 300", ""]
@@ -265,7 +271,7 @@ def render(slug, data, guide, errors):
         o += [f"### {b['bracket']}", ""]
         if b.get("intro"):
             o += [b["intro"].strip(), ""]
-        o += ["| Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |", "|---|---|---|---|---|---|---|"] + rows + [""]
+        o += data_table(["| Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |", "|---|---|---:|---|---|---|---|"] + rows, "2 4 6 7")
         for note in b.get("notes") or []:
             o.append(f"- {note}")
         if b.get("notes"):
@@ -285,11 +291,11 @@ def render(slug, data, guide, errors):
             o += [f"### {sec['title']}", ""]
             if sec.get("intro"):
                 o += [sec["intro"].strip(), ""]
-            o += ["| Recipe | Learn | Reagents | Source | Why |", "|---|---|---|---|---|"]
+            rows = ["| Recipe | Learn | Reagents | Source | Why |", "|---|---:|---|---|---|"]
             for it in sec["items"]:
                 r = by_name[it["recipe"]]
-                o.append(f"| **{name_text(r)}** | {learn_text(r)} | {reagent_text(r)} | {source_text(r)} | {it['why']} |")
-            o.append("")
+                rows.append(f"| {name_text(r)} | {learn_text(r)} | {reagent_text(r)} | {source_text(r)} | {it['why']} |")
+            o += data_table(rows, "1 3 5")
 
     if guide.get("sources_note"):
         o += ["## Where recipes come from", "", guide["sources_note"].strip(), ""]
@@ -303,10 +309,11 @@ def render(slug, data, guide, errors):
     if camp:
         o += ["## Camp features", "",
               f"{name} makes these features for a [camp](../systems/camping.md). The camp page gives the effect of each feature.", "",
-              "| Feature | Learn | Reagents | Source |", "|---|---|---|---|"]
+              ""]
+        rows = ["| Feature | Learn | Reagents | Source |", "|---|---:|---|---|"]
         for r in camp:
-            o.append(f"| **{r['name']}** | {learn_text(r)} | {reagent_text(r)} | {source_text(r)} |")
-        o.append("")
+            rows.append(f"| {r['name']} | {learn_text(r)} | {reagent_text(r)} | {source_text(r)} |")
+        o += data_table(rows, "1 3")
         if guide.get("camp_note"):
             o += [guide["camp_note"].strip(), ""]
     if guide.get("tips"):
@@ -314,7 +321,7 @@ def render(slug, data, guide, errors):
 
     o += ["## All recipes", ""]
     legend = ("**Learn** is the skill that the client gives for the recipe. A dash shows a trainer recipe, because the client does not hold that skill. "
-              "**Yellow** and **Grey** are the skills where the recipe changes colour. **Forever** shows a recipe that is new or changed from Classic Era.")
+              "**Yellow** and **Grey** are the skills where the recipe changes colour. A **New** or **Changed** tag shows a recipe that is new or changed from Classic Era.")
     if separate:
         o += [f"The full list of {n} recipes is on a separate page: [{name} recipes]({slug}-recipes.md).", ""]
     else:
@@ -325,7 +332,12 @@ def render(slug, data, guide, errors):
         o += ["## FAQ", ""]
         for f in guide["faq"]:
             o += [f'??? question "{f["q"]}"', f"    {f['a'].strip()}", ""]
-    o += ["## Sources", "", f"- [wowforevertalents.com: {name} recipes, read from the client]({SITE}/professions/{slug}/)"]
+    o += ["## Sources", "",
+          f"Current as of {PAGE_DATE}. The recipe data is from the game client, build {CLIENT_BUILD}. "
+          f"[wowforevertalents.com]({SITE}/professions/{slug}/) reads this data from the client. "
+          "The client does not hold the skill that a trainer asks for, the prices, or the drop locations. "
+          "The path and the recipe picks are Codex recommendations.", "",
+          f"- [wowforevertalents.com: {name} recipes, read from the client]({SITE}/professions/{slug}/)"]
     for s in guide.get("sources") or []:
         o.append(f"- [{s['title']}]({s['url']})")
     o.append("")
@@ -334,14 +346,15 @@ def render(slug, data, guide, errors):
     if separate:
         rec = [
             "---", f'description: "All {n} {name} recipes in WoW: Forever, with the learn skill, the yellow and grey skills, the reagents and the source of each recipe."',
-            "tags:", "  - Professions", "---", "",
+            "tags:", "  - Professions", "generated: true", "wide: true", "---", "",
             f"# {name} Recipes", "",
             "<!-- This page is generated by tools/professions/build.py from tools/professions/recipes/%s.json. -->" % slug, "",
+        ] + meta_row(guide["icon"], "Recipe list") + [
             f"This page lists all {n} {name} recipes in the game client, build {CLIENT_BUILD}. The headings are the headings of the in-game window. "
             f"For the path from 1 to 300 and the recipe picks, see the [{name} guide]({slug}.md).", "",
             legend, "",
         ] + recipe_tables(recipes, "##")
-        rec += [f"Source: [wowforevertalents.com]({SITE}/professions/{slug}/), read from the client.", ""]
+        rec += [f"Source: [wowforevertalents.com]({SITE}/professions/{slug}/), read from the client.", "{: #sources }", ""]
     return "\n".join(o), ("\n".join(rec) if rec else None)
 
 
@@ -349,7 +362,7 @@ def render_index(done):
     o = [
         "---",
         'description: "Guides for all 12 professions in WoW: Forever: a path from skill 1 to 300, the materials, the recipes to get, and the full recipe list of each profession."',
-        "search:", "  boost: 3", "hide:", "  - toc", "---", "",
+        "search:", "  boost: 3", "hide:", "  - toc", "generated: true", "---", "",
         "# Profession Guides", "",
         "<!-- This page is generated by tools/professions/build.py. -->", "",
         "A guide for each of the **12 professions**. Each guide gives a path from skill 1 to 300, the materials for the path, the recipes to get, and the full recipe list.", "",

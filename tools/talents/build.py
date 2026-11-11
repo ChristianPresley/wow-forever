@@ -67,6 +67,33 @@ def tier_chip(letter: str) -> str:
     return f"**{letter}**{{ .tier .tier-{letter.lower()} }}"
 
 
+def meta_row(slug, kind, badges, date):
+    """The one header row under the H1 of a class page: sigil, kind, role tags, date and the link to the data note.
+
+    tools/classes/build.py uses it too. The Race add-on pages have the same row, written by hand.
+    """
+    return [
+        f':codex-{slug}:{{ .fc-sigil aria-hidden="true" }} <span class="fc-meta__kind">{kind}</span> {badges} '
+        f'<span class="fc-meta__date">Updated {date}</span> [Data and sources](#sources)',
+        f'{{: .fc-meta data-class="{slug}" }}',
+        "",
+    ]
+
+
+def rank_tag(rank, mx):
+    """The rank that a step reaches, after the talent name: "3/5"."""
+    return f'<span class="fc-rank">{rank}/{mx}</span>'
+
+
+def ratings(g):
+    """The 3 ratings of a talent in one table cell. The letter is in the tag, so colour is not the only cue."""
+    return "".join(
+        f'<span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">{short}</span><span class="fc-sr-only">{name}: </span>'
+        f'<span class="tier tier-{g[k].lower()}">{g[k]}</span></span>'
+        for k, short, name in (("lvl", "L", "Leveling"), ("pve", "PvE", "PvE"), ("pvp", "PvP", "PvP"))
+    )
+
+
 def walk(build, talents, tree_names, errors, where):
     """Apply the steps of a build one point at a time. Returns (rows, ranks).
 
@@ -105,7 +132,7 @@ def walk(build, talents, tree_names, errors, where):
         else:
             level = f"{lo}" if lo == hi else f"{lo}–{hi}"
         rows.append({
-            "level": level, "name": name, "rank": f"{ranks[name]}/{t['max']}",
+            "level": level, "name": name, "rank": rank_tag(ranks[name], t["max"]),
             "split": "/".join(str(s) for s in spent), "why": why,
         })
     if total > MAX_POINTS:
@@ -144,15 +171,15 @@ def render_build(build, slug, talents, tree_names, errors):
     rows, ranks, spent, total = walk(build, talents, tree_names, errors, where)
     split = "/".join(str(s) for s in spent)
     out = []
-    head = f"**{build['role']}**{{ .pill .pill--info }} **{split}**{{ .pill .pill--outline }}"
+    head = f"**{build['role']}**{{ .pill .pill--info }} **{split}**{{ .pill }}"
     if build.get("partial"):
-        head += f" **{total} points**{{ .pill .pill--outline }}"
+        head += f" **{total} points**{{ .pill }}"
     out += [head, ""]
     out += [build["summary"].strip(), ""]
     if build["kind"] == "leveling":
-        out += ["| Level | Talent | Rank | Points | Why |", "|---|---|---|---|---|"]
+        out += ["| Level | Talent | Points | Why |", "|---|---|---|---|"]
         for r in rows:
-            out.append(f"| {r['level']} | **{r['name']}** | {r['rank']} | {r['split']} | {r['why']} |")
+            out.append(f"| {r['level']} | **{r['name']}** {r['rank']} | {r['split']} | {r['why']} |")
         out.append("")
         if not build.get("partial"):
             out += ["At level 60 the build is:", ""]
@@ -171,14 +198,17 @@ def render_build(build, slug, talents, tree_names, errors):
     return out, split, total
 
 
-def render_tree(tr, gtree, talents):
+def render_tree(tr, gtree, talents, first=False):
     name = tr["name"]
     out = [f"## {name}", "", gtree["summary"].strip(), ""]
-    # the grid, in the same layout as the in-game tree
+    # the grid, in the same layout as the in-game tree: 4 columns, and a faint tile for each empty slot
     nrows = max(t["row"] for t in tr["talents"])
+    used = {(t["row"], t["col"]) for t in tr["talents"]}
     cells = []
     for r in range(1, nrows + 1):
-        cells.append(f'<li class="tt-row" style="grid-row:{r}">{(r - 1) * 5} pts</li>')
+        cells.append(f'<li class="tt-row" style="grid-row:{r}">{(r - 1) * 5}<span class="tt-long"> pts</span></li>')
+        cells += [f'<li class="tt-empty" aria-hidden="true" style="grid-row:{r};grid-column:{c + 1}"></li>'
+                  for c in range(1, 5) if (r, c) not in used]
     for t in sorted(tr["talents"], key=lambda t: (t["row"], t["col"])):
         g = gtree["talents"][t["name"]]
         best = min((g["lvl"], g["pve"], g["pvp"]), key=TIERS.index)
@@ -190,25 +220,27 @@ def render_tree(tr, gtree, talents):
             f'<span class="tt-meta"><span class="tier tier-{best.lower()}">{best}</span> max {t["max"]}{new}</span></li>'
         )
     out += [
-        f'<div class="ttree-wrap" role="group" aria-label="{name} talent tree" tabindex="0">',
+        f'<div class="ttree-wrap" data-search-exclude role="group" aria-label="{name} talent tree">',
         '<ul class="ttree">', *cells, "</ul>", "</div>", "",
-        f'<p class="legend">The grid shows the layout of the tree in the game. The letter is the best rating of the talent in the table below.</p>',
+    ]
+    if first:
+        out += ['<p class="legend">The grid shows the layout of the tree in the game. The number at the left is the number of points '
+                'that opens the row. The letter is the best rating of the talent in the table below.</p>', ""]
+    out += [
+        '<div class="fc-talents" markdown>',
         "",
-        "| Talent | Opens at | Max | What it does | Leveling | PvE | PvP | Codex verdict |",
-        "|---|---|---|---|---|---|---|---|",
+        "| Talent | Max | What it does | Ratings | Codex verdict |",
+        "|---|---|---|---|---|",
     ]
     for t in sorted(tr["talents"], key=lambda t: (t["row"], t["col"])):
         g = gtree["talents"][t["name"]]
         label = f"**{t['name']}**"
         if t["status"] == "new":
-            label += " **New**{ .pill .pill--new .pill--sm }"
+            label += " **New**{ .pill .pill--new }"
         for r in t.get("requires") or []:
             label += f"<br><small>Needs {r}</small>"
-        out.append(
-            f"| {label} | {(t['row'] - 1) * 5} pts | {t['max']} | {g['does']} | {tier_chip(g['lvl'])} | "
-            f"{tier_chip(g['pve'])} | {tier_chip(g['pvp'])} | {g.get('note', '')} |"
-        )
-    out.append("")
+        out.append(f"| {label} | {t['max']} | {g['does']} | {ratings(g)} | {g.get('note', '')} |")
+    out += ["", "</div>", ""]
     return out
 
 
@@ -240,39 +272,26 @@ def render_class(slug, tree, guide, errors):
         rendered[b["id"]] = render_build(b, slug, talents, tree_names, errors)
 
     badges = " ".join(BADGES[b] for b in guide["badges"])
-    jump = ['<a href="#quick-picks">Quick picks</a>', '<a href="#leveling-builds">Leveling</a>', '<a href="#level-60-builds">Level 60</a>']
-    jump += [f'<a href="#{tn.lower().replace(" ", "-")}">{tn}</a>' for tn in tree_names]
     n_talents = len(talents)
     out = [
         "---",
         f'description: "{guide["description"]}"',
         "tags:", f"  - {cls}",
         "search:", "  boost: 2",
+        "generated: true",
+        "wide: true",
         "---",
         "",
         f"# {cls} Talents",
         "",
         "<!-- This page is generated. Edit tools/talents/guides/%s.yml, then run tools/talents/build.py. -->" % slug,
         "",
-        f'<div class="guide-head" data-class="{slug}" markdown>',
-        "",
-        f':codex-{slug}:{{ .fc-sigil aria-hidden="true" }} <span class="gh-kind">Add-on · Talents</span> {badges}',
-        "",
-        f'<p class="gh-note" markdown>Read with the [{cls} progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>',
-        "",
-        f'<nav class="gh-jump" aria-label="Jump to section">{" ".join(jump)}</nav>',
-        "",
-        "</div>",
-        "",
-        f'!!! info "Current as of {PAGE_DATE}"',
-        f"    The tree data is from the game client, build {CLIENT_BUILD}, with the server hotfixes of {DATA_DATE}. "
-        f"[wowforevertalents.com]({CALC}/{slug}/) reads this data from the client. "
-        f"The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. "
-        f"The [{cls} progression](index.md) tells you when each talent becomes important.",
-        "",
+        *meta_row(slug, "Add-on: Talents", badges, PAGE_DATE),
         guide["intro"].strip(),
         "",
         "## Quick picks",
+        "",
+        '<div class="fc-stack" markdown>',  # on a phone each row is a block (extra.css, section 7)
         "",
         "| Stage | Build | Points at 60 | Why |",
         "|---|---|---|---|",
@@ -286,13 +305,15 @@ def render_class(slug, tree, guide, errors):
         out.append(f"| {q['stage']} | [{b['name']}]({anchor}) | {rendered[b['id']][1]} | {q['why']} |")
     out += [
         "",
+        "</div>",
+        "",
         "## How to read this page",
         "",
         f"The {cls} has {n_talents} talents in 3 trees. You get 1 talent point for each level from 10 to 60, for a total of {MAX_POINTS} points.",
         "",
-        "- **Opens at:** the number of points that you must spend in the same tree before the row opens. Each row needs 5 more points.",
+        "- **Points at the left of the grid:** the number of points that you must spend in the same tree before the row opens. Each row needs 5 more points.",
         "- **Max:** the maximum rank of the talent.",
-        "- **Leveling:** the value of the talent when you quest and do dungeons from level 10 to 59.",
+        "- **L (leveling):** the value of the talent when you quest and do dungeons from level 10 to 59.",
         "- **PvE:** the value at level 60 in dungeons and raids. This is damage, healing or tank value, for the role of the tree.",
         "- **PvP:** the value in battlegrounds and world PvP.",
         "",
@@ -322,13 +343,22 @@ def render_class(slug, tree, guide, errors):
     for b in guide["builds"]:
         if b["kind"] == "endgame":
             out += [f'=== "{b["name"]}"', ""] + indent(rendered[b["id"]][0])
-    for tr in tree["trees"]:
-        out += render_tree(tr, guide["trees"][tr["name"]], talents)
+    for i, tr in enumerate(tree["trees"]):
+        out += render_tree(tr, guide["trees"][tr["name"]], talents, first=i == 0)
     if guide.get("faq"):
         out += ["## FAQ", ""]
         for f in guide["faq"]:
             out += [f'??? question "{f["q"]}"', f"    {f['a'].strip()}", ""]
-    out += ["## Sources", "", f"- [wowforevertalents.com: {cls} talents, read from the client]({CALC}/{slug}/)"]
+    out += [
+        "## Data and sources { #sources }",
+        "",
+        f"The tree data is from the game client, build {CLIENT_BUILD}, with the server hotfixes of {DATA_DATE}. "
+        f"[wowforevertalents.com]({CALC}/{slug}/) reads this data from the client. "
+        f"The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. "
+        f"The [{cls} progression](index.md) tells you when each talent becomes important.",
+        "",
+        f"- [wowforevertalents.com: {cls} talents, read from the client]({CALC}/{slug}/)",
+    ]
     for s in guide.get("sources") or []:
         out.append(f"- [{s['title']}]({s['url']})")
     out.append("")

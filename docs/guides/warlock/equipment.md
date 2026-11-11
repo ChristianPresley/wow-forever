@@ -2,24 +2,16 @@
 description: "Warlock equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."
 tags:
   - Warlock
+generated: true
+wide: true
 ---
 
 # Warlock Equipment
 
 <!-- This page is generated. Edit tools/classes/guides/warlock.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="warlock" markdown>
-
-:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Equipment</span> **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Warlock progression](index.md). This page gives the full equipment data for each set.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#shadow">Shadow damage</a> <a href="#fire">Fire damage</a> <a href="#stamina">Stamina for pet tanking, PvP and Hardcore</a> <a href="#enchants-and-consumables">Enchants</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
+:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Equipment</span> **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="warlock" }
 
 A Warlock wears cloth for all 60 levels. To about level 30 the wand is your most important slot, because you use it while your DoTs do damage. After that, spell power for your school is the most important stat.
 
@@ -27,11 +19,15 @@ About 40% of the items of Forever had hidden stats at launch. The stats of an it
 
 ## Equipment sets
 
+<div class="fc-stack" markdown>
+
 | Set | Use it for | Stat priority |
 |---|---|---|
 | [Shadow damage](#shadow) | The set for Affliction and for Demonology while you level. You take spell power, Shadow damage and crit. The imbue is the Spellstone. | Leveling (Warcraft Tavern): Spell Power or Shadow damage > wand DPS (to about 30) > Spirit or Intellect > Stamina. Level 60, Affliction: Spell Power or Shadow damage > Crit > Hit (to the cap) > Haste > Spell Pierce > Intellect > Spirit. Demonology puts Hit before Crit |
 | [Fire damage](#fire) | The set for Destruction and for the Demonology Fire build. You take spell power, Fire damage, crit and hit. The imbue is the Firestone. | Leveling (Warcraft Tavern): Spell Power (Fire and Shadow) > wand DPS (to about 30) > Intellect or Spirit > Stamina. Level 60, Destruction: Spell Power or Fire damage > Crit > Hit (to the cap) > Haste > Spell Pierce > Intellect > Spirit. Demonology puts Hit before Crit |
 | [Stamina for pet tanking, PvP and Hardcore](#stamina) | A safer set. You replace some Intellect and Spirit with Stamina. Your demon gets health from your Stamina and uses your hit. No source publishes an item list for this set. | Stamina > Spell Power > Hit > Intellect |
+
+</div>
 
 ## What a Warlock can equip { #proficiencies }
 
@@ -73,7 +69,7 @@ Your first important item is a wand. You can use wands and daggers from level 1.
 
 | Slot | Item | Source |
 |---|---|---|
-| Wand | **Novice's Practice Wand** | [Enchanting](../../professions/enchanting.md), skill 1 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Novice's Practice Wand** | [Enchanting](../../professions/enchanting.md), skill 1 **New**{ .pill .pill--new } |
 | Wand | **Lesser Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: level 5. Warcraft Tavern gives 11.3 DPS |
 | Staff | **Apprentice's Spellstaff** | Quest: *Rare Books*, Elwynn Forest (Alliance), level 7 |
 | Staff | **Makeshift Stormcaller** | Quest: *Stormy Potential*, Durotar (Horde), level 7 |
@@ -92,9 +88,9 @@ Replace the wand at level 13. The first dungeons give a staff and a robe for eac
 | Staff | **Coldspire Staff** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md): Rath'mael |
 | Chest | **Robes of the Disgraced Thane** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) |
 | Chest | **Leftover Abomination Skin** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md): The Baron |
-| Feet | **Shadow Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Shadow Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Filigreed Shadow Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Shadow Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new } |
+| Hands | **Shadow Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new } |
+| Chest | **Filigreed Shadow Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new } |
 
 ### Levels 20–29 { #shadow-l20 }
 
@@ -109,9 +105,9 @@ The class quest at 20 gives the Staff of Soran'ruk or the Orb of Soran'ruk. Warc
 | Chest | **Violet Sorcerer's Robes** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Arcanic Enigma |
 | Wand | **Wand of Mana Concentration** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Arcanic Enigma, level 27 |
 | Staff | **Spine of the Devourer** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Mana Devourer, level 28 |
-| Head | **Shadow Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Filigreed Shadow Leggings** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Shadow Gown** | [Tailoring](../../professions/tailoring.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Shadow Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new } |
+| Legs | **Filigreed Shadow Leggings** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new } |
+| Chest | **Shadow Gown** | [Tailoring](../../professions/tailoring.md), skill 110 **New**{ .pill .pill--new } |
 
 ### Levels 30–39 { #shadow-l30 }
 
@@ -126,10 +122,10 @@ Scarlet Monastery gives a wand at 30 and a staff at 34. Timesaver.gg prefers a d
 | Ring | **Philanthropist's Ring** | Quest: *Greater Friend of the Library*, the book quest at level 35 |
 | Chest | **Robe of the Drowned** | [The Drowned City](../../content/dungeons/drowned-city.md) |
 | Trinket | **Heart of the Primeval** | [The Drowned City](../../content/dungeons/drowned-city.md) |
-| Legs | **Shadow Leggings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Filigreed Shadow Circlet** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Black Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Wand | **Twisted Nether Wand** | [Enchanting](../../professions/enchanting.md), skill 185 **New**{ .pill .pill--new .pill--sm }: level 37 (Method.gg) |
+| Legs | **Shadow Leggings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new } |
+| Head | **Filigreed Shadow Circlet** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new } |
+| Feet | **Black Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Wand | **Twisted Nether Wand** | [Enchanting](../../professions/enchanting.md), skill 185 **New**{ .pill .pill--new }: level 37 (Method.gg) |
 
 ### Levels 40–49 { #shadow-l40 }
 
@@ -142,11 +138,11 @@ Krol'dok Stronghold gives cloth legs, a dagger and a necklace. The Timesaver.gg 
 | Neck | **Curio-Adorned Necklace** | Quest: *Curios of Curiosity*, Krol'dok Stronghold |
 | Staff | **Zum'rah's Vexing Cane** | Zul'Farrak, Witch Doctor Zum'rah, level 43 |
 | Waist | **Deathmage Sash** | Razorfen Downs, Mordresh Fire Eye |
-| Wand | **Dreambough Wand** | [Enchanting](../../professions/enchanting.md), skill 215 **New**{ .pill .pill--new .pill--sm }: level 43 (Method.gg) |
-| Wand | **Lesser Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 245 **New**{ .pill .pill--new .pill--sm }: level 49 (Method.gg) |
-| Chest | **Shadoweave Robe** | [Tailoring](../../professions/tailoring.md), trainer recipe **Classic-era**{ .pill .pill--outline .pill--sm } |
-| Hands | **Shadoweave Gloves** | [Tailoring](../../professions/tailoring.md), trainer recipe **Classic-era**{ .pill .pill--outline .pill--sm } |
-| Shoulders | **Netherpearl Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Wand | **Dreambough Wand** | [Enchanting](../../professions/enchanting.md), skill 215 **New**{ .pill .pill--new }: level 43 (Method.gg) |
+| Wand | **Lesser Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 245 **New**{ .pill .pill--new }: level 49 (Method.gg) |
+| Chest | **Shadoweave Robe** | [Tailoring](../../professions/tailoring.md), trainer recipe **Classic-era**{ .pill } |
+| Hands | **Shadoweave Gloves** | [Tailoring](../../professions/tailoring.md), trainer recipe **Classic-era**{ .pill } |
+| Shoulders | **Netherpearl Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
 
 ### Levels 50–59 { #shadow-l50 }
 
@@ -156,13 +152,13 @@ The public data names only 1 item from Blackmaw Hold. No source lists the loot o
 |---|---|---|
 | Wand | **Cairnstone Sliver** | Quest: *The Morrow Stone*, Feralas (Alliance) |
 | Wand | **Nature's Breath** | Quest: *Dark Vessels* (Horde) |
-| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm }: level 55 (Method.gg) |
+| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new }: level 55 (Method.gg) |
 | Trinket | **Shard of the Splithooves** | Quest: *Heroes of Old*, Blasted Lands |
 | Chest | **Robes of Dark Summons** | [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md): Impaan the Imprisoner |
-| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm }: Timesaver.gg, Affliction. Warcraft Tavern says that only the Tailor can wear this line |
-| Feet | **Black Sandals** | [Tailoring](../../professions/tailoring.md), skill 235 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Felcloth Robe** | [Tailoring](../../professions/tailoring.md), skill 260 **Classic-era**{ .pill .pill--outline .pill--sm } |
-| Head | **Felcloth Hood** | [Tailoring](../../professions/tailoring.md), skill 245 **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new }: Timesaver.gg, Affliction. Warcraft Tavern says that only the Tailor can wear this line |
+| Feet | **Black Sandals** | [Tailoring](../../professions/tailoring.md), skill 235 **New**{ .pill .pill--new } |
+| Chest | **Felcloth Robe** | [Tailoring](../../professions/tailoring.md), skill 260 **Classic-era**{ .pill } |
+| Head | **Felcloth Hood** | [Tailoring](../../professions/tailoring.md), skill 245 **Classic-era**{ .pill } |
 
 ### Level 60 { #shadow-l60 }
 
@@ -178,8 +174,8 @@ The public data names only 1 item from Blackmaw Hold. No source lists the loot o
 | Main hand | **Sageblade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Off-hand | **Tome of the Lost** | Upper Blackrock Spire, General Drakkisath (Kami-Labs) |
 | Ring | **Warden's Signet of Brilliance** | Reputation: The Watchers, a new faction, Exalted (wowtbc.gg) |
-| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
-| Bag | **Felblood Soul Bag** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new } |
+| Bag | **Felblood Soul Bag** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
 
 ### Raids and PvP { #shadow-raid }
 
@@ -187,12 +183,12 @@ These epic recipes need Malleable Essence of Nature. No source confirms where it
 
 | Slot | Item | Source |
 |---|---|---|
-| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm }: Timesaver.gg lists it at level 60 |
-| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm }: Method.gg and Timesaver.gg list it at level 60 |
-| Shoulders | **Demonheart Spaulders** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Hands | **Demonheart Gloves** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Legs | **Demonheart Leggings** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Feet | **Demonheart Boots** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new }: Timesaver.gg lists it at level 60 |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new }: Method.gg and Timesaver.gg list it at level 60 |
+| Shoulders | **Demonheart Spaulders** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Hands | **Demonheart Gloves** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Legs | **Demonheart Leggings** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Feet | **Demonheart Boots** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
 
 ## Fire damage { #fire }
 
@@ -220,10 +216,10 @@ You cast Shadow Bolt and Immolate, so spell power for all schools is best. Tailo
 | Dagger | **Fang of Magmatus** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md): Magmatus |
 | Staff | **Golemheart Stave** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md): Plunder |
 | Staff | **Staff of Orgrimmar** | Quest: *Hidden Enemies*, Ragefire Chasm (Horde), level 16 |
-| Feet | **Flame Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Flame Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Filigreed Flame Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Flame Sash** | [Tailoring](../../professions/tailoring.md), skill 85 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Flame Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new } |
+| Hands | **Flame Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new } |
+| Chest | **Filigreed Flame Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new } |
+| Waist | **Flame Sash** | [Tailoring](../../professions/tailoring.md), skill 85 **New**{ .pill .pill--new } |
 
 ### Levels 20–29 { #fire-l20 }
 
@@ -236,9 +232,9 @@ The Staff of Soran'ruk has Shadow and Fire damage, so it is also the selection f
 | Wand | **Dancing Flame** | Quest: *Final Passage* (Horde), level 26 |
 | Dagger | **Tendonscraper Dagger** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Lyn the Ignored |
 | Off-hand | **Ponderous Orb** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Shade of the Archmage |
-| Head | **Flame Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Filigreed Flame Leggings** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Flame Gown** | [Tailoring](../../professions/tailoring.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Flame Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new } |
+| Legs | **Filigreed Flame Leggings** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new } |
+| Chest | **Flame Gown** | [Tailoring](../../professions/tailoring.md), skill 110 **New**{ .pill .pill--new } |
 
 ### Levels 30–39 { #fire-l30 }
 
@@ -250,9 +246,9 @@ Timesaver.gg uses the dagger and the off-hand item from Scarlet Monastery from l
 | Off-hand | **Orb of the Forgotten Seer** | Scarlet Monastery, Bloodmage Thalnos |
 | Wand | **Necrotic Wand** | Scarlet Monastery, Azshir the Sleepless, level 30 |
 | Ring | **Philanthropist's Ring** | Quest: *Greater Friend of the Library*, the book quest at level 35 |
-| Legs | **Flame Leggings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Filigreed Flame Circlet** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Fiery Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Legs | **Flame Leggings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new } |
+| Head | **Filigreed Flame Circlet** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new } |
+| Feet | **Fiery Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
 
 ### Levels 40–49 { #fire-l40 }
 
@@ -262,10 +258,10 @@ Incinerate at level 40 makes Fire damage more important than Shadow damage. Keep
 |---|---|---|
 | Dagger | **Shadowlight Athame** | [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md): Twilight Commander Zarmok |
 | Off-hand | **Mordresh's Lifeless Skull** | Razorfen Downs, Mordresh Fire Eye |
-| Wand | **Dreambough Wand** | [Enchanting](../../professions/enchanting.md), skill 215 **New**{ .pill .pill--new .pill--sm }: level 43 (Method.gg) |
-| Hands | **Fiery Handwraps** | [Tailoring](../../professions/tailoring.md), skill 165 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Waist | **Fiery Cord** | [Tailoring](../../professions/tailoring.md), skill 190 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Shoulders | **Netherflame Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Wand | **Dreambough Wand** | [Enchanting](../../professions/enchanting.md), skill 215 **New**{ .pill .pill--new }: level 43 (Method.gg) |
+| Hands | **Fiery Handwraps** | [Tailoring](../../professions/tailoring.md), skill 165 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Waist | **Fiery Cord** | [Tailoring](../../professions/tailoring.md), skill 190 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Shoulders | **Netherflame Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
 
 ### Levels 50–59 { #fire-l50 }
 
@@ -273,12 +269,12 @@ Warcraft Tavern gives stat weights for Destruction: 1% crit is about 8.8 spell p
 
 | Slot | Item | Source |
 |---|---|---|
-| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm }: level 55 (Method.gg) |
+| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
+| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new }: level 55 (Method.gg) |
 | Trinket | **Shard of the Splithooves** | Quest: *Heroes of Old*, Blasted Lands |
-| Wrist | **Netherflame Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Hands | **Fiery Gloves** | [Tailoring](../../professions/tailoring.md), skill 235 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Feet | **Fiery Sandals** | [Tailoring](../../professions/tailoring.md), skill 235 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Wrist | **Netherflame Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Hands | **Fiery Gloves** | [Tailoring](../../professions/tailoring.md), skill 235 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Feet | **Fiery Sandals** | [Tailoring](../../professions/tailoring.md), skill 235 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
 
 ### Level 60 { #fire-l60 }
 
@@ -287,12 +283,12 @@ The level 60 lists are almost the same for all 3 specs. Use the list of the Shad
 | Slot | Item | Source |
 |---|---|---|
 | Main hand | **Sageblade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
-| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm }: Timesaver.gg, Destruction page |
+| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new }: Timesaver.gg, Destruction page |
 | Waist | **Belt of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295 |
 | Chest | **Robe of the Void** | [Tailoring](../../professions/tailoring.md), skill 295 |
 | Hands | **Felcloth Gloves** | [Tailoring](../../professions/tailoring.md), skill 280 |
 | Back | **Deep Woodlands Cloak** | Quest: *Wanted: Vile Priestess Hexx*, the Hinterlands (Timesaver.gg) |
-| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new } |
 
 ### Raids and PvP { #fire-raid }
 
@@ -300,9 +296,9 @@ Robes of Fiery Devastation is a new epic Tailoring recipe. No source gives its s
 
 | Slot | Item | Source |
 |---|---|---|
-| Chest | **Robes of Fiery Devastation** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Robes of Fiery Devastation** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Stamina for pet tanking, PvP and Hardcore { #stamina }
 
@@ -354,12 +350,14 @@ For Onyxia's Lair, the raid page recommends fire resistance. These are the Class
 
 | Slot | Item | Source |
 |---|---|---|
-| Back | **Onyxia Scale Cloak** | [Leatherworking](../../professions/leatherworking.md), skill 300 **Classic-era**{ .pill .pill--outline .pill--sm } |
-| Back | **Cloak of Fire** | [Tailoring](../../professions/tailoring.md), skill 235 **Classic-era**{ .pill .pill--outline .pill--sm } |
-| Chest | **Cindercloth Robe** | [Tailoring](../../professions/tailoring.md), trainer recipe **Classic-era**{ .pill .pill--outline .pill--sm } |
-| Legs | **Cindercloth Pants** | [Tailoring](../../professions/tailoring.md), skill 235 **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Back | **Onyxia Scale Cloak** | [Leatherworking](../../professions/leatherworking.md), skill 300 **Classic-era**{ .pill } |
+| Back | **Cloak of Fire** | [Tailoring](../../professions/tailoring.md), skill 235 **Classic-era**{ .pill } |
+| Chest | **Cindercloth Robe** | [Tailoring](../../professions/tailoring.md), trainer recipe **Classic-era**{ .pill } |
+| Legs | **Cindercloth Pants** | [Tailoring](../../professions/tailoring.md), skill 235 **Classic-era**{ .pill } |
 
 ## Enchants and consumables
+
+<div class="fc-stack" markdown>
 
 | Slot | Enchant | Notes |
 |---|---|---|
@@ -388,7 +386,11 @@ For Onyxia's Lair, the raid page recommends fire resistance. These are the Class
 | Onyxia's Lair | **Greater Fire Protection Potion** | Alchemy skill 290 |
 | Raids | **Camp features** | Buffs for raid nights. Herbalism gives Intellect, Skinning gives crit and Tailoring gives Spirit |
 
-## Sources
+</div>
+
+## Data and sources { #sources }
+
+The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
 
 - [Warcraft Tavern: Warlock guide](https://www.warcrafttavern.com/forever/guides/warlock/)
 - [Warcraft Tavern: Warlock leveling guide](https://www.warcrafttavern.com/forever/guides/warlock-leveling/)
@@ -400,3 +402,4 @@ For Onyxia's Lair, the raid page recommends fire resistance. These are the Class
 - [wowtbc.gg: Affliction Warlock item lists for level 60](https://wowtbc.gg/warcraftforever/bis-list/affliction-warlock/)
 - [Warcraft Wiki: Krol'dok Stronghold](https://warcraft.wiki.gg/wiki/Krol'dok_Stronghold)
 - [Warcraft Wiki: City of Dalaran](https://warcraft.wiki.gg/wiki/City_of_Dalaran)
+- [Warlock progression: data and sources](index.md#sources)

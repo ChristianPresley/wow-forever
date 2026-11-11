@@ -8,6 +8,7 @@ request, every push to `main` and weekly (link rot). All check jobs are currentl
 |---|---|---|---|
 | Accessibility, WCAG 2.0/2.1/2.2 A+AA, light **and** dark scheme, 1280px all pages + 375px sample | axe-core 4.x via `@axe-core/playwright` + local Chrome | `tests/a11y.mjs` | `A11Y_MAX_VIOLATIONS=0` |
 | HTML validity | `html-validate` (`recommended` preset, theme-template noise off) | `tests/html.mjs`, `tests/htmlvalidate.json` | `HTML_MAX_ERRORS=0` |
+| Built CSS: the minifier did not drop a selector space | built-in checker | `tests/css.mjs` | 0 stylesheets differ |
 | Internal links and `#anchors` (offline) | built-in checker | `tests/links.mjs` | `LINKS_MAX_BROKEN=0` |
 | External links | lychee (CI only) | `tests/lychee.toml` | 403/429 accepted |
 | Performance, a11y, SEO, byte budgets | Lighthouse CI | `tests/lighthouserc.json`, `tests/lhci-summary.mjs` | see assertions |
@@ -17,6 +18,7 @@ request, every push to `main` and weekly (link rot). All check jobs are currentl
 ```bash
 npm ci
 NO_MKDOCS_2_WARNING=1 .venv/Scripts/mkdocs.exe build --strict
+npm run test:css
 npm run test:html
 npm run test:a11y          # uses installed Chrome (or set CHROME_PATH)
 npm run test:links

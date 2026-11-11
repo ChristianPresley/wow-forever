@@ -7,13 +7,10 @@ tags:
 
 # Skyborne Rogue (High Order)
 
-<div class="guide-head" data-class="rogue" markdown>
+:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="rogue" }
 
-:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page covers only what changes for an Alliance Skyborne.</p>
-
-</div>
+Read with the [Rogue progression](index.md). This page covers only what changes for an Alliance Skyborne.
 
 !!! warning "Paid race"
     Skyborne need the **Skyborne Heroic Pack** or a higher edition. See [Editions](../../about/editions.md).

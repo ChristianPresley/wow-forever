@@ -259,6 +259,7 @@ chapters:
 
   - id: l50
     title: "Select your role for level 60"
+    toc: "Select your role"
     story: |
       The last 10 levels have the most dungeons. Reportedly, each boss in the new dungeons drops a blue item. Start to collect your level 60 equipment here, for each role that you want to play.
 

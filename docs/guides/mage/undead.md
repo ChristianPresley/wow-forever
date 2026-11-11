@@ -7,13 +7,10 @@ tags:
 
 # Undead Mage
 
-<div class="guide-head" data-class="mage" markdown>
+:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="mage" }
 
-:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read this page with the [Mage guide](index.md). This page gives only the differences for an Undead Mage.</p>
-
-</div>
+Read this page with the [Mage guide](index.md). This page gives only the differences for an Undead Mage.
 
 ## Why this combo
 

@@ -1,201 +1,233 @@
-/* guides.css: owned by the guides session (round 2). Loaded after extra.css.
-   Presentation for docs/guides/**: the slim guide header, ability cards,
-   step titles, milestone points, the verdict card and collapsible macros.
+/* guides.css: the class pages (docs/guides/**) and the guide components. Loaded after extra.css.
    Tokens come from extra.css; nothing here sets a raw colour. */
 
-/* 1 · slim guide header ------------------------------------------------- */
-.md-typeset .guide-head {
-  --gh-accent: var(--fc-gold);
-  display: flex; flex-direction: column; gap: .45rem;
-  margin: 0 0 1.2rem; padding: .55rem .8rem .6rem;
-  border: 1px solid var(--fc-border); border-left: 4px solid var(--gh-accent);
-  border-radius: var(--fc-radius); background: var(--fc-surface-1);
-  font-size: .78rem;
+/* 1 · page header: one meta row under the H1 ------------------------------
+   H1, then p.fc-meta (class sigil, kind, role tags, date, link to the data note), then the lede.
+   The generators write the row (tools/talents/build.py, meta_row). The Race add-ons have it by hand. */
+.md-typeset .fc-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--fc-space-1) var(--fc-space-3);
+  margin: 0 0 var(--fc-space-4); max-width: none; font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .fc-meta > a { display: inline-flex; align-items: center; min-height: 1.2rem; }
+.md-typeset .fc-meta > .fc-sigil:first-child { font-size: 1.35em; }  /* its colour is the class hue: [data-class] sets --c */
+/* the lede of an add-on page comes after the switcher */
+.md-content__inner > .fc-switch + p:not([class]) { font-size: var(--fc-fs-lede); color: var(--fc-text); }
+
+/* the switcher of an add-on page (overrides/partials/combo-switcher.html): one line of chips for the pages of
+   this class, and a closed disclosure for the same add-on of the other classes */
+.md-typeset .fc-switch { display: flex; flex-wrap: wrap; align-items: center; gap: var(--fc-space-2);
+  margin: 0 0 var(--fc-space-5); padding-bottom: var(--fc-space-3); border-bottom: 1px solid var(--fc-border); }
+.md-typeset .fc-switch__row { display: flex; flex-wrap: wrap; gap: var(--fc-space-2); min-width: 0; }
+@media (min-width: 45em) { .md-typeset .fc-switch > .fc-switch__row { display: contents; } }  /* the disclosure follows the last chip */
+.md-typeset .fc-switch .fc-chip { flex: none; margin: 0; }
+.md-typeset .fc-switch details.fc-switch__more { all: unset; display: block; min-width: 0; margin-left: var(--fc-space-2); }
+.md-typeset .fc-switch details.fc-switch__more > summary { all: unset; display: inline-flex; align-items: center; gap: .5em; min-height: 1.5rem;
+  font-size: var(--fc-fs-xs); font-weight: 500; color: var(--fc-link); cursor: pointer; }
+.md-typeset .fc-switch details.fc-switch__more > summary::-webkit-details-marker { display: none; }
+.md-typeset .fc-switch details.fc-switch__more > summary::after { content: none; }
+.md-typeset .fc-switch details.fc-switch__more > summary::before { content: ""; position: static; flex: none; width: .4em; height: .4em;
+  border: solid currentColor; border-width: 0 1.5px 1.5px 0; background: none; -webkit-mask: none; mask: none; transform: rotate(-45deg); }
+.md-typeset .fc-switch details.fc-switch__more[open] > summary::before { transform: rotate(45deg); }
+.md-typeset .fc-switch details.fc-switch__more > summary:hover { color: var(--fc-link-hover); }
+.md-typeset .fc-switch details.fc-switch__more > summary:focus-visible { outline: 2px solid var(--fc-focus); outline-offset: 2px; border-radius: var(--fc-radius-s); }
+.md-typeset .fc-switch details.fc-switch__more[open] { flex-basis: 100%; }
+.md-typeset .fc-switch__more > .fc-switch__row { margin-top: var(--fc-space-2); }
+@media (max-width: 44.9375em) {
+  /* the pages of the class are one row that scrolls: the right edge fades */
+  .md-typeset .fc-switch > .fc-switch__row { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -.8rem; padding: 2px 1.6rem 2px 2px; margin-left: -2px;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 1.6rem), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 1.6rem), transparent); }
+  .md-typeset .fc-switch > .fc-switch__row::-webkit-scrollbar { display: none; }
 }
-.md-typeset .guide-head[data-class="warrior"] { --gh-accent: var(--fc-c-warrior); }
-.md-typeset .guide-head[data-class="hunter"]  { --gh-accent: var(--fc-c-hunter); }
-.md-typeset .guide-head[data-class="paladin"] { --gh-accent: var(--fc-c-paladin); }
-.md-typeset .guide-head[data-class="druid"]   { --gh-accent: var(--fc-c-druid); }
-.md-typeset .guide-head[data-class="rogue"]   { --gh-accent: var(--fc-c-rogue); }
-.md-typeset .guide-head[data-class="shaman"]  { --gh-accent: var(--fc-c-shaman); }
-.md-typeset .guide-head[data-class="mage"]    { --gh-accent: var(--fc-c-mage); }
-.md-typeset .guide-head[data-class="warlock"] { --gh-accent: var(--fc-c-warlock); }
-.md-typeset .guide-head[data-class="priest"]  { --gh-accent: var(--fc-c-priest); }
-.md-typeset .guide-head > p { margin: 0; }
-/* row 1: kind, roles, faction, difficulty */
-.md-typeset .guide-head > p:first-child { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .4rem; }
-.md-typeset .guide-head .gh-kind {
-  font-family: var(--fc-display-font); font-size: .85rem; font-weight: 700; color: var(--fc-text); margin-right: .2rem;
-}
-.md-typeset .guide-head .badge.faction { color: var(--fc-text); border-color: var(--fc-border-strong); }
-.md-typeset .guide-head .gh-diff { color: var(--fc-text-muted); white-space: nowrap; }
-.md-typeset .guide-head .gh-diff strong { color: var(--fc-text); font-weight: 650; }
-/* three-pip difficulty meter; the word beside it carries the meaning */
-.md-typeset .guide-head .gh-pips { display: inline-flex; gap: 2px; margin-left: .3em; vertical-align: .05em; }
-.md-typeset .guide-head .gh-pips::before, .md-typeset .guide-head .gh-pips::after,
-.md-typeset .guide-head .gh-pips > i { content: ""; display: block; width: .55em; height: .55em; border-radius: 1px;
-  border: 1px solid var(--fc-border-strong); }
-.md-typeset .guide-head .gh-pips::before { order: 0; } .md-typeset .guide-head .gh-pips > i { order: 1; } .md-typeset .guide-head .gh-pips::after { order: 2; }
-.md-typeset .guide-head .gh-pips[data-level="1"]::before,
-.md-typeset .guide-head .gh-pips[data-level="2"]::before, .md-typeset .guide-head .gh-pips[data-level="2"] > i,
-.md-typeset .guide-head .gh-pips[data-level="3"]::before, .md-typeset .guide-head .gh-pips[data-level="3"] > i,
-.md-typeset .guide-head .gh-pips[data-level="3"]::after { background: var(--gh-accent); border-color: var(--gh-accent); }
-/* row 2: the add-on note, or jump links on class guides */
-.md-typeset .guide-head .gh-note { color: var(--fc-text-muted); }
-.md-typeset .guide-head .gh-jump { display: flex; flex-wrap: wrap; gap: .3rem; }
-.md-typeset .guide-head .gh-jump a {
-  display: inline-flex; align-items: center; min-height: 1.75rem; padding: 0 .6rem; border-radius: 1rem;
-  border: 1px solid var(--fc-border); background: var(--fc-bg); color: var(--fc-text);
-  text-decoration: none; font-weight: 600; font-size: .72rem;
-  transition: border-color var(--fc-dur-1, 100ms) var(--fc-ease, ease), background-color var(--fc-dur-1, 100ms) var(--fc-ease, ease);
-}
-.md-typeset .guide-head .gh-jump a:hover { border-color: var(--gh-accent); background: var(--fc-surface-2); }
-.md-typeset .guide-head .gh-sigil { width: 1.4rem; height: 1.4rem; flex: none; color: var(--gh-accent); }
+@media (pointer: coarse) { .md-typeset .fc-switch details.fc-switch__more > summary { min-height: 2.2rem; } }
+@media print { .md-typeset .fc-switch, .md-typeset .fc-meta > a { display: none; } }
 
 /* 2 · ability (racial) cards ---------------------------------------------- */
-.md-typeset .ability-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: .7rem; margin: 1rem 0 1.2rem; }
+.md-typeset .ability-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: var(--fc-space-3); margin: var(--fc-space-5) 0; }
 .md-typeset .ability-card {
-  display: flex; flex-direction: column; gap: .35rem;
-  padding: .65rem .8rem .7rem; border: 1px solid var(--fc-border); border-radius: var(--fc-radius);
-  background: var(--fc-surface-1); font-size: .78rem;
+  display: flex; flex-direction: column; gap: var(--fc-space-2);
+  padding: var(--fc-space-3) var(--fc-space-4); border: 1px solid var(--fc-border); border-radius: var(--fc-radius);
+  background: var(--fc-surface-1); font-size: var(--fc-fs-sm);
 }
 .md-typeset .ability-card > p { margin: 0; }
-.md-typeset .ability-card .ability-name { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .5rem; font-size: .85rem; }
-.md-typeset .ability-card .ability-name > strong { font-family: var(--fc-display-font); font-size: 1.05em; }
-.md-typeset .ability-card .ability-type {
-  margin-left: auto; padding: .02em .5em; border-radius: .2em; font-size: .62rem; font-weight: 700; letter-spacing: .04em;
-  text-transform: uppercase; color: var(--fc-text-muted); border: 1px solid var(--fc-border-strong);
-}
-.md-typeset .ability-card .ability-type.active { color: var(--fc-text); border-style: solid; }
-.md-typeset .ability-card .ability-type.passive { border-style: dashed; }
+.md-typeset .ability-card .ability-name { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .5rem; font-size: var(--fc-fs-body); }
+.md-typeset .ability-card .ability-name > strong { font-family: var(--fc-display-font); font-size: var(--fc-fs-h3); }
+.md-typeset .ability-card .ability-type { margin-left: auto; } /* a tag */
 .md-typeset .ability-card .ability-rating { padding-bottom: .35rem; border-bottom: 1px solid var(--fc-border); }
-.md-typeset .ability-card .ability-label { font-weight: 650; color: var(--fc-text-muted); margin-right: .35em; }
+.md-typeset .ability-card .ability-label { font-weight: 600; color: var(--fc-text-muted); margin-right: .35em; }
 
 /* 3 · steps: chip-first titles, route meta ---------------------------------- */
 .md-typeset .steps > ol > li > p:first-child { font-weight: 600; }
 .md-typeset .steps > ol > li > p:first-child > .lvl:first-child { margin: 0 .45em 0 0; vertical-align: .1em; }
 .md-typeset .steps > ol > li > p { margin: .1rem 0 .3rem; }
-.md-typeset .steps .step-label { font-size: .68rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--fc-text-muted); margin-right: .4em; }
-
-/* 4 · milestones: points chip --------------------------------------------- */
-.md-typeset .milestones .pts { font-size: .68rem; font-weight: 700; padding: .02em .45em; margin-right: .4em; border-radius: .2em;
-  background: var(--fc-surface-2); color: var(--fc-text-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
-.md-typeset .milestones dt { font-variant-numeric: tabular-nums; }
+.md-typeset .steps .step-label { margin-right: .4em; }
 
 /* 5 · verdict card --------------------------------------------------------- */
-.md-typeset .verdict { padding: .7rem .9rem; border: 1px solid var(--fc-border); border-top: 3px solid var(--fc-gold);
+.md-typeset .verdict { padding: var(--fc-space-3) var(--fc-space-4); border: 1px solid var(--fc-border);
   border-radius: var(--fc-radius); background: var(--fc-surface-1); }
 .md-typeset .verdict > :first-child { margin-top: 0; }
 .md-typeset .verdict > :last-child { margin-bottom: 0; }
 
-/* 6 · rotation blocks sit tighter -------------------------------------------- */
-.md-typeset .rotation .priority > ol { margin: .4rem 0; }
-
 @media (forced-colors: active) {
-  .md-typeset :is(.guide-head, .ability-card, .verdict) { border: 1px solid CanvasText; }
-  .md-typeset .guide-head .gh-pips::before, .md-typeset .guide-head .gh-pips::after, .md-typeset .guide-head .gh-pips > i { border-color: CanvasText; }
-  .md-typeset .guide-head .gh-pips[data-level="1"]::before,
-  .md-typeset .guide-head .gh-pips[data-level="2"]::before, .md-typeset .guide-head .gh-pips[data-level="2"] > i,
-  .md-typeset .guide-head .gh-pips[data-level="3"]::before, .md-typeset .guide-head .gh-pips[data-level="3"] > i,
-  .md-typeset .guide-head .gh-pips[data-level="3"]::after { background: CanvasText; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .md-typeset .guide-head .gh-jump a { transition: none; }
-}
-@media print {
-  .md-typeset .guide-head .gh-jump { display: none; }
+  .md-typeset .ability-card, .md-typeset .verdict { border: 1px solid CanvasText; }
 }
 
-/* 7 · leveling route rail on class guides: the H3 brackets become stops ----- */
-.md-typeset .route { position: relative; counter-reset: stop; padding-left: 2.6rem; }
-.md-typeset .route::before { content: ""; position: absolute; left: .875rem; top: 1.6rem; bottom: 1rem; width: 2px; background: var(--fc-border); }
-.md-typeset .route > h3 { position: relative; counter-increment: stop; }
-.md-typeset .route > h3::before { content: counter(stop); position: absolute; left: -2.6rem; top: 50%; transform: translateY(-50%);
-  width: 1.8rem; height: 1.8rem; display: grid; place-items: center; border-radius: 50%;
-  background: var(--fc-navy); color: var(--fc-on-navy); box-shadow: 0 0 0 2px var(--fc-gold);
-  font-family: var(--md-text-font-family, inherit); font-size: .75rem; font-weight: 700; }
-@media (max-width: 30em) { .md-typeset .route { padding-left: 2.1rem; } .md-typeset .route > h3::before { left: -2.1rem; width: 1.5rem; height: 1.5rem; } .md-typeset .route::before { left: .7rem; } }
-
-/* 8 · milestone caption (names the build a timeline belongs to) */
-.md-typeset .milestones-cap { margin: 0 0 .3rem; font-size: .72rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--fc-text-muted); }
-
-/* 9 · priority list fix: extra.css makes each <li> a flex row, which turns every
-   <strong> and text run into its own flex item and breaks inline spacing
-   ("with  Cheap Shot ,"). Keep the numbered tile but let the text flow. */
-.md-typeset .priority > ol > li { display: block; position: relative; padding-left: 2rem; margin: .35rem 0; }
-.md-typeset .priority > ol > li::before { position: absolute; left: 0; top: .1em; line-height: 1.4; }
-
-/* 10 · phones: the jump links stay one swipeable row instead of three wrapped rows */
+/* 10 · talent tree grid (docs/guides/<class>/talents.md): the in-game layout, one tile per talent.
+   Generated by tools/talents/build.py. Column 1 holds the points that open the row. The 4 talent columns
+   shrink with the page, so the grid never scrolls sideways. An empty slot is a faint tile. */
+.md-typeset .ttree-wrap { margin: var(--fc-space-4) 0 var(--fc-space-2); border: 1px solid var(--fc-border); border-radius: var(--fc-radius); background: var(--fc-surface-1); }
+.md-typeset .ttree-wrap ul.ttree { display: grid; grid-template-columns: 2.9rem repeat(4, minmax(0, 1fr)); gap: var(--fc-space-2); margin: 0; padding: var(--fc-space-3); list-style: none; }
+.md-typeset .ttree-wrap ul.ttree > li { margin: 0; max-width: none; min-width: 0; }
+.md-typeset .ttree .tt-row { grid-column: 1; align-self: center; font-size: var(--fc-fs-xs); font-weight: 600; color: var(--fc-text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.md-typeset .ttree .tt-node { display: flex; flex-direction: column; gap: var(--fc-space-1); padding: var(--fc-space-2); border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius); background: var(--fc-bg); font-size: var(--fc-fs-xs); line-height: 1.25; }
+.md-typeset .ttree .tt-empty { min-height: 2.6rem; border: 1px dashed var(--fc-border); border-radius: var(--fc-radius); }
+.md-typeset .ttree .tt-name { font-weight: 600; color: var(--fc-text); overflow-wrap: break-word; }
+.md-typeset .ttree .tt-req { color: var(--fc-text-muted); }
+.md-typeset .ttree .tt-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--fc-space-1) .35rem; margin-top: auto; color: var(--fc-text-muted); white-space: nowrap; }
 @media (max-width: 44.9375em) {
-  .md-typeset .guide-head .gh-jump { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -.8rem; padding-right: .8rem; padding-bottom: 2px; }
-  .md-typeset .guide-head .gh-jump::-webkit-scrollbar { display: none; }
-  .md-typeset .guide-head .gh-jump a { flex: none; }
+  .md-typeset .ttree-wrap ul.ttree { grid-template-columns: 1.3rem repeat(4, minmax(0, 1fr)); gap: var(--fc-space-1); padding: var(--fc-space-2); }
+  .md-typeset .ttree .tt-node { padding: var(--fc-space-1); hyphens: auto; }
+  .md-typeset .ttree .tt-name { overflow-wrap: anywhere; }
+  .md-typeset .ttree :is(.tt-req, .tt-long) { display: none; }  /* the table below has this text */
 }
+@media (forced-colors: active) { .md-typeset .ttree .tt-node, .md-typeset .ttree .tt-empty, .md-typeset .ttree-wrap { border-color: CanvasText; } }
 
-/* 11 · class sigil (identity's :codex-*: icons) leads the header row */
-.md-typeset .guide-head > p:first-child > .fc-sigil:first-child { font-size: 1.35em; color: var(--gh-accent); }
-.md-typeset .guide-head .badge.faction .fc-sigil { font-size: 1.1em; }
+/* the talent table: 5 columns. The 3 ratings are in one cell, each with its label (L, PvE, PvP) */
+.md-typeset .fc-rate { display: inline-flex; align-items: center; gap: .3em; margin-right: .6em; font-size: var(--fc-fs-xs); color: var(--fc-text-muted); white-space: nowrap; }
+.md-typeset .fc-rate:last-child { margin-right: 0; }
+.md-typeset .fc-rate abbr { border: 0; text-decoration: none; cursor: inherit; }
+.md-typeset .fc-talents td:nth-child(4) { white-space: nowrap; }
+/* On a phone each talent is a block (the rule for row blocks is in extra.css, section 7): the name and the maximum
+   rank, then the text, the ratings and the verdict. */
+@media screen and (max-width: 44.984375em) {
+  .md-typeset .fc-talents table:not([class]) td:nth-child(2) { color: var(--fc-text-muted); }
+  .md-typeset .fc-talents table:not([class]) td:nth-child(2)::before { content: "Max "; }
+  .md-typeset .fc-talents table:not([class]) td:nth-child(n+3) { grid-column: 1 / -1; }
+  .md-typeset .fc-talents table:not([class]) td:nth-child(5) { color: var(--fc-text-muted); }
+}
+/* the rank that a step reaches, after the talent name */
+.md-typeset .fc-rank { margin-left: .3em; color: var(--fc-text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
 
-/* 11 · talent tree grid (docs/talents/**): the in-game layout, one tile per talent.
-   Generated by tools/talents/build.py. Column 1 holds the "points to open" label. */
-.md-typeset .ttree-wrap { overflow-x: auto; margin: .8rem 0 .4rem; border: 1px solid var(--fc-border); border-radius: var(--fc-radius); background: var(--fc-surface-1); }
-.md-typeset .ttree-wrap ul.ttree { display: grid; grid-template-columns: 2.9rem repeat(4, minmax(6.4rem, 1fr)); gap: .4rem; min-width: 30rem; margin: 0; padding: .6rem; list-style: none; }
-.md-typeset .ttree-wrap ul.ttree > li { margin: 0; }
-.md-typeset .ttree .tt-row { grid-column: 1; align-self: center; font-size: .64rem; font-weight: 700; color: var(--fc-text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.md-typeset .ttree .tt-node { display: flex; flex-direction: column; gap: .2rem; padding: .4rem .5rem; border: 1px solid var(--fc-border-strong); border-radius: .3rem; background: var(--fc-bg); font-size: .68rem; line-height: 1.25; }
-.md-typeset .ttree .tt-name { font-weight: 650; color: var(--fc-text); }
-.md-typeset .ttree .tt-req { font-size: .62rem; color: var(--fc-text-muted); }
-.md-typeset .ttree .tt-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; margin-top: auto; font-size: .62rem; color: var(--fc-text-muted); white-space: nowrap; }
-.md-typeset .ttree .tt-meta .tier { font-size: .62rem; }
-.md-typeset .ttree .tt-new { padding: 0 .4em; border: 1px solid var(--fc-gold); border-radius: 1em; font-weight: 700; color: var(--fc-gold-text); }
-@media (forced-colors: active) { .md-typeset .ttree .tt-node, .md-typeset .ttree-wrap { border-color: CanvasText; } }
-@media print { .md-typeset .ttree-wrap { overflow: visible; } }
-
-/* 12 · class progressions (docs/guides/<class>/index.md): the add-on picker and the add-on blocks.
+/* 11 · class progressions (docs/guides/<class>/index.md): the add-on picker and the add-on blocks.
    Generated by tools/classes/build.py. Each chapter holds 1 block for each race, talent path and
    equipment set. The pick of the reader decides which blocks show: the head script in overrides/main.html
    and initPicker in codex.js write the rules into <style id="fc-pick-css">. Without JS, all blocks show. */
-.md-typeset .fc-pick { margin: .8rem 0 1.2rem; padding: .7rem .9rem .55rem; border: 1px solid var(--fc-border); border-top: 3px solid var(--fc-gold);
-  border-radius: var(--fc-radius); background: var(--fc-surface-1); }
-.md-typeset .fc-pick__group { margin: 0 0 .55rem; padding: 0; border: 0; min-width: 0; }
-.md-typeset .fc-pick__group > legend { padding: 0; margin: 0 0 .25rem; font-family: var(--fc-caps-font); font-size: .72rem; font-weight: 700; letter-spacing: .03em; color: var(--fc-text-muted); }
-.md-typeset .fc-pick__opts { display: flex; flex-wrap: wrap; gap: .3rem; }
-.md-typeset .fc-pick__opt { position: relative; display: inline-flex; cursor: pointer; }
-.md-typeset .fc-pick__opt > input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
-.md-typeset .fc-pick__opt > span { display: inline-flex; align-items: center; min-height: 1.75rem; padding: 0 .75rem; border-radius: 999px;
-  border: 1px solid var(--fc-border-strong); background: var(--fc-bg); color: var(--fc-text); font-size: .72rem; font-weight: 550; white-space: nowrap;
-  transition: border-color var(--fc-dur-1) var(--fc-ease), background-color var(--fc-dur-1) var(--fc-ease); }
-.md-typeset .fc-pick__opt:hover > span { border-color: var(--fc-link); }
-.md-typeset .fc-pick__opt > input:checked + span { background: var(--fc-navy); color: var(--fc-on-navy); border-color: var(--fc-navy); font-weight: 700; }
-.md-typeset .fc-pick__opt > input:checked + span::before { content: "✓"; content: "✓" / ""; margin-right: .35em; }
-[data-md-color-scheme="slate"] .md-typeset .fc-pick__opt > input:checked + span { background: var(--fc-gold); color: #11151c; border-color: var(--fc-gold); }
-.md-typeset .fc-pick__opt > input:focus-visible + span { outline: 2px solid var(--fc-focus); outline-offset: 2px; }
-.md-typeset .fc-pick__note { margin: .2rem 0 0; max-width: none; font-size: .7rem; color: var(--fc-text-muted); }
-.md-typeset .fc-pick__all { display: inline-flex; align-items: center; gap: .35em; margin-right: .8em; font-weight: 650; color: var(--fc-text); cursor: pointer; }
-.md-typeset .fc-pick__all > input { width: 1rem; height: 1rem; margin: 0; accent-color: var(--fc-navy); }
+.md-typeset .fc-pick { display: grid; gap: var(--fc-space-3); margin: var(--fc-space-5) 0 0; padding: var(--fc-space-3) var(--fc-space-4);
+  border: 1px solid var(--fc-border); border-radius: var(--fc-radius); background: var(--fc-surface-1); }
 html:not([data-fc-pick]) .md-typeset .fc-pick { display: none; } /* no JS: nothing to pick, all add-ons show */
+/* a row: the label at the left and the options at the right. On a phone the label is above the options */
+.md-typeset .fc-pick__group { display: grid; gap: var(--fc-space-1); min-width: 0; }
+@media (min-width: 45em) { .md-typeset .fc-pick__group { grid-template-columns: 5.5rem minmax(0, 1fr); align-items: baseline; gap: var(--fc-space-3); } }
+.md-typeset .fc-pick__opts { display: flex; flex-wrap: wrap; align-items: center; gap: var(--fc-space-2); }
+/* an option is a chip (extra.css, section 11); the check mark is the cue that does not use colour */
+.md-typeset .fc-pick__opt { position: relative; display: inline-flex; max-width: 100%; cursor: pointer; }
+.md-typeset .fc-pick__opt > span { white-space: normal; }  /* a long name wraps on a narrow phone */
+.md-typeset .fc-pick__opt > input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.md-typeset .fc-pick__opt > input:checked + span::before { content: "✓"; content: "✓" / ""; }
+.md-typeset .fc-pick__opt > input:focus-visible + span { outline: 2px solid var(--fc-focus); outline-offset: 2px; }
+.md-typeset .fc-pick__more { display: inline-flex; align-items: center; min-height: 1.5rem; margin-left: auto; font-size: var(--fc-fs-xs); white-space: nowrap; }
+/* the last line: the help text, and the switch that shows all add-ons */
+.md-typeset .fc-pick__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--fc-space-2) var(--fc-space-4);
+  margin: 0; padding-top: var(--fc-space-2); border-top: 1px solid var(--fc-border); max-width: none; font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .fc-pick__all { display: inline-flex; align-items: center; gap: .5em; min-height: 1.5rem; font-weight: 600; color: var(--fc-text); white-space: nowrap; cursor: pointer; }
+.md-typeset .fc-pick__all > input { -webkit-appearance: none; appearance: none; position: relative; flex: none; box-sizing: border-box; width: 2.1rem; height: 1.2rem; margin: 0;
+  border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius-full); background: var(--fc-bg); cursor: pointer;
+  transition: background-color var(--fc-dur-1) var(--fc-ease), border-color var(--fc-dur-1) var(--fc-ease); }
+.md-typeset .fc-pick__all > input::before { content: ""; position: absolute; top: 50%; left: .15rem; width: .8rem; height: .8rem; border-radius: 50%;
+  background: var(--fc-border-strong); transform: translateY(-50%); transition: transform var(--fc-dur-1) var(--fc-ease); }
+.md-typeset .fc-pick__all > input:checked { background: var(--fc-navy); border-color: var(--fc-navy); }
+.md-typeset .fc-pick__all > input:checked::before { background: var(--fc-on-navy); transform: translate(.9rem, -50%); }
+[data-md-color-scheme="slate"] .md-typeset .fc-pick__all > input:checked { background: var(--fc-gold); border-color: var(--fc-gold); }
+[data-md-color-scheme="slate"] .md-typeset .fc-pick__all > input:checked::before { background: #11151c; }
+@media (pointer: coarse) { .md-typeset .fc-pick__all { min-height: 2.2rem; } }
 
-.md-typeset .fc-addons { display: grid; gap: .6rem; margin: 1rem 0 1.2rem; clear: both; }
-.md-typeset .fc-addon { --ad: var(--fc-gold); min-width: 0; padding: .5rem .8rem .1rem; border: 1px solid var(--fc-border); border-left: 4px solid var(--ad);
-  border-radius: var(--fc-radius); background: var(--fc-surface-1); font-size: .78rem; }
-.md-typeset .fc-addon[data-pick="race"] { --ad: var(--fc-adm-info); }
-.md-typeset .fc-addon[data-pick="gear"] { --ad: var(--fc-adm-success); }
-.md-typeset .fc-addon > :is(p, ul, ol) { max-width: none; margin: .3rem 0 .5rem; }
-.md-typeset .fc-addon .fc-addon__label { display: flex; flex-wrap: wrap; align-items: center; gap: .15rem .45rem; margin: 0 0 .35rem; font-size: .72rem; }
-.md-typeset .fc-addon__label .twemoji { color: var(--ad); }
-.md-typeset .fc-addon__kind { font-family: var(--fc-caps-font); letter-spacing: .03em; color: var(--fc-text-muted); }
-.md-typeset .fc-addon__label > strong { font-family: var(--fc-display-font); font-size: .9rem; }
-.md-typeset .fc-addon__more { margin-left: auto; font-size: .68rem; white-space: nowrap; }
-.md-typeset .fc-addon__change { font-size: .68rem; white-space: nowrap; }
-.md-typeset .fc-addon__label > strong + .fc-addon__change { margin-left: auto; }
-html:not([data-fc-pick]) .md-typeset .fc-addon__change { display: none; }
-@media print { .md-typeset .fc-addon__change, .md-typeset .fc-addon__more { display: none; } }
-.md-typeset .fc-addon .md-typeset__table { margin: .3rem 0 .6rem; }
-.md-typeset .fc-addon table:not([class]) { font-size: .72rem; }
+/* the add-ons of a chapter are one group: one neutral bar at the left, and a label line for each block ("Race · Gnome") */
+.md-typeset .fc-addons { display: grid; gap: var(--fc-space-4); margin: var(--fc-space-5) 0; padding-left: var(--fc-space-4);
+  border-left: .15rem solid var(--fc-border-strong); clear: both; }
+.md-typeset .fc-addon { min-width: 0; font-size: var(--fc-fs-sm); }
+.md-typeset .fc-addon > :is(p, ul, ol) { max-width: none; margin: 0 0 var(--fc-space-2); }
+.md-typeset .fc-addon > .fc-addon__label { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .4em; margin: 0 0 var(--fc-space-1); font-size: var(--fc-fs-xs); }
+.md-typeset .fc-addon__kind::after { content: " ·"; }
+.md-typeset .fc-addon__label > strong { color: var(--fc-text); }
+.md-typeset .fc-addon > .fc-addon__more { margin: 0; font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .fc-addon .md-typeset__table { margin: var(--fc-space-1) 0 var(--fc-space-3); }
 /* JS is on: show only the default add-ons until the saved picks are read */
 html[data-fc-pick] .md-typeset .fc-addon:not([data-default]) { display: none; }
-.md-typeset .fc-addon-cards { margin-bottom: 1.4rem; }
-@media (forced-colors: active) { .md-typeset :is(.fc-pick, .fc-addon) { border: 1px solid CanvasText; }
-  .md-typeset .fc-pick__opt > input:checked + span { border: 2px solid Highlight; } }
-@media (prefers-reduced-motion: reduce) { .md-typeset .fc-pick__opt > span { transition: none; } }
-@media print { .md-typeset .fc-pick { display: none; } }
+
+/* 12 · chapters of a progression: a rule above, the level tag, then the title. The chapter ends with the
+   goals (a checklist that codex.js saves) and the link to the next chapter. */
+.md-typeset h2.fc-ch { margin-top: var(--fc-space-7); padding-top: var(--fc-space-6); border-top: 1px solid var(--fc-border); }
+.md-typeset .fc-ch__lv { display: block; width: fit-content; margin-bottom: var(--fc-space-2); padding: .1em .45em; border-radius: var(--fc-radius-s);
+  background: var(--fc-surface-2); color: var(--fc-text-muted); font: 600 var(--fc-fs-xs)/1.4 var(--md-text-font-family); font-variant-numeric: tabular-nums; }
+/* a short callout in a chapter is lighter than the story: no box, and the title starts the text */
+.md-typeset .admonition.fc-inline:not([hidden]) { margin: var(--fc-space-4) 0; padding: 0 0 0 var(--fc-space-4); border: 0; border-left: .15rem solid var(--a); border-radius: 0; background: none; }
+.md-typeset .admonition.fc-inline > .admonition-title { float: left; margin: 0 .6em 0 0; padding: 0 0 0 1.3rem; }
+.md-typeset .admonition.fc-inline > .admonition-title::before { top: .15em; left: 0; width: .95rem; height: .95rem; }
+.md-typeset .admonition.fc-inline > :is(p, ul, ol) { margin: 0 0 var(--fc-space-2); max-width: none; }
+.md-typeset .admonition.fc-inline > :last-child { margin-bottom: 0; }
+/* strengths and weaknesses go below the facts box, in 2 columns */
+.md-typeset .infobox ~ .proscons { clear: both; }
+
+.md-typeset .fc-goals { margin: var(--fc-space-5) 0 0; padding: var(--fc-space-3) var(--fc-space-4); border: 1px solid var(--fc-border); border-radius: var(--fc-radius);
+  background: var(--fc-surface-1); font-size: var(--fc-fs-sm); clear: both; }
+.md-typeset .fc-goals__title { display: flex; align-items: baseline; justify-content: space-between; gap: var(--fc-space-3); margin: 0 0 var(--fc-space-1); max-width: none; font-weight: 600; color: var(--fc-text); }
+.md-typeset .fc-goals__count { font-size: var(--fc-fs-xs); font-weight: 500; color: var(--fc-text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.md-typeset .fc-goals > ul { margin: 0; }
+.md-typeset .fc-goals .task-list-item { margin: 0 0 0 1.6em; padding: var(--fc-space-1) 0; max-width: none; }
+html[data-fc-pick] .md-typeset .fc-goals .task-list-item { cursor: pointer; }
+/* the box of a goal: a clear outline, then a fill and a check mark */
+.md-typeset .fc-goals .task-list-control > .task-list-indicator::before { top: .45em; left: -1.6em; width: 1.1em; height: 1.1em; box-sizing: border-box; border: 1.5px solid var(--fc-border-strong);
+  border-radius: var(--fc-radius-s); background: var(--fc-bg); -webkit-mask-image: none; mask-image: none; }
+.md-typeset .fc-goals .task-list-control > input:checked + .task-list-indicator::before { border-color: var(--fc-navy); background: var(--fc-navy); }
+.md-typeset .fc-goals .task-list-control > input:checked + .task-list-indicator::after { content: ""; position: absolute; top: .62em; left: -1.2em; width: .3em; height: .6em;
+  border: solid var(--fc-on-navy); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+[data-md-color-scheme="slate"] .md-typeset .fc-goals .task-list-control > input:checked + .task-list-indicator::before { border-color: var(--fc-gold); background: var(--fc-gold); }
+[data-md-color-scheme="slate"] .md-typeset .fc-goals .task-list-control > input:checked + .task-list-indicator::after { border-color: #11151c; }
+@media (pointer: coarse) { .md-typeset .fc-goals .task-list-item { padding: var(--fc-space-2) 0; } }
+
+.md-typeset .fc-next { margin: var(--fc-space-4) 0 0; max-width: none; text-align: right; font-size: var(--fc-fs-sm); font-weight: 600; }
+.md-typeset .fc-next > a::after { content: " →"; content: " →" / ""; }
+
+/* 13 · the sticky pick bar (codex.js, buildBar). It exists only with JS. It shows when the picker is above the
+   viewport, and it sticks below the header (codex.js sets "top" to the height of the header). The element has no height, so the page
+   does not move when it shows. The Change button opens a copy of the picker in place. */
+.md-typeset .fc-pickbar { position: sticky; top: 2.4rem; z-index: 3; height: 0; margin: 0 calc(-1 * var(--fc-space-4)); }
+.md-typeset .fc-pickbar__in { position: absolute; inset: 0 0 auto; display: flex; align-items: center; gap: var(--fc-space-3); min-height: 2.4rem; box-sizing: border-box;
+  padding: 0 var(--fc-space-4); border-bottom: 1px solid var(--fc-border); background: var(--fc-bg); font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .fc-pickbar__change { all: unset; box-sizing: border-box; display: flex; align-items: center; gap: var(--fc-space-3); flex: 0 1 auto; min-width: 0; min-height: 2.2rem;
+  margin-inline: calc(-1 * var(--fc-space-2)); padding-inline: var(--fc-space-2); cursor: pointer; }  /* room for the focus ring */
+.md-typeset .fc-pickbar__picks { overflow: hidden; min-width: 0; font-weight: 600; color: var(--fc-text); white-space: nowrap; text-overflow: ellipsis; }
+/* "Change" is a chip (the values are those of the chip rule in extra.css, section 11) */
+.md-typeset .fc-pickbar__verb, .md-typeset a.fc-pickbar__step { display: inline-flex; align-items: center; justify-content: center; flex: none; box-sizing: border-box; min-height: 1.5rem; padding: 0 .7rem;
+  border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius-full); background: var(--fc-bg); color: var(--fc-text); font-weight: 500; line-height: 1.2; text-decoration: none; }
+.md-typeset .fc-pickbar__change:hover > .fc-pickbar__verb, .md-typeset a.fc-pickbar__step[href]:hover { border-color: var(--fc-link); color: var(--fc-link-hover); background: var(--md-accent-fg-color--transparent); }
+.md-typeset .fc-pickbar__change:focus-visible { outline: 2px solid var(--fc-focus); outline-offset: -2px; border-radius: var(--fc-radius-s); }
+.md-typeset .fc-pickbar__done { margin-left: auto; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.md-typeset .fc-pickbar__nav { display: flex; align-items: center; gap: var(--fc-space-2); flex: none; }
+.md-typeset .fc-pickbar__done:empty + .fc-pickbar__nav { margin-left: auto; }
+.md-typeset a.fc-pickbar__step { min-width: 1.5rem; padding: 0; font-size: var(--fc-fs-body); }
+.md-typeset a.fc-pickbar__step[aria-disabled="true"] { border-color: var(--fc-border); color: var(--fc-text-subtle); }
+.md-typeset .fc-pickbar__here { min-width: 2.6rem; text-align: center; font-weight: 600; color: var(--fc-text); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.md-typeset .fc-pickbar__panel { position: absolute; top: 100%; left: 0; right: 0; display: grid; gap: var(--fc-space-3); max-height: calc(100vh - 6rem); overflow-y: auto; box-sizing: border-box;
+  padding: var(--fc-space-3) var(--fc-space-4); border: solid var(--fc-border-strong); border-width: 1px 0; background: var(--fc-surface-1); }
+.md-typeset .fc-pickbar__panel :is(.fc-pick__note, .fc-pick__more) { display: none; }  /* the picker at the top of the page has them */
+.md-typeset .fc-pickbar__goals { display: flex; flex-wrap: wrap; align-items: center; gap: var(--fc-space-2) var(--fc-space-4); margin: 0; max-width: none; }
+@media (max-width: 44.9375em) {
+  .md-typeset .fc-pickbar__done { display: none; }
+  .md-typeset .fc-pickbar__nav { margin-left: auto; }
+  .md-typeset .fc-pickbar__here { display: none; }
+}
+@media (pointer: coarse) { .md-typeset .fc-pickbar__verb, .md-typeset a.fc-pickbar__step { min-height: 2.2rem; } .md-typeset a.fc-pickbar__step { min-width: 2.2rem; } }
+/* A heading that the reader goes to stops below the bar (2.4rem) with air: codex.js reads this margin to find the
+   current chapter. The page scroll padding (extra.css, section 6) is the header only, so the bar is never in the
+   padded zone and focus on its controls does not move the page. A sticky table header stays below the bar. */
+/* (the selector uses the picker, not the bar: Material can write the article again before a jump) */
+html[data-fc-pick] .md-content__inner:has(.fc-pick) :target, html[data-fc-pick] .md-content__inner:has(.fc-pick) h2.fc-ch { scroll-margin-top: 3.6rem; }
+.md-content__inner:has(> .fc-pickbar:not([hidden])) { --fc-sticky-top: 4.8rem; }
+
+@media (forced-colors: active) {
+  .md-typeset .fc-pick, .md-typeset .fc-goals, .md-typeset .fc-pickbar__in, .md-typeset .fc-pickbar__panel { border: 1px solid CanvasText; }
+  .md-typeset .fc-addons { border-left-color: CanvasText; }
+  .md-typeset .fc-pick__opt > input:checked + span { border: 2px solid Highlight; }
+  .md-typeset .fc-pick__all > input:checked, .md-typeset .fc-goals .task-list-control > input:checked + .task-list-indicator::before { background: Highlight; border-color: Highlight; }
+}
+@media print {
+  .md-typeset .fc-pick, .md-typeset .fc-pickbar, .md-typeset .fc-next, .md-typeset .fc-addon__more { display: none; }
+}

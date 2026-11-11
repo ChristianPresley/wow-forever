@@ -2,24 +2,16 @@
 description: "Rogue equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."
 tags:
   - Rogue
+generated: true
+wide: true
 ---
 
 # Rogue Equipment
 
 <!-- This page is generated. Edit tools/classes/guides/rogue.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="rogue" markdown>
-
-:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Equipment</span> **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page gives the full equipment data for each set.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#slow">Slow main hand</a> <a href="#daggers">Daggers</a> <a href="#crafted">Leatherworking and Blacksmithing</a> <a href="#pvp">PvP and Hardcore</a> <a href="#enchants-and-consumables">Enchants</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
+:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Equipment</span> **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="rogue" }
 
 A Rogue wears leather for all 60 levels. The weapons are the most important slots, because most of your attacks use weapon damage. Your talent path decides the weapon type. The armor is the same for the 3 talent trees.
 
@@ -27,12 +19,16 @@ About 40% of the items of Forever had hidden stats at launch. The stats of an it
 
 ## Equipment sets
 
+<div class="fc-stack" markdown>
+
 | Set | Use it for | Stat priority |
 |---|---|---|
 | [Slow main hand](#slow) | The standard set for Combat. You use a slow sword, mace, axe or fist weapon in the main hand, with quest rewards and dungeon drops. The item names come from Timesaver.gg, Method.gg and Kami-Labs. | Leveling: Crit > Agility > Attack Power > Strength > Stamina (Warcraft Tavern). Level 60: hit, then Agility and crit |
 | [Daggers](#daggers) | The set for Assassination and Subtlety. Backstab and Ambush need a dagger in the main hand, and Mutilate needs a dagger in each hand. The armor is the same as in the Slow main hand set. | Leveling: Crit > Agility > Attack Power > Strength > Stamina (Warcraft Tavern). Level 60 Assassination: hit, then Agility and crit for Seal Fate. Level 60 Subtlety: Agility > crit > hit > Attack Power |
 | [Leatherworking and Blacksmithing](#crafted) | You or a friend make your leather, your weapons and your armor kits. Forever adds a line of crafted fist weapons and many rare leather patterns. The client data gives the name and the skill of each item, but not its stats. | The same as the other sets. Read the tooltip of each crafted item |
 | [PvP and Hardcore](#pvp) | A safer set. You take Stamina in place of some Attack Power, and you carry potions and bombs. Use it for battlegrounds, for world PvP and for Hardcore. | Agility > Stamina > crit > Attack Power. Hit is less important against players |
+
+</div>
 
 ## What a Rogue can equip { #proficiencies }
 
@@ -114,7 +110,7 @@ The Deadmines and Wailing Caverns give the main-hand weapon for level 20. Method
 | Main hand | **Darkwater Talwar** | Blackfathom Deeps, Lady Sarevess |
 | Off hand | **Buzz Saw** | The Deadmines, Sneed's Shredder |
 | Off hand | **Butcher's Slicer** | Shadowfang Keep, Razorclaw the Butcher |
-| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
 | Neck | **Erudite's Amulet** | Quest: *Friend of the Library*, the first book quest |
 | Chest | **Tunic of Westfall** | Quest: *The Defias Brotherhood* (Alliance) |
 | Hands, legs, feet | **Gloves, Leggings and Footpads of the Fang** | Wailing Caverns |
@@ -132,7 +128,7 @@ Timesaver selects a fist weapon from Scarlet Monastery at level 30 and Ruby-Ador
 | Main hand | **Dreadfrost Saber** | [The Drowned City](../../content/dungeons/drowned-city.md): Captain Dreadrise. The wiki lists it as a Stamina sword |
 | Back | **Drape of Shifting Energy** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
 | Neck | **Archmagister's Faceted Pendant** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
-| Waist | **Slitherwrap Girdle** | World drop: Mana Devourer, Alterac Mountains (Timesaver). The dungeon page does not list it **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Waist | **Slitherwrap Girdle** | World drop: Mana Devourer, Alterac Mountains (Timesaver). The dungeon page does not list it **Not confirmed**{ .pill } |
 | Hands | **Thorncursed Grips** | Razorfen Kraul, Aggem Thorncurse |
 | Legs | **Ferine Leggings** | Razorfen Kraul, Agathelos the Raging |
 | Wrist | **Oathbound Bracers** | [The Drowned City](../../content/dungeons/drowned-city.md): Zul'Alai |
@@ -167,7 +163,7 @@ Thrash Blade from the Maraudon quest stays in the main hand to level 60 in the l
 | Shoulders | **Clouddrift Mantle** | Quest: *Ancient Spirit* (Alliance) |
 | Back | **Deep River Cloak** | Quest: *Strange Sources* |
 | Hands | **Shadowcraft Gloves** | Blackrock Spire, Shadow Hunter Vosh'gajin |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
 
 ### Level 60 { #slow-l60 }
 
@@ -181,7 +177,7 @@ No source has a tested list for level 60. The items below are from the Kami-Labs
 | Neck | **Mark of Fordring** | Quest: *In Dreams* |
 | Shoulders | **Theramore Pauldrons** | Reputation: Theramore Expeditionary Force, Exalted (Alliance) |
 | Back | **Cape of the Black Baron** | Stratholme, Baron Rivendare |
-| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm }: It needs 20 Fel Leather. No source gives where Fel Leather comes from |
+| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new }: It needs 20 Fel Leather. No source gives where Fel Leather comes from |
 | Wrist | **Shadowcraft Bracers** | Scholomance, Instructor Malicia |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 | Waist | **Assassin's Waistguard** | Vendor: Pix Xizzix, Stranglethorn Vale. 100 Tarnished Undermine Real |
@@ -199,9 +195,9 @@ Timesaver selects Greenhammer as the best main-hand weapon before the raids. Its
 
 | Slot | Item | Source |
 |---|---|---|
-| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Main hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 | Ranged | **Core Marksman Rifle** | [Engineering](../../professions/engineering.md), skill 300: It needs Fiery Core and Lava Core. No source gives where they come from |
 
 ## Daggers { #daggers }
@@ -261,7 +257,7 @@ Mutilate at level 40 needs a dagger in each hand. Quests give the daggers for th
 | Main hand | **Silent Hunter** | Quest: *Call to Arms*, Arathi Highlands (Horde) |
 | Main hand | **Ceremonial Elven Blade** | Quest: *A Hero's Welcome*, Feralas (Alliance) |
 | Main hand | **Fiendish Skiv** | Quest: *Challenge Overlord Mok'Morokk*, Dustwallow Marsh (Horde) |
-| Dagger | **Mithril Stiletto** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
+| Dagger | **Mithril Stiletto** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #daggers-l50 }
 
@@ -270,7 +266,7 @@ Timesaver has no dagger for level 50. Hunt Tracker Blade comes from a quest in F
 | Slot | Item | Source |
 |---|---|---|
 | Main hand | **Hunt Tracker Blade** | Quest: *The Remains of Trey Lightforge*, Felwood |
-| Dagger | **Bold Dirk** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new .pill--sm } |
+| Dagger | **Bold Dirk** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new } |
 
 ### Level 60 { #daggers-l60 }
 
@@ -305,7 +301,7 @@ Blacksmithing makes a first sword, mace or dagger from copper. Leatherworking ma
 | Main hand | **Copper Mace** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
 | Chest | **Handstitched Leather Vest** | [Leatherworking](../../professions/leatherworking.md), skill 1 |
 | Legs | **Handstitched Leather Pants** | [Leatherworking](../../professions/leatherworking.md), trainer recipe |
-| Feet | **Dark Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 35 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Dark Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 35 **New**{ .pill .pill--new } |
 | Weapon | **Rough Sharpening Stone** | [Blacksmithing](../../professions/blacksmithing.md), skill 1 |
 
 ### Levels 10–19 { #crafted-l10 }
@@ -314,13 +310,13 @@ The Brawler's leather items are new and rare. Warcraft Tavern recommends Brawler
 
 | Slot | Item | Source |
 |---|---|---|
-| Waist | **Brawler's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Brawler's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Brawler's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Brass Knuckles** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Brawler's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new } |
+| Chest | **Brawler's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new } |
+| Hands | **Brawler's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new } |
+| Main hand | **Brass Knuckles** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new } |
 | Main hand | **Bronze Mace** | [Blacksmithing](../../professions/blacksmithing.md), skill 75 |
 | Dagger | **Deadly Bronze Poniard** | [Blacksmithing](../../professions/blacksmithing.md), skill 100 |
-| Armor kit | **Forceful Medium Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 80 **New**{ .pill .pill--new .pill--sm } |
+| Armor kit | **Forceful Medium Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 80 **New**{ .pill .pill--new } |
 
 ### Levels 20–29 { #crafted-l20 }
 
@@ -328,13 +324,13 @@ Timesaver selects Brawler's Leather Hood as the best head item at level 20. The 
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Brawler's Leather Pants** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Brawler's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Brawler's Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 85 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Iron Fists** | [Blacksmithing](../../professions/blacksmithing.md), skill 130 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Legs | **Brawler's Leather Pants** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Chest | **Brawler's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new } |
+| Feet | **Brawler's Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 85 **New**{ .pill .pill--new } |
+| Main hand | **Iron Fists** | [Blacksmithing](../../professions/blacksmithing.md), skill 130 **New**{ .pill .pill--new } |
 | Main hand | **Mighty Iron Hammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 120 |
-| Ranged | **Cracked Blacksmith Hammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
+| Ranged | **Cracked Blacksmith Hammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 110 **New**{ .pill .pill--new } |
 | Weapon | **Heavy Sharpening Stone** | [Blacksmithing](../../professions/blacksmithing.md), skill 125 |
 
 ### Levels 30–39 { #crafted-l30 }
@@ -343,12 +339,12 @@ At skill 150, Leatherworking has 4 new rare lines: Skulker's, Prowler's, Skirmis
 
 | Slot | Item | Source |
 |---|---|---|
-| Waist | **Skulker's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Skulker's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Skulker's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new } |
+| Hands | **Skulker's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new } |
 | Main hand | **Jade Serpentblade** | [Blacksmithing](../../professions/blacksmithing.md), skill 150 |
-| Main hand | **Iron Morningstar** | [Blacksmithing](../../professions/blacksmithing.md), skill 165 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Iron Morningstar** | [Blacksmithing](../../professions/blacksmithing.md), skill 165 **New**{ .pill .pill--new } |
 | Dagger | **Searing Golden Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 165 |
-| Armor kit | **Forceful Heavy Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 135 **New**{ .pill .pill--new .pill--sm } |
+| Armor kit | **Forceful Heavy Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 135 **New**{ .pill .pill--new } |
 
 ### Levels 40–49 { #crafted-l40 }
 
@@ -356,14 +352,14 @@ Crafted items fill the slots where dungeons give few new items. Timesaver lists 
 
 | Slot | Item | Source |
 |---|---|---|
-| Main hand | **Mithril Claws** | [Blacksmithing](../../professions/blacksmithing.md), skill 195 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Mithril Claws** | [Blacksmithing](../../professions/blacksmithing.md), skill 195 **New**{ .pill .pill--new } |
 | Main hand | **Wicked Mithril Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 200 |
-| Dagger | **Mithril Stiletto** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Skulker's Leather Shoes** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Skulker's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Skulker's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Bent Goggles** | [Engineering](../../professions/engineering.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Armor kit | **Forceful Thick Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 185 **New**{ .pill .pill--new .pill--sm } |
+| Dagger | **Mithril Stiletto** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new } |
+| Feet | **Skulker's Leather Shoes** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new } |
+| Shoulders | **Skulker's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new } |
+| Wrist | **Skulker's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
+| Head | **Bent Goggles** | [Engineering](../../professions/engineering.md), skill 200 **New**{ .pill .pill--new } |
+| Armor kit | **Forceful Thick Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 185 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #crafted-l50 }
 
@@ -371,14 +367,14 @@ Thorium Cestus is the fist weapon for these levels, and its pattern costs Mercha
 
 | Slot | Item | Source |
 |---|---|---|
-| Main hand | **Thorium Cestus** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Thorium Cestus** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new } |
 | Main hand | **Blazing Rapier** | [Blacksmithing](../../professions/blacksmithing.md), skill 255 |
-| Dagger | **Bold Dirk** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Skulker's Leather Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Skulker's Leather Waistguard** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
+| Dagger | **Bold Dirk** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new } |
+| Hands | **Skulker's Leather Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
+| Waist | **Skulker's Leather Waistguard** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
-| Feet | **Wicked Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 260 **New**{ .pill .pill--new .pill--sm } |
-| Armor kit | **Forceful Rugged Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 235 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Wicked Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 260 **New**{ .pill .pill--new } |
+| Armor kit | **Forceful Rugged Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 235 **New**{ .pill .pill--new } |
 
 ### Level 60 { #crafted-l60 }
 
@@ -388,11 +384,11 @@ Heartseeker and Persuader are in the level 60 list of Kami-Labs. Their recipes d
 |---|---|---|
 | Main hand | **Persuader** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Off hand | **Heartseeker** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
-| Main hand | **Bagh Nakh** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Bagh Nakh** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 | Legs | **Devilsaur Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 290 |
 | Back | **Shifting Cloak** | [Leatherworking](../../professions/leatherworking.md), skill 300 |
-| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm }: It needs 20 Fel Leather. No source gives where Fel Leather comes from |
+| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new }: It needs 20 Fel Leather. No source gives where Fel Leather comes from |
 | Weapon | **Elemental Sharpening Stone** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 
 ### Raids and PvP { #crafted-raid }
@@ -401,13 +397,13 @@ The Grimstitch items are the crafted version of the Rogue Tier 1 set. Their reag
 
 | Slot | Item | Source |
 |---|---|---|
-| Shoulders | **Grimstitch Spaulders** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Grimstitch Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Grimstitch Pants** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Grimstitch Boots** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Shoulders | **Grimstitch Spaulders** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Hands | **Grimstitch Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Grimstitch Pants** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Feet | **Grimstitch Boots** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Main hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 
 ## PvP and Hardcore { #pvp }
 
@@ -462,6 +458,8 @@ The Honor items of the Rogue have Premier in the name, and the armor also has Sh
 
 ## Enchants and consumables
 
+<div class="fc-stack" markdown>
+
 | Slot | Enchant | Notes |
 |---|---|---|
 | Weapons | **Crusader or Agility** | Method names Crusader the best physical enchant. Kami-Labs uses Agility on the 2 weapons |
@@ -489,7 +487,11 @@ The Honor items of the Rogue have Premier in the name, and the armor also has Sh
 | PvP | **Free Action Potion** | It lasts 30 seconds (Method). For roots, slows and stuns in PvP |
 | Onyxia's Lair | **Fire Protection Potions** | The raid page recommends fire resistance. No source gives a number |
 
-## Sources
+</div>
+
+## Data and sources { #sources }
+
+The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
 
 - [Timesaver.gg: Rogue leveling gear, level by level](https://timesaver.gg/tools/wow-forever/leveling-gear/rogue/combat)
 - [Kami-Labs: level 60 item lists](https://kami-labs.fr/en/bis-list-wow-forever/)
@@ -506,3 +508,4 @@ The Honor items of the Rogue have Premier in the name, and the armor also has Sh
 - [Warcraft Wiki: Krol'dok Stronghold](https://warcraft.wiki.gg/wiki/Krol%27dok_Stronghold)
 - [LFCarry: sets and crafted tier items (beta data)](https://lfcarry.com/guides/wow-forever-bis-lists)
 - [ConquestCapped: Tier 1 sets](https://conquestcapped.com/guides/wow-forever/wow-forever-tier-sets-1/)
+- [Rogue progression: data and sources](index.md#sources)

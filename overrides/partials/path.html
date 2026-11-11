@@ -1,0 +1,25 @@
+{#- Forever Codex override of Material 9.8.1 partials/path.html: a section does not show in the path
+    of its own index page ("Home > Classes" on Mage Progression, not "Home > Classes > Mage").
+    On phones only the last item shows, as a back link to the parent (extra.css, section 4). -#}
+{% import "partials/path-item.html" as item with context %}
+{% if page.meta and page.meta.hide %}
+  {% set hidden = "hidden" if "path" in page.meta.hide %}
+{% endif %}
+{% set fc_trail = [] %}
+{% if nav.homepage %}
+  {% set _ = fc_trail.append(nav.homepage) %}
+{% endif %}
+{% for nav_item in page.ancestors | reverse %}
+  {% if not (page.is_index and nav_item == page.parent) %}
+    {% set _ = fc_trail.append(nav_item) %}
+  {% endif %}
+{% endfor %}
+{% if page and fc_trail | length > 0 and not page.is_homepage %}
+  <nav class="md-path" aria-label="Breadcrumb" {{ hidden }}>
+    <ol class="md-path__list">
+      {% for nav_item in fc_trail %}
+        {{ item.render(nav_item) }}
+      {% endfor %}
+    </ol>
+  </nav>
+{% endif %}

@@ -1,16 +1,17 @@
 {% extends "base.html" %}
 
-{#- "Orc Rogue" for race add-ons, plain title elsewhere -#}
+{#- The nav titles of the add-ons are short ("Talents", "Gnome"). The full title adds the class:
+    "Mage Talents", "Mage Equipment", "Gnome Mage". Other pages keep their title. -#}
 {% macro full_title(p) -%}
-  {%- if p and p.url and p.url.startswith('guides/') and p.parent and not p.is_index and p.url.count('/') == 3 and p.url.split('/')[2] not in ['talents', 'equipment'] -%}
-    {{ p.title }} {{ p.parent.title }}
+  {%- if p and p.url and p.url.startswith('guides/') and p.parent and not p.is_index and p.url.count('/') == 3 -%}
+    {%- if p.url.split('/')[2] in ['talents', 'equipment'] -%}{{ p.parent.title }} {{ p.title }}{%- else -%}{{ p.title }} {{ p.parent.title }}{%- endif -%}
   {%- elif p -%}{{ p.title }}{%- endif -%}
 {%- endmacro %}
 
 {#- ---- perf-seo: shared values for <head> --------------------------------
   fc_desc   front-matter `description`, else the first body paragraph
             (trimmed to ~155 characters), else site_description.
-  fc_title  the page's display title ("Orc Rogue" for race add-ons).
+  fc_title  the page's display title ("Orc Rogue", "Mage Talents"). Also the header topic.
   fc_root   site path ("/wow-forever/"): root-relative font URLs stay valid
             after instant navigation changes the document URL.
 ------------------------------------------------------------------------ -#}
@@ -40,6 +41,8 @@
 {% else %}
   {% set fc_title = config.site_name %}
 {% endif %}
+{#- the announcement (block announce) hides itself from this date (UTC) -#}
+{% set fc_announce_until = "2026-12-10" %}
 {% set fc_social = config.plugins["material/social"] if "material/social" in config.plugins else none %}
 {% set fc_cards = fc_social is not none and fc_social.config.enabled and fc_social.config.cards %}
 
@@ -94,6 +97,8 @@
     paint:function(s){var e=document.getElementById("fc-pick-css");if(!e){e=document.createElement("style");e.id="fc-pick-css";document.head.appendChild(e)}e.textContent=P.css(s)}};
     document.documentElement.setAttribute("data-fc-pick","");
     var m=location.pathname.match(/\/guides\/([a-z]+)\/$/);if(m)P.paint(P.read(m[1]))})();
+  /* the announcement has an end date: after it, the bar never paints */
+  if(Date.now()>=Date.parse("{{ fc_announce_until }}"))document.documentElement.setAttribute("data-fc-noannounce","");
   </script>
 
   {#- Self-hosted Latin subsets (docs/assets/fonts, built with fontTools:
@@ -106,7 +111,6 @@
     @font-face{font-family:"Alegreya";font-style:normal;font-weight:500 800;font-display:swap;src:url("{{ fc_root }}assets/fonts/alegreya-roman.woff2") format("woff2");unicode-range:{{ fc_u }}}
     @font-face{font-family:"Alegreya";font-style:italic;font-weight:500 800;font-display:swap;src:url("{{ fc_root }}assets/fonts/alegreya-italic.woff2") format("woff2");unicode-range:{{ fc_u }}}
     @font-face{font-family:"Alegreya SC";font-style:normal;font-weight:500;font-display:swap;src:url("{{ fc_root }}assets/fonts/alegreya-sc-500.woff2") format("woff2");unicode-range:{{ fc_u }}}
-    @font-face{font-family:"Alegreya SC";font-style:normal;font-weight:700;font-display:swap;src:url("{{ fc_root }}assets/fonts/alegreya-sc-700.woff2") format("woff2");unicode-range:{{ fc_u }}}
   </style>
 
   {#- Open Graph / Twitter text tags. The social plugin's "codex" layout
@@ -157,7 +161,8 @@
 {% endblock %}
 
 {% block announce %}
-  <span class="fc-announce">Raids unlock <strong>9 December 2026</strong>: Barrow Deeps, Hyjal Summit and Onyxia's Lair. <a href="{{ 'content/raids/' | url }}">Raid guides</a></span>
+  {#- one line at each width: phones show "Raids unlock 9 Dec. Raid guides" -#}
+  <span class="fc-announce">Raids unlock <strong>9 Dec<span class="fc-announce__more">ember 2026</span></strong><span class="fc-announce__more">: Barrow Deeps, Hyjal Summit and Onyxia's Lair</span>. <a href="{{ 'content/raids/' | url }}">Raid guides</a></span>
 {% endblock %}
 
 {% block footer %}

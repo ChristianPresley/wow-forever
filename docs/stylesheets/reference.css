@@ -4,91 +4,72 @@
    dark, high-contrast and forced-colors modes follow the design system.
    ===================================================================== */
 
-/* ---------- 1. Screen-reader-only text ------------------------------ */
-.md-typeset .fc-sr {
-  position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
-
 /* ---------- 2. "Also called" alias line (visible, so search finds slang) */
-.md-typeset .fc-aka { margin: -.4em 0 1em; font-size: .72rem; line-height: 1.5; color: var(--fc-text-muted); max-width: none; }
-.md-typeset .fc-aka strong:first-child { margin-right: .35em; font-family: var(--fc-caps-font); font-weight: 700;
-  letter-spacing: .04em; color: var(--fc-text-muted); }
-.md-typeset .fc-alias { display: inline-block; padding: 0 .4em; margin-left: .3em; border-radius: .2em;
-  background: var(--fc-surface-2); color: var(--fc-text-muted); font-size: .82em; font-weight: 650;
-  letter-spacing: .02em; line-height: 1.5; white-space: nowrap; vertical-align: .05em; }
-/* the lede is the first plain paragraph after the H1, alias line or infobox */
-.md-content__inner > :is(.fc-aka, .infobox) + p:not([class]) { font-size: 1.08em; }
+.md-typeset .fc-aka { margin: 0 0 var(--fc-space-4); font-size: var(--fc-fs-xs); line-height: 1.5; color: var(--fc-text-muted); max-width: none; }
+.md-typeset .fc-aka strong:first-child { margin-right: .35em; }
+.md-typeset .fc-alias { margin-left: .3em; } /* a tag */
 
 /* ---------- 3. Infobox additions ------------------------------------ */
-.md-typeset .infobox[data-class] { border-top-color: var(--c); }
-.md-typeset .infobox .infobox-sub { margin: -.25rem 0 .5rem; text-align: center; font-size: .68rem; color: var(--fc-text-muted); max-width: none; }
 .md-typeset .infobox .infobox-roles { margin: 0 0 .45rem; text-align: center; max-width: none; line-height: 1.9; }
-.md-typeset .infobox td :is(p, li) { max-width: none; }
-.md-typeset .infobox td .fc-chip { margin: .1em .05em; padding: .05em .55em; font-size: .62rem; }
-.md-typeset .infobox td .badge { margin: .05em 0; }
 @media screen and (max-width: 59.984375em) {
   /* stacked at the top on phones/tablets, like wiki.gg's mobile skin */
   .md-typeset .infobox { margin-bottom: 1.2rem; }
 }
 
 /* ---------- 4. Section hubs: card grid with one-line descriptions ---- */
-.md-typeset .grid.cards.fc-hub > ul > li { position: relative; padding: .7rem .9rem .75rem; }
+.md-typeset .grid.cards.fc-hub > ul > li { position: relative; padding: var(--fc-space-3) var(--fc-space-4); }
 .md-typeset .fc-hub > ul > li > p { margin: .15em 0; max-width: none; }
-.md-typeset .fc-hub > ul > li > p:first-child { font-family: var(--fc-display-font); font-size: .98rem; font-weight: 700; line-height: 1.3; }
+.md-typeset .fc-hub > ul > li > p:first-child { font-family: var(--fc-display-font); font-size: var(--fc-fs-h3); font-weight: 700; line-height: 1.3; }
 .md-typeset .fc-hub > ul > li > p:first-child a { color: var(--fc-text); text-decoration: none; }
 .md-typeset .fc-hub > ul > li > p:first-child a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
 .md-typeset .fc-hub > ul > li:hover > p:first-child a { color: var(--fc-link-hover); }
 .md-typeset .fc-hub > ul > li:has(a:focus-visible) { outline: 2px solid var(--fc-focus); outline-offset: 2px; }
 .md-typeset .fc-hub > ul > li > p:first-child a:focus-visible { outline: none; }
-.md-typeset .fc-hub > ul > li > p + p { font-size: .72rem; line-height: 1.45; color: var(--fc-text-muted); }
-.md-typeset .fc-hub .twemoji { --md-icon-size: 1.25em; margin-right: .3em; vertical-align: -.2em; color: var(--fc-gold-text); }
-.md-typeset .fc-hub[data-class] > ul > li, .md-typeset .fc-hub > ul > li[data-class] { border-top: 3px solid var(--c); }
-.md-typeset .fc-hub .badge { font-size: .6rem; }
-
-/* ---------- 5. "Playing a <class>?" call-out ------------------------ */
-.md-typeset .fc-cta:not([data-class]) { --c: var(--fc-gold); }
-.md-typeset .fc-cta { margin: 1.1rem 0 1.4rem; padding: .65rem .9rem .55rem;
-  border: 1px solid var(--fc-border); border-left: .25rem solid var(--c); border-radius: var(--fc-radius);
-  background: var(--fc-surface-1); font-size: .76rem; line-height: 1.5; display: flow-root; }
-.md-typeset .fc-cta > p { margin: 0 0 .35rem; max-width: none; }
-.md-typeset .fc-cta > p:first-child strong:first-child { font-family: var(--fc-display-font); font-size: 1.15em; font-weight: 700; margin-right: .2em; }
-.md-typeset .fc-cta .fc-chip { margin: .1em .05em; }
-.md-typeset .fc-cta__label { font-family: var(--fc-caps-font); letter-spacing: .03em; color: var(--fc-text-muted); margin-right: .3em; }
+.md-typeset .fc-hub > ul > li > p + p { font-size: var(--fc-fs-xs); line-height: 1.45; color: var(--fc-text-muted); }
+.md-typeset .fc-hub .twemoji { --md-icon-size: 1.25em; margin-right: .3em; vertical-align: -.2em; color: var(--fc-text-muted); }
 
 /* ---------- 6. Chip rows ("Guides for this race") -------------------- */
 .md-typeset .fc-chiprows > ul { list-style: none; margin-left: 0; padding: 0; }
 .md-typeset .fc-chiprows > ul > li { display: flex; flex-wrap: wrap; align-items: baseline; gap: .1rem .2rem; margin: 0; padding: .35rem 0; border-top: 1px solid var(--fc-border); max-width: none; }
 .md-typeset .fc-chiprows > ul > li:first-child { border-top: 0; }
-.md-typeset .fc-chiprows > ul > li > strong:first-child { flex: 0 0 11.5em; font-weight: 650; }
+.md-typeset .fc-chiprows > ul > li > strong:first-child { flex: 0 0 11.5em; font-weight: 600; }
 @media screen and (max-width: 30em) { .md-typeset .fc-chiprows > ul > li > strong:first-child { flex-basis: 100%; } }
 
 /* ---------- 7. Unconfirmed / fan-source inline tags ----------------- */
 /* extra.css makes every .unconfirmed muted + italic, which also hit the
-   admonition body; keep the admonition legible and restyle the inline tag. */
+   admonition body; keep the admonition legible. The inline tag is a tag
+   (extra.css, section 11) with a glyph in front. The confidence badges
+   (.badge.official, .done, .stated, .fan) take their tones there too. */
 .md-typeset :is(.admonition, details).unconfirmed { font-style: normal; color: var(--fc-text); }
-.md-typeset em:is(.unconfirmed, .fan-source) { display: inline-block; padding: 0 .45em; border: 1px dashed var(--fc-border-strong);
-  border-radius: .25em; font-style: normal; font-size: .78em; font-weight: 650; line-height: 1.5; letter-spacing: .01em;
-  color: var(--fc-text-muted); white-space: nowrap; vertical-align: .06em; }
-.md-typeset em.unconfirmed::before { content: "?"; content: "?" / ""; margin-right: .3em; font-weight: 800; }
-.md-typeset em.fan-source::before { content: "~"; content: "~" / ""; margin-right: .3em; font-weight: 800; }
+.md-typeset em.unconfirmed::before { content: "?"; content: "?" / ""; font-weight: 700; }
+.md-typeset em.fan-source::before { content: "~"; content: "~" / ""; font-weight: 700; }
 
-/* ---------- 8. Confidence / status badges (extends .badge) --------- */
-.md-typeset .badge.official { color: var(--fc-adm-info-text); border-color: var(--fc-adm-info); background: var(--fc-adm-info-tint); }
-.md-typeset .badge.done { color: var(--fc-adm-success-text); border-color: var(--fc-adm-success); background: var(--fc-adm-success-tint); }
-.md-typeset .badge.stated { color: var(--fc-adm-summary-text); border-color: var(--fc-adm-summary); background: var(--fc-adm-summary-tint); }
-.md-typeset .badge.fan { color: var(--fc-adm-warning-text); border-color: var(--fc-adm-warning); background: var(--fc-adm-warning-tint); border-style: dashed; }
-.md-typeset .badge.original { color: var(--fc-text-muted); border-color: var(--fc-border-strong); }
-.md-typeset .badge.faction-a { color: var(--fc-alliance); border-color: currentColor; }
-.md-typeset .badge.faction-h { color: var(--fc-horde); border-color: currentColor; }
+/* ---------- 8. Glossary: terms in a column, definitions beside them --- */
+/* codex.js adds the A to Z row (.fc-az) when the terms are in A to Z order */
+.md-typeset .fc-glossary dl { display: grid; grid-template-columns: minmax(8rem, 13rem) 1fr; column-gap: var(--fc-space-5); margin: 0; }
+.md-typeset .fc-glossary :is(dt, dd) { margin: 0; padding: var(--fc-space-2) 0; border-top: 1px solid var(--fc-border); }
+.md-typeset .fc-glossary dt { grid-column: 1; font-weight: 600; scroll-margin-top: 1rem; }
+.md-typeset .fc-glossary dd { grid-column: 2; }
+.md-typeset .fc-glossary dd > :first-child { margin-top: 0; }
+.md-typeset .fc-glossary dd > :last-child { margin-bottom: 0; }
+@media screen and (max-width: 44.984375em) {
+  .md-typeset .fc-glossary dl { grid-template-columns: 1fr; }
+  .md-typeset .fc-glossary dt { padding-bottom: 0; }
+  .md-typeset .fc-glossary dd { grid-column: 1; border-top: 0; padding-top: 0; }
+}
+.md-typeset .fc-az { display: flex; flex-wrap: wrap; gap: var(--fc-space-1); margin: 0 0 var(--fc-space-4); }
+.md-typeset .fc-az .fc-chip { margin: 0; min-width: 1.5rem; padding: 0 .4rem; justify-content: center; }
+@media (pointer: coarse) { .md-typeset .fc-az .fc-chip { min-width: 2.2rem; } }
 
-/* ---------- 9. .compare: side-by-side comparison tables -------------- */
-.md-typeset .compare table:not([class]) { font-size: .72rem; }
-.md-typeset .compare table:not([class]) :is(th, td) { min-width: 8.5em; }
-.md-typeset .compare table:not([class]) :is(th, td):first-child {
-  position: sticky; left: 0; z-index: 1; min-width: 7.5em; background: var(--fc-bg); box-shadow: 1px 0 0 var(--fc-border); }
-.md-typeset .compare table:not([class]) th:first-child { background: var(--fc-surface-2); }
-.md-typeset .compare table:not([class]) tbody tr:nth-child(even) td:first-child { background: color-mix(in srgb, var(--fc-surface-1) 70%, var(--fc-bg)); }
-.md-typeset .compare table:not([class]) th:not(:first-child) { font-family: var(--fc-display-font); font-size: 1.02em; }
+/* ---------- 9. Sources: one closed row for each site ----------------- */
+.md-typeset .fc-sources details:not([hidden]) { margin: 0; border: 0; border-top: 1px solid var(--fc-border); border-radius: 0; background: none; font-size: var(--fc-fs-sm); --x: var(--fc-text); }
+.md-typeset .fc-sources details:last-child { border-bottom: 1px solid var(--fc-border); }
+.md-typeset .fc-sources details:not([hidden]) > summary { padding-left: 0; font-weight: 600; }
+.md-typeset .fc-sources details:not([hidden]) > summary::before { content: none; }
+.md-typeset .fc-sources summary > span { margin-left: var(--fc-space-2); font-weight: 400; color: var(--fc-text-muted); font-variant-numeric: tabular-nums; }
+.md-typeset .fc-sources details > ul { margin: 0 0 var(--fc-space-3); padding: 0; list-style: none; }
+.md-typeset .fc-sources details > ul > li { margin: 0 0 var(--fc-space-1); max-width: none; overflow-wrap: anywhere; }
+
 
 /* ---------- 10. Accessible race x class grid ------------------------ */
 .md-typeset .fc-racegrid table:not([class]) tbody th[scope="row"] {
@@ -96,20 +77,22 @@
   font-weight: 600; white-space: normal; text-align: left; }
 .md-typeset .fc-racegrid table:not([class]) tbody th[scope="rowgroup"] {
   padding: .35em .5em; background: var(--fc-surface-2); border-bottom: 1px solid var(--fc-border);
-  font-family: var(--fc-caps-font); font-size: .95em; letter-spacing: .05em; text-align: left; }
-.md-typeset .fc-racegrid td.fc-new a { color: var(--fc-gold-text); font-size: .9em; font-weight: 800; letter-spacing: .04em; }
+  font-size: var(--fc-fs-xs); text-transform: uppercase; letter-spacing: .04em; text-align: left; }
+.md-typeset .fc-racegrid td.fc-new a { color: var(--fc-adm-summary-text); font-weight: 700; }
 .md-typeset .fc-racegrid td.fc-new { background: var(--fc-adm-summary-tint); }
-.md-typeset .fc-racegrid .fc-legend { font-size: .72rem; color: var(--fc-text-muted); }
+.md-typeset .fc-racegrid .fc-legend { font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
 
 /* keep .fc-sr spans inside the scroller so they cannot widen the page */
 .md-typeset .fc-racegrid td { position: relative; }
 
 /* ---------- 11. Preferences ----------------------------------------- */
 @media (forced-colors: active) {
-  .md-typeset :is(.fc-alias, .fc-cta, em.unconfirmed, em.fan-source) { border: 1px solid CanvasText; }
+  .md-typeset .fc-alias, .md-typeset em.unconfirmed, .md-typeset em.fan-source { border: 1px solid CanvasText; }
   .md-typeset .fc-hub > ul > li:has(a:focus-visible) { outline-color: Highlight; }
 }
 @media print {
   .md-typeset .fc-hub > ul > li > p:first-child a::after { content: none; }
 }
 .md-typeset .fc-hub.fc-class-card .twemoji { color: var(--c, var(--fc-gold-text)); }
+/* the small links of a class card ("Talents · Equipment") are 24px high */
+.md-typeset .fc-class-card > ul > li > p:last-child > a { padding-block: .25rem; }

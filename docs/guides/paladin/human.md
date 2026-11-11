@@ -7,13 +7,10 @@ tags:
 
 # Human Paladin
 
-<div class="guide-head" data-class="paladin" markdown>
+:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="paladin" }
 
-:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read this page with the [Paladin guide](index.md). This page gives the differences for a Human paladin.</p>
-
-</div>
+Read this page with the [Paladin guide](index.md). This page gives the differences for a Human paladin.
 
 ## Why this combo
 

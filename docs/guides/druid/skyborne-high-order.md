@@ -7,13 +7,10 @@ tags:
 
 # High Order Skyborne Druid
 
-<div class="guide-head" data-class="druid" markdown>
+:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="druid" }
 
-:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read this page with the [Druid guide](index.md). This page gives only the differences for an Alliance Skyborne.</p>
-
-</div>
+Read this page with the [Druid guide](index.md). This page gives only the differences for an Alliance Skyborne.
 
 ## Why this combo
 

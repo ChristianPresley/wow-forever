@@ -4,24 +4,16 @@ tags:
   - Professions
 search:
   boost: 2
+generated: true
+wide: true
 ---
 
 # Enchanting Guide
 
 <!-- This page is generated. Edit tools/professions/guides/enchanting.yml, then run tools/professions/build.py. -->
 
-<div class="guide-head" markdown>
-
-:material-auto-fix:{ aria-hidden="true" } <span class="gh-kind">Profession guide</span> **Primary · Crafting**{ .badge }
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#new-in-forever">New</a> <a href="#level-1-to-300">1–300</a> <a href="#recipes-to-get">Recipes to get</a> <a href="#camp-features">Camp</a> <a href="#all-recipes">All recipes</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The recipe data is from the game client, build 1.60.1.70862. [wowforevertalents.com](https://wowforevertalents.com/professions/enchanting/) reads this data from the client. The client does not hold the skill that a trainer asks for, the prices, or the drop locations. The path and the recipe picks are Codex recommendations.
-
-Enchanting puts permanent enchants on armor and weapons. Its **Disenchant** ability destroys an item of green quality or better and gives dusts, essences and shards. In Forever it also makes wands, staves, off-hand items, relics, weapon oils and 3 camp features. Most recipes are enchants that make no item, so the recipe name is the only data on the effect.
+:material-auto-fix:{ aria-hidden="true" } <span class="fc-meta__kind">Profession guide</span> **Primary · Crafting**{ .badge } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta }
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Enchanting at a glance</p>
@@ -40,6 +32,8 @@ Enchanting puts permanent enchants on armor and weapons. Its **Disenchant** abil
 | **Merchant's Favor** | 39 recipes |
 
 </aside>
+
+Enchanting puts permanent enchants on armor and weapons. Its **Disenchant** ability destroys an item of green quality or better and gives dusts, essences and shards. In Forever it also makes wands, staves, off-hand items, relics, weapon oils and 3 camp features. Most recipes are enchants that make no item, so the recipe name is the only data on the effect.
 
 ## New in Forever
 
@@ -65,12 +59,16 @@ The *Crafts* column is an estimate. A recipe always gives a skill point while it
 
 You need Strange Dust. In Classic, Strange Dust comes from green armor and weapons of item level 5 to 20. This is a Classic-era value. It is not confirmed for Forever.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
+|---|---|---:|---|---|---|---|
 | 1–10 | **Dust to Motes (makes 3)** | 9 | 1 Strange Dust | Orange | Trainer, learn 1 | Each craft makes 3 Mote of Magic. Keep these for the rod and the next step |
 | 10–20 | **Enchant Bracer - Inferior Stamina** | 10 | 1 Mote of Magic | Orange | Trainer, learn 1 | Uses the motes from the first step |
 | 20–70 | **Enchant Chest - Inferior Stamina** | 50 | 1 Strange Dust | Orange | Trainer, learn 15 (estimate) | Orange for the full step. The name is new in Forever |
 | 70–75 | **Enchant Bracer - Minor Stamina** | 5 | 2 Strange Dust | Orange | Trainer, learn 50 (Classic value) |  |
+
+</div>
 
 - Make 1 Runed Copper Rod before the first enchant. It needs 1 Copper Rod from a Blacksmith and 1 Mote of Magic.
 - Enchant Bracer - Minor Deflect is an alternative for skill 20 to 80. The client gives learn skill 1 for it, and it is orange until 80.
@@ -80,7 +78,7 @@ You need Strange Dust. In Classic, Strange Dust comes from green armor and weapo
 ??? example "Materials for Apprentice (1–75)"
 
     | Material | Amount |
-    |---|---|
+    |---|---:|
     | Strange Dust | 69 |
     | Mote of Magic | 10 |
 
@@ -88,12 +86,16 @@ You need Strange Dust. In Classic, Strange Dust comes from green armor and weapo
 
 You need Strange Dust, Lesser Magic Essence, Lesser Astral Essence and Soul Dust. In Classic, Soul Dust comes from green items of item level 21 to 30. In Classic, the essences come mostly from green weapons, and the dusts from green armor. These are Classic-era values. They are not confirmed for Forever.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
+|---|---|---:|---|---|---|---|
 | 75–110 | **Enchant Bracer - Minor Stamina** | 37 | 2 Strange Dust | Orange → Yellow | Trainer, learn 50 (Classic value) | Yellow from 100 |
 | 110–120 | **Enchant Bracer - Minor Agility** | 11 | 1 Strange Dust, 2 Lesser Magic Essence | Orange → Yellow | Trainer, learn 80 (Classic value) | Yellow from 115 |
 | 120–130 | **Enchant Chest - Stamina** | 10 | 2 Strange Dust, 1 Lesser Astral Essence | Orange | Trainer, learn 120 (estimate) | Needs 1 Lesser Astral Essence for each craft |
 | 130–150 | **Enchant Bracer - Lesser Stamina** | 20 | 1 Soul Dust | Orange | Trainer, learn 130 (Classic value) | 1 Soul Dust for each craft |
+
+</div>
 
 - Make the Runed Silver Rod when the trainer teaches it. In Classic, that is skill 100. A Blacksmith makes the Silver Rod.
 - The Runed Silver Rod needs 1 Silver Rod, 3 Strange Dust, 4 Lesser Magic Essence and 1 Shadowgem.
@@ -103,7 +105,7 @@ You need Strange Dust, Lesser Magic Essence, Lesser Astral Essence and Soul Dust
 ??? example "Materials for Journeyman (75–150)"
 
     | Material | Amount |
-    |---|---|
+    |---|---:|
     | Strange Dust | 105 |
     | Lesser Magic Essence | 22 |
     | Soul Dust | 20 |
@@ -113,12 +115,16 @@ You need Strange Dust, Lesser Magic Essence, Lesser Astral Essence and Soul Dust
 
 You need Soul Dust and Vision Dust. In Classic, Vision Dust comes from green items of item level 31 to 40. This is a Classic-era value. It is not confirmed for Forever.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
+|---|---|---:|---|---|---|---|
 | 150–160 | **Enchant Bracer - Lesser Stamina** | 11 | 1 Soul Dust | Orange → Yellow | Trainer, learn 130 (Classic value) | Yellow from 155 |
 | 160–180 | **Enchant Boots - Lesser Agility** | 20 | 1 Soul Dust | Orange | Trainer, learn 160 (Classic value) | 1 Soul Dust for each craft |
 | 180–205 | **Enchant Bracer - Strength** | 26 | 1 Vision Dust | Orange → Yellow | Trainer, learn 180 (Classic value) | 1 Vision Dust for each craft. Yellow from 200 |
 | 205–225 | **Enchant Cloak - Greater Defense** | 20 | 1 Vision Dust | Orange | Trainer, learn 205 (Classic value) | 1 Vision Dust for each craft |
+
+</div>
 
 - Make the Runed Golden Rod when the trainer teaches it. In Classic, that is skill 150. It needs 1 Golden Rod, 1 Iridescent Pearl, 1 Greater Astral Essence and 1 Soul Dust.
 - Make the Runed Truesilver Rod when the trainer teaches it. In Classic, that is skill 200. It needs 1 Truesilver Rod, 1 Black Pearl, 1 Greater Mystic Essence and 1 Vision Dust.
@@ -127,7 +133,7 @@ You need Soul Dust and Vision Dust. In Classic, Vision Dust comes from green ite
 ??? example "Materials for Expert (150–225)"
 
     | Material | Amount |
-    |---|---|
+    |---|---:|
     | Vision Dust | 46 |
     | Soul Dust | 31 |
 
@@ -135,12 +141,16 @@ You need Soul Dust and Vision Dust. In Classic, Vision Dust comes from green ite
 
 You need Vision Dust, Dream Dust, Lesser Nether Essence and Illusion Dust. In Classic, Dream Dust comes from green items of item level 41 to 50, and Illusion Dust from item level 51 to 60. These are Classic-era values. They are not confirmed for Forever.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
+|---|---|---:|---|---|---|---|
 | 225–250 | **Enchant Gloves - Agility** | 33 | 1 Vision Dust | Orange → Yellow | Trainer, learn 210 (Classic value) | 1 Vision Dust for each craft. Yellow from 230 |
 | 250–270 | **Enchant Bracer - Greater Strength** | 22 | 1 Dream Dust, 2 Lesser Nether Essence | Orange → Yellow | Trainer, learn 240 (Classic value) | Yellow from 260 |
 | 270–290 | **Enchant Boots - Greater Stamina** | 22 | 6 Dream Dust | Orange → Yellow | Recipe item, learn 260 | A recipe item teaches it. No trainer recipe is orange here. Yellow from 280 |
 | 290–300 | **Enchant Cloak - Superior Defense** | 10 | 8 Illusion Dust | Orange | Recipe item, learn 285 | A recipe item teaches it. The trainer recipes are green here. Orange for the full step |
+
+</div>
 
 - Without a recipe item, stay on Enchant Bracer - Greater Strength until 280. It is yellow until 280.
 - The trainer alternatives after 280 are Enchant Weapon - Greater Striking, Enchant Chest - Stats and Enchant Gloves - Minor Haste. They are yellow until 285, 285 and 290. Each craft uses 1 Large Radiant Shard.
@@ -155,7 +165,7 @@ You need Vision Dust, Dream Dust, Lesser Nether Essence and Illusion Dust. In Cl
 ??? example "Materials for Artisan (225–300)"
 
     | Material | Amount |
-    |---|---|
+    |---|---:|
     | Dream Dust | 154 |
     | Illusion Dust | 80 |
     | Lesser Nether Essence | 44 |
@@ -166,7 +176,7 @@ You need Vision Dust, Dream Dust, Lesser Nether Essence and Illusion Dust. In Cl
 This list is the sum of all steps. It counts materials that you make in an earlier step again, so the real amount can be smaller.
 
 | Material | Amount |
-|---|---|
+|---|---:|
 | Strange Dust | 174 |
 | Dream Dust | 154 |
 | Illusion Dust | 80 |
@@ -185,151 +195,187 @@ These recipes are not necessary for the path, but they are useful. An enchant ma
 
 You need the rods to enchant. The 2 reagent recipes make materials for other professions in Classic.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Runed Copper Rod** | 1 | 1 Copper Rod, 1 Mote of Magic | Trainer | The first rod. Make it before the first enchant |
-| **Runed Silver Rod** | — | 1 Silver Rod, 3 Strange Dust, 4 Lesser Magic Essence, 1 Shadowgem | Trainer | The second rod. It also needs 1 Shadowgem |
-| **Runed Golden Rod** | — | 1 Golden Rod, 1 Iridescent Pearl, 1 Greater Astral Essence, 1 Soul Dust | Trainer | The third rod |
-| **Runed Truesilver Rod** | — | 1 Truesilver Rod, 1 Black Pearl, 1 Greater Mystic Essence, 1 Vision Dust | Trainer | The fourth rod |
-| **Runed Arcanite Rod** | 290 | 1 Arcanite Rod, 1 Golden Pearl, 10 Illusion Dust, 4 Greater Eternal Essence, 4 Small Brilliant Shard, 2 Large Brilliant Shard | Recipe item (BoP) | The last rod. In Classic, the best enchants need it |
-| **Dust to Motes (makes 3)** | 1 | 1 Strange Dust | Trainer | New. It makes Mote of Magic for the first recipes |
-| **Enchanted Thorium** | — | 1 Thorium Bar, 3 Dream Dust | Trainer | Not changed from Classic. In Classic, Blacksmithing uses it |
-| **Enchanted Leather** | — | 1 Rugged Leather, 1 Lesser Eternal Essence | Trainer | Not changed from Classic. In Classic, Leatherworking and Tailoring use it |
+|---|---:|---|---|---|
+| Runed Copper Rod | 1 | 1 Copper Rod, 1 Mote of Magic | Trainer | The first rod. Make it before the first enchant |
+| Runed Silver Rod | <span class="fc-na">—</span> | 1 Silver Rod, 3 Strange Dust, 4 Lesser Magic Essence, 1 Shadowgem | Trainer | The second rod. It also needs 1 Shadowgem |
+| Runed Golden Rod | <span class="fc-na">—</span> | 1 Golden Rod, 1 Iridescent Pearl, 1 Greater Astral Essence, 1 Soul Dust | Trainer | The third rod |
+| Runed Truesilver Rod | <span class="fc-na">—</span> | 1 Truesilver Rod, 1 Black Pearl, 1 Greater Mystic Essence, 1 Vision Dust | Trainer | The fourth rod |
+| Runed Arcanite Rod | 290 | 1 Arcanite Rod, 1 Golden Pearl, 10 Illusion Dust, 4 Greater Eternal Essence, 4 Small Brilliant Shard, 2 Large Brilliant Shard | Recipe item (BoP) | The last rod. In Classic, the best enchants need it |
+| Dust to Motes (makes 3) | 1 | 1 Strange Dust | Trainer | New. It makes Mote of Magic for the first recipes |
+| Enchanted Thorium | <span class="fc-na">—</span> | 1 Thorium Bar, 3 Dream Dust | Trainer | Not changed from Classic. In Classic, Blacksmithing uses it |
+| Enchanted Leather | <span class="fc-na">—</span> | 1 Rugged Leather, 1 Lesser Eternal Essence | Trainer | Not changed from Classic. In Classic, Leatherworking and Tailoring use it |
+
+</div>
 
 ### Wands
 
 A wand is useful for a Mage, a Priest or a Warlock at a low level. The client data does not give the damage of the new wands.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Novice's Practice Wand** | 1 | 1 Simple Wood, 1 Mote of Magic | Trainer | New. The first wand, before Lesser Magic Wand |
-| **Lesser Magic Wand** | — | 1 Simple Wood, 1 Lesser Magic Essence | Trainer | Not changed from Classic. In Classic, the trainer teaches it at skill 10 |
-| **Greater Magic Wand** | — | 1 Simple Wood, 2 Lesser Magic Essence | Trainer | In Classic, the trainer teaches it at skill 70 |
-| **Lesser Mystic Wand** | — | 1 Star Wood, 1 Lesser Mystic Essence | Trainer | The first wand that uses Star Wood |
-| **Greater Mystic Wand** | — | 1 Star Wood, 1 Lesser Mystic Essence, 1 Vision Dust | Trainer | The last wand from a trainer |
-| **Twisted Nether Wand** | 185 | 1 Lesser Nether Essence, 1 Dream Dust, 1 Star Wood | Recipe item (BoP) | New. The first of 6 new wands with a recipe item that binds on pickup. 1 of the 6 costs Merchant's Favor |
-| **Greater Eternal Wand** | 275 | 2 Greater Eternal Essence, 1 Illusion Dust, 1 Star Wood | Recipe item (BoP) | New. Item level 60 and uncommon quality |
-| **Torch of Light** | 300 | 2 Malleable Essence of Nature, 1 Nexus Crystal, 6 Large Brilliant Shard, 5 Lesser Eternal Essence | Recipe item (BoP) | New. Epic quality and item level 65. It uses 2 Malleable Essence of Nature |
+|---|---:|---|---|---|
+| Novice's Practice Wand | 1 | 1 Simple Wood, 1 Mote of Magic | Trainer | New. The first wand, before Lesser Magic Wand |
+| Lesser Magic Wand | <span class="fc-na">—</span> | 1 Simple Wood, 1 Lesser Magic Essence | Trainer | Not changed from Classic. In Classic, the trainer teaches it at skill 10 |
+| Greater Magic Wand | <span class="fc-na">—</span> | 1 Simple Wood, 2 Lesser Magic Essence | Trainer | In Classic, the trainer teaches it at skill 70 |
+| Lesser Mystic Wand | <span class="fc-na">—</span> | 1 Star Wood, 1 Lesser Mystic Essence | Trainer | The first wand that uses Star Wood |
+| Greater Mystic Wand | <span class="fc-na">—</span> | 1 Star Wood, 1 Lesser Mystic Essence, 1 Vision Dust | Trainer | The last wand from a trainer |
+| Twisted Nether Wand | 185 | 1 Lesser Nether Essence, 1 Dream Dust, 1 Star Wood | Recipe item (BoP) | New. The first of 6 new wands with a recipe item that binds on pickup. 1 of the 6 costs Merchant's Favor |
+| Greater Eternal Wand | 275 | 2 Greater Eternal Essence, 1 Illusion Dust, 1 Star Wood | Recipe item (BoP) | New. Item level 60 and uncommon quality |
+| Torch of Light | 300 | 2 Malleable Essence of Nature, 1 Nexus Crystal, 6 Large Brilliant Shard, 5 Lesser Eternal Essence | Recipe item (BoP) | New. Epic quality and item level 65. It uses 2 Malleable Essence of Nature |
+
+</div>
 
 ### Enchants for leveling
 
 A trainer teaches all of these. Each one uses 1 to 3 materials. Some use a shard.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Enchant Chest - Inferior Stamina** | — | 1 Strange Dust | Trainer | The first chest enchant. It uses only 1 dust |
-| **Enchant Weapon - Minor Striking** | — | 1 Strange Dust, 1 Lesser Magic Essence, 1 Small Glimmering Shard | Trainer | The first weapon enchant from a trainer |
-| **Enchant 2H Weapon - Minor Impact** | — | 1 Strange Dust, 1 Small Glimmering Shard | Trainer | The first trainer enchant for a 2-handed weapon |
-| **Enchant Chest - Minor Stats** | — | 1 Lesser Astral Essence, 1 Soul Dust, 1 Large Glimmering Shard | Trainer | The first chest enchant with the name Stats |
-| **Enchant Boots - Minor Speed** | — | 1 Small Radiant Shard, 1 Aquamarine, 1 Lesser Nether Essence | Trainer | In Classic, Minor Speed increases the run speed. The effect in Forever is not confirmed |
-| **Enchant Weapon - Striking** | — | 1 Greater Mystic Essence, 1 Large Glowing Shard | Trainer | The middle weapon enchant from a trainer |
-| **Enchant 2H Weapon - Greater Impact** | — | 1 Large Radiant Shard, 1 Dream Dust | Trainer | The trainer enchant with the highest skill for 2-handed weapons |
-| **Enchant Chest - Stats** | — | 1 Large Radiant Shard, 1 Dream Dust, 1 Greater Nether Essence | Trainer | The trainer enchant with the highest skill for the chest |
+|---|---:|---|---|---|
+| Enchant Chest - Inferior Stamina | <span class="fc-na">—</span> | 1 Strange Dust | Trainer | The first chest enchant. It uses only 1 dust |
+| Enchant Weapon - Minor Striking | <span class="fc-na">—</span> | 1 Strange Dust, 1 Lesser Magic Essence, 1 Small Glimmering Shard | Trainer | The first weapon enchant from a trainer |
+| Enchant 2H Weapon - Minor Impact | <span class="fc-na">—</span> | 1 Strange Dust, 1 Small Glimmering Shard | Trainer | The first trainer enchant for a 2-handed weapon |
+| Enchant Chest - Minor Stats | <span class="fc-na">—</span> | 1 Lesser Astral Essence, 1 Soul Dust, 1 Large Glimmering Shard | Trainer | The first chest enchant with the name Stats |
+| Enchant Boots - Minor Speed | <span class="fc-na">—</span> | 1 Small Radiant Shard, 1 Aquamarine, 1 Lesser Nether Essence | Trainer | In Classic, Minor Speed increases the run speed. The effect in Forever is not confirmed |
+| Enchant Weapon - Striking | <span class="fc-na">—</span> | 1 Greater Mystic Essence, 1 Large Glowing Shard | Trainer | The middle weapon enchant from a trainer |
+| Enchant 2H Weapon - Greater Impact | <span class="fc-na">—</span> | 1 Large Radiant Shard, 1 Dream Dust | Trainer | The trainer enchant with the highest skill for 2-handed weapons |
+| Enchant Chest - Stats | <span class="fc-na">—</span> | 1 Large Radiant Shard, 1 Dream Dust, 1 Greater Nether Essence | Trainer | The trainer enchant with the highest skill for the chest |
+
+</div>
 
 ### Level 60 enchants from Classic
 
 A recipe item teaches each one. 9 of these 10 recipes are not changed from Classic Era in the client data. The recipes with learn skill 300 give no skill points, because the skill cap is 300.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Enchant Weapon - Crusader** | 300 | 4 Large Brilliant Shard, 2 Righteous Orb | Recipe item | The standard melee weapon enchant in Classic. It uses 2 Righteous Orb |
-| **Enchant Weapon - Fiery Weapon** | 265 | 2 Small Radiant Shard, 1 Essence of Fire | Recipe item | Changed from Classic: the reagents are different. It is orange until skill 285 and yellow until 305 |
-| **Enchant Weapon - Lifestealing** | 300 | 6 Large Brilliant Shard, 6 Essence of Undeath, 6 Living Essence | Recipe item | Not changed from Classic |
-| **Enchant Weapon - Agility** | 290 | 6 Large Brilliant Shard, 6 Greater Eternal Essence, 4 Illusion Dust, 2 Essence of Air | Recipe item (BoP) | Not changed from Classic. The recipe item binds on pickup |
-| **Enchant Weapon - Mighty Intellect** | 300 | 15 Large Brilliant Shard, 12 Greater Eternal Essence, 20 Illusion Dust | Recipe item (BoP) | Not changed from Classic. It uses 15 Large Brilliant Shard |
-| **Enchant Chest - Greater Stats** | 300 | 4 Large Brilliant Shard, 15 Illusion Dust, 10 Greater Eternal Essence | Recipe item | The top chest enchant in the list |
-| **Enchant Boots - Greater Agility** | 295 | 8 Greater Eternal Essence | Recipe item | Not changed from Classic |
-| **Enchant Gloves - Threat** | 300 | 4 Nexus Crystal, 6 Large Brilliant Shard, 8 Larval Acid | Recipe item (BoP) | A tank enchant in Classic. Not changed |
-| **Enchant Cloak - Subtlety** | 300 | 4 Nexus Crystal, 6 Large Brilliant Shard, 2 Black Diamond | Recipe item (BoP) | In Classic, it decreases threat. Not changed |
-| **Enchant Cloak - Greater Fire Resistance** | 300 | 3 Nexus Crystal, 8 Large Brilliant Shard, 4 Essence of Fire | Recipe item (BoP) | Not changed from Classic. Useful where a raid needs fire resistance |
+|---|---:|---|---|---|
+| Enchant Weapon - Crusader | 300 | 4 Large Brilliant Shard, 2 Righteous Orb | Recipe item | The standard melee weapon enchant in Classic. It uses 2 Righteous Orb |
+| Enchant Weapon - Fiery Weapon | 265 | 2 Small Radiant Shard, 1 Essence of Fire | Recipe item | Changed from Classic: the reagents are different. It is orange until skill 285 and yellow until 305 |
+| Enchant Weapon - Lifestealing | 300 | 6 Large Brilliant Shard, 6 Essence of Undeath, 6 Living Essence | Recipe item | Not changed from Classic |
+| Enchant Weapon - Agility | 290 | 6 Large Brilliant Shard, 6 Greater Eternal Essence, 4 Illusion Dust, 2 Essence of Air | Recipe item (BoP) | Not changed from Classic. The recipe item binds on pickup |
+| Enchant Weapon - Mighty Intellect | 300 | 15 Large Brilliant Shard, 12 Greater Eternal Essence, 20 Illusion Dust | Recipe item (BoP) | Not changed from Classic. It uses 15 Large Brilliant Shard |
+| Enchant Chest - Greater Stats | 300 | 4 Large Brilliant Shard, 15 Illusion Dust, 10 Greater Eternal Essence | Recipe item | The top chest enchant in the list |
+| Enchant Boots - Greater Agility | 295 | 8 Greater Eternal Essence | Recipe item | Not changed from Classic |
+| Enchant Gloves - Threat | 300 | 4 Nexus Crystal, 6 Large Brilliant Shard, 8 Larval Acid | Recipe item (BoP) | A tank enchant in Classic. Not changed |
+| Enchant Cloak - Subtlety | 300 | 4 Nexus Crystal, 6 Large Brilliant Shard, 2 Black Diamond | Recipe item (BoP) | In Classic, it decreases threat. Not changed |
+| Enchant Cloak - Greater Fire Resistance | 300 | 3 Nexus Crystal, 8 Large Brilliant Shard, 4 Essence of Fire | Recipe item (BoP) | Not changed from Classic. Useful where a raid needs fire resistance |
+
+</div>
 
 ### New enchants from recipe items
 
 These enchants are new in Forever. All recipe items bind on pickup, but not the item for Enchant Boots - Speed. The client does not say where the recipe items come from. The client data does not give the effects.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Enchant Bracer - Minor Healing Power** | 90 | 2 Lesser Magic Essence | Recipe item (BoP) | The name suggests a healing enchant for low levels |
-| **Enchant Bracer - Agility** | 190 | 1 Vision Dust | Recipe item (BoP) | A new Agility enchant for bracers, between Lesser Agility and Greater Agility |
-| **Enchant Bracer - Superior Agility** | 295 | 3 Illusion Dust, 3 Greater Eternal Essence, 1 Large Brilliant Shard | Recipe item (BoP) | The top Agility enchant for bracers in the list |
-| **Enchant 2H Weapon - Lesser Agility** | 210 | 2 Vision Dust, 1 Large Glowing Shard, 1 Lesser Nether Essence | Recipe item (BoP) | The name suggests an enchant for Hunters |
-| **Enchant 2H Weapon - Strength** | 290 | 8 Large Brilliant Shard, 10 Greater Eternal Essence, 8 Illusion Dust, 4 Arcane Crystal | Recipe item (BoP) | The name suggests Strength. It turns grey at skill 300, so do not use it for skill points |
-| **Enchant Gloves - Lotus Claw** | 295 | 1 Death Lotus, 2 Small Brilliant Shard, 12 Illusion Dust, 4 Lesser Eternal Essence | Recipe item (BoP) | The name does not make the effect plain. It turns grey at skill 300 |
-| **Enchant Gloves - Advanced Skinning** | 250 | 2 Dream Dust, 1 Cured Rugged Hide | Recipe item (BoP) | The name suggests a Skinning skill enchant |
-| **Enchant Boots - Speed** | 280 | 2 Large Radiant Shard, 8 Dream Dust, 2 Greater Nether Essence, 1 Blue Sapphire | Recipe item | The name suggests a higher rank of Minor Speed. This recipe item does not bind on pickup |
-| **Enchant Shield - Critical Strike** | 300 | 5 Large Brilliant Shard, 15 Illusion Dust, 1 Blood of Heroes | Recipe item (BoP) | The name suggests a critical strike bonus on a shield |
-| **Enchant Shield - Excellent Stamina** | 300 | 6 Large Brilliant Shard, 18 Illusion Dust, 2 Essence of Earth | Recipe item (BoP) | The top Stamina enchant for shields in the list |
-| **Enchant Off-Hand - Superior Intellect** | 300 | 2 Nexus Crystal, 18 Illusion Dust, 2 Essence of Air | Recipe item (BoP) | 1 of 3 enchants for the new off-hand slot |
-| **Enchant Off-Hand - Excellent Spirit** | 300 | 2 Nexus Crystal, 18 Illusion Dust, 2 Essence of Water | Recipe item (BoP) | An off-hand enchant. The name suggests Spirit |
+|---|---:|---|---|---|
+| Enchant Bracer - Minor Healing Power | 90 | 2 Lesser Magic Essence | Recipe item (BoP) | The name suggests a healing enchant for low levels |
+| Enchant Bracer - Agility | 190 | 1 Vision Dust | Recipe item (BoP) | A new Agility enchant for bracers, between Lesser Agility and Greater Agility |
+| Enchant Bracer - Superior Agility | 295 | 3 Illusion Dust, 3 Greater Eternal Essence, 1 Large Brilliant Shard | Recipe item (BoP) | The top Agility enchant for bracers in the list |
+| Enchant 2H Weapon - Lesser Agility | 210 | 2 Vision Dust, 1 Large Glowing Shard, 1 Lesser Nether Essence | Recipe item (BoP) | The name suggests an enchant for Hunters |
+| Enchant 2H Weapon - Strength | 290 | 8 Large Brilliant Shard, 10 Greater Eternal Essence, 8 Illusion Dust, 4 Arcane Crystal | Recipe item (BoP) | The name suggests Strength. It turns grey at skill 300, so do not use it for skill points |
+| Enchant Gloves - Lotus Claw | 295 | 1 Death Lotus, 2 Small Brilliant Shard, 12 Illusion Dust, 4 Lesser Eternal Essence | Recipe item (BoP) | The name does not make the effect plain. It turns grey at skill 300 |
+| Enchant Gloves - Advanced Skinning | 250 | 2 Dream Dust, 1 Cured Rugged Hide | Recipe item (BoP) | The name suggests a Skinning skill enchant |
+| Enchant Boots - Speed | 280 | 2 Large Radiant Shard, 8 Dream Dust, 2 Greater Nether Essence, 1 Blue Sapphire | Recipe item | The name suggests a higher rank of Minor Speed. This recipe item does not bind on pickup |
+| Enchant Shield - Critical Strike | 300 | 5 Large Brilliant Shard, 15 Illusion Dust, 1 Blood of Heroes | Recipe item (BoP) | The name suggests a critical strike bonus on a shield |
+| Enchant Shield - Excellent Stamina | 300 | 6 Large Brilliant Shard, 18 Illusion Dust, 2 Essence of Earth | Recipe item (BoP) | The top Stamina enchant for shields in the list |
+| Enchant Off-Hand - Superior Intellect | 300 | 2 Nexus Crystal, 18 Illusion Dust, 2 Essence of Air | Recipe item (BoP) | 1 of 3 enchants for the new off-hand slot |
+| Enchant Off-Hand - Excellent Spirit | 300 | 2 Nexus Crystal, 18 Illusion Dust, 2 Essence of Water | Recipe item (BoP) | An off-hand enchant. The name suggests Spirit |
+
+</div>
 
 ### Merchant's Favor: buy these first
 
 The Alliance merchant Alynsia sells 39 Enchanting recipes for Merchant's Favor. On the beta, 10 recipes cost 45 Favor, 13 cost 120, 1 cost 180 and 15 cost 240. The prices are from a beta log of 20 September 2026, not from the client. All 39 recipe items bind on pickup.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Enchant Weapon - Insight** | 140 | 10 Strange Dust, 4 Large Glimmering Shard, 4 Greater Astral Essence, 4 Pyrite, 4 Frilled Lichen | Recipe item (BoP) · Merchant's Favor | 45 Favor on the beta. 1 of 3 new weapon enchants at the lowest price. The names do not make the effects plain |
-| **Enchant Weapon - Recovery** | 140 | 6 Soul Dust, 4 Large Glimmering Shard, 6 Greater Astral Essence, 4 Pyrite, 4 Silver Ore | Recipe item (BoP) · Merchant's Favor | 45 Favor on the beta. The name does not make the effect plain |
-| **Enchant Weapon - Revelation** | 140 | 8 Soul Dust, 6 Large Glimmering Shard, 2 Greater Astral Essence, 4 Cerulean Dye, 4 Sulfuric Acid | Recipe item (BoP) · Merchant's Favor | 45 Favor on the beta. The name does not make the effect plain |
-| **Orb of Souls** | 140 | 2 Small Glimmering Shard, 2 Greater Astral Essence, 2 Soul Dust | Recipe item (BoP) · Merchant's Favor | 45 Favor on the beta. A rare off-hand item of item level 30. It uses no reagents from other professions |
-| **Enchant Necklace - Spell Power** | 210 | 5 Greater Nether Essence, 3 Large Radiant Shard, 8 Dream Dust, 4 Cerulean Dye, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. The necklace slot is new, so it has no other enchants |
-| **Enchant Necklace - Healing Power** | 210 | 3 Greater Nether Essence, 5 Large Radiant Shard, 4 Dream Dust, 4 Pyrite, 4 Rosecap | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. For healers |
-| **Enchant Necklace - Strength** | 210 | 4 Greater Nether Essence, 4 Large Radiant Shard, 10 Dream Dust, 4 Sulfuric Acid, 4 Bauxite | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. For melee classes |
-| **Enchant Necklace - Agility** | 210 | 2 Greater Nether Essence, 8 Large Radiant Shard, 6 Dream Dust, 4 Sulfuric Acid, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. For Rogues, Hunters and Feral Druids |
-| **Enchant Necklace - Deflection** | 210 | 8 Greater Nether Essence, 2 Large Radiant Shard, 2 Dream Dust, 4 Cerulean Dye, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. The name suggests a tank enchant |
-| **Enchant Chest - Absorption** | 220 | 10 Dream Dust, 4 Greater Nether Essence, 2 Large Radiant Shard | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. The only new chest enchant. The name does not make the effect plain |
-| **Enchant Cloak - Agility** | 300 | 3 Greater Eternal Essence, 9 Illusion Dust, 1 Essence of Fire | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. It uses no shards and no crystals |
-| **Enchant Bracer - Greater Spellpower** | 300 | 3 Greater Eternal Essence, 9 Illusion Dust, 12 Essence of Undeath, 2 Purple Lotus | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. For casters |
-| **Enchant Bracer - Superior Intellect** | 300 | 10 Greater Eternal Essence | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. For casters. It uses only 1 type of material |
-| **Enchant Gloves - Superior Strength** | 300 | 4 Nexus Crystal, 8 Greater Eternal Essence, 4 Essence of Earth | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. For melee classes |
-| **Enchant 2H Weapon - Spellblasting** | 300 | 3 Nexus Crystal, 24 Illusion Dust, 1 Blood of Heroes, 6 Purple Lotus | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. The name suggests a caster enchant for staves |
+|---|---:|---|---|---|
+| Enchant Weapon - Insight | 140 | 10 Strange Dust, 4 Large Glimmering Shard, 4 Greater Astral Essence, 4 Pyrite, 4 Frilled Lichen | Recipe item (BoP) · Merchant's Favor | 45 Favor on the beta. 1 of 3 new weapon enchants at the lowest price. The names do not make the effects plain |
+| Enchant Weapon - Recovery | 140 | 6 Soul Dust, 4 Large Glimmering Shard, 6 Greater Astral Essence, 4 Pyrite, 4 Silver Ore | Recipe item (BoP) · Merchant's Favor | 45 Favor on the beta. The name does not make the effect plain |
+| Enchant Weapon - Revelation | 140 | 8 Soul Dust, 6 Large Glimmering Shard, 2 Greater Astral Essence, 4 Cerulean Dye, 4 Sulfuric Acid | Recipe item (BoP) · Merchant's Favor | 45 Favor on the beta. The name does not make the effect plain |
+| Orb of Souls | 140 | 2 Small Glimmering Shard, 2 Greater Astral Essence, 2 Soul Dust | Recipe item (BoP) · Merchant's Favor | 45 Favor on the beta. A rare off-hand item of item level 30. It uses no reagents from other professions |
+| Enchant Necklace - Spell Power | 210 | 5 Greater Nether Essence, 3 Large Radiant Shard, 8 Dream Dust, 4 Cerulean Dye, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. The necklace slot is new, so it has no other enchants |
+| Enchant Necklace - Healing Power | 210 | 3 Greater Nether Essence, 5 Large Radiant Shard, 4 Dream Dust, 4 Pyrite, 4 Rosecap | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. For healers |
+| Enchant Necklace - Strength | 210 | 4 Greater Nether Essence, 4 Large Radiant Shard, 10 Dream Dust, 4 Sulfuric Acid, 4 Bauxite | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. For melee classes |
+| Enchant Necklace - Agility | 210 | 2 Greater Nether Essence, 8 Large Radiant Shard, 6 Dream Dust, 4 Sulfuric Acid, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. For Rogues, Hunters and Feral Druids |
+| Enchant Necklace - Deflection | 210 | 8 Greater Nether Essence, 2 Large Radiant Shard, 2 Dream Dust, 4 Cerulean Dye, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. The name suggests a tank enchant |
+| Enchant Chest - Absorption | 220 | 10 Dream Dust, 4 Greater Nether Essence, 2 Large Radiant Shard | Recipe item (BoP) · Merchant's Favor | 120 Favor on the beta. The only new chest enchant. The name does not make the effect plain |
+| Enchant Cloak - Agility | 300 | 3 Greater Eternal Essence, 9 Illusion Dust, 1 Essence of Fire | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. It uses no shards and no crystals |
+| Enchant Bracer - Greater Spellpower | 300 | 3 Greater Eternal Essence, 9 Illusion Dust, 12 Essence of Undeath, 2 Purple Lotus | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. For casters |
+| Enchant Bracer - Superior Intellect | 300 | 10 Greater Eternal Essence | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. For casters. It uses only 1 type of material |
+| Enchant Gloves - Superior Strength | 300 | 4 Nexus Crystal, 8 Greater Eternal Essence, 4 Essence of Earth | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. For melee classes |
+| Enchant 2H Weapon - Spellblasting | 300 | 3 Nexus Crystal, 24 Illusion Dust, 1 Blood of Heroes, 6 Purple Lotus | Recipe item (BoP) · Merchant's Favor | 240 Favor on the beta. The name suggests a caster enchant for staves |
+
+</div>
 
 ### Merchant's Favor: staves, off-hands and relics
 
 These recipes make items of rare quality. The client data does not give their statistics. The names Idol, Libram and Totem suggest relics for Druids, Paladins and Shamans.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Glimmering Staff** | 140 | 4 Large Glimmering Shard, 2 Small Glimmering Shard, 4 Star Wood, 1 Greater Astral Essence, 5 Strange Dust, 3 Pyrite | Recipe item (BoP) · Merchant's Favor | Item level 30. 1 of 2 staves at skill 140 |
-| **Soulstaff** | 140 | 2 Large Glimmering Shard, 1 Small Glimmering Shard, 4 Star Wood, 1 Greater Astral Essence, 6 Soul Dust, 2 Shadowgem | Recipe item (BoP) · Merchant's Favor | Item level 30. The second staff of this tier |
-| **Radiant Staff** | 220 | 6 Large Radiant Shard, 2 Small Radiant Shard, 4 Star Wood, 4 Greater Nether Essence, 6 Dream Dust, 2 Cerulean Dye, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | Item level 50. 1 of 2 staves at skill 220 |
-| **Dreamstaff** | 220 | 4 Large Radiant Shard, 4 Small Radiant Shard, 4 Star Wood, 6 Greater Nether Essence, 8 Dream Dust, 2 Cerulean Dye, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | Item level 50 |
-| **Truesilver Conduit** | 220 | 3 Large Radiant Shard, 1 Small Radiant Shard, 2 Star Wood, 2 Greater Nether Essence, 3 Dream Dust, 1 Cerulean Dye, 2 Magenta Dye | Recipe item (BoP) · Merchant's Favor | An off-hand item of item level 50 |
-| **Brilliant Wand** | 275 | 1 Greater Eternal Essence, 3 Illusion Dust, 2 Large Brilliant Shard, 1 Star Wood | Recipe item (BoP) · Merchant's Favor | 180 Favor on the beta. A rare wand of item level 60. It is orange from skill 275 to 300, so each craft gives a point |
-| **Mystic Mushroom** | 130 | 1 Small Glimmering Shard, 2 Greater Magic Essence, 5 Strange Dust, 1 Red-speckled Mushroom | Recipe item (BoP) · Merchant's Favor | A relic of item level 25. 1 of 3 relics at skill 130 |
-| **Talons of Wrath** | 210 | 2 Large Radiant Shard, 4 Greater Nether Essence, 6 Dream Dust, 2 Magenta Dye, 1 Cerulean Dye, 1 Star Wood | Recipe item (BoP) · Merchant's Favor | A relic of item level 45 |
-| **Idol of the Dream** | 300 | 2 Large Brilliant Shard, 4 Greater Eternal Essence, 6 Illusion Dust, 8 Viridian Dye, 4 Magenta Dye, 2 Cerulean Dye, 4 Star Wood | Recipe item (BoP) · Merchant's Favor | A relic of item level 60 |
-| **Libram of Holy Alacrity** | 300 | 4 Large Brilliant Shard, 3 Greater Eternal Essence, 4 Illusion Dust, 8 Viridian Dye, 4 Magenta Dye, 2 Cerulean Dye, 4 Scroll of Intellect IV | Recipe item (BoP) · Merchant's Favor | A relic of item level 60 |
-| **Totem of Thunder** | 300 | 1 Large Brilliant Shard, 8 Greater Eternal Essence, 10 Illusion Dust, 8 Viridian Dye, 4 Magenta Dye, 2 Cerulean Dye, 4 Star Wood | Recipe item (BoP) · Merchant's Favor | A relic of item level 65 |
+|---|---:|---|---|---|
+| Glimmering Staff | 140 | 4 Large Glimmering Shard, 2 Small Glimmering Shard, 4 Star Wood, 1 Greater Astral Essence, 5 Strange Dust, 3 Pyrite | Recipe item (BoP) · Merchant's Favor | Item level 30. 1 of 2 staves at skill 140 |
+| Soulstaff | 140 | 2 Large Glimmering Shard, 1 Small Glimmering Shard, 4 Star Wood, 1 Greater Astral Essence, 6 Soul Dust, 2 Shadowgem | Recipe item (BoP) · Merchant's Favor | Item level 30. The second staff of this tier |
+| Radiant Staff | 220 | 6 Large Radiant Shard, 2 Small Radiant Shard, 4 Star Wood, 4 Greater Nether Essence, 6 Dream Dust, 2 Cerulean Dye, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | Item level 50. 1 of 2 staves at skill 220 |
+| Dreamstaff | 220 | 4 Large Radiant Shard, 4 Small Radiant Shard, 4 Star Wood, 6 Greater Nether Essence, 8 Dream Dust, 2 Cerulean Dye, 4 Magenta Dye | Recipe item (BoP) · Merchant's Favor | Item level 50 |
+| Truesilver Conduit | 220 | 3 Large Radiant Shard, 1 Small Radiant Shard, 2 Star Wood, 2 Greater Nether Essence, 3 Dream Dust, 1 Cerulean Dye, 2 Magenta Dye | Recipe item (BoP) · Merchant's Favor | An off-hand item of item level 50 |
+| Brilliant Wand | 275 | 1 Greater Eternal Essence, 3 Illusion Dust, 2 Large Brilliant Shard, 1 Star Wood | Recipe item (BoP) · Merchant's Favor | 180 Favor on the beta. A rare wand of item level 60. It is orange from skill 275 to 300, so each craft gives a point |
+| Mystic Mushroom | 130 | 1 Small Glimmering Shard, 2 Greater Magic Essence, 5 Strange Dust, 1 Red-speckled Mushroom | Recipe item (BoP) · Merchant's Favor | A relic of item level 25. 1 of 3 relics at skill 130 |
+| Talons of Wrath | 210 | 2 Large Radiant Shard, 4 Greater Nether Essence, 6 Dream Dust, 2 Magenta Dye, 1 Cerulean Dye, 1 Star Wood | Recipe item (BoP) · Merchant's Favor | A relic of item level 45 |
+| Idol of the Dream | 300 | 2 Large Brilliant Shard, 4 Greater Eternal Essence, 6 Illusion Dust, 8 Viridian Dye, 4 Magenta Dye, 2 Cerulean Dye, 4 Star Wood | Recipe item (BoP) · Merchant's Favor | A relic of item level 60 |
+| Libram of Holy Alacrity | 300 | 4 Large Brilliant Shard, 3 Greater Eternal Essence, 4 Illusion Dust, 8 Viridian Dye, 4 Magenta Dye, 2 Cerulean Dye, 4 Scroll of Intellect IV | Recipe item (BoP) · Merchant's Favor | A relic of item level 60 |
+| Totem of Thunder | 300 | 1 Large Brilliant Shard, 8 Greater Eternal Essence, 10 Illusion Dust, 8 Viridian Dye, 4 Magenta Dye, 2 Cerulean Dye, 4 Star Wood | Recipe item (BoP) · Merchant's Favor | A relic of item level 65 |
+
+</div>
 
 ### Epic relics and curios
 
 The 5 epic relics have the same reagents. Each one uses 1 Malleable Essence of Nature and 1 Nexus Crystal. The recipe items of the 5 relics and of the 3 new Hearts bind on pickup.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Idol of Swiftness** | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
-| **Idol of the Ursine Twins** | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
-| **Libram of Infusion** | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
-| **Steadfast Libram** | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
-| **Totem of Urgency** | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
-| **Smoking Heart of the Mountain** | 265 | 1 Blood of the Mountain, 1 Essence of Fire, 3 Small Brilliant Shard | Recipe item | Not changed from Classic. In Classic, it is a trinket with fire resistance |
-| **Frozen Heart of the Mountain** | 265 | 1 Blood of the Mountain, 1 Essence of Undeath, 3 Small Brilliant Shard | Recipe item (BoP) | New. 1 of 3 new Hearts. Each uses a different elemental essence |
+|---|---:|---|---|---|
+| Idol of Swiftness | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
+| Idol of the Ursine Twins | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
+| Libram of Infusion | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
+| Steadfast Libram | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
+| Totem of Urgency | 300 | 1 Malleable Essence of Nature, 1 Nexus Crystal, 2 Greater Eternal Essence, 12 Illusion Dust | Recipe item (BoP) | New. Epic quality and item level 65 |
+| Smoking Heart of the Mountain | 265 | 1 Blood of the Mountain, 1 Essence of Fire, 3 Small Brilliant Shard | Recipe item | Not changed from Classic. In Classic, it is a trinket with fire resistance |
+| Frozen Heart of the Mountain | 265 | 1 Blood of the Mountain, 1 Essence of Undeath, 3 Small Brilliant Shard | Recipe item (BoP) | New. 1 of 3 new Hearts. Each uses a different elemental essence |
+
+</div>
 
 ### Oils and profession gloves
 
 The oils are items that you can sell. Each oil needs a vial and 1 type of herb or seed.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Minor Wizard Oil** | 5 | 1 Strange Dust, 1 Maple Seed, 1 Empty Vial | Recipe item | The first oil. The reagents are changed from Classic |
-| **Lesser Mana Oil** | 250 | 1 Dream Dust, 1 Purple Lotus, 1 Crystal Vial | Recipe item | A mana oil for healers in Classic. The reagents are changed in Forever |
-| **Wizard Oil** | 275 | 3 Illusion Dust, 2 Firebloom, 1 Crystal Vial | Recipe item | Not changed from Classic |
-| **Brilliant Wizard Oil** | 300 | 2 Large Brilliant Shard, 3 Firebloom, 1 Imbued Vial | Recipe item (BoP) | Not changed from Classic. The raid oil for damage casters in Classic |
-| **Brilliant Mana Oil** | 300 | 2 Large Brilliant Shard, 3 Purple Lotus, 1 Imbued Vial | Recipe item (BoP) | Not changed from Classic. The raid oil for healers in Classic |
-| **Enchant Gloves - Herbalism** | 145 | 1 Soul Dust, 1 Kingsblood | Recipe item | The name suggests a Herbalism skill bonus |
-| **Enchant Gloves - Mining** | 145 | 1 Soul Dust, 1 Iron Ore | Recipe item | The name suggests a Mining skill bonus |
-| **Enchant Gloves - Riding Skill** | 250 | 1 Large Radiant Shard, 2 Dream Dust | Recipe item | In Classic, it increases the mount speed. The effect in Forever is not confirmed |
+|---|---:|---|---|---|
+| Minor Wizard Oil | 5 | 1 Strange Dust, 1 Maple Seed, 1 Empty Vial | Recipe item | The first oil. The reagents are changed from Classic |
+| Lesser Mana Oil | 250 | 1 Dream Dust, 1 Purple Lotus, 1 Crystal Vial | Recipe item | A mana oil for healers in Classic. The reagents are changed in Forever |
+| Wizard Oil | 275 | 3 Illusion Dust, 2 Firebloom, 1 Crystal Vial | Recipe item | Not changed from Classic |
+| Brilliant Wizard Oil | 300 | 2 Large Brilliant Shard, 3 Firebloom, 1 Imbued Vial | Recipe item (BoP) | Not changed from Classic. The raid oil for damage casters in Classic |
+| Brilliant Mana Oil | 300 | 2 Large Brilliant Shard, 3 Purple Lotus, 1 Imbued Vial | Recipe item (BoP) | Not changed from Classic. The raid oil for healers in Classic |
+| Enchant Gloves - Herbalism | 145 | 1 Soul Dust, 1 Kingsblood | Recipe item | The name suggests a Herbalism skill bonus |
+| Enchant Gloves - Mining | 145 | 1 Soul Dust, 1 Iron Ore | Recipe item | The name suggests a Mining skill bonus |
+| Enchant Gloves - Riding Skill | 250 | 1 Large Radiant Shard, 2 Dream Dust | Recipe item | In Classic, it increases the mount speed. The effect in Forever is not confirmed |
+
+</div>
 
 ## Where recipes come from
 
@@ -345,11 +391,16 @@ The client also holds 37 Enchanting recipes from Season of Discovery under a sep
 
 Enchanting makes these features for a [camp](../systems/camping.md). The camp page gives the effect of each feature.
 
+
+<div class="fc-data" data-prose="1 3" markdown>
+
 | Feature | Learn | Reagents | Source |
-|---|---|---|---|
-| **Enchanted Lute** | — | 1 Simple Wood, 1 Strange Dust | Trainer |
-| **Arcane Salvager** | 140 | 2 Vision Dust, 1 Lesser Nether Essence | Recipe item |
-| **Arcane Forge** | 300 | 1 Maker's Spark, 2 Large Brilliant Shard, 4 Greater Eternal Essence | Recipe item |
+|---|---:|---|---|
+| Enchanted Lute | <span class="fc-na">—</span> | 1 Simple Wood, 1 Strange Dust | Trainer |
+| Arcane Salvager | 140 | 2 Vision Dust, 1 Lesser Nether Essence | Recipe item |
+| Arcane Forge | 300 | 1 Maker's Spark, 2 Large Brilliant Shard, 4 Greater Eternal Essence | Recipe item |
+
+</div>
 
 A trainer teaches the Enchanted Lute. The client does not hold the trainer skill, and the recipe is yellow at skill 20. Blueprints teach the Arcane Salvager at skill 140 and the Arcane Forge at skill 300. The Arcane Salvager blueprint drops from Rath'mael in the Ruins of Lordaeron. The wiki does not give the drop source of the Arcane Forge blueprint.
 
@@ -396,5 +447,7 @@ The full list of 225 recipes is on a separate page: [Enchanting recipes](enchant
     The materials table gives the estimate for each bracket. The real number changes, because yellow recipes do not always give a point.
 
 ## Sources
+
+Current as of 10 November 2026. The recipe data is from the game client, build 1.60.1.70862. [wowforevertalents.com](https://wowforevertalents.com/professions/enchanting/) reads this data from the client. The client does not hold the skill that a trainer asks for, the prices, or the drop locations. The path and the recipe picks are Codex recommendations.
 
 - [wowforevertalents.com: Enchanting recipes, read from the client](https://wowforevertalents.com/professions/enchanting/)

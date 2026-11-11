@@ -1,3 +1,7 @@
+---
+wide: true
+---
+
 # Dungeons
 
 Forever launched with **32 dungeons**: all the original Classic instances plus **9 new 5-player dungeons** for levels 13–60. Blizzard calls this an *additive* approach. The original dungeons stay almost the same, but with changed quests and rewards.
@@ -20,7 +24,7 @@ Forever launched with **32 dungeons**: all the original Classic instances plus *
 
 **New** dungeons are in bold and carry a **New**{ .pill .pill--new } badge. Common abbreviations (BRD, UBRS, SM…) are next to each name, so that the search finds them. The *LFG* column shows the in-game group-finder range (via Warcraft Tavern). The *Wiki* column shows the Warcraft Wiki's range.
 
-<div class="compare" markdown>
+<div class="fc-data" data-prose="1" markdown>
 
 | Dungeon | Location | Wiki | LFG | Bosses |
 |---|---|---|---|---|

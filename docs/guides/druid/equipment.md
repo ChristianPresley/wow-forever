@@ -2,24 +2,16 @@
 description: "Druid equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."
 tags:
   - Druid
+generated: true
+wide: true
 ---
 
 # Druid Equipment
 
 <!-- This page is generated. Edit tools/classes/guides/druid.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="druid" markdown>
-
-:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Equipment</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Druid progression](index.md). This page gives the full equipment data for each set.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#feral">Feral: leather and a two-hand weapon</a> <a href="#caster">Balance: spell damage</a> <a href="#healer">Restoration: healing</a> <a href="#enchants-and-consumables">Enchants</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
+:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Equipment</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="druid" }
 
 A Druid uses 3 different sets of items. Feral needs leather with Strength and Agility and a strong two-hand weapon. Balance needs spell damage, and Restoration needs healing power. With dual spec at level 40, you carry 2 of these sets.
 
@@ -29,11 +21,15 @@ The crafted leather items have families with a name, for example Brawler's, Tote
 
 ## Equipment sets
 
+<div class="fc-stack" markdown>
+
 | Set | Use it for | Stat priority |
 |---|---|---|
 | [Feral: leather and a two-hand weapon](#feral) | The set for Cat and Bear. You wear leather with Strength, Agility and Stamina, and you carry the two-hand weapon with the highest DPS. A Bear replaces some items with armor, Defense and dodge. | Leveling: weapon DPS > Strength, Agility, Attack Power > Stamina > Intellect. Cat at 60 (Warcraft Tavern): Hit to 9% > Expertise > Crit > Haste > Agility > Strength. Bear at 60: Defense to 440 > Dodge > Armor > Stamina |
 | [Balance: spell damage](#caster) | The set for Balance. You wear leather or cloth with spell damage, Intellect and crit. The weapon is a staff, or a one-hand mace or dagger with an off-hand item. | Leveling: Intellect, Spell Damage > Stamina, Spirit > Armor. Level 60 (Warcraft Tavern, not final): Spell Damage, then Hit to the cap, Crit above Haste, Intellect |
 | [Restoration: healing](#healer) | The set for a healer, and the second set of a Feral Druid with dual spec. You wear leather or cloth with healing power, Spirit and Intellect. Healing items also have spell power, so the set works for solo casts. | Leveling: Intellect, Healing Power > Stamina, Spirit > Armor. Level 60 (Warcraft Tavern, not final): Healing Power, Spirit, Crit, Haste, Intellect |
+
+</div>
 
 ## What a Druid can equip { #proficiencies }
 
@@ -94,8 +90,8 @@ Change to leather with Strength or Agility when you get Bear Form. The weapon is
 | Relic | **Idol of Shifting Tides** | Class quest: The Aquatic Form quest, level 16 |
 | Chest | **Armor of the Fang** | Wailing Caverns, Lord Pythas. A part of Embrace of the Viper |
 | Chest | **Bloodied Chestwraps** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md): Viktor the Vile |
-| Waist | **Brawler's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Brawler's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Brawler's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new } |
+| Chest | **Brawler's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new } |
 | Two-hand mace | **Heavy Copper Maul** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
 | Weapon stone | **Coarse Weightstone** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
 
@@ -107,10 +103,10 @@ Learn Polearms at level 20. The Brawler's leather items are new rare items from 
 |---|---|---|
 | Two-hand mace | **Headbasher** | Quest: *The Fury Runs Deep*, the Stockade (Alliance) |
 | Two-hand mace | **Twilight Maul** | Blackfathom Deeps, Lorgus Jett (Horde selection of Timesaver.gg) |
-| Polearm | **Bronze Dory** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Brawler's Leather Pants** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Brawler's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
+| Polearm | **Bronze Dory** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
+| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Legs | **Brawler's Leather Pants** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Chest | **Brawler's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new } |
 | Legs | **Worgpelt Leggings** | Shadowfang Keep, Wolf Master Nandos |
 | Shoulders | **Serpent's Shoulders** | Wailing Caverns, Lady Anacondra. Timesaver.gg keeps it to level 30 |
 | Neck | **Erudite's Amulet** | Quest: *Friend of the Library*, a library book quest |
@@ -126,11 +122,11 @@ Change the weapon at each step: a mace at 30, then a polearm from the centaur qu
 | Staff | **Loksey's Training Stick** | Scarlet Monastery |
 | Polearm | **Scavenged Magram Armament** | Quest: Quest chain of Khan Jehn, Desolace |
 | Two-hand mace | **The Pacifier** | World drop: Lo'Grosh, Alterac Mountains. Method.gg selects it at level 36 |
-| Two-hand mace | **Manual Crowd Pummeler** | Gnomeregan, Crowd Pummeler 9-60 **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Two-hand mace | **Manual Crowd Pummeler** | Gnomeregan, Crowd Pummeler 9-60 **Classic-era**{ .pill } |
 | Neck | **Archmagister's Faceted Pendant** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Timesaver.gg keeps it to level 50 |
 | Head | **Humbert's Helm** | World drop: Dun Garok Rifleman, Hillsbrad Foothills |
-| Waist | **Skulker's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
-| Polearm | **Steel Spear** | [Blacksmithing](../../professions/blacksmithing.md), skill 160 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Skulker's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new } |
+| Polearm | **Steel Spear** | [Blacksmithing](../../professions/blacksmithing.md), skill 160 **New**{ .pill .pill--new } |
 
 ### Levels 40–49 { #feral-l40 }
 
@@ -143,9 +139,9 @@ Grimlok's Charge from Uldaman stays your weapon to about level 55. Warcraft Tave
 | Shoulders | **Fleshhide Shoulders** | Razorfen Downs, Glutton |
 | Hands | **Tiger Hunter Gloves** | Quest: *Tiger Mastery*, Stranglethorn Vale |
 | Feet | **Excelsior Boots** | Quest: *Excelsior*, Stranglethorn Vale |
-| Hands | **Skulker's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Skulker's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Two-hand mace | **Mithril Warhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 190 **New**{ .pill .pill--new .pill--sm } |
+| Hands | **Skulker's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new } |
+| Shoulders | **Skulker's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new } |
+| Two-hand mace | **Mithril Warhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 190 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #feral-l50 }
 
@@ -153,13 +149,13 @@ Blacksmithing makes the weapons of this level range, and Leatherworking makes th
 
 | Slot | Item | Source |
 |---|---|---|
-| Two-hand mace | **Thorium Greatmace** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Polearm | **Thorium Poleaxe** | [Blacksmithing](../../professions/blacksmithing.md), skill 260 **New**{ .pill .pill--new .pill--sm } |
+| Two-hand mace | **Thorium Greatmace** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new } |
+| Polearm | **Thorium Poleaxe** | [Blacksmithing](../../professions/blacksmithing.md), skill 260 **New**{ .pill .pill--new } |
 | Chest | **Warbear Harness** | [Leatherworking](../../professions/leatherworking.md), skill 250 |
 | Legs | **Warbear Woolies** | [Leatherworking](../../professions/leatherworking.md), skill 260 |
-| Wrist | **Skulker's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Warden's Leather Waistguard** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Skulker's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
+| Waist | **Warden's Leather Waistguard** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
 | Back | **Cloak of the Tidemistress** | [Alcaz Prison](../../content/dungeons/alcaz-prison.md): Tidemistress Ca'zass. Only wowtbc.gg names it |
 | Chest | **Blazewind Breastplate** | Quest: A quest in the Badlands |
 
@@ -170,7 +166,7 @@ No source has a tested list for level 60, and the 3 fan lists disagree. These it
 | Slot | Item | Source |
 |---|---|---|
 | Two-hand mace | **Hammer of the Titans** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
-| Two-hand mace | **The Unstoppable Force** | PvP: Alterac Valley. Exalted reputation in Classic. The Forever cost is not known **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Two-hand mace | **The Unstoppable Force** | PvP: Alterac Valley. Exalted reputation in Classic. The Forever cost is not known **Classic-era**{ .pill } |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 | Legs | **Devilsaur Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 290 |
 | Waist | **Might of the Timbermaw** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
@@ -180,8 +176,8 @@ No source has a tested list for level 60, and the 3 fan lists disagree. These it
 | Neck | **Mark of Fordring** | Quest: *In Dreams* |
 | Neck | **Beads of Ogre Might** | Quest: *Falrin's Vendetta*, Dire Maul |
 | Feet | **Shadowcraft Boots** | Scholomance, Rattlegore |
-| Relic | **Idol of the Dream** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Set | **Feralheart Raiment** | All sources: Dungeon Set 2. One fan list says that vendors sell it **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Relic | **Idol of the Dream** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
+| Set | **Feralheart Raiment** | All sources: Dungeon Set 2. One fan list says that vendors sell it **Not confirmed**{ .pill } |
 
 ### Raids and PvP { #feral-raid }
 
@@ -189,10 +185,10 @@ Reportedly, the reagent Malleable Essence of Nature comes from raid items that a
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Idol of the Ursine Twins** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Timbermaw Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Relic | **Idol of the Ursine Twins** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
+| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Chest | **Timbermaw Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 | Polearm | **Blackfury** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 
 ## Balance: spell damage { #caster }
@@ -223,8 +219,8 @@ Weapons have spell damage from about level 10, so the weapon is your most import
 | Staff | **Emberstone Staff** | Deadmines, Captain Greenskin |
 | Staff | **Crescent Staff** | Quest: A quest in Wailing Caverns (Horde) |
 | Relic | **Idol of Shifting Tides** | Class quest: The Aquatic Form quest, level 16 |
-| Waist | **Totemic Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Totemic Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Totemic Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new } |
+| Chest | **Totemic Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new } |
 
 ### Levels 20–29 { #caster-l20 }
 
@@ -233,10 +229,10 @@ Timesaver.gg selects the Totemic hood at level 20. Enchanting makes a relic at s
 | Slot | Item | Source |
 |---|---|---|
 | Staff | **Rod of the Sleepwalker** | Blackfathom Deeps, Twilight Lord Kelris |
-| Head | **Totemic Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Totemic Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Totemic Leather Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Mystic Mushroom** | [Enchanting](../../professions/enchanting.md), skill 130 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Totemic Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Chest | **Totemic Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new } |
+| Legs | **Totemic Leather Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 125 **New**{ .pill .pill--new } |
+| Relic | **Mystic Mushroom** | [Enchanting](../../professions/enchanting.md), skill 130 **New**{ .pill .pill--new } |
 | Neck | **Erudite's Amulet** | Quest: *Friend of the Library*, a library book quest |
 
 ### Levels 30–39 { #caster-l30 }
@@ -262,10 +258,10 @@ The Skycaller's leather items are the next crafted items that the fan lists use 
 | Slot | Item | Source |
 |---|---|---|
 | One-hand mace | **Galgann's Firehammer** | Uldaman, Galgann Firehammer |
-| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Talons of Wrath** | [Enchanting](../../professions/enchanting.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Skycaller's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Skycaller's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
+| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
+| Relic | **Talons of Wrath** | [Enchanting](../../professions/enchanting.md), skill 210 **New**{ .pill .pill--new } |
+| Hands | **Skycaller's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new } |
+| Shoulders | **Skycaller's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new } |
 | Wrist | **Charged Leather Bracers** | Quest: *Power Stones*, Uldaman |
 | Trinket | **Glowing Eye of Mordresh** | Razorfen Downs, Mordresh Fire Eye |
 
@@ -277,10 +273,10 @@ The Ironfeather items from Leatherworking are in the level 60 list of Timesaver.
 |---|---|---|
 | Shoulders | **Ironfeather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 245 |
 | Chest | **Ironfeather Breastplate** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
-| Wrist | **Skycaller's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Skycaller's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
 | Chest | **Robes of Dark Summons** | [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md): Impaan the Imprisoner. Only wowtbc.gg names it |
 | Trinket | **Shard of the Splithooves** | Quest: *Heroes of Old*, Blasted Lands |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
 
 ### Level 60 { #caster-l60 }
 
@@ -294,8 +290,8 @@ No source has a tested list for level 60. These items are in the list of Timesav
 | Waist | **Girdle of Insight** | [Leatherworking](../../professions/leatherworking.md), skill 290 |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 | Dagger | **Black Crystal Dagger** | Quest: *Wanted - Deathclasp, Terror of the Sands*, Silithus |
-| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
-| Set | **Feralheart Raiment** | All sources: Dungeon Set 2. One fan list says that vendors sell it **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
+| Set | **Feralheart Raiment** | All sources: Dungeon Set 2. One fan list says that vendors sell it **Not confirmed**{ .pill } |
 
 ### Raids and PvP { #caster-raid }
 
@@ -303,9 +299,9 @@ Cloak of Earth and Sky needs Malleable Essence of Nature, which reportedly comes
 
 | Slot | Item | Source |
 |---|---|---|
-| Back | **Cloak of Earth and Sky** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Living Crown** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Ironfeather Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Back | **Cloak of Earth and Sky** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Head | **Living Crown** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Ironfeather Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Restoration: healing { #healer }
 
@@ -329,8 +325,8 @@ Keep a staff with Intellect or Spirit for dungeons. The Wisdom's leather items a
 | Staff | **Living Root** | Wailing Caverns, Verdan the Everliving (Horde) |
 | Neck | **Ephemeral Choker** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md): Faldrim Anvilmar |
 | Back | **Spiritwraith Drape** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md): Faldrim Anvilmar |
-| Waist | **Wisdom's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Wisdom's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Wisdom's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new } |
+| Chest | **Wisdom's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new } |
 
 ### Levels 20–29 { #healer-l20 }
 
@@ -339,10 +335,10 @@ Timesaver.gg selects the Wisdom's hood at level 20 and the staff of Odo the Blin
 | Slot | Item | Source |
 |---|---|---|
 | Staff | **Odo's Ley Staff** | Shadowfang Keep, Odo the Blindwatcher |
-| Head | **Wisdom's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Wisdom's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Wisdom's Leather Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Mystic Mushroom** | [Enchanting](../../professions/enchanting.md), skill 130 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Wisdom's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Chest | **Wisdom's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new } |
+| Legs | **Wisdom's Leather Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 125 **New**{ .pill .pill--new } |
+| Relic | **Mystic Mushroom** | [Enchanting](../../professions/enchanting.md), skill 130 **New**{ .pill .pill--new } |
 | Neck | **Erudite's Amulet** | Quest: *Friend of the Library*, a library book quest |
 
 ### Levels 30–39 { #healer-l30 }
@@ -353,7 +349,7 @@ The quest in Excavation Site gives a staff for healers. The ring from City of Da
 |---|---|---|
 | Staff | **Healer's Staff** | Quest: *Prehistoric Prism* (Alliance) or *Earthen Echo* (Horde), Excavation Site |
 | Ring | **Runemender's Seal** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Arcane Anomaly |
-| Waist | **Mender's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Mender's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new } |
 
 ### Levels 40–49 { #healer-l40 }
 
@@ -364,9 +360,9 @@ With dual spec at level 40, this set becomes necessary. Timesaver.gg keeps the m
 | One-hand mace | **Hand of Righteousness** | Scarlet Monastery, Cathedral, High Inquisitor Whitemane |
 | Off-hand | **Ponderous Orb** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Shade of the Archmage |
 | Off-hand | **Prophetic Cane** | Quest: *Into The Scarlet Monastery* |
-| Off-hand | **Twisting Essence Jar** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Mender's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Mender's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
+| Off-hand | **Twisting Essence Jar** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
+| Hands | **Mender's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new } |
+| Shoulders | **Mender's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #healer-l50 }
 
@@ -374,8 +370,8 @@ The Mender's bracers and gauntlets are in the level 60 list of Timesaver.gg. Fea
 
 | Slot | Item | Source |
 |---|---|---|
-| Wrist | **Mender's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Mender's Leather Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Mender's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
+| Hands | **Mender's Leather Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
 | Chest | **Feathered Breastplate** | [Leatherworking](../../professions/leatherworking.md), trainer recipe |
 | Chest | **Ironfeather Breastplate** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 
@@ -391,8 +387,8 @@ The Restoration list of Timesaver.gg is not complete. It still has items from le
 | Back | **Hide of the Wild** | [Leatherworking](../../professions/leatherworking.md), skill 300 |
 | Neck | **Orb of the Darkmoon** | Quest: *1200 Tickets*, Darkmoon Faire |
 | Weapon | **Hammer of the Grand Crusader** | Stratholme, Balnazzar |
-| Off-hand | **Twisting Essence Jar** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
-| Set | **Feralheart Raiment** | All sources: Dungeon Set 2. One fan list says that vendors sell it **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Off-hand | **Twisting Essence Jar** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
+| Set | **Feralheart Raiment** | All sources: Dungeon Set 2. One fan list says that vendors sell it **Not confirmed**{ .pill } |
 
 ### Raids and PvP { #healer-raid }
 
@@ -400,12 +396,14 @@ The Elderwild items and Idol of Swiftness need Malleable Essence of Nature, whic
 
 | Slot | Item | Source |
 |---|---|---|
-| Waist | **Elderwild Waistcord** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Elderwild Pants** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Idol of Swiftness** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Living Crown** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Elderwild Waistcord** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Elderwild Pants** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Relic | **Idol of Swiftness** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
+| Head | **Living Crown** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Enchants and consumables
+
+<div class="fc-stack" markdown>
 
 | Slot | Enchant | Notes |
 |---|---|---|
@@ -435,7 +433,11 @@ The Elderwild items and Idol of Swiftness need Malleable Essence of Nature, whic
 | Raids | **Flask of Natural Accuracy and the 3 other Natural flasks** | New. 60 Stamina and 4% to 5% of 1 stat (Method.gg, beta data). They work only in Mount Hyjal, Hyjal Summit and the Barrow Deeps |
 | Raids | **Greater Fire Protection Potion** | For Onyxia's Lair |
 
-## Sources
+</div>
+
+## Data and sources { #sources }
+
+The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
 
 - [Timesaver.gg: Feral Druid leveling gear, level by level](https://timesaver.gg/tools/wow-forever/leveling-gear/druid/feral)
 - [Timesaver.gg: Balance Druid leveling gear](https://timesaver.gg/tools/wow-forever/leveling-gear/druid/balance)
@@ -453,3 +455,4 @@ The Elderwild items and Idol of Swiftness need Malleable Essence of Nature, whic
 - [wowtbc.gg: Restoration Druid item list for level 60](https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/)
 - [LFCarry: sets and crafted tier items (beta data)](https://lfcarry.com/guides/wow-forever-bis-lists)
 - [Blizzard: raid overview](https://news.blizzard.com/en-us/article/24303009/)
+- [Druid progression: data and sources](index.md#sources)

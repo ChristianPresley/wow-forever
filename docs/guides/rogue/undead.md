@@ -7,13 +7,10 @@ tags:
 
 # Undead Rogue
 
-<div class="guide-head" data-class="rogue" markdown>
+:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="rogue" }
 
-:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page covers only what changes for an Undead (Forsaken).</p>
-
-</div>
+Read with the [Rogue progression](index.md). This page covers only what changes for an Undead (Forsaken).
 
 ## Why this combo
 

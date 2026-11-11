@@ -7,13 +7,10 @@ tags:
 
 # Tauren Warrior
 
-<div class="guide-head" data-class="warrior" markdown>
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="warrior" }
 
-:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Warrior progression](index.md). This page covers only what changes for a Tauren.</p>
-
-</div>
+Read with the [Warrior progression](index.md). This page covers only what changes for a Tauren.
 
 ## Why this combo
 

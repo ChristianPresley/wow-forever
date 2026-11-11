@@ -7,13 +7,10 @@ tags:
 
 # Undead Paladin
 
-<div class="guide-head" data-class="paladin" markdown>
+:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="paladin" }
 
-:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read this page with the [Paladin guide](index.md). This page gives the differences for a Forsaken paladin.</p>
-
-</div>
+Read this page with the [Paladin guide](index.md). This page gives the differences for a Forsaken paladin.
 
 !!! warning "New combination, little data"
     The Forsaken paladin is **new in Forever**. It is the **only** paladin option for the Horde. Most quest details below come from fan databases that people made during the beta and launch week, and some of them do not agree. This page marks levels and coordinates where sources do not agree.

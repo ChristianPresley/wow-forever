@@ -4,24 +4,16 @@ tags:
   - Professions
 search:
   boost: 2
+generated: true
+wide: true
 ---
 
 # Skinning Guide
 
 <!-- This page is generated. Edit tools/professions/guides/skinning.yml, then run tools/professions/build.py. -->
 
-<div class="guide-head" markdown>
-
-:material-knife:{ aria-hidden="true" } <span class="gh-kind">Profession guide</span> **Primary · Gathering**{ .badge }
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#new-in-forever">New</a> <a href="#level-1-to-300">1–300</a> <a href="#recipes-to-get">Recipes to get</a> <a href="#camp-features">Camp</a> <a href="#all-recipes">All recipes</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The recipe data is from the game client, build 1.60.1.70862. [wowforevertalents.com](https://wowforevertalents.com/professions/skinning/) reads this data from the client. The client does not hold the skill that a trainer asks for, the prices, or the drop locations. The path and the recipe picks are Codex recommendations.
-
-Skinning is a primary gathering profession. You skin dead beasts and get leather and hides. It has no nodes, so you level it while you kill creatures for quests. In Forever it also has **Tanning**, an ability that makes 3 camp features. Skinning gives the materials for Leatherworking.
+:material-knife:{ aria-hidden="true" } <span class="fc-meta__kind">Profession guide</span> **Primary · Gathering**{ .badge } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta }
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Skinning at a glance</p>
@@ -39,6 +31,8 @@ Skinning is a primary gathering profession. You skin dead beasts and get leather
 | **From a recipe item** | 2 |
 
 </aside>
+
+Skinning is a primary gathering profession. You skin dead beasts and get leather and hides. It has no nodes, so you level it while you kill creatures for quests. In Forever it also has **Tanning**, an ability that makes 3 camp features. Skinning gives the materials for Leatherworking.
 
 ## New in Forever
 
@@ -61,10 +55,14 @@ The *Crafts* column is an estimate. A recipe always gives a skill point while it
 
 In Classic, you need a Skinning Knife. Trade supplies vendors sell it. Skin each beast that you kill in your first zones. In Classic, these creatures give Ruined Leather Scraps and Light Leather. In Classic, Light Leather comes from creatures of level 1 to 20. Keep 3 Light Leather for the Camp Chair.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 1–50 | **Beasts of level 1 to 15** | — | — | — | The starting zones, then Westfall, Loch Modan, Darkshore, The Barrens and Silverpine Forest (Classic-era value) | Skill 1 lets you skin creatures up to level 10. Level 15 needs skill 50 |
-| 50–75 | **Beasts of level 13 to 17** | — | — | — | Westfall, Loch Modan, Darkshore, The Barrens and Silverpine Forest (Classic-era value) | Level 17 needs skill 70 |
+|---|---|---:|---|---|---|---|
+| 1–50 | **Beasts of level 1 to 15** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | The starting zones, then Westfall, Loch Modan, Darkshore, The Barrens and Silverpine Forest (Classic-era value) | Skill 1 lets you skin creatures up to level 10. Level 15 needs skill 50 |
+| 50–75 | **Beasts of level 13 to 17** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Westfall, Loch Modan, Darkshore, The Barrens and Silverpine Forest (Classic-era value) | Level 17 needs skill 70 |
+
+</div>
 
 - Your skill stops at 75 until a trainer teaches Journeyman Skinning. In Classic, the trainer asks for skill 50. This is not confirmed for Forever.
 - A trainer teaches the Camp Chair. The recipe is yellow at skill 20. The client does not hold the skill that the trainer asks for.
@@ -74,10 +72,14 @@ In Classic, you need a Skinning Knife. Trade supplies vendors sell it. Skin each
 
 In Classic, creatures of level 15 to 30 give Medium Leather, and Heavy Leather starts at level 25. Keep 3 Medium Leather for the Field Guide.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 75–100 | **Beasts of level 16 to 20** | — | — | — | Redridge Mountains, Ashenvale, Stonetalon Mountains and the north of The Barrens (Classic-era value) | Level 20 needs skill 100 |
-| 100–150 | **Beasts of level 20 to 30** | — | — | — | Ashenvale, Duskwood, Wetlands, Hillsbrad Foothills and Thousand Needles (Classic-era value) | From here, the Classic rule is skill / 5 = the highest creature level |
+|---|---|---:|---|---|---|---|
+| 75–100 | **Beasts of level 16 to 20** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Redridge Mountains, Ashenvale, Stonetalon Mountains and the north of The Barrens (Classic-era value) | Level 20 needs skill 100 |
+| 100–150 | **Beasts of level 20 to 30** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Ashenvale, Duskwood, Wetlands, Hillsbrad Foothills and Thousand Needles (Classic-era value) | From here, the Classic rule is skill / 5 = the highest creature level |
+
+</div>
 
 - Your skill stops at 150 until a trainer teaches Expert Skinning. In Classic, the trainer asks for skill 125. This is not confirmed for Forever.
 - At skill 140 you can learn the Field Guide from its recipe item.
@@ -86,10 +88,14 @@ In Classic, creatures of level 15 to 30 give Medium Leather, and Heavy Leather s
 
 In Classic, creatures of level 25 to 40 give Heavy Leather, and creatures of level 35 to 50 give Thick Leather. Keep 4 Heavy Leather for the Trapper's Workbench. You make it at skill 300.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 150–200 | **Beasts of level 30 to 40** | — | — | — | Stranglethorn Vale, Arathi Highlands, Desolace, Badlands and Swamp of Sorrows (Classic-era value) | Level 40 needs skill 200 |
-| 200–225 | **Beasts of level 40 to 45** | — | — | — | Tanaris, Feralas, The Hinterlands and the south of Stranglethorn Vale (Classic-era value) | Level 45 needs skill 225 |
+|---|---|---:|---|---|---|---|
+| 150–200 | **Beasts of level 30 to 40** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Stranglethorn Vale, Arathi Highlands, Desolace, Badlands and Swamp of Sorrows (Classic-era value) | Level 40 needs skill 200 |
+| 200–225 | **Beasts of level 40 to 45** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Tanaris, Feralas, The Hinterlands and the south of Stranglethorn Vale (Classic-era value) | Level 45 needs skill 225 |
+
+</div>
 
 - Your skill stops at 225 until a trainer teaches Artisan Skinning. In Classic, the trainer asks for skill 200. This is not confirmed for Forever.
 - Riverglades is a new zone for levels 35 to 45. Its beasts are not known.
@@ -98,11 +104,15 @@ In Classic, creatures of level 25 to 40 give Heavy Leather, and creatures of lev
 
 In Classic, creatures of level 45 to 60 give Rugged Leather.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 225–250 | **Beasts of level 45 to 50** | — | — | — | Feralas, Tanaris, The Hinterlands and Un'Goro Crater (Classic-era value) | Level 50 needs skill 250 |
-| 250–275 | **Beasts of level 50 to 55** | — | — | — | Un'Goro Crater, Felwood, Western Plaguelands and Burning Steppes (Classic-era value) | Level 55 needs skill 275 |
-| 275–300 | **Beasts of level 55 to 60** | — | — | — | Winterspring, Eastern Plaguelands and Silithus (Classic-era value) | Level 60 needs skill 300 |
+|---|---|---:|---|---|---|---|
+| 225–250 | **Beasts of level 45 to 50** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Feralas, Tanaris, The Hinterlands and Un'Goro Crater (Classic-era value) | Level 50 needs skill 250 |
+| 250–275 | **Beasts of level 50 to 55** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Un'Goro Crater, Felwood, Western Plaguelands and Burning Steppes (Classic-era value) | Level 55 needs skill 275 |
+| 275–300 | **Beasts of level 55 to 60** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Winterspring, Eastern Plaguelands and Silithus (Classic-era value) | Level 60 needs skill 300 |
+
+</div>
 
 - Mount Hyjal is a new zone for level 60. Its beasts are not known.
 
@@ -114,11 +124,15 @@ Skinning has only 3 recipes, and all 3 are camp features. They give almost no sk
 
 Each player can add 1 feature to a camp. Higher tiers include the features of the lower tiers.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Camp Chair** | — | 3 Light Leather, 2 Simple Wood | Trainer | Tier 1. It gives +2% critical strike chance at a camp. It does not stack with Moonkin Aura |
-| **Field Guide** | 140 | 3 Medium Leather, 2 Slimy Murloc Scale, 1 Fine Thread | Recipe item | Tier 2. The Camping page lists Track Beasts for it. The client data does not give the exact effect |
-| **Trapper's Workbench** | 300 | 2 Simple Wood, 4 Heavy Leather, 1 Iron Bar | Recipe item | Tier 3. The client data does not give its effect. It gives no skill points |
+|---|---:|---|---|---|
+| Camp Chair | <span class="fc-na">—</span> | 3 Light Leather, 2 Simple Wood | Trainer | Tier 1. It gives +2% critical strike chance at a camp. It does not stack with Moonkin Aura |
+| Field Guide | 140 | 3 Medium Leather, 2 Slimy Murloc Scale, 1 Fine Thread | Recipe item | Tier 2. The Camping page lists Track Beasts for it. The client data does not give the exact effect |
+| Trapper's Workbench | 300 | 2 Simple Wood, 4 Heavy Leather, 1 Iron Bar | Recipe item | Tier 3. The client data does not give its effect. It gives no skill points |
+
+</div>
 
 ## Where recipes come from
 
@@ -128,11 +142,16 @@ A trainer teaches the Camp Chair. The client does not hold the skill that the tr
 
 Skinning makes these features for a [camp](../systems/camping.md). The camp page gives the effect of each feature.
 
+
+<div class="fc-data" data-prose="1 3" markdown>
+
 | Feature | Learn | Reagents | Source |
-|---|---|---|---|
-| **Camp Chair** | — | 3 Light Leather, 2 Simple Wood | Trainer |
-| **Field Guide** | 140 | 3 Medium Leather, 2 Slimy Murloc Scale, 1 Fine Thread | Recipe item |
-| **Trapper's Workbench** | 300 | 2 Simple Wood, 4 Heavy Leather, 1 Iron Bar | Recipe item |
+|---|---:|---|---|
+| Camp Chair | <span class="fc-na">—</span> | 3 Light Leather, 2 Simple Wood | Trainer |
+| Field Guide | 140 | 3 Medium Leather, 2 Slimy Murloc Scale, 1 Fine Thread | Recipe item |
+| Trapper's Workbench | 300 | 2 Simple Wood, 4 Heavy Leather, 1 Iron Bar | Recipe item |
+
+</div>
 
 Camping starts with the quest The Great Outdoors at about level 5. You need Cooking and a Basic Campfire. Then a "Camping 101" quest for Skinning leads to the Camp Chair. The Camp Chair needs Light Leather and Simple Wood. The Field Guide needs Medium Leather, Slimy Murloc Scale and Fine Thread. The Trapper's Workbench needs Heavy Leather, Simple Wood and an Iron Bar. In Classic, trade supplies vendors sell Simple Wood, Star Wood and Fine Thread. In Classic, murlocs drop Slimy Murloc Scale, and a miner smelts Iron Bar from Iron Ore. These sources are Classic-era values. They are not confirmed for Forever. The Legacy talent Reagent Economy removes the reagents of Tier 1 camp features.
 
@@ -149,15 +168,19 @@ Camping starts with the quest The Great Outdoors at about level 5. You need Cook
 
 ## All recipes
 
-**Learn** is the skill that the client gives for the recipe. A dash shows a trainer recipe, because the client does not hold that skill. **Yellow** and **Grey** are the skills where the recipe changes colour. **Forever** shows a recipe that is new or changed from Classic Era.
+**Learn** is the skill that the client gives for the recipe. A dash shows a trainer recipe, because the client does not hold that skill. **Yellow** and **Grey** are the skills where the recipe changes colour. A **New** or **Changed** tag shows a recipe that is new or changed from Classic Era.
 
 ### Camping
 
-| Recipe | Learn | Yellow | Grey | Reagents | Source | Forever |
-|---|---|---|---|---|---|---|
-| **Camp Chair** | — | 20 | 25 | 3 Light Leather, 2 Simple Wood | Trainer | New |
-| **Field Guide** | 140 | 140 | 145 | 3 Medium Leather, 2 Slimy Murloc Scale, 1 Fine Thread | Recipe item | New |
-| **Trapper's Workbench** | 300 | 300 | 300 | 2 Simple Wood, 4 Heavy Leather, 1 Iron Bar | Recipe item | New |
+<div class="fc-data" data-prose="1 5" markdown>
+
+| Recipe | Learn | Yellow | Grey | Reagents | Source |
+|---|---:|---:|---:|---|---|
+| Camp Chair **New**{ .pill .pill--new } | <span class="fc-na">—</span> | 20 | 25 | 3 Light Leather, 2 Simple Wood | Trainer |
+| Field Guide **New**{ .pill .pill--new } | 140 | 140 | 145 | 3 Medium Leather, 2 Slimy Murloc Scale, 1 Fine Thread | Recipe item |
+| Trapper's Workbench **New**{ .pill .pill--new } | 300 | 300 | 300 | 2 Simple Wood, 4 Heavy Leather, 1 Iron Bar | Recipe item |
+
+</div>
 
 ## FAQ
 
@@ -183,5 +206,7 @@ Camping starts with the quest The Great Outdoors at about level 5. You need Cook
     The client data does not say. Leatherworking, Blacksmithing and Tailoring recipes use Pristine Leather, and Leatherworking recipes use Fel Leather. The wiki says that gathering gives Scarce materials, but it does not name them.
 
 ## Sources
+
+Current as of 10 November 2026. The recipe data is from the game client, build 1.60.1.70862. [wowforevertalents.com](https://wowforevertalents.com/professions/skinning/) reads this data from the client. The client does not hold the skill that a trainer asks for, the prices, or the drop locations. The path and the recipe picks are Codex recommendations.
 
 - [wowforevertalents.com: Skinning recipes, read from the client](https://wowforevertalents.com/professions/skinning/)

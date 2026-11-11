@@ -2,24 +2,16 @@
 description: "Warrior equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."
 tags:
   - Warrior
+generated: true
+wide: true
 ---
 
 # Warrior Equipment
 
 <!-- This page is generated. Edit tools/classes/guides/warrior.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="warrior" markdown>
-
-:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Equipment</span> **Tank**{ .badge .tank } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Warrior progression](index.md). This page gives the full equipment data for each set.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#shield">One-hander and shield</a> <a href="#twohand">Two-hander</a> <a href="#dual">Dual wield</a> <a href="#enchants-and-consumables">Enchants</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Equipment</span> **Tank**{ .badge .tank } **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="warrior" }
 
 A Warrior wears mail to level 39 and plate from level 40. The weapon is the most important slot at each level. Method estimates that 95% to 100% of your leveling damage comes from the weapon.
 
@@ -27,11 +19,15 @@ About 40% of the items of Forever had hidden stats at launch. The stats of an it
 
 ## Equipment sets
 
+<div class="fc-stack" markdown>
+
 | Set | Use it for | Stat priority |
 |---|---|---|
 | [One-hander and shield](#shield) | The Protection set for solo play, dungeons, raids and Hardcore. You look for a one-hand weapon with high damage and a shield with much armor. The item names come from Timesaver.gg. | Leveling: weapon damage > Strength > Stamina > Agility > armor. Level 60: Stamina and Defense, then armor, avoidance, Block Value, hit and Strength (Classic-era order) |
 | [Two-hander](#twohand) | The Arms set, and the Fury set before you have 2 good weapons. You look for the slowest two-hand weapon with the highest damage. Weaponmaster decides the weapon type. | Leveling: weapon damage > Strength > Stamina > Agility > armor. Level 60: hit (8%), crit and Strength. No source ranks them |
 | [Dual wield](#dual) | The Fury set from about level 40, and the raid damage set. You look for a slow main-hand weapon with high damage and a second good one-hand weapon. It needs much hit. | Leveling: weapon damage > Strength > Stamina > Agility. Level 60: hit (29% against raid bosses), crit and Strength. No source ranks them |
+
+</div>
 
 ## What a Warrior can equip { #proficiencies }
 
@@ -95,7 +91,7 @@ Equip a shield at level 10 for Shield Specialization. The class quest after Defe
 | Main hand | **Meathook Slicer** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) |
 | Shield | **Dwarven Defender** | Quest: *In Defense of the King's Lands*, Loch Modan (Alliance) |
 | Shield | **Welding Shield** | Quest: *Samophlange*, the Barrens (Horde) |
-| Chest | **Guard's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new .pill--sm }: No source rates it. The stats are not known |
+| Chest | **Guard's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new }: No source rates it. The stats are not known |
 
 ### Levels 20–29 { #shield-l20 }
 
@@ -107,7 +103,7 @@ Butcher's Cleaver from Shadowfang Keep is the best known one-hander for these le
 | Main hand | **Hamhock's Cleaver** | The Stockade (Alliance) |
 | Shield | **Kresh's Back** | Wailing Caverns |
 | Shield | **Arctic Buckler** | Quest: *Blackfathom Villainy*, Blackfathom Deeps |
-| Head | **Guard's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Guard's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
 | Neck | **Erudite's Amulet** | Quest: *Friend of the Library*. Timesaver.gg lists it from level 20 |
 | Shield spike | **Iron Shield Spike** | [Blacksmithing](../../professions/blacksmithing.md), skill 125 |
 
@@ -137,7 +133,7 @@ Train plate at level 40. Timesaver.gg selects crafted Mithril plate for the firs
 | Shoulders | **Heavy Mithril Shoulder** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
 | Hands | **Truesilver Gauntlets** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
 | Legs | **Heavy Mithril Pants** | [Blacksmithing](../../professions/blacksmithing.md), skill 185 |
-| Shoulders | **Officer's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
+| Shoulders | **Officer's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new } |
 | Shield spike | **Mithril Shield Spike** | [Blacksmithing](../../professions/blacksmithing.md), skill 190 |
 
 ### Levels 50–59 { #shield-l50 }
@@ -161,15 +157,15 @@ No source has a tested tank list. Timesaver.gg calculates its list from stat wei
 |---|---|---|
 | Chest | **Imperial Plate Chest** | [Blacksmithing](../../professions/blacksmithing.md), skill 275 |
 | Feet | **Imperial Plate Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 |
-| Wrist | **Blessed Plate Bracers** | [Blacksmithing](../../professions/blacksmithing.md), skill 255 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Blessed Plate Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Blessed Plate Bracers** | [Blacksmithing](../../professions/blacksmithing.md), skill 255 **New**{ .pill .pill--new } |
+| Waist | **Blessed Plate Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new } |
 | Head | **Lionheart Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Legs | **Titanic Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 | Neck | **Beads of Ogre Might** | Quest: *Falrin's Vendetta*, Dire Maul |
 | Ring | **Ring of Living Stone** | Quest: *Uncovering Past Secrets*, Moonglade |
 | Ring | **Ocean's Breeze** | Quest: *A Hero's Reward*, Azshara |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm }: The source of its reagent is not known |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new }: The source of its reagent is not known |
 
 ### Raids and PvP { #shield-raid }
 
@@ -177,9 +173,9 @@ Timesaver.gg lists these items before the raids, but they need Malleable Essence
 
 | Slot | Item | Source |
 |---|---|---|
-| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
 | Ranged | **Core Marksman Rifle** | [Engineering](../../professions/engineering.md), skill 300 |
 
 ## Two-hander { #twohand }
@@ -210,7 +206,7 @@ The first dungeon quests give a two-hander for each faction. Method selects the 
 | Two-hand | **Axe of Orgrimmar** | Quest: *Hidden Enemies*, Ragefire Chasm (Horde) |
 | Two-hand | **Forsaken Greataxe** | Quest: *The Wrath of Rath'mael*, Ruins of Lordaeron |
 | Legs | **Direhammer Leggings** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) |
-| Chest | **Veteran's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new .pill--sm }: No source rates it. The stats are not known |
+| Chest | **Veteran's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new }: No source rates it. The stats are not known |
 | Two-hand | **Heavy Copper Maul** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
 
 ### Levels 20–29 { #twohand-l20 }
@@ -224,8 +220,8 @@ Replace the weapon at about level 20 and again at about level 25. Heavehammer fr
 | Two-hand | **Graverobber's Shovel** | The Stockade (Alliance) |
 | Two-hand | **Reef Axe** | Blackfathom Deeps |
 | Two-hand | **Heavehammer** | [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) |
-| Head | **Veteran's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
-| Polearm | **Bronze Dory** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Veteran's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
+| Polearm | **Bronze Dory** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
 
 ### Levels 30–39 { #twohand-l30 }
 
@@ -248,11 +244,11 @@ Timesaver.gg still lists the Whirlwind Axe as the best two-hander at level 40. G
 |---|---|---|
 | Two-hand | **Grimlok's Charge** | Uldaman |
 | Head | **Soldier's Visor** | Quest: *No Honor Among Thieves*, Desolace |
-| Shoulders | **Shining Mithril Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 195 **New**{ .pill .pill--new .pill--sm } |
+| Shoulders | **Shining Mithril Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 195 **New**{ .pill .pill--new } |
 | Hands | **Truesilver Gauntlets** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
 | Legs | **Ornate Mithril Pants** | [Blacksmithing](../../professions/blacksmithing.md), skill 195 |
-| Shoulders | **Officer's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Dented Goggles** | [Engineering](../../professions/engineering.md), skill 200 **New**{ .pill .pill--new .pill--sm }: Plate. The stats are not known |
+| Shoulders | **Officer's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new } |
+| Head | **Dented Goggles** | [Engineering](../../professions/engineering.md), skill 200 **New**{ .pill .pill--new }: Plate. The stats are not known |
 
 ### Levels 50–59 { #twohand-l50 }
 
@@ -263,9 +259,9 @@ Beastslayer from an Un'Goro Crater quest is the best known two-hander at level 5
 | Two-hand | **Beastslayer** | Quest: *The Mighty U'cha*, Un'Goro Crater |
 | Chest | **Warforged Chestplate** | Quest: *Tremors of the Earth* (Alliance) or *Broken Alliances* (Horde), the Badlands |
 | Hands | **Slagplate Gauntlets** | Quest: *Curse These Fat Fingers*, Searing Gorge |
-| Legs | **Leggings of the Ursa** | Quest: *Deadwood of the North*, Blackmaw Hold **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Shoulders | **Blessed Plate Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Blessed Plate Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new .pill--sm } |
+| Legs | **Leggings of the Ursa** | Quest: *Deadwood of the North*, Blackmaw Hold **Not confirmed**{ .pill } |
+| Shoulders | **Blessed Plate Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new } |
+| Feet | **Blessed Plate Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new } |
 
 ### Level 60 { #twohand-l60 }
 
@@ -273,17 +269,17 @@ No source has a tested list. Timesaver.gg selects Blessed Plate as the base, wit
 
 | Slot | Item | Source |
 |---|---|---|
-| Chest | **Blessed Plate Chest** | [Blacksmithing](../../professions/blacksmithing.md), skill 280 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Blessed Plate Bracers** | [Blacksmithing](../../professions/blacksmithing.md), skill 255 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Blessed Plate Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Blessed Plate Chest** | [Blacksmithing](../../professions/blacksmithing.md), skill 280 **New**{ .pill .pill--new } |
+| Wrist | **Blessed Plate Bracers** | [Blacksmithing](../../professions/blacksmithing.md), skill 255 **New**{ .pill .pill--new } |
+| Waist | **Blessed Plate Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new } |
 | Head | **Lionheart Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Legs | **Titanic Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 | Neck | **Beads of Ogre Might** | Quest: *Falrin's Vendetta*, Dire Maul |
 | Ring | **Ring of Living Stone** | Quest: *Uncovering Past Secrets*, Moonglade |
-| Weapon | **Stoneshatter** | Dire Maul West **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Two-hand | **The Unstoppable Force** | PvP: Alterac Valley **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Two-hand | **Stormcarver** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm }: A new axe. The stats are not known. It needs Legionite Bar, and the source of Fel Crystal is not known |
+| Weapon | **Stoneshatter** | Dire Maul West **Not confirmed**{ .pill } |
+| Two-hand | **The Unstoppable Force** | PvP: Alterac Valley **Not confirmed**{ .pill } |
+| Two-hand | **Stormcarver** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new }: A new axe. The stats are not known. It needs Legionite Bar, and the source of Fel Crystal is not known |
 
 ### Raids and PvP { #twohand-raid }
 
@@ -291,8 +287,8 @@ Forest Defender's Axe and Fel Cape need Malleable Essence of Nature. Reportedly,
 
 | Slot | Item | Source |
 |---|---|---|
-| Two-hand | **Forest Defender's Axe** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Two-hand | **Forest Defender's Axe** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Dual wield { #dual }
 
@@ -356,7 +352,7 @@ You need 29% hit against a raid boss, and few items with hit exist before the ra
 |---|---|---|
 | Main hand | **Persuader** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Off hand | **Thrash Blade** | Quest: *Corruption of Earth and Seed*, Maraudon. Keep it from level 50. No source lists an off-hand weapon for level 60 without a raid reagent |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm }: The source of its reagent is not known |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new }: The source of its reagent is not known |
 
 ### Raids and PvP { #dual-raid }
 
@@ -364,10 +360,12 @@ Timesaver.gg selects Ironwood Blade for the off hand. It needs Malleable Essence
 
 | Slot | Item | Source |
 |---|---|---|
-| Off hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Off hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Enchants and consumables
+
+<div class="fc-stack" markdown>
 
 | Slot | Enchant | Notes |
 |---|---|---|
@@ -393,7 +391,11 @@ Timesaver.gg selects Ironwood Blade for the off hand. It needs Malleable Essence
 | Level 60 | **Greater Fire Protection Potion** | For Onyxia's Lair |
 | Level 60 | **Steaming Stag Steak, Bear Bruscitti, Savory Turtle Stew** | New food. Strength for damage, Stamina for tanks. The values are not known |
 
-## Sources
+</div>
+
+## Data and sources { #sources }
+
+The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
 
 - [Timesaver.gg: Warrior leveling gear, Arms](https://timesaver.gg/tools/wow-forever/leveling-gear/warrior/arms)
 - [Timesaver.gg: Warrior leveling gear, Protection](https://timesaver.gg/tools/wow-forever/leveling-gear/warrior/protection)
@@ -406,3 +408,4 @@ Timesaver.gg selects Ironwood Blade for the off hand. It needs Malleable Essence
 - [Warcraft Tavern: Protection Warrior guide](https://www.warcrafttavern.com/forever/guides/protection-warrior/)
 - [wowtbc.gg: Arms Warrior item pool for level 60](https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/)
 - [buyboost.com: quest weapons (Whirlwind Axe values, low trust)](https://buyboost.com/news/wow-forever/forever-quest-weapons)
+- [Warrior progression: data and sources](index.md#sources)

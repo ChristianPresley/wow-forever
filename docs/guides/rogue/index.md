@@ -4,36 +4,22 @@ tags:
   - Rogue
 search:
   boost: 2
+generated: true
 ---
 
 # Rogue Progression
 
 <!-- This page is generated. Edit tools/classes/guides/rogue.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="rogue" markdown>
-
-:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class progression</span> **DPS**{ .badge .dps }
-
-<nav class="gh-jump" aria-label="Jump to chapter"><a href="#picks">Add-ons</a> <a href="#start">Start</a> <a href="#l1">1–9</a> <a href="#l10">10–19</a> <a href="#l20">20–29</a> <a href="#l30">30–39</a> <a href="#l40">40–49</a> <a href="#l50">50–59</a> <a href="#l60">60</a> <a href="#raid">Raids & PvP</a></nav>
-
-</div>
-
-**Also called:** Rog · Sin or Assa (Assassination) · Combat rogue · Sub (Subtlety)
-{: .fc-aka }
+:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Class progression</span> **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="rogue" }
 
 The Rogue is a melee damage class that wears leather. It uses Energy and Combo Points, and it starts most fights from Stealth. This page follows 1 Rogue from character creation to the raids, level by level. It tells you what changes in each level range: the abilities that you train, the way that you fight, the dungeons and the decisions.
 
 Warcraft Tavern reports a class tuning pass for 10 November 2026, so the numbers on this page can change.
 
-!!! info "Current as of 10 November 2026"
-    Forever started on 4 November 2026. The talent data and the recipe data are from the game client, build 1.60.1.70862. Spell levels, quests and zones that Forever did not change are Classic-era values. The raids open on 9 December, and no source has published simulations.
-
-## Pick your add-ons { #picks }
-
-This page tells the progression of a Rogue in 9 chapters, from character creation to the raids. The main text is the same for each character. An **add-on** adds the text for 1 selection: your race, your talents or your equipment.
-
-<div class="fc-pick" data-class="rogue" role="group" aria-label="Add-ons for your Rogue">
-<fieldset class="fc-pick__group" data-pick="race"><legend>Race</legend>
+<div class="fc-pick" id="picks" data-class="rogue" role="group" aria-label="Add-ons for your Rogue">
+<div class="fc-pick__group" role="radiogroup" aria-labelledby="fc-pick-race" data-pick="race"><span class="fc-pick__legend" id="fc-pick-race">Race</span>
 <div class="fc-pick__opts">
 <label class="fc-pick__opt"><input type="radio" name="fc-race" value="human" checked><span>Human</span></label>
 <label class="fc-pick__opt"><input type="radio" name="fc-race" value="dwarf"><span>Dwarf</span></label>
@@ -45,52 +31,30 @@ This page tells the progression of a Rogue in 9 chapters, from character creatio
 <label class="fc-pick__opt"><input type="radio" name="fc-race" value="undead"><span>Undead</span></label>
 <label class="fc-pick__opt"><input type="radio" name="fc-race" value="skyborne-windshaper"><span>Skyborne (Windshaper)</span></label>
 </div>
-</fieldset>
-<fieldset class="fc-pick__group" data-pick="talents"><legend>Talents</legend>
+</div>
+<div class="fc-pick__group" role="radiogroup" aria-labelledby="fc-pick-talents" data-pick="talents"><span class="fc-pick__legend" id="fc-pick-talents">Talents</span>
 <div class="fc-pick__opts">
 <label class="fc-pick__opt"><input type="radio" name="fc-talents" value="combat" checked><span>Combat</span></label>
 <label class="fc-pick__opt"><input type="radio" name="fc-talents" value="assassination"><span>Assassination (daggers)</span></label>
 <label class="fc-pick__opt"><input type="radio" name="fc-talents" value="subtlety"><span>Subtlety (openers and PvP)</span></label>
+<a class="fc-pick__more" href="talents/">All talents</a>
 </div>
-</fieldset>
-<fieldset class="fc-pick__group" data-pick="gear"><legend>Equipment</legend>
+</div>
+<div class="fc-pick__group" role="radiogroup" aria-labelledby="fc-pick-gear" data-pick="gear"><span class="fc-pick__legend" id="fc-pick-gear">Equipment</span>
 <div class="fc-pick__opts">
 <label class="fc-pick__opt"><input type="radio" name="fc-gear" value="slow" checked><span>Slow main hand</span></label>
 <label class="fc-pick__opt"><input type="radio" name="fc-gear" value="daggers"><span>Daggers</span></label>
 <label class="fc-pick__opt"><input type="radio" name="fc-gear" value="crafted"><span>Leatherworking and Blacksmithing</span></label>
 <label class="fc-pick__opt"><input type="radio" name="fc-gear" value="pvp"><span>PvP and Hardcore</span></label>
+<a class="fc-pick__more" href="equipment/">All equipment</a>
 </div>
-</fieldset>
-<p class="fc-pick__note"><label class="fc-pick__all"><input type="checkbox" name="fc-all"><span>Show all add-ons</span></label> Each chapter shows only the add-ons that you select. This browser saves your selection.</p>
 </div>
-
-<div class="grid cards fc-addon-cards" markdown>
-
--   :material-star-four-points: **[Talents add-on](talents.md)**
-
-    All 54 talents with a rating, a talent for each level and the level 60 builds.
-
--   :material-shield-sword: **[Equipment add-on](equipment.md)**
-
-    The equipment sets, the items for each level range, enchants and consumables.
-
--   :material-account-group: **Race add-ons**
-
-    [Human](human.md){ .fc-chip } [Dwarf](dwarf.md){ .fc-chip } [Gnome](gnome.md){ .fc-chip } [Night Elf](night-elf.md){ .fc-chip } [Skyborne (High Order)](skyborne-high-order.md){ .fc-chip } [Orc](orc.md){ .fc-chip } [Troll](troll.md){ .fc-chip } [Undead](undead.md){ .fc-chip } [Skyborne (Windshaper)](skyborne-windshaper.md){ .fc-chip }
-
+<p class="fc-pick__foot"><span class="fc-pick__note">Each chapter shows only the add-ons that you select. This browser saves your selection.</span> <label class="fc-pick__all"><input type="checkbox" name="fc-all" role="switch"><span>Show all add-ons</span></label></p>
 </div>
 
-## Before level 1: Make your Rogue { #start }
+## <span class="fc-ch__lv">Before level 1</span> Make your Rogue { #start .fc-ch data-toc-label="Start · Make your Rogue" data-label="Start · Make your Rogue" }
 
-A Rogue fights with 2 resources. Attacks such as Sinister Strike use Energy and add Combo Points to the target. A finishing move such as Eviscerate uses all the Combo Points. More Combo Points make the finishing move stronger.
-
-The second part of the class is control. Stealth lets you select the enemy and the moment. Sap, Gouge, Kick and the stuns stop enemies. Vanish, Sprint and Evasion end a fight that goes wrong. No other class decides the start of a fight as well as a Rogue.
-
-In Forever, each of the 3 talent trees is a damage spec. Combat gives constant damage with each weapon type. Assassination uses daggers, crit and poisons. Subtlety uses openers from Stealth and bleeds. The new ability Shank has a talent in each tree.
-
-You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race.
-
-<aside class="infobox" data-class="rogue" markdown>
+<aside class="infobox infobox--row" data-class="rogue" markdown>
 <p class="infobox-title">Rogue at a glance</p>
 
 | | |
@@ -101,8 +65,17 @@ You make 3 decisions before level 1: your race, your talent path and your equipm
 | **Resource** | **Energy**{ .pill .pill--energy } and 5 Combo Points |
 | **Races** | 9 combinations. All races but Tauren |
 | **Leveling** | Easy. Method names the Rogue one of the most approachable classes |
+| **Also called** | Rog · Sin or Assa (Assassination) · Combat rogue · Sub (Subtlety) |
 
 </aside>
+
+A Rogue fights with 2 resources. Attacks such as Sinister Strike use Energy and add Combo Points to the target. A finishing move such as Eviscerate uses all the Combo Points. More Combo Points make the finishing move stronger.
+
+The second part of the class is control. Stealth lets you select the enemy and the moment. Sap, Gouge, Kick and the stuns stop enemies. Vanish, Sprint and Evasion end a fight that goes wrong. No other class decides the start of a fight as well as a Rogue.
+
+In Forever, each of the 3 talent trees is a damage spec. Combat gives constant damage with each weapon type. Assassination uses daggers, crit and poisons. Subtlety uses openers from Stealth and bleeds. The new ability Shank has a talent in each tree.
+
+You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race.
 
 <div class="proscons" markdown>
 <div class="pros" markdown>
@@ -155,79 +128,106 @@ Weaknesses
 
 <div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Rogue](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Human</strong></p>
 
-The safe Alliance selection. Will to Survive removes stuns, Ruthless gives 1% crit, and the poison quest starts in your capital. **Alliance**{ .pill .pill--alliance .pill--sm }
+The safe Alliance selection. Will to Survive removes stuns, Ruthless gives 1% crit, and the poison quest starts in your capital. **Alliance**{ .pill .pill--alliance }
+
+Full add-on: [Human Rogue](human.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Rogue](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Dwarf</strong></p>
 
-The hit selection. Artisan's Precision gives 1% hit, and Stoneform removes bleeds and poisons and decreases physical damage by 10%. **Alliance**{ .pill .pill--alliance .pill--sm }
+The hit selection. Artisan's Precision gives 1% hit, and Stoneform removes bleeds and poisons and decreases physical damage by 10%. **Alliance**{ .pill .pill--alliance }
+
+Full add-on: [Dwarf Rogue](dwarf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="gnome" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Rogue](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Gnome</strong></p>
 
-The burst selection, and the selection of Method. Eureka! gives 8 seconds of cheaper and stronger attacks, and Escape Artist removes roots and slows. **Alliance**{ .pill .pill--alliance .pill--sm }
+The burst selection, and the selection of Method. Eureka! gives 8 seconds of cheaper and stronger attacks, and Escape Artist removes roots and slows. **Alliance**{ .pill .pill--alliance }
+
+Full add-on: [Gnome Rogue](gnome.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Rogue](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Night Elf</strong></p>
 
-The Alliance selection for short fights. Elune's Light gives 10% crit for 15 seconds, and Shadowmeld is a second way to hide. **Alliance**{ .pill .pill--alliance .pill--sm }
+The Alliance selection for short fights. Elune's Light gives 10% crit for 15 seconds, and Shadowmeld is a second way to hide. **Alliance**{ .pill .pill--alliance }
+
+Full add-on: [Night Elf Rogue](night-elf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-high-order" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (High Order)</strong> [Skyborne (High Order) Rogue](skyborne-high-order.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (High Order)</strong></p>
 
-New in Forever, and a paid race. Wind Blessed gives permanent haste, and Walk on Air is a glide of 10 seconds. **Alliance**{ .pill .pill--alliance .pill--sm } **New**{ .pill .pill--new .pill--sm }
+New in Forever, and a paid race. Wind Blessed gives permanent haste, and Walk on Air is a glide of 10 seconds. **Alliance**{ .pill .pill--alliance } **New**{ .pill .pill--new }
+
+Full add-on: [Skyborne (High Order) Rogue](skyborne-high-order.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="orc" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Rogue](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Orc</strong></p>
 
-The best Horde Rogue according to Method and Warcraft Tavern. Blood Fury gives 10% Attack Power for 15 seconds, and Hardiness makes stuns 20% shorter. **Horde**{ .pill .pill--horde .pill--sm }
+The best Horde Rogue according to Method and Warcraft Tavern. Blood Fury gives 10% Attack Power for 15 seconds, and Hardiness makes stuns 20% shorter. **Horde**{ .pill .pill--horde }
+
+Full add-on: [Orc Rogue](orc.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="troll" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Rogue](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Troll</strong></p>
 
-The comfortable selection. Berserking gives 10% attack speed for 15 seconds, and Rapid Regeneration heals you between fights. **Horde**{ .pill .pill--horde .pill--sm }
+The comfortable selection. Berserking gives 10% attack speed for 15 seconds, and Rapid Regeneration heals you between fights. **Horde**{ .pill .pill--horde }
+
+Full add-on: [Troll Rogue](troll.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="undead" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Rogue](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Undead</strong></p>
 
-The Horde PvP selection. Will of the Forsaken removes Fear, charm and sleep, and Touch of the Grave and Cannibalize heal you. **Horde**{ .pill .pill--horde .pill--sm }
+The Horde PvP selection. Will of the Forsaken removes Fear, charm and sleep, and Touch of the Grave and Cannibalize heal you. **Horde**{ .pill .pill--horde }
+
+Full add-on: [Undead Rogue](undead.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (Windshaper)</strong> [Skyborne (Windshaper) Rogue](skyborne-windshaper.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (Windshaper)</strong></p>
 
-New in Forever, and a paid race. Skysight gives 15% movement speed for 15 seconds, and Wind Blessed gives permanent haste. **Horde**{ .pill .pill--horde .pill--sm } **New**{ .pill .pill--new .pill--sm }
+New in Forever, and a paid race. Skysight gives 15% movement speed for 15 seconds, and Wind Blessed gives permanent haste. **Horde**{ .pill .pill--horde } **New**{ .pill .pill--new }
+
+Full add-on: [Skyborne (Windshaper) Rogue](skyborne-windshaper.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="combat" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Combat</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Combat</strong></p>
 
 The safe path for a first Rogue. You use Sinister Strike with a slow sword, mace or axe, and no position behind the target is necessary. Method, Mobalytics and Warcraft Tavern name Combat the smoothest solo spec.
 
@@ -236,11 +236,14 @@ Leveling build: **Combat (recommended)**. Level 60 builds: **Combat (raid)**.
 Usual equipment set: **Slow main hand**.
 
 
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="assassination" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Assassination (daggers)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Assassination (daggers)</strong></p>
 
 The dagger path with crit and poisons. You use Backstab until level 40, then Mutilate. It needs 2 good daggers and a position behind the target, so it is more difficult solo.
 
@@ -249,11 +252,14 @@ Leveling build: **Assassination (daggers)**. Level 60 builds: **Assassination (M
 Usual equipment set: **Daggers**.
 
 
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="subtlety" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Subtlety (openers and PvP)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Subtlety (openers and PvP)</strong></p>
 
 The path for Stealth, openers and PvP. Method recommends it for group play. It is weaker solo before Hemorrhage at level 30, because Backstab needs a position behind the target. Use daggers.
 
@@ -262,62 +268,82 @@ Leveling build: **Subtlety (groups)**. Level 60 builds: **Subtlety (PvP)**, **Su
 Usual equipment set: **Daggers**.
 
 
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="slow" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Slow main hand</strong> [Rogue equipment](equipment.md#slow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Slow main hand</strong></p>
 
 The standard set for Combat. You use a slow sword, mace, axe or fist weapon in the main hand, with quest rewards and dungeon drops. The item names come from Timesaver.gg, Method.gg and Kami-Labs.
 
 Stat priority: Leveling: Crit > Agility > Attack Power > Strength > Stamina (Warcraft Tavern). Level 60: hit, then Agility and crit
 
 
+Full add-on: [Rogue equipment](equipment.md#slow)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="daggers" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Daggers</strong> [Rogue equipment](equipment.md#daggers){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Daggers</strong></p>
 
 The set for Assassination and Subtlety. Backstab and Ambush need a dagger in the main hand, and Mutilate needs a dagger in each hand. The armor is the same as in the Slow main hand set.
 
 Stat priority: Leveling: Crit > Agility > Attack Power > Strength > Stamina (Warcraft Tavern). Level 60 Assassination: hit, then Agility and crit for Seal Fate. Level 60 Subtlety: Agility > crit > hit > Attack Power
 
 
+Full add-on: [Rogue equipment](equipment.md#daggers)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Leatherworking and Blacksmithing</strong> [Rogue equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Leatherworking and Blacksmithing</strong></p>
 
 You or a friend make your leather, your weapons and your armor kits. Forever adds a line of crafted fist weapons and many rare leather patterns. The client data gives the name and the skill of each item, but not its stats.
 
 Stat priority: The same as the other sets. Read the tooltip of each crafted item
 
 
+Full add-on: [Rogue equipment](equipment.md#crafted)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="pvp" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>PvP and Hardcore</strong> [Rogue equipment](equipment.md#pvp){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>PvP and Hardcore</strong></p>
 
 A safer set. You take Stamina in place of some Attack Power, and you carry potions and bombs. Use it for battlegrounds, for world PvP and for Hardcore.
 
 Stat priority: Agility > Stamina > crit > Attack Power. Hit is less important against players
 
 
-</div>
+Full add-on: [Rogue equipment](equipment.md#pvp)
+{: .fc-addon__more }
 
 </div>
 
-**Before you continue**
+</div>
+
+<div class="fc-goals" markdown>
+<p class="fc-goals__title" id="goals-start">Before you continue</p>
 
 - [ ] Select a race. Read its Race add-on.
 - [ ] Select a talent path. Combat is the safe selection for a first Rogue.
 - [ ] Select an equipment set. Your talent path decides the weapon type.
 - [ ] Read the [Professions](#professions) section. Skinning and Leatherworking are the usual selection.
 
-## Levels 1–9: Sinister Strike, Stealth and Gouge { #l1 }
+</div>
+
+<p class="fc-next"><a href="#l1">Next: Levels 1–9</a></p>
+
+## <span class="fc-ch__lv">Levels 1–9</span> Sinister Strike, Stealth and Gouge { #l1 .fc-ch data-toc-label="1–9 · Sinister Strike" data-label="1–9 · Sinister Strike" }
 
 You start with Sinister Strike, Eviscerate and Stealth. The fight is simple at first. Use Sinister Strike until the enemy has 3 or more Combo Points, then use Eviscerate.
 
@@ -336,143 +362,179 @@ Replace the starting dagger as soon as a quest gives you a better weapon. The Eq
 | 6 | **Gouge** | Stops the enemy for a few seconds. It ends when the enemy takes damage |
 | 8 | **Evasion** | A large dodge bonus for a short time. Use it when 2 enemies attack you |
 
-!!! tip "Tip"
+!!! tip fc-inline "Tip"
     Thieves, cultists and other humanoids carry coins. Open each fight against a humanoid with Stealth and Pick Pocket.
 
-!!! hardcore "Hardcore"
+!!! hardcore fc-inline "Hardcore"
     Do not fight 2 enemies before you have Gouge and Evasion. In Stealth, do not go into caves that you do not know.
 
 <div class="fc-addons" markdown>
 
 <div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Rogue](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Human</strong></p>
 
 You start in Northshire Valley in Elwynn Forest. Your first trainer is Jorik Kerridan, near the stables behind the abbey (Classic location). At level 6, go to Goldshire. Keryn Sylvius trains Rogues in the Lion's Pride Inn. The trainers of Stormwind are in Old Town, near SI:7.
 
 The Defias thieves and the kobolds of Elwynn Forest are good Pick Pocket targets. Their coins pay for your training at level 10.
 
 
+Full add-on: [Human Rogue](human.md)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Rogue](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Dwarf</strong></p>
 
 You start in Coldridge Valley in Dun Morogh. Your first trainer is Solm Hargrin in Anvilmar (Classic location). At level 6, go through the tunnel to Kharanos. Hogral Bakkan trains Rogues in the Thunderbrew Distillery. The trainers of Ironforge are in the Forlorn Cavern.
 
 The troggs in Coldridge Valley come in pairs. From level 6, use Gouge on one of them. Big Game Hunter gives 5% more damage against the Beasts of Dun Morogh.
 
 
+Full add-on: [Dwarf Rogue](dwarf.md)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="gnome" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Rogue](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Gnome</strong></p>
 
 You start in Coldridge Valley in Dun Morogh, with the Dwarves. Your first trainer is Solm Hargrin in Anvilmar (Classic location). At level 6, go through the tunnel to Kharanos. Hogral Bakkan trains Rogues in the Thunderbrew Distillery. The trainers of Ironforge are in the Forlorn Cavern.
 
 Expansive Mind gives 5% more maximum Energy. With full Energy, start each fight with 2 Sinister Strikes.
 
 
+Full add-on: [Gnome Rogue](gnome.md)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Rogue](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Night Elf</strong></p>
 
 You start in Shadowglen in Teldrassil. Blizzard changed this start zone for Forever. Your first trainer is Frahun Shadewhisper, in the large tree of Aldrassil (Classic location). At level 6, go to Dolanaar, where Jannok Breezesong trains Rogues. The capital trainers are in Darnassus.
 
 Teldrassil has few humanoids, so Pick Pocket gives little at first. The Gnarlpine furbolgs are your best targets. Shadowmeld lets you eat safely near patrols.
 
 
+Full add-on: [Night Elf Rogue](night-elf.md)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-high-order" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (High Order)</strong> [Skyborne (High Order) Rogue](skyborne-high-order.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (High Order)</strong></p>
 
 You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The quest *Reading the Leylines* teaches Read Ley Line. The class trainers are in Valanaar, which you get to at about level 8. Reportedly, the island quests take you to level 12 to 14. To play a Skyborne, you must have the Skyborne Heroic Pack or a higher edition.
 
 Many Al'Aketh cultists are humanoids, so use Pick Pocket on them. In the quest *Secret Agent Elf*, you go into the cult in disguise.
 
 
+Full add-on: [Skyborne (High Order) Rogue](skyborne-high-order.md)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="orc" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Rogue](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Orc</strong></p>
 
 You start in the Valley of Trials in Durotar. Blizzard changed this start zone for Forever. Your first trainer is Rwag, in the Den (Classic location). At level 6, go to Razor Hill, where Kaplak trains Rogues in the barracks. The trainers of Orgrimmar are in the Cleft of Shadow.
 
 Use Blood Fury on each pull from level 1. The humans at Tiragarde Keep are good Pick Pocket targets.
 
 
+Full add-on: [Orc Rogue](orc.md)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="troll" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Rogue](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Troll</strong></p>
 
 You start in the Valley of Trials in Durotar, with the Orcs. Your first trainer is Rwag, in the Den (Classic location). At level 6, go to Sen'jin Village for the Darkspear quests. Kaplak trains Rogues in the barracks of Razor Hill. The trainers of Orgrimmar are in the Cleft of Shadow.
 
 Rapid Regeneration heals 50% of your health during 6 seconds, but an action stops it. Use it after a kill in place of food.
 
 
+Full add-on: [Troll Rogue](troll.md)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="undead" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Rogue](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Undead</strong></p>
 
 You start in the crypt of Deathknell in Tirisfal Glades. Your first trainer is David Trias in the church (Classic location). At level 6, go to Brill. Marion Call trains Rogues in the Gallows' End Tavern. The trainers of the Undercity are in the Rogues' Quarter.
 
 The Scarlet Crusade humans in Tirisfal Glades are good Pick Pocket targets. Use Cannibalize on them after the fight in place of food.
 
 
+Full add-on: [Undead Rogue](undead.md)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (Windshaper)</strong> [Skyborne (Windshaper) Rogue](skyborne-windshaper.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (Windshaper)</strong></p>
 
 You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The quest *The Gift of Skysight* teaches Skysight. The class trainers are in Valanaar, which you get to at about level 8. Reportedly, the island quests take you to level 12 to 14. To play a Skyborne, you must have the Skyborne Heroic Pack or a higher edition.
 
 Use Pick Pocket on the Al'Aketh cultists and bandits. Skysight and the tornadoes of the island let you travel quickly.
 
 
+Full add-on: [Skyborne (Windshaper) Rogue](skyborne-windshaper.md)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="combat" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Combat</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Combat</strong></p>
 
 You have no talent points before level 10. Use Sinister Strike to add Combo Points and Eviscerate to use them.
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="assassination" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Assassination (daggers)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Assassination (daggers)</strong></p>
 
 You have no talent points before level 10. Use Sinister Strike from the front. From level 6, use Gouge and then Backstab from behind.
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="subtlety" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Subtlety (openers and PvP)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Subtlety (openers and PvP)</strong></p>
 
 You have no talent points before level 10. Use Sinister Strike from the front. From level 6, use Gouge and then Backstab from behind.
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="slow" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Slow main hand</strong> [Rogue equipment](equipment.md#slow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Slow main hand</strong></p>
 
 Replace the starting dagger with the first sword or mace from a quest. Sinister Strike uses weapon damage, so a slow weapon with high damage is best. Zephras Isle gives the Skyborne an almost full leather set before level 12.
 
@@ -488,11 +550,14 @@ Replace the starting dagger with the first sword or mace from a quest. Sinister 
 | Hands | **Driving Gloves** | Quest: *Operation Recombobulation*, Dun Morogh |
 
 
+Full add-on: [Rogue equipment](equipment.md#slow)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="daggers" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Daggers</strong> [Rogue equipment](equipment.md#daggers){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Daggers</strong></p>
 
 Keep a dagger in the main hand for Backstab. The first quest weapon comes at about level 5. A Blacksmith can make a Copper Dagger.
 
@@ -503,11 +568,14 @@ Keep a dagger in the main hand for Backstab. The first quest weapon comes at abo
 | Main hand | **Copper Dagger** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
 
 
+Full add-on: [Rogue equipment](equipment.md#daggers)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Leatherworking and Blacksmithing</strong> [Rogue equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Leatherworking and Blacksmithing</strong></p>
 
 Blacksmithing makes a first sword, mace or dagger from copper. Leatherworking makes the Handstitched items at skill 1. Method recommends the vest, the pants and Dark Leather Boots.
 
@@ -517,31 +585,42 @@ Blacksmithing makes a first sword, mace or dagger from copper. Leatherworking ma
 | Main hand | **Copper Mace** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
 | Chest | **Handstitched Leather Vest** | [Leatherworking](../../professions/leatherworking.md), skill 1 |
 | Legs | **Handstitched Leather Pants** | [Leatherworking](../../professions/leatherworking.md), trainer recipe |
-| Feet | **Dark Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 35 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Dark Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 35 **New**{ .pill .pill--new } |
 | Weapon | **Rough Sharpening Stone** | [Blacksmithing](../../professions/blacksmithing.md), skill 1 |
 
+
+Full add-on: [Rogue equipment](equipment.md#crafted)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="pvp" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>PvP and Hardcore</strong> [Rogue equipment](equipment.md#pvp){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>PvP and Hardcore</strong></p>
 
 Take Stamina on each item that offers it. You have no healing, so more health is more time to use Gouge and a bandage.
 
 
-</div>
+Full add-on: [Rogue equipment](equipment.md#pvp)
+{: .fc-addon__more }
 
 </div>
 
-**Before you continue**
+</div>
+
+<div class="fc-goals" markdown>
+<p class="fc-goals__title" id="goals-l1">Before you continue</p>
 
 - [ ] Do the class letter quest from your first trainer (Classic-era quest).
 - [ ] Learn First Aid. You have no other healing.
 - [ ] Replace the starting dagger.
 - [ ] Train Gouge at level 6 and Evasion at level 8.
 
-## Levels 10–19: Sap, Slice and Dice and Dual Wield { #l10 }
+</div>
+
+<p class="fc-next"><a href="#l10">Next: Levels 10–19</a></p>
+
+## <span class="fc-ch__lv">Levels 10–19</span> Sap, Slice and Dice and Dual Wield { #l10 .fc-ch data-toc-label="10–19 · Sap" data-label="10–19 · Sap" }
 
 Level 10 changes the class more than any level before it. You train Slice and Dice, Sap and Sprint, and you get your first talent point. Method says that you also learn Dual Wield at level 10. From here, you get 1 talent point at each level.
 
@@ -567,11 +646,11 @@ The developers say that levels 1 to 20 take about 20 hours. At level 14, start t
 
 **Dungeons in this chapter**
 
-- [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) **13–20**{ .lvl }: New. It is in Ironforge
-- Ragefire Chasm **13–18**{ .lvl }: It is in Orgrimmar
-- [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) **15–22**{ .lvl }: New. It is in Tirisfal Glades
-- Wailing Caverns **15–24**{ .lvl }
-- The Deadmines **17–26**{ .lvl }: Many humanoids for Sap and Pick Pocket
+- **13–20**{ .lvl } [Hall of Thanes](../../content/dungeons/hall-of-thanes.md): New. It is in Ironforge
+- **13–18**{ .lvl } Ragefire Chasm: It is in Orgrimmar
+- **15–22**{ .lvl } [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md): New. It is in Tirisfal Glades
+- **15–24**{ .lvl } Wailing Caverns
+- **17–26**{ .lvl } The Deadmines: Many humanoids for Sap and Pick Pocket
 
 ??? example "Macros for Sap, Kick and Ambush"
 
@@ -595,17 +674,17 @@ The developers say that levels 1 to 20 take about 20 hours. At level 14, start t
 
     The third macro uses Pick Pocket on the target and then opens the fight. Sap does not end Stealth. Thus you can Sap 1 enemy, then use Pick Pocket and Ambush on a different enemy. Forever uses a modern client, so conditions such as `@focus` probably work. Blizzard has not published a list of macro limits.
 
-!!! warning "Caution"
+!!! warning fc-inline "Caution"
     In a dungeon, do not attack before the tank. Use Feint before your threat becomes a problem, not after.
 
-!!! tip "Tip"
+!!! tip fc-inline "Tip"
     Lockpicking starts at level 16. Practice it on the lockboxes from Pick Pocket. Warcraft Tavern recommends 80 Lockpicking for the poison quest at level 20.
 
 <div class="fc-addons" markdown>
 
 <div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf skyborne-high-order" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Alliance route</strong></p>
 
 Quest in Westfall, Loch Modan or Darkshore. Go to Redridge Mountains at level 15. The Deadmines in Westfall has many humanoids for Sap.
 
@@ -614,7 +693,7 @@ Quest in Westfall, Loch Modan or Darkshore. Go to Redridge Mountains at level 15
 
 <div class="fc-addon" data-pick="race" data-value="orc troll undead skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Horde route</strong></p>
 
 Quest in the Barrens or Silverpine Forest. Go to Stonetalon Mountains at level 15. Ragefire Chasm in Orgrimmar is your first dungeon.
 
@@ -623,140 +702,176 @@ Quest in the Barrens or Silverpine Forest. Go to Stonetalon Mountains at level 1
 
 <div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Rogue](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Human</strong></p>
 
 At level 10, complete Elwynn Forest. Then go to Westfall. The Deeprun Tram takes you to Ironforge for the Hall of Thanes.
 
+
+Full add-on: [Human Rogue](human.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Rogue](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Dwarf</strong></p>
 
 The new dungeon Hall of Thanes is in Ironforge. It is the easiest first dungeon for a Dwarf. At level 12, go east to Loch Modan.
 
+
+Full add-on: [Dwarf Rogue](dwarf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="gnome" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Rogue](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Gnome</strong></p>
 
 The new dungeon Hall of Thanes is in Ironforge. If you want Engineering, learn it early in Kharanos or in Tinker Town.
 
+
+Full add-on: [Gnome Rogue](gnome.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Rogue](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Night Elf</strong></p>
 
 At level 10, go to Darnassus. Then take the boat from Rut'theran Village to Auberdine and quest in Darkshore.
 
+
+Full add-on: [Night Elf Rogue](night-elf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-high-order" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (High Order)</strong> [Skyborne (High Order) Rogue](skyborne-high-order.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (High Order)</strong></p>
 
 Leave the island on the airship from the east Skydock to Dalaran. Walk south to Southshore. Then take the new boat to Auberdine or to Menethil Harbor.
 
+
+Full add-on: [Skyborne (High Order) Rogue](skyborne-high-order.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="orc" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Rogue](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Orc</strong></p>
 
 At level 10, go to the Cleft of Shadow in Orgrimmar. Then go west to the Crossroads in the Barrens. Ragefire Chasm is in Orgrimmar.
 
+
+Full add-on: [Orc Rogue](orc.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="troll" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Rogue](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Troll</strong></p>
 
 At level 10, go to the Cleft of Shadow in Orgrimmar. Then go west to the Crossroads in the Barrens. Ragefire Chasm is in Orgrimmar.
 
+
+Full add-on: [Troll Rogue](troll.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="undead" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Rogue](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Undead</strong></p>
 
 The new dungeon Ruins of Lordaeron is in Tirisfal Glades. At level 12, go south to Silverpine Forest, or take the zeppelin to Orgrimmar.
 
+
+Full add-on: [Undead Rogue](undead.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (Windshaper)</strong> [Skyborne (Windshaper) Rogue](skyborne-windshaper.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (Windshaper)</strong></p>
 
 Leave the island on the airship from the west Skydock to Skywatcher Plateau in Mulgore. Get the flight path in Thunder Bluff. Then quest in the Barrens.
 
+
+Full add-on: [Skyborne (Windshaper) Rogue](skyborne-windshaper.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="combat" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Combat</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Combat</strong></p>
 
 Open with Sinister Strike. Use Slice and Dice at 1 or 2 Combo Points, then Sinister Strike to 5 and Eviscerate. Efficient Strikes makes Sinister Strike cheaper, and Coup de Grace makes Eviscerate stronger. Deflection adds parry, because enemies attack you while you level.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 10–11 | **Efficient Strikes** | 2/2 | A cheaper Sinister Strike from the first point |
-| 12–14 | **Coup de Grace** | 3/3 | 20% more Eviscerate damage |
-| 15–17 | **Deflection** | 3/3 | Mobs attack you, thus parry decreases the damage that you take |
-| 18–19 | **Precision** | 2/3 | Fewer misses. Opens row 3 |
+| Level | Talent | Why |
+|---|---|---|
+| 10–11 | **Efficient Strikes** <span class="fc-rank">2/2</span> | A cheaper Sinister Strike from the first point |
+| 12–14 | **Coup de Grace** <span class="fc-rank">3/3</span> | 20% more Eviscerate damage |
+| 15–17 | **Deflection** <span class="fc-rank">3/3</span> | Mobs attack you, thus parry decreases the damage that you take |
+| 18–19 | **Precision** <span class="fc-rank">2/3</span> | Fewer misses. Opens row 3 |
 
 Points at level 19: **0/10/0** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="assassination" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Assassination (daggers)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Assassination (daggers)</strong></p>
 
 Malice gives 5% crit. Open with Backstab from Stealth, or with Ambush from level 18. Then use Gouge, go behind the enemy and use Backstab again. After a kill, Remorseless Attacks gives 40% more crit chance to your next Sinister Strike, Backstab or Ambush. Ruthlessness gives free Combo Points after finishing moves.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 10–14 | **Malice** | 5/5 | 5% crit |
-| 15–16 | **Remorseless Attacks** | 2/2 | A probable crit on the first attack of the next fight |
-| 17–19 | **Ruthlessness** | 3/3 | Free Combo Points after finishers |
+| Level | Talent | Why |
+|---|---|---|
+| 10–14 | **Malice** <span class="fc-rank">5/5</span> | 5% crit |
+| 15–16 | **Remorseless Attacks** <span class="fc-rank">2/2</span> | A probable crit on the first attack of the next fight |
+| 17–19 | **Ruthlessness** <span class="fc-rank">3/3</span> | Free Combo Points after finishers |
 
 Points at level 19: **10/0/0** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="subtlety" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Subtlety (openers and PvP)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Subtlety (openers and PvP)</strong></p>
 
 Opportunity adds 20% damage to Backstab, Garrote and Ambush. Open each fight from Stealth, with Garrote from 14 and with Ambush from 18. Camouflage makes you faster in Stealth. In a group, stay behind the target and use Backstab.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 10–14 | **Opportunity** | 5/5 | 20% more Backstab, Ambush and Garrote damage |
-| 15–17 | **Camouflage** | 3/3 | Faster movement in Stealth |
-| 18–19 | **Improved Ambush** | 2/3 | Ambush arrives at level 18 |
+| Level | Talent | Why |
+|---|---|---|
+| 10–14 | **Opportunity** <span class="fc-rank">5/5</span> | 20% more Backstab, Ambush and Garrote damage |
+| 15–17 | **Camouflage** <span class="fc-rank">3/3</span> | Faster movement in Stealth |
+| 18–19 | **Improved Ambush** <span class="fc-rank">2/3</span> | Ambush arrives at level 18 |
 
 Points at level 19: **0/0/10** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="slow" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Slow main hand</strong> [Rogue equipment](equipment.md#slow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Slow main hand</strong></p>
 
 You learn Dual Wield at level 10. Keep the slow weapon in the main hand, and put a fast dagger in the off hand. The class quest dagger Blade of Cunning is a good first off-hand weapon. The first dungeons give gloves, legs and a cloak.
 
@@ -775,11 +890,14 @@ You learn Dual Wield at level 10. Keep the slow weapon in the main hand, and put
 | Ranged | **Harvester's Pestslayer** | Quest: *The Killing Fields*, Westfall |
 
 
+Full add-on: [Rogue equipment](equipment.md#slow)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="daggers" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Daggers</strong> [Rogue equipment](equipment.md#daggers){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Daggers</strong></p>
 
 The class quest at level 10 gives Blade of Cunning. From level 10, put a second dagger in the off hand. Use the armor of the Slow main hand set.
 
@@ -793,46 +911,60 @@ The class quest at level 10 gives Blade of Cunning. From level 10, put a second 
 | Dagger | **Thornblade** | Quest: *A Dark Threat Looms* (Alliance). Method gives levels 18 to 20 |
 
 
+Full add-on: [Rogue equipment](equipment.md#daggers)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Leatherworking and Blacksmithing</strong> [Rogue equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Leatherworking and Blacksmithing</strong></p>
 
 The Brawler's leather items are new and rare. Warcraft Tavern recommends Brawler's Leather Belt. Some of the patterns cost Merchant's Favor. Brass Knuckles is the first of the new crafted fist weapons. Method says that the Forceful armor kits add Attack Power and armor.
 
 | Slot | Item | Source |
 |---|---|---|
-| Waist | **Brawler's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Brawler's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Brawler's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Brass Knuckles** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Brawler's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new } |
+| Chest | **Brawler's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new } |
+| Hands | **Brawler's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new } |
+| Main hand | **Brass Knuckles** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new } |
 | Main hand | **Bronze Mace** | [Blacksmithing](../../professions/blacksmithing.md), skill 75 |
 | Dagger | **Deadly Bronze Poniard** | [Blacksmithing](../../professions/blacksmithing.md), skill 100 |
-| Armor kit | **Forceful Medium Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 80 **New**{ .pill .pill--new .pill--sm } |
+| Armor kit | **Forceful Medium Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 80 **New**{ .pill .pill--new } |
 
+
+Full add-on: [Rogue equipment](equipment.md#crafted)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="pvp" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>PvP and Hardcore</strong> [Rogue equipment](equipment.md#pvp){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>PvP and Hardcore</strong></p>
 
 Use the weapons of your talent path. Keep bandages and food in your bags at all times. Sprint from level 10 lets you leave a fight that you cannot win.
 
 
-</div>
+Full add-on: [Rogue equipment](equipment.md#pvp)
+{: .fc-addon__more }
 
 </div>
 
-**Before you continue**
+</div>
+
+<div class="fc-goals" markdown>
+<p class="fc-goals__title" id="goals-l10">Before you continue</p>
 
 - [ ] Train Slice and Dice, Sap and Sprint, and spend your first talent point at level 10.
 - [ ] Put a weapon in your off hand.
 - [ ] Do your first dungeon for its quests.
 - [ ] Start the Cozy Sleeping Bag scavenger hunt at level 14.
 
-## Levels 20–29: Poisons, Vanish and Shank { #l20 }
+</div>
+
+<p class="fc-next"><a href="#l20">Next: Levels 20–29</a></p>
+
+## <span class="fc-ch__lv">Levels 20–29</span> Poisons, Vanish and Shank { #l20 .fc-ch data-toc-label="20–29 · Poisons" data-label="20–29 · Poisons" }
 
 Level 20 starts the **poison quest**. It teaches the Poisons skill and the recipe for Thistle Tea. The steps for each faction are below. Warcraft Tavern recommends that you wait until level 22 and have 80 Lockpicking. At 22 you have Vanish and Distract, and the quest is much easier with them.
 
@@ -855,11 +987,11 @@ At level 24 you train **Shank**, the second new ability of Forever. Shank costs 
 
 **Dungeons in this chapter**
 
-- Shadowfang Keep **20–30**{ .lvl }
-- Blackfathom Deeps **24–32**{ .lvl }
-- The Stockade **25–29**{ .lvl }: All enemies are humanoids. Sap works on each pull
-- [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) **26–33**{ .lvl }: New. It is short, with 3 bosses
-- [City of Dalaran](../../content/dungeons/city-of-dalaran.md) **28–35**{ .lvl }: New. NPCs in the city attack Horde characters on sight
+- **20–30**{ .lvl } Shadowfang Keep
+- **24–32**{ .lvl } Blackfathom Deeps
+- **25–29**{ .lvl } The Stockade: All enemies are humanoids. Sap works on each pull
+- **26–33**{ .lvl } [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md): New. It is short, with 3 bosses
+- **28–35**{ .lvl } [City of Dalaran](../../content/dungeons/city-of-dalaran.md): New. NPCs in the city attack Horde characters on sight
 
 **The poison quest**
 
@@ -882,17 +1014,17 @@ Your Poisons skill increases by 1 for each poison that you make. The maximum is 
 !!! conflict "Conflict: the library book quests"
     The [Leveling](../../characters/leveling.md) page says that 10, 20 and 25 books open quests at levels 20, 35 and 45. Warcraft Tavern gives levels 1, 20 and 30 for the same numbers of books. The collectors are Garion Wendell in the Mage Quarter of Stormwind and Owen Thadd in the Magic Quarter of the Undercity. No source reports a book for Rogues only.
 
-!!! tip "Tip"
+!!! tip fc-inline "Tip"
     Thistle Tea gives Energy immediately. Make some after the poison quest and keep it for emergencies.
 
-!!! hardcore "Hardcore"
+!!! hardcore fc-inline "Hardcore"
     Do the poison quest at level 22 or later, with Vanish ready. Do not open on an elite enemy when Vanish and Sprint are on cooldown.
 
 <div class="fc-addons" markdown>
 
 <div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf skyborne-high-order" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Alliance route</strong></p>
 
 Quest in Redridge Mountains, Duskwood, the Wetlands, Ashenvale and Hillsbrad Foothills. The Wetlands has new quests. Emissary Jacques in Southshore starts the Kirin Tor quests at about level 26.
 
@@ -901,7 +1033,7 @@ Quest in Redridge Mountains, Duskwood, the Wetlands, Ashenvale and Hillsbrad Foo
 
 <div class="fc-addon" data-pick="race" data-value="orc troll undead skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Horde route</strong></p>
 
 Quest in Stonetalon Mountains, Ashenvale, Hillsbrad Foothills and Thousand Needles. NPCs in Dalaran attack Horde characters on sight.
 
@@ -910,149 +1042,185 @@ Quest in Stonetalon Mountains, Ashenvale, Hillsbrad Foothills and Thousand Needl
 
 <div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Rogue](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Human</strong></p>
 
 The poison quest starts at SI:7 in Old Town, in your capital. The second step is in Westfall.
 
+
+Full add-on: [Human Rogue](human.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Rogue](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Dwarf</strong></p>
 
 The poison quest starts in Stormwind, not in Ironforge. Take the Deeprun Tram.
 
+
+Full add-on: [Dwarf Rogue](dwarf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="gnome" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Rogue](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Gnome</strong></p>
 
 The poison quest starts with Master Mathias Shaw in Old Town, Stormwind. Take the Deeprun Tram.
 
+
+Full add-on: [Gnome Rogue](gnome.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Rogue](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Night Elf</strong></p>
 
 The poison quest starts in Stormwind, not in Darnassus. The new boat from Auberdine to Stormwind Harbor makes the trip short.
 
+
+Full add-on: [Night Elf Rogue](night-elf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-high-order" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (High Order)</strong> [Skyborne (High Order) Rogue](skyborne-high-order.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (High Order)</strong></p>
 
 The poison quest starts with Master Mathias Shaw at SI:7 in Stormwind. It is not confirmed that Dalaran has a Rogue trainer. Train in Old Town.
 
+
+Full add-on: [Skyborne (High Order) Rogue](skyborne-high-order.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="orc" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Rogue](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Orc</strong></p>
 
 The poison quest starts with Shenthul in the Cleft of Shadow, in your capital.
 
+
+Full add-on: [Orc Rogue](orc.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="troll" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Rogue](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Troll</strong></p>
 
 The poison quest starts with Shenthul in the Cleft of Shadow in Orgrimmar.
 
+
+Full add-on: [Troll Rogue](troll.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="undead" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Rogue](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Undead</strong></p>
 
 The poison quest starts with Shenthul in Orgrimmar, not in the Undercity. Take the zeppelin. The last step is in Hillsbrad Foothills, near your capital.
 
+
+Full add-on: [Undead Rogue](undead.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (Windshaper)</strong> [Skyborne (Windshaper) Rogue](skyborne-windshaper.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (Windshaper)</strong></p>
 
 The poison quest starts with Shenthul in Orgrimmar. Thunder Bluff had no Rogue trainer in Classic. Train in the Cleft of Shadow or in the Undercity.
 
+
+Full add-on: [Skyborne (Windshaper) Rogue](skyborne-windshaper.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="combat" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Combat</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Combat</strong></p>
 
 Riposte at level 20 costs 10 Energy and disarms the enemy. Use it after each parry. From 23, Composure makes Poised a discount of 20 Energy. From 24, use Shank each time it is ready. Flawless Execution at 25 makes Eviscerate cost 15 less Energy.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 20 | **Riposte** | 1/1 | Cheap damage and a disarm after each parry |
-| 21 | **Precision** | 3/3 | 3% hit |
-| 22–23 | **Composure** | 2/2 | Poised makes your next ability 20 Energy cheaper |
-| 24 | **Endurance** | 1/2 | Opens row 4. Evasion and Sprint have a shorter cooldown |
-| 25 | **Flawless Execution** | 1/1 | Eviscerate costs 15 less Energy |
-| 26–28 | **Aggression** | 3/3 | 15% more damage for Sinister Strike and Eviscerate |
-| 29 | **Weapon Expertise** | 1/2 | Opens row 5 |
+| Level | Talent | Why |
+|---|---|---|
+| 20 | **Riposte** <span class="fc-rank">1/1</span> | Cheap damage and a disarm after each parry |
+| 21 | **Precision** <span class="fc-rank">3/3</span> | 3% hit |
+| 22–23 | **Composure** <span class="fc-rank">2/2</span> | Poised makes your next ability 20 Energy cheaper |
+| 24 | **Endurance** <span class="fc-rank">1/2</span> | Opens row 4. Evasion and Sprint have a shorter cooldown |
+| 25 | **Flawless Execution** <span class="fc-rank">1/1</span> | Eviscerate costs 15 less Energy |
+| 26–28 | **Aggression** <span class="fc-rank">3/3</span> | 15% more damage for Sinister Strike and Eviscerate |
+| 29 | **Weapon Expertise** <span class="fc-rank">1/2</span> | Opens row 5 |
 
 Points at level 29: **0/20/0** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="assassination" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Assassination (daggers)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Assassination (daggers)</strong></p>
 
 Lethality at 20 makes Backstab crits larger, and Vigor gives 10 more Energy for the opener. Cold Blood at level 25 makes 1 attack a sure crit each 3 minutes. Use it on Ambush or on an Eviscerate with 5 Combo Points. Method says not to depend on poisons at these levels.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 20–21 | **Lethality** | 2/2 | Larger Backstab crits |
-| 22–23 | **Vigor** | 2/2 | 10 more Energy for the opener |
-| 24 | **Blood Splatter** | 1/1 | Opens row 4. A longer Garrote and Rupture |
-| 25 | **Cold Blood** | 1/1 | A sure crit each 3 min |
-| 26–28 | **Improved Slice and Dice** | 3/3 | A longer Slice and Dice |
-| 29 | **Improved Poisons** | 1/5 | Opens row 5 |
+| Level | Talent | Why |
+|---|---|---|
+| 20–21 | **Lethality** <span class="fc-rank">2/2</span> | Larger Backstab crits |
+| 22–23 | **Vigor** <span class="fc-rank">2/2</span> | 10 more Energy for the opener |
+| 24 | **Blood Splatter** <span class="fc-rank">1/1</span> | Opens row 4. A longer Garrote and Rupture |
+| 25 | **Cold Blood** <span class="fc-rank">1/1</span> | A sure crit each 3 min |
+| 26–28 | **Improved Slice and Dice** <span class="fc-rank">3/3</span> | A longer Slice and Dice |
+| 29 | **Improved Poisons** <span class="fc-rank">1/5</span> | Opens row 5 |
 
 Points at level 29: **20/0/0** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="subtlety" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Subtlety (openers and PvP)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Subtlety (openers and PvP)</strong></p>
 
 Ghostly Strike at level 25 changes the fight. After it, your next Ambush or Garrote in 7 seconds needs no Stealth. Thus you can use Ambush again each 20 seconds. From 26, Initiative gives 1 more Combo Point for each opener. Premeditation at 27 gives 2 Combo Points before the fight, for an early Slice and Dice.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 20–22 | **Serrated Blades** | 3/3 | Armor decrease and more Rupture damage |
-| 23–24 | **Initiative** | 2/3 | More Combo Points from openers |
-| 25 | **Ghostly Strike** | 1/1 | Ambush or Garrote without Stealth each 20 s |
-| 26 | **Initiative** | 3/3 | Each opener gives 1 more Combo Point |
-| 27 | **Premeditation** | 1/1 | 2 free Combo Points for Slice and Dice |
-| 28–29 | **Elusiveness** | 2/2 | Vanish more frequently. Opens row 5 |
+| Level | Talent | Why |
+|---|---|---|
+| 20–22 | **Serrated Blades** <span class="fc-rank">3/3</span> | Armor decrease and more Rupture damage |
+| 23–24 | **Initiative** <span class="fc-rank">2/3</span> | More Combo Points from openers |
+| 25 | **Ghostly Strike** <span class="fc-rank">1/1</span> | Ambush or Garrote without Stealth each 20 s |
+| 26 | **Initiative** <span class="fc-rank">3/3</span> | Each opener gives 1 more Combo Point |
+| 27 | **Premeditation** <span class="fc-rank">1/1</span> | 2 free Combo Points for Slice and Dice |
+| 28–29 | **Elusiveness** <span class="fc-rank">2/2</span> | Vanish more frequently. Opens row 5 |
 
 Points at level 29: **0/0/20** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="slow" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Slow main hand</strong> [Rogue equipment](equipment.md#slow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Slow main hand</strong></p>
 
 The Deadmines and Wailing Caverns give the main-hand weapon for level 20. Method gives Cruel Barb at levels 18 to 20. Replace it with Darkwater Talwar at about level 25. Timesaver keeps the Pyrewood Signet Ring in its list to level 60.
 
@@ -1063,7 +1231,7 @@ The Deadmines and Wailing Caverns give the main-hand weapon for level 20. Method
 | Main hand | **Darkwater Talwar** | Blackfathom Deeps, Lady Sarevess |
 | Off hand | **Buzz Saw** | The Deadmines, Sneed's Shredder |
 | Off hand | **Butcher's Slicer** | Shadowfang Keep, Razorclaw the Butcher |
-| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
 | Neck | **Erudite's Amulet** | Quest: *Friend of the Library*, the first book quest |
 | Chest | **Tunic of Westfall** | Quest: *The Defias Brotherhood* (Alliance) |
 | Hands, legs, feet | **Gloves, Leggings and Footpads of the Fang** | Wailing Caverns |
@@ -1071,11 +1239,14 @@ The Deadmines and Wailing Caverns give the main-hand weapon for level 20. Method
 | Ranged | **Golemsight Long Gun** | [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md): Relic Guardian. Timesaver keeps it from level 30 to 40 |
 
 
+Full add-on: [Rogue equipment](equipment.md#slow)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="daggers" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Daggers</strong> [Rogue equipment](equipment.md#daggers){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Daggers</strong></p>
 
 Wailing Caverns and Shadowfang Keep give the daggers for these levels. Put the better dagger in the main hand. After the poison quest, put a poison on each dagger.
 
@@ -1085,46 +1256,60 @@ Wailing Caverns and Shadowfang Keep give the daggers for these levels. Put the b
 | Main hand | **Meteor Shard** | Shadowfang Keep, Archmage Arugal |
 
 
+Full add-on: [Rogue equipment](equipment.md#daggers)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Leatherworking and Blacksmithing</strong> [Rogue equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Leatherworking and Blacksmithing</strong></p>
 
 Timesaver selects Brawler's Leather Hood as the best head item at level 20. The Brawler's line continues to skill 125. Iron Fists is the next fist weapon. Cracked Blacksmith Hammer is a new thrown weapon.
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Brawler's Leather Pants** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Brawler's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Brawler's Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 85 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Iron Fists** | [Blacksmithing](../../professions/blacksmithing.md), skill 130 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Legs | **Brawler's Leather Pants** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Chest | **Brawler's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new } |
+| Feet | **Brawler's Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 85 **New**{ .pill .pill--new } |
+| Main hand | **Iron Fists** | [Blacksmithing](../../professions/blacksmithing.md), skill 130 **New**{ .pill .pill--new } |
 | Main hand | **Mighty Iron Hammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 120 |
-| Ranged | **Cracked Blacksmith Hammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
+| Ranged | **Cracked Blacksmith Hammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 110 **New**{ .pill .pill--new } |
 | Weapon | **Heavy Sharpening Stone** | [Blacksmithing](../../professions/blacksmithing.md), skill 125 |
 
+
+Full add-on: [Rogue equipment](equipment.md#crafted)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="pvp" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>PvP and Hardcore</strong> [Rogue equipment](equipment.md#pvp){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>PvP and Hardcore</strong></p>
 
 Put Crippling Poison on 1 weapon when you fight players or enemies that run away. Carry Thistle Tea and Healing Potions. First Aid makes the Healing Potions in Forever.
 
 
-</div>
+Full add-on: [Rogue equipment](equipment.md#pvp)
+{: .fc-addon__more }
 
 </div>
 
-**Before you continue**
+</div>
+
+<div class="fc-goals" markdown>
+<p class="fc-goals__title" id="goals-l20">Before you continue</p>
 
 - [ ] Do the poison quest. Put a poison on each weapon.
 - [ ] Train Vanish at level 22 and buy Flash Powder.
 - [ ] Train Shank at level 24. Put it on a key that you can reach quickly.
 
-## Levels 30–39: Kidney Shot, Blind and Deadly Poison { #l30 }
+</div>
+
+<p class="fc-next"><a href="#l30">Next: Levels 30–39</a></p>
+
+## <span class="fc-ch__lv">Levels 30–39</span> Kidney Shot, Blind and Deadly Poison { #l30 .fc-ch data-toc-label="30–39 · Kidney Shot" data-label="30–39 · Kidney Shot" }
 
 These levels complete your control. Kidney Shot at level 30 is a stun that uses Combo Points. It also stops a cast when Kick is on cooldown. Blind at level 34 removes 1 enemy from the fight for some seconds. With Sap, Gouge, Kidney Shot and Blind, a pull of 3 enemies is possible but not easy.
 
@@ -1145,18 +1330,18 @@ Start to save gold now. At level 40 you need 100g for riding, and dual spec cost
 
 **Dungeons in this chapter**
 
-- Razorfen Kraul and Gnomeregan **29–38**{ .lvl }
-- Scarlet Monastery **30–46**{ .lvl }: 4 wings. Many enemies are humanoids
-- [The Drowned City](../../content/dungeons/drowned-city.md) **35–42**{ .lvl }: New. It is on the coast of Stranglethorn Vale
+- **29–38**{ .lvl } Razorfen Kraul and Gnomeregan
+- **30–46**{ .lvl } Scarlet Monastery: 4 wings. Many enemies are humanoids
+- **35–42**{ .lvl } [The Drowned City](../../content/dungeons/drowned-city.md): New. It is on the coast of Stranglethorn Vale
 
-!!! warning "Caution"
+!!! warning fc-inline "Caution"
     Do not use Blade Flurry or other attacks that hit 2 targets near a Sapped or Polymorphed enemy.
 
 <div class="fc-addons" markdown>
 
 <div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf skyborne-high-order" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Alliance route</strong></p>
 
 Quest in Arathi Highlands, the Alterac Mountains, Stranglethorn Vale, Desolace and Thousand Needles. Dustwallow Marsh opens at 35. The centaur quests in Desolace now need level 35.
 
@@ -1165,7 +1350,7 @@ Quest in Arathi Highlands, the Alterac Mountains, Stranglethorn Vale, Desolace a
 
 <div class="fc-addon" data-pick="race" data-value="orc troll undead skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Horde route</strong></p>
 
 Quest in Arathi Highlands, Stranglethorn Vale, Desolace and Dustwallow Marsh. The centaur quests in Desolace now need level 35.
 
@@ -1174,73 +1359,85 @@ Quest in Arathi Highlands, Stranglethorn Vale, Desolace and Dustwallow Marsh. Th
 
 <div class="fc-addon" data-pick="race" data-value="troll" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Rogue](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Troll</strong></p>
 
 The Battle for the Darkspear Islands opens at level 30. The Horde faction there is the Darkspear Raiders.
 
+
+Full add-on: [Troll Rogue](troll.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="combat" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Combat</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Combat</strong></p>
 
 Blade Flurry at level 30 gives 20% attack speed, and your attacks also hit a second enemy. Use it on each pull of 2 enemies, or for burst on 1 enemy. Hack and Slash gives the bonus of your weapon type. Dual Wield Specialization makes the off-hand weapon and Shank stronger.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 30 | **Blade Flurry** | 1/1 | Kill 2 mobs at the same time |
-| 31–35 | **Hack and Slash** | 5/5 | The bonus for your weapon type |
-| 36–37 | **Dual Wield Specialization** | 2/2 | More off-hand and Shank damage |
-| 38 | **Weapon Expertise** | 2/2 | Fewer dodges and parries |
-| 39 | **Flash of Steel** | 1/5 | The last point to open row 7 |
+| Level | Talent | Why |
+|---|---|---|
+| 30 | **Blade Flurry** <span class="fc-rank">1/1</span> | Kill 2 mobs at the same time |
+| 31–35 | **Hack and Slash** <span class="fc-rank">5/5</span> | The bonus for your weapon type |
+| 36–37 | **Dual Wield Specialization** <span class="fc-rank">2/2</span> | More off-hand and Shank damage |
+| 38 | **Weapon Expertise** <span class="fc-rank">2/2</span> | Fewer dodges and parries |
+| 39 | **Flash of Steel** <span class="fc-rank">1/5</span> | The last point to open row 7 |
 
 Points at level 39: **0/30/0** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="assassination" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Assassination (daggers)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Assassination (daggers)</strong></p>
 
 Venom at level 30 changes Shank. Each Shank gives 30% more poison damage and 20% more chance to apply poisons for 6 seconds. Put Instant Poison on the main hand and Deadly Poison on the off hand. With 3 ranks of Seal Fate at level 37, each crit of Backstab gives 1 more Combo Point. Relentless Strikes gives Energy back from finishing moves.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 30 | **Venom** | 1/1 | Shank makes your poisons stronger. Deadly Poison arrives at level 30 |
-| 31–34 | **Relentless Strikes** | 4/5 | Energy back from finishers |
-| 35–37 | **Seal Fate** | 3/3 | Crits give 1 more Combo Point |
-| 38 | **Relentless Strikes** | 5/5 | A finisher with 5 Combo Points always restores 25 Energy |
-| 39 | **Improved Poisons** | 2/5 | The last point to open row 7 |
+| Level | Talent | Why |
+|---|---|---|
+| 30 | **Venom** <span class="fc-rank">1/1</span> | Shank makes your poisons stronger. Deadly Poison arrives at level 30 |
+| 31–34 | **Relentless Strikes** <span class="fc-rank">4/5</span> | Energy back from finishers |
+| 35–37 | **Seal Fate** <span class="fc-rank">3/3</span> | Crits give 1 more Combo Point |
+| 38 | **Relentless Strikes** <span class="fc-rank">5/5</span> | A finisher with 5 Combo Points always restores 25 Energy |
+| 39 | **Improved Poisons** <span class="fc-rank">2/5</span> | The last point to open row 7 |
 
 Points at level 39: **30/0/0** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="subtlety" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Subtlety (openers and PvP)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Subtlety (openers and PvP)</strong></p>
 
 Hemorrhage at level 30 becomes your main attack. It needs no position behind the target, so solo play is now easy. It also increases your Rupture and Garrote damage by 15%. Preparation at 31 gives you a second Vanish, Sprint and Evasion. Boot Knife starts at 35. With 5 ranks at level 39, each Shank adds 2 Combo Points.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 30 | **Hemorrhage** | 1/1 | Your new main attack. It needs no position behind the target |
-| 31 | **Preparation** | 1/1 | A second Vanish, Sprint and Evasion |
-| 32 | **Improved Ambush** | 3/3 | 45% more Ambush crit |
-| 33–34 | **Dirty Deeds** | 2/2 | A cheaper Cheap Shot, and Garrote from the front |
-| 35–39 | **Boot Knife** | 5/5 | Each Shank gives 2 Combo Points |
+| Level | Talent | Why |
+|---|---|---|
+| 30 | **Hemorrhage** <span class="fc-rank">1/1</span> | Your new main attack. It needs no position behind the target |
+| 31 | **Preparation** <span class="fc-rank">1/1</span> | A second Vanish, Sprint and Evasion |
+| 32 | **Improved Ambush** <span class="fc-rank">3/3</span> | 45% more Ambush crit |
+| 33–34 | **Dirty Deeds** <span class="fc-rank">2/2</span> | A cheaper Cheap Shot, and Garrote from the front |
+| 35–39 | **Boot Knife** <span class="fc-rank">5/5</span> | Each Shank gives 2 Combo Points |
 
 Points at level 39: **0/0/30** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="slow" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Slow main hand</strong> [Rogue equipment](equipment.md#slow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Slow main hand</strong></p>
 
 Timesaver selects a fist weapon from Scarlet Monastery at level 30 and Ruby-Adorned Blade at 35. Method calls Ruby-Adorned Blade a class quest for level 30. City of Dalaran and the Drowned City give leather and a necklace that you keep for many levels.
 
@@ -1251,18 +1448,21 @@ Timesaver selects a fist weapon from Scarlet Monastery at level 30 and Ruby-Ador
 | Main hand | **Dreadfrost Saber** | [The Drowned City](../../content/dungeons/drowned-city.md): Captain Dreadrise. The wiki lists it as a Stamina sword |
 | Back | **Drape of Shifting Energy** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
 | Neck | **Archmagister's Faceted Pendant** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
-| Waist | **Slitherwrap Girdle** | World drop: Mana Devourer, Alterac Mountains (Timesaver). The dungeon page does not list it **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Waist | **Slitherwrap Girdle** | World drop: Mana Devourer, Alterac Mountains (Timesaver). The dungeon page does not list it **Not confirmed**{ .pill } |
 | Hands | **Thorncursed Grips** | Razorfen Kraul, Aggem Thorncurse |
 | Legs | **Ferine Leggings** | Razorfen Kraul, Agathelos the Raging |
 | Wrist | **Oathbound Bracers** | [The Drowned City](../../content/dungeons/drowned-city.md): Zul'Alai |
 | Legs | **Brinebelly Leggings** | [The Drowned City](../../content/dungeons/drowned-city.md): Var'Taka |
 
 
+Full add-on: [Rogue equipment](equipment.md#slow)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="daggers" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Daggers</strong> [Rogue equipment](equipment.md#daggers){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Daggers</strong></p>
 
 Thornspike from Razorfen Kraul is the dagger for level 30. The Alliance gets Subdued Dragon's Fang from a quest in the Wetlands. Method gives it at level 32. City of Dalaran drops a dagger from Lyn the Ignored.
 
@@ -1273,29 +1473,35 @@ Thornspike from Razorfen Kraul is the dagger for level 30. The Alliance gets Sub
 | Dagger | **Tendonscraper Dagger** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Lyn the Ignored |
 
 
+Full add-on: [Rogue equipment](equipment.md#daggers)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Leatherworking and Blacksmithing</strong> [Rogue equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Leatherworking and Blacksmithing</strong></p>
 
 At skill 150, Leatherworking has 4 new rare lines: Skulker's, Prowler's, Skirmisher's and Stalker's. No source confirms which line is for Rogues. Timesaver selects Skulker's Leather Bracers at level 60, so this set uses that line. Read the tooltip before you make an item.
 
 | Slot | Item | Source |
 |---|---|---|
-| Waist | **Skulker's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Skulker's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Skulker's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new } |
+| Hands | **Skulker's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new } |
 | Main hand | **Jade Serpentblade** | [Blacksmithing](../../professions/blacksmithing.md), skill 150 |
-| Main hand | **Iron Morningstar** | [Blacksmithing](../../professions/blacksmithing.md), skill 165 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Iron Morningstar** | [Blacksmithing](../../professions/blacksmithing.md), skill 165 **New**{ .pill .pill--new } |
 | Dagger | **Searing Golden Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 165 |
-| Armor kit | **Forceful Heavy Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 135 **New**{ .pill .pill--new .pill--sm } |
+| Armor kit | **Forceful Heavy Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 135 **New**{ .pill .pill--new } |
 
+
+Full add-on: [Rogue equipment](equipment.md#crafted)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="pvp" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>PvP and Hardcore</strong> [Rogue equipment](equipment.md#pvp){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>PvP and Hardcore</strong></p>
 
 The Battle for the Darkspear Islands opens at level 30. Use Wound Poison against healers and Mind-numbing Poison against casters. PvP ranks give rewards. See [PvP](../../content/pvp/index.md).
 
@@ -1304,17 +1510,25 @@ The Battle for the Darkspear Islands opens at level 30. Use Wound Poison against
 | Potion | **Free Action Potion** | [Alchemy](../../professions/alchemy.md), skill 150 |
 
 
-</div>
+Full add-on: [Rogue equipment](equipment.md#pvp)
+{: .fc-addon__more }
 
 </div>
 
-**Before you continue**
+</div>
+
+<div class="fc-goals" markdown>
+<p class="fc-goals__title" id="goals-l30">Before you continue</p>
 
 - [ ] Train Kidney Shot and Deadly Poison at level 30.
 - [ ] Train Blind at level 34.
 - [ ] Save 150g before level 40.
 
-## Levels 40–49: Adrenaline Rush, Mutilate or Death Mark { #l40 }
+</div>
+
+<p class="fc-next"><a href="#l40">Next: Levels 40–49</a></p>
+
+## <span class="fc-ch__lv">Levels 40–49</span> Adrenaline Rush, Mutilate or Death Mark { #l40 .fc-ch data-toc-label="40–49 · Adrenaline Rush" data-label="40–49 · Adrenaline Rush" }
 
 Level 40 gives few new abilities, but it changes how you play. You can buy riding for 100g, and the price includes your first mount. You can buy dual spec for 50g from your class trainer. You train Safe Fall, which decreases fall damage.
 
@@ -1333,19 +1547,19 @@ The new zone Riverglades is for levels 35 to 45. Both factions quest there, so e
 
 **Dungeons in this chapter**
 
-- Razorfen Downs **37–46**{ .lvl }
-- [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) **40–47**{ .lvl }: New. It is in Riverglades. It drops a fist weapon with Agility
-- Uldaman **41–51**{ .lvl }
-- Zul'Farrak **44–54**{ .lvl }
+- **37–46**{ .lvl } Razorfen Downs
+- **40–47**{ .lvl } [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md): New. It is in Riverglades. It drops a fist weapon with Agility
+- **41–51**{ .lvl } Uldaman
+- **44–54**{ .lvl } Zul'Farrak
 
-!!! warning "Caution"
+!!! warning fc-inline "Caution"
     Buy riding before dual spec if you do not have 150g. A mount saves more time than a second spec.
 
 <div class="fc-addons" markdown>
 
 <div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf skyborne-high-order" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Alliance route</strong></p>
 
 The Alliance town in Riverglades is Farholde Keep. New passes go to Riverglades from the Badlands and the Swamp of Sorrows. Then quest in the Badlands, Swamp of Sorrows, Tanaris, Feralas and the Hinterlands. A ferry goes from Steamwheedle Port in Tanaris to Powderfuse Port.
 
@@ -1354,7 +1568,7 @@ The Alliance town in Riverglades is Farholde Keep. New passes go to Riverglades 
 
 <div class="fc-addon" data-pick="race" data-value="orc troll undead skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Horde route</strong></p>
 
 The Horde town in Riverglades is Rog'mar. New passes go to Riverglades from the Badlands and the Swamp of Sorrows. Then quest in the Badlands, Swamp of Sorrows, Tanaris, Feralas and the Hinterlands. A ferry goes from Steamwheedle Port in Tanaris to Powderfuse Port.
 
@@ -1363,78 +1577,93 @@ The Horde town in Riverglades is Rog'mar. New passes go to Riverglades from the 
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-high-order" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (High Order)</strong> [Skyborne (High Order) Rogue](skyborne-high-order.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (High Order)</strong></p>
 
 Galestriders are the Skyborne mounts. Fairweather Stables on Zephras Isle sells them. High Order reputation gives a discount of 5% to 20%.
 
+
+Full add-on: [Skyborne (High Order) Rogue](skyborne-high-order.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (Windshaper)</strong> [Skyborne (Windshaper) Rogue](skyborne-windshaper.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (Windshaper)</strong></p>
 
 Galestriders are the Skyborne mounts. Fairweather Stables on Zephras Isle sells them. Windshaper reputation gives a discount of 5% to 20%.
 
+
+Full add-on: [Skyborne (Windshaper) Rogue](skyborne-windshaper.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="combat" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Combat</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Combat</strong></p>
 
 Adrenaline Rush at level 40 doubles your Energy regeneration for 15 seconds. Use it with Blade Flurry on a dangerous pull. Flash of Steel then makes Shank your Energy source. At 5 ranks with Shank rank 2, Shank gives 40 Energy each 8 seconds. Malice adds crit from level 45, to 5% at level 49.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 40 | **Adrenaline Rush** | 1/1 | A second cooldown for dangerous pulls |
-| 41–44 | **Flash of Steel** | 5/5 | Shank becomes a large source of Energy |
-| 45–49 | **Malice** | 5/5 | 5% crit |
+| Level | Talent | Why |
+|---|---|---|
+| 40 | **Adrenaline Rush** <span class="fc-rank">1/1</span> | A second cooldown for dangerous pulls |
+| 41–44 | **Flash of Steel** <span class="fc-rank">5/5</span> | Shank becomes a large source of Energy |
+| 45–49 | **Malice** <span class="fc-rank">5/5</span> | 5% crit |
 
 Points at level 49: **5/35/0** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="assassination" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Assassination (daggers)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Assassination (daggers)</strong></p>
 
 Mutilate at level 40 is your new main attack. It costs 60 Energy, hits with the 2 daggers and gives 2 Combo Points. It does 20% more damage to a Poisoned target. The client data gives no position rule for Mutilate. Use Poised before Mutilate. Opportunity then adds 20% damage to Mutilate, Ambush and Garrote.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 40 | **Mutilate** | 1/1 | Your new main attack. It gives 2 Combo Points |
-| 41–45 | **Opportunity** | 5/5 | 20% more Mutilate, Ambush and Garrote damage |
-| 46–48 | **Coup de Grace** | 3/3 | 20% more Eviscerate damage |
-| 49 | **Lightning Reflexes** | 1/5 | Opens Combat row 2 |
+| Level | Talent | Why |
+|---|---|---|
+| 40 | **Mutilate** <span class="fc-rank">1/1</span> | Your new main attack. It gives 2 Combo Points |
+| 41–45 | **Opportunity** <span class="fc-rank">5/5</span> | 20% more Mutilate, Ambush and Garrote damage |
+| 46–48 | **Coup de Grace** <span class="fc-rank">3/3</span> | 20% more Eviscerate damage |
+| 49 | **Lightning Reflexes** <span class="fc-rank">1/5</span> | Opens Combat row 2 |
 
 Points at level 49: **31/4/5** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="subtlety" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Subtlety (openers and PvP)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Subtlety (openers and PvP)</strong></p>
 
 Death Mark at level 40 is a finishing move with a range of 20 yards. It stores a part of your damage for 6 seconds and then does that damage to the target. Use it at 5 Combo Points, then do as much damage as you can. Malice adds crit from level 41, to 5% at level 45.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 40 | **Death Mark** | 1/1 | The burst finisher |
-| 41–45 | **Malice** | 5/5 | 5% crit |
-| 46–48 | **Ruthlessness** | 3/3 | Free Combo Points after finishers |
-| 49 | **Improved Slice and Dice** | 1/3 | Opens row 3 |
+| Level | Talent | Why |
+|---|---|---|
+| 40 | **Death Mark** <span class="fc-rank">1/1</span> | The burst finisher |
+| 41–45 | **Malice** <span class="fc-rank">5/5</span> | 5% crit |
+| 46–48 | **Ruthlessness** <span class="fc-rank">3/3</span> | Free Combo Points after finishers |
+| 49 | **Improved Slice and Dice** <span class="fc-rank">1/3</span> | Opens row 3 |
 
 Points at level 49: **9/0/31** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="slow" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Slow main hand</strong> [Rogue equipment](equipment.md#slow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Slow main hand</strong></p>
 
 Vanquisher's Sword from the Razorfen Downs quest is the main-hand weapon for these levels. Krol'dok Stronghold gives a fist weapon with Agility, a necklace and a trinket. The second book quest gives a bow.
 
@@ -1452,11 +1681,14 @@ Vanquisher's Sword from the Razorfen Downs quest is the main-hand weapon for the
 | Ranged | **Truthseeker's Bow** | Quest: *Greater Friend of the Library*, the second book quest |
 
 
+Full add-on: [Rogue equipment](equipment.md#slow)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="daggers" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Daggers</strong> [Rogue equipment](equipment.md#daggers){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Daggers</strong></p>
 
 Mutilate at level 40 needs a dagger in each hand. Quests give the daggers for these levels. If you have no second good dagger, a Blacksmith can make a Mithril Stiletto.
 
@@ -1465,34 +1697,40 @@ Mutilate at level 40 needs a dagger in each hand. Quests give the daggers for th
 | Main hand | **Silent Hunter** | Quest: *Call to Arms*, Arathi Highlands (Horde) |
 | Main hand | **Ceremonial Elven Blade** | Quest: *A Hero's Welcome*, Feralas (Alliance) |
 | Main hand | **Fiendish Skiv** | Quest: *Challenge Overlord Mok'Morokk*, Dustwallow Marsh (Horde) |
-| Dagger | **Mithril Stiletto** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
+| Dagger | **Mithril Stiletto** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new } |
 
+
+Full add-on: [Rogue equipment](equipment.md#daggers)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Leatherworking and Blacksmithing</strong> [Rogue equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Leatherworking and Blacksmithing</strong></p>
 
 Crafted items fill the slots where dungeons give few new items. Timesaver lists Skulker's Leather Bracers for the wrist slot at level 60. Bent Goggles is a new leather head item from Engineering. An Enchanter can put Agility on a necklace from skill 210.
 
 | Slot | Item | Source |
 |---|---|---|
-| Main hand | **Mithril Claws** | [Blacksmithing](../../professions/blacksmithing.md), skill 195 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Mithril Claws** | [Blacksmithing](../../professions/blacksmithing.md), skill 195 **New**{ .pill .pill--new } |
 | Main hand | **Wicked Mithril Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 200 |
-| Dagger | **Mithril Stiletto** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Skulker's Leather Shoes** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Skulker's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Skulker's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Bent Goggles** | [Engineering](../../professions/engineering.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Armor kit | **Forceful Thick Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 185 **New**{ .pill .pill--new .pill--sm } |
+| Dagger | **Mithril Stiletto** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new } |
+| Feet | **Skulker's Leather Shoes** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new } |
+| Shoulders | **Skulker's Leather Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new } |
+| Wrist | **Skulker's Leather Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
+| Head | **Bent Goggles** | [Engineering](../../professions/engineering.md), skill 200 **New**{ .pill .pill--new } |
+| Armor kit | **Forceful Thick Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 185 **New**{ .pill .pill--new } |
 
+
+Full add-on: [Rogue equipment](equipment.md#crafted)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="pvp" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>PvP and Hardcore</strong> [Rogue equipment](equipment.md#pvp){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>PvP and Hardcore</strong></p>
 
 Engineering gives bombs and the Goblin Sapper Charge. The Kami-Labs simulation for Combat also uses the Sapper Charge.
 
@@ -1501,17 +1739,25 @@ Engineering gives bombs and the Goblin Sapper Charge. The Kami-Labs simulation f
 | Explosive | **Goblin Sapper Charge** | [Engineering](../../professions/engineering.md), skill 205 |
 
 
-</div>
+Full add-on: [Rogue equipment](equipment.md#pvp)
+{: .fc-addon__more }
 
 </div>
 
-**Before you continue**
+</div>
+
+<div class="fc-goals" markdown>
+<p class="fc-goals__title" id="goals-l40">Before you continue</p>
 
 - [ ] Buy riding (100g), then dual spec (50g).
 - [ ] Take the last talent of your tree at level 40.
 - [ ] Train Shank rank 2 at level 44.
 
-## Levels 50–59: Hit, Lockpicking and the last dungeons { #l50 }
+</div>
+
+<p class="fc-next"><a href="#l50">Next: Levels 50–59</a></p>
+
+## <span class="fc-ch__lv">Levels 50–59</span> Hit, Lockpicking and the last dungeons { #l50 .fc-ch data-toc-label="50–59 · Hit" data-label="50–59 · Hit" }
 
 The last 10 levels have the most dungeons. Items from the new dungeons have stats for a specific class and spec. Reportedly, each boss in the new dungeons drops a blue item. Start to collect your level 60 equipment here.
 
@@ -1525,23 +1771,23 @@ No source lists new abilities for these levels. You train higher ranks of the ab
 
 **Dungeons in this chapter**
 
-- [Alcaz Prison](../../content/dungeons/alcaz-prison.md) **48–55**{ .lvl }: New. It is in Dustwallow Marsh
-- Maraudon **46–55**{ .lvl }: Its quest gives Thrash Blade
-- Sunken Temple **50–60**{ .lvl }
-- Blackrock Depths **52–60**{ .lvl }
-- [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) **55–60**{ .lvl }: New. It is in Azshara. It has an entrance to the Barrow Deeps
-- Dire Maul **54–60**{ .lvl }: East is 54 to 60. West and North are 56 to 60
-- Lower Blackrock Spire **55–60**{ .lvl }
-- [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) **58–60**{ .lvl }: New. It is in Un'Goro Crater
+- **48–55**{ .lvl } [Alcaz Prison](../../content/dungeons/alcaz-prison.md): New. It is in Dustwallow Marsh
+- **46–55**{ .lvl } Maraudon: Its quest gives Thrash Blade
+- **50–60**{ .lvl } Sunken Temple
+- **52–60**{ .lvl } Blackrock Depths
+- **55–60**{ .lvl } [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md): New. It is in Azshara. It has an entrance to the Barrow Deeps
+- **54–60**{ .lvl } Dire Maul: East is 54 to 60. West and North are 56 to 60
+- **55–60**{ .lvl } Lower Blackrock Spire
+- **58–60**{ .lvl } [Shaper's Terrace](../../content/dungeons/shapers-terrace.md): New. It is in Un'Goro Crater
 
-!!! tip "Tip"
+!!! tip fc-inline "Tip"
     Use Pick Pocket on elite humanoids before the pull. Sap does not end Stealth, so you can Sap 1 enemy and use Pick Pocket on the others.
 
 <div class="fc-addons" markdown>
 
 <div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf skyborne-high-order" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Alliance route</strong></p>
 
 Quest in Searing Gorge, Burning Steppes, Azshara, Un'Goro Crater, Felwood, the Plaguelands, Winterspring and Silithus. Azshara has many new quests.
 
@@ -1550,7 +1796,7 @@ Quest in Searing Gorge, Burning Steppes, Azshara, Un'Goro Crater, Felwood, the P
 
 <div class="fc-addon" data-pick="race" data-value="orc troll undead skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Horde route</strong></p>
 
 Quest in Searing Gorge, Burning Steppes, Azshara, Un'Goro Crater, Felwood, the Plaguelands, Winterspring and Silithus. Azshara has many new quests.
 
@@ -1559,65 +1805,74 @@ Quest in Searing Gorge, Burning Steppes, Azshara, Un'Goro Crater, Felwood, the P
 
 <div class="fc-addon" data-pick="talents" data-value="combat" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Combat</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Combat</strong></p>
 
 The last points go into Assassination. Ruthlessness gives free Combo Points after finishing moves. Lethality makes Sinister Strike crits larger. Keep Slice and Dice active for the full fight. Cold Blood comes with the last point at level 60.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 50–52 | **Ruthlessness** | 3/3 | Free Combo Points after finishers |
-| 53–54 | **Improved Slice and Dice** | 2/3 | Opens row 3 |
-| 55–56 | **Lethality** | 2/2 | Larger crits with Sinister Strike |
-| 57–58 | **Vigor** | 2/2 | 10 more Energy |
-| 59 | **Blood Splatter** | 1/1 | Opens row 4 |
+| Level | Talent | Why |
+|---|---|---|
+| 50–52 | **Ruthlessness** <span class="fc-rank">3/3</span> | Free Combo Points after finishers |
+| 53–54 | **Improved Slice and Dice** <span class="fc-rank">2/3</span> | Opens row 3 |
+| 55–56 | **Lethality** <span class="fc-rank">2/2</span> | Larger crits with Sinister Strike |
+| 57–58 | **Vigor** <span class="fc-rank">2/2</span> | 10 more Energy |
+| 59 | **Blood Splatter** <span class="fc-rank">1/1</span> | Opens row 4 |
 
 Points at level 59: **15/35/0** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="assassination" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Assassination (daggers)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Assassination (daggers)</strong></p>
 
 Puncturing Wounds gives 15% more crit to Mutilate, thus more Seal Fate procs. Precision gives 3% hit for dungeons at level 55 and above. Vile Poisons increases poison damage in the last levels.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 50 | **Lightning Reflexes** | 2/5 | Opens Combat row 2 |
-| 51–53 | **Puncturing Wounds** | 3/3 | 15% more crit for Mutilate |
-| 54–56 | **Precision** | 3/3 | Hit for dungeons at 55+ |
-| 57–59 | **Vile Poisons** | 3/5 | More poison damage |
+| Level | Talent | Why |
+|---|---|---|
+| 50 | **Lightning Reflexes** <span class="fc-rank">2/5</span> | Opens Combat row 2 |
+| 51–53 | **Puncturing Wounds** <span class="fc-rank">3/3</span> | 15% more crit for Mutilate |
+| 54–56 | **Precision** <span class="fc-rank">3/3</span> | Hit for dungeons at 55+ |
+| 57–59 | **Vile Poisons** <span class="fc-rank">3/5</span> | More poison damage |
 
 Points at level 59: **34/11/5** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="subtlety" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Subtlety (openers and PvP)</strong> [Rogue talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Subtlety (openers and PvP)</strong></p>
 
 The last points go into Assassination and Combat. Lethality makes Hemorrhage crits larger. Cold Blood at 56 gives a sure crit for Ambush. Efficient Strikes makes Hemorrhage cheaper, and Coup de Grace makes Death Mark stronger.
 
-| Level | Talent | Rank | Why |
-|---|---|---|---|
-| 50 | **Improved Slice and Dice** | 2/3 | Opens row 3 |
-| 51–52 | **Lethality** | 2/2 | Larger Hemorrhage crits |
-| 53–54 | **Vigor** | 2/2 | 10 more Energy |
-| 55 | **Blood Splatter** | 1/1 | A longer Rupture and Garrote |
-| 56 | **Cold Blood** | 1/1 | A sure crit for Ambush |
-| 57–58 | **Efficient Strikes** | 2/2 | Hemorrhage costs 5 less Energy |
-| 59 | **Coup de Grace** | 1/3 | More damage for Eviscerate and Death Mark |
+| Level | Talent | Why |
+|---|---|---|
+| 50 | **Improved Slice and Dice** <span class="fc-rank">2/3</span> | Opens row 3 |
+| 51–52 | **Lethality** <span class="fc-rank">2/2</span> | Larger Hemorrhage crits |
+| 53–54 | **Vigor** <span class="fc-rank">2/2</span> | 10 more Energy |
+| 55 | **Blood Splatter** <span class="fc-rank">1/1</span> | A longer Rupture and Garrote |
+| 56 | **Cold Blood** <span class="fc-rank">1/1</span> | A sure crit for Ambush |
+| 57–58 | **Efficient Strikes** <span class="fc-rank">2/2</span> | Hemorrhage costs 5 less Energy |
+| 59 | **Coup de Grace** <span class="fc-rank">1/3</span> | More damage for Eviscerate and Death Mark |
 
 Points at level 59: **16/3/31** (Assassination / Combat / Subtlety).
 
+
+Full add-on: [Rogue talents](talents.md#leveling-builds)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="slow" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Slow main hand</strong> [Rogue equipment](equipment.md#slow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Slow main hand</strong></p>
 
 Thrash Blade from the Maraudon quest stays in the main hand to level 60 in the list of Timesaver. Method does not list it. No source lists the loot of Alcaz Prison, Blackmaw Hold or Shaper's Terrace. The first Shadowcraft parts drop in Blackrock Spire.
 
@@ -1629,63 +1884,80 @@ Thrash Blade from the Maraudon quest stays in the main hand to level 60 in the l
 | Shoulders | **Clouddrift Mantle** | Quest: *Ancient Spirit* (Alliance) |
 | Back | **Deep River Cloak** | Quest: *Strange Sources* |
 | Hands | **Shadowcraft Gloves** | Blackrock Spire, Shadow Hunter Vosh'gajin |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
 
+
+Full add-on: [Rogue equipment](equipment.md#slow)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="daggers" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Daggers</strong> [Rogue equipment](equipment.md#daggers){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Daggers</strong></p>
 
 Timesaver has no dagger for level 50. Hunt Tracker Blade comes from a quest in Felwood at about level 55. Bold Dirk is a new crafted dagger.
 
 | Slot | Item | Source |
 |---|---|---|
 | Main hand | **Hunt Tracker Blade** | Quest: *The Remains of Trey Lightforge*, Felwood |
-| Dagger | **Bold Dirk** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new .pill--sm } |
+| Dagger | **Bold Dirk** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new } |
 
+
+Full add-on: [Rogue equipment](equipment.md#daggers)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Leatherworking and Blacksmithing</strong> [Rogue equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Leatherworking and Blacksmithing</strong></p>
 
 Thorium Cestus is the fist weapon for these levels, and its pattern costs Merchant's Favor. Devilsaur Gauntlets stay in the level 60 lists. Wicked Leather Boots are new.
 
 | Slot | Item | Source |
 |---|---|---|
-| Main hand | **Thorium Cestus** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Thorium Cestus** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new } |
 | Main hand | **Blazing Rapier** | [Blacksmithing](../../professions/blacksmithing.md), skill 255 |
-| Dagger | **Bold Dirk** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Skulker's Leather Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Skulker's Leather Waistguard** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
+| Dagger | **Bold Dirk** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new } |
+| Hands | **Skulker's Leather Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
+| Waist | **Skulker's Leather Waistguard** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
-| Feet | **Wicked Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 260 **New**{ .pill .pill--new .pill--sm } |
-| Armor kit | **Forceful Rugged Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 235 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Wicked Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 260 **New**{ .pill .pill--new } |
+| Armor kit | **Forceful Rugged Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 235 **New**{ .pill .pill--new } |
 
+
+Full add-on: [Rogue equipment](equipment.md#crafted)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="pvp" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>PvP and Hardcore</strong> [Rogue equipment](equipment.md#pvp){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>PvP and Hardcore</strong></p>
 
 The battleground factions sell items for reputation. Honor buys 1 blue set and 1 epic set. An epic part needs the blue part and an Emboldened Seal, and each seal needs a rank.
 
 
-</div>
+Full add-on: [Rogue equipment](equipment.md#pvp)
+{: .fc-addon__more }
 
 </div>
 
-**Before you continue**
+</div>
+
+<div class="fc-goals" markdown>
+<p class="fc-goals__title" id="goals-l50">Before you continue</p>
 
 - [ ] Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests.
 - [ ] Keep items with hit for dungeons at level 55 and above.
 - [ ] Increase Lockpicking for Blackrock Depths and Dire Maul.
 
-## Level 60: Hit, weapons and the Onyxia attunement { #l60 }
+</div>
+
+<p class="fc-next"><a href="#l60">Next: Level 60</a></p>
+
+## <span class="fc-ch__lv">Level 60</span> Hit, weapons and the Onyxia attunement { #l60 .fc-ch data-toc-label="60 · Hit" data-label="60 · Hit" }
 
 At level 60 you get the *Rogue: Master* Legacy Point. The riding skill for a fast mount costs 1,000g. Mount Hyjal opens through Darkwhisper Gorge in Winterspring. Get reputation there, because it gives the patterns for the crafted Tier 1 items. Fan sources name the faction Guardians of Hyjal, and the name is not confirmed.
 
@@ -1701,17 +1973,17 @@ The Equipment add-on gives the items to look for. The lists of level 60 items ar
 
 **Dungeons in this chapter**
 
-- [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) **55–60**{ .lvl }
-- [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) **58–60**{ .lvl }
-- Scholomance and Stratholme **58–60**{ .lvl }: They drop parts of the Shadowcraft set
-- Dire Maul **54–60**{ .lvl }: The Rogue book quest gives the trinket Royal Seal of Eldre'Thalas
-- Upper Blackrock Spire **59–60**{ .lvl }: 10 players. Necessary for the Onyxia attunement
+- **55–60**{ .lvl } [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md)
+- **58–60**{ .lvl } [Shaper's Terrace](../../content/dungeons/shapers-terrace.md)
+- **58–60**{ .lvl } Scholomance and Stratholme: They drop parts of the Shadowcraft set
+- **54–60**{ .lvl } Dire Maul: The Rogue book quest gives the trinket Royal Seal of Eldre'Thalas
+- **59–60**{ .lvl } Upper Blackrock Spire: 10 players. Necessary for the Onyxia attunement
 
 <div class="fc-addons" markdown>
 
 <div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf skyborne-high-order" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Alliance route</strong></p>
 
 The Onyxia attunement starts with Helendis Riverhorn in Burning Steppes. The Champion's Hall in Stormwind sells the Honor items. Your battleground faction for the Darkspear Islands is the Theramore Expeditionary Force.
 
@@ -1720,7 +1992,7 @@ The Onyxia attunement starts with Helendis Riverhorn in Burning Steppes. The Cha
 
 <div class="fc-addon" data-pick="race" data-value="orc troll undead skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Horde route</strong></p>
 
 The Onyxia attunement starts with Warlord Goretooth in the Badlands. The Hall of Legends in Orgrimmar sells the Honor items. Your battleground faction for the Darkspear Islands is the Darkspear Raiders.
 
@@ -1729,61 +2001,79 @@ The Onyxia attunement starts with Warlord Goretooth in the Badlands. The Hall of
 
 <div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Rogue](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Dwarf</strong></p>
 
 Artisan's Precision gives 1% hit. You need 1% less hit from items than other races.
 
+
+Full add-on: [Dwarf Rogue](dwarf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="gnome" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Rogue](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Gnome</strong></p>
 
 Use Eureka! together with Cold Blood, Adrenaline Rush or an opener from Stealth. It does not increase Rupture or Garrote.
 
+
+Full add-on: [Gnome Rogue](gnome.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Rogue](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Night Elf</strong></p>
 
 Use Elune's Light together with Adrenaline Rush or Cold Blood. With Seal Fate, more crit gives more Combo Points.
 
+
+Full add-on: [Night Elf Rogue](night-elf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-high-order" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (High Order)</strong> [Skyborne (High Order) Rogue](skyborne-high-order.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (High Order)</strong></p>
 
 Wind Blessed gives more attacks, thus more poison hits and more Hack and Slash procs. Elemental Insight gives 5% more damage against Elementals.
 
+
+Full add-on: [Skyborne (High Order) Rogue](skyborne-high-order.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="orc" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Rogue](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Orc</strong></p>
 
 Use Blood Fury together with Blade Flurry, Adrenaline Rush or Cold Blood. The cooldown is 2 minutes.
 
+
+Full add-on: [Orc Rogue](orc.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="troll" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Rogue](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Troll</strong></p>
 
 Use Berserking together with Adrenaline Rush and Blade Flurry. More attacks give more poison hits and more Hack and Slash procs.
 
+
+Full add-on: [Troll Rogue](troll.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="combat" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Combat</strong> [Rogue talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Combat</strong></p>
 
 The raid build moves the points from Deflection and Riposte, because a boss does not attack you. It takes 5 ranks of Flash of Steel and 16 points in Assassination. For dungeons, you can keep Deflection and Riposte.
 
@@ -1792,11 +2082,14 @@ The leveling build ends at **16/35/0**. The level 60 builds of this path:
 - **Combat (raid)** (16/35/0, Raid DPS): [talent calculator](https://wowforevertalents.com/rogue/?t=h00530320201-3230030202012321551)
 
 
+Full add-on: [Rogue talents](talents.md#level-60-builds)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="assassination" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Assassination (daggers)</strong> [Rogue talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Assassination (daggers)</strong></p>
 
 The raid build moves the points from Remorseless Attacks and Blood Splatter into Improved Poisons. It keeps Seal Fate, Venom, Opportunity, Puncturing Wounds and Precision. You need a dagger in each hand for Mutilate.
 
@@ -1805,11 +2098,14 @@ The leveling build ends at **35/11/5**. The level 60 builds of this path:
 - **Assassination (Mutilate)** (35/11/5, Raid DPS): [talent calculator](https://wowforevertalents.com/rogue/?t=h00530320241551031-320303-005)
 
 
+Full add-on: [Rogue talents](talents.md#level-60-builds)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="subtlety" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Subtlety (openers and PvP)</strong> [Rogue talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Subtlety (openers and PvP)</strong></p>
 
 For PvP, respec to the PvP build. It takes Master of Deception, Improved Gouge and Heightened Senses, and it has no Combat points. The bleed build for raids keeps Dirty Deeds and Blood Splatter. No source has tested Subtlety in a raid.
 
@@ -1819,11 +2115,14 @@ The leveling build ends at **16/4/31**. The level 60 builds of this path:
 - **Subtlety (bleeds)** (16/4/31, Raid DPS): [talent calculator](https://wowforevertalents.com/rogue/?t=h00530221201-22-005233031321001151)
 
 
+Full add-on: [Rogue talents](talents.md#level-60-builds)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="slow" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Slow main hand</strong> [Rogue equipment](equipment.md#slow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Slow main hand</strong></p>
 
 No source has a tested list for level 60. The items below are from the Kami-Labs list of 9 November, which a tool computed. Kami-Labs marks most of the Classic items as changed, so read each tooltip. The recipes of the 2 crafted weapons do not need Malleable Essence of Nature, Lava Core or Fiery Core.
 
@@ -1835,7 +2134,7 @@ No source has a tested list for level 60. The items below are from the Kami-Labs
 | Neck | **Mark of Fordring** | Quest: *In Dreams* |
 | Shoulders | **Theramore Pauldrons** | Reputation: Theramore Expeditionary Force, Exalted (Alliance) |
 | Back | **Cape of the Black Baron** | Stratholme, Baron Rivendare |
-| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm }: It needs 20 Fel Leather. No source gives where Fel Leather comes from |
+| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new }: It needs 20 Fel Leather. No source gives where Fel Leather comes from |
 | Wrist | **Shadowcraft Bracers** | Scholomance, Instructor Malicia |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 | Waist | **Assassin's Waistguard** | Vendor: Pix Xizzix, Stranglethorn Vale. 100 Tarnished Undermine Real |
@@ -1848,11 +2147,14 @@ No source has a tested list for level 60. The items below are from the Kami-Labs
 | Ranged | **Satyr's Bow** | Dire Maul, Zevrim Thornhoof |
 
 
+Full add-on: [Rogue equipment](equipment.md#slow)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="daggers" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Daggers</strong> [Rogue equipment](equipment.md#daggers){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Daggers</strong></p>
 
 Kami-Labs selects Felstriker and Heartseeker for Assassination. For Subtlety it selects Felstriker with the mace Persuader in the off hand. Use the armor of the Slow main hand set. A build without Precision needs all its hit from items.
 
@@ -1862,11 +2164,14 @@ Kami-Labs selects Felstriker and Heartseeker for Assassination. For Subtlety it 
 | Off hand | **Heartseeker** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 
 
+Full add-on: [Rogue equipment](equipment.md#daggers)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Leatherworking and Blacksmithing</strong> [Rogue equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Leatherworking and Blacksmithing</strong></p>
 
 Heartseeker and Persuader are in the level 60 list of Kami-Labs. Their recipes do not need Malleable Essence of Nature, Lava Core or Fiery Core. Bagh Nakh is the last fist weapon. It needs Legionite Bars, and no source gives where they come from. Elemental Sharpening Stone gives 2% crit (Method).
 
@@ -1874,19 +2179,22 @@ Heartseeker and Persuader are in the level 60 list of Kami-Labs. Their recipes d
 |---|---|---|
 | Main hand | **Persuader** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Off hand | **Heartseeker** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
-| Main hand | **Bagh Nakh** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Bagh Nakh** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
 | Legs | **Devilsaur Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 290 |
 | Back | **Shifting Cloak** | [Leatherworking](../../professions/leatherworking.md), skill 300 |
-| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm }: It needs 20 Fel Leather. No source gives where Fel Leather comes from |
+| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new }: It needs 20 Fel Leather. No source gives where Fel Leather comes from |
 | Weapon | **Elemental Sharpening Stone** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 
+
+Full add-on: [Rogue equipment](equipment.md#crafted)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="pvp" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>PvP and Hardcore</strong> [Rogue equipment](equipment.md#pvp){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>PvP and Hardcore</strong></p>
 
 The Honor items of the Rogue have Premier in the name, and the armor also has Shadowhide (wowtbc.gg). The names below are examples from that site. The Codex did not verify the ranks or the costs.
 
@@ -1900,18 +2208,26 @@ The Honor items of the Rogue have Premier in the name, and the armor also has Sh
 | Shoulders | **Theramore Pauldrons** | Reputation: Theramore Expeditionary Force, Exalted (Alliance) |
 
 
-</div>
+Full add-on: [Rogue equipment](equipment.md#pvp)
+{: .fc-addon__more }
 
 </div>
 
-**Before you continue**
+</div>
+
+<div class="fc-goals" markdown>
+<p class="fc-goals__title" id="goals-l60">Before you continue</p>
 
 - [ ] Respec to a level 60 build.
 - [ ] Do the attunement for Onyxia's Lair.
 - [ ] Collect Tarnished Undermine Real in dungeons for the items of Pix Xizzix.
 - [ ] Collect poisons, sharpening stones and consumables before 9 December.
 
-## Raids and PvP: The 3 launch raids and battlegrounds { #raid }
+</div>
+
+<p class="fc-next"><a href="#raid">Next: Raids and PvP</a></p>
+
+## <span class="fc-ch__lv">Raids and PvP</span> The 3 launch raids and battlegrounds { #raid .fc-ch data-toc-label="Raids · The 3 launch raids" data-label="Raids · The 3 launch raids" }
 
 **The Barrow Deeps** has 10 players. It is the old prison of Illidan. A small raid needs your Kick and your stuns on the enemies before the bosses. Many enemies are night elves and Druids of the Claw. See [The Barrow Deeps](../../content/raids/barrow-deeps.md).
 
@@ -1944,7 +2260,7 @@ See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/batt
 | Shaman | Continue to attack through Grounding Totem. Kick heals |
 | Rogue | The Rogue who opens first usually wins. Use Distract to find the enemy |
 
-!!! hardcore "Hardcore"
+!!! hardcore fc-inline "Hardcore"
     [Hardcore](../../about/hardcore.md) comes in winter 2026/27. The Rogue is one of the safest classes there, because Vanish, Sprint, Evasion, Gouge and Blind stop a bad pull. Do not fight 2 enemies if you cannot use Sap or Gouge on one of them. Use Stealth to go past enemies that you do not need to kill.
     
     Always carry bandages and Healing Potions. Carry Flash Powder and Blinding Powder also, unless you have the Legacy talent Reagent Economy. The Legacy talents Thrill of Adventure and Field Medicine give more healing. Stoneform of the Dwarf and Escape Artist of the Gnome are strong racials for Hardcore.
@@ -1953,70 +2269,91 @@ See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/batt
 
 <div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Rogue](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Human</strong></p>
 
 Will to Survive is the best PvP racial for a Rogue. Use it against Cheap Shot or Kidney Shot. Use Perception to find a Rogue in Stealth.
 
+
+Full add-on: [Human Rogue](human.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Rogue](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Dwarf</strong></p>
 
 Keep Stoneform for Rupture, Garrote and poisons of an enemy Rogue, or for the Rend of a Warrior. Do not use it against the opener.
 
+
+Full add-on: [Dwarf Rogue](dwarf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="gnome" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Rogue](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Gnome</strong></p>
 
 Escape Artist removes Frost Nova, Hamstring, Crippling Poison and Entangling Roots. Then go back to your target.
 
+
+Full add-on: [Gnome Rogue](gnome.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Rogue](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Night Elf</strong></p>
 
 Blackmaw Hold and the raids of Mount Hyjal are near the night elf zones. Shadowmeld works when Stealth is on cooldown.
 
+
+Full add-on: [Night Elf Rogue](night-elf.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="orc" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Rogue](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Orc</strong></p>
 
 Hardiness makes Cheap Shot and Kidney Shot shorter, which helps against other Rogues. Shatter Curse removes curses and Warlock Banes.
 
+
+Full add-on: [Orc Rogue](orc.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="undead" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Rogue](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Undead</strong></p>
 
 Will of the Forsaken removes the Fear of Warlocks, Priests and Warriors. Some dungeon and raid bosses also use Fear.
 
+
+Full add-on: [Undead Rogue](undead.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="race" data-value="skyborne-windshaper" markdown>
 
-<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Skyborne (Windshaper)</strong> [Skyborne (Windshaper) Rogue](skyborne-windshaper.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Skyborne (Windshaper)</strong></p>
 
 Use Skysight together with Sprint to catch a class that kites you, or to carry a flag.
 
+
+Full add-on: [Skyborne (Windshaper) Rogue](skyborne-windshaper.md)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="combat" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Combat</strong> [Rogue talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Combat</strong></p>
 
 Combat is the default raid spec, and it works with swords, axes, maces and fist weapons. No source has tested which weapon type is best with Hack and Slash. Blade Flurry is very strong on the groups of enemies in Hyjal Summit.
 
@@ -2032,11 +2369,14 @@ Combat is the default raid spec, and it works with swords, axes, maces and fist 
 </div>
 
 
+Full add-on: [Rogue talents](talents.md#level-60-builds)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="assassination" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Assassination (daggers)</strong> [Rogue talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Assassination (daggers)</strong></p>
 
 A Mutilate crit gives 3 Combo Points with Seal Fate. Use Shank each time it is ready, because it starts Venom. The build has no cooldown for 2 targets, so Combat is better in dungeons.
 
@@ -2052,11 +2392,14 @@ A Mutilate crit gives 3 Combo Points with Seal Fate. Use Shank each time it is r
 </div>
 
 
+Full add-on: [Rogue talents](talents.md#level-60-builds)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="talents" data-value="subtlety" markdown>
 
-<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Subtlety (openers and PvP)</strong> [Rogue talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Subtlety (openers and PvP)</strong></p>
 
 In PvP, the opener decides the fight. Preparation gives a second Vanish, Blind and Cold Blood. In raids, Icy Veins says that Subtlety can possibly become the strongest spec. It is not confirmed that each boss can bleed.
 
@@ -2073,27 +2416,33 @@ In PvP, the opener decides the fight. Preparation gives a second Vanish, Blind a
 </div>
 
 
+Full add-on: [Rogue talents](talents.md#level-60-builds)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="slow" data-default markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Slow main hand</strong> [Rogue equipment](equipment.md#slow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Slow main hand</strong></p>
 
 Timesaver selects Greenhammer as the best main-hand weapon before the raids. Its recipe needs Malleable Essence of Nature. Reportedly, that reagent comes only from raid items that an Enchanter disenchants. Thus, these items probably become available only after 9 December. The Tier 1 set of the Rogue is Grimstitch Armor.
 
 | Slot | Item | Source |
 |---|---|---|
-| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Main hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 | Ranged | **Core Marksman Rifle** | [Engineering](../../professions/engineering.md), skill 300: It needs Fiery Core and Lava Core. No source gives where they come from |
 
+
+Full add-on: [Rogue equipment](equipment.md#slow)
+{: .fc-addon__more }
 
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="daggers" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Daggers</strong> [Rogue equipment](equipment.md#daggers){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Daggers</strong></p>
 
 Timesaver selects Black Amnesty as the best dagger before the raids. Its recipe needs Lava Core and Fiery Core, which come from Molten Core in Classic. Molten Core is not a launch raid, and no source gives a different origin.
 
@@ -2102,30 +2451,38 @@ Timesaver selects Black Amnesty as the best dagger before the raids. Its recipe 
 | Main hand | **Black Amnesty** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 
 
+Full add-on: [Rogue equipment](equipment.md#daggers)
+{: .fc-addon__more }
+
 </div>
 
 <div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Leatherworking and Blacksmithing</strong> [Rogue equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+<p class="fc-addon__label"><span class="fc-addon__kind">Equipment</span> <strong>Leatherworking and Blacksmithing</strong></p>
 
 The Grimstitch items are the crafted version of the Rogue Tier 1 set. Their reagent, Malleable Essence of Nature, reportedly comes from raid items that an Enchanter disenchants. The patterns come from Guardians of Hyjal reputation. You can wear 1 crafted tier item at first, and 2 after the Rousing Seed Pod at Revered.
 
 | Slot | Item | Source |
 |---|---|---|
-| Shoulders | **Grimstitch Spaulders** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Grimstitch Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Grimstitch Pants** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Grimstitch Boots** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Main hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Shoulders | **Grimstitch Spaulders** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Hands | **Grimstitch Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Grimstitch Pants** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Feet | **Grimstitch Boots** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Main hand | **Greenhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Main hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Head | **Outlaw's Collar** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
 
+
+Full add-on: [Rogue equipment](equipment.md#crafted)
+{: .fc-addon__more }
 
 </div>
 
 </div>
 
 ## Professions { #professions }
+
+<div class="fc-stack" markdown>
 
 A Rogue needs leather armor and armor kits for PvE, or explosives for PvP. Method recommends Skinning and Mining for gold while you level. Change Mining to Leatherworking or Blacksmithing when you have enough gold.
 
@@ -2140,6 +2497,9 @@ A Rogue needs leather armor and armor kits for PvE, or explosives for PvP. Metho
 Professions give no passive stats in Forever. Each profession gives a [camp feature](../../systems/camping.md). Skinning and Leatherworking give the Camp Chair and the Camp Tent (rested XP). Engineering and Mining give the Reagent Bot and the Lodestone (melee Attack Power). Crafting professions give Legacy Points at skill 150, 225 and 300.
 
 **Lockpicking** and **Poisons** are class skills. Lockpicking starts at level 16, and it is a good source of gold. Poisons start with the quest at level 20.
+
+
+</div>
 
 ## Legacy talents { #legacy }
 
@@ -2200,7 +2560,9 @@ You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 c
 ??? question "Is the last Subtlety talent Thousand Cuts or Death Mark?"
     It is Death Mark. The launch client has no Thousand Cuts. The deep dive of Blizzard from October described Thousand Cuts, and older guides still name it.
 
-## Sources
+## Data and sources { #sources }
+
+Forever started on 4 November 2026. The talent data and the recipe data are from the game client, build 1.60.1.70862. Spell levels, quests and zones that Forever did not change are Classic-era values. The raids open on 9 December, and no source has published simulations.
 
 ??? quote "18 sources"
 

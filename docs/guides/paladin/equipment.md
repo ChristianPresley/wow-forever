@@ -2,24 +2,16 @@
 description: "Paladin equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."
 tags:
   - Paladin
+generated: true
+wide: true
 ---
 
 # Paladin Equipment
 
 <!-- This page is generated. Edit tools/classes/guides/paladin.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="paladin" markdown>
-
-:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Equipment</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Paladin progression](index.md). This page gives the full equipment data for each set.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#twohand">Two-hand weapon</a> <a href="#shield">One-hand weapon and shield</a> <a href="#healer">Healer</a> <a href="#enchants-and-consumables">Enchants</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
+:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Equipment</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="paladin" }
 
 A Paladin wears mail to level 39 and plate from level 40. The weapon decides the role: a slow two-hand weapon for Retribution, a one-hand weapon and a shield for Protection and Holy. After dual spec at level 40 you carry 2 sets.
 
@@ -29,11 +21,15 @@ The 3 Timesaver.gg lists give different items for each spec. The tool computes t
 
 ## Equipment sets
 
+<div class="fc-stack" markdown>
+
 | Set | Use it for | Stat priority |
 |---|---|---|
 | [Two-hand weapon](#twohand) | The Retribution set. You use a slow two-hand mace, sword, axe or polearm, with mail and then plate. The weapon is the most important slot. The item names come from Timesaver.gg, Method.gg and Warcraft Tavern. | Weapon damage and a slow speed first. Then Strength, crit and hit, then Stamina and Intellect. Sources disagree on the order |
 | [One-hand weapon and shield](#shield) | The Protection set. You use a one-hand weapon and a shield, and you take Stamina, armor and block. Warcraft Tavern says that a Protection Paladin always uses a shield. A lower armor class decreases your protection much. | Stamina, armor and Defense, then spell power and hit, then block and Strength. Warcraft Tavern names spell power as the main damage stat. No source gives a tested order |
 | [Healer](#healer) | The Holy set. You use a one-hand weapon with spell power and a shield, and you take healing power, Intellect and crit. Warcraft Tavern says that cloth and leather items are often better for these stats. | Healing power and spell power, then Intellect, then crit, then Spirit and mana regeneration. No source gives a tested order |
+
+</div>
 
 ## What a Paladin can equip { #proficiencies }
 
@@ -94,9 +90,9 @@ The first new dungeons give a two-hand weapon from a quest. Then get Rhahk'Zor's
 | Two-hand weapon | **Axe of Orgrimmar** | Quest: *Hidden Enemies*, Orgrimmar (Horde) |
 | Two-hand mace | **Rhahk'Zor's Hammer** | Rhahk'Zor, the Deadmines |
 | Two-hand mace | **Heavy Copper Maul** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
-| Waist | **Veteran's Chain Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 45 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Veteran's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Veteran's Gloves** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Veteran's Chain Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 45 **New**{ .pill .pill--new } |
+| Chest | **Veteran's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new } |
+| Hands | **Veteran's Gloves** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new } |
 
 ### Levels 20–29 { #twohand-l20 }
 
@@ -106,11 +102,11 @@ Your class quest gives the weapon for these levels. Seal of Command at level 20 
 |---|---|---|
 | Two-hand mace | **Verigan's Fist** | Class quest: *The Test of Righteousness*, level 20 (Alliance) |
 | Two-hand weapon | **Wolfsbane** | Class quest: The chain that ends with *Old Fire-Eye*, level 20 to 26 (Undead) |
-| Head | **Veteran's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Veteran's Chain Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Veteran's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
+| Legs | **Veteran's Chain Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
 | Two-hand mace | **Bronze Warhammer** | [Blacksmithing](../../professions/blacksmithing.md), trainer recipe |
-| Polearm | **Bronze Dory** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Tenets of the Silver Hand** | [Enchanting](../../professions/enchanting.md), skill 130 **New**{ .pill .pill--new .pill--sm }: Warcraft Tavern says: do not go for it while you level, unless you are an Enchanter |
+| Polearm | **Bronze Dory** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
+| Relic | **Tenets of the Silver Hand** | [Enchanting](../../professions/enchanting.md), skill 130 **New**{ .pill .pill--new }: Warcraft Tavern says: do not go for it while you level, unless you are an Enchanter |
 
 ### Levels 30–39 { #twohand-l30 }
 
@@ -120,9 +116,9 @@ Replace the class weapon at level 30 with Corpsemaker. Timesaver.gg then gives D
 |---|---|---|
 | Two-hand weapon | **Corpsemaker** | Overlord Ramtusk, Razorfen Kraul |
 | Two-hand weapon | **Defender of Dalaran** | Quest: *Heart of Disruption*, City of Dalaran |
-| Two-hand axe | **Ravager** | Herod, Scarlet Monastery Armory **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Two-hand axe | **Ravager** | Herod, Scarlet Monastery Armory **Classic-era**{ .pill } |
 | Ring | **Philanthropist's Ring** | Quest: *Greater Friend of the Library*, the book quest at level 35 |
-| Waist | **Justicar's Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Justicar's Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 150 **New**{ .pill .pill--new } |
 | Two-hand mace | **Golden Iron Destroyer** | [Blacksmithing](../../professions/blacksmithing.md), skill 145 |
 
 ### Levels 40–49 { #twohand-l40 }
@@ -135,11 +131,11 @@ Plate opens at level 40. Razorfen Downs gives a helm and a chest. Timesaver.gg k
 | Chest | **Carapace of Tuten'kash** | Razorfen Downs |
 | Two-hand weapon | **Abandoned Ferocity** | Quest: Desolace (Horde) |
 | Two-hand weapon | **Grimlok's Charge** | Uldaman, level 45 to 50 |
-| Feet | **Justicar's Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Justicar's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Justicar's Wristguards** | [Blacksmithing](../../professions/blacksmithing.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
-| Two-hand mace | **Mithril Warhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 190 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Libram of Invocation** | [Enchanting](../../professions/enchanting.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Justicar's Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 200 **New**{ .pill .pill--new } |
+| Shoulders | **Justicar's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new } |
+| Wrist | **Justicar's Wristguards** | [Blacksmithing](../../professions/blacksmithing.md), skill 225 **New**{ .pill .pill--new } |
+| Two-hand mace | **Mithril Warhammer** | [Blacksmithing](../../professions/blacksmithing.md), skill 190 **New**{ .pill .pill--new } |
+| Relic | **Libram of Invocation** | [Enchanting](../../professions/enchanting.md), skill 210 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #twohand-l50 }
 
@@ -148,12 +144,12 @@ Beastslayer from Un'Goro Crater is the weapon at level 55. The Blessed Plate set
 | Slot | Item | Source |
 |---|---|---|
 | Two-hand weapon | **Beastslayer** | Quest: Un'Goro Crater, level 55 |
-| Shoulders | **Blessed Plate Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Blessed Plate Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Blessed Plate Bracers** | [Blacksmithing](../../professions/blacksmithing.md), skill 255 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Blessed Plate Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new .pill--sm } |
-| Two-hand mace | **Thorium Greatmace** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Shoulders | **Blessed Plate Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new } |
+| Feet | **Blessed Plate Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new } |
+| Wrist | **Blessed Plate Bracers** | [Blacksmithing](../../professions/blacksmithing.md), skill 255 **New**{ .pill .pill--new } |
+| Waist | **Blessed Plate Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 **New**{ .pill .pill--new } |
+| Two-hand mace | **Thorium Greatmace** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
 | Trinket | **Rune of the Guard Captain** | Quest: The Hinterlands |
 
 ### Level 60 { #twohand-l60 }
@@ -164,12 +160,12 @@ No source has a tested list for level 60. Timesaver.gg computes a list from stat
 |---|---|---|
 | Head | **Lionheart Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Legs | **Titanic Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
-| Chest | **Blessed Plate Chest** | [Blacksmithing](../../professions/blacksmithing.md), skill 280 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Blessed Plate Chest** | [Blacksmithing](../../professions/blacksmithing.md), skill 280 **New**{ .pill .pill--new } |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265: Changed in Forever |
 | Neck | **Beads of Ogre Might** | Quest: Dire Maul |
 | Ring | **Ring of Living Stone** | Quest: Moonglade |
 | Ring | **Watcher's Signet of Ferocity** | Reputation: The Watchers, a new faction, at Revered |
-| Polearm | **Legionite Glaive** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Polearm | **Legionite Glaive** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
 | Relic | **Libram of Fervor** | World drop: wowtbc.gg lists it as a world drop. Its effect is not published |
 
 ### Raids and PvP { #twohand-raid }
@@ -178,7 +174,7 @@ Timesaver.gg selects the Forest Defender's Axe as the weapon at level 60. Its re
 
 | Slot | Item | Source |
 |---|---|---|
-| Two-hand axe | **Forest Defender's Axe** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Two-hand axe | **Forest Defender's Axe** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
 | Back | **Onyxia Scale Cloak** | [Leatherworking](../../professions/leatherworking.md), skill 300 |
 
 ## One-hand weapon and shield { #shield }
@@ -209,8 +205,8 @@ Shields come from quests in Tirisfal Glades, Loch Modan and the Barrens. Hall of
 | Shield | **Welding Shield** | Quest: *Samophlange*, the Barrens (Horde) |
 | Weapon | **Durgen's Crescent Axe** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md): Durgen Dirgehammer. Timesaver.gg selects it for Protection at level 15 |
 | Shield | **Seedcloud Buckler** | Verdan the Everliving, Wailing Caverns |
-| Waist | **Crusader's Chain Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 45 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Crusader's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Crusader's Chain Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 45 **New**{ .pill .pill--new } |
+| Chest | **Crusader's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new } |
 
 ### Levels 20–29 { #shield-l20 }
 
@@ -221,8 +217,8 @@ The Alliance class quest gives a shield at level 20. Timesaver.gg then gives the
 | Shield | **Bastion of Stormwind** | Class quest: *The Tome of Valor*, level 20 (Alliance) |
 | Shield | **Arctic Buckler** | Quest: *Blackfathom Villainy*, level 25 |
 | One-hand weapon | **Blade of Silverlaine** | Baron Silverlaine, Shadowfang Keep |
-| Head | **Crusader's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Crusader's Chain Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Crusader's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
+| Legs | **Crusader's Chain Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
 | Shield add-on | **Iron Shield Spike** | [Blacksmithing](../../professions/blacksmithing.md), skill 125 |
 
 ### Levels 30–39 { #shield-l30 }
@@ -235,8 +231,8 @@ Razorfen Kraul gives the shield for levels 30 to 35. The book quest at 35 gives 
 | One-hand weapon | **Debt Collector** | Bazil Thredd, the Stockade (Alliance) |
 | One-hand weapon | **Pronged Reaver** | Charlga Razorflank, Razorfen Kraul (Horde) |
 | Ring | **Field Researcher's Loop** | Quest: *Greater Friend of the Library*, the book quest at level 35 |
-| Waist | **Warder's Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
-| One-hand mace | **Iron Morningstar** | [Blacksmithing](../../professions/blacksmithing.md), skill 165 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Warder's Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 150 **New**{ .pill .pill--new } |
+| One-hand mace | **Iron Morningstar** | [Blacksmithing](../../professions/blacksmithing.md), skill 165 **New**{ .pill .pill--new } |
 
 ### Levels 40–49 { #shield-l40 }
 
@@ -250,9 +246,9 @@ Plate opens at level 40, and it increases your armor much. Scarlet Monastery giv
 | Head | **Horned Viking Helmet** | Eric "The Swift", Uldaman |
 | Head | **Southsea Head Bucket** | Quest: *Southsea Shakedown*, Tanaris, level 45 |
 | Chest | **Carapace of Tuten'kash** | Razorfen Downs |
-| Feet | **Warder's Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Warder's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Warder's Wristguards** | [Blacksmithing](../../professions/blacksmithing.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Warder's Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 200 **New**{ .pill .pill--new } |
+| Shoulders | **Warder's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new } |
+| Wrist | **Warder's Wristguards** | [Blacksmithing](../../professions/blacksmithing.md), skill 225 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #shield-l50 }
 
@@ -264,8 +260,8 @@ Imperial Plate from Blacksmithing fills 4 slots of the Timesaver.gg tank list. T
 | Waist | **Imperial Plate Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 |
 | Wrist | **Imperial Plate Bracers** | [Blacksmithing](../../professions/blacksmithing.md), skill 245 |
 | Feet | **Imperial Plate Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 270 |
-| Hands | **Warder's Gloves** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Lightforge Spaulders** | The Beast, Blackrock Spire **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Hands | **Warder's Gloves** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 **New**{ .pill .pill--new } |
+| Shoulders | **Lightforge Spaulders** | The Beast, Blackrock Spire **Classic-era**{ .pill } |
 | Shield add-on | **Thorium Shield Spike** | [Blacksmithing](../../professions/blacksmithing.md), skill 250 |
 
 ### Level 60 { #shield-l60 }
@@ -274,11 +270,11 @@ No source has a tested tank list. Blizzard has not published a Defense target, s
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Stalwart Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Stalwart Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
 | Chest | **Imperial Plate Chest** | [Blacksmithing](../../professions/blacksmithing.md), skill 275 |
-| Chest | **Enriched Thorium Breastplate** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Enriched Thorium Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Blessed Plate Gauntlet** | [Blacksmithing](../../professions/blacksmithing.md), skill 245 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Enriched Thorium Breastplate** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Enriched Thorium Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Hands | **Blessed Plate Gauntlet** | [Blacksmithing](../../professions/blacksmithing.md), skill 245 **New**{ .pill .pill--new } |
 | Main hand | **Sageblade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Back | **Redoubt Cloak** | Mizzle the Crafty, Dire Maul |
 | Ring | **Dalson Family Wedding Ring** | Quest: *Locked Away*, Western Plaguelands |
@@ -291,9 +287,9 @@ Timesaver.gg selects the Evergreen Shield at level 60. The shield, the cloak and
 
 | Slot | Item | Source |
 |---|---|---|
-| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Steadfast Libram** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm }: It is in the wowtbc.gg Protection list. Its effect is not published |
+| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Relic | **Steadfast Libram** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new }: It is in the wowtbc.gg Protection list. Its effect is not published |
 
 ## Healer { #healer }
 
@@ -321,8 +317,8 @@ Weapons can have spell power and healing power from about level 10. Scepter of t
 | One-hand weapon | **Monastic Hammer** | Quest: *Red Silk Bandanas*, the Deadmines (Alliance) |
 | One-hand weapon | **Mug of Muddled Memories** | Quest: *Leonid's Letter*, Tirisfal Glades (Horde) |
 | Shield | **Seedcloud Buckler** | Verdan the Everliving, Wailing Caverns |
-| Waist | **Acolyte's Chain Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 45 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Acolyte's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Acolyte's Chain Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 45 **New**{ .pill .pill--new } |
+| Chest | **Acolyte's Chain Shirt** | [Blacksmithing](../../professions/blacksmithing.md), skill 80 **New**{ .pill .pill--new } |
 
 ### Levels 20–29 { #healer-l20 }
 
@@ -330,10 +326,10 @@ Method.gg selects the Acolyte's Silvered Chain Helm at level 20. ConquestCapped 
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Acolyte's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Acolyte's Chain Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Acolyte's Silvered Chain Helm** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
+| Legs | **Acolyte's Chain Leggings** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
 | Trinket | **Worgenbane Talisman** | Commander Springvale, Shadowfang Keep |
-| One-hand weapon | **The Stitcher** | All sources: Horde only. The source is not known **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| One-hand weapon | **The Stitcher** | All sources: Horde only. The source is not known **Not confirmed**{ .pill } |
 
 ### Levels 30–39 { #healer-l30 }
 
@@ -346,7 +342,7 @@ Painwalker Buckler from Scarlet Monastery is the Holy shield from level 30 to 55
 | Ring | **Runemender's Seal** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Arcane Anomaly |
 | Ring | **Solid Gold Band** | Quest: *Opportunistic Education*, City of Dalaran |
 | Back | **Priestess Cloak** | [The Drowned City](../../content/dungeons/drowned-city.md): Var'Taka |
-| Waist | **Prefect's Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Prefect's Belt** | [Blacksmithing](../../professions/blacksmithing.md), skill 150 **New**{ .pill .pill--new } |
 
 ### Levels 40–49 { #healer-l40 }
 
@@ -355,9 +351,9 @@ Hand of Righteousness from Scarlet Monastery is the Holy weapon from level 40 to
 | Slot | Item | Source |
 |---|---|---|
 | One-hand weapon | **Hand of Righteousness** | High Inquisitor Whitemane, Scarlet Monastery Cathedral |
-| Feet | **Prefect's Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Prefect's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Prefect's Wristguards** | [Blacksmithing](../../professions/blacksmithing.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Prefect's Boots** | [Blacksmithing](../../professions/blacksmithing.md), skill 200 **New**{ .pill .pill--new } |
+| Shoulders | **Prefect's Pauldrons** | [Blacksmithing](../../professions/blacksmithing.md), skill 210 **New**{ .pill .pill--new } |
+| Wrist | **Prefect's Wristguards** | [Blacksmithing](../../professions/blacksmithing.md), skill 225 **New**{ .pill .pill--new } |
 | Trinket | **Thunderbrew's Boot Flask** | Quest: *Sweet Amber*, Westfall (Alliance) |
 
 ### Levels 50–59 { #healer-l50 }
@@ -370,7 +366,7 @@ Few new healer items have a name in the public data for these levels. Keep Hand 
 | Shield | **Gizlock's Hypertech Buckler** | Maraudon |
 | One-hand weapon | **The Hammer of Grace** | Blackrock Depths |
 | Trinket | **Burst of Knowledge or Second Wind** | Blackrock Depths |
-| Feet | **Prefect's Sabatons** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Prefect's Sabatons** | [Blacksmithing](../../professions/blacksmithing.md), skill 240 **New**{ .pill .pill--new } |
 
 ### Level 60 { #healer-l60 }
 
@@ -378,15 +374,15 @@ No source has a tested healer list. The Timesaver.gg list for Holy uses leather 
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Living Crown** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm }: It needs Fel Leather. No source says where Fel Leather comes from |
+| Head | **Living Crown** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new }: It needs Fel Leather. No source says where Fel Leather comes from |
 | Back | **Hide of the Wild** | [Leatherworking](../../professions/leatherworking.md), skill 300 |
-| Chest | **Breastplate of Salvation** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Martyr's Legplates** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Breastplate of Salvation** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Martyr's Legplates** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
 | Main hand | **Sageblade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
 | Main hand | **Hammer of the Grand Crusader** | Balnazzar, Stratholme |
-| Shoulders | **Wildheart Spaulders** | Gizrul the Slavener, Blackrock Spire **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Shoulders | **Wildheart Spaulders** | Gizrul the Slavener, Blackrock Spire **Classic-era**{ .pill } |
 | Neck | **Orb of the Darkmoon** | Vendor: 1,200 tickets (Timesaver.gg) |
-| Relic | **Libram of Holy Alacrity** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Relic | **Libram of Holy Alacrity** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
 
 ### Raids and PvP { #healer-raid }
 
@@ -394,11 +390,13 @@ The shield, the belt and the Libram below need Malleable Essence of Nature. Repo
 
 | Slot | Item | Source |
 |---|---|---|
-| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Elderwild Waistcord** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Relic | **Libram of Infusion** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm }: It is in the wowtbc.gg Holy list. Its effect is not published |
+| Shield | **Evergreen Shield** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
+| Waist | **Elderwild Waistcord** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } |
+| Relic | **Libram of Infusion** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new }: It is in the wowtbc.gg Holy list. Its effect is not published |
 
 ## Enchants and consumables
+
+<div class="fc-stack" markdown>
 
 | Slot | Enchant | Notes |
 |---|---|---|
@@ -426,7 +424,11 @@ The shield, the belt and the Libram below need Malleable Essence of Nature. Repo
 | Level 60 | **Greater Fire Protection Potion** | For Onyxia's Lair (Classic advice) |
 | Level 60 | **Symbol of Kings, Symbol of Divinity** | Reagents for Greater Blessings and Divine Intervention. The Legacy talent Reagent Economy removes them |
 
-## Sources
+</div>
+
+## Data and sources { #sources }
+
+The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
 
 - [Timesaver.gg: Paladin leveling gear, Retribution](https://timesaver.gg/tools/wow-forever/leveling-gear/paladin/retribution)
 - [Timesaver.gg: Paladin leveling gear, Protection](https://timesaver.gg/tools/wow-forever/leveling-gear/paladin/protection)
@@ -442,3 +444,4 @@ The shield, the belt and the Libram below need Malleable Essence of Nature. Repo
 - [Method.gg: itemization updates](https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more)
 - [ConquestCapped: Paladin leveling (beta data)](https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-leveling/)
 - [Leprestore: Retribution Paladin guide](https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-retribution-paladin-guide-best-builds-race-professions/)
+- [Paladin progression: data and sources](index.md#sources)

@@ -1,5 +1,6 @@
 {#-
-  Forever Codex override: prev/next labels carry the class name on race add-ons
+  Forever Codex override: prev/next labels carry the class name on add-ons ("Gnome Mage", "Mage Talents").
+  The bottom bar holds the copyright, the shortcut button (keyboards only) and the one link to GitHub.
 -#}
 <footer class="md-footer">
   {% if "navigation.footer" in features %}
@@ -49,8 +50,8 @@
     <div class="md-footer-meta__inner md-grid">
       {% include "partials/copyright.html" %}
       <button type="button" class="fc-keys-open" hidden>Keyboard shortcuts <kbd>?</kbd></button>
-      {% if config.extra.social %}
-        {% include "partials/social.html" %}
+      {% if config.repo_url %}
+        <a class="fc-footer__source" href="{{ config.repo_url }}">Source on GitHub</a>
       {% endif %}
     </div>
   </div>

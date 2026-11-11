@@ -1,3 +1,7 @@
+---
+wide: true
+---
+
 # Races
 
 **Also called:** NE / Nelf (Night Elf) · Forsaken / UD (Undead) · Skyborne Elves / *shen'dorei* (Skyborne)
@@ -56,7 +60,7 @@
 
 ## Racial abilities
 
-<div class="compare" markdown>
+<div class="compare fc-stack" markdown>
 
 | Race | Active 1 | Active 2 | Passive 1 | Passive 2 |
 |---|---|---|---|---|

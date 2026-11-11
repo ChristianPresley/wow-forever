@@ -1,0 +1,20 @@
+{#- Forever Codex override of Material 9.8.1 partials/tags.html: the tags sit in the article footer with a label -#}
+{% if page.meta and page.meta.hide %}
+  {% set hidden = "hidden" if "tags" in page.meta.hide %}
+{% endif %}
+{% if tags %}
+  <nav class="md-tags" aria-label="Tags" {{ hidden }}>
+    <span class="fc-pagemeta__label" aria-hidden="true">Tags</span>
+    {% for tag in tags %}
+      {% if tag.url %}
+        <a href="{{ tag.url | url }}" class="md-tag">
+          {{- tag.name -}}
+        </a>
+      {% else %}
+        <span class="md-tag">
+          {{- tag.name -}}
+        </span>
+      {% endif %}
+    {% endfor %}
+  </nav>
+{% endif %}

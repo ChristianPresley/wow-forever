@@ -4,28 +4,22 @@ tags:
   - Warlock
 search:
   boost: 2
+generated: true
+wide: true
 ---
 
 # Warlock Talents
 
 <!-- This page is generated. Edit tools/talents/guides/warlock.yml, then run tools/talents/build.py. -->
 
-<div class="guide-head" data-class="warlock" markdown>
-
-:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Warlock progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#affliction">Affliction</a> <a href="#demonology">Demonology</a> <a href="#destruction">Destruction</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/warlock/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Warlock progression](index.md) tells you when each talent becomes important.
+:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Talents</span> **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="warlock" }
 
 Each Warlock tree is a full damage spec in Forever. **Affliction** is the tree for solo leveling. **Demonology** is the safest tree and the PvP tree. **Destruction** is the tree for dungeons and cleave. Most level 60 builds put points in 2 or 3 trees, because Suppression, Improved Corruption, Bane and Ruin help all specs. Blizzard announced an Affliction and Voidwalker hotfix for 10 November. Its effect on these talents is not confirmed.
 
 ## Quick picks
+
+<div class="fc-stack" markdown>
 
 | Stage | Build | Points at 60 | Why |
 |---|---|---|---|
@@ -38,13 +32,15 @@ Each Warlock tree is a full damage spec in Forever. **Affliction** is the tree f
 | Level 60: raids, second option | [Demonology: Fire (raid)](#level-60-builds) | 2/31/18 | 2 demon bonuses at the same time with Demonic Pact. Soul Fire as the execute spell. |
 | Level 60: PvP | [Soul Link (PvP)](#level-60-builds) | 20/31/0 | Soul Link, 15% Stamina, a faster Spell Lock and Curse of Exhaustion. |
 
+</div>
+
 ## How to read this page
 
 The Warlock has 52 talents in 3 trees. You get 1 talent point for each level from 10 to 60, for a total of 51 points.
 
-- **Opens at:** the number of points that you must spend in the same tree before the row opens. Each row needs 5 more points.
+- **Points at the left of the grid:** the number of points that you must spend in the same tree before the row opens. Each row needs 5 more points.
 - **Max:** the maximum rank of the talent.
-- **Leveling:** the value of the talent when you quest and do dungeons from level 10 to 59.
+- **L (leveling):** the value of the talent when you quest and do dungeons from level 10 to 59.
 - **PvE:** the value at level 60 in dungeons and raids. This is damage, healing or tank value, for the role of the tree.
 - **PvP:** the value in battlegrounds and world PvP.
 
@@ -56,29 +52,29 @@ Each table gives the talent for each level. The *Points* column shows the points
 
 === "Affliction (solo)"
 
-    **Leveling**{ .pill .pill--info } **41/10/0**{ .pill .pill--outline }
+    **Leveling**{ .pill .pill--info } **41/10/0**{ .pill }
 
     The build that all major guides recommend for solo leveling. The first 21 points follow the Warcraft Tavern order from the earlier Codex class guide. After that, this order takes Siphon Life and Wrack earlier and does not use Malediction, which is not in the launch client.
 
-    | Level | Talent | Rank | Points | Why |
-    |---|---|---|---|---|
-    | 10–14 | **Improved Corruption** | 5/5 | 5/0/0 | Corruption becomes almost instant |
-    | 15–19 | **Suppression** | 5/5 | 10/0/0 | Fewer misses and less threat for your demon |
-    | 20–24 | **Unholy Power** | 5/5 | 10/5/0 | A stronger demon |
-    | 25–26 | **Demonic Energies** | 2/2 | 10/7/0 | Your damage heals the demon |
-    | 27–29 | **Improved Drains** | 3/3 | 13/7/0 | A stronger Drain Life |
-    | 30 | **Amplify Curse** | 1/1 | 14/7/0 | A stronger Bane of Agony for hard pulls |
-    | 31–33 | **Pandemic** | 3/3 | 17/7/0 | DoT crits do double damage |
-    | 34–36 | **Fel Concentration** | 3/3 | 20/7/0 | Mobs do not interrupt your drains |
-    | 37 | **Siphon Life** | 1/1 | 21/7/0 | A DoT that heals you |
-    | 38–40 | **Soul Siphon** | 3/3 | 24/7/0 | Drain Life does more with DoTs on the target |
-    | 41–42 | **Improved Life Tap** | 2/2 | 26/7/0 | More mana. Opens row 6 |
-    | 43–47 | **Shadow Mastery** | 5/5 | 31/7/0 | 10% Shadow damage |
-    | 48 | **Wrack** | 1/1 | 32/7/0 | A new filler that makes your DoTs stronger |
-    | 49–53 | **Malevolence** | 5/5 | 37/7/0 | Shadow crit for Pandemic |
-    | 54–55 | **Nightfall** | 2/2 | 39/7/0 | Instant Shadow Bolts |
-    | 56–57 | **Improved Bane of Agony** | 2/2 | 41/7/0 | More Bane damage |
-    | 58–60 | **Fel Vitality** | 3/3 | 41/10/0 | More mana for you and more health for the demon |
+    | Level | Talent | Points | Why |
+    |---|---|---|---|
+    | 10–14 | **Improved Corruption** <span class="fc-rank">5/5</span> | 5/0/0 | Corruption becomes almost instant |
+    | 15–19 | **Suppression** <span class="fc-rank">5/5</span> | 10/0/0 | Fewer misses and less threat for your demon |
+    | 20–24 | **Unholy Power** <span class="fc-rank">5/5</span> | 10/5/0 | A stronger demon |
+    | 25–26 | **Demonic Energies** <span class="fc-rank">2/2</span> | 10/7/0 | Your damage heals the demon |
+    | 27–29 | **Improved Drains** <span class="fc-rank">3/3</span> | 13/7/0 | A stronger Drain Life |
+    | 30 | **Amplify Curse** <span class="fc-rank">1/1</span> | 14/7/0 | A stronger Bane of Agony for hard pulls |
+    | 31–33 | **Pandemic** <span class="fc-rank">3/3</span> | 17/7/0 | DoT crits do double damage |
+    | 34–36 | **Fel Concentration** <span class="fc-rank">3/3</span> | 20/7/0 | Mobs do not interrupt your drains |
+    | 37 | **Siphon Life** <span class="fc-rank">1/1</span> | 21/7/0 | A DoT that heals you |
+    | 38–40 | **Soul Siphon** <span class="fc-rank">3/3</span> | 24/7/0 | Drain Life does more with DoTs on the target |
+    | 41–42 | **Improved Life Tap** <span class="fc-rank">2/2</span> | 26/7/0 | More mana. Opens row 6 |
+    | 43–47 | **Shadow Mastery** <span class="fc-rank">5/5</span> | 31/7/0 | 10% Shadow damage |
+    | 48 | **Wrack** <span class="fc-rank">1/1</span> | 32/7/0 | A new filler that makes your DoTs stronger |
+    | 49–53 | **Malevolence** <span class="fc-rank">5/5</span> | 37/7/0 | Shadow crit for Pandemic |
+    | 54–55 | **Nightfall** <span class="fc-rank">2/2</span> | 39/7/0 | Instant Shadow Bolts |
+    | 56–57 | **Improved Bane of Agony** <span class="fc-rank">2/2</span> | 41/7/0 | More Bane damage |
+    | 58–60 | **Fel Vitality** <span class="fc-rank">3/3</span> | 41/10/0 | More mana for you and more health for the demon |
 
     At level 60 the build is:
 
@@ -93,31 +89,31 @@ Each table gives the talent for each level. The *Points* column shows the points
 
 === "Demonology (safe)"
 
-    **Leveling**{ .pill .pill--info } **20/31/0**{ .pill .pill--outline }
+    **Leveling**{ .pill .pill--info } **20/31/0**{ .pill }
 
     The safe route to 60 and the route for Hardcore. It puts all points in Demonology from level 10. You get Soul Link at 30 and Demonic Pact at 40. The order follows the Warcraft Tavern Demonology build in the earlier Codex class guide.
 
-    | Level | Talent | Rank | Points | Why |
-    |---|---|---|---|---|
-    | 10–14 | **Unholy Power** | 5/5 | 0/5/0 | A stronger demon from the first point |
-    | 15–16 | **Demonic Energies** | 2/2 | 0/7/0 | Your damage heals the demon |
-    | 17–19 | **Fel Vitality** | 3/3 | 0/10/0 | More demon health and more mana for you |
-    | 20–21 | **Master Summoner** | 2/2 | 0/12/0 | A faster summon when the demon dies |
-    | 22–24 | **Improved Sayaad** | 3/3 | 0/15/0 | More Lash of Pain damage and a longer Seduction |
-    | 25–27 | **Demonic Brand** | 3/3 | 0/18/0 | Searing Pain gives bonus damage to your demon |
-    | 28 | **Demonic Sacrifice** | 1/1 | 0/19/0 | Soul Link needs it |
-    | 29 | **Demonic Embrace** | 1/5 | 0/20/0 | The last point to open row 5 |
-    | 30 | **Soul Link** | 1/1 | 0/21/0 | The demon takes 30% of your damage |
-    | 31–33 | **Demonic Knowledge** | 3/3 | 0/24/0 | Spell damage that increases with your level |
-    | 34 | **Fel Domination** | 1/1 | 0/25/0 | An emergency summon |
-    | 35–39 | **Master Demonologist** | 5/5 | 0/30/0 | 10% damage or 10% less damage taken |
-    | 40 | **Demonic Pact** | 1/1 | 0/31/0 | A Demonic Sacrifice bonus and a second demon |
-    | 41–45 | **Improved Corruption** | 5/5 | 5/31/0 | Corruption becomes almost instant |
-    | 46–47 | **Improved Life Tap** | 2/2 | 7/31/0 | More mana |
-    | 48–52 | **Suppression** | 5/5 | 12/31/0 | Hit for dungeons at 55+ |
-    | 53–55 | **Improved Drains** | 3/3 | 15/31/0 | A stronger Drain Life |
-    | 56–58 | **Pandemic** | 3/3 | 18/31/0 | DoT crits do double damage |
-    | 59–60 | **Malevolence** | 2/5 | 20/31/0 | Shadow crit |
+    | Level | Talent | Points | Why |
+    |---|---|---|---|
+    | 10–14 | **Unholy Power** <span class="fc-rank">5/5</span> | 0/5/0 | A stronger demon from the first point |
+    | 15–16 | **Demonic Energies** <span class="fc-rank">2/2</span> | 0/7/0 | Your damage heals the demon |
+    | 17–19 | **Fel Vitality** <span class="fc-rank">3/3</span> | 0/10/0 | More demon health and more mana for you |
+    | 20–21 | **Master Summoner** <span class="fc-rank">2/2</span> | 0/12/0 | A faster summon when the demon dies |
+    | 22–24 | **Improved Sayaad** <span class="fc-rank">3/3</span> | 0/15/0 | More Lash of Pain damage and a longer Seduction |
+    | 25–27 | **Demonic Brand** <span class="fc-rank">3/3</span> | 0/18/0 | Searing Pain gives bonus damage to your demon |
+    | 28 | **Demonic Sacrifice** <span class="fc-rank">1/1</span> | 0/19/0 | Soul Link needs it |
+    | 29 | **Demonic Embrace** <span class="fc-rank">1/5</span> | 0/20/0 | The last point to open row 5 |
+    | 30 | **Soul Link** <span class="fc-rank">1/1</span> | 0/21/0 | The demon takes 30% of your damage |
+    | 31–33 | **Demonic Knowledge** <span class="fc-rank">3/3</span> | 0/24/0 | Spell damage that increases with your level |
+    | 34 | **Fel Domination** <span class="fc-rank">1/1</span> | 0/25/0 | An emergency summon |
+    | 35–39 | **Master Demonologist** <span class="fc-rank">5/5</span> | 0/30/0 | 10% damage or 10% less damage taken |
+    | 40 | **Demonic Pact** <span class="fc-rank">1/1</span> | 0/31/0 | A Demonic Sacrifice bonus and a second demon |
+    | 41–45 | **Improved Corruption** <span class="fc-rank">5/5</span> | 5/31/0 | Corruption becomes almost instant |
+    | 46–47 | **Improved Life Tap** <span class="fc-rank">2/2</span> | 7/31/0 | More mana |
+    | 48–52 | **Suppression** <span class="fc-rank">5/5</span> | 12/31/0 | Hit for dungeons at 55+ |
+    | 53–55 | **Improved Drains** <span class="fc-rank">3/3</span> | 15/31/0 | A stronger Drain Life |
+    | 56–58 | **Pandemic** <span class="fc-rank">3/3</span> | 18/31/0 | DoT crits do double damage |
+    | 59–60 | **Malevolence** <span class="fc-rank">2/5</span> | 20/31/0 | Shadow crit |
 
     At level 60 the build is:
 
@@ -131,31 +127,31 @@ Each table gives the talent for each level. The *Points* column shows the points
 
 === "Destruction (groups)"
 
-    **Leveling**{ .pill .pill--info } **15/3/33**{ .pill .pill--outline }
+    **Leveling**{ .pill .pill--info } **15/3/33**{ .pill }
 
     The build for players who level in dungeon groups. It has the best AoE and cleave, but it has less self-healing than Affliction. The order follows the Warcraft Tavern build in the earlier Codex class guide, with Ruin 5/5.
 
-    | Level | Talent | Rank | Points | Why |
-    |---|---|---|---|---|
-    | 10–14 | **Bane** | 5/5 | 0/0/5 | Faster Shadow Bolt and Immolate |
-    | 15–17 | **Cataclysm** | 3/3 | 0/0/8 | Less mana for each spell |
-    | 18–19 | **Aftermath** | 2/5 | 0/0/10 | More Immolate damage. Opens row 3 |
-    | 20 | **Shadowburn** | 1/1 | 0/0/11 | An instant hit to finish mobs |
-    | 21–23 | **Aftermath** | 5/5 | 0/0/14 | Conflagrate will Daze the target |
-    | 24 | **Ruin** | 1/5 | 0/0/15 | Opens row 4 |
-    | 25 | **Conflagrate** | 1/1 | 0/0/16 | An instant Fire hit at level 25 |
-    | 26–27 | **Ruin** | 3/5 | 0/0/18 | Larger crits |
-    | 28–30 | **Agonizing Flames** | 3/3 | 0/0/21 | 10% Destruction damage |
-    | 31 | **Bane of Havoc** | 1/1 | 0/0/22 | Cleave for dungeon pulls |
-    | 32–34 | **Fire and Brimstone** | 3/3 | 0/0/25 | 25% crit for Conflagrate |
-    | 35–39 | **Shadow and Flame** | 5/5 | 0/0/30 | Conflagrate keeps Immolate. Shadowburn gives its shard back |
-    | 40 | **Incinerate** | 1/1 | 0/0/31 | Your new filler at level 40 |
-    | 41–42 | **Ruin** | 5/5 | 0/0/33 | Full crit bonus |
-    | 43–47 | **Improved Corruption** | 5/5 | 5/0/33 | Corruption becomes almost instant |
-    | 48–52 | **Suppression** | 5/5 | 10/0/33 | Hit and less threat for dungeons |
-    | 53–54 | **Improved Life Tap** | 2/2 | 12/0/33 | More mana |
-    | 55–57 | **Pandemic** | 3/3 | 15/0/33 | DoT crits do double damage |
-    | 58–60 | **Improved Imp** | 3/3 | 15/3/33 | More Imp damage |
+    | Level | Talent | Points | Why |
+    |---|---|---|---|
+    | 10–14 | **Bane** <span class="fc-rank">5/5</span> | 0/0/5 | Faster Shadow Bolt and Immolate |
+    | 15–17 | **Cataclysm** <span class="fc-rank">3/3</span> | 0/0/8 | Less mana for each spell |
+    | 18–19 | **Aftermath** <span class="fc-rank">2/5</span> | 0/0/10 | More Immolate damage. Opens row 3 |
+    | 20 | **Shadowburn** <span class="fc-rank">1/1</span> | 0/0/11 | An instant hit to finish mobs |
+    | 21–23 | **Aftermath** <span class="fc-rank">5/5</span> | 0/0/14 | Conflagrate will Daze the target |
+    | 24 | **Ruin** <span class="fc-rank">1/5</span> | 0/0/15 | Opens row 4 |
+    | 25 | **Conflagrate** <span class="fc-rank">1/1</span> | 0/0/16 | An instant Fire hit at level 25 |
+    | 26–27 | **Ruin** <span class="fc-rank">3/5</span> | 0/0/18 | Larger crits |
+    | 28–30 | **Agonizing Flames** <span class="fc-rank">3/3</span> | 0/0/21 | 10% Destruction damage |
+    | 31 | **Bane of Havoc** <span class="fc-rank">1/1</span> | 0/0/22 | Cleave for dungeon pulls |
+    | 32–34 | **Fire and Brimstone** <span class="fc-rank">3/3</span> | 0/0/25 | 25% crit for Conflagrate |
+    | 35–39 | **Shadow and Flame** <span class="fc-rank">5/5</span> | 0/0/30 | Conflagrate keeps Immolate. Shadowburn gives its shard back |
+    | 40 | **Incinerate** <span class="fc-rank">1/1</span> | 0/0/31 | Your new filler at level 40 |
+    | 41–42 | **Ruin** <span class="fc-rank">5/5</span> | 0/0/33 | Full crit bonus |
+    | 43–47 | **Improved Corruption** <span class="fc-rank">5/5</span> | 5/0/33 | Corruption becomes almost instant |
+    | 48–52 | **Suppression** <span class="fc-rank">5/5</span> | 10/0/33 | Hit and less threat for dungeons |
+    | 53–54 | **Improved Life Tap** <span class="fc-rank">2/2</span> | 12/0/33 | More mana |
+    | 55–57 | **Pandemic** <span class="fc-rank">3/3</span> | 15/0/33 | DoT crits do double damage |
+    | 58–60 | **Improved Imp** <span class="fc-rank">3/3</span> | 15/3/33 | More Imp damage |
 
     At level 60 the build is:
 
@@ -177,7 +173,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
 === "Affliction: Wrack (raid)"
 
-    **Raid DPS**{ .pill .pill--info } **33/0/18**{ .pill .pill--outline }
+    **Raid DPS**{ .pill .pill--info } **33/0/18**{ .pill }
 
     The 33/0/18 split from the Warcraft Tavern Affliction guide. Wrack is the filler. You cast Shadow Bolt only when Nightfall makes it instant. Blizzard announced Affliction changes for 10 November, so the priority of this build is not confirmed after that date.
 
@@ -198,7 +194,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
 === "Affliction: SM/Ruin"
 
-    **Raid DPS**{ .pill .pill--info } **30/0/21**{ .pill .pill--outline }
+    **Raid DPS**{ .pill .pill--info } **30/0/21**{ .pill }
 
     The 30/0/21 split with Shadow Bolt as the filler. Warcraft Tavern puts it slightly lower than the Wrack build. It does more direct damage, so it is good in dungeons where mobs die quickly.
 
@@ -215,7 +211,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
 === "Demonology: Fire (raid)"
 
-    **Raid DPS**{ .pill .pill--info } **2/31/18**{ .pill .pill--outline }
+    **Raid DPS**{ .pill .pill--info } **2/31/18**{ .pill }
 
     The 2/31/18 split from the Warcraft Tavern Demonology guide. Sacrifice the Succubus or Incubus for +15% Fire damage, then keep the Imp out for 10% more. Searing Pain is the filler, and Soul Fire is the execute spell below 35%.
 
@@ -240,7 +236,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
 === "Destruction (raid and dungeons)"
 
-    **Raid DPS**{ .pill .pill--info } **14/4/33**{ .pill .pill--outline }
+    **Raid DPS**{ .pill .pill--info } **14/4/33**{ .pill }
 
     The 14/4/33 split from the Warcraft Tavern Destruction guide, with the Succubus or Incubus out. Incinerate is the filler. Conflagrate and Shadowburn keep the 2 bonuses of Shadow and Flame active.
 
@@ -261,7 +257,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
 === "Soul Link (PvP)"
 
-    **PvP**{ .pill .pill--info } **20/31/0**{ .pill .pill--outline }
+    **PvP**{ .pill .pill--info } **20/31/0**{ .pill }
 
     A 20/31/0 build for battlegrounds and world PvP. Soul Link and Demonic Embrace keep you alive. Demonic Pact lets you keep a Demonic Sacrifice bonus with the Felhunter out. 17 points in Affliction give Curse of Exhaustion.
 
@@ -287,15 +283,26 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
 Affliction is the DoT and drain tree. **Pandemic** doubles the crit bonus of DoTs, and **Soul Siphon** makes drains and **Wrack** stronger for each Affliction effect on the target. Row 1 has **Suppression** (5% hit) and **Improved Corruption**, so each raid build puts points here.
 
-<div class="ttree-wrap" role="group" aria-label="Affliction talent tree" tabindex="0">
+<div class="ttree-wrap" data-search-exclude role="group" aria-label="Affliction talent tree">
 <ul class="ttree">
-<li class="tt-row" style="grid-row:1">0 pts</li>
-<li class="tt-row" style="grid-row:2">5 pts</li>
-<li class="tt-row" style="grid-row:3">10 pts</li>
-<li class="tt-row" style="grid-row:4">15 pts</li>
-<li class="tt-row" style="grid-row:5">20 pts</li>
-<li class="tt-row" style="grid-row:6">25 pts</li>
-<li class="tt-row" style="grid-row:7">30 pts</li>
+<li class="tt-row" style="grid-row:1">0<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:1;grid-column:5"></li>
+<li class="tt-row" style="grid-row:2">5<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:2;grid-column:5"></li>
+<li class="tt-row" style="grid-row:3">10<span class="tt-long"> pts</span></li>
+<li class="tt-row" style="grid-row:4">15<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:4;grid-column:5"></li>
+<li class="tt-row" style="grid-row:5">20<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:5;grid-column:2"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:5;grid-column:5"></li>
+<li class="tt-row" style="grid-row:6">25<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:6;grid-column:2"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:6;grid-column:3"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:6;grid-column:5"></li>
+<li class="tt-row" style="grid-row:7">30<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:7;grid-column:2"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:7;grid-column:4"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:7;grid-column:5"></li>
 <li class="tt-node" style="grid-row:1;grid-column:2"><span class="tt-name">Improved Life Tap</span><span class="tt-meta"><span class="tier tier-a">A</span> max 2</span></li>
 <li class="tt-node" style="grid-row:1;grid-column:3"><span class="tt-name">Suppression</span><span class="tt-meta"><span class="tier tier-s">S</span> max 5</span></li>
 <li class="tt-node" style="grid-row:1;grid-column:4"><span class="tt-name">Improved Corruption</span><span class="tt-meta"><span class="tier tier-s">S</span> max 5</span></li>
@@ -316,41 +323,54 @@ Affliction is the DoT and drain tree. **Pandemic** doubles the crit bonus of DoT
 </ul>
 </div>
 
-<p class="legend">The grid shows the layout of the tree in the game. The letter is the best rating of the talent in the table below.</p>
+<p class="legend">The grid shows the layout of the tree in the game. The number at the left is the number of points that opens the row. The letter is the best rating of the talent in the table below.</p>
 
-| Talent | Opens at | Max | What it does | Leveling | PvE | PvP | Codex verdict |
-|---|---|---|---|---|---|---|---|
-| **Improved Life Tap** | 0 pts | 2 | Life Tap gives 10/20% more mana | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | More mana for the same health. Each raid build takes 2/2. |
-| **Suppression** | 0 pts | 5 | Hit chance +1–5%. All threat −4–20% | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | **B**{ .tier .tier-b } | 5% of the 17% hit that you need for raid bosses. Take 5/5 in each build that has 5 points for it. |
-| **Improved Corruption** | 0 pts | 5 | Cast time of Corruption −0.4 to −2 s. Corruption damage +2–10% | **S**{ .tier .tier-s } | **S**{ .tier .tier-s } | **S**{ .tier .tier-s } | The first 5 points of most builds. Corruption becomes almost instant. |
-| **Grim Reach** | 5 pts | 2 | Range of Affliction spells +10/20% | **C**{ .tier .tier-c } | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | For PvP, where range keeps melee enemies away. The talent is in the launch client. |
-| **Soul Harvest** **New**{ .pill .pill--new .pill--sm } | 5 pts | 2 | A kill with Drain Soul on the target gives +50/100% mana regeneration for 10 s. 50/100% of the regeneration continues while you cast | **C**{ .tier .tier-c } | **D**{ .tier .tier-d } | **D**{ .tier .tier-d } | Life Tap gives mana more quickly. No value on bosses. |
-| **Improved Drains** **New**{ .pill .pill--new .pill--sm } | 5 pts | 3 | Drain Life, Drain Soul and Drain Mana do 7–20% more | **A**{ .tier .tier-a } | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | Core when you level with Drain Life. The launch tooltip does not include Wrack. |
-| **Improved Bane of Agony** | 10 pts | 2 | Bane of Agony damage +5/10% | **B**{ .tier .tier-b } | **B**{ .tier .tier-b } | **B**{ .tier .tier-b } | Filler. It has no effect when you use Bane of Doom or Bane of Havoc. |
-| **Fel Concentration** | 10 pts | 3 | Drain Life, Drain Mana, Drain Soul and Wrack have a 23–70% chance to ignore pushback | **A**{ .tier .tier-a } | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | Take it when mobs or players hit you during drains. Bosses do not hit you frequently. |
-| **Amplify Curse** | 10 pts | 1 | Instant, 3 min cooldown. Your next Curse of Weakness or Bane of Agony is 50% stronger, or your next Curse of Exhaustion is 20% stronger | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | Curse of Exhaustion needs it. The long cooldown makes the damage gain small. |
-| **Pandemic** **New**{ .pill .pill--new .pill--sm } | 10 pts | 3 | Crit damage bonus of Corruption, Bane of Agony, Bane of Doom, Siphon Life, Wrack, Drain Soul and Drain Life +33–100% | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | DoTs can crit in Forever. Useful also for Destruction builds that have 13 points in Affliction. |
-| **Malevolence** **New**{ .pill .pill--new .pill--sm } | 15 pts | 5 | Crit chance of Shadow spells +1–5% | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | **B**{ .tier .tier-b } | Works with Pandemic and Ruin. Core for Affliction raid builds. |
-| **Nightfall** | 15 pts | 2 | Corruption, Drain Soul, Drain Life and Wrack have a 2/4% chance on damage to make your next Shadow Bolt instant | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | Free damage. The instant Shadow Bolt can also apply Improved Shadow Bolt. |
-| **Curse of Exhaustion**<br><small>Needs Amplify Curse</small> | 15 pts | 1 | An instant Curse. Movement speed of the target −30% for 12 s | **C**{ .tier .tier-c } | **D**{ .tier .tier-d } | **S**{ .tier .tier-s } | The reason to put 17 points in Affliction for PvP. It needs Amplify Curse. |
-| **Siphon Life** | 20 pts | 1 | An instant DoT for 30 s. It moves health from the target to you each 3 s (11 health at rank 1) | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | Wrack needs it. It also counts as an Affliction effect for Soul Siphon. |
-| **Soul Siphon** | 20 pts | 3 | Drain Life, Drain Soul and Wrack do 4/8/12% more for each of your other Affliction effects on the target, to a maximum of +12/24/36% | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | 3 other Affliction effects give the maximum. Core for the Wrack build. |
-| **Shadow Mastery** | 25 pts | 5 | Shadow damage and life drained +2–10% | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | Applies to all Shadow spells. Take 5/5 in each deep Affliction build. |
-| **Wrack** **New**{ .pill .pill--new .pill--sm }<br><small>Needs Siphon Life</small> | 30 pts | 1 | 200 mana, 30 yd. 86 Shadow damage each second for 6 s. The target takes 10% more damage from your other Shadow DoTs | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **B**{ .tier .tier-b } | The filler of the raid build. The launch tooltip says Instant, and other sources say channel. Its value after the 10 November hotfix is not confirmed. |
+<div class="fc-talents" markdown>
+
+| Talent | Max | What it does | Ratings | Codex verdict |
+|---|---|---|---|---|
+| **Improved Life Tap** | 2 | Life Tap gives 10/20% more mana | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | More mana for the same health. Each raid build takes 2/2. |
+| **Suppression** | 5 | Hit chance +1–5%. All threat −4–20% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | 5% of the 17% hit that you need for raid bosses. Take 5/5 in each build that has 5 points for it. |
+| **Improved Corruption** | 5 | Cast time of Corruption −0.4 to −2 s. Corruption damage +2–10% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-s">S</span></span> | The first 5 points of most builds. Corruption becomes almost instant. |
+| **Grim Reach** | 2 | Range of Affliction spells +10/20% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | For PvP, where range keeps melee enemies away. The talent is in the launch client. |
+| **Soul Harvest** **New**{ .pill .pill--new } | 2 | A kill with Drain Soul on the target gives +50/100% mana regeneration for 10 s. 50/100% of the regeneration continues while you cast | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-d">D</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-d">D</span></span> | Life Tap gives mana more quickly. No value on bosses. |
+| **Improved Drains** **New**{ .pill .pill--new } | 3 | Drain Life, Drain Soul and Drain Mana do 7–20% more | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Core when you level with Drain Life. The launch tooltip does not include Wrack. |
+| **Improved Bane of Agony** | 2 | Bane of Agony damage +5/10% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | Filler. It has no effect when you use Bane of Doom or Bane of Havoc. |
+| **Fel Concentration** | 3 | Drain Life, Drain Mana, Drain Soul and Wrack have a 23–70% chance to ignore pushback | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Take it when mobs or players hit you during drains. Bosses do not hit you frequently. |
+| **Amplify Curse** | 1 | Instant, 3 min cooldown. Your next Curse of Weakness or Bane of Agony is 50% stronger, or your next Curse of Exhaustion is 20% stronger | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Curse of Exhaustion needs it. The long cooldown makes the damage gain small. |
+| **Pandemic** **New**{ .pill .pill--new } | 3 | Crit damage bonus of Corruption, Bane of Agony, Bane of Doom, Siphon Life, Wrack, Drain Soul and Drain Life +33–100% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | DoTs can crit in Forever. Useful also for Destruction builds that have 13 points in Affliction. |
+| **Malevolence** **New**{ .pill .pill--new } | 5 | Crit chance of Shadow spells +1–5% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | Works with Pandemic and Ruin. Core for Affliction raid builds. |
+| **Nightfall** | 2 | Corruption, Drain Soul, Drain Life and Wrack have a 2/4% chance on damage to make your next Shadow Bolt instant | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Free damage. The instant Shadow Bolt can also apply Improved Shadow Bolt. |
+| **Curse of Exhaustion**<br><small>Needs Amplify Curse</small> | 1 | An instant Curse. Movement speed of the target −30% for 12 s | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-d">D</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-s">S</span></span> | The reason to put 17 points in Affliction for PvP. It needs Amplify Curse. |
+| **Siphon Life** | 1 | An instant DoT for 30 s. It moves health from the target to you each 3 s (11 health at rank 1) | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Wrack needs it. It also counts as an Affliction effect for Soul Siphon. |
+| **Soul Siphon** | 3 | Drain Life, Drain Soul and Wrack do 4/8/12% more for each of your other Affliction effects on the target, to a maximum of +12/24/36% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | 3 other Affliction effects give the maximum. Core for the Wrack build. |
+| **Shadow Mastery** | 5 | Shadow damage and life drained +2–10% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Applies to all Shadow spells. Take 5/5 in each deep Affliction build. |
+| **Wrack** **New**{ .pill .pill--new }<br><small>Needs Siphon Life</small> | 1 | 200 mana, 30 yd. 86 Shadow damage each second for 6 s. The target takes 10% more damage from your other Shadow DoTs | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | The filler of the raid build. The launch tooltip says Instant, and other sources say channel. Its value after the 10 November hotfix is not confirmed. |
+
+</div>
 
 ## Demonology
 
 Demonology is the demon tree and the tree with the most health. **Demonic Sacrifice** gives a 2-hour bonus, and **Demonic Pact** lets you keep that bonus with a different demon out. The PvE ratings are for damage. The notes tell you which talents are only for Voidwalker pet tanking.
 
-<div class="ttree-wrap" role="group" aria-label="Demonology talent tree" tabindex="0">
+<div class="ttree-wrap" data-search-exclude role="group" aria-label="Demonology talent tree">
 <ul class="ttree">
-<li class="tt-row" style="grid-row:1">0 pts</li>
-<li class="tt-row" style="grid-row:2">5 pts</li>
-<li class="tt-row" style="grid-row:3">10 pts</li>
-<li class="tt-row" style="grid-row:4">15 pts</li>
-<li class="tt-row" style="grid-row:5">20 pts</li>
-<li class="tt-row" style="grid-row:6">25 pts</li>
-<li class="tt-row" style="grid-row:7">30 pts</li>
+<li class="tt-row" style="grid-row:1">0<span class="tt-long"> pts</span></li>
+<li class="tt-row" style="grid-row:2">5<span class="tt-long"> pts</span></li>
+<li class="tt-row" style="grid-row:3">10<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:3;grid-column:5"></li>
+<li class="tt-row" style="grid-row:4">15<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:4;grid-column:3"></li>
+<li class="tt-row" style="grid-row:5">20<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:5;grid-column:5"></li>
+<li class="tt-row" style="grid-row:6">25<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:6;grid-column:2"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:6;grid-column:3"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:6;grid-column:5"></li>
+<li class="tt-row" style="grid-row:7">30<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:7;grid-column:2"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:7;grid-column:4"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:7;grid-column:5"></li>
 <li class="tt-node" style="grid-row:1;grid-column:2"><span class="tt-name">Improved Health Funnel</span><span class="tt-meta"><span class="tier tier-b">B</span> max 2</span></li>
 <li class="tt-node" style="grid-row:1;grid-column:3"><span class="tt-name">Improved Imp</span><span class="tt-meta"><span class="tier tier-a">A</span> max 3</span></li>
 <li class="tt-node" style="grid-row:1;grid-column:4"><span class="tt-name">Demonic Embrace</span><span class="tt-meta"><span class="tier tier-s">S</span> max 5</span></li>
@@ -373,43 +393,57 @@ Demonology is the demon tree and the tree with the most health. **Demonic Sacrif
 </ul>
 </div>
 
-<p class="legend">The grid shows the layout of the tree in the game. The letter is the best rating of the talent in the table below.</p>
+<div class="fc-talents" markdown>
 
-| Talent | Opens at | Max | What it does | Leveling | PvE | PvP | Codex verdict |
-|---|---|---|---|---|---|---|---|
-| **Improved Health Funnel** | 0 pts | 2 | Health Funnel gives 20/40% more health, costs 15/30% less health and makes 50/100% less threat. You can use it at all demon health levels | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | **B**{ .tier .tier-b } | For Voidwalker pet tanking and for PvP with Soul Link. No value for raid damage. |
-| **Improved Imp** | 0 pts | 3 | Firebolt damage +10/20/30%. Fire Shield effect +10/20/30% | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | **D**{ .tier .tier-d } | For builds that keep the Imp out. It does not affect Blood Pact. |
-| **Demonic Embrace** | 0 pts | 5 | Stamina +3–15% | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | **S**{ .tier .tier-s } | Core for PvP and Hardcore. It gives no damage. |
-| **Unholy Power** | 0 pts | 5 | Damage of your Imp, Voidwalker, Succubus, Incubus and Felhunter +2–10% | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | The usual way to open Demonology row 2. Good in all builds that keep a demon out. |
-| **Demonic Aegis** **New**{ .pill .pill--new .pill--sm } | 5 pts | 2 | Demon Skin and Demon Armor are 15/30% stronger | **C**{ .tier .tier-c } | **D**{ .tier .tier-d } | **B**{ .tier .tier-b } | Filler for PvP. Do not take it for raids. |
-| **Improved Voidwalker** | 5 pts | 3 | Torment, Consume Shadows, Sacrifice and Suffering are 10/20/30% stronger | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | **C**{ .tier .tier-c } | Only for Voidwalker pet tanking. No value for damage. |
-| **Fel Vitality** | 5 pts | 3 | Health and mana of your demon +5/10/15%. Your maximum mana +5/10/15% | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | A stronger demon and more mana for you. Helps a Voidwalker tank. |
-| **Demonic Energies** **New**{ .pill .pill--new .pill--sm } | 5 pts | 2 | Your spell damage heals your demon for 8/15% of the damage. Life Tap gives your demon 50/100% of the mana that you get | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | **B**{ .tier .tier-b } | Keeps the demon alive when you level. In raids it helps the demon against AoE damage. |
-| **Improved Sayaad** | 10 pts | 3 | Lash of Pain and Soothing Kiss are 10/20/30% stronger. Seduction and Lesser Invisibility last 10/20/30% longer | **B**{ .tier .tier-b } | **B**{ .tier .tier-b } | **B**{ .tier .tier-b } | For builds that keep the Succubus or Incubus out. The launch client confirms the talent. |
-| **Demonic Sacrifice** | 10 pts | 1 | Sacrifice your demon for a 2-hour effect. Imp: +15% Shadow damage. Succubus or Incubus: +15% Fire damage. Voidwalker: 2% mana each 4 s. Felhunter: 3% health each 4 s | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | Soul Link needs it. Before you have Demonic Pact, a new demon cancels the effect. |
-| **Master Summoner** | 10 pts | 2 | Cast time of demon summons −2/4 s. Mana cost −20/40% | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | Fel Domination needs 2/2. Useful when you sacrifice demons frequently. |
-| **Decimation** **New**{ .pill .pill--new .pill--sm } | 15 pts | 2 | Soul Fire cooldown −45/90%. Shadow Bolt and Searing Pain do 3/6% more to targets below 35% health. For 10 s after that, Soul Fire casts 20/40% faster and costs no Soul Shard | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | **C**{ .tier .tier-c } | The execute talent of the Demonology Fire build. Soul Fire comes at level 48. |
-| **Fel Domination**<br><small>Needs Master Summoner</small> | 15 pts | 1 | Your next demon summon is 5.5 s faster and costs 50% less mana. 5 min cooldown | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | A fast new demon when your demon dies. Important in PvP and Hardcore. |
-| **Demonic Brand** **New**{ .pill .pill--new .pill--sm } | 15 pts | 3 | Searing Pain makes 17/33/50% less threat and brands the target for 10 s. The next 2/4/6 attacks of your demon do bonus Fire or Shadow damage (65–68 plus 7.8% of your spell power). Shadow hits make high threat | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **C**{ .tier .tier-c } | Core for Demonology damage. With a Voidwalker, the Shadow hits hold threat for pet tanking. |
-| **Improved Felhunter** **New**{ .pill .pill--new .pill--sm } | 20 pts | 3 | Tainted Blood, Devour Magic and Paranoia are 10/20/30% stronger. Spell Lock cooldown −2/4/6 s | **D**{ .tier .tier-d } | **C**{ .tier .tier-c } | **S**{ .tier .tier-s } | A PvP talent. In PvE, take it only when you must interrupt with Spell Lock. |
-| **Soul Link**<br><small>Needs Demonic Sacrifice</small> | 20 pts | 1 | Your demon takes 30% of the damage that you take. You and your demon do 3% more damage | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | The best defensive talent of the class. Demonic Pact needs it. |
-| **Demonic Knowledge** **New**{ .pill .pill--new .pill--sm } | 20 pts | 3 | With a demon out, you and your demon get spell damage up to 33/67/100% of your level | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | A maximum of 60 spell damage at level 60. The tooltip says up to, and the exact rule is not confirmed. |
-| **Master Demonologist** | 25 pts | 5 | An effect for you and your demon. Imp: Fire damage +2–10%. Succubus or Incubus: Shadow damage +2–10%. Voidwalker: physical damage taken −2–10%. Felhunter: magic damage taken −2–10% | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | 10% damage for the school of your demon. The Felhunter effect is strong against casters in PvP. |
-| **Demonic Pact** **New**{ .pill .pill--new .pill--sm }<br><small>Needs Soul Link</small> | 30 pts | 1 | A different demon does not cancel your Demonic Sacrifice effect. The sacrificed demon type still cancels it | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | You get the Demonic Sacrifice bonus and the Master Demonologist bonus at the same time. |
+| Talent | Max | What it does | Ratings | Codex verdict |
+|---|---|---|---|---|
+| **Improved Health Funnel** | 2 | Health Funnel gives 20/40% more health, costs 15/30% less health and makes 50/100% less threat. You can use it at all demon health levels | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | For Voidwalker pet tanking and for PvP with Soul Link. No value for raid damage. |
+| **Improved Imp** | 3 | Firebolt damage +10/20/30%. Fire Shield effect +10/20/30% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-d">D</span></span> | For builds that keep the Imp out. It does not affect Blood Pact. |
+| **Demonic Embrace** | 5 | Stamina +3–15% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-s">S</span></span> | Core for PvP and Hardcore. It gives no damage. |
+| **Unholy Power** | 5 | Damage of your Imp, Voidwalker, Succubus, Incubus and Felhunter +2–10% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | The usual way to open Demonology row 2. Good in all builds that keep a demon out. |
+| **Demonic Aegis** **New**{ .pill .pill--new } | 2 | Demon Skin and Demon Armor are 15/30% stronger | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-d">D</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | Filler for PvP. Do not take it for raids. |
+| **Improved Voidwalker** | 3 | Torment, Consume Shadows, Sacrifice and Suffering are 10/20/30% stronger | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-c">C</span></span> | Only for Voidwalker pet tanking. No value for damage. |
+| **Fel Vitality** | 3 | Health and mana of your demon +5/10/15%. Your maximum mana +5/10/15% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | A stronger demon and more mana for you. Helps a Voidwalker tank. |
+| **Demonic Energies** **New**{ .pill .pill--new } | 2 | Your spell damage heals your demon for 8/15% of the damage. Life Tap gives your demon 50/100% of the mana that you get | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | Keeps the demon alive when you level. In raids it helps the demon against AoE damage. |
+| **Improved Sayaad** | 3 | Lash of Pain and Soothing Kiss are 10/20/30% stronger. Seduction and Lesser Invisibility last 10/20/30% longer | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | For builds that keep the Succubus or Incubus out. The launch client confirms the talent. |
+| **Demonic Sacrifice** | 1 | Sacrifice your demon for a 2-hour effect. Imp: +15% Shadow damage. Succubus or Incubus: +15% Fire damage. Voidwalker: 2% mana each 4 s. Felhunter: 3% health each 4 s | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Soul Link needs it. Before you have Demonic Pact, a new demon cancels the effect. |
+| **Master Summoner** | 2 | Cast time of demon summons −2/4 s. Mana cost −20/40% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Fel Domination needs 2/2. Useful when you sacrifice demons frequently. |
+| **Decimation** **New**{ .pill .pill--new } | 2 | Soul Fire cooldown −45/90%. Shadow Bolt and Searing Pain do 3/6% more to targets below 35% health. For 10 s after that, Soul Fire casts 20/40% faster and costs no Soul Shard | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-c">C</span></span> | The execute talent of the Demonology Fire build. Soul Fire comes at level 48. |
+| **Fel Domination**<br><small>Needs Master Summoner</small> | 1 | Your next demon summon is 5.5 s faster and costs 50% less mana. 5 min cooldown | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | A fast new demon when your demon dies. Important in PvP and Hardcore. |
+| **Demonic Brand** **New**{ .pill .pill--new } | 3 | Searing Pain makes 17/33/50% less threat and brands the target for 10 s. The next 2/4/6 attacks of your demon do bonus Fire or Shadow damage (65–68 plus 7.8% of your spell power). Shadow hits make high threat | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-c">C</span></span> | Core for Demonology damage. With a Voidwalker, the Shadow hits hold threat for pet tanking. |
+| **Improved Felhunter** **New**{ .pill .pill--new } | 3 | Tainted Blood, Devour Magic and Paranoia are 10/20/30% stronger. Spell Lock cooldown −2/4/6 s | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-d">D</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-s">S</span></span> | A PvP talent. In PvE, take it only when you must interrupt with Spell Lock. |
+| **Soul Link**<br><small>Needs Demonic Sacrifice</small> | 1 | Your demon takes 30% of the damage that you take. You and your demon do 3% more damage | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-s">S</span></span> | The best defensive talent of the class. Demonic Pact needs it. |
+| **Demonic Knowledge** **New**{ .pill .pill--new } | 3 | With a demon out, you and your demon get spell damage up to 33/67/100% of your level | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | A maximum of 60 spell damage at level 60. The tooltip says up to, and the exact rule is not confirmed. |
+| **Master Demonologist** | 5 | An effect for you and your demon. Imp: Fire damage +2–10%. Succubus or Incubus: Shadow damage +2–10%. Voidwalker: physical damage taken −2–10%. Felhunter: magic damage taken −2–10% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | 10% damage for the school of your demon. The Felhunter effect is strong against casters in PvP. |
+| **Demonic Pact** **New**{ .pill .pill--new }<br><small>Needs Soul Link</small> | 1 | A different demon does not cancel your Demonic Sacrifice effect. The sacrificed demon type still cancels it | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | You get the Demonic Sacrifice bonus and the Master Demonologist bonus at the same time. |
+
+</div>
 
 ## Destruction
 
 Destruction is the direct damage tree. **Conflagrate** opens at 15 points, **Bane of Havoc** at 20 and **Incinerate** at 30. **Shadow and Flame** connects Conflagrate and Shadowburn to a 20% damage bonus. **Bane** and **Ruin** also help Shadow Bolt, so Affliction and Demonology builds put 18–21 points here.
 
-<div class="ttree-wrap" role="group" aria-label="Destruction talent tree" tabindex="0">
+<div class="ttree-wrap" data-search-exclude role="group" aria-label="Destruction talent tree">
 <ul class="ttree">
-<li class="tt-row" style="grid-row:1">0 pts</li>
-<li class="tt-row" style="grid-row:2">5 pts</li>
-<li class="tt-row" style="grid-row:3">10 pts</li>
-<li class="tt-row" style="grid-row:4">15 pts</li>
-<li class="tt-row" style="grid-row:5">20 pts</li>
-<li class="tt-row" style="grid-row:6">25 pts</li>
-<li class="tt-row" style="grid-row:7">30 pts</li>
+<li class="tt-row" style="grid-row:1">0<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:1;grid-column:5"></li>
+<li class="tt-row" style="grid-row:2">5<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:2;grid-column:5"></li>
+<li class="tt-row" style="grid-row:3">10<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:3;grid-column:2"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:3;grid-column:5"></li>
+<li class="tt-row" style="grid-row:4">15<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:4;grid-column:5"></li>
+<li class="tt-row" style="grid-row:5">20<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:5;grid-column:5"></li>
+<li class="tt-row" style="grid-row:6">25<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:6;grid-column:2"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:6;grid-column:3"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:6;grid-column:5"></li>
+<li class="tt-row" style="grid-row:7">30<span class="tt-long"> pts</span></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:7;grid-column:2"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:7;grid-column:4"></li>
+<li class="tt-empty" aria-hidden="true" style="grid-row:7;grid-column:5"></li>
 <li class="tt-node" style="grid-row:1;grid-column:2"><span class="tt-name">Destructive Reach</span><span class="tt-meta"><span class="tier tier-b">B</span> max 2</span></li>
 <li class="tt-node" style="grid-row:1;grid-column:3"><span class="tt-name">Improved Shadow Bolt</span><span class="tt-meta"><span class="tier tier-a">A</span> max 5</span></li>
 <li class="tt-node" style="grid-row:1;grid-column:4"><span class="tt-name">Bane</span><span class="tt-meta"><span class="tier tier-s">S</span> max 5</span></li>
@@ -429,26 +463,28 @@ Destruction is the direct damage tree. **Conflagrate** opens at 15 points, **Ban
 </ul>
 </div>
 
-<p class="legend">The grid shows the layout of the tree in the game. The letter is the best rating of the talent in the table below.</p>
+<div class="fc-talents" markdown>
 
-| Talent | Opens at | Max | What it does | Leveling | PvE | PvP | Codex verdict |
-|---|---|---|---|---|---|---|---|
-| **Destructive Reach** | 0 pts | 2 | Range of Destruction spells +10/20% | **C**{ .tier .tier-c } | **C**{ .tier .tier-c } | **B**{ .tier .tier-b } | A personal preference. It makes it easier to stay at range. |
-| **Improved Shadow Bolt** | 0 pts | 5 | Shadow Bolt crits make the target take 4–20% more Shadow damage from your attacks for 12 s | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | For builds that cast Shadow Bolt. It has no value when Incinerate or Searing Pain is your filler. It applies only to your damage. |
-| **Bane** | 0 pts | 5 | Cast time of Shadow Bolt, Immolate and Incinerate −0.1 to −0.5 s. Cast time of Soul Fire −0.4 to −2 s | **S**{ .tier .tier-s } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | The first 5 points of each build that has points in Destruction. |
-| **Molten Skin** **New**{ .pill .pill--new .pill--sm } | 5 pts | 5 | All damage taken −2–10% | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | For PvP and Hardcore. In raids, take it only for fights with much damage to the raid. |
-| **Cataclysm** | 5 pts | 3 | Mana cost of Destruction spells −3–10% | **B**{ .tier .tier-b } | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | Filler to open row 3. Less Life Tap. |
-| **Aftermath** | 5 pts | 5 | Initial damage of Immolate +10–50%. Conflagrate has a 20–100% chance to Daze the target (−50% speed, 5 s) | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | More damage on each Immolate. The Daze helps you kite when you level and in PvP. |
-| **Ruin** | 10 pts | 5 | Crit damage bonus of Destruction spells +20–100% | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **S**{ .tier .tier-s } | Doubles the crit bonus. It is in row 3 now, so all specs can get it. |
-| **Shadowburn** | 10 pts | 1 | Instant Shadow hit (65–74 at rank 1), 15 s cooldown. You get a Soul Shard if the target dies in 8 s | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | It costs a Soul Shard. With Shadow and Flame 5/5, it gives the shard back and gives +20% Fire damage. |
-| **Intensity** | 15 pts | 3 | Destruction spells have a 23–70% chance to ignore pushback | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | **B**{ .tier .tier-b } | Useful when mobs or players hit you. Pyroclasm needs 3/3. |
-| **Agonizing Flames** | 15 pts | 3 | Crit chance of Searing Pain +3–10%. Damage of all Destruction spells +3–10% | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | 10% damage for each Destruction spell. It also applies to Shadow Bolt in Affliction builds. |
-| **Conflagrate** | 15 pts | 1 | Instant Fire hit (87–112 at rank 1) on a target with your Immolate. It consumes Immolate. 10 s cooldown | **S**{ .tier .tier-s } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | Available at level 25. With Shadow and Flame 5/5, it does not consume Immolate. |
-| **Pyroclasm**<br><small>Needs Intensity</small> | 20 pts | 2 | Soul Fire has a 13/26% chance to stun for 3 s. Rain of Fire and Hellfire have a 13/26% chance during their duration | **C**{ .tier .tier-c } | **D**{ .tier .tier-d } | **C**{ .tier .tier-c } | Bosses are immune to stuns. It costs 5 points with Intensity. |
-| **Bane of Havoc** **New**{ .pill .pill--new .pill--sm } | 20 pts | 1 | A Bane for 5 min on 1 target. The target also takes 15% of the damage that you do to other targets | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **B**{ .tier .tier-b } | Core for dungeons and cleave fights. No effect on a single target. Incinerate needs it. |
-| **Fire and Brimstone** **New**{ .pill .pill--new .pill--sm }<br><small>Needs Conflagrate</small> | 20 pts | 3 | Crit chance of Conflagrate +8–25% | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | Strong with Ruin. Conflagrate has only a 10 s cooldown. |
-| **Shadow and Flame** **New**{ .pill .pill--new .pill--sm } | 25 pts | 5 | Conflagrate gives +4–20% Shadow damage for 20 s. Shadowburn gives +4–20% Fire damage for 20 s. Conflagrate has a 20–100% chance to keep Immolate. Shadowburn has a 20–100% chance to give back its Soul Shard | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | Take 5/5. Use Shadowburn on cooldown to keep the Fire bonus active. |
-| **Incinerate** **New**{ .pill .pill--new .pill--sm }<br><small>Needs Bane of Havoc</small> | 30 pts | 1 | A 2.5 s Fire spell, 30 yd (99–115 at rank 1). It does 25% more damage if Immolate is on the target | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **C**{ .tier .tier-c } | The Destruction filler from level 40. Bane makes it a 2 s cast. |
+| Talent | Max | What it does | Ratings | Codex verdict |
+|---|---|---|---|---|
+| **Destructive Reach** | 2 | Range of Destruction spells +10/20% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | A personal preference. It makes it easier to stay at range. |
+| **Improved Shadow Bolt** | 5 | Shadow Bolt crits make the target take 4–20% more Shadow damage from your attacks for 12 s | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | For builds that cast Shadow Bolt. It has no value when Incinerate or Searing Pain is your filler. It applies only to your damage. |
+| **Bane** | 5 | Cast time of Shadow Bolt, Immolate and Incinerate −0.1 to −0.5 s. Cast time of Soul Fire −0.4 to −2 s | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | The first 5 points of each build that has points in Destruction. |
+| **Molten Skin** **New**{ .pill .pill--new } | 5 | All damage taken −2–10% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | For PvP and Hardcore. In raids, take it only for fights with much damage to the raid. |
+| **Cataclysm** | 3 | Mana cost of Destruction spells −3–10% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-c">C</span></span> | Filler to open row 3. Less Life Tap. |
+| **Aftermath** | 5 | Initial damage of Immolate +10–50%. Conflagrate has a 20–100% chance to Daze the target (−50% speed, 5 s) | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | More damage on each Immolate. The Daze helps you kite when you level and in PvP. |
+| **Ruin** | 5 | Crit damage bonus of Destruction spells +20–100% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-s">S</span></span> | Doubles the crit bonus. It is in row 3 now, so all specs can get it. |
+| **Shadowburn** | 1 | Instant Shadow hit (65–74 at rank 1), 15 s cooldown. You get a Soul Shard if the target dies in 8 s | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | It costs a Soul Shard. With Shadow and Flame 5/5, it gives the shard back and gives +20% Fire damage. |
+| **Intensity** | 3 | Destruction spells have a 23–70% chance to ignore pushback | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | Useful when mobs or players hit you. Pyroclasm needs 3/3. |
+| **Agonizing Flames** | 3 | Crit chance of Searing Pain +3–10%. Damage of all Destruction spells +3–10% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | 10% damage for each Destruction spell. It also applies to Shadow Bolt in Affliction builds. |
+| **Conflagrate** | 1 | Instant Fire hit (87–112 at rank 1) on a target with your Immolate. It consumes Immolate. 10 s cooldown | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Available at level 25. With Shadow and Flame 5/5, it does not consume Immolate. |
+| **Pyroclasm**<br><small>Needs Intensity</small> | 2 | Soul Fire has a 13/26% chance to stun for 3 s. Rain of Fire and Hellfire have a 13/26% chance during their duration | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-c">C</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-d">D</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-c">C</span></span> | Bosses are immune to stuns. It costs 5 points with Intensity. |
+| **Bane of Havoc** **New**{ .pill .pill--new } | 1 | A Bane for 5 min on 1 target. The target also takes 15% of the damage that you do to other targets | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-b">B</span></span> | Core for dungeons and cleave fights. No effect on a single target. Incinerate needs it. |
+| **Fire and Brimstone** **New**{ .pill .pill--new }<br><small>Needs Conflagrate</small> | 3 | Crit chance of Conflagrate +8–25% | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-b">B</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Strong with Ruin. Conflagrate has only a 10 s cooldown. |
+| **Shadow and Flame** **New**{ .pill .pill--new } | 5 | Conflagrate gives +4–20% Shadow damage for 20 s. Shadowburn gives +4–20% Fire damage for 20 s. Conflagrate has a 20–100% chance to keep Immolate. Shadowburn has a 20–100% chance to give back its Soul Shard | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-a">A</span></span> | Take 5/5. Use Shadowburn on cooldown to keep the Fire bonus active. |
+| **Incinerate** **New**{ .pill .pill--new }<br><small>Needs Bane of Havoc</small> | 1 | A 2.5 s Fire spell, 30 yd (99–115 at rank 1). It does 25% more damage if Immolate is on the target | <span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">L</span><span class="fc-sr-only">Leveling: </span><span class="tier tier-a">A</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvE</span><span class="fc-sr-only">PvE: </span><span class="tier tier-s">S</span></span><span class="fc-rate"><span class="fc-rate__k" aria-hidden="true">PvP</span><span class="fc-sr-only">PvP: </span><span class="tier tier-c">C</span></span> | The Destruction filler from level 40. Bane makes it a 2 s cast. |
+
+</div>
 
 ## FAQ
 
@@ -467,7 +503,9 @@ Destruction is the direct damage tree. **Conflagrate** opens at 15 points, **Ban
 ??? question "Can a Warlock tank with these talents?"
     Demonic Brand gives a Voidwalker high threat, so pet tanking is an option in dungeons. Blizzard announced a Voidwalker hotfix for 10 November. Pet tanking in raids is not confirmed.
 
-## Sources
+## Data and sources { #sources }
+
+The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/warlock/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Warlock progression](index.md) tells you when each talent becomes important.
 
 - [wowforevertalents.com: Warlock talents, read from the client](https://wowforevertalents.com/warlock/)
 - [Blizzard: Class Deep Dives, Rogue and Warlock](https://worldofwarcraft.blizzard.com/news/24310968)

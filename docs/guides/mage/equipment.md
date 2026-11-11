@@ -2,24 +2,16 @@
 description: "Mage equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."
 tags:
   - Mage
+generated: true
+wide: true
 ---
 
 # Mage Equipment
 
 <!-- This page is generated. Edit tools/classes/guides/mage.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="mage" markdown>
-
-:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Equipment</span> **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Mage progression](index.md). This page gives the full equipment data for each set.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#drops">Quests and dungeons</a> <a href="#crafted">Tailoring and Enchanting</a> <a href="#stamina">Stamina for PvP and Hardcore</a> <a href="#enchants-and-consumables">Enchants</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
+:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Equipment</span> **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="mage" }
 
 A Mage wears cloth for all 60 levels. The important slots are the weapon and the wand. Low levels need spell power, Intellect and Spirit. Level 60 needs spell power and hit.
 
@@ -27,11 +19,15 @@ About 40% of the items of Forever had hidden stats at launch. The stats of an it
 
 ## Equipment sets
 
+<div class="fc-stack" markdown>
+
 | Set | Use it for | Stat priority |
 |---|---|---|
 | [Quests and dungeons](#drops) | The standard set. You use quest rewards and dungeon drops, and you buy a wand. The item names come from Timesaver.gg and Method.gg. | Leveling (Warcraft Tavern): Spell Power > Intellect for Fire and Frost, Intellect > Spell Power for Arcane. Level 60: no source has a tested order. Spell power and hit come first |
 | [Tailoring and Enchanting](#crafted) | You make your own cloth, wands, staves and off-hand items. Use it if you have Tailoring and Enchanting. The client data gives the name and the skill of each item, but not its stats. | The same as Quests and dungeons. Read the tooltip of each crafted item |
 | [Stamina for PvP and Hardcore](#stamina) | A safer set. You replace some Intellect and Spirit with Stamina. Use it for battlegrounds, for world PvP and for Hardcore. No source has an item list for this set. | Stamina > Spell Power > Intellect. Keep enough hit for dungeons |
+
+</div>
 
 ## What a Mage can equip { #proficiencies }
 
@@ -140,13 +136,13 @@ No source has a tested list for level 60. The items of level 60 bosses had hidde
 
 | Slot | Item | Source |
 |---|---|---|
-| Set | **Sorcerer's Regalia** | All sources: Dungeon Set 2. One source says that vendors sell it. The cost is not known **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Set | **Sorcerer's Regalia** | All sources: Dungeon Set 2. One source says that vendors sell it. The cost is not known **Not confirmed**{ .pill } |
 | Chest | **Robe of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295 |
 | Legs | **Sentinel's Silk Leggings or Outrider's Silk Leggings** | Vendor: Illiyana Moonblaze in Ashenvale sells the Alliance item. RankedBoost names the Horde item. No source gives the cost |
 | Ring | **Warden's Signet of Brilliance** | Reputation: The Watchers, a new faction. No source gives details of the faction |
 | Main hand | **Sageblade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
-| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
+| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new } |
 
 ### Raids and PvP { #drops-raid }
 
@@ -154,8 +150,8 @@ Reportedly, the reagent Malleable Essence of Nature comes from raid items that a
 
 | Slot | Item | Source |
 |---|---|---|
-| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Back | **Cloak of Earth and Sky** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
+| Back | **Cloak of Earth and Sky** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Tailoring and Enchanting { #crafted }
 
@@ -169,10 +165,10 @@ Enchanting makes a wand at skill 1. Tailoring makes the Stormsewn linen items at
 
 | Slot | Item | Source |
 |---|---|---|
-| Wand | **Novice's Practice Wand** | [Enchanting](../../professions/enchanting.md), skill 1 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Azure Stormsewn Cuffs** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Azure Stormsewn Cord** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
-| Bag | **Linen Reagent Bag** | [Tailoring](../../professions/tailoring.md), skill 5 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Novice's Practice Wand** | [Enchanting](../../professions/enchanting.md), skill 1 **New**{ .pill .pill--new } |
+| Wrist | **Azure Stormsewn Cuffs** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new } |
+| Waist | **Azure Stormsewn Cord** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new } |
+| Bag | **Linen Reagent Bag** | [Tailoring](../../professions/tailoring.md), skill 5 **New**{ .pill .pill--new } |
 
 ### Levels 10–19 { #crafted-l10 }
 
@@ -181,10 +177,10 @@ Forever adds rare cloth items for levels 10 to 30. Each item has 6 versions: Fla
 | Slot | Item | Source |
 |---|---|---|
 | Wand | **Greater Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe |
-| Waist | **Novice Arcanist's Sash** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Silky Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Silky Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Filigreed Silky Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Novice Arcanist's Sash** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new } |
+| Feet | **Silky Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new } |
+| Hands | **Silky Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new } |
+| Chest | **Filigreed Silky Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new } |
 
 ### Levels 20–29 { #crafted-l20 }
 
@@ -192,10 +188,10 @@ Method.gg selects the Filigreed Silky Circlet at level 25 for Frost. Enchanting 
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Filigreed Silky Circlet** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Filigreed Silky Leggings** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Staff | **Glimmering Staff** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new .pill--sm } |
-| Off-hand | **Orb of Mystic Insight** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Filigreed Silky Circlet** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new } |
+| Legs | **Filigreed Silky Leggings** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new } |
+| Staff | **Glimmering Staff** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new } |
+| Off-hand | **Orb of Mystic Insight** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new } |
 
 ### Levels 30–39 { #crafted-l30 }
 
@@ -204,8 +200,8 @@ Robe of Power is a trainer recipe. Phoenix Bindings are new bracers, and wowtbc.
 | Slot | Item | Source |
 |---|---|---|
 | Chest | **Robe of Power** | [Tailoring](../../professions/tailoring.md), trainer recipe |
-| Wrist | **Phoenix Bindings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Frothing Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Phoenix Bindings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new } |
+| Feet | **Frothing Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new } |
 | Wand | **Lesser Mystic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe |
 
 ### Levels 40–49 { #crafted-l40 }
@@ -214,11 +210,11 @@ Crafted items fill the levels where dungeons give few new items. The Nether shou
 
 | Slot | Item | Source |
 |---|---|---|
-| Wrist | **Netherfroth Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Netherfroth Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Twisted Nether Wand** | [Enchanting](../../professions/enchanting.md), skill 185 **New**{ .pill .pill--new .pill--sm } |
-| Staff | **Dreamstaff** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
-| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Netherfroth Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new } |
+| Shoulders | **Netherfroth Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new } |
+| Wand | **Twisted Nether Wand** | [Enchanting](../../professions/enchanting.md), skill 185 **New**{ .pill .pill--new } |
+| Staff | **Dreamstaff** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
+| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #crafted-l50 }
 
@@ -227,8 +223,8 @@ The site wowtbc.gg lists Robe of Winter Night for Frost. The Eternal wands and t
 | Slot | Item | Source |
 |---|---|---|
 | Chest | **Robe of Winter Night** | [Tailoring](../../professions/tailoring.md), skill 245 |
-| Wand | **Lesser Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 245 **New**{ .pill .pill--new .pill--sm } |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Lesser Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 245 **New**{ .pill .pill--new } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
 
 ### Level 60 { #crafted-l60 }
 
@@ -239,8 +235,8 @@ Before the raids open, make the Classic epic items at Tailoring 295 and the best
 | Chest | **Robe of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295 |
 | Waist | **Belt of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295 |
 | Hands | **Gloves of Spell Mastery** | [Tailoring](../../professions/tailoring.md), skill 295 |
-| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new } |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new } |
 
 ### Raids and PvP { #crafted-raid }
 
@@ -248,12 +244,12 @@ The Manaflare items are the crafted version of the Mage Tier 1 set. Reportedly, 
 
 | Slot | Item | Source |
 |---|---|---|
-| Shoulders | **Manaflare Mantle** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Manaflare Gloves** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Manaflare Pants** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Manaflare Boots** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Back | **Cloak of Earth and Sky** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Shoulders | **Manaflare Mantle** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Hands | **Manaflare Gloves** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Manaflare Pants** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Feet | **Manaflare Boots** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Back | **Cloak of Earth and Sky** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Stamina for PvP and Hardcore { #stamina }
 
@@ -291,6 +287,8 @@ PvP has 1 blue honor set and 1 epic honor set. An epic item needs the blue item 
 
 ## Enchants and consumables
 
+<div class="fc-stack" markdown>
+
 | Slot | Enchant | Notes |
 |---|---|---|
 | Staff | **Spellblasting (+65 spell power)** | New. Mighty Spell Power gives up to +55. All values in this table are beta data from Method.gg |
@@ -312,7 +310,11 @@ PvP has 1 blue honor set and 1 epic honor set. An epic item needs the blue item 
 | Level 60 | **Major Mana Potion, mana gems** | Mana gems are separate from potions |
 | Level 60 | **Baked Salmon, Nightfin Soup** | Food with spell power (beta data). Crafted food also gives +5% XP from kills |
 
-## Sources
+</div>
+
+## Data and sources { #sources }
+
+The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
 
 - [Timesaver.gg: Mage leveling gear, level by level](https://timesaver.gg/tools/wow-forever/leveling-gear/mage/arcane)
 - [Method.gg: Mage leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-mage-leveling-guide-and-talents)
@@ -324,3 +326,4 @@ PvP has 1 blue honor set and 1 epic honor set. An epic item needs the blue item 
 - [wowtbc.gg: Frost Mage item lists for level 60](https://wowtbc.gg/warcraftforever/bis-list/frost-mage/)
 - [LFCarry: sets and crafted tier items (beta data)](https://lfcarry.com/guides/wow-forever-bis-lists)
 - [Blizzard: raid overview](https://worldofwarcraft.blizzard.com/news/24303009)
+- [Mage progression: data and sources](index.md#sources)

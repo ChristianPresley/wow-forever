@@ -7,13 +7,10 @@ tags:
 
 # Gnome Priest
 
-<div class="guide-head" data-class="priest" markdown>
+:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Healer**{ .badge .heal } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="priest" }
 
-:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Priest progression](index.md).</p>
-
-</div>
+Read with the [Priest progression](index.md).
 
 ## Why this combo
 

@@ -298,6 +298,7 @@ chapters:
 
   - id: raid
     title: "Tank or damage dealer in the 3 raids"
+    toc: "Tank or damage dealer"
     story: |
       **The Barrow Deeps** has 10 players. A group probably takes 1 tank Warrior and 1 or 2 Warriors for damage. In a small raid, a second tank that also does damage has much value. See [The Barrow Deeps](../../content/raids/barrow-deeps.md).
 

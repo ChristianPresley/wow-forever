@@ -4,24 +4,16 @@ tags:
   - Professions
 search:
   boost: 2
+generated: true
+wide: true
 ---
 
 # Fishing Guide
 
 <!-- This page is generated. Edit tools/professions/guides/fishing.yml, then run tools/professions/build.py. -->
 
-<div class="guide-head" markdown>
-
-:material-fish:{ aria-hidden="true" } <span class="gh-kind">Profession guide</span> **Secondary**{ .badge }
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#new-in-forever">New</a> <a href="#level-1-to-300">1–300</a> <a href="#recipes-to-get">Recipes to get</a> <a href="#camp-features">Camp</a> <a href="#all-recipes">All recipes</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The recipe data is from the game client, build 1.60.1.70862. [wowforevertalents.com](https://wowforevertalents.com/professions/fishing/) reads this data from the client. The client does not hold the skill that a trainer asks for, the prices, or the drop locations. The path and the recipe picks are Codex recommendations.
-
-Fishing is a secondary skill, so each character can learn it with 2 primary professions. You catch fish in open water and in fish pools. Cooking and Alchemy use the fish. In Forever, Fishing also has its first recipes: 3 **camp features**. The Fish Bowl gives +8% to stats at a camp.
+:material-fish:{ aria-hidden="true" } <span class="fc-meta__kind">Profession guide</span> **Secondary**{ .badge } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta }
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Fishing at a glance</p>
@@ -39,6 +31,8 @@ Fishing is a secondary skill, so each character can learn it with 2 primary prof
 | **From a recipe item** | 2 |
 
 </aside>
+
+Fishing is a secondary skill, so each character can learn it with 2 primary professions. You catch fish in open water and in fish pools. Cooking and Alchemy use the fish. In Forever, Fishing also has its first recipes: 3 **camp features**. The Fish Bowl gives +8% to stats at a camp.
 
 ## New in Forever
 
@@ -60,10 +54,14 @@ The *Crafts* column is an estimate. A recipe always gives a skill point while it
 
 In Classic, a fishing supplier sells the Fishing Pole and Shiny Baubles. The starting zones and the capital cities have no minimum skill in Classic. Fish get away in the cities until skill 75, so start in a starting zone.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 1–50 | **Open water in a starting zone** | — | — | — | Elwynn Forest, Dun Morogh, Teldrassil, Durotar, Mulgore, Tirisfal Glades (Classic-era value) | Fish do not get away from skill 25. Keep Raw Brilliant Smallfish for the Fish Bowl |
-| 50–75 | **Open water in a level 10 to 20 zone or a capital city** | — | — | — | Westfall, Loch Modan, Darkshore, The Barrens, Silverpine Forest, and the capital cities (Classic-era value) | No minimum skill. Fish do not get away from skill 75. Use a lure below 75 |
+|---|---|---:|---|---|---|---|
+| 1–50 | **Open water in a starting zone** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Elwynn Forest, Dun Morogh, Teldrassil, Durotar, Mulgore, Tirisfal Glades (Classic-era value) | Fish do not get away from skill 25. Keep Raw Brilliant Smallfish for the Fish Bowl |
+| 50–75 | **Open water in a level 10 to 20 zone or a capital city** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Westfall, Loch Modan, Darkshore, The Barrens, Silverpine Forest, and the capital cities (Classic-era value) | No minimum skill. Fish do not get away from skill 75. Use a lure below 75 |
+
+</div>
 
 - At skill 50, train Journeyman at a Fishing trainer. This is the Classic-era value.
 - The Fish Bowl is a trainer recipe. Camp features start at skill 20, but the client does not hold the trainer skill.
@@ -72,10 +70,14 @@ In Classic, a fishing supplier sells the Fishing Pole and Shiny Baubles. The sta
 
 Move to the level 20 to 30 zones. In Classic, you need skill 55 to cast there. In Classic, fishing suppliers sell Nightcrawlers and Bright Baubles.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 75–130 | **Open water in a level 20 to 30 zone** | — | — | — | Redridge Mountains, Duskwood, Wetlands, Hillsbrad Foothills, Ashenvale, Stonetalon Mountains (Classic-era value) | Minimum skill 55. Fish do not get away from skill 150. Use a lure |
-| 130–150 | **Fresh water in a level 30 to 40 zone** | — | — | — | Arathi Highlands, Alterac Mountains, Stranglethorn Vale, Desolace, Dustwallow Marsh, Swamp of Sorrows (Classic-era value) | Minimum skill 130. In Classic, Raw Mithril Head Trout comes from fresh water here. Keep 2 for each Fishing Rack |
+|---|---|---:|---|---|---|---|
+| 75–130 | **Open water in a level 20 to 30 zone** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Redridge Mountains, Duskwood, Wetlands, Hillsbrad Foothills, Ashenvale, Stonetalon Mountains (Classic-era value) | Minimum skill 55. Fish do not get away from skill 150. Use a lure |
+| 130–150 | **Fresh water in a level 30 to 40 zone** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Arathi Highlands, Alterac Mountains, Stranglethorn Vale, Desolace, Dustwallow Marsh, Swamp of Sorrows (Classic-era value) | Minimum skill 130. In Classic, Raw Mithril Head Trout comes from fresh water here. Keep 2 for each Fishing Rack |
+
+</div>
 
 - In Classic, a vendor book in Booty Bay teaches Expert Fishing at skill 125. It is not confirmed that Forever uses the same book.
 - The Fishing Rack blueprint needs skill 140 in the launch client. It drops from Gelihast in Blackfathom Deeps.
@@ -85,9 +87,13 @@ Move to the level 20 to 30 zones. In Classic, you need skill 55 to cast there. I
 
 Stay in the level 30 to 40 zones. Lures are important here, because fish get away until skill 225 in Classic.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 150–225 | **Open water or fish pools in a level 30 to 40 zone** | — | — | — | Stranglethorn Vale, Arathi Highlands, Alterac Mountains, Desolace, Dustwallow Marsh, Swamp of Sorrows (Classic-era value) | Minimum skill 130. Fish do not get away from skill 225. Keep Raw Mithril Head Trout for the Fishing Rack |
+|---|---|---:|---|---|---|---|
+| 150–225 | **Open water or fish pools in a level 30 to 40 zone** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Stranglethorn Vale, Arathi Highlands, Alterac Mountains, Desolace, Dustwallow Marsh, Swamp of Sorrows (Classic-era value) | Minimum skill 130. Fish do not get away from skill 225. Keep Raw Mithril Head Trout for the Fishing Rack |
+
+</div>
 
 - In Classic, a quest from Nat Pagle in Dustwallow Marsh gives Artisan Fishing at skill 225 and level 35. It is not confirmed for Forever.
 - Riverglades is a new zone for levels 35 to 45 with a central river and 3 oxbow lakes. Its fishing skill is not known.
@@ -98,9 +104,13 @@ Stay in the level 30 to 40 zones. Lures are important here, because fish get awa
 
 Move to the level 40 to 55 zones. In Classic, you need skill 205 to cast there.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 225–300 | **Open water or fish pools in a level 40 to 55 zone** | — | — | — | Tanaris, Feralas, The Hinterlands, Un'Goro Crater, Felwood, Western Plaguelands (Classic-era value) | Minimum skill 205. Fish do not get away from skill 300. Use a lure |
+|---|---|---:|---|---|---|---|
+| 225–300 | **Open water or fish pools in a level 40 to 55 zone** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Tanaris, Feralas, The Hinterlands, Un'Goro Crater, Felwood, Western Plaguelands (Classic-era value) | Minimum skill 205. Fish do not get away from skill 300. Use a lure |
+
+</div>
 
 - In Classic, the level 55 to 60 zones need skill 330 to cast. You get there with 300 skill and a lure.
 - The Fishing Hut blueprint needs skill 300. The recipe is grey at 300, and 300 is the skill cap, so it gives no skill points.
@@ -115,11 +125,15 @@ Fishing has 3 recipes, and all 3 are camp features. The source column shows wher
 
 A player can add 1 feature to a camp. Higher tiers include the features of the lower tiers.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Fish Bowl** | — | 1 Raw Brilliant Smallfish, 1 Empty Vial | Trainer | New. It gives +8% to stats at a camp for 1 hour. It does not stack with Blessing of Kings |
-| **Fishing Rack** | 140 | 2 Simple Wood, 1 Crystal Vial, 2 Raw Mithril Head Trout | Recipe item | New. The Tier 2 feature. The client data does not give its effect. The blueprint drops from Gelihast in Blackfathom Deeps |
-| **Fishing Hut** | 300 | 5 Simple Wood, 2 Bolt of Runecloth, 1 Seasonal Fish Steaks | Recipe item | New. The Tier 3 feature. The client data does not give its effect. It needs Seasonal Fish Steaks, and the client does not give their source |
+|---|---:|---|---|---|
+| Fish Bowl | <span class="fc-na">—</span> | 1 Raw Brilliant Smallfish, 1 Empty Vial | Trainer | New. It gives +8% to stats at a camp for 1 hour. It does not stack with Blessing of Kings |
+| Fishing Rack | 140 | 2 Simple Wood, 1 Crystal Vial, 2 Raw Mithril Head Trout | Recipe item | New. The Tier 2 feature. The client data does not give its effect. The blueprint drops from Gelihast in Blackfathom Deeps |
+| Fishing Hut | 300 | 5 Simple Wood, 2 Bolt of Runecloth, 1 Seasonal Fish Steaks | Recipe item | New. The Tier 3 feature. The client data does not give its effect. It needs Seasonal Fish Steaks, and the client does not give their source |
+
+</div>
 
 ## Where recipes come from
 
@@ -129,11 +143,16 @@ A trainer teaches the Fish Bowl. The client does not hold the skill that the tra
 
 Fishing makes these features for a [camp](../systems/camping.md). The camp page gives the effect of each feature.
 
+
+<div class="fc-data" data-prose="1 3" markdown>
+
 | Feature | Learn | Reagents | Source |
-|---|---|---|---|
-| **Fish Bowl** | — | 1 Raw Brilliant Smallfish, 1 Empty Vial | Trainer |
-| **Fishing Rack** | 140 | 2 Simple Wood, 1 Crystal Vial, 2 Raw Mithril Head Trout | Recipe item |
-| **Fishing Hut** | 300 | 5 Simple Wood, 2 Bolt of Runecloth, 1 Seasonal Fish Steaks | Recipe item |
+|---|---:|---|---|
+| Fish Bowl | <span class="fc-na">—</span> | 1 Raw Brilliant Smallfish, 1 Empty Vial | Trainer |
+| Fishing Rack | 140 | 2 Simple Wood, 1 Crystal Vial, 2 Raw Mithril Head Trout | Recipe item |
+| Fishing Hut | 300 | 5 Simple Wood, 2 Bolt of Runecloth, 1 Seasonal Fish Steaks | Recipe item |
+
+</div>
 
 You need a campfire from Cooking first. After you make a Basic Campfire with Cooking, each profession gives a "Camping 101" quest for its Tier 1 feature. For Fishing, that feature is the Fish Bowl. A Basic Campfire holds 3 features. The Fish Bowl gives the same type of buff as Blessing of Kings, so it has the most value in a group without a Paladin. If your group has Blessing of Kings, the Fish Bowl buff does not stack with it. Use a feature from a different profession in that group. Sit or craft at the camp for 60 seconds to get the buff for 1 hour. The Legacy talent Reagent Economy removes the reagents of Tier 1 features.
 
@@ -152,15 +171,19 @@ You need a campfire from Cooking first. After you make a Basic Campfire with Coo
 
 ## All recipes
 
-**Learn** is the skill that the client gives for the recipe. A dash shows a trainer recipe, because the client does not hold that skill. **Yellow** and **Grey** are the skills where the recipe changes colour. **Forever** shows a recipe that is new or changed from Classic Era.
+**Learn** is the skill that the client gives for the recipe. A dash shows a trainer recipe, because the client does not hold that skill. **Yellow** and **Grey** are the skills where the recipe changes colour. A **New** or **Changed** tag shows a recipe that is new or changed from Classic Era.
 
 ### Camping
 
-| Recipe | Learn | Yellow | Grey | Reagents | Source | Forever |
-|---|---|---|---|---|---|---|
-| **Fish Bowl** | — | 20 | 20 | 1 Raw Brilliant Smallfish, 1 Empty Vial | Trainer | New |
-| **Fishing Rack** | 140 | 140 | 145 | 2 Simple Wood, 1 Crystal Vial, 2 Raw Mithril Head Trout | Recipe item | New |
-| **Fishing Hut** | 300 | 300 | 300 | 5 Simple Wood, 2 Bolt of Runecloth, 1 Seasonal Fish Steaks | Recipe item | New |
+<div class="fc-data" data-prose="1 5" markdown>
+
+| Recipe | Learn | Yellow | Grey | Reagents | Source |
+|---|---:|---:|---:|---|---|
+| Fish Bowl **New**{ .pill .pill--new } | <span class="fc-na">—</span> | 20 | 20 | 1 Raw Brilliant Smallfish, 1 Empty Vial | Trainer |
+| Fishing Rack **New**{ .pill .pill--new } | 140 | 140 | 145 | 2 Simple Wood, 1 Crystal Vial, 2 Raw Mithril Head Trout | Recipe item |
+| Fishing Hut **New**{ .pill .pill--new } | 300 | 300 | 300 | 5 Simple Wood, 2 Bolt of Runecloth, 1 Seasonal Fish Steaks | Recipe item |
+
+</div>
 
 ## FAQ
 
@@ -183,5 +206,7 @@ You need a campfire from Cooking first. After you make a Basic Campfire with Coo
     No. Legacy Points come from skill 150, 225 and 300 in the 6 crafting professions.
 
 ## Sources
+
+Current as of 10 November 2026. The recipe data is from the game client, build 1.60.1.70862. [wowforevertalents.com](https://wowforevertalents.com/professions/fishing/) reads this data from the client. The client does not hold the skill that a trainer asks for, the prices, or the drop locations. The path and the recipe picks are Codex recommendations.
 
 - [wowforevertalents.com: Fishing recipes, read from the client](https://wowforevertalents.com/professions/fishing/)

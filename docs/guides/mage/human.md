@@ -7,13 +7,10 @@ tags:
 
 # Human Mage
 
-<div class="guide-head" data-class="mage" markdown>
+:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="mage" }
 
-:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Mage progression](index.md). This page gives only the changes when your Mage is a Human.</p>
-
-</div>
+Read with the [Mage progression](index.md). This page gives only the changes when your Mage is a Human.
 
 ## Why this combo
 

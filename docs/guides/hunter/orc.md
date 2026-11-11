@@ -7,13 +7,10 @@ tags:
 
 # Orc Hunter
 
-<div class="guide-head" data-class="hunter" markdown>
+:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="hunter" }
 
-:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Hunter progression](index.md).</p>
-
-</div>
+Read with the [Hunter progression](index.md).
 
 ## Why this combo
 

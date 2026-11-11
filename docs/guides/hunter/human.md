@@ -7,13 +7,10 @@ tags:
 
 # Human Hunter
 
-<div class="guide-head" data-class="hunter" markdown>
+:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Race</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps } [Data and sources](index.md#sources)
+{: .fc-meta data-class="hunter" }
 
-:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read this page with the [Hunter guide](index.md).</p>
-
-</div>
+Read this page with the [Hunter guide](index.md).
 
 ## Why this combo
 

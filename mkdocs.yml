@@ -20,7 +20,6 @@ theme:
   font: false
   icon:
     logo: codex/crest
-    repo: fontawesome/brands/github
   favicon: assets/favicon.svg
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -44,17 +43,14 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
-    - navigation.sections
     - navigation.path
     - navigation.prune
-    - navigation.top
     - navigation.indexes
     - navigation.footer
     - search.suggest
     - search.highlight
     - search.share
     - content.tabs.link
-    - content.action.edit
     - content.tooltips
     - content.footnote.tooltips
     - content.code.copy
@@ -72,10 +68,7 @@ extra_javascript:
   - javascripts/codex.js
 
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ChristianPresley/wow-forever
-      name: Source on GitHub
+  generator: false
 
 markdown_extensions:
   - admonition
@@ -154,16 +147,16 @@ nav:
       - guides/index.md
       - Druid:
           - guides/druid/index.md
-          - guides/druid/talents.md
-          - guides/druid/equipment.md
+          - Talents: guides/druid/talents.md
+          - Equipment: guides/druid/equipment.md
           - "Night Elf": guides/druid/night-elf.md
           - "Skyborne (High Order)": guides/druid/skyborne-high-order.md
           - "Tauren": guides/druid/tauren.md
           - "Skyborne (Windshaper)": guides/druid/skyborne-windshaper.md
       - Hunter:
           - guides/hunter/index.md
-          - guides/hunter/talents.md
-          - guides/hunter/equipment.md
+          - Talents: guides/hunter/talents.md
+          - Equipment: guides/hunter/equipment.md
           - "Human": guides/hunter/human.md
           - "Dwarf": guides/hunter/dwarf.md
           - "Night Elf": guides/hunter/night-elf.md
@@ -174,8 +167,8 @@ nav:
           - "Skyborne (Windshaper)": guides/hunter/skyborne-windshaper.md
       - Mage:
           - guides/mage/index.md
-          - guides/mage/talents.md
-          - guides/mage/equipment.md
+          - Talents: guides/mage/talents.md
+          - Equipment: guides/mage/equipment.md
           - "Human": guides/mage/human.md
           - "Gnome": guides/mage/gnome.md
           - "Skyborne (High Order)": guides/mage/skyborne-high-order.md
@@ -184,15 +177,15 @@ nav:
           - "Undead": guides/mage/undead.md
       - Paladin:
           - guides/paladin/index.md
-          - guides/paladin/talents.md
-          - guides/paladin/equipment.md
+          - Talents: guides/paladin/talents.md
+          - Equipment: guides/paladin/equipment.md
           - "Human": guides/paladin/human.md
           - "Dwarf": guides/paladin/dwarf.md
           - "Undead": guides/paladin/undead.md
       - Priest:
           - guides/priest/index.md
-          - guides/priest/talents.md
-          - guides/priest/equipment.md
+          - Talents: guides/priest/talents.md
+          - Equipment: guides/priest/equipment.md
           - "Human": guides/priest/human.md
           - "Dwarf": guides/priest/dwarf.md
           - "Gnome": guides/priest/gnome.md
@@ -201,8 +194,8 @@ nav:
           - "Undead": guides/priest/undead.md
       - Rogue:
           - guides/rogue/index.md
-          - guides/rogue/talents.md
-          - guides/rogue/equipment.md
+          - Talents: guides/rogue/talents.md
+          - Equipment: guides/rogue/equipment.md
           - "Human": guides/rogue/human.md
           - "Dwarf": guides/rogue/dwarf.md
           - "Gnome": guides/rogue/gnome.md
@@ -214,8 +207,8 @@ nav:
           - "Skyborne (Windshaper)": guides/rogue/skyborne-windshaper.md
       - Shaman:
           - guides/shaman/index.md
-          - guides/shaman/talents.md
-          - guides/shaman/equipment.md
+          - Talents: guides/shaman/talents.md
+          - Equipment: guides/shaman/equipment.md
           - "Dwarf": guides/shaman/dwarf.md
           - "Orc": guides/shaman/orc.md
           - "Troll": guides/shaman/troll.md
@@ -223,8 +216,8 @@ nav:
           - "Skyborne (Windshaper)": guides/shaman/skyborne-windshaper.md
       - Warlock:
           - guides/warlock/index.md
-          - guides/warlock/talents.md
-          - guides/warlock/equipment.md
+          - Talents: guides/warlock/talents.md
+          - Equipment: guides/warlock/equipment.md
           - "Human": guides/warlock/human.md
           - "Gnome": guides/warlock/gnome.md
           - "Orc": guides/warlock/orc.md
@@ -232,8 +225,8 @@ nav:
           - "Undead": guides/warlock/undead.md
       - Warrior:
           - guides/warrior/index.md
-          - guides/warrior/talents.md
-          - guides/warrior/equipment.md
+          - Talents: guides/warrior/talents.md
+          - Equipment: guides/warrior/equipment.md
           - "Human": guides/warrior/human.md
           - "Dwarf": guides/warrior/dwarf.md
           - "Gnome": guides/warrior/gnome.md

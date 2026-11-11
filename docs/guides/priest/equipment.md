@@ -2,24 +2,16 @@
 description: "Priest equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."
 tags:
   - Priest
+generated: true
+wide: true
 ---
 
 # Priest Equipment
 
 <!-- This page is generated. Edit tools/classes/guides/priest.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="priest" markdown>
-
-:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Equipment</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Priest progression](index.md). This page gives the full equipment data for each set.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#shadow">Shadow damage</a> <a href="#healer">Healer</a> <a href="#crafted">Tailoring and Enchanting</a> <a href="#enchants-and-consumables">Enchants</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
+:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Equipment</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="priest" }
 
 A Priest wears cloth for all 60 levels and cannot use shields or relics. The wand is the main weapon until Penance at level 30 or Shadowform at level 40. From level 40, dual spec lets you play 2 roles, so carry a healer set and a damage set.
 
@@ -29,11 +21,15 @@ No source compares a staff with a one-hand weapon and an off-hand item in number
 
 ## Equipment sets
 
+<div class="fc-stack" markdown>
+
 | Set | Use it for | Stat priority |
 |---|---|---|
 | [Shadow damage](#shadow) | The damage set from quests and dungeons. You look for Intellect and spell power, and for hit at level 60. Most item names come from the Shadow list of Timesaver.gg. | Leveling: Intellect and spell power > Stamina and Spirit > Armor. Level 60: Hit (to the cap) > Spell power or Shadow power > Crit > Intellect > Spirit |
 | [Healer](#healer) | The Holy and Discipline set from quests and dungeons. You look for healing power, Intellect, mana regeneration and Spirit. You need no hit. Most item names come from the Holy list of Timesaver.gg. | Leveling: Intellect and spell power > Stamina and Spirit > Armor. Level 60: Healing power > Intellect > MP5 (mana each 5 seconds) > Spirit > Crit |
 | [Tailoring and Enchanting](#crafted) | You make your own cloth, wands, staves and off-hand items. Use it if you have Tailoring and Enchanting. The client data gives the name and the skill of each item, but not its stats. | The same as the set for your role. Read the tooltip of each crafted item |
+
+</div>
 
 ## What a Priest can equip { #proficiencies }
 
@@ -106,7 +102,7 @@ Warcraft Tavern says that you keep the Gravestone Scepter to about level 37. Rep
 | Staff | **Crescent Staff** | Quest: *Leaders of the Fang*, Wailing Caverns (Horde) |
 | Staff | **Rod of the Sleepwalker** | Blackfathom Deeps |
 | Chest | **Robes of Arugal** | Shadowfang Keep |
-| Head | **Shadow Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Shadow Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new } |
 | Waist | **Tuskwrap Belt** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) |
 | Wand | **Wand of Eventide** | World drop: usable at level 27 (Warcraft Tavern) |
 | Wand | **Dancing Flame** | Quest: *Final Passage*. Method says level 26, in Arathi Highlands. Timesaver.gg says level 35, in Thousand Needles (Horde) |
@@ -138,7 +134,7 @@ Timesaver.gg selects these items for levels 40 to 49. The names are Classic name
 | Mace | **Galgann's Firehammer** | Uldaman |
 | Wand | **Dudd's Second-Favorite Wand** | Quest: *Partial Mystical Notes*, Stranglethorn Vale |
 | Wand | **Charged Lightning Rod** | Quest: *Ledger from Tanaris*, Searing Gorge |
-| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #shadow-l50 }
 
@@ -164,7 +160,7 @@ Most of these items are from the Shadow list of the Kami-Labs tool of 9 November
 | Shoulders | **Mantle of the Timbermaw** | [Tailoring](../../professions/tailoring.md), skill 290 |
 | Back | **Arcanoweave Cloak** | Vendor: Pix Xizzix, Stranglethorn Vale. 75 Tarnished Undermine Real |
 | Chest | **Robe of Winter Night** | [Tailoring](../../professions/tailoring.md), skill 245 |
-| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new } |
 | Hands | **Gloves of Spell Mastery** | [Tailoring](../../professions/tailoring.md), skill 295 |
 | Waist | **Belt of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295 |
 | Legs | **Skyshroud Leggings** | Lower Blackrock Spire |
@@ -172,7 +168,7 @@ Most of these items are from the Shadow list of the Kami-Labs tool of 9 November
 | Ring | **Don Mauricio's Band of Domination** | Scholomance |
 | Ring | **Watcher's Signet of Brilliance or Warden's Signet of Brilliance** | Reputation: The Watchers, a new faction. Revered or Exalted |
 | Trinket | **Draconic Infused Emblem** | Upper Blackrock Spire |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
 | Staff | **Ironbark Staff** | Reputation: League of Arathor, Exalted (Alliance) |
 | Wand | **Skul's Ghastly Touch** | Stratholme |
 
@@ -182,8 +178,8 @@ Timesaver.gg lists Torch of Light and Fel Cape for level 60. But the 2 recipes n
 
 | Slot | Item | Source |
 |---|---|---|
-| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Healer { #healer }
 
@@ -227,7 +223,7 @@ Replace the staff at level 20 and at level 25. Keep the Gravestone Scepter. The 
 | Staff | **Staff of Westfall** | Quest: *The Defias Brotherhood*, Westfall (Alliance) |
 | Staff | **Living Root** | Wailing Caverns |
 | Staff | **Odo's Ley Staff** | Shadowfang Keep |
-| Head | **Pristine Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Pristine Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new } |
 | Feet | **Rotmender's Treads** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) |
 
 ### Levels 30–39 { #healer-l30 }
@@ -255,7 +251,7 @@ From level 40 you carry this set for your healer spec. Timesaver.gg selects the 
 | Head | **Whitemane's Chapeau** | Scarlet Monastery, Cathedral |
 | Neck | **Triune Amulet** | Scarlet Monastery, Cathedral |
 | Hands | **Restorer's Fine Gloves** | Quest: a quest in Uldaman |
-| Wrist | **Nethergeld Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Nethergeld Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #healer-l50 }
 
@@ -288,8 +284,8 @@ Most of these items are from the Holy and Discipline list of the Kami-Labs tool 
 | Trinket | **Briarwood Reed** | Blackrock Spire |
 | Dagger | **Charstone Dirk** | Maraudon |
 | Off-hand | **Book of the Dead** | Stratholme |
-| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
-| Set | **Vestments of the Virtuous** | All sources: Dungeon Set 2. One source says that vendors sell it. The cost is not known **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new } |
+| Set | **Vestments of the Virtuous** | All sources: Dungeon Set 2. One source says that vendors sell it. The cost is not known **Not confirmed**{ .pill } |
 
 ### Raids and PvP { #healer-raid }
 
@@ -297,11 +293,11 @@ One source gives the healer Tier 1 set the name Vestments of Conviction. Tailori
 
 | Slot | Item | Source |
 |---|---|---|
-| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Gloves of Conviction or Handguards of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Mantle of Conviction or Pauldrons of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Leggings of Conviction or Pants of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Boots of Conviction or Treads of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
+| Hands | **Gloves of Conviction or Handguards of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Shoulders | **Mantle of Conviction or Pauldrons of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Leggings of Conviction or Pants of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Feet | **Boots of Conviction or Treads of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Tailoring and Enchanting { #crafted }
 
@@ -315,12 +311,12 @@ Enchanting makes a wand at skill 1. No source gives the level that the Novice's 
 
 | Slot | Item | Source |
 |---|---|---|
-| Wand | **Novice's Practice Wand** | [Enchanting](../../professions/enchanting.md), skill 1 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Novice's Practice Wand** | [Enchanting](../../professions/enchanting.md), skill 1 **New**{ .pill .pill--new } |
 | Wand | **Lesser Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: usable at level 5 |
 | Feet | **Simple Linen Boots** | [Tailoring](../../professions/tailoring.md), trainer recipe |
-| Wrist | **Azure Stormsewn Cuffs** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Azure Stormsewn Cord** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
-| Bag | **Linen Reagent Bag** | [Tailoring](../../professions/tailoring.md), skill 5 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Azure Stormsewn Cuffs** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new } |
+| Waist | **Azure Stormsewn Cord** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new } |
+| Bag | **Linen Reagent Bag** | [Tailoring](../../professions/tailoring.md), skill 5 **New**{ .pill .pill--new } |
 
 ### Levels 10–19 { #crafted-l10 }
 
@@ -329,12 +325,12 @@ Forever adds rare cloth items of item level 17 to 30 in 6 versions. Warcraft Tav
 | Slot | Item | Source |
 |---|---|---|
 | Wand | **Greater Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: usable at level 13 |
-| Waist | **Novice Arcanist's Sash** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Novice Ardent's Sash** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Shadow Boots or Pristine Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Shadow Gloves or Pristine Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm }: Kami-Labs says that the Shadow Gloves were usable from about level 20 in the beta |
-| Waist | **Shadow Sash or Pristine Sash** | [Tailoring](../../professions/tailoring.md), skill 85 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Filigreed Shadow Gown or Filigreed Pristine Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm }: the pattern drops in low level dungeons (Warcraft Tavern) |
+| Waist | **Novice Arcanist's Sash** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new } |
+| Waist | **Novice Ardent's Sash** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new } |
+| Feet | **Shadow Boots or Pristine Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new } |
+| Hands | **Shadow Gloves or Pristine Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new }: Kami-Labs says that the Shadow Gloves were usable from about level 20 in the beta |
+| Waist | **Shadow Sash or Pristine Sash** | [Tailoring](../../professions/tailoring.md), skill 85 **New**{ .pill .pill--new } |
+| Chest | **Filigreed Shadow Gown or Filigreed Pristine Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new }: the pattern drops in low level dungeons (Warcraft Tavern) |
 
 ### Levels 20–29 { #crafted-l20 }
 
@@ -342,11 +338,11 @@ The head, chest and leg items of the same 6 versions come at Tailoring 100 to 12
 
 | Slot | Item | Source |
 |---|---|---|
-| Head | **Shadow Circlet or Pristine Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Shadow Gown or Pristine Gown** | [Tailoring](../../professions/tailoring.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Shadow Leggings or Pristine Leggings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Staff | **Glimmering Staff or Soulstaff** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new .pill--sm } |
-| Off-hand | **Orb of Mystic Insight or Orb of Souls** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Shadow Circlet or Pristine Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new } |
+| Chest | **Shadow Gown or Pristine Gown** | [Tailoring](../../professions/tailoring.md), skill 110 **New**{ .pill .pill--new } |
+| Legs | **Shadow Leggings or Pristine Leggings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new } |
+| Staff | **Glimmering Staff or Soulstaff** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new } |
+| Off-hand | **Orb of Mystic Insight or Orb of Souls** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new } |
 | Wand | **Lesser Mystic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe |
 
 ### Levels 30–39 { #crafted-l30 }
@@ -356,9 +352,9 @@ Robe of Power is a trainer recipe. The Invoker items are new. The Slippers and t
 | Slot | Item | Source |
 |---|---|---|
 | Chest | **Robe of Power** | [Tailoring](../../professions/tailoring.md), trainer recipe |
-| Waist | **Invoker's Cord** | [Tailoring](../../professions/tailoring.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Invoker's Mantle** | [Tailoring](../../professions/tailoring.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Black Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new .pill--sm }: and 5 other versions |
+| Waist | **Invoker's Cord** | [Tailoring](../../professions/tailoring.md), skill 150 **New**{ .pill .pill--new } |
+| Shoulders | **Invoker's Mantle** | [Tailoring](../../professions/tailoring.md), skill 150 **New**{ .pill .pill--new } |
+| Feet | **Black Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new }: and 5 other versions |
 | Wand | **Greater Mystic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe |
 
 ### Levels 40–49 { #crafted-l40 }
@@ -367,13 +363,13 @@ Crafted items fill the levels where dungeons give few new items. Timesaver.gg se
 
 | Slot | Item | Source |
 |---|---|---|
-| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm }: Shadow |
-| Wrist | **Nethergeld Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm }: healer |
-| Shoulders | **Netherpearl Shoulders or Nethergeld Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Twisted Nether Wand** | [Enchanting](../../professions/enchanting.md), skill 185 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Dreambough Wand** | [Enchanting](../../professions/enchanting.md), skill 215 **New**{ .pill .pill--new .pill--sm } |
-| Staff | **Dreamstaff or Radiant Staff** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
-| Off-hand | **Truesilver Conduit or Twisting Essence Jar** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new }: Shadow |
+| Wrist | **Nethergeld Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new }: healer |
+| Shoulders | **Netherpearl Shoulders or Nethergeld Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new } |
+| Wand | **Twisted Nether Wand** | [Enchanting](../../professions/enchanting.md), skill 185 **New**{ .pill .pill--new } |
+| Wand | **Dreambough Wand** | [Enchanting](../../professions/enchanting.md), skill 215 **New**{ .pill .pill--new } |
+| Staff | **Dreamstaff or Radiant Staff** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
+| Off-hand | **Truesilver Conduit or Twisting Essence Jar** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #crafted-l50 }
 
@@ -381,13 +377,13 @@ The Eternal wands and the Heart of the Mountain trinkets are new in Forever. Eac
 
 | Slot | Item | Source |
 |---|---|---|
-| Wand | **Lesser Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 245 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Lesser Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 245 **New**{ .pill .pill--new } |
 | Chest | **Robe of Winter Night** | [Tailoring](../../professions/tailoring.md), skill 245 |
 | Head | **Felcloth Hood** | [Tailoring](../../professions/tailoring.md), skill 245 |
 | Waist | **Wisdom of the Timbermaw** | [Tailoring](../../professions/tailoring.md), skill 255: healer. Timesaver.gg lists it at level 60 |
-| Wrist | **Earthenweave Cuffs** | [Tailoring](../../professions/tailoring.md), skill 255 **New**{ .pill .pill--new .pill--sm } |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
-| Trinket | **Dormant Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Wrist | **Earthenweave Cuffs** | [Tailoring](../../professions/tailoring.md), skill 255 **New**{ .pill .pill--new } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
+| Trinket | **Dormant Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
 
 ### Level 60 { #crafted-l60 }
 
@@ -401,8 +397,8 @@ Before the raids open, make the Classic rare and epic items of Tailoring and the
 | Shoulders | **Mantle of the Timbermaw** | [Tailoring](../../professions/tailoring.md), skill 290: Shadow |
 | Hands | **Gloves of Spell Mastery** | [Tailoring](../../professions/tailoring.md), skill 295: Shadow |
 | Waist | **Belt of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295: Shadow |
-| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new } |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new } |
 
 ### Raids and PvP { #crafted-raid }
 
@@ -410,14 +406,16 @@ Tailoring makes items with the Tier 1 name Conviction for the hands, shoulders, 
 
 | Slot | Item | Source |
 |---|---|---|
-| Hands | **Gloves of Conviction or Handguards of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Mantle of Conviction or Pauldrons of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Legs | **Leggings of Conviction or Pants of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Boots of Conviction or Treads of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Hands | **Gloves of Conviction or Handguards of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Shoulders | **Mantle of Conviction or Pauldrons of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Legs | **Leggings of Conviction or Pants of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Feet | **Boots of Conviction or Treads of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Enchants and consumables
+
+<div class="fc-stack" markdown>
 
 | Slot | Enchant | Notes |
 |---|---|---|
@@ -444,7 +442,11 @@ Tailoring makes items with the Tier 1 name Conviction for the hands, shoulders, 
 | Raids | **Greater Fire Protection Potion** | For Onyxia's Lair. Alchemy 290 |
 | New, effect not known | **Mender's Potions, Cleric's Elixirs, Mageblood Elixirs** | New Alchemy recipes. No source gives the effects |
 
-## Sources
+</div>
+
+## Data and sources { #sources }
+
+The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
 
 - [Timesaver.gg: Priest leveling gear, Shadow](https://timesaver.gg/tools/wow-forever/leveling-gear/priest/shadow)
 - [Timesaver.gg: Priest leveling gear, Holy](https://timesaver.gg/tools/wow-forever/leveling-gear/priest/holy)
@@ -462,3 +464,4 @@ Tailoring makes items with the Tier 1 name Conviction for the hands, shoulders, 
 - [LFCarry: sets and crafted tier items](https://lfcarry.com/guides/wow-forever-bis-lists)
 - [RankedBoost: hit and spell power](https://rankedboost.com/world-of-warcraft/forever/stats/hit/)
 - [Blizzard: raid overview](https://news.blizzard.com/en-us/article/24303009/)
+- [Priest progression: data and sources](index.md#sources)

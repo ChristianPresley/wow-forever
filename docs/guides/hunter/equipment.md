@@ -2,24 +2,16 @@
 description: "Hunter equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."
 tags:
   - Hunter
+generated: true
+wide: true
 ---
 
 # Hunter Equipment
 
 <!-- This page is generated. Edit tools/classes/guides/hunter.yml, then run tools/classes/build.py. -->
 
-<div class="guide-head" data-class="hunter" markdown>
-
-:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Equipment</span> **DPS**{ .badge .dps }
-
-<p class="gh-note" markdown>Read with the [Hunter progression](index.md). This page gives the full equipment data for each set.</p>
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#ranged">Ranged: quests and dungeons</a> <a href="#crafted">Leatherworking and Engineering</a> <a href="#melee">Melee Survival</a> <a href="#enchants-and-consumables">Enchants</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
+:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Equipment</span> **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta data-class="hunter" }
 
 A Hunter wears leather to level 39 and can wear mail from level 40. The most important slot is the ranged weapon, because it sets the damage of Auto Shot and of all shots. For Beast Mastery and Marksmanship, the melee weapon gives stats only. For Survival, the melee weapon does damage.
 
@@ -27,11 +19,15 @@ About 40% of the items of Forever had hidden stats at launch. The stats of an it
 
 ## Equipment sets
 
+<div class="fc-stack" markdown>
+
 | Set | Use it for | Stat priority |
 |---|---|---|
 | [Ranged: quests and dungeons](#ranged) | The standard set for Beast Mastery and Marksmanship. You use the best ranged weapon from quests and dungeons, and a melee weapon for its stats only. The item names come from Timesaver.gg, Warcraft Tavern and Method.gg. | Leveling: Agility > Attack Power > Crit > Intellect > Stamina and Spirit (Warcraft Tavern, beta). Level 60: get hit first. No source has a tested ranking |
 | [Leatherworking and Engineering](#crafted) | You make your own armor, guns, scopes and ammunition. Use it if you have Leatherworking or Engineering, or if you buy from the Auction House. The client data gives the name and the skill of each item, but not its stats. | The same as the ranged set. Read the tooltip of each crafted item |
 | [Melee Survival](#melee) | The set for the Survival path. Your melee weapon now does damage, so its damage and its speed are important. You still carry a ranged weapon for the pull. No source compares a two-hand weapon with 2 one-hand weapons. | Leveling: Agility > Attack Power > Crit > Strength > Intellect > Stamina and Spirit (Warcraft Tavern, beta). No source has a ranking for level 60 |
+
+</div>
 
 ## What a Hunter can equip { #proficiencies }
 
@@ -160,10 +156,10 @@ No source has a hand-written item list for level 60. Timesaver.gg, Kami Labs and
 | Shoulders | **Theramore Epaulets** | Reputation: Theramore Expeditionary Force, Exalted (Alliance). A Kami Labs selection |
 | Legs | **Sentinel's Chain Leggings** | Vendor: Illiyana Moonblaze, Ashenvale (wowtbc.gg). The same list names Outrider's Mail Leggings with no source |
 | Ring | **Warden's Signet of Ferocity** | Reputation: The Watchers, Exalted (wowtbc.gg) |
-| Waist | **Marksman's Girdle** | Lower Blackrock Spire, Urok Doomhowl. A Kami Labs selection **Classic-era**{ .pill .pill--outline .pill--sm } |
-| Trinket | **Blackhand's Breadth** | Quest: *General Drakkisath's Demise* or *For The Horde!*. A Kami Labs selection **Classic-era**{ .pill .pill--outline .pill--sm } |
-| Back | **Cape of the Black Baron** | Stratholme, Baron Rivendare. A Kami Labs selection **Classic-era**{ .pill .pill--outline .pill--sm } |
-| Polearm | **Legionite Glaive** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm }: The melee weapon in 2 computed lists. A Merchant's Favor recipe |
+| Waist | **Marksman's Girdle** | Lower Blackrock Spire, Urok Doomhowl. A Kami Labs selection **Classic-era**{ .pill } |
+| Trinket | **Blackhand's Breadth** | Quest: *General Drakkisath's Demise* or *For The Horde!*. A Kami Labs selection **Classic-era**{ .pill } |
+| Back | **Cape of the Black Baron** | Stratholme, Baron Rivendare. A Kami Labs selection **Classic-era**{ .pill } |
+| Polearm | **Legionite Glaive** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new }: The melee weapon in 2 computed lists. A Merchant's Favor recipe |
 | Ranged | **Dark Iron Rifle** | [Engineering](../../professions/engineering.md), skill 275: The last weapon in the table of Method.gg |
 
 ### Raids and PvP { #ranged-raid }
@@ -172,8 +168,8 @@ The computed lists name different ranged weapons for level 60, and each has a pr
 
 | Slot | Item | Source |
 |---|---|---|
-| Ranged | **Hyper Deluxe Sniper Rifle Mk XVII** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Ranged | **Core Marksman Rifle** | [Engineering](../../professions/engineering.md), skill 300: No source confirms that you can make it before the raids **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Ranged | **Hyper Deluxe Sniper Rifle Mk XVII** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new } |
+| Ranged | **Core Marksman Rifle** | [Engineering](../../professions/engineering.md), skill 300: No source confirms that you can make it before the raids **Not confirmed**{ .pill } |
 
 ## Leatherworking and Engineering { #crafted }
 
@@ -199,11 +195,11 @@ Forever adds rare leather items from level 10. Method.gg says that they have muc
 
 | Slot | Item | Source |
 |---|---|---|
-| Feet | **Dark Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 35 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Trapper's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Trapper's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Trapper's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
-| Feet | **Trapper's Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 85 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Dark Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 35 **New**{ .pill .pill--new } |
+| Waist | **Trapper's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 60 **New**{ .pill .pill--new } |
+| Chest | **Trapper's Leather Armor** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new } |
+| Hands | **Trapper's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 75 **New**{ .pill .pill--new } |
+| Feet | **Trapper's Leather Boots** | [Leatherworking](../../professions/leatherworking.md), skill 85 **New**{ .pill .pill--new } |
 | Ranged | **Deadly Blunderbuss** | [Engineering](../../professions/engineering.md), trainer recipe |
 | Scope | **Crude Scope** | [Engineering](../../professions/engineering.md), trainer recipe |
 
@@ -213,15 +209,15 @@ The Trapper's set continues to skill 125. Warcraft Tavern also names the Brawler
 
 | Slot | Item | Source |
 |---|---|---|
-| Legs | **Trapper's Leather Pants** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
-| Chest | **Trapper's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Trapper's Leather Helm** | [Leatherworking](../../professions/leatherworking.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new .pill--sm }: A Merchant's Favor recipe |
+| Legs | **Trapper's Leather Pants** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new } |
+| Chest | **Trapper's Leather Tunic** | [Leatherworking](../../professions/leatherworking.md), skill 110 **New**{ .pill .pill--new } |
+| Head | **Trapper's Leather Helm** | [Leatherworking](../../professions/leatherworking.md), skill 125 **New**{ .pill .pill--new } |
+| Head | **Brawler's Leather Hood** | [Leatherworking](../../professions/leatherworking.md), skill 100 **New**{ .pill .pill--new }: A Merchant's Favor recipe |
 | Ranged | **Lovingly Crafted Boomstick** | [Engineering](../../professions/engineering.md), skill 120 |
 | Ranged | **Moonsight Rifle** | [Engineering](../../professions/engineering.md), skill 145 |
 | Scope | **Standard Scope** | [Engineering](../../professions/engineering.md), trainer recipe |
 | Bag | **Heavy Quiver** | [Leatherworking](../../professions/leatherworking.md), trainer recipe |
-| Armor kit | **Forceful Medium Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 80 **New**{ .pill .pill--new .pill--sm } |
+| Armor kit | **Forceful Medium Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 80 **New**{ .pill .pill--new } |
 
 ### Levels 30–39 { #crafted-l30 }
 
@@ -229,13 +225,13 @@ Warcraft Tavern names the Stalker's Leather Belt for Hunters near level 30. The 
 
 | Slot | Item | Source |
 |---|---|---|
-| Waist | **Stalker's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Stalker's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Skirmisher's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Stalker's Leather Belt** | [Leatherworking](../../professions/leatherworking.md), skill 150 **New**{ .pill .pill--new } |
+| Hands | **Stalker's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new } |
+| Hands | **Skirmisher's Leather Gloves** | [Leatherworking](../../professions/leatherworking.md), skill 175 **New**{ .pill .pill--new } |
 | Scope | **Accurate Scope** | [Engineering](../../professions/engineering.md), skill 180 |
 | Ammunition | **Crafted Solid Shot** | [Engineering](../../professions/engineering.md), trainer recipe |
-| Polearm | **Steel Spear** | [Blacksmithing](../../professions/blacksmithing.md), skill 160 **New**{ .pill .pill--new .pill--sm } |
-| Armor kit | **Forceful Heavy Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 135 **New**{ .pill .pill--new .pill--sm } |
+| Polearm | **Steel Spear** | [Blacksmithing](../../professions/blacksmithing.md), skill 160 **New**{ .pill .pill--new } |
+| Armor kit | **Forceful Heavy Armor Kit** | [Leatherworking](../../professions/leatherworking.md), skill 135 **New**{ .pill .pill--new } |
 
 ### Levels 40–49 { #crafted-l40 }
 
@@ -243,10 +239,10 @@ Leatherworking makes new rare mail from skill 200. Engineering makes mail goggle
 
 | Slot | Item | Source |
 |---|---|---|
-| Feet | **Stalker's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Stalker's Mail Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new .pill--sm } |
-| Wrist | **Stalker's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new .pill--sm } |
-| Head | **Stuckbutton Goggles** | [Engineering](../../professions/engineering.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Stalker's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new } |
+| Shoulders | **Stalker's Mail Shoulders** | [Leatherworking](../../professions/leatherworking.md), skill 210 **New**{ .pill .pill--new } |
+| Wrist | **Stalker's Mail Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 225 **New**{ .pill .pill--new } |
+| Head | **Stuckbutton Goggles** | [Engineering](../../professions/engineering.md), skill 200 **New**{ .pill .pill--new } |
 | Ranged | **Mithril Heavy-bore Rifle** | [Engineering](../../professions/engineering.md), skill 220 |
 | Ranged | **Thorium Rifle** | [Engineering](../../professions/engineering.md), skill 260 |
 | Scope | **Sniper Scope** | [Engineering](../../professions/engineering.md), skill 240 |
@@ -261,12 +257,12 @@ Method.gg lists the Dark Iron Rifle at level 50. The Stalker's mail set continue
 | Slot | Item | Source |
 |---|---|---|
 | Ranged | **Dark Iron Rifle** | [Engineering](../../professions/engineering.md), skill 275 |
-| Feet | **Stalker's Mail Sabatons** | [Leatherworking](../../professions/leatherworking.md), skill 235 **New**{ .pill .pill--new .pill--sm } |
-| Hands | **Stalker's Mail Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm } |
-| Waist | **Stalker's Mail Belt** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new .pill--sm }: A Merchant's Favor recipe |
-| Chest | **Wildthorn Mail** | [Leatherworking](../../professions/leatherworking.md), skill 245 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Stalker's Mail Sabatons** | [Leatherworking](../../professions/leatherworking.md), skill 235 **New**{ .pill .pill--new } |
+| Hands | **Stalker's Mail Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new } |
+| Waist | **Stalker's Mail Belt** | [Leatherworking](../../professions/leatherworking.md), skill 250 **New**{ .pill .pill--new }: A Merchant's Favor recipe |
+| Chest | **Wildthorn Mail** | [Leatherworking](../../professions/leatherworking.md), skill 245 **New**{ .pill .pill--new } |
 | Hands | **Devilsaur Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 265 |
-| Polearm | **Thorium Poleaxe** | [Blacksmithing](../../professions/blacksmithing.md), skill 260 **New**{ .pill .pill--new .pill--sm } |
+| Polearm | **Thorium Poleaxe** | [Blacksmithing](../../professions/blacksmithing.md), skill 260 **New**{ .pill .pill--new } |
 | Ammunition | **Thorium Shells** | [Engineering](../../professions/engineering.md), skill 285 |
 
 ### Level 60 { #crafted-l60 }
@@ -278,14 +274,14 @@ Most items of the Timesaver.gg list for level 60 are crafted. Dawn Armor and the
 | Legs | **Devilsaur Leggings** | [Leatherworking](../../professions/leatherworking.md), skill 290 |
 | Wrist | **Spitfire Bracers** | [Leatherworking](../../professions/leatherworking.md), skill 300 |
 | Back | **Shifting Cloak** | [Leatherworking](../../professions/leatherworking.md), skill 300 |
-| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm }: It needs Fel Leather **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Head | **Black Dragonscale Helm** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm }: It needs Fel Leather **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
-| Polearm | **Legionite Glaive** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm }: A Merchant's Favor recipe |
+| Chest | **Dawn Armor** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new }: It needs Fel Leather **Not confirmed**{ .pill } |
+| Head | **Black Dragonscale Helm** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new }: It needs Fel Leather **Not confirmed**{ .pill } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new } |
+| Polearm | **Legionite Glaive** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new }: A Merchant's Favor recipe |
 | Ranged | **Flawless Arcanite Rifle** | [Engineering](../../professions/engineering.md), skill 300 |
-| Scope | **SAF-T Ultra Precision Scope** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new .pill--sm }: No source gives the effect |
-| Ammunition | **Swiftfeather Arrow** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Ammunition | **Swiftstrike Shot** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Scope | **SAF-T Ultra Precision Scope** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new }: No source gives the effect |
+| Ammunition | **Swiftfeather Arrow** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new } |
+| Ammunition | **Swiftstrike Shot** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new } |
 
 ### Raids and PvP { #crafted-raid }
 
@@ -293,12 +289,12 @@ The new epic mail of Leatherworking needs Malleable Essence of Nature. Reportedl
 
 | Slot | Item | Source |
 |---|---|---|
-| Ranged | **Hyper Deluxe Sniper Rifle Mk XVII** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
-| Shoulders | **Wildstalker's Spaulders** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Hands | **Wildstalker's Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Legs | **Wildstalker's Legguards** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Feet | **Wildstalker's Greaves** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
-| Hands | **Mourning Handguards** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new .pill--sm }: wowtbc.gg lists it for Hunters |
+| Ranged | **Hyper Deluxe Sniper Rifle Mk XVII** | [Engineering](../../professions/engineering.md), skill 300 **New**{ .pill .pill--new } |
+| Shoulders | **Wildstalker's Spaulders** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Hands | **Wildstalker's Gauntlets** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Legs | **Wildstalker's Legguards** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Feet | **Wildstalker's Greaves** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new } **Not confirmed**{ .pill } |
+| Hands | **Mourning Handguards** | [Leatherworking](../../professions/leatherworking.md), skill 300 **New**{ .pill .pill--new }: wowtbc.gg lists it for Hunters |
 
 ## Melee Survival { #melee }
 
@@ -334,7 +330,7 @@ Polearms open at level 20. In Classic, a Hunter learns Dual Wield at level 20, b
 |---|---|---|
 | Melee | **Impaling Harpoon** | Deadmines, Captain Greenskin (Alliance) |
 | Staff | **Crescent Staff** | Quest: *Leaders of the Fang*, Wailing Caverns (Horde) |
-| Polearm | **Bronze Dory** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new .pill--sm } |
+| Polearm | **Bronze Dory** | [Blacksmithing](../../professions/blacksmithing.md), skill 95 **New**{ .pill .pill--new } |
 
 ### Levels 30–39 { #melee-l30 }
 
@@ -346,7 +342,7 @@ Strider Kick at level 30 does 100% of your melee weapon damage. The Drowned City
 | Polearm | **Felbough Arm** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Fel Ancient |
 | Polearm | **Harpoon of Command** | [The Drowned City](../../content/dungeons/drowned-city.md): Var'Taka, a probable drop. 35.7 DPS, +15 Stamina, +1% dodge, hit |
 | Ring | **Knucklebone Ring** | [The Drowned City](../../content/dungeons/drowned-city.md): A probable drop. +7 Stamina, +2 weapon damage |
-| Polearm | **Steel Spear** | [Blacksmithing](../../professions/blacksmithing.md), skill 160 **New**{ .pill .pill--new .pill--sm } |
+| Polearm | **Steel Spear** | [Blacksmithing](../../professions/blacksmithing.md), skill 160 **New**{ .pill .pill--new } |
 
 ### Levels 40–49 { #melee-l40 }
 
@@ -356,7 +352,7 @@ Mail opens at level 40, and it helps more in melee than at range. Krol'dok Stron
 |---|---|---|
 | Fist weapon | **Mugg's Jabber** | [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md): Overlord Mugg. No source gives the stats |
 | Fist weapon | **Mugg's Crosser** | [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md): Overlord Mugg. No source gives the stats |
-| Feet | **Stalker's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Stalker's Mail Boots** | [Leatherworking](../../professions/leatherworking.md), skill 200 **New**{ .pill .pill--new } |
 
 ### Levels 50–59 { #melee-l50 }
 
@@ -367,7 +363,7 @@ Blackmaw Hold gives a polearm and 2 fist weapons. Blacksmithing makes a rare pol
 | Polearm | **Tuskblade Halberd** | [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md): Bonesnout the Unbroken |
 | Fist weapon | **Bloody Claws of Attack** | [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md): Elder Shaman Bloodmane |
 | Fist weapon | **Great Bear Claw** | Quest: *Claws That Rend, Tusks That Gore*, Blackmaw Hold |
-| Polearm | **Thorium Poleaxe** | [Blacksmithing](../../professions/blacksmithing.md), skill 260 **New**{ .pill .pill--new .pill--sm } |
+| Polearm | **Thorium Poleaxe** | [Blacksmithing](../../professions/blacksmithing.md), skill 260 **New**{ .pill .pill--new } |
 
 ### Level 60 { #melee-l60 }
 
@@ -375,10 +371,10 @@ The computed lists select the Legionite Glaive for all specs. The wowtbc.gg list
 
 | Slot | Item | Source |
 |---|---|---|
-| Polearm | **Legionite Glaive** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm }: A Merchant's Favor recipe |
+| Polearm | **Legionite Glaive** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new }: A Merchant's Favor recipe |
 | Two-hand | **Beastslayer's Trident** | Quest: *Mapping the Way Forward* (Alliance). wowtbc.gg |
 | Two-hand | **Wildstaff** | Quest: *Da Voodoo* (Horde). wowtbc.gg |
-| Two-hand | **Arcanite Reaper** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Two-hand | **Arcanite Reaper** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **Not confirmed**{ .pill } |
 | One-hand | **Heartseeker** | [Blacksmithing](../../professions/blacksmithing.md), skill 300: wowtbc.gg |
 | Trinket | **Adaptive Combat Assistant** | Vendor: Pix Xizzix, Stranglethorn Vale. 125 Tarnished Undermine Real (Kami Labs) |
 
@@ -388,9 +384,11 @@ The epic sword of Blacksmithing needs Malleable Essence of Nature, so it becomes
 
 | Slot | Item | Source |
 |---|---|---|
-| One-hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| One-hand | **Ironwood Blade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 **New**{ .pill .pill--new } |
 
 ## Enchants and consumables
+
+<div class="fc-stack" markdown>
 
 | Slot | Enchant | Notes |
 |---|---|---|
@@ -417,7 +415,11 @@ The epic sword of Blacksmithing needs Malleable Essence of Nature, so it becomes
 | Raids | **Greater Fire Protection Potion** | For Onyxia's Lair |
 | Raids | **Mana potions** | Long fights use all your mana |
 
-## Sources
+</div>
+
+## Data and sources { #sources }
+
+The client data gives the name and the skill of each crafted item, but not its stats. A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.
 
 - [Warcraft Tavern: Hunter guide](https://warcrafttavern.com/forever/guides/hunter/)
 - [Warcraft Tavern: Hunter leveling](https://www.warcrafttavern.com/forever/guides/hunter-leveling/)
@@ -431,3 +433,4 @@ The epic sword of Blacksmithing needs Malleable Essence of Nature, so it becomes
 - [Kami Labs: computed item lists for level 60](https://kami-labs.fr/en/bis-list-wow-forever/)
 - [wowtbc.gg: Marksmanship Hunter item lists](https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/)
 - [ConquestCapped: The Drowned City guide](https://conquestcapped.com/guides/wow-forever/wow-forever-the-drowned-city-guide/)
+- [Hunter progression: data and sources](index.md#sources)

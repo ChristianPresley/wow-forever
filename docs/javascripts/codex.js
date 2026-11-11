@@ -49,8 +49,11 @@
     live.textContent = ""; setTimeout(function () { live.textContent = msg; }, 50);
   }
 
+  /* the search field shows "Ctrl K", or the Mac key (extra.css, section 4) */
+  var mac = /Mac|iPhone|iPad/.test(navigator.platform || "");
+  if (mac) document.documentElement.setAttribute("data-fc-mac", "");
+
   var narrow = window.matchMedia("(max-width: 59.984375em)"); /* below this Material moves the TOC into the drawer */
-  var phone = window.matchMedia("(max-width: 44.984375em)");
   var canPopover = typeof HTMLElement !== "undefined" && HTMLElement.prototype.hasOwnProperty("popover");
 
   /* ---------- keyboard shortcuts ---------- */
@@ -112,7 +115,6 @@
   }
   function openKeys() {
     if (!keysDialog) {
-      var mac = /Mac|iPhone|iPad/.test(navigator.platform || "");
       var mod = mac ? "⌘" : "Ctrl";
       var list = h("dl", { class: "fc-keys__list" });
       [
@@ -149,14 +151,14 @@
     if (b) { e.preventDefault(); openKeys(); }
   });
 
-  /* ---------- "On this page" jump menu (phones and tablets) ---------- */
+  /* ---------- "On this page" jump menu (phones and tablets): the one floating control ---------- */
   var otp; /* { wrap, button, current, panel, list, items:[{h, a}] } */
   function buildContents(root) {
     if (!canPopover) return;
     if (!otp) {
       var panel = h("div", { id: "fc-otp-panel", class: "fc-otp__panel md-typeset", popover: "auto", "aria-label": "On this page" });
       var current = h("span", { class: "fc-otp__current" });
-      var button = h("button", { type: "button", class: "fc-otp__button", popovertarget: "fc-otp-panel", "aria-haspopup": "true" }, [
+      var button = h("button", { type: "button", class: "fc-otp__button", popovertarget: "fc-otp-panel", "aria-haspopup": "true", "aria-label": "On this page" }, [
         h("span", { class: "fc-otp__label", text: "On this page" }), current
       ]);
       var list = h("ol", { class: "fc-otp__list" });
@@ -172,24 +174,29 @@
       panel.addEventListener("toggle", function (e) {
         button.setAttribute("aria-expanded", e.newState === "open" ? "true" : "false");
         if (e.newState === "open") {
-          var a = list.querySelector('[aria-current="location"]') || list.querySelector("a");
+          var a = list.querySelector('[aria-current="location"]') || list.querySelector("li:not(.fc-otp__top) a") || list.querySelector("a");
           if (a) { a.focus(); a.scrollIntoView({ block: "nearest" }); }
         }
       });
       panel.addEventListener("click", function (e) {
-        if (e.target.closest("a")) panel.hidePopover();
+        var a = e.target.closest("a");
+        if (!a) return;
+        panel.hidePopover();
+        if (a.getAttribute("href") === "#") { e.preventDefault(); window.scrollTo(0, 0); }
       });
       otp = { wrap: wrap, button: button, current: current, panel: panel, list: list, items: [] };
       window.addEventListener("scroll", onScroll, { passive: true });
     }
     otp.list.textContent = "";
     otp.items = [];
+    /* the first row goes to the top of the page: there is no second floating button for that */
+    otp.list.appendChild(h("li", { class: "fc-otp__top" }, [h("a", { href: "#", text: "Top of page" })]));
     var heads = root ? root.querySelectorAll("h2[id], h3[id]") : [];
     var h2s = 0;
     heads.forEach(function (hd) {
       if (hd.closest("details, .md-dialog, .fc-otp, .tabbed-block:not(:first-of-type)")) return;
       if (hd.tagName === "H2") h2s++;
-      var a = h("a", { href: "#" + hd.id, text: textOf(hd) });
+      var a = h("a", { href: "#" + hd.id, text: hd.getAttribute("data-label") || textOf(hd) });
       var li = h("li", { class: hd.tagName === "H3" ? "fc-otp__sub" : null }, [a]);
       otp.list.appendChild(li);
       otp.items.push({ h: hd, a: a });
@@ -212,15 +219,15 @@
       otp.items.forEach(function (it) {
         if (it === active) it.a.setAttribute("aria-current", "location"); else it.a.removeAttribute("aria-current");
       });
-      otp.current.textContent = active ? textOf(active.h) : "";
+      otp.current.textContent = active ? active.a.textContent : "";
+      otp.button.setAttribute("aria-label", "On this page" + (active ? ": " + active.a.textContent : ""));
+      otp.wrap.classList.toggle("fc-otp--compact", window.scrollY > 200);
     });
   }
-  /* Shown when the page has 3+ sections and no visible TOC sidebar: phones, and "hide: toc" pages */
+  /* Shown below 60em (no TOC column there) when the page has 3 or more sections. Never on desktop. */
   function placeContents() {
     if (!otp) return;
-    var side = document.querySelector(".md-sidebar--secondary");
-    var tocShown = !narrow.matches && side && !side.hidden && getComputedStyle(side).display !== "none";
-    otp.wrap.hidden = otp.h2s < 3 || !!tocShown;
+    otp.wrap.hidden = otp.h2s < 3 || !narrow.matches;
   }
   narrow.addEventListener && narrow.addEventListener("change", function () { placeContents(); onScroll(); });
   /* "t": open the jump menu on small screens, or focus the active TOC link on desktop */
@@ -232,10 +239,12 @@
     return false;
   }
 
-  /* ---------- copy link to section + arrival highlight ---------- */
+  /* ---------- copy link to section + arrival marker ---------- */
   function flash(id) {
     var t = id && document.getElementById(decodeURIComponent(id));
     if (!t || !/^H[1-6]$/.test(t.tagName)) return;
+    /* the marker is an animation only: reduced motion shows nothing */
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     t.classList.remove("fc-flash");
     void t.offsetWidth; /* restart the animation */
     t.classList.add("fc-flash");
@@ -274,6 +283,7 @@
       tracked.push({ id: id, el: el, set: setDone });
       setDone(!!state[id]);
     }
+    var updateBar = function () {};
     function commit(id, on) {
       if (on) state[id] = 1; else delete state[id];
       save(key, Object.keys(state).length ? state : null);
@@ -296,8 +306,8 @@
     root.querySelectorAll("table").forEach(function (table) {
       var ths = table.querySelectorAll("thead th");
       if (ths.length < 2 || !ROUTE_TABLE.test(textOf(ths[0])) || !ROUTE_COL.test(textOf(ths[1]))) return;
-      if (table.classList.contains("fc-route")) return;
-      table.classList.add("fc-route");
+      if (table.hasAttribute("data-fc-route")) return;
+      table.setAttribute("data-fc-route", ""); /* not a class: the table style is for a table with no class */
       ths[0].parentElement.insertBefore(h("th", { class: "fc-inject fc-route__check" }, [h("span", { class: "fc-sr-only", text: "Done" })]), ths[0]);
       table.querySelectorAll("tbody tr").forEach(function (tr) {
         var cells = tr.children;
@@ -317,7 +327,6 @@
     for (var n = lev && lev.nextElementSibling; n && n.tagName !== "H2"; n = n.nextElementSibling) {
       if (n.tagName === "H3" && n.id) brackets.push(n);
     }
-    root.querySelectorAll(".route > h3[id]").forEach(function (hd) { if (brackets.indexOf(hd) < 0) brackets.push(hd); });
     brackets.forEach(addSectionToggle);
     root.querySelectorAll(".steps > ol > li").forEach(function (li, i) {
       var label = textOf(li).slice(0, 80);
@@ -347,20 +356,8 @@
     }
 
     if (!tracked.length) return;
-    /* A small summary + reset, placed before the first tracked item's block */
-    var meter = h("progress", { max: String(tracked.length), value: "0", "aria-hidden": "true" });
     var count = h("span", { class: "fc-progress__count" });
     var reset = h("button", { type: "button", class: "fc-progress__reset", text: "Clear ticks" });
-    var bar = h("div", { class: "fc-inject fc-progress" }, [
-      h("span", { class: "fc-progress__label", text: "Your progress" }), meter, count, reset,
-      h("span", { class: "fc-progress__hint", text: "Saved in this browser only" })
-    ]);
-    function updateBar() {
-      var done = tracked.filter(function (t) { return state[t.id]; }).length;
-      meter.value = done;
-      count.textContent = done + " of " + tracked.length + " ticked";
-      reset.hidden = !done;
-    }
     reset.addEventListener("click", function () {
       if (!window.confirm("Clear all ticks on this page?")) return;
       state = {}; save(key, null);
@@ -368,13 +365,62 @@
       updateBar(); announce("Ticks cleared");
       count.tabIndex = -1; count.focus(); /* the reset button just hid itself */
     });
+    function doneCount() { return tracked.filter(function (t) { return state[t.id]; }).length; }
+
+    /* A class progression: each goals box shows its own count. The page total and the reset are in the pick bar. */
+    var goals = root.querySelectorAll(".fc-goals");
+    if (goals.length) {
+      var boxes = [];
+      goals.forEach(function (g) {
+        var title = g.querySelector(".fc-goals__title"), list = g.querySelector("ul");
+        if (!title || !list) return;
+        var n = h("span", { class: "fc-inject fc-goals__count" });
+        title.appendChild(n);
+        if (title.id) list.setAttribute("aria-labelledby", title.id);
+        /* the whole row is the target, not only the box */
+        list.addEventListener("click", function (e) {
+          var li = e.target.closest(".task-list-item");
+          if (!li || e.target.closest("a, input, label, abbr")) return;
+          var box = li.querySelector(".task-list-control > input");
+          if (box) box.click();
+        });
+        boxes.push({ list: list, n: n });
+      });
+      updateBar = function () {
+        boxes.forEach(function (b) {
+          var all = b.list.querySelectorAll(".task-list-control > input");
+          var on = b.list.querySelectorAll(".task-list-control > input:checked").length;
+          b.n.textContent = on + " of " + all.length;
+        });
+        var done = doneCount();
+        count.textContent = "Goals: " + done + " of " + tracked.length;
+        reset.hidden = !done;
+        if (bar) bar.done.textContent = "Goals " + done + "/" + tracked.length;
+      };
+      if (bar) bar.panel.appendChild(h("p", { class: "fc-pickbar__goals" }, [count, reset]));
+      updateBar();
+      return;
+    }
+
+    /* Other pages: a small summary + reset, placed before the first tracked item's block */
+    var meter = h("progress", { max: String(tracked.length), value: "0", "aria-hidden": "true" });
+    var summary = h("div", { class: "fc-inject fc-progress" }, [
+      h("span", { class: "fc-progress__label", text: "Your progress" }), meter, count, reset,
+      h("span", { class: "fc-progress__hint", text: "Saved in this browser only" })
+    ]);
+    updateBar = function () {
+      var done = doneCount();
+      meter.value = done;
+      count.textContent = done + " of " + tracked.length + " ticked";
+      reset.hidden = !done;
+    };
     var first = tracked.reduce(function (a, t) {
       return a.compareDocumentPosition(t.el) & Node.DOCUMENT_POSITION_PRECEDING ? t.el : a;
     }, tracked[0].el);
     var anchor = lev && root.contains(lev) && lev.compareDocumentPosition(first) & Node.DOCUMENT_POSITION_FOLLOWING ? lev : null;
     var block = anchor || first.closest("table, ul, ol, h3") || first;
     while (block.parentElement && block.parentElement !== root && !block.parentElement.classList.contains("tabbed-block")) block = block.parentElement;
-    if (anchor) anchor.insertAdjacentElement("afterend", bar); else block.insertAdjacentElement("beforebegin", bar);
+    if (anchor) anchor.insertAdjacentElement("afterend", summary); else block.insertAdjacentElement("beforebegin", summary);
     updateBar();
   }
 
@@ -535,64 +581,238 @@
     apply(false);
   }
 
-  /* ---------- combo switcher: collapsed on phones ---------- */
+  /* ---------- switcher of an add-on page: on a phone the chips are one row that scrolls ---------- */
   function initSwitcher(root) {
-    root.querySelectorAll("details.fc-switcher__box").forEach(function (d) {
-      if (!d.dataset.fcInit) {
-        d.dataset.fcInit = "1";
-        d.open = !phone.matches;
-      }
+    var cur = root.querySelector(".fc-switch__row > [aria-current]");
+    if (!cur) return;
+    var row = cur.parentNode;
+    if (row.scrollWidth > row.clientWidth) row.scrollLeft += cur.getBoundingClientRect().left - row.getBoundingClientRect().left - 32;
+  }
+
+  /* ---------- row-block tables (.fc-stack, .fc-talents, .infobox--row): CSS shows each row as a block or a grid, so the
+     table says its roles itself. In .fc-stack each cell gets the name of its column, which CSS shows before the text ---------- */
+  function initStackTables(root) {
+    root.querySelectorAll(".fc-talents table, .fc-stack table, .infobox--row table").forEach(function (t) {
+      var heads = t.tHead && t.closest(".fc-stack") ? Array.prototype.map.call(t.tHead.rows[0].cells, function (c) { return c.textContent.trim(); }) : [];
+      t.setAttribute("role", "table");
+      t.querySelectorAll("thead, tbody").forEach(function (g) { g.setAttribute("role", "rowgroup"); });
+      t.querySelectorAll("tr").forEach(function (r) { r.setAttribute("role", "row"); });
+      t.querySelectorAll("th").forEach(function (c) { c.setAttribute("role", "columnheader"); });
+      t.querySelectorAll("td").forEach(function (c) { c.setAttribute("role", "cell"); if (heads[c.cellIndex]) c.setAttribute("data-label", heads[c.cellIndex]); });
     });
   }
-  phone.addEventListener && phone.addEventListener("change", function () {
-    document.querySelectorAll("details.fc-switcher__box").forEach(function (d) { d.open = !phone.matches; });
-  });
 
-  /* ---------- class progressions: the add-on picker ---------- */
+  /* ---------- class progressions: the add-on picker and the sticky pick bar ---------- */
   /* The picker holds 3 radio groups (race, talents, gear). Each chapter of the page holds
      .fc-addon blocks with data-pick and data-value. window.fcPick (overrides/main.html) writes
-     the CSS that shows the picked blocks. The picks are saved per class and are in the URL. */
+     the CSS that shows the picked blocks. The picks are saved per class and are in the URL.
+     When the picker is above the viewport, the pick bar sticks below the header: it shows the picks,
+     opens a copy of the picker in place, and steps through the chapters. It exists only with JS. */
   var PICKS = ["race", "talents", "gear"];
+  var bar = null; /* the pick bar of the current page */
+
   function initPicker(root) {
     var P = window.fcPick;
     if (!P) return;
     var box = root.querySelector(".fc-pick");
-    if (!box) { P.paint(null); return; }
+    if (!box) { bar = null; P.paint(null); return; }
     var cls = box.getAttribute("data-class"), key = "fc:pick:" + cls;
     var state = P.read(cls);
     var all = box.querySelector("input[name=fc-all]");
+    var saved = load(key, {}) || {}; /* a value in the URL that is not an option does not replace the saved pick */
     PICKS.forEach(function (k) {
       var radios = Array.prototype.slice.call(box.querySelectorAll('input[name="fc-' + k + '"]'));
-      var hit = radios.filter(function (r) { return r.value === state[k]; })[0] || radios[0];
+      function find(v) { return radios.filter(function (r) { return r.value === v; })[0]; }
+      var hit = find(state[k]) || find(saved[k]) || radios[0];
       if (hit) { hit.checked = true; state[k] = hit.value; }
     });
     if (all) all.checked = !!state.all;
     P.paint(state);
     if (box.dataset.fcInit) return;
     box.dataset.fcInit = "1";
+    function names() {
+      return PICKS.map(function (k) {
+        var r = box.querySelector('input[name="fc-' + k + '"]:checked');
+        return r ? r.parentNode.textContent.trim() : "";
+      }).filter(Boolean);
+    }
     box.addEventListener("change", function (e) {
       var t = e.target;
       if (!t || !t.name) return;
       if (t.name === "fc-all") state.all = t.checked || undefined;
       else state[t.name.slice(3)] = t.value;
       save(key, state);
+      var keep = holdPlace(root, t.name.slice(3));
       P.paint(state);
+      keep();
       try {
         var q = new URLSearchParams(location.search);
         PICKS.forEach(function (k) { if (state[k]) q.set(k, state[k]); });
         history.replaceState(history.state, "", location.pathname + "?" + q.toString() + location.hash);
       } catch (err) { /* file: URLs */ }
-      var names = PICKS.map(function (k) {
-        var r = box.querySelector('input[name="fc-' + k + '"]:checked');
-        return r ? r.parentNode.textContent.trim() : "";
-      }).filter(Boolean).join(", ");
-      announce(state.all ? "All add-ons show" : "Add-ons: " + names);
+      if (bar) bar.sync();
+      announce(state.all ? "All add-ons show" : "Add-ons: " + names().join(", "));
     });
+    buildBar(root, box, names);
   }
 
-  /* ---------- scrollable tables become labelled, focusable regions ---------- */
+  /* A change of add-on changes the height of the text above the reader. Keep the first block in view where it is. */
+  function holdPlace(root, pick) {
+    var limit = bar && !bar.el.hidden ? bar.inner.getBoundingClientRect().bottom : 0;
+    function firstBelow(list) {
+      for (var i = 0; i < list.length; i++) {
+        var r = list[i].getBoundingClientRect();
+        if (r.height && r.bottom > limit) return list[i];
+      }
+      return null;
+    }
+    var el = firstBelow(root.children);
+    if (el && el.classList.contains("fc-addons")) {
+      var inner = firstBelow(el.children);
+      if (inner && inner.getAttribute("data-pick") !== pick) el = inner; /* a block of the changed type goes away: hold the group */
+    }
+    var top = el ? el.getBoundingClientRect().top : 0;
+    return function () {
+      var d = el ? el.getBoundingClientRect().top - top : 0;
+      if (Math.abs(d) > 1) window.scrollBy({ top: d, behavior: "instant" });
+    };
+  }
+
+  function buildBar(root, box, names) {
+    var chapters = Array.prototype.slice.call(root.querySelectorAll("h2.fc-ch[id]"));
+    var picks = h("span", { class: "fc-pickbar__picks" });
+    var verb = h("span", { class: "fc-pickbar__verb", text: "Change" });
+    var button = h("button", { type: "button", class: "fc-pickbar__change", "aria-expanded": "false", "aria-controls": "fc-pickbar-panel" }, [
+      h("span", { class: "fc-sr-only", text: "Your add-ons: " }), picks, verb
+    ]);
+    var panel = h("div", { id: "fc-pickbar-panel", class: "fc-pickbar__panel", hidden: true, role: "group", "aria-label": box.getAttribute("aria-label") });
+    /* a copy of the picker: the same options, with other names and ids. A change goes to the picker itself. */
+    Array.prototype.forEach.call(box.children, function (c) { panel.appendChild(c.cloneNode(true)); });
+    panel.querySelectorAll("[id]").forEach(function (n) { n.id = "b" + n.id; });
+    panel.querySelectorAll("[aria-labelledby]").forEach(function (n) { n.setAttribute("aria-labelledby", "b" + n.getAttribute("aria-labelledby")); });
+    panel.querySelectorAll("input").forEach(function (i) { i.name = "b" + i.name; });
+    function twin(input, from, prefix) {
+      return from.querySelector('input[name="' + prefix + '"]' + (input.type === "radio" ? '[value="' + input.value + '"]' : ""));
+    }
+    panel.addEventListener("change", function (e) {
+      var real = e.target.name ? twin(e.target, box, e.target.name.slice(1)) : null;
+      if (!real) return;
+      real.checked = e.target.checked;
+      real.dispatchEvent(new Event("change", { bubbles: true }));
+    });
+    var done = h("span", { class: "fc-pickbar__done" });
+    var prev = h("a", { class: "fc-pickbar__step", text: "‹" }), next = h("a", { class: "fc-pickbar__step", text: "›" });
+    var here = h("span", { class: "fc-pickbar__here" });
+    var inner = h("div", { class: "fc-pickbar__in" }, [button, panel, done, h("nav", { class: "fc-pickbar__nav", "aria-label": "Chapters" }, [prev, here, next])]);
+    var el = h("div", { class: "fc-inject fc-pickbar", hidden: true, role: "group", "aria-label": "Your add-ons and the chapters" }, [inner]);
+    root.insertBefore(el, root.firstChild);
+
+    function label(hd) { return hd.getAttribute("data-label") || textOf(hd); }
+    /* where the top of a heading stops when a link goes to it: the scroll padding of the page plus its scroll margin */
+    function landing(hd) {
+      if (!hd) return 0;
+      return (parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0) + (parseFloat(getComputedStyle(hd).scrollMarginTop) || 0);
+    }
+    /* the controls of the bar, or the links and controls of the text, that Tab can reach now */
+    function stops(node, inBar) {
+      return Array.prototype.filter.call(node.querySelectorAll("a[href], button, input, select, summary, [tabindex]"), function (n) {
+        return n.tabIndex >= 0 && !n.disabled && el.contains(n) === inBar && n.getClientRects().length;
+      });
+    }
+    function step(a, hd, word) {
+      if (hd) { a.setAttribute("href", "#" + hd.id); a.removeAttribute("aria-disabled"); a.setAttribute("aria-label", word + " chapter: " + label(hd)); }
+      else { a.removeAttribute("href"); a.setAttribute("aria-disabled", "true"); a.setAttribute("aria-label", word + " chapter: none"); }
+    }
+    bar = {
+      el: el, box: box, inner: inner, panel: panel, done: done, cur: -2,
+      sync: function () {
+        box.querySelectorAll("input").forEach(function (r) { var m = twin(r, panel, "b" + r.name); if (m) m.checked = r.checked; });
+        var allOn = box.querySelector("input[name=fc-all]");
+        picks.textContent = allOn && allOn.checked ? "All add-ons" : names().join(" · ");
+      },
+      open: function (on, focusBack) {
+        panel.hidden = !on;
+        button.setAttribute("aria-expanded", on ? "true" : "false");
+        verb.textContent = on ? "Close" : "Change";
+        if (!on && focusBack) button.focus({ preventScroll: true });
+      },
+      place: function () {
+        var head = document.querySelector(".md-header");
+        var top = head ? head.getBoundingClientRect().bottom : 0;
+        if (top !== bar.top) { bar.top = top; el.style.top = top + "px"; } /* the header is taller on a desktop */
+        var show = box.getBoundingClientRect().bottom < top;
+        if (el.hidden === show) {
+          if (!show && el.contains(document.activeElement)) {
+            var r = box.querySelector("input:checked") || box.querySelector("input");
+            if (r) r.focus({ preventScroll: true });
+          }
+          if (!show) bar.open(false);
+          el.hidden = !show;
+        }
+        if (!show) return;
+        /* the current chapter is the last one at or above the line where a chapter link lands (guides.css, section 13) */
+        var limit = landing(chapters[0]) + 8, cur = -1;
+        for (var i = 0; i < chapters.length; i++) { if (chapters[i].getBoundingClientRect().top < limit) cur = i; else break; }
+        if (cur === bar.cur) return;
+        bar.cur = cur;
+        here.textContent = cur < 0 ? "" : label(chapters[cur]).split(" · ")[0];
+        step(prev, chapters[cur - 1], "Previous");
+        step(next, chapters[cur + 1], "Next");
+      }
+    };
+    button.addEventListener("click", function () { bar.open(panel.hidden); });
+    /* The bar is the first element of the article, but the reader sees it at the place that they read. Tab from the
+       last control goes to the first link below the bar, and Shift+Tab from the first control to the last link above it. */
+    el.addEventListener("keydown", function (e) {
+      if (e.key !== "Tab" || e.altKey || e.ctrlKey || e.metaKey) return;
+      var own = stops(el, true), edge = inner.getBoundingClientRect().bottom, to = null;
+      if (document.activeElement !== own[e.shiftKey ? 0 : own.length - 1]) return;
+      var rest = stops(root, false);
+      if (e.shiftKey) { for (var i = rest.length - 1; i >= 0 && !to; i--) if (rest[i].getBoundingClientRect().bottom <= edge) to = rest[i]; }
+      else { for (var j = 0; j < rest.length && !to; j++) if (rest[j].getBoundingClientRect().top >= edge) to = rest[j]; }
+      if (!to) return;
+      e.preventDefault();
+      if (!panel.hidden) bar.open(false);
+      to.focus();
+    });
+    /* A chapter link goes to its chapter also when the URL has that hash already (navigation.tracking writes
+       the hash of the section in view, and Material sends a link to the current URL to the top of the page). */
+    root.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("a.fc-pickbar__step[href], .fc-next > a");
+      var t = a && a.hash && document.getElementById(a.hash.slice(1));
+      if (!t || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault(); e.stopPropagation();
+      if (location.hash === a.hash) t.scrollIntoView(); else location.hash = a.hash;
+    });
+    bar.sync();
+    bar.place();
+  }
+  var barTick = false;
+  function placeBar() {
+    if (barTick || !bar) return;
+    barTick = true;
+    requestAnimationFrame(function () { barTick = false; if (bar) bar.place(); });
+  }
+  window.addEventListener("scroll", placeBar, { passive: true });
+  window.addEventListener("resize", placeBar, { passive: true });
+  /* the open panel closes on Escape (focus goes back to the button) and on a press outside the bar */
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && bar && !bar.panel.hidden) bar.open(false, bar.el.contains(document.activeElement));
+  });
+  document.addEventListener("pointerdown", function (e) {
+    if (bar && !bar.panel.hidden && !bar.el.contains(e.target)) bar.open(false);
+  });
+  /* focus goes to a link that the bar covers (Shift+Tab up the page): move the page so that the link shows */
+  document.addEventListener("focusin", function (e) {
+    if (!bar || bar.el.hidden || !e.target.getBoundingClientRect || bar.el.contains(e.target) || !bar.el.parentNode.contains(e.target)) return;
+    var edge = bar.inner.getBoundingClientRect().bottom + 8, r = e.target.getBoundingClientRect();
+    if (r.height && r.top < edge && r.bottom > bar.top) window.scrollBy({ top: r.top - edge, behavior: "instant" });
+  });
+
+  /* ---------- tables: a wide table is a labelled, focusable region; a long table that fits keeps its header in view ---------- */
   function labelScrollers(root) {
     root.querySelectorAll(".md-typeset__scrollwrap").forEach(function (wrap) {
+      wrap.classList.remove("fc-sticky"); /* measure the table in its scrolling state */
       if (wrap.scrollWidth > wrap.clientWidth + 1) {
         var heading = null, el = wrap;
         while (el && !heading) {
@@ -609,8 +829,35 @@
         wrap.removeAttribute("tabindex");
         wrap.removeAttribute("role");
         wrap.removeAttribute("aria-label");
+        var table = wrap.querySelector("table");
+        var rows = table && table.tHead && table.tBodies[0] ? table.tBodies[0].rows.length : 0;
+        if (rows && (rows > 15 || wrap.closest(".fc-sticky")) && !wrap.closest(".infobox")) wrap.classList.add("fc-sticky");
       }
     });
+  }
+  /* a table can start or stop to fit when the window, a closed block or a tab changes */
+  var fitTimer;
+  function refit() {
+    clearTimeout(fitTimer);
+    fitTimer = setTimeout(function () { var root = content(); if (root) labelScrollers(root); }, 150);
+  }
+  window.addEventListener("resize", refit);
+  document.addEventListener("toggle", refit, true);
+  document.addEventListener("change", function (e) { if (e.target && e.target.closest && e.target.closest(".tabbed-set")) refit(); });
+
+  /* ---------- glossary: a row of letters that jump to the first term of each letter ---------- */
+  function initGlossary(root) {
+    var box = root.querySelector(".fc-glossary");
+    if (!box || box.querySelector(".fc-az")) return;
+    var links = [], seen = {};
+    box.querySelectorAll("dl > dt").forEach(function (dt) {
+      var c = dt.textContent.trim().charAt(0).toUpperCase();
+      if (!dt.id) dt.id = "term-" + slug(dt.textContent);
+      if (!/[A-Z]/.test(c) || seen[c]) return;
+      seen[c] = 1;
+      links.push(h("a", { class: "fc-chip", href: "#" + dt.id, "aria-label": "Terms that start with " + c, text: c }));
+    });
+    if (links.length > 3) box.insertBefore(h("nav", { class: "fc-inject fc-az", "aria-label": "Glossary, A to Z" }, links), box.firstChild);
   }
 
   /* ---------- glossary abbreviations: reachable by keyboard and touch ---------- */
@@ -630,7 +877,7 @@
   function onPage() {
     var root = content();
     if (!root) return;
-    var steps = [labelPermalinks, initPicker, initProgress,initFilter, initSwitcher, initAbbr, buildContents, labelScrollers];
+    var steps = [labelPermalinks, initPicker, initProgress,initFilter, initSwitcher, initStackTables, initAbbr, initGlossary, buildContents, labelScrollers];
     steps.forEach(function (fn) {
       try { fn(root); } catch (err) { if (window.console) console.error("codex.js:", fn.name, err); }
     });

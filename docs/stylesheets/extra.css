@@ -19,12 +19,19 @@
   /* spacing (1rem = 20px in Material) */
   --fc-space-1: .2rem; --fc-space-2: .4rem; --fc-space-3: .6rem; --fc-space-4: .8rem;
   --fc-space-5: 1.2rem; --fc-space-6: 1.6rem; --fc-space-7: 2.4rem;
-  --fc-radius: .3rem;
+  /* radii: tags and inputs, boxes and tables, clickable chips. 50% only for true circles */
+  --fc-radius-s: .2rem; --fc-radius: .3rem; --fc-radius-full: 999px;
+
+  /* type scale: 7 steps, fixed (no vw maths, so browser zoom works). Nothing is smaller than --fc-fs-xs.
+     xs: tags, chips, labels, captions, meta, sm: tables, callouts, boxes, body, lede, h3, h2, h1 */
+  --fc-fs-xs: .68rem; --fc-fs-sm: .75rem; --fc-fs-body: .8rem; --fc-fs-lede: .9rem;
+  --fc-fs-h3: 1.05rem; --fc-fs-h2: 1.35rem; --fc-fs-h1: 1.75rem;
 
   /* motion */
   --fc-dur-1: 100ms; --fc-dur-2: 200ms; --fc-dur-3: 300ms;
   --fc-ease: cubic-bezier(.2, 0, 0, 1);
 }
+@media (min-width: 60em) { :root { --fc-fs-body: .85rem; --fc-fs-lede: .95rem; --fc-fs-h1: 2rem; } }
 
 /* ---------- 2. Colour tokens: light -------------------------------- */
 [data-md-color-scheme="default"] {
@@ -44,7 +51,6 @@
   --fc-adm-danger: #a20519;   --fc-adm-danger-tint: #ffebe9;   --fc-adm-danger-text: #84171b;
   --fc-adm-neutral: #686f7b;  --fc-adm-neutral-tint: #eff0f3;  --fc-adm-neutral-text: #434851;
 
-  --fc-tank: #1364b0; --fc-heal: #2f751d; --fc-dps: #a43c33;
 
   --fc-c-warrior: #a43c33; --fc-c-warrior-t: #ffebe8;
   --fc-c-hunter: #8d5400;  --fc-c-hunter-t: #ffeddc;
@@ -85,7 +91,7 @@
   --fc-text: #e5e3dd; --fc-text-muted: #afb4be; --fc-text-subtle: #9399a2;
   --fc-navy: #152237; --fc-navy-2: #1d2e49; --fc-navy-3: #0d1524;
   --fc-on-navy: #e5e3dd; --fc-on-navy-muted: #b0b8c5; --fc-gold-on-navy: #edc160;
-  --fc-link: #edc160; --fc-link-hover: #f6d78c;
+  --fc-link: #93b7ff; --fc-link-hover: #bcd2ff;
   --fc-gold: #e2b849; --fc-gold-text: #edc160; --fc-focus: #f1bf4e; --fc-mark: #544714;
 
   --fc-adm-info: #68b0f8;     --fc-adm-info-tint: #152331;     --fc-adm-info-text: #a8d2ff;
@@ -96,7 +102,6 @@
   --fc-adm-danger: #e06761;   --fc-adm-danger-tint: #321a18;   --fc-adm-danger-text: #ffbab3;
   --fc-adm-neutral: #a5abb6;  --fc-adm-neutral-tint: #202224;  --fc-adm-neutral-text: #caced5;
 
-  --fc-tank: #80bcff; --fc-heal: #8bcb7d; --fc-dps: #fe978a;
 
   --fc-c-warrior: #fe978a; --fc-c-warrior-t: #321c19;
   --fc-c-hunter: #eea659;  --fc-c-hunter-t: #2e1f10;
@@ -115,7 +120,7 @@
   --md-primary-bg-color: var(--fc-on-navy);
   --md-primary-bg-color--light: var(--fc-on-navy-muted);
   --md-accent-fg-color: var(--fc-link-hover);
-  --md-accent-fg-color--transparent: rgb(237 193 96 / .1);
+  --md-accent-fg-color--transparent: rgb(147 183 255 / .1);
   --md-default-bg-color: var(--fc-bg);
   --md-default-bg-color--light: var(--fc-surface-1);
   --md-default-fg-color: var(--fc-text);
@@ -132,78 +137,159 @@
   --md-footer-bg-color--dark: var(--fc-navy-3);
 }
 
-/* ---------- 4. Chrome: header, tabs, sidebar, footer --------------- */
-.md-header { border-bottom: 1px solid rgb(226 184 73 / .35); }
-.md-header__topic:first-child, .md-header__title { font-family: var(--fc-display-font); font-weight: 700; font-size: 1rem; letter-spacing: .01em; }
-.md-tabs { border-bottom: 1px solid rgb(226 184 73 / .2); }
-.md-tabs__link { opacity: 1; color: var(--fc-on-navy-muted); font-weight: 500; }
-.md-tabs__link--active, .md-tabs__item--active .md-tabs__link { color: var(--fc-gold-on-navy); font-weight: 650; }
-.md-tabs__link:hover { color: var(--fc-on-navy); }
-.md-nav__link--active { color: var(--fc-gold-text); font-weight: 600; }
-.md-nav__item--section > .md-nav__link { color: var(--fc-text); font-weight: 650; }
-.md-nav__title { color: var(--fc-text-muted); }
-.md-footer-meta { font-size: .65rem; }
-.md-copyright, .md-copyright__highlight { color: var(--md-footer-fg-color--light); }
-.md-typeset small { opacity: 1; color: var(--fc-text-muted); }
+/* ---------- 4. Chrome: header, search, tabs, sidebar, path, footer -- */
+/* One gold hairline under the whole chrome: under the tabs at rest, under the header when the tabs scroll away. */
+.md-header { box-shadow: none; }
+.md-header--shadow { box-shadow: 0 1px 0 rgb(226 184 73 / .35); }
+.md-header__button.md-logo { color: var(--fc-gold-on-navy); padding: .2rem .35rem; }  /* the header stays 2.4rem high */
+.md-header__button.md-logo svg { height: 1.55rem; }
+.md-nav__title .md-nav__button.md-logo { color: var(--fc-gold-text); }
+.md-header__topic:first-child, .md-header__title { font-family: var(--fc-display-font); font-weight: 700; font-size: var(--fc-fs-h3); }
+.md-skip { font-size: var(--fc-fs-xs); border-radius: var(--fc-radius-s); }
 
+/* search: the field shows its shortcut where a pointer and a keyboard are likely (codex.js sets data-fc-mac) */
+.md-search__form { border-radius: var(--fc-radius-s); }
+@media screen and (min-width: 60em) {
+  .md-search__inner { width: 15rem; }
+  .md-search__form::after { content: "Ctrl K"; position: absolute; right: var(--fc-space-2); top: 50%; translate: 0 -50%; padding: 0 .35em;
+    border: 1px solid currentColor; border-radius: var(--fc-radius-s); font: 500 var(--fc-fs-xs)/1.5 var(--md-text-font-family);
+    color: var(--fc-on-navy-muted); pointer-events: none; }
+  [data-fc-mac] .md-search__form::after { content: "\2318 K"; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__form::after { content: none; }
+}
+@media screen and (min-width: 60em) and (hover: none) { .md-search__form::after { content: none; } }
+
+/* tabs */
+.md-tabs { border-bottom: 1px solid rgb(226 184 73 / .35); }
+.md-tabs__link { height: 100%; margin-top: 0; align-items: center; opacity: 1; color: var(--fc-on-navy-muted); font-size: var(--fc-fs-xs); font-weight: 500; }  /* the link fills the bar */
+.md-tabs__item--active .md-tabs__link { color: var(--fc-gold-on-navy); font-weight: 600; }
+.md-tabs__link:hover { color: var(--fc-on-navy); }
 /* show top tabs from 960px so small laptops keep visible navigation */
 @media screen and (min-width: 60em) and (max-width: 76.234375em) {
   .md-tabs { display: block; }
   .md-tabs__item { padding-left: .5rem; padding-right: .5rem; }
-  .md-tabs__link { font-size: .65rem; }
 }
 
-/* announcement bar */
-.md-banner { background: var(--fc-navy-3); color: var(--fc-on-navy); border-bottom: 1px solid rgb(226 184 73 / .3); }
-.md-banner .md-banner__inner { font-size: .7rem; margin: .4rem auto; }
+/* the content starts close under the chrome: the sidebars and the path share one top edge */
+.md-main__inner { margin-top: 0; }
+.md-sidebar { padding-top: var(--fc-space-5); }
+.md-content__inner { padding-top: var(--fc-space-2); }
+.md-content__inner::before { content: none; }
+.md-content > .md-content__inner:first-child { padding-top: var(--fc-space-5); }
+/* a data page (front matter "wide: true", overrides/partials/content.html) gets a wider content column: it grows
+   to the right into the page margin, so the sidebar stays under the logo. Prose keeps its measure (section 5). */
+@media screen and (min-width: 76.25em) {
+  .md-main__inner:has(.fc-wide) { margin-left: calc(50% - 30.5rem); margin-right: 0; max-width: clamp(61rem, calc(50% + 29.5rem), 70rem); }
+}
+
+/* sidebar and table of contents. Gold marks the current page
+   (Material sets the link colour with 2 classes, so this rule needs 2). */
+.md-nav { font-size: var(--fc-fs-xs); }
+.md-nav__link { min-height: 1.2rem; align-items: center; }
+.md-nav__item .md-nav__link--active { color: var(--fc-gold-text); font-weight: 600; }
+.md-nav__title { color: var(--fc-text-muted); }
+/* the drawer: the path to the current page is gold too (Material makes it blue with 3 classes) */
+@media screen and (max-width: 76.234375em) { .md-nav--primary .md-nav__item--active > .md-nav__link { color: var(--fc-gold-text); font-weight: 600; } }
+@media screen and (min-width: 60em) {
+  /* "On this page" is a caps label with no box */
+  .md-nav--secondary .md-nav__title { position: static; display: flex; align-items: center; min-height: 1.2rem; background: none; box-shadow: none;
+    font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+}
+@media screen and (min-width: 76.25em) {
+  /* the section name over the sidebar is the same label; it is a link to the section page */
+  .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link { position: static; background: none; box-shadow: none;
+    font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+  .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link .md-nav__link:not(.md-nav__link--active) { color: var(--fc-text-muted); }
+  .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link .md-nav__link:not(.md-nav__link--active):hover { color: var(--fc-link-hover); }
+  /* an open group (the current class, the current dungeon list) hangs from a hairline */
+  .md-nav--primary .md-nav[data-md-level="2"] > .md-nav__list {
+    margin-left: var(--fc-space-1); padding-left: var(--fc-space-2); box-shadow: inset 1px 0 0 var(--fc-border); }
+  .md-nav--primary .md-nav__item--nested > .md-nav__toggle:checked ~ .md-nav__link { color: var(--fc-text); font-weight: 600; }
+  /* the current page: the gold bar that the table of contents uses (interactive.css) sits on that hairline */
+  .md-nav--primary a.md-nav__link--active { position: relative; }
+  .md-nav--primary a.md-nav__link--active::before { content: ""; position: absolute; left: calc(-1 * var(--fc-space-2)); top: .1em; bottom: .1em; width: 2px; background: var(--fc-gold); }
+}
+
+/* announcement bar: one line at each width, and none after its end date (overrides/main.html) */
+.md-banner { background: var(--fc-navy-3); color: var(--fc-on-navy); }
+[data-fc-noannounce] .md-banner { display: none; }
+.md-banner .md-banner__inner { font-size: var(--fc-fs-xs); margin: var(--fc-space-2) auto; }
 .md-banner a, .md-banner .md-typeset a { color: var(--fc-gold-on-navy); text-decoration: underline; text-underline-offset: .18em; }
 .md-banner a:hover, .md-banner .md-typeset a:hover { color: #f6d78c; }
 .md-banner :focus-visible { outline-color: var(--fc-gold-on-navy); }
-/* home: hide the floating edit button beside the hero */
-.md-content__inner:has(.fc-hero) > .md-content__button { display: none; }
+@media screen and (max-width: 44.984375em) { .fc-announce__more { display: none; } }
 
-/* breadcrumbs */
-.md-path { font-size: .65rem; }
-.md-path__link { color: var(--fc-text-muted); }
+/* breadcrumbs. Phones show one item: a back link to the parent */
+.md-path { padding-top: var(--fc-space-5); font-size: var(--fc-fs-xs); }
+.md-path__item:not(:first-child) { align-items: center; }
+.md-path__link { min-height: 1.2rem; color: var(--fc-text-muted); }
 @media screen and (max-width: 44.984375em) {
+  .md-path { padding-top: var(--fc-space-2); overflow: hidden; }
   .md-path__item:not(:last-child) { display: none; }
-  .md-path__item:last-child::before { content: "‹ "; }
-  .md-path { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .md-path__item:last-child { display: inline-flex; align-items: center; gap: var(--fc-space-1); max-width: 100%; }
+  .md-path__item:last-child::before { content: ""; flex: none; width: .8rem; height: .8rem; background-color: var(--fc-text-subtle);
+    -webkit-mask-image: var(--md-path-icon); mask-image: var(--md-path-icon); transform: scaleX(-1); }
+  .md-path__link { min-height: 1.6rem; min-width: 0; }
 }
 
-/* reading progress hairline (Chromium, Safari 26+) */
-@supports (animation-timeline: scroll()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .md-header::after { content: ""; position: absolute; inset: auto 0 -1px 0; height: 2px;
-      background: var(--fc-gold-on-navy); transform-origin: 0 50%;
-      animation: fc-progress linear both; animation-timeline: scroll(root block); }
-  }
-}
-@keyframes fc-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+/* article footer: tags, the date of the last change, the edit link (overrides/partials/source-file.html) */
+.md-typeset .fc-pagemeta { clear: both; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--fc-space-2) var(--fc-space-5);
+  margin-top: var(--fc-space-7); padding-top: var(--fc-space-3); border-top: 1px solid var(--fc-border); font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .fc-pagemeta .md-tags:not([hidden]) { display: flex; flex-wrap: wrap; align-items: center; gap: var(--fc-space-2); margin: 0; }
+.md-typeset .fc-pagemeta__label { font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.md-typeset .fc-pagemeta__line { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--fc-space-1) var(--fc-space-4); margin: 0; max-width: none; }
+.md-typeset .fc-pagemeta a.fc-edit { display: inline-flex; align-items: center; min-height: 1.5rem; color: var(--fc-text-muted); }
+.md-typeset .fc-pagemeta a.fc-edit:hover { color: var(--fc-link-hover); }
+
+/* footer: previous and next are two hairline cards on the page surface, then one navy bar */
+.md-footer { background: none; color: var(--fc-text); }
+.md-footer__inner:not([hidden]) { display: grid; grid-template-columns: 1fr 1fr; gap: var(--fc-space-3); padding: 0 .8rem var(--fc-space-5); overflow: visible; }
+.md-footer .md-footer__link { align-items: center; gap: var(--fc-space-3); min-width: 0; margin: 0; padding: var(--fc-space-3) var(--fc-space-4);
+  border: 1px solid var(--fc-border); border-radius: var(--fc-radius); color: var(--fc-text);
+  transition: border-color var(--fc-dur-1) var(--fc-ease); }
+.md-footer .md-footer__link:is(:hover, :focus) { opacity: 1; border-color: var(--fc-border-strong); }
+.md-footer .md-footer__link--next { grid-column: 2; }
+.md-footer .md-footer__title { display: block; flex: 1; min-width: 0; max-width: none; margin: 0; padding: 0; font-size: var(--fc-fs-body); font-weight: 600; line-height: 1.3; white-space: normal; }
+.md-footer__title .md-ellipsis { white-space: normal; }
+.md-footer__direction { display: block; font-size: var(--fc-fs-xs); font-weight: 400; color: var(--fc-text-muted); opacity: 1; }
+.md-footer__button { flex: none; margin: 0; padding: 0; color: var(--fc-text-subtle); }
+.md-footer__button svg { display: block; width: 1rem; height: 1rem; }
+.md-footer-meta.md-typeset { border-top: 1px solid rgb(226 184 73 / .35); font-size: var(--fc-fs-xs); }
+.md-footer-meta__inner { align-items: center; gap: var(--fc-space-1) var(--fc-space-5); padding: var(--fc-space-2) .8rem; }
+.md-copyright { flex: 1 1 20rem; width: auto; margin: 0; padding: var(--fc-space-1) 0; font-size: inherit; }
+.md-copyright, .md-copyright__highlight { color: var(--md-footer-fg-color--light); }
+.md-footer-meta .fc-footer__source { display: inline-flex; align-items: center; min-height: 1.5rem; }
+.md-typeset small { opacity: 1; color: var(--fc-text-muted); }
 
 /* ---------- 5. Typography ------------------------------------------ */
 .md-typeset {
-  font-size: clamp(.85rem, .8rem + .15vw, .9rem);
+  font-size: var(--fc-fs-body);
   line-height: 1.6;
   font-optical-sizing: auto;
   text-wrap: pretty;
 }
-.md-typeset :is(p, li, dd, blockquote) { max-width: 72ch; }
-.md-typeset .grid :is(p, li), .md-typeset table :is(p, li), .md-typeset .fc-switcher p { max-width: none; }
-.md-typeset strong { font-weight: 650; }
+/* prose is about 70 characters wide, also on a wide page (34rem is the content column of a normal page) */
+.md-typeset :is(p, li, dd, blockquote) { max-width: 34rem; }
+.md-typeset .grid :is(p, li), .md-typeset table :is(p, li) { max-width: none; }
+.md-typeset strong { font-weight: 600; }
 
 .md-typeset :is(h1, h2, h3) { font-family: var(--fc-display-font); color: var(--fc-text); text-wrap: balance; letter-spacing: 0; }
-.md-typeset h1 { font-size: clamp(1.9em, 1.6em + 1.2vw, 2.4em); font-weight: 700; line-height: 1.1; margin: 0 0 .9em; }
-.md-typeset h1::after { content: ""; display: block; width: 3.5rem; height: 2px; margin-top: .35em;
-  background: linear-gradient(90deg, var(--fc-gold), transparent); }
-.md-typeset h2 { font-size: clamp(1.45em, 1.3em + .6vw, 1.7em); font-weight: 650; line-height: 1.2; margin: 2em 0 .6em; clear: both; }
-.md-typeset h3 { font-size: clamp(1.2em, 1.12em + .3vw, 1.3em); font-weight: 650; line-height: 1.25; margin: 1.6em 0 .5em; }
-.md-typeset h4 { font-size: 1em; font-weight: 650; margin: 1.4em 0 .4em; color: var(--fc-text); }
-.md-typeset :is(h5, h6) { font-size: .875em; font-weight: 650; font-variant-caps: all-small-caps; letter-spacing: .04em; color: var(--fc-text-muted); }
+.md-typeset h1 { font-size: var(--fc-fs-h1); font-weight: 700; line-height: 1.1; margin: 0 0 var(--fc-space-5); }
+/* the one ornament: a short gilt rule under the H1 */
+.md-typeset h1::after { content: ""; display: block; width: 2.5rem; height: 2px; margin-top: var(--fc-space-3); background: var(--fc-gold); }
+.md-typeset h2 { font-size: var(--fc-fs-h2); font-weight: 600; line-height: 1.2; margin: 2em 0 .6em; clear: both; }
+.md-typeset h3 { font-size: var(--fc-fs-h3); font-weight: 600; line-height: 1.25; margin: 1.6em 0 .5em; }
+.md-typeset h4 { font-size: 1em; font-weight: 600; margin: 1.4em 0 .4em; color: var(--fc-text); }
+.md-typeset :is(h5, h6) { font-size: var(--fc-fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--fc-text-muted); }
 [data-md-color-scheme="slate"] .md-typeset :is(h1, h2, h3) { font-weight: 600; }
 
-/* lede: first paragraph after the H1 */
-.md-content__inner > h1 + p { font-size: 1.08em; color: var(--fc-text); }
+/* lede: the first plain paragraph after the H1, the meta row or the alias line (not the text beside an infobox) */
+.md-content__inner > :is(h1, .fc-meta, .fc-aka) + p:not([class]) { font-size: var(--fc-fs-lede); color: var(--fc-text); }
+
+/* UI labels: one voice (Inter, caps) for the legends, kinds and captions of every component */
+.md-typeset :is(.fc-meta__kind, .fc-pick__legend, .fc-addon__kind, .fc-progress__label, .fc-filter legend, .fc-filter__race label,
+  .step-label, .fc-aka strong:first-child), .fc-otp__title {
+  font-family: var(--md-text-font-family); font-size: var(--fc-fs-xs); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--fc-text-muted); }
 
 /* links: always underlined in prose (WCAG 1.4.1) */
 .md-typeset a { color: var(--fc-link); text-decoration: underline;
@@ -213,6 +299,9 @@
 .md-typeset a:hover { color: var(--fc-link-hover); text-decoration-color: currentColor; }
 .md-typeset :is(.headerlink, .md-button, .fc-chip, .md-tag), .md-typeset .grid.cards a:last-child,
 .md-typeset .fc-hero a { text-decoration: none; }
+/* section permalink: quiet, also on the target heading */
+.md-typeset .headerlink, .md-typeset :target > .headerlink { color: var(--fc-text-subtle); }
+.md-typeset .headerlink:is(:hover, :focus) { color: var(--fc-link); }
 
 .md-typeset kbd { font-family: var(--md-code-font); }
 .md-typeset :is(em, span).unconfirmed { color: var(--fc-text-muted); font-style: italic; }
@@ -220,60 +309,121 @@
 /* ---------- 6. Focus ----------------------------------------------- */
 :where(a, button, input, summary, label, [tabindex]):focus-visible,
 .md-typeset a.focus-visible, .md-nav__link.focus-visible {
-  outline: 2px solid var(--fc-focus); outline-offset: 2px; border-radius: 2px; }
+  outline: 2px solid var(--fc-focus); outline-offset: 2px; }
 .md-header :focus-visible, .md-tabs :focus-visible, .md-header .focus-visible { outline-color: var(--fc-gold-on-navy); }
-html { scroll-padding-top: 4.4rem; }
+/* The sticky header covers 2.4rem: a focused element and a link target stop below it. A target gets a little air
+   (Material adds a margin for the header to a target; the padding does that work here). */
+html { scroll-padding-top: 2.4rem; }
+.md-typeset :target { --md-scroll-margin: 1.2rem; }
 
 /* ---------- 7. Tables ---------------------------------------------- */
+/* One table style and one header style. A column is as wide as its content (Material's 5rem minimum is off).
+   A numeric column is right-aligned in the Markdown source (---:). The table is a table box (Material makes it
+   an inline block that clips), so its border is the edge of its cells, and a header cell or a first column can stick. */
 .md-typeset table:not([class]) {
-  font-size: .75rem; line-height: 1.4;
+  display: table; overflow: visible;
+  font-size: var(--fc-fs-sm); line-height: 1.4;
   font-variant-numeric: tabular-nums lining-nums;
   border: 1px solid var(--fc-border); border-radius: var(--fc-radius); box-shadow: none;
+  background: none;  /* no own surface, so the fade of a wrapper that scrolls shows */
 }
-.md-typeset table:not([class]) :is(th, td) { padding: .55em .9em; vertical-align: top; }
+.md-typeset table:not([class]) :is(th, td) { min-width: 0; padding: .5em .7em; vertical-align: top; }
 .md-typeset table:not([class]) th {
-  background: var(--fc-surface-2); color: var(--fc-text); font-weight: 650; font-size: .95em;
-  border-bottom: 2px solid var(--fc-gold); white-space: nowrap; }
-.md-typeset table:not([class]) tbody tr:nth-child(even) { background: color-mix(in srgb, var(--fc-surface-1) 70%, transparent); }
+  background: var(--fc-surface-2); color: var(--fc-text); font-weight: 600; font-size: var(--fc-fs-xs);
+  border-bottom: 1px solid var(--fc-border-strong); white-space: nowrap; }
+.md-typeset table:not([class]) thead th:first-child { border-top-left-radius: var(--fc-radius); }
+.md-typeset table:not([class]) thead th:last-child { border-top-right-radius: var(--fc-radius); }
 .md-typeset table:not([class]) tbody tr:hover { background: var(--md-accent-fg-color--transparent); box-shadow: none; }
-.md-typeset table:not([class]) td:first-child { font-weight: 550; }
+.md-typeset table:not([class]) tbody tr:last-child td:first-child { border-bottom-left-radius: var(--fc-radius); }
+.md-typeset table:not([class]) tbody tr:last-child td:last-child { border-bottom-right-radius: var(--fc-radius); }
+.md-typeset table:not([class]) td:first-child:not([style*="right"]) { font-weight: 500; }
+.md-typeset table:not([class]) :is(th, td)[style*="right"] { white-space: nowrap; }
+.md-typeset .fc-na { color: var(--fc-text-subtle); }
 /* "| | |" key/value tables: hide the empty header */
 .md-typeset table:not([class]) thead:not(:has(th:not(:empty))) { display: none; }
+@media screen and (max-width: 44.984375em) { .md-typeset table:not([class]) th, .md-typeset table:not([class]) td { padding: .45em .5em; } }
 
-/* scroll affordance: shadows appear only where more content is hidden */
+/* Phones: a table with long text in 2 or more columns (.fc-stack), and the talent table (.fc-talents, guides.css),
+   show each row as a block, so no cell is a narrow strip. codex.js gives the table its roles again, because
+   "display" removes them, and writes the column name of each cell into data-label. */
+@media screen and (max-width: 44.984375em) {
+  .md-typeset .fc-stack .md-typeset__scrollwrap, .md-typeset .fc-stack .md-typeset__table, .md-typeset .fc-talents .md-typeset__scrollwrap, .md-typeset .fc-talents .md-typeset__table { display: block; margin-inline: 0; padding: 0; overflow: visible; background: none; }
+  .md-typeset :is(.fc-stack, .fc-talents) :is(table:not([class]), tbody) { display: block; }
+  .md-typeset :is(.fc-stack, .fc-talents) thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .md-typeset :is(.fc-stack, .fc-talents) tbody > tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--fc-space-1) var(--fc-space-3); padding: var(--fc-space-3); border-top: 1px solid var(--fc-border); }
+  .md-typeset :is(.fc-stack, .fc-talents) tbody > tr:first-child { border-top: 0; }
+  .md-typeset :is(.fc-stack, .fc-talents) table:not([class]) td { display: block; min-width: 0; padding: 0; border: 0; white-space: normal; }
+  .md-typeset :is(.fc-stack, .fc-talents) table:not([class]) td:empty { display: none; }
+  .md-typeset .fc-stack table:not([class]) td { grid-column: 1 / -1; }
+  .md-typeset .fc-stack td:not(:first-child)[data-label]::before { content: attr(data-label) ": "; content: attr(data-label) ": " / ""; font-weight: 600; color: var(--fc-text-muted); }
+}
+/* the header role that codex.js writes is not a sort control (Material gives that role a pointer and a sort icon) */
+.md-typeset :is(.fc-stack, .fc-talents) th[role="columnheader"] { cursor: auto; }
+.md-typeset :is(.fc-stack, .fc-talents) th[role="columnheader"]::after { content: none; }
+
+/* a table that is wider than the column scrolls sideways: a fade and a shadow show the hidden side */
 .md-typeset__scrollwrap {
   background:
     linear-gradient(to right, var(--fc-bg) 30%, transparent) left / 2rem 100% no-repeat local,
     linear-gradient(to left, var(--fc-bg) 30%, transparent) right / 2rem 100% no-repeat local,
-    radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / .22), transparent) left / .7rem 100% no-repeat scroll,
-    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / .22), transparent) right / .7rem 100% no-repeat scroll;
+    radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / .3), transparent) left / 1rem 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / .3), transparent) right / 1rem 100% no-repeat scroll;
   overscroll-behavior-x: contain;
 }
 [data-md-color-scheme="slate"] .md-typeset__scrollwrap {
   background:
     linear-gradient(to right, var(--fc-bg) 30%, transparent) left / 2rem 100% no-repeat local,
     linear-gradient(to left, var(--fc-bg) 30%, transparent) right / 2rem 100% no-repeat local,
-    radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / .6), transparent) left / .7rem 100% no-repeat scroll,
-    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / .6), transparent) right / .7rem 100% no-repeat scroll;
+    radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / .7), transparent) left / 1rem 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / .7), transparent) right / 1rem 100% no-repeat scroll;
+}
+/* a table that scrolls gets room for its text: without this the columns are as narrow as their longest word */
+.md-typeset .md-typeset__scrollwrap[role="region"] table:not([class]) { min-width: 38rem; }
+/* inside a box the wrapper has no own surface: no fade, no empty strip */
+.md-typeset :is(.infobox, .fc-addon, .admonition, details) .md-typeset__scrollwrap { background: none; }
+
+/* sticky header row: codex.js adds .fc-sticky to a table that fits its column and has more than 15 rows,
+   or that is in a .fc-sticky wrapper. --fc-sticky-top is the height of what sticks above it. */
+.md-typeset .md-typeset__scrollwrap.fc-sticky { overflow: visible; background: none; }
+.md-typeset .md-typeset__scrollwrap.fc-sticky thead th { position: sticky; top: var(--fc-sticky-top, 2.4rem); z-index: 2; }
+
+/* data tables (.fc-data, from the generators) use the full column. Each cell is one line, except the text
+   columns that data-prose names ("1 5"): those wrap, and on phones they keep a width that you can read. */
+.md-typeset .fc-data .md-typeset__table { min-width: 100%; }
+.md-typeset .fc-data table:not([class]) { width: 100%; }
+.md-typeset .fc-data td { white-space: nowrap; }
+.md-typeset :is(.fc-data[data-prose~="1"] td:nth-child(1), .fc-data[data-prose~="2"] td:nth-child(2), .fc-data[data-prose~="3"] td:nth-child(3),
+  .fc-data[data-prose~="4"] td:nth-child(4), .fc-data[data-prose~="5"] td:nth-child(5), .fc-data[data-prose~="6"] td:nth-child(6),
+  .fc-data[data-prose~="7"] td:nth-child(7)) { white-space: normal; min-width: var(--fc-prose-min, 0); }
+@media screen and (max-width: 44.984375em) {
+  .md-typeset .fc-data { --fc-prose-min: 11rem; }
+  .md-typeset .fc-data[data-prose~="1"] td:first-child { min-width: 6.5rem; }
 }
 
-/* compact comparison matrix with pinned first column */
-.md-typeset .fc-matrix table:not([class]) { font-size: .7rem; }
-.md-typeset .fc-matrix table:not([class]) :is(th, td) { min-width: 0; padding: .4em .5em; text-align: center; white-space: nowrap; vertical-align: middle; }
-.md-typeset .fc-matrix table:not([class]) :is(th, td):first-child {
-  position: sticky; left: 0; z-index: 1; text-align: left; white-space: normal; min-width: 7.5em;
-  background: var(--fc-bg); box-shadow: 1px 0 0 var(--fc-border); }
-.md-typeset .fc-matrix table:not([class]) th:first-child { background: var(--fc-surface-2); }
-.md-typeset .fc-matrix td a { display: inline-block; min-width: 1.6rem; padding: .1em .3em; border-radius: .2rem; font-weight: 650; }
+/* a table that scrolls sideways keeps its first column in view (codex.js marks the wrapper that scrolls) */
+.md-typeset :is(.fc-data, .fc-matrix, .compare) .md-typeset__scrollwrap[role="region"] :is(th, td):first-child {
+  position: sticky; left: 0; z-index: 1; background: var(--fc-bg); box-shadow: 1px 0 0 var(--fc-border); }
+.md-typeset :is(.fc-data, .fc-matrix, .compare) .md-typeset__scrollwrap[role="region"] th:first-child { background: var(--fc-surface-2); }
+
+/* compact comparison matrix */
+.md-typeset .fc-matrix table:not([class]) { font-size: var(--fc-fs-xs); }
+.md-typeset .fc-matrix table:not([class]) :is(th, td) { padding: .4em .5em; text-align: center; white-space: nowrap; vertical-align: middle; }
+.md-typeset .fc-matrix table:not([class]) :is(th, td):first-child { text-align: left; white-space: normal; min-width: 7.5em; }
+.md-typeset .fc-matrix td a { display: inline-block; min-width: 1.6rem; padding: 0 .3em; line-height: 1.2rem; border-radius: var(--fc-radius-s); font-weight: 600; }
 .md-typeset .fc-matrix td a:hover { background: var(--md-accent-fg-color--transparent); }
-.md-typeset .fc-matrix .fc-na { color: var(--fc-text-subtle); }
 .md-typeset .fc-matrix td { position: relative; }
-.md-typeset .fc-sr { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.md-typeset .fc-sr { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
 
 /* ---------- 8. Admonitions: 6 colour-blind-safe families ----------- */
-.md-typeset :is(.admonition, details) { font-size: .75rem; line-height: 1.55; border-width: 0 0 0 .2rem; border-radius: var(--fc-radius); box-shadow: none;
-  --a: var(--fc-adm-info); --t: var(--fc-adm-info-tint); --x: var(--fc-adm-info-text); border-color: var(--a); background: var(--fc-bg); }
-.md-typeset :is(.admonition, details) > :is(.admonition-title, summary) { background: var(--t); color: var(--x); font-weight: 650; }
+/* A hairline box with a faint family tint and a left bar. The title has no fill: its colour, the icon and the bar
+   are the same family. The icon and the title text tell the families apart without colour.
+   :not([hidden]) lifts the rule to Material's per-type specificity, so no Material colour leaks. */
+.md-typeset :is(.admonition, details):not([hidden]) { font-size: var(--fc-fs-sm); line-height: 1.55; box-shadow: none;
+  --a: var(--fc-adm-info); --t: var(--fc-adm-info-tint); --x: var(--fc-adm-info-text);
+  border: 1px solid var(--fc-border); border-left: .2rem solid var(--a);
+  border-radius: var(--fc-radius); background: color-mix(in srgb, var(--t) 40%, transparent); }
+.md-typeset :is(.admonition, details) > :is(.admonition-title, summary) { background: none; border-radius: 0; color: var(--x); font-weight: 600; }
+.md-typeset :is(.admonition, details) > .admonition-title, .md-typeset details[open] > summary { padding-bottom: 0; }
 .md-typeset :is(.admonition, details) > :is(.admonition-title, summary)::before { background-color: var(--a); }
 .md-typeset :is(.admonition, details):is(.abstract, .summary, .tldr, .forever) { --a: var(--fc-adm-summary); --t: var(--fc-adm-summary-tint); --x: var(--fc-adm-summary-text); }
 .md-typeset :is(.admonition, details):is(.question, .help, .faq, .example, .spoiler) { --a: var(--fc-adm-question); --t: var(--fc-adm-question-tint); --x: var(--fc-adm-question-text); }
@@ -302,8 +452,10 @@ html { scroll-padding-top: 4.4rem; }
 .md-typeset .hardcore > :is(.admonition-title, summary)::before { -webkit-mask-image: var(--md-admonition-icon--hardcore); mask-image: var(--md-admonition-icon--hardcore); }
 
 /* ---------- 9. Content tabs ---------------------------------------- */
+.md-typeset .tabbed-button { width: 1.2rem; height: 1.2rem; margin-top: 0; }
+.md-code__button { width: 1.2rem; height: 1.2rem; }
 .md-typeset .tabbed-labels { scroll-snap-type: x proximity; }
-.md-typeset .tabbed-labels > label { scroll-snap-align: start; font-weight: 600; }
+.md-typeset .tabbed-labels > label { scroll-snap-align: start; font-size: var(--fc-fs-xs); font-weight: 600; }
 .md-typeset .tabbed-set > input:checked + label, .md-typeset .tabbed-labels > label:hover { color: var(--fc-gold-text); }
 .md-typeset .tabbed-labels::before { background: var(--fc-gold); }
 @media screen and (max-width: 44.984375em) {
@@ -311,66 +463,105 @@ html { scroll-padding-top: 4.4rem; }
 }
 
 /* ---------- 10. Grid cards ----------------------------------------- */
-.md-typeset .grid.cards > :is(ul, ol) > li, .md-typeset .grid > .card {
-  border: 1px solid var(--fc-border); border-radius: var(--fc-radius); background: var(--fc-bg);
+/* A card is a hairline box with no shadow. Only a card that is one link lifts on hover. */
+.md-typeset .grid.cards > :is(ul, ol) > li {
+  border: 1px solid var(--fc-border); border-radius: var(--fc-radius); background: var(--fc-bg); box-shadow: none;
   transition: border-color var(--fc-dur-1) var(--fc-ease), box-shadow var(--fc-dur-2) var(--fc-ease); }
-.md-typeset .grid.cards > :is(ul, ol) > li:hover, .md-typeset .grid > .card:hover {
-  border-color: var(--fc-gold); box-shadow: 0 2px 10px rgb(15 24 40 / .12); }
+.md-typeset .grid.cards > :is(ul, ol) > li:is(:hover, :focus-within) { border-color: var(--fc-border); box-shadow: none; }
+.md-typeset .grid.cards:not(.fc-multi) > ul > li:is(:hover, :focus-within) { border-color: var(--fc-border-strong); box-shadow: 0 .3rem .8rem -.4rem rgb(15 24 40 / .35); }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > :is(ul, ol) > li { background: var(--fc-surface-1); }
-.md-typeset .grid.cards > :is(ul, ol) > li > hr { margin: .5em 0; }
-.md-typeset .grid.cards .lg { color: var(--fc-gold-text); }
+.md-typeset .grid.cards .lg { color: var(--fc-text-muted); }
+.md-typeset .grid.cards .lg.twemoji svg { stroke-width: 1.75; }
 /* whole card clickable when it has a single trailing link */
 .md-typeset .grid.cards:not(.fc-multi) > ul > li { position: relative; }
 .md-typeset .grid.cards:not(.fc-multi) > ul > li > p:last-child > a:last-child::after { content: ""; position: absolute; inset: 0; }
+/* no orphan card: 3, 5, 7 and 9 cards use 3 columns (the 7th card fills its row), 4 cards use 2 columns */
+@media screen and (min-width: 45em) {
+  .md-typeset .grid.cards:where(:has(> ul > li:nth-child(3):last-child), :has(> ul > li:nth-child(5):last-child), :has(> ul > li:nth-child(7):last-child), :has(> ul > li:nth-child(9):last-child)) {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .md-typeset .grid.cards > ul > li:nth-child(7):last-child { grid-column: 1 / -1; }
+  .md-typeset .grid.cards:where(:has(> ul > li:nth-child(4):last-child)) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* the home page has no sidebars: its 4 cards are one row */
+@media screen and (min-width: 60em) { .md-typeset .grid.cards.fc-start { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 
-/* ---------- 11. Chips & combo switcher ----------------------------- */
-.md-typeset .fc-chip {
-  display: inline-block; padding: .15em .7em; margin: .15em .1em; border-radius: 999px;
-  border: 1px solid var(--fc-border-strong); color: var(--fc-text); background: var(--fc-bg);
-  font-size: .68rem; font-weight: 550; line-height: 1.6; white-space: nowrap;
-  transition: border-color var(--fc-dur-1) var(--fc-ease), background-color var(--fc-dur-1) var(--fc-ease); }
-.md-typeset a.fc-chip:hover { border-color: var(--fc-link); color: var(--fc-link-hover); background: var(--md-accent-fg-color--transparent); }
-.md-typeset .fc-chip[aria-current="page"] { background: var(--fc-navy); color: var(--fc-on-navy); border-color: var(--fc-navy); font-weight: 700; }
-[data-md-color-scheme="slate"] .md-typeset .fc-chip[aria-current="page"] { background: var(--fc-gold); color: #11151c; border-color: var(--fc-gold); }
-.md-typeset .fc-chip--home { border-color: var(--fc-gold); color: var(--fc-gold-text); font-weight: 650; }
+/* ---------- 11. Shape tells function: chips and tags ---------------- */
+/* CHIP = something you can click (a link, a radio, a filter, a small button). Fully round, with hover,
+   focus and selected states. One size. */
+.md-typeset :is(.fc-chip, .gh-jump a, .fc-pick__opt > span, .fc-filter__opt label, .fc-filter select, .fc-done, a.md-tag),
+.fc-progress__reset, .fc-filter__reset {
+  display: inline-flex; align-items: center; gap: .35em; box-sizing: border-box; min-height: 1.5rem; padding: 0 .7rem;
+  border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius-full); background: var(--fc-bg); color: var(--fc-text);
+  font: 500 var(--fc-fs-xs)/1.2 var(--md-text-font-family); letter-spacing: 0; white-space: nowrap; text-decoration: none; cursor: pointer;
+  transition: border-color var(--fc-dur-1) var(--fc-ease), background-color var(--fc-dur-1) var(--fc-ease), color var(--fc-dur-1) var(--fc-ease); }
+.md-typeset :is(a.fc-chip, .gh-jump a, .fc-done, a.md-tag):hover, .md-typeset .fc-pick__opt:hover > span, .md-typeset .fc-filter__opt input:hover + label,
+:is(.fc-progress__reset, .fc-filter__reset):hover { border-color: var(--fc-link); color: var(--fc-link-hover); background: var(--md-accent-fg-color--transparent); }
+/* selected: navy fill (light), gold fill (dark) */
+.md-typeset .fc-chip[aria-current="page"], .md-typeset .fc-pick__opt > input:checked + span, .md-typeset .fc-filter__opt input:checked + label {
+  background: var(--fc-navy); color: var(--fc-on-navy); border-color: var(--fc-navy); font-weight: 600; }
+[data-md-color-scheme="slate"] .md-typeset :is(.fc-chip[aria-current="page"], .fc-pick__opt > input:checked + span, .fc-filter__opt input:checked + label) {
+  background: var(--fc-gold); color: #11151c; border-color: var(--fc-gold); }
+.md-typeset .fc-chip { margin: .15em .1em; vertical-align: middle; }
+/* a tag that is not a link is plain text: the name of a group on the Tags page is a heading, not a chip */
+.md-typeset span.md-tag { display: inline; margin: 0; padding: 0; border-radius: 0; background: none; font: inherit; letter-spacing: inherit; color: inherit; }
 
-.md-typeset .fc-switcher { margin: -.4em 0 1.4em; padding: .55em .8em; border: 1px solid var(--fc-border); border-radius: var(--fc-radius); background: var(--fc-surface-1); }
-.md-typeset .fc-switcher__row { margin: .15em 0; line-height: 2; }
-.md-typeset .fc-switcher__label { display: inline-block; min-width: 11.5em; margin-right: .4em; font-family: var(--fc-caps-font); font-size: .72rem; letter-spacing: .03em; color: var(--fc-text-muted); }
+/* TAG = a static label (role, status, level, points, alias). A small rectangle with no border and no hover.
+   Tone comes from --pt (fill) and --px (text); the default is neutral. One size. */
+.md-typeset :is(.badge, .pill, .lvl, .pts, .ability-type, .tt-new, .fc-alias, em.unconfirmed, em.fan-source) {
+  display: inline-flex; align-items: center; gap: .3em; padding: .1em .45em; border: 0; border-radius: var(--fc-radius-s);
+  background: var(--pt, var(--fc-surface-2)); color: var(--px, var(--fc-text-muted));
+  font: 600 var(--fc-fs-xs)/1.4 var(--md-text-font-family); letter-spacing: 0; text-transform: none; text-decoration: none;
+  max-width: 100%; vertical-align: .06em; font-variant-numeric: tabular-nums; }
+/* a long tag wraps in running text; in a table cell a tag is always one line */
+.md-typeset :is(td, th) :is(.badge, .pill, .lvl, .pts, .tt-new, .fc-alias, em.unconfirmed, em.fan-source) { white-space: nowrap; }
+.md-typeset :is(.pill--info, .pill--soon, .pill--alliance-tone, .badge.tank, .badge.official) { --p: var(--fc-adm-info); --pt: var(--fc-adm-info-tint); --px: var(--fc-adm-info-text); }
+.md-typeset :is(.pill--success, .pill--live, .pill--buff, .pill--fixed, .pill--easy, .badge.heal, .badge.done) { --p: var(--fc-adm-success); --pt: var(--fc-adm-success-tint); --px: var(--fc-adm-success-text); }
+.md-typeset :is(.pill--warning, .pill--changed, .pill--medium, .badge.fan) { --p: var(--fc-adm-warning); --pt: var(--fc-adm-warning-tint); --px: var(--fc-adm-warning-text); }
+.md-typeset :is(.pill--danger, .pill--nerf, .pill--removed, .pill--hard, .badge.dps) { --p: var(--fc-adm-danger); --pt: var(--fc-adm-danger-tint); --px: var(--fc-adm-danger-text); }
+.md-typeset :is(.pill--question, .pill--planned) { --p: var(--fc-adm-question); --pt: var(--fc-adm-question-tint); --px: var(--fc-adm-question-text); }
+.md-typeset :is(.pill--gold, .pill--new, .pill--official, .badge.new, .badge.stated, .tt-new) { --p: var(--fc-adm-summary); --pt: var(--fc-adm-summary-tint); --px: var(--fc-adm-summary-text); }
+.md-typeset :is(.pill--alliance, .badge.faction-a) { --p: var(--fc-alliance); --pt: color-mix(in srgb, var(--fc-alliance) 12%, var(--fc-bg)); --px: var(--fc-alliance); }
+.md-typeset :is(.pill--horde, .badge.faction-h) { --p: var(--fc-horde); --pt: color-mix(in srgb, var(--fc-horde) 12%, var(--fc-bg)); --px: var(--fc-horde); }
 
 /* ---------- 12. Game-wiki components -------------------------------- */
 /* infobox */
-.md-typeset .infobox { background: var(--fc-surface-1); border: 1px solid var(--fc-border); border-top: 3px solid var(--fc-gold);
-  border-radius: var(--fc-radius); padding: .6rem .8rem .4rem; margin: 0 0 1rem; font-size: .72rem; }
-@media screen and (min-width: 60em) { .md-typeset .infobox { float: right; width: 18rem; margin: .2rem 0 1rem 1.2rem; } }
-.md-typeset .infobox-title { margin: 0 0 .4rem; font-family: var(--fc-display-font); font-weight: 700; font-size: .95rem; text-align: center; color: var(--fc-gold-text); }
-.md-typeset .infobox .md-typeset__table { margin: 0; }
-.md-typeset .infobox table:not([class]) { font-size: inherit; border: 0; background: none; }
-.md-typeset .infobox table:not([class]) tbody tr:nth-child(even), .md-typeset .infobox table:not([class]) tbody tr:hover { background: none; }
-.md-typeset .infobox table:not([class]) td { padding: .35rem .3rem; border-top: 1px solid var(--fc-border); }
+.md-typeset .infobox { background: var(--fc-surface-1); border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius); padding: var(--fc-space-3) var(--fc-space-4); margin: 0 0 var(--fc-space-5); font-size: var(--fc-fs-sm); }
+@media screen and (min-width: 60em) { .md-typeset .infobox { float: right; width: 15rem; margin: var(--fc-space-1) 0 var(--fc-space-5) var(--fc-space-6); } }
+/* a first section that is a list can start beside the infobox, so there is no empty area. A wide block goes below it. */
+.md-typeset .infobox ~ h2:first-of-type:has(+ :is(ul, ol)) { clear: none; }
+/* that list is a plain block (Material makes each list a flow root), so its lines use the full width below the box */
+.md-typeset .infobox ~ h2:first-of-type + :is(ul, ol):not([hidden]) { display: block; }
+.md-typeset .infobox ~ :is(.md-typeset__scrollwrap, .fc-data, .compare, .fc-matrix, .grid, .specs, .tabbed-set) { clear: both; }
+.md-typeset .infobox-title { margin: 0 0 var(--fc-space-2); font-family: var(--fc-display-font); font-weight: 700; font-size: var(--fc-fs-h3); text-align: center; color: var(--fc-text); }
+.md-typeset .infobox :is(.md-typeset__scrollwrap, .md-typeset__table) { display: block; margin: 0; padding: 0; overflow: visible; }
+.md-typeset .infobox table:not([class]) { width: 100%; font-size: inherit; border: 0; background: none; }
+.md-typeset .infobox table:not([class]) tbody tr:hover { background: none; }
+.md-typeset .infobox table:not([class]) td { padding: .35rem .3rem; border-top: 1px solid var(--fc-border); overflow-wrap: anywhere; }
 .md-typeset .infobox table:not([class]) tr:first-child td { border-top: 0; }
-.md-typeset .infobox table:not([class]) td:first-child { white-space: nowrap; color: var(--fc-text-muted); font-weight: 650; }
+.md-typeset .infobox table:not([class]) td:first-child { width: 40%; overflow-wrap: normal; color: var(--fc-text-muted); font-weight: 600; }
+/* .infobox--row (the facts of a class progression): a box as wide as the text, with no float. From 45em the facts
+   are in 2 columns. codex.js gives the table its roles again, because "display" removes them. */
+@media screen and (min-width: 45em) {
+  .md-typeset .infobox.infobox--row { float: none; width: auto; margin: 0 0 var(--fc-space-5); }
+  .md-typeset .infobox--row .infobox-title { text-align: left; }
+  .md-typeset .infobox--row table:not([class]) { display: block; }
+  .md-typeset .infobox--row table:not([class]) tbody { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--fc-space-6); }
+  .md-typeset .infobox--row table:not([class]) tr { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); border-top: 1px solid var(--fc-border); }
+  .md-typeset .infobox--row table:not([class]) tr:nth-child(-n+2) { border-top: 0; }
+  .md-typeset .infobox--row table:not([class]) td { width: auto; border-top: 0; }
+}
 
-/* role badges */
-.md-typeset .badge { display: inline-flex; align-items: center; gap: .25em; padding: .05em .55em; border-radius: 1em;
-  font-size: .65rem; font-weight: 700; line-height: 1.6; letter-spacing: .02em; white-space: nowrap; vertical-align: .08em;
-  color: var(--fc-text); border: 1px solid var(--fc-border-strong); background: var(--fc-surface-1); }
-.md-typeset .badge.tank { color: var(--fc-tank); border-color: currentColor; }
-.md-typeset .badge.heal { color: var(--fc-heal); border-color: currentColor; }
-.md-typeset .badge.dps  { color: var(--fc-dps); border-color: currentColor; }
-.md-typeset .badge.new  { color: var(--fc-gold-text); border-color: var(--fc-gold); }
-
-/* letter tiers */
-.md-typeset .tier { display: inline-grid; place-items: center; min-width: 1.5em; height: 1.5em; padding: 0 .2em; border-radius: .25em;
-  font-weight: 800; font-size: .7rem; color: #fff; vertical-align: .05em; }
+/* letter tiers: the one filled tile */
+.md-typeset .tier { display: inline-grid; place-items: center; min-width: 1.5em; height: 1.5em; padding: 0 .2em; border-radius: var(--fc-radius-s);
+  font-weight: 700; font-size: var(--fc-fs-xs); color: #fff; vertical-align: .05em; }
 .md-typeset .tier-s { background: #e0b84a; color: #1b1405; }
 .md-typeset .tier-a { background: #2e6b43; } .md-typeset .tier-b { background: #2f5a94; }
 .md-typeset .tier-c { background: #5e4f80; } .md-typeset .tier-d { background: #7a3e2e; }
 
 /* star ratings: stars drawn in CSS, screen readers hear "4/5" */
-.md-typeset .stars { font-weight: 600; font-size: .85em; color: var(--fc-text-muted); white-space: nowrap; }
-.md-typeset .stars::before { font-size: 1.1em; letter-spacing: .04em; margin-right: .3em; color: var(--fc-gold); }
-.md-typeset .s0::before { content: "☆☆☆☆☆"; content: "☆☆☆☆☆" / ""; }
+.md-typeset .stars { font-weight: 600; font-size: var(--fc-fs-xs); color: var(--fc-text-muted); white-space: nowrap; }
+.md-typeset .stars::before { letter-spacing: .04em; margin-right: .3em; color: var(--fc-gold); }
 .md-typeset .s1::before { content: "★☆☆☆☆"; content: "★☆☆☆☆" / ""; }
 .md-typeset .s2::before { content: "★★☆☆☆"; content: "★★☆☆☆" / ""; }
 .md-typeset .s3::before { content: "★★★☆☆"; content: "★★★☆☆" / ""; }
@@ -383,31 +574,19 @@ html { scroll-padding-top: 4.4rem; }
 .md-typeset .steps > ol > li { counter-increment: step; position: relative; padding: 0 0 1rem 2.6rem; margin: 0; }
 .md-typeset .steps > ol > li::before { content: counter(step); position: absolute; left: 0; top: -.1rem; width: 1.8rem; height: 1.8rem;
   display: grid; place-items: center; border-radius: 50%; background: var(--fc-navy); color: var(--fc-on-navy);
-  font-weight: 700; font-size: .75rem; box-shadow: 0 0 0 2px var(--fc-gold); }
+  font-weight: 700; font-size: var(--fc-fs-sm); }
 .md-typeset .steps > ol > li:not(:last-child)::after { content: ""; position: absolute; left: .875rem; top: 1.9rem; bottom: .1rem; width: 2px; background: var(--fc-border); }
-.md-typeset .lvl { font-size: .65rem; font-weight: 700; padding: .05em .45em; margin-left: .3em; border-radius: .2em;
-  border: 1px solid var(--fc-gold); color: var(--fc-gold-text); white-space: nowrap; font-variant-numeric: tabular-nums; }
-
-/* talent milestones */
-.md-typeset .milestones dl { display: grid; grid-template-columns: 5.5rem 1fr; gap: .2rem .8rem; }
-.md-typeset .milestones dt { font-weight: 700; font-size: .72rem; color: var(--fc-gold-text); border-right: 2px solid var(--fc-gold); padding-right: .6rem; text-align: right; }
-.md-typeset .milestones dd { margin: 0 0 .5rem; }
-@media (max-width: 30em) { .md-typeset .milestones dl { grid-template-columns: 1fr; } .md-typeset .milestones dt { text-align: left; border-right: 0; } }
+.md-typeset .lvl { margin-left: .3em; }
 
 /* rotation priority */
 .md-typeset .priority > ol { counter-reset: p; list-style: none; padding: 0; margin-left: 0; }
 .md-typeset .priority > ol > li { counter-increment: p; position: relative; padding-left: 2rem; margin: .35rem 0; }
-.md-typeset .priority > ol > li::before { content: counter(p); position: absolute; left: 0; top: .1em; width: 1.4rem; line-height: 1.4; text-align: center; font-weight: 800; color: var(--fc-bg); background: var(--fc-adm-success); border-radius: .2rem; }
-
-/* inline spoiler */
-.md-typeset .spoiler-text { filter: blur(.3em); background: var(--fc-border); border-radius: .2em; cursor: pointer; transition: filter var(--fc-dur-2) var(--fc-ease); }
-.md-typeset .spoiler-text:hover, .md-typeset .spoiler-text:focus { filter: none; background: transparent; }
+.md-typeset .priority > ol > li::before { content: counter(p); position: absolute; left: 0; top: .1em; width: 1.4rem; line-height: 1.4; text-align: center; font-weight: 700; color: var(--fc-bg); background: var(--fc-adm-success); border-radius: var(--fc-radius-s); }
 
 /* faction & class identity accents (always paired with the name) */
-.md-typeset .fc-alliance { color: var(--fc-alliance); font-weight: 650; }
-.md-typeset .fc-horde { color: var(--fc-horde); font-weight: 650; }
-.md-typeset .fc-class-card > ul > li { border-top: 3px solid var(--c, var(--fc-gold)) !important; }
-.md-typeset .fc-class-card > ul > li .lg { color: var(--c, var(--fc-gold-text)); }
+.md-typeset .fc-alliance { color: var(--fc-alliance); font-weight: 600; }
+.md-typeset .fc-horde { color: var(--fc-horde); font-weight: 600; }
+.md-typeset .fc-class-card > ul > li .lg { color: var(--c, var(--fc-text-muted)); }
 .md-typeset [data-class="warrior"] { --c: var(--fc-c-warrior); } .md-typeset [data-class="hunter"] { --c: var(--fc-c-hunter); }
 .md-typeset [data-class="paladin"] { --c: var(--fc-c-paladin); } .md-typeset [data-class="druid"] { --c: var(--fc-c-druid); }
 .md-typeset [data-class="rogue"] { --c: var(--fc-c-rogue); } .md-typeset [data-class="shaman"] { --c: var(--fc-c-shaman); }
@@ -423,39 +602,40 @@ html { scroll-padding-top: 4.4rem; }
 .md-typeset .fc-class-card > ul > li:nth-child(8) { --c: var(--fc-c-warlock); }
 .md-typeset .fc-class-card > ul > li:nth-child(9) { --c: var(--fc-c-warrior); }
 
-/* ornamental divider: gilt diamond on a hairline */
-.md-typeset hr { border: 0; height: 1rem; margin: 2rem 0; background:
-  linear-gradient(90deg, transparent, var(--fc-gold) 20%, var(--fc-gold) 45%, transparent 45%, transparent 55%, var(--fc-gold) 55%, var(--fc-gold) 80%, transparent) center / 100% 1px no-repeat,
-  url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 1 15 8 8 15 1 8z" fill="%23d7aa42"/><path d="M8 5 11 8 8 11 5 8z" fill="%231b2a41"/></svg>') center / .9rem no-repeat; }
-.md-typeset .grid.cards hr { height: 1px; margin: .5em 0; background: var(--fc-border); }
+/* divider: a plain hairline */
+.md-typeset hr { border: 0; height: 1px; margin: var(--fc-space-7) 0; background: var(--fc-border); }
+.md-typeset .grid.cards hr { margin: var(--fc-space-2) 0; }
 
 /* ---------- 13. Home hero ------------------------------------------ */
-.md-typeset .fc-hero { position: relative; text-align: center; padding: 2.4rem 1.2rem 2rem; margin: 0 0 1.6rem;
-  border-radius: calc(var(--fc-radius) * 2); color: #e9e4d6; overflow: hidden;
-  background:
-    radial-gradient(60% 80% at 50% 0%, rgb(226 184 73 / .16), transparent 70%),
-    radial-gradient(120% 90% at 50% 0%, #2c4366 0%, #1b2a41 55%, #0f1828 100%);
-  border: 1px solid rgb(226 184 73 / .35); }
-.md-typeset .fc-hero::before { content: ""; position: absolute; inset: .5rem; border: 1px solid rgb(226 184 73 / .18); border-radius: var(--fc-radius); pointer-events: none; }
-.md-typeset .fc-hero h1 { color: #f6e7b8; margin: .2rem 0 .6rem; font-size: clamp(2.1em, 1.6em + 2.4vw, 3.1em); }
-.md-typeset .fc-hero h1::after { margin: .45em auto 0; width: 5rem; background: linear-gradient(90deg, transparent, #e2b849, transparent); }
+/* always dark and flat: one navy surface, the seal and the ridge (identity.css) */
+.md-typeset .fc-hero { position: relative; isolation: isolate; text-align: center; padding: var(--fc-space-5) var(--fc-space-4) 2.8rem; margin: 0 0 var(--fc-space-4);
+  border-radius: var(--fc-radius); color: #e9e4d6; overflow: hidden; background: #1b2a41; }
+.md-typeset .fc-hero h1 { color: #f6e7b8; margin: .1rem 0 .6rem; }
+.md-typeset .fc-hero h1::after { margin-inline: auto; background: #e2b849; }
+.md-typeset .fc-hero h1 .headerlink { display: none; } /* it moved the title off centre */
 .md-typeset .fc-hero p { max-width: 38rem; margin-inline: auto; color: #d9d5ca; }
-.md-typeset .fc-hero .fc-kicker { font-family: var(--fc-caps-font); letter-spacing: .12em; font-size: .8em; color: #e8be62; margin: 0; }
-.md-typeset .fc-hero .md-button { margin: .3rem .25rem; color: #f6e7b8; border-color: #e2b849; border-radius: 999px; }
-.md-typeset .fc-hero .md-button--primary { background: #e2b849; color: #11151c; border-color: #e2b849; }
-.md-typeset .fc-hero .md-button:hover { background: #f6d78c; color: #11151c; border-color: #f6d78c; }
-.md-typeset .fc-hero .md-button:focus-visible { outline-color: #f6d78c; }
-.md-typeset .fc-hero label.md-button { cursor: pointer; }
-
-/* sidebar links: meet WCAG 2.5.8 target size on desktop too */
-.md-nav__link { min-height: 1.2rem; align-items: center; }
+.md-typeset .fc-hero .fc-kicker { font-family: var(--fc-caps-font); letter-spacing: .04em; font-size: var(--fc-fs-sm); color: #e8be62; margin: 0 auto; }
+/* the hero leads with search: a label that looks like the search field and opens the site search */
+.md-typeset .fc-hero .fc-hero__find { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--fc-space-2) var(--fc-space-5); max-width: none; margin: var(--fc-space-4) auto 0; font-size: var(--fc-fs-sm); }
+.md-typeset .fc-hero__search { display: flex; align-items: center; gap: var(--fc-space-2); box-sizing: border-box; width: min(22rem, 100%); min-height: 2.2rem; padding: 0 var(--fc-space-4);
+  border: 1px solid rgb(226 184 73 / .45); border-radius: var(--fc-radius-s); background: rgb(13 21 36 / .6); color: #d9d5ca; text-align: left; cursor: pointer;
+  transition: border-color var(--fc-dur-1) var(--fc-ease); }
+.md-typeset .fc-hero__search::before { content: ""; flex: none; width: 1rem; height: 1rem; background: currentColor;
+  -webkit-mask: var(--fc-icon-search) center / contain no-repeat; mask: var(--fc-icon-search) center / contain no-repeat; }
+.md-typeset .fc-hero__search:hover { border-color: #e2b849; color: #f6e7b8; }
+.md-typeset .fc-hero .fc-hero__find a { color: #f6e7b8; text-decoration: underline; text-underline-offset: .18em; }
+.md-typeset .fc-hero .fc-hero__find a:hover { color: #f6d78c; }
+.md-typeset .fc-hero .fc-hero__find a:focus-visible { outline-color: #f6d78c; }
+:root { --fc-icon-search: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>'); }
+/* the trust note under the hero: one quiet line */
+.md-typeset .fc-note { max-width: none; margin: 0 0 var(--fc-space-5); font-size: var(--fc-fs-xs); color: var(--fc-text-muted); text-align: center; }
 
 /* ---------- 14. Touch targets on coarse pointers ------------------- */
 @media (pointer: coarse) {
   .md-nav__link { min-height: 2.2rem; align-items: center; margin-top: 0; padding-block: .45rem; }
   .md-nav__icon { inline-size: 2.2rem; block-size: 2.2rem; }
   .md-typeset .tabbed-labels > label { padding-block: .7rem; }
-  .md-typeset .fc-chip { padding: .4em .9em; }
+  .md-typeset :is(.fc-chip, .gh-jump a, .fc-pick__opt > span, .fc-filter__opt label, .fc-filter select, .fc-done), .fc-progress__reset, .fc-filter__reset { min-height: 2.2rem; }
   .md-typeset .fc-matrix td a { min-width: 2.2rem; line-height: 1.9rem; padding: 0; }
   .md-typeset .fc-matrix table:not([class]) :is(th, td) { padding-block: .15em; }
 }
@@ -470,15 +650,14 @@ html { scroll-padding-top: 4.4rem; }
   .md-typeset a { text-decoration-thickness: .12em; text-decoration-color: currentColor; }
 }
 @media (forced-colors: active) {
-  .md-typeset :is(.admonition, details) { border: 1px solid CanvasText; }
+  .md-typeset .admonition, .md-typeset details { border: 1px solid CanvasText; }
   .md-typeset :is(.admonition-title, summary)::before { background-color: CanvasText; forced-color-adjust: none; }
-  .md-typeset :is(.badge, .tier, .fc-chip, .lvl), .md-typeset table th { border: 1px solid CanvasText; }
-  .md-typeset .spoiler-text { filter: none; }
+  .md-typeset :is(.badge, .pill, .tier, .fc-chip, .lvl, .pts, .fc-alias), .md-typeset table th { border: 1px solid CanvasText; }
   :focus-visible { outline: 2px solid Highlight !important; }
   .md-header, .md-tabs { border-bottom: 1px solid CanvasText; }
 }
 @media print {
-  .fc-switcher, .md-banner, .md-path { display: none !important; }
+  .md-banner, .md-path, .fc-pagemeta .fc-edit { display: none !important; }
   .md-typeset .infobox { float: none; width: auto; }
 }
 
@@ -486,14 +665,8 @@ html { scroll-padding-top: 4.4rem; }
 .md-typeset ul.fc-taglist { list-style: none; margin-left: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .1rem .2rem; }
 .md-typeset ul.fc-taglist > li { margin: 0; }
 
-/* 404 page */
-.md-typeset .fc-404 { text-align: center; padding: 2rem 0 3rem; }
-.md-typeset .fc-404 h1::after { margin-inline: auto; }
-.md-typeset .fc-404 p { margin-inline: auto; }
-.md-typeset .fc-404__code { font-family: var(--fc-display-font); font-size: 4rem; line-height: 1; margin: 0; color: var(--fc-gold-text); opacity: .85; }
-
 /* buttons: readable in both schemes (hero keeps its own styling) */
-.md-typeset .md-button { color: var(--fc-link); border-color: currentColor; border-radius: 999px; }
+.md-typeset .md-button { color: var(--fc-link); border-color: currentColor; border-radius: var(--fc-radius-full); }
 .md-typeset .md-button:is(:hover, :focus-visible) { color: var(--fc-on-navy); background: var(--fc-navy-2); border-color: var(--fc-navy-2); }
 .md-typeset .md-button--primary { color: var(--fc-on-navy); background: var(--fc-navy); border-color: var(--fc-navy); }
 [data-md-color-scheme="slate"] .md-typeset .md-button--primary { color: #11151c; background: var(--fc-gold); border-color: var(--fc-gold); }

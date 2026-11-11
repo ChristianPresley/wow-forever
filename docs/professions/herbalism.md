@@ -4,24 +4,16 @@ tags:
   - Professions
 search:
   boost: 2
+generated: true
+wide: true
 ---
 
 # Herbalism Guide
 
 <!-- This page is generated. Edit tools/professions/guides/herbalism.yml, then run tools/professions/build.py. -->
 
-<div class="guide-head" markdown>
-
-:material-leaf:{ aria-hidden="true" } <span class="gh-kind">Profession guide</span> **Primary · Gathering**{ .badge }
-
-<nav class="gh-jump" aria-label="Jump to section"><a href="#new-in-forever">New</a> <a href="#level-1-to-300">1–300</a> <a href="#recipes-to-get">Recipes to get</a> <a href="#camp-features">Camp</a> <a href="#all-recipes">All recipes</a></nav>
-
-</div>
-
-!!! info "Current as of 10 November 2026"
-    The recipe data is from the game client, build 1.60.1.70862. [wowforevertalents.com](https://wowforevertalents.com/professions/herbalism/) reads this data from the client. The client does not hold the skill that a trainer asks for, the prices, or the drop locations. The path and the recipe picks are Codex recommendations.
-
-Herbalism is a primary gathering profession. You pick herbs from nodes in the world, and **Find Herbs** shows the nodes near you on the minimap. Alchemy uses most herbs, and in Forever the First Aid healing potions use herbs too. The launch client has only 3 Herbalism recipes, and all 3 are **camp features**.
+:material-leaf:{ aria-hidden="true" } <span class="fc-meta__kind">Profession guide</span> **Primary · Gathering**{ .badge } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
+{: .fc-meta }
 
 <aside class="infobox" markdown>
 <p class="infobox-title">Herbalism at a glance</p>
@@ -39,6 +31,8 @@ Herbalism is a primary gathering profession. You pick herbs from nodes in the wo
 | **From a recipe item** | 2 |
 
 </aside>
+
+Herbalism is a primary gathering profession. You pick herbs from nodes in the world, and **Find Herbs** shows the nodes near you on the minimap. Alchemy uses most herbs, and in Forever the First Aid healing potions use herbs too. The launch client has only 3 Herbalism recipes, and all 3 are **camp features**.
 
 ## New in Forever
 
@@ -62,10 +56,14 @@ The *Crafts* column is an estimate. A recipe always gives a skill point while it
 
 Start in the zone where your character starts. Turn on Find Herbs and pick each node that you see.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 1–50 | **Peacebloom and Silverleaf (skill 1), Earthroot (skill 15)** | — | — | — | Elwynn Forest, Dun Morogh, Teldrassil, Durotar, Mulgore, Tirisfal Glades (Classic-era value) | In Classic, Earthroot grows near cliffs and hills |
-| 50–75 | **Mageroyal (skill 50), Briarthorn (skill 70), Earthroot** | — | — | — | Westfall, Loch Modan, Darkshore, The Barrens, Silverpine Forest (Classic-era value) | In Classic, Briarthorn grows near trees. Mageroyal and Briarthorn nodes sometimes give Swiftthistle |
+|---|---|---:|---|---|---|---|
+| 1–50 | **Peacebloom and Silverleaf (skill 1), Earthroot (skill 15)** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Elwynn Forest, Dun Morogh, Teldrassil, Durotar, Mulgore, Tirisfal Glades (Classic-era value) | In Classic, Earthroot grows near cliffs and hills |
+| 50–75 | **Mageroyal (skill 50), Briarthorn (skill 70), Earthroot** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Westfall, Loch Modan, Darkshore, The Barrens, Silverpine Forest (Classic-era value) | In Classic, Briarthorn grows near trees. Mageroyal and Briarthorn nodes sometimes give Swiftthistle |
+
+</div>
 
 - At skill 50, train Journeyman at an Herbalism trainer. Without it, your skill stops at 75. In Classic, it needs level 10.
 - Incense Candle comes from a trainer, and it is yellow at skill 20. The client does not hold the exact trainer skill.
@@ -75,11 +73,15 @@ Start in the zone where your character starts. Turn on Find Herbs and pick each 
 
 Stay in the zones for levels 10 to 30. These are Classic-era levels. In Classic, Stranglekelp grows only in water near the coast.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 75–100 | **Briarthorn (skill 70), Mageroyal, Stranglekelp (skill 85)** | — | — | — | Westfall, Loch Modan, Darkshore, The Barrens, Silverpine Forest, Redridge Mountains (Classic-era value) |  |
-| 100–125 | **Bruiseweed (skill 100), Wild Steelbloom (skill 115), Grave Moss (skill 120)** | — | — | — | Ashenvale, Stonetalon Mountains, Hillsbrad Foothills, Wetlands, Duskwood (Classic-era value) | In Classic, Grave Moss grows only near graves |
-| 125–150 | **Kingsblood (skill 125), Wild Steelbloom, Grave Moss** | — | — | — | Wetlands, Hillsbrad Foothills, Ashenvale, Duskwood, Stonetalon Mountains (Classic-era value) |  |
+|---|---|---:|---|---|---|---|
+| 75–100 | **Briarthorn (skill 70), Mageroyal, Stranglekelp (skill 85)** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Westfall, Loch Modan, Darkshore, The Barrens, Silverpine Forest, Redridge Mountains (Classic-era value) |  |
+| 100–125 | **Bruiseweed (skill 100), Wild Steelbloom (skill 115), Grave Moss (skill 120)** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Ashenvale, Stonetalon Mountains, Hillsbrad Foothills, Wetlands, Duskwood (Classic-era value) | In Classic, Grave Moss grows only near graves |
+| 125–150 | **Kingsblood (skill 125), Wild Steelbloom, Grave Moss** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Wetlands, Hillsbrad Foothills, Ashenvale, Duskwood, Stonetalon Mountains (Classic-era value) |  |
+
+</div>
 
 - At skill 125, train Expert at an Herbalism trainer. Without it, your skill stops at 150. In Classic, it needs level 20.
 - At skill 140, you can learn Greenhouse from its recipe item. It is grey at 145 and gives few skill points.
@@ -89,11 +91,15 @@ Stay in the zones for levels 10 to 30. These are Classic-era levels. In Classic,
 
 Go to the zones for levels 20 to 50. These are Classic-era levels. In Classic, Liferoot grows near water.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 150–170 | **Liferoot (skill 150), Fadeleaf (skill 160), Kingsblood** | — | — | — | Wetlands, Arathi Highlands, Stranglethorn Vale, Swamp of Sorrows (Classic-era value) |  |
-| 170–205 | **Goldthorn (skill 170), Khadgar's Whisker (skill 185), Fadeleaf** | — | — | — | Arathi Highlands, Stranglethorn Vale, Alterac Mountains, Swamp of Sorrows, Dustwallow Marsh (Classic-era value) | In Classic, Wintersbite (skill 195) grows only in Alterac Mountains |
-| 205–225 | **Firebloom (skill 205), Purple Lotus (skill 210), Khadgar's Whisker** | — | — | — | Tanaris, Badlands, Searing Gorge, Feralas, The Hinterlands (Classic-era value) | Keep 1 Purple Lotus for the Greenhouse |
+|---|---|---:|---|---|---|---|
+| 150–170 | **Liferoot (skill 150), Fadeleaf (skill 160), Kingsblood** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Wetlands, Arathi Highlands, Stranglethorn Vale, Swamp of Sorrows (Classic-era value) |  |
+| 170–205 | **Goldthorn (skill 170), Khadgar's Whisker (skill 185), Fadeleaf** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Arathi Highlands, Stranglethorn Vale, Alterac Mountains, Swamp of Sorrows, Dustwallow Marsh (Classic-era value) | In Classic, Wintersbite (skill 195) grows only in Alterac Mountains |
+| 205–225 | **Firebloom (skill 205), Purple Lotus (skill 210), Khadgar's Whisker** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Tanaris, Badlands, Searing Gorge, Feralas, The Hinterlands (Classic-era value) | Keep 1 Purple Lotus for the Greenhouse |
+
+</div>
 
 - At skill 200, train Artisan at an Herbalism trainer. Without it, your skill stops at 225. In Classic, it needs level 35.
 - Riverglades is a new zone for levels 35 to 45. The wiki has no herb data for it.
@@ -102,12 +108,16 @@ Go to the zones for levels 20 to 50. These are Classic-era levels. In Classic, L
 
 Go to the zones for levels 35 to 60. These are Classic-era levels.
 
+<div class="fc-data" data-prose="2 4 6 7" markdown>
+
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
-|---|---|---|---|---|---|---|
-| 225–250 | **Arthas' Tears (skill 220), Sungrass (skill 230), Blindweed (skill 235), Purple Lotus** | — | — | — | Feralas, The Hinterlands, Swamp of Sorrows, Western Plaguelands, Azshara (Classic-era value) | Keep 1 Arthas' Tears for the Greenhouse. In Classic, Ghost Mushroom (skill 245) grows in caves |
-| 250–270 | **Gromsblood (skill 250), Golden Sansam (skill 260), Sungrass** | — | — | — | Felwood, Blasted Lands, Un'Goro Crater, Azshara, Burning Steppes (Classic-era value) |  |
-| 270–285 | **Dreamfoil (skill 270), Mountain Silversage (skill 280), Golden Sansam** | — | — | — | Un'Goro Crater, Azshara, Felwood, Burning Steppes, Western Plaguelands, Winterspring (Classic-era value) | Keep 4 Mountain Silversage for the Seed Hybridizer |
-| 285–300 | **Plaguebloom (skill 285), Icecap (skill 290), Dreamfoil, Mountain Silversage** | — | — | — | Eastern Plaguelands, Western Plaguelands, Felwood, Winterspring (Classic-era value) | Icecap grows only in Winterspring in Classic |
+|---|---|---:|---|---|---|---|
+| 225–250 | **Arthas' Tears (skill 220), Sungrass (skill 230), Blindweed (skill 235), Purple Lotus** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Feralas, The Hinterlands, Swamp of Sorrows, Western Plaguelands, Azshara (Classic-era value) | Keep 1 Arthas' Tears for the Greenhouse. In Classic, Ghost Mushroom (skill 245) grows in caves |
+| 250–270 | **Gromsblood (skill 250), Golden Sansam (skill 260), Sungrass** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Felwood, Blasted Lands, Un'Goro Crater, Azshara, Burning Steppes (Classic-era value) |  |
+| 270–285 | **Dreamfoil (skill 270), Mountain Silversage (skill 280), Golden Sansam** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Un'Goro Crater, Azshara, Felwood, Burning Steppes, Western Plaguelands, Winterspring (Classic-era value) | Keep 4 Mountain Silversage for the Seed Hybridizer |
+| 285–300 | **Plaguebloom (skill 285), Icecap (skill 290), Dreamfoil, Mountain Silversage** | <span class="fc-na">—</span> | <span class="fc-na">—</span> | <span class="fc-na">—</span> | Eastern Plaguelands, Western Plaguelands, Felwood, Winterspring (Classic-era value) | Icecap grows only in Winterspring in Classic |
+
+</div>
 
 - Mount Hyjal is a new zone for level 60. The wiki has no herb data for it.
 - In Classic, Black Lotus needs skill 300. It is not confirmed for Forever.
@@ -120,11 +130,15 @@ Herbalism has 3 recipes, and each one makes a camp feature. Each player can add 
 
 The wiki gives the effect of the Incense Candle only. Read the tooltip in the game for the other 2 features. Higher tiers include the features of the lower tiers.
 
+<div class="fc-data" data-prose="1 3 5" markdown>
+
 | Recipe | Learn | Reagents | Source | Why |
-|---|---|---|---|---|
-| **Incense Candle** | — | 1 Peacebloom, 1 Silverleaf | Trainer | Tier 1. It gives an Intellect buff at a camp. The buff does not stack with Arcane Intellect |
-| **Greenhouse** | 140 | 2 Simple Wood, 1 Arthas' Tears, 1 Purple Lotus | Recipe item | Tier 2. The client data does not give its effect |
-| **Seed Hybridizer** | 300 | 4 Mountain Silversage, 1 Crystal Vial, 2 Runecloth | Recipe item | Tier 3. The client data does not give its effect. It gives no skill points, because it is grey at 300 |
+|---|---:|---|---|---|
+| Incense Candle | <span class="fc-na">—</span> | 1 Peacebloom, 1 Silverleaf | Trainer | Tier 1. It gives an Intellect buff at a camp. The buff does not stack with Arcane Intellect |
+| Greenhouse | 140 | 2 Simple Wood, 1 Arthas' Tears, 1 Purple Lotus | Recipe item | Tier 2. The client data does not give its effect |
+| Seed Hybridizer | 300 | 4 Mountain Silversage, 1 Crystal Vial, 2 Runecloth | Recipe item | Tier 3. The client data does not give its effect. It gives no skill points, because it is grey at 300 |
+
+</div>
 
 ## Where recipes come from
 
@@ -134,11 +148,16 @@ A trainer teaches Incense Candle. The client does not hold the skill that the tr
 
 Herbalism makes these features for a [camp](../systems/camping.md). The camp page gives the effect of each feature.
 
+
+<div class="fc-data" data-prose="1 3" markdown>
+
 | Feature | Learn | Reagents | Source |
-|---|---|---|---|
-| **Incense Candle** | — | 1 Peacebloom, 1 Silverleaf | Trainer |
-| **Greenhouse** | 140 | 2 Simple Wood, 1 Arthas' Tears, 1 Purple Lotus | Recipe item |
-| **Seed Hybridizer** | 300 | 4 Mountain Silversage, 1 Crystal Vial, 2 Runecloth | Recipe item |
+|---|---:|---|---|
+| Incense Candle | <span class="fc-na">—</span> | 1 Peacebloom, 1 Silverleaf | Trainer |
+| Greenhouse | 140 | 2 Simple Wood, 1 Arthas' Tears, 1 Purple Lotus | Recipe item |
+| Seed Hybridizer | 300 | 4 Mountain Silversage, 1 Crystal Vial, 2 Runecloth | Recipe item |
+
+</div>
 
 To unlock camping, do the quest The Great Outdoors at about level 5. The quest asks you to learn Cooking and make a Basic Campfire. The camp buff lasts 1 hour. You get it when you sit or craft at a camp for 60 seconds. The Greenhouse lists Arthas' Tears and Purple Lotus as reagents. In Classic, these herbs need skill 220 and 210, but the recipe needs only skill 140. Buy these herbs, or make the Greenhouse later. The Greenhouse also needs Simple Wood. The Seed Hybridizer needs Mountain Silversage, a Crystal Vial and Runecloth. In Classic, trade supplies vendors sell Simple Wood and Star Wood. This is not confirmed for Forever. In Classic, vendors sell Crystal Vials, and humanoids of level 51 and above drop Runecloth. These sources are not confirmed for Forever.
 
@@ -159,15 +178,19 @@ To unlock camping, do the quest The Great Outdoors at about level 5. The quest a
 
 ## All recipes
 
-**Learn** is the skill that the client gives for the recipe. A dash shows a trainer recipe, because the client does not hold that skill. **Yellow** and **Grey** are the skills where the recipe changes colour. **Forever** shows a recipe that is new or changed from Classic Era.
+**Learn** is the skill that the client gives for the recipe. A dash shows a trainer recipe, because the client does not hold that skill. **Yellow** and **Grey** are the skills where the recipe changes colour. A **New** or **Changed** tag shows a recipe that is new or changed from Classic Era.
 
 ### Camping
 
-| Recipe | Learn | Yellow | Grey | Reagents | Source | Forever |
-|---|---|---|---|---|---|---|
-| **Incense Candle** | — | 20 | 25 | 1 Peacebloom, 1 Silverleaf | Trainer | New |
-| **Greenhouse** | 140 | 140 | 145 | 2 Simple Wood, 1 Arthas' Tears, 1 Purple Lotus | Recipe item | New |
-| **Seed Hybridizer** | 300 | 300 | 300 | 4 Mountain Silversage, 1 Crystal Vial, 2 Runecloth | Recipe item | New |
+<div class="fc-data" data-prose="1 5" markdown>
+
+| Recipe | Learn | Yellow | Grey | Reagents | Source |
+|---|---:|---:|---:|---|---|
+| Incense Candle **New**{ .pill .pill--new } | <span class="fc-na">—</span> | 20 | 25 | 1 Peacebloom, 1 Silverleaf | Trainer |
+| Greenhouse **New**{ .pill .pill--new } | 140 | 140 | 145 | 2 Simple Wood, 1 Arthas' Tears, 1 Purple Lotus | Recipe item |
+| Seed Hybridizer **New**{ .pill .pill--new } | 300 | 300 | 300 | 4 Mountain Silversage, 1 Crystal Vial, 2 Runecloth | Recipe item |
+
+</div>
 
 ## FAQ
 
@@ -190,5 +213,7 @@ To unlock camping, do the quest The Great Outdoors at about level 5. The quest a
     No. Legacy Points come from skill 150, 225 and 300 in the 6 crafting professions.
 
 ## Sources
+
+Current as of 10 November 2026. The recipe data is from the game client, build 1.60.1.70862. [wowforevertalents.com](https://wowforevertalents.com/professions/herbalism/) reads this data from the client. The client does not hold the skill that a trainer asks for, the prices, or the drop locations. The path and the recipe picks are Codex recommendations.
 
 - [wowforevertalents.com: Herbalism recipes, read from the client](https://wowforevertalents.com/professions/herbalism/)

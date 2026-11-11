@@ -1,47 +1,22 @@
 /* =====================================================================
    Forever Codex: visual element library (pills, stats, timeline,
-   meters, pros/cons, price cards, dividers, spec strips).
+   meters, pros/cons, price cards, spec strips).
    Usage reference: docs/community/style-guide.md
    Colour always comes with a word or glyph (WCAG 1.4.1).
    ===================================================================== */
 
 /* ---------- Pills ---------------------------------------------------- */
-.md-typeset .pill {
-  --p: var(--fc-adm-neutral); --pt: var(--fc-adm-neutral-tint); --px: var(--fc-adm-neutral-text);
-  display: inline-flex; align-items: center; gap: .3em;
-  padding: .12em .65em; margin: 0 .1em; border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--p) 55%, transparent);
-  background: var(--pt); color: var(--px);
-  font-family: var(--md-text-font-family); font-size: .68rem; font-weight: 650; line-height: 1.5;
-  letter-spacing: .01em; white-space: nowrap; vertical-align: .06em; text-decoration: none;
-  font-variant-numeric: tabular-nums;
-}
-.md-typeset a.pill:hover { border-color: var(--p); filter: brightness(1.04); }
+/* A pill is a tag: the shape, the size and the tones are in extra.css, section 11.
+   This file adds the status dots, the change glyphs and the class tones. */
+.md-typeset .pill { margin: 0 .1em; }
 .md-typeset .pill .twemoji { height: 1.1em; }
 .md-typeset .pill .twemoji svg { width: 1.1em; height: 1.1em; fill: currentColor; }
 
-/* styles */
-.md-typeset .pill--solid { background: var(--p); color: var(--fc-bg); border-color: var(--p); }
-.md-typeset .pill--outline { background: transparent; color: var(--px); border-color: var(--p); }
-.md-typeset .pill--lg { font-size: .78rem; padding: .2em .85em; }
-.md-typeset .pill--sm { font-size: .6rem; padding: .05em .5em; }
-
-/* tones */
-.md-typeset :is(.pill--info, .pill--soon, .pill--alliance-tone) { --p: var(--fc-adm-info); --pt: var(--fc-adm-info-tint); --px: var(--fc-adm-info-text); }
-.md-typeset :is(.pill--success, .pill--live, .pill--buff, .pill--fixed, .pill--easy) { --p: var(--fc-adm-success); --pt: var(--fc-adm-success-tint); --px: var(--fc-adm-success-text); }
-.md-typeset :is(.pill--warning, .pill--changed, .pill--medium) { --p: var(--fc-adm-warning); --pt: var(--fc-adm-warning-tint); --px: var(--fc-adm-warning-text); }
-.md-typeset :is(.pill--danger, .pill--nerf, .pill--removed, .pill--hard) { --p: var(--fc-adm-danger); --pt: var(--fc-adm-danger-tint); --px: var(--fc-adm-danger-text); }
-.md-typeset :is(.pill--question, .pill--planned) { --p: var(--fc-adm-question); --pt: var(--fc-adm-question-tint); --px: var(--fc-adm-question-text); }
-.md-typeset :is(.pill--gold, .pill--new, .pill--official) { --p: var(--fc-adm-summary); --pt: var(--fc-adm-summary-tint); --px: var(--fc-adm-summary-text); }
-
-/* status pills: a leading dot; "live" pulses (motion-safe only) */
-.md-typeset :is(.pill--live, .pill--soon, .pill--planned, .pill--rumor, .pill--dot)::before {
-  content: ""; width: .5em; height: .5em; border-radius: 50%; background: var(--p); flex: none; }
-.md-typeset .pill--rumor { border-style: dashed; font-style: italic; }
-@media (prefers-reduced-motion: no-preference) {
-  .md-typeset .pill--live::before { animation: fc-pulse 2s var(--fc-ease) infinite; }
-}
-@keyframes fc-pulse { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--p) 55%, transparent); } 50% { box-shadow: 0 0 0 .3em transparent; } }
+/* status pills: a leading dot */
+.md-typeset :is(.pill--live, .pill--soon, .pill--planned, .pill--rumor)::before {
+  content: ""; width: .5em; height: .5em; border-radius: 50%; background: var(--p, var(--fc-adm-neutral)); flex: none; }
+.md-typeset .pill--rumor { font-style: italic; }
+.md-typeset .pill--rumor::before { background: none; border: 1px solid currentColor; box-sizing: border-box; }
 
 /* change pills: glyph prefix (decorative, alt text empty) */
 .md-typeset .pill--new::before { content: "✦"; content: "✦" / ""; }
@@ -52,10 +27,7 @@
 .md-typeset .pill--removed { text-decoration: line-through; text-decoration-thickness: 1px; }
 .md-typeset .pill--removed::before { content: "✕"; content: "✕" / ""; font-size: .85em; }
 
-/* identity pills: faction, class, armour, resource */
-.md-typeset .pill--alliance { --p: var(--fc-alliance); --pt: color-mix(in srgb, var(--fc-alliance) 12%, var(--fc-bg)); --px: var(--fc-alliance); }
-.md-typeset .pill--horde    { --p: var(--fc-horde);    --pt: color-mix(in srgb, var(--fc-horde) 12%, var(--fc-bg));    --px: var(--fc-horde); }
-.md-typeset .pill--neutral-faction { --p: var(--fc-gold); --pt: color-mix(in srgb, var(--fc-gold) 14%, var(--fc-bg)); --px: var(--fc-gold-text); }
+/* class pills (the faction tones are in extra.css) */
 .md-typeset :is(.pill--warrior, .pill--hunter, .pill--paladin, .pill--druid, .pill--rogue, .pill--shaman, .pill--mage, .pill--warlock, .pill--priest) {
   --pt: color-mix(in srgb, var(--p) 12%, var(--fc-bg)); --px: var(--p); }
 .md-typeset .pill--warrior { --p: var(--fc-c-warrior); } .md-typeset .pill--hunter { --p: var(--fc-c-hunter); }
@@ -63,138 +35,72 @@
 .md-typeset .pill--rogue { --p: var(--fc-c-rogue); } .md-typeset .pill--shaman { --p: var(--fc-c-shaman); }
 .md-typeset .pill--mage { --p: var(--fc-c-mage); } .md-typeset .pill--warlock { --p: var(--fc-c-warlock); }
 .md-typeset .pill--priest { --p: var(--fc-c-priest); }
-.md-typeset :is(.pill--cloth, .pill--leather, .pill--mail, .pill--plate) { --p: var(--fc-border-strong); --pt: var(--fc-surface-1); --px: var(--fc-text); }
-.md-typeset :is(.pill--cloth, .pill--leather, .pill--mail, .pill--plate)::before {
-  content: ""; width: .7em; height: .7em; border-radius: .15em; border: 1.5px solid currentColor; opacity: .75; }
-.md-typeset .pill--leather::before { border-radius: 50% .15em; }
-.md-typeset .pill--mail::before { background: repeating-radial-gradient(circle at 50% 50%, currentColor 0 1px, transparent 1px 3px); }
-.md-typeset .pill--plate::before { background: currentColor; }
-.md-typeset .pill--rage   { --p: #c0392b; --pt: color-mix(in srgb, #c0392b 12%, var(--fc-bg)); --px: var(--fc-adm-danger-text); }
-.md-typeset .pill--energy { --p: #c99a06; --pt: color-mix(in srgb, #c99a06 14%, var(--fc-bg)); --px: var(--fc-adm-summary-text); }
-.md-typeset .pill--mana   { --p: #2e6fd1; --pt: color-mix(in srgb, #2e6fd1 12%, var(--fc-bg)); --px: var(--fc-adm-info-text); }
-.md-typeset :is(.pill--rage, .pill--energy, .pill--mana)::before { content: ""; width: .55em; height: .55em; border-radius: 50%; background: var(--p); }
-
-/* split pill: label | value */
-.md-typeset .pill--kv { padding: 0; overflow: hidden; gap: 0; }
-.md-typeset .pill--kv > * { padding: .12em .6em; }
-.md-typeset .pill--kv > :first-child { color: var(--fc-text-muted); font-weight: 550; }
-.md-typeset .pill--kv > :last-child { background: color-mix(in srgb, var(--p) 18%, var(--fc-bg)); color: var(--fc-text); font-weight: 750; }
 
 /* pill rows */
 .md-typeset .pills { display: flex; flex-wrap: wrap; gap: .35rem; margin: .4em 0 1em; max-width: none; }
 .md-typeset .pills .pill { margin: 0; }
 
-/* ---------- Spec strip: label/value facts in a row ------------------- */
-.md-typeset .specs > ul { display: flex; flex-wrap: wrap; gap: 0; list-style: none; margin: .4em 0 1.2em; padding: 0;
+/* ---------- Stat strip: one component (.stats; .specs is the same) ---- */
+/* A row of joined cells: the value, then its label. Each cell has a top and a left hairline, and the row
+   clips the lines on its outer edge, so the cells stay joined when the row wraps. */
+.md-typeset :is(.stats, .specs) > ul { display: flex; flex-wrap: wrap; list-style: none; margin: var(--fc-space-4) 0 var(--fc-space-5); padding: 0;
   border: 1px solid var(--fc-border); border-radius: var(--fc-radius); background: var(--fc-surface-1); overflow: hidden; }
-.md-typeset .specs > ul > li { flex: 1 1 8rem; margin: 0; padding: .5em .9em; border-left: 1px solid var(--fc-border); display: flex; flex-direction: column; max-width: none; }
-.md-typeset .specs > ul > li:first-child { border-left: 0; }
-.md-typeset .specs > ul > li > strong:first-child { order: 2; font-family: var(--fc-display-font); font-size: 1.15em; font-weight: 700; color: var(--fc-text); }
-.md-typeset .specs > ul > li { font-size: .7rem; color: var(--fc-text-muted); font-variant-caps: all-small-caps; letter-spacing: .04em; }
-.md-typeset .specs > ul > li > strong:first-child { font-variant-caps: normal; letter-spacing: 0; }
-
-/* ---------- Stat tiles ----------------------------------------------- */
-.md-typeset .stats > ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.5rem), 1fr)); gap: .6rem;
-  list-style: none; margin: .8em 0 1.4em; padding: 0; }
-.md-typeset .stats > ul > li { position: relative; margin: 0; padding: .8rem .9rem .75rem; max-width: none;
-  border: 1px solid var(--fc-border); border-radius: calc(var(--fc-radius) * 1.5); background: var(--fc-surface-1);
-  font-size: .72rem; line-height: 1.35; color: var(--fc-text-muted); overflow: hidden; }
-.md-typeset .stats > ul > li::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: linear-gradient(90deg, var(--fc-gold), transparent); }
-.md-typeset .stats > ul > li > strong:first-child { display: block; margin-bottom: .15rem; font-family: var(--fc-display-font);
-  font-size: 1.75rem; font-weight: 700; line-height: 1.05; color: var(--fc-text); font-variant-numeric: lining-nums; }
-[data-md-color-scheme="slate"] .md-typeset .stats > ul > li > strong:first-child { color: var(--fc-gold-text); }
+.md-typeset :is(.stats, .specs) > ul > li { flex: 1 1 7.5rem; margin: -1px 0 0 -1px; padding: var(--fc-space-3) var(--fc-space-4); max-width: none;
+  border: solid var(--fc-border); border-width: 1px 0 0 1px; font-size: var(--fc-fs-xs); line-height: 1.35; color: var(--fc-text-muted); }
+.md-typeset :is(.stats, .specs) > ul > li > strong:first-child { display: block; margin-bottom: var(--fc-space-1); font-family: var(--fc-display-font);
+  font-size: var(--fc-fs-h3); font-weight: 700; line-height: 1.2; color: var(--fc-text); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
 
 /* ---------- Timeline -------------------------------------------------- */
 .md-typeset .timeline > ul { list-style: none; margin: .8em 0 1.4em; padding: 0 0 0 1.6rem; position: relative; }
 .md-typeset .timeline > ul::before { content: ""; position: absolute; left: .45rem; top: .4rem; bottom: .4rem; width: 2px;
-  background: linear-gradient(var(--fc-gold), var(--fc-border) 85%); border-radius: 2px; }
-.md-typeset .timeline > ul > li { position: relative; margin: 0 0 .9rem; padding: .1rem 0 0; max-width: 72ch; }
+  background: var(--fc-border); }
+.md-typeset .timeline > ul > li { position: relative; margin: 0 0 .9rem; padding: .1rem 0 0; }
 .md-typeset .timeline > ul > li::before { content: ""; position: absolute; left: -1.45rem; top: .45rem; width: .7rem; height: .7rem;
-  border-radius: 50%; background: var(--fc-bg); border: 2px solid var(--fc-gold); box-sizing: border-box; }
-.md-typeset .timeline > ul > li > strong:first-child { display: block; font-size: .72rem; letter-spacing: .05em; font-variant-caps: all-small-caps;
-  color: var(--fc-gold-text); font-weight: 700; font-variant-numeric: tabular-nums; }
-.md-typeset .timeline > ul > li:has(.pill--live)::before,
-.md-typeset .timeline > ul > li:has(.pill--new)::before { background: var(--fc-gold); }
-.md-typeset .timeline > ul > li:has(.pill--soon)::before { border-color: var(--fc-adm-info); }
-.md-typeset .timeline > ul > li:has(.pill--planned)::before { border-color: var(--fc-adm-question); border-style: dashed; }
-.md-typeset .timeline--major > ul > li > strong:first-child { font-size: .8rem; }
+  border-radius: 50%; background: var(--fc-bg); border: 2px solid var(--fc-border-strong); box-sizing: border-box; }
+.md-typeset .timeline > ul > li > strong:first-child { display: block; font-size: var(--fc-fs-sm);
+  color: var(--fc-text-muted); font-weight: 600; font-variant-numeric: tabular-nums; }
+/* the dot of a live item is filled; a planned item has a dashed dot */
+.md-typeset .timeline > ul > li:has(.pill--live)::before { background: var(--fc-gold); border-color: var(--fc-gold); }
+.md-typeset .timeline > ul > li:has(.pill--planned)::before { border-style: dashed; }
 
 /* ---------- Meters ----------------------------------------------------- */
 .md-typeset .meter { --v: 50%; --m: var(--fc-gold); display: inline-grid; grid-template-columns: minmax(5rem, 9rem) auto; align-items: center; gap: .5em; vertical-align: middle; }
-.md-typeset .meter::before { content: ""; height: .5rem; border-radius: 999px; background:
+.md-typeset .meter::before { content: ""; height: .5rem; border-radius: var(--fc-radius-full); background:
   linear-gradient(90deg, var(--m) var(--v), color-mix(in srgb, var(--fc-border) 70%, transparent) var(--v)); outline: 1px solid color-mix(in srgb, var(--fc-border-strong) 35%, transparent); }
-.md-typeset .meter > * { font-size: .85em; font-weight: 650; font-variant-numeric: tabular-nums; color: var(--fc-text); }
-.md-typeset .meter--success { --m: var(--fc-adm-success); } .md-typeset .meter--info { --m: var(--fc-adm-info); }
-.md-typeset .meter--danger { --m: var(--fc-adm-danger); }
+.md-typeset .meter > * { font-size: var(--fc-fs-xs); font-weight: 600; font-variant-numeric: tabular-nums; color: var(--fc-text); }
+.md-typeset .meter--info { --m: var(--fc-adm-info); }
 @media (forced-colors: active) { .md-typeset .meter::before { forced-color-adjust: none; background: linear-gradient(90deg, CanvasText var(--v), Canvas var(--v)); outline-color: CanvasText; } }
 
 /* ---------- Pros / cons ------------------------------------------------ */
-.md-typeset .proscons { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .7rem; margin: .8em 0 1.4em; }
-.md-typeset .proscons > div { border: 1px solid var(--fc-border); border-radius: calc(var(--fc-radius) * 1.5); padding: .3rem .9rem .5rem; background: var(--fc-surface-1); }
-.md-typeset .proscons > div > p:first-child { margin: .3rem 0 .2rem; font-weight: 750; font-size: .78rem; letter-spacing: .02em; }
-.md-typeset .proscons .pros { border-top: 3px solid var(--fc-adm-success); }
-.md-typeset .proscons .cons { border-top: 3px solid var(--fc-adm-danger); }
+.md-typeset .proscons { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: var(--fc-space-3); margin: var(--fc-space-4) 0 var(--fc-space-5); }
+.md-typeset .proscons > div { border: 1px solid var(--fc-border); border-radius: var(--fc-radius); padding: var(--fc-space-2) var(--fc-space-4); background: var(--fc-surface-1); font-size: var(--fc-fs-sm); }
+.md-typeset .proscons > div > p:first-child { margin: var(--fc-space-1) 0; font-weight: 700; }
 .md-typeset .proscons .pros > p:first-child { color: var(--fc-adm-success-text); }
 .md-typeset .proscons .cons > p:first-child { color: var(--fc-adm-danger-text); }
 .md-typeset .proscons ul { list-style: none; margin: .2rem 0; padding: 0; }
 .md-typeset .proscons li { position: relative; padding-left: 1.4em; margin: .3em 0; }
-.md-typeset .proscons li::before { position: absolute; left: 0; top: 0; font-weight: 800; }
+.md-typeset .proscons li::before { position: absolute; left: 0; top: 0; font-weight: 700; }
 .md-typeset .proscons .pros li::before { content: "+"; content: "+" / ""; color: var(--fc-adm-success); }
 .md-typeset .proscons .cons li::before { content: "−"; content: "−" / ""; color: var(--fc-adm-danger); }
 
 /* ---------- Price / edition cards ------------------------------------- */
 .md-typeset .price-cards > ul > li { display: flex; flex-direction: column; }
-.md-typeset .price-cards .price { display: block; margin: .1rem 0 .2rem; font-family: var(--fc-display-font); font-size: 1.6rem; font-weight: 700; line-height: 1; color: var(--fc-text); }
-.md-typeset .price-cards .price small { font-family: var(--md-text-font-family); font-size: .45em; font-weight: 500; color: var(--fc-text-muted); }
-.md-typeset .price-cards > ul > li:has(.pill--official) { border-color: var(--fc-gold); box-shadow: 0 0 0 1px var(--fc-gold) inset; }
+.md-typeset .price-cards .price { display: block; margin: .1rem 0 .2rem; font-family: var(--fc-display-font); font-size: var(--fc-fs-h2); font-weight: 700; line-height: 1; color: var(--fc-text); }
+.md-typeset .price-cards .price small { font-family: var(--md-text-font-family); font-size: var(--fc-fs-xs); font-weight: 500; color: var(--fc-text-muted); }
+.md-typeset .price-cards > ul > li:has(.pill--official) { border-color: var(--fc-border-strong); }
 
-/* ---------- Labelled divider ------------------------------------------ */
-.md-typeset .divider { display: flex; align-items: center; gap: .8rem; margin: 2rem 0 1rem; max-width: none;
-  font-family: var(--fc-caps-font); font-size: .78rem; letter-spacing: .1em; color: var(--fc-gold-text); }
-.md-typeset .divider::before, .md-typeset .divider::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--fc-gold), transparent); }
-
-/* ---------- Profession picks: ranked pairing cards ------------------- */
-.md-typeset .prof-picks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: .7rem; margin: .8em 0 1.2em; max-width: none; }
-.md-typeset .prof-pick { position: relative; display: flex; flex-direction: column; gap: .45rem; padding: .75rem .9rem .7rem;
-  border: 1px solid var(--fc-border); border-radius: calc(var(--fc-radius) * 1.5); background: var(--fc-surface-1);
-  font-size: .76rem; line-height: 1.45; overflow: hidden; }
-.md-typeset .prof-pick::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: var(--fc-border-strong); }
-.md-typeset .prof-pick--best { border-color: var(--fc-gold); box-shadow: 0 0 0 1px var(--fc-gold) inset; }
-.md-typeset .prof-pick--best::before { background: linear-gradient(90deg, var(--fc-gold), color-mix(in srgb, var(--fc-gold) 25%, transparent)); }
-.md-typeset .prof-pick--alt::before { background: linear-gradient(90deg, var(--fc-adm-info), transparent); }
-.md-typeset .prof-pick > :is(p, ul, dl, div) { margin: 0; max-width: none; }
-.md-typeset .prof-rank { display: flex; align-items: center; gap: .45rem; font-size: .64rem; font-weight: 700;
-  letter-spacing: .06em; text-transform: uppercase; color: var(--fc-text-muted); }
-.md-typeset .prof-rank .tier { margin: 0; }
-.md-typeset .prof-pair { display: flex; flex-wrap: wrap; align-items: center; gap: .15rem .35rem;
-  font-family: var(--fc-display-font); font-size: 1.08rem; font-weight: 700; line-height: 1.2; color: var(--fc-text); }
-.md-typeset .prof-pair .twemoji { height: 1.15em; }
-.md-typeset .prof-pair .twemoji svg { width: 1.15em; height: 1.15em; fill: var(--fc-gold); }
-.md-typeset .prof-plus { color: var(--fc-text-subtle); font-family: var(--md-text-font-family); font-weight: 400; }
-.md-typeset .prof-pick .pills { margin: 0; }
-.md-typeset .prof-scores { display: grid; grid-template-columns: auto 1fr; gap: .2rem .7rem; align-items: center;
-  padding: .45rem 0; border-block: 1px solid var(--fc-border); font-size: .7rem; }
-.md-typeset .prof-scores dt { margin: 0; font-weight: 600; color: var(--fc-text-muted); }
-.md-typeset .prof-scores dd { margin: 0; }
-.md-typeset .prof-scores .meter { display: grid; grid-template-columns: 1fr auto; width: 100%; }
-.md-typeset .prof-pick ul { padding-left: 1.1em; }
-.md-typeset .prof-pick li { margin: .2em 0; }
-.md-typeset .prof-camp { margin-top: auto !important; padding-top: .45rem; border-top: 1px dashed var(--fc-border);
-  font-size: .7rem; color: var(--fc-text-muted); }
-.md-typeset .prof-camp .twemoji svg { fill: var(--fc-gold); }
-.md-typeset .prof-camp strong { color: var(--fc-text); }
+/* ---------- Matrix header icons ------------------------------------- */
 .md-typeset .fc-matrix th .twemoji { display: block; margin: 0 auto .15em; }
-.md-typeset .fc-matrix th .twemoji svg { fill: var(--fc-gold); }
-@media (forced-colors: active) { .md-typeset .prof-pick { border: 1px solid CanvasText; } .md-typeset .prof-pick--best { border-width: 3px; } }
+.md-typeset .fc-matrix th .twemoji svg { fill: var(--fc-text-muted); }
 
 /* ---------- Pill legend --------------------------------------------- */
-.md-typeset .legend { display: flex; flex-wrap: wrap; gap: .3rem .8rem; align-items: center; font-size: .7rem; color: var(--fc-text-muted); margin: .2em 0 1em; max-width: none; }
+.md-typeset .legend { display: flex; flex-wrap: wrap; gap: .3rem .8rem; align-items: center; font-size: var(--fc-fs-xs); color: var(--fc-text-muted); margin: .2em 0 1em; max-width: none; }
 
 @media (forced-colors: active) {
-  .md-typeset .pill, .md-typeset .stats > ul > li, .md-typeset .proscons > div, .md-typeset .specs > ul { border: 1px solid CanvasText; }
+  .md-typeset .stats > ul, .md-typeset .specs > ul, .md-typeset .proscons > div { border: 1px solid CanvasText; }
   .md-typeset :is(.pill)::before { forced-color-adjust: none; background: CanvasText; }
 }
-@media print { .md-typeset .pill { border: 1px solid #555; background: none; color: #000; } }
+@media print { .md-typeset .pill, .md-typeset .badge, .md-typeset .lvl { border: 1px solid #555; background: none; color: #000; } }
 
 /* code highlighting: HTML tag names pass 4.5:1 on the light code surface */
 [data-md-color-scheme="default"] .md-typeset .highlight .nt { color: #2f5aa8; }

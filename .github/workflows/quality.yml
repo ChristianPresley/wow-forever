@@ -69,6 +69,7 @@ jobs:
           name: site
           path: site
       - run: npm run test:html
+      - run: npm run test:css   # the minifier must not drop a selector space (tests/css.mjs)
       - if: always()
         uses: actions/upload-artifact@v4
         with:

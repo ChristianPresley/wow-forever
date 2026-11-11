@@ -1,27 +1,19 @@
-{#- Chip rows linking the add-ons of a class (Talents, Equipment, races) and the same add-on of other classes. Built from the nav, so nothing to maintain by hand. -#}
-<nav class="fc-switcher" aria-label="Related guides">
-<details class="fc-switcher__box" open>
-  <summary class="fc-switcher__summary">Add-ons and other classes</summary>
-  {% if fc_is_addon %}
-    {% set slug = page.url.split('/')[2] %}
-    <p class="fc-switcher__row"><span class="fc-switcher__label">{{ page.parent.title }} add-ons</span>
-      <a class="fc-chip fc-chip--home" href="{{ page.parent.children[0].url | url }}">{{ page.parent.title }} progression</a>
-      {%- for p in page.parent.children if p.is_page and not p.is_index %}
-        <a class="fc-chip" href="{{ p.url | url }}"{% if p == page %} aria-current="page"{% endif %}>{{ p.title | replace(page.parent.title ~ " ", "") }}</a>
-      {%- endfor %}
-    </p>
-    <p class="fc-switcher__row"><span class="fc-switcher__label">{% if slug in ["talents", "equipment"] %}{{ slug | capitalize }} of another class{% else %}{{ page.title }} as another class{% endif %}</span>
+{#- The switcher of an add-on page (Talents, Equipment, races): one line of chips for the pages of this class.
+    The same add-on of the other classes is in a closed disclosure. Built from the nav, so nothing to maintain by hand. -#}
+{% set slug = page.url.split('/')[2] %}
+<nav class="fc-switch" aria-label="{{ page.parent.title }} pages">
+  <div class="fc-switch__row">
+    <a class="fc-chip" href="{{ page.parent.children[0].url | url }}">Progression</a>
+    {%- for p in page.parent.children if p.is_page and not p.is_index %}
+    <a class="fc-chip" href="{{ p.url | url }}"{% if p == page %} aria-current="page"{% endif %}>{{ p.title }}</a>
+    {%- endfor %}
+  </div>
+  <details class="fc-switch__more">
+    <summary>{% if slug in ["talents", "equipment"] %}{{ slug | capitalize }} of another class{% else %}{{ page.title }} as another class{% endif %}</summary>
+    <div class="fc-switch__row">
       {%- for p in nav.pages if p.url.startswith('guides/') and p.url.count('/') == 3 and p.url.split('/')[2] == slug and p != page %}
-        <a class="fc-chip" href="{{ p.url | url }}">{{ p.parent.title }}</a>
+      <a class="fc-chip" href="{{ p.url | url }}">{{ p.parent.title }}</a>
       {%- endfor %}
-    </p>
-  {% else %}
-    <p class="fc-switcher__row"><span class="fc-switcher__label">Add-ons</span>
-      {%- for p in page.parent.children if p.is_page and not p.is_index %}
-        <a class="fc-chip" href="{{ p.url | url }}">{{ p.title | replace(page.parent.title ~ " ", "") }}</a>
-      {%- endfor %}
-    </p>
-  {% endif %}
-</details>
-<script>/* collapse before first paint on phones: avoids layout shift */(function(d){if(d&&window.matchMedia("(max-width: 44.984375em)").matches){d.open=false;d.dataset.fcInit="1"}})(document.currentScript&&document.currentScript.previousElementSibling)</script>
+    </div>
+  </details>
 </nav>

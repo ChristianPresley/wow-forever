@@ -46,7 +46,7 @@ ORDER = ["druid", "hunter", "mage", "paladin", "priest", "rogue", "shaman", "war
 PAGE_DATE = "10 November 2026"
 BADGES = talents_build.BADGES
 
-# id, level range, heading prefix
+# id, level range, heading prefix (the tag above the chapter title)
 CHAPTERS = [
     ("start", None, "Before level 1"),
     ("l1", (1, 9), "Levels 1–9"),
@@ -58,6 +58,8 @@ CHAPTERS = [
     ("l60", None, "Level 60"),
     ("raid", None, "Raids and PvP"),
 ]
+# the short form of the prefix, for the table of contents and the sticky pick bar
+CH_SHORT = {"start": "Start", "l60": "60", "raid": "Raids"}
 CH_IDS = [c[0] for c in CHAPTERS]
 LEVEL_CH = [c[0] for c in CHAPTERS if c[1]]
 FACTIONS = {"alliance": "Alliance", "horde": "Horde"}
@@ -67,8 +69,8 @@ ITEM_FROM = {
 }
 BASIS = {
     "forever": "",
-    "classic": " **Classic-era**{ .pill .pill--outline .pill--sm }",
-    "unverified": " **Not confirmed**{ .pill .pill--outline .pill--sm }",
+    "classic": " **Classic-era**{ .pill }",
+    "unverified": " **Not confirmed**{ .pill }",
 }
 PROFESSIONS = sorted(p.stem for p in (HERE.parent / "professions" / "recipes").glob("*.json"))
 
@@ -177,19 +179,31 @@ def md_block(text):
     return str(text).strip().splitlines() + [""]
 
 
+def short_title(ch):
+    """The short label of a chapter: the optional 'toc' field, or the first clause of the title."""
+    return ch.get("toc") or re.split(r", | and ", ch["title"], maxsplit=1)[0]
+
+
+def toc_label(cid, rng, ch):
+    lead = CH_SHORT.get(cid) or f"{rng[0]}–{rng[1]}"
+    return f"{lead} · {short_title(ch)}"
+
+
 def addon(pick, values, kind, label, body_lines, link=None, default=False):
-    """One add-on block. The reader's pick decides which blocks show (docs/javascripts/codex.js)."""
+    """One add-on block. The reader's pick decides which blocks show (docs/javascripts/codex.js).
+
+    A block is a label line ("Race · Gnome"), the text, and a last line with the link to the full add-on page.
+    """
     if not any(ln.strip() for ln in body_lines):
         return []
-    icon = {"race": ":material-account-group:", "talents": ":material-star-four-points:", "gear": ":material-shield-sword:"}[pick]
-    more = f" [{link[1]}]({link[0]}){{ .fc-addon__more }}" if link else ""  # Markdown, so MkDocs resolves the .md link
+    more = ["", f"Full add-on: [{link[1]}]({link[0]})", "{: .fc-addon__more }"] if link else []  # Markdown, so MkDocs resolves the .md link
     return [
         f'<div class="fc-addon" data-pick="{pick}" data-value="{" ".join(values)}"{" data-default" if default else ""} markdown>',
         "",
-        f'<p class="fc-addon__label" markdown>{icon} <span class="fc-addon__kind">{kind} add-on</span> '
-        f'<strong>{html.escape(label)}</strong>{more} <a class="fc-addon__change" href="#picks">Change</a></p>',
+        f'<p class="fc-addon__label"><span class="fc-addon__kind">{kind}</span> <strong>{html.escape(label)}</strong></p>',
         "",
         *body_lines,
+        *more,
         "",
         "</div>",
         "",
@@ -222,7 +236,7 @@ def item_source(it, errors, where):
         elif r.get("src") == "trainer":
             txt += ", trainer recipe"  # the client does not hold the skill that the trainer asks for
         if r.get("status") == "new":
-            txt += " **New**{ .pill .pill--new .pill--sm }"
+            txt += " **New**{ .pill .pill--new }"
     elif kind in ("dungeon", "raid"):
         slug = it.get("dungeon") or it.get("raid")
         if slug:
@@ -403,24 +417,28 @@ def check(slug, g, tguide, talents, errors):
 # ---------------------------------------------------------------- progression page
 
 def picker(slug, g):
+    """The add-on picker: 3 rows of radio chips, then one line with the help text and the "show all" switch."""
     cls = g["class"]
 
-    def group(pick, legend, options):
-        out = [f'<fieldset class="fc-pick__group" data-pick="{pick}"><legend>{legend}</legend>', '<div class="fc-pick__opts">']
+    def group(pick, legend, options, more=None):
+        out = [f'<div class="fc-pick__group" role="radiogroup" aria-labelledby="fc-pick-{pick}" data-pick="{pick}">'
+               f'<span class="fc-pick__legend" id="fc-pick-{pick}">{legend}</span>', '<div class="fc-pick__opts">']
         for i, (value, label) in enumerate(options):
             out.append(
                 f'<label class="fc-pick__opt"><input type="radio" name="fc-{pick}" value="{value}"{" checked" if i == 0 else ""}>'
                 f"<span>{html.escape(label)}</span></label>"
             )
-        return out + ["</div>", "</fieldset>"]
+        if more:
+            out.append(f'<a class="fc-pick__more" href="{more[0]}">{more[1]}</a>')  # relative to the directory URL of the page
+        return out + ["</div>", "</div>"]
 
-    out = [f'<div class="fc-pick" data-class="{slug}" role="group" aria-label="Add-ons for your {cls}">']
+    out = [f'<div class="fc-pick" id="picks" data-class="{slug}" role="group" aria-label="Add-ons for your {cls}">']
     out += group("race", "Race", [(r["id"], r["name"]) for r in g["races"]])
-    out += group("talents", "Talents", [(p["id"], p["name"]) for p in g["paths"]])
-    out += group("gear", "Equipment", [(s["id"], s["name"]) for s in g["gear"]])
+    out += group("talents", "Talents", [(p["id"], p["name"]) for p in g["paths"]], ("talents/", "All talents"))
+    out += group("gear", "Equipment", [(s["id"], s["name"]) for s in g["gear"]], ("equipment/", "All equipment"))
     out += [
-        '<p class="fc-pick__note"><label class="fc-pick__all"><input type="checkbox" name="fc-all"><span>Show all add-ons</span></label> '
-        "Each chapter shows only the add-ons that you select. This browser saves your selection.</p>",
+        '<p class="fc-pick__foot"><span class="fc-pick__note">Each chapter shows only the add-ons that you select. This browser saves your selection.</span> '
+        '<label class="fc-pick__all"><input type="checkbox" name="fc-all" role="switch"><span>Show all add-ons</span></label></p>',
         "</div>",
         "",
     ]
@@ -435,73 +453,33 @@ def render_progression(slug, g, tguide, talents, tree_names, errors):
     first_race, first_path, first_gear = races[0]["id"], g["paths"][0]["id"], g["gear"][0]["id"]
     points = {p["id"]: build_points(builds[p["leveling"]], talents) for p in g["paths"]}
     badges = " ".join(BADGES[b] for b in g["badges"])
-    jump = ['<a href="#picks">Add-ons</a>'] + [
-        f'<a href="#{cid}">{"Start" if cid == "start" else "Raids & PvP" if cid == "raid" else "60" if cid == "l60" else f"{rng[0]}–{rng[1]}"}</a>'
-        for cid, rng, _ in CHAPTERS
-    ]
     out = [
         "---",
         f'description: "{g["description"]}"',
         "tags:", f"  - {cls}",
         "search:", "  boost: 2",
+        "generated: true",
         "---",
         "",
         f"# {cls} Progression",
         "",
         f"<!-- This page is generated. Edit tools/classes/guides/{slug}.yml, then run tools/classes/build.py. -->",
         "",
-        f'<div class="guide-head" data-class="{slug}" markdown>',
-        "",
-        f':codex-{slug}:{{ .fc-sigil aria-hidden="true" }} <span class="gh-kind">Class progression</span> {badges}',
-        "",
-        f'<nav class="gh-jump" aria-label="Jump to chapter">{" ".join(jump)}</nav>',
-        "",
-        "</div>",
-        "",
     ]
-    if g.get("aka"):
-        out += [f"**Also called:** {g['aka']}", "{: .fc-aka }", ""]
+    out += talents_build.meta_row(slug, "Class progression", badges, PAGE_DATE)
     out += md_block(g["intro"])
-    out += [
-        f'!!! info "Current as of {PAGE_DATE}"',
-        "    Forever started on 4 November 2026. The talent data and the recipe data are from the game client, build "
-        f"{talents_build.CLIENT_BUILD}. Spell levels, quests and zones that Forever did not change are Classic-era values. "
-        "The raids open on 9 December, and no source has published simulations.",
-        "",
-        "## Pick your add-ons { #picks }",
-        "",
-        f"This page tells the progression of a {cls} in 9 chapters, from character creation to the raids. "
-        "The main text is the same for each character. An **add-on** adds the text for 1 selection: your race, your talents or your equipment.",
-        "",
-    ]
     out += picker(slug, g)
-    out += [
-        '<div class="grid cards fc-addon-cards" markdown>',
-        "",
-        f"-   :material-star-four-points: **[Talents add-on](talents.md)**",
-        "",
-        f"    All {len(talents)} talents with a rating, a talent for each level and the level 60 builds.",
-        "",
-        f"-   :material-shield-sword: **[Equipment add-on](equipment.md)**",
-        "",
-        "    The equipment sets, the items for each level range, enchants and consumables.",
-        "",
-        f"-   :material-account-group: **Race add-ons**",
-        "",
-        "    " + " ".join(f"[{r['name']}]({r['id']}.md){{ .fc-chip }}" for r in races),
-        "",
-        "</div>",
-        "",
-    ]
 
     for (cid, rng, prefix), ch in zip(CHAPTERS, g["chapters"]):
-        out += [f"## {prefix}: {ch['title']} {{ #{cid} }}", ""]
+        out += [f'## <span class="fc-ch__lv">{prefix}</span> {ch["title"]} {{ #{cid} .fc-ch data-toc-label="{toc_label(cid, rng, ch)}" data-label="{toc_label(cid, rng, ch)}" }}', ""]  # the toc extension removes data-toc-label, and codex.js reads data-label
+        # the facts box goes before the story: a box as wide as the text (.infobox--row), with no float
+        if cid == "start" and g.get("glance"):
+            glance = list(g["glance"]) + ([["Also called", g["aka"]]] if g.get("aka") else [])
+            out += [f'<aside class="infobox infobox--row" data-class="{slug}" markdown>', f'<p class="infobox-title">{cls} at a glance</p>', "", "| | |", "|---|---|"]
+            out += [f"| **{k}** | {v} |" for k, v in glance] + ["", "</aside>", ""]
         out += md_block(ch["story"])
 
         if cid == "start":
-            if g.get("glance"):
-                out += [f'<aside class="infobox" data-class="{slug}" markdown>', f'<p class="infobox-title">{cls} at a glance</p>', "", "| | |", "|---|---|"]
-                out += [f"| **{k}** | {v} |" for k, v in g["glance"]] + ["", "</aside>", ""]
             if g.get("strengths") and g.get("weaknesses"):
                 out += ['<div class="proscons" markdown>', '<div class="pros" markdown>', "", "Strengths", ""]
                 out += [f"- {s}" for s in g["strengths"]] + ["", "</div>", '<div class="cons" markdown>', "", "Weaknesses", ""]
@@ -528,26 +506,26 @@ def render_progression(slug, g, tguide, talents, tree_names, errors):
                     name = f"[{d.get('name') or title}]({link})"
                 else:
                     name = d["name"]
-                lv = f" **{d['levels']}**{{ .lvl }}" if d.get("levels") else ""
+                lv = f"**{d['levels']}**{{ .lvl }} " if d.get("levels") else ""  # the level tag is first: the list has a clean left edge
                 note = f": {d['note']}" if d.get("note") else ""
-                out.append(f"- {name}{lv}{note}")
+                out.append(f"- {lv}{name}{note}")
             out.append("")
         if ch.get("extra"):
             out += md_block(ch["extra"])
         if ch.get("warn"):
-            out += ['!!! warning "Caution"'] + ["    " + ln for ln in str(ch["warn"]).strip().splitlines()] + [""]
+            out += ['!!! warning fc-inline "Caution"'] + ["    " + ln for ln in str(ch["warn"]).strip().splitlines()] + [""]
         if ch.get("tip"):
-            out += ['!!! tip "Tip"'] + ["    " + ln for ln in str(ch["tip"]).strip().splitlines()] + [""]
+            out += ['!!! tip fc-inline "Tip"'] + ["    " + ln for ln in str(ch["tip"]).strip().splitlines()] + [""]
         if ch.get("hardcore"):
-            out += ['!!! hardcore "Hardcore"'] + ["    " + ln for ln in str(ch["hardcore"]).strip().splitlines()] + [""]
+            out += ['!!! hardcore fc-inline "Hardcore"'] + ["    " + ln for ln in str(ch["hardcore"]).strip().splitlines()] + [""]
 
         # ---- add-ons of this chapter
         blocks = []
         # race: the faction route, then the note of each race
         if cid == "start":
             for r in races:
-                body = [f"{r['pitch'].strip()} **{FACTIONS[r['faction']]}**{{ .pill .pill--{r['faction']} .pill--sm }}"
-                        + (" **New**{ .pill .pill--new .pill--sm }" if str(r["status"]).lower().startswith("new") else "")]
+                body = [f"{r['pitch'].strip()} **{FACTIONS[r['faction']]}**{{ .pill .pill--{r['faction']} }}"
+                        + (" **New**{ .pill .pill--new }" if str(r["status"]).lower().startswith("new") else "")]
                 blocks += addon("race", [r["id"]], "Race", r["name"], body, (f"{r['id']}.md", f"{r['name']} {cls}"), r["id"] == first_race)
         else:
             for f, label in FACTIONS.items():
@@ -576,10 +554,10 @@ def render_progression(slug, g, tguide, talents, tree_names, errors):
                     body += md_block(p["play"][cid])
                 rows = chapter_talent_rows(points[p["id"]], *rng)
                 if rows:
-                    body += ["| Level | Talent | Rank | Why |", "|---|---|---|---|"]
+                    body += ["| Level | Talent | Why |", "|---|---|---|"]
                     for r in rows:
                         lv = f"{r['lo']}" if r["lo"] == r["hi"] else f"{r['lo']}–{r['hi']}"
-                        body.append(f"| {lv} | **{r['name']}** | {r['rank']}/{r['max']} | {r['why']} |")
+                        body.append(f"| {lv} | **{r['name']}** {talents_build.rank_tag(r['rank'], r['max'])} | {r['why']} |")
                     body += ["", f"Points at level {rng[1]}: **{split_at(points[p['id']], talents, rng[1])}** ({' / '.join(tree_names)}).", ""]
             else:
                 if (p.get("play") or {}).get(cid):
@@ -617,10 +595,14 @@ def render_progression(slug, g, tguide, talents, tree_names, errors):
             out += ['<div class="fc-addons" markdown>', ""] + blocks + ["</div>", ""]
 
         if ch.get("goals"):
-            out += [f"**Before you continue**", ""] + [f"- [ ] {goal}" for goal in ch["goals"]] + [""]
+            out += ['<div class="fc-goals" markdown>', f'<p class="fc-goals__title" id="goals-{cid}">Before you continue</p>', ""]
+            out += [f"- [ ] {goal}" for goal in ch["goals"]] + ["", "</div>", ""]
+        nxt = CH_IDS.index(cid) + 1
+        if nxt < len(CHAPTERS):
+            out += [f'<p class="fc-next"><a href="#{CHAPTERS[nxt][0]}">Next: {CHAPTERS[nxt][2]}</a></p>', ""]
 
     if g.get("professions"):
-        out += ["## Professions { #professions }", ""] + md_block(g["professions"])
+        out += ["## Professions { #professions }", "", '<div class="fc-stack" markdown>', ""] + md_block(g["professions"]) + ["", "</div>", ""]
     if g.get("legacy"):
         out += ["## Legacy talents { #legacy }", ""] + md_block(g["legacy"])
     if g.get("mistakes"):
@@ -629,7 +611,11 @@ def render_progression(slug, g, tguide, talents, tree_names, errors):
         out += ["## FAQ", ""]
         for f in g["faq"]:
             out += [f'??? question "{f["q"]}"', f"    {f['a'].strip()}", ""]
-    out += ["## Sources", "", f'??? quote "{len(g.get("sources") or []) + 2} sources"', "",
+    out += ["## Data and sources { #sources }", "",
+            "Forever started on 4 November 2026. The talent data and the recipe data are from the game client, build "
+            f"{talents_build.CLIENT_BUILD}. Spell levels, quests and zones that Forever did not change are Classic-era values. "
+            "The raids open on 9 December, and no source has published simulations.", "",
+            f'??? quote "{len(g.get("sources") or []) + 2} sources"', "",
             f"    - [wowforevertalents.com: {cls} talents, read from the client]({talents_build.CALC}/{slug}/)",
             f"    - [wowforevertalents.com: profession recipes, read from the client]({talents_build.CALC}/professions/)"]
     out += [f"    - [{s['title']}]({s['url']})" for s in g.get("sources") or []] + [""]
@@ -642,36 +628,24 @@ def render_equipment(slug, g, errors):
     cls = g["class"]
     eq = g["equipment"]
     badges = " ".join(BADGES[b] for b in g["badges"])
-    jump = [f'<a href="#{s["id"]}">{html.escape(s["name"])}</a>' for s in g["gear"]]
-    jump += ['<a href="#enchants-and-consumables">Enchants</a>'] if eq.get("enchants") or eq.get("consumables") else []
     out = [
         "---",
         f'description: "{eq.get("description") or f"{cls} equipment for WoW: Forever: the equipment sets, the items for each level range, enchants and consumables."}"',
         "tags:", f"  - {cls}",
+        "generated: true",
+        "wide: true",
         "---",
         "",
         f"# {cls} Equipment",
         "",
         f"<!-- This page is generated. Edit tools/classes/guides/{slug}.yml, then run tools/classes/build.py. -->",
         "",
-        f'<div class="guide-head" data-class="{slug}" markdown>',
-        "",
-        f':codex-{slug}:{{ .fc-sigil aria-hidden="true" }} <span class="gh-kind">Add-on · Equipment</span> {badges}',
-        "",
-        f'<p class="gh-note" markdown>Read with the [{cls} progression](index.md). This page gives the full equipment data for each set.</p>',
-        "",
-        f'<nav class="gh-jump" aria-label="Jump to section">{" ".join(jump)}</nav>',
-        "",
-        "</div>",
-        "",
-        f'!!! info "Current as of {PAGE_DATE}"',
-        "    The client data gives the name and the skill of each crafted item, but not its stats. "
-        "A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.",
-        "",
     ]
+    out += talents_build.meta_row(slug, "Add-on: Equipment", badges, PAGE_DATE)
     out += md_block(eq["intro"])
-    out += ["## Equipment sets", "", "| Set | Use it for | Stat priority |", "|---|---|---|"]
-    out += [f"| [{s['name']}](#{s['id']}) | {s['pitch'].strip()} | {s['stats']} |" for s in g["gear"]] + [""]
+    # .fc-stack: on a phone each row of a table with long text is a block (extra.css, section 7)
+    out += ["## Equipment sets", "", '<div class="fc-stack" markdown>', "", "| Set | Use it for | Stat priority |", "|---|---|---|"]
+    out += [f"| [{s['name']}](#{s['id']}) | {s['pitch'].strip()} | {s['stats']} |" for s in g["gear"]] + ["", "</div>", ""]
     out += ["## What a " + cls + " can equip { #proficiencies }", "", "| Type | Available | Notes |", "|---|---|---|"]
     out += [f"| **{a}** | {b} | {c} |" for a, b, c in eq["proficiencies"]] + [""]
     if eq.get("rules"):
@@ -687,13 +661,17 @@ def render_equipment(slug, g, errors):
                 out += md_block(c["text"])
             out += item_table(c.get("items"), errors, f"{slug}/gear {s['id']}/{cid}")
     if eq.get("enchants") or eq.get("consumables"):
-        out += ["## Enchants and consumables", ""]
+        out += ["## Enchants and consumables", "", '<div class="fc-stack" markdown>', ""]
         if eq.get("enchants"):
             out += ["| Slot | Enchant | Notes |", "|---|---|---|"] + [f"| {a} | **{b}** | {c} |" for a, b, c in eq["enchants"]] + [""]
         if eq.get("consumables"):
             out += ["| Stage | Consumable | Notes |", "|---|---|---|"] + [f"| {a} | **{b}** | {c} |" for a, b, c in eq["consumables"]] + [""]
-    if eq.get("sources"):
-        out += ["## Sources", ""] + [f"- [{s['title']}]({s['url']})" for s in eq["sources"]] + [""]
+        out += ["</div>", ""]
+    out += ["## Data and sources { #sources }", "",
+            "The client data gives the name and the skill of each crafted item, but not its stats. "
+            "A **Classic-era** label shows an item or a value from Classic that no source confirms for Forever. Read the tooltip in the game.", ""]
+    out += [f"- [{s['title']}]({s['url']})" for s in eq.get("sources") or []]
+    out += [f"- [{cls} progression: data and sources](index.md#sources)", ""]
     return "\n".join(out)
 
 

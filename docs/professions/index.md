@@ -4,6 +4,7 @@ search:
   boost: 3
 hide:
   - toc
+generated: true
 ---
 
 # Profession Guides

@@ -1,0 +1,24 @@
+{#- Forever Codex override: the article footer. Tags, then one line with the date of the last change
+    ("Updated 9 November 2026", the form that the content uses) and the edit link. A generated page has
+    neither: its meta row under the H1 has the date of its data ("Updated 10 November 2026"), so a page
+    shows 1 date, and the generator overwrites a change to the file. -#}
+{% set fc_gen = page.meta and page.meta.generated %}
+{% set fc_iso = page.meta.git_revision_date_localized_raw_iso_date if page.meta and not fc_gen else none %}
+{% set fc_edit = page.edit_url and not fc_gen %}
+{% if tags or fc_iso or fc_edit %}
+  <footer class="fc-pagemeta">
+    {% include "partials/tags.html" %}
+    {% if fc_iso or fc_edit %}
+      <p class="fc-pagemeta__line">
+        {% if fc_iso %}
+          {% set d = (fc_iso | string).split("-") %}
+          {% set months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
+          <span>Updated <time datetime="{{ fc_iso }}">{{ d[2] | int }} {{ months[(d[1] | int) - 1] }} {{ d[0] }}</time></span>
+        {% endif %}
+        {% if fc_edit %}
+          <a class="fc-edit" href="{{ page.edit_url }}">Edit this page on GitHub</a>
+        {% endif %}
+      </p>
+    {% endif %}
+  </footer>
+{% endif %}

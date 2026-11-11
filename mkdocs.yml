@@ -150,23 +150,107 @@ nav:
       - Launch & Reception: about/reception.md
       - Developers & Interviews: about/developers.md
       - FAQ: about/faq.md
-  - Races & Classes:
-      - characters/index.md
-      - Races & Skyborne: characters/races.md
-      - Classes:
-          - characters/classes/index.md
-          - Druid: characters/classes/druid.md
-          - Hunter: characters/classes/hunter.md
-          - Mage: characters/classes/mage.md
-          - Paladin: characters/classes/paladin.md
-          - Priest: characters/classes/priest.md
-          - Rogue: characters/classes/rogue.md
-          - Shaman: characters/classes/shaman.md
-          - Warlock: characters/classes/warlock.md
-          - Warrior: characters/classes/warrior.md
-      - Legacy System: characters/legacy.md
-      - Leveling, Mounts & Rep: characters/leveling.md
-      - Customization & Transmog: characters/customization.md
+  - Classes:
+      - guides/index.md
+      - Druid:
+          - guides/druid/index.md
+          - guides/druid/talents.md
+          - guides/druid/equipment.md
+          - "Night Elf": guides/druid/night-elf.md
+          - "Skyborne (High Order)": guides/druid/skyborne-high-order.md
+          - "Tauren": guides/druid/tauren.md
+          - "Skyborne (Windshaper)": guides/druid/skyborne-windshaper.md
+      - Hunter:
+          - guides/hunter/index.md
+          - guides/hunter/talents.md
+          - guides/hunter/equipment.md
+          - "Human": guides/hunter/human.md
+          - "Dwarf": guides/hunter/dwarf.md
+          - "Night Elf": guides/hunter/night-elf.md
+          - "Skyborne (High Order)": guides/hunter/skyborne-high-order.md
+          - "Orc": guides/hunter/orc.md
+          - "Troll": guides/hunter/troll.md
+          - "Tauren": guides/hunter/tauren.md
+          - "Skyborne (Windshaper)": guides/hunter/skyborne-windshaper.md
+      - Mage:
+          - guides/mage/index.md
+          - guides/mage/talents.md
+          - guides/mage/equipment.md
+          - "Human": guides/mage/human.md
+          - "Gnome": guides/mage/gnome.md
+          - "Skyborne (High Order)": guides/mage/skyborne-high-order.md
+          - "Orc": guides/mage/orc.md
+          - "Troll": guides/mage/troll.md
+          - "Undead": guides/mage/undead.md
+      - Paladin:
+          - guides/paladin/index.md
+          - guides/paladin/talents.md
+          - guides/paladin/equipment.md
+          - "Human": guides/paladin/human.md
+          - "Dwarf": guides/paladin/dwarf.md
+          - "Undead": guides/paladin/undead.md
+      - Priest:
+          - guides/priest/index.md
+          - guides/priest/talents.md
+          - guides/priest/equipment.md
+          - "Human": guides/priest/human.md
+          - "Dwarf": guides/priest/dwarf.md
+          - "Gnome": guides/priest/gnome.md
+          - "Night Elf": guides/priest/night-elf.md
+          - "Troll": guides/priest/troll.md
+          - "Undead": guides/priest/undead.md
+      - Rogue:
+          - guides/rogue/index.md
+          - guides/rogue/talents.md
+          - guides/rogue/equipment.md
+          - "Human": guides/rogue/human.md
+          - "Dwarf": guides/rogue/dwarf.md
+          - "Gnome": guides/rogue/gnome.md
+          - "Night Elf": guides/rogue/night-elf.md
+          - "Skyborne (High Order)": guides/rogue/skyborne-high-order.md
+          - "Orc": guides/rogue/orc.md
+          - "Troll": guides/rogue/troll.md
+          - "Undead": guides/rogue/undead.md
+          - "Skyborne (Windshaper)": guides/rogue/skyborne-windshaper.md
+      - Shaman:
+          - guides/shaman/index.md
+          - guides/shaman/talents.md
+          - guides/shaman/equipment.md
+          - "Dwarf": guides/shaman/dwarf.md
+          - "Orc": guides/shaman/orc.md
+          - "Troll": guides/shaman/troll.md
+          - "Tauren": guides/shaman/tauren.md
+          - "Skyborne (Windshaper)": guides/shaman/skyborne-windshaper.md
+      - Warlock:
+          - guides/warlock/index.md
+          - guides/warlock/talents.md
+          - guides/warlock/equipment.md
+          - "Human": guides/warlock/human.md
+          - "Gnome": guides/warlock/gnome.md
+          - "Orc": guides/warlock/orc.md
+          - "Troll": guides/warlock/troll.md
+          - "Undead": guides/warlock/undead.md
+      - Warrior:
+          - guides/warrior/index.md
+          - guides/warrior/talents.md
+          - guides/warrior/equipment.md
+          - "Human": guides/warrior/human.md
+          - "Dwarf": guides/warrior/dwarf.md
+          - "Gnome": guides/warrior/gnome.md
+          - "Night Elf": guides/warrior/night-elf.md
+          - "Skyborne (High Order)": guides/warrior/skyborne-high-order.md
+          - "Orc": guides/warrior/orc.md
+          - "Troll": guides/warrior/troll.md
+          - "Tauren": guides/warrior/tauren.md
+          - "Undead": guides/warrior/undead.md
+          - "Skyborne (Windshaper)": guides/warrior/skyborne-windshaper.md
+      - Character Reference:
+          - characters/index.md
+          - Races & Skyborne: characters/races.md
+          - Class Changes: characters/classes/index.md
+          - Legacy System: characters/legacy.md
+          - Leveling, Mounts & Rep: characters/leveling.md
+          - Customization & Transmog: characters/customization.md
   - World:
       - world/index.md
       - Zones: world/zones.md
@@ -197,93 +281,6 @@ nav:
           - content/pvp/index.md
           - Battlegrounds: content/pvp/battlegrounds.md
       - Roadmap: content/roadmap.md
-  - Class Guides:
-      - guides/index.md
-      - Talent Guides:
-          - talents/index.md
-          - talents/druid.md
-          - talents/hunter.md
-          - talents/mage.md
-          - talents/paladin.md
-          - talents/priest.md
-          - talents/rogue.md
-          - talents/shaman.md
-          - talents/warlock.md
-          - talents/warrior.md
-      - Druid:
-          - guides/druid/index.md
-          - "Night Elf": guides/druid/night-elf.md
-          - "Skyborne (High Order)": guides/druid/skyborne-high-order.md
-          - "Tauren": guides/druid/tauren.md
-          - "Skyborne (Windshaper)": guides/druid/skyborne-windshaper.md
-      - Hunter:
-          - guides/hunter/index.md
-          - "Human": guides/hunter/human.md
-          - "Dwarf": guides/hunter/dwarf.md
-          - "Night Elf": guides/hunter/night-elf.md
-          - "Skyborne (High Order)": guides/hunter/skyborne-high-order.md
-          - "Orc": guides/hunter/orc.md
-          - "Troll": guides/hunter/troll.md
-          - "Tauren": guides/hunter/tauren.md
-          - "Skyborne (Windshaper)": guides/hunter/skyborne-windshaper.md
-      - Mage:
-          - guides/mage/index.md
-          - "Human": guides/mage/human.md
-          - "Gnome": guides/mage/gnome.md
-          - "Skyborne (High Order)": guides/mage/skyborne-high-order.md
-          - "Orc": guides/mage/orc.md
-          - "Troll": guides/mage/troll.md
-          - "Undead": guides/mage/undead.md
-      - Paladin:
-          - guides/paladin/index.md
-          - "Human": guides/paladin/human.md
-          - "Dwarf": guides/paladin/dwarf.md
-          - "Undead": guides/paladin/undead.md
-      - Priest:
-          - guides/priest/index.md
-          - "Human": guides/priest/human.md
-          - "Dwarf": guides/priest/dwarf.md
-          - "Gnome": guides/priest/gnome.md
-          - "Night Elf": guides/priest/night-elf.md
-          - "Troll": guides/priest/troll.md
-          - "Undead": guides/priest/undead.md
-      - Rogue:
-          - guides/rogue/index.md
-          - "Human": guides/rogue/human.md
-          - "Dwarf": guides/rogue/dwarf.md
-          - "Gnome": guides/rogue/gnome.md
-          - "Night Elf": guides/rogue/night-elf.md
-          - "Skyborne (High Order)": guides/rogue/skyborne-high-order.md
-          - "Orc": guides/rogue/orc.md
-          - "Troll": guides/rogue/troll.md
-          - "Undead": guides/rogue/undead.md
-          - "Skyborne (Windshaper)": guides/rogue/skyborne-windshaper.md
-      - Shaman:
-          - guides/shaman/index.md
-          - "Dwarf": guides/shaman/dwarf.md
-          - "Orc": guides/shaman/orc.md
-          - "Troll": guides/shaman/troll.md
-          - "Tauren": guides/shaman/tauren.md
-          - "Skyborne (Windshaper)": guides/shaman/skyborne-windshaper.md
-      - Warlock:
-          - guides/warlock/index.md
-          - "Human": guides/warlock/human.md
-          - "Gnome": guides/warlock/gnome.md
-          - "Orc": guides/warlock/orc.md
-          - "Troll": guides/warlock/troll.md
-          - "Undead": guides/warlock/undead.md
-      - Warrior:
-          - guides/warrior/index.md
-          - "Human": guides/warrior/human.md
-          - "Dwarf": guides/warrior/dwarf.md
-          - "Gnome": guides/warrior/gnome.md
-          - "Night Elf": guides/warrior/night-elf.md
-          - "Skyborne (High Order)": guides/warrior/skyborne-high-order.md
-          - "Orc": guides/warrior/orc.md
-          - "Troll": guides/warrior/troll.md
-          - "Tauren": guides/warrior/tauren.md
-          - "Undead": guides/warrior/undead.md
-          - "Skyborne (Windshaper)": guides/warrior/skyborne-windshaper.md
   - Professions:
       - professions/index.md
       - Rules & Best by Class: characters/professions.md

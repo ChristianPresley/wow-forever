@@ -1,0 +1,918 @@
+class: Hunter
+badges: [dps]
+description: "Hunter progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
+aka: "Hunt · BM (Beast Mastery) · MM (Marksmanship) · SV (Survival) · Lone Wolf · melee Hunter"
+
+intro: |
+  The Hunter is a physical damage dealer that fights together with a tamed beast. This page follows 1 Hunter from character creation to the raids, level by level. It tells you what changes in each level range: the abilities that you train, the pet, the fights, the dungeons and the decisions.
+
+glance:
+  - ["Role", "Ranged damage, or melee damage with Survival. The pet can tank solo content"]
+  - ["Armor", "**Leather**{ .pill .pill--leather } from level 1, **Mail**{ .pill .pill--mail } from level 40"]
+  - ["Weapons", "Bows, guns, crossbows. Axes, swords, daggers, fist weapons, staves, polearms from level 20. No maces, no shields"]
+  - ["Resource", "**Mana**{ .pill .pill--mana } for you, Focus for the pet"]
+  - ["Races", "8 combinations"]
+  - ["Leveling speed", "First in the beta, before Warlock and Mage"]
+  - ["Difficulty", "Easy to level. Pet control, the 8-yard deadzone and mana are more difficult"]
+
+strengths:
+  - "Fast and safe kills: the pet tanks while you shoot"
+  - "Strong kite tools: Concussive Shot, Wing Clip, Frost Trap, and traps in combat"
+  - "Feign Death and Freezing Trap are escapes that few classes have"
+  - "The pet gets its strength from your equipment, so an old pet does not become weak"
+
+weaknesses:
+  - "The deadzone: you cannot shoot a target that is nearer than 8 yards"
+  - "Long fights use all your mana before you have talents such as Rapid Recuperation"
+  - "Pets died quickly in AoE at launch. Blizzard announced a fix for 10 November"
+  - "Ammunition, pet food and stable fees use bag space and gold (Classic-era behavior)"
+
+changes:
+  added: ["Aimed Shot for all specs", "Traps in combat", "Summon Hawk", "Lone Wolf", "Careful Aim", "Sniper Shot", "Predator's Edge", "Strider Kick", "Lacerating Strikes", "Fox pets"]
+  removed: ["Wyvern Sting", "Killer Instinct", "Improved Feign Death", "Monster Slaying", "Humanoid Slaying", "Improved Hunter's Mark"]
+  notes:
+    - "**Aimed Shot** is a trainer ability at level 20 for all specs. Multi-Shot has the same cooldown. Arcane Shot has a separate cooldown."
+    - "**Traps work in combat.** All traps have 1 cooldown of 30 seconds."
+    - "**Pets** get 10% of your Attack Power and 100% of your crit chance (Warcraft Tavern). Pets do not get player buffs."
+    - "Each pet family learns Bite or Claw, and Dive or Dash. Each family has 1 special ability. **Fox** is a new family."
+    - "**Survival** is now a melee tree. Mongoose Bite, Strider Kick and bleeds do its damage."
+    - "**Marksmanship** can play with no pet. Lone Wolf gives 20% damage while you have no active pet."
+    - "The pre-launch notes say that Aspect of the Beast adds melee Attack Power, and that Disengage removes more threat."
+    - "Scorpid Sting decreases the hit chance of the target by 2%. It does not stack with Insect Swarm."
+    - "Pre-launch numbers: Aimed Shot +110% bonus damage, Arcane Shot +30% base damage. Hunter's Mark ranks do not stack."
+    - "The pre-launch notes also increase Serpent Sting. The ranks of Aspect of the Hawk give 20, 35, 50, 70, 90 and 110 ranged Attack Power."
+    - "No race has a weapon skill bonus. Select a bow, a gun or a crossbow by its damage only."
+    - "**Human Hunter** is a new combination. The 2 Skyborne factions can also be Hunters."
+
+# ------------------------------------------------------------------ chapters
+chapters:
+  - id: start
+    title: "Make your Hunter"
+    story: |
+      A Hunter does physical damage from range and has a pet. From level 10, the pet holds the enemy while you shoot. This is the reason that the Hunter was the fastest class to level in the beta.
+
+      The class has many tools to stay alive. Concussive Shot and Wing Clip slow an enemy. Freezing Trap removes 1 enemy from the fight. Feign Death ends a fight that you cannot win.
+
+      Forever keeps this base and makes each talent tree a damage spec. **Beast Mastery** makes the pet stronger and adds hawks. **Marksmanship** makes your shots stronger and can play with no pet. **Survival** fights in melee with traps and bleeds.
+
+      The class has 1 rule that you must learn early. You cannot shoot a target that is nearer than 8 yards. Players call this the deadzone. Much of the class is about the distance between you and the enemy.
+
+      You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race.
+    goals:
+      - "Select a race. Read its Race add-on."
+      - "Select a talent path. Beast Mastery is the safe selection for a first Hunter."
+      - "Read the [Professions](#professions) section. Leatherworking and Skinning are the usual selection."
+
+  - id: l1
+    title: "Alone with a bow"
+    story: |
+      You start with Auto Shot and Raptor Strike, and you have no pet. Pull each enemy with Auto Shot from maximum range. When the enemy gets to you, use Raptor Strike and fight in melee.
+
+      At level 4 you train Serpent Sting, a damage-over-time effect. Use it on each enemy at the start of the fight. At level 6 you train Arcane Shot, an instant shot, and Hunter's Mark.
+
+      Level 8 gives Concussive Shot, which slows the enemy. From this level you can kite. Shoot, use Concussive Shot, walk away, turn, and shoot again. Each step keeps the enemy out of melee range for longer.
+
+      You use ammunition with each shot. Buy arrows or bullets at each vendor, and keep a quiver or an ammo pouch in a bag slot. Your ranged weapon is your most important item.
+
+      At about level 5, take the quest *The Great Outdoors* near your first village. It teaches you to make a camp. See [Camping](../../systems/camping.md).
+    train:
+      - [1, "Auto Shot, Raptor Strike", "Your ranged attack and your first melee attack"]
+      - [4, "Serpent Sting", "Damage over time. Use it on each enemy"]
+      - [4, "Aspect of the Monkey", "More dodge when an enemy hits you. Classic-era level"]
+      - [6, "Arcane Shot, Hunter's Mark", "An instant shot. Hunter's Mark makes ranged attacks against the target stronger"]
+      - [8, "Concussive Shot", "A slow. It is the base of each kite"]
+    tip: |
+      Replace your ranged weapon each time that you find one with more damage per second. It sets the damage of Auto Shot and of all shots.
+    hardcore: |
+      Before level 10 you have no pet, so each enemy hits you. Fight 1 enemy at a time. If a second enemy comes, use Concussive Shot and run.
+    goals:
+      - "Train Serpent Sting at level 4 and Concussive Shot at level 8."
+      - "Take *The Great Outdoors* and make your first camp."
+      - "Learn your professions. The starter gathering quest gives +2 skill."
+      - "Buy ammunition before you leave each village."
+
+  - id: l10
+    title: "Tame your first pet"
+    story: |
+      Level 10 changes the class. You train Aspect of the Hawk, and your trainer gives the quest *Taming the Beast*. You tame 3 beasts with a Taming Rod. Then *Training the Beast* teaches Tame Beast, Feed Pet, Revive Pet and Beast Training.
+
+      From here, the pet fights for you. Send the pet first, and let it use Growl. Then shoot. The enemy stays on the pet, so you take little damage and you stop to eat less often.
+
+      You also get your first talent point at level 10, and 1 more point at each level. You have 51 points at level 60. The Talents add-on below gives the talent for each point. The Legacy talent *Talented* can give you the first point up to 5 levels earlier.
+
+      The pet needs care. Feed it until it is Happy. A Happy pet does 125% damage, and an Unhappy pet does only 75%. Mend Pet at level 12 heals it during the fight. You can tame only a beast of your level or lower.
+
+      Your first dungeons open at level 13. Quests give much more XP than dungeon enemies, so do each dungeon for its quests. In a group, set the pet to Passive or Defensive and turn off Growl. The tank holds the enemies there.
+
+      At level 14, start the scavenger hunt for the Cozy Sleeping Bag. It gives an XP buff and rested XP. See [Leveling](../../characters/leveling.md).
+    train:
+      - [10, "Aspect of the Hawk", "More ranged Attack Power. Your default aspect"]
+      - [10, "Tame Beast, Call Pet, Feed Pet, Revive Pet", "From the taming quests. The pet learns Growl, Great Stamina and Natural Armor"]
+      - [12, "Mend Pet", "Heals the pet during the fight"]
+      - [12, "Wing Clip", "A melee slow. Use it, then walk out of the deadzone. Classic-era level"]
+      - [16, "Immolation Trap, Mongoose Bite", "Your first trap, and the melee attack of the Survival tree. Classic-era level"]
+      - [18, "Multi-Shot", "A shot that hits more than 1 target"]
+    dungeons:
+      - {id: hall-of-thanes, levels: "13–20", note: "New. It is in Ironforge"}
+      - {name: "Ragefire Chasm", levels: "13–18", note: "It is in Orgrimmar"}
+      - {id: ruins-of-lordaeron, levels: "15–22", note: "New. It is in Tirisfal Glades. It drops camp blueprints"}
+      - {name: "Wailing Caverns", levels: "15–24", note: "Lord Serpentis drops the bow Venomstrike"}
+      - {name: "Deadmines", levels: "17–26"}
+    extra: |
+      ??? info "Pet families and their special abilities"
+
+          | Family | Ability | Family | Ability |
+          |---|---|---|---|
+          | Bat | Sonic Blast | Gorilla | Thunderstomp |
+          | Bear | Swipe | Hyena | Tendon Rip |
+          | Bird of Prey (Owl in Classic) | *Mine!* (disarm) | Raptor | Savage Rend |
+          | Boar | Charge | Scorpid | Poison |
+          | Carrion Bird | Demoralizing Screech | Spider | Web |
+          | Cat | Prowl | Tallstrider | Dust Cloud |
+          | Crab | Pinch | Turtle | Shell Shield |
+          | Crocolisk | Dismember (−50% healing) | Wind Serpent | Lightning Breath |
+          | Fox (new) | Trickster's Dance | Wolf | Furious Howl |
+
+          A Cat or a Boar is the safe selection for quests. A Wolf is good in dungeons because of Furious Howl. A Boar, a Bear or a Turtle is the defensive selection.
+
+      ??? example "Macros for Auto Shot, Hunter's Mark and the pet"
+
+          ```
+          #showtooltip Auto Shot
+          /cast !Auto Shot
+          ```
+
+          ```
+          #showtooltip Hunter's Mark
+          /cast [@mouseover,harm,nodead][] Hunter's Mark
+          ```
+
+          ```
+          /petattack [@mouseover,harm,nodead][]
+          ```
+
+          ```
+          #showtooltip
+          /cast [@pet,dead] Revive Pet; [nopet] Call Pet; Mend Pet
+          ```
+
+          ```
+          #showtooltip Eagle Eye
+          /cast [@cursor] Eagle Eye
+          ```
+
+          Warcraft Tavern recommends these 5 macros. The Codex wrote the texts, and they use the standard macro conditions of Classic. It is not confirmed that `[@cursor]` works with Eagle Eye in Forever.
+    warn: |
+      Blizzard announced a tuning patch for 10 November 2026 that makes pets more durable. Before the patch, pets died quickly in AoE. Use Mend Pet early.
+    hardcore: |
+      Tame Beast decreases your armor by 100% while you channel it. Do not tame a beast while a second enemy can get to you.
+    goals:
+      - "Do *Taming the Beast* and *Training the Beast* at level 10."
+      - "Tame a pet that you keep, and feed it until it is Happy."
+      - "Spend your first talent point."
+      - "Do your first dungeon for its quests."
+
+  - id: l20
+    title: "Aimed Shot, traps and speed"
+    story: |
+      Before level 20, each fight is the same: the pet tanks and you shoot. At level 20 you get tools for the start of the fight, for a second enemy and for travel. Your trainer teaches Aimed Shot, Freezing Trap and Aspect of the Cheetah.
+
+      Aimed Shot is a cast with a large hit, and all specs get it from the trainer in Forever. It changes the start of each fight. Cast it while the pet runs to the target. Remember that Aimed Shot and Multi-Shot have the same cooldown.
+
+      Traps are your crowd control. Freezing Trap freezes 1 enemy for 10 seconds, and it ends when the target takes damage. In Forever you can put a trap during combat. All traps have 1 cooldown of 30 seconds, so select the correct trap.
+
+      Use Aspect of the Cheetah for travel only. If an enemy hits you while it is active, you become Dazed. Change to Aspect of the Hawk before you fight.
+
+      Rapid Fire at 26 is your first damage cooldown. Frost Trap at 28 slows all enemies in an area. Polearms become available at the weapon masters at level 20. Expert professions also open at level 20.
+
+      Level 25 gives the *Hunter: Novice* Legacy Point. Only the first Hunter on your account gets it. See [Legacy](../../characters/legacy.md).
+    train:
+      - [20, "Aimed Shot", "A cast with a large hit. It has the same cooldown as Multi-Shot"]
+      - [20, "Aspect of the Cheetah, Freezing Trap", "Travel speed, and crowd control for 1 enemy"]
+      - [20, "Disengage", "Removes threat. It is not a leap. Classic-era level"]
+      - [22, "Scorpid Sting", "Decreases the hit chance of the target by 2%. Classic-era level"]
+      - [24, "Track Hidden", "Shows enemies in stealth on the minimap"]
+      - [26, "Rapid Fire", "Your first damage cooldown"]
+      - [28, "Frost Trap", "Slows all enemies in an area"]
+    dungeons:
+      - {name: "Shadowfang Keep", levels: "20–30"}
+      - {name: "Blackfathom Deeps", levels: "24–32", note: "It drops 2 bows"}
+      - {name: "The Stockade", levels: "25–29"}
+      - {id: excavation-site, levels: "26–33", note: "New. It is short, with 3 bosses. The Relic Guardian drops a gun"}
+      - {id: city-of-dalaran, levels: "28–35", note: "New. Guards in Dalaran attack Horde characters on sight"}
+    extra: |
+      | Aspect | Use it for |
+      |---|---|
+      | Hawk | All ranged damage. Your default |
+      | Monkey | Dodge, when an enemy hits you |
+      | Cheetah, Pack | Travel only. You become Dazed if an enemy hits you |
+      | Beast | Melee Attack Power in Forever. The Survival melee aspect |
+      | Wild | Nature resistance for the group (Classic-era effect) |
+
+      !!! conflict "Conflict: library books"
+          The [Leveling](../../characters/leveling.md) page says that 10, 20 and 25 books open quests at levels 20, 35 and 45. The Warcraft Tavern library guide gives levels 1, 20 and 30 for the same counts. The 25-book reward can be the *Truthseeker's Bow*. Give books to Garion Wendell in Stormwind or to Owen Thadd in the Undercity.
+    tip: |
+      Before a pull of 2 enemies, put Freezing Trap between you and the group. Send the pet to the first enemy. The second enemy runs into the trap.
+    goals:
+      - "Train Aimed Shot, Freezing Trap and Aspect of the Cheetah at level 20."
+      - "Learn polearms at a weapon master if you want a two-hand weapon with stats."
+      - "Collect library books for Garion Wendell or Owen Thadd."
+
+  - id: l30
+    title: "Feign Death and careful pulls"
+    story: |
+      Level 30 gives Feign Death. You fall down, and enemies stop their attack on you. Use it when the pet dies, when you pull too many enemies, or when you have more threat than the tank.
+
+      Feign Death is not a guarantee. An enemy can resist it. Always have a second plan: a trap, a slow or a way to run.
+
+      Your pet also learns Dash or Dive at level 30. Viper Sting at 36 drains mana from casters. In dungeons, you now have 3 tasks: ranged damage, Freezing Trap on a marked target, and careful pulls.
+
+      The new battleground Battle for the Darkspear Islands opens at level 30. It has 15 players on each side, 4 bases and a flag in the center. A Hunter is good at flag chases and at the defense of a base. See [Battlegrounds](../../content/pvp/battlegrounds.md#darkspear-islands).
+
+      Start to save gold now. At level 40 you need 100g for riding, and dual spec costs 50g. The new zone [Riverglades](../../world/zones.md#riverglades) opens at level 35. Artisan professions and the centaur quests in Desolace also need level 35.
+    train:
+      - [30, "Feign Death", "Removes you from combat. An enemy can resist it"]
+      - [30, "Aspect of the Beast", "The melee aspect of Survival. Classic-era level"]
+      - [34, "Explosive Trap", "Fire AoE damage. Classic-era level"]
+      - [36, "Viper Sting", "Drains mana. Warcraft Tavern gives this level"]
+    dungeons:
+      - {name: "Razorfen Kraul and Gnomeregan", levels: "29–38"}
+      - {name: "Scarlet Monastery", levels: "30–46", note: "4 wings. Arcanist Doan in the Library drops a crossbow"}
+      - {id: drowned-city, levels: "35–42", note: "New. It drops a gun, a polearm and leather with Agility"}
+    tip: |
+      In a dungeon, pull with Hunter's Mark and Auto Shot, and let the tank get threat first. Nothing shows that Forever has Misdirection.
+    hardcore: |
+      Keep Feign Death and a trap ready before each pull. Do not fight with Aspect of the Cheetah or Aspect of the Pack active.
+    goals:
+      - "Train Feign Death at level 30. Put it on a key that you can reach quickly."
+      - "Try the Battle for the Darkspear Islands."
+      - "Save 150g before level 40."
+
+  - id: l40
+    title: "Mail, a mount and a second spec"
+    story: |
+      Level 40 changes much. Your class trainer teaches you to wear mail. You can buy riding for 100g, which includes your first mount. You can buy dual spec for 50g from your class trainer.
+
+      Mail gives more armor, but Agility is more important than the armor type. Warcraft Tavern says that leather and mail are both good at level 60. Replace a leather item only when the mail item has better stats.
+
+      Each talent path gets its largest talent at level 40. The Talents add-on shows how it changes your fight. The public beta stopped at level 30. Thus, almost every build above level 30 is theory, not tested play.
+
+      With dual spec, keep your solo build in 1 spec. A good pair is Beast Mastery for quests, with Marksmanship for dungeons or Survival for PvP. The cost of a respec decreases to 1g with time. See [Leveling](../../characters/leveling.md#dual-specialization).
+
+      Change your pet for the task. Use a Wolf in dungeons, because Furious Howl helps the group. Keep a Boar or a Cat for quests. Aspect of the Wild at 46 gives Nature resistance to the group.
+
+      Level 45 gives the *Hunter: Experienced* Legacy Point.
+    train:
+      - [40, "Mail armor", "From your class trainer"]
+      - [40, "Volley, Aspect of the Pack", "AoE damage, and travel speed for the group. Classic-era level"]
+      - [46, "Aspect of the Wild", "Nature resistance for the group. Warcraft Tavern gives this level"]
+    dungeons:
+      - {id: kroldok-stronghold, levels: "40–47", note: "New. It is in Riverglades. No source lists a ranged weapon there"}
+      - {name: "Razorfen Downs", levels: "37–46"}
+      - {name: "Uldaman", levels: "41–51", note: "Baelog drops a bow"}
+      - {name: "Zul'Farrak", levels: "44–54"}
+    warn: |
+      Buy riding before dual spec if you do not have 150g. A mount saves more time than a second spec.
+    goals:
+      - "Learn mail at your class trainer."
+      - "Buy riding (100g), then dual spec (50g)."
+      - "Tame a Wolf for dungeons and keep it in the stable."
+
+  - id: l50
+    title: "Mana, hit and the Onyxia attunement"
+    story: |
+      The last 10 levels have the most dungeons. Reportedly, each boss in the new dungeons drops a blue item. Start to collect your level 60 equipment here.
+
+      Your talents are almost complete. Most of the last points go into a second tree. Start to keep items with hit, because you need hit at level 60.
+
+      Mana is the limit in long dungeon fights. Use Aspect of the Hawk and Serpent Sting on each boss, but do not use Arcane Shot on cooldown when your mana is low. Auto Shot uses no mana.
+
+      The dungeons also ask more of your control tools. If you pull too many enemies, use Feign Death. Keep Freezing Trap ready for a second enemy. Remember the trap cooldown: after Explosive Trap, Freezing Trap is not ready for 30 seconds.
+
+      Start the attunement for Onyxia's Lair early. Its quest chain goes through Blackrock Depths and Blackrock Spire. Quest in Azshara for its new quests, and in Winterspring for the route to Mount Hyjal.
+    dungeons:
+      - {id: alcaz-prison, levels: "48–55", note: "New. It is in Dustwallow Marsh"}
+      - {name: "Maraudon", levels: "46–55", note: "A quest gives the ranged weapon Verdant Keeper's Aim"}
+      - {name: "Sunken Temple and Blackrock Depths", levels: "50–60"}
+      - {id: blackmaw-hold, levels: "55–60", note: "New. It is in Azshara. It has an entrance to the Barrow Deeps"}
+      - {id: shapers-terrace, levels: "58–60", note: "New. It is in Un'Goro Crater"}
+    warn: |
+      The level 60 epic bow quest of Classic needs a drop from Molten Core. Molten Core is not in Forever at launch, so you cannot get Rhok'delar.
+    goals:
+      - "Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests."
+      - "Start the attunement for Onyxia's Lair."
+      - "Keep items with hit for level 60."
+
+  - id: l60
+    title: "Ranged weapon, hit and ammunition"
+    story: |
+      At level 60 you get the *Hunter: Master* Legacy Point. Mount Hyjal opens through Darkwhisper Gorge in Winterspring. The fast mount costs 1,000g.
+
+      All 3 launch raids open on 9 December 2026. Use the time before that date for 4 tasks. Get the best ranged weapon that you can. Get hit from items. Collect consumables and ammunition. Complete the attunement for Onyxia's Lair.
+
+      The hit number is not certain. Warcraft Tavern gives 9% at 300 weapon skill, and 6% at 305 skill, against a level 63 boss. Its class overview says 9% against bosses at level 60. Only the Survival talent Surefooted gives hit.
+
+      No source has a tested item list for level 60. Collect blue items with Agility, hit and crit from the level 60 dungeons. Get reputation from the Battle for the Darkspear Islands for its rewards: trinkets, rings and weapons.
+
+      The attunement gives the Drakefire Amulet. It is not account-wide, so each character must do it. If your path changes its build at level 60, respec now. The Talents add-on gives the builds of your path.
+    dungeons:
+      - {id: blackmaw-hold, levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60"}
+      - {name: "Scholomance, Stratholme, Dire Maul and Blackrock Spire", levels: "54–60", note: "The Classic dungeons are still in the game"}
+    goals:
+      - "Select your level 60 build. Respec if your path needs it."
+      - "Do the attunement for Onyxia's Lair."
+      - "Collect ammunition, Agility elixirs and potions before 9 December."
+
+  - id: raid
+    title: "Lone Wolf or the pet"
+    story: |
+      **The Barrow Deeps** has 10 players. In a small raid, the abilities of your pet and your traps are more important. A Wolf with Furious Howl helps the physical damage dealers. See [The Barrow Deeps](../../content/raids/barrow-deeps.md).
+
+      **Hyjal Summit** has 20 players and 13 bosses. It is possibly the main source of Hunter equipment. See [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+      **Onyxia's Lair** has 40 players and much Fire damage. Blizzard recommends Fire resistance but gives no number. Keep distance from other players in phase 2. See [Onyxia's Lair](../../content/raids/onyxias-lair.md).
+
+      Players expect Marksmanship in raids, because it has Trueshot Aura and Sniper Shot. Lone Wolf gives 20% damage with no pet, so some Hunters dismiss the pet. It is not confirmed how much damage a pet does in raids, or how well pets live through boss AoE. Keep a pet in the stable for fights where its abilities help. Pets do not get player buffs, but they get your crit and a part of your Attack Power.
+
+      Tranquilizing Shot removes Enrage and Frenzy effects from an enemy. No source says where you learn it in Forever.
+
+      In PvP, Survival is the control spec. Each trap roots its targets with Entrapment. Counterattack roots a melee player after a parry, and Strider Kick gives you speed. Lacerating Strikes adds a bleed. Roots from procs share diminishing returns. See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/battlegrounds.md).
+    extra: |
+      | Enemy in PvP | What you do |
+      |---|---|
+      | Warrior, Rogue | Keep range with Wing Clip, Frost Trap and Concussive Shot. Scorpid Sting decreases their hit chance |
+      | Mage | A difficult fight. Viper Sting drains mana. Feign Death makes the Mage lose its target. Keep Scatter Shot for later in the fight (Classic-era) |
+      | Priest, Shaman, Druid healers | Use a pet with Dismember or Sonic Blast. Use Viper Sting, and keep a sting on the target |
+      | Hunter | Pet control and trap timing decide the fight. Tranquilizing Shot removes the Enrage of the enemy pet |
+      | Warlock | Kill the pet, or disarm it with *Mine!*. Tranquilizing Shot also helps |
+
+      PvP pets: Cat (fast attacks), Wind Serpent (Lightning Breath ignores armor), Crocolisk (Dismember), Bat (Sonic Blast) and Bird of Prey (*Mine!*).
+
+      Battlegrounds: Warsong Gulch from level 10, Arathi Basin from 20, the Darkspear Islands from 30 and Alterac Valley from 51. Honor and ranks have seasons with weekly limits. You can get Rank 14 at about week 10.
+
+      In the open world, Feign Death, Freezing Trap and Concussive Shot let you select your fights. Track Humanoids and Track Hidden show enemies before they attack.
+    hardcore: |
+      [Hardcore](../../about/hardcore.md) comes in winter 2026/27. The Hunter is one of the safest classes for it. Play Beast Mastery, and keep a defensive pet (Boar, Bear or Turtle) for dangerous zones. In corridors, set the pet to Passive so that it does not pull. Do elite quests and dungeons with a group. Walk on Air and Shadowmeld are more escapes for Skyborne and Night Elves.
+
+# ------------------------------------------------------------------ races
+races:
+  - id: night-elf
+    name: Night Elf
+    faction: alliance
+    status: Classic
+    pitch: "The burst selection for the Alliance. Elune's Light gives 10% crit for 15 seconds, and Shadowmeld is a second escape. Method calls it arguably the strongest Hunter race."
+    start: |
+      You start in Shadowglen on Teldrassil. Your first trainer is at Aldrassil (Ayanna Everstride in Classic). At level 6, go to Dolanaar. The trainers of Darnassus are in the Cenarion Enclave (Classic location).
+    notes:
+      l10: "In Classic, Dazalar in Dolanaar gives the taming quests: a spider, a Nightsaber and an owl. Keep a Nightsaber (Cat) for damage. Then take the boat from Rut'theran Village to Auberdine."
+      l30: "Shadowmeld moves you to the bottom of the threat table (Method). Use it in dungeons when Feign Death is on cooldown."
+      l60: "Use Elune's Light together with Rapid Fire at the start of a boss fight. The pet gets your crit, so it also gets the bonus."
+      raid: "Shadowmeld lets you wait for flag carriers in battlegrounds. Stop your attack and call the pet back before you use it."
+  - id: dwarf
+    name: Dwarf
+    faction: alliance
+    status: Classic
+    pitch: "The raid and Hardcore selection. Artisan's Precision gives 1% hit, Big Game Hunter gives 5% damage against Beasts, and Stoneform removes poisons and bleeds."
+    start: |
+      You start in Coldridge Valley in Dun Morogh. Your first trainer is in Anvilmar (Thorgas Grimson in Classic). At level 6, go through the tunnel to Kharanos. The trainers of Ironforge are in the Hall of Arms (Classic location).
+    notes:
+      l10: "In Classic, Grif Wildheart in Kharanos gives the taming quests: a boar, a Snow Leopard and a bear. The new dungeon Hall of Thanes is in Ironforge. Then go east to Loch Modan, which has many Beasts."
+      l60: "Artisan's Precision gives 1% hit. You need 1% less hit from items for raid bosses."
+      raid: "Stoneform removes Rogue poisons and bleeds, and it decreases physical damage by 10% for 8 seconds."
+  - id: human
+    name: Human
+    faction: alliance
+    status: New
+    pitch: "New in Forever. Ruthless gives 1% crit at all times, and Will to Survive removes stuns. Warcraft Tavern names Human and Dwarf the best Alliance PvP Hunters."
+    start: |
+      You start in Northshire Valley in Elwynn Forest. Classic had no Human Hunter, so the trainers are new. The Warcraft Wiki lists Tordrin Sternblade in Northshire Valley and Josephine Carson in Goldshire. Check the 2 locations in the game. No source confirms the trainer location in Stormwind. The Hall of Arms in Ironforge has Hunter trainers (Classic location).
+    notes:
+      l10: "No source lists the beasts of the Human taming quests. Elwynn Forest has wolves, boars and bears. Then go to Westfall, or take the new boat from Stormwind Harbor to Auberdine."
+      l60: "Ruthless gives 1% crit, and the pet gets your crit chance."
+      raid: "Will to Survive removes Cheap Shot, Kidney Shot and Hammer of Justice. Use it, move away and put a trap. Perception finds a Rogue in stealth."
+  - id: skyborne-high-order
+    name: Skyborne (High Order)
+    faction: alliance
+    status: New
+    pitch: "New in Forever, and a paid race. Wind Blessed gives permanent haste, Read Ley Line gives mana regeneration, and Walk on Air is a glide."
+    start: |
+      You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The quest *Reading the Leylines* teaches Read Ley Line. Reportedly, the island quests take you to level 12 to 14. The trainers are in Thendal Village and in Valanaar. To play a Skyborne, you must have the Skyborne Heroic Pack or a higher edition.
+    notes:
+      l10: "In the Skyborne version of *Taming the Beast*, you use a Taming Rod on a Windsong Crawler, a crab near water. Players report foxes on the island, but this is not confirmed. Leave on the airship to Dalaran, then walk south to Southshore."
+      l40: "Read Ley Line gives +50% health and mana regeneration for 15 seconds. Use it in place of a drink between pulls."
+      l60: "Wind Blessed gives haste, which makes Auto Shot, casts and the global cooldown faster. Sources give 1%, 2% or 3% haste, and the latest official notes say 2%."
+  - id: orc
+    name: Orc
+    faction: horde
+    status: Classic
+    pitch: "The Beast Mastery selection for the Horde. Command gives 5% pet damage, Blood Fury gives 10% Attack Power for 15 seconds, and Hardiness makes stuns 20% shorter."
+    start: |
+      You start in the Valley of Trials in Durotar. Your first trainer is near the Den (Jen'shan in Classic). At level 6, go to Razor Hill. The trainers of Orgrimmar are in the Valley of Honor (Classic location).
+    notes:
+      l10: "In Classic, Thotar in Razor Hill gives the taming quests: a boar, a crab and a scorpid. Keep a Dire Mottled Boar, or tame a Durotar Tiger for damage. Then go to the Crossroads in the Barrens."
+      l40: "Use Blood Fury together with Rapid Fire. On the Beast Mastery path, add Bestial Wrath. The cooldown of Blood Fury is 2 minutes."
+      l60: "Command has no value if you play Lone Wolf with no pet. A Troll is then a little better."
+      raid: "Shatter Curse removes curses and Warlock Banes. Hardiness makes Cheap Shot and Kidney Shot shorter."
+  - id: troll
+    name: Troll
+    faction: horde
+    status: Classic
+    pitch: "The Marksmanship selection for the Horde. Berserking gives 10% attack and cast speed for 15 seconds, and it keeps its full value with no pet."
+    start: |
+      You start in the Valley of Trials in Durotar, with the Orcs. Your first trainer is near the Den (Jen'shan in Classic). At level 6, go south to Sen'jin Village. The trainers of Orgrimmar are in the Valley of Honor (Classic location).
+    notes:
+      l10: "The taming quests are the same as for Orcs, from Thotar in Razor Hill (Classic). Beast Slaying makes each quest against beasts faster. Then go to the Crossroads in the Barrens."
+      l30: "The Battle for the Darkspear Islands opens at level 30. The Darkspear Raiders are your faction there. Rapid Regeneration heals 50% of your health in 6 seconds, but each action stops it."
+      l60: "Use Berserking together with Rapid Fire. It also makes the cast of Aimed Shot shorter."
+  - id: tauren
+    name: Tauren
+    faction: horde
+    status: Classic
+    pitch: "The safe selection. War Stomp stuns enemies in melee range, Endurance gives 5% health, and Plainsrunning makes travel faster before level 40."
+    start: |
+      You start at Camp Narache in Mulgore. Your first trainer is at Camp Narache (Lanka Farshot in Classic). At level 6, go to Bloodhoof Village. The trainers of Thunder Bluff are on Hunter Rise (Classic location).
+    notes:
+      l10: "In Classic, Yaw Sharpmane in Bloodhoof Village gives the taming quests: a plainstrider, a wolf and a Swoop. Keep a Prairie Wolf for Furious Howl. Then train in Thunder Bluff and go east to the Crossroads."
+      l20: "War Stomp is your answer to the deadzone. Stun the enemies, walk back and shoot or put a trap."
+      raid: "After the hotfix of 5 November, Plainsrunning ends when you pick up a flag."
+  - id: skyborne-windshaper
+    name: Skyborne (Windshaper)
+    faction: horde
+    status: New
+    pitch: "New in Forever, and a paid race. Wind Blessed gives permanent haste, Skysight gives 15% speed for 15 seconds, and Walk on Air is a glide."
+    start: |
+      You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The quest *The Gift of Skysight* teaches Skysight. Reportedly, the island quests take you to level 12 to 14. The trainers are in Thendal Village and in Valanaar. To play a Skyborne, you must have the Skyborne Heroic Pack or a higher edition.
+    notes:
+      l10: "In the Skyborne version of *Taming the Beast*, you use a Taming Rod on a Windsong Crawler, a crab near water. You arrive at Skywatcher Plateau in Mulgore. Thunder Bluff has the nearest trainers, on Hunter Rise."
+      l20: "Use Skysight together with Concussive Shot when a melee enemy comes near. You get out of the deadzone quickly."
+      l60: "Wind Blessed gives haste, which makes Auto Shot, casts and the global cooldown faster. Sources give 1%, 2% or 3% haste, and the latest official notes say 2%."
+
+factions:
+  alliance:
+    l10: "Quest in Westfall and Loch Modan, or in Darkshore. The new boat from Stormwind Harbor goes to Auberdine. Go to Redridge Mountains at about level 18."
+    l20: "Quest in Redridge Mountains, the Wetlands, Duskwood and Ashenvale. The Three Corners crate camp is in Redridge. The new dungeon Excavation Site is in the Wetlands."
+    l30: "Quest in Hillsbrad Foothills, Arathi Highlands, Stranglethorn Vale, Desolace and Dustwallow Marsh. Theramore is your town in Dustwallow Marsh, and Dalaran is friendly to the Alliance. The Nesingwary quests in Stranglethorn give a bow or a rifle."
+    l40: "The Alliance town in Riverglades is Farholde Keep. Then quest in the Badlands, Swamp of Sorrows, Tanaris, Feralas and the Hinterlands. A ferry goes from Steamwheedle Port in Tanaris to Riverglades."
+    l50: "Quest in Azshara, Un'Goro Crater, Felwood, the Plaguelands, Burning Steppes, Winterspring and Silithus. Azshara has many new quests."
+    l60: "The Theramore Expeditionary Force is your faction in the Battle for the Darkspear Islands. One computed list names its shoulders and gloves for Hunters."
+  horde:
+    l10: "Quest in the Barrens and Silverpine Forest. The *Durotar Supply and Logistics* crate camp is west of the Crossroads. Ragefire Chasm in Orgrimmar is your first dungeon."
+    l20: "Quest in Stonetalon Mountains, Hillsbrad Foothills, Ashenvale and Thousand Needles. Tarren Mill is your town in Hillsbrad."
+    l30: "Quest in Arathi Highlands, Stranglethorn Vale, Desolace and Dustwallow Marsh. Your towns are Hammerfall in Arathi and Grom'gol in Stranglethorn. Guards in Dalaran attack Horde characters on sight. The Nesingwary quests in Stranglethorn give a bow or a rifle."
+    l40: "The Horde town in Riverglades is Rog'mar. Then quest in the Badlands, Swamp of Sorrows, Tanaris, Feralas and the Hinterlands. A ferry goes from Steamwheedle Port in Tanaris to Riverglades."
+    l50: "Quest in Azshara, Un'Goro Crater, Felwood, the Plaguelands, Burning Steppes, Winterspring and Silithus. Azshara has many new quests."
+    l60: "The Darkspear Raiders are your faction in the Battle for the Darkspear Islands. No reliable source names their rewards for Hunters."
+
+# ------------------------------------------------------------------ talent paths
+paths:
+  - id: bm
+    name: "Beast Mastery"
+    pitch: "The safe path, and the fastest path for quests. The pet tanks, and you add hawks at level 25. Method, Mobalytics and Warcraft Tavern recommend it for levels 1 to 60."
+    leveling: bm-leveling
+    endgame: [bm-raid]
+    gear: ranged
+    play:
+      l1: "You have no talent points and no pet before level 10. Pull with Auto Shot, use Serpent Sting and Arcane Shot, and kite with Concussive Shot."
+      l10: "Send the pet and wait for Growl. Then use Hunter's Mark, Serpent Sting and Arcane Shot. Deadly Aspects sometimes gives 30% ranged attack speed while Aspect of the Hawk is active. Endurance Training keeps the pet alive."
+      l20: "Start each fight with Aimed Shot while the pet runs. Summon Hawk comes at level 25 and has the same 6 second cooldown as Arcane Shot. Call 2 hawks first. Use Arcane Shot only while 2 hawks are active."
+      l30: "Intimidation at level 30 is a 3 second stun that also makes much threat. Use it when the pet loses the enemy. Bestial Discipline lets a part of your mana regeneration continue while you cast. Frenzy makes the pet attack faster after each crit."
+      l40: "Bestial Wrath at level 40 is your burst: the pet does 50% more damage for 18 seconds. Use it on elite enemies and bosses. Then Lethal Attacks adds crit, and Careful Aim changes Intellect into Attack Power."
+      l50: "Efficiency makes your shots cheaper, and Mortal Shots makes your crits larger. If the pet loses aggro, use Wing Clip or Frost Trap and move back."
+      l60: "Your leveling build is the same as the level 60 build. You do not need a respec. Use it for dungeons, for solo play and for the pet in raids."
+      raid: "The pet gets 10% of your Attack Power and 100% of your crit. Put the pet behind the boss. It is not confirmed how well pets live through boss AoE."
+    priority:
+      - "Use **Aspect of the Hawk**. Send the pet, then start **Auto Shot**."
+      - "Keep **Serpent Sting** on the target."
+      - "Use **Summon Hawk** until 2 hawks are active."
+      - "Use **Arcane Shot** when the 2 hawks have 6 seconds or more left. The 2 abilities share a cooldown."
+      - "Cast **Aimed Shot** on cooldown."
+      - "Use **Bestial Wrath** and **Rapid Fire** on cooldown in boss fights."
+  - id: bm-mm
+    name: "Marksmanship at 60"
+    pitch: "The path that most sources describe. You level with the Beast Mastery build, because the pet tanks. At level 60 you change to Marksmanship for raids."
+    leveling: bm-leveling
+    endgame: [mm-raid, mm-pvp]
+    gear: ranged
+    play:
+      l1: "You have no talent points and no pet before level 10. Pull with Auto Shot, use Serpent Sting and Arcane Shot, and kite with Concussive Shot."
+      l10: "You level with the Beast Mastery build, because the pet tanks. Send the pet and wait for Growl. Then use Hunter's Mark, Serpent Sting and Arcane Shot. Deadly Aspects sometimes gives 30% ranged attack speed while Aspect of the Hawk is active. Your raid build keeps this talent."
+      l20: "Start each fight with Aimed Shot while the pet runs. Summon Hawk comes at level 25 and has the same 6 second cooldown as Arcane Shot. Call 2 hawks first, then use Arcane Shot. Learn to cast Aimed Shot between Auto Shots now, because Marksmanship uses it much."
+      l30: "Intimidation at level 30 is a 3 second stun that also makes much threat. Use it when the pet loses the enemy. Frenzy makes the pet attack faster after each crit. Keep Serpent Sting on each target. Your raid build needs that habit for Rapid Recuperation."
+      l40: "Bestial Wrath at level 40 makes the pet do 50% more damage for 18 seconds. Use it on elite enemies and bosses. Dual spec lets you try a Marksmanship build in dungeons. With 31 points in the tree, it has Sniper Shot. Keep Beast Mastery for quests."
+      l50: "You complete Careful Aim, then you take Efficiency and Mortal Shots. Your raid build also has Careful Aim and Mortal Shots, so you can learn their effect now. Collect items with hit, because the Marksmanship raid build has no hit talent."
+      l60: "Respec to the Marksmanship raid build, 5/46/0. It takes Lone Wolf, so dismiss the pet for 20% more damage. If you keep the pet, move that point to Improved Tracking."
+      raid: "Start with Sniper Shot and keep Serpent Sting on the boss for Rapid Recuperation. For PvP, the second build keeps the pet and takes Scatter Shot and Entrapment. Keep a pet in the stable for fights where its abilities help."
+    priority:
+      - "Before the pull, put **Immolation Trap** where the tank stops."
+      - "Start **Sniper Shot** when the tank pulls. Cast it again on cooldown."
+      - "Keep **Serpent Sting** on the target. Rapid Recuperation needs it."
+      - "Cast **Aimed Shot** on cooldown, then **Arcane Shot**."
+      - "Use **Rapid Fire** on cooldown."
+      - "Against groups: **Explosive Trap** before the pull, then **Multi-Shot** in place of Aimed Shot."
+  - id: mm
+    name: "Marksmanship"
+    pitch: "The dungeon path. Your shots do the damage, and the pet does not have to tank. Use it if you level mostly in groups. No source recommends it for quests."
+    leveling: mm-leveling
+    endgame: [mm-raid, mm-pvp]
+    gear: ranged
+    play:
+      l1: "You have no talent points and no pet before level 10. Pull with Auto Shot, use Serpent Sting and Arcane Shot, and kite with Concussive Shot."
+      l10: "Lethal Attacks gives crit, and Careful Aim changes Intellect into Attack Power. Keep the pet, and let it use Growl before you shoot. Your shots make more threat than on the Beast Mastery path."
+      l20: "Rapid Killing makes your next Shot 20% stronger after each kill. Use that bonus on Aimed Shot. Trueshot Aura at level 25 gives 20 ranged Attack Power to the group. Mortal Shots makes each crit larger."
+      l30: "Rapid Recuperation starts when you apply Serpent Sting. For 15 seconds, a part of your mana regeneration continues while you cast. Barrage increases Aimed Shot and Multi-Shot. Ranged Weapon Specialization adds 5% damage."
+      l40: "Sniper Shot at level 40 has a 4 second cast and a 15 second cooldown. Start each pull with it from 45 yards. Your next 3 Shots get 10 yards more range. Efficiency then makes your Shots cheaper."
+      l50: "Scatter Shot at level 52 disorients an enemy for 4 seconds. Use it when an enemy gets to you, then put a trap. Deadly Aspects gives attack speed procs, and Hawk Eye gives range."
+      l60: "For raids, move the point from Scatter Shot to Lone Wolf and move Efficiency to Improved Serpent Sting. Do not take Lone Wolf before level 60, because the pet protects you."
+      raid: "The raid build has no hit talent, so get all hit from items. It is not confirmed how much damage a pet does in raids. If it is more than 20% of your damage, keep the pet."
+    priority:
+      - "Before the pull, put **Immolation Trap** where the tank stops."
+      - "Start **Sniper Shot** when the tank pulls. Cast it again on cooldown."
+      - "Keep **Serpent Sting** on the target. Rapid Recuperation needs it."
+      - "Cast **Aimed Shot** on cooldown, then **Arcane Shot**."
+      - "Use **Rapid Fire** on cooldown."
+      - "Against groups: **Explosive Trap** before the pull, then **Multi-Shot** in place of Aimed Shot."
+  - id: sv
+    name: "Survival (melee)"
+    pitch: "The melee Hunter, new in Forever. You shoot while the enemy comes to you, then you fight in melee with the pet. It is slower than Beast Mastery for quests and strong in PvP."
+    leveling: sv-leveling
+    endgame: [sv-melee, sv-pvp]
+    gear: melee
+    play:
+      l1: "You have no talent points and no pet before level 10. Shoot until the enemy gets to you, then use Raptor Strike."
+      l10: "Improved Tracking gives 5% damage against the creature type that you track. Change the tracking for each area. Shoot while the enemy comes, then use Raptor Strike. In Classic, Mongoose Bite needs a dodge."
+      l20: "Deterrence at level 20 gives 25% dodge and parry for 10 seconds. Use it when a melee enemy hits you hard. Counterattack at 25 is a strike and a 5 second root after each parry. Put Immolation Trap at your feet during the fight. Surefooted gives 3% hit."
+      l30: "Strider Kick at level 30 does 100% weapon damage each 8 seconds and makes you faster. Expose Prey lets you use Mongoose Bite after attacks on a target with Hunter's Mark. Keep Hunter's Mark on each target. Use Aspect of the Beast in melee."
+      l40: "Lacerating Strikes at level 40 adds a bleed of 21 seconds to Mongoose Bite. Resourcefulness makes melee abilities and traps much cheaper. Survivalist's Discipline decreases the trap cooldown. With dual spec, keep Beast Mastery for difficult quests."
+      l50: "Lethal Attacks adds 5% crit to all attacks, and Careful Aim changes Intellect into Attack Power. Deadly Aspects comes last, from level 56. With Aspect of the Beast, it gives melee attack speed procs. Put Immolation Trap at your feet in each fight, because Clever Traps makes it 30% stronger."
+      l60: "No source has published a point split for melee Survival. The melee build and the PvP build are Codex builds from the client data. Nobody tested them in raids. The melee build gets an Immolation Trap each 18 seconds. You can also stay in melee with 2 weapons and Predator's Edge, but no source has a complete priority for that."
+      raid: "A raid boss does not attack you, so you get no parry for Counterattack there. Surefooted gives 3% hit, so you need less hit from items. In PvP, each trap roots its targets for 5 seconds with Entrapment 5/5. The PvP build has a trap each 18 seconds. Roots from procs share diminishing returns."
+    priority:
+      - "Use **Aspect of the Hawk** or **Aspect of the Beast**, and track the correct creature type."
+      - "Keep **Hunter's Mark** on the target. Expose Prey needs it."
+      - "While the target comes near: Auto Shot, **Serpent Sting**, Arcane Shot and Aimed Shot."
+      - "In melee: **Raptor Strike**, **Immolation Trap** at your feet, **Mongoose Bite** on each proc, and **Strider Kick** on cooldown."
+      - "When the pet has aggro, you can move back and shoot again."
+
+# ------------------------------------------------------------------ equipment sets
+gear:
+  - id: ranged
+    name: "Ranged: quests and dungeons"
+    pitch: "The standard set for Beast Mastery and Marksmanship. You use the best ranged weapon from quests and dungeons, and a melee weapon for its stats only. The item names come from Timesaver.gg, Warcraft Tavern and Method.gg."
+    stats: "Leveling: Agility > Attack Power > Crit > Intellect > Stamina and Spirit (Warcraft Tavern, beta). Level 60: get hit first. No source has a tested ranking"
+    chapters:
+      l1:
+        text: "Your first important item is a better ranged weapon. The melee weapon is only for stats. Any leather or cloth with Agility or Stamina is good."
+        items:
+          - {slot: "Ranged", name: "Militia Bow", from: quest, where: "*Rare Books*, Elwynn Forest (Alliance)", basis: forever}
+          - {slot: "Ranged", name: "Refined Shortbow", from: quest, where: "*Foul Matriarch*, Zephras Isle", basis: forever}
+          - {slot: "Melee", name: "Brave's Axe", from: quest, where: "*Rite of Strength*, Mulgore (Horde)", basis: forever}
+      l10:
+        text: "The first dungeons give a ranged weapon for each faction. Venomstrike from Wailing Caverns is the selection of 3 sources at about level 19. You cannot wear mail before level 40, so ignore mail drops."
+        items:
+          - {slot: "Ranged", name: "Skorn's Rifle", from: quest, where: "*The Demon Scarred Cloak*, Mulgore (Horde)", basis: forever}
+          - {slot: "Ranged", name: "Calibrated Blunderbuss", from: quest, where: "*Old Ironforge Incursion*, Hall of Thanes (Alliance)", basis: forever}
+          - {slot: "Ranged", name: "Barbaric Crossbow", from: dungeon, where: "Ragefire Chasm (Horde)", basis: forever}
+          - {slot: "Ranged", name: "Venomstrike", from: dungeon, where: "Wailing Caverns, Lord Serpentis", basis: forever}
+          - {slot: "Chest", name: "Bloodied Chestwraps", from: dungeon, dungeon: ruins-of-lordaeron, where: "Viktor the Vile. Warcraft Tavern names it for Hunters", basis: forever}
+          - {slot: "Hands", name: "Flamefist Grips", from: dungeon, dungeon: hall-of-thanes, where: "Magmatus. Leather. No source gives the stats", basis: forever}
+          - {slot: "Melee", name: "Balanced Fighting Stick", from: quest, where: "*WANTED: \"Hogger\"*, Elwynn Forest (Alliance)", basis: forever}
+          - {slot: "Melee", name: "Steady Bastard Sword", from: quest, where: "*Skull Rock*, Durotar (Horde)", basis: forever}
+      l20:
+        text: "Blackfathom Deeps gives 2 bows, and the Excavation Site gives a gun near level 28. Sources do not agree on the Quilboar Blaster. Method.gg says that it is for the Horde only, and Warcraft Tavern says that it is for the 2 factions."
+        items:
+          - {slot: "Ranged", name: "Fallenroot Longbow", from: dungeon, where: "Blackfathom Deeps, Lorgus Jett", basis: forever}
+          - {slot: "Ranged", name: "Naga Heartpiercer", from: dungeon, where: "Blackfathom Deeps", basis: forever}
+          - {slot: "Ranged", name: "Golemsight Long Gun", from: dungeon, dungeon: excavation-site, where: "Relic Guardian", basis: forever}
+          - {slot: "Ranged", name: "Quilboar Blaster", from: quest, where: "*A Vengeful Fate*, Razorfen Kraul, level 29", basis: forever}
+          - {slot: "Legs", name: "Supple Bellyskin Leggings", from: dungeon, dungeon: excavation-site, where: "Saltspine. Leather. No source gives the stats", basis: forever}
+          - {slot: "Chest", name: "Garb of Florid Feathers", from: dungeon, dungeon: excavation-site, where: "Shadetooth. Leather. No source gives the stats", basis: forever}
+          - {slot: "Staff", name: "Crescent Staff", from: quest, where: "*Leaders of the Fang*, Wailing Caverns (Horde)", basis: forever}
+          - {slot: "Melee", name: "Impaling Harpoon", from: dungeon, where: "Deadmines, Captain Greenskin (Alliance)", basis: forever}
+      l30:
+        text: "The Nesingwary quests in Stranglethorn Vale give a bow or a rifle. The Drowned City is the only new dungeon with public item stats. Timesaver.gg keeps the polearm Felbough Arm from level 35 to level 55."
+        items:
+          - {slot: "Ranged", name: "Master Hunter's Bow or Master Hunter's Rifle", from: quest, where: "*Big Game Hunter*, Stranglethorn Vale. Elite quests", basis: forever}
+          - {slot: "Ranged", name: "Gravespike Repeater", from: dungeon, dungeon: city-of-dalaran, where: "Atrexis the Grave Knight. A crossbow", basis: forever}
+          - {slot: "Ranged", name: "Spellsever Crossbow", from: dungeon, where: "Scarlet Monastery, Arcanist Doan, level 35", basis: forever}
+          - {slot: "Ranged", name: "Frosty Blunderbuss", from: dungeon, dungeon: drowned-city, where: "Captain Dreadrise. 21.3 DPS, +4 Stamina, +10 Attack Power", basis: forever}
+          - {slot: "Polearm", name: "Felbough Arm", from: dungeon, dungeon: city-of-dalaran, where: "Fel Ancient", basis: forever}
+          - {slot: "Legs", name: "Brinebelly Leggings", from: dungeon, dungeon: drowned-city, where: "Var'Taka. +15 Agility, +11 Stamina, +9 Spirit", basis: forever}
+          - {slot: "Wrist", name: "Oathbound Bracers", from: dungeon, dungeon: drowned-city, where: "Zul'Alai, a probable drop. +6 Agility, +0.9% hit", basis: forever}
+          - {slot: "Back", name: "Waterlogged Burial Shroud", from: dungeon, dungeon: drowned-city, where: "Primeval Elemental. +7 Stamina, +0.5% crit, +12 Attack Power", basis: forever}
+      l40:
+        text: "Mail opens at level 40. No source lists a ranged weapon in Krol'dok Stronghold. Sources give 3 different levels for the Truthseeker's Bow: 30, 40 and 45."
+        items:
+          - {slot: "Ranged", name: "Baelog's Shortbow", from: dungeon, where: "Uldaman, Baelog", basis: forever}
+          - {slot: "Ranged", name: "Truthseeker's Bow", from: quest, where: "*Greater Friend of the Library*, 25 library books", basis: forever}
+          - {slot: "Ring", name: "Field Researcher's Loop", from: quest, where: "The library quest for 20 books", basis: forever}
+          - {slot: "Head", name: "War Handler's Gaze", from: dungeon, dungeon: kroldok-stronghold, where: "War Handler Ashka. Leather. No source gives the stats", basis: forever}
+          - {slot: "Shoulders", name: "Resistance Breaker Spaulder", from: dungeon, dungeon: kroldok-stronghold, where: "Slavecrusher Grox. Mail. No source gives the stats", basis: forever}
+          - {slot: "Waist", name: "Chain of Binding", from: dungeon, dungeon: kroldok-stronghold, where: "Slavecrusher Grox. Mail. No source gives the stats", basis: forever}
+      l50:
+        text: "Quests give the ranged weapons of these levels. No source lists a ranged weapon in Alcaz Prison or Blackmaw Hold. Blackmaw Hold gives a polearm and 2 armor items that a Hunter can use."
+        items:
+          - {slot: "Ranged", name: "Verdant Keeper's Aim", from: quest, where: "*Corruption of Earth and Seed*, Maraudon, level 50", basis: forever}
+          - {slot: "Ranged", name: "Thornflinger", from: quest, where: "*Wildkin of Elune*, Winterspring, level 55. Timesaver.gg lists it for the Alliance", basis: forever}
+          - {slot: "Shoulders", name: "Defias Enforcer's Shoulderpads", from: dungeon, dungeon: alcaz-prison, where: "The Questioner. Leather", basis: forever}
+          - {slot: "Polearm", name: "Tuskblade Halberd", from: dungeon, dungeon: blackmaw-hold, where: "Bonesnout the Unbroken", basis: forever}
+          - {slot: "Waist", name: "Veilpiercer Girdle", from: dungeon, dungeon: blackmaw-hold, where: "Elder Shaman Bloodmane. Leather", basis: forever}
+          - {slot: "Head", name: "Impish Chain Hood", from: dungeon, dungeon: blackmaw-hold, where: "Impaan the Imprisoner. Mail", basis: forever}
+      l60:
+        text: "No source has a hand-written item list for level 60. Timesaver.gg, Kami Labs and wowtbc.gg have computed lists from partial data, and they do not agree. The Classic-era items below can have different stats or a different source in Forever. Get the hit that you need first."
+        items:
+          - {slot: "Ring", name: "Ocean's Breeze", from: quest, where: "*A Hero's Reward*, Azshara. A Timesaver.gg selection", basis: forever}
+          - {slot: "Shoulders", name: "Theramore Epaulets", from: rep, where: "Theramore Expeditionary Force, Exalted (Alliance). A Kami Labs selection", basis: forever}
+          - {slot: "Legs", name: "Sentinel's Chain Leggings", from: vendor, where: "Illiyana Moonblaze, Ashenvale (wowtbc.gg). The same list names Outrider's Mail Leggings with no source", basis: forever}
+          - {slot: "Ring", name: "Warden's Signet of Ferocity", from: rep, where: "The Watchers, Exalted (wowtbc.gg)", basis: forever}
+          - {slot: "Waist", name: "Marksman's Girdle", from: dungeon, where: "Lower Blackrock Spire, Urok Doomhowl. A Kami Labs selection"}
+          - {slot: "Trinket", name: "Blackhand's Breadth", from: quest, where: "*General Drakkisath's Demise* or *For The Horde!*. A Kami Labs selection"}
+          - {slot: "Back", name: "Cape of the Black Baron", from: dungeon, where: "Stratholme, Baron Rivendare. A Kami Labs selection"}
+          - {slot: "Polearm", name: "Legionite Glaive", from: craft, profession: blacksmithing, where: "The melee weapon in 2 computed lists. A Merchant's Favor recipe"}
+          - {slot: "Ranged", name: "Dark Iron Rifle", from: craft, profession: engineering, where: "The last weapon in the table of Method.gg"}
+      raid:
+        text: "The computed lists name different ranged weapons for level 60, and each has a problem. The Core Marksman Rifle needs Fiery Core and Lava Core, which are Molten Core materials in Classic. Kami Labs shows a drop chance near zero for the Eaglehorn Long Bow. The new epic rifle needs Malleable Essence of Nature, which reportedly comes from raid items."
+        items:
+          - {slot: "Ranged", name: "Hyper Deluxe Sniper Rifle Mk XVII", from: craft, profession: engineering}
+          - {slot: "Ranged", name: "Core Marksman Rifle", from: craft, profession: engineering, where: "No source confirms that you can make it before the raids", basis: unverified}
+  - id: crafted
+    name: "Leatherworking and Engineering"
+    pitch: "You make your own armor, guns, scopes and ammunition. Use it if you have Leatherworking or Engineering, or if you buy from the Auction House. The client data gives the name and the skill of each item, but not its stats."
+    stats: "The same as the ranged set. Read the tooltip of each crafted item"
+    chapters:
+      l1:
+        text: "Engineering makes your first gun. Method.gg says that the Rough Boomstick needs level 5. Leatherworking makes a quiver or an ammo pouch. Warcraft Tavern says that a better quiver or pouch often gives more ranged attack speed."
+        items:
+          - {slot: "Ranged", name: "Rough Boomstick", from: craft, profession: engineering}
+          - {slot: "Bag", name: "Light Leather Quiver", from: craft, profession: leatherworking}
+          - {slot: "Bag", name: "Small Leather Ammo Pouch", from: craft, profession: leatherworking}
+          - {slot: "Ammunition", name: "Crafted Light Shot", from: craft, profession: engineering}
+          - {slot: "Armor kit", name: "Light Armor Kit", from: craft, profession: leatherworking}
+      l10:
+        text: "Forever adds rare leather items from level 10. Method.gg says that they have much Agility. Warcraft Tavern names the Dark Leather Boots for Hunters. The Trapper's items are a new rare set, but no source gives their stats."
+        items:
+          - {slot: "Feet", name: "Dark Leather Boots", from: craft, profession: leatherworking}
+          - {slot: "Waist", name: "Trapper's Leather Belt", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Trapper's Leather Armor", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Trapper's Leather Gloves", from: craft, profession: leatherworking}
+          - {slot: "Feet", name: "Trapper's Leather Boots", from: craft, profession: leatherworking}
+          - {slot: "Ranged", name: "Deadly Blunderbuss", from: craft, profession: engineering}
+          - {slot: "Scope", name: "Crude Scope", from: craft, profession: engineering}
+      l20:
+        text: "The Trapper's set continues to skill 125. Warcraft Tavern also names the Brawler's Leather Hood for Hunters. Engineering makes 2 guns and the next scope. The Forceful armor kits are new kits for physical damage dealers."
+        items:
+          - {slot: "Legs", name: "Trapper's Leather Pants", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Trapper's Leather Tunic", from: craft, profession: leatherworking}
+          - {slot: "Head", name: "Trapper's Leather Helm", from: craft, profession: leatherworking}
+          - {slot: "Head", name: "Brawler's Leather Hood", from: craft, profession: leatherworking, where: "A Merchant's Favor recipe"}
+          - {slot: "Ranged", name: "Lovingly Crafted Boomstick", from: craft, profession: engineering}
+          - {slot: "Ranged", name: "Moonsight Rifle", from: craft, profession: engineering}
+          - {slot: "Scope", name: "Standard Scope", from: craft, profession: engineering}
+          - {slot: "Bag", name: "Heavy Quiver", from: craft, profession: leatherworking}
+          - {slot: "Armor kit", name: "Forceful Medium Armor Kit", from: craft, profession: leatherworking}
+      l30:
+        text: "Warcraft Tavern names the Stalker's Leather Belt for Hunters near level 30. The Stalker's and Skirmisher's items are new rare items. Blacksmithing makes a polearm for the melee slot."
+        items:
+          - {slot: "Waist", name: "Stalker's Leather Belt", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Stalker's Leather Gloves", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Skirmisher's Leather Gloves", from: craft, profession: leatherworking}
+          - {slot: "Scope", name: "Accurate Scope", from: craft, profession: engineering}
+          - {slot: "Ammunition", name: "Crafted Solid Shot", from: craft, profession: engineering}
+          - {slot: "Polearm", name: "Steel Spear", from: craft, profession: blacksmithing}
+          - {slot: "Armor kit", name: "Forceful Heavy Armor Kit", from: craft, profession: leatherworking}
+      l40:
+        text: "Leatherworking makes new rare mail from skill 200. Engineering makes mail goggles, 2 scopes and better ammunition. Method.gg lists the Thorium Rifle at level 47."
+        items:
+          - {slot: "Feet", name: "Stalker's Mail Boots", from: craft, profession: leatherworking}
+          - {slot: "Shoulders", name: "Stalker's Mail Shoulders", from: craft, profession: leatherworking}
+          - {slot: "Wrist", name: "Stalker's Mail Bracers", from: craft, profession: leatherworking}
+          - {slot: "Head", name: "Stuckbutton Goggles", from: craft, profession: engineering}
+          - {slot: "Ranged", name: "Mithril Heavy-bore Rifle", from: craft, profession: engineering}
+          - {slot: "Ranged", name: "Thorium Rifle", from: craft, profession: engineering}
+          - {slot: "Scope", name: "Sniper Scope", from: craft, profession: engineering}
+          - {slot: "Bag", name: "Quickdraw Quiver", from: craft, profession: leatherworking}
+          - {slot: "Bag", name: "Thick Leather Ammo Pouch", from: craft, profession: leatherworking}
+          - {slot: "Ammunition", name: "Hi-Impact Mithril Slugs", from: craft, profession: engineering}
+      l50:
+        text: "Method.gg lists the Dark Iron Rifle at level 50. The Stalker's mail set continues, and Timesaver.gg selects the Stalker's Mail Belt for level 60. Devilsaur Gauntlets are leather, and 2 computed lists select them."
+        items:
+          - {slot: "Ranged", name: "Dark Iron Rifle", from: craft, profession: engineering}
+          - {slot: "Feet", name: "Stalker's Mail Sabatons", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Stalker's Mail Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Waist", name: "Stalker's Mail Belt", from: craft, profession: leatherworking, where: "A Merchant's Favor recipe"}
+          - {slot: "Chest", name: "Wildthorn Mail", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Devilsaur Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Polearm", name: "Thorium Poleaxe", from: craft, profession: blacksmithing}
+          - {slot: "Ammunition", name: "Thorium Shells", from: craft, profession: engineering}
+      l60:
+        text: "Most items of the Timesaver.gg list for level 60 are crafted. Dawn Armor and the Black Dragonscale Helm each need 20 Fel Leather. The client data does not say where Fel Leather comes from. The new epic ammunition needs no raid material."
+        items:
+          - {slot: "Legs", name: "Devilsaur Leggings", from: craft, profession: leatherworking}
+          - {slot: "Wrist", name: "Spitfire Bracers", from: craft, profession: leatherworking}
+          - {slot: "Back", name: "Shifting Cloak", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Dawn Armor", from: craft, profession: leatherworking, where: "It needs Fel Leather", basis: unverified}
+          - {slot: "Head", name: "Black Dragonscale Helm", from: craft, profession: leatherworking, where: "It needs Fel Leather", basis: unverified}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting}
+          - {slot: "Polearm", name: "Legionite Glaive", from: craft, profession: blacksmithing, where: "A Merchant's Favor recipe"}
+          - {slot: "Ranged", name: "Flawless Arcanite Rifle", from: craft, profession: engineering}
+          - {slot: "Scope", name: "SAF-T Ultra Precision Scope", from: craft, profession: engineering, where: "No source gives the effect"}
+          - {slot: "Ammunition", name: "Swiftfeather Arrow", from: craft, profession: engineering}
+          - {slot: "Ammunition", name: "Swiftstrike Shot", from: craft, profession: engineering}
+      raid:
+        text: "The new epic mail of Leatherworking needs Malleable Essence of Nature. Reportedly, this reagent comes from raid items that an Enchanter disenchants. No source says which class the Wildstalker's items are for, so read the tooltips."
+        items:
+          - {slot: "Ranged", name: "Hyper Deluxe Sniper Rifle Mk XVII", from: craft, profession: engineering}
+          - {slot: "Shoulders", name: "Wildstalker's Spaulders", from: craft, profession: leatherworking, basis: unverified}
+          - {slot: "Hands", name: "Wildstalker's Gauntlets", from: craft, profession: leatherworking, basis: unverified}
+          - {slot: "Legs", name: "Wildstalker's Legguards", from: craft, profession: leatherworking, basis: unverified}
+          - {slot: "Feet", name: "Wildstalker's Greaves", from: craft, profession: leatherworking, basis: unverified}
+          - {slot: "Hands", name: "Mourning Handguards", from: craft, profession: leatherworking, where: "wowtbc.gg lists it for Hunters"}
+  - id: melee
+    name: "Melee Survival"
+    pitch: "The set for the Survival path. Your melee weapon now does damage, so its damage and its speed are important. You still carry a ranged weapon for the pull. No source compares a two-hand weapon with 2 one-hand weapons."
+    stats: "Leveling: Agility > Attack Power > Crit > Strength > Intellect > Stamina and Spirit (Warcraft Tavern, beta). No source has a ranking for level 60"
+    chapters:
+      l1:
+        text: "Use the melee weapon with the most damage. You fight in melee often before level 10, because you have no pet."
+        items:
+          - {slot: "Melee", name: "Brave's Axe", from: quest, where: "*Rite of Strength*, Mulgore (Horde)", basis: forever}
+          - {slot: "Staff", name: "Apprentice's Spellstaff", from: quest, where: "*Rare Books*, Elwynn Forest (Alliance)", basis: forever}
+      l10:
+        text: "A slow two-hand weapon makes Raptor Strike and Mongoose Bite hit harder. Train each new weapon type at a weapon master. A new weapon type starts at low skill."
+        items:
+          - {slot: "Melee", name: "Balanced Fighting Stick", from: quest, where: "*WANTED: \"Hogger\"*, Elwynn Forest (Alliance)", basis: forever}
+          - {slot: "Melee", name: "Steady Bastard Sword", from: quest, where: "*Skull Rock*, Durotar (Horde)", basis: forever}
+          - {slot: "Melee", name: "Piercing Axe", from: quest, where: "*Red Silk Bandanas*, Deadmines (Alliance)", basis: forever}
+          - {slot: "Staff", name: "Segmented Spider Leg", from: dungeon, dungeon: ruins-of-lordaeron, where: "Witherfang (Horde)", basis: forever}
+      l20:
+        text: "Polearms open at level 20. In Classic, a Hunter learns Dual Wield at level 20, but no source confirms the level for Forever. Predator's Edge from level 26 increases off-hand damage and melee crit damage."
+        items:
+          - {slot: "Melee", name: "Impaling Harpoon", from: dungeon, where: "Deadmines, Captain Greenskin (Alliance)", basis: forever}
+          - {slot: "Staff", name: "Crescent Staff", from: quest, where: "*Leaders of the Fang*, Wailing Caverns (Horde)", basis: forever}
+          - {slot: "Polearm", name: "Bronze Dory", from: craft, profession: blacksmithing}
+      l30:
+        text: "Strider Kick at level 30 does 100% of your melee weapon damage. The Drowned City gives a polearm with public stats and a ring with weapon damage."
+        items:
+          - {slot: "Melee", name: "Armor Piercer", from: dungeon, where: "Razorfen Kraul, Razorfen Spearhide (Horde)", basis: forever}
+          - {slot: "Polearm", name: "Felbough Arm", from: dungeon, dungeon: city-of-dalaran, where: "Fel Ancient", basis: forever}
+          - {slot: "Polearm", name: "Harpoon of Command", from: dungeon, dungeon: drowned-city, where: "Var'Taka, a probable drop. 35.7 DPS, +15 Stamina, +1% dodge, hit", basis: forever}
+          - {slot: "Ring", name: "Knucklebone Ring", from: dungeon, dungeon: drowned-city, where: "A probable drop. +7 Stamina, +2 weapon damage", basis: forever}
+          - {slot: "Polearm", name: "Steel Spear", from: craft, profession: blacksmithing}
+      l40:
+        text: "Mail opens at level 40, and it helps more in melee than at range. Krol'dok Stronghold drops 2 fist weapons, but no source gives their stats. Keep the Felbough Arm if you find no better weapon."
+        items:
+          - {slot: "Fist weapon", name: "Mugg's Jabber", from: dungeon, dungeon: kroldok-stronghold, where: "Overlord Mugg. No source gives the stats", basis: forever}
+          - {slot: "Fist weapon", name: "Mugg's Crosser", from: dungeon, dungeon: kroldok-stronghold, where: "Overlord Mugg. No source gives the stats", basis: forever}
+          - {slot: "Feet", name: "Stalker's Mail Boots", from: craft, profession: leatherworking}
+      l50:
+        text: "Blackmaw Hold gives a polearm and 2 fist weapons. Blacksmithing makes a rare polearm at skill 260."
+        items:
+          - {slot: "Polearm", name: "Tuskblade Halberd", from: dungeon, dungeon: blackmaw-hold, where: "Bonesnout the Unbroken", basis: forever}
+          - {slot: "Fist weapon", name: "Bloody Claws of Attack", from: dungeon, dungeon: blackmaw-hold, where: "Elder Shaman Bloodmane", basis: forever}
+          - {slot: "Fist weapon", name: "Great Bear Claw", from: quest, where: "*Claws That Rend, Tusks That Gore*, Blackmaw Hold", basis: forever}
+          - {slot: "Polearm", name: "Thorium Poleaxe", from: craft, profession: blacksmithing}
+      l60:
+        text: "The computed lists select the Legionite Glaive for all specs. The wowtbc.gg list for Survival names two-hand axes and swords, but the Codex did not verify that list. Kami Labs selects the Adaptive Combat Assistant trinket for Survival only."
+        items:
+          - {slot: "Polearm", name: "Legionite Glaive", from: craft, profession: blacksmithing, where: "A Merchant's Favor recipe"}
+          - {slot: "Two-hand", name: "Beastslayer's Trident", from: quest, where: "*Mapping the Way Forward* (Alliance). wowtbc.gg", basis: forever}
+          - {slot: "Two-hand", name: "Wildstaff", from: quest, where: "*Da Voodoo* (Horde). wowtbc.gg", basis: forever}
+          - {slot: "Two-hand", name: "Arcanite Reaper", from: craft, profession: blacksmithing, basis: unverified}
+          - {slot: "One-hand", name: "Heartseeker", from: craft, profession: blacksmithing, where: "wowtbc.gg"}
+          - {slot: "Trinket", name: "Adaptive Combat Assistant", from: vendor, where: "Pix Xizzix, Stranglethorn Vale. 125 Tarnished Undermine Real (Kami Labs)", basis: forever}
+      raid:
+        text: "The epic sword of Blacksmithing needs Malleable Essence of Nature, so it becomes available after the raids open."
+        items:
+          - {slot: "One-hand", name: "Ironwood Blade", from: craft, profession: blacksmithing}
+
+equipment:
+  intro: |
+    A Hunter wears leather to level 39 and can wear mail from level 40. The most important slot is the ranged weapon, because it sets the damage of Auto Shot and of all shots. For Beast Mastery and Marksmanship, the melee weapon gives stats only. For Survival, the melee weapon does damage.
+
+    About 40% of the items of Forever had hidden stats at launch. The stats of an item become visible when a player first finds it. Thus, no source has a tested list for level 60. The item names on this page come from Timesaver.gg (data of 6 November 2026), Warcraft Tavern, Method.gg, wowtbc.gg, Kami Labs and ConquestCapped. Only the Drowned City items have public stats.
+  proficiencies:
+    - ["Cloth and leather armor", "Level 1", "No shields"]
+    - ["Mail armor", "Level 40", "From the class trainer. Leather and mail are both good at level 60 (Warcraft Tavern)"]
+    - ["Bows", "Weapon master", "Darnassus and Orgrimmar. Bows use arrows from a quiver"]
+    - ["Guns", "Weapon master", "Ironforge and Thunder Bluff. Guns use bullets from an ammo pouch"]
+    - ["Crossbows", "Weapon master", "Ironforge, Stormwind and the Undercity. No source says which ammunition they use in Forever"]
+    - ["Axes and swords, one-hand and two-hand", "Weapon master", "Axes: Ironforge and Orgrimmar. Swords: Stormwind and the Undercity"]
+    - ["Staves, daggers, fist weapons, thrown weapons", "Weapon master", "Warcraft Tavern says that all Hunters start with daggers"]
+    - ["Polearms", "Level 20", "Stormwind (Woo Ping) and the Undercity (Archibald)"]
+    - ["Maces", "Not available", "A Hunter cannot use maces"]
+  rules:
+    - "The starting weapon of each race is a Classic-era fact: guns for Dwarves and Tauren, bows for Night Elves, Orcs and Trolls. No source gives it for Humans and Skyborne."
+    - "No race has a weapon skill bonus in Forever. Weapon skill on items is much lower than in Classic."
+    - "Method.gg says that Expertise replaces weapon skill on items. Warcraft Tavern says that the skill itself did not change. The exact rule is not clear."
+    - "Method.gg says that hit is 1 stat for melee, ranged attacks and spells. Crit is 1 stat (Warcraft Tavern)."
+    - "Against a level 63 boss you need 9% hit at 300 weapon skill, or 6% at 305 (Warcraft Tavern)."
+    - "1 Agility gives 2 ranged Attack Power and 1 melee Attack Power. 53 Agility gives 1% crit at level 60."
+    - "14 Attack Power gives 1 damage per second. The pet gets 10% of your Attack Power and 100% of your crit."
+    - "1 Intellect gives 15 mana. With Careful Aim 5/5, it also gives 1 Attack Power."
+    - "Haste is a stat in Forever. Warcraft Tavern did not see it on items in the beta."
+    - "A quiver or an ammo pouch uses 1 bag slot. Warcraft Tavern says that it often gives ranged attack speed, but gives no values."
+    - "Necklaces can have an enchant in Forever."
+    - "Healing potions come from First Aid, not from Alchemy."
+    - "Each profession gives a camp feature in place of a passive stat. The Camp Chair of Skinning gives 2% crit."
+  enchants:
+    - ["Bracers", "Lesser Agility, Agility, Greater Agility, Superior Agility", "New. Enchanting skill 140, 190, 240 and 295"]
+    - ["Gloves", "Agility, Greater Agility, Superior Agility", "Superior Agility needs skill 300"]
+    - ["Boots", "Minor Speed, then Greater Agility", "Run speed while you level"]
+    - ["Cloak", "Minor Agility, Lesser Agility, Agility", "Cloak - Agility is new and is a Merchant's Favor recipe"]
+    - ["Chest", "Stats, then Greater Stats", "Classic-era enchants"]
+    - ["Necklace", "Agility", "New slot. Enchanting skill 210"]
+    - ["Melee weapon", "Weapon - Agility or 2H Weapon - Agility", "2H Weapon - Lesser Agility is new at skill 210"]
+    - ["Ranged weapon", "Scopes from Engineering", "Crude, Standard, Accurate, Deadly and Sniper Scope. The SAF-T Ultra Precision Scope is new"]
+    - ["Armor", "Forceful armor kits from Leatherworking", "New kits for physical damage dealers. No source gives the values"]
+  consumables:
+    - ["Leveling", "Elixir of Minor Agility, Lesser Agility, Agility, Greater Agility", "Alchemy. The first 2 elixirs need skill 50 and 140"]
+    - ["Leveling", "Pet food", "A Happy pet does 125% damage. An Unhappy pet does 75%"]
+    - ["Leveling", "Healing potions and bandages", "First Aid makes both. Freezing Trap gives you time to use a bandage"]
+    - ["All levels", "The best ammunition", "Buy it in each town. Engineering makes bullets from Crafted Light Shot to Thorium Shells"]
+    - ["Level 60", "Elixir of the Mongoose", "Alchemy skill 280. Classic-era Agility and crit elixir"]
+    - ["Level 60", "Swiftstrike Steak, Flank au Poivre", "New Agility food, Cooking skill 275. No source gives the values"]
+    - ["Level 60", "Swiftfeather Arrow, Swiftstrike Shot", "New epic ammunition, Engineering skill 300. No source gives the stats"]
+    - ["Level 60", "Flask of Natural Precision and 3 more new flasks", "Alchemy skill 300. They need Death Lotus. No source gives the effects"]
+    - ["Raids", "Greater Fire Protection Potion", "For Onyxia's Lair"]
+    - ["Raids", "Mana potions", "Long fights use all your mana"]
+  sources:
+    - {title: "Warcraft Tavern: Hunter guide", url: "https://warcrafttavern.com/forever/guides/hunter/"}
+    - {title: "Warcraft Tavern: Hunter leveling", url: "https://www.warcrafttavern.com/forever/guides/hunter-leveling/"}
+    - {title: "Warcraft Tavern: Marksmanship Hunter", url: "https://www.warcrafttavern.com/forever/guides/marksmanship-hunter/"}
+    - {title: "Warcraft Tavern: stats", url: "https://www.warcrafttavern.com/forever/guides/stats/"}
+    - {title: "Warcraft Tavern: weapon skills in Forever", url: "https://www.warcrafttavern.com/forever/news/weapon-skills-in-world-of-warcraft-forever/"}
+    - {title: "Warcraft Tavern: library books", url: "https://www.warcrafttavern.com/forever/guides/library-books/"}
+    - {title: "Method.gg: Hunter leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-hunter-leveling-guide-and-talents"}
+    - {title: "Method.gg: itemization updates", url: "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more"}
+    - {title: "Timesaver.gg: Hunter leveling gear, level by level", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/hunter/marksmanship"}
+    - {title: "Kami Labs: computed item lists for level 60", url: "https://kami-labs.fr/en/bis-list-wow-forever/"}
+    - {title: "wowtbc.gg: Marksmanship Hunter item lists", url: "https://wowtbc.gg/warcraftforever/bis-list/marksmanship-hunter/"}
+    - {title: "ConquestCapped: The Drowned City guide", url: "https://conquestcapped.com/guides/wow-forever/wow-forever-the-drowned-city-guide/"}
+
+# ------------------------------------------------------------------ other sections
+professions: |
+  A Hunter wears leather and then mail, and Leatherworking makes both. You can skin while the pet completes a kill. A profession gives no passive stat in Forever. Each profession adds a [camp feature](../../systems/camping.md).
+
+  | Rank | Professions | Use them for |
+  |---|---|---|
+  | **S**{ .tier .tier-s } | [Leatherworking](../../professions/leatherworking.md) + [Skinning](../../professions/skinning.md) | The selection of Method.gg. New leather and mail from cheap materials, quivers and armor kits. Camp features: Camp Tent (rested XP) and Camp Chair (+2% crit) |
+  | **A**{ .tier .tier-a } | [Engineering](../../professions/engineering.md) + [Mining](../../professions/mining.md) | The selection of Warcraft Tavern. Guns, scopes, ammunition, explosives and PvP gadgets. Camp features: Reagent Bot and Lodestone (melee Attack Power) |
+  | **B**{ .tier .tier-b } | [Alchemy](../../professions/alchemy.md) + [Herbalism](../../professions/herbalism.md) | Agility elixirs and flasks for raids. Tauren Herbalists get more herbs from Cultivation. Camp features: Mana Well (mana regeneration) and Incense Candle (Intellect) |
+
+  [Cooking](../../professions/cooking.md) makes food with an XP bonus and food for the pet. [First Aid](../../professions/first-aid.md) makes bandages and healing potions. [Fishing](../../professions/fishing.md) gives the Fish Bowl camp feature. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+legacy: |
+  You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character. Crafting professions give Legacy Points at skill 150, 225 and 300.
+
+  | Tree | Picks for a Hunter |
+  |---|---|
+  | Adventure | **Well Rested** 5/5, then **Talented**. Talented gives your first talent point up to 5 levels earlier |
+  | Adventure | **Frequent Flier** for cheaper and faster flights. **Thrill of Adventure** gives health and mana from kills in the open world |
+  | Professions | **Bountiful Harvest** if you skin. It gives more Scarce materials |
+  | At level 60 | **Gourmand** for raid food, **For Great Honor** for PvP, **Reagent Economy** for vendor reagents |
+
+mistakes:
+  - "You use Multi-Shot and expect Aimed Shot to be ready. The 2 abilities have the same cooldown."
+  - "You keep Growl on in a group. The pet takes enemies from the tank."
+  - "You do not feed the pet. An Unhappy pet does only 75% damage."
+  - "You have no ammunition in the middle of a dungeon."
+  - "You fight with Aspect of the Cheetah active and become Dazed."
+  - "You ignore Intellect on a build with Careful Aim. The talent changes Intellect into Attack Power."
+  - "You use Explosive Trap and then need Freezing Trap. All traps have 1 cooldown."
+  - "You use Feign Death as your only plan. An enemy can resist it."
+
+faq:
+  - q: "Which path is best for leveling?"
+    a: "Beast Mastery. Method, Mobalytics and Warcraft Tavern recommend it, because the pet tanks and you stop less often. The Hunter was the fastest class in the beta."
+  - q: "Is it a good idea to level with Lone Wolf and no pet?"
+    a: "No. Lone Wolf gives 20% damage, but you lose your tank. It is a raid talent. A Blizzard forum thread criticizes it because it rewards you when you ignore the pet."
+  - q: "My pet dies often. Is that my mistake?"
+    a: "Partly, it is the game. At launch, pets were less durable than in Classic Era. Blizzard announced a fix for 10 November. Use Mend Pet early, take Endurance Training, and use a defensive family for large pulls."
+  - q: "Why can I not put a Frost Trap after an Explosive Trap?"
+    a: "In Forever, all traps have 1 cooldown of 30 seconds."
+  - q: "Why does my shot not fire?"
+    a: "The target is in the deadzone, nearer than 8 yards. Move back, or use Wing Clip first."
+  - q: "Does Hunter's Mark help the pet?"
+    a: "Method says yes, because the pet gets a part of your Attack Power."
+  - q: "Is Survival a melee spec now?"
+    a: "Mostly. You can shoot first and then fight in melee, or stay in melee with 2 weapons and Predator's Edge. It is weaker than Beast Mastery for quests."
+  - q: "Can I tame a Fox?"
+    a: "Yes. Fox is a new family with Trickster's Dance, which gives dodge and attack speed for 12 seconds. Players report foxes on Zephras Isle, but this is not confirmed."
+  - q: "Can I get the epic bow Rhok'delar?"
+    a: "No. The quest needs a drop from Molten Core, and Molten Core is not in Forever at launch."
+
+sources:
+  - {title: "Warcraft Tavern: Hunter guide", url: "https://warcrafttavern.com/forever/guides/hunter/"}
+  - {title: "Warcraft Tavern: Hunter leveling", url: "https://www.warcrafttavern.com/forever/guides/hunter-leveling/"}
+  - {title: "Warcraft Tavern: Marksmanship Hunter", url: "https://www.warcrafttavern.com/forever/guides/marksmanship-hunter/"}
+  - {title: "Warcraft Tavern: Hunter pets", url: "https://www.warcrafttavern.com/forever/guides/hunter-pets/"}
+  - {title: "Warcraft Tavern: Hunter pet families", url: "https://www.warcrafttavern.com/forever/guides/hunter-pet-families/"}
+  - {title: "Warcraft Tavern: Best Hunter pets", url: "https://www.warcrafttavern.com/forever/guides/best-hunter-pets/"}
+  - {title: "Warcraft Tavern: Library books", url: "https://www.warcrafttavern.com/forever/guides/library-books/"}
+  - {title: "Warcraft Tavern: Beta dates and level caps", url: "https://www.warcrafttavern.com/forever/guides/beta/"}
+  - {title: "Method: Hunter leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-hunter-leveling-guide-and-talents"}
+  - {title: "Mobalytics: Hunter leveling guide", url: "https://mobalytics.gg/wow-forever/classes/hunter-leveling-guide"}
+  - {title: "Icy Veins: Hunter class quests", url: "https://www.icy-veins.com/wow-forever/hunter-class-quests"}
+  - {title: "Blizzard forums: Lone Wolf is a mistake", url: "https://us.forums.blizzard.com/en/wow/t/2375143"}
+  - {title: "Wowhead: Taming the Beast (Skyborne)", url: "https://www.wowhead.com/forever/quest=94978"}
+  - {title: "Warcraft Wiki: Josephine Carson", url: "https://warcraft.wiki.gg/wiki/Josephine_Carson"}

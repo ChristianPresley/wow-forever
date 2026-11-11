@@ -11,7 +11,7 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page shows only the differences for a Gnome.</p>
+<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page shows only the differences for a Gnome.</p>
 
 </div>
 
@@ -164,7 +164,7 @@ Gnomes and Dwarves start in the same place, Coldridge Valley. The quest names ar
 
 ## Faction notes
 
-- **Poison quest (20):** It starts with Master Mathias Shaw in Old Town, Stormwind. See the [main guide](index.md#the-poison-quest-level-20).
+- **Poison quest (20):** It starts with Master Mathias Shaw in Old Town, Stormwind. See the [main guide](index.md#l20).
 - **Library books:** Garion Wendell, Mage Quarter, Stormwind.
 - **Mount:** mechanostriders from Steelgrill's Depot in Dun Morogh. Honored with **Gnomeregan Exiles** gives 10% off.
 - **Reputation:** Gnomeregan Exiles.

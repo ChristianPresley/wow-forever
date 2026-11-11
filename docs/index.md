@@ -16,11 +16,11 @@ search:
 
 # Forever Codex
 
-A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "Classic+" version of WoW. It has class walkthroughs for all races, and pages for zones, dungeons, raids and systems.
+A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "Classic+" version of WoW. It has a narrated progression for each class, with add-ons for your race, talents and equipment. It also has pages for zones, dungeons, raids and systems.
 
-[Class & race guides](guides/index.md){ .md-button .md-button--primary } [What is Forever?](about/index.md){ .md-button } <label class="md-button" for="__search">Search the Codex</label>
+[Class progressions](guides/index.md){ .md-button .md-button--primary } [What is Forever?](about/index.md){ .md-button } <label class="md-button" for="__search">Search the Codex</label>
 
-<nav class="fc-sigils" aria-label="Class guides" markdown>
+<nav class="fc-sigils" aria-label="Class progressions" markdown>
 
 [:codex-druid: Druid](guides/druid/index.md){ data-class="druid" }
 [:codex-hunter: Hunter](guides/hunter/index.md){ data-class="hunter" }
@@ -43,13 +43,13 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 
 <div class="grid cards" markdown>
 
--   :codex-crest:{ .lg .middle } **Pick your class & race**
+-   :codex-crest:{ .lg .middle } **Pick your class**
 
     ---
 
-    9 full class walkthroughs, and 56 race add-ons.
+    9 class progressions, with add-ons for 56 races, the talents and the equipment.
 
-    [:octicons-arrow-right-24: Class guides](guides/index.md)
+    [:octicons-arrow-right-24: Class progressions](guides/index.md)
 
 -   :material-stairs-up:{ .lg .middle } **Level 1–60**
 
@@ -93,17 +93,17 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 
     ---
 
-    Races (including the new **Skyborne**), all 9 reworked classes, Legacy, professions.
+    Races (including the new **Skyborne**), the changes for all classes, Legacy and leveling.
 
     [:octicons-arrow-right-24: Characters](characters/index.md)
 
--   :material-book-open-variant:{ .lg .middle } **Class & Race Guides**
+-   :material-book-open-variant:{ .lg .middle } **Class Progressions**
 
     ---
 
-    Full 1–60 walkthroughs for all 9 classes, and an add-on for each of the 56 race/class combinations.
+    A narration from level 1 to the raids for each class. Select your race, your talents and your equipment on the page.
 
-    [:octicons-arrow-right-24: Guides](guides/index.md)
+    [:octicons-arrow-right-24: Classes](guides/index.md)
 
 -   :material-map:{ .lg .middle } **The World**
 

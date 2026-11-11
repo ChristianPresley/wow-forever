@@ -11,7 +11,7 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page shows only the differences for a Dwarf.</p>
+<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page shows only the differences for a Dwarf.</p>
 
 </div>
 
@@ -155,7 +155,7 @@ The quest names below are from Classic. Blizzard named new content in Dun Morogh
 
 ## Faction notes
 
-- **Poison quest (20):** It starts with Master Mathias Shaw in Old Town, Stormwind, not in Ironforge. Take the Deeprun Tram. See the [main guide](index.md#the-poison-quest-level-20).
+- **Poison quest (20):** It starts with Master Mathias Shaw in Old Town, Stormwind, not in Ironforge. Take the Deeprun Tram. See the [main guide](index.md#l20).
 - **Library books:** Garion Wendell in the Mage Quarter of Stormwind.
 - **Mount:** rams from Amberstill Ranch in east Dun Morogh. Honored with Ironforge gives 10% off riding and rams.
 - **Reputation:** Ironforge.

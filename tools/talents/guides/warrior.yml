@@ -149,7 +149,7 @@ trees:
       Improved Shield Bash:
         {does: "Shield Bash has a 50/100% chance to silence the target for 3 s", lvl: B, pve: B, pvp: B, note: "Good against caster mobs. It is not confirmed that bosses can be silenced."}
       Improved Shield Wall:
-        {does: "Shield Wall cooldown −5.5/11 min", lvl: C, pve: A, pvp: C, note: "The class guide gives Shield Wall a 15 min cooldown. Thus 2/2 makes it 4 min."}
+        {does: "Shield Wall cooldown −5.5/11 min", lvl: C, pve: A, pvp: C, note: "The earlier Codex class guide gives Shield Wall a 15 min cooldown. Thus 2/2 makes it 4 min."}
       Concussion Blow:
         {does: "10 Rage, 45 s cooldown. Stuns the target for 5 s", lvl: A, pve: B, pvp: A, note: "Raid bosses are usually immune to stuns. Shield Slam needs it."}
       Focused Rage:
@@ -283,7 +283,7 @@ builds:
       - [Cruelty, 5, "Crit for threat and rage. If threat is not a problem, move these points to Iron Will"]
     notes:
       - "Defiance, Bastion and Master of Defense need a shield."
-      - "No source has published a level 60 tank build. This build follows the direction of the class guide."
+      - "No source has published a level 60 tank build. This build follows the direction of the earlier Codex class guide."
 
   - id: fury-raid
     name: "Fury (raid)"
@@ -318,7 +318,7 @@ builds:
     kind: endgame
     role: "Raid DPS"
     summary: |
-      The two-hander raid build. It takes all the Arms damage talents, then Cruelty, Unbridled Wrath and Enrage from Fury. The class guide says that Arms is probably competitive in the 10- and 20-player raids.
+      The two-hander raid build. It takes all the Arms damage talents, then Cruelty, Unbridled Wrath and Enrage from Fury. The earlier Codex class guide says that Arms is probably competitive in the 10- and 20-player raids.
     steps:
       - [Improved Rend, 3]
       - [Improved Heroic Strike, 3]

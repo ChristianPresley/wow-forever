@@ -215,7 +215,7 @@ builds:
     kind: leveling
     role: "Leveling"
     summary: |
-      The melee Hunter. The class guide says that it is weaker than Beast Mastery for quests, and no source has published an order. This is a Codex order from the client data. Use Aspect of the Beast, shoot while the target comes to you, then fight in melee with the pet.
+      The melee Hunter. The earlier Codex class guide says that it is weaker than Beast Mastery for quests, and no source has published an order. This is a Codex order from the client data. Use Aspect of the Beast, shoot while the target comes to you, then fight in melee with the pet.
     steps:
       - [Improved Tracking, 5, "5% damage to the creature type that you track"]
       - [Savage Strikes, 2, "Crit for Raptor Strike and Mongoose Bite"]
@@ -323,7 +323,7 @@ builds:
     kind: endgame
     role: "PvP"
     summary: |
-      The control build for battlegrounds and world PvP. The class guide names the core: Lacerating Strikes, Counterattack and Strider Kick, with Improved Stings and Efficiency from Marksmanship. Nobody has published a point split, so this is a Codex split.
+      The control build for battlegrounds and world PvP. The earlier Codex class guide names the core: Lacerating Strikes, Counterattack and Strider Kick, with Improved Stings and Efficiency from Marksmanship. Nobody has published a point split, so this is a Codex split.
     steps:
       - [Deflection, 5, "More parries for Counterattack"]
       - [Entrapment, 5, "A 5 s root from each trap"]

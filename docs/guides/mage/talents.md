@@ -12,14 +12,16 @@ search:
 
 <div class="guide-head" data-class="mage" markdown>
 
-:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Talent guide</span> **DPS**{ .badge .dps }
+:codex-mage:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Mage progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
 
 <nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#arcane">Arcane</a> <a href="#fire">Fire</a> <a href="#frost">Frost</a></nav>
 
 </div>
 
 !!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/mage/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. Read this page with the [Mage guide](../guides/mage/index.md).
+    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/mage/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Mage progression](index.md) tells you when each talent becomes important.
 
 Each Mage tree is a full damage spec in Forever. **Frost** is the safe tree for leveling and the PvP tree. **Fire** and **Arcane** are the damage trees for raids. Some talents help spells from a different tree, so most builds put points in 2 or 3 trees.
 

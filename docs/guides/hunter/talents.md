@@ -12,14 +12,16 @@ search:
 
 <div class="guide-head" data-class="hunter" markdown>
 
-:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Talent guide</span> **DPS**{ .badge .dps }
+:codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Hunter progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
 
 <nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#beast-mastery">Beast Mastery</a> <a href="#marksmanship">Marksmanship</a> <a href="#survival">Survival</a></nav>
 
 </div>
 
 !!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/hunter/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. Read this page with the [Hunter guide](../guides/hunter/index.md).
+    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/hunter/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Hunter progression](index.md) tells you when each talent becomes important.
 
 Each Hunter tree is a damage spec in Forever. **Beast Mastery** is the pet tree and the tree for leveling. **Marksmanship** is the ranged tree that players expect in raids, and it can play with no pet. **Survival** is the melee and trap tree, and it is strong in PvP. All level 60 builds on this page are theory until the raids open.
 
@@ -129,7 +131,7 @@ Each table gives the talent for each level. The *Points* column shows the points
 
     **Leveling**{ .pill .pill--info } **5/10/36**{ .pill .pill--outline }
 
-    The melee Hunter. The class guide says that it is weaker than Beast Mastery for quests, and no source has published an order. This is a Codex order from the client data. Use Aspect of the Beast, shoot while the target comes to you, then fight in melee with the pet.
+    The melee Hunter. The earlier Codex class guide says that it is weaker than Beast Mastery for quests, and no source has published an order. This is a Codex order from the client data. Use Aspect of the Beast, shoot while the target comes to you, then fight in melee with the pet.
 
     | Level | Talent | Rank | Points | Why |
     |---|---|---|---|---|
@@ -242,7 +244,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
     **PvP**{ .pill .pill--info } **0/13/38**{ .pill .pill--outline }
 
-    The control build for battlegrounds and world PvP. The class guide names the core: Lacerating Strikes, Counterattack and Strider Kick, with Improved Stings and Efficiency from Marksmanship. Nobody has published a point split, so this is a Codex split.
+    The control build for battlegrounds and world PvP. The earlier Codex class guide names the core: Lacerating Strikes, Counterattack and Strider Kick, with Improved Stings and Efficiency from Marksmanship. Nobody has published a point split, so this is a Codex split.
 
     - **Marksmanship (13):** Lethal Attacks 5/5 · Improved Stings 3/3 · Efficiency 5/5
     - **Survival (38):** Deflection 5/5 · Entrapment 5/5 · Savage Strikes 2/2 · Survivalist 5/5 · Improved Wing Clip 3/3 · Clever Traps 2/2 · Surefooted 3/3 · Deterrence 1/1 · Counterattack 1/1 · Expose Prey 2/2 · Survivalist's Discipline 2/2 · Strider Kick 1/1 · Lightning Reflexes 5/5 · Lacerating Strikes 1/1

@@ -11,7 +11,7 @@ tags:
 
 :codex-priest:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Priest guide](index.md).</p>
+<p class="gh-note" markdown>Read with the [Priest progression](index.md).</p>
 
 </div>
 

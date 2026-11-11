@@ -11,7 +11,7 @@ tags:
 
 :codex-shaman:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Shaman guide](index.md).</p>
+<p class="gh-note" markdown>Read with the [Shaman progression](index.md).</p>
 
 </div>
 

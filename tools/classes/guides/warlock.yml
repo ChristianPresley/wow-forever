@@ -1,0 +1,839 @@
+class: Warlock
+badges: [dps]
+description: "Warlock progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
+aka: "Lock · Affli (Affliction) · Demo (Demonology) · Destro (Destruction)"
+
+intro: |
+  The Warlock is a ranged caster that wears cloth and fights with a demon. This page follows 1 Warlock from character creation to the raids, level by level. It tells you what changes in each level range: the spells, the demons, the way that you fight, the dungeons and the decisions.
+
+glance:
+  - ["Role", "Ranged damage, crowd control, group utility (curses, summons, stones)"]
+  - ["Armor", "**Cloth**{ .pill .pill--cloth }"]
+  - ["Weapons", "Daggers, wands, one-hand swords, staves, off-hand items"]
+  - ["Resource", "**Mana**{ .pill .pill--mana }, health through Life Tap, and Soul Shards"]
+  - ["Demons", "Imp (1), Voidwalker (10), Succubus or Incubus (20), Felhunter (30). For a short time: Infernal (50), Doomguard (60)"]
+  - ["Races", "5 combinations"]
+  - ["Leveling speed", "Second in the beta, after Hunter"]
+  - ["Leveling difficulty", "Easy. The Warlock is one of the easiest classes to level"]
+
+strengths:
+  - "The demon tanks, and Life Tap and drains remove most rest time"
+  - "Strong damage in long fights"
+  - "Fear, Banish and Seduction control enemies"
+  - "The only summon in the game, plus Healthstones and Soulstones"
+
+weaknesses:
+  - "Low armor and weak mobility"
+  - "DoTs need time to do their full damage"
+  - "You must collect Soul Shards"
+  - "Hellfire, the strongest AoE spell, needs melee range and uses your health"
+
+changes:
+  added: ["Banes", "DoTs can crit", "Stones are weapon imbues", "Pandemic", "Wrack", "Demonic Brand", "Demonic Pact", "Bane of Havoc", "Incinerate", "Troll Warlocks"]
+  removed: ["Curse of Shadows", "Dark Pact", "Devastation", "Emberstorm", "Improved Healthstone"]
+  notes:
+    - "**Banes:** Curse of Agony and Curse of Doom are now Bane of Agony and Bane of Doom. You can keep 1 Bane and 1 Curse on each target."
+    - "**Curse of the Elements** increases the damage from all magic schools."
+    - "**DoTs can crit.** Warcraft Tavern says that the game calculates DoT damage again on each tick."
+    - "**Firestone and Spellstone** are weapon imbues. They do not use the off-hand slot."
+    - "**Life Tap** increases with Spirit, not with Stamina."
+    - "**Drain Soul** has a chance to give a Soul Shard on each tick. The chance increases on each tick."
+    - "**Demons** get stats from your stats. Pre-launch notes give 2 health for each point of your Stamina."
+    - "The pet command **Move** replaces Stay."
+    - "You buy demon abilities as **Grimoires** from demon trainers. Blizzard decreased training costs because of this."
+    - "The launch client has no Malediction talent. It still has Grim Reach, which the beta deep dive listed as removed."
+    - "The Warcraft Tavern guides and the talent names use **Sayaad** for the Succubus and the Incubus."
+
+# ------------------------------------------------------------------ chapters
+chapters:
+  - id: start
+    title: "Make your Warlock"
+    story: |
+      A Warlock does damage with 3 tools: damage-over-time spells (DoTs), Fire and Shadow bolts, and a demon. The class pays for mana with health. Life Tap changes health into mana, and drains give the health back.
+
+      The demon does a large part of your work, and you change it for each task. The Imp does ranged damage. The Voidwalker tanks. The Succubus or Incubus does the most damage. The Felhunter stops enemy casters.
+
+      Groups want a Warlock for 3 reasons. Ritual of Summoning is the only summon in the game, because Meeting Stones do not summon. You make Healthstones and Soulstones for the group. You put Curse of the Elements on the target, and in Forever it increases the damage from all magic schools.
+
+      In Forever, Blizzard rebuilt all 3 talent trees. Affliction uses DoTs and drains. Demonology makes the demon stronger and can let a Voidwalker tank in dungeons. Destruction uses fast Fire spells. Each tree is a full damage spec.
+
+      You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race.
+    extra: |
+      !!! conflict "Conflict: best race"
+          Method.gg ranks the races: Human (S), Orc (A), Undead and Gnome (B), Troll (C). Warcraft Tavern says that all 5 are close. 1 guide from the beta puts all races within 1% DPS. Select the faction and the look that you prefer.
+    goals:
+      - "Select a race. Read its Race add-on."
+      - "Select a talent path. Affliction is the usual selection for a first Warlock."
+      - "Read the [Professions](#professions) section. Tailoring and Enchanting are the usual selection."
+
+  - id: l1
+    title: "The Imp and your first DoTs"
+    story: |
+      You start with Shadow Bolt and Demon Skin. Sell your first items to get the copper for Immolate. Then do the quest of your trainer for the Imp. The Imp is your first demon, and it attacks from range.
+
+      At level 4 you train Corruption and Curse of Weakness. Corruption is your first DoT without a direct hit. It does its damage while you cast other spells or move.
+
+      Demons learn their abilities from Grimoires. A Grimoire is a book that you buy from a demon trainer. The first is Blood Pact at level 4. No source publishes the costs or the full list, so keep some silver for each new rank.
+
+      Life Tap at level 6 changes how you use mana. When your health is higher than your mana, cast Life Tap. Then eat, or let the health come back. From this level you drink much less than a Mage or a Priest.
+
+      Level 8 gives Bane of Agony and Fear. A fight now has a pattern: Bane of Agony, Corruption, Immolate, then the wand. Fear removes a second enemy from the fight for some seconds.
+
+      At about level 5, the quest *The Great Outdoors* opens [camping](../../systems/camping.md). Take the starter quest for a gathering profession in the same town.
+    train:
+      - [1, "Shadow Bolt, Demon Skin, Immolate", "Your first damage spells and your armor. Keep Demon Skin on you at all times"]
+      - [1, "Summon Imp (quest)", "Your first demon. It does ranged Fire damage"]
+      - [4, "Corruption, Curse of Weakness", "Corruption is the DoT that you use for all 60 levels"]
+      - [4, "Blood Pact (Grimoire)", "The Imp gives Stamina to the group. You buy it from the demon trainer"]
+      - [6, "Life Tap", "Changes health into mana. It decreases the time that you drink"]
+      - [8, "Bane of Agony", "A second DoT. It is a Bane, so you can add a Curse"]
+      - [8, "Fear", "Removes 1 enemy from the fight. Classic-era level"]
+    tip: |
+      Get a wand as soon as you can. Use it while your DoTs do their damage. An Enchanter makes the Lesser Magic Wand at level 5.
+    extra: |
+      ??? example "Macros for the demon and for Fear"
+
+          ```
+          #showtooltip
+          /petattack
+          /cast Bane of Agony
+          ```
+
+          ```
+          #showtooltip Fear
+          /cast [@focus,exists,harm] Fear; Fear
+          ```
+
+          Put the pet commands Attack, Follow and Move on keys that you can reach quickly. The `@focus` condition works in standard macros. Complex add-ons such as WeakAuras do not work. See [Add-ons](../../systems/addons.md).
+    hardcore: |
+      Use Life Tap only when no enemy is near you. Do not use Fear when other enemies are near, because the target runs into them.
+    goals:
+      - "Do the Imp quest at level 1."
+      - "Buy the Blood Pact Grimoire at level 4."
+      - "Equip a wand."
+      - "Train Bane of Agony and Fear at level 8."
+
+  - id: l10
+    title: "The Voidwalker and your first talents"
+    story: |
+      At level 10 you get your first talent point, and you train Drain Soul and Create Healthstone. You also do the quest for the Voidwalker. From here, you get 1 talent point at each level.
+
+      The Voidwalker changes the fight. Before, the enemy came to you. Now the Voidwalker holds the enemy while you put DoTs on it. You can fight 2 enemies at the same time: the Voidwalker tanks 1, and your DoTs kill them one after the other.
+
+      Drain Soul gives you Soul Shards. A Soul Shard is the reagent for Healthstones, Soulstones and summons. Use Drain Soul when an enemy has low health, and keep 2 or 3 spare shards in your bags.
+
+      Drain Life at level 14 is your first heal. At level 18 you train Create Soulstone and Searing Pain. A Soulstone lets a dead player come back to life. Searing Pain makes much threat. If you cast it again and again, the enemy leaves your Voidwalker and attacks you.
+
+      Your first dungeons open at level 13. Quests give much more XP than dungeon enemies, so do each dungeon for its quests. Give a Healthstone to each player before the first pull. Use Fear only when the group agrees, because the target can run into more enemies. See [Dungeons](../../content/dungeons/index.md) for the full list.
+
+      At level 14, start the scavenger hunt for the Cozy Sleeping Bag. It gives an XP buff and rested XP. See [Leveling](../../characters/leveling.md). Fan sites say that Warsong Gulch is open from level 10.
+    train:
+      - [10, "Drain Soul, Create Healthstone", "Drain Soul gives Soul Shards. A Healthstone has a cooldown that is separate from potions"]
+      - [10, "Summon Voidwalker (quest)", "Your tank for solo play"]
+      - [14, "Drain Life", "Moves health from the enemy to you"]
+      - [18, "Searing Pain", "A fast Fire spell with high threat"]
+      - [18, "Create Soulstone", "Put it on a healer before a boss, or on you for a hard pull"]
+    dungeons:
+      - {id: hall-of-thanes, levels: "13–20", note: "New. It is in Ironforge"}
+      - {name: "Ragefire Chasm", levels: "13–18", note: "It is in Orgrimmar"}
+      - {id: ruins-of-lordaeron, levels: "15–22", note: "New. It is in Tirisfal Glades"}
+      - {name: "Wailing Caverns", levels: "15–24"}
+      - {name: "The Deadmines", levels: "17–26"}
+    warn: |
+      On 6 November, Blizzard said that Voidwalkers are not durable enough as tanks. Blizzard planned a hotfix for 10 November to make them as durable as in Classic Era. Blizzard gave no numbers, and no source has tested the result.
+    hardcore: |
+      Keep the Voidwalker out. From level 18, put a Soulstone on yourself before each hard pull. No source confirms that Hardcore permits this.
+    goals:
+      - "Do the Voidwalker quest at level 10."
+      - "Do your first dungeon for its quests."
+      - "Start the Cozy Sleeping Bag scavenger hunt at level 14."
+
+  - id: l20
+    title: "The Sayaad and Ritual of Summoning"
+    story: |
+      At level 20 you train Demon Armor, Rain of Fire and Ritual of Summoning. Demon Armor replaces Demon Skin. Rain of Fire is your first AoE spell, and you cast it from range. You also do the quest for the Succubus or Incubus. The guides name this demon the Sayaad.
+
+      The Sayaad gives you a decision for each pull. It does more damage than the Voidwalker, but it does not tank. Many Warlocks change to it at 20 for faster kills. Keep the Voidwalker if you want more safety. Seduction, the crowd control spell of the Sayaad, holds 1 enemy in place.
+
+      Ritual of Summoning changes your job in a group. You and 2 players at the entrance can bring all the other players. Groups ask for this, so put the spell on your action bars.
+
+      The class quest *The Orb of Soran'ruk* also starts at 20. It needs fragments from Blackfathom Deeps and Shadowfang Keep. The reward is a staff or an off-hand item with Shadow and Fire damage. Thus, do these 2 dungeons first.
+
+      At level 28 you train Create Firestone and Banish. A Firestone is a weapon imbue: you put it on your weapon, and it adds Fire damage and crit. Banish removes 1 demon or elemental from the fight.
+
+      3 side tasks start in these levels. At 20, give 10 library books to the librarian of your faction for the first book quest. Arathi Basin opens at level 20. Level 25 gives the *Warlock: Novice* Legacy Point. See [Legacy](../../characters/legacy.md).
+    train:
+      - [20, "Demon Armor, Rain of Fire", "Stronger armor, and your first AoE spell at range"]
+      - [20, "Ritual of Summoning", "The only summon in the game. It needs you and 2 group members"]
+      - [20, "Summon Succubus or Incubus (quest)", "The demon with the most damage. Seduction is crowd control"]
+      - [28, "Create Firestone", "A weapon imbue with Fire damage and crit"]
+      - [28, "Banish", "Removes 1 demon or elemental from the fight. Classic-era level"]
+    dungeons:
+      - {name: "Shadowfang Keep", levels: "20–30", note: "It has a fragment for the Soran'ruk quest"}
+      - {name: "Blackfathom Deeps", levels: "24–32", note: "It has a fragment for the Soran'ruk quest, and the quest for the Gravestone Scepter wand"}
+      - {name: "The Stockade", levels: "25–29", note: "It is in Stormwind"}
+      - {id: excavation-site, levels: "26–33", note: "New. It has 3 bosses"}
+      - {id: city-of-dalaran, levels: "28–35", note: "New. You need the Dalaran Sewer Key"}
+    tip: |
+      Against 3 enemies, put DoTs on 2 of them and use Fear on the third. Do not hit the enemy that has Fear on it, because damage can break the Fear.
+    hardcore: |
+      Keep the Voidwalker out. The Sayaad does not tank, so the enemy attacks you. Use Seduction and Banish in place of Fear, because a target with Fear on it runs into other enemies.
+    goals:
+      - "Do the Sayaad quest at level 20."
+      - "Do the class quest *The Orb of Soran'ruk*."
+      - "Turn in 10 library books for the first book quest."
+
+  - id: l30
+    title: "The Felhunter and drain tanking"
+    story: |
+      At level 30 you do the quest for the Felhunter, and you train Hellfire. The Felhunter is the demon against casters. Spell Lock stops a cast, and Devour Magic removes a magic effect. It is the usual demon for PvP. You now have all 4 demons.
+
+      From about level 30, many Warlocks fight in a new way. You put all DoTs on the enemy and then use Drain Life in place of the wand. The enemy hits you, and the drain heals you. Guides name this drain tanking. Pulls become long, and you almost never rest.
+
+      Hellfire is a strong AoE spell, but it damages you and needs melee range. Use it only on groups of 3 or more enemies, and only when a healer can heal you. If not, use Rain of Fire.
+
+      At level 36 you train Create Spellstone. It is the weapon imbue for Shadow damage, as the Firestone is for Fire damage. Use the stone of the school that you cast most.
+
+      The second book quest at 35 needs 20 library books. The new battleground, the Battle for the Darkspear Islands, opens at level 30. Start to save gold now. At level 40, dual spec costs 50g, and the riding skill costs 100g.
+    train:
+      - [30, "Summon Felhunter (quest)", "Spell Lock and Devour Magic. The demon for PvP"]
+      - [30, "Hellfire", "AoE around you that also damages you. Classic-era level"]
+      - [36, "Create Spellstone", "A weapon imbue with Shadow damage and spell haste"]
+    dungeons:
+      - {name: "Razorfen Kraul and Gnomeregan", levels: "29–38"}
+      - {name: "Scarlet Monastery", levels: "30–46", note: "4 wings. It gives a wand, a dagger and an off-hand item for casters"}
+      - {id: drowned-city, levels: "35–42", note: "New. It is on the coast of Stranglethorn Vale"}
+    tip: |
+      Use your health as mana. Cast Life Tap to change health into mana. Then use Drain Life to get the health back.
+    warn: |
+      Searing Pain makes much threat. Without the Demonic Brand talent, do not cast it again and again, or the enemy leaves your demon.
+    hardcore: |
+      Drain tanking lets the enemy hit you. Let the Voidwalker tank each strong enemy. Hellfire uses your health, so it is dangerous in Hardcore.
+    goals:
+      - "Do the Felhunter quest at level 30."
+      - "Turn in 20 library books at level 35 for the second book quest."
+      - "Save 150g before level 40."
+
+  - id: l40
+    title: "The Felsteed and dual spec"
+    story: |
+      Level 40 gives you a mount from your class. Warcraft Tavern says that the Felsteed comes from a short quest at level 40. In Classic, the quest sends you to Strahad Farsan in Ratchet. The riding skill costs 100g, and this price includes your first racial mount. No source says if a Warlock must pay it to ride the Felsteed.
+
+      You can buy dual spec for 50g from all Warlock trainers. Dual spec is a second set of talents, and you can change between the 2 sets. Many players keep Affliction for quests and add Destruction or Demonology for dungeons. The cost of a respec decreases to 1g with time.
+
+      Your 31st talent point also comes at level 40, if you put all points in 1 tree. It gives the last talent of the tree: Wrack, Demonic Pact or Incinerate. The Talents add-on tells you how it changes your fight.
+
+      Until now, Fear was your only escape. Howl of Terror at 40 puts Fear on all enemies near you. Death Coil at 42 is an instant Fear that also heals you. With these 2 spells you can get away from a pull that goes wrong.
+
+      Soul Fire at level 48 is a slow, large Fire hit that uses a Soul Shard. Use Curse of the Elements on strong targets to make long fights shorter.
+
+      The new zone Riverglades is for levels 35 to 45. At 45, the third book quest needs 25 library books. Level 45 also gives the *Warlock: Experienced* Legacy Point. Some sources say level 40.
+    train:
+      - [40, "Summon Felsteed (quest)", "Your level 40 mount. The quest giver in Ratchet is a Classic-era detail"]
+      - [40, "Howl of Terror", "Fear on all enemies near you. Classic-era level"]
+      - [42, "Death Coil", "An instant Fear that heals you. Classic-era level"]
+      - [48, "Soul Fire", "A large Fire hit. It uses 1 Soul Shard"]
+    dungeons:
+      - {id: kroldok-stronghold, levels: "40–47", note: "New. It is in Riverglades"}
+      - {name: "Razorfen Downs", levels: "37–46"}
+      - {name: "Uldaman and Zul'Farrak", levels: "41–54"}
+      - {id: alcaz-prison, levels: "48–55", note: "New. It is in Dustwallow Marsh"}
+    extra: |
+      ??? example "Macro for Soul Fire with Demonic Sacrifice"
+
+          ```
+          #showtooltip Soul Fire
+          /cast Demonic Sacrifice
+          /cast Soul Fire
+          ```
+
+          This macro sacrifices your demon, then starts Soul Fire. Use it only if you have the Demonic Sacrifice talent.
+    hardcore: |
+      Death Coil and Howl of Terror are your escape spells. Before each pull, make sure that they are not on cooldown. In combat, do not use Life Tap below half health.
+    goals:
+      - "Do the Felsteed quest at level 40."
+      - "Buy dual spec (50g) if you play in dungeons or battlegrounds."
+      - "Turn in 25 library books at level 45 for the third book quest."
+
+  - id: l50
+    title: "Inferno and the last 10 levels"
+    story: |
+      At level 50 you train Inferno. It summons an Infernal for a short time. Use it in an emergency.
+
+      The goal of a dungeon changes in these levels. Before level 50, you did each dungeon for its quests. Now you also start to collect your level 60 equipment. The last 10 levels have the most dungeons. Reportedly, each boss in the new dungeons drops a blue item.
+
+      The stats of an item stay hidden until a player finds it. Thus, some dungeon items are a surprise. The Equipment add-on names the items that the sources know. Alterac Valley also opens in these levels, at level 51.
+
+      Your talents are almost complete. Hit becomes important, because dungeon bosses are 2 or 3 levels above you. Your demon uses your hit. The Suppression talent gives 5% hit, and each leveling build takes it.
+
+      In groups, your jobs do not change. You summon players, give Healthstones, put a Soulstone on a healer before each boss, and use Banish on demons and elementals. Give the tank some seconds before you use your strongest spells. For groups of enemies, use Rain of Fire. Use Hellfire only if the healer can heal you.
+    train:
+      - [50, "Inferno", "Summons an Infernal for a short time"]
+    dungeons:
+      - {name: "Maraudon", levels: "46–55"}
+      - {name: "Sunken Temple and Blackrock Depths", levels: "50–60"}
+      - {id: blackmaw-hold, levels: "55–60", note: "New. It is in Azshara. It has an entrance to the Barrow Deeps"}
+      - {name: "Lower Blackrock Spire and Dire Maul", levels: "54–60"}
+      - {id: shapers-terrace, levels: "58–60", note: "New. It is in Un'Goro Crater"}
+      - {name: "Scholomance and Stratholme", levels: "58–60"}
+    hardcore: |
+      Keep 3 or more Soul Shards, a Healthstone and a healing potion. Put a Soulstone on yourself before each hard pull. No source confirms that Hardcore permits this.
+    goals:
+      - "Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests."
+      - "Keep 3 or more Soul Shards for each dungeon."
+      - "Keep each item with spell power or hit for level 60."
+
+  - id: l60
+    title: "Spell hit and the Onyxia attunement"
+    story: |
+      At level 60 you get the *Warlock: Master* Legacy Point, and you train Ritual of Doom. Ritual of Doom summons a Doomguard for a short time, and it is costly. Mount Hyjal, the level 60 zone, opens through Darkwhisper Gorge in Winterspring.
+
+      The Dreadsteed, your fast mount, comes from a long quest chain. No source documents changes to this chain in Forever. The Journeyman riding skill for a fast mount costs 1,000g.
+
+      All 3 launch raids open on 9 December 2026. Blizzard says that the difficulty of the raids comes from preparation. Thus, you stop leveling and start to prepare. You have 4 tasks. Get spell power on each item. Get hit from Suppression and from items. Collect consumables. Do the attunement for Onyxia's Lair.
+
+      Hit is the stat that you cannot ignore. Warcraft Tavern says that a raid boss needs 17% spell hit. Its stats guide says 16%. Suppression gives 5%, so Affliction and Destruction need about 12% from items and buffs. The Demonology raid build has no Suppression, so it needs all 17% from items and buffs.
+
+      An attunement is a quest chain that lets you go into a raid. The attunement for Onyxia's Lair gives the Drakefire Amulet. It needs the blood of General Drakkisath from Upper Blackrock Spire. It is not account-wide, so each character must do it.
+
+      Respec to a level 60 build now. The Talents add-on gives the builds of your path. No raid is open, so these builds come from simulations. Raid items stay hidden until players find them, so no source has a tested item list. For raid nights, camp features give buffs: Intellect from Herbalism, crit from Skinning and Spirit from Tailoring.
+    dungeons:
+      - {id: blackmaw-hold, levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60"}
+      - {name: "Scholomance, Stratholme, Dire Maul and Blackrock Depths", levels: "52–60", note: "The Classic dungeons are still in the game"}
+      - {name: "Upper Blackrock Spire", levels: "59–60", note: "10 players. You need it for the Onyxia attunement"}
+    goals:
+      - "Respec to a level 60 build."
+      - "Do the attunement for Onyxia's Lair."
+      - "Collect consumables and Soul Shards before 9 December."
+
+  - id: raid
+    title: "Summons, stones, Curses and Fear"
+    story: |
+      In a raid you are 1 of many damage dealers, but you have 3 jobs that no other class has. You summon the players who come late. You give Healthstones to the raid. You keep a Soulstone on a healer. When the raid leader tells you, use Banish or Fear on extra enemies.
+
+      Keep your Bane on the target, and add the Curse that your raid leader gives you. Curse of Shadows is gone, so Curse of the Elements is the main Curse for casters. It increases Fire, Frost, Arcane, Nature and Shadow damage equally. Curse of Recklessness is the Curse for raids with many melee players.
+
+      **The Barrow Deeps** has 10 players. Usually 1 Warlock is sufficient for Curse of the Elements there. See [The Barrow Deeps](../../content/raids/barrow-deeps.md). **Hyjal Summit** has 20 players and 13 bosses on routes that branch. Fel corruption is its theme. See [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+      **Onyxia's Lair** has 40 players and much Fire damage. The raid page recommends fire resistance, but no source gives a number. See [Onyxia's Lair](../../content/raids/onyxias-lair.md). Warcraft Tavern says that boss AoE does half damage to demons.
+
+      In PvP, a Warlock is one of the strongest casters. You have Fear, Death Coil, Howl of Terror, Seduction and Spell Lock. Use Fear first, then DoTs, then drains. The Felhunter is the usual demon. See [PvP](../../content/pvp/index.md) for Honor, ranks and seasons, and [Battlegrounds](../../content/pvp/battlegrounds.md).
+
+      The Battle for the Darkspear Islands has 15 players on each side, 4 bases and a flag in the center. Curse of Exhaustion and Fear stop flag carriers there, and Howl of Terror removes enemies from a base. On PvP realms, keep a Soulstone and a Healthstone ready.
+    extra: |
+      | Enemy in PvP | What to know |
+      |---|---|
+      | Orc | Shatter Curse removes your Curses and Banes |
+      | Undead | Will of the Forsaken removes Fear and Seduction |
+      | Human | Will to Survive removes stuns |
+      | Priest, Paladin | They dispel. Make them use the dispel before you cast your important Curse |
+      | Enemy casters | Spell Lock of the Felhunter stops a cast. Devour Magic removes a magic effect |
+    hardcore: |
+      [Hardcore](../../about/hardcore.md) comes in winter 2026/27, and Blizzard has not published its detailed rules. Play Affliction or Demonology with the Voidwalker. Soul Link gives much safety. Use Seduction and Banish in place of Fear.
+    goals:
+      - "Ask your raid leader which Curse you must use."
+      - "Bring Soul Shards for summons, Healthstones and Soulstones."
+      - "Give Healthstones to the raid before the first pull."
+
+# ------------------------------------------------------------------ races
+races:
+  - id: human
+    name: Human
+    faction: alliance
+    status: Classic
+    pitch: "The safe Alliance selection and the default for a first Warlock. Ruthless gives 1% crit, The Human Spirit gives 10% Spirit for Life Tap, and Will to Survive removes stuns."
+    start: |
+      You start at Northshire Abbey in Elwynn Forest. Your first trainer is Drusilla La Salle, behind the abbey (Classic location). She gives the Imp quest. At about level 5, go to Goldshire. The trainer Maximillian Crowe is in the basement of the Lion's Pride Inn (Classic location). The trainers of Stormwind are in the Slaughtered Lamb in the Mage Quarter.
+    notes:
+      l1: "The Human Spirit gives 10% more Spirit. Life Tap increases with Spirit, so each Life Tap from level 6 gives you more mana."
+      l10: "The Voidwalker quest starts with Gakin the Darkbinder in the Slaughtered Lamb (Classic name). Method.gg rates the Stormwind quest as the fastest for the Alliance. Then go to Westfall."
+      l20: "The Stockade is in your capital. The Sayaad quest starts with your Stormwind trainers."
+      l40: "Honored with Stormwind gives 10% off riding. The Felsteed makes the level 40 mount less urgent."
+      l60: "Ruthless gives 1% crit with all schools. DoTs can crit in Forever, so it helps each talent path."
+      raid: "Will to Survive removes Cheap Shot, Kidney Shot and Hammer of Justice. Then cast Fear or Death Coil. Use Perception to find a Rogue in stealth before the Rogue attacks."
+  - id: gnome
+    name: Gnome
+    faction: alliance
+    status: Classic
+    pitch: "The burst selection for Destruction and Demonology. Eureka! gives 8 seconds of cheaper and stronger direct spells, and Escape Artist removes roots."
+    start: |
+      You start in Coldridge Valley in Dun Morogh. Your first trainer is Alamar Grimm in Anvilmar (Classic location). He gives the Imp quest. At about level 5, go through the tunnel to Kharanos. The trainer Gimrizz Shadowcog is in the Thunderbrew Distillery (Classic location). The trainers of Ironforge are in the Forlorn Cavern (Classic location).
+    notes:
+      l1: "Expansive Mind gives 5% more mana. Thus, you use Life Tap less often in each fight."
+      l10: "For the Voidwalker, Method.gg recommends the Stormwind quest. Take the Deeprun Tram to Stormwind. The new dungeon Hall of Thanes is in Ironforge."
+      l20: "Ironforge has no trainer for staves or swords. Go to Woo Ping in Stormwind before you take the Staff of Soran'ruk."
+      l30: "Gnomeregan is your home dungeon from level 29. If you take Engineering, your racial gives 20% fewer device failures."
+      l60: "Use Eureka! with Conflagrate, Shadowburn and Incinerate, or with a Soul Fire. It gives no bonus to DoT ticks, and guides say the same for channels. Warcraft Tavern gives a cooldown of 2 minutes."
+      raid: "Escape Artist removes Frost Nova, Entangling Roots and Hamstring. Use it, then move back to Fear range."
+  - id: orc
+    name: Orc
+    faction: horde
+    status: Classic
+    pitch: "The best all-round Horde selection in most guides. Blood Fury gives 10% spell power for 15 seconds, and Command gives your demon 5% damage."
+    start: |
+      You start in the Valley of Trials in Durotar. Your first trainer is Nartok in the Den (Classic location). He gives the Imp quest. At about level 5, go to Razor Hill. The trainer there is Dhugru Gorelust (Classic name). The trainers of Orgrimmar are in the Cleft of Shadow.
+    notes:
+      l1: "Command gives your demon 5% damage. It helps from the first fight with the Imp."
+      l10: "Warcraft Tavern and Method.gg say that the Voidwalker quest in the Undercity is easier than the Orgrimmar quest. Ragefire Chasm is in Orgrimmar."
+      l20: "Command also gives 5% damage to the Sayaad. Thus, the change to the Sayaad at 20 gives an Orc more than other races."
+      l40: "Ratchet is a short distance from Orgrimmar. In Classic, the Felsteed quest sends you there."
+      l60: "Use Blood Fury with your opener. DoTs calculate their damage on each tick, so keep them on the target during the 15 seconds. The cooldown is 2 minutes."
+      raid: "Shatter Curse removes Curses and Banes from you. It is strong against other Warlocks. Hardiness makes stuns 20% shorter."
+  - id: troll
+    name: Troll
+    faction: horde
+    status: New
+    pitch: "New in Forever. Berserking gives 10% cast speed for 15 seconds, and Rapid Regeneration heals you after Life Tap. Method.gg ranks it last of the 5."
+    start: |
+      You start in the Valley of Trials in Durotar, with the Orcs. Your first trainer is Nartok in the Den (Classic location). He gives the Imp quest. At about level 5, go to Razor Hill. The trainer there is Dhugru Gorelust (Classic name). The trainers of Orgrimmar are in the Cleft of Shadow.
+    notes:
+      l1: "Do the quests in Sen'jin Village and on the Echo Isles. Use Life Tap to half health, then use Rapid Regeneration. An action stops it."
+      l10: "Warcraft Tavern and Method.gg prefer the Voidwalker quest in the Undercity. Beast Slaying gives 5% damage against the beasts of the Barrens."
+      l30: "The Battle for the Darkspear Islands opens at level 30. Stranglethorn Vale has many beasts for Beast Slaying."
+      l40: "Honored with the Darkspear Trolls gives 10% off riding. In Classic, the Felsteed quest sends you to Ratchet, a short distance from Orgrimmar."
+      l60: "Use Berserking with Incinerate, Shadow Bolt, Searing Pain or Soul Fire. Warcraft Tavern says that it does not make DoT ticks or channels faster."
+      raid: "Beast Slaying is not confirmed for the bosses of the launch raids. The race page rates Rapid Regeneration 2/5 for PvP, because each action stops it."
+  - id: undead
+    name: Undead
+    faction: horde
+    status: Classic
+    pitch: "The Horde PvP selection. Will of the Forsaken removes Fear, charm and sleep. Cannibalize gives health and mana, and Touch of the Grave drains health."
+    start: |
+      You start in Deathknell in Tirisfal Glades. Your first trainer is Maximillion (Classic name). He gives the Imp quest. At about level 5, go to Brill. The trainer Rupert Boch is in the Gallows' End Tavern (Classic location). The trainers of the Undercity are in the Magic Quarter.
+    notes:
+      l1: "Use Cannibalize on humanoid and undead corpses. Method.gg says that it now gives mana and health. Touch of the Grave has a chance on a hit to drain health, with a cooldown of 15 seconds. The new Shadowvale quests are in the west of Tirisfal Glades."
+      l10: "The Voidwalker quest starts with Carendin Halgar in the Magic Quarter (Classic name). 2 guides rate it as the easiest Horde quest. The Ruins of Lordaeron dungeon is near the Undercity."
+      l30: "Scarlet Monastery is in your home zone."
+      l40: "For the Felsteed, take the zeppelin to Orgrimmar first. Then go to Ratchet (Classic-era quest)."
+      raid: "Will of the Forsaken removes the Fear and the Seduction of enemy Warlocks, and Psychic Scream. Warcraft Tavern names Undead as its PvP selection."
+
+factions:
+  alliance:
+    l10: "Quest in Westfall or Loch Modan. The new boat from Stormwind Harbor to Auberdine takes you to Darkshore. Do the Deadmines at about level 18."
+    l20: "Quest in Redridge Mountains, Duskwood, the Wetlands and Ashenvale. Three Corners in Redridge has the supply camp for profession crates. The librarian for book quests is Garion Wendell in the Wizard's Sanctum in Stormwind."
+    l30: "Quest in Arathi Highlands, Stranglethorn Vale, Desolace and Dustwallow Marsh (Theramore). The Alliance can get Kirin Tor reputation in Dalaran."
+    l40: "The Alliance town in Riverglades is Farholde Keep. Walk in from Redridge Mountains. Then quest in Tanaris, Feralas and the Hinterlands. Tanaris has a ferry to Powderfuse Port in Riverglades."
+    l50: "Quest in Azshara, Un'Goro Crater, Felwood, Burning Steppes, the Plaguelands, Winterspring and Silithus. Azshara has many new quests."
+    l60: "The Alliance attunement for Onyxia's Lair goes through Burning Steppes, Blackrock Depths and Highlord Bolvar in Stormwind. The PvP vendors are in the Champion's Hall in Stormwind."
+  horde:
+    l10: "Quest in the Barrens or Silverpine Forest. The Horde supply camp for profession crates is west of the Crossroads. Do Wailing Caverns after Ragefire Chasm."
+    l20: "Quest in Stonetalon Mountains, Ashenvale and Hillsbrad Foothills. Warcraft Tavern says that the Horde Sayaad quest is a chain of 8 quests in the Barrens and Stonetalon Mountains. The guards of Dalaran attack Horde characters, but the City of Dalaran dungeon has Horde quests. The librarian for book quests is Owen Thadd in the Magic Quarter of the Undercity."
+    l30: "Quest in Thousand Needles, Stranglethorn Vale, Desolace and Arathi Highlands. The way to Shen'dralas goes through the Valley of Bones in the south of Desolace."
+    l40: "The Horde town in Riverglades is Rog'mar. Go in from the Badlands or Swamp of Sorrows. Then quest in Tanaris, Feralas and the Badlands. Tanaris has a ferry to Powderfuse Port in Riverglades."
+    l50: "Quest in Azshara, Un'Goro Crater, Felwood, Burning Steppes, the Plaguelands, Winterspring and Silithus. Azshara is next to Orgrimmar and has many new quests."
+    l60: "The Horde attunement for Onyxia's Lair goes through the Badlands, Lower Blackrock Spire, Thrall and Rexxar. The PvP vendors are in the Hall of Legends in Orgrimmar."
+
+# ------------------------------------------------------------------ talent paths
+paths:
+  - id: affliction
+    name: "Affliction"
+    pitch: "The solo path that all major guides recommend. DoTs kill the enemy while your demon holds it, and drains keep your health full. It has the least rest time."
+    leveling: affliction-leveling
+    endgame: [affliction-raid, sm-ruin]
+    gear: shadow
+    play:
+      l1: "You have no talent points before level 10. Start each fight with Bane of Agony and Corruption while the Imp attacks. Add Immolate on a strong enemy, then use the wand. Your first 5 talent points, from level 10, go to Improved Corruption."
+      l10: "Send the Voidwalker. Then cast Bane of Agony and Corruption, and use the wand. Improved Corruption makes Corruption almost instant at level 14, so you can put it on each enemy while you move. Suppression then gives hit and decreases threat, so the Voidwalker keeps the enemy."
+      l20: "The points of these levels go to your demon, not to your spells. Unholy Power makes the demon stronger, and Demonic Energies heals it with your damage. Thus, the Sayaad kills faster and the Voidwalker lives longer. Use the wand while the DoTs do damage. Improved Drains at 27 to 29 prepares the drain fight of the next chapter."
+      l30: "From level 30, use Drain Life in place of the wand. Amplify Curse makes 1 Bane of Agony 50% stronger for a hard pull. Pandemic doubles the crit bonus of DoTs. Fel Concentration gives drains a 70% chance to ignore pushback, the delay that a hit adds to a cast. Take it earlier if enemies interrupt your drains often. Siphon Life at level 37 is a DoT that heals you."
+      l40: "Soul Siphon is complete at level 40. It makes Drain Life stronger for each Affliction effect on the target. Thus, put Corruption, Bane of Agony and Siphon Life on the enemy before you drain. Shadow Mastery adds 10% Shadow damage. Wrack at level 48 is a new filler that makes your other Shadow DoTs 10% stronger."
+      l50: "Your fight does not change now. It becomes stronger. Malevolence gives Shadow crit, which helps Pandemic. Nightfall sometimes makes a Shadow Bolt instant. Cast it immediately. The last points go to Improved Bane of Agony and Fel Vitality."
+      l60: "The Wrack raid build keeps 33 points in Affliction and adds Bane, Improved Shadow Bolt and Ruin. The SM/Ruin build is named for Shadow Mastery and Ruin. It uses Shadow Bolt as filler and is good in dungeons, where enemies die quickly. Warcraft Tavern puts it slightly below the Wrack build. For PvP, 17 points in Affliction give Curse of Exhaustion, which slows the target by 30%."
+      raid: "Start with a Shadow Bolt when the tank pulls. On a second target, add Corruption. If that target lives for 30 seconds or more, also add Bane of Agony and Siphon Life. On 6 November, Blizzard said that Wrack alone was better than the other DoTs. Blizzard planned a hotfix for 10 November to correct this, and said that the total damage of Affliction does not increase. Thus, no source confirms the priority below after that date. The launch tooltip of Wrack says Instant, and other sources say channel."
+    priority:
+      - "Cast **Bane of Doom** if the fight continues for 1 minute or more. If not, use Amplify Curse, then **Bane of Agony**."
+      - "Cast the **Curse** that your raid leader gives you."
+      - "Cast **Corruption**, then **Siphon Life**, then **Immolate**."
+      - "Cast **Shadow Bolt** only when Nightfall makes it instant."
+      - "Use **Life Tap** before a DoT ends, or while you move."
+      - "Use **Wrack** as filler when no spell above is necessary."
+  - id: demonology
+    name: "Demonology"
+    pitch: "The safe path, the Hardcore path and the PvP path. With Soul Link, your demon takes 30% of the damage that you take. It also lets a Voidwalker tank in dungeons."
+    leveling: demonology-leveling
+    endgame: [demonology-raid, soul-link-pvp]
+    gear: shadow
+    play:
+      l1: "You have no talent points before level 10. Let the Imp attack first. Then cast Bane of Agony, Corruption and Immolate, and use the wand. This path makes the demon stronger from level 10. Your first 5 talent points go to Unholy Power."
+      l10: "All points make the demon stronger. Unholy Power gives it damage, Demonic Energies heals it with your damage, and Fel Vitality gives it health. Send the Voidwalker, put DoTs on the enemy and use the wand. Some guides level as Affliction first. Warcraft Tavern changes to Demonology at level 27, and Method.gg at about level 45."
+      l20: "Master Summoner makes a new summon faster. Improved Sayaad makes the Succubus or Incubus stronger and Seduction longer. Demonic Brand at 25 to 27 changes Searing Pain: it makes less threat and adds damage to the next attacks of your demon. With a Voidwalker, these hits make high threat. Thus, send the Voidwalker first, and then use Searing Pain on its target. Demonic Sacrifice at 28 opens Soul Link."
+      l30: "Soul Link at level 30 is the best defensive talent of the class. Your demon takes 30% of the damage that you take. Do not sacrifice the demon yet, because a new demon cancels the Demonic Sacrifice effect. Fel Domination at 34 gives a fast summon when your demon dies. Master Demonologist gives a bonus that depends on the demon. The Imp gives Fire damage, and the Sayaad gives Shadow damage. The Voidwalker decreases physical damage, and the Felhunter decreases magic damage."
+      l40: "Demonic Pact at level 40 lets you keep a Demonic Sacrifice effect with a different demon out. Sacrifice the Imp for +15% Shadow damage. Then summon the Sayaad or the Voidwalker. You now have the bonus of 2 demons at the same time. The next points make Corruption almost instant."
+      l50: "Suppression gives hit for dungeons. Improved Drains and Pandemic make Drain Life and your DoTs stronger. For Hardcore, keep the Voidwalker out and put the last 2 points in Demonic Embrace."
+      l60: "The raid build is the Fire build. Sacrifice the Sayaad for +15% Fire damage, keep the Imp out and use a Firestone. A Shadow variant sacrifices the Imp, keeps the Sayaad out and uses a Spellstone. It casts Searing Pain only for Demonic Brand, uses Shadow Bolt as filler and does not use Soul Fire. Warcraft Tavern puts it within about 3% of the Fire build. The PvP build takes Soul Link, Improved Felhunter and Curse of Exhaustion. There, sacrifice the Voidwalker for mana or the Imp for Shadow damage, then summon the Felhunter."
+      raid: "The raid build has no Suppression, so get your hit from items. Decimation starts when Searing Pain hits a target below 35% health. For 10 seconds, Soul Fire is then faster and costs no Soul Shard. For pet tanking in dungeons, send the Voidwalker first and then use Searing Pain on its target. Move the points from Improved Imp and Decimation to Improved Voidwalker and Improved Health Funnel. No source confirms pet tanking in raids."
+    priority:
+      - "Cast **Searing Pain** if **Demonic Brand** is not on the target."
+      - "Cast **Bane of Doom** in a long fight. If not, cast **Bane of Agony**."
+      - "Cast the **Curse** that your raid leader gives you."
+      - "Cast **Immolate**."
+      - "Cast **Soul Fire** when Decimation is active. The target must be below 35% health."
+      - "Cast **Corruption**. Use **Life Tap** when it is necessary."
+      - "Use **Searing Pain** as filler."
+  - id: destruction
+    name: "Destruction"
+    pitch: "The path for dungeon groups. It has the best AoE and cleave, and fast Fire burst. It has less self-healing than Affliction, so solo play is harder."
+    leveling: destruction-leveling
+    endgame: [destruction-raid]
+    gear: fire
+    play:
+      l1: "You have no talent points before level 10. Let the Imp attack first. Cast Immolate and Corruption, then Shadow Bolt, and use the wand when your mana is low. Immolate and Shadow Bolt are the base of this path. Your first 5 talent points go to Bane."
+      l10: "Bane makes Shadow Bolt and Immolate faster. Cast Immolate, then Corruption, then Shadow Bolt until the enemy dies. Cataclysm decreases the mana cost. You use more mana than the other paths, so use Life Tap often."
+      l20: "Shadowburn at level 20 is an instant hit that uses a Soul Shard. Use it to kill an enemy, and you get the shard back. Conflagrate at level 25 is an instant Fire hit on a target with Immolate. It consumes Immolate. With Aftermath 5/5 it also slows the target."
+      l30: "Bane of Havoc at level 31 copies 15% of your damage to a second target. Put it on 1 enemy in each dungeon pull. Fire and Brimstone gives Conflagrate more crit. Shadow and Flame at 5/5 lets Conflagrate keep Immolate, and Shadowburn gives its shard back."
+      l40: "Incinerate at level 40 replaces Shadow Bolt as filler. It does 25% more damage if Immolate is on the target. Keep Immolate on the target and use Conflagrate and Shadowburn on cooldown. After Ruin 5/5 at 42, the next points make Corruption almost instant."
+      l50: "Suppression gives hit and decreases threat in dungeons. In a dungeon, give the tank some seconds before you use Conflagrate. Use Hellfire only on groups of 3 or more enemies."
+      l60: "The raid build keeps the Sayaad out and puts 14 points in Affliction for Suppression and Improved Corruption. It does not take Improved Shadow Bolt, because you do not cast Shadow Bolt. An Imp variant keeps the Imp out and moves 3 points from Unholy Power to Improved Imp. Warcraft Tavern puts it slightly lower. Warcraft Tavern also puts a variant that sacrifices the Sayaad for +15% Fire damage below the Sayaad build."
+      raid: "Start with Soul Fire when the tank pulls. Start each fight with 2 or more Soul Shards. On 2 targets, put Bane of Havoc on the second target, and do not use Hellfire. In dungeons, put Bane of Havoc on 1 enemy and Bane of Agony on the other enemies. Use Hellfire on groups of 3 or more enemies."
+    priority:
+      - "Cast **Bane of Doom** in a long fight. If not, cast **Bane of Agony**. Use **Bane of Havoc** when a second target is there."
+      - "Cast the **Curse** that your raid leader gives you."
+      - "Cast **Immolate**, then **Corruption**."
+      - "Cast **Conflagrate** on cooldown. It needs Immolate on the target."
+      - "Cast **Shadowburn** on cooldown. It keeps the Fire bonus of Shadow and Flame active."
+      - "Use **Life Tap** between casts."
+      - "Use **Incinerate** as filler."
+
+# ------------------------------------------------------------------ equipment sets
+gear:
+  - id: shadow
+    name: "Shadow damage"
+    pitch: "The set for Affliction and for Demonology while you level. You take spell power, Shadow damage and crit. The imbue is the Spellstone."
+    stats: "Leveling (Warcraft Tavern): Spell Power or Shadow damage > wand DPS (to about 30) > Spirit or Intellect > Stamina. Level 60, Affliction: Spell Power or Shadow damage > Crit > Hit (to the cap) > Haste > Spell Pierce > Intellect > Spirit. Demonology puts Hit before Crit"
+    chapters:
+      l1:
+        text: "Your first important item is a wand. You can use wands and daggers from level 1. A weapon master teaches staves for 10 silver. Train staves before you do the staff quest of your faction."
+        items:
+          - {slot: "Wand", name: "Novice's Practice Wand", from: craft, profession: enchanting}
+          - {slot: "Wand", name: "Lesser Magic Wand", from: craft, profession: enchanting, where: "level 5. Warcraft Tavern gives 11.3 DPS"}
+          - {slot: "Staff", name: "Apprentice's Spellstaff", from: quest, where: "*Rare Books*, Elwynn Forest (Alliance), level 7", basis: forever}
+          - {slot: "Staff", name: "Makeshift Stormcaller", from: quest, where: "*Stormy Potential*, Durotar (Horde), level 7", basis: forever}
+      l10:
+        text: "Replace the wand at level 13. The first dungeons give a staff and a robe for each faction. Tailoring makes rare Shadow items from skill 60. Warcraft Tavern says that only the Tailor can wear them. Method.gg names the Filigreed Shadow Gown for Affliction."
+        items:
+          - {slot: "Wand", name: "Greater Magic Wand", from: craft, profession: enchanting, where: "level 13. Warcraft Tavern gives 17.5 DPS"}
+          - {slot: "Wand", name: "Deepblaze", from: quest, where: "*Old Ironforge Incursion*, Hall of Thanes (Alliance)", basis: forever}
+          - {slot: "Wand", name: "Branding Rod", from: quest, where: "*Isha Awak*, the Barrens (Horde)", basis: forever}
+          - {slot: "Staff", name: "Staff of Orgrimmar", from: quest, where: "*Hidden Enemies*, Ragefire Chasm (Horde), level 16", basis: forever}
+          - {slot: "Staff", name: "Emberstone Staff", from: dungeon, where: "The Deadmines, Captain Greenskin, level 17", basis: forever}
+          - {slot: "Staff", name: "Coldspire Staff", from: dungeon, dungeon: ruins-of-lordaeron, where: "Rath'mael", basis: forever}
+          - {slot: "Chest", name: "Robes of the Disgraced Thane", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Chest", name: "Leftover Abomination Skin", from: dungeon, dungeon: ruins-of-lordaeron, where: "The Baron", basis: forever}
+          - {slot: "Feet", name: "Shadow Boots", from: craft, profession: tailoring}
+          - {slot: "Hands", name: "Shadow Gloves", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Filigreed Shadow Gown", from: craft, profession: tailoring}
+      l20:
+        text: "The class quest at 20 gives the Staff of Soran'ruk or the Orb of Soran'ruk. Warcraft Tavern gives the staff +34 Shadow and Fire damage. The wand from the Blackfathom Deeps quest has 29 DPS. Method.gg says that a staff is better than a one-hand weapon with an off-hand item."
+        items:
+          - {slot: "Staff", name: "Staff of Soran'ruk", from: class, where: "*The Orb of Soran'ruk*, level 20", basis: forever}
+          - {slot: "Wand", name: "Gravestone Scepter", from: quest, where: "*Blackfathom Villainy*, Blackfathom Deeps, level 22", basis: forever}
+          - {slot: "Staff", name: "Rod of the Sleepwalker", from: dungeon, where: "Blackfathom Deeps, Twilight Lord Kelris, level 24", basis: forever}
+          - {slot: "Ring", name: "Ring of Power Regulation", from: dungeon, dungeon: excavation-site, where: "Relic Guardian. Timesaver.gg keeps it to level 60", basis: forever}
+          - {slot: "Chest", name: "Violet Sorcerer's Robes", from: dungeon, dungeon: city-of-dalaran, where: "Arcanic Enigma", basis: forever}
+          - {slot: "Wand", name: "Wand of Mana Concentration", from: dungeon, dungeon: city-of-dalaran, where: "Arcanic Enigma, level 27", basis: forever}
+          - {slot: "Staff", name: "Spine of the Devourer", from: dungeon, dungeon: city-of-dalaran, where: "Mana Devourer, level 28", basis: forever}
+          - {slot: "Head", name: "Shadow Circlet", from: craft, profession: tailoring}
+          - {slot: "Legs", name: "Filigreed Shadow Leggings", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Shadow Gown", from: craft, profession: tailoring}
+      l30:
+        text: "Scarlet Monastery gives a wand at 30 and a staff at 34. Timesaver.gg prefers a dagger with an off-hand item from 35. The ring from the second book quest stays useful to level 60. The Spellstone at 36 is your weapon imbue. The Black items continue the Shadow line by their reagents, but no source confirms their stats."
+        items:
+          - {slot: "Wand", name: "Necrotic Wand", from: dungeon, where: "Scarlet Monastery, Azshir the Sleepless, level 30", basis: forever}
+          - {slot: "Staff", name: "Illusionary Rod", from: dungeon, where: "Scarlet Monastery, Arcanist Doan, level 34", basis: forever}
+          - {slot: "Dagger", name: "Hypnotic Blade", from: dungeon, where: "Scarlet Monastery, Arcanist Doan", basis: forever}
+          - {slot: "Off-hand", name: "Orb of the Forgotten Seer", from: dungeon, where: "Scarlet Monastery, Bloodmage Thalnos", basis: forever}
+          - {slot: "Ring", name: "Philanthropist's Ring", from: quest, where: "*Greater Friend of the Library*, the book quest at level 35", basis: forever}
+          - {slot: "Chest", name: "Robe of the Drowned", from: dungeon, dungeon: drowned-city, basis: forever}
+          - {slot: "Trinket", name: "Heart of the Primeval", from: dungeon, dungeon: drowned-city, basis: forever}
+          - {slot: "Legs", name: "Shadow Leggings", from: craft, profession: tailoring}
+          - {slot: "Head", name: "Filigreed Shadow Circlet", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Black Slippers", from: craft, profession: tailoring, basis: unverified}
+          - {slot: "Wand", name: "Twisted Nether Wand", from: craft, profession: enchanting, where: "level 37 (Method.gg)"}
+      l40:
+        text: "Krol'dok Stronghold gives cloth legs, a dagger and a necklace. The Timesaver.gg data has few new items for levels 40 to 55. This is a gap in the data. The Shadoweave items are Classic recipes, and their Forever stats are not confirmed."
+        items:
+          - {slot: "Legs", name: "Shadecaster's Leggings", from: dungeon, dungeon: kroldok-stronghold, where: "Twilight Commander Zarmok", basis: forever}
+          - {slot: "Dagger", name: "Shadowlight Athame", from: dungeon, dungeon: kroldok-stronghold, where: "Twilight Commander Zarmok", basis: forever}
+          - {slot: "Neck", name: "Curio-Adorned Necklace", from: quest, where: "*Curios of Curiosity*, Krol'dok Stronghold", basis: forever}
+          - {slot: "Staff", name: "Zum'rah's Vexing Cane", from: dungeon, where: "Zul'Farrak, Witch Doctor Zum'rah, level 43", basis: forever}
+          - {slot: "Waist", name: "Deathmage Sash", from: dungeon, where: "Razorfen Downs, Mordresh Fire Eye", basis: forever}
+          - {slot: "Wand", name: "Dreambough Wand", from: craft, profession: enchanting, where: "level 43 (Method.gg)"}
+          - {slot: "Wand", name: "Lesser Eternal Wand", from: craft, profession: enchanting, where: "level 49 (Method.gg)"}
+          - {slot: "Chest", name: "Shadoweave Robe", from: craft, profession: tailoring, basis: classic}
+          - {slot: "Hands", name: "Shadoweave Gloves", from: craft, profession: tailoring, basis: classic}
+          - {slot: "Shoulders", name: "Netherpearl Shoulders", from: craft, profession: tailoring, basis: unverified}
+      l50:
+        text: "The public data names only 1 item from Blackmaw Hold. No source lists the loot of Alcaz Prison or Shaper's Terrace. Timesaver.gg selects Netherpearl Cuffs for Affliction at level 60. The wowtbc.gg list for Affliction names Black Sandals and the Felcloth items."
+        items:
+          - {slot: "Wand", name: "Cairnstone Sliver", from: quest, where: "*The Morrow Stone*, Feralas (Alliance)", basis: forever}
+          - {slot: "Wand", name: "Nature's Breath", from: quest, where: "*Dark Vessels* (Horde)", basis: forever}
+          - {slot: "Wand", name: "Greater Eternal Wand", from: craft, profession: enchanting, where: "level 55 (Method.gg)"}
+          - {slot: "Trinket", name: "Shard of the Splithooves", from: quest, where: "*Heroes of Old*, Blasted Lands", basis: forever}
+          - {slot: "Chest", name: "Robes of Dark Summons", from: dungeon, dungeon: blackmaw-hold, where: "Impaan the Imprisoner", basis: forever}
+          - {slot: "Wrist", name: "Netherpearl Cuffs", from: craft, profession: tailoring, where: "Timesaver.gg, Affliction. Warcraft Tavern says that only the Tailor can wear this line"}
+          - {slot: "Feet", name: "Black Sandals", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Felcloth Robe", from: craft, profession: tailoring, basis: classic}
+          - {slot: "Head", name: "Felcloth Hood", from: craft, profession: tailoring, basis: classic}
+      l60:
+        text: "3 sites publish level 60 lists. Tools made all 3 lists. The lists disagree, and many stats are still hidden. Belt of the Archmage is the only item in all 3 lists. 2 lists use Sageblade as the main-hand weapon. For raids, get about 12% hit from items and buffs."
+        items:
+          - {slot: "Waist", name: "Belt of the Archmage", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Robe of the Void", from: craft, profession: tailoring, where: "Kami-Labs and wowtbc.gg"}
+          - {slot: "Hands", name: "Felcloth Gloves", from: craft, profession: tailoring, where: "Kami-Labs and wowtbc.gg"}
+          - {slot: "Shoulders", name: "Mantle of the Timbermaw", from: craft, profession: tailoring, where: "Kami-Labs"}
+          - {slot: "Head", name: "Dreadmist Mask", from: dungeon, where: "Scholomance, Darkmaster Gandling (Timesaver.gg)", basis: forever}
+          - {slot: "Main hand", name: "Sageblade", from: craft, profession: blacksmithing}
+          - {slot: "Off-hand", name: "Tome of the Lost", from: dungeon, where: "Upper Blackrock Spire, General Drakkisath (Kami-Labs)", basis: forever}
+          - {slot: "Ring", name: "Warden's Signet of Brilliance", from: rep, where: "The Watchers, a new faction, Exalted (wowtbc.gg)", basis: forever}
+          - {slot: "Wand", name: "Brilliant Wand", from: craft, profession: enchanting}
+          - {slot: "Bag", name: "Felblood Soul Bag", from: craft, profession: tailoring}
+      raid:
+        text: "These epic recipes need Malleable Essence of Nature. No source confirms where it comes from, and it is possibly a raid reagent. The name Demonheart suggests the Warlock set, but no source confirms this or gives its stats."
+        items:
+          - {slot: "Back", name: "Fel Cape", from: craft, profession: tailoring, where: "Timesaver.gg lists it at level 60"}
+          - {slot: "Wand", name: "Torch of Light", from: craft, profession: enchanting, where: "Method.gg and Timesaver.gg list it at level 60"}
+          - {slot: "Shoulders", name: "Demonheart Spaulders", from: craft, profession: tailoring, basis: unverified}
+          - {slot: "Hands", name: "Demonheart Gloves", from: craft, profession: tailoring, basis: unverified}
+          - {slot: "Legs", name: "Demonheart Leggings", from: craft, profession: tailoring, basis: unverified}
+          - {slot: "Feet", name: "Demonheart Boots", from: craft, profession: tailoring, basis: unverified}
+  - id: fire
+    name: "Fire damage"
+    pitch: "The set for Destruction and for the Demonology Fire build. You take spell power, Fire damage, crit and hit. The imbue is the Firestone."
+    stats: "Leveling (Warcraft Tavern): Spell Power (Fire and Shadow) > wand DPS (to about 30) > Intellect or Spirit > Stamina. Level 60, Destruction: Spell Power or Fire damage > Crit > Hit (to the cap) > Haste > Spell Pierce > Intellect > Spirit. Demonology puts Hit before Crit"
+    chapters:
+      l1:
+        text: "The first items are the same as in the Shadow damage set. Get a wand, and train staves for 10 silver."
+        items:
+          - {slot: "Wand", name: "Lesser Magic Wand", from: craft, profession: enchanting, where: "level 5"}
+          - {slot: "Staff", name: "Apprentice's Spellstaff", from: quest, where: "*Rare Books*, Elwynn Forest (Alliance), level 7", basis: forever}
+          - {slot: "Staff", name: "Makeshift Stormcaller", from: quest, where: "*Stormy Potential*, Durotar (Horde), level 7", basis: forever}
+      l10:
+        text: "You cast Shadow Bolt and Immolate, so spell power for all schools is best. Tailoring makes rare Flame items from skill 60. Warcraft Tavern says that only the Tailor can wear them. Method.gg names the Filigreed Flame Gown for Destruction and Demonology."
+        items:
+          - {slot: "Wand", name: "Greater Magic Wand", from: craft, profession: enchanting, where: "level 13"}
+          - {slot: "Dagger", name: "Fang of Magmatus", from: dungeon, dungeon: hall-of-thanes, where: "Magmatus", basis: forever}
+          - {slot: "Staff", name: "Golemheart Stave", from: dungeon, dungeon: hall-of-thanes, where: "Plunder", basis: forever}
+          - {slot: "Staff", name: "Staff of Orgrimmar", from: quest, where: "*Hidden Enemies*, Ragefire Chasm (Horde), level 16", basis: forever}
+          - {slot: "Feet", name: "Flame Boots", from: craft, profession: tailoring}
+          - {slot: "Hands", name: "Flame Gloves", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Filigreed Flame Gown", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Flame Sash", from: craft, profession: tailoring}
+      l20:
+        text: "The Staff of Soran'ruk has Shadow and Fire damage, so it is also the selection for this set. The Firestone at level 28 adds Fire damage and crit to your weapon. City of Dalaran gives a caster dagger and an off-hand item."
+        items:
+          - {slot: "Staff", name: "Staff of Soran'ruk", from: class, where: "*The Orb of Soran'ruk*, level 20", basis: forever}
+          - {slot: "Wand", name: "Gravestone Scepter", from: quest, where: "*Blackfathom Villainy*, Blackfathom Deeps, level 22", basis: forever}
+          - {slot: "Wand", name: "Dancing Flame", from: quest, where: "*Final Passage* (Horde), level 26", basis: forever}
+          - {slot: "Dagger", name: "Tendonscraper Dagger", from: dungeon, dungeon: city-of-dalaran, where: "Lyn the Ignored", basis: forever}
+          - {slot: "Off-hand", name: "Ponderous Orb", from: dungeon, dungeon: city-of-dalaran, where: "Shade of the Archmage", basis: forever}
+          - {slot: "Head", name: "Flame Circlet", from: craft, profession: tailoring}
+          - {slot: "Legs", name: "Filigreed Flame Leggings", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Flame Gown", from: craft, profession: tailoring}
+      l30:
+        text: "Timesaver.gg uses the dagger and the off-hand item from Scarlet Monastery from level 35. It finds no better main-hand weapon before level 60. The Fiery items continue the Flame line by their reagents, but no source confirms their stats."
+        items:
+          - {slot: "Dagger", name: "Hypnotic Blade", from: dungeon, where: "Scarlet Monastery, Arcanist Doan", basis: forever}
+          - {slot: "Off-hand", name: "Orb of the Forgotten Seer", from: dungeon, where: "Scarlet Monastery, Bloodmage Thalnos", basis: forever}
+          - {slot: "Wand", name: "Necrotic Wand", from: dungeon, where: "Scarlet Monastery, Azshir the Sleepless, level 30", basis: forever}
+          - {slot: "Ring", name: "Philanthropist's Ring", from: quest, where: "*Greater Friend of the Library*, the book quest at level 35", basis: forever}
+          - {slot: "Legs", name: "Flame Leggings", from: craft, profession: tailoring}
+          - {slot: "Head", name: "Filigreed Flame Circlet", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Fiery Slippers", from: craft, profession: tailoring, basis: unverified}
+      l40:
+        text: "Incinerate at level 40 makes Fire damage more important than Shadow damage. Keep the Scarlet Monastery weapons, or use the dagger from Krol'dok Stronghold. Timesaver.gg lists the off-hand item from Razorfen Downs."
+        items:
+          - {slot: "Dagger", name: "Shadowlight Athame", from: dungeon, dungeon: kroldok-stronghold, where: "Twilight Commander Zarmok", basis: forever}
+          - {slot: "Off-hand", name: "Mordresh's Lifeless Skull", from: dungeon, where: "Razorfen Downs, Mordresh Fire Eye", basis: forever}
+          - {slot: "Wand", name: "Dreambough Wand", from: craft, profession: enchanting, where: "level 43 (Method.gg)"}
+          - {slot: "Hands", name: "Fiery Handwraps", from: craft, profession: tailoring, basis: unverified}
+          - {slot: "Waist", name: "Fiery Cord", from: craft, profession: tailoring, basis: unverified}
+          - {slot: "Shoulders", name: "Netherflame Shoulders", from: craft, profession: tailoring, basis: unverified}
+      l50:
+        text: "Warcraft Tavern gives stat weights for Destruction: 1% crit is about 8.8 spell power, and 1% hit is about 8.6. Timesaver.gg lists Truesilver Conduit for Destruction. Warcraft Tavern says that only the Enchanter can use this off-hand item."
+        items:
+          - {slot: "Off-hand", name: "Truesilver Conduit", from: craft, profession: enchanting}
+          - {slot: "Wand", name: "Greater Eternal Wand", from: craft, profession: enchanting, where: "level 55 (Method.gg)"}
+          - {slot: "Trinket", name: "Shard of the Splithooves", from: quest, where: "*Heroes of Old*, Blasted Lands", basis: forever}
+          - {slot: "Wrist", name: "Netherflame Cuffs", from: craft, profession: tailoring, basis: unverified}
+          - {slot: "Hands", name: "Fiery Gloves", from: craft, profession: tailoring, basis: unverified}
+          - {slot: "Feet", name: "Fiery Sandals", from: craft, profession: tailoring, basis: unverified}
+      l60:
+        text: "The level 60 lists are almost the same for all 3 specs. Use the list of the Shadow damage set, and select Fire damage where an item offers a selection. Destruction needs about 12% hit from items and buffs. The Demonology Fire build needs 17%, because it has no Suppression."
+        items:
+          - {slot: "Main hand", name: "Sageblade", from: craft, profession: blacksmithing}
+          - {slot: "Off-hand", name: "Truesilver Conduit", from: craft, profession: enchanting, where: "Timesaver.gg, Destruction page"}
+          - {slot: "Waist", name: "Belt of the Archmage", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Robe of the Void", from: craft, profession: tailoring}
+          - {slot: "Hands", name: "Felcloth Gloves", from: craft, profession: tailoring}
+          - {slot: "Back", name: "Deep Woodlands Cloak", from: quest, where: "*Wanted: Vile Priestess Hexx*, the Hinterlands (Timesaver.gg)", basis: forever}
+          - {slot: "Wand", name: "Brilliant Wand", from: craft, profession: enchanting}
+      raid:
+        text: "Robes of Fiery Devastation is a new epic Tailoring recipe. No source gives its stats or says that it is for Warlocks. It needs Malleable Essence of Nature, which is possibly a raid reagent."
+        items:
+          - {slot: "Chest", name: "Robes of Fiery Devastation", from: craft, profession: tailoring, basis: unverified}
+          - {slot: "Back", name: "Fel Cape", from: craft, profession: tailoring}
+          - {slot: "Wand", name: "Torch of Light", from: craft, profession: enchanting}
+  - id: stamina
+    name: "Stamina for pet tanking, PvP and Hardcore"
+    pitch: "A safer set. You replace some Intellect and Spirit with Stamina. Your demon gets health from your Stamina and uses your hit. No source publishes an item list for this set."
+    stats: "Stamina > Spell Power > Hit > Intellect"
+    chapters:
+      l1:
+        text: "Take Stamina on each item that offers it. A wand is still your first important item."
+      l10:
+        text: "More Stamina gives more health to you and to the Voidwalker. Take Stamina and Intellect in place of Spirit."
+      l20:
+        text: "The Staff of Soran'ruk has 14 Stamina (Warcraft Tavern). The Staff of the Shade is a very rare drop in Razorfen Kraul with +37 Shadow damage and 15 Stamina."
+        items:
+          - {slot: "Staff", name: "Staff of Soran'ruk", from: class, where: "*The Orb of Soran'ruk*, level 20", basis: forever}
+          - {slot: "Staff", name: "Staff of the Shade", from: dungeon, where: "Razorfen Kraul, a very rare drop, level 22 or higher", basis: forever}
+      l30:
+        text: "With Soul Link at level 30 on the Demonology path, your demon takes 30% of the damage that you take. Thus, the health of the demon protects you, and your Stamina gives the demon health. Timesaver.gg lists a PvP necklace for each faction."
+        items:
+          - {slot: "Neck", name: "Master Sergeant's Insignia", from: pvp, where: "PvP vendor (Alliance)", basis: forever}
+          - {slot: "Neck", name: "Senior Sergeant's Insignia", from: pvp, where: "PvP vendor (Horde)", basis: forever}
+      l40:
+        text: "Demonic Embrace in the Demonology tree is the Stamina talent. Take it for PvP and Hardcore. Hit on your items also helps your demon to hold the enemy, because the demon uses your hit."
+      l50:
+        text: "The battleground factions sell items for reputation. See the [PvP](../../content/pvp/index.md) page for ranks and seasons."
+      l60:
+        text: "Honor buys 1 blue set and 1 epic set for each class. An epic part needs the blue part and an Emboldened Seal. The wowtbc.gg list names the blue Warlock parts Premier Felweave. No source gives the costs."
+      raid:
+        text: "For Onyxia's Lair, the raid page recommends fire resistance. These are the Classic items for cloth users. The client flags the Tailoring recipes as changed, so their Forever values are not confirmed."
+        items:
+          - {slot: "Back", name: "Onyxia Scale Cloak", from: craft, profession: leatherworking, basis: classic}
+          - {slot: "Back", name: "Cloak of Fire", from: craft, profession: tailoring, basis: classic}
+          - {slot: "Chest", name: "Cindercloth Robe", from: craft, profession: tailoring, basis: classic}
+          - {slot: "Legs", name: "Cindercloth Pants", from: craft, profession: tailoring, basis: classic}
+
+equipment:
+  intro: |
+    A Warlock wears cloth for all 60 levels. To about level 30 the wand is your most important slot, because you use it while your DoTs do damage. After that, spell power for your school is the most important stat.
+
+    About 40% of the items of Forever had hidden stats at launch. The stats of an item become visible when a player first finds it. Thus, no source has a tested list for level 60. The item names on this page come from Method.gg, Warcraft Tavern, Timesaver.gg, Kami-Labs, wowtbc.gg and the Warcraft Wiki. The Codex did not verify the stats.
+  proficiencies:
+    - ["Cloth armor", "Level 1", "The only armor type of the Warlock. No shields"]
+    - ["Daggers, wands", "Level 1", "Default weapon skills. No trainer is necessary"]
+    - ["Staves", "Weapon master, 10 silver", "Woo Ping in Stormwind. Hanashi or Sayoc in Orgrimmar. Ansekhwa in Thunder Bluff. Ironforge has no staff trainer"]
+    - ["One-hand swords", "Weapon master, 10 silver", "Woo Ping in Stormwind. Archibald in the Undercity"]
+    - ["Off-hand items", "Level 1", "Use them with a dagger or a sword. They can have an enchant in Forever"]
+    - ["Firestone, Spellstone", "Level 28, level 36", "Weapon imbues in Forever. They do not use the off-hand slot"]
+  rules:
+    - "Hit is 1 stat for melee, ranged attacks and spells. Your demon uses your hit."
+    - "A raid boss needs 17% spell hit (Warcraft Tavern spec guides). The Warcraft Tavern stats guide says 16%. Suppression gives 5%."
+    - "DoTs can crit, so crit is also a stat for Affliction."
+    - "Life Tap increases with Spirit. Warcraft Tavern says that the maximum rank changes 424 health plus your Spirit into mana. Thus, Spirit is more important than in Classic."
+    - "Demons get stats from your stats. Pre-launch notes give 2 demon health for each point of your Stamina."
+    - "Spell Pierce is a new stat on items. It decreases the resistance of the target. It is weak for DoTs."
+    - "Haste makes only casts and the global cooldown faster. Thus, it is weak for Wrack. Warcraft Tavern saw no haste on items in the beta."
+    - "A beta report says that wand damage increases with spell power. No source gives the formula."
+    - "One report says that Firestone and Spellstone stack with Wizard Oil. Warcraft Tavern names the stones a weapon oil. Test this in the game."
+    - "Sources disagree on staff against one-hand weapon with off-hand item. Method.gg prefers the staff, and Timesaver.gg uses a dagger from level 30."
+    - "Warcraft Tavern says that only the crafter can wear the rare Tailoring lines and the Enchanting staves and off-hand items."
+    - "Necklaces and off-hand items can have enchants. These slots are new."
+    - "No guide publishes an enchant list for Warlocks. The enchants in the table come from the Kami-Labs tool or from the recipe names."
+    - "Each profession gives a camp feature in place of a passive stat. The Faction Banner of Tailoring gives Spirit."
+  enchants:
+    - ["Staff", "Enchant 2H Weapon - Spellblasting or Mighty Spell Power", "New. Enchanting skill 300. No source gives the values for Warlocks"]
+    - ["One-hand weapon", "Enchant Weapon - Spell Power", "Enchanting skill 300. Kami-Labs uses it"]
+    - ["Off-hand item", "Enchant Off-Hand - Superior Intellect", "New slot. Enchanting skill 300"]
+    - ["Necklace", "Enchant Necklace - Spell Power", "New slot. Enchanting skill 210. Kami-Labs uses it"]
+    - ["Bracers", "Enchant Bracer - Greater Spellpower", "New. Enchanting skill 300"]
+    - ["Gloves", "Enchant Gloves - Shadow Power or Fire Power", "Enchanting skill 300. Select the school of your build"]
+    - ["Chest", "Enchant Chest - Major Intellect", "Enchanting skill 290. Kami-Labs uses it"]
+    - ["Boots", "Enchant Boots - Greater Stamina", "Enchanting skill 260. Kami-Labs uses it"]
+    - ["Cloak", "Enchant Cloak - Greater Fire Resistance", "For Onyxia's Lair. No source gives a resistance number"]
+  consumables:
+    - ["Leveling", "Minor Arcane Elixir, Elixir of Minor Spirit", "Alchemy skill 1 and 15. Method.gg and Warcraft Tavern recommend elixirs while you level"]
+    - ["Leveling", "Lesser Arcane Elixir, Lesser Mageblood Elixir", "From about level 25. Alchemy skill 120 and 75"]
+    - ["Leveling", "Minor Spellblasting Potion", "New. Method.gg says that it increases damage for 30 seconds"]
+    - ["All levels", "Healthstone", "Its cooldown is separate from potions. Healing potions now come from First Aid"]
+    - ["All levels", "Firestone or Spellstone", "Your weapon imbue. Firestone for Fire builds, Spellstone for Shadow builds"]
+    - ["Level 60", "Greater Arcane Elixir, Elixir of Shadow Power", "Warcraft Tavern names them as Alchemy products for Affliction and Demonology"]
+    - ["Level 60", "Flask of Supreme Power", "Alchemy skill 300. The recipe is the same as in Classic"]
+    - ["Level 60", "Brilliant Wizard Oil", "Enchanting skill 300. The client data does not give its effect"]
+    - ["Level 60", "Major Mana Potion, Limited Invulnerability Potion", "Warcraft Tavern recommends the second potion for emergencies in dungeons"]
+    - ["Level 60", "Nightfin Soup, Baked Salmon", "Food from the Spell Damage Food group. A Well Fed buff also gives +5% XP from kills"]
+    - ["Onyxia's Lair", "Greater Fire Protection Potion", "Alchemy skill 290"]
+    - ["Raids", "Camp features", "Buffs for raid nights. Herbalism gives Intellect, Skinning gives crit and Tailoring gives Spirit"]
+  sources:
+    - {title: "Warcraft Tavern: Warlock guide", url: "https://www.warcrafttavern.com/forever/guides/warlock/"}
+    - {title: "Warcraft Tavern: Warlock leveling guide", url: "https://www.warcrafttavern.com/forever/guides/warlock-leveling/"}
+    - {title: "Warcraft Tavern: weapon trainers", url: "https://www.warcrafttavern.com/forever/guides/weapon-trainers/"}
+    - {title: "Warcraft Tavern: stats", url: "https://www.warcrafttavern.com/forever/guides/stats/"}
+    - {title: "Method.gg: Warlock leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents"}
+    - {title: "Timesaver.gg: Warlock leveling gear, level by level", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/warlock/affliction"}
+    - {title: "Kami-Labs: item lists for level 60 (beta tool)", url: "https://kami-labs.fr/en/bis-list-wow-forever/"}
+    - {title: "wowtbc.gg: Affliction Warlock item lists for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/affliction-warlock/"}
+    - {title: "Warcraft Wiki: Krol'dok Stronghold", url: "https://warcraft.wiki.gg/wiki/Krol'dok_Stronghold"}
+    - {title: "Warcraft Wiki: City of Dalaran", url: "https://warcraft.wiki.gg/wiki/City_of_Dalaran"}
+
+# ------------------------------------------------------------------ other sections
+professions: |
+  Warlocks wear cloth, so the best pairs include **Tailoring**. The Faction Banner of Tailoring gives Spirit, which helps Life Tap. Tailoring also makes soul bags.
+
+  | Rank | Professions | Use them for |
+  |---|---|---|
+  | **S**{ .tier .tier-s } | [Tailoring](../../professions/tailoring.md) + [Enchanting](../../professions/enchanting.md) | The selection of Method.gg. Crafted robes and wands. You disenchant the dungeon items that you do not use |
+  | **A**{ .tier .tier-a } | [Tailoring](../../professions/tailoring.md) + [Engineering](../../professions/engineering.md) | Warcraft Tavern names it the pair with the highest damage. Gadgets for PvP. Gnomes have 20% fewer device failures |
+  | **B**{ .tier .tier-b } | [Herbalism](../../professions/herbalism.md) + [Alchemy](../../professions/alchemy.md) | Cheap elixirs and potions for raids |
+
+  Each profession adds a camp feature. Tailoring gives the Faction Banner (Spirit), and Enchanting gives the Enchanted Lute (armor, stats and resistances). Engineering gives the Reagent Bot. Herbalism gives the Incense Candle (Intellect), and Alchemy gives the Mana Well (mana regeneration). Professions give no passive stats in Forever.
+
+  [First Aid](../../professions/first-aid.md) now makes healing potions, so increase it. [Cooking](../../professions/cooking.md) and [Fishing](../../professions/fishing.md) give items for [camping](../../systems/camping.md). Crafting professions give Legacy Points at skill 150, 225 and 300. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+legacy: |
+  You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character.
+
+  | Tree | Picks for a Warlock |
+  |---|---|
+  | Adventure | **Well Rested** 5/5, then **Talented** 5/5. Talented gives your first talent point up to 5 levels earlier. *Thrill of Adventure* is an alternative for less rest time |
+  | Resourcefulness | **Reagent Economy** removes vendor reagents for class abilities. No source says that it replaces Soul Shards |
+  | Resourcefulness | **Permanence** makes long class buffs last longer. It is not confirmed for the 2-hour Demonic Sacrifice effect. *Gourmand* makes food buffs longer |
+  | Resourcefulness | *For Great Honor* gives +2% Honor for each rank, for PvP |
+
+mistakes:
+  - "You cast Searing Pain again and again without Demonic Brand. The enemy leaves your demon and attacks you."
+  - "You cast Shadow Bolt on an enemy that has Fear on it. Damage can break the Fear."
+  - "You use Life Tap immediately before a large pull."
+  - "You do not do the Felsteed quest at level 40."
+  - "You do not have Ritual of Summoning on your action bars."
+  - "You go into a dungeon without Soul Shards."
+  - "You use Fear in a dungeon before the group agrees. The target runs into more enemies."
+  - "You use Hellfire on 2 enemies. Use it only on groups of 3 or more enemies."
+
+faq:
+  - q: "Can I have 2 Banes, or a Bane and a Curse, on 1 target?"
+    a: "You can keep 1 Bane and 1 Curse on each target. The Bane is Agony, Doom or Havoc. 2 Warlocks can each keep their own Bane on the same target."
+  - q: "Which path is best for leveling?"
+    a: "All major guides recommend Affliction. Demonology is almost as good and is the safest. Destruction is best in dungeon groups."
+  - q: "Which demon do I use?"
+    a: "Use the Voidwalker to tank while you level and for Demonology pet tanking. Use the Sayaad for the most damage, and Seduction for crowd control. Use the Felhunter against casters and in PvP. The Imp gives Blood Pact and is the raid demon of Fire builds. The Infernal and the Doomguard stay for a short time only."
+  - q: "What did Blizzard announce for 10 November?"
+    a: "The notice of 6 November names 2 Warlock changes. Voidwalkers become more durable as tanks, to match Classic Era. Siphon Life, Corruption and Bane of Agony become worth a cast with Wrack, and the total damage of Affliction does not increase. Blizzard gave no numbers."
+  - q: "Why does my Voidwalker die?"
+    a: "Demons get less health from your Stamina than in Classic. Blizzard agreed that Voidwalkers were too weak. A hotfix on 6 November added about 40 base health, and a second hotfix was planned for 10 November. Keep your items at your level, and take Fel Vitality and Demonic Energies."
+  - q: "Where is Curse of Shadows?"
+    a: "It is not in the game. Curse of the Elements also increases Shadow damage."
+  - q: "Do I still need Soul Shards?"
+    a: "Yes. Drain Soul has a chance to give a shard on each tick. Reagent Economy removes vendor reagents, but no source says that it replaces shards."
+  - q: "Can a Warlock tank?"
+    a: "With Demonic Brand, a Voidwalker can tank in dungeons and in the open world. Blizzard has not said that it can tank raids."
+  - q: "Does my Firestone replace my Wizard Oil?"
+    a: "One report says that imbues and oils stack in Forever. No Warlock guide confirms it. Apply the 2 items and read your weapon tooltip."
+  - q: "Is the Felguard in the game?"
+    a: "No Forever source mentions it."
+
+sources:
+  - {title: "Blizzard: Class Deep Dives, Rogue and Warlock", url: "https://worldofwarcraft.blizzard.com/news/24310968"}
+  - {title: "Blizzard forums: Class Tuning Incoming, November 10", url: "https://us.forums.blizzard.com/en/wow/t/class-tuning-incoming-november-10/2404092"}
+  - {title: "Warcraft Tavern: class tuning for Shamans, Warlocks and Hunter pets", url: "https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/"}
+  - {title: "Warcraft Tavern: Warlock guide", url: "https://www.warcrafttavern.com/forever/guides/warlock/"}
+  - {title: "Warcraft Tavern: Warlock leveling guide", url: "https://www.warcrafttavern.com/forever/guides/warlock-leveling/"}
+  - {title: "Warcraft Tavern: Affliction Warlock guide", url: "https://www.warcrafttavern.com/forever/guides/affliction-warlock/"}
+  - {title: "Warcraft Tavern: Demonology Warlock guide", url: "https://www.warcrafttavern.com/forever/guides/demonology-warlock/"}
+  - {title: "Warcraft Tavern: Destruction Warlock guide", url: "https://www.warcrafttavern.com/forever/guides/destruction-warlock/"}
+  - {title: "Warcraft Tavern: racial abilities", url: "https://www.warcrafttavern.com/forever/guides/racial-abilities/"}
+  - {title: "Method.gg: Warlock leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents"}
+  - {title: "wowtbc.gg: Affliction Warlock PvE guide", url: "https://wowtbc.gg/warcraftforever/class-guides/affliction-warlock/"}

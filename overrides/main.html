@@ -2,7 +2,7 @@
 
 {#- "Orc Rogue" for race add-ons, plain title elsewhere -#}
 {% macro full_title(p) -%}
-  {%- if p and p.url and p.url.startswith('guides/') and p.parent and not p.is_index and p.url.count('/') == 3 -%}
+  {%- if p and p.url and p.url.startswith('guides/') and p.parent and not p.is_index and p.url.count('/') == 3 and p.url.split('/')[2] not in ['talents', 'equipment'] -%}
     {{ p.title }} {{ p.parent.title }}
   {%- elif p -%}{{ p.title }}{%- endif -%}
 {%- endmacro %}
@@ -81,6 +81,20 @@
 
 {% block extrahead %}
   <meta name="theme-color" content="#1b2a41">
+
+  {#- Add-on picker of the class progressions (docs/guides/<class>/). This runs before
+      the first paint, so the page never shows the add-ons that the reader did not pick.
+      codex.js (initPicker) keeps it current after instant navigation. -#}
+  <script>
+  (function(){var K=["race","talents","gear"],ok=/^[a-z0-9-]+$/,P=window.fcPick={
+    read:function(c){var s={};try{s=JSON.parse(localStorage.getItem("fc:pick:"+c)||"{}")||{}}catch(e){}
+      try{var q=new URLSearchParams(location.search);K.forEach(function(k){var v=q.get(k);if(v)s[k]=v})}catch(e){}return s},
+    css:function(s){var b="html[data-fc-pick] .fc-addon";if(!s)return"";if(s.all)return b+"{display:block!important}";
+      return K.map(function(k){var v=s[k];return v&&ok.test(v)?b+'[data-pick="'+k+'"]:not([data-value~="'+v+'"]){display:none!important}'+b+'[data-pick="'+k+'"][data-value~="'+v+'"]{display:block!important}':""}).join("")},
+    paint:function(s){var e=document.getElementById("fc-pick-css");if(!e){e=document.createElement("style");e.id="fc-pick-css";document.head.appendChild(e)}e.textContent=P.css(s)}};
+    document.documentElement.setAttribute("data-fc-pick","");
+    var m=location.pathname.match(/\/guides\/([a-z]+)\/$/);if(m)P.paint(P.read(m[1]))})();
+  </script>
 
   {#- Self-hosted Latin subsets (docs/assets/fonts, built with fontTools:
       Inter opsz pinned to 14 and wght 400-700, Alegreya wght 500-800).

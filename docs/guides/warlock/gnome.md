@@ -11,7 +11,7 @@ tags:
 
 :codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Warlock guide](index.md). This page covers only what changes when your Warlock is a Gnome.</p>
+<p class="gh-note" markdown>Read with the [Warlock progression](index.md). This page covers only what changes when your Warlock is a Gnome.</p>
 
 </div>
 

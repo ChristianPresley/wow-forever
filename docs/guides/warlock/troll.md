@@ -11,7 +11,7 @@ tags:
 
 :codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Warlock guide](index.md). This page covers only what changes when your Warlock is a Troll.</p>
+<p class="gh-note" markdown>Read with the [Warlock progression](index.md). This page covers only what changes when your Warlock is a Troll.</p>
 
 </div>
 

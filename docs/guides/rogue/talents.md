@@ -12,14 +12,16 @@ search:
 
 <div class="guide-head" data-class="rogue" markdown>
 
-:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Talent guide</span> **DPS**{ .badge .dps }
+:codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
 
 <nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#assassination">Assassination</a> <a href="#combat">Combat</a> <a href="#subtlety">Subtlety</a></nav>
 
 </div>
 
 !!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/rogue/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. Read this page with the [Rogue guide](../guides/rogue/index.md).
+    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/rogue/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Rogue progression](index.md) tells you when each talent becomes important.
 
 Each Rogue tree is a damage spec in Forever. **Combat** is the easy tree for leveling and the default tree for raids. **Assassination** is the poison and crit tree, and it gets **Mutilate** at 30 points. **Subtlety** is the tree for openers, bleeds and PvP. The new ability **Shank** has a talent in each tree, so most builds put points in 2 or 3 trees.
 
@@ -334,7 +336,7 @@ Assassination is the crit and poison tree. **Venom** opens at 20 points and **Mu
 | **Venom** **New**{ .pill .pill--new .pill--sm } | 20 pts | 1 | Shank gives +30% Poison damage and +20% chance to apply Poisons for 6 s | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | A passive effect of Shank, not a finisher. Mutilate needs it. |
 | **Improved Kidney Shot** | 20 pts | 2 | Targets that your Kidney Shot stuns take 5/10% more damage from your attacks and poisons | **C**{ .tier .tier-c } | **D**{ .tier .tier-d } | **A**{ .tier .tier-a } | For PvP burst in deep Assassination builds. It has no effect on targets that are immune to stuns. |
 | **Seal Fate** | 25 pts | 3 | Crits from abilities that add Combo Points have a 33–100% chance to add 1 more Combo Point | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | The reason to stack crit. A Mutilate crit gives 3 Combo Points. |
-| **Mutilate** **New**{ .pill .pill--new .pill--sm }<br><small>Needs Venom</small> | 30 pts | 1 | 60 Energy. Hits with the 2 weapons for 90% weapon damage plus 39.6 each. +20% damage against Poisoned targets. Gives 2 Combo Points | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | The core attack of the spec, available at level 40. The class guide says that it needs a dagger in each hand. |
+| **Mutilate** **New**{ .pill .pill--new .pill--sm }<br><small>Needs Venom</small> | 30 pts | 1 | 60 Energy. Hits with the 2 weapons for 90% weapon damage plus 39.6 each. +20% damage against Poisoned targets. Gives 2 Combo Points | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | The core attack of the spec, available at level 40. The earlier Codex class guide says that it needs a dagger in each hand. |
 
 ## Combat
 

@@ -1,0 +1,906 @@
+class: Druid
+badges: [tank, heal, dps]
+description: "Druid progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
+aka: "Dudu · Boomkin or Moonkin (Balance) · Kitty or Cat (Feral) · Bear (Feral tank) · Tree or Resto (Restoration)"
+
+intro: |
+  The Druid is a hybrid class that changes its form. This page follows 1 Druid from character creation to the raids, level by level. It tells you what changes in each level range: the forms and spells that you get, the way that you fight, and the dungeons.
+
+glance:
+  - ["Roles", "Tank (Bear), melee damage (Cat), ranged damage (Balance), healer (Restoration)"]
+  - ["Armor", "**Leather**{ .pill .pill--leather } and cloth. No shields"]
+  - ["Weapons", "Staves, maces, daggers, fist weapons, polearms (trainer at level 20), off-hand items"]
+  - ["Resources", "**Mana**{ .pill .pill--mana } **Rage**{ .pill .pill--rage } **Energy**{ .pill .pill--energy }"]
+  - ["Relic slot", "Idols. The first idol is a class quest reward at level 16"]
+  - ["Races", "4 combinations"]
+
+strengths:
+  - "A strong solo class: stealth, Dash, heals, a travel form at level 30 and no pet"
+  - "Feral changes between tank and damage without a respec"
+  - "Bear Form has +115% threat in Forever, so the Bear is a real dungeon tank"
+  - "Innervate, Rebirth, Mark of the Wild and a crit aura for the raid"
+  - "Omen of Clarity, Revive and Nature's Grasp cost no talent points in Forever"
+
+weaknesses:
+  - "Feral, Balance and Restoration use different items. Dual spec needs 2 equipment sets"
+  - "Each shapeshift costs mana. In a long fight, many shifts empty your mana"
+  - "Balance uses mana to kill and to heal, so it drinks frequently"
+  - "Dire Bear Form, Lacerate and Primal Bite come at level 40 to 42. Before that, a Warrior or Paladin holds aggro more easily"
+  - "No ability removes Fear"
+
+changes:
+  added: ["Baseline Omen of Clarity", "Revive", "Poised", "Lacerate", "Primal Bite", "Shifting Power", "Eclipse", "Wild Growth", "Bloom"]
+  removed: ["Berserk", "Mangle", "Tiger's Fury"]
+  notes:
+    - "**Forms have no large disadvantages.** Potions and most consumables work in form. Weapon enchants, weightstones and Windfury Totem also work."
+    - "In form, your auto-attack uses the DPS of your weapon. You can use most doors and objects in form. Shadowmeld, War Stomp and Walk on Air also work in form."
+    - "**Cat:** Shred does 200% weapon damage (155% in Classic), Claw 140% (110%) and Ravage 435% (350%). Rip, Rake, Ferocious Bite and Pounce scale about 25% more."
+    - "**Bear:** threat is +115% (+50% in Classic). Swipe hits 3 targets. Growl works like Taunt. Frenzied Regeneration can heal you to full health."
+    - "**Furor** and **Shifting Power** replace powershifting. **Primal Bite** replaces Mangle."
+    - "**New baseline:** Nature's Grasp (10), Revive (12), Omen of Clarity (20) and Poised (32)."
+    - "Faerie Fire works in forms. There it is free, with a 6 second cooldown. Barkskin also works in forms."
+    - "Entangling Roots works indoors. Hurricane has no cooldown. Thorns scales with spell power."
+    - "**Balance:** Wrath is cheaper. Before launch, the base damage of Starfire increased by about 40%."
+    - "**Heart of the Wild** is in row 1 of Restoration and **Naturalist** gives +10% damage. Thus, each Feral and Balance build puts 10 points there."
+    - "The launch client has no Gift of the Earthmother talent. Beta-era guides name it."
+    - "A hotfix on 4 November adjusted the damage and the threat of the Druid."
+    - "A hotfix on 6 November made **Bloom** heal correctly. It also stopped Ravage and Pounce from Shadowmeld."
+
+# ------------------------------------------------------------------ chapters
+chapters:
+  - id: start
+    title: "4 roles on 1 character"
+    story: |
+      A Druid has 4 roles on 1 character. Bear Form is the tank. Cat Form does melee damage from stealth. Balance casts from range, and Restoration heals with spells that heal over time. You can change between Bear and Cat during a fight.
+
+      Each form has its own resource. A caster uses mana, a Bear uses Rage and a Cat uses Energy. A shapeshift costs mana, so mana is important for each role. In form, you cannot see your mana unless you turn on the Personal Resource Display.
+
+      Forever removed most of the disadvantages of the forms. Potions and weapon enchants work in form. Procs, which are effects with a chance to occur, also work. Your weapon now decides the damage of your form, so a Feral Druid looks for a strong two-hand weapon.
+
+      You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race.
+
+      Community guides call the differences between the races marginal. Thus, select your faction and the appearance of your forms first.
+    goals:
+      - "Select a race. Read its Race add-on."
+      - "Select a talent path. Feral is the usual selection for a first Druid."
+      - "Read the [Professions](#professions) section. Leatherworking and Skinning are the usual selection."
+
+  - id: l1
+    title: "A caster with a staff"
+    story: |
+      You have no forms for the first 9 levels. You play as a caster. Cast Wrath until the enemy dies, and hit it with your staff when your mana is low. Keep Mark of the Wild on you at all times.
+
+      At level 4 you train Moonfire and Rejuvenation. Start each fight with Moonfire, then cast Wrath. Cast Rejuvenation when the enemy gets to you. Use Healing Touch between pulls. At level 6 you train Thorns, which hurts each enemy that hits you.
+
+      Level 8 gives Entangling Roots. It holds 1 enemy in place while you cast, and in Forever it also works indoors. From this level, you can root an enemy and step back to get 2 or 3 free casts.
+
+      At about level 5, do the quest *The Great Outdoors*. It teaches [camping](../../systems/camping.md). The starter profession quest lets you select a gathering profession.
+
+      The developers estimate about 20 hours for levels 1 to 20. Go to your trainer at each even level, because each new spell rank makes these levels faster. Your first talent point comes at level 10. The Legacy talent *Talented* gives it up to 5 levels earlier.
+    train:
+      - [1, "Wrath, Healing Touch, Mark of the Wild", "Your damage spell, your heal and your buff"]
+      - [4, "Moonfire, Rejuvenation", "An instant damage spell and a heal that you can cast while you move"]
+      - [6, "Thorns", "Damage to each enemy that hits you. It scales with spell power in Forever"]
+      - [8, "Entangling Roots", "Holds 1 enemy in place. It works indoors in Forever"]
+    tip: |
+      Take items with Intellect for these 9 levels, because you fight only with spells.
+    hardcore: |
+      Do not fight 2 enemies before level 8. Root the second enemy, or run before your health is low.
+    goals:
+      - "Train Entangling Roots at level 8."
+      - "Do *The Great Outdoors* at about level 5."
+      - "Learn your professions from the starter profession quest."
+
+  - id: l10
+    title: "Bear Form and your first talents"
+    story: |
+      Level 10 changes the class. A class quest gives you Bear Form and Teleport: Moonglade. Your Race add-on names the quest. You also train Nature's Grasp, and you get your first talent point. From here, you get 1 talent point at each level.
+
+      Bear Form gives you much armor and a Rage bar. For the first time, a fight can have 2 parts. You start as a caster, and you continue in the form. Your talent path decides how long you stay in the form. For each path, the Bear is the safe form when an enemy hits you hard.
+
+      Teleport: Moonglade is a free trip to the trainer Loganaar in Moonglade. From there, a flight path takes you back to Kalimdor. Use it during all 60 levels.
+
+      Do the 2 class quests of these levels. *Lessons Anew* at level 14 teaches Cure Poison. *A Lesson to Learn* at level 16 teaches Aquatic Form. Aquatic Form saves much time in each zone with water. Its quest also gives your first idol, which is the Druid item for the relic slot.
+
+      Your first dungeons open at level 13. Quests give much more XP than dungeon enemies, so do each dungeon for its quests. You can tank them as a Bear, because Growl works like Taunt. A Warrior or Paladin holds aggro more easily at this level.
+
+      At level 14, start the scavenger hunt for the Cozy Sleeping Bag. It gives an XP buff and rested XP. See [Leveling](../../characters/leveling.md).
+    train:
+      - [10, "Bear Form (class quest), Teleport: Moonglade", "Your first form: armor, Rage, Maul and Growl"]
+      - [10, "Nature's Grasp", "New baseline spell. It roots an enemy that hits you"]
+      - [12, "Revive, Enrage", "Revive is a resurrection out of combat. One fan source gives the level of Enrage"]
+      - [12, "Regrowth", "A fast heal with a heal over time. Classic-era level"]
+      - [14, "Cure Poison (class quest), Bash", "Bash is a stun in Bear Form. One fan source gives its level"]
+      - [16, "Aquatic Form (class quest), Swipe", "Fast swimming and water breathing. One fan source gives the level of Swipe"]
+      - [18, "Faerie Fire, Hibernate", "Faerie Fire is free in form. Hibernate puts a Beast or a Dragonkin to sleep"]
+    dungeons:
+      - {id: hall-of-thanes, levels: "13–20", note: "New. It is in Ironforge"}
+      - {name: "Ragefire Chasm", levels: "13–18", note: "It is in Orgrimmar"}
+      - {id: ruins-of-lordaeron, levels: "15–22", note: "New. It is in Tirisfal Glades"}
+      - {name: "Wailing Caverns", levels: "15–24", note: "Its leather set, Embrace of the Viper, changes your Cat Form into a serpent. It also has the Journeyman Campfire blueprint"}
+      - {name: "Deadmines", levels: "17–26", note: "Mr. Smite drops a two-hand mace"}
+    extra: |
+      !!! conflict "Conflict: stats for a Feral Druid"
+          Warcraft Tavern says Strength and Agility first. Method recommends items with Intellect and Spirit, to keep mana for shifts and heals. The 2 methods work. Strength and Agility kill faster.
+    tip: |
+      Polearms are new for Druids, but the trainer needs level 20. Until then, use a staff or learn Two-Handed Maces for 10 silver.
+    hardcore: |
+      Bear Form is your emergency form. Keep enough mana for 1 shift and 1 heal. Do not use all your mana on the pull.
+    goals:
+      - "Do the Bear Form quest and spend your first talent point at level 10."
+      - "Do the Aquatic Form quest at level 16."
+      - "Do your first dungeon for its quests."
+      - "Start the Cozy Sleeping Bag scavenger hunt at level 14."
+
+  - id: l20
+    title: "Cat Form and Prowl"
+    story: |
+      Level 20 gives you more than any level before it. A class quest gives Cat Form, Prowl, Claw and Rip. You train Rebirth, a resurrection that works during combat. Omen of Clarity becomes a passive ability, so some of your hits make the next ability free.
+
+      Cat Form uses Energy and combo points. Claw and other attacks give combo points, and Rip uses them for a strong bleed. Prowl is stealth, so you select each fight and you walk past enemies that you do not want. A Cat kills fast and needs almost no rest.
+
+      You can now learn Polearms for 1g from a weapon master. The trainers are Woo Ping in Stormwind and Archibald in the Undercity. Your form uses the DPS of your weapon, so each better two-hand weapon makes your Cat and your Bear stronger.
+
+      Each class has its own library books. The books drop as loot. At 20, give 10 books to Garion Wendell in the Wizard's Sanctum of Stormwind. Horde characters give them to Owen Thadd in the Magic Quarter of the Undercity. This opens the first book quest.
+
+      Between level 22 and level 26 you train Remove Curse, Dash and Abolish Poison. Groups need the 2 cures in Shadowfang Keep and in later dungeons. Level 25 gives the *Druid: Novice* Legacy Point. Only the first Druid on your account gets it. See [Legacy](../../characters/legacy.md).
+    train:
+      - [20, "Cat Form, Prowl, Claw, Rip (class quest)", "Your damage form. Prowl is stealth"]
+      - [20, "Rebirth, Omen of Clarity", "A resurrection in combat. Omen of Clarity is a new baseline passive"]
+      - [20, "Starfire", "A slow spell that hits hard. Classic-era level"]
+      - [22, "Soothe Animal, Remove Curse, Dash, Abolish Poison", "You train these spells between level 22 and level 26. Dash is a sprint in Cat Form"]
+      - [22, "Shred", "200% weapon damage from behind the target. Classic-era level"]
+      - [24, "Rake", "A bleed that gives a combo point. Classic-era level"]
+      - [28, "Challenging Roar, Cower", "An emergency taunt for Bear and a threat decrease for Cat. One fan source gives the levels"]
+    dungeons:
+      - {name: "Shadowfang Keep", levels: "20–30", note: "The group needs Remove Curse"}
+      - {name: "Blackfathom Deeps", levels: "24–32"}
+      - {name: "The Stockade", levels: "25–29"}
+      - {id: excavation-site, levels: "26–33", note: "New. It is short, with 3 bosses. Its quest gives a two-hand mace or a healer staff. It has the Rock Garden and Greenhouse blueprints"}
+      - {id: city-of-dalaran, levels: "28–35", note: "New. NPCs in Dalaran attack Horde characters"}
+    extra: |
+      ??? example "Macros for Cat Form and Prowl"
+
+          ```
+          #showtooltip
+          /cast [stance:3,nostealth] Prowl; [nostance:3] !Cat Form
+          ```
+
+          ```
+          #showtooltip Rebirth
+          /cast [@mouseover,help,dead][] Rebirth
+          ```
+
+          The stance number depends on the forms that you know. Look at your stance bar to see which form is 1, 2 and 3. The client has mouseover conditions. See [Addons & UI](../../systems/addons.md).
+    warn: |
+      Do not refresh Rip or Rake before they end. Let each bleed end, then use it again.
+    hardcore: |
+      Revive and Rebirth help your group, not you. To heal in a fight, shift out, cast Regrowth and Rejuvenation, and shift back. Keep enough mana for this sequence.
+    goals:
+      - "Do the Cat Form quest at level 20."
+      - "Learn Polearms from a weapon master (1g)."
+      - "Turn in 10 library books for the first book quest."
+
+  - id: l30
+    title: "Travel Form and Ravage"
+    story: |
+      At level 30 you train Travel Form. It gives +40% speed outdoors, and it is your mount for the next 10 levels. With Prowl, Dash and Travel Form you now decide which fights you take.
+
+      Level 32 improves the Cat. Ravage does 435% weapon damage from Prowl, so a Cat now starts each fight with it. Poised is a new passive ability. It makes your next Energy ability cost 10 less, so use a cheap ability after it procs. Track Humanoids shows humanoids on your minimap.
+
+      The new battleground, Battle for the Darkspear Islands, opens at level 30. A Druid carries flags well, because no other class has as many speed abilities. In Prowl, you can also take a base that no enemy defends.
+
+      Frenzied Regeneration comes at about level 36. In Forever it can heal a Bear to full health. It makes the Bear a safe form when a pull goes wrong.
+
+      Start to save gold now. At level 40 you need 100g for riding, and dual spec costs 50g. The second book quest at 35 needs 20 library books. The centaur quests in Desolace now need level 35.
+    train:
+      - [30, "Travel Form, Tranquility", "+40% speed outdoors. One fan source gives the level of Tranquility"]
+      - [32, "Ravage, Poised, Track Humanoids", "Ravage is the new first attack from Prowl. Poised is new"]
+      - [32, "Ferocious Bite", "A finishing move for a target that dies soon. Classic-era level"]
+      - [36, "Frenzied Regeneration, Pounce", "A Bear heal that uses Rage, and a stun from Prowl. One fan source gives the levels"]
+    dungeons:
+      - {name: "Razorfen Kraul and Gnomeregan", levels: "29–38", note: "Gnomeregan drops the Manual Crowd Pummeler"}
+      - {name: "Scarlet Monastery", levels: "30–46", note: "4 wings. It gives weapons and off-hand items for casters and healers"}
+      - {id: drowned-city, levels: "35–42", note: "New"}
+      - {name: "Razorfen Downs", levels: "37–46"}
+    tip: |
+      Cast Thorns on you before each solo pull. In Cat Form, use each Omen of Clarity proc on Shred, because Shred is your most expensive attack.
+    goals:
+      - "Train Travel Form at level 30."
+      - "Turn in 20 library books at level 35 for the second book quest."
+      - "Save 150g before level 40."
+
+  - id: l40
+    title: "Dire Bear Form and dual spec"
+    story: |
+      Level 40 changes much. You train Dire Bear Form, Innervate and Feline Grace. You can buy riding for 100g, and the price includes your first mount. You can buy dual spec for 50g from your class trainer.
+
+      Dire Bear Form is the important change for a tank. It gives more armor and more health than Bear Form. It is the largest improvement for a tank in the 60 levels.
+
+      Innervate gives much mana regeneration to 1 target for a short time. Use it on you when you solo. In a group, give it to the healer.
+
+      Dual spec gives you a second set of talents, and it decides how you play in groups. The usual pair is Feral for quests and Restoration for dungeons. A second pair is Cat and Bear in 2 Feral specs. A second spec also needs a second equipment set, so start to keep caster items now.
+
+      The new zone Riverglades is for levels 35 to 45. At 45, the third book quest needs 25 library books. Level 45 also gives the *Druid: Experienced* Legacy Point. Some sources say level 40.
+    train:
+      - [40, "Dire Bear Form", "The tank form. More armor and health than Bear Form"]
+      - [40, "Innervate, Feline Grace", "Mana regeneration for you or for a healer. Feline Grace decreases fall damage in Cat Form"]
+      - [40, "Hurricane", "AoE with no cooldown in Forever. Classic-era level"]
+      - [44, "Barkskin", "A defensive cooldown that works in forms in Forever. Classic-era level"]
+    dungeons:
+      - {id: kroldok-stronghold, levels: "40–47", note: "New. It is in Riverglades"}
+      - {name: "Uldaman", levels: "41–51", note: "Grimlok drops a polearm"}
+      - {name: "Zul'Farrak", levels: "44–54", note: "The group needs Abolish Poison and Remove Curse"}
+      - {name: "Maraudon", levels: "46–55", note: "The group needs Abolish Poison"}
+      - {id: alcaz-prison, levels: "48–55", note: "New. It is in Dustwallow Marsh"}
+    extra: |
+      ??? example "Macros for Dire Bear Form and Innervate"
+
+          ```
+          #showtooltip
+          /cast [nostance:1] !Dire Bear Form; Maul
+          ```
+
+          ```
+          #showtooltip Innervate
+          /cast [@mouseover,help,nodead][] Innervate
+          ```
+
+          Replace Maul with Primal Bite when you have that talent.
+
+      !!! conflict "Conflict: the first Bear attack"
+          The leveling guide of Warcraft Tavern uses Lacerate before Primal Bite. Its Feral guide and the Kami-labs simulation use Primal Bite first. Primal Bite first is safer for threat.
+    warn: |
+      Buy riding before dual spec if you do not have 150g. Travel Form does not replace a mount at level 40.
+    goals:
+      - "Train Dire Bear Form and Innervate at level 40."
+      - "Buy riding (100g), then dual spec (50g)."
+      - "Turn in 25 library books at level 45 for the third book quest."
+
+  - id: l50
+    title: "Select your role for level 60"
+    story: |
+      The last 10 levels have the most dungeons. Reportedly, each boss in the new dungeons drops a blue item. Start to collect your level 60 equipment here, for each role that you want to play.
+
+      You get no new form in these levels. Each leveling build completes Naturalist in the Restoration tree here. It gives 10% more damage to each role. Your kit is complete, so you learn to use more than 1 form in a fight. You shift out to heal, and you shift to Bear when a pull goes wrong.
+
+      Groups ask for a Druid in each role. Decide now which role you want at level 60, because Cat, Bear, Balance and Restoration use different items.
+
+      The trainers are far from these zones. Golhine the Hooded trains Alliance Druids at Talonbranch Glade in Felwood. Jannos Lighthoof trains Horde Druids at Camp Mojache in Feralas. Teleport: Moonglade takes each Druid to Loganaar.
+    dungeons:
+      - {name: "Sunken Temple", levels: "50–60"}
+      - {name: "Blackrock Depths", levels: "52–60", note: "It has a part of the attunement for Onyxia's Lair (Alliance)"}
+      - {name: "Dire Maul", levels: "54–60", note: "The group needs Remove Curse and Abolish Poison"}
+      - {id: blackmaw-hold, levels: "55–60", note: "New. It is in Azshara. It has an entrance to the Barrow Deeps"}
+      - {name: "Lower Blackrock Spire", levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60", note: "New. It is in Un'Goro Crater"}
+      - {name: "Scholomance and Stratholme", levels: "58–60", note: "They drop parts of the Wildheart set"}
+    tip: |
+      Swipe hits only 3 targets. When you tank a group of 4 or more, mark the other targets for crowd control.
+    goals:
+      - "Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests."
+      - "Decide your role for level 60, and keep the items for it."
+
+  - id: l60
+    title: "Hit, Defense and the Onyxia attunement"
+    story: |
+      At level 60 you get the *Druid: Master* Legacy Point. [Mount Hyjal](../../world/zones.md#mount-hyjal) opens through Darkwhisper Gorge in Winterspring. The fast mount costs 1,000g.
+
+      All 3 launch raids open on 9 December 2026. Use the time before that date for 4 tasks. Respec to a level 60 build. Collect the items for your role. Collect consumables. Do the attunement for Onyxia's Lair.
+
+      The attunement gives the Drakefire Amulet. The Codex raid page says that each character must do it. For the 2 factions, the quest chain ends with General Drakkisath in Upper Blackrock Spire.
+
+      A melee attack needs 9% hit against a raid boss (Warcraft Tavern). Nature's Reach gives 4%, and its tooltip does not limit the hit to spells. A tank needs 440 Defense. No source gives a spell hit number for Balance.
+
+      No source has a tested item list for level 60. Much of the level 60 loot still has hidden stats. The Classic lists do not apply without changes, because the new dungeons drop items with new stats.
+
+      Thus, collect items in 2 steps. First, do the dungeons for levels 55 to 60 for the items of your role. Then use crafted leather items for the other slots. The fan lists also name PvP rank items, but they do not say how you get them. The Equipment add-on gives the item names.
+    dungeons:
+      - {id: blackmaw-hold, levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60"}
+      - {name: "Scholomance, Stratholme, Dire Maul and Blackrock Spire", levels: "54–60", note: "The Classic dungeons are still in the game"}
+      - {name: "Upper Blackrock Spire", levels: "59–60", note: "10 players. The attunement for Onyxia's Lair ends here"}
+    tip: |
+      Blizzard recommends fire resistance for Onyxia's Lair but gives no number. A Bear that tanks there needs some fire resistance.
+    goals:
+      - "Respec to a level 60 build."
+      - "Do the attunement for Onyxia's Lair."
+      - "Collect consumables before 9 December. All of them work in form."
+
+  - id: raid
+    title: "Rebirth, Innervate and the flag"
+    story: |
+      A raid takes a Druid for 4 abilities: Innervate, Rebirth, Mark of the Wild and a crit aura. Moonkin Form and Leader of the Pack each give 3% crit to the raid. Reportedly, the 2 auras do not stack, so a raid needs only 1 of them.
+
+      **The Barrow Deeps** has 10 players. A Druid can be the main tank or the second tank, the healer, or the aura. A group of 10 wants 1 Druid for Rebirth and Innervate. See [The Barrow Deeps](../../content/raids/barrow-deeps.md).
+
+      **Hyjal Summit** has 20 players and 13 bosses. Expect Restoration Druids and 1 Druid for the crit aura. No source gives the resistances or the cures that the raid needs. See [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+      **Onyxia's Lair** has 40 players and much Fire damage. Restoration heals, and a Bear tanks the whelps. See [Onyxia's Lair](../../content/raids/onyxias-lair.md).
+
+      In battlegrounds, the Druid is the best flag carrier of Warsong Gulch. Travel Form, Dash, Feral Charge and Frenzied Regeneration keep you alive. In the Battle for the Darkspear Islands, carry the central flag or take empty bases in Prowl. Your speed also helps in Arathi Basin and Alterac Valley. See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/battlegrounds.md).
+
+      In world PvP, Prowl and Travel Form let you select your fights. Nature's Grasp and Entangling Roots stop melee classes.
+    extra: |
+      Each role has a job in PvP. Restoration with some Feral talents heals and carries flags. Feral carries flags and does burst damage. Balance does damage from range.
+
+      | Enemy in PvP | What you do |
+      |---|---|
+      | Rogue | Keep Faerie Fire on the Rogue to stop stealth. Barkskin works in form |
+      | Warrior | Root and kite. Shift to remove Hamstring. Do not stay in melee range as a Cat |
+      | Mage | Shift to remove Polymorph and slows. Use Feral Charge after Blink |
+      | Priest, Warlock | Fear is the problem, and a shift does not remove it (Classic rule). Fight at range, or do burst damage from Prowl |
+      | Hunter | Get into melee range with Feral Charge, Dash and Travel Form. Root the pet |
+      | Paladin, Shaman | Long fights. Do burst damage after a defensive cooldown, or root and cast |
+    hardcore: |
+      [Hardcore](../../about/hardcore.md) comes in winter 2026/27, and the Druid is one of the safest classes for it. Your escapes are Travel Form, Dash, Prowl, Aquatic Form, Nature's Grasp and Entangling Roots. Bear Form with Frenzied Regeneration is the emergency form, and potions work in it.
+
+      Be careful near enemies that cast Fear, because you cannot remove it. Do not pull a group that you cannot control. Hibernate works only on Beasts and Dragonkin. Blizzard designed the special effects of the new dungeon items partly for Hardcore.
+
+# ------------------------------------------------------------------ races
+races:
+  - id: night-elf
+    name: Night Elf
+    faction: alliance
+    status: Classic
+    pitch: "The original Alliance Druid. Elune's Light gives 10% crit for 15 seconds, and Quickness gives dodge and speed. Method names it the best all-round Alliance Druid."
+    start: |
+      You start in Shadowglen on Teldrassil. Your first trainer is Mardant Strongoak, in the tree of Aldrassil. At level 6, go to Dolanaar, where Kal trains Druids. The trainers of Darnassus are in the Cenarion Enclave. Mathrengyl Bearwalker gives the Bear Form quest *Heeding the Call* there. Wisp Spirit makes you 75% faster as a ghost, so a death costs less time.
+    notes:
+      l10: "At level 11 or 12, take the boat from Rut'theran Village to Auberdine. Darkshore is your zone to level 20. Your class quests at 14, 16 and 20 start in Darnassus."
+      l20: "The Cat Form quest is *The Great Cat Spirit*, from Darnassus. Elune's Light gives 10% crit for 15 seconds, so use it at the start of a hard fight. A Cat uses it at 5 combo points, before the finishing move."
+      l30: "Shadowmeld works in form. It removes aggro when a pull goes wrong. After the hotfix of 6 November, you cannot use Ravage or Pounce from Shadowmeld. Use Prowl."
+      l40: "Lelanai in Darnassus sells the Frostsaber and teaches riding. Honored reputation with Darnassus decreases the price by 10%."
+      raid: "Quickness gives 1% dodge to a Bear and 2% speed to a flag carrier. One source gives Elune's Light a 3 minute cooldown, but this is not confirmed."
+  - id: skyborne-high-order
+    name: Skyborne (High Order)
+    faction: alliance
+    status: New
+    pitch: "New in Forever, and a paid race. Wind Blessed gives haste, Read Ley Line gives regeneration, and Walk on Air works in forms. It is the Alliance selection for Balance and Restoration."
+    start: |
+      You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The quest *Reading the Leylines* teaches Read Ley Line. From about level 5, the quests take you to Shen'dar Village and then to Valanaar. Method lists the Druid trainers Xyton Silverwind, Naeluna Swiftmend and Lotheluum Starbreeze on the island. The island quests take you to about level 12 to 14. To play a Skyborne, you must have the Skyborne Heroic Pack or a higher edition.
+    notes:
+      l10: |
+        Your Bear Form quest is *The Great Ursera Spirit*, on the island. Then take the airship from the east Skydock to Dalaran, which is a zone for levels 30 to 40. Do not quest there. Walk south to Southshore, and take the new boat to Menethil Harbor. From there, walk to Loch Modan, or take the boat to Auberdine in Darkshore.
+
+        No source confirms where a Skyborne does the quests for Cure Poison and Aquatic Form. Look in Valanaar first, then in Darnassus.
+      l20: "Your Cat Form quest is *The Great Windborne Cat Spirit*. Go back to Zephras Isle for it. Your forms have 4 colors, which you change at a barber. Read Ley Line gives +50% health and mana regeneration for 15 seconds. Use it after a fight to rest less."
+      l30: "Dalaran is the end of your airship route, and now it is also your quest zone. Sources list Alfina Nightgaze in Dalaran as a Druid trainer. Reportedly, Dalaran has no flight master."
+      l40: "You cannot use Read Ley Line together with Innervate. Thus, use 1 of them and keep the other for the next fight. Fairweather Stables on Zephras Isle sells the Galestrider."
+      raid: "Sources give 1%, 2% or 3% haste for Wind Blessed. The latest Blizzard notes say 2%. Elemental Insight gives +5% damage against Elementals. Walk on Air works in forms, so a flag carrier can glide down from a cliff."
+  - id: tauren
+    name: Tauren
+    faction: horde
+    status: Classic
+    pitch: "The original Horde Druid, and the best Bear. Endurance gives 5% health, and War Stomp works in Bear Form and in Cat Form. Method recommends it for tanks and for PvP."
+    start: |
+      You start at Camp Narache in Mulgore. Your first trainer is Gart Mistrunner. At level 6, go to Bloodhoof Village, where Gennia Runetotem trains Druids. The trainers of Thunder Bluff are on the Elder Rise. Turak Runetotem gives the Bear Form quest *Heeding the Call* there (Classic location).
+    notes:
+      l10: "At about level 11, go east to the Crossroads in the Barrens. Plainsrunning gives up to +60% speed while you move. It makes the levels before Travel Form much faster."
+      l20: "The Cat Form quest is *The Great Cat Spirit*, from Thunder Bluff. War Stomp stuns up to 5 enemies for 2 seconds, and it works in Bear Form and Cat Form. Use it, then shift out and heal."
+      l30: "A hotfix of 5 November blocks Plainsrunning in battlegrounds. No source says if it stacks with Travel Form or Cat Form."
+      l40: "You buy your Kodo in Bloodhoof Village. Honored reputation with Thunder Bluff decreases the price by 10%. Cultivation grows a herb, with more herbs for a Herbalist."
+      raid: "Endurance is the best tank racial for a Druid. In PvP, War Stomp stops a cast before a Fear."
+  - id: skyborne-windshaper
+    name: Skyborne (Windshaper)
+    faction: horde
+    status: New
+    pitch: "New in Forever, and a paid race. Wind Blessed gives haste, Skysight gives speed, and Walk on Air works in forms. Method recommends it for Cat and Balance on the Horde side."
+    start: |
+      You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The quest *The Gift of Skysight* teaches Skysight. From about level 5, the quests take you to Shen'dar Village and then to Valanaar. Method lists the Druid trainers Xyton Silverwind, Naeluna Swiftmend and Lotheluum Starbreeze on the island. The island quests take you to about level 12 to 14. To play a Skyborne, you must have the Skyborne Heroic Pack or a higher edition.
+    notes:
+      l10: |
+        Your Bear Form quest is *The Great Ursera Spirit*, on the island. Then take the airship from the west Skydock to Skywatcher Plateau in Mulgore. Get the flight path in Thunder Bluff, and go to the Barrens. Skysight gives +15% speed for 15 seconds, which helps before Travel Form.
+
+        No source confirms where a Skyborne does the quests for Cure Poison and Aquatic Form. Look in Valanaar first, then in Thunder Bluff.
+      l20: "Your Cat Form quest is *The Great Windborne Cat Spirit*. Go back to Zephras Isle for it. In Cat Form, Skysight together with Dash helps you to catch an enemy or to get away."
+      l30: "A path goes from Skywatcher Plateau to Desolace. Skysight gives +30% speed when you are Charged. No source confirms that Skysight stacks with the speed of a form."
+      l40: "Fairweather Stables on Zephras Isle sells the Galestrider. Windshaper reputation decreases the price by 5% to 20%."
+      raid: "Sources give 1%, 2% or 3% haste for Wind Blessed. The latest Blizzard notes say 2%. Elemental Insight gives +5% damage against Elementals. Warcraft Tavern says that Skysight is the weaker Skyborne ability in combat."
+
+factions:
+  alliance:
+    l10: "The Alliance zones for these levels are Darkshore, Westfall, Loch Modan and Redridge Mountains. A new boat goes between Auberdine and Stormwind Harbor. Hall of Thanes in Ironforge and the Deadmines are your first dungeons."
+    l20: "Quest in Ashenvale, the Wetlands, Redridge Mountains, Duskwood and Hillsbrad Foothills. Blackfathom Deeps is in Ashenvale, and Excavation Site is in the Wetlands. Sheldras Moontree trains Druids in Stormwind."
+    l30: "Quest in Arathi Highlands, the Alterac Mountains, Desolace, Stranglethorn Vale and Dustwallow Marsh. Dalaran is friendly to the Alliance, and you can get Kirin Tor reputation there. A new path goes from Desolace to Shen'dralas, but no source gives the level range of that zone."
+    l40: "The Alliance town in Riverglades is Farholde Keep. Then quest in Feralas, Tanaris, the Badlands, Swamp of Sorrows and the Hinterlands."
+    l50: "Quest in Un'Goro Crater, Azshara, Felwood, the Plaguelands, Burning Steppes, Winterspring and Silithus. Azshara has many new quests."
+    l60: "The attunement for Onyxia's Lair starts with Helendis Riverhorn in Burning Steppes (*Dragonkin Menace*). It goes through Blackrock Depths and Stormwind to Upper Blackrock Spire."
+  horde:
+    l10: "Quest in the Barrens, then in Silverpine Forest or Stonetalon Mountains. Ragefire Chasm, Wailing Caverns and Ruins of Lordaeron are your first dungeons."
+    l20: "Quest in Stonetalon Mountains, Ashenvale, Hillsbrad Foothills and Thousand Needles. Shadowfang Keep is in Silverpine Forest."
+    l30: "Quest in Desolace, Arathi Highlands, Stranglethorn Vale and Dustwallow Marsh. NPCs in Dalaran attack Horde characters on sight. A new path goes from Desolace to Shen'dralas, but no source gives the level range of that zone."
+    l40: "The Horde town in Riverglades is Rog'mar. Then quest in Feralas, Tanaris, the Badlands, Swamp of Sorrows and the Hinterlands."
+    l50: "Quest in Un'Goro Crater, Azshara, Felwood, the Plaguelands, Burning Steppes, Winterspring and Silithus. Azshara has many new quests."
+    l60: "The attunement for Onyxia's Lair starts with Warlord Goretooth in the Badlands (*Blood and Thunder*). It is long, and it ends with General Drakkisath in Upper Blackrock Spire."
+
+# ------------------------------------------------------------------ talent paths
+paths:
+  - id: cat
+    name: "Feral: Cat"
+    pitch: "The usual path for a first Druid. You fight as a Bear to level 19 and as a Cat from level 20. Prowl, Dash and almost no rest make it the fastest solo path."
+    leveling: feral-leveling
+    endgame: [cat-raid]
+    gear: feral
+    play:
+      l1: "Your talent path changes nothing before level 10. Fight as a caster: Moonfire first, then Wrath. Your first talent point goes into Ferocity."
+      l10: |
+        Pull with 2 casts of Wrath and 1 Moonfire. Then shift to Bear, and use Enrage, Demoralizing Roar and Maul. Use Swipe when 2 or 3 enemies attack you. Ferocity makes Maul and Swipe cheaper, so you attack more frequently. Thick Hide at 15 gives armor in form.
+
+        Some guides take the Cat damage talents first and stay in caster form to level 20. This build takes Thick Hide first, because it is safer.
+      l20: |
+        You now fight as a Cat. Go into Prowl, attack with Claw, and use Rip on an enemy that lives long. Sharpened Claws and Savage Fury come first, for crit and damage. From 22, use Shred when you are behind the target, for example in a group.
+
+        Blood Frenzy is complete at 26. Each crit of Claw then gives 2 combo points. Feral Swiftness, which you already have, makes your Cat 30% faster.
+      l30: "Leader of the Pack at level 30 gives 3% crit to you and your party. From 32, attack from Prowl with Ravage. Rake keeps the target Bleeding, and Rend and Tear then increases your damage by up to 15%. With Predatory Discipline, Ferocious Bite keeps your extra Energy."
+      l40: "Shifting Power at level 40 changes mana into 40 Energy with an 8 second cooldown. Use it when your Energy is below 50. Lacerate at 41 and Primal Bite at 42 let you tank dungeons in Dire Bear Form. Heart of the Wild gives 10% Strength as a Cat. In a dungeon, stay behind the target for Shred."
+      l50: "Naturalist completes at 52 and gives 10% more damage. Furor then keeps your Energy when you shift out to heal. Shredding Attacks at 58 makes Shred cheaper for dungeons, where you stand behind the target."
+      l60: "The raid build has no Lacerate and no Primal Bite. It takes Nature's Reach for 4% hit and Nature's Majesty for 4% crit. Get the other 5% hit from items. Stay behind the boss for Shred."
+      raid: "Leader of the Pack applies to the full raid. Let the tank get threat before you attack, and use Cower when your threat is high. Your mana is the limit for Shifting Power in long fights, so carry mana potions."
+    priority:
+      - "Start from **Prowl** with **Ravage** from behind. Use Pounce in PvP."
+      - "Keep **Faerie Fire** on the target. It is free in form."
+      - "Use **Rip** at 5 combo points on a target that lives until the bleed ends."
+      - "Use **Ferocious Bite** at 4 or 5 combo points with 70 Energy or more, or on a target that dies soon."
+      - "Use **Rake** when it is not on the target."
+      - "Use **Shifting Power** when you have less than 50 Energy."
+      - "Use **Shred** from behind and **Claw** from the front."
+  - id: bear
+    name: "Feral: Bear tank"
+    pitch: "The same talents, but you tank each dungeon while you level. Groups find a tank last, so you wait less. At level 60 you take the tank build."
+    leveling: feral-leveling
+    endgame: [bear-tank]
+    gear: feral
+    play:
+      l1: "Your talent path changes nothing before level 10. You cannot tank before Bear Form, so fight as a caster: Moonfire first, then Wrath."
+      l10: "Bear Form is your tank form from level 10. Use Enrage for Rage on the pull, Demoralizing Roar on groups and Maul on your target. Growl works like Taunt, so use it when an enemy attacks a different player. Thick Hide at 15 and the dodge of Feral Swiftness at 18 make you harder to kill. From 18, pull with Faerie Fire, which is free in form."
+      l20: |
+        Quest as a Cat, and tank as a Bear. Feral Charge at level 24 is your pull and your interrupt: it stops a cast for 4 seconds. Use Swipe on 3 targets, and mark the others for crowd control. Predatory Strikes at 27 gives Attack Power in Cat Form and Bear Form.
+
+        The tree lets you take Lacerate from level 25, but this build takes it at 41. If you tank most of your dungeons, take Lacerate at 25. Then take each later talent 1 level later.
+      l30: "Leader of the Pack at 30 helps the full party. Frenzied Regeneration is your emergency heal, and potions work in form. If you did not take Lacerate, use Maul and Swipe for threat. The 115% threat of the form is enough for most groups."
+      l40: "This is the level range where the Bear becomes complete. Dire Bear Form comes at 40, Lacerate at 41 and Primal Bite at 42. Use Primal Bite on cooldown, and keep 5 stacks of Lacerate. The form has 115% threat, so the group does not wait for the stacks. Heart of the Wild then gives 20% Stamina in Bear Form."
+      l50: "Naturalist gives 10% more damage, so you make more threat. Furor gives 10 Rage each time that you shift to Bear. Use Barkskin and Frenzied Regeneration before your health is low, not after."
+      l60: "The tank build adds Natural Reaction for 5% dodge and 3 ranks of Feral Instinct for Swipe. Get 440 Defense for raid bosses. If you miss too frequently, the build note moves 8 points into Balance for hit."
+      raid: "Start with Feral Charge or Faerie Fire, then Primal Bite. In the Kami-labs simulation, Maul, Lacerate and Primal Bite did about 35%, 26% and 16% of the damage. The hotfix of 4 November changed threat, so these numbers are not final."
+    priority:
+      - "Keep **Faerie Fire** and **Demoralizing Roar** on the target."
+      - "Use **Primal Bite** on cooldown. It is your main threat ability."
+      - "Use **Lacerate** to 5 stacks. Refresh it before it ends."
+      - "Use **Maul** when you have 25 Rage or more."
+      - "Groups: use **Swipe** between each Primal Bite. Keep Challenging Roar for emergencies."
+      - "Defense: **Barkskin**, **Frenzied Regeneration** and Enrage on the pull. Interrupt with **Feral Charge**."
+  - id: balance
+    name: "Balance"
+    pitch: "The caster path. It is slower than Feral, because you use mana to kill and to heal. You get Insect Swarm at 25, Eclipse at 30 and Moonkin Form at 40."
+    leveling: balance-leveling
+    endgame: [moonkin-raid]
+    gear: caster
+    play:
+      l1: "Your talent path changes nothing before level 10. These levels already show how Balance plays: Moonfire first, then Wrath to the end of the fight."
+      l10: "Stay in caster form. Improved Wrath makes Wrath faster and decreases its cost by half. Pull with Wrath, cast Moonfire, then root the enemy and cast Wrath again. Use Bear Form only when an enemy gets to you and your mana is low."
+      l20: |
+        Nature's Splendor at 20 makes Moonfire and Rejuvenation longer. Moonglow decreases the cost of your damage spells. Insect Swarm at level 25 is a second DoT, and it makes the target miss more. Pull with Wrath, cast Moonfire and Insect Swarm, then root and kite.
+
+        In a dungeon, you do damage from range. Entangling Roots works indoors, and Hibernate holds a Beast or a Dragonkin. Soothe Animal helps the group to go around Beasts.
+      l30: "Eclipse at level 30 changes your fight. Each Wrath makes your next 2 Starfires faster. The pattern becomes about 2 Starfires for each Wrath. Vengeance doubles the bonus damage of your crits, and Nature's Grace makes your casts faster after a crit."
+      l40: "Moonkin Form at level 40 gives armor, 3% crit for your party and more Omen of Clarity procs. You cannot heal in the form, so shift out to cast Rejuvenation and Regrowth. Improved Starfire then makes Starfire faster, with a chance to stun. Hurricane has no cooldown, so use it on groups of enemies in a dungeon."
+      l50: "Heart of the Wild gives 10% Intellect, and Naturalist gives 10% damage. Genesis at 56 makes your DoTs stronger. If you pull 2 or 3 enemies with roots, the build note moves 2 points from Genesis to Overgrowth."
+      l60: "The raid build keeps the full Balance tree and takes Nature's Reach for 4% hit. It adds Reflection for mana and Subtlety for threat. It takes no talents for Entangling Roots, because bosses are immune to roots."
+      raid: "Your crit aura is the reason that a raid takes a Moonkin. Crits with Vengeance make much threat, so look at your threat. Use Hurricane on groups, because it has no cooldown."
+    priority:
+      - "Keep **Moonfire** and **Insect Swarm** on the target in a long fight."
+      - "Cast **Wrath** to get **Eclipse** charges."
+      - "Cast **Starfire** while you have Eclipse charges. Each Wrath gives 2 charges, to a maximum of 4."
+      - "Cast **Hurricane** on groups of enemies."
+      - "Use **Innervate** when your mana is low, and **Rebirth** on a dead tank or healer."
+  - id: resto
+    name: "Restoration at 60"
+    pitch: "The healer path. A healer kills slowly, so you level with the Feral build. You heal dungeons in a second spec from level 40, and you respec at level 60."
+    leveling: feral-leveling
+    endgame: [resto-raid, resto-pvp]
+    gear: healer
+    play:
+      l1: "Your talent path changes nothing before level 10. Learn your 2 heals here. Rejuvenation is for a fight, and Healing Touch is for the time between pulls."
+      l10: "Level with the Feral build, because Restoration is good only in a group or in dungeons. Pull with Wrath and Moonfire, then shift to Bear and use Maul. In a dungeon group, stay in caster form and heal with Rejuvenation, Healing Touch and Regrowth. Keep each caster item that you find, for the dungeons."
+      l20: "Continue with the Feral build. Quest as a Cat: Prowl, Claw, and Rip on an enemy that lives long. In a dungeon group, your heals are Rejuvenation, Regrowth and Healing Touch. Remove Curse and Abolish Poison are your other jobs."
+      l30: "Continue with the Feral build, and start each solo fight from Prowl with Ravage. In a dungeon, cast Rejuvenation on the tank before the pull. Use Regrowth for medium damage and Healing Touch for large damage. Keep Rebirth for the tank."
+      l40: |
+        Buy dual spec at level 40, and make the second spec Restoration. In the order of the raid build, 31 points give Heart of the Wild, Naturalist, Reflection, Gift of Nature, Bloom, Improved Rejuvenation and Swiftmend. Swiftmend is an instant heal on a target with your Rejuvenation or Regrowth.
+
+        Nature's Swiftness follows at 41. In a dungeon, use Innervate on you.
+      l50: "In the order of the raid build, your second spec gets Living Spirit, Improved Regrowth and then Wild Growth at 52. Wild Growth heals the party of the target. Nature's Swiftness makes 1 Healing Touch instant for emergencies."
+      l60: "Respec your first spec to the Restoration raid build, or keep Feral in 1 spec. The raid build takes all the HoT talents and Genesis for 10% more periodic healing. Reflection makes Spirit your regeneration stat."
+      raid: "Wild Growth heals 1 party, not the full raid. Bloom heals for 100% of your Spirit when a Rejuvenation or Regrowth ends. The PvP build keeps the instant heals and adds Feral Charge and Furor to carry flags."
+    priority:
+      - "Cast **Rejuvenation** on the tank before the pull, and keep it on the tank."
+      - "Cast **Regrowth** for medium damage and a low rank of **Healing Touch** for large damage that you expect."
+      - "Use **Swiftmend** for sudden damage. The target must have your Rejuvenation or Regrowth."
+      - "Cast **Wild Growth** when a party takes damage."
+      - "Emergency: **Nature's Swiftness**, then Healing Touch."
+      - "Use **Innervate** on you or on a second healer, and **Rebirth** on a dead tank or healer."
+
+# ------------------------------------------------------------------ equipment sets
+gear:
+  - id: feral
+    name: "Feral: leather and a two-hand weapon"
+    pitch: "The set for Cat and Bear. You wear leather with Strength, Agility and Stamina, and you carry the two-hand weapon with the highest DPS. A Bear replaces some items with armor, Defense and dodge."
+    stats: "Leveling: weapon DPS > Strength, Agility, Attack Power > Stamina > Intellect. Cat at 60 (Warcraft Tavern): Hit to 9% > Expertise > Crit > Haste > Agility > Strength. Bear at 60: Defense to 440 > Dodge > Armor > Stamina"
+    chapters:
+      l1:
+        text: "You are a caster for 9 levels, so take Intellect. Your weapon is the staff from a quest. Leatherworking makes your first leather items at skill 1."
+        items:
+          - {slot: "Staff", name: "Novice's Quarterstaff", from: quest, where: "*Foul Matriarch*, Zephras Isle. Timesaver.gg lists it for the Horde", basis: forever}
+          - {slot: "Chest", name: "Handstitched Leather Vest", from: craft, profession: leatherworking}
+          - {slot: "Feet", name: "Handstitched Leather Boots", from: craft, profession: leatherworking}
+      l10:
+        text: "Change to leather with Strength or Agility when you get Bear Form. The weapon is your most important slot, because your form uses its DPS. The Aquatic Form quest gives your first idol, which makes shapeshifts cheaper. Use a weightstone on a mace or a staff."
+        items:
+          - {slot: "Two-hand mace", name: "Honed Greathammer", from: quest, where: "*Return to Valanaar*, Zephras Isle (Skyborne)", basis: forever}
+          - {slot: "Two-hand mace", name: "Ironforge Greathammer", from: quest, where: "*Old Ironforge Incursion*, Hall of Thanes (Alliance)", basis: forever}
+          - {slot: "Weapon", name: "Segmented Spider Leg", from: dungeon, dungeon: ruins-of-lordaeron, where: "Witherfang. Timesaver.gg selects it for the Horde", basis: forever}
+          - {slot: "Two-hand mace", name: "Smite's Mighty Hammer", from: dungeon, where: "Deadmines, Mr. Smite", basis: forever}
+          - {slot: "Weapon", name: "Hammerbone", from: quest, where: "*Leaders of the Fang*, Wailing Caverns (Horde)", basis: forever}
+          - {slot: "Relic", name: "Idol of Shifting Tides", from: class, where: "The Aquatic Form quest, level 16", basis: forever}
+          - {slot: "Chest", name: "Armor of the Fang", from: dungeon, where: "Wailing Caverns, Lord Pythas. A part of Embrace of the Viper", basis: forever}
+          - {slot: "Chest", name: "Bloodied Chestwraps", from: dungeon, dungeon: ruins-of-lordaeron, where: "Viktor the Vile", basis: forever}
+          - {slot: "Waist", name: "Brawler's Leather Belt", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Brawler's Leather Armor", from: craft, profession: leatherworking}
+          - {slot: "Two-hand mace", name: "Heavy Copper Maul", from: craft, profession: blacksmithing}
+          - {slot: "Weapon stone", name: "Coarse Weightstone", from: craft, profession: blacksmithing}
+      l20:
+        text: "Learn Polearms at level 20. The Brawler's leather items are new rare items from Leatherworking. Timesaver.gg selects the Brawler's hood for Feral at level 20. The client data does not give their stats."
+        items:
+          - {slot: "Two-hand mace", name: "Headbasher", from: quest, where: "*The Fury Runs Deep*, the Stockade (Alliance)", basis: forever}
+          - {slot: "Two-hand mace", name: "Twilight Maul", from: dungeon, where: "Blackfathom Deeps, Lorgus Jett (Horde selection of Timesaver.gg)", basis: forever}
+          - {slot: "Polearm", name: "Bronze Dory", from: craft, profession: blacksmithing}
+          - {slot: "Head", name: "Brawler's Leather Hood", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Brawler's Leather Pants", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Brawler's Leather Tunic", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Worgpelt Leggings", from: dungeon, where: "Shadowfang Keep, Wolf Master Nandos", basis: forever}
+          - {slot: "Shoulders", name: "Serpent's Shoulders", from: dungeon, where: "Wailing Caverns, Lady Anacondra. Timesaver.gg keeps it to level 30", basis: forever}
+          - {slot: "Neck", name: "Erudite's Amulet", from: quest, where: "*Friend of the Library*, a library book quest", basis: forever}
+      l30:
+        text: "Change the weapon at each step: a mace at 30, then a polearm from the centaur quests in Desolace. The Manual Crowd Pummeler from Gnomeregan has charges that give haste in Classic. Guides still name it for Forever, but no source confirms its effect."
+        items:
+          - {slot: "Two-hand mace", name: "Heavehammer", from: quest, where: "*Prehistoric Prism* (Alliance) or *Earthen Echo* (Horde), Excavation Site", basis: forever}
+          - {slot: "Two-hand mace", name: "Defender of Dalaran", from: quest, where: "Quest chain of Emissary Jacques, Hillsbrad Foothills (Alliance)", basis: forever}
+          - {slot: "Staff", name: "Loksey's Training Stick", from: dungeon, where: "Scarlet Monastery", basis: forever}
+          - {slot: "Polearm", name: "Scavenged Magram Armament", from: quest, where: "Quest chain of Khan Jehn, Desolace", basis: forever}
+          - {slot: "Two-hand mace", name: "The Pacifier", from: drop, where: "Lo'Grosh, Alterac Mountains. Method.gg selects it at level 36", basis: forever}
+          - {slot: "Two-hand mace", name: "Manual Crowd Pummeler", from: dungeon, where: "Gnomeregan, Crowd Pummeler 9-60"}
+          - {slot: "Neck", name: "Archmagister's Faceted Pendant", from: dungeon, dungeon: city-of-dalaran, where: "Timesaver.gg keeps it to level 50", basis: forever}
+          - {slot: "Head", name: "Humbert's Helm", from: drop, where: "Dun Garok Rifleman, Hillsbrad Foothills", basis: forever}
+          - {slot: "Waist", name: "Skulker's Leather Belt", from: craft, profession: leatherworking}
+          - {slot: "Polearm", name: "Steel Spear", from: craft, profession: blacksmithing}
+      l40:
+        text: "Grimlok's Charge from Uldaman stays your weapon to about level 55. Warcraft Tavern names the Wolfshead Helm as a good Feral item, but it gives no level and no effect. The client marks its recipe as changed. No source lists the loot of Krol'dok Stronghold."
+        items:
+          - {slot: "Polearm", name: "Grimlok's Charge", from: dungeon, where: "Uldaman, Grimlok", basis: forever}
+          - {slot: "Head", name: "Wolfshead Helm", from: craft, profession: leatherworking}
+          - {slot: "Shoulders", name: "Fleshhide Shoulders", from: dungeon, where: "Razorfen Downs, Glutton", basis: forever}
+          - {slot: "Hands", name: "Tiger Hunter Gloves", from: quest, where: "*Tiger Mastery*, Stranglethorn Vale", basis: forever}
+          - {slot: "Feet", name: "Excelsior Boots", from: quest, where: "*Excelsior*, Stranglethorn Vale", basis: forever}
+          - {slot: "Hands", name: "Skulker's Leather Gloves", from: craft, profession: leatherworking}
+          - {slot: "Shoulders", name: "Skulker's Leather Shoulders", from: craft, profession: leatherworking}
+          - {slot: "Two-hand mace", name: "Mithril Warhammer", from: craft, profession: blacksmithing}
+      l50:
+        text: "Blacksmithing makes the weapons of this level range, and Leatherworking makes the Warbear items. The fan lists use the Skulker's items for Cat and the Warden's items for Bear. Alcaz Prison has 1 item with a name in the public data."
+        items:
+          - {slot: "Two-hand mace", name: "Thorium Greatmace", from: craft, profession: blacksmithing}
+          - {slot: "Polearm", name: "Thorium Poleaxe", from: craft, profession: blacksmithing}
+          - {slot: "Chest", name: "Warbear Harness", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Warbear Woolies", from: craft, profession: leatherworking}
+          - {slot: "Wrist", name: "Skulker's Leather Bracers", from: craft, profession: leatherworking}
+          - {slot: "Waist", name: "Warden's Leather Waistguard", from: craft, profession: leatherworking}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting}
+          - {slot: "Back", name: "Cloak of the Tidemistress", from: dungeon, dungeon: alcaz-prison, where: "Tidemistress Ca'zass. Only wowtbc.gg names it", basis: forever}
+          - {slot: "Chest", name: "Blazewind Breastplate", from: quest, where: "A quest in the Badlands", basis: forever}
+      l60:
+        text: "No source has a tested list for level 60, and the 3 fan lists disagree. These items are in 1 or more of them. The client marks most of the Classic recipes as changed, so read each tooltip. The Dungeon Set 2 is the Feralheart Raiment, but no source says how you get it."
+        items:
+          - {slot: "Two-hand mace", name: "Hammer of the Titans", from: craft, profession: blacksmithing}
+          - {slot: "Two-hand mace", name: "The Unstoppable Force", from: pvp, where: "Alterac Valley. Exalted reputation in Classic. The Forever cost is not known"}
+          - {slot: "Hands", name: "Devilsaur Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Devilsaur Leggings", from: craft, profession: leatherworking}
+          - {slot: "Waist", name: "Might of the Timbermaw", from: craft, profession: leatherworking}
+          - {slot: "Feet", name: "Timbermaw Brawlers", from: craft, profession: leatherworking}
+          - {slot: "Back", name: "Shifting Cloak", from: craft, profession: leatherworking}
+          - {slot: "Back", name: "Cape of the Black Baron", from: dungeon, where: "Stratholme, Baron Rivendare", basis: forever}
+          - {slot: "Neck", name: "Mark of Fordring", from: quest, where: "*In Dreams*", basis: forever}
+          - {slot: "Neck", name: "Beads of Ogre Might", from: quest, where: "*Falrin's Vendetta*, Dire Maul", basis: forever}
+          - {slot: "Feet", name: "Shadowcraft Boots", from: dungeon, where: "Scholomance, Rattlegore", basis: forever}
+          - {slot: "Relic", name: "Idol of the Dream", from: craft, profession: enchanting}
+          - {slot: "Set", name: "Feralheart Raiment", from: any, where: "Dungeon Set 2. One fan list says that vendors sell it", basis: unverified}
+      raid:
+        text: "Reportedly, the reagent Malleable Essence of Nature comes from raid items that an Enchanter disenchants. Thus, the first 2 items here probably become available after the raids open. Dawn Armor and Timbermaw Tunic need Fel Leather, and no source says where it comes from. Blackfury needs Lava Core, which is a raid material in Classic. The crafted Grovekeeper items are the crafted version of the Druid Tier 1 set."
+        items:
+          - {slot: "Head", name: "Outlaw's Collar", from: craft, profession: leatherworking}
+          - {slot: "Relic", name: "Idol of the Ursine Twins", from: craft, profession: enchanting}
+          - {slot: "Chest", name: "Dawn Armor", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Timbermaw Tunic", from: craft, profession: leatherworking}
+          - {slot: "Polearm", name: "Blackfury", from: craft, profession: blacksmithing}
+  - id: caster
+    name: "Balance: spell damage"
+    pitch: "The set for Balance. You wear leather or cloth with spell damage, Intellect and crit. The weapon is a staff, or a one-hand mace or dagger with an off-hand item."
+    stats: "Leveling: Intellect, Spell Damage > Stamina, Spirit > Armor. Level 60 (Warcraft Tavern, not final): Spell Damage, then Hit to the cap, Crit above Haste, Intellect"
+    chapters:
+      l1:
+        text: "Take Intellect on each item. Your weapon is the staff from a quest. Cloth is acceptable, because Forever has no penalty for a lower armor type."
+        items:
+          - {slot: "Chest", name: "Handstitched Leather Vest", from: craft, profession: leatherworking}
+          - {slot: "Feet", name: "Handstitched Leather Boots", from: craft, profession: leatherworking}
+      l10:
+        text: "Weapons have spell damage from about level 10, so the weapon is your most important slot. The Totemic leather items are new rare items from Leatherworking. Timesaver.gg uses them for Balance."
+        items:
+          - {slot: "One-hand mace", name: "Thornroot Club", from: quest, where: "*Ursal the Mauler*, Teldrassil (Alliance)", basis: forever}
+          - {slot: "Weapon", name: "Makeshift Stormcaller", from: quest, where: "*Stormy Potential*, Durotar (Horde)", basis: forever}
+          - {slot: "Dagger", name: "Fang of Magmatus", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Staff", name: "Staff of Orgrimmar", from: quest, where: "*Hidden Enemies*, Orgrimmar (Horde)", basis: forever}
+          - {slot: "Staff", name: "Emberstone Staff", from: dungeon, where: "Deadmines, Captain Greenskin", basis: forever}
+          - {slot: "Staff", name: "Crescent Staff", from: quest, where: "A quest in Wailing Caverns (Horde)", basis: forever}
+          - {slot: "Relic", name: "Idol of Shifting Tides", from: class, where: "The Aquatic Form quest, level 16", basis: forever}
+          - {slot: "Waist", name: "Totemic Leather Belt", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Totemic Leather Armor", from: craft, profession: leatherworking}
+      l20:
+        text: "Timesaver.gg selects the Totemic hood at level 20. Enchanting makes a relic at skill 130, and wowtbc.gg lists it for Balance and Restoration. No source gives the effect of this relic."
+        items:
+          - {slot: "Staff", name: "Rod of the Sleepwalker", from: dungeon, where: "Blackfathom Deeps, Twilight Lord Kelris", basis: forever}
+          - {slot: "Head", name: "Totemic Leather Hood", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Totemic Leather Tunic", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Totemic Leather Leggings", from: craft, profession: leatherworking}
+          - {slot: "Relic", name: "Mystic Mushroom", from: craft, profession: enchanting}
+          - {slot: "Neck", name: "Erudite's Amulet", from: quest, where: "*Friend of the Library*, a library book quest", basis: forever}
+      l30:
+        text: "Change from a staff to a one-hand weapon with an off-hand item. Scarlet Monastery gives the 2 parts, and Timesaver.gg keeps the off-hand item to level 55. The ring from Excavation Site is still in its level 60 list."
+        items:
+          - {slot: "Dagger", name: "Swinetusk Shank", from: dungeon, where: "Razorfen Kraul, Agathelos the Raging", basis: forever}
+          - {slot: "Off-hand", name: "Raptor's Gaze", from: dungeon, dungeon: excavation-site, where: "Shadetooth", basis: forever}
+          - {slot: "Ring", name: "Ring of Power Regulation", from: dungeon, dungeon: excavation-site, where: "Relic Guardian", basis: forever}
+          - {slot: "Off-hand", name: "Orb of the Forgotten Seer", from: dungeon, where: "Scarlet Monastery, Graveyard, Bloodmage Thalnos", basis: forever}
+          - {slot: "Dagger", name: "Hypnotic Blade", from: dungeon, where: "Scarlet Monastery, Library, Arcanist Doan", basis: forever}
+          - {slot: "One-hand mace", name: "Soulsplatter Mace", from: quest, where: "Quest chain of Khan Jehn, Desolace", basis: forever}
+          - {slot: "Head", name: "Geomancer Headdress", from: dungeon, where: "Razorfen Kraul, Roogug", basis: forever}
+          - {slot: "Hands", name: "Gloves of the Greatfather", from: craft, profession: leatherworking}
+          - {slot: "Ring", name: "Philanthropist's Ring", from: quest, where: "*Greater Friend of the Library*, a library book quest", basis: forever}
+      l40:
+        text: "The Skycaller's leather items are the next crafted items that the fan lists use for Balance. Enchanting makes a second relic and an off-hand item. Moonkin Form multiplies the armor of your items, so leather is better than cloth from level 40."
+        items:
+          - {slot: "One-hand mace", name: "Galgann's Firehammer", from: dungeon, where: "Uldaman, Galgann Firehammer", basis: forever}
+          - {slot: "Off-hand", name: "Truesilver Conduit", from: craft, profession: enchanting}
+          - {slot: "Relic", name: "Talons of Wrath", from: craft, profession: enchanting}
+          - {slot: "Hands", name: "Skycaller's Leather Gloves", from: craft, profession: leatherworking}
+          - {slot: "Shoulders", name: "Skycaller's Leather Shoulders", from: craft, profession: leatherworking}
+          - {slot: "Wrist", name: "Charged Leather Bracers", from: quest, where: "*Power Stones*, Uldaman", basis: forever}
+          - {slot: "Trinket", name: "Glowing Eye of Mordresh", from: dungeon, where: "Razorfen Downs, Mordresh Fire Eye", basis: forever}
+      l50:
+        text: "The Ironfeather items from Leatherworking are in the level 60 list of Timesaver.gg. Blackmaw Hold has 1 caster item with a name in the public data."
+        items:
+          - {slot: "Shoulders", name: "Ironfeather Shoulders", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Ironfeather Breastplate", from: craft, profession: leatherworking}
+          - {slot: "Wrist", name: "Skycaller's Leather Bracers", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Robes of Dark Summons", from: dungeon, dungeon: blackmaw-hold, where: "Impaan the Imprisoner. Only wowtbc.gg names it", basis: forever}
+          - {slot: "Trinket", name: "Shard of the Splithooves", from: quest, where: "*Heroes of Old*, Blasted Lands", basis: forever}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting}
+      l60:
+        text: "No source has a tested list for level 60. These items are in the list of Timesaver.gg. The Wildheart set still drops in the Classic level 60 dungeons. No source gives a spell hit number, so read the tooltips for hit."
+        items:
+          - {slot: "Head", name: "Wildheart Cowl", from: dungeon, where: "Scholomance, Darkmaster Gandling", basis: forever}
+          - {slot: "Feet", name: "Wildheart Boots", from: dungeon, where: "Lower Blackrock Spire, Mother Smolderweb", basis: forever}
+          - {slot: "Neck", name: "Orb of the Darkmoon", from: quest, where: "*1200 Tickets*, Darkmoon Faire", basis: forever}
+          - {slot: "Waist", name: "Girdle of Insight", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Devilsaur Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Dagger", name: "Black Crystal Dagger", from: quest, where: "*Wanted - Deathclasp, Terror of the Sands*, Silithus", basis: forever}
+          - {slot: "Off-hand", name: "Truesilver Conduit", from: craft, profession: enchanting}
+          - {slot: "Set", name: "Feralheart Raiment", from: any, where: "Dungeon Set 2. One fan list says that vendors sell it", basis: unverified}
+      raid:
+        text: "Cloak of Earth and Sky needs Malleable Essence of Nature, which reportedly comes from raid items. Living Crown and Ironfeather Leggings need Fel Leather, and no source says where it comes from."
+        items:
+          - {slot: "Back", name: "Cloak of Earth and Sky", from: craft, profession: tailoring}
+          - {slot: "Head", name: "Living Crown", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Ironfeather Leggings", from: craft, profession: leatherworking}
+  - id: healer
+    name: "Restoration: healing"
+    pitch: "The set for a healer, and the second set of a Feral Druid with dual spec. You wear leather or cloth with healing power, Spirit and Intellect. Healing items also have spell power, so the set works for solo casts."
+    stats: "Leveling: Intellect, Healing Power > Stamina, Spirit > Armor. Level 60 (Warcraft Tavern, not final): Healing Power, Spirit, Crit, Haste, Intellect"
+    chapters:
+      l1:
+        text: "Take Intellect and Spirit on each item. Your weapon is the staff from a quest."
+      l10:
+        text: "Keep a staff with Intellect or Spirit for dungeons. The Wisdom's leather items are new rare items from Leatherworking. Timesaver.gg uses them for Restoration."
+        items:
+          - {slot: "One-hand mace", name: "Thornroot Club", from: quest, where: "*Ursal the Mauler*, Teldrassil (Alliance)", basis: forever}
+          - {slot: "One-hand mace", name: "Trogg Scepter", from: dungeon, where: "Ragefire Chasm, Oggleflint (Horde)", basis: forever}
+          - {slot: "Staff", name: "Staff of Westfall", from: quest, where: "*The Defias Brotherhood*, Westfall (Alliance)", basis: forever}
+          - {slot: "Staff", name: "Living Root", from: dungeon, where: "Wailing Caverns, Verdan the Everliving (Horde)", basis: forever}
+          - {slot: "Neck", name: "Ephemeral Choker", from: dungeon, dungeon: hall-of-thanes, where: "Faldrim Anvilmar", basis: forever}
+          - {slot: "Back", name: "Spiritwraith Drape", from: dungeon, dungeon: hall-of-thanes, where: "Faldrim Anvilmar", basis: forever}
+          - {slot: "Waist", name: "Wisdom's Leather Belt", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Wisdom's Leather Armor", from: craft, profession: leatherworking}
+      l20:
+        text: "Timesaver.gg selects the Wisdom's hood at level 20 and the staff of Odo the Blindwatcher at level 25. The relic from Enchanting is in the Restoration list of wowtbc.gg."
+        items:
+          - {slot: "Staff", name: "Odo's Ley Staff", from: dungeon, where: "Shadowfang Keep, Odo the Blindwatcher", basis: forever}
+          - {slot: "Head", name: "Wisdom's Leather Hood", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Wisdom's Leather Tunic", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Wisdom's Leather Leggings", from: craft, profession: leatherworking}
+          - {slot: "Relic", name: "Mystic Mushroom", from: craft, profession: enchanting}
+          - {slot: "Neck", name: "Erudite's Amulet", from: quest, where: "*Friend of the Library*, a library book quest", basis: forever}
+      l30:
+        text: "The quest in Excavation Site gives a staff for healers. The ring from City of Dalaran stays in the Restoration list of Timesaver.gg to level 60."
+        items:
+          - {slot: "Staff", name: "Healer's Staff", from: quest, where: "*Prehistoric Prism* (Alliance) or *Earthen Echo* (Horde), Excavation Site", basis: forever}
+          - {slot: "Ring", name: "Runemender's Seal", from: dungeon, dungeon: city-of-dalaran, where: "Arcane Anomaly", basis: forever}
+          - {slot: "Waist", name: "Mender's Leather Belt", from: craft, profession: leatherworking}
+      l40:
+        text: "With dual spec at level 40, this set becomes necessary. Timesaver.gg keeps the mace of High Inquisitor Whitemane to level 60. Use it with an off-hand item."
+        items:
+          - {slot: "One-hand mace", name: "Hand of Righteousness", from: dungeon, where: "Scarlet Monastery, Cathedral, High Inquisitor Whitemane", basis: forever}
+          - {slot: "Off-hand", name: "Ponderous Orb", from: dungeon, dungeon: city-of-dalaran, where: "Shade of the Archmage", basis: forever}
+          - {slot: "Off-hand", name: "Prophetic Cane", from: quest, where: "*Into The Scarlet Monastery*", basis: forever}
+          - {slot: "Off-hand", name: "Twisting Essence Jar", from: craft, profession: enchanting}
+          - {slot: "Hands", name: "Mender's Leather Gloves", from: craft, profession: leatherworking}
+          - {slot: "Shoulders", name: "Mender's Leather Shoulders", from: craft, profession: leatherworking}
+      l50:
+        text: "The Mender's bracers and gauntlets are in the level 60 list of Timesaver.gg. Feathered Breastplate is a trainer recipe that wowtbc.gg lists for Restoration."
+        items:
+          - {slot: "Wrist", name: "Mender's Leather Bracers", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Mender's Leather Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Feathered Breastplate", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Ironfeather Breastplate", from: craft, profession: leatherworking}
+      l60:
+        text: "The Restoration list of Timesaver.gg is not complete. It still has items from level 30 to 40 in the ring, trinket and weapon slots. These items are in that list or in the list of wowtbc.gg. HoTs can crit in Forever, so crit has more value than in Classic."
+        items:
+          - {slot: "Shoulders", name: "Wildheart Spaulders", from: dungeon, where: "Lower Blackrock Spire, Gizrul the Slavener", basis: forever}
+          - {slot: "Legs", name: "Wildheart Kilt", from: dungeon, where: "Stratholme, Baron Rivendare", basis: forever}
+          - {slot: "Feet", name: "Wildheart Boots", from: dungeon, where: "Lower Blackrock Spire, Mother Smolderweb", basis: forever}
+          - {slot: "Back", name: "Hide of the Wild", from: craft, profession: leatherworking}
+          - {slot: "Neck", name: "Orb of the Darkmoon", from: quest, where: "*1200 Tickets*, Darkmoon Faire", basis: forever}
+          - {slot: "Weapon", name: "Hammer of the Grand Crusader", from: dungeon, where: "Stratholme, Balnazzar", basis: forever}
+          - {slot: "Off-hand", name: "Twisting Essence Jar", from: craft, profession: enchanting}
+          - {slot: "Set", name: "Feralheart Raiment", from: any, where: "Dungeon Set 2. One fan list says that vendors sell it", basis: unverified}
+      raid:
+        text: "The Elderwild items and Idol of Swiftness need Malleable Essence of Nature, which reportedly comes from raid items. Living Crown needs Fel Leather, and no source says where it comes from."
+        items:
+          - {slot: "Waist", name: "Elderwild Waistcord", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Elderwild Pants", from: craft, profession: leatherworking}
+          - {slot: "Relic", name: "Idol of Swiftness", from: craft, profession: enchanting}
+          - {slot: "Head", name: "Living Crown", from: craft, profession: leatherworking}
+
+equipment:
+  intro: |
+    A Druid uses 3 different sets of items. Feral needs leather with Strength and Agility and a strong two-hand weapon. Balance needs spell damage, and Restoration needs healing power. With dual spec at level 40, you carry 2 of these sets.
+
+    About 40% of the items of Forever had hidden stats at launch. The stats of an item become visible when a player first finds it. Thus, no source has a tested list for level 60. The item names on this page come from Timesaver.gg (data of 6 November 2026), Method.gg, wowtbc.gg and Warcraft Tavern. The Codex did not verify the stats.
+
+    The crafted leather items have families with a name, for example Brawler's, Totemic, Wisdom's, Skulker's, Skycaller's, Mender's and Warden's. The client data gives no stats. The role of each family on this page comes from the fan lists that use it.
+  proficiencies:
+    - ["Leather and cloth armor", "Level 1", "No mail, no plate and no shields. A lower armor type has no penalty in Forever"]
+    - ["Staves", "Level 1", "A default weapon skill for the 2 factions"]
+    - ["Daggers", "Level 1 (Alliance) or weapon master", "Horde trainers: Sayoc in Orgrimmar and Archibald in the Undercity"]
+    - ["One-hand maces", "Level 1 (Horde) or weapon master", "Alliance trainer: Buliwyf Stonehand in Ironforge"]
+    - ["Two-hand maces", "Weapon master, 10 silver", "Buliwyf Stonehand in Ironforge and Ansekhwa in Thunder Bluff"]
+    - ["Fist weapons", "Weapon master, 10 silver", "Ilyenia Moonfire in Darnassus, Buliwyf Stonehand in Ironforge and Sayoc in Orgrimmar"]
+    - ["Polearms", "Weapon master, level 20, 1g", "New for Druids. Woo Ping in Stormwind and Archibald in the Undercity"]
+    - ["Off-hand items", "Level 1", "Use them with a one-hand mace or a dagger. They can have an enchant in Forever"]
+    - ["Idols (relic slot)", "Level 16", "For Druids only. The first idol comes from the Aquatic Form quest"]
+  rules:
+    - "In form, your auto-attack uses the DPS of your weapon. Shred, Claw, Ravage, Primal Bite and Lacerate do a percentage of weapon damage."
+    - "Weightstones, sharpening stones, weapon enchants and Windfury Totem work in form."
+    - "Potions and most consumables work in form. Potions still have 1 shared cooldown."
+    - "Hit is 1 stat for melee, ranged attacks and spells. A melee attack needs 9% hit against a raid boss (Warcraft Tavern)."
+    - "Nature's Reach gives 4% hit. Its tooltip does not limit the hit to spells, and Warcraft Tavern uses it for Cat."
+    - "Expertise is a new stat. It replaces weapon skill, and it decreases the chance that an enemy dodges or parries. No source gives a confirmed cap."
+    - "A tank needs 440 Defense against raid bosses (Warcraft Tavern)."
+    - "Weapons have spell damage and healing from about level 10. Healing items also have spell power."
+    - "HoTs can crit in Forever. Haste does not make DoTs or HoTs tick faster (Warcraft Tavern)."
+    - "Method.gg says that the Embrace of the Viper set and the Blackened Leather set have new bonuses."
+    - "Many of the best patterns cost Merchant's Favor at Three Corners in Redridge Mountains."
+    - "Each profession gives a camp feature in place of a passive stat."
+  enchants:
+    - ["Two-hand weapon (Feral)", "Crusader, or Agility or Strength (+25)", "Enchant 2H Weapon - Strength is new. The values are from Method.gg (beta data)"]
+    - ["Two-hand weapon (caster)", "Spellblasting (+65 spell power)", "New. Mighty Spell Power gives up to +55. The values are from Method.gg (beta data). The level 300 recipes need Nexus Crystal, Fel Crystal or Torbernite, and no source says where they come from"]
+    - ["Two-hand weapon (healer)", "Mighty Healing Power", "New. Up to 100 healing and 34 spell damage (Method.gg, beta data). It needs the same reagents"]
+    - ["Off-hand item", "Excellent Spirit (+12) or Superior Intellect (+9)", "New slot"]
+    - ["Necklace", "Agility, Strength, Deflection, Spell Power or Healing Power", "New slot. Enchanting skill 210"]
+    - ["Chest", "Greater Stats (+4)", "Value from Method.gg (beta data)"]
+    - ["Bracers", "Superior Strength or Agility (+9), or Greater Spellpower (+16)", "Greater Spellpower is new. The values are from Method.gg (beta data)"]
+    - ["Gloves", "Superior Agility or Strength (+15)", "Value from Method.gg (beta data)"]
+    - ["Boots", "Greater Agility (+7) or Greater Stamina (+7)", "Value from Method.gg (beta data)"]
+    - ["Cloak", "Agility, or Armor (+70)", "Enchant Cloak - Agility is new. The armor value is from Method.gg (beta data). Use Greater Resistance for Onyxia's Lair"]
+    - ["Head, legs, hands, feet", "Forceful Armor Kit or Mystic Armor Kit", "New. Forceful gives Attack Power and armor. Mystic gives spell power and armor. The Rugged kits need Fel Hide, and no source says where it comes from"]
+  consumables:
+    - ["Leveling, Feral", "Coarse to Dense Weightstone", "A weightstone is for a mace or a staff. A polearm uses a sharpening stone (Classic rule)"]
+    - ["Leveling, Feral", "Rage Potion, Great Rage Potion, Thistle Tea", "Rage for Bear and Energy for Cat. They work in form"]
+    - ["Leveling, caster", "Minor Wizard Oil, Minor Mana Oil", "Enchanting skill 5 and 150"]
+    - ["All levels", "Healing potions", "First Aid now makes them, from Minor Healing Potion to Major Healing Potion"]
+    - ["Level 60, Cat", "Elixir of the Mongoose, Major Frenzy Potion", "Major Frenzy Potion is new: +80 Attack Power for 30 seconds (Method.gg, beta data)"]
+    - ["Level 60, Cat", "Major Mana Potion", "Mana for Shifting Power"]
+    - ["Level 60, Bear", "Mighty Rage Potion, Greater Stoneshield Potion, Flask of the Titans", "The Kami-labs simulation uses about 1.5 Mighty Rage Potions for each fight"]
+    - ["Level 60, Balance", "Greater Arcane Elixir, Major Spellblasting Potion, Brilliant Wizard Oil", "Major Spellblasting Potion is new: +47 spell damage for 30 seconds (Method.gg, beta data)"]
+    - ["Level 60, Restoration", "Greater Mageblood Elixir, Brilliant Mana Oil, Sage's Tea", "Sage's Tea is new food: +44 healing power (Method.gg, beta data)"]
+    - ["Raids", "Flask of Natural Accuracy and the 3 other Natural flasks", "New. 60 Stamina and 4% to 5% of 1 stat (Method.gg, beta data). They work only in Mount Hyjal, Hyjal Summit and the Barrow Deeps"]
+    - ["Raids", "Greater Fire Protection Potion", "For Onyxia's Lair"]
+  sources:
+    - {title: "Timesaver.gg: Feral Druid leveling gear, level by level", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/druid/feral"}
+    - {title: "Timesaver.gg: Balance Druid leveling gear", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/druid/balance"}
+    - {title: "Timesaver.gg: Restoration Druid leveling gear", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/druid/restoration"}
+    - {title: "Method.gg: Druid leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-druid-leveling-guide-and-talents"}
+    - {title: "Method.gg: consumables and enchants", url: "https://www.method.gg/wow-forever/list-of-all-consumables-and-enchants-in-wow-forever"}
+    - {title: "Method.gg: itemization updates", url: "https://www.method.gg/wow-classic/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more"}
+    - {title: "Warcraft Tavern: Feral Druid guide", url: "https://www.warcrafttavern.com/forever/guides/feral-druid/"}
+    - {title: "Warcraft Tavern: Balance Druid guide", url: "https://www.warcrafttavern.com/forever/guides/balance-druid/"}
+    - {title: "Warcraft Tavern: Restoration Druid guide", url: "https://www.warcrafttavern.com/forever/guides/restoration-druid/"}
+    - {title: "Warcraft Tavern: weapon trainers", url: "https://www.warcrafttavern.com/forever/guides/weapon-trainers/"}
+    - {title: "wowtbc.gg: Feral Druid item list for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/feral-dps-druid/"}
+    - {title: "wowtbc.gg: Bear Druid item list for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/feral-tank-druid/"}
+    - {title: "wowtbc.gg: Balance Druid item list for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/balance-druid/"}
+    - {title: "wowtbc.gg: Restoration Druid item list for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/restoration-druid/"}
+    - {title: "LFCarry: sets and crafted tier items (beta data)", url: "https://lfcarry.com/guides/wow-forever-bis-lists"}
+    - {title: "Blizzard: raid overview", url: "https://news.blizzard.com/en-us/article/24303009/"}
+
+# ------------------------------------------------------------------ other sections
+professions: |
+  A Druid wears leather and uses potions in each form. Thus, the best pair depends on your role.
+
+  | Rank | Professions | Use them for | Camp features |
+  |---|---|---|---|
+  | **S**{ .tier .tier-s } | [Leatherworking](../../professions/leatherworking.md) + [Skinning](../../professions/skinning.md) | Feral and leveling. Leather for each role, armor kits and many new patterns. You skin the enemies that you kill | Camp Tent (rested XP) and Camp Chair (+2% crit) |
+  | **A**{ .tier .tier-a } | [Herbalism](../../professions/herbalism.md) + [Alchemy](../../professions/alchemy.md) | Balance and Restoration in raids. Potions work in form. Travel Form makes Herbalism fast | Incense Candle (Intellect) and Mana Well (mana regeneration) |
+  | **B**{ .tier .tier-b } | [Mining](../../professions/mining.md) + [Engineering](../../professions/engineering.md) | PvP. SAF-T and EZ-Thro bombs work in form | Lodestone (melee Attack Power) and Reagent Bot |
+
+  [Enchanting](../../professions/enchanting.md) makes the crafted idols, staves and off-hand items. [First Aid](../../professions/first-aid.md) now makes healing potions. [Cooking](../../professions/cooking.md) makes the food for campfires, and [Fishing](../../professions/fishing.md) gives the Fish Bowl for your camp. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+  A Tauren with Herbalism gets more herbs from Cultivation. Professions give no passive stats in Forever. Each crafting profession gives a [camp feature](../../systems/camping.md) and Legacy Points at skill 150, 225 and 300.
+
+legacy: |
+  You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character.
+
+  | Goal | Picks for a Druid |
+  |---|---|
+  | Leveling | **Well Rested** 5/5, then **Talented** 5/5. Talented gives your first talent point up to 5 levels earlier. Also *Thrill of Adventure* and *Frequent Flier* |
+  | Level 60 | **Permanence** makes Mark of the Wild and Thorns last longer. **Reagent Economy** removes the reagents of Rebirth and of the group Mark. Also *Gourmand* |
+  | PvP | *For Great Honor* and *The Quick and the Dead* |
+  | Gathering | *Bountiful Harvest* and *Working Overtime* |
+
+mistakes:
+  - "You do not do the Aquatic Form quest at level 16."
+  - "You forget that Faerie Fire is free and works in form."
+  - "You refresh Rip and Rake before they end."
+  - "You level as Feral with a caster weapon. The damage of your form depends on the DPS of your weapon."
+  - "You do not go to the trainer at each even level."
+  - "You use all your mana on shifts, and you have no mana for a heal."
+  - "You tank a group of 4 or more enemies with Swipe only. Swipe hits 3 targets."
+
+faq:
+  - q: "Is powershifting still necessary?"
+    a: "No. Furor 5/5 gives back your Energy when you return to Cat Form, and Shifting Power changes mana into 40 Energy."
+  - q: "Must I leave my form to drink a potion?"
+    a: "No. Potions, Rage potions, Thistle Tea and most consumables work in form."
+  - q: "Is the Bear a real tank in Forever?"
+    a: "Yes, for dungeons and for the 10-player raid. Threat is +115% and Growl works like Taunt. Beta tier lists put the Bear below Warrior and Paladin. Launch hotfixes changed threat again, and no raid data exists."
+  - q: "Where are Mangle, Berserk and Tiger's Fury?"
+    a: "Primal Bite replaced Mangle. Shifting Power replaced Tiger's Fury. Blizzard removed Berserk before launch."
+  - q: "At which level do I get Shifting Power, Lacerate and Primal Bite?"
+    a: "In the launch client, Shifting Power and Primal Bite need 30 Feral points. The leveling build takes Shifting Power at 40, Lacerate at 41 and Primal Bite at 42. Beta-era guides give lower levels."
+  - q: "Can I use Feral Charge in Cat Form?"
+    a: "This is not confirmed. Beta-era guides gave Feral Charge a Cat version. The tooltip in the launch client lists only Bear Form and Dire Bear Form."
+  - q: "Why can I not use Ravage from Shadowmeld?"
+    a: "A hotfix on 6 November stopped Ravage and Pounce from Shadowmeld for Night Elf Druids. Use Prowl."
+  - q: "Feral Swiftness or Feline Swiftness?"
+    a: "The launch client calls the talent Feral Swiftness. Feline Swiftness is the Classic name, and some guides still use it."
+  - q: "Moonkin Form or Leader of the Pack?"
+    a: "Each aura gives 3% crit to the raid. Reportedly, they do not stack, so a raid needs only 1 of them."
+  - q: "Which race is best?"
+    a: "The differences are marginal. Tauren is the best Bear. Night Elf has the best burst for Cat. The 2 Skyborne races have haste for Balance and Cat. Read the Race add-ons: [Night Elf](night-elf.md), [High Order Skyborne](skyborne-high-order.md), [Tauren](tauren.md) and [Windshaper Skyborne](skyborne-windshaper.md)."
+
+sources:
+  - {title: "Warcraft Tavern: Druid guide", url: "https://www.warcrafttavern.com/forever/guides/druid/"}
+  - {title: "Warcraft Tavern: Druid leveling guide", url: "https://www.warcrafttavern.com/forever/guides/druid-leveling/"}
+  - {title: "Warcraft Tavern: Feral Druid guide", url: "https://www.warcrafttavern.com/forever/guides/feral-druid/"}
+  - {title: "Warcraft Tavern: Hunter & Druid deep dive", url: "https://www.warcrafttavern.com/forever/news/powershifting-is-back-sort-of-hunter-druid-deep-dive-for-wow-forever/"}
+  - {title: "Method.gg: Druid leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-druid-leveling-guide-and-talents"}
+  - {title: "Kami-labs: Guardian Druid PvE build", url: "https://kami-labs.fr/en/wow-forever/build-druide-gardien-wow-forever/"}
+  - {title: "Mobalytics: Druid guides", url: "https://mobalytics.gg/wow-forever/druid-guides"}
+  - {title: "Warcraft Wiki: Druid abilities (Forever)", url: "https://warcraft.wiki.gg/wiki/Druid_abilities_(Forever)"}
+  - {title: "games.gg: best tank classes", url: "https://games.gg/world-of-warcraft/guides/wow-forever-guide-best-tank-classes/"}

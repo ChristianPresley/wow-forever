@@ -548,6 +548,48 @@
     document.querySelectorAll("details.fc-switcher__box").forEach(function (d) { d.open = !phone.matches; });
   });
 
+  /* ---------- class progressions: the add-on picker ---------- */
+  /* The picker holds 3 radio groups (race, talents, gear). Each chapter of the page holds
+     .fc-addon blocks with data-pick and data-value. window.fcPick (overrides/main.html) writes
+     the CSS that shows the picked blocks. The picks are saved per class and are in the URL. */
+  var PICKS = ["race", "talents", "gear"];
+  function initPicker(root) {
+    var P = window.fcPick;
+    if (!P) return;
+    var box = root.querySelector(".fc-pick");
+    if (!box) { P.paint(null); return; }
+    var cls = box.getAttribute("data-class"), key = "fc:pick:" + cls;
+    var state = P.read(cls);
+    var all = box.querySelector("input[name=fc-all]");
+    PICKS.forEach(function (k) {
+      var radios = Array.prototype.slice.call(box.querySelectorAll('input[name="fc-' + k + '"]'));
+      var hit = radios.filter(function (r) { return r.value === state[k]; })[0] || radios[0];
+      if (hit) { hit.checked = true; state[k] = hit.value; }
+    });
+    if (all) all.checked = !!state.all;
+    P.paint(state);
+    if (box.dataset.fcInit) return;
+    box.dataset.fcInit = "1";
+    box.addEventListener("change", function (e) {
+      var t = e.target;
+      if (!t || !t.name) return;
+      if (t.name === "fc-all") state.all = t.checked || undefined;
+      else state[t.name.slice(3)] = t.value;
+      save(key, state);
+      P.paint(state);
+      try {
+        var q = new URLSearchParams(location.search);
+        PICKS.forEach(function (k) { if (state[k]) q.set(k, state[k]); });
+        history.replaceState(history.state, "", location.pathname + "?" + q.toString() + location.hash);
+      } catch (err) { /* file: URLs */ }
+      var names = PICKS.map(function (k) {
+        var r = box.querySelector('input[name="fc-' + k + '"]:checked');
+        return r ? r.parentNode.textContent.trim() : "";
+      }).filter(Boolean).join(", ");
+      announce(state.all ? "All add-ons show" : "Add-ons: " + names);
+    });
+  }
+
   /* ---------- scrollable tables become labelled, focusable regions ---------- */
   function labelScrollers(root) {
     root.querySelectorAll(".md-typeset__scrollwrap").forEach(function (wrap) {
@@ -588,7 +630,7 @@
   function onPage() {
     var root = content();
     if (!root) return;
-    var steps = [labelPermalinks, initProgress, initFilter, initSwitcher, initAbbr, buildContents, labelScrollers];
+    var steps = [labelPermalinks, initPicker, initProgress,initFilter, initSwitcher, initAbbr, buildContents, labelScrollers];
     steps.forEach(function (fn) {
       try { fn(root); } catch (err) { if (window.console) console.error("codex.js:", fn.name, err); }
     });

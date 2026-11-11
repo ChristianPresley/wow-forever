@@ -1,0 +1,869 @@
+class: Warrior
+badges: [tank, dps]
+description: "Warrior progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
+aka: "War · Warr · Arms, Fury or Prot warrior"
+
+intro: |
+  The Warrior is a melee class that tanks or does damage. This page follows 1 Warrior from character creation to the raids, level by level. It tells you what changes in each level range: the abilities and stances that you train, and the way that you fight. It also gives the weapons, the dungeons and the decisions.
+
+glance:
+  - ["Role", "Tank (Protection), melee damage (Arms, Fury)"]
+  - ["Armor", "Cloth, leather and mail from level 1. **Plate**{ .pill .pill--plate } at level 40"]
+  - ["Weapons", "All types but wands. Shields. Polearms from level 20"]
+  - ["Resource", "**Rage**{ .pill .pill--rage }"]
+  - ["Races", "10 combinations: each race can be a Warrior"]
+  - ["Leveling speed", "Players in the beta reported it as one of the 2 slowest classes, with Priest"]
+
+strengths:
+  - "The tank class with the most support. Defensive Stance gives 80% more threat in Forever"
+  - "Very high damage with good weapons, and 2-target damage from Sweeping Strikes and Whirlwind"
+  - "Armor and absorbs no longer decrease the rage that you get from hits on you"
+  - "Victory Rush and Tactical Mastery are baseline, so the first levels are easier than in Classic"
+
+weaknesses:
+  - "Slow kills at low levels. Almost all your damage comes from your weapon"
+  - "Little self-healing and almost no crowd control. You need a healer for hard content"
+  - "A Warrior with a bad weapon is much weaker than other classes with a bad weapon"
+
+changes:
+  added: ["Normalized rage", "Victory Rush baseline", "Tactical Mastery baseline", "Spearing Strike", "Bloodthrill", "Weaponmaster", "Furious Precision", "Reckless Swings", "Gore Drinker", "Improved Whirlwind", "Master of Defense", "Vanguard", "Focused Rage", "Lingering Rage"]
+  removed: ["Weapon specializations", "Improved Battle Shout", "Improved Demoralizing Shout", "Improved Shield Block", "Improved Taunt"]
+  notes:
+    - "**Rage.** The game calculates rage from hits on you as if your armor is always 50%. Absorbs do not decrease it."
+    - "Rage from your hits depends on weapon speed. A crit gives 75% more rage."
+    - "**Tactical Mastery** is baseline at level 14. You keep 10 rage when you change stance."
+    - "**Victory Rush** is baseline at level 20. It has a 30 second cooldown and heals 10% of your health."
+    - "**Defensive Stance** gives 80% more threat. In Classic it gave 30%. A hotfix of 4 November changed the threat of Defensive Stance and Defiance again."
+    - "**Thunder Clap** works in Defensive Stance with a 6 second cooldown. Rend and Thunder Clap scale with attack power."
+    - "Recklessness, Retaliation and Shield Wall do not share a cooldown. Retaliation and Shield Wall have a 15 minute cooldown."
+    - "**Weaponmaster** replaces the weapon specializations. **Bastion** replaces One-Handed Weapon Specialization."
+    - "**Slam** has a 15 second cooldown. Improved Slam decreases it to 10 seconds, and Slam then does not delay your swing."
+    - "**Bloodthirst** does not heal. It gives 10% movement speed. Flurry does not need Death Wish. Death Wish increases the damage that you take by 5%."
+    - "Improved Revenge gives damage, not a stun. Sunder Armor and the Expose Armor of a Rogue can be on 1 target together."
+    - "The effects of Improved Battle Shout, Improved Demoralizing Shout, Improved Shield Block and Improved Taunt are now part of the base abilities."
+    - "Guides from the beta list Raging Blows, Boundless Rage and Precision. The launch client does not have these talents."
+
+# ------------------------------------------------------------------ chapters
+chapters:
+  - id: start
+    title: "Make your Warrior"
+    story: |
+      A Warrior fights in melee range and uses rage. You get rage when you hit an enemy and when an enemy hits you. Rage starts at 0 and decreases out of combat, so each fight starts slowly.
+
+      The class has 3 stances. Battle Stance is the first stance. You get Defensive Stance at level 10 and Berserker Stance at level 30. Each stance permits different abilities. Forever makes stance changes cheaper than Classic, and Protection can stay in 1 stance.
+
+      A Warrior can do 2 jobs. Protection uses a shield and tanks for a group. Arms uses a two-hand weapon. Fury uses 2 weapons. In Forever, Protection is also a good solo leveling tree, because blocks give rage and Revenge does damage.
+
+      Your weapon is more important than for other classes. Method estimates that almost all your leveling damage comes from the weapon. Thus each equipment set on this page starts with the weapon.
+
+      Players in the beta reported the Warrior as one of the 2 slowest classes to level. Elite quests and dungeon quests give much more XP in Forever. Thus a group helps a Warrior more than it helps other classes.
+
+      You make 3 decisions before level 1: your race, your talent path and your equipment set. You can change the talents and the equipment later. You cannot change the race.
+    goals:
+      - "Select a race. Read its Race add-on."
+      - "Select a talent path. Protection is the safe selection for a solo Warrior."
+      - "Read the [Professions](#professions) section. Mining and Blacksmithing are the usual selection."
+
+  - id: l1
+    title: "Charge, Rend and your first weapons"
+    story: |
+      You start in Battle Stance with Heroic Strike and Battle Shout. Keep Battle Shout on you. Heroic Strike replaces your next swing and costs rage, so use it only with rage that you do not need.
+
+      Level 4 gives Charge and Rend. Charge is your pull: it moves you to the enemy and gives rage. Rend is a Bleed that scales with attack power in Forever. A Bleed does its damage during some seconds. Use Charge, then Rend. After that, your weapon swings do most of the damage.
+
+      A solo kill of a usual enemy takes 10 to 15 seconds. You have no heal. Fight 1 enemy at a time, and eat when your health is low. Hamstring at level 8 slows an enemy that runs away.
+
+      Take each weapon reward. When you get a better weapon, sell the old one. Look at the Auction House for a weapon at each level. The game no longer adds new abilities to your action bars. After each visit to the trainer, move the new abilities from the spellbook to a bar.
+
+      Learn Cooking and do the quest *The Great Outdoors* at about level 5. It unlocks [camping](../../systems/camping.md), and the campfire gives rested XP. Learn First Aid also, because it now makes healing potions and bandages.
+    train:
+      - [1, "Heroic Strike, Battle Shout", "Your first attack and your first buff. You start in Battle Stance"]
+      - [4, "Charge, Rend", "Charge starts each fight with rage. Rend scales with attack power in Forever"]
+      - [6, "Thunder Clap", "Damage to all enemies near you. Classic-era level"]
+      - [8, "Hamstring", "A slow for enemies that run away, and for PvP"]
+    tip: |
+      Use Charge to start each fight. In Classic it works only out of combat, so do not start a fight with a ranged pull.
+    hardcore: |
+      You cannot heal and you cannot escape. Do not fight 2 enemies at these levels. Run before your health is below 50%.
+    goals:
+      - "Train Charge and Rend at level 4."
+      - "Learn Cooking and First Aid. Do *The Great Outdoors*."
+      - "Learn your professions. The starter profession quest gives +2 skill."
+
+  - id: l10
+    title: "Defensive Stance and your first dungeon"
+    story: |
+      At level 10 your trainer gives the Defensive Stance quest. Do it immediately. It gives Defensive Stance, Sunder Armor and Taunt. The next quest in the chain gives a one-hand weapon. You also get your first talent point, and then 1 point at each level.
+
+      Now you have 2 stances, and each stance has different abilities. Charge needs Battle Stance. Revenge and Taunt need Defensive Stance. A stance change removes your rage until level 14. Then Tactical Mastery lets you keep 10 rage.
+
+      Overpower at 12 and Revenge at 14 are reactive abilities. Overpower becomes available when the enemy dodges. Revenge becomes available when you block, dodge or parry. They are cheap and strong, so put them on keys that you can reach quickly.
+
+      Your first dungeons open at level 13. Quests give much more XP than dungeon enemies, so do each dungeon for its quests. Meeting Stones cannot summon, so you must walk to the entrance.
+
+      A group expects a Warrior to tank, which means that the enemies attack you. An enemy attacks the player with the most threat. Use Defensive Stance and a shield, because Defensive Stance gives 80% more threat. Thus 1 target is easy to hold. On a group of enemies, use Thunder Clap and Demoralizing Shout. Then use Sunder Armor on each enemy in turn.
+
+      At level 14, start the scavenger hunt for the Cozy Sleeping Bag. It gives an XP buff and rested XP. See [Leveling](../../characters/leveling.md).
+    train:
+      - [10, "Defensive Stance, Sunder Armor, Taunt", "From the class quest. The tank stance and your first threat tools"]
+      - [10, "Bloodrage", "Rage for a small cost of health. Classic-era level"]
+      - [12, "Overpower", "Available after the enemy dodges. The main Arms ability for many levels"]
+      - [12, "Shield Bash", "Stops a cast. It needs a shield. Classic-era level"]
+      - [14, "Revenge, Demoralizing Shout", "Revenge is available after a block, a dodge or a parry"]
+      - [14, "Tactical Mastery", "Baseline in Forever. You keep 10 rage when you change stance"]
+      - [16, "Shield Block", "More blocks for a short time. Each block makes Revenge available. Classic-era level"]
+    dungeons:
+      - {name: "Ragefire Chasm", levels: "13–18", note: "It is in Orgrimmar"}
+      - {id: hall-of-thanes, levels: "13–20", note: "New. It is in Ironforge. It gives a first dungeon weapon to Alliance Warriors"}
+      - {id: ruins-of-lordaeron, levels: "15–22", note: "New. It is in Tirisfal Glades and has 6 bosses"}
+      - {name: "Wailing Caverns", levels: "15–24"}
+      - {name: "Deadmines", levels: "17–26"}
+    extra: |
+      ??? example "Macro for Overpower"
+
+          ```
+          #showtooltip Overpower
+          /cast [stance:1] Overpower; Battle Stance
+          ```
+
+          The first key press changes to Battle Stance. The second key press uses Overpower.
+    tip: |
+      Do not use your last rage on an enemy that is almost dead. Keep it for the next pull. Forever does not show zone levels in the game, so follow the route in the Race add-on.
+    hardcore: |
+      Use a shield from level 10. Do not pull more enemies than Thunder Clap and your health can hold.
+    goals:
+      - "Do the Defensive Stance quest at level 10 and spend your first talent point."
+      - "Tank your first dungeon for its quests."
+      - "Start the Cozy Sleeping Bag scavenger hunt at level 14."
+
+  - id: l20
+    title: "Victory Rush, Dual Wield and polearms"
+    story: |
+      Level 20 gives you Victory Rush. It is baseline in Forever, has a 30 second cooldown and heals 10% of your health. Use it on each kill. It is the first heal of the class, and it decreases the time that you eat.
+
+      You also train Retaliation at 20. It no longer shares a cooldown with Shield Wall and Recklessness. From level 20 a weapon master can teach polearms, and the Arms talent Weaponmaster gives crit to polearms. Warcraft Tavern says that you train Dual Wield from your class trainer at level 20.
+
+      Your talents now start to change how you fight. Each talent path gets the talent that defines it in these levels, and the Talents add-on gives the details. Execute at level 24 is the same for each path: use it on an enemy below 20% health.
+
+      At 20, turn in 10 library books to unlock the first book quest. Timesaver.gg lists the quest *Friend of the Library* with the necklace Erudite's Amulet. Warcraft Tavern lists class quests for mail armor at level 20. Timesaver.gg lists that armor only from level 30. Keep each class book that drops, because the later book quests need 20 and 25 books.
+
+      Level 25 gives the *Warrior: Novice* Legacy Point. Only the first Warrior on your account gets it. See [Legacy](../../characters/legacy.md).
+    train:
+      - [20, "Victory Rush", "Baseline in Forever. A 10% heal on a 30 second cooldown"]
+      - [20, "Retaliation", "An emergency cooldown against melee enemies. 15 minute cooldown"]
+      - [20, "Dual Wield", "Warcraft Tavern gives this level. No second source confirms it"]
+      - [20, "Cleave", "Your swing hits 2 enemies. Classic-era level"]
+      - [24, "Execute", "High damage to a target below 20% health. Classic-era level"]
+      - [28, "Shield Wall", "Your largest defensive cooldown. Classic-era level"]
+    dungeons:
+      - {name: "Shadowfang Keep", levels: "20–30"}
+      - {name: "Blackfathom Deeps", levels: "24–32"}
+      - {name: "The Stockade", levels: "25–29", note: "It is in Stormwind"}
+      - {id: excavation-site, levels: "26–33", note: "New. It is short, with 3 bosses. It gives the two-hander Heavehammer"}
+      - {id: city-of-dalaran, levels: "28–35", note: "New. Dalaran is hostile to the Horde"}
+    extra: |
+      ??? example "Macro for Victory Rush"
+
+          ```
+          #showtooltip Victory Rush
+          /cast Victory Rush
+          /startattack
+          ```
+
+          Put Victory Rush, Overpower and Revenge on keys that you can reach quickly.
+    hardcore: |
+      Protection gets Last Stand at level 26. Keep Last Stand, Retaliation and Shield Wall for emergencies. They do not share a cooldown in Forever.
+    goals:
+      - "Train Victory Rush at level 20. Use it on each kill."
+      - "Turn in 10 library books for the first book quest."
+      - "Train polearms if your Weaponmaster plan uses them."
+
+  - id: l30
+    title: "Berserker Stance and the Whirlwind weapon"
+    story: |
+      At level 30 your trainer sends you to Fray Island near Ratchet. The quest *The Affray* gives Berserker Stance, your third stance. Warcraft Tavern says that it also gives Intercept. Intercept is a second Charge that works in combat.
+
+      The quest chain continues in the Alterac Mountains with Bath'rah the Windwatcher. At the end you fight Cyclonian and select 1 of 3 two-hand weapons: Whirlwind Axe, Whirlwind Sword or Whirlwind Warhammer. Timesaver.gg still lists the Whirlwind Axe as the best two-hander at level 40. Do the chain on each path, because you can use the weapon in a second spec later. Method says that the chain is very hard at level 30. Take a friend, or buy the reagents from the Auction House.
+
+      Whirlwind at level 36 hits all enemies near you. It needs Berserker Stance. Arms and Fury now change stance in a fight: Battle Stance for Charge and Overpower, Berserker Stance for Whirlwind and Intercept.
+
+      The new battleground Battle for the Darkspear Islands opens at level 30. It has level brackets of 10 levels, so you fight players of levels 30 to 39.
+
+      Level 35 gives 3 more steps. The second book quest needs 20 library books. Artisan profession training opens. The new zone Riverglades opens at about this level, and it has more than 150 quests.
+
+      Start to save gold now. At level 40 you need 100g for riding, and dual spec costs 50g.
+    train:
+      - [30, "Berserker Stance, Intercept", "From the class quest *The Affray*. Tavern says that the quest also gives Intercept"]
+      - [30, "Slam", "A 15 second cooldown in Forever. Classic-era level"]
+      - [32, "Berserker Rage", "Rage, and immunity to Fear for a short time. Classic-era level"]
+      - [36, "Whirlwind", "Damage to all enemies near you. It needs Berserker Stance"]
+      - [38, "Pummel", "Stops a cast without a shield. Classic-era level"]
+    dungeons:
+      - {name: "Razorfen Kraul and Gnomeregan", levels: "29–38", note: "Razorfen Kraul gives Corpsemaker, Pronged Reaver and a shield"}
+      - {name: "Scarlet Monastery", levels: "30–46", note: "4 wings. The developers say that they do not know the drop of Herod"}
+      - {id: drowned-city, levels: "35–42", note: "New. No source lists its loot"}
+      - {name: "Razorfen Downs", levels: "37–46"}
+    extra: |
+      ??? example "Macro for Charge and Intercept"
+
+          ```
+          #showtooltip Charge
+          /cast [stance:1] Charge; [stance:3] Intercept; Battle Stance
+          ```
+
+          The macro uses Charge in Battle Stance and Intercept in Berserker Stance. In Defensive Stance it changes to Battle Stance. A Protection Warrior with Vanguard does not need it.
+    warn: |
+      Do not go to Cyclonian alone at level 30. The Whirlwind weapon is still useful if you get it at level 34.
+    goals:
+      - "Do *The Affray* at level 30 for Berserker Stance."
+      - "Complete the Whirlwind weapon chain. Select the weapon type for your Weaponmaster talent."
+      - "Turn in 20 library books at level 35 for the second book quest."
+      - "Save 150g before level 40."
+
+  - id: l40
+    title: "Plate, a mount and a second spec"
+    story: |
+      Level 40 is the largest step of the progression. Your class trainer teaches plate armor. You can buy riding for 100g, and the price includes your first mount. You can buy dual spec for 50g from your class trainer. Dual spec is a second set of talents, and you can change between the 2 sets.
+
+      Each talent path also gets its main ability at level 40: Shield Slam, Mortal Strike or Bloodthirst. Each costs rage and has a 6 second cooldown. From now on, you plan each fight around that cooldown.
+
+      Dual spec has much value for a Warrior. Keep Protection in 1 spec for dungeons and for safe solo play. Use the second spec for Arms or Fury. A tank finds a group quickly. The price of a respec decreases to 1g with time.
+
+      Replace your mail with plate step by step. Do not give up a better weapon for a plate item. Crafted Mithril plate from Blacksmithing fills the first slots.
+
+      At 45, the third book quest needs 25 library books. Level 45 also gives the *Warrior: Experienced* Legacy Point.
+    train:
+      - [40, "Plate armor", "From your class trainer. Replace mail step by step"]
+    dungeons:
+      - {id: kroldok-stronghold, levels: "40–47", note: "New. It is in Riverglades. No source lists its loot"}
+      - {name: "Uldaman", levels: "41–51", note: "Grimlok's Charge is the best known two-hander at level 45"}
+      - {name: "Zul'Farrak", levels: "44–54"}
+      - {name: "Maraudon", levels: "46–55", note: "Its quest gives Thrash Blade"}
+      - {id: alcaz-prison, levels: "48–55", note: "New. It is in Dustwallow Marsh"}
+    warn: |
+      Buy riding before dual spec if you do not have 150g. A mount saves more time than a second spec.
+    goals:
+      - "Train plate armor at level 40."
+      - "Buy riding (100g), then dual spec (50g)."
+      - "Turn in 25 library books at level 45 for the third book quest."
+
+  - id: l50
+    title: "Recklessness, hit and the last dungeons"
+    story: |
+      The last 10 levels have the most dungeons. Reportedly, each boss in the new dungeons drops a blue item. Run Sunken Temple, Blackrock Depths and Lower Blackrock Spire for equipment while you level. Tank each dungeon that you can, because a tank finds a group quickly.
+
+      The talent points of these levels do not change how you fight. They add crit, rage or defense to the abilities that you have. The Talents add-on gives the order.
+
+      Hit becomes important now. Dungeon bosses have a higher level than you, and a miss gives no damage and no rage. Method says that items with hit are rare before level 50.
+
+      Recklessness is the third large cooldown of the class. It does not share a cooldown with Retaliation and Shield Wall, so you can use all 3 in 1 fight.
+
+      As a damage dealer in a group, let the tank get threat for 2 or 3 seconds. Death Wish increases the damage that you take. Do not use it on a pull that is not safe.
+    train:
+      - [50, "Recklessness", "Your damage cooldown for boss fights. Classic-era level"]
+    dungeons:
+      - {name: "Sunken Temple", levels: "50–60"}
+      - {name: "Blackrock Depths", levels: "52–60"}
+      - {id: blackmaw-hold, levels: "55–60", note: "New. It is in Azshara. It has an entrance to the Barrow Deeps"}
+      - {name: "Lower Blackrock Spire", levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60", note: "New. It is in Un'Goro Crater"}
+    goals:
+      - "Do Blackmaw Hold and Shaper's Terrace for their quests."
+      - "Keep the items with hit that you find from level 50."
+      - "Level Blacksmithing or find a Blacksmith for your level 60 plate."
+
+  - id: l60
+    title: "The Drakefire Amulet, Defense and hit"
+    story: |
+      At level 60 you get the *Warrior: Master* Legacy Point. Mount Hyjal opens through Darkwhisper Gorge in Winterspring. The fast mount costs 1,000g.
+
+      All 3 launch raids open on 9 December 2026. The raids have 1 difficulty. Use the time before that date for 4 tasks. Respec to a level 60 build, which means that you learn your talents again. Get a weapon. Collect consumables. Do the attunement for Onyxia's Lair, which is the quest chain that lets you enter the raid.
+
+      The attunement gives the Drakefire Amulet. Its quest chain ends in Upper Blackrock Spire. The amulet must be in your bags, and it is not account-wide.
+
+      No source has a tested item list or a stat ranking for level 60. A tank needs 440 Defense to be immune to crits from raid bosses (Warcraft Tavern). A damage dealer needs hit: 8% with 1 weapon and 29% with 2 weapons (Method.gg). Warcraft Tavern gives 9% for 1 weapon.
+
+      The consumables are health potions from First Aid, weapon stones from Blacksmithing, Rage potions, elixirs and food. The Legacy talent Gourmand makes food buffs last longer. World buffs from the Chronoboon Displacer do not work in dungeons and raids.
+
+      Rewards from reputation and Honor fill the slots that the dungeons do not fill. Blue PvP items can be good first raid equipment.
+    dungeons:
+      - {id: blackmaw-hold, levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60"}
+      - {name: "Scholomance, Stratholme and Dire Maul", levels: "54–60", note: "The Classic dungeons are still in the game"}
+      - {name: "Upper Blackrock Spire", levels: "59–60", note: "10 players. The Onyxia attunement ends here"}
+    goals:
+      - "Respec to a level 60 build."
+      - "Do the attunement for Onyxia's Lair."
+      - "Collect consumables before 9 December: health potions, stones, elixirs and food."
+
+  - id: raid
+    title: "Tank or damage dealer in the 3 raids"
+    story: |
+      **The Barrow Deeps** has 10 players. A group probably takes 1 tank Warrior and 1 or 2 Warriors for damage. In a small raid, a second tank that also does damage has much value. See [The Barrow Deeps](../../content/raids/barrow-deeps.md).
+
+      **Hyjal Summit** has 20 players and 13 bosses on routes that branch. Expect 2 or 3 tanks. If the raid divides, each group needs a tank. See [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+      **Onyxia's Lair** has 40 players. The main tank holds Onyxia, and fire resistance helps. Onyxia is Dragonkin, so Spearing Strike does 75% more damage to her. See [Onyxia's Lair](../../content/raids/onyxias-lair.md).
+
+      In PvP, Arms is the usual spec. Mortal Strike decreases healing by 50%. Hamstring keeps you near the target. Spearing Strike dismounts riders and does 75% more damage to them. Victory Rush heals you after each kill.
+
+      The new battleground is the Battle for the Darkspear Islands. It has 15 players on each side, 4 bases and a flag in the center. A Warrior is a good flag carrier and base defender there, and Spearing Strike hits the players that ride between the bases. Fan sites say that Warsong Gulch, Arathi Basin and Alterac Valley are also in the game. See [Battlegrounds](../../content/pvp/battlegrounds.md).
+
+      PvP has seasons. You start each season at Rank 1 and can go up to Rank 14, and Honor buys blue and epic sets. On a PvP realm, other players can attack you almost everywhere. Charge and Intercept win fights against casters that do not look for you. See [PvP](../../content/pvp/index.md).
+    extra: |
+      The table gives Classic-era advice. No source has tested these fights in Forever.
+
+      | Enemy in PvP | What you do |
+      |---|---|
+      | Mage | The hardest enemy. Keep Intercept for the time after Blink. Use a trinket or a racial against Polymorph and Frost Nova |
+      | Rogue | Use Mortal Strike and Hamstring. Retaliation and your racial stop the burst |
+      | Hunter | Get to melee range quickly. Use Intercept after Concussive Shot. Stay out of the line of sight of the pet |
+      | Priest, Shaman, Druid | Use Mortal Strike against the heals. Stay near them through Fear and roots |
+      | Paladin | A long fight. Keep your burst for the time when Divine Shield is on cooldown |
+      | Warrior | The Warrior that hits first with Mortal Strike and Hamstring usually wins |
+    hardcore: |
+      [Hardcore](../../about/hardcore.md) comes in winter 2026/27. Level with Protection and a shield. You kill more slowly, but you are much safer. Carry bandages and potions, and use Victory Rush to restore health.
+
+      Select a race with a survival racial. For the Alliance: Will to Survive (Human), Stoneform (Dwarf), Escape Artist (Gnome) or Shadowmeld (Night Elf). For the Horde: War Stomp (Tauren) or Will of the Forsaken (Undead).
+
+      Legacy Points that you get on Hardcore apply to the other rulesets. Legacy Points from other rulesets do not apply to Hardcore.
+
+# ------------------------------------------------------------------ races
+races:
+  - id: human
+    name: Human
+    faction: alliance
+    status: Classic
+    pitch: "The safe Alliance selection. Will to Survive removes stuns, and Ruthless gives 1% crit, which also gives rage."
+    start: |
+      You start at Northshire Abbey in Elwynn Forest. Your first trainer is in the abbey (Classic: Llane Beshere). At level 6, go to Goldshire, which has a Warrior trainer. The trainers of Stormwind are in Old Town, near Champion's Hall.
+    notes:
+      l10: "At level 10, complete the east of Elwynn Forest, then go to Westfall. Forever removed the old Sword and Mace racials. The talent Weaponmaster now decides your weapon type."
+      l20: "The new boat from Stormwind Harbor to Auberdine is the fastest way to Darkshore and Ashenvale."
+      l30: "Humans have no weapon racial in Forever. Thus select the Whirlwind weapon for your talents, not for your race. Ruthless gives 1% crit with each weapon type."
+      raid: "Will to Survive is a second PvP trinket. Use it on Kidney Shot or Hammer of Justice, then use Intercept."
+  - id: dwarf
+    name: Dwarf
+    faction: alliance
+    status: Classic
+    pitch: "The Alliance tank race. Stoneform gives 10% less physical damage for 8 seconds, and Artisan's Precision gives 1% hit."
+    start: |
+      You start in Coldridge Valley in Dun Morogh. Your first trainer is at Anvilmar (Classic: Thran Khorman). At level 6, go to Kharanos, which has a Warrior trainer. The trainers of Ironforge are in the Hall of Arms in the Military Ward.
+    notes:
+      l10: "The new dungeon Hall of Thanes is in your capital. It is one of the best first sources of weapons. Mining is easy to level in Dun Morogh."
+      l20: "Big Game Hunter gives 5% more damage against Beasts. It helps in Loch Modan, the Wetlands and Stranglethorn Vale."
+      l60: "Artisan's Precision helps each spec with hit. It has the most value for a Fury Warrior with 2 weapons."
+      raid: "Use Stoneform as a short defensive cooldown. It also removes Bleeds, poisons and diseases."
+  - id: gnome
+    name: Gnome
+    faction: alliance
+    status: Classic
+    pitch: "The PvP and Engineering selection. Escape Artist removes roots and slows, and Eureka! gives 8 seconds of cheaper and stronger abilities."
+    start: |
+      You start in Coldridge Valley in Dun Morogh, with the Dwarves. Your first trainer is at Anvilmar. At level 6, go to Kharanos. The trainers of Ironforge are in the Hall of Arms. The Engineering trainers are in Tinker Town.
+    notes:
+      l10: "The new dungeon Hall of Thanes is in Ironforge. It is the easiest first dungeon for a Gnome."
+      l40: "Use Eureka! with Mortal Strike, Bloodthirst or Shield Slam. It does not increase Rend and Deep Wounds, because they are periodic."
+      raid: "Escape Artist keeps you on your target in PvP. Gnomes have 20% fewer device failures with Engineering."
+  - id: night-elf
+    name: Night Elf
+    faction: alliance
+    status: Classic
+    pitch: "The Alliance burst selection. Elune's Light gives 10% crit for 15 seconds, and Quickness gives dodge for tanks."
+    start: |
+      You start in Shadowglen in Teldrassil. Your first trainer is near Aldrassil (Classic: Alyissia). At level 6, go to Dolanaar, which has a Warrior trainer. The trainers of Darnassus are on the Warrior's Terrace.
+    notes:
+      l10: "At level 10, take the portal from Darnassus to Rut'theran Village and the boat to Auberdine. The new boat from Auberdine goes to Stormwind Harbor."
+      l40: "Elune's Light is also a rage cooldown, because crits give 75% more rage. Use it at the start of a hard pull."
+      raid: "It is not confirmed that Shadowmeld decreases threat in Forever. Test it on a usual enemy in a dungeon first."
+  - id: skyborne-high-order
+    name: Skyborne (High Order)
+    faction: alliance
+    status: New
+    pitch: "New in Forever, and a paid race. It gives 2% haste, a glide and a regeneration cooldown. Warcraft Tavern rates Skyborne weak for Warriors."
+    start: |
+      You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The village has a Warrior trainer, but no source gives the location. The island quests take you to about level 12 to 14. More trainers are in Valanaar. You must have the Skyborne Heroic Pack or a higher edition.
+    notes:
+      l10: "Do the Defensive Stance quest in Valanaar. Its details are not confirmed for Skyborne. The quest *Confront Lorthuna* gives the Empyrean Greatsword."
+      l20: "The airship lands in Dalaran in the Alterac Mountains. Walk south to Southshore and take the new boat to Menethil Harbor."
+      l30: "The dungeon City of Dalaran is in the Alterac Mountains, where your airship landed. Only the Alliance can get Kirin Tor reputation."
+      l40: "Read Ley Line decreases the time that you eat after a hard pull. Walk on Air lets you glide from cliffs to your next quest."
+      raid: "In PvP, Walk on Air lets you escape from a ledge, and Charge works again when you land. Skyborne have no racial for burst or mitigation."
+  - id: orc
+    name: Orc
+    faction: horde
+    status: Classic
+    pitch: "The Horde damage selection. Blood Fury gives 10% attack power for 15 seconds, and Hardiness makes stuns 20% shorter."
+    start: |
+      You start in the Valley of Trials in Durotar. Your first trainer is near the Den (Classic: Frang). At level 6, go to Razor Hill, which has a Warrior trainer. The trainers of Orgrimmar are in the Valley of Honor.
+    notes:
+      l10: "At level 10, complete Durotar and go west to the Barrens. Ragefire Chasm is in Orgrimmar. Forever removed the old Axe racial."
+      l40: "Blood Fury has a 2 minute cooldown. Use it on each hard pull. If you have Death Wish, use the 2 cooldowns together."
+      raid: "Hardiness makes Kidney Shot and Hammer of Justice shorter. Shatter Curse removes curses and Warlock Banes."
+  - id: troll
+    name: Troll
+    faction: horde
+    status: Classic
+    pitch: "The easiest Horde Warrior to level. Rapid Regeneration heals 50% of your health during 6 seconds, and Berserking gives 10% attack speed."
+    start: |
+      You start in the Valley of Trials in Durotar, with the Orcs. Your first trainer is near the Den (Classic: Frang). At level 6, go to Sen'jin Village for the Troll quests. Razor Hill has a Warrior trainer. The trainers of Orgrimmar are in the Valley of Honor.
+    notes:
+      l10: "After each pull that leaves you below 50% health, use Rapid Regeneration. Eat only when it is on cooldown."
+      l30: "The Battle for the Darkspear Islands opens at level 30. Your side is the Darkspear Raiders."
+      l40: "Berserking gives more swings, so it gives more rage and more Flurry. It is strongest with 2 weapons."
+      raid: "The Troll add-on calls Berserking the best raid racial for a Warrior with 2 weapons. In PvP, use Rapid Regeneration between fights."
+  - id: tauren
+    name: Tauren
+    faction: horde
+    status: Classic
+    pitch: "The Horde tank race. Endurance gives 5% health, War Stomp stuns enemies near you, and Tauren have the highest Strength."
+    start: |
+      You start at Camp Narache in Mulgore. Your first trainer is in the camp (Classic: Harutt Thunderhorn). At level 6, go to Bloodhoof Village, which has a Warrior trainer. The trainers of Thunder Bluff are on Hunter Rise.
+    notes:
+      l10: "Plainsrunning increases your speed while you continue to move. It does not work on a mount. Go from Thunder Bluff east to the Barrens."
+      l20: "War Stomp stops the casts of all enemies near you. Use it on groups of casters when you tank."
+      raid: "In PvP, use War Stomp and then Mortal Strike. As a tank you have 5% more health than other races."
+  - id: undead
+    name: Undead
+    faction: horde
+    status: Classic
+    pitch: "The Horde PvP selection. Will of the Forsaken removes Fear, charm and sleep, and Cannibalize heals you between pulls."
+    start: |
+      You start in Deathknell in Tirisfal Glades. Your first trainer is near the chapel (Classic: Dannal Stern). At level 6, go to Brill, which has a Warrior trainer. The trainers of the Undercity are in the War Quarter.
+    notes:
+      l10: "The new dungeon Ruins of Lordaeron is in Tirisfal Glades. Do it before you go to Silverpine Forest. Cannibalize works on Humanoid and Undead corpses."
+      l30: "Scarlet Monastery is in Tirisfal Glades. The zeppelins of Tirisfal go to Orgrimmar and to Grom'gol in Stranglethorn Vale."
+      raid: "Will of the Forsaken and Berserker Rage stop the Fear of Warlocks and Priests. Warcraft Tavern says that the value of Touch of the Grave is not known."
+  - id: skyborne-windshaper
+    name: Skyborne (Windshaper)
+    faction: horde
+    status: New
+    pitch: "New in Forever, and a paid race. It gives 2% haste, a glide and the speed burst Skysight. Warcraft Tavern rates Skyborne weak for Warriors."
+    start: |
+      You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The village has a Warrior trainer, but no source gives the location. The island quests take you to about level 12 to 14. More trainers are in Valanaar. You must have the Skyborne Heroic Pack or a higher edition.
+    notes:
+      l10: "Do the Defensive Stance quest in Valanaar. Its details are not confirmed for Skyborne. The airship lands at Skywatcher Plateau near Thunder Bluff."
+      l20: "Your nearest capital trainers are on Hunter Rise in Thunder Bluff. Walk on Air gives shorter routes in Thousand Needles and Stonetalon Mountains."
+      l40: "Wind Blessed gives 2% haste, so you swing more frequently and get more rage. Skyborne have no racial for burst or mitigation."
+      raid: "Skysight is an extra way to get to an enemy in PvP when Charge and Intercept are on cooldown. Use it, then use Hamstring."
+
+factions:
+  alliance:
+    l10: "Quest in Westfall, Loch Modan and Darkshore. Go to Redridge Mountains at about level 15. The supply camp Three Corners in Redridge takes your profession crates."
+    l20: "Quest in Duskwood, the Wetlands, Ashenvale and Hillsbrad Foothills. The new dungeon Excavation Site is in the Wetlands. The Stockade is in Stormwind."
+    l30: "Quest in Arathi Highlands, Stranglethorn Vale, Desolace and the Alterac Mountains. The centaur quests in Desolace now need level 35. Riverglades opens at about 35, and its Alliance town is Farholde Keep. You can go there from Redridge Mountains, the Badlands, Swamp of Sorrows, Burning Steppes or with the Tanaris ferry."
+    l40: "Quest in Riverglades, Dustwallow Marsh, the Badlands, Swamp of Sorrows, Tanaris, Feralas and the Hinterlands."
+    l50: "Quest in Azshara, Un'Goro Crater, Felwood, Searing Gorge, Burning Steppes, the Plaguelands, Winterspring and Silithus. Azshara has many new quests."
+    l60: "Woo Ping in Stormwind teaches one-hand swords and polearms. Buliwyf Stonehand in Ironforge teaches one-hand axes and one-hand maces. Timesaver.gg lists Sergeant items from the vendor Officer Areyn in Stormwind from level 45."
+  horde:
+    l10: "Quest in the Barrens and Silverpine Forest. Go to Stonetalon Mountains at about level 15. The supply camp west of the Crossroads takes your profession crates."
+    l20: "Quest in Hillsbrad Foothills, Ashenvale, Thousand Needles and Stonetalon Mountains. Shadowfang Keep is in Silverpine Forest."
+    l30: "Quest in Arathi Highlands, Stranglethorn Vale, Desolace and Thousand Needles. The centaur quests in Desolace now need level 35. Do not go to Dalaran, because it is hostile to the Horde. Riverglades opens at about 35, and its Horde town is Rog'mar. You can go there from the Badlands, Swamp of Sorrows, Burning Steppes or with the Tanaris ferry."
+    l40: "Quest in Riverglades, Dustwallow Marsh, the Badlands, Swamp of Sorrows, Tanaris, Feralas and the Hinterlands."
+    l50: "Quest in Azshara, Un'Goro Crater, Felwood, Searing Gorge, Burning Steppes, the Plaguelands, Winterspring and Silithus. Azshara has many new quests."
+    l60: "Archibald in the Undercity teaches one-hand swords and polearms. Hanashi and Sayoc in Orgrimmar teach one-hand axes. Ansekhwa in Thunder Bluff teaches one-hand maces. Timesaver.gg lists Sergeant items from the vendor Sergeant Ba'sha in Orgrimmar from level 30."
+
+# ------------------------------------------------------------------ talent paths
+paths:
+  - id: prot
+    name: "Protection"
+    pitch: "The safe solo path, and the tank path. You use a shield, you get rage from each block, and you stay in Defensive Stance from level 25. Method recommends it for solo play."
+    leveling: prot-leveling
+    endgame: [prot-tank]
+    gear: shield
+    play:
+      l1: "You have no talent points before level 10. Use Charge, then Rend, and use Heroic Strike with rage that you do not need."
+      l10: "Equip a shield at level 10. Shield Specialization gives 5 rage for each block. Use Charge in Battle Stance, then change to Defensive Stance. From level 14, use Revenge each time it is available. Improved Revenge from level 15 adds damage to Revenge, and Improved Bloodrage gives more rage for the pull. Kills are slow at these levels."
+      l20: "Master of Defense gives 5 rage for each dodge and parry. Vanguard at level 25 lets you use Charge in Defensive Stance, so you stop the stance changes. Use Charge, Thunder Clap and Revenge. Improved Thunder Clap makes Thunder Clap cheaper for pulls of 2 or 3 enemies. Last Stand at 26 is your emergency cooldown. Defiance adds threat for dungeons."
+      l30: "Focused Rage makes each offensive ability cost 3 less rage. Concussion Blow at level 33 is a 5 second stun. Bastion gives 10% more damage with a shield, which is also more threat. Pull 2 or 3 enemies together and use Thunder Clap on them."
+      l40: "Shield Slam at level 40 is your main ability. It does high damage and very high threat, and it scales with your Block Value. Use Shield Slam on cooldown, then Revenge. Cruelty and Unbridled Wrath add crit and rage."
+      l50: "Anticipation gives Defense for the dungeons at level 55 and above. Improved Shield Bash silences caster enemies for 3 seconds. Improved Shield Wall makes Shield Wall available more frequently."
+      l60: "The tank build takes each threat and survival talent in the tree. The last 10 points go into Deflection for parry and Cruelty for threat. No source has published a level 60 tank build."
+      raid: "Threat is high in Forever, so it is possible that you do not need Fury points. Defiance, Bastion and Master of Defense need a shield. It is not confirmed that Improved Shield Bash silences bosses."
+    priority:
+      - "Use **Charge** in Defensive Stance with Vanguard."
+      - "Use **Shield Slam** on cooldown."
+      - "Use **Revenge** each time it is available."
+      - "Use **Sunder Armor** between the cooldowns."
+      - "Use **Heroic Strike** when you have more than about 50 rage."
+      - "On a group: **Thunder Clap**, then Demoralizing Shout, then Sunder Armor on each enemy, and Cleave."
+  - id: arms
+    name: "Arms"
+    pitch: "The two-hander path for groups and PvP. It kills faster than Protection, but it takes more damage. It is best with a healer or in dungeons."
+    leveling: arms-leveling
+    endgame: [arms-raid, arms-pvp]
+    gear: twohand
+    play:
+      l1: "You have no talent points before level 10. Use Charge, then Rend, and use Heroic Strike with rage that you do not need."
+      l10: "Improved Rend makes your Bleed stronger. Use Charge, then Rend. From level 12, use Overpower each time the enemy dodges. Improved Overpower gives it 50% more crit chance at level 16, and crits give more rage. Improved Tactical Mastery from level 17 lets you keep more rage when you change stance for Overpower."
+      l20: "Anger Management gives 1 rage each 3 seconds in combat. Deep Wounds adds a Bleed after each crit, and Impale makes ability crits larger. Two-Handed Weapon Specialization adds 6% damage. Use Victory Rush on each kill."
+      l30: "Sweeping Strikes at level 30 makes your next 5 attacks hit a second enemy. Use it on each pull of 2 enemies. Bloodthrill gives a 20% chance to make Overpower available on targets that have your Rend. Improved Slam makes Slam safe between swings. Take Weaponmaster for your weapon type."
+      l40: "Mortal Strike at level 40 is your main ability. Use it on cooldown. Then use Overpower, then Slam. Cruelty and Unbridled Wrath add crit and rage. On 2 enemies, use Sweeping Strikes and then Whirlwind. Keep Demoralizing Shout on groups of enemies."
+      l50: "Enrage has a 30% chance to give 10% more damage after an enemy hits you. Improved Execute makes Execute cheaper. Piercing Howl at level 58 slows all enemies near you, so you can run from a bad pull."
+      l60: "The raid build takes all Arms damage talents, then Cruelty, Unbridled Wrath and Enrage. The PvP build adds Spearing Strike and Piercing Howl. Death Wish and Mortal Strike cannot be in 1 build."
+      raid: "No simulations exist. The talent guide says that Arms is probably competitive in the 10 and 20 player raids. For Onyxia, the talent guide moves 1 point to Spearing Strike. In PvP, Mortal Strike decreases healing by 50%."
+    priority:
+      - "Use **Charge**, then **Rend**. Keep Rend on the target for Bloodthrill."
+      - "Use **Mortal Strike** on cooldown."
+      - "Use **Overpower** each time it is available."
+      - "Use **Slam** on cooldown. With Improved Slam it does not delay your swing."
+      - "Use **Execute** below 20% health."
+      - "Use **Heroic Strike** only with rage that you do not need."
+      - "On 2 enemies: **Sweeping Strikes**, then Whirlwind or Cleave."
+  - id: fury
+    name: "Fury"
+    pitch: "The path with 2 weapons, and the usual raid damage spec. It is weak at low levels, because a miss gives no rage. It becomes good after level 40 with 2 good weapons."
+    leveling: fury-leveling
+    endgame: [fury-raid]
+    gear: dual
+    play:
+      l1: "You have no talent points before level 10. Use Charge, then Rend, and use Heroic Strike with rage that you do not need."
+      l10: "Use a two-hander at these levels. Cruelty gives 5% crit, and a crit gives 75% more rage. Unbridled Wrath gives a chance for 1 more rage from each hit. Fight as an Arms Warrior: Charge, Rend, Overpower."
+      l20: "Enrage has a 30% chance to give 10% more damage for 12 seconds after an enemy hits you. Furious Precision starts at level 25 and gives 10% hit to your off-hand weapon at level 27. Change to 2 weapons only if you have 2 good weapons. If not, keep the two-hander and take Furious Precision later."
+      l30: "Death Wish at level 30 gives 20% more damage for 30 seconds, but you take 5% more damage. Dual Wield Specialization makes the off-hand weapon useful. Flurry gives 30% attack speed after a crit. From level 36, stay in Berserker Stance and use Whirlwind on cooldown."
+      l40: "Bloodthirst at level 40 is your main ability. Its damage comes from your attack power. Use Bloodthirst, then Whirlwind, and use Heroic Strike above about 50 rage. Gore Drinker heals you a little after Bloodrage, Berserker Rage and Bloodthirst. Reckless Swings at 47 gives more rage."
+      l50: "The last points go into Arms. Improved Tactical Mastery lets you keep more rage when you change stance. Anger Management gives constant rage, and Deep Wounds adds a Bleed after each crit."
+      l60: "The raid build takes all Fury damage talents and puts 17 points in Arms for Deep Wounds and Impale. It does not take Blood Craze and Gore Drinker, because healers make them low value."
+      raid: "You need 29% hit with 2 weapons against a raid boss. Furious Precision helps only the off-hand weapon. Use Death Wish and Recklessness together. Death Wish increases the damage that you take, so monitor your health."
+    priority:
+      - "Stay in **Berserker Stance**."
+      - "Use **Bloodthirst** on cooldown."
+      - "Use **Whirlwind** on cooldown."
+      - "Use **Heroic Strike** above about 50 rage. Use Cleave on 2 or more enemies."
+      - "Use **Execute** below 20% health."
+      - "Use Bloodrage, Berserker Rage and **Reckless Swings** on cooldown for rage."
+      - "Use **Death Wish** and Recklessness together on a boss."
+
+# ------------------------------------------------------------------ equipment sets
+gear:
+  - id: shield
+    name: "One-hander and shield"
+    pitch: "The Protection set for solo play, dungeons, raids and Hardcore. You look for a one-hand weapon with high damage and a shield with much armor. The item names come from Timesaver.gg."
+    stats: "Leveling: weapon damage > Strength > Stamina > Agility > armor. Level 60: Stamina and Defense, then armor, avoidance, Block Value, hit and Strength (Classic-era order)"
+    chapters:
+      l1:
+        text: "A shield has little value before the first talents at level 10. Take each weapon reward. The first shield with a name in the public data is a Horde quest reward."
+        items:
+          - {slot: "Main hand", name: "Militia Shortblade", from: quest, where: "*Rare Books*, Elwynn Forest (Alliance)", basis: forever}
+          - {slot: "Main hand", name: "Stone Tomahawk", from: quest, where: "*Rite of Strength*, Mulgore (Horde)", basis: forever}
+          - {slot: "Shield", name: "Deathguard Buckler", from: quest, where: "*The Red Messenger*, Tirisfal Glades (Horde)", basis: forever}
+          - {slot: "Chest", name: "Watcher's Mail Chest", from: quest, where: "*The Cirrusfly Queen*, Zephras Isle", basis: forever}
+          - {slot: "Main hand", name: "Copper Mace", from: craft, profession: blacksmithing}
+      l10:
+        text: "Equip a shield at level 10 for Shield Specialization. The class quest after Defensive Stance gives a one-hand weapon. The first dungeons give a one-hander for each faction. The Guard's mail items are new rare items from Blacksmithing. No source gives their stats."
+        items:
+          - {slot: "Main hand", name: "Haggard's Axe", from: quest, where: "*Dead-tooth Jack* (Alliance)", basis: forever}
+          - {slot: "Main hand", name: "Thun'grim's Axe", from: quest, where: "*Forged Steel*, the Barrens (Horde)", basis: forever}
+          - {slot: "Shield", name: "Stormforged Protector", from: quest, where: "*The Skybreaker Bulwark*", basis: forever}
+          - {slot: "Main hand", name: "Durgen's Crescent Axe", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Chest", name: "Golemguard Chest", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Main hand", name: "Meathook Slicer", from: dungeon, dungeon: ruins-of-lordaeron, basis: forever}
+          - {slot: "Shield", name: "Dwarven Defender", from: quest, where: "*In Defense of the King's Lands*, Loch Modan (Alliance)", basis: forever}
+          - {slot: "Shield", name: "Welding Shield", from: quest, where: "*Samophlange*, the Barrens (Horde)", basis: forever}
+          - {slot: "Chest", name: "Guard's Chain Shirt", from: craft, profession: blacksmithing, where: "No source rates it. The stats are not known"}
+      l20:
+        text: "Butcher's Cleaver from Shadowfang Keep is the best known one-hander for these levels. Timesaver.gg selects the Guard's Silvered Chain Helm for Protection at level 20. In Classic, a shield spike adds damage to each block."
+        items:
+          - {slot: "Main hand", name: "Butcher's Cleaver", from: dungeon, where: "Shadowfang Keep", basis: forever}
+          - {slot: "Main hand", name: "Hamhock's Cleaver", from: dungeon, where: "The Stockade (Alliance)", basis: forever}
+          - {slot: "Shield", name: "Kresh's Back", from: dungeon, where: "Wailing Caverns", basis: forever}
+          - {slot: "Shield", name: "Arctic Buckler", from: quest, where: "*Blackfathom Villainy*, Blackfathom Deeps", basis: forever}
+          - {slot: "Head", name: "Guard's Silvered Chain Helm", from: craft, profession: blacksmithing}
+          - {slot: "Neck", name: "Erudite's Amulet", from: quest, where: "*Friend of the Library*. Timesaver.gg lists it from level 20", basis: forever}
+          - {slot: "Shield spike", name: "Iron Shield Spike", from: craft, profession: blacksmithing}
+      l30:
+        text: "Razorfen Kraul gives a one-hander and a shield from 1 boss. The class quests give a mail chest and a mail helm. Warcraft Tavern lists them at level 20, but Timesaver.gg lists them from level 30. Do the Whirlwind weapon chain also, for a second spec."
+        items:
+          - {slot: "Main hand", name: "Pronged Reaver", from: dungeon, where: "Razorfen Kraul", basis: forever}
+          - {slot: "Shield", name: "Heart of Agamaggan", from: dungeon, where: "Razorfen Kraul", basis: forever}
+          - {slot: "Shield", name: "Marbled Buckler", from: quest, where: "*The Crone of the Kraul* (Alliance) or *A Vengeful Fate* (Horde)", basis: forever}
+          - {slot: "Chest", name: "Fire Hardened Hauberk (Alliance) or Brutal Hauberk (Horde)", from: class, where: "The sources give different quest names", basis: forever}
+          - {slot: "Head", name: "Fire Hardened Coif (Alliance) or Brutal Helm (Horde)", from: class, where: "*Grimand's Armor* or *Brutal Helm*", basis: forever}
+          - {slot: "Ring", name: "Field Researcher's Loop", from: quest, where: "*Greater Friend of the Library*. Timesaver.gg lists it from level 35", basis: forever}
+      l40:
+        text: "Train plate at level 40. Timesaver.gg selects crafted Mithril plate for the first plate slots, and Officer's Pauldrons at level 45. The shield from Scarlet Monastery stays useful to about level 50."
+        items:
+          - {slot: "Shield", name: "Aegis of the Scarlet Commander", from: dungeon, where: "Scarlet Monastery, Cathedral", basis: forever}
+          - {slot: "Main hand", name: "Nordic Longshank", from: dungeon, where: "Uldaman (Alliance list)", basis: forever}
+          - {slot: "Main hand", name: "Sword of Omen", from: quest, where: "*Into The Scarlet Monastery* (Horde)", basis: forever}
+          - {slot: "Chest", name: "Carapace of Tuten'kash", from: dungeon, where: "Razorfen Downs", basis: forever}
+          - {slot: "Shoulders", name: "Heavy Mithril Shoulder", from: craft, profession: blacksmithing}
+          - {slot: "Hands", name: "Truesilver Gauntlets", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Heavy Mithril Pants", from: craft, profession: blacksmithing}
+          - {slot: "Shoulders", name: "Officer's Pauldrons", from: craft, profession: blacksmithing}
+          - {slot: "Shield spike", name: "Mithril Shield Spike", from: craft, profession: blacksmithing}
+      l50:
+        text: "Quests give the weapons and shields for these levels. No source lists the full boss loot of Alcaz Prison, Blackmaw Hold and Shaper's Terrace. Start to make or buy Imperial Plate."
+        items:
+          - {slot: "Main hand", name: "Thrash Blade", from: quest, where: "*Corruption of Earth and Seed*, Maraudon", basis: forever}
+          - {slot: "Main hand", name: "Hunt Tracker Blade", from: quest, where: "*The Remains of Trey Lightforge*, Felwood", basis: forever}
+          - {slot: "Shield", name: "Shizzle's Drizzle Blocker", from: quest, where: "*Shizzle's Flyer*, Un'Goro Crater", basis: forever}
+          - {slot: "Shield", name: "Aegis of Battle", from: quest, where: "*Venom to the Undercity*, the Hinterlands (Horde)", basis: forever}
+          - {slot: "Chest", name: "Warforged Chestplate", from: quest, where: "*Tremors of the Earth* (Alliance) or *Broken Alliances* (Horde), the Badlands", basis: forever}
+          - {slot: "Shoulders", name: "Imperial Plate Shoulders", from: craft, profession: blacksmithing}
+      l60:
+        text: "No source has a tested tank list. Timesaver.gg calculates its list from stat weights and shows no stats. It selects Imperial Plate for the chest, shoulders and feet. Get 440 Defense before the raids. The stats of the Classic epic items are not confirmed for Forever."
+        items:
+          - {slot: "Chest", name: "Imperial Plate Chest", from: craft, profession: blacksmithing}
+          - {slot: "Feet", name: "Imperial Plate Boots", from: craft, profession: blacksmithing}
+          - {slot: "Wrist", name: "Blessed Plate Bracers", from: craft, profession: blacksmithing}
+          - {slot: "Waist", name: "Blessed Plate Belt", from: craft, profession: blacksmithing}
+          - {slot: "Head", name: "Lionheart Helm", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Titanic Leggings", from: craft, profession: blacksmithing}
+          - {slot: "Hands", name: "Devilsaur Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Neck", name: "Beads of Ogre Might", from: quest, where: "*Falrin's Vendetta*, Dire Maul", basis: forever}
+          - {slot: "Ring", name: "Ring of Living Stone", from: quest, where: "*Uncovering Past Secrets*, Moonglade", basis: forever}
+          - {slot: "Ring", name: "Ocean's Breeze", from: quest, where: "*A Hero's Reward*, Azshara", basis: forever}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting, where: "The source of its reagent is not known"}
+      raid:
+        text: "Timesaver.gg lists these items before the raids, but they need Malleable Essence of Nature. Reportedly, this reagent comes from raid items that an Enchanter disenchants. The rifle needs Fiery Core and Lava Core, which came from Molten Core in Classic."
+        items:
+          - {slot: "Main hand", name: "Greenhammer", from: craft, profession: blacksmithing}
+          - {slot: "Shield", name: "Evergreen Shield", from: craft, profession: blacksmithing}
+          - {slot: "Back", name: "Fel Cape", from: craft, profession: tailoring}
+          - {slot: "Ranged", name: "Core Marksman Rifle", from: craft, profession: engineering}
+  - id: twohand
+    name: "Two-hander"
+    pitch: "The Arms set, and the Fury set before you have 2 good weapons. You look for the slowest two-hand weapon with the highest damage. Weaponmaster decides the weapon type."
+    stats: "Leveling: weapon damage > Strength > Stamina > Agility > armor. Level 60: hit (8%), crit and Strength. No source ranks them"
+    chapters:
+      l1:
+        text: "Take the two-hand weapon from your first quests. A slow weapon gives more rage for each swing. The quests on Zephras Isle give the best known mail for levels 5 to 10."
+        items:
+          - {slot: "Two-hand", name: "Northshire Hammer", from: quest, where: "*Rare Books*, Elwynn Forest (Alliance)", basis: forever}
+          - {slot: "Two-hand", name: "Brave's Axe", from: quest, where: "*Rite of Strength*, Mulgore (Horde)", basis: forever}
+          - {slot: "Legs", name: "Highlands Mail Legguards", from: quest, where: "*The Criminal Element*, Zephras Isle", basis: forever}
+          - {slot: "Two-hand", name: "Copper Claymore", from: craft, profession: blacksmithing}
+      l10:
+        text: "The first dungeon quests give a two-hander for each faction. Method selects the Ironforge Greathammer for the Alliance. For the Horde it selects the Axe of Orgrimmar at 14 and the Forsaken Greataxe at 18."
+        items:
+          - {slot: "Two-hand", name: "Empyrean Greatsword", from: quest, where: "*Confront Lorthuna*, Zephras Isle", basis: forever}
+          - {slot: "Two-hand", name: "Ironforge Greathammer", from: quest, where: "*Old Ironforge Incursion*, Hall of Thanes", basis: forever}
+          - {slot: "Two-hand", name: "Axe of Orgrimmar", from: quest, where: "*Hidden Enemies*, Ragefire Chasm (Horde)", basis: forever}
+          - {slot: "Two-hand", name: "Forsaken Greataxe", from: quest, where: "*The Wrath of Rath'mael*, Ruins of Lordaeron", basis: forever}
+          - {slot: "Legs", name: "Direhammer Leggings", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Chest", name: "Veteran's Chain Shirt", from: craft, profession: blacksmithing, where: "No source rates it. The stats are not known"}
+          - {slot: "Two-hand", name: "Heavy Copper Maul", from: craft, profession: blacksmithing}
+      l20:
+        text: "Replace the weapon at about level 20 and again at about level 25. Heavehammer from Excavation Site is for the 2 factions. Method gives it level 27 and calls it a drop. Other sources call it a quest reward. Timesaver.gg selects the Veteran's Silvered Chain Helm for Arms and Fury at level 20."
+        items:
+          - {slot: "Two-hand", name: "Smite's Mighty Hammer", from: dungeon, where: "Deadmines (Alliance)", basis: forever}
+          - {slot: "Two-hand", name: "Hammerbone", from: quest, where: "*Leaders of the Fang*, Wailing Caverns (Horde)", basis: forever}
+          - {slot: "Two-hand", name: "Graverobber's Shovel", from: dungeon, where: "The Stockade (Alliance)", basis: forever}
+          - {slot: "Two-hand", name: "Reef Axe", from: dungeon, where: "Blackfathom Deeps", basis: forever}
+          - {slot: "Two-hand", name: "Heavehammer", from: dungeon, dungeon: excavation-site, basis: forever}
+          - {slot: "Head", name: "Veteran's Silvered Chain Helm", from: craft, profession: blacksmithing}
+          - {slot: "Polearm", name: "Bronze Dory", from: craft, profession: blacksmithing}
+      l30:
+        text: "The Whirlwind weapon from the class quest chain is the weapon of these levels. Select the type for Weaponmaster: an axe for crit, a mace to ignore armor, a sword for extra attacks. One boost site gives the Whirlwind Axe +16 Strength and +15 Stamina. Corpsemaker is the weapon to use before the chain is complete."
+        items:
+          - {slot: "Two-hand", name: "Corpsemaker", from: dungeon, where: "Razorfen Kraul", basis: forever}
+          - {slot: "Two-hand", name: "Whirlwind Axe, Whirlwind Sword or Whirlwind Warhammer", from: class, where: "*Whirlwind Weapon*, level 30. Select 1", basis: forever}
+          - {slot: "Two-hand", name: "Defender of Dalaran", from: quest, where: "*Heart of Disruption*, City of Dalaran (Alliance)", basis: forever}
+          - {slot: "Two-hand", name: "Loksey's Training Stick", from: dungeon, where: "Scarlet Monastery (Horde list)", basis: forever}
+          - {slot: "Neck", name: "Archmagister's Faceted Pendant", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+          - {slot: "Back", name: "Tattered Kirin Tor Cloak", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+      l40:
+        text: "Timesaver.gg still lists the Whirlwind Axe as the best two-hander at level 40. Grimlok's Charge from Uldaman replaces it at 45. Train plate, and use crafted Mithril plate in the first slots. Lower armor types have no penalty for a damage dealer."
+        items:
+          - {slot: "Two-hand", name: "Grimlok's Charge", from: dungeon, where: "Uldaman", basis: forever}
+          - {slot: "Head", name: "Soldier's Visor", from: quest, where: "*No Honor Among Thieves*, Desolace", basis: forever}
+          - {slot: "Shoulders", name: "Shining Mithril Pauldrons", from: craft, profession: blacksmithing}
+          - {slot: "Hands", name: "Truesilver Gauntlets", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Ornate Mithril Pants", from: craft, profession: blacksmithing}
+          - {slot: "Shoulders", name: "Officer's Pauldrons", from: craft, profession: blacksmithing}
+          - {slot: "Head", name: "Dented Goggles", from: craft, profession: engineering, where: "Plate. The stats are not known"}
+      l50:
+        text: "Beastslayer from an Un'Goro Crater quest is the best known two-hander at level 55. The Blessed Plate items are new, and their recipes use usual reagents. Blackmaw Hold has 1 Warrior item with a name in the public data."
+        items:
+          - {slot: "Two-hand", name: "Beastslayer", from: quest, where: "*The Mighty U'cha*, Un'Goro Crater", basis: forever}
+          - {slot: "Chest", name: "Warforged Chestplate", from: quest, where: "*Tremors of the Earth* (Alliance) or *Broken Alliances* (Horde), the Badlands", basis: forever}
+          - {slot: "Hands", name: "Slagplate Gauntlets", from: quest, where: "*Curse These Fat Fingers*, Searing Gorge", basis: forever}
+          - {slot: "Legs", name: "Leggings of the Ursa", from: quest, where: "*Deadwood of the North*, Blackmaw Hold", basis: unverified}
+          - {slot: "Shoulders", name: "Blessed Plate Pauldrons", from: craft, profession: blacksmithing}
+          - {slot: "Feet", name: "Blessed Plate Boots", from: craft, profession: blacksmithing}
+      l60:
+        text: "No source has a tested list. Timesaver.gg selects Blessed Plate as the base, with Lionheart Helm and Titanic Leggings. Its two-hander needs a raid reagent, so use Beastslayer or a dungeon weapon first. Wowtbc.gg names Stoneshatter from Dire Maul and The Unstoppable Force from Alterac Valley."
+        items:
+          - {slot: "Chest", name: "Blessed Plate Chest", from: craft, profession: blacksmithing}
+          - {slot: "Wrist", name: "Blessed Plate Bracers", from: craft, profession: blacksmithing}
+          - {slot: "Waist", name: "Blessed Plate Belt", from: craft, profession: blacksmithing}
+          - {slot: "Head", name: "Lionheart Helm", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Titanic Leggings", from: craft, profession: blacksmithing}
+          - {slot: "Hands", name: "Devilsaur Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Neck", name: "Beads of Ogre Might", from: quest, where: "*Falrin's Vendetta*, Dire Maul", basis: forever}
+          - {slot: "Ring", name: "Ring of Living Stone", from: quest, where: "*Uncovering Past Secrets*, Moonglade", basis: forever}
+          - {slot: "Weapon", name: "Stoneshatter", from: dungeon, where: "Dire Maul West", basis: unverified}
+          - {slot: "Two-hand", name: "The Unstoppable Force", from: pvp, where: "Alterac Valley", basis: unverified}
+          - {slot: "Two-hand", name: "Stormcarver", from: craft, profession: blacksmithing, where: "A new axe. The stats are not known. It needs Legionite Bar, and the source of Fel Crystal is not known"}
+      raid:
+        text: "Forest Defender's Axe and Fel Cape need Malleable Essence of Nature. Reportedly, this reagent comes from raid items that an Enchanter disenchants. No source lists the raid loot."
+        items:
+          - {slot: "Two-hand", name: "Forest Defender's Axe", from: craft, profession: blacksmithing}
+          - {slot: "Back", name: "Fel Cape", from: craft, profession: tailoring}
+  - id: dual
+    name: "Dual wield"
+    pitch: "The Fury set from about level 40, and the raid damage set. You look for a slow main-hand weapon with high damage and a second good one-hand weapon. It needs much hit."
+    stats: "Leveling: weapon damage > Strength > Stamina > Agility. Level 60: hit (29% against raid bosses), crit and Strength. No source ranks them"
+    chapters:
+      l1:
+        text: "You cannot use 2 weapons at these levels. Use the items of the Two-hander set."
+      l10:
+        text: "Continue with a two-hander. A miss gives no rage, and 2 weapons miss much more frequently than 1 weapon. Against an enemy of your level you need 24% hit with 2 weapons (Method.gg)."
+      l20:
+        text: "Warcraft Tavern says that you train Dual Wield at level 20. Shadowfang Keep gives 2 one-hand weapons from 1 boss. Change to 2 weapons only when the pair is better than your two-hander."
+        items:
+          - {slot: "Main hand", name: "Butcher's Cleaver", from: dungeon, where: "Shadowfang Keep", basis: forever}
+          - {slot: "Off hand", name: "Butcher's Slicer", from: dungeon, where: "Shadowfang Keep", basis: forever}
+          - {slot: "Main hand", name: "Cruel Barb", from: dungeon, where: "Deadmines (Alliance)", basis: forever}
+          - {slot: "Off hand", name: "Meteor Shard", from: dungeon, where: "Shadowfang Keep", basis: forever}
+      l30:
+        text: "Razorfen Kraul and Scarlet Monastery give the pair for these levels. The Whirlwind weapon is a two-hander and is usually still better. Do the chain."
+        items:
+          - {slot: "Main hand", name: "Pronged Reaver", from: dungeon, where: "Razorfen Kraul", basis: forever}
+          - {slot: "Off hand", name: "Bloody Brass Knuckles", from: dungeon, where: "Scarlet Monastery", basis: forever}
+      l40:
+        text: "With Bloodthirst, Flurry and Dual Wield Specialization, 2 weapons become good. Timesaver.gg selects a quest sword from Razorfen Downs as the main-hand weapon. The armor is the same as in the Two-hander set."
+        items:
+          - {slot: "Main hand", name: "Vanquisher's Sword", from: quest, where: "*Bring the Light* (Alliance) or *Bring the End* (Horde), Razorfen Downs", basis: forever}
+          - {slot: "Off hand", name: "Nordic Longshank", from: dungeon, where: "Uldaman (Alliance list)", basis: forever}
+          - {slot: "Off hand", name: "Sword of Omen", from: quest, where: "*Into The Scarlet Monastery* (Horde)", basis: forever}
+      l50:
+        text: "Thrash Blade from the Maraudon quest is the main-hand weapon from level 50. Keep each item with hit. The armor is the same as in the Two-hander set."
+        items:
+          - {slot: "Main hand", name: "Thrash Blade", from: quest, where: "*Corruption of Earth and Seed*, Maraudon", basis: forever}
+          - {slot: "Off hand", name: "White Bone Shredder", from: quest, where: "*Bone-Bladed Weapons*, Orgrimmar (Horde)", basis: forever}
+          - {slot: "Off hand", name: "Tidecrest Blade", from: quest, where: "*The Remains of Trey Lightforge*, Felwood", basis: forever}
+      l60:
+        text: "You need 29% hit against a raid boss, and few items with hit exist before the raids. Thus a two-hander is the safe start at level 60. Persuader is a Classic epic weapon, and its stats are not confirmed for Forever. The armor is the same as in the Two-hander set."
+        items:
+          - {slot: "Main hand", name: "Persuader", from: craft, profession: blacksmithing}
+          - {slot: "Off hand", name: "Thrash Blade", from: quest, where: "*Corruption of Earth and Seed*, Maraudon. Keep it from level 50. No source lists an off-hand weapon for level 60 without a raid reagent", basis: forever}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting, where: "The source of its reagent is not known"}
+      raid:
+        text: "Timesaver.gg selects Ironwood Blade for the off hand. It needs Malleable Essence of Nature. Reportedly, this reagent comes from raid items that an Enchanter disenchants."
+        items:
+          - {slot: "Off hand", name: "Ironwood Blade", from: craft, profession: blacksmithing}
+          - {slot: "Back", name: "Fel Cape", from: craft, profession: tailoring}
+
+equipment:
+  intro: |
+    A Warrior wears mail to level 39 and plate from level 40. The weapon is the most important slot at each level. Method estimates that 95% to 100% of your leveling damage comes from the weapon.
+
+    About 40% of the items of Forever had hidden stats at launch. The stats of an item become visible when a player first finds it. Thus no source has a tested list for level 60. Most item names on this page come from Timesaver.gg (data of 6 November 2026). Timesaver.gg calculates its lists from stat weights and shows no stats. The Codex did not verify the stats.
+  proficiencies:
+    - ["Cloth, leather, mail", "Level 1", "Lower armor types have no penalty for a damage dealer. A tank loses mitigation"]
+    - ["Plate", "Level 40", "From your class trainer"]
+    - ["Shields", "Level 1", "Shield Specialization, Master of Defense, Defiance, Bastion and Shield Slam need a shield"]
+    - ["Axes, maces, swords, daggers, fist weapons, staves", "Weapon master", "All weapon types but wands. The first weapon skills are different for each race"]
+    - ["Polearms", "Level 20, weapon master", "Woo Ping in Stormwind. Archibald in the Undercity"]
+    - ["Dual Wield", "Level 20, class trainer", "Warcraft Tavern gives this level. No second source confirms it"]
+    - ["Bows, crossbows, guns, thrown weapons", "Weapon master", "You know thrown weapons at level 1. The ranged slot is only for stats"]
+  rules:
+    - "Rage from your hits depends on weapon speed. A slow weapon gives more rage for each swing."
+    - "A crit gives 75% more rage, so crit has more value than in Classic."
+    - "Armor does not decrease the rage from hits on you. A tank does not lose rage with better armor."
+    - "Method.gg says that hit is 1 stat for melee, ranged attacks and spells. A miss gives no damage and no rage."
+    - "Against a raid boss you need 8% hit with 1 weapon and 29% with 2 weapons (Method.gg). Warcraft Tavern gives 9% for 1 weapon."
+    - "Furious Precision gives 10% hit only to off-hand attacks. The launch client has no general hit talent for Warriors."
+    - "Weapon skills are still in the game. A weapon with low skill misses much more frequently."
+    - "The old weapon racials of Humans, Orcs and Trolls are gone. Weaponmaster decides your weapon type."
+    - "Weaponmaster: axes and polearms get crit, maces and staves ignore armor, swords get extra attacks."
+    - "440 Defense makes you immune to crits from raid bosses (Warcraft Tavern)."
+    - "Strength gives 2 attack power for each point, and 1 Block Value for each 20 points. Shield Slam scales with Block Value."
+    - "Warcraft Tavern found no haste on items in the beta."
+    - "Dungeon items have stats with a theme of class, spec, biome or enemy type. When you loot an item, you unlock its transmog."
+    - "Sharpening stones and weightstones now work together with Shaman imbues and Rogue poisons."
+    - "Many Blacksmithing recipes are Bind on Pickup. No source says if the crafted items are also Bind on Pickup."
+  enchants:
+    - ["Weapon", "Crusader", "Classic-era advice for damage dealers. The recipe is the same as in Classic"]
+    - ["Two-hand weapon", "Enchant 2H Weapon - Strength", "New. Enchanting skill 290. The effect is not known"]
+    - ["Weapon", "Sharpening stones and weightstones", "From Blacksmithing. A cheap damage increase at each level"]
+    - ["Shield", "Iron, Mithril or Thorium Shield Spike", "From Blacksmithing. Damage on each block in Classic. The recipes are changed in Forever"]
+    - ["Shield", "Enchant Shield - Excellent Stamina", "New. Enchanting skill 300. The effect is not known"]
+    - ["Necklace", "Enchant Necklace - Strength or Deflection", "New slot. Enchanting skill 210. The effects are not known"]
+    - ["Armor", "Stamina, Agility and Defense enchants", "Classic-era advice for tanks"]
+    - ["Cloak", "Fire resistance", "For Onyxia's Lair. The sources recommend fire resistance but give no number"]
+  consumables:
+    - ["All levels", "Healing potions and bandages", "First Aid now makes the healing potions, from Minor to Major Healing Potion"]
+    - ["All levels", "Sharpening stones", "Rough at skill 1, Coarse at 75, Heavy at 125, then Solid and Dense"]
+    - ["Leveling", "Rage Potion, Great Rage Potion", "Rage for the start of a hard pull. Alchemy skill 60 and 175"]
+    - ["Leveling", "Food with Strength", "Roasted Boar Meat and Smoked Bear Meat at low levels. Savory Stag Sliders is new at Cooking 225"]
+    - ["Level 60", "Elixir of the Mongoose, Elixir of Brute Force", "Classic-era elixirs. The recipes are the same as in Classic"]
+    - ["Level 60", "Flask of the Titans, Greater Stoneshield Potion", "Classic-era consumables for tanks"]
+    - ["Level 60", "Mighty Rage Potion, Major Frenzy Potion", "The Frenzy potions are new. Their effect is not known"]
+    - ["Level 60", "Elemental Sharpening Stone, Dense Sharpening Stone", "Blacksmithing skill 300 for the Elemental stone"]
+    - ["Level 60", "Greater Fire Protection Potion", "For Onyxia's Lair"]
+    - ["Level 60", "Steaming Stag Steak, Bear Bruscitti, Savory Turtle Stew", "New food. Strength for damage, Stamina for tanks. The values are not known"]
+  sources:
+    - {title: "Timesaver.gg: Warrior leveling gear, Arms", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/warrior/arms"}
+    - {title: "Timesaver.gg: Warrior leveling gear, Protection", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/warrior/protection"}
+    - {title: "Timesaver.gg: Warrior leveling gear, Fury", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/warrior/fury"}
+    - {title: "Method.gg: Warrior leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-warrior-leveling-guide-and-talents"}
+    - {title: "Method.gg: how hit chance works", url: "https://www.method.gg/wow-forever/how-does-hit-chance-work-in-wow-forever"}
+    - {title: "Warcraft Tavern: Warrior guide and weapon trainers", url: "https://www.warcrafttavern.com/forever/guides/warrior/"}
+    - {title: "Warcraft Tavern: Warrior leveling guide", url: "https://www.warcrafttavern.com/forever/guides/warrior-leveling/"}
+    - {title: "Warcraft Tavern: stats", url: "https://www.warcrafttavern.com/forever/guides/stats/"}
+    - {title: "Warcraft Tavern: Protection Warrior guide", url: "https://www.warcrafttavern.com/forever/guides/protection-warrior/"}
+    - {title: "wowtbc.gg: Arms Warrior item pool for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/arms-warrior/"}
+    - {title: "buyboost.com: quest weapons (Whirlwind Axe values, low trust)", url: "https://buyboost.com/news/wow-forever/forever-quest-weapons"}
+
+# ------------------------------------------------------------------ other sections
+professions: |
+  A Warrior depends on equipment more than other classes. Thus a profession pair that makes weapons and plate is a good selection. Professions give no passive stats in Forever. Each profession gives a [camp feature](../../systems/camping.md).
+
+  | Rank | Professions | Use them for |
+  |---|---|---|
+  | **S**{ .tier .tier-s } | [Mining](../../professions/mining.md) + [Blacksmithing](../../professions/blacksmithing.md) | Weapon stones, mail, plate and many new recipes. The camp features Lodestone and Sharpening Wheel give attack power and Strength |
+  | **A**{ .tier .tier-a } | [Mining](../../professions/mining.md) + [Engineering](../../professions/engineering.md) | Bombs and gadgets for PvP. Warcraft Tavern gives Engineering a high rating. Gnomes have 20% fewer device failures. The camp features are Lodestone and Reagent Bot |
+  | **B**{ .tier .tier-b } | [Skinning](../../professions/skinning.md) + [Mining](../../professions/mining.md) | Gold for your mount at level 40. The camp feature Camp Chair gives 2% crit. Replace 1 of them with a crafting profession later |
+
+  [First Aid](../../professions/first-aid.md) is necessary, because it now makes healing potions and bandages. [Cooking](../../professions/cooking.md) and [Fishing](../../professions/fishing.md) give materials for camping. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+legacy: |
+  You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character. Crafting professions give Legacy Points at skill 150, 225 and 300.
+
+  | Tree | Picks for a Warrior |
+  |---|---|
+  | Adventure | **Well Rested** 5/5, then **Talented** 5/5. Warriors level slowly, so rested XP and earlier talents help most. Talented gives your first talent point 1 level earlier for each rank, down to level 5. The 2 talents cost 10 points, so they are an extra for a second character |
+  | Adventure | **Thrill of Adventure** restores health after a kill in the open world. **Field Medicine** lets you use bandages more frequently |
+  | Resourcefulness | **Reinforce** decreases the durability loss on death, which helps tanks and Hardcore players. **Gourmand** makes food buffs last longer. **For Great Honor** is for PvP |
+
+mistakes:
+  - "You keep a quest weapon for too long. Look at the Auction House at each level."
+  - "You use Heroic Strike when you do not have extra rage."
+  - "You do not learn First Aid. It now makes the healing potions."
+  - "You forget the stance quests at level 10 and level 30."
+  - "You tank without a shield. Defiance, Bastion and Master of Defense need a shield."
+  - "You use 2 weapons at a low level. Each miss gives no rage."
+  - "You forget that the game no longer adds new abilities to your action bars."
+
+faq:
+  - q: "Why do I have no rage?"
+    a: "At low levels, the cause is usually your weapon. A slow weapon with high damage gives more rage for each swing. Use Bloodrage, and take Shield Specialization or Improved Overpower. Do not use rage on enemies that are almost dead."
+  - q: "Is Protection good for leveling?"
+    a: "In Forever, yes. Shield Specialization gives rage, Revenge does damage, Thunder Clap works in Defensive Stance, and Vanguard permits Charge in Defensive Stance. Method recommends it for solo play. It is slow before level 25."
+  - q: "Must I still change stances?"
+    a: "Less than in Classic. Tactical Mastery is baseline and keeps 10 rage. Arms changes to Battle Stance for Overpower. Protection with Vanguard almost never changes stance."
+  - q: "Bloodthrill or Weaponmaster?"
+    a: "You can take the 2 talents. Warcraft Tavern takes Bloodthrill for more Overpower uses, and Method takes the 2 talents. A full Arms build has the points for 2/2 Bloodthrill and 5/5 Weaponmaster. When you level, take Bloodthrill first."
+  - q: "What does Reckless Swings do?"
+    a: "In the launch client, your next 4 melee attacks give 5 more rage, with a 15 second cooldown. The heal that some sources describe is a different talent, Gore Drinker. The client does not show a clear cost."
+  - q: "Do the Arms guides agree on the leveling build?"
+    a: "No. Warcraft Tavern stays in the Arms tree. Method puts points into Fury for Unbridled Wrath and Enrage after Mortal Strike. The Arms path on this page follows Method."
+  - q: "Do the Protection guides agree on the leveling build?"
+    a: "Almost. Warcraft Tavern takes Anticipation and Defiance earlier than Method. The 2 builds agree on the order Shield Specialization, Master of Defense, Vanguard. The Protection path on this page follows Method."
+  - q: "Is Skyborne a good Warrior race?"
+    a: "It is good for leveling, because of haste, a glide and a speed or regeneration cooldown. Warcraft Tavern rates it weak for Warriors in comparison with Orc, Human, Troll and Tauren. Select it for its appearance and its story."
+
+sources:
+  - {title: "Method.gg: Warrior leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-warrior-leveling-guide-and-talents"}
+  - {title: "Warcraft Tavern: Warrior guide", url: "https://www.warcrafttavern.com/forever/guides/warrior/"}
+  - {title: "Warcraft Tavern: Warrior leveling guide", url: "https://www.warcrafttavern.com/forever/guides/warrior-leveling/"}
+  - {title: "Warcraft Tavern: Priest & Warrior deep dive", url: "https://www.warcrafttavern.com/forever/news/rage-will-benefit-from-crit-priest-warrior-deep-dive-for-wow-forever/"}
+  - {title: "Warcraft Tavern: pre-launch class changes", url: "https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/"}
+  - {title: "Method.gg: how hit chance works", url: "https://www.method.gg/wow-forever/how-does-hit-chance-work-in-wow-forever"}
+  - {title: "Icy Veins: Protection Warrior leveling (search summary only)", url: "https://www.icy-veins.com/wow-forever/protection-warrior-leveling"}
+  - {title: "Mobalytics: Arms Warrior leveling (search summary only)", url: "https://mobalytics.gg/wow-forever/profile/kargoz/classes/1-60-arms-warrior-leveling-guide-talents-rotation-weapons-tips"}
+  - {title: "RankedBoost: new talents (search summary only)", url: "https://rankedboost.com/world-of-warcraft/forever/whats-new/talents/"}
+  - {title: "Destructoid: beta patch notes of 3 November 2026 (search summary only)", url: "https://www.destructoid.com/wow-forever-beta-patch-notes-nov-3-2026/"}

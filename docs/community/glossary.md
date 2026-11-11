@@ -98,15 +98,15 @@ Common abbreviations and nicknames. They help search find the page that you want
 
 | Shorthand | Means | Page |
 |---|---|---|
-| **Pally, Pala** | Paladin | [Paladin](../characters/classes/paladin.md) |
-| **Lock** | Warlock | [Warlock](../characters/classes/warlock.md) |
-| **Sham, Shammy** | Shaman | [Shaman](../characters/classes/shaman.md) |
-| **Dudu, Boomkin, Kitty, Tree** | Druid (Boomkin = Balance, Kitty = Feral cat, Tree = Restoration) | [Druid](../characters/classes/druid.md) |
-| **Hunt, BM, MM, SV** | Hunter and its 3 specs | [Hunter and its 3 specs](../characters/classes/hunter.md) |
-| **Spriest, Disc** | Shadow Priest, Discipline Priest | [Shadow Priest](../characters/classes/priest.md) |
-| **Rog, Sin, Sub** | Rogue, Assassination, Subtlety | [Rogue](../characters/classes/rogue.md) |
-| **War, Warr** | Warrior | [Warrior](../characters/classes/warrior.md) |
-| **Shockadin** | Holy-Retribution hybrid Paladin | [Holy-Retribution hybrid Paladin](../characters/classes/paladin.md) |
+| **Pally, Pala** | Paladin | [Paladin](../guides/paladin/index.md) |
+| **Lock** | Warlock | [Warlock](../guides/warlock/index.md) |
+| **Sham, Shammy** | Shaman | [Shaman](../guides/shaman/index.md) |
+| **Dudu, Boomkin, Kitty, Tree** | Druid (Boomkin = Balance, Kitty = Feral cat, Tree = Restoration) | [Druid](../guides/druid/index.md) |
+| **Hunt, BM, MM, SV** | Hunter and its 3 specs | [Hunter and its 3 specs](../guides/hunter/index.md) |
+| **Spriest, Disc** | Shadow Priest, Discipline Priest | [Shadow Priest](../guides/priest/index.md) |
+| **Rog, Sin, Sub** | Rogue, Assassination, Subtlety | [Rogue](../guides/rogue/index.md) |
+| **War, Warr** | Warrior | [Warrior](../guides/warrior/index.md) |
+| **Shockadin** | Holy-Retribution hybrid Paladin | [Holy-Retribution hybrid Paladin](../guides/paladin/index.md) |
 | **NE, Nelf** | Night Elf | [Night Elf](../characters/races.md) |
 | **UD, Forsaken** | Undead | [Undead](../characters/races.md) |
 | **Skyborne Elves, shen'dorei** | Skyborne | [Skyborne](../characters/races.md#skyborne) |

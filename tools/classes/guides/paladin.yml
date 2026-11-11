@@ -1,0 +1,826 @@
+class: Paladin
+badges: [tank, heal, dps]
+description: "Paladin progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
+aka: "Pally · Pala · Holy, Prot or Ret pally · Shockadin (Holy with melee damage)"
+
+intro: |
+  The Paladin is a hybrid class with mail, then plate, and a shield. It can do melee damage, tank or heal. This page follows 1 Paladin from character creation to the raids, level by level. It tells you what changes in each level range. You read which Seals and spells you train, how you fight, and what your role in a group is.
+
+glance:
+  - ["Roles", "Melee damage (Retribution), tank (Protection), healer (Holy)"]
+  - ["Armor", "Mail, then **Plate**{ .pill .pill--plate } at level 40. Shields"]
+  - ["Weapons", "One-hand and two-hand maces, swords and axes. Polearms from level 20. No staves"]
+  - ["Ranged slot", "A relic (Libram)"]
+  - ["Resource", "**Mana**{ .pill .pill--mana }"]
+  - ["Races", "3 combinations: Human, Dwarf, Undead (new, Horde)"]
+
+strengths:
+  - "Very difficult to kill: a shield, Divine Protection, Divine Shield, self-heals and Lay on Hands each 20 minutes"
+  - "Blessings last 1 hour, Blessing of Kings is baseline, and resistance auras protect the raid"
+  - "Protection is a full tank from level 10, with a taunt on Judgement of Fury"
+  - "Strong AoE threat and damage in dungeons with Consecration from level 20"
+
+weaknesses:
+  - "Mana is the limit for all 3 specs while you level"
+  - "No interrupt and no slow. Casters and enemies that run are difficult"
+  - "Holy Shock and Unsealed Wrath do not fit in 1 build of 51 points"
+
+changes:
+  added: ["Holy Strike", "Seal of Fury", "Templar's Bulwark", "Shieldsworn", "Unsealed Wrath", "Sacred Arbiter", "Champion of the Light", "Oath of Light", "Light's Vigil", "Voice of Truth"]
+  removed: ["Blessing of Salvation", "Blessing of Sanctuary", "Blessing of Light", "Sanctity Aura", "Revoke"]
+  notes:
+    - "**Holy Strike** (level 6) is an instant melee strike that does weapon damage and Holy damage. Its cooldown is 10 seconds at launch."
+    - "**Judgement keeps your Seal.** Judgement is not on the global cooldown, and its debuffs last 40 seconds."
+    - "**Seal of Fury** (level 10) is the tank Seal. It adds Holy damage and a small absorb to each swing. Judgement of Fury taunts at 10 yards."
+    - "**Righteous Fury** comes at level 10, not 16. It gives +33% threat and +90% Holy threat."
+    - "**Consecration** (level 20) is baseline for all specs. It does full damage to only the first 4 targets."
+    - "**Blessings** last 1 hour. Blessing of Kings and the improved Blessing of Wisdom are baseline."
+    - "**Lay on Hands** has a 20 minute cooldown. In Classic it was 1 hour."
+    - "**Voice of Truth** is a trained spell: 6 seconds of immunity to silence and interrupt, with a 3 minute cooldown."
+    - "**Unsealed Wrath** is the last Retribution talent. The talent Twist of Light from the beta is not in the launch client."
+    - "Without Blessing of Salvation, damage classes do not get a 30% threat decrease. Tanks must make more threat."
+    - "**Undead Paladin** is the new race combination. Players made 612,096 of them in the beta."
+
+# ------------------------------------------------------------------ chapters
+chapters:
+  - id: start
+    title: "Make your Paladin"
+    story: |
+      A Paladin fights in melee with a Seal on the weapon. Each swing triggers the Seal, and Judgement releases its power on the target. Blessings and auras make the whole group stronger. Heals, a shield and 3 emergency spells make the class very difficult to kill.
+
+      Forever gives the class the tools that it did not have in Classic. Holy Strike is a melee strike with a short cooldown. Seal of Fury and its taunt make Protection a full tank from level 10. Judgement no longer removes your Seal.
+
+      Each talent tree is 1 role. Retribution does melee damage with a two-hand weapon. Protection tanks with a one-hand weapon and a shield. Holy heals. You can do all 3 roles on 1 character, and dual spec at level 40 lets you keep 2 of them.
+
+      You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race, and the race also decides your faction.
+    warn: |
+      Blizzard rebuilt the Paladin talent trees on 30 October and changed the values again on 2 November. Thus, many guides from the beta are out of date. The builds on this page are not tested theory. Read the tooltip in the game before you spend points.
+    goals:
+      - "Select a race. Read its Race add-on."
+      - "Select a talent path. Retribution is the usual selection for a first Paladin."
+      - "Read the [Professions](#professions) section. Mining and Blacksmithing are the usual selection."
+
+  - id: l1
+    title: "Seals, Judgement and Holy Strike"
+    story: |
+      You start with Seal of Righteousness, Holy Light and Devotion Aura. Cast the Seal before each fight and keep the aura active. Then attack in melee. The Seal adds Holy damage to each swing and costs little mana.
+
+      At level 4 you train Judgement and Blessing of Might. Judgement releases the Seal on the target for instant damage. In Forever the Seal stays on you, so you do not cast it again. Use Judgement each time that it is available.
+
+      Level 6 gives you Holy Strike, the new melee strike of Forever. From this level your fight has a fixed sequence: Seal, Judgement, Holy Strike, and white swings between them. Divine Protection, also at 6, is your first emergency spell.
+
+      At level 8 you train Hammer of Justice, a stun. Use it to stop a cast or to stop an enemy that runs. It is your only tool for those 2 problems, because the class has no interrupt and no slow. Against a strong enemy, use Hammer of Justice first. Then use Judgement and Holy Strike while the enemy is stunned.
+
+      Mana is the limit at these levels. Drink between pulls, and use Holy Light before the pull, not during the fight. At about level 5, learn Cooking and get the camping quest *The Great Outdoors*. See [Camping](../../systems/camping.md).
+    train:
+      - [1, "Seal of Righteousness, Holy Light, Devotion Aura", "Your first Seal, your heal and your first aura"]
+      - [4, "Judgement, Blessing of Might", "Judgement releases the Seal for instant damage. The Seal stays active"]
+      - [6, "Holy Strike, Divine Protection, Seal of the Crusader", "Holy Strike is new: an instant strike with a 10 second cooldown"]
+      - [8, "Hammer of Justice, Purify", "A stun. Purify removes poisons and diseases"]
+    tip: |
+      The game does not put new spells on your action bars. Open the spellbook after each visit to a trainer.
+    hardcore: |
+      Divine Protection at level 6 is your first emergency spell. If a pull goes wrong, use it early and move away from the enemies.
+    goals:
+      - "Train Judgement at level 4 and Holy Strike at level 6."
+      - "Put Divine Protection and Hammer of Justice on keys that you can reach quickly."
+      - "Learn your professions. The starter profession quest gives a gathering profession, and most players choose Mining."
+
+  - id: l10
+    title: "Seal of Fury and your first dungeon"
+    story: |
+      At level 10 your class changes. You train Seal of Fury, Righteous Fury, Lay on Hands and Blessing of Protection. You also get your first talent point. From here, you get 1 talent point at each level. The Talents add-on below gives the talent for each point.
+
+      Seal of Fury and Righteous Fury make you a tank. Righteous Fury increases your threat. Judgement of Fury is a taunt with a 10 yard range. With these 2 spells and a shield, each Paladin can tank the first dungeons, also without Protection talents.
+
+      Lay on Hands heals you or an ally to full health. Its cooldown is now 20 minutes, so use it in each bad fight. Blessing of Protection makes a cloth player immune to physical attacks.
+
+      At level 12, do the class quest for Redemption, your resurrection spell. Blessing of Wisdom at 14 gives mana regeneration. Blessing of Freedom at 18 removes roots and slows. In a group, ask each player which Blessing they want.
+
+      Your first dungeons open at level 13. Dungeon enemies give less XP in Forever, and dungeon quests give much more. Thus, get all the quests before you go in. Meeting stones cannot summon in Forever, so go to the entrance in time. At level 14, start the scavenger hunt for the Cozy Sleeping Bag. See [Leveling](../../characters/leveling.md).
+    train:
+      - [10, "Seal of Fury, Righteous Fury", "The tank Seal and more threat. Judgement of Fury taunts"]
+      - [10, "Lay on Hands, Blessing of Protection", "A full heal each 20 minutes. Immunity to physical attacks for 1 ally"]
+      - [12, "Redemption", "Class quest. It brings a dead player back to life"]
+      - [14, "Blessing of Wisdom", "Mana regeneration for you and for casters"]
+      - [16, "Retribution Aura", "Enemies that hit you take Holy damage"]
+      - [18, "Blessing of Freedom", "Removes roots and slows. Your answer to kiting"]
+    dungeons:
+      - {id: hall-of-thanes, levels: "13–20", note: "New. It is in Ironforge"}
+      - {name: "Ragefire Chasm", levels: "13–18", note: "It is in Orgrimmar"}
+      - {id: ruins-of-lordaeron, levels: "15–22", note: "New. It has many undead, and it is in Tirisfal Glades"}
+      - {name: "Wailing Caverns", levels: "15–24", note: "Purify removes the poisons there"}
+      - {name: "The Deadmines", levels: "17–26", note: "Rhahk'Zor drops a slow two-hand mace"}
+    extra: |
+      !!! conflict "Conflict: Improved Seal of Fury"
+          The beta deep dive shows Improved Seal of Fury as a key Protection talent. The rework of 30 October removed it, together with One-Handed Weapon Specialization. The launch client has neither talent. Templar's Bulwark is the first key Protection talent.
+    warn: |
+      Turn Righteous Fury off when you are not the tank. If you keep it active as a damage dealer or a healer, you take aggro from the tank.
+    hardcore: |
+      Lay on Hands now has a 20 minute cooldown. Thus, it is available for most bad fights.
+    goals:
+      - "Train Seal of Fury, Righteous Fury and Lay on Hands at level 10."
+      - "Do the Redemption class quest at level 12."
+      - "Do your first dungeon for its quests. Try the tank role."
+
+  - id: l20
+    title: "Consecration and your class weapon"
+    story: |
+      At level 20 you train Consecration, Blessing of Kings, Exorcism and Flash of Light. Your 11th talent point also comes at level 20. For Retribution and Protection, it gives the first key talent.
+
+      Consecration burns the ground around you. It is your first AoE spell, and it is your main threat tool on a group of enemies. It does full damage to only the first 4 targets, and it costs much mana. Use it when 2 or more enemies attack you.
+
+      Flash of Light is a fast heal that costs little mana. It makes you a useful healer in dungeons. Blessing of Kings increases all stats, and most players want it.
+
+      Your class weapon quest also starts in this chapter. Alliance Paladins get Verigan's Fist. Undead Paladins get Wolfsbane. The 2 chains need items from dungeons, so make a group. You can also train polearms from level 20.
+
+      At 20, give 10 library books to the librarian for the first book quest. He is Garion Wendell in Stormwind or Owen Thadd in the Undercity. Level 25 gives your first Paladin Legacy Point. See [Legacy](../../characters/legacy.md).
+    train:
+      - [20, "Consecration", "AoE Holy damage around you. Full damage to the first 4 targets"]
+      - [20, "Blessing of Kings, Flash of Light, Exorcism", "Kings is baseline in Forever. Exorcism hits undead and demons"]
+      - [22, "Concentration Aura, Seal of Justice", "The aura protects your casts when enemies hit you"]
+      - [24, "Turn Undead", "A fear for 1 undead enemy"]
+      - [28, "Shadow Resistance Aura", "The first of 3 resistance auras. They cover the raid in 30 yards"]
+    dungeons:
+      - {name: "Shadowfang Keep", levels: "20–30", note: "It has a step of the 2 class weapon quests"}
+      - {name: "Blackfathom Deeps", levels: "24–32"}
+      - {name: "The Stockade", levels: "25–29", note: "It is in Stormwind"}
+      - {id: excavation-site, levels: "26–33", note: "New. It is short, with 3 bosses"}
+      - {id: city-of-dalaran, levels: "28–35", note: "New. NPCs in Dalaran attack Horde characters"}
+    extra: |
+      ??? example "Macros for Judgement, Holy Strike and Blessings"
+
+          ```
+          #showtooltip Judgement
+          /castsequence reset=target Seal of Righteousness, Judgement
+          ```
+
+          ```
+          #showtooltip Holy Strike
+          /startattack
+          /cast Holy Strike
+          ```
+
+          ```
+          #showtooltip Blessing of Kings
+          /cast [@mouseover,help,nodead][help,nodead][@player] Blessing of Kings
+          ```
+
+          Put your Seals on keys that are near each other. You change Seals quickly when you have Unsealed Wrath.
+    tip: |
+      As a tank, pull with Judgement and then cast Consecration. On a large pull, mark 1 target for crowd control, because Consecration does full damage to only 4 enemies.
+    goals:
+      - "Train Consecration and Blessing of Kings at level 20."
+      - "Start your class weapon quest: Verigan's Fist or Wolfsbane."
+      - "Turn in 10 library books for the first book quest."
+
+  - id: l30
+    title: "Divine Shield and Forbearance"
+    story: |
+      These levels add few new spells, but 1 of them changes how safe you are. Divine Shield at level 34 makes you immune to all damage. It is your best escape. While it is active, you can heal yourself or use your hearthstone.
+
+      Divine Shield causes Forbearance. During Forbearance you cannot use Divine Shield, Divine Protection or Blessing of Protection again (Classic rule). Thus, each emergency spell is a decision. Do not use 2 of them in 1 fight.
+
+      Divine Intervention at 30 saves 1 player when the group dies. The Frost and Fire resistance auras come at 32 and 36. Seal of Wisdom at 38 gives back mana with each swing.
+
+      Battlegrounds are a change from quests. Fan sites say that Warsong Gulch opens at level 10 and Arathi Basin at level 20. The new Battle for the Darkspear Islands opens at level 30. A Paladin is a strong flag carrier and node defender.
+
+      Start to save gold now. At level 40 you need 100g for riding and 50g for dual spec. The second book quest at 35 needs 20 library books. Blizzard said that a larger balance update comes when players get to levels 30 to 39.
+    train:
+      - [30, "Divine Intervention", "You die, and 1 ally becomes immune and leaves the fight (Classic effect)"]
+      - [32, "Frost Resistance Aura", "For fights with Frost damage"]
+      - [34, "Divine Shield", "Full immunity. It causes Forbearance"]
+      - [36, "Fire Resistance Aura", "Important for Onyxia's Lair at level 60"]
+      - [38, "Seal of Wisdom", "Each swing can give back mana"]
+    dungeons:
+      - {name: "Razorfen Kraul and Gnomeregan", levels: "29–38"}
+      - {name: "Scarlet Monastery", levels: "30–46", note: "4 wings with a weapon or a shield for each spec"}
+      - {id: drowned-city, levels: "35–42", note: "New. It is on the coast of Stranglethorn Vale"}
+    hardcore: |
+      Divine Shield at level 34 is your best escape. Cast it, then use your hearthstone while it is active. Keep Blessing of Freedom for roots and slows.
+    goals:
+      - "Train Divine Shield at level 34."
+      - "Turn in 20 library books at level 35 for the second book quest."
+      - "Save 150g before level 40."
+
+  - id: l40
+    title: "Plate, a mount and a second spec"
+    story: |
+      Level 40 changes much. You can wear plate armor. You can buy riding for 100g. You can buy dual spec for 50g from your Paladin trainer. Your 31st talent point gives the last talent of your tree.
+
+      Paladins also get a class mount, the Warhorse. Sources do not agree if it is a trainer spell, a quest, or the two together. In all cases, keep 100g for the riding skill.
+
+      Dual spec is important for a hybrid class. Keep your quest build in 1 spec and a group role in the other. You change specs for free outside combat and outside battlegrounds. A change of talents in 1 spec costs gold, and this cost decreases to 1g with time.
+
+      Retribution with Protection is the most popular pair. Retribution with Holy is for players who want to heal. Protection with Holy is for players who play mostly in groups. Each spec needs its own equipment from now on. Keep a one-hand weapon and a shield in your bags if you tank. Keep the items with Intellect and healing power if you heal.
+
+      Cleanse at 42 removes magic effects, poisons and diseases. Hammer of Wrath at 44 hits a target with low health from range. It helps against enemies that run. The new zone Riverglades is for levels 35 to 45, and it has more than 150 quests. At 45, the third book quest needs 25 library books. Level 45 also gives your second Paladin Legacy Point.
+    train:
+      - [40, "Summon Warhorse", "The class mount. The exact source is not confirmed"]
+      - [42, "Cleanse", "Removes magic, poisons and diseases. A group job in dungeons and raids"]
+      - [44, "Hammer of Wrath", "A ranged hit on a target with low health"]
+      - [46, "Blessing of Sacrifice", "You take a part of the damage of 1 ally"]
+    dungeons:
+      - {name: "Razorfen Downs", levels: "37–46", note: "Many undead. Exorcism and Turn Undead are useful"}
+      - {id: kroldok-stronghold, levels: "40–47", note: "New. It is in Riverglades"}
+      - {name: "Uldaman and Zul'Farrak", levels: "41–54"}
+      - {name: "Maraudon", levels: "46–55"}
+      - {id: alcaz-prison, levels: "48–55", note: "New. It is in Dustwallow Marsh"}
+    extra: |
+      !!! conflict "Conflict: Twist of Light"
+          Older guides and the beta deep dive show Twist of Light as the last Retribution talent. The launch client does not have it. Unsealed Wrath is the last Retribution talent, and it replaces the seal twisting of Classic.
+    warn: |
+      Buy riding before dual spec if you do not have 150g. A mount saves more time than a second spec.
+    goals:
+      - "Buy riding (100g), then dual spec (50g)."
+      - "Replace your mail with plate, slot by slot."
+      - "Turn in 25 library books at level 45 for the third book quest."
+
+  - id: l50
+    title: "Greater Blessings and undead dungeons"
+    story: |
+      The last 10 levels have the most dungeons. Reportedly, each boss in the new dungeons drops a blue item. Start to collect your level 60 equipment here.
+
+      Holy Wrath at 50 is an AoE spell against undead and demons. The Greater Blessings start at 52. A Greater Blessing buffs all players of 1 class in the raid for 1 hour. It needs a Symbol of Kings, which is a vendor reagent.
+
+      You have the last talent of your tree, so most of your last points go into the other 2 trees. They give Strength, crit, hit or mana. No source confirms a hit cap for Forever.
+
+      Scholomance and Stratholme have many undead. Exorcism, Holy Wrath and Turn Undead work on most of their enemies, so these 2 dungeons are good for a Paladin. Cleanse is also important there.
+    train:
+      - [50, "Holy Wrath", "AoE Holy damage against undead and demons"]
+      - [52, "Greater Blessing of Might", "A Blessing for all players of 1 class. It needs a Symbol of Kings"]
+      - [54, "Greater Blessing of Wisdom", "The same for casters and healers"]
+    dungeons:
+      - {name: "Sunken Temple and Blackrock Depths", levels: "50–60"}
+      - {name: "Dire Maul and Lower Blackrock Spire", levels: "54–60"}
+      - {id: blackmaw-hold, levels: "55–60", note: "New. It is in Azshara"}
+      - {name: "Scholomance and Stratholme", levels: "58–60", note: "Many undead. Good dungeons for a Paladin"}
+      - {id: shapers-terrace, levels: "58–60", note: "New. It is in Un'Goro Crater"}
+    hardcore: |
+      Do not fight humanoids that run near other groups of enemies. You have no slow, and only Hammer of Justice and Hammer of Wrath can stop them.
+    goals:
+      - "Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests."
+      - "Start the attunement for Onyxia's Lair. The chain is long."
+      - "Collect a second set of equipment for your second spec."
+
+  - id: l60
+    title: "Charger, attunement and raid role"
+    story: |
+      At level 60 you train Greater Blessing of Kings, and you get your third Paladin Legacy Point. [Mount Hyjal](../../world/zones.md#mount-hyjal) opens. The fast mount needs Journeyman Riding for 1,000g.
+
+      Your epic class mount is a quest chain. Alliance Paladins get the Charger. Undead Paladins get the Forsaken Charger, and they ride in the name of Retribution. No source confirms the steps of the 2 chains for Forever.
+
+      All 3 launch raids open on 9 December 2026. Use the time before that date for 4 tasks. Decide your raid role. Collect the equipment for that role. Collect consumables. Do the attunement for Onyxia's Lair.
+
+      The attunement gives the Drakefire Amulet. It must be in your bags, and it is not account-wide. Each character must do the chain.
+
+      Dungeon loot has new stats in Forever, so the Classic lists of items before the raids do not apply. Do the dungeons for levels 55 to 60, mostly the new ones. The Equipment add-on gives the items that the public lists name.
+
+      For consumables, collect mana potions, elixirs, stat food and weapon stones or oils. The Legacy talent Gourmand makes food buffs last 33% longer. Camp buffs do not stack with the equivalent class buff.
+    dungeons:
+      - {id: blackmaw-hold, levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60"}
+      - {name: "Scholomance, Stratholme, Dire Maul and Lower Blackrock Spire", levels: "54–60", note: "The Classic dungeons are still in the game"}
+      - {name: "Upper Blackrock Spire", levels: "59–60", note: "For 10 players"}
+    goals:
+      - "Decide your raid role and set your 2 specs."
+      - "Do the attunement for Onyxia's Lair."
+      - "Collect consumables and Symbols of Kings before 9 December."
+
+  - id: raid
+    title: "Raid buffs and battlegrounds"
+    story: |
+      **The Barrow Deeps** has 10 players, and **Hyjal Summit** has 20. In raids of this size, each class buff is important. Expect to give Blessing of Kings, a resistance aura and Cleanse. See [The Barrow Deeps](../../content/raids/barrow-deeps.md) and [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+      **Onyxia's Lair** has 40 players and much Fire damage. Use Fire Resistance Aura. It covers the raid in 30 yards. Fire resistance equipment is recommended, but no source gives a number. See [Onyxia's Lair](../../content/raids/onyxias-lair.md).
+
+      Blessing of Salvation is not in the game. Thus, the tank must make more threat, and damage classes must monitor their threat. A Retribution Paladin has less threat because of Two-Handed Weapon Specialization.
+
+      Holy is the most probable raid role. Protection is a good main tank or off-tank in the 2 smaller raids. Retribution gives constant damage and the same buffs. No source has tested the 3 specs in raids.
+
+      In battlegrounds, a Paladin is a very good flag carrier and node defender. Blessing of Freedom, Divine Shield and your heals keep you alive. You cannot catch enemies that run. See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/battlegrounds.md).
+
+      The battlegrounds are Warsong Gulch, Arathi Basin, Alterac Valley and the new Battle for the Darkspear Islands. The new battleground has 15 players in each team. In world PvP, Divine Shield and Lay on Hands make it difficult for enemies to kill you. The Legacy talent *For Great Honor* gives up to +10% Honor.
+    extra: |
+      The table below is Classic-era knowledge, with the changes of Forever.
+
+      | Enemy in PvP | What you do |
+      |---|---|
+      | Warrior | You survive longer. Keep Blessing of Freedom for Hamstring and Hammer of Justice for the burst |
+      | Rogue | Stuns are the danger. Humans have Will to Survive. Dwarves remove poisons with Stoneform |
+      | Mage, Warlock | They kite and use Fear. Undead have Will of the Forsaken. Other races need Blessing of Freedom |
+      | Priest | A dispel removes your buffs. Use Voice of Truth when they try to stop your heals |
+      | Hunter | Get near them with Pursuit of Justice and Blessing of Freedom. Scatter Shot blocks Will of the Forsaken |
+      | Druid, Shaman | Long fights. Keep Hammer of Justice for their heal |
+    hardcore: |
+      The roadmap lists [Hardcore](../../about/hardcore.md) for winter 2026/27. A Paladin is one of the safest classes for it. Templar's Bulwark and Divine Shield both cause Forbearance, so plan to use 1 of them, not the 2. An Undead removes Fear with Will of the Forsaken, and a Human breaks stuns with Will to Survive.
+
+# ------------------------------------------------------------------ races
+races:
+  - id: dwarf
+    name: Dwarf
+    faction: alliance
+    status: Classic
+    pitch: "The PvE selection. Artisan's Precision gives 1% hit, Stoneform is a cleanse and a short tank cooldown, and Big Game Hunter helps you level."
+    start: |
+      You start in Coldridge Valley in Dun Morogh. Your first trainer is Bromos Grummner. At level 6, go through the tunnel to Kharanos. Azar Stronghammer trains you at the Thunderbrew Distillery. The 3 Paladin trainers of Ironforge are in the Mystic Ward.
+    notes:
+      l1: "Big Game Hunter gives +5% damage to Beasts. The wolves and boars of Dun Morogh are Beasts."
+      l10: "The new dungeon Hall of Thanes is in Ironforge. It is your first dungeon, and it is a good place to try the tank role. Then quest in Loch Modan."
+      l20: "In Classic, the Ironforge chain for Verigan's Fist goes through Jordan Stilwell outside the gates. Menethil Harbor and the Excavation Site are a short walk from Loch Modan."
+      l30: "Gnomeregan is in Dun Morogh, near your home."
+      l40: "From Loch Modan, go south through the Badlands to the new passes into Riverglades. Uldaman is in the Badlands. Honored with Ironforge gives 10% off riding and racial mounts."
+      l60: "Artisan's Precision gives 1% hit for attacks and spells. You need less hit from items."
+      raid: "Stoneform removes bleeds, poisons and diseases, and you take 10% less physical damage for 8 seconds. Use it as a tank cooldown. Blizzard has not published its cooldown."
+  - id: human
+    name: Human
+    faction: alliance
+    status: Classic
+    pitch: "The PvP selection. Will to Survive breaks stuns, Ruthless gives 1% crit, and The Human Spirit gives 10% Spirit for mana between fights."
+    start: |
+      You start at Northshire Abbey in Elwynn Forest. Your first trainer is Brother Sammuel. At level 6, go to Goldshire, where Brother Wilhelm trains you. The Paladin trainers of Stormwind are in the Cathedral of Light.
+    notes:
+      l1: "The quest *Rare Books* in Elwynn Forest gives a weapon. Select the Northshire Hammer for two hands, or the Militia Sword for one hand. The Human Spirit gives 10% more Spirit, which gives mana between fights."
+      l10: "Quest in Westfall, then in Redridge Mountains. The Deeprun Tram takes you to Ironforge for Hall of Thanes. The Deadmines are in Westfall."
+      l20: "The Verigan's Fist chain starts in the Cathedral of Light (Classic location). The Stockade is in Stormwind. Turn in crates at the Azeroth Commerce Authority in Three Corners, Redridge."
+      l40: "Walk east from Redridge to Farholde Keep in Riverglades. The Brotherhood of the Horse there has a knight theme. Honored with Stormwind gives 10% off riding and racial mounts."
+      l60: "Ruthless gives 1% crit for attacks and heals. It helps Vengeance and Illumination."
+      raid: "Will to Survive breaks a stun. Use it, then Blessing of Freedom, against Warriors and Rogues. Perception finds a Rogue in stealth."
+  - id: undead
+    name: Undead
+    faction: horde
+    status: New
+    pitch: "New in Forever, and the only Horde Paladin. Cannibalize gives back health and mana, and Will of the Forsaken removes Fear. You have your own story at Bandarion Keep."
+    start: |
+      You start at Deathknell in Tirisfal Glades. Your first trainer is Aramis Hammerhand in the church. At level 4, go to Brill, where Shari Stilwell trains you. At level 8, the quest *A Second Home* sends you to Bandarion Keep, where Hilda the Breaker trains you.
+
+      The Undercity, Orgrimmar and Thunder Bluff have no confirmed Paladin trainer. Your only trainers are in Deathknell, Brill and Bandarion Keep. Reportedly, the keep has no inn, so set your hearthstone in Brill.
+    notes:
+      l1: "In the quest *Rediscovering the Light*, each Holy Light on an ally also damages you. This is intentional. Cannibalize gives back 7% health and mana each 2 seconds for 10 seconds."
+      l10: "Your Redemption quest is *A Lesson in Divinity* from Danitha Morr at Bandarion Keep. The new dungeon Ruins of Lordaeron is above the Undercity. Its quests need level 15."
+      l20: "The Wolfsbane chain starts with *Diplomatic Incident* from Danitha Morr, from level 18. It needs items from Shadowfang Keep, the Deadmines and Ashenvale. Sources disagree if it ends at level 20 or at level 26."
+      l30: "Scarlet Monastery is in Tirisfal Glades, so you can train in Brill between runs."
+      l40: "The quest for the Forsaken Warhorse has no confirmed quest giver. Datamined text names it *A Trusty Steed*. Do not try the Alliance mount chain."
+      l50: "The Plaguelands are near Tirisfal Glades. It is easy to go back to Brill to train."
+      l60: "Touch of the Grave gives a small drain on melee hits, with a 15 second internal cooldown. Heals do not trigger it."
+      raid: "Will of the Forsaken removes Fear, charm and sleep. It does not work against Scatter Shot. Horde groups have no Paladin habits yet, so offer Blessing of Kings or Blessing of Wisdom."
+
+factions:
+  alliance:
+    l10: "Quest in Westfall or Loch Modan, then in Redridge Mountains. In Classic, your Redemption quest is the *Tome of Divinity* chain. The new boat from Stormwind Harbor goes to Auberdine for Darkshore."
+    l20: "Quest in the Wetlands, Redridge Mountains, Duskwood and Ashenvale. The new dungeon Excavation Site is in the Wetlands. The Stockade is in Stormwind."
+    l30: "Quest in Arathi Highlands, the Alterac Mountains, Stranglethorn Vale and Desolace. The Kirin Tor quests of Dalaran are for the Alliance only. Scarlet Monastery is a long trip through Horde land."
+    l40: "The Alliance town in Riverglades is Farholde Keep. Then quest in Dustwallow Marsh, the Badlands, Tanaris, Feralas and the Hinterlands. The centaur quests in Desolace now need level 35."
+    l50: "Quest in Azshara, Felwood, Un'Goro Crater, the Plaguelands, Winterspring, Burning Steppes and Silithus. Azshara has many new quests."
+    l60: "Your trainers are in Stormwind, Ironforge and Theramore. The Charger chain goes through the Cathedral of Light in Classic. The steps for Forever are not confirmed."
+  horde:
+    l10: "Quest in Silverpine Forest, with trips to the Barrens. Ruins of Lordaeron is your home dungeon. Ragefire Chasm is in Orgrimmar."
+    l20: "Quest in Hillsbrad Foothills, Stonetalon Mountains and Ashenvale. Go back to Brill to train at even levels."
+    l30: "Quest in Arathi Highlands, Thousand Needles, Stranglethorn Vale and Desolace. NPCs in Dalaran attack Horde characters on sight, so do not do the Kirin Tor quests."
+    l40: "The Horde town in Riverglades is Rog'mar. Then quest in Dustwallow Marsh, Tanaris, Feralas, the Badlands and Swamp of Sorrows. Fly back to the Undercity and run to Brill to train."
+    l50: "Quest in Azshara, Felwood, Un'Goro Crater, the Plaguelands, Winterspring and Burning Steppes. Azshara has many new quests."
+    l60: "Your trainers stay in Tirisfal Glades. The Forsaken Charger quest has the name *Justice and Retribution* in the beta client. Its steps are not confirmed."
+
+# ------------------------------------------------------------------ talent paths
+paths:
+  - id: retribution
+    name: "Retribution"
+    pitch: "The usual path for a first Paladin. You do melee damage with a slow two-hand weapon and Seal of Command. The leveling build is also the level 60 raid build, so you do not respec."
+    leveling: ret-leveling
+    endgame: [ret-raid, ret-pvp]
+    gear: twohand
+    play:
+      l1: "You have no talent points before level 10. Keep Seal of Righteousness active. Use Judgement and Holy Strike each time that they are available."
+      l10: "Your fight is the same as before, but cheaper. Benediction decreases the mana cost of Seals, Judgement and Holy Strike. Conviction at 15 to 17 gives 6% crit. Improved Judgement at 18 and 19 makes the Judgement cooldown 2 seconds shorter. In a dungeon, give Blessing of Might to the group and stay behind the enemy."
+      l20: "Seal of Command at level 20 replaces Seal of Righteousness if your two-hand weapon is slow. Its Judgement does more damage to a stunned target, so use Hammer of Justice first. Sanctified Judgement gives back mana with each Judgement. Pursuit of Justice at 24 and 25 gives 15% more movement speed. Sacred Arbiter at 29 makes Holy Strike stronger, and Holy Strike then refreshes your Judgement on the target. Leprestore takes Seal of Command at 20, and the Talents Forever usage data takes it at about 23."
+      l30: "Vengeance at 30 to 32 increases your damage after each crit, up to 15%. Repentance at 34 incapacitates a Humanoid for 6 seconds. Use it on a second enemy or to get time for a heal. Champion of the Light at 35 to 39 gives spell damage from Intellect, so Intellect becomes a damage stat."
+      l40: "Unsealed Wrath at level 40 makes each melee hit store a copy of your Seal for 15 seconds, to a maximum of 3. Store copies with Seal of Command. A usual method is then to change to Seal of Righteousness immediately before a swing. The next hit uses the copies, and each copy gets its usual proc chance. Players still test the timing. Divine Strength and Improved Seals follow."
+      l50: "Holy Conduit makes Consecration, Exorcism and Hammer of Wrath 40% cheaper. Divine Intellect gives mana and, through Champion of the Light, spell damage. Precision at 58 to 60 gives 3% hit for dungeon bosses."
+      l60: "Your leveling build is the raid build. For battlegrounds, use the PvP build in your second spec. It takes Improved Hammer of Justice for a stun each 45 seconds, and Templar's Bulwark."
+      raid: "Stay behind the boss. Two-Handed Weapon Specialization decreases your threat by 20%, which helps because Blessing of Salvation is not in the game. Do not break crowd control with Consecration. When an enemy attacks a healer, taunt it with Judgement of Fury. In PvP, Repentance and Hammer of Justice are your 2 controls, and Blessing of Freedom removes slows."
+    priority:
+      - "Keep a Seal active: **Seal of Command** with a slow two-hand weapon."
+      - "Use **Judgement** on cooldown. It is not on the global cooldown."
+      - "Use **Holy Strike** on cooldown. With **Sacred Arbiter** it refreshes your Judgement on the target."
+      - "With **Unsealed Wrath**: store copies with one Seal, then change to a different Seal."
+      - "Cast **Consecration** when 2 or more enemies are in range."
+      - "Cast **Exorcism** on undead and demons, and **Hammer of Wrath** on a target with low health."
+  - id: protection
+    name: "Protection"
+    pitch: "The tank path, and the safest path. You level in dungeons with a one-hand weapon and a shield. Single enemies die more slowly than with Retribution. The leveling order is a Codex order, because no source has published one."
+    leveling: prot-leveling
+    endgame: [prot-tank]
+    gear: shield
+    play:
+      l1: "You have no talent points before level 10. Use a one-hand weapon and a shield from the start. Keep Seal of Righteousness active, and use Judgement and Holy Strike."
+      l10: "Change to Seal of Fury and keep Righteous Fury active. Redoubt gives you more blocks. Pull with Judgement. If an enemy attacks a different player, Judgement of Fury taunts it. Precision at 15 to 17 gives hit, and hit gives threat."
+      l20: "Templar's Bulwark at level 20 absorbs damage equal to your maximum health for 8 seconds. It is your emergency button, and it causes Forbearance. Consecration is now your AoE threat. Shield Specialization gives back mana when you block. Swift Judgement at 25 is a second instant Judgement, and with Seal of Fury it is a second taunt."
+      l30: "Holy Shield at level 30 gives 30% more block chance, and each block does Holy damage. Keep it active on each pull. Reckoning gives extra attacks after blocks. Iron Creed at 35 to 37 increases the threat of Holy Strike and decreases the damage that you take."
+      l40: "Shieldsworn at level 40 makes the Holy Strike cooldown 4 seconds shorter. Holy Strike then triggers Holy Shield and Shield Specialization, so each Holy Strike gives threat and mana. Anticipation gives Defense. Divine Intellect gives mana for pulls with few blocks."
+      l50: "Most of the last points go into Retribution. Benediction makes your instant abilities cheaper. Conviction gives crit, and Improved Judgement gives more Judgements. Toughness at 59 and 60 gives armor."
+      l60: "Respec to the level 60 tank build. It completes Toughness and Anticipation and takes Deflection for 5% parry. Blizzard has not published the Defense that prevents crits from raid bosses."
+      raid: "You are a good main tank or off-tank in the 10 player and 20 player raids. Keep Holy Shield active. Use Templar's Bulwark before a large hit. Do not plan Divine Shield after it, because of Forbearance."
+    priority:
+      - "Keep **Righteous Fury** and **Seal of Fury** active."
+      - "Pull with **Judgement**, or with **Swift Judgement** for a second instant hit."
+      - "Cast **Consecration** on each group of enemies."
+      - "Use **Holy Strike** on cooldown. With **Shieldsworn** the cooldown is 6 seconds."
+      - "Keep **Holy Shield** active."
+      - "Taunt with **Judgement of Fury** when an enemy attacks a different player."
+      - "Emergency: **Templar's Bulwark**, then Divine Protection or Lay on Hands."
+  - id: holy
+    name: "Holy"
+    pitch: "The healer path. You heal dungeons from the first levels and do quests in melee. The order takes Strength and Seal damage first. If you want to heal only from level 40, level with Retribution and use dual spec."
+    leveling: holy-leveling
+    endgame: [holy-raid]
+    gear: healer
+    play:
+      l1: "You have no talent points before level 10. Fight in melee with Seal of Righteousness, Judgement and Holy Strike. Holy Light is your only heal."
+      l10: "Your first 10 points are for quests. Divine Strength gives 10% Strength, and Improved Seals gives 15% more Seal and Judgement damage. In dungeons you heal with Holy Light. Use a low rank for small damage to save mana."
+      l20: "Flash of Light at level 20 is your fast heal. Holy Conduit makes Consecration cheaper for quests. Divine Favor at 24 makes your next heal a crit. Oath of Light at 25 makes your heals stronger on 1 ally, so put it on the tank. Illumination gives back mana when a heal crits."
+      l30: "Holy Shock at level 30 is an instant heal or an instant damage spell with a 10 second cooldown. Keep it for sudden damage in dungeons. Use it as damage on quests. Healing Light gives 12% more healing. Holy Power makes your crit heals larger."
+      l40: "Light's Vigil at level 40 is your group heal. Cast it on the tank. The next Holy Shock on that target has no cooldown and also heals the party. Boundless Light gives Holy Shock more crit on allies without your Oath. Infusion of Light makes Holy Light faster after a crit."
+      l50: "The last points go into Retribution and Protection. Benediction, complete at 49, makes Holy Shock cheaper. Conviction at 50 to 52 gives 6% crit to heals, which gives mana through Illumination. Divine Intellect gives more mana."
+      l60: "Respec to the raid healer build. It moves the points from Divine Strength, Improved Seals and Holy Conduit to Spiritual Focus and to Protection utility. It also takes Templar's Bulwark as a shield for you."
+      raid: "Keep Oath of Light on the tank. Illumination gives back 50% of the base mana cost in Forever, so crit gives less mana than in Classic. The value of Light's Vigil in raids is not confirmed. Collect Intellect, healing power and mana regeneration. In PvP, Voice of Truth protects your casts for 6 seconds."
+    priority:
+      - "Put **Oath of Light** on the tank before the pull. It lasts 5 minutes."
+      - "Cast **Holy Light** for constant healing, and **Flash of Light** for small heals that use little mana."
+      - "Cast **Holy Shock** for instant emergency heals."
+      - "Cast **Light's Vigil** before large group damage. The next Holy Shock also heals the party."
+      - "Use **Divine Favor** with Holy Light for a certain large crit."
+      - "Use **Cleanse**. Keep Concentration Aura active if enemies hit you."
+
+# ------------------------------------------------------------------ equipment sets
+gear:
+  - id: twohand
+    name: "Two-hand weapon"
+    pitch: "The Retribution set. You use a slow two-hand mace, sword, axe or polearm, with mail and then plate. The weapon is the most important slot. The item names come from Timesaver.gg, Method.gg and Warcraft Tavern."
+    stats: "Weapon damage and a slow speed first. Then Strength, crit and hit, then Stamina and Intellect. Sources disagree on the order"
+    chapters:
+      l1:
+        text: "Take a two-hand weapon from your first quests. Humans and Undead get one from a quest. No source names a starter weapon for Dwarves, so a Blacksmith can make one. Use a weightstone on a mace and a sharpening stone on a sword or an axe."
+        items:
+          - {slot: "Two-hand weapon", name: "Northshire Hammer", from: quest, where: "*Rare Books*, Elwynn Forest (Human)", basis: forever}
+          - {slot: "Two-hand mace", name: "Driftwood Smasher", from: quest, where: "*Murlocs at the Gates*, Bandarion Keep (Undead)", basis: forever}
+          - {slot: "Two-hand sword", name: "Copper Claymore", from: craft, profession: blacksmithing}
+          - {slot: "Chest", name: "Rough Copper Vest", from: craft, profession: blacksmithing}
+          - {slot: "Weapon stone", name: "Rough Weightstone", from: craft, profession: blacksmithing}
+      l10:
+        text: "The first new dungeons give a two-hand weapon from a quest. Then get Rhahk'Zor's Hammer from the Deadmines. ConquestCapped gives it a 3.2 speed, from beta data. Blacksmithing makes rare mail in 5 versions. The Retribution lists use the Veteran's version."
+        items:
+          - {slot: "Two-hand mace", name: "Ironforge Greathammer", from: quest, where: "*Old Ironforge Incursion*, Hall of Thanes (Alliance)", basis: forever}
+          - {slot: "Two-hand axe", name: "Forsaken Greataxe", from: quest, where: "*The Wrath of Rath'mael*, Ruins of Lordaeron (Horde). Method.gg names it", basis: forever}
+          - {slot: "Two-hand weapon", name: "Axe of Orgrimmar", from: quest, where: "*Hidden Enemies*, Orgrimmar (Horde)", basis: forever}
+          - {slot: "Two-hand mace", name: "Rhahk'Zor's Hammer", from: dungeon, where: "Rhahk'Zor, the Deadmines", basis: forever}
+          - {slot: "Two-hand mace", name: "Heavy Copper Maul", from: craft, profession: blacksmithing}
+          - {slot: "Waist", name: "Veteran's Chain Belt", from: craft, profession: blacksmithing}
+          - {slot: "Chest", name: "Veteran's Chain Shirt", from: craft, profession: blacksmithing}
+          - {slot: "Hands", name: "Veteran's Gloves", from: craft, profession: blacksmithing}
+      l20:
+        text: "Your class quest gives the weapon for these levels. Seal of Command at level 20 needs a slow weapon. Wolfsbane has a 3.40 speed, +9 Stamina and +10 Intellect. No source gives the speed of Verigan's Fist in Forever. The rare helm from Blacksmithing is in all 3 Timesaver.gg lists at level 20, in a different version for each spec."
+        items:
+          - {slot: "Two-hand mace", name: "Verigan's Fist", from: class, where: "*The Test of Righteousness*, level 20 (Alliance)", basis: forever}
+          - {slot: "Two-hand weapon", name: "Wolfsbane", from: class, where: "The chain that ends with *Old Fire-Eye*, level 20 to 26 (Undead)", basis: forever}
+          - {slot: "Head", name: "Veteran's Silvered Chain Helm", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Veteran's Chain Leggings", from: craft, profession: blacksmithing}
+          - {slot: "Two-hand mace", name: "Bronze Warhammer", from: craft, profession: blacksmithing}
+          - {slot: "Polearm", name: "Bronze Dory", from: craft, profession: blacksmithing}
+          - {slot: "Relic", name: "Tenets of the Silver Hand", from: craft, profession: enchanting, where: "Warcraft Tavern says: do not go for it while you level, unless you are an Enchanter"}
+      l30:
+        text: "Replace the class weapon at level 30 with Corpsemaker. Timesaver.gg then gives Defender of Dalaran to the Alliance at 35. No source says if Horde characters can do that quest. Ravager is the Classic weapon from Scarlet Monastery, but its stats in Forever are not known. The ring from the book quest stays in the Retribution list to level 60."
+        items:
+          - {slot: "Two-hand weapon", name: "Corpsemaker", from: dungeon, where: "Overlord Ramtusk, Razorfen Kraul", basis: forever}
+          - {slot: "Two-hand weapon", name: "Defender of Dalaran", from: quest, where: "*Heart of Disruption*, City of Dalaran", basis: forever}
+          - {slot: "Two-hand axe", name: "Ravager", from: dungeon, where: "Herod, Scarlet Monastery Armory"}
+          - {slot: "Ring", name: "Philanthropist's Ring", from: quest, where: "*Greater Friend of the Library*, the book quest at level 35", basis: forever}
+          - {slot: "Waist", name: "Justicar's Belt", from: craft, profession: blacksmithing}
+          - {slot: "Two-hand mace", name: "Golden Iron Destroyer", from: craft, profession: blacksmithing}
+      l40:
+        text: "Plate opens at level 40. Razorfen Downs gives a helm and a chest. Timesaver.gg keeps the helm to level 55 in its Retribution list. Blacksmithing makes a second family of rare items, now in plate. The Retribution lists use the Justicar's version. No source lists the loot of Krol'dok Stronghold."
+        items:
+          - {slot: "Head", name: "Icemetal Barbute", from: dungeon, where: "Amnennar the Coldbringer, Razorfen Downs", basis: forever}
+          - {slot: "Chest", name: "Carapace of Tuten'kash", from: dungeon, where: "Razorfen Downs", basis: forever}
+          - {slot: "Two-hand weapon", name: "Abandoned Ferocity", from: quest, where: "Desolace (Horde)", basis: forever}
+          - {slot: "Two-hand weapon", name: "Grimlok's Charge", from: dungeon, where: "Uldaman, level 45 to 50", basis: forever}
+          - {slot: "Feet", name: "Justicar's Boots", from: craft, profession: blacksmithing}
+          - {slot: "Shoulders", name: "Justicar's Pauldrons", from: craft, profession: blacksmithing}
+          - {slot: "Wrist", name: "Justicar's Wristguards", from: craft, profession: blacksmithing}
+          - {slot: "Two-hand mace", name: "Mithril Warhammer", from: craft, profession: blacksmithing}
+          - {slot: "Relic", name: "Libram of Invocation", from: craft, profession: enchanting}
+      l50:
+        text: "Beastslayer from Un'Goro Crater is the weapon at level 55. The Blessed Plate set from Blacksmithing is new, and its quality is Uncommon. Timesaver.gg uses 5 parts of it in the Retribution list at level 60. The public data names only 1 item from Blackmaw Hold: Leggings of the Ursa, from the quest *Deadwood of the North*."
+        items:
+          - {slot: "Two-hand weapon", name: "Beastslayer", from: quest, where: "Un'Goro Crater, level 55", basis: forever}
+          - {slot: "Shoulders", name: "Blessed Plate Pauldrons", from: craft, profession: blacksmithing}
+          - {slot: "Feet", name: "Blessed Plate Boots", from: craft, profession: blacksmithing}
+          - {slot: "Wrist", name: "Blessed Plate Bracers", from: craft, profession: blacksmithing}
+          - {slot: "Waist", name: "Blessed Plate Belt", from: craft, profession: blacksmithing}
+          - {slot: "Two-hand mace", name: "Thorium Greatmace", from: craft, profession: blacksmithing}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting}
+          - {slot: "Trinket", name: "Rune of the Guard Captain", from: quest, where: "The Hinterlands", basis: forever}
+      l60:
+        text: "No source has a tested list for level 60. Timesaver.gg computes a list from stat weights, and Leprestore says that no verified list exists. The items below are in the Timesaver.gg and wowtbc.gg lists. No source confirms a hit cap for Forever."
+        items:
+          - {slot: "Head", name: "Lionheart Helm", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Titanic Leggings", from: craft, profession: blacksmithing}
+          - {slot: "Chest", name: "Blessed Plate Chest", from: craft, profession: blacksmithing}
+          - {slot: "Hands", name: "Devilsaur Gauntlets", from: craft, profession: leatherworking, where: "Changed in Forever"}
+          - {slot: "Neck", name: "Beads of Ogre Might", from: quest, where: "Dire Maul", basis: forever}
+          - {slot: "Ring", name: "Ring of Living Stone", from: quest, where: "Moonglade", basis: forever}
+          - {slot: "Ring", name: "Watcher's Signet of Ferocity", from: rep, where: "The Watchers, a new faction, at Revered", basis: forever}
+          - {slot: "Polearm", name: "Legionite Glaive", from: craft, profession: blacksmithing}
+          - {slot: "Relic", name: "Libram of Fervor", from: drop, where: "wowtbc.gg lists it as a world drop. Its effect is not published", basis: forever}
+      raid:
+        text: "Timesaver.gg selects the Forest Defender's Axe as the weapon at level 60. Its reagent is Malleable Essence of Nature. Reportedly, that reagent comes from raid items that an Enchanter disenchants. Thus, the axe becomes available only after the raids open. The cloak is the Classic selection for Onyxia's Lair."
+        items:
+          - {slot: "Two-hand axe", name: "Forest Defender's Axe", from: craft, profession: blacksmithing}
+          - {slot: "Back", name: "Onyxia Scale Cloak", from: craft, profession: leatherworking}
+  - id: shield
+    name: "One-hand weapon and shield"
+    pitch: "The Protection set. You use a one-hand weapon and a shield, and you take Stamina, armor and block. Warcraft Tavern says that a Protection Paladin always uses a shield. A lower armor class decreases your protection much."
+    stats: "Stamina, armor and Defense, then spell power and hit, then block and Strength. Warcraft Tavern names spell power as the main damage stat. No source gives a tested order"
+    chapters:
+      l1:
+        text: "Get a one-hand weapon and a shield from your first quests. Warcraft Tavern recommends a faster weapon for a tank, because Seal of Fury then hits more often."
+        items:
+          - {slot: "One-hand sword", name: "Militia Sword", from: quest, where: "*Rare Books*, Elwynn Forest (Human)", basis: forever}
+          - {slot: "One-hand mace", name: "Skullthumper", from: quest, where: "*Murlocs at the Gates*, Bandarion Keep (Undead)", basis: forever}
+          - {slot: "Shield", name: "Deathguard Buckler", from: quest, where: "*The Red Messenger*, Tirisfal Glades (Undead)", basis: forever}
+          - {slot: "One-hand mace", name: "Copper Mace", from: craft, profession: blacksmithing}
+      l10:
+        text: "Shields come from quests in Tirisfal Glades, Loch Modan and the Barrens. Hall of Thanes gives the Alliance a tank weapon. Seedcloud Buckler from Wailing Caverns is the shield at level 19. The Protection lists use the Crusader's version of the rare crafted mail."
+        items:
+          - {slot: "One-hand weapon", name: "Compact Hammer", from: quest, where: "*A Pilot's Revenge*, Dun Morogh (Alliance)", basis: forever}
+          - {slot: "Shield", name: "Ironplate Buckler", from: quest, where: "*Filthy Paws*, Loch Modan (Alliance)", basis: forever}
+          - {slot: "Shield", name: "Welding Shield", from: quest, where: "*Samophlange*, the Barrens (Horde)", basis: forever}
+          - {slot: "Weapon", name: "Durgen's Crescent Axe", from: dungeon, dungeon: hall-of-thanes, where: "Durgen Dirgehammer. Timesaver.gg selects it for Protection at level 15", basis: forever}
+          - {slot: "Shield", name: "Seedcloud Buckler", from: dungeon, where: "Verdan the Everliving, Wailing Caverns", basis: forever}
+          - {slot: "Waist", name: "Crusader's Chain Belt", from: craft, profession: blacksmithing}
+          - {slot: "Chest", name: "Crusader's Chain Shirt", from: craft, profession: blacksmithing}
+      l20:
+        text: "The Alliance class quest gives a shield at level 20. Timesaver.gg then gives the shield from the quest *Blackfathom Villainy* at 25. A Blacksmith can put a spike on your shield."
+        items:
+          - {slot: "Shield", name: "Bastion of Stormwind", from: class, where: "*The Tome of Valor*, level 20 (Alliance)", basis: forever}
+          - {slot: "Shield", name: "Arctic Buckler", from: quest, where: "*Blackfathom Villainy*, level 25", basis: forever}
+          - {slot: "One-hand weapon", name: "Blade of Silverlaine", from: dungeon, where: "Baron Silverlaine, Shadowfang Keep", basis: forever}
+          - {slot: "Head", name: "Crusader's Silvered Chain Helm", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Crusader's Chain Leggings", from: craft, profession: blacksmithing}
+          - {slot: "Shield add-on", name: "Iron Shield Spike", from: craft, profession: blacksmithing}
+      l30:
+        text: "Razorfen Kraul gives the shield for levels 30 to 35. The book quest at 35 gives a ring for tanks. The second family of rare crafted items starts with a mail belt. The Protection lists use the Warder's version."
+        items:
+          - {slot: "Shield", name: "Heart of Agamaggan", from: dungeon, where: "Charlga Razorflank, Razorfen Kraul", basis: forever}
+          - {slot: "One-hand weapon", name: "Debt Collector", from: dungeon, where: "Bazil Thredd, the Stockade (Alliance)", basis: forever}
+          - {slot: "One-hand weapon", name: "Pronged Reaver", from: dungeon, where: "Charlga Razorflank, Razorfen Kraul (Horde)", basis: forever}
+          - {slot: "Ring", name: "Field Researcher's Loop", from: quest, where: "*Greater Friend of the Library*, the book quest at level 35", basis: forever}
+          - {slot: "Waist", name: "Warder's Belt", from: craft, profession: blacksmithing}
+          - {slot: "One-hand mace", name: "Iron Morningstar", from: craft, profession: blacksmithing}
+      l40:
+        text: "Plate opens at level 40, and it increases your armor much. Scarlet Monastery gives the shield that Timesaver.gg keeps to level 55. Uldaman gives a weapon and a helm."
+        items:
+          - {slot: "Shield", name: "Aegis of the Scarlet Commander", from: dungeon, where: "Scarlet Commander Mograine, Scarlet Monastery Cathedral", basis: forever}
+          - {slot: "One-hand weapon", name: "Soulsplatter Mace", from: quest, where: "*Khan Jehn*, Desolace", basis: forever}
+          - {slot: "One-hand weapon", name: "Galgann's Firehammer", from: dungeon, where: "Uldaman", basis: forever}
+          - {slot: "Head", name: "Horned Viking Helmet", from: dungeon, where: "Eric \"The Swift\", Uldaman", basis: forever}
+          - {slot: "Head", name: "Southsea Head Bucket", from: quest, where: "*Southsea Shakedown*, Tanaris, level 45", basis: forever}
+          - {slot: "Chest", name: "Carapace of Tuten'kash", from: dungeon, where: "Razorfen Downs", basis: forever}
+          - {slot: "Feet", name: "Warder's Boots", from: craft, profession: blacksmithing}
+          - {slot: "Shoulders", name: "Warder's Pauldrons", from: craft, profession: blacksmithing}
+          - {slot: "Wrist", name: "Warder's Wristguards", from: craft, profession: blacksmithing}
+      l50:
+        text: "Imperial Plate from Blacksmithing fills 4 slots of the Timesaver.gg tank list. The client marks it as changed, so its Classic stats possibly do not apply. Lightforge Spaulders are a Classic item, and their stats in Forever are not known."
+        items:
+          - {slot: "Shield", name: "Aegis of Battle", from: quest, where: "*Venom to the Undercity*, the Hinterlands (Horde)", basis: forever}
+          - {slot: "Waist", name: "Imperial Plate Belt", from: craft, profession: blacksmithing}
+          - {slot: "Wrist", name: "Imperial Plate Bracers", from: craft, profession: blacksmithing}
+          - {slot: "Feet", name: "Imperial Plate Boots", from: craft, profession: blacksmithing}
+          - {slot: "Hands", name: "Warder's Gloves", from: craft, profession: blacksmithing}
+          - {slot: "Shoulders", name: "Lightforge Spaulders", from: dungeon, where: "The Beast, Blackrock Spire"}
+          - {slot: "Shield add-on", name: "Thorium Shield Spike", from: craft, profession: blacksmithing}
+      l60:
+        text: "No source has a tested tank list. Blizzard has not published a Defense target, so take Stamina, armor and Defense where you find them. The items below are in the Timesaver.gg and wowtbc.gg lists. The Enriched Thorium items need Merchant's Favor."
+        items:
+          - {slot: "Head", name: "Stalwart Helm", from: craft, profession: blacksmithing}
+          - {slot: "Chest", name: "Imperial Plate Chest", from: craft, profession: blacksmithing}
+          - {slot: "Chest", name: "Enriched Thorium Breastplate", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Enriched Thorium Leggings", from: craft, profession: blacksmithing}
+          - {slot: "Hands", name: "Blessed Plate Gauntlet", from: craft, profession: blacksmithing}
+          - {slot: "Main hand", name: "Sageblade", from: craft, profession: blacksmithing}
+          - {slot: "Back", name: "Redoubt Cloak", from: dungeon, where: "Mizzle the Crafty, Dire Maul", basis: forever}
+          - {slot: "Ring", name: "Dalson Family Wedding Ring", from: quest, where: "*Locked Away*, Western Plaguelands", basis: forever}
+          - {slot: "Trinket", name: "Demon's Blood", from: quest, where: "Blasted Lands", basis: forever}
+          - {slot: "Shield", name: "Force Reactive Disk", from: craft, profession: engineering}
+      raid:
+        text: "Timesaver.gg selects the Evergreen Shield at level 60. The shield, the cloak and the Libram need Malleable Essence of Nature. Reportedly, that reagent comes from raid items that an Enchanter disenchants. For Onyxia's Lair, tanks used fire resistance items in Classic."
+        items:
+          - {slot: "Shield", name: "Evergreen Shield", from: craft, profession: blacksmithing}
+          - {slot: "Back", name: "Fel Cape", from: craft, profession: tailoring}
+          - {slot: "Relic", name: "Steadfast Libram", from: craft, profession: enchanting, where: "It is in the wowtbc.gg Protection list. Its effect is not published"}
+  - id: healer
+    name: "Healer"
+    pitch: "The Holy set. You use a one-hand weapon with spell power and a shield, and you take healing power, Intellect and crit. Warcraft Tavern says that cloth and leather items are often better for these stats."
+    stats: "Healing power and spell power, then Intellect, then crit, then Spirit and mana regeneration. No source gives a tested order"
+    chapters:
+      l1:
+        text: "You heal little at these levels, so use the one-hand weapon and the shield of a tank. Take Intellect on each item that offers it. A Paladin cannot use staves or wands."
+        items:
+          - {slot: "One-hand sword", name: "Militia Sword", from: quest, where: "*Rare Books*, Elwynn Forest (Human)", basis: forever}
+          - {slot: "Shield", name: "Deathguard Buckler", from: quest, where: "*The Red Messenger*, Tirisfal Glades (Undead)", basis: forever}
+          - {slot: "One-hand mace", name: "Copper Mace", from: craft, profession: blacksmithing}
+      l10:
+        text: "Weapons can have spell power and healing power from about level 10. Scepter of the Abandoned is the first example. ConquestCapped gives it 24 spell power, from beta data. The Holy lists use the Acolyte's version of the rare crafted mail."
+        items:
+          - {slot: "One-hand weapon", name: "Scepter of the Abandoned", from: dungeon, dungeon: ruins-of-lordaeron, where: "The Abandoned", basis: forever}
+          - {slot: "One-hand weapon", name: "Monastic Hammer", from: quest, where: "*Red Silk Bandanas*, the Deadmines (Alliance)", basis: forever}
+          - {slot: "One-hand weapon", name: "Mug of Muddled Memories", from: quest, where: "*Leonid's Letter*, Tirisfal Glades (Horde)", basis: forever}
+          - {slot: "Shield", name: "Seedcloud Buckler", from: dungeon, where: "Verdan the Everliving, Wailing Caverns", basis: forever}
+          - {slot: "Waist", name: "Acolyte's Chain Belt", from: craft, profession: blacksmithing}
+          - {slot: "Chest", name: "Acolyte's Chain Shirt", from: craft, profession: blacksmithing}
+      l20:
+        text: "Method.gg selects the Acolyte's Silvered Chain Helm at level 20. ConquestCapped says that it needs level 30. The trinket from Shadowfang Keep stays in the Timesaver.gg Holy list to level 60. Method.gg and ConquestCapped also name The Stitcher for the Horde, but no source gives where it comes from."
+        items:
+          - {slot: "Head", name: "Acolyte's Silvered Chain Helm", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Acolyte's Chain Leggings", from: craft, profession: blacksmithing}
+          - {slot: "Trinket", name: "Worgenbane Talisman", from: dungeon, where: "Commander Springvale, Shadowfang Keep", basis: forever}
+          - {slot: "One-hand weapon", name: "The Stitcher", from: any, where: "Horde only. The source is not known", basis: unverified}
+      l30:
+        text: "Painwalker Buckler from Scarlet Monastery is the Holy shield from level 30 to 55 in the Timesaver.gg list. The ring from the book quest stays in the list to level 60. City of Dalaran gives 2 more rings. The Holy lists use the Prefect's version of the second crafted family."
+        items:
+          - {slot: "Shield", name: "Painwalker Buckler", from: dungeon, where: "Interrogator Vishas, Scarlet Monastery Graveyard", basis: forever}
+          - {slot: "Ring", name: "Philanthropist's Ring", from: quest, where: "*Greater Friend of the Library*, the book quest at level 35", basis: forever}
+          - {slot: "Ring", name: "Runemender's Seal", from: dungeon, dungeon: city-of-dalaran, where: "Arcane Anomaly", basis: forever}
+          - {slot: "Ring", name: "Solid Gold Band", from: quest, where: "*Opportunistic Education*, City of Dalaran", basis: forever}
+          - {slot: "Back", name: "Priestess Cloak", from: dungeon, dungeon: drowned-city, where: "Var'Taka", basis: forever}
+          - {slot: "Waist", name: "Prefect's Belt", from: craft, profession: blacksmithing}
+      l40:
+        text: "Hand of Righteousness from Scarlet Monastery is the Holy weapon from level 40 to 55. Plate opens at level 40, but keep a mail, leather or cloth item if it has more healing power. Blacksmithing makes plate for healers."
+        items:
+          - {slot: "One-hand weapon", name: "Hand of Righteousness", from: dungeon, where: "High Inquisitor Whitemane, Scarlet Monastery Cathedral", basis: forever}
+          - {slot: "Feet", name: "Prefect's Boots", from: craft, profession: blacksmithing}
+          - {slot: "Shoulders", name: "Prefect's Pauldrons", from: craft, profession: blacksmithing}
+          - {slot: "Wrist", name: "Prefect's Wristguards", from: craft, profession: blacksmithing}
+          - {slot: "Trinket", name: "Thunderbrew's Boot Flask", from: quest, where: "*Sweet Amber*, Westfall (Alliance)", basis: forever}
+      l50:
+        text: "Few new healer items have a name in the public data for these levels. Keep Hand of Righteousness and Painwalker Buckler. The trinket from the Blasted Lands is in the level 60 list. wowtbc.gg names items from Maraudon and Blackrock Depths, in no order."
+        items:
+          - {slot: "Trinket", name: "Shard of the Splithooves", from: quest, where: "*Heroes of Old*, Blasted Lands", basis: forever}
+          - {slot: "Shield", name: "Gizlock's Hypertech Buckler", from: dungeon, where: "Maraudon", basis: forever}
+          - {slot: "One-hand weapon", name: "The Hammer of Grace", from: dungeon, where: "Blackrock Depths", basis: forever}
+          - {slot: "Trinket", name: "Burst of Knowledge or Second Wind", from: dungeon, where: "Blackrock Depths", basis: forever}
+          - {slot: "Feet", name: "Prefect's Sabatons", from: craft, profession: blacksmithing}
+      l60:
+        text: "No source has a tested healer list. The Timesaver.gg list for Holy uses leather items in 4 slots. The Wildheart items in that list are the Classic Druid set, and their stats in Forever are not known. Healing items also give spell power in Forever."
+        items:
+          - {slot: "Head", name: "Living Crown", from: craft, profession: leatherworking, where: "It needs Fel Leather. No source says where Fel Leather comes from"}
+          - {slot: "Back", name: "Hide of the Wild", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Breastplate of Salvation", from: craft, profession: blacksmithing}
+          - {slot: "Legs", name: "Martyr's Legplates", from: craft, profession: blacksmithing}
+          - {slot: "Main hand", name: "Sageblade", from: craft, profession: blacksmithing}
+          - {slot: "Main hand", name: "Hammer of the Grand Crusader", from: dungeon, where: "Balnazzar, Stratholme", basis: forever}
+          - {slot: "Shoulders", name: "Wildheart Spaulders", from: dungeon, where: "Gizrul the Slavener, Blackrock Spire"}
+          - {slot: "Neck", name: "Orb of the Darkmoon", from: vendor, where: "1,200 tickets (Timesaver.gg)", basis: forever}
+          - {slot: "Relic", name: "Libram of Holy Alacrity", from: craft, profession: enchanting}
+      raid:
+        text: "The shield, the belt and the Libram below need Malleable Essence of Nature. Reportedly, that reagent comes from raid items that an Enchanter disenchants. Thus, they become available only after the raids open."
+        items:
+          - {slot: "Shield", name: "Evergreen Shield", from: craft, profession: blacksmithing}
+          - {slot: "Waist", name: "Elderwild Waistcord", from: craft, profession: leatherworking}
+          - {slot: "Relic", name: "Libram of Infusion", from: craft, profession: enchanting, where: "It is in the wowtbc.gg Holy list. Its effect is not published"}
+
+equipment:
+  intro: |
+    A Paladin wears mail to level 39 and plate from level 40. The weapon decides the role: a slow two-hand weapon for Retribution, a one-hand weapon and a shield for Protection and Holy. After dual spec at level 40 you carry 2 sets.
+
+    About 12,600 items of Forever had hidden stats at launch. The stats of an item become visible when a player first finds it. Thus, no source has a tested list for level 60. The item names on this page come from Timesaver.gg (data of 6 November 2026), wowtbc.gg, Method.gg, Warcraft Tavern and ConquestCapped. The Codex did not verify the stats.
+
+    The 3 Timesaver.gg lists give different items for each spec. The tool computes them from stat weights. It leaves out world drops, reputation items and raid items.
+  proficiencies:
+    - ["Mail armor", "Level 1", "Cloth and leather are also possible. Healers sometimes use them for caster stats"]
+    - ["Plate armor", "Level 40", "Plate appearances for transmog also need level 40"]
+    - ["Shields", "Not published", "The Timesaver.gg tables show shields from quests at level 5 to 10"]
+    - ["One-hand maces", "Level 1", "Default weapon skill. No trainer is necessary"]
+    - ["One-hand and two-hand axes, two-hand maces", "Weapon master", "Buliwyf Stonehand in Ironforge. Hanashi and Sayoc in Orgrimmar. Ansekhwa in Thunder Bluff for two-hand maces"]
+    - ["One-hand and two-hand swords", "Weapon master", "Woo Ping in Stormwind. Archibald in the Undercity"]
+    - ["Polearms", "Weapon master, level 20", "Woo Ping in Stormwind. Archibald in the Undercity"]
+    - ["Relic (Libram)", "Ranged slot", "Small passive bonuses for 1 class. No source gives the effect of a Libram"]
+    - ["Staves, daggers, wands, ranged weapons", "Never", "Warcraft Tavern says that Paladins cannot use staves"]
+  rules:
+    - "Hit is 1 stat for melee, ranged attacks and spells. Crit is also 1 stat (Method.gg)."
+    - "No source confirms a hit cap for Forever. Leprestore says that no exact value is confirmed. The Classic caps assume Weapon Skill, and Expertise replaces it in Forever. Thus, do not use a Classic cap."
+    - "Hit comes from Precision (3%), from Divine Precision (8%, Holy spells only) and from the Dwarf racial Artisan's Precision (1%)."
+    - "Blizzard has not published a Defense target for Forever. The Classic target of 440 Defense is not confirmed."
+    - "Healing items also give spell power (Method.gg). Weapons can have spell power or healing power from about level 10."
+    - "Champion of the Light changes Intellect into spell damage. Thus, Intellect is a damage stat for Retribution from level 35."
+    - "Seal of Command needs a slow weapon. ConquestCapped says 3.2 seconds or slower. Warcraft Tavern recommends a faster weapon for Seal of Fury."
+    - "You can use a weapon stone or an oil together with a Seal (Classic rule)."
+    - "For leveling, ConquestCapped puts Stamina, Spirit and Intellect before Strength, because most damage comes from abilities. Leprestore puts weapon damage, Strength and crit first. The 2 sources agree that the weapon is the most important item."
+    - "Transmog is account-wide, and it works only for the same armor type."
+    - "Necklaces and off-hand items can have enchants. These slots are new."
+    - "Professions give no passive stats. Camp buffs do not stack with the equivalent class buff: the Lodestone does not stack with Blessing of Might."
+    - "The rare crafted items of Blacksmithing have 5 versions for each slot. The client data gives no stats for them, so read the tooltip."
+  enchants:
+    - ["Two-hand weapon", "Crusader", "The Classic standard for Retribution. Its value in Forever is not tested"]
+    - ["Two-hand weapon", "Strength (2H) or Superior Impact (2H)", "Enchant 2H Weapon - Strength is new, at Enchanting skill 290"]
+    - ["One-hand weapon (healer)", "Healing Power", "Changed in Forever. Read the tooltip"]
+    - ["One-hand weapon (tank)", "Spell Power or Crusader", "Warcraft Tavern names spell power as the main damage stat of Protection"]
+    - ["Shield", "Excellent Stamina or Critical Strike", "The 2 enchants are new, at Enchanting skill 300"]
+    - ["Shield", "Iron, Mithril or Thorium Shield Spike", "Blacksmithing"]
+    - ["Necklace", "Strength, Deflection, Healing Power or Spell Power", "New slot. Enchanting skill 210, with Merchant's Favor"]
+    - ["Gloves", "Superior Strength or Holy Power", "New. Enchanting skill 300, with Merchant's Favor"]
+    - ["Bracers", "Superior Deflection, Superior Intellect or Greater Spellpower", "New. Enchanting skill 300, with Merchant's Favor"]
+    - ["Cloak", "Greater Fire Resistance", "For Onyxia's Lair. Fire resistance is recommended, but no source gives a number"]
+  consumables:
+    - ["Leveling", "Rough to Dense Weightstone or Sharpening Stone", "Blacksmithing. Weightstones are for maces. Sharpening stones are for swords, axes and polearms (Classic rule)"]
+    - ["Leveling", "Minor Mana Oil, Lesser Mana Oil", "Enchanting. For healers"]
+    - ["Leveling", "Elixir of Minor Strength, Elixir of Ogre Strength", "Alchemy. The client marks the 2 elixirs as changed"]
+    - ["Leveling", "Beer Basted Boar Ribs and other Strength food", "Cooking. Method.gg says that most stat food also gives +5% XP"]
+    - ["All levels", "Healing potions", "First Aid makes them in Forever, not Alchemy"]
+    - ["Level 60", "Major Mana Potion", "Alchemy. For all 3 specs"]
+    - ["Level 60", "Elixir of the Mongoose, Flask of the Titans, Flask of Distilled Wisdom", "The client marks them as not changed from Classic"]
+    - ["Level 60", "Brilliant Mana Oil, Brilliant Wizard Oil", "Enchanting. For healers and for tanks with spell power"]
+    - ["Level 60", "Greater Fire Protection Potion", "For Onyxia's Lair (Classic advice)"]
+    - ["Level 60", "Symbol of Kings, Symbol of Divinity", "Reagents for Greater Blessings and Divine Intervention. The Legacy talent Reagent Economy removes them"]
+  sources:
+    - {title: "Timesaver.gg: Paladin leveling gear, Retribution", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/paladin/retribution"}
+    - {title: "Timesaver.gg: Paladin leveling gear, Protection", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/paladin/protection"}
+    - {title: "Timesaver.gg: Paladin leveling gear, Holy", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/paladin/holy"}
+    - {title: "wowtbc.gg: Retribution Paladin item lists for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/retribution-paladin/"}
+    - {title: "wowtbc.gg: Protection Paladin item lists for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/protection-paladin/"}
+    - {title: "wowtbc.gg: Holy Paladin item lists for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/holy-paladin/"}
+    - {title: "Warcraft Tavern: Paladin leveling guide (weapon trainers, class quest rewards)", url: "https://www.warcrafttavern.com/forever/guides/paladin-leveling/"}
+    - {title: "Warcraft Tavern: Retribution Paladin", url: "https://www.warcrafttavern.com/forever/guides/retribution-paladin/"}
+    - {title: "Warcraft Tavern: Protection Paladin", url: "https://www.warcrafttavern.com/forever/guides/protection-paladin/"}
+    - {title: "Warcraft Tavern: Holy Paladin", url: "https://www.warcrafttavern.com/forever/guides/holy-paladin/"}
+    - {title: "Method.gg: Paladin leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-paladin-leveling-guide-and-talents"}
+    - {title: "Method.gg: itemization updates", url: "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more"}
+    - {title: "ConquestCapped: Paladin leveling (beta data)", url: "https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-leveling/"}
+    - {title: "Leprestore: Retribution Paladin guide", url: "https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-retribution-paladin-guide-best-builds-race-professions/"}
+
+# ------------------------------------------------------------------ other sections
+professions: |
+  A Paladin wears plate from level 40, and **Blacksmithing** is good for all 3 specs. It has many new recipes, and it makes mail with caster stats before level 40. Warcraft Tavern strongly recommends it for a spell power build.
+
+  | Rank | Professions | Use them for | Codex rating: leveling, raids, PvP, gold |
+  |---|---|---|---|
+  | **S**{ .tier .tier-s } | [Mining](../../professions/mining.md) + [Blacksmithing](../../professions/blacksmithing.md) | Weapons, mail and plate for each level range, weapon stones and shield spikes. The standard selection | 4, 4, 3, 3 of 5 |
+  | **A**{ .tier .tier-a } | [Mining](../../professions/mining.md) + [Engineering](../../professions/engineering.md) | PvP gadgets | 2, 3, 5, 2 of 5 |
+  | **B**{ .tier .tier-b } | [Herbalism](../../professions/herbalism.md) + [Alchemy](../../professions/alchemy.md) | Elixirs and mana potions for Holy healers in raids | 3, 5, 3, 4 of 5 |
+
+  [Enchanting](../../professions/enchanting.md) makes the crafted Librams. Take [First Aid](../../professions/first-aid.md) on each character, because it now makes healing potions. [Cooking](../../professions/cooking.md) and [Fishing](../../professions/fishing.md) supply the camp. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+  Each crafting profession adds a [camp feature](../../systems/camping.md). Blacksmithing gives the Sharpening Wheel (Strength), and Mining gives the Lodestone (melee attack power). Engineering gives the Reagent Bot. The pair Herbalism and Alchemy gives the Incense Candle (Intellect) and the Mana Well (mana regeneration). Crafting professions also give Legacy Points at skill 150, 225 and 300. The 3 Paladin races have no profession racial.
+
+legacy: |
+  You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character. A Paladin gets class Legacy Points at levels 25, 45 and 60.
+
+  | Tree | Picks for a Paladin |
+  |---|---|
+  | Adventure | **Thrill of Adventure** gives back health and mana when you kill an enemy in the open world. It is the best pick for a class that often has no mana |
+  | Adventure | **Well Rested** 5/5, then **Talented** 5/5. Talented gives your first talent point up to 5 levels earlier |
+  | Resourcefulness | **Reagent Economy** removes the Symbol of Kings and the Symbol of Divinity. **Permanence** makes class buffs last longer |
+  | Other | *For Great Honor* gives up to +10% Honor. *Diplomat* helps reputation |
+
+mistakes:
+  - "You cast your Seal again after each Judgement. In Forever the Seal stays active."
+  - "You keep Righteous Fury active when you are not the tank."
+  - "You plan Templar's Bulwark and Divine Shield in 1 fight. They share Forbearance."
+  - "You use Seal of Command with a fast weapon. Use Seal of Righteousness until you have a slow two-hand weapon."
+  - "You pull more than 4 enemies and expect full Consecration damage on all of them."
+  - "You forget that the game no longer adds new spells to your action bars."
+  - "You buy dual spec without gold for riding at level 40."
+
+faq:
+  - q: "Does Judgement still remove my Seal?"
+    a: "No. In Forever the Seal stays active after Judgement, so you do not cast it again."
+  - q: "Where is Blessing of Salvation?"
+    a: "Blizzard removed it before launch, together with Blessing of Light and Blessing of Sanctuary."
+  - q: "Can I seal-twist?"
+    a: "Not as in Classic. The last Retribution talent, Unsealed Wrath, replaces it. Swing with one Seal to store copies, then change Seals."
+  - q: "Can I take Holy Shock and Unsealed Wrath in one build?"
+    a: "No. Holy Shock needs 21 Holy points and Unsealed Wrath needs 31 Retribution points. This is 52 points, and you have 51."
+  - q: "Why is my Consecration weaker on large pulls?"
+    a: "It does full damage to only the first 4 targets."
+  - q: "Where do Horde Paladins train?"
+    a: "At Bandarion Keep, Brill or Deathknell in Tirisfal Glades. No source confirms a trainer in the Undercity or Orgrimmar."
+  - q: "Which spec is best for leveling?"
+    a: "Retribution is the usual selection. Protection is good if you level mostly in dungeons. Holy is for players who heal dungeons from the first levels."
+  - q: "How do I get the Warhorse at level 40?"
+    a: "Sources do not agree. In Classic it is the quest *The Tome of Nobility* from an Alliance trainer. The Forsaken quest has no confirmed quest giver."
+
+sources:
+  - {title: "Warcraft Tavern: All Changes to Paladins in WoW Forever (September beta)", url: "https://www.warcrafttavern.com/forever/news/all-changes-to-paladins-in-wow-forever/"}
+  - {title: "Warcraft Tavern: Class Trainer Locations", url: "https://www.warcrafttavern.com/forever/guides/class-trainers/"}
+  - {title: "Warcraft Tavern: Seal Twisting & Shockadins, Paladin Deep Dive", url: "https://www.warcrafttavern.com/forever/news/seal-twisting-shockadins-paladin-deep-dive-for-wow-forever/"}
+  - {title: "Warcraft Tavern: Pre-Launch Class Changes", url: "https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/"}
+  - {title: "Kami Labs: November 2 patch notes", url: "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/"}
+  - {title: "Method: Paladin Leveling Guide & Talents", url: "https://www.method.gg/wow-forever/wow-forever-paladin-leveling-guide-and-talents"}
+  - {title: "ConquestCapped: Paladin Leveling", url: "https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-leveling/"}
+  - {title: "ConquestCapped: Paladin Mount Guide", url: "https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-mount/"}
+  - {title: "Talents Forever: Paladin leveling orders", url: "https://talentsforever.com/paladin/leveling"}
+  - {title: "Leprestore: Retribution Paladin Guide", url: "https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-retribution-paladin-guide-best-builds-race-professions/"}
+  - {title: "ForG: Forsaken Paladin class quests", url: "https://forg.gg/en/forever/tips/forsaken-paladin"}
+  - {title: "ForG: Wolfsbane", url: "https://forg.gg/en/forever/wolfsbane"}
+  - {title: "LFCarry: Undead Paladin guide", url: "https://lfcarry.com/guides/wow-forever-undead-paladin"}
+  - {title: "ChaosBoost: Undead Paladin guide", url: "https://www.chaosboost.com/articles/wow-forever-undead-paladin-guide"}
+  - {title: "ForeverDB: Paladin lore", url: "https://foreverdb.net/lore/class/paladin"}

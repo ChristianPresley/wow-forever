@@ -12,14 +12,16 @@ search:
 
 <div class="guide-head" data-class="shaman" markdown>
 
-:codex-shaman:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Talent guide</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+:codex-shaman:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Shaman progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
 
 <nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#elemental-combat">Elemental Combat</a> <a href="#enhancement">Enhancement</a> <a href="#restoration">Restoration</a></nav>
 
 </div>
 
 !!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/shaman/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. Read this page with the [Shaman guide](../guides/shaman/index.md).
+    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/shaman/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Shaman progression](index.md) tells you when each talent becomes important.
 
 The Shaman has 3 roles in Forever. **Elemental Combat** is the ranged damage tree, **Enhancement** is the melee damage tree, and **Restoration** is the healer tree. Each damage build also puts points in the first rows of the other trees, because Thundering Strikes, Tidal Focus, Mindfulness and Water Shield help all specs. The client has no full tank tree, but some Enhancement talents add threat and avoidance.
 

@@ -11,7 +11,7 @@ tags:
 
 :codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Warrior guide](index.md). This page covers only what changes for a Gnome.</p>
+<p class="gh-note" markdown>Read with the [Warrior progression](index.md). This page covers only what changes for a Gnome.</p>
 
 </div>
 

@@ -160,7 +160,7 @@ builds:
     kind: leveling
     role: "Leveling"
     summary: |
-      The build that all major guides recommend for solo leveling. The first 21 points follow the Warcraft Tavern order from the class guide. After that, this order takes Siphon Life and Wrack earlier and does not use Malediction, which is not in the launch client.
+      The build that all major guides recommend for solo leveling. The first 21 points follow the Warcraft Tavern order from the earlier Codex class guide. After that, this order takes Siphon Life and Wrack earlier and does not use Malediction, which is not in the launch client.
     steps:
       - [Improved Corruption, 5, "Corruption becomes almost instant"]
       - [Suppression, 5, "Fewer misses and less threat for your demon"]
@@ -189,7 +189,7 @@ builds:
     kind: leveling
     role: "Leveling"
     summary: |
-      The safe route to 60 and the route for Hardcore. It puts all points in Demonology from level 10. You get Soul Link at 30 and Demonic Pact at 40. The order follows the Warcraft Tavern Demonology build in the class guide.
+      The safe route to 60 and the route for Hardcore. It puts all points in Demonology from level 10. You get Soul Link at 30 and Demonic Pact at 40. The order follows the Warcraft Tavern Demonology build in the earlier Codex class guide.
     steps:
       - [Unholy Power, 5, "A stronger demon from the first point"]
       - [Demonic Energies, 2, "Your damage heals the demon"]
@@ -219,7 +219,7 @@ builds:
     kind: leveling
     role: "Leveling"
     summary: |
-      The build for players who level in dungeon groups. It has the best AoE and cleave, but it has less self-healing than Affliction. The order follows the Warcraft Tavern build in the class guide, with Ruin 5/5.
+      The build for players who level in dungeon groups. It has the best AoE and cleave, but it has less self-healing than Affliction. The order follows the Warcraft Tavern build in the earlier Codex class guide, with Ruin 5/5.
     steps:
       - [Bane, 5, "Faster Shadow Bolt and Immolate"]
       - [Cataclysm, 3, "Less mana for each spell"]

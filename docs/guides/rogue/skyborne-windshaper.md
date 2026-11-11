@@ -11,7 +11,7 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page covers only what changes for a Horde Skyborne.</p>
+<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page covers only what changes for a Horde Skyborne.</p>
 
 </div>
 
@@ -169,7 +169,7 @@ The Windshaper airship leaves the west Skydock and lands at **Skywatcher Plateau
 
 ## Faction notes
 
-- **Poison quest (20):** Shenthul, Cleft of Shadow, Orgrimmar. See the [main guide](index.md#the-poison-quest-level-20).
+- **Poison quest (20):** Shenthul, Cleft of Shadow, Orgrimmar. See the [main guide](index.md#l20).
 - **Library books:** Owen Thadd, Magic Quarter, Undercity.
 - **Mount:** **Galestriders** at **Fairweather Stables**, Zephras Isle (53.8, 81.3). They come in Umber, Stormy and Empyrean, with Swift versions. Windshaper reputation gives a 5–20% discount. Other Horde races can buy them at Exalted. Cloth turn-ins in Mulgore give part of this reputation.
 - **Reputation:** Windshapers, plus the Nightclaw druids.

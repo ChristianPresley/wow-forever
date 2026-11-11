@@ -1,0 +1,745 @@
+class: Mage
+badges: [dps]
+description: "Mage progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
+aka: "Arcane, Fire or Frost mage · AoE mage"
+
+intro: |
+  The Mage is a ranged caster that wears cloth. This page follows 1 Mage from character creation to the raids, level by level. It tells you what changes in each level range: the spells that you train, the way that you fight, the dungeons and the decisions.
+
+glance:
+  - ["Role", "Ranged damage, crowd control, utility"]
+  - ["Armor", "**Cloth**{ .pill .pill--cloth }"]
+  - ["Weapons", "Staves, one-hand swords, daggers, wands, off-hand items"]
+  - ["Resource", "**Mana**{ .pill .pill--mana }"]
+  - ["Races", "6 combinations"]
+  - ["Leveling speed", "Third in the beta, after Hunter and Warlock"]
+
+strengths:
+  - "Polymorph and Frost Nova control each fight"
+  - "Burst with Arcane Power, Combustion or an Ice Lance on a Frozen target"
+  - "Makes its own food and water"
+  - "Teleports and portals"
+
+weaknesses:
+  - "The lowest armor in the game"
+  - "Uses much mana"
+  - "Weak when an enemy is in melee range or stuns the Mage"
+
+changes:
+  added: ["Frostfire Bolt", "Comprehension", "Arcane Blast", "Arcane Wrath", "Missile Barrage", "Heating Up", "Ice Lance", "Fingers of Frost"]
+  removed: ["Frost Blast", "Piercing Ice"]
+  notes:
+    - "**Frostfire Bolt** (level 40) counts as Fire and Frost. It uses the better of your Fire and Frost spell power."
+    - "**Comprehension** is a minor tradeskill for Mages only. It changes scrolls that you loot into stat scrolls."
+    - "**Ice Block** is higher in the Frost tree. It needs only 15 Frost points. **Cold Snap** is in row 5 and has a 10 minute cooldown."
+    - "**Precision** in the Frost tree gives 6% hit for all spells. The launch client has no Arcane Focus talent."
+    - "Each Mage has a separate **Ignite**. Improved Scorch increases only your Fire damage."
+    - "Magic Attunement is baseline. Mage Armor gives more mana regeneration."
+    - "Cone of Cold has a shorter duration. Improved Blizzard slows by a maximum of 40%."
+
+# ------------------------------------------------------------------ chapters
+chapters:
+  - id: start
+    title: "Make your Mage"
+    story: |
+      A Mage kills enemies from range and controls the fight. Polymorph removes 1 enemy from the fight. Frost Nova holds enemies in place. Blink moves you away from danger. The class also has utility that no other class has: conjured food and water, teleports, portals, Remove Lesser Curse, Counterspell and Slow Fall.
+
+      The weak point of the class is defense. A Mage wears cloth and has the lowest armor in the game. Thus, each fight has 1 rule: do not let the enemy stay near you. Each chapter of this page shows how you obey that rule with the spells of that level range.
+
+      In Forever, Blizzard rebuilt all 3 talent trees. Each school of magic (Arcane, Fire and Frost) is now a full damage spec. The class also got Frostfire Bolt, a spell that counts as 2 schools, and Comprehension, its own minor tradeskill.
+
+      You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race.
+    extra: |
+      !!! conflict "Conflict: the best race"
+          Warcraft Tavern names Skyborne as the best Alliance Mage and Orc as the best Horde Mage. Method.gg recommends Human or Gnome for the Alliance, and Orc or Troll for the Horde. The differences are small. Select the race that you will like for a few hundred hours.
+    goals:
+      - "Select a race. Read its Race add-on."
+      - "Select a talent path. Frost is the safe selection for a first Mage."
+      - "Select an equipment set. The set *Quests and dungeons* needs no profession."
+      - "Read the [Professions](#professions) section. Tailoring and Enchanting are the usual selection."
+
+  - id: l1
+    title: "Fireball, Frostbolt and Polymorph"
+    story: |
+      You start with Fireball and Frost Armor. Keep Frost Armor on you at all times. To pull an enemy is to start a fight with it. Pull each enemy with Fireball from maximum range, and cast until it dies.
+
+      At level 4 you train Frostbolt. Frostbolt slows the enemy, so the enemy gets to you later. It becomes your main spell. At level 6 you train Fire Blast, an instant spell. Use it when the enemy has low health.
+
+      Level 8 is the first large step. Polymorph changes 1 enemy into a sheep, and damage ends the effect. From this level, a pull of 2 enemies is safe: cast Polymorph on the second enemy, then kill the first enemy.
+
+      Mana is your limit. You make your own water from level 4 and your own food from level 6, so a drink costs nothing. Drink to full mana before each pull. A solo kill takes 10 to 15 seconds, so pull 1 enemy at a time. Train each new rank of Conjure Water and Conjure Food.
+
+      The game does not put new spells on your action bars. After each visit to a trainer, open the spellbook and move the new spells to your bars.
+
+      Warcraft Tavern says that **Comprehension** becomes available at level 6. Keep the scrolls that you loot. *Comprehend Scroll* is in the General tab of the spellbook, and it changes these scrolls into stat scrolls.
+    train:
+      - [1, "Fireball, Frost Armor, Arcane Intellect", "Your first damage spell and your first buffs. Kami-Labs says that Arcane Intellect now lasts 1 hour"]
+      - [4, "Frostbolt, Conjure Water", "Frostbolt slows the target. Conjure Water removes the cost of drinks"]
+      - [6, "Fire Blast, Conjure Food", "An instant spell to kill a target with low health"]
+      - [8, "Polymorph, Arcane Missiles", "Polymorph removes 1 enemy from the fight for its duration"]
+    tip: |
+      Get a wand as soon as you can. A wand kills an enemy with low health and uses no mana. Fan reports say that wand damage increases with spell power in Forever.
+    hardcore: |
+      Do not fight 2 enemies before level 8. If a second enemy comes, run before your health is low.
+    goals:
+      - "Do the class letter quest from your first trainer (Classic-era quest)."
+      - "Train Polymorph at level 8."
+      - "Equip a wand."
+      - "Learn your professions. The starter profession quest gives +2 skill."
+
+  - id: l10
+    title: "First talents, Frost Nova and the first dungeon"
+    story: |
+      At level 10 you train Frost Nova, and you get your first talent point. From here, you get 1 talent point at each level, to a total of 51 at level 60. The Talents add-on below gives the talent for each point.
+
+      Frost Nova changes each fight. Before level 10, an enemy that got to you stayed near you. Now you cast Frost Nova, step back, and continue to cast. The enemy cannot hit you while it is Frozen. To kite is to do damage to an enemy while you stay out of its range. Frost Nova is the first step of each kite.
+
+      Arcane Explosion at 14 and Flamestrike at 16 are your first AoE spells. Use them on groups of weak enemies only, because each cast uses much mana.
+
+      Your first dungeons open at level 13. Quests give much more XP than dungeon enemies, so do each dungeon for its quests. In a group, your jobs are damage and Polymorph on the target that the tank marks. At 18 you get a third job: Remove Lesser Curse.
+
+      Each dungeon in Forever has 1 difficulty and no summoning stone. Only the ritual of a Warlock can summon a player. Bring water for the group, because you are the only class that makes it.
+
+      At level 14, start the scavenger hunt for the Cozy Sleeping Bag. It gives an XP buff and rested XP. See [Leveling](../../characters/leveling.md).
+    train:
+      - [10, "Frost Nova", "Holds all enemies near you in place. The first step of each kite"]
+      - [12, "Slow Fall", "Prevents fall damage"]
+      - [14, "Arcane Explosion", "Instant AoE around you"]
+      - [16, "Flamestrike", "AoE at range"]
+      - [18, "Remove Lesser Curse, Amplify Magic", "A group job in dungeons"]
+    dungeons:
+      - {id: hall-of-thanes, levels: "13–20", note: "New. It is in Ironforge"}
+      - {name: "Ragefire Chasm", levels: "13–18", note: "It is in Orgrimmar"}
+      - {id: ruins-of-lordaeron, levels: "15–22", note: "New. It is in Tirisfal Glades"}
+      - {name: "Deadmines and Wailing Caverns", levels: "15–26"}
+    extra: |
+      ??? example "Macro for Polymorph in dungeons"
+
+          ```
+          #showtooltip Polymorph
+          /cast [@focus,exists,harm,nodead][] Polymorph
+          ```
+
+          Set a focus on your Polymorph target. Then this key always casts Polymorph on the same enemy.
+    warn: |
+      Do not break Polymorph with AoE. Look at the sheep before you cast Arcane Explosion or Flamestrike.
+    hardcore: |
+      Use Polymorph on each additional enemy. Do not fight more enemies than you can kill.
+    goals:
+      - "Train Frost Nova and spend your first talent point at level 10."
+      - "Do your first dungeon for its quests."
+      - "Start the Cozy Sleeping Bag scavenger hunt at level 14."
+
+  - id: l20
+    title: "Blink, Counterspell and teleports"
+    story: |
+      Level 20 gives you more than any level before it. You train Blink, Blizzard, Evocation and Mana Shield. You also learn the teleports to 2 capital cities of your faction.
+
+      Blink moves you 20 yards forward and removes stuns and roots. It is your escape, and it is the second step of a kite: Frost Nova, then Blink. Evocation refills your mana when no drink is possible. Mana Shield makes damage use your mana in place of your health.
+
+      Your 11th talent point also comes at level 20. On the Frost path it gives Ice Lance. On the Arcane path it gives Arcane Blast. The Talents add-on shows how each of them changes your fight.
+
+      Counterspell at 24 gives you a new job in dungeons and in PvP. It stops an enemy cast and locks that school of magic. Use it on healers and on dangerous casters. Cone of Cold at 26 is an instant slow for enemies in front of you.
+
+      The teleports change how you travel. Teleport to a capital for training and for the Auction House. All classes have 3 book quests, at levels 20, 35 and 45. At 20, turn in 10 library books in your capital for the first book quest.
+
+      Level 25 gives the *Mage: Novice* Legacy Point. Only the first Mage on your account gets it. See [Legacy](../../characters/legacy.md).
+    train:
+      - [20, "Blink, Blizzard, Evocation, Mana Shield, Fire Ward", "Blink is your escape. Evocation refills your mana"]
+      - [20, "Teleports to 2 capital cities", "Fast travel to trainers and the Auction House"]
+      - [22, "Scorch, Frost Ward", "Scorch is a fast Fire spell"]
+      - [24, "Counterspell", "Stops a cast. Use it on healers and on dangerous casters"]
+      - [26, "Cone of Cold", "An instant slow in front of you"]
+      - [28, "Conjure Mana Agate", "An emergency mana refill"]
+    dungeons:
+      - {name: "Shadowfang Keep", levels: "20–30"}
+      - {id: excavation-site, levels: "26–33", note: "New. It is short, with 3 bosses"}
+      - {name: "Blackfathom Deeps and the Stockade", levels: "24–32"}
+      - {id: city-of-dalaran, levels: "28–35", note: "New. You need the Dalaran Sewer Key"}
+    extra: |
+      ??? example "Macros for Counterspell and mana gems"
+
+          ```
+          #showtooltip Counterspell
+          /stopcasting
+          /cast [@focus,exists,harm][] Counterspell
+          ```
+
+          ```
+          #showtooltip
+          /use Mana Agate
+          /use Mana Jade
+          /use Mana Citrine
+          /use Mana Ruby
+          ```
+
+          The Counterspell macro stops your cast first, so the Counterspell is immediate. The client has mouseover and self-cast keys and a Cooldown Manager, so many old macros are now settings.
+    warn: |
+      The spell Blizzard makes AoE leveling possible: you pull many enemies, slow them and kill them together. The world-first level 60 group had 3 Mages that used large AoE pulls. But for a solo Mage, AoE pulls are more dangerous than in Classic. Improved Blizzard slows less, and Cone of Cold is shorter. Dungeon enemies also give less XP. Learn single-target questing first.
+    tip: |
+      When a dungeon pull goes wrong, cast Frost Nova on the enemies that attack the healer. Then use Blink to get away from them.
+    hardcore: |
+      Before each pull, make sure that Blink and Frost Nova are not on cooldown. Evocation is an emergency mana refill. Do not use it to do more damage.
+    goals:
+      - "Train Blink and Evocation at level 20."
+      - "Turn in 10 library books for the first book quest."
+      - "Train Counterspell at level 24. Put it on a key that you can reach quickly."
+
+  - id: l30
+    title: "Ice Armor, Mage Armor and gold for level 40"
+    story: |
+      These levels add few new spells. They make your Mage safer, and they prepare you for level 40. At 30 you train Ice Armor and the teleport to the third capital of your faction.
+
+      Mage Armor comes at level 34. In Forever it gives much more mana regeneration than in Classic. From this level, you select an armor spell for each situation. Use Mage Armor when you quest alone, because you drink less. Use Ice Armor when enemies hit you often.
+
+      The new battleground Battle for the Darkspear Islands opens at level 30, with 15 players on each side. Fan sites say that Warsong Gulch and Arathi Basin are also in the game, from levels 10 and 20. A Mage is a strong defender of flags and nodes.
+
+      Start to save gold now. At level 40 you need 100g for riding, and dual spec costs 50g. Training also costs gold: all spells from level 1 to 60 cost about 206g.
+
+      At 35, the second book quest needs 20 library books. Artisan professions also become available at level 35.
+    train:
+      - [30, "Ice Armor, teleport to the third capital", "More armor and a slow on enemies that hit you"]
+      - [34, "Mage Armor", "Mana regeneration while you cast. Much stronger in Forever"]
+    dungeons:
+      - {name: "Razorfen Kraul and Gnomeregan", levels: "29–38"}
+      - {name: "Scarlet Monastery", levels: "30–46", note: "4 wings. It gives a one-hand weapon and an off-hand item for casters"}
+      - {id: drowned-city, levels: "35–42", note: "New"}
+    goals:
+      - "Train Mage Armor at level 34."
+      - "Turn in 20 library books at level 35 for the second book quest."
+      - "Save 150g before level 40."
+
+  - id: l40
+    title: "Frostfire Bolt, a mount and a second spec"
+    story: |
+      Level 40 gives you 4 new things. You train **Frostfire Bolt**, the new spell of Forever. You can buy riding for 100g. You can buy dual spec for 50g from all Mage trainers. You also learn your first portals, which take your group to a capital city.
+
+      Frostfire Bolt has a 3 second cast. It does a large hit, damage over time and a slow. It counts as Fire and Frost, so talents in the 2 trees increase it. It uses the better of your Fire and Frost spell power, against the lower of the 2 resistances of the target. Use it against targets that resist Frost, and to slow an enemy that runs.
+
+      With dual spec, keep your solo build in 1 spec. Use the second spec for dungeons or for PvP. The usual pair is 1 damage build for PvE and 1 Frost build for PvP.
+
+      The new zone [Riverglades](../../world/zones.md#riverglades) is for levels 35 to 45. At 45, the third book quest needs 25 library books. Level 45 also gives the *Mage: Experienced* Legacy Point.
+    train:
+      - [40, "Frostfire Bolt", "New. A slow, a large hit and damage over time. It counts as Fire and Frost"]
+      - [40, "Portals", "You can take your group to a capital city"]
+    dungeons:
+      - {id: kroldok-stronghold, levels: "40–47", note: "New. It is in Riverglades"}
+      - {name: "Razorfen Downs, Uldaman and Zul'Farrak", levels: "37–54"}
+    warn: |
+      Buy riding before dual spec if you do not have 150g. A mount saves more time than a second spec.
+    hardcore: |
+      Cast Mana Shield before a pull that you are not sure about. Do not let an enemy run away. Slow it with Frostfire Bolt.
+    goals:
+      - "Train Frostfire Bolt at level 40."
+      - "Buy riding (100g), then dual spec (50g)."
+      - "Turn in 25 library books at level 45 for the third book quest."
+
+  - id: l50
+    title: "Spell hit and the last dungeons"
+    story: |
+      The last 10 levels have the most dungeons. Reportedly, each boss in the new dungeons drops a blue item. Thus, you start to collect your level 60 equipment here.
+
+      Your main talents are complete. The last points go into support talents, and the Talents add-on gives them for your path. The fight itself changes little, so use these levels to prepare for level 60.
+
+      Hit becomes important now. A dungeon boss is 2 or 3 levels above you, so more of your spells miss. Items with hit start at about level 50. Keep them, also when an item with more spell power replaces them for quests.
+
+      At 58 you train Conjure Mana Ruby, the largest mana gem. A fan source (Kami-Labs) reports that Mages learn Teleport: Dalaran at level 50. No other source confirms this.
+    train:
+      - [58, "Conjure Mana Ruby", "The largest mana gem. Classic-era level"]
+    dungeons:
+      - {id: alcaz-prison, levels: "48–55", note: "New. It is in Dustwallow Marsh"}
+      - {name: "Maraudon, Sunken Temple and Blackrock Depths", levels: "46–60"}
+      - {id: blackmaw-hold, levels: "55–60", note: "New. It is in Azshara. It has an entrance to the Barrow Deeps"}
+      - {id: shapers-terrace, levels: "58–60", note: "New. It is in Un'Goro Crater"}
+    goals:
+      - "Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests."
+      - "Keep 1 set of items with hit for dungeons at level 55 and above."
+      - "Select your level 60 build in the [Talents add-on](talents.md#level-60-builds)."
+
+  - id: l60
+    title: "Spell power, hit and the Onyxia attunement"
+    story: |
+      At level 60 you get the *Mage: Master* Legacy Point. [Mount Hyjal](../../world/zones.md#mount-hyjal) opens through Darkwhisper Gorge in Winterspring. The fast mount costs 1,000g.
+
+      All 3 launch raids open on 9 December 2026. Use the time before that date for 4 tasks: equipment, hit, consumables and the attunement for Onyxia's Lair.
+
+      For equipment, get spell power first, then hit. The new dungeons for level 55 and above and the Classic level 60 dungeons give cloth with spell power. A Tailor can also look for the new cloth patterns of Forever.
+
+      A raid boss needs 17% spell hit (Method.gg). Warcraft Tavern says 16%. No source has a test at level 60. Precision gives 6%, so you need about 11% from items.
+
+      The attunement for Onyxia's Lair gives the Drakefire Amulet. It is not account-wide, so each character must do it. The [Equipment add-on](equipment.md) lists the consumables.
+
+      Respec to a level 60 build now. Respec costs decrease to 1g over time. The Talents add-on gives the builds of your path. No source has published tested raid builds, so read each tooltip.
+    dungeons:
+      - {id: blackmaw-hold, levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60"}
+      - {name: "Scholomance, Stratholme, Dire Maul and Blackrock Spire", levels: "54–60", note: "The Classic dungeons are still in the game"}
+    goals:
+      - "Respec to a level 60 build."
+      - "Get about 11% hit from items."
+      - "Do the attunement for Onyxia's Lair."
+      - "Collect consumables before 9 December."
+
+  - id: raid
+    title: "Raid jobs, and Frost in PvP"
+    story: |
+      In a raid you do damage, and you keep the jobs that you learned in dungeons: water, Polymorph, Counterspell and curse removal. The size of the raid changes how much of each job is yours.
+
+      **The Barrow Deeps** has 10 players. You are probably the only Mage, so you give all the food, the water and the curse removal. See [The Barrow Deeps](../../content/raids/barrow-deeps.md).
+
+      **Hyjal Summit** has 20 players and 13 bosses on routes that branch. Expect Polymorph and Counterspell jobs. See [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+      **Onyxia's Lair** has 40 players and much Fire damage. Fire Mages are less useful there, so Frost or Arcane is the safer selection. See [Onyxia's Lair](../../content/raids/onyxias-lair.md).
+
+      In PvP, Frost is the usual spec. Ice Lance does 300% more damage to a Frozen target, and Ice Block with Cold Snap gives 2 escapes. Polymorph removes a healer from the fight. Counterspell stops heals and Fear. Roots from procs now share diminishing returns, so chains of freezes are shorter than in Classic.
+
+      Fan sites list 4 battlegrounds: Warsong Gulch, Arathi Basin, Alterac Valley and the new [Battle for the Darkspear Islands](../../content/pvp/battlegrounds.md#darkspear-islands). See [PvP](../../content/pvp/index.md) for ranks and seasons.
+    extra: |
+      | Enemy in PvP | What you do |
+      |---|---|
+      | Rogue | Stay out of stealth range. Use Frost Nova, Blink and Ice Block |
+      | Warrior | Kite with Frost Nova, Cone of Cold and Blink. After you use Blink, do not let the Warrior Charge to you |
+      | Warlock | Counterspell the Fear |
+      | Priest | Counterspell heals and Mind Control. Do burst damage after the shield ends |
+      | Hunter | Go into the dead zone (Classic mechanic) or Blink away. Use Frost Nova on the pet |
+      | Mage | The Mage that uses Counterspell first has the advantage. Keep Ice Block for Polymorph and Pyroblast |
+    hardcore: |
+      [Hardcore](../../about/hardcore.md) comes in winter 2026/27. A Mage dies when enemies get to it, so play Frost. Frost has many slows, and Cold Snap gives a second Ice Block. Before each pull, make sure that Blink, Frost Nova and Ice Block are not on cooldown. Cast Mana Shield and Ice Barrier before the pull.
+
+# ------------------------------------------------------------------ races
+races:
+  - id: human
+    name: Human
+    faction: alliance
+    status: Classic
+    pitch: "The safe Alliance selection. Will to Survive removes stuns, and Ruthless gives 1% crit."
+    start: |
+      You start in Northshire Valley in Elwynn Forest. Your first trainer is Khelden Bremen, on the upper floor of the abbey (Classic location). At level 6, go to Goldshire. A Mage trainer works in the Lion's Pride Inn. The trainers of Stormwind are in the Wizard's Sanctum in the Mage Quarter.
+    notes:
+      l1: "The Human Spirit gives +10% Spirit, so you drink less at low levels."
+      l10: "At level 10, complete Elwynn Forest. Then go to Westfall, or take the new boat from Stormwind Harbor to Darkshore. The Deadmines dungeon is in Westfall, near your home."
+      l20: "The Stockade dungeon is in Stormwind. Go there after a visit to your trainer."
+      l30: "At Honored with Stormwind, riding and the Horse cost 10% less. This helps your gold plan for level 40."
+      l40: "To get to Riverglades, walk east from Redridge Mountains. Farholde Keep has a flight to Lakeshire."
+      l60: "Ruthless gives +1% crit. It helps all 3 specs: Heating Up and Ignite for Fire, Arcane Blast for Arcane, and Shatter for Frost."
+      raid: "Will to Survive removes a stun immediately. After a Cheap Shot or an Intercept, use it, then cast Frost Nova and Blink. It is the best Alliance PvP racial for a Mage. Use Perception when a Rogue goes into stealth near a flag or a node."
+  - id: gnome
+    name: Gnome
+    faction: alliance
+    status: Classic
+    pitch: "The burst selection. Eureka! gives 8 seconds of cheaper and stronger spells, and Escape Artist removes roots."
+    start: |
+      You start in Coldridge Valley in Dun Morogh. Your first trainer is Marryk Nurribit in Anvilmar (Classic location). At level 6, go through the tunnel to Kharanos. Magis Sparkmantle trains Mages there. The trainers of Ironforge are in the Mystic Ward.
+    notes:
+      l1: "Expansive Mind gives +5% maximum mana, so you cast more spells before each drink."
+      l10: "The new dungeon Hall of Thanes is in Ironforge. It is the easiest first dungeon for a Gnome. After Dun Morogh, go to Loch Modan through the North Gate pass. For 8 seconds, Eureka! makes spells cost 10% less and do 10% more damage. Use it on each dungeon boss."
+      l30: "Gnomeregan is the old city of your race, and many Alliance quests go there. Your AoE spells are useful against its groups of leper gnomes. At Honored with Gnomeregan Exiles, riding and the Mechanostrider cost 10% less."
+      l60: "Use Eureka! together with Arcane Power, Combustion or an Ice Lance on a Frozen target. It does not increase damage over time."
+      raid: "Escape Artist removes Frost Nova, Hamstring and Entangling Roots. Use it, then Blink away. If you take Engineering for PvP, Engineering Specialization gives 20% fewer device failures."
+  - id: skyborne-high-order
+    name: Skyborne (High Order)
+    faction: alliance
+    status: New
+    pitch: "New in Forever, and a paid race. It gives permanent haste, a mana regeneration cooldown and a glide. Warcraft Tavern names it the best Alliance Mage."
+    start: |
+      You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The quest *Reading the Leylines* teaches Read Ley Line. Reportedly, the island quests take you to level 12 to 14. The trainers are in Valanaar. To play a Skyborne, you must have the Skyborne Heroic Pack or a higher edition.
+    notes:
+      l1: "Read Ley Line gives +50% regeneration for 15 seconds, or +100% while you have the Attuned buff. Use it when you drink. Wind Blessed gives permanent haste. Blizzard's latest notes give 2%, and other sources give 1% or 3%."
+      l10: "Leave the island on the airship from the east Skydock to Dalaran. Dalaran is an area for levels 30 to 40, so do not stay. Walk south to Southshore. Then take the new boat to Auberdine or to Menethil Harbor."
+      l30: "You know the way to Dalaran from the airship flight. The City of Dalaran dungeon is there."
+      l40: "Buy your Galestrider at Fairweather Stables on Zephras Isle. The island is 1 airship flight from Dalaran. High Order reputation gives a discount of 5% to 20%."
+      l60: "Elemental Insight gives +5% damage against Elementals. It helps on Mount Hyjal."
+      raid: "You have no racial that removes stuns or roots, so keep Blink and Ice Block for them. Walk on Air crosses gaps in Alterac Valley and on the Darkspear Islands. In raids, Read Ley Line makes your mana last longer between Evocations. You cannot use it together with Innervate."
+  - id: orc
+    name: Orc
+    faction: horde
+    status: New
+    pitch: "New in Forever. Blood Fury gives 10% spell power for 15 seconds, and Hardiness makes stuns 20% shorter."
+    start: |
+      You start in the Valley of Trials in Durotar. Your first trainer is Mai'ah, near the Den (Classic location). At level 6, go to Razor Hill. Sen'jin Village, to the south, has a Mage trainer. The trainers of Orgrimmar are near the Valley of Spirits.
+    notes:
+      l10: "At level 10, do the quests at Skull Rock. Then go to the Crossroads in the Barrens. Blood Fury has a 2 minute cooldown, so use it on each strong enemy and on each dungeon boss."
+      l30: "Your side in the Battle for the Darkspear Islands is the Darkspear Raiders. At Honored with Orgrimmar, riding and the Wolf cost 10% less."
+      l60: "Use Blood Fury together with Arcane Power, Combustion or an Ice Lance on a Frozen target. The cooldown is 2 minutes."
+      raid: "Shatter Curse removes curses and Warlock Banes. Then you take 5% less magic damage for 8 seconds. Hardiness makes Cheap Shot, Kidney Shot and Hammer of Justice shorter."
+  - id: troll
+    name: Troll
+    faction: horde
+    status: Classic
+    pitch: "The haste selection. Berserking gives 10% cast speed for 15 seconds, and Rapid Regeneration heals you between fights."
+    start: |
+      You start in the Valley of Trials in Durotar, with the Orcs. Your first trainer is Mai'ah, near the Den (Classic location). At level 6, go south to Sen'jin Village, which has a Mage trainer. The trainers of Orgrimmar are in the Valley of Spirits.
+    notes:
+      l1: "Rapid Regeneration heals 50% of your health during 6 seconds, but an action stops it. Use it between fights, and you need only water. Beast Slaying gives +5% damage against Beasts, and many early quests have Beasts."
+      l10: "At level 10, complete Skull Rock. Then go to the Crossroads in the Barrens."
+      l30: "The islands of the new battleground are the home of your people. Your side is the Darkspear Raiders, and Exalted gives a tabard and a Legacy Point. At Honored with Darkspear Trolls, riding and the Raptor cost 10% less."
+      l60: "Use Berserking together with Arcane Power or Combustion. A Frost Mage uses it before a chain of Frostbolt and Ice Lance."
+      raid: "Troll is a PvE selection, and the race add-on recommends Orc or Undead for PvP. In Hardcore, Rapid Regeneration can save your life."
+  - id: undead
+    name: Undead
+    faction: horde
+    status: Classic
+    pitch: "The Horde PvP selection. Will of the Forsaken removes Fear, charm and sleep, and Cannibalize gives health and mana."
+    start: |
+      You start in the crypt of Deathknell in Tirisfal Glades. Your first trainer is Isabella in the church (Classic location). At level 6, go to Brill, which has a Mage trainer. The trainers of the Undercity are in the Magic Quarter.
+    notes:
+      l1: "Use Cannibalize on a humanoid or undead corpse in place of a drink. The Undead Race add-on reports that it gives health and mana in Forever. In Classic, it gave only health."
+      l10: "The new dungeon Ruins of Lordaeron is in Tirisfal Glades. It is your first new dungeon. The west of Tirisfal Glades has the new areas Shadowvale and Bandarion Keep. At level 12, go south to Silverpine Forest."
+      l20: "Shadowfang Keep is in Silverpine Forest, near your home."
+      l30: "Scarlet Monastery is a short walk from the Undercity. Underwater Breathing gives +300% breath, which helps in the Drowned City."
+      raid: "Will of the Forsaken removes Fear, Psychic Scream, Seduction and Mind Control. Use it, then Counterspell the next Fear. It does not remove stuns, so keep Blink and Ice Block for Rogues and Warriors."
+
+factions:
+  alliance:
+    l10: "Quest in Westfall or Loch Modan. Then take the new boat from Stormwind Harbor to Auberdine for Darkshore. Go to Redridge Mountains at level 16."
+    l20: "Quest in Duskwood, the Wetlands, Ashenvale and Hillsbrad Foothills. The new dungeon Excavation Site is in the Wetlands. Your teleports at level 20 are Stormwind and Ironforge (Classic levels). The quest chain for the Dalaran Sewer Key starts in Southshore or in Stormwind."
+    l30: "Quest in Arathi Highlands, Stranglethorn Vale, Desolace and the Alterac Mountains. Your teleport at level 30 is Darnassus (Classic level). Dalaran is friendly to the Alliance, and you can get Kirin Tor reputation there."
+    l40: "The Alliance town in Riverglades is Farholde Keep. Then quest in Tanaris, Feralas, the Badlands and the Hinterlands."
+    l50: "Quest in Un'Goro Crater, Azshara, Felwood, the Plaguelands, Winterspring, Burning Steppes and Silithus. Azshara has many new quests."
+    l60: "Teleport to a capital between dungeons for the trainers and the Auction House. The PvP vendors are in the Champion's Hall in Stormwind. Kirin Tor reputation in Dalaran is for the Alliance only."
+  horde:
+    l10: "Quest in the Barrens or Silverpine Forest. A zeppelin connects Orgrimmar and the Undercity. Ragefire Chasm in Orgrimmar is your first dungeon."
+    l20: "Quest in Stonetalon Mountains, Hillsbrad Foothills, Ashenvale and Thousand Needles. Your teleports at level 20 are Orgrimmar and the Undercity (Classic levels). Magus Wordeen Voidglare in Tarren Mill starts the quest chain for the Dalaran Sewer Key."
+    l30: "Quest in Arathi Highlands, Stranglethorn Vale, Desolace and Dustwallow Marsh. Your teleport at level 30 is Thunder Bluff (Classic level). NPCs in Dalaran attack Horde characters on sight. You can still go into the City of Dalaran dungeon through the sewer."
+    l40: "The Horde town in Riverglades is Rog'mar. You get to it through the Badlands or Swamp of Sorrows. Then quest in Tanaris, Feralas, the Badlands and Swamp of Sorrows."
+    l50: "Quest in Un'Goro Crater, Azshara, Felwood, the Plaguelands, Winterspring, Burning Steppes and Silithus. Azshara has many new quests."
+    l60: "Teleport to a capital between dungeons for the trainers and the Auction House. The PvP vendors are in the Hall of Legends in Orgrimmar. Horde characters cannot get Kirin Tor reputation."
+
+# ------------------------------------------------------------------ talent paths
+paths:
+  - id: frost
+    name: "Frost"
+    pitch: "The safe path, and the PvP path. You slow and freeze each enemy, and you get 2 Ice Blocks. Most guides recommend it for a first Mage."
+    leveling: frost-leveling
+    endgame: [frost-raid, frost-pvp]
+    gear: drops
+    play:
+      l1: "The Frost path starts at level 4, with Frostbolt. Learn its pattern now: the slow gives you more time to cast before the enemy gets to you. Use Fire Blast or your wand for the last hit."
+      l10: "Improved Frostbolt makes your main spell faster with each point. Cast Frostbolt until the enemy gets to you. Then cast Frost Nova, step back and cast again. From level 15, Frostbite sometimes freezes the enemy without a Frost Nova."
+      l20: "Ice Lance at level 20 is instant and does 300% more damage to a Frozen target. When Frost Nova or Frostbite freezes the enemy, cast Frostbolt and then Ice Lance. Ice Lance has the same 8 second cooldown as Fire Blast. Ice Block at 26 is your first emergency spell: you are immune for 10 seconds. Shatter at levels 27 to 29 gives up to 50% crit chance against Frozen targets."
+      l30: "Cold Snap at level 30 finishes the cooldown of Ice Block and Frost Nova, so you have 2 of each for a dangerous fight. Its own cooldown is 10 minutes. Fingers of Frost has a 15% chance to make your next spells treat the target as Frozen. Thus, Ice Lance and Shatter work without a root. Frost Channeling makes Frost spells cheaper, and Permafrost makes your slows longer."
+      l40: "Ice Barrier at level 40 is a shield that also gives +15% Frost damage. Cast it before each pull. Use Frostfire Bolt on targets that resist Frost. Precision at levels 42 to 44 gives 6% hit. From level 45, the points go into Arcane."
+      l50: "Your fight stays the same, but it uses less mana. Arcane Concentration sometimes makes your next damage spell free. Missile Barrage at level 55 sometimes gives free Arcane Missiles after a Frostbolt. Cast them immediately. The last points go into Improved Blizzard and Frost Warding."
+      l60: "For raids, move the points from Frostbite, Permafrost and Improved Blizzard into Incineration. Bosses are immune to Freeze, so Shatter needs a Fingers of Frost proc there. It is not confirmed that Fingers of Frost procs on raid bosses. The PvP build keeps the control talents and adds Improved Counterspell."
+      raid: "Frost is the safe spec for Onyxia's Lair, because Fire resistance does not decrease its damage. Ice Block and Ice Barrier also protect you. In PvP, use Improved Counterspell for a 4 second silence."
+    priority:
+      - "Cast **Ice Barrier** before the pull. It gives +15% Frost damage for 1 minute."
+      - "Cast **Frostbolt** as your main spell."
+      - "Cast **Ice Lance** when the target is Frozen: Frost Nova, Frostbite or a **Fingers of Frost** proc."
+      - "If you have no proc and the target is in melee range: cast **Frost Nova**, step back, then cast Ice Lance."
+      - "Cast **Arcane Missiles** on each Missile Barrage proc."
+      - "Cast **Cone of Cold** on targets with low health and on groups."
+      - "Cast **Frostfire Bolt** against targets with high Frost resistance, or to slow a target that runs."
+  - id: arcane
+    name: "Arcane"
+    pitch: "The fast solo path. Arcane Blast kills single targets quickly, but the path has no Ice Block. Warcraft Tavern names it the best open-world solo build."
+    leveling: arcane-leveling
+    endgame: [arcane-raid]
+    gear: drops
+    play:
+      l1: "Arcane Missiles at level 8 is your first Arcane damage spell, but Frostbolt stays your main spell. Use your wand for the last hit on each enemy. Your first talent points give armor and wand damage."
+      l10: "Your first points give armor and wand damage. You still fight with Frostbolt and Frost Nova, and the wand kills each enemy with low health. Missile Barrage at level 15 sometimes gives free Arcane Missiles after Fireball and Frostbolt. Use the free cast immediately. Mobalytics recommends the Frost build to about level 25, and then a respec to Arcane."
+      l20: "Arcane Blast becomes your main spell at level 20. Each cast increases your spell damage, but it also increases the mana cost of the next cast by 100%. The stacks last 18 seconds, to a maximum of 4. Cast Frostbolt between 2 casts of Arcane Blast to control the cost. Arcane Wrath at level 25 is a large hit with a 6 second cooldown. Arcane Meditation at levels 26 to 28 keeps a part of your mana regeneration while you cast."
+      l30: "Presence of Mind at level 30 makes 1 Arcane Wrath instant. Use it at the start of a fight with a strong enemy. Arcane Mind increases your Intellect and the crit damage of Arcane spells. Arcane Instability gives damage and crit to all spells. This path has no Ice Block, so Frost Nova and Blink are your only escapes."
+      l40: "Arcane Power at level 40 is your burst. For 15 seconds, spells do 30% more damage and cost 30% more mana. Use Presence of Mind, then Arcane Power, then Arcane Blast. Use Evocation after the burst. Incineration at levels 42 to 46 gives 10% crit to Arcane Blast."
+      l50: "Accelerant is complete at level 51 and makes Arcane Wrath a 3 second cast. Precision at levels 52 to 54 gives 6% hit for dungeons. The last points decrease threat and add a silence to Counterspell."
+      l60: "The raid build has 38 points in Arcane, with Arcane Power. It takes Incineration and Accelerant from Fire, and Precision from Frost. Your priority list does not change at level 60."
+      raid: "Arcane has strong burst and good mana in long fights. Outside the burst phase, let the Arcane Blast stacks expire."
+    priority:
+      - "Cast **Arcane Blast** to get stacks. Each stack also increases the damage of your other spells."
+      - "Cast **Arcane Missiles** on each **Missile Barrage** proc. The cast is free and faster."
+      - "Cast **Arcane Wrath** on cooldown."
+      - "Cast Arcane Blast on each Clearcasting proc. The free cast ignores the stack cost."
+      - "Outside a burst phase, cast Frostbolt or Fireball between casts of Arcane Blast. They also proc Missile Barrage."
+      - "Burst phase: **Presence of Mind**, then **Arcane Power**, then a chain of Arcane Blast. Then use Evocation."
+  - id: fire
+    name: "Fire at 60"
+    pitch: "The crit path for raids. Fire is weak at low levels, so you level with the Frost build. You change to Fire at level 60, or in your second spec at 40."
+    leveling: frost-leveling
+    endgame: [fire-raid]
+    gear: drops
+    play:
+      l1: "Fire is the goal of this path, but not its start. Fireball is your first spell, and Fire Blast comes at level 6. From level 4, Frostbolt is the better main spell, because it slows the enemy."
+      l10: "You level with the Frost build, because Fire needs crit from talents and items that you do not have. Cast Frostbolt until the enemy gets to you. Then cast Frost Nova, step back and cast again. From level 15, Frostbite sometimes freezes the enemy without a Frost Nova."
+      l20: "Ice Lance at level 20 is instant and does 300% more damage to a Frozen target. Cast it after each freeze. It has the same 8 second cooldown as Fire Blast. Ice Block at 26 makes you immune for 10 seconds, and Shatter at 27 to 29 adds crit against Frozen targets. Train Scorch at level 22, because the Fire build uses it later."
+      l30: "Cold Snap at level 30 gives you a second Ice Block and a second Frost Nova. Fingers of Frost lets Ice Lance hit a target at full power without a root. These talents keep you safe while you save gold for level 40."
+      l40: "Ice Barrier at level 40 is a shield with +15% Frost damage. Dual spec lets you try Fire in dungeons now. In a Fire build, crits give Heating Up stacks, and 3 stacks make Pyroblast a 1.5 second cast. Frostfire Bolt also gives Heating Up stacks, and Accelerant makes its cast shorter. Use the Fire raid build in the Talents add-on as your model."
+      l50: "Continue with the Frost build for quests. Arcane Concentration and Missile Barrage give free spells, and the Fire raid build takes these 2 talents also. Collect items with crit for level 60."
+      l60: "Respec to the Fire raid build. It takes all the crit talents, Precision for hit, and Arcane Concentration for mana. Combustion gives +10% Fire crit chance for each Fire hit until you get 3 crits. Some guides call Heating Up by its demo name, Hot Streak."
+      raid: "Fire has the most crit. Each Mage has a separate Ignite, so 2 Fire Mages do not share 1 Ignite. Improved Scorch also increases only your Fire damage. Ignite makes much threat, and Burning Soul decreases it. Do not use Fire in Onyxia's Lair."
+    priority:
+      - "Cast **Pyroblast** before the pull."
+      - "Cast **Scorch** until Improved Scorch has 5 stacks."
+      - "Cast **Fireball** as your main spell, and **Fire Blast** on cooldown."
+      - "At 3 **Heating Up** stacks, cast **Pyroblast**. Its cast is 1.5 seconds."
+      - "Cast **Arcane Missiles** on each Missile Barrage proc."
+      - "Use **Combustion** to get Heating Up stacks quickly."
+
+# ------------------------------------------------------------------ equipment sets
+gear:
+  - id: drops
+    name: "Quests and dungeons"
+    pitch: "The standard set. You use quest rewards and dungeon drops, and you buy a wand. The item names come from Timesaver.gg and Method.gg."
+    stats: "Leveling (Warcraft Tavern): Spell Power > Intellect for Fire and Frost, Intellect > Spell Power for Arcane. Level 60: no source has a tested order. Spell power and hit come first"
+    chapters:
+      l1:
+        text: "Your first important item is a wand, because its damage uses no mana. Buy one from an Enchanter or from the Auction House. Use the cloth from quests in the other slots."
+        items:
+          - {slot: "Wand", name: "Lesser Magic Wand", from: craft, profession: enchanting}
+          - {slot: "Wand", name: "Dowsing Rod", from: quest, where: "*A Magical Affront*, Zephras Isle", basis: forever}
+          - {slot: "Staff", name: "Apprentice's Spellstaff", from: quest, where: "*Rare Books*, Elwynn Forest (Alliance)", basis: forever}
+      l10:
+        text: "Weapons have bonus spell damage from about level 10 (Method.gg), so the weapon and the wand are your most important slots. The first dungeons give a weapon for each faction."
+        items:
+          - {slot: "Wand", name: "Greater Magic Wand", from: craft, profession: enchanting}
+          - {slot: "Dagger", name: "Fang of Magmatus", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Wand", name: "Deepblaze", from: quest, where: "*Old Ironforge Incursion*, Hall of Thanes", basis: forever}
+          - {slot: "Chest", name: "Robes of the Disgraced Thane", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Staff", name: "Staff of Orgrimmar", from: quest, where: "*Hidden Enemies*, Orgrimmar (Horde)", basis: forever}
+          - {slot: "Chest", name: "Robe of Evocation", from: dungeon, where: "Ragefire Chasm", basis: forever}
+          - {slot: "Staff", name: "Coldspire Staff", from: dungeon, dungeon: ruins-of-lordaeron, where: "level 19. Method.gg selects it for Frost", basis: forever}
+      l20:
+        text: "Replace the staff at level 20 and at level 25. Method.gg and Timesaver.gg select the wand from the Blackfathom Deeps quest. The ring from Excavation Site stays useful for many levels."
+        items:
+          - {slot: "Staff", name: "Emberstone Staff", from: dungeon, where: "Deadmines (Alliance)", basis: forever}
+          - {slot: "Staff", name: "Crescent Staff", from: quest, where: "*Leaders of the Fang*, Wailing Caverns (Horde)", basis: forever}
+          - {slot: "Staff", name: "Rod of the Sleepwalker", from: dungeon, where: "Blackfathom Deeps", basis: forever}
+          - {slot: "Wand", name: "Gravestone Scepter", from: quest, where: "*Blackfathom Villainy*, level 27", basis: forever}
+          - {slot: "Ring", name: "Ring of Power Regulation", from: dungeon, dungeon: excavation-site, basis: forever}
+          - {slot: "Off-hand", name: "Raptor's Gaze", from: dungeon, dungeon: excavation-site, basis: forever}
+      l30:
+        text: "City of Dalaran has an arcane theme. Its Violet Sorcerer's Vestments are a set with a bonus. Scarlet Monastery gives a one-hand weapon and an off-hand item that Timesaver.gg keeps to level 55. Do the Mage wand quest chain, which starts with *Journey to the Marsh*."
+        items:
+          - {slot: "Chest", name: "Violet Sorcerer's Robes", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+          - {slot: "Shoulders", name: "Violet Sorcerer's Mantle", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+          - {slot: "Wand", name: "Wand of Mana Concentration", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+          - {slot: "Dagger", name: "Hypnotic Blade", from: dungeon, where: "Scarlet Monastery, Library, level 34", basis: forever}
+          - {slot: "Off-hand", name: "Orb of the Forgotten Seer", from: dungeon, where: "Scarlet Monastery, Graveyard, level 32", basis: forever}
+          - {slot: "Wand", name: "Icefury Wand, Nether Force Wand or Ragefire Wand", from: class, where: "*Mage's Wand*, level 30. In Classic, you select 1 of 3", basis: forever}
+          - {slot: "Ring", name: "Philanthropist's Ring", from: quest, where: "*Greater Friend of the Library*, the book quest at level 35", basis: forever}
+      l40:
+        text: "The public data shows few new items for levels 40 to 49. No source lists the loot of Krol'dok Stronghold. Keep the items from Scarlet Monastery and City of Dalaran, and buy your mount."
+        items:
+          - {slot: "Waist", name: "Deathmage Sash", from: dungeon, where: "Razorfen Downs", basis: forever}
+          - {slot: "Feet", name: "Southsea Mojo Boots", from: quest, where: "*Southsea Shakedown*, Tanaris", basis: forever}
+      l50:
+        text: "Items with hit start at about level 50 (Method.gg). Blackrock Depths gives items that are on the level 60 lists of wowtbc.gg. Blackmaw Hold has 1 caster item with a name in the public data."
+        items:
+          - {slot: "Wand", name: "Cairnstone Sliver", from: quest, where: "*The Morrow Stone*, Feralas (Alliance)", basis: forever}
+          - {slot: "Wand", name: "Nature's Breath", from: quest, where: "*Dark Vessels*, the Hinterlands (Horde)", basis: forever}
+          - {slot: "Trinket", name: "Shard of the Splithooves", from: quest, where: "*Heroes of Old*, Blasted Lands", basis: forever}
+          - {slot: "Shoulders", name: "Boreal Mantle", from: dungeon, where: "Blackrock Depths", basis: forever}
+          - {slot: "Feet", name: "Omnicast Boots", from: dungeon, where: "Blackrock Depths", basis: forever}
+          - {slot: "Chest", name: "Robes of Dark Summons", from: dungeon, dungeon: blackmaw-hold, basis: forever}
+      l60:
+        text: "No source has a tested list for level 60. The items of level 60 bosses had hidden stats at launch. The site wowtbc.gg lists the Sorcerer's Regalia (Dungeon Set 2) for all 3 specs, but no source says how you get it. For raids, get about 11% hit from items."
+        items:
+          - {slot: "Set", name: "Sorcerer's Regalia", from: any, where: "Dungeon Set 2. One source says that vendors sell it. The cost is not known", basis: unverified}
+          - {slot: "Chest", name: "Robe of the Archmage", from: craft, profession: tailoring}
+          - {slot: "Legs", name: "Sentinel's Silk Leggings or Outrider's Silk Leggings", from: vendor, where: "Illiyana Moonblaze in Ashenvale sells the Alliance item. RankedBoost names the Horde item. No source gives the cost", basis: forever}
+          - {slot: "Ring", name: "Warden's Signet of Brilliance", from: rep, where: "The Watchers, a new faction. No source gives details of the faction", basis: forever}
+          - {slot: "Main hand", name: "Sageblade", from: craft, profession: blacksmithing}
+          - {slot: "Off-hand", name: "Truesilver Conduit", from: craft, profession: enchanting}
+          - {slot: "Wand", name: "Brilliant Wand", from: craft, profession: enchanting}
+      raid:
+        text: "Reportedly, the reagent Malleable Essence of Nature comes from raid items that an Enchanter disenchants. Thus, the epic crafted items become available only after the raids open."
+        items:
+          - {slot: "Wand", name: "Torch of Light", from: craft, profession: enchanting}
+          - {slot: "Back", name: "Cloak of Earth and Sky", from: craft, profession: tailoring}
+  - id: crafted
+    name: "Tailoring and Enchanting"
+    pitch: "You make your own cloth, wands, staves and off-hand items. Use it if you have Tailoring and Enchanting. The client data gives the name and the skill of each item, but not its stats."
+    stats: "The same as Quests and dungeons. Read the tooltip of each crafted item"
+    chapters:
+      l1:
+        text: "Enchanting makes a wand at skill 1. Tailoring makes the Stormsewn linen items at skill 50 to 60."
+        items:
+          - {slot: "Wand", name: "Novice's Practice Wand", from: craft, profession: enchanting}
+          - {slot: "Wrist", name: "Azure Stormsewn Cuffs", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Azure Stormsewn Cord", from: craft, profession: tailoring}
+          - {slot: "Bag", name: "Linen Reagent Bag", from: craft, profession: tailoring}
+      l10:
+        text: "Forever adds rare cloth items for levels 10 to 30. Each item has 6 versions: Flame, Pearly, Pristine, Shadow, Shining and Silky. Method.gg says that the Silky items increase Frost spells. No source gives the stats of the other versions."
+        items:
+          - {slot: "Wand", name: "Greater Magic Wand", from: craft, profession: enchanting}
+          - {slot: "Waist", name: "Novice Arcanist's Sash", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Silky Boots", from: craft, profession: tailoring}
+          - {slot: "Hands", name: "Silky Gloves", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Filigreed Silky Gown", from: craft, profession: tailoring}
+      l20:
+        text: "Method.gg selects the Filigreed Silky Circlet at level 25 for Frost. Enchanting makes your first staff and off-hand item at skill 140."
+        items:
+          - {slot: "Head", name: "Filigreed Silky Circlet", from: craft, profession: tailoring}
+          - {slot: "Legs", name: "Filigreed Silky Leggings", from: craft, profession: tailoring}
+          - {slot: "Staff", name: "Glimmering Staff", from: craft, profession: enchanting}
+          - {slot: "Off-hand", name: "Orb of Mystic Insight", from: craft, profession: enchanting}
+      l30:
+        text: "Robe of Power is a trainer recipe. Phoenix Bindings are new bracers, and wowtbc.gg lists them for Fire. The Slippers and the Handwraps are the next rare items with 6 versions."
+        items:
+          - {slot: "Chest", name: "Robe of Power", from: craft, profession: tailoring}
+          - {slot: "Wrist", name: "Phoenix Bindings", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Frothing Slippers", from: craft, profession: tailoring}
+          - {slot: "Wand", name: "Lesser Mystic Wand", from: craft, profession: enchanting}
+      l40:
+        text: "Crafted items fill the levels where dungeons give few new items. The Nether shoulders and cuffs are new. One level 60 list names Netherfroth Cuffs for Frost and Netherflame Cuffs for Fire."
+        items:
+          - {slot: "Wrist", name: "Netherfroth Cuffs", from: craft, profession: tailoring}
+          - {slot: "Shoulders", name: "Netherfroth Shoulders", from: craft, profession: tailoring}
+          - {slot: "Wand", name: "Twisted Nether Wand", from: craft, profession: enchanting}
+          - {slot: "Staff", name: "Dreamstaff", from: craft, profession: enchanting}
+          - {slot: "Off-hand", name: "Truesilver Conduit", from: craft, profession: enchanting}
+      l50:
+        text: "The site wowtbc.gg lists Robe of Winter Night for Frost. The Eternal wands and the Frozen Heart of the Mountain trinket are new in Forever."
+        items:
+          - {slot: "Chest", name: "Robe of Winter Night", from: craft, profession: tailoring}
+          - {slot: "Wand", name: "Lesser Eternal Wand", from: craft, profession: enchanting}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting}
+      l60:
+        text: "Before the raids open, make the Classic epic items at Tailoring 295 and the best wands. In Classic, Robe of the Archmage is for Mages only. These 3 items do not need the raid reagent."
+        items:
+          - {slot: "Chest", name: "Robe of the Archmage", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Belt of the Archmage", from: craft, profession: tailoring}
+          - {slot: "Hands", name: "Gloves of Spell Mastery", from: craft, profession: tailoring}
+          - {slot: "Wand", name: "Greater Eternal Wand", from: craft, profession: enchanting}
+          - {slot: "Wand", name: "Brilliant Wand", from: craft, profession: enchanting}
+      raid:
+        text: "The Manaflare items are the crafted version of the Mage Tier 1 set. Reportedly, 2 parts give hit. Their reagent, Malleable Essence of Nature, comes from raid items that an Enchanter disenchants. You can wear 1 crafted tier item at first, and 2 with Guardians of Hyjal reputation. These values are from beta data."
+        items:
+          - {slot: "Shoulders", name: "Manaflare Mantle", from: craft, profession: tailoring}
+          - {slot: "Hands", name: "Manaflare Gloves", from: craft, profession: tailoring}
+          - {slot: "Legs", name: "Manaflare Pants", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Manaflare Boots", from: craft, profession: tailoring}
+          - {slot: "Back", name: "Cloak of Earth and Sky", from: craft, profession: tailoring}
+          - {slot: "Wand", name: "Torch of Light", from: craft, profession: enchanting}
+  - id: stamina
+    name: "Stamina for PvP and Hardcore"
+    pitch: "A safer set. You replace some Intellect and Spirit with Stamina. Use it for battlegrounds, for world PvP and for Hardcore. No source has an item list for this set."
+    stats: "Stamina > Spell Power > Intellect. Keep enough hit for dungeons"
+    chapters:
+      l1:
+        text: "Take Stamina on each item that offers it. A wand is still your first important item."
+      l10:
+        text: "Take Stamina and Intellect in place of Spirit. More health gives you time to cast Frost Nova and step back."
+      l20:
+        text: "Keep a second set with Stamina for PvP. Ice Block, at level 26 on the Frost path, does not replace health."
+      l30:
+        text: "The Battle for the Darkspear Islands opens at level 30. Use Ice Armor in PvP against melee classes. PvP ranks give necklaces from a vendor."
+      l40:
+        text: "Mana Shield absorbs damage, and the Frost path adds Ice Barrier at level 40. But the shields end quickly, and then only your health protects you. Thus, do not replace Stamina with more Intellect."
+      l50:
+        text: "The battleground factions sell items for reputation. See the [PvP](../../content/pvp/index.md) page for ranks and seasons."
+      l60:
+        text: "PvP has 1 blue honor set and 1 epic honor set. An epic item needs the blue item and an Emboldened Seal, which needs a rank. The Mage items have Magus (Horde) or Silk (Alliance) in the name. In Hardcore, keep the Stamina set for each dungeon."
+
+equipment:
+  intro: |
+    A Mage wears cloth for all 60 levels. The important slots are the weapon and the wand. Low levels need spell power, Intellect and Spirit. Level 60 needs spell power and hit.
+
+    About 40% of the items of Forever had hidden stats at launch. The stats of an item become visible when a player first finds it. Thus, no source has a tested list for level 60. The item names on this page come from Timesaver.gg (data of 6 November 2026), Method.gg and wowtbc.gg. The Codex did not verify the stats.
+  proficiencies:
+    - ["Cloth armor", "Level 1", "The only armor type of the Mage. No shields"]
+    - ["Staves, wands", "Level 1", "Default weapon skills. No trainer is necessary"]
+    - ["Daggers", "Weapon master", "Stormwind, Ironforge, Darnassus, Orgrimmar and the Undercity"]
+    - ["One-hand swords", "Weapon master", "Stormwind and the Undercity"]
+    - ["Off-hand items", "Level 1", "Use them with a dagger or a sword. They can have an enchant in Forever"]
+  rules:
+    - "Hit is 1 stat for melee, ranged attacks and spells. Items show hit as a percentage."
+    - "A raid boss needs 17% spell hit (Method.gg). Warcraft Tavern says 16%. Precision gives 6%, so you need about 11% from items."
+    - "Weapons have bonus spell damage from about level 10 (Method.gg)."
+    - "Fan reports say that wand damage increases with spell power. Blizzard has not confirmed it."
+    - "Items for one school of magic are almost of no use to a different spec (Method.gg)."
+    - "Reportedly, healing items also give spell damage. One source (WowCarry) gives one third of the healing value."
+    - "A staff can have a much larger enchant than a one-hand weapon: +65 spell power against +30 (beta data)."
+    - "Necklaces and off-hand items can have enchants. These slots are new."
+    - "Each profession gives a camp feature in place of a passive stat. The Faction Banner of Tailoring gives Spirit."
+  enchants:
+    - ["Staff", "Spellblasting (+65 spell power)", "New. Mighty Spell Power gives up to +55. All values in this table are beta data from Method.gg"]
+    - ["One-hand weapon", "Spell Power (up to +30)", "Classic-era enchant"]
+    - ["Off-hand item", "Superior Intellect (+9)", "New slot"]
+    - ["Necklace", "Spell Power (+6)", "New slot. Enchanting skill 210"]
+    - ["Bracers", "Greater Spellpower (+16)", "New"]
+    - ["Gloves", "Arcane Power, Fire Power or Frost Power (up to +20)", "Arcane Power is new"]
+    - ["Chest", "Major Intellect (+10)", "Classic-era enchant"]
+    - ["Cloak", "Greater Fire Resistance", "For Onyxia's Lair. Blizzard recommends fire resistance but gives no number"]
+  consumables:
+    - ["Leveling", "Minor Wizard Oil", "Enchanting skill 5 in Forever. Method.gg says that it is very strong at low levels"]
+    - ["Leveling", "Lesser Arcane Elixir", "New. Alchemy skill 120. Warcraft Tavern recommends it"]
+    - ["Level 60", "Brilliant Wizard Oil", "Up to +36 spell damage and +1% spell crit (beta data)"]
+    - ["Level 60", "Greater Arcane Elixir, Elixir of Frost Power", "+35 spell power. +15 Frost damage (beta data)"]
+    - ["Level 60", "Flask of Supreme Power", "+150 spell power (beta data). A flask continues after death"]
+    - ["Level 60", "Major Mana Potion, mana gems", "Mana gems are separate from potions"]
+    - ["Level 60", "Baked Salmon, Nightfin Soup", "Food with spell power (beta data). Crafted food also gives +5% XP from kills"]
+  sources:
+    - {title: "Timesaver.gg: Mage leveling gear, level by level", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/mage/arcane"}
+    - {title: "Method.gg: Mage leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-mage-leveling-guide-and-talents"}
+    - {title: "Method.gg: how hit chance works", url: "https://www.method.gg/wow-forever/how-does-hit-chance-work-in-wow-forever"}
+    - {title: "Method.gg: consumables and enchants", url: "https://www.method.gg/wow-forever/list-of-all-consumables-and-enchants-in-wow-forever"}
+    - {title: "Method.gg: itemization updates", url: "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more"}
+    - {title: "Warcraft Tavern: weapon trainers", url: "https://www.warcrafttavern.com/forever/guides/weapon-trainers/"}
+    - {title: "Warcraft Tavern: stats", url: "https://www.warcrafttavern.com/forever/guides/stats/"}
+    - {title: "wowtbc.gg: Frost Mage item lists for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/frost-mage/"}
+    - {title: "LFCarry: sets and crafted tier items (beta data)", url: "https://lfcarry.com/guides/wow-forever-bis-lists"}
+    - {title: "Blizzard: raid overview", url: "https://worldofwarcraft.blizzard.com/news/24303009"}
+
+# ------------------------------------------------------------------ other sections
+professions: |
+  All sources recommend **Tailoring** for a Mage. Method.gg says that gathering professions are not necessary.
+
+  | Rank | Professions | Use them for | Camp features |
+  |---|---|---|---|
+  | **S**{ .tier .tier-s } | [Tailoring](../../professions/tailoring.md) + [Enchanting](../../professions/enchanting.md) | Cloth with spell power from level 10, bags and wands. You disenchant the cloth that you do not use | Faction Banner (Spirit), Enchanted Lute |
+  | **A**{ .tier .tier-a } | [Herbalism](../../professions/herbalism.md) + [Alchemy](../../professions/alchemy.md) | Mana potions and elixirs for raids | Incense Candle (Intellect), Mana Well (mana regeneration) |
+  | **B**{ .tier .tier-b } | [Tailoring](../../professions/tailoring.md) + [Engineering](../../professions/engineering.md) | PvP gadgets. Gnomes have 20% fewer device failures | Faction Banner (Spirit), Reagent Bot |
+
+  In Forever, a profession gives no passive stats. Each profession adds a [camp feature](../../systems/camping.md). A crafting profession gives [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300.
+
+  [First Aid](../../professions/first-aid.md) now makes healing potions. [Cooking](../../professions/cooking.md) and [Fishing](../../professions/fishing.md) are also useful. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+  A Skyborne has Read Ley Line for the time between fights, so Tailoring helps it more than early Alchemy. A Gnome is the best race for Engineering.
+
+  **Comprehension** is a minor tradeskill for Mages only. You loot scrolls from creatures, and *Comprehend Scroll* changes them into temporary buffs or better items. Warcraft Tavern says that a failed decipher can change you into a sheep.
+
+  Reportedly, the book quests gave a *Research* spell that made a Bundle of Scrolls once each hour. A hotfix of 6 November says that Mages no longer learn this spell. It is not known if the spell will return.
+
+legacy: |
+  You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character.
+
+  | Tree | Picks for a Mage |
+  |---|---|
+  | Adventure | **Well Rested** 5/5, then **Talented** 5/5. Talented gives your first talent point up to 5 levels earlier. *Thrill of Adventure* decreases the time that you drink |
+  | Resourcefulness | **Reagent Economy** removes the reagent cost of teleports, portals and Arcane Brilliance. **Permanence** is for long buffs |
+  | Professions | *Working Overtime* helps skill-ups in Tailoring and Comprehension |
+
+mistakes:
+  - "You forget that the game no longer adds new spells to your action bars."
+  - "You cast low-rank spells for Arcane Concentration, Frostbite or Fingers of Frost procs. Ranks that are more than 12 levels below you have a lower proc chance."
+  - "You buy dual spec without gold for riding at level 40. Plan for 150g or more."
+  - "You cast only Arcane Blast outside a burst phase. Each stack increases its mana cost by 100%."
+  - "You break Polymorph with Arcane Explosion, Flamestrike or Blizzard in a dungeon."
+
+faq:
+  - q: "Which path is best for leveling: Frost, Arcane or Fire?"
+    a: "Frost is the safest, and most guides recommend it. Arcane is strong solo when you have Arcane Blast and Missile Barrage. Fire is the weakest at low levels because it needs crit."
+  - q: "Why does Arcane Blast use so much mana?"
+    a: "Each stack increases its mana cost by 100%. Cast other spells between 2 casts, and let the stacks expire outside a burst phase."
+  - q: "Why do guides give different numbers for Arcane Blast?"
+    a: "Blizzard's deep dive from the beta gave +175% mana cost and 15% of Intellect for each stack. The launch client gives +100% mana cost and 12% of Intellect, with a maximum of 4 stacks for 18 seconds."
+  - q: "Why does Ice Lance not cast?"
+    a: "Ice Lance has the same 8 second cooldown as Fire Blast."
+  - q: "Is Hot Streak a different talent from Heating Up?"
+    a: "No. The BlizzCon demo and some guides call the proc Hot Streak. Blizzard's deep dive and the client call it Heating Up. It is 1 talent."
+  - q: "Can Horde Mages go to Dalaran?"
+    a: "NPCs in Dalaran attack Horde characters on sight, and Horde characters cannot get Kirin Tor reputation. They can go into the City of Dalaran dungeon through the sewer."
+  - q: "Is AoE farming still possible?"
+    a: "Yes, but it is weaker. Improved Blizzard slows by a maximum of 40%, and Cone of Cold is shorter."
+
+sources:
+  - {title: "Warcraft Tavern: Mage & Shaman deep dive", url: "https://www.warcrafttavern.com/forever/news/scrolls-totems-mage-shaman-deep-dive-for-wow-forever/"}
+  - {title: "Warcraft Tavern: Mage leveling guide", url: "https://www.warcrafttavern.com/forever/guides/mage-leveling/"}
+  - {title: "Warcraft Tavern: Mage guide", url: "https://www.warcrafttavern.com/forever/guides/mage/"}
+  - {title: "Method.gg: Mage leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-mage-leveling-guide-and-talents"}
+  - {title: "Kami-Labs: every reworked Mage spell and talent", url: "https://kami-labs.fr/en/wow-forever/mage-wow-forever-sorts-et-talents-modifies/"}
+  - {title: "Kami-Labs: Ice Lance 8-second cooldown", url: "https://kami-labs.fr/en/wow-forever/mage-wow-forever-changements-28-octobre/"}
+  - {title: "Mobalytics: Arcane Mage guide", url: "https://mobalytics.gg/wow-forever/classes/arcane-mage-guide"}
+  - {title: "Mobalytics: Frost AoE leveling guide", url: "https://mobalytics.gg/wow-forever/profile/kargoz/classes/1-60-frost-mage-aoe-leveling-guide-talents-strategy-best-grinding-spots"}
+  - {title: "Warcraft Tavern: world-first level 60s", url: "https://www.warcrafttavern.com/forever/news/world-first-level-60s-in-wow-forever-paladin-shaman-3-mages/"}

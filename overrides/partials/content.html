@@ -6,7 +6,8 @@
 {% endif %}
 {% set fc_is_addon = page.url.startswith('guides/') and page.url.count('/') == 3 %}
 {% set fc_is_class = page.url.startswith('guides/') and page.url.count('/') == 2 and page.is_index %}
-{% if (fc_is_addon or fc_is_class) and "</h1>" in page.content %}
+{#- the progression page (fc_is_class) carries its own add-on picker, so only add-on pages get the switcher -#}
+{% if fc_is_addon and "</h1>" in page.content %}
   {% set parts = page.content.split('</h1>', 1) %}
   {{ parts[0] }}</h1>
   {% include "partials/combo-switcher.html" %}

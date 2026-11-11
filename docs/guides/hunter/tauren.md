@@ -11,7 +11,7 @@ tags:
 
 :codex-hunter:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Hunter guide](index.md).</p>
+<p class="gh-note" markdown>Read with the [Hunter progression](index.md).</p>
 
 </div>
 

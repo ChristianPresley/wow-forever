@@ -1,44 +1,103 @@
 ---
-description: "Warlock guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore advice."
+description: "Warlock progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
 tags:
   - Warlock
 search:
   boost: 2
 ---
 
-# Warlock Guide
+# Warlock Progression
+
+<!-- This page is generated. Edit tools/classes/guides/warlock.yml, then run tools/classes/build.py. -->
 
 <div class="guide-head" data-class="warlock" markdown>
 
-:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **DPS**{ .badge .dps } <span class="gh-diff" title="Guide: one of the easiest classes to level">Leveling difficulty: <strong>Easy</strong><span class="gh-pips" data-level="1" aria-hidden="true"><i></i></span></span>
+:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class progression</span> **DPS**{ .badge .dps }
 
-<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+<nav class="gh-jump" aria-label="Jump to chapter"><a href="#picks">Add-ons</a> <a href="#start">Start</a> <a href="#l1">1–9</a> <a href="#l10">10–19</a> <a href="#l20">20–29</a> <a href="#l30">30–39</a> <a href="#l40">40–49</a> <a href="#l50">50–59</a> <a href="#l60">60</a> <a href="#raid">Raids & PvP</a></nav>
 
 </div>
 
-!!! info "Current as of 7 November 2026"
-    Forever launched on 4 November. This guide uses these sources:
+**Also called:** Lock · Affli (Affliction) · Demo (Demonology) · Destro (Destruction)
+{: .fc-aka }
 
-    - The Blizzard Rogue & Warlock class deep dive (7 Oct 2026).
-    - The Warcraft Tavern launch-week spec guides (1–3 Nov).
-    - The Method.gg leveling guide (4 Nov).
-    - The Blizzard class-tuning notice of 6 Nov.
+The Warlock is a ranged caster that wears cloth and fights with a demon. This page follows 1 Warlock from character creation to the raids, level by level. It tells you what changes in each level range: the spells, the demons, the way that you fight, the dungeons and the decisions.
 
-    **A Warlock hotfix is scheduled for Tuesday 10 November** (see [Upcoming tuning](#upcoming-tuning)). Thus, the Affliction rotation advice and Voidwalker tanking will probably change. You can find reference data on the [Warlock class page](../../characters/classes/warlock.md).
+!!! info "Current as of 10 November 2026"
+    Forever started on 4 November 2026. The talent data and the recipe data are from the game client, build 1.60.1.70862. Spell levels, quests and zones that Forever did not change are Classic-era values. The raids open on 9 December, and no source has published simulations.
 
-## Overview
+## Pick your add-ons { #picks }
 
-The Warlock is a ranged caster in cloth armor. It fights with damage-over-time spells, fire nukes and a summoned demon. It changes health into mana with **Life Tap** and heals itself with drains. It controls fights with Fear, Banish and its demons. In groups, it gives the only summon in the game, Healthstones, Soulstones and **Curse of the Elements**. In Forever, Curse of the Elements increases damage from all magic schools.
+This page tells the progression of a Warlock in 9 chapters, from character creation to the raids. The main text is the same for each character. An **add-on** adds the text for 1 selection: your race, your talents or your equipment.
 
-<aside class="infobox" markdown>
+<div class="fc-pick" data-class="warlock" role="group" aria-label="Add-ons for your Warlock">
+<fieldset class="fc-pick__group" data-pick="race"><legend>Race</legend>
+<div class="fc-pick__opts">
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="human" checked><span>Human</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="gnome"><span>Gnome</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="orc"><span>Orc</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="troll"><span>Troll</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="undead"><span>Undead</span></label>
+</div>
+</fieldset>
+<fieldset class="fc-pick__group" data-pick="talents"><legend>Talents</legend>
+<div class="fc-pick__opts">
+<label class="fc-pick__opt"><input type="radio" name="fc-talents" value="affliction" checked><span>Affliction</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-talents" value="demonology"><span>Demonology</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-talents" value="destruction"><span>Destruction</span></label>
+</div>
+</fieldset>
+<fieldset class="fc-pick__group" data-pick="gear"><legend>Equipment</legend>
+<div class="fc-pick__opts">
+<label class="fc-pick__opt"><input type="radio" name="fc-gear" value="shadow" checked><span>Shadow damage</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-gear" value="fire"><span>Fire damage</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-gear" value="stamina"><span>Stamina for pet tanking, PvP and Hardcore</span></label>
+</div>
+</fieldset>
+<p class="fc-pick__note"><label class="fc-pick__all"><input type="checkbox" name="fc-all"><span>Show all add-ons</span></label> Each chapter shows only the add-ons that you select. This browser saves your selection.</p>
+</div>
+
+<div class="grid cards fc-addon-cards" markdown>
+
+-   :material-star-four-points: **[Talents add-on](talents.md)**
+
+    All 52 talents with a rating, a talent for each level and the level 60 builds.
+
+-   :material-shield-sword: **[Equipment add-on](equipment.md)**
+
+    The equipment sets, the items for each level range, enchants and consumables.
+
+-   :material-account-group: **Race add-ons**
+
+    [Human](human.md){ .fc-chip } [Gnome](gnome.md){ .fc-chip } [Orc](orc.md){ .fc-chip } [Troll](troll.md){ .fc-chip } [Undead](undead.md){ .fc-chip }
+
+</div>
+
+## Before level 1: Make your Warlock { #start }
+
+A Warlock does damage with 3 tools: damage-over-time spells (DoTs), Fire and Shadow bolts, and a demon. The class pays for mana with health. Life Tap changes health into mana, and drains give the health back.
+
+The demon does a large part of your work, and you change it for each task. The Imp does ranged damage. The Voidwalker tanks. The Succubus or Incubus does the most damage. The Felhunter stops enemy casters.
+
+Groups want a Warlock for 3 reasons. Ritual of Summoning is the only summon in the game, because Meeting Stones do not summon. You make Healthstones and Soulstones for the group. You put Curse of the Elements on the target, and in Forever it increases the damage from all magic schools.
+
+In Forever, Blizzard rebuilt all 3 talent trees. Affliction uses DoTs and drains. Demonology makes the demon stronger and can let a Voidwalker tank in dungeons. Destruction uses fast Fire spells. Each tree is a full damage spec.
+
+You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race.
+
+<aside class="infobox" data-class="warlock" markdown>
 <p class="infobox-title">Warlock at a glance</p>
 
 | | |
 |---|---|
-| **Role** | Ranged damage, crowd control, raid utility (curses, summons, stones) |
-| **Armor / weapons** | Cloth. Daggers, wands, one-hand swords and staves |
-| **Resource** | **Mana**{ .pill .pill--mana } (refilled from health with Life Tap) and **Soul Shards** |
-| **Leveling speed** | Second fastest in the beta, after Hunter |
+| **Role** | Ranged damage, crowd control, group utility (curses, summons, stones) |
+| **Armor** | **Cloth**{ .pill .pill--cloth } |
+| **Weapons** | Daggers, wands, one-hand swords, staves, off-hand items |
+| **Resource** | **Mana**{ .pill .pill--mana }, health through Life Tap, and Soul Shards |
+| **Demons** | Imp (1), Voidwalker (10), Succubus or Incubus (20), Felhunter (30). For a short time: Infernal (50), Doomguard (60) |
+| **Races** | 5 combinations |
+| **Leveling speed** | Second in the beta, after Hunter |
+| **Leveling difficulty** | Easy. The Warlock is one of the easiest classes to level |
 
 </aside>
 
@@ -47,344 +106,197 @@ The Warlock is a ranged caster in cloth armor. It fights with damage-over-time s
 
 Strengths
 
-- Very self-sufficient leveling
-- Pet tanking
-- Strong sustained damage
-- Fear in PvP
-- Unique group utility
+- The demon tanks, and Life Tap and drains remove most rest time
+- Strong damage in long fights
+- Fear, Banish and Seduction control enemies
+- The only summon in the game, plus Healthstones and Soulstones
 
 </div>
 <div class="cons" markdown>
 
 Weaknesses
 
-- Low armor
-- DoTs are slow to reach full damage
-- Soul Shard upkeep
-- Weak mobility
-- Melee-range AoE (Hellfire)
+- Low armor and weak mobility
+- DoTs need time to do their full damage
+- You must collect Soul Shards
+- Hellfire, the strongest AoE spell, needs melee range and uses your health
 
 </div>
 </div>
 
+!!! forever "What Forever changed"
+    **Additions**
 
-### What's new in Forever
+    **Banes**{ .pill .pill--new } **DoTs can crit**{ .pill .pill--new } **Stones are weapon imbues**{ .pill .pill--new } **Pandemic**{ .pill .pill--new } **Wrack**{ .pill .pill--new } **Demonic Brand**{ .pill .pill--new } **Demonic Pact**{ .pill .pill--new } **Bane of Havoc**{ .pill .pill--new } **Incinerate**{ .pill .pill--new } **Troll Warlocks**{ .pill .pill--new }
 
-- **Banes.** Curse of Agony and Curse of Doom are now *Bane of Agony* and *Bane of Doom*. You can keep **1 Bane per target**, separate from your 1 Curse. Thus, a Warlock now uses a Bane **plus** a raid curse. All effects on Curses also apply to Banes.
-- **Curse of the Elements** increases damage taken from **all** magic schools. **Curse of Shadows is gone.**
-- **DoTs can crit**. The game recalculates DoT damage on each tick. Warcraft Tavern says that DoTs do not snapshot buffs.
-- **Firestone and Spellstone are weapon imbues.** They stack with Wizard Oil. Firestone adds Fire damage and crit. Spellstone adds Shadow damage and spell haste.
-- **Life Tap scales with Spirit**, not Stamina.
-- **Drain Soul** has a chance to give a shard on each tick. The chance increases on each tick until it is 100%.
-- **Demon scaling:** demons scale from your stats and gear. Pre-launch notes give the bonus as **2 Health per point of your Stamina** (decreased from 7.5). Boss AoE does **half damage to demons** (Warcraft Tavern).
-- **Pet command "Move"** replaces Stay.
-- **Talents rebuilt:** the new capstones are *Wrack*, *Demonic Pact* and *Incinerate*. *Pandemic*, *Bane of Havoc*, *Demonic Brand*, *Decimation*, *Shadow and Flame* and other talents are also new. Forever removed about 17 old talents.
-- **Training is cheaper**, because you must also buy **Grimoires** (demon abilities) from demon trainers.
-- The Warcraft Tavern guides now use the name **Sayaad** (Succubus or Incubus) for the Succubus line.
+    **Removals**
 
-### Races
+    **Curse of Shadows**{ .pill .pill--removed } **Dark Pact**{ .pill .pill--removed } **Devastation**{ .pill .pill--removed } **Emberstorm**{ .pill .pill--removed } **Improved Healthstone**{ .pill .pill--removed }
 
-| Race | Faction | Status | Add-on |
-|---|---|---|---|
-| Human | **Alliance**{ .pill .pill--alliance } | Classic | [Human Warlock](human.md) |
-| Gnome | **Alliance**{ .pill .pill--alliance } | Classic | [Gnome Warlock](gnome.md) |
-| Orc | **Horde**{ .pill .pill--horde } | Classic | [Orc Warlock](orc.md) |
-| Troll | **Horde**{ .pill .pill--horde } | **New** | [Troll Warlock](troll.md) |
-| Undead | **Horde**{ .pill .pill--horde } | Classic | [Undead Warlock](undead.md) |
+    - **Banes:** Curse of Agony and Curse of Doom are now Bane of Agony and Bane of Doom. You can keep 1 Bane and 1 Curse on each target.
+    - **Curse of the Elements** increases the damage from all magic schools.
+    - **DoTs can crit.** Warcraft Tavern says that the game calculates DoT damage again on each tick.
+    - **Firestone and Spellstone** are weapon imbues. They do not use the off-hand slot.
+    - **Life Tap** increases with Spirit, not with Stamina.
+    - **Drain Soul** has a chance to give a Soul Shard on each tick. The chance increases on each tick.
+    - **Demons** get stats from your stats. Pre-launch notes give 2 health for each point of your Stamina.
+    - The pet command **Move** replaces Stay.
+    - You buy demon abilities as **Grimoires** from demon trainers. Blizzard decreased training costs because of this.
+    - The launch client has no Malediction talent. It still has Grim Reach, which the beta deep dive listed as removed.
+    - The Warcraft Tavern guides and the talent names use **Sayaad** for the Succubus and the Incubus.
+
+    All classes: [cross-class changes](../../characters/classes/index.md#cross-class-changes).
 
 !!! conflict "Conflict: best race"
-    Method.gg ranks them Human (S), Orc (A), Undead and Gnome (B), Troll (C). Warcraft Tavern says that all 5 are close. It says that Human and Orc are strong in both PvE and PvP, Undead is a PvP choice and Troll is good against beasts. 1 beta-era guide puts all races within 1% DPS. Choose the faction and look that you want.
+    Method.gg ranks the races: Human (S), Orc (A), Undead and Gnome (B), Troll (C). Warcraft Tavern says that all 5 are close. 1 guide from the beta puts all races within 1% DPS. Select the faction and the look that you prefer.
 
-## Specs & talents
+<div class="fc-addons" markdown>
 
-!!! tip "Full talent guide"
-    The [Warlock talent guide](../../talents/warlock.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
 
-Talents start at level 10 (1 point per level, 51 at 60). Single-point **gold-medal** talents are at **11, 16, 21 and 31** points in a tree. If you put all points in 1 tree, you get them at about levels 20, 25, 30 and 40. The *Talented* [Legacy talent](../../characters/legacy.md) gives you your first point earlier. **Dual spec** unlocks at **level 40** for **50g** from all Warlock trainers. Respec fees decrease to 1g over time.
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Warlock](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-| Spec | Capstones (11 / 16 / 21 / 31) | Plays like |
+The safe Alliance selection and the default for a first Warlock. Ruthless gives 1% crit, The Human Spirit gives 10% Spirit for Life Tap, and Will to Survive removes stuns. **Alliance**{ .pill .pill--alliance .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Warlock](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The burst selection for Destruction and Demonology. Eureka! gives 8 seconds of cheaper and stronger direct spells, and Escape Artist removes roots. **Alliance**{ .pill .pill--alliance .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Warlock](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The best all-round Horde selection in most guides. Blood Fury gives 10% spell power for 15 seconds, and Command gives your demon 5% damage. **Horde**{ .pill .pill--horde .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Warlock](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+New in Forever. Berserking gives 10% cast speed for 15 seconds, and Rapid Regeneration heals you after Life Tap. Method.gg ranks it last of the 5. **Horde**{ .pill .pill--horde .pill--sm } **New**{ .pill .pill--new .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Warlock](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Horde PvP selection. Will of the Forsaken removes Fear, charm and sleep. Cannibalize gives health and mana, and Touch of the Grave drains health. **Horde**{ .pill .pill--horde .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="affliction" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Affliction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The solo path that all major guides recommend. DoTs kill the enemy while your demon holds it, and drains keep your health full. It has the least rest time.
+
+Leveling build: **Affliction (solo)**. Level 60 builds: **Affliction: Wrack (raid)**, **Affliction: SM/Ruin**.
+
+Usual equipment set: **Shadow damage**.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="demonology" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Demonology</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The safe path, the Hardcore path and the PvP path. With Soul Link, your demon takes 30% of the damage that you take. It also lets a Voidwalker tank in dungeons.
+
+Leveling build: **Demonology (safe)**. Level 60 builds: **Demonology: Fire (raid)**, **Soul Link (PvP)**.
+
+Usual equipment set: **Shadow damage**.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="destruction" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Destruction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The path for dungeon groups. It has the best AoE and cleave, and fast Fire burst. It has less self-healing than Affliction, so solo play is harder.
+
+Leveling build: **Destruction (groups)**. Level 60 builds: **Destruction (raid and dungeons)**.
+
+Usual equipment set: **Fire damage**.
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Warlock equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The set for Affliction and for Demonology while you level. You take spell power, Shadow damage and crit. The imbue is the Spellstone.
+
+Stat priority: Leveling (Warcraft Tavern): Spell Power or Shadow damage > wand DPS (to about 30) > Spirit or Intellect > Stamina. Level 60, Affliction: Spell Power or Shadow damage > Crit > Hit (to the cap) > Haste > Spell Pierce > Intellect > Spirit. Demonology puts Hit before Crit
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="fire" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Fire damage</strong> [Warlock equipment](equipment.md#fire){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The set for Destruction and for the Demonology Fire build. You take spell power, Fire damage, crit and hit. The imbue is the Firestone.
+
+Stat priority: Leveling (Warcraft Tavern): Spell Power (Fire and Shadow) > wand DPS (to about 30) > Intellect or Spirit > Stamina. Level 60, Destruction: Spell Power or Fire damage > Crit > Hit (to the cap) > Haste > Spell Pierce > Intellect > Spirit. Demonology puts Hit before Crit
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="stamina" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Stamina for pet tanking, PvP and Hardcore</strong> [Warlock equipment](equipment.md#stamina){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+A safer set. You replace some Intellect and Spirit with Stamina. Your demon gets health from your Stamina and uses your hit. No source publishes an item list for this set.
+
+Stat priority: Stamina > Spell Power > Hit > Intellect
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Select a race. Read its Race add-on.
+- [ ] Select a talent path. Affliction is the usual selection for a first Warlock.
+- [ ] Read the [Professions](#professions) section. Tailoring and Enchanting are the usual selection.
+
+## Levels 1–9: The Imp and your first DoTs { #l1 }
+
+You start with Shadow Bolt and Demon Skin. Sell your first items to get the copper for Immolate. Then do the quest of your trainer for the Imp. The Imp is your first demon, and it attacks from range.
+
+At level 4 you train Corruption and Curse of Weakness. Corruption is your first DoT without a direct hit. It does its damage while you cast other spells or move.
+
+Demons learn their abilities from Grimoires. A Grimoire is a book that you buy from a demon trainer. The first is Blood Pact at level 4. No source publishes the costs or the full list, so keep some silver for each new rank.
+
+Life Tap at level 6 changes how you use mana. When your health is higher than your mana, cast Life Tap. Then eat, or let the health come back. From this level you drink much less than a Mage or a Priest.
+
+Level 8 gives Bane of Agony and Fear. A fight now has a pattern: Bane of Agony, Corruption, Immolate, then the wand. Fear removes a second enemy from the fight for some seconds.
+
+At about level 5, the quest *The Great Outdoors* opens [camping](../../systems/camping.md). Take the starter quest for a gathering profession in the same town.
+
+| Level | You train | Why it is important |
 |---|---|---|
-| **Affliction** | — / Curse of Exhaustion / — / **Wrack** | DoTs plus a channeled filler. Best sustain, slow to reach full damage |
-| **Demonology** | Demonic Sacrifice / Fel Domination / Soul Link / **Demonic Pact** | Sacrifice 1 demon, fight with another. Tankiest spec, pet-tank option |
-| **Destruction** | — / Conflagrate / Bane of Havoc / **Incinerate** | Fire burst and cleave. Best AoE and dungeon damage |
-
-=== "Affliction"
-
-    | Talent | Ranks | What it does |
-    |---|---|---|
-    | Improved Life Tap | 2 | More mana from Life Tap. Moved to row 1 |
-    | Suppression | 5 | Redesigned: up to **+5% spell hit** and −20% threat |
-    | Improved Corruption | 5 | Faster Corruption cast, up to +10% damage |
-    | Malediction | — | New: up to +5% periodic damage (*see note below*) |
-    | Improved Drains | 3 | New: up to +20% from Drain Life, Drain Soul and Wrack |
-    | Improved Bane of Agony | 2 | Decreased from 3 points |
-    | Amplify Curse | 1 | Next Bane of Agony does 50% more damage |
-    | Fel Concentration | 3 | Decreased from 5. Less pushback on drains, now also on Wrack |
-    | **Pandemic** | 3 | New: DoT and drain crits do up to **+100%** extra crit damage |
-    | Nightfall | 2 | Drain Life, Drain Soul and Wrack can make your next Shadow Bolt instant |
-    | **Curse of Exhaustion** | 1 (16 pts) | −30% movement speed. Moved from row 5 |
-    | Malevolence | 5 | New: up to +5% Shadow crit |
-    | Siphon Life | 1 | DoT that heals you |
-    | Soul Siphon | 3 | New: drains and Wrack get up to 12% for each other Affliction effect on the target (max 36%) |
-    | Shadow Mastery | 5 | Shadow damage bonus, smaller than Classic |
-    | **Wrack** | 1 (31 pts) | Channel: Shadow damage each second. Your other Shadow DoTs do **+10%** to the target for 6 s. Pre-launch notes give about 86 dps base at 60 |
-
-    *Soul Harvest* is the new name of Improved Drain Soul. The BlizzCon demo used the name "Drain Hope" for the capstone. All later sources say **Wrack**.
-
-    !!! warning "Malediction possibly moved"
-        Read the tooltip before you spend points on Malediction. 1 launch-week guide says that the periodic-damage Malediction from the deep dive is possibly not in that slot now.
-
-=== "Demonology"
-
-    | Talent | Ranks | What it does |
-    |---|---|---|
-    | Unholy Power | 5 | Pet damage (smaller bonus than Classic). Moved to row 1 |
-    | Improved Health Funnel | — | More healing, up to 100% less threat, usable at all demon health levels |
-    | Improved Imp | 3 | Does not affect Blood Pact now |
-    | Demonic Aegis | — | New: Demon Skin/Armor up to +30% |
-    | Fel Vitality | 3 | New: pet health and mana up to +15%, **your mana** up to +15% |
-    | Demonic Energies | 2 | New: pet heals for up to 15% of your spell damage. Life Tap gives it mana |
-    | Master Summoner | 2 | Faster, cheaper summons. Necessary for Fel Domination |
-    | **Demonic Sacrifice** | 1 (11 pts) | Sacrifice a demon for a **2-hour** buff: Imp = Shadow damage, Voidwalker = mana regen, Sayaad = Fire damage, Felhunter = health regen |
-    | **Fel Domination** | 1 (16 pts) | Next summon is fast |
-    | Demonic Embrace | 5 | Stamina. Does not decrease Spirit now |
-    | Improved Sayaad | 3 | Only Warcraft Tavern lists it (*unconfirmed*) |
-    | Decimation | — | New: Shadow Bolt or Searing Pain on a target below 35% makes your next Soul Fire faster (up to 40%) and shard-free for 10 s. Soul Fire cooldown decreased by up to 90% |
-    | **Demonic Brand** | 3 | New: Searing Pain makes less threat and brands the target. The next 2 attacks of your pet do bonus Fire or Shadow damage. With a **Voidwalker**, this makes a lot of threat, so **pet tanking** is possible |
-    | **Soul Link** | 1 (21 pts) | Your demon takes about 30% of the damage that you take. Moved from row 7 |
-    | Improved Felhunter | — | New: stronger Felhunter abilities, Spell Lock −2 s cooldown |
-    | Demonic Knowledge | 3 | New: when a demon is out, you and your pet get spell damage that scales with your level |
-    | Master Demonologist | 5 | Redesigned: Imp = Fire damage, Voidwalker = less physical damage taken, Sayaad = Shadow damage, Felhunter = less magic damage taken |
-    | **Demonic Pact** | 1 (31 pts) | Requires Soul Link. You **keep** your sacrifice buff when you summon a *different* demon |
-
-    No Felguard: no Forever source mentions it.
-
-=== "Destruction"
-
-    | Talent | Ranks | What it does |
-    |---|---|---|
-    | Destructive Reach | — | Range for all damage spells. Moved to row 1 |
-    | Bane | 5 | Faster Shadow Bolt, Immolate and now **Incinerate** |
-    | Cataclysm | 3 | Up to −10% Destruction mana cost |
-    | Molten Skin | 5 | New: up to −10% damage taken (2% per point, Warcraft Tavern) |
-    | Improved Shadow Bolt | 5 | Only your own Shadow damage. No charges |
-    | Aftermath | 5 | Redesigned: initial hit of Immolate up to +50%. Conflagrate can Daze (−50% speed, 5 s) |
-    | Ruin | 5 | Crit damage. Moved to row 3 |
-    | Agonizing Flames | 3 | Old name: Improved Searing Pain |
-    | Intensity | 3 | Pushback resistance for all Destruction spells |
-    | **Conflagrate** | 1 (16 pts) | Moved from row 7 |
-    | Fire and Brimstone | 3 | New: Conflagrate crit |
-    | **Bane of Havoc** | 1 (21 pts) | 5-minute Bane: the cursed target also takes **15% of the damage that you do to other targets** |
-    | Shadow and Flame | 5 | New: Conflagrate gives a Shadow buff and Shadowburn gives a Fire buff (20 s). Conflagrate can keep Immolate. Shadowburn can give back its shard |
-    | **Incinerate** | 1 (31 pts) | 2.5 s Fire nuke, 30 yd, **+25%** if Immolate is on the target |
-
-### Removed talents
-
-Improved Healthstone · Fel Intellect · Fel Stamina · Improved Subjugate Demon · Improved Firestone · Improved Spellstone · Improved Curse of Weakness · Improved Drain Life · Improved Drain Mana · Improved Curse of Exhaustion · Grim Reach · Dark Pact · Improved Firebolt · Improved Lash of Pain · Devastation · Improved Immolate · Emberstorm.
-
-!!! conflict "Conflict: Grim Reach"
-    The Blizzard deep dive lists Grim Reach as removed. But the Warcraft Tavern and Method.gg leveling guides still recommend it for PvP. Use the in-game tree as the correct data. If Grim Reach is not there, *Destructive Reach* (Destruction row 1) gives range.
-
-### Leveling builds
-
-All major guides recommend **Affliction** for leveling. Demonology is a close second, and Destruction is best in groups. These are the Warcraft Tavern orders. The Method.gg orders are different only in timing.
-
-=== "Affliction (40/7/4)"
-
-    <div class="milestones" markdown>
-
-    Lv 10–19
-    :   Improved Corruption 5/5, Suppression 5/5
-
-    Lv 20–26
-    :   Unholy Power 5/5, Demonic Energies 2/2 (Demonology, for a stronger pet)
-
-    Lv 27–30
-    :   Improved Drains 3/3, Amplify Curse
-
-    Lv 31–40
-    :   Improved Bane of Agony 2/2, Improved Life Tap 2/2, Pandemic 3/3, Soul Siphon 3/3
-
-    Lv 41–60
-    :   Malevolence 5/5, Shadow Mastery 5/5, Siphon Life, Fel Concentration 3/3, Nightfall 2/2, Improved Shadow Bolt 4/5
-
-    </div>
-
-    If mobs interrupt your drains frequently, take Fel Concentration earlier. The Voidwalker tanks until 20, then the Sayaad. Drain-tanking with Drain Life starts at about 30.
-
-=== "Demonology (20/31/0)"
-
-    Level as Affliction to 27, then respec:
-
-    <div class="milestones" markdown>
-
-    Lv 27 (respec, 18 pts)
-    :   Unholy Power 5, Demonic Energies 2, Fel Vitality 3, Master Summoner 2, Improved Sayaad 3, Demonic Brand 3
-
-    Lv 28–40
-    :   Demonic Sacrifice, Soul Link, Demonic Knowledge 3/3, Demonic Embrace 1/5, Fel Domination, Master Demonologist 5/5, **Demonic Pact** at 40
-
-    Lv 41–60
-    :   Affliction: Improved Corruption 5, Improved Life Tap 2, Suppression 5, Improved Drains 3, Pandemic 3, Malevolence 2
-
-    </div>
-
-    You can also put all points in Demonology from 10. Method.gg stays Affliction until about level 45.
-
-=== "Destruction (17/3/31)"
-
-    <div class="milestones" markdown>
-
-    Lv 10–20
-    :   Bane 5/5, Cataclysm 3/3, Aftermath 2/5, Shadowburn at 20
-
-    Lv 21–25
-    :   Aftermath 5/5, Ruin 1/5, **Conflagrate** at 25
-
-    Lv 26–30
-    :   Ruin 3/5, Agonizing Flames 3/3
-
-    Lv 31–40
-    :   Bane of Havoc, Fire and Brimstone 3/3, Shadow and Flame 5/5, **Incinerate** at 40
-
-    Lv 41–60
-    :   Suppression 5/5, Improved Life Tap 2/2, Improved Corruption 5/5, Improved Imp 3/3, Amplify Curse, Pandemic 3/3, Malevolence 1/5
-
-    </div>
-
-    Method.gg lists Shadowburn at 24 and Conflagrate at 29. This is a different build order, not a different rule.
-
-### Endgame builds (level 60)
-
-From the Warcraft Tavern spec guides (1–3 Nov). No raid is open yet, so these are pre-raid simulations.
-
-| Spec | Build | Split (A/D/D) | Notes |
-|---|---|---|---|
-| Affliction | **Wrack** | 33 / 0 / 18 | Wrack is the filler, with Soul Siphon 3/3. Shadow Bolt only on Nightfall procs |
-| Affliction | SM/Ruin | 30 / 0 / 21 | Shadow Bolt filler. Slightly lower than Wrack. The dungeon choice (move the third Cataclysm point into Shadowburn) |
-| Demonology | Fire | 2 / 31 / 18 | Sacrifice the Sayaad, keep the Imp out. Searing Pain filler, Soul Fire execute, Firestone |
-| Demonology | Shadow | 2 / 31 / 18 | Sacrifice the Imp, keep the Sayaad out. Shadow Bolt filler, Spellstone. Within ~3% of Fire |
-| Destruction | Sayaad | 14 / 4 / 33 | Keep the Sayaad summoned. Best Destruction build |
-| Destruction | Imp | 14 / 4 / 33 | Moves points from Aftermath and Unholy Power into Improved Imp and Demonic Energies. Slightly lower |
-| Destruction | Sacrifice | 7 / 11 / 33 | Sacrifice the Sayaad for +15% Fire. Lower than the Sayaad build |
-
-!!! note "Affliction is about to change"
-    On 6 Nov, Blizzard said that it is better to only channel Wrack than to keep Siphon Life, Corruption and Bane of Agony active. Blizzard will make those DoTs worth a cast with Wrack. The total Affliction damage will not increase. The Wrack build priority will probably change after 10 Nov.
-
-## Abilities & rotation
-
-### Key spells by level
-
-The levels below come from Method.gg and Warcraft Tavern for Forever. The levels marked *(Classic)* are from Classic, and nobody has checked them against Forever.
-
-| Level | Spells |
-|---|---|
-| 1 | Shadow Bolt, Demon Skin, Immolate, Summon Imp (quest) |
-| 4 | Corruption, Curse of Weakness; **Blood Pact** grimoire from the demon trainer |
-| 6 | Life Tap |
-| 8 | Bane of Agony; Fear *(Classic)* |
-| 10 | Drain Soul, Create Healthstone, Summon Voidwalker (quest) |
-| 14 | Drain Life |
-| 18 | Searing Pain, Create Soulstone |
-| 20 | Demon Armor, Rain of Fire, **Ritual of Summoning**, Sayaad (quest) |
-| 28 | Create Firestone; Banish *(Classic)* |
-| 30 | Siphon Life (talent), Felhunter (quest), Hellfire *(Classic)* |
-| 36 | Create Spellstone |
-| 40 | Felsteed (quest), Howl of Terror *(Classic)* |
-| 42 | Death Coil *(Classic)* |
-| 48 | Soul Fire |
-| 50 | Inferno |
-| 60 | Ritual of Doom, Dreadsteed (quest) |
-
-### Rotations
-
-=== "Affliction"
-
-
-    !!! rotation "Affliction: Single target (Wrack build)"
-
-        <div class="priority" markdown>
-
-        1. **Bane of Doom** if the fight will continue for 1 minute or more. If not, Amplify Curse → **Bane of Agony**.
-        2. Your assigned **Curse** (Elements for caster-heavy raids, Recklessness for melee-heavy ones).
-        3. Corruption.
-        4. Siphon Life.
-        5. Immolate.
-        6. Shadow Bolt **only** when Nightfall makes it instant.
-        7. Life Tap in the gap before a refresh, or when you move.
-        8. **Wrack** as filler. Stop the channel when an item above is necessary.
-
-        </div>
-
-
-    Start with a Shadow Bolt when the tank pulls. On a second target, add Corruption. If the target will live 30 s or more, also add Bane of Agony and Siphon Life.
-
-    **Leveling:** pull with Bane of Agony. Then use Corruption, and Immolate on stronger mobs. When the pet tanks, use the wand (before 30) or Drain Life (after 30). Use Life Tap when your health is higher than your mana.
-
-=== "Demonology"
-
-
-    !!! rotation "Demonology: Fire build"
-
-        <div class="priority" markdown>
-
-        1. Searing Pain if **Demonic Brand** is missing from the target.
-        2. Bane of Doom / Bane of Agony as above.
-        3. Assigned Curse.
-        4. Immolate.
-        5. **Soul Fire** when Decimation is active (below 35%).
-        6. Corruption.
-        7. Life Tap.
-        8. Searing Pain filler.
-
-        </div>
-
-
-    **Shadow build:** Bane, Curse, Searing Pain to keep the brand, Immolate, Corruption, Life Tap, then Shadow Bolt filler. Do not use Soul Fire.
-
-    **Pet tanking:** summon the Voidwalker and send it to the target. Then use Searing Pain on the target, so that Demonic Brand puts a lot of threat on the demon. Before you have Demonic Brand, Searing Pain makes too much threat. Let the pet make threat first.
-
-=== "Destruction"
-
-
-    !!! rotation "Destruction: Single target"
-
-        <div class="priority" markdown>
-
-        1. Bane of Doom / Bane of Agony as above.
-        2. Assigned Curse.
-        3. Immolate.
-        4. Corruption.
-        5. **Conflagrate** (needs Immolate).
-        6. **Shadowburn** (needs a shard. With Shadow and Flame, it can give back the shard).
-        7. Life Tap in gaps.
-        8. **Incinerate** filler (Shadow Bolt before 40).
-
-        </div>
-
-
-    Start with **Soul Fire** when the tank pulls. Start each fight with a minimum of 2 shards. On 2 targets, put **Bane of Havoc** on the second target. Do not use Hellfire on 2 targets. In dungeons: Bane of Havoc on 1 mob, Bane of Agony on others, **Hellfire** on packs of 3 or more.
-
-### Demons
-
-| Demon | Get it | Use it for |
-|---|---|---|
-| **Imp** | Level 1 quest | Ranged damage, Blood Pact (Stamina). Raid default for Fire builds |
-| **Voidwalker** | Level 10 quest | Tanking when you level and in Demonology pet-tank setups. Sacrifice shield |
-| **Sayaad** (Succubus/Incubus) | Level 20 quest | Highest damage demon. Seduction CC. Leveling pet after 20 |
-| **Felhunter** | Level 30 quest | Spell Lock and Devour Magic. **The PvP demon** |
-| **Infernal** | Inferno, level 50 | Temporary emergency summon |
-| **Doomguard** | Ritual of Doom, level 60 | Temporary, costly |
-
-On 6 Nov, Blizzard said that Voidwalkers are **not durable enough** as tanks. Blizzard will tune them to match Classic Era. They will probably be better after the 10 Nov hotfix.
-
-**Grimoires:** you buy demon abilities other than the basic ones from demon trainers. The costs and the full list are not published. At low levels, keep a few silver for each rank.
-
-### Keybinds and macros
-
-??? example "Show 3 macros"
-
-    Put pet **Attack** and **Follow** (and the new **Move**) on easy keys. Useful macros:
+| 1 | **Shadow Bolt, Demon Skin, Immolate** | Your first damage spells and your armor. Keep Demon Skin on you at all times |
+| 1 | **Summon Imp (quest)** | Your first demon. It does ranged Fire damage |
+| 4 | **Corruption, Curse of Weakness** | Corruption is the DoT that you use for all 60 levels |
+| 4 | **Blood Pact (Grimoire)** | The Imp gives Stamina to the group. You buy it from the demon trainer |
+| 6 | **Life Tap** | Changes health into mana. It decreases the time that you drink |
+| 8 | **Bane of Agony** | A second DoT. It is a Bane, so you can add a Curse |
+| 8 | **Fear** | Removes 1 enemy from the fight. Classic-era level |
+
+??? example "Macros for the demon and for Fear"
 
     ```
     #showtooltip
@@ -397,341 +309,1576 @@ On 6 Nov, Blizzard said that Voidwalkers are **not durable enough** as tanks. Bl
     /cast [@focus,exists,harm] Fear; Fear
     ```
 
+    Put the pet commands Attack, Follow and Move on keys that you can reach quickly. The `@focus` condition works in standard macros. Complex add-ons such as WeakAuras do not work. See [Add-ons](../../systems/addons.md).
+
+!!! tip "Tip"
+    Get a wand as soon as you can. Use it while your DoTs do their damage. An Enchanter makes the Lesser Magic Wand at level 5.
+
+!!! hardcore "Hardcore"
+    Use Life Tap only when no enemy is near you. Do not use Fear when other enemies are near, because the target runs into them.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Warlock](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start at Northshire Abbey in Elwynn Forest. Your first trainer is Drusilla La Salle, behind the abbey (Classic location). She gives the Imp quest. At about level 5, go to Goldshire. The trainer Maximillian Crowe is in the basement of the Lion's Pride Inn (Classic location). The trainers of Stormwind are in the Slaughtered Lamb in the Mage Quarter.
+
+The Human Spirit gives 10% more Spirit. Life Tap increases with Spirit, so each Life Tap from level 6 gives you more mana.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Warlock](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start in Coldridge Valley in Dun Morogh. Your first trainer is Alamar Grimm in Anvilmar (Classic location). He gives the Imp quest. At about level 5, go through the tunnel to Kharanos. The trainer Gimrizz Shadowcog is in the Thunderbrew Distillery (Classic location). The trainers of Ironforge are in the Forlorn Cavern (Classic location).
+
+Expansive Mind gives 5% more mana. Thus, you use Life Tap less often in each fight.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Warlock](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start in the Valley of Trials in Durotar. Your first trainer is Nartok in the Den (Classic location). He gives the Imp quest. At about level 5, go to Razor Hill. The trainer there is Dhugru Gorelust (Classic name). The trainers of Orgrimmar are in the Cleft of Shadow.
+
+Command gives your demon 5% damage. It helps from the first fight with the Imp.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Warlock](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start in the Valley of Trials in Durotar, with the Orcs. Your first trainer is Nartok in the Den (Classic location). He gives the Imp quest. At about level 5, go to Razor Hill. The trainer there is Dhugru Gorelust (Classic name). The trainers of Orgrimmar are in the Cleft of Shadow.
+
+Do the quests in Sen'jin Village and on the Echo Isles. Use Life Tap to half health, then use Rapid Regeneration. An action stops it.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Warlock](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start in Deathknell in Tirisfal Glades. Your first trainer is Maximillion (Classic name). He gives the Imp quest. At about level 5, go to Brill. The trainer Rupert Boch is in the Gallows' End Tavern (Classic location). The trainers of the Undercity are in the Magic Quarter.
+
+Use Cannibalize on humanoid and undead corpses. Method.gg says that it now gives mana and health. Touch of the Grave has a chance on a hit to drain health, with a cooldown of 15 seconds. The new Shadowvale quests are in the west of Tirisfal Glades.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="affliction" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Affliction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You have no talent points before level 10. Start each fight with Bane of Agony and Corruption while the Imp attacks. Add Immolate on a strong enemy, then use the wand. Your first 5 talent points, from level 10, go to Improved Corruption.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="demonology" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Demonology</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You have no talent points before level 10. Let the Imp attack first. Then cast Bane of Agony, Corruption and Immolate, and use the wand. This path makes the demon stronger from level 10. Your first 5 talent points go to Unholy Power.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="destruction" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Destruction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You have no talent points before level 10. Let the Imp attack first. Cast Immolate and Corruption, then Shadow Bolt, and use the wand when your mana is low. Immolate and Shadow Bolt are the base of this path. Your first 5 talent points go to Bane.
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Warlock equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Your first important item is a wand. You can use wands and daggers from level 1. A weapon master teaches staves for 10 silver. Train staves before you do the staff quest of your faction.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Novice's Practice Wand** | [Enchanting](../../professions/enchanting.md), skill 1 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Lesser Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: level 5. Warcraft Tavern gives 11.3 DPS |
+| Staff | **Apprentice's Spellstaff** | Quest: *Rare Books*, Elwynn Forest (Alliance), level 7 |
+| Staff | **Makeshift Stormcaller** | Quest: *Stormy Potential*, Durotar (Horde), level 7 |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="fire" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Fire damage</strong> [Warlock equipment](equipment.md#fire){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The first items are the same as in the Shadow damage set. Get a wand, and train staves for 10 silver.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Lesser Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: level 5 |
+| Staff | **Apprentice's Spellstaff** | Quest: *Rare Books*, Elwynn Forest (Alliance), level 7 |
+| Staff | **Makeshift Stormcaller** | Quest: *Stormy Potential*, Durotar (Horde), level 7 |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="stamina" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Stamina for pet tanking, PvP and Hardcore</strong> [Warlock equipment](equipment.md#stamina){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Take Stamina on each item that offers it. A wand is still your first important item.
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Do the Imp quest at level 1.
+- [ ] Buy the Blood Pact Grimoire at level 4.
+- [ ] Equip a wand.
+- [ ] Train Bane of Agony and Fear at level 8.
+
+## Levels 10–19: The Voidwalker and your first talents { #l10 }
+
+At level 10 you get your first talent point, and you train Drain Soul and Create Healthstone. You also do the quest for the Voidwalker. From here, you get 1 talent point at each level.
+
+The Voidwalker changes the fight. Before, the enemy came to you. Now the Voidwalker holds the enemy while you put DoTs on it. You can fight 2 enemies at the same time: the Voidwalker tanks 1, and your DoTs kill them one after the other.
+
+Drain Soul gives you Soul Shards. A Soul Shard is the reagent for Healthstones, Soulstones and summons. Use Drain Soul when an enemy has low health, and keep 2 or 3 spare shards in your bags.
+
+Drain Life at level 14 is your first heal. At level 18 you train Create Soulstone and Searing Pain. A Soulstone lets a dead player come back to life. Searing Pain makes much threat. If you cast it again and again, the enemy leaves your Voidwalker and attacks you.
+
+Your first dungeons open at level 13. Quests give much more XP than dungeon enemies, so do each dungeon for its quests. Give a Healthstone to each player before the first pull. Use Fear only when the group agrees, because the target can run into more enemies. See [Dungeons](../../content/dungeons/index.md) for the full list.
+
+At level 14, start the scavenger hunt for the Cozy Sleeping Bag. It gives an XP buff and rested XP. See [Leveling](../../characters/leveling.md). Fan sites say that Warsong Gulch is open from level 10.
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 10 | **Drain Soul, Create Healthstone** | Drain Soul gives Soul Shards. A Healthstone has a cooldown that is separate from potions |
+| 10 | **Summon Voidwalker (quest)** | Your tank for solo play |
+| 14 | **Drain Life** | Moves health from the enemy to you |
+| 18 | **Searing Pain** | A fast Fire spell with high threat |
+| 18 | **Create Soulstone** | Put it on a healer before a boss, or on you for a hard pull |
+
+**Dungeons in this chapter**
+
+- [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) **13–20**{ .lvl }: New. It is in Ironforge
+- Ragefire Chasm **13–18**{ .lvl }: It is in Orgrimmar
+- [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) **15–22**{ .lvl }: New. It is in Tirisfal Glades
+- Wailing Caverns **15–24**{ .lvl }
+- The Deadmines **17–26**{ .lvl }
+
+!!! warning "Caution"
+    On 6 November, Blizzard said that Voidwalkers are not durable enough as tanks. Blizzard planned a hotfix for 10 November to make them as durable as in Classic Era. Blizzard gave no numbers, and no source has tested the result.
+
+!!! hardcore "Hardcore"
+    Keep the Voidwalker out. From level 18, put a Soulstone on yourself before each hard pull. No source confirms that Hardcore permits this.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human gnome" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Westfall or Loch Modan. The new boat from Stormwind Harbor to Auberdine takes you to Darkshore. Do the Deadmines at about level 18.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in the Barrens or Silverpine Forest. The Horde supply camp for profession crates is west of the Crossroads. Do Wailing Caverns after Ragefire Chasm.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Warlock](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Voidwalker quest starts with Gakin the Darkbinder in the Slaughtered Lamb (Classic name). Method.gg rates the Stormwind quest as the fastest for the Alliance. Then go to Westfall.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Warlock](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+For the Voidwalker, Method.gg recommends the Stormwind quest. Take the Deeprun Tram to Stormwind. The new dungeon Hall of Thanes is in Ironforge.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Warlock](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Warcraft Tavern and Method.gg say that the Voidwalker quest in the Undercity is easier than the Orgrimmar quest. Ragefire Chasm is in Orgrimmar.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Warlock](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Warcraft Tavern and Method.gg prefer the Voidwalker quest in the Undercity. Beast Slaying gives 5% damage against the beasts of the Barrens.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Warlock](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Voidwalker quest starts with Carendin Halgar in the Magic Quarter (Classic name). 2 guides rate it as the easiest Horde quest. The Ruins of Lordaeron dungeon is near the Undercity.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="affliction" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Affliction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Send the Voidwalker. Then cast Bane of Agony and Corruption, and use the wand. Improved Corruption makes Corruption almost instant at level 14, so you can put it on each enemy while you move. Suppression then gives hit and decreases threat, so the Voidwalker keeps the enemy.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 10–14 | **Improved Corruption** | 5/5 | Corruption becomes almost instant |
+| 15–19 | **Suppression** | 5/5 | Fewer misses and less threat for your demon |
+
+Points at level 19: **10/0/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="demonology" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Demonology</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+All points make the demon stronger. Unholy Power gives it damage, Demonic Energies heals it with your damage, and Fel Vitality gives it health. Send the Voidwalker, put DoTs on the enemy and use the wand. Some guides level as Affliction first. Warcraft Tavern changes to Demonology at level 27, and Method.gg at about level 45.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 10–14 | **Unholy Power** | 5/5 | A stronger demon from the first point |
+| 15–16 | **Demonic Energies** | 2/2 | Your damage heals the demon |
+| 17–19 | **Fel Vitality** | 3/3 | More demon health and more mana for you |
+
+Points at level 19: **0/10/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="destruction" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Destruction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Bane makes Shadow Bolt and Immolate faster. Cast Immolate, then Corruption, then Shadow Bolt until the enemy dies. Cataclysm decreases the mana cost. You use more mana than the other paths, so use Life Tap often.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 10–14 | **Bane** | 5/5 | Faster Shadow Bolt and Immolate |
+| 15–17 | **Cataclysm** | 3/3 | Less mana for each spell |
+| 18–19 | **Aftermath** | 2/5 | More Immolate damage. Opens row 3 |
+
+Points at level 19: **0/0/10** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Warlock equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Replace the wand at level 13. The first dungeons give a staff and a robe for each faction. Tailoring makes rare Shadow items from skill 60. Warcraft Tavern says that only the Tailor can wear them. Method.gg names the Filigreed Shadow Gown for Affliction.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Greater Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: level 13. Warcraft Tavern gives 17.5 DPS |
+| Wand | **Deepblaze** | Quest: *Old Ironforge Incursion*, Hall of Thanes (Alliance) |
+| Wand | **Branding Rod** | Quest: *Isha Awak*, the Barrens (Horde) |
+| Staff | **Staff of Orgrimmar** | Quest: *Hidden Enemies*, Ragefire Chasm (Horde), level 16 |
+| Staff | **Emberstone Staff** | The Deadmines, Captain Greenskin, level 17 |
+| Staff | **Coldspire Staff** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md): Rath'mael |
+| Chest | **Robes of the Disgraced Thane** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) |
+| Chest | **Leftover Abomination Skin** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md): The Baron |
+| Feet | **Shadow Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
+| Hands | **Shadow Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Filigreed Shadow Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="fire" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Fire damage</strong> [Warlock equipment](equipment.md#fire){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You cast Shadow Bolt and Immolate, so spell power for all schools is best. Tailoring makes rare Flame items from skill 60. Warcraft Tavern says that only the Tailor can wear them. Method.gg names the Filigreed Flame Gown for Destruction and Demonology.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Greater Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: level 13 |
+| Dagger | **Fang of Magmatus** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md): Magmatus |
+| Staff | **Golemheart Stave** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md): Plunder |
+| Staff | **Staff of Orgrimmar** | Quest: *Hidden Enemies*, Ragefire Chasm (Horde), level 16 |
+| Feet | **Flame Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
+| Hands | **Flame Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Filigreed Flame Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Flame Sash** | [Tailoring](../../professions/tailoring.md), skill 85 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="stamina" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Stamina for pet tanking, PvP and Hardcore</strong> [Warlock equipment](equipment.md#stamina){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+More Stamina gives more health to you and to the Voidwalker. Take Stamina and Intellect in place of Spirit.
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Do the Voidwalker quest at level 10.
+- [ ] Do your first dungeon for its quests.
+- [ ] Start the Cozy Sleeping Bag scavenger hunt at level 14.
+
+## Levels 20–29: The Sayaad and Ritual of Summoning { #l20 }
+
+At level 20 you train Demon Armor, Rain of Fire and Ritual of Summoning. Demon Armor replaces Demon Skin. Rain of Fire is your first AoE spell, and you cast it from range. You also do the quest for the Succubus or Incubus. The guides name this demon the Sayaad.
+
+The Sayaad gives you a decision for each pull. It does more damage than the Voidwalker, but it does not tank. Many Warlocks change to it at 20 for faster kills. Keep the Voidwalker if you want more safety. Seduction, the crowd control spell of the Sayaad, holds 1 enemy in place.
+
+Ritual of Summoning changes your job in a group. You and 2 players at the entrance can bring all the other players. Groups ask for this, so put the spell on your action bars.
+
+The class quest *The Orb of Soran'ruk* also starts at 20. It needs fragments from Blackfathom Deeps and Shadowfang Keep. The reward is a staff or an off-hand item with Shadow and Fire damage. Thus, do these 2 dungeons first.
+
+At level 28 you train Create Firestone and Banish. A Firestone is a weapon imbue: you put it on your weapon, and it adds Fire damage and crit. Banish removes 1 demon or elemental from the fight.
+
+3 side tasks start in these levels. At 20, give 10 library books to the librarian of your faction for the first book quest. Arathi Basin opens at level 20. Level 25 gives the *Warlock: Novice* Legacy Point. See [Legacy](../../characters/legacy.md).
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 20 | **Demon Armor, Rain of Fire** | Stronger armor, and your first AoE spell at range |
+| 20 | **Ritual of Summoning** | The only summon in the game. It needs you and 2 group members |
+| 20 | **Summon Succubus or Incubus (quest)** | The demon with the most damage. Seduction is crowd control |
+| 28 | **Create Firestone** | A weapon imbue with Fire damage and crit |
+| 28 | **Banish** | Removes 1 demon or elemental from the fight. Classic-era level |
+
+**Dungeons in this chapter**
+
+- Shadowfang Keep **20–30**{ .lvl }: It has a fragment for the Soran'ruk quest
+- Blackfathom Deeps **24–32**{ .lvl }: It has a fragment for the Soran'ruk quest, and the quest for the Gravestone Scepter wand
+- The Stockade **25–29**{ .lvl }: It is in Stormwind
+- [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) **26–33**{ .lvl }: New. It has 3 bosses
+- [City of Dalaran](../../content/dungeons/city-of-dalaran.md) **28–35**{ .lvl }: New. You need the Dalaran Sewer Key
+
+!!! tip "Tip"
+    Against 3 enemies, put DoTs on 2 of them and use Fear on the third. Do not hit the enemy that has Fear on it, because damage can break the Fear.
+
+!!! hardcore "Hardcore"
+    Keep the Voidwalker out. The Sayaad does not tank, so the enemy attacks you. Use Seduction and Banish in place of Fear, because a target with Fear on it runs into other enemies.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human gnome" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Redridge Mountains, Duskwood, the Wetlands and Ashenvale. Three Corners in Redridge has the supply camp for profession crates. The librarian for book quests is Garion Wendell in the Wizard's Sanctum in Stormwind.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Stonetalon Mountains, Ashenvale and Hillsbrad Foothills. Warcraft Tavern says that the Horde Sayaad quest is a chain of 8 quests in the Barrens and Stonetalon Mountains. The guards of Dalaran attack Horde characters, but the City of Dalaran dungeon has Horde quests. The librarian for book quests is Owen Thadd in the Magic Quarter of the Undercity.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Warlock](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Stockade is in your capital. The Sayaad quest starts with your Stormwind trainers.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Warlock](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Ironforge has no trainer for staves or swords. Go to Woo Ping in Stormwind before you take the Staff of Soran'ruk.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Warlock](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Command also gives 5% damage to the Sayaad. Thus, the change to the Sayaad at 20 gives an Orc more than other races.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="affliction" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Affliction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The points of these levels go to your demon, not to your spells. Unholy Power makes the demon stronger, and Demonic Energies heals it with your damage. Thus, the Sayaad kills faster and the Voidwalker lives longer. Use the wand while the DoTs do damage. Improved Drains at 27 to 29 prepares the drain fight of the next chapter.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 20–24 | **Unholy Power** | 5/5 | A stronger demon |
+| 25–26 | **Demonic Energies** | 2/2 | Your damage heals the demon |
+| 27–29 | **Improved Drains** | 3/3 | A stronger Drain Life |
+
+Points at level 29: **13/7/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="demonology" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Demonology</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Master Summoner makes a new summon faster. Improved Sayaad makes the Succubus or Incubus stronger and Seduction longer. Demonic Brand at 25 to 27 changes Searing Pain: it makes less threat and adds damage to the next attacks of your demon. With a Voidwalker, these hits make high threat. Thus, send the Voidwalker first, and then use Searing Pain on its target. Demonic Sacrifice at 28 opens Soul Link.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 20–21 | **Master Summoner** | 2/2 | A faster summon when the demon dies |
+| 22–24 | **Improved Sayaad** | 3/3 | More Lash of Pain damage and a longer Seduction |
+| 25–27 | **Demonic Brand** | 3/3 | Searing Pain gives bonus damage to your demon |
+| 28 | **Demonic Sacrifice** | 1/1 | Soul Link needs it |
+| 29 | **Demonic Embrace** | 1/5 | The last point to open row 5 |
+
+Points at level 29: **0/20/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="destruction" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Destruction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Shadowburn at level 20 is an instant hit that uses a Soul Shard. Use it to kill an enemy, and you get the shard back. Conflagrate at level 25 is an instant Fire hit on a target with Immolate. It consumes Immolate. With Aftermath 5/5 it also slows the target.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 20 | **Shadowburn** | 1/1 | An instant hit to finish mobs |
+| 21–23 | **Aftermath** | 5/5 | Conflagrate will Daze the target |
+| 24 | **Ruin** | 1/5 | Opens row 4 |
+| 25 | **Conflagrate** | 1/1 | An instant Fire hit at level 25 |
+| 26–27 | **Ruin** | 3/5 | Larger crits |
+| 28–29 | **Agonizing Flames** | 2/3 | 10% Destruction damage |
+
+Points at level 29: **0/0/20** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Warlock equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The class quest at 20 gives the Staff of Soran'ruk or the Orb of Soran'ruk. Warcraft Tavern gives the staff +34 Shadow and Fire damage. The wand from the Blackfathom Deeps quest has 29 DPS. Method.gg says that a staff is better than a one-hand weapon with an off-hand item.
+
+| Slot | Item | Source |
+|---|---|---|
+| Staff | **Staff of Soran'ruk** | Class quest: *The Orb of Soran'ruk*, level 20 |
+| Wand | **Gravestone Scepter** | Quest: *Blackfathom Villainy*, Blackfathom Deeps, level 22 |
+| Staff | **Rod of the Sleepwalker** | Blackfathom Deeps, Twilight Lord Kelris, level 24 |
+| Ring | **Ring of Power Regulation** | [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md): Relic Guardian. Timesaver.gg keeps it to level 60 |
+| Chest | **Violet Sorcerer's Robes** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Arcanic Enigma |
+| Wand | **Wand of Mana Concentration** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Arcanic Enigma, level 27 |
+| Staff | **Spine of the Devourer** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Mana Devourer, level 28 |
+| Head | **Shadow Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Legs | **Filigreed Shadow Leggings** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Shadow Gown** | [Tailoring](../../professions/tailoring.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="fire" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Fire damage</strong> [Warlock equipment](equipment.md#fire){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Staff of Soran'ruk has Shadow and Fire damage, so it is also the selection for this set. The Firestone at level 28 adds Fire damage and crit to your weapon. City of Dalaran gives a caster dagger and an off-hand item.
+
+| Slot | Item | Source |
+|---|---|---|
+| Staff | **Staff of Soran'ruk** | Class quest: *The Orb of Soran'ruk*, level 20 |
+| Wand | **Gravestone Scepter** | Quest: *Blackfathom Villainy*, Blackfathom Deeps, level 22 |
+| Wand | **Dancing Flame** | Quest: *Final Passage* (Horde), level 26 |
+| Dagger | **Tendonscraper Dagger** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Lyn the Ignored |
+| Off-hand | **Ponderous Orb** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md): Shade of the Archmage |
+| Head | **Flame Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Legs | **Filigreed Flame Leggings** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Flame Gown** | [Tailoring](../../professions/tailoring.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="stamina" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Stamina for pet tanking, PvP and Hardcore</strong> [Warlock equipment](equipment.md#stamina){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Staff of Soran'ruk has 14 Stamina (Warcraft Tavern). The Staff of the Shade is a very rare drop in Razorfen Kraul with +37 Shadow damage and 15 Stamina.
+
+| Slot | Item | Source |
+|---|---|---|
+| Staff | **Staff of Soran'ruk** | Class quest: *The Orb of Soran'ruk*, level 20 |
+| Staff | **Staff of the Shade** | Razorfen Kraul, a very rare drop, level 22 or higher |
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Do the Sayaad quest at level 20.
+- [ ] Do the class quest *The Orb of Soran'ruk*.
+- [ ] Turn in 10 library books for the first book quest.
+
+## Levels 30–39: The Felhunter and drain tanking { #l30 }
+
+At level 30 you do the quest for the Felhunter, and you train Hellfire. The Felhunter is the demon against casters. Spell Lock stops a cast, and Devour Magic removes a magic effect. It is the usual demon for PvP. You now have all 4 demons.
+
+From about level 30, many Warlocks fight in a new way. You put all DoTs on the enemy and then use Drain Life in place of the wand. The enemy hits you, and the drain heals you. Guides name this drain tanking. Pulls become long, and you almost never rest.
+
+Hellfire is a strong AoE spell, but it damages you and needs melee range. Use it only on groups of 3 or more enemies, and only when a healer can heal you. If not, use Rain of Fire.
+
+At level 36 you train Create Spellstone. It is the weapon imbue for Shadow damage, as the Firestone is for Fire damage. Use the stone of the school that you cast most.
+
+The second book quest at 35 needs 20 library books. The new battleground, the Battle for the Darkspear Islands, opens at level 30. Start to save gold now. At level 40, dual spec costs 50g, and the riding skill costs 100g.
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 30 | **Summon Felhunter (quest)** | Spell Lock and Devour Magic. The demon for PvP |
+| 30 | **Hellfire** | AoE around you that also damages you. Classic-era level |
+| 36 | **Create Spellstone** | A weapon imbue with Shadow damage and spell haste |
+
+**Dungeons in this chapter**
+
+- Razorfen Kraul and Gnomeregan **29–38**{ .lvl }
+- Scarlet Monastery **30–46**{ .lvl }: 4 wings. It gives a wand, a dagger and an off-hand item for casters
+- [The Drowned City](../../content/dungeons/drowned-city.md) **35–42**{ .lvl }: New. It is on the coast of Stranglethorn Vale
+
+!!! warning "Caution"
+    Searing Pain makes much threat. Without the Demonic Brand talent, do not cast it again and again, or the enemy leaves your demon.
+
+!!! tip "Tip"
+    Use your health as mana. Cast Life Tap to change health into mana. Then use Drain Life to get the health back.
+
+!!! hardcore "Hardcore"
+    Drain tanking lets the enemy hit you. Let the Voidwalker tank each strong enemy. Hellfire uses your health, so it is dangerous in Hardcore.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human gnome" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Arathi Highlands, Stranglethorn Vale, Desolace and Dustwallow Marsh (Theramore). The Alliance can get Kirin Tor reputation in Dalaran.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Thousand Needles, Stranglethorn Vale, Desolace and Arathi Highlands. The way to Shen'dralas goes through the Valley of Bones in the south of Desolace.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Warlock](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Gnomeregan is your home dungeon from level 29. If you take Engineering, your racial gives 20% fewer device failures.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Warlock](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Battle for the Darkspear Islands opens at level 30. Stranglethorn Vale has many beasts for Beast Slaying.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Warlock](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Scarlet Monastery is in your home zone.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="affliction" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Affliction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+From level 30, use Drain Life in place of the wand. Amplify Curse makes 1 Bane of Agony 50% stronger for a hard pull. Pandemic doubles the crit bonus of DoTs. Fel Concentration gives drains a 70% chance to ignore pushback, the delay that a hit adds to a cast. Take it earlier if enemies interrupt your drains often. Siphon Life at level 37 is a DoT that heals you.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 30 | **Amplify Curse** | 1/1 | A stronger Bane of Agony for hard pulls |
+| 31–33 | **Pandemic** | 3/3 | DoT crits do double damage |
+| 34–36 | **Fel Concentration** | 3/3 | Mobs do not interrupt your drains |
+| 37 | **Siphon Life** | 1/1 | A DoT that heals you |
+| 38–39 | **Soul Siphon** | 2/3 | Drain Life does more with DoTs on the target |
+
+Points at level 39: **23/7/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="demonology" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Demonology</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Soul Link at level 30 is the best defensive talent of the class. Your demon takes 30% of the damage that you take. Do not sacrifice the demon yet, because a new demon cancels the Demonic Sacrifice effect. Fel Domination at 34 gives a fast summon when your demon dies. Master Demonologist gives a bonus that depends on the demon. The Imp gives Fire damage, and the Sayaad gives Shadow damage. The Voidwalker decreases physical damage, and the Felhunter decreases magic damage.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 30 | **Soul Link** | 1/1 | The demon takes 30% of your damage |
+| 31–33 | **Demonic Knowledge** | 3/3 | Spell damage that increases with your level |
+| 34 | **Fel Domination** | 1/1 | An emergency summon |
+| 35–39 | **Master Demonologist** | 5/5 | 10% damage or 10% less damage taken |
+
+Points at level 39: **0/30/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="destruction" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Destruction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Bane of Havoc at level 31 copies 15% of your damage to a second target. Put it on 1 enemy in each dungeon pull. Fire and Brimstone gives Conflagrate more crit. Shadow and Flame at 5/5 lets Conflagrate keep Immolate, and Shadowburn gives its shard back.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 30 | **Agonizing Flames** | 3/3 | 10% Destruction damage |
+| 31 | **Bane of Havoc** | 1/1 | Cleave for dungeon pulls |
+| 32–34 | **Fire and Brimstone** | 3/3 | 25% crit for Conflagrate |
+| 35–39 | **Shadow and Flame** | 5/5 | Conflagrate keeps Immolate. Shadowburn gives its shard back |
+
+Points at level 39: **0/0/30** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Warlock equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Scarlet Monastery gives a wand at 30 and a staff at 34. Timesaver.gg prefers a dagger with an off-hand item from 35. The ring from the second book quest stays useful to level 60. The Spellstone at 36 is your weapon imbue. The Black items continue the Shadow line by their reagents, but no source confirms their stats.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Necrotic Wand** | Scarlet Monastery, Azshir the Sleepless, level 30 |
+| Staff | **Illusionary Rod** | Scarlet Monastery, Arcanist Doan, level 34 |
+| Dagger | **Hypnotic Blade** | Scarlet Monastery, Arcanist Doan |
+| Off-hand | **Orb of the Forgotten Seer** | Scarlet Monastery, Bloodmage Thalnos |
+| Ring | **Philanthropist's Ring** | Quest: *Greater Friend of the Library*, the book quest at level 35 |
+| Chest | **Robe of the Drowned** | [The Drowned City](../../content/dungeons/drowned-city.md) |
+| Trinket | **Heart of the Primeval** | [The Drowned City](../../content/dungeons/drowned-city.md) |
+| Legs | **Shadow Leggings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Filigreed Shadow Circlet** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Black Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Wand | **Twisted Nether Wand** | [Enchanting](../../professions/enchanting.md), skill 185 **New**{ .pill .pill--new .pill--sm }: level 37 (Method.gg) |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="fire" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Fire damage</strong> [Warlock equipment](equipment.md#fire){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Timesaver.gg uses the dagger and the off-hand item from Scarlet Monastery from level 35. It finds no better main-hand weapon before level 60. The Fiery items continue the Flame line by their reagents, but no source confirms their stats.
+
+| Slot | Item | Source |
+|---|---|---|
+| Dagger | **Hypnotic Blade** | Scarlet Monastery, Arcanist Doan |
+| Off-hand | **Orb of the Forgotten Seer** | Scarlet Monastery, Bloodmage Thalnos |
+| Wand | **Necrotic Wand** | Scarlet Monastery, Azshir the Sleepless, level 30 |
+| Ring | **Philanthropist's Ring** | Quest: *Greater Friend of the Library*, the book quest at level 35 |
+| Legs | **Flame Leggings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
+| Head | **Filigreed Flame Circlet** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Fiery Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="stamina" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Stamina for pet tanking, PvP and Hardcore</strong> [Warlock equipment](equipment.md#stamina){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+With Soul Link at level 30 on the Demonology path, your demon takes 30% of the damage that you take. Thus, the health of the demon protects you, and your Stamina gives the demon health. Timesaver.gg lists a PvP necklace for each faction.
+
+| Slot | Item | Source |
+|---|---|---|
+| Neck | **Master Sergeant's Insignia** | PvP: PvP vendor (Alliance) |
+| Neck | **Senior Sergeant's Insignia** | PvP: PvP vendor (Horde) |
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Do the Felhunter quest at level 30.
+- [ ] Turn in 20 library books at level 35 for the second book quest.
+- [ ] Save 150g before level 40.
+
+## Levels 40–49: The Felsteed and dual spec { #l40 }
+
+Level 40 gives you a mount from your class. Warcraft Tavern says that the Felsteed comes from a short quest at level 40. In Classic, the quest sends you to Strahad Farsan in Ratchet. The riding skill costs 100g, and this price includes your first racial mount. No source says if a Warlock must pay it to ride the Felsteed.
+
+You can buy dual spec for 50g from all Warlock trainers. Dual spec is a second set of talents, and you can change between the 2 sets. Many players keep Affliction for quests and add Destruction or Demonology for dungeons. The cost of a respec decreases to 1g with time.
+
+Your 31st talent point also comes at level 40, if you put all points in 1 tree. It gives the last talent of the tree: Wrack, Demonic Pact or Incinerate. The Talents add-on tells you how it changes your fight.
+
+Until now, Fear was your only escape. Howl of Terror at 40 puts Fear on all enemies near you. Death Coil at 42 is an instant Fear that also heals you. With these 2 spells you can get away from a pull that goes wrong.
+
+Soul Fire at level 48 is a slow, large Fire hit that uses a Soul Shard. Use Curse of the Elements on strong targets to make long fights shorter.
+
+The new zone Riverglades is for levels 35 to 45. At 45, the third book quest needs 25 library books. Level 45 also gives the *Warlock: Experienced* Legacy Point. Some sources say level 40.
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 40 | **Summon Felsteed (quest)** | Your level 40 mount. The quest giver in Ratchet is a Classic-era detail |
+| 40 | **Howl of Terror** | Fear on all enemies near you. Classic-era level |
+| 42 | **Death Coil** | An instant Fear that heals you. Classic-era level |
+| 48 | **Soul Fire** | A large Fire hit. It uses 1 Soul Shard |
+
+**Dungeons in this chapter**
+
+- [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) **40–47**{ .lvl }: New. It is in Riverglades
+- Razorfen Downs **37–46**{ .lvl }
+- Uldaman and Zul'Farrak **41–54**{ .lvl }
+- [Alcaz Prison](../../content/dungeons/alcaz-prison.md) **48–55**{ .lvl }: New. It is in Dustwallow Marsh
+
+??? example "Macro for Soul Fire with Demonic Sacrifice"
+
     ```
     #showtooltip Soul Fire
     /cast Demonic Sacrifice
     /cast Soul Fire
     ```
 
-    !!! note
-        Forever uses a modern client with Midnight-style add-on limits. `@focus` conditionals work in standard macros. Complex add-ons such as WeakAuras do not work. See [Add-ons](../../systems/addons.md).
+    This macro sacrifices your demon, then starts Soul Fire. Use it only if you have the Demonic Sacrifice talent.
 
-## Leveling walkthrough 1–60
+!!! hardcore "Hardcore"
+    Death Coil and Howl of Terror are your escape spells. Before each pull, make sure that they are not on cooldown. In combat, do not use Life Tap below half health.
 
-Warlocks are one of the easiest classes to level. The pet tanks, and Life Tap and drains give you little downtime. With DoTs, you can fight 2 or 3 mobs at the same time. **Buy a wand** quickly (Lesser Magic Wand at 5, Greater Magic Wand at 13 if you or a friend can enchant). Use it when your DoTs are active.
+<div class="fc-addons" markdown>
 
-!!! tip "General habits"
-    - Keep **Demon Skin / Demon Armor** up.
-    - Use health as mana: use Life Tap to change health into mana, then use Drain Life to get the health back.
-    - 2 mobs: put DoTs on the 2 mobs. 3 mobs: put DoTs on 2 and use **Fear** on the third. Do not hit the feared mob.
-    - Keep 2–3 spare shards for Soulstone, Healthstone and emergencies. Get them with Drain Soul on kills.
-    - For difficult pulls, put a Soulstone on yourself.
+<div class="fc-addon" data-pick="race" data-value="human gnome" data-default markdown>
 
-<div class="route" markdown>
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
 
-### 1–10: Starting zone
+The Alliance town in Riverglades is Farholde Keep. Walk in from Redridge Mountains. Then quest in Tanaris, Feralas and the Hinterlands. Tanaris has a ferry to Powderfuse Port in Riverglades.
 
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Horde town in Riverglades is Rog'mar. Go in from the Badlands or Swamp of Sorrows. Then quest in Tanaris, Feralas and the Badlands. Tanaris has a ferry to Powderfuse Port in Riverglades.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Warlock](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Honored with Stormwind gives 10% off riding. The Felsteed makes the level 40 mount less urgent.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Warlock](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Ratchet is a short distance from Orgrimmar. In Classic, the Felsteed quest sends you there.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Warlock](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Honored with the Darkspear Trolls gives 10% off riding. In Classic, the Felsteed quest sends you to Ratchet, a short distance from Orgrimmar.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Warlock](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+For the Felsteed, take the zeppelin to Orgrimmar first. Then go to Ratchet (Classic-era quest).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="affliction" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Affliction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Soul Siphon is complete at level 40. It makes Drain Life stronger for each Affliction effect on the target. Thus, put Corruption, Bane of Agony and Siphon Life on the enemy before you drain. Shadow Mastery adds 10% Shadow damage. Wrack at level 48 is a new filler that makes your other Shadow DoTs 10% stronger.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 40 | **Soul Siphon** | 3/3 | Drain Life does more with DoTs on the target |
+| 41–42 | **Improved Life Tap** | 2/2 | More mana. Opens row 6 |
+| 43–47 | **Shadow Mastery** | 5/5 | 10% Shadow damage |
+| 48 | **Wrack** | 1/1 | A new filler that makes your DoTs stronger |
+| 49 | **Malevolence** | 1/5 | Shadow crit for Pandemic |
+
+Points at level 49: **33/7/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="demonology" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Demonology</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Demonic Pact at level 40 lets you keep a Demonic Sacrifice effect with a different demon out. Sacrifice the Imp for +15% Shadow damage. Then summon the Sayaad or the Voidwalker. You now have the bonus of 2 demons at the same time. The next points make Corruption almost instant.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 40 | **Demonic Pact** | 1/1 | A Demonic Sacrifice bonus and a second demon |
+| 41–45 | **Improved Corruption** | 5/5 | Corruption becomes almost instant |
+| 46–47 | **Improved Life Tap** | 2/2 | More mana |
+| 48–49 | **Suppression** | 2/5 | Hit for dungeons at 55+ |
+
+Points at level 49: **9/31/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="destruction" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Destruction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Incinerate at level 40 replaces Shadow Bolt as filler. It does 25% more damage if Immolate is on the target. Keep Immolate on the target and use Conflagrate and Shadowburn on cooldown. After Ruin 5/5 at 42, the next points make Corruption almost instant.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 40 | **Incinerate** | 1/1 | Your new filler at level 40 |
+| 41–42 | **Ruin** | 5/5 | Full crit bonus |
+| 43–47 | **Improved Corruption** | 5/5 | Corruption becomes almost instant |
+| 48–49 | **Suppression** | 2/5 | Hit and less threat for dungeons |
+
+Points at level 49: **7/0/33** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Warlock equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Krol'dok Stronghold gives cloth legs, a dagger and a necklace. The Timesaver.gg data has few new items for levels 40 to 55. This is a gap in the data. The Shadoweave items are Classic recipes, and their Forever stats are not confirmed.
+
+| Slot | Item | Source |
+|---|---|---|
+| Legs | **Shadecaster's Leggings** | [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md): Twilight Commander Zarmok |
+| Dagger | **Shadowlight Athame** | [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md): Twilight Commander Zarmok |
+| Neck | **Curio-Adorned Necklace** | Quest: *Curios of Curiosity*, Krol'dok Stronghold |
+| Staff | **Zum'rah's Vexing Cane** | Zul'Farrak, Witch Doctor Zum'rah, level 43 |
+| Waist | **Deathmage Sash** | Razorfen Downs, Mordresh Fire Eye |
+| Wand | **Dreambough Wand** | [Enchanting](../../professions/enchanting.md), skill 215 **New**{ .pill .pill--new .pill--sm }: level 43 (Method.gg) |
+| Wand | **Lesser Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 245 **New**{ .pill .pill--new .pill--sm }: level 49 (Method.gg) |
+| Chest | **Shadoweave Robe** | [Tailoring](../../professions/tailoring.md), trainer recipe **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Hands | **Shadoweave Gloves** | [Tailoring](../../professions/tailoring.md), trainer recipe **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Shoulders | **Netherpearl Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="fire" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Fire damage</strong> [Warlock equipment](equipment.md#fire){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Incinerate at level 40 makes Fire damage more important than Shadow damage. Keep the Scarlet Monastery weapons, or use the dagger from Krol'dok Stronghold. Timesaver.gg lists the off-hand item from Razorfen Downs.
+
+| Slot | Item | Source |
+|---|---|---|
+| Dagger | **Shadowlight Athame** | [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md): Twilight Commander Zarmok |
+| Off-hand | **Mordresh's Lifeless Skull** | Razorfen Downs, Mordresh Fire Eye |
+| Wand | **Dreambough Wand** | [Enchanting](../../professions/enchanting.md), skill 215 **New**{ .pill .pill--new .pill--sm }: level 43 (Method.gg) |
+| Hands | **Fiery Handwraps** | [Tailoring](../../professions/tailoring.md), skill 165 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Waist | **Fiery Cord** | [Tailoring](../../professions/tailoring.md), skill 190 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Shoulders | **Netherflame Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="stamina" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Stamina for pet tanking, PvP and Hardcore</strong> [Warlock equipment](equipment.md#stamina){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Demonic Embrace in the Demonology tree is the Stamina talent. Take it for PvP and Hardcore. Hit on your items also helps your demon to hold the enemy, because the demon uses your hit.
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Do the Felsteed quest at level 40.
+- [ ] Buy dual spec (50g) if you play in dungeons or battlegrounds.
+- [ ] Turn in 25 library books at level 45 for the third book quest.
+
+## Levels 50–59: Inferno and the last 10 levels { #l50 }
+
+At level 50 you train Inferno. It summons an Infernal for a short time. Use it in an emergency.
+
+The goal of a dungeon changes in these levels. Before level 50, you did each dungeon for its quests. Now you also start to collect your level 60 equipment. The last 10 levels have the most dungeons. Reportedly, each boss in the new dungeons drops a blue item.
+
+The stats of an item stay hidden until a player finds it. Thus, some dungeon items are a surprise. The Equipment add-on names the items that the sources know. Alterac Valley also opens in these levels, at level 51.
+
+Your talents are almost complete. Hit becomes important, because dungeon bosses are 2 or 3 levels above you. Your demon uses your hit. The Suppression talent gives 5% hit, and each leveling build takes it.
+
+In groups, your jobs do not change. You summon players, give Healthstones, put a Soulstone on a healer before each boss, and use Banish on demons and elementals. Give the tank some seconds before you use your strongest spells. For groups of enemies, use Rain of Fire. Use Hellfire only if the healer can heal you.
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 50 | **Inferno** | Summons an Infernal for a short time |
+
+**Dungeons in this chapter**
+
+- Maraudon **46–55**{ .lvl }
+- Sunken Temple and Blackrock Depths **50–60**{ .lvl }
+- [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) **55–60**{ .lvl }: New. It is in Azshara. It has an entrance to the Barrow Deeps
+- Lower Blackrock Spire and Dire Maul **54–60**{ .lvl }
+- [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) **58–60**{ .lvl }: New. It is in Un'Goro Crater
+- Scholomance and Stratholme **58–60**{ .lvl }
+
+!!! hardcore "Hardcore"
+    Keep 3 or more Soul Shards, a Healthstone and a healing potion. Put a Soulstone on yourself before each hard pull. No source confirms that Hardcore permits this.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human gnome" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Azshara, Un'Goro Crater, Felwood, Burning Steppes, the Plaguelands, Winterspring and Silithus. Azshara has many new quests.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Azshara, Un'Goro Crater, Felwood, Burning Steppes, the Plaguelands, Winterspring and Silithus. Azshara is next to Orgrimmar and has many new quests.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="affliction" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Affliction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Your fight does not change now. It becomes stronger. Malevolence gives Shadow crit, which helps Pandemic. Nightfall sometimes makes a Shadow Bolt instant. Cast it immediately. The last points go to Improved Bane of Agony and Fel Vitality.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 50–53 | **Malevolence** | 5/5 | Shadow crit for Pandemic |
+| 54–55 | **Nightfall** | 2/2 | Instant Shadow Bolts |
+| 56–57 | **Improved Bane of Agony** | 2/2 | More Bane damage |
+| 58–59 | **Fel Vitality** | 2/3 | More mana for you and more health for the demon |
+
+Points at level 59: **41/9/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="demonology" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Demonology</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Suppression gives hit for dungeons. Improved Drains and Pandemic make Drain Life and your DoTs stronger. For Hardcore, keep the Voidwalker out and put the last 2 points in Demonic Embrace.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 50–52 | **Suppression** | 5/5 | Hit for dungeons at 55+ |
+| 53–55 | **Improved Drains** | 3/3 | A stronger Drain Life |
+| 56–58 | **Pandemic** | 3/3 | DoT crits do double damage |
+| 59 | **Malevolence** | 1/5 | Shadow crit |
+
+Points at level 59: **19/31/0** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="destruction" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Destruction</strong> [Warlock talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Suppression gives hit and decreases threat in dungeons. In a dungeon, give the tank some seconds before you use Conflagrate. Use Hellfire only on groups of 3 or more enemies.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 50–52 | **Suppression** | 5/5 | Hit and less threat for dungeons |
+| 53–54 | **Improved Life Tap** | 2/2 | More mana |
+| 55–57 | **Pandemic** | 3/3 | DoT crits do double damage |
+| 58–59 | **Improved Imp** | 2/3 | More Imp damage |
+
+Points at level 59: **15/2/33** (Affliction / Demonology / Destruction).
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Warlock equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The public data names only 1 item from Blackmaw Hold. No source lists the loot of Alcaz Prison or Shaper's Terrace. Timesaver.gg selects Netherpearl Cuffs for Affliction at level 60. The wowtbc.gg list for Affliction names Black Sandals and the Felcloth items.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Cairnstone Sliver** | Quest: *The Morrow Stone*, Feralas (Alliance) |
+| Wand | **Nature's Breath** | Quest: *Dark Vessels* (Horde) |
+| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm }: level 55 (Method.gg) |
+| Trinket | **Shard of the Splithooves** | Quest: *Heroes of Old*, Blasted Lands |
+| Chest | **Robes of Dark Summons** | [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md): Impaan the Imprisoner |
+| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm }: Timesaver.gg, Affliction. Warcraft Tavern says that only the Tailor can wear this line |
+| Feet | **Black Sandals** | [Tailoring](../../professions/tailoring.md), skill 235 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Felcloth Robe** | [Tailoring](../../professions/tailoring.md), skill 260 **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Head | **Felcloth Hood** | [Tailoring](../../professions/tailoring.md), skill 245 **Classic-era**{ .pill .pill--outline .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="fire" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Fire damage</strong> [Warlock equipment](equipment.md#fire){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Warcraft Tavern gives stat weights for Destruction: 1% crit is about 8.8 spell power, and 1% hit is about 8.6. Timesaver.gg lists Truesilver Conduit for Destruction. Warcraft Tavern says that only the Enchanter can use this off-hand item.
+
+| Slot | Item | Source |
+|---|---|---|
+| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm }: level 55 (Method.gg) |
+| Trinket | **Shard of the Splithooves** | Quest: *Heroes of Old*, Blasted Lands |
+| Wrist | **Netherflame Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Hands | **Fiery Gloves** | [Tailoring](../../professions/tailoring.md), skill 235 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Feet | **Fiery Sandals** | [Tailoring](../../professions/tailoring.md), skill 235 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="stamina" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Stamina for pet tanking, PvP and Hardcore</strong> [Warlock equipment](equipment.md#stamina){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The battleground factions sell items for reputation. See the [PvP](../../content/pvp/index.md) page for ranks and seasons.
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests.
+- [ ] Keep 3 or more Soul Shards for each dungeon.
+- [ ] Keep each item with spell power or hit for level 60.
+
+## Level 60: Spell hit and the Onyxia attunement { #l60 }
+
+At level 60 you get the *Warlock: Master* Legacy Point, and you train Ritual of Doom. Ritual of Doom summons a Doomguard for a short time, and it is costly. Mount Hyjal, the level 60 zone, opens through Darkwhisper Gorge in Winterspring.
+
+The Dreadsteed, your fast mount, comes from a long quest chain. No source documents changes to this chain in Forever. The Journeyman riding skill for a fast mount costs 1,000g.
+
+All 3 launch raids open on 9 December 2026. Blizzard says that the difficulty of the raids comes from preparation. Thus, you stop leveling and start to prepare. You have 4 tasks. Get spell power on each item. Get hit from Suppression and from items. Collect consumables. Do the attunement for Onyxia's Lair.
+
+Hit is the stat that you cannot ignore. Warcraft Tavern says that a raid boss needs 17% spell hit. Its stats guide says 16%. Suppression gives 5%, so Affliction and Destruction need about 12% from items and buffs. The Demonology raid build has no Suppression, so it needs all 17% from items and buffs.
+
+An attunement is a quest chain that lets you go into a raid. The attunement for Onyxia's Lair gives the Drakefire Amulet. It needs the blood of General Drakkisath from Upper Blackrock Spire. It is not account-wide, so each character must do it.
+
+Respec to a level 60 build now. The Talents add-on gives the builds of your path. No raid is open, so these builds come from simulations. Raid items stay hidden until players find them, so no source has a tested item list. For raid nights, camp features give buffs: Intellect from Herbalism, crit from Skinning and Spirit from Tailoring.
+
+**Dungeons in this chapter**
+
+- [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) **55–60**{ .lvl }
+- [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) **58–60**{ .lvl }
+- Scholomance, Stratholme, Dire Maul and Blackrock Depths **52–60**{ .lvl }: The Classic dungeons are still in the game
+- Upper Blackrock Spire **59–60**{ .lvl }: 10 players. You need it for the Onyxia attunement
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human gnome" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Alliance attunement for Onyxia's Lair goes through Burning Steppes, Blackrock Depths and Highlord Bolvar in Stormwind. The PvP vendors are in the Champion's Hall in Stormwind.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Horde attunement for Onyxia's Lair goes through the Badlands, Lower Blackrock Spire, Thrall and Rexxar. The PvP vendors are in the Hall of Legends in Orgrimmar.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Warlock](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Ruthless gives 1% crit with all schools. DoTs can crit in Forever, so it helps each talent path.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Warlock](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Use Eureka! with Conflagrate, Shadowburn and Incinerate, or with a Soul Fire. It gives no bonus to DoT ticks, and guides say the same for channels. Warcraft Tavern gives a cooldown of 2 minutes.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Warlock](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Use Blood Fury with your opener. DoTs calculate their damage on each tick, so keep them on the target during the 15 seconds. The cooldown is 2 minutes.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Warlock](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Use Berserking with Incinerate, Shadow Bolt, Searing Pain or Soul Fire. Warcraft Tavern says that it does not make DoT ticks or channels faster.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="affliction" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Affliction</strong> [Warlock talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Wrack raid build keeps 33 points in Affliction and adds Bane, Improved Shadow Bolt and Ruin. The SM/Ruin build is named for Shadow Mastery and Ruin. It uses Shadow Bolt as filler and is good in dungeons, where enemies die quickly. Warcraft Tavern puts it slightly below the Wrack build. For PvP, 17 points in Affliction give Curse of Exhaustion, which slows the target by 30%.
+
+The leveling build ends at **41/10/0**. The level 60 builds of this path:
+
+- **Affliction: Wrack (raid)** (33/0/18, Raid DPS): [talent calculator](https://wowforevertalents.com/warlock/?t=h25500000135201351--0550305)
+- **Affliction: SM/Ruin** (30/0/21, Raid DPS): [talent calculator](https://wowforevertalents.com/warlock/?t=h2550002003520105--0550205103)
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="demonology" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Demonology</strong> [Warlock talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The raid build is the Fire build. Sacrifice the Sayaad for +15% Fire damage, keep the Imp out and use a Firestone. A Shadow variant sacrifices the Imp, keeps the Sayaad out and uses a Spellstone. It casts Searing Pain only for Demonic Brand, uses Shadow Bolt as filler and does not use Soul Fire. Warcraft Tavern puts it within about 3% of the Fire build. The PvP build takes Soul Link, Improved Felhunter and Curse of Exhaustion. There, sacrifice the Voidwalker for mana or the Imp for Shadow damage, then summon the Felhunter.
+
+The leveling build ends at **20/31/0**. The level 60 builds of this path:
+
+- **Demonology: Fire (raid)** (2/31/18, Raid DPS): [talent calculator](https://wowforevertalents.com/warlock/?t=h2-0305003201220301351-0050325003)
+- **Soul Link (PvP)** (20/31/0, PvP): [talent calculator](https://wowforevertalents.com/warlock/?t=h2052030313001-2052203201201031151)
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="destruction" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Destruction</strong> [Warlock talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The raid build keeps the Sayaad out and puts 14 points in Affliction for Suppression and Improved Corruption. It does not take Improved Shadow Bolt, because you do not cast Shadow Bolt. An Imp variant keeps the Imp out and moves 3 points from Unholy Power to Improved Imp. Warcraft Tavern puts it slightly lower. Warcraft Tavern also puts a variant that sacrifices the Sayaad for +15% Fire damage below the Sayaad build.
+
+The leveling build ends at **15/3/33**. The level 60 builds of this path:
+
+- **Destruction (raid and dungeons)** (14/4/33, Raid DPS): [talent calculator](https://wowforevertalents.com/warlock/?t=h2550000002-0004-0050355103101351)
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Warlock equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+3 sites publish level 60 lists. Tools made all 3 lists. The lists disagree, and many stats are still hidden. Belt of the Archmage is the only item in all 3 lists. 2 lists use Sageblade as the main-hand weapon. For raids, get about 12% hit from items and buffs.
+
+| Slot | Item | Source |
+|---|---|---|
+| Waist | **Belt of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295 |
+| Chest | **Robe of the Void** | [Tailoring](../../professions/tailoring.md), skill 295: Kami-Labs and wowtbc.gg |
+| Hands | **Felcloth Gloves** | [Tailoring](../../professions/tailoring.md), skill 280: Kami-Labs and wowtbc.gg |
+| Shoulders | **Mantle of the Timbermaw** | [Tailoring](../../professions/tailoring.md), skill 290: Kami-Labs |
+| Head | **Dreadmist Mask** | Scholomance, Darkmaster Gandling (Timesaver.gg) |
+| Main hand | **Sageblade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
+| Off-hand | **Tome of the Lost** | Upper Blackrock Spire, General Drakkisath (Kami-Labs) |
+| Ring | **Warden's Signet of Brilliance** | Reputation: The Watchers, a new faction, Exalted (wowtbc.gg) |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
+| Bag | **Felblood Soul Bag** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="fire" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Fire damage</strong> [Warlock equipment](equipment.md#fire){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The level 60 lists are almost the same for all 3 specs. Use the list of the Shadow damage set, and select Fire damage where an item offers a selection. Destruction needs about 12% hit from items and buffs. The Demonology Fire build needs 17%, because it has no Suppression.
+
+| Slot | Item | Source |
+|---|---|---|
+| Main hand | **Sageblade** | [Blacksmithing](../../professions/blacksmithing.md), skill 300 |
+| Off-hand | **Truesilver Conduit** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm }: Timesaver.gg, Destruction page |
+| Waist | **Belt of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295 |
+| Chest | **Robe of the Void** | [Tailoring](../../professions/tailoring.md), skill 295 |
+| Hands | **Felcloth Gloves** | [Tailoring](../../professions/tailoring.md), skill 280 |
+| Back | **Deep Woodlands Cloak** | Quest: *Wanted: Vile Priestess Hexx*, the Hinterlands (Timesaver.gg) |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="stamina" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Stamina for pet tanking, PvP and Hardcore</strong> [Warlock equipment](equipment.md#stamina){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Honor buys 1 blue set and 1 epic set for each class. An epic part needs the blue part and an Emboldened Seal. The wowtbc.gg list names the blue Warlock parts Premier Felweave. No source gives the costs.
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Respec to a level 60 build.
+- [ ] Do the attunement for Onyxia's Lair.
+- [ ] Collect consumables and Soul Shards before 9 December.
+
+## Raids and PvP: Summons, stones, Curses and Fear { #raid }
+
+In a raid you are 1 of many damage dealers, but you have 3 jobs that no other class has. You summon the players who come late. You give Healthstones to the raid. You keep a Soulstone on a healer. When the raid leader tells you, use Banish or Fear on extra enemies.
+
+Keep your Bane on the target, and add the Curse that your raid leader gives you. Curse of Shadows is gone, so Curse of the Elements is the main Curse for casters. It increases Fire, Frost, Arcane, Nature and Shadow damage equally. Curse of Recklessness is the Curse for raids with many melee players.
+
+**The Barrow Deeps** has 10 players. Usually 1 Warlock is sufficient for Curse of the Elements there. See [The Barrow Deeps](../../content/raids/barrow-deeps.md). **Hyjal Summit** has 20 players and 13 bosses on routes that branch. Fel corruption is its theme. See [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+**Onyxia's Lair** has 40 players and much Fire damage. The raid page recommends fire resistance, but no source gives a number. See [Onyxia's Lair](../../content/raids/onyxias-lair.md). Warcraft Tavern says that boss AoE does half damage to demons.
+
+In PvP, a Warlock is one of the strongest casters. You have Fear, Death Coil, Howl of Terror, Seduction and Spell Lock. Use Fear first, then DoTs, then drains. The Felhunter is the usual demon. See [PvP](../../content/pvp/index.md) for Honor, ranks and seasons, and [Battlegrounds](../../content/pvp/battlegrounds.md).
+
+The Battle for the Darkspear Islands has 15 players on each side, 4 bases and a flag in the center. Curse of Exhaustion and Fear stop flag carriers there, and Howl of Terror removes enemies from a base. On PvP realms, keep a Soulstone and a Healthstone ready.
+
+| Enemy in PvP | What to know |
 |---|---|
-| Elwynn Forest (Human) · Dun Morogh (Gnome) | Durotar (Orc, Troll) · Tirisfal Glades (Undead) |
+| Orc | Shatter Curse removes your Curses and Banes |
+| Undead | Will of the Forsaken removes Fear and Seduction |
+| Human | Will to Survive removes stuns |
+| Priest, Paladin | They dispel. Make them use the dispel before you cast your important Curse |
+| Enemy casters | Spell Lock of the Felhunter stops a cast. Devour Magic removes a magic effect |
 
-- Level 1: sell your starting gear and buy Immolate. Then do the **Imp** quest.
-- At 4, learn Corruption, Curse of Weakness and the Blood Pact grimoire.
-- At **10**: first talent point (Improved Corruption), Drain Soul, Create Healthstone, and the **Voidwalker** quest. Method.gg rates the Stormwind and Undercity versions as the fastest.
-- **The Great Outdoors** at about level 5 unlocks [camping](../../systems/camping.md). Also pick up the gathering-profession starter quest.
+!!! hardcore "Hardcore"
+    [Hardcore](../../about/hardcore.md) comes in winter 2026/27, and Blizzard has not published its detailed rules. Play Affliction or Demonology with the Voidwalker. Soul Link gives much safety. Use Seduction and Banish in place of Fear.
 
-### 10–20: First zones and first dungeons
+<div class="fc-addons" markdown>
 
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Warlock](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Will to Survive removes Cheap Shot, Kidney Shot and Hammer of Justice. Then cast Fear or Death Coil. Use Perception to find a Rogue in stealth before the Rogue attacks.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Warlock](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Escape Artist removes Frost Nova, Entangling Roots and Hamstring. Use it, then move back to Fear range.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="orc" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Orc</strong> [Orc Warlock](orc.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Shatter Curse removes Curses and Banes from you. It is strong against other Warlocks. Hardiness makes stuns 20% shorter.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Warlock](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Beast Slaying is not confirmed for the bosses of the launch raids. The race page rates Rapid Regeneration 2/5 for PvP, because each action stops it.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Warlock](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Will of the Forsaken removes the Fear and the Seduction of enemy Warlocks, and Psychic Scream. Warcraft Tavern names Undead as its PvP selection.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="affliction" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Affliction</strong> [Warlock talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Start with a Shadow Bolt when the tank pulls. On a second target, add Corruption. If that target lives for 30 seconds or more, also add Bane of Agony and Siphon Life. On 6 November, Blizzard said that Wrack alone was better than the other DoTs. Blizzard planned a hotfix for 10 November to correct this, and said that the total damage of Affliction does not increase. Thus, no source confirms the priority below after that date. The launch tooltip of Wrack says Instant, and other sources say channel.
+
+<div class="priority" markdown>
+
+1. Cast **Bane of Doom** if the fight continues for 1 minute or more. If not, use Amplify Curse, then **Bane of Agony**.
+2. Cast the **Curse** that your raid leader gives you.
+3. Cast **Corruption**, then **Siphon Life**, then **Immolate**.
+4. Cast **Shadow Bolt** only when Nightfall makes it instant.
+5. Use **Life Tap** before a DoT ends, or while you move.
+6. Use **Wrack** as filler when no spell above is necessary.
+
+</div>
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="demonology" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Demonology</strong> [Warlock talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The raid build has no Suppression, so get your hit from items. Decimation starts when Searing Pain hits a target below 35% health. For 10 seconds, Soul Fire is then faster and costs no Soul Shard. For pet tanking in dungeons, send the Voidwalker first and then use Searing Pain on its target. Move the points from Improved Imp and Decimation to Improved Voidwalker and Improved Health Funnel. No source confirms pet tanking in raids.
+
+<div class="priority" markdown>
+
+1. Cast **Searing Pain** if **Demonic Brand** is not on the target.
+2. Cast **Bane of Doom** in a long fight. If not, cast **Bane of Agony**.
+3. Cast the **Curse** that your raid leader gives you.
+4. Cast **Immolate**.
+5. Cast **Soul Fire** when Decimation is active. The target must be below 35% health.
+6. Cast **Corruption**. Use **Life Tap** when it is necessary.
+7. Use **Searing Pain** as filler.
+
+</div>
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="destruction" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Destruction</strong> [Warlock talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Start with Soul Fire when the tank pulls. Start each fight with 2 or more Soul Shards. On 2 targets, put Bane of Havoc on the second target, and do not use Hellfire. In dungeons, put Bane of Havoc on 1 enemy and Bane of Agony on the other enemies. Use Hellfire on groups of 3 or more enemies.
+
+<div class="priority" markdown>
+
+1. Cast **Bane of Doom** in a long fight. If not, cast **Bane of Agony**. Use **Bane of Havoc** when a second target is there.
+2. Cast the **Curse** that your raid leader gives you.
+3. Cast **Immolate**, then **Corruption**.
+4. Cast **Conflagrate** on cooldown. It needs Immolate on the target.
+5. Cast **Shadowburn** on cooldown. It keeps the Fire bonus of Shadow and Flame active.
+6. Use **Life Tap** between casts.
+7. Use **Incinerate** as filler.
+
+</div>
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Warlock equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+These epic recipes need Malleable Essence of Nature. No source confirms where it comes from, and it is possibly a raid reagent. The name Demonheart suggests the Warlock set, but no source confirms this or gives its stats.
+
+| Slot | Item | Source |
+|---|---|---|
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm }: Timesaver.gg lists it at level 60 |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm }: Method.gg and Timesaver.gg list it at level 60 |
+| Shoulders | **Demonheart Spaulders** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Hands | **Demonheart Gloves** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Legs | **Demonheart Leggings** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Feet | **Demonheart Boots** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="fire" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Fire damage</strong> [Warlock equipment](equipment.md#fire){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Robes of Fiery Devastation is a new epic Tailoring recipe. No source gives its stats or says that it is for Warlocks. It needs Malleable Essence of Nature, which is possibly a raid reagent.
+
+| Slot | Item | Source |
+|---|---|---|
+| Chest | **Robes of Fiery Devastation** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } **Not confirmed**{ .pill .pill--outline .pill--sm } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="stamina" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Stamina for pet tanking, PvP and Hardcore</strong> [Warlock equipment](equipment.md#stamina){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+For Onyxia's Lair, the raid page recommends fire resistance. These are the Classic items for cloth users. The client flags the Tailoring recipes as changed, so their Forever values are not confirmed.
+
+| Slot | Item | Source |
+|---|---|---|
+| Back | **Onyxia Scale Cloak** | [Leatherworking](../../professions/leatherworking.md), skill 300 **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Back | **Cloak of Fire** | [Tailoring](../../professions/tailoring.md), skill 235 **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Chest | **Cindercloth Robe** | [Tailoring](../../professions/tailoring.md), trainer recipe **Classic-era**{ .pill .pill--outline .pill--sm } |
+| Legs | **Cindercloth Pants** | [Tailoring](../../professions/tailoring.md), skill 235 **Classic-era**{ .pill .pill--outline .pill--sm } |
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Ask your raid leader which Curse you must use.
+- [ ] Bring Soul Shards for summons, Healthstones and Soulstones.
+- [ ] Give Healthstones to the raid before the first pull.
+
+## Professions { #professions }
+
+Warlocks wear cloth, so the best pairs include **Tailoring**. The Faction Banner of Tailoring gives Spirit, which helps Life Tap. Tailoring also makes soul bags.
+
+| Rank | Professions | Use them for |
+|---|---|---|
+| **S**{ .tier .tier-s } | [Tailoring](../../professions/tailoring.md) + [Enchanting](../../professions/enchanting.md) | The selection of Method.gg. Crafted robes and wands. You disenchant the dungeon items that you do not use |
+| **A**{ .tier .tier-a } | [Tailoring](../../professions/tailoring.md) + [Engineering](../../professions/engineering.md) | Warcraft Tavern names it the pair with the highest damage. Gadgets for PvP. Gnomes have 20% fewer device failures |
+| **B**{ .tier .tier-b } | [Herbalism](../../professions/herbalism.md) + [Alchemy](../../professions/alchemy.md) | Cheap elixirs and potions for raids |
+
+Each profession adds a camp feature. Tailoring gives the Faction Banner (Spirit), and Enchanting gives the Enchanted Lute (armor, stats and resistances). Engineering gives the Reagent Bot. Herbalism gives the Incense Candle (Intellect), and Alchemy gives the Mana Well (mana regeneration). Professions give no passive stats in Forever.
+
+[First Aid](../../professions/first-aid.md) now makes healing potions, so increase it. [Cooking](../../professions/cooking.md) and [Fishing](../../professions/fishing.md) give items for [camping](../../systems/camping.md). Crafting professions give Legacy Points at skill 150, 225 and 300. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+## Legacy talents { #legacy }
+
+You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character.
+
+| Tree | Picks for a Warlock |
 |---|---|
-| Westfall, Loch Modan, Darkshore (you can now go there on the **Stormwind Harbor ↔ Auberdine** boat) | Barrens, Silverpine Forest |
+| Adventure | **Well Rested** 5/5, then **Talented** 5/5. Talented gives your first talent point up to 5 levels earlier. *Thrill of Adventure* is an alternative for less rest time |
+| Resourcefulness | **Reagent Economy** removes vendor reagents for class abilities. No source says that it replaces Soul Shards |
+| Resourcefulness | **Permanence** makes long class buffs last longer. It is not confirmed for the 2-hour Demonic Sacrifice effect. *Gourmand* makes food buffs longer |
+| Resourcefulness | *For Great Honor* gives +2% Honor for each rank, for PvP |
 
-- The **Voidwalker** tanks all mobs. Improved Corruption 5/5 makes Corruption almost instant.
-- Dungeons: **Ragefire Chasm**, the new **[Hall of Thanes](../../content/dungeons/hall-of-thanes.md)** (13–18, Ironforge) and the new **[Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md)** (15–22, Tirisfal), then Deadmines or Wailing Caverns.
-- At **20**: Ritual of Summoning (groups will want you), Demon Armor, Rain of Fire, and the **Sayaad** quest. Warcraft Tavern says that the Horde version is an 8-quest chain in the Barrens and Stonetalon.
-- **Library books:** the first library quest unlocks at **20** after you turn in 10 books. Turn them in to Garion Wendell in the Wizard's Sanctum, Stormwind, or Owen Thadd in the Magic Quarter, Undercity. There is no documentation of Warlock rewards yet.
-- **Level-20 quest reward:** the *Staff* or *Orb of Soran'ruk* chain (Warcraft Tavern, the same as in Classic).
+## Common mistakes
 
-### 20–30: Pet swap and drain-tanking
+- You cast Searing Pain again and again without Demonic Brand. The enemy leaves your demon and attacks you.
+- You cast Shadow Bolt on an enemy that has Fear on it. Damage can break the Fear.
+- You use Life Tap immediately before a large pull.
+- You do not do the Felsteed quest at level 40.
+- You do not have Ritual of Summoning on your action bars.
+- You go into a dungeon without Soul Shards.
+- You use Fear in a dungeon before the group agrees. The target runs into more enemies.
+- You use Hellfire on 2 enemies. Use it only on groups of 3 or more enemies.
 
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
-|---|---|
-| Redridge, Duskwood, Wetlands, Ashenvale | Stonetalon, Ashenvale, Hillsbrad Foothills |
+## FAQ
 
-- Change to the **Sayaad** for faster kills, or keep the Voidwalker for safety.
-- Unholy Power and Demonic Energies make your demon much stronger.
-- Dungeons: Shadowfang Keep, Blackfathom Deeps (the *Gravestone Scepter* wand is a classic warlock reward), The Stockade, the new **[Excavation Site: Wetlands](../../content/dungeons/excavation-site.md)** (24–29+) and the new **[City of Dalaran](../../content/dungeons/city-of-dalaran.md)** (28–35, the city is hostile to the Horde).
-- Profession crates: the Alliance supply camp is at Three Corners (Redridge). The Horde camp is west of the Crossroads.
-- **Arathi Basin** opens at 20.
+??? question "Can I have 2 Banes, or a Bane and a Curse, on 1 target?"
+    You can keep 1 Bane and 1 Curse on each target. The Bane is Agony, Doom or Havoc. 2 Warlocks can each keep their own Bane on the same target.
 
-### 30–40: Felhunter, Felsteed and dual spec
+??? question "Which path is best for leveling?"
+    All major guides recommend Affliction. Demonology is almost as good and is the safest. Destruction is best in dungeon groups.
 
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
-|---|---|
-| Arathi Highlands, Stranglethorn Vale, Desolace, Dustwallow (Theramore) | Thousand Needles, Stranglethorn Vale, Desolace, Arathi |
+??? question "Which demon do I use?"
+    Use the Voidwalker to tank while you level and for Demonology pet tanking. Use the Sayaad for the most damage, and Seduction for crowd control. Use the Felhunter against casters and in PvP. The Imp gives Blood Pact and is the raid demon of Fire builds. The Infernal and the Doomguard stay for a short time only.
 
-- **Felhunter** quest at 30. Siphon Life (talent) and **Drain Life as filler** make you a drain-tank: long pulls and almost no rest.
-- New zones: **[Riverglades](../../world/zones.md#riverglades)** (35–45, Farholde Keep for Alliance, Rog'mar for Horde) and the mysterious **[Shen'dralas](../../world/zones.md#shendralas)** (south of Desolace, level range not clear).
-- Dungeons: Razorfen Kraul, Gnomeregan, Scarlet Monastery wings, the new **[Drowned City](../../content/dungeons/drowned-city.md)** (35–40, Stranglethorn coast).
-- **Darkspear Islands** battleground opens at 30.
-- **Library quest 2** unlocks at **35** (20 books).
-- At **40**: Riding (100g with your racial mount). But Warlocks also get the **Felsteed** from a short quest that sends you to **Strahad Farsan in Ratchet**.
-- **Dual spec** (50g) at 40: many players keep Affliction for quests and add Destruction or Demonology for dungeons.
-- **Wrack / Demonic Pact / Incinerate** come at 31 points.
+??? question "What did Blizzard announce for 10 November?"
+    The notice of 6 November names 2 Warlock changes. Voidwalkers become more durable as tanks, to match Classic Era. Siphon Life, Corruption and Bane of Agony become worth a cast with Wrack, and the total damage of Affliction does not increase. Blizzard gave no numbers.
 
-### 40–50: Riverglades and the desert
+??? question "Why does my Voidwalker die?"
+    Demons get less health from your Stamina than in Classic. Blizzard agreed that Voidwalkers were too weak. A hotfix on 6 November added about 40 base health, and a second hotfix was planned for 10 November. Keep your items at your level, and take Fel Vitality and Demonic Energies.
 
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
-|---|---|
-| Riverglades, Tanaris, Feralas, Hinterlands | Riverglades, Tanaris, Feralas, Badlands |
+??? question "Where is Curse of Shadows?"
+    It is not in the game. Curse of the Elements also increases Shadow damage.
 
-- Use Curse of the Elements on strong targets to make long fights shorter.
-- **Library quest 3** unlocks at **45** (25 books).
-- Dungeons: the new **[Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md)** (40–45, Riverglades), Razorfen Downs, Uldaman, Zul'Farrak, and the new **[Alcaz Prison](../../content/dungeons/alcaz-prison.md)** (48–53, Dustwallow).
-- **Legacy:** the "Experienced" class tier comes at 45 (some sources say 40).
-- Soul Fire at 48, Inferno at 50.
-- Steamwheedle Port in Tanaris has a ferry to Powderfuse Port in the Riverglades.
+??? question "Do I still need Soul Shards?"
+    Yes. Drain Soul has a chance to give a shard on each tick. Reagent Economy removes vendor reagents, but no source says that it replaces shards.
 
-### 50–60: Azshara, Un'Goro and the Plaguelands
+??? question "Can a Warlock tank?"
+    With Demonic Brand, a Voidwalker can tank in dungeons and in the open world. Blizzard has not said that it can tank raids.
 
-| Both factions |
-|---|
-| Azshara (many new quests), Un'Goro Crater, Felwood, Burning Steppes, Western and Eastern Plaguelands, Winterspring, Silithus |
+??? question "Does my Firestone replace my Wizard Oil?"
+    One report says that imbues and oils stack in Forever. No Warlock guide confirms it. Apply the 2 items and read your weapon tooltip.
 
-- Dungeons: Maraudon, Sunken Temple, Blackrock Depths, the new **[Blackmaw Hold](../../content/dungeons/blackmaw-hold.md)** (55–60, Azshara), Lower Blackrock Spire, Dire Maul, Scholomance, Stratholme, the new **[Shaper's Terrace](../../content/dungeons/shapers-terrace.md)** (58–60, Un'Goro).
-- At **60**: Ritual of Doom and the long **Dreadsteed** epic mount chain (Classic-style, no documentation of Forever changes). Journeyman Riding costs 1,000g.
-- Then go through Darkwhisper Gorge in Winterspring into **[Mount Hyjal](../../world/zones.md#mount-hyjal)**, the level-60 zone.
-
-</div>
-
-## Dungeons
-
-All groups want Warlocks:
-
-- **Ritual of Summoning** is the only summon in the game. Meeting Stones do not summon. Thus, a Warlock and 2 players at the entrance can bring all the other players. Groups will ask you to do this.
-- **Healthstones** have their own cooldown, separate from potions. Give them to the group before the first pull.
-- Before bosses, put a **Soulstone** on a healer.
-- Use **Banish** on elementals and demons. Use **Fear** only when the group agrees, because feared mobs can pull more mobs.
-- **Threat:** Suppression decreases Affliction threat. Destruction and Searing Pain spam can pull. Give the tank a few seconds.
-- **AoE:** Destruction is the dungeon spec. Bane of Havoc on the main target spreads damage. Use Hellfire on packs of 3+ only if the healer can heal you enough. If not, use Rain of Fire.
-
-| Level | Notable dungeons for Warlocks |
-|---|---|
-| 13–22 | Ragefire Chasm, **Hall of Thanes**, **Ruins of Lordaeron** |
-| 18–33 | Deadmines, Wailing Caverns, Shadowfang Keep, Blackfathom Deeps, **Excavation Site**, **City of Dalaran** |
-| 30–47 | Scarlet Monastery, Razorfen Kraul/Downs, Gnomeregan, **The Drowned City**, **Krol'dok Stronghold** |
-| 44–55 | Uldaman, Zul'Farrak, Maraudon, **Alcaz Prison** |
-| 52–60 | Sunken Temple, BRD, LBRS/UBRS, Dire Maul, Scholomance, Stratholme, **Blackmaw Hold**, **Shaper's Terrace** |
-
-See the full list on [Dungeons](../../content/dungeons/index.md). Loot stats stay hidden until a player discovers them, so some loot will be a surprise.
-
-## Raid preparation
-
-All 3 raids open on **9 December 2026**: **[Barrow Deeps](../../content/raids/barrow-deeps.md)** (10 players), **[Hyjal Summit](../../content/raids/hyjal-summit.md)** (20) and **[Onyxia's Lair](../../content/raids/onyxias-lair.md)** (40). Blizzard says that the difficulty comes from **preparation**, not from hundreds of pulls.
-
-**Your job in a raid**
-
-- Keep your **Bane** active, and the **Curse** that your raid leader gives you. Curse of Shadows is removed, so **Curse of the Elements** is the main caster curse. It applies to Fire, Frost, Arcane, Nature and Shadow equally. In a 10-player raid, usually 1 Warlock is sufficient for it.
-- Summon players who come late, give Healthstones to the raid, and keep a Soulstone on a healer.
-- When the raid leader tells you, use Banish or Fear on adds.
-
-**Pre-raid gear approach**
-
-- Raid loot stays encrypted until players discover it, so there is no fixed BiS list yet. Use this priority: **spell power → hit (to 17%) → crit**.
-- Dungeon blues from the 55–60 instances, crafted Tailoring robes (*Filigreed Shadow Gown* for Affliction, *Filigreed Flame Gown* for Fire builds, from Method.gg), and PvP Honor blues.
-- **Hit:** spell hit cap is **17%** against raid bosses. Suppression gives 5%.
-
-**Consumables**
-
-- Elixirs of greater spell power, Arcane or Shadow/Fire power elixirs, mana potions, Wizard Oil **plus** your Firestone/Spellstone (they stack now).
-- **Onyxia:** fire resistance gear is recommended. Get the **Drakefire Amulet** attunement early (it is not account-wide).
-- Camp buffs (Herbalism Intellect, Skinning crit, Tailoring Spirit) for raid nights.
-
-## PvP
-
-Warlocks are one of the strongest PvP casters. They have Fear, Death Coil, Howl of Terror, Seduction, Spell Lock and Soul Link.
-
-- **Felhunter** is the standard PvP demon (Spell Lock, Devour Magic).
-- **Builds:** Affliction with **Curse of Exhaustion** (16 points), or Demonology with **Soul Link** for survivability. With Demonic Pact, you can keep a sacrifice buff and also have a Felhunter out.
-- **Battlegrounds:** WSG (10–19 brackets and higher), AB (20+), the new **[Battle for the Darkspear Islands](../../content/pvp/battlegrounds.md#darkspear-islands)** (30+, 15v15, 4 bases and a central flag) and AV (51+). On Darkspear Islands, Curse of Exhaustion and Fear are very good to stop flag carriers. Howl of Terror removes enemies from bases.
-- **World PvP:** on PvP rulesets, keep a Soulstone and Healthstone ready. Use Fear first, then DoTs, then drains.
-- **Be careful of these:**
-    - **Orcs** can remove your curses and Banes with *Shatter Curse*.
-    - **Undead** ignore Fear with Will of the Forsaken.
-    - **Humans** break stuns with *Will to Survive*.
-    - Priests and Paladins dispel. Make them use their cleanses before you cast your important curse.
-- Progression: Honor and Rank Points for each season. See [PvP](../../content/pvp/index.md).
-
-## Gear, stats & enchants
-
-Armor is **cloth**. Weapons: daggers, wands, and (from the correct trainer) one-hand swords and staves. The stat system now uses a unified crit and hit, plus haste and **spell pierce**.
-
-| Spec | Priority (Warcraft Tavern) |
-|---|---|
-| **Affliction** | Spell power / Shadow damage > Crit > Hit (17%) > Haste > Spell pierce > Intellect > Spirit |
-| **Demonology** | Spell power / school damage > **Hit** > Crit > Haste > Spell pierce > Intellect > Spirit (your demon uses your hit) |
-| **Destruction** | Spell power / Fire damage > Crit > Hit > Haste > Spell pierce > Intellect > Spirit. Sims value 1% crit ≈ 8.8 SP and 1% hit ≈ 8.6 SP |
-| **Leveling** | Wand DPS (until ~30) > Spell power > Spirit / Intellect > Stamina |
-
-- Haste is weak for Wrack, because it only makes casts and the global cooldown faster.
-- **Spirit** is more important than in Classic, because Life Tap scales with it.
-- Enchants: this guide assumes Classic caster enchants (spell power on weapon, Intellect/Stamina on other items). There is no documentation of Forever-specific enchant changes.
-
-## Professions & Legacy
-
-<p class="divider">Professions</p>
-
-Warlocks wear cloth, so all top pairs include Tailoring. The Tailoring Faction Banner gives Spirit, which helps Life Tap.
-
-<div class="prof-picks" markdown>
-
-<div class="prof-pick prof-pick--best" markdown>
-
-<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
-
-<p class="prof-pair" markdown>:material-needle: Tailoring <span class="prof-plus">+</span> :material-auto-fix: Enchanting</p>
-
-<p class="prof-for">Best for: Every Warlock</p>
-
-<div class="pills" markdown>
-**Leveling**{ .pill .pill--success .pill--sm } **Raids**{ .pill .pill--info .pill--sm }
-</div>
-
-<dl class="prof-scores">
-<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
-<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
-<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
-<dt>Gold</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
-</dl>
-
-- Method.gg's pick: crafted robes, wands and disenchanting dungeon loot
-
-<p class="prof-camp" markdown>:material-campfire: **Camp features:** Faction Banner (Spirit) · Enchanted Lute (armor, stats, resists)</p>
-
-</div>
-
-<div class="prof-pick prof-pick--alt" markdown>
-
-<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
-
-<p class="prof-pair" markdown>:material-needle: Tailoring <span class="prof-plus">+</span> :material-cog: Engineering</p>
-
-<p class="prof-for">Best for: Highest damage</p>
-
-<div class="pills" markdown>
-**Raids**{ .pill .pill--info .pill--sm } **PvP**{ .pill .pill--danger .pill--sm }
-</div>
-
-<dl class="prof-scores">
-<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
-<dt>Raids</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
-<dt>PvP</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
-<dt>Gold</dt><dd><span class="meter" style="--v:40%"><span>2/5</span></span></dd>
-</dl>
-
-- Warcraft Tavern's highest-damage pick
-- Gadgets and the Engineering camp features. Gnomes fail less frequently
-
-<p class="prof-camp" markdown>:material-campfire: **Camp features:** Faction Banner (Spirit) · Reagent Bot</p>
-
-</div>
-
-<div class="prof-pick prof-pick--sit" markdown>
-
-<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
-
-<p class="prof-pair" markdown>:material-leaf: Herbalism <span class="prof-plus">+</span> :material-flask: Alchemy</p>
-
-<p class="prof-for">Best for: Raid consumables</p>
-
-<div class="pills" markdown>
-**Raids**{ .pill .pill--info .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
-</div>
-
-<dl class="prof-scores">
-<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
-<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
-<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
-<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
-</dl>
-
-- Cheap elixirs and potions for raid nights
-
-<p class="prof-camp" markdown>:material-campfire: **Camp features:** Incense Candle (Intellect) · Mana Well (mana regen)</p>
-
-</div>
-
-</div>
-
-<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare every class in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
-
-<div class="pills" markdown>
-**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
-</div>
-
-**Secondary skills.** Healing potions are now part of First Aid, so level it. Cooking and Fishing give items for camping.
-
-!!! tip "Race notes"
-    **Gnome:** 20% fewer Engineering device failures, so the Tailoring + Engineering pair is better for a Gnome.
-
-Crafting professions give [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever.
-
-**Legacy picks (16 points at launch)**
-
-- **Leveling:** *Well Rested* 5/5, then *Talented* (earlier talent points). Or *Thrill of Adventure* for less downtime.
-- **Endgame:**
-    - *Reagent Economy*: class abilities need no vendor reagents. You must still use Soul Shards.
-    - *Permanence*: long class buffs last up to 100% longer. It is *unconfirmed* if it makes the 2-hour Demonic Sacrifice longer.
-    - *Gourmand*.
-- **PvP:** *For Great Honor*.
-
-## Hardcore notes
-
-!!! hardcore "Hardcore survival"
-
-    The Hardcore ruleset comes in **winter 2026/27**. Its detailed rules are not published. See [Hardcore](../../about/hardcore.md). For a careful Warlock:
-
-    - Level **Affliction or Demonology** with the **Voidwalker**. Soul Link gives you much safety.
-    - Keep a **Soulstone** on yourself, and have a Healthstone and a potion. It is *unconfirmed* if Hardcore permits self-Soulstones.
-    - **Fear is dangerous**: feared mobs run into other packs. Use it only when there are no other mobs near you. If not, use Seduction and Banish.
-    - Use Life Tap only when you are safe. In combat, do not use Life Tap when you have less than half health.
-    - Use **Death Coil** and **Howl of Terror** to escape.
-    - Keep 3+ shards. Use Drain Soul when a mob has low health.
-
-## Common mistakes / FAQ
-
-??? question "Can I have two Banes or a Bane and a Curse on one target?"
-    1 Bane for each Warlock on each target (Agony **or** Doom, or Havoc for Destruction), **plus** 1 Curse. 2 Warlocks can each keep their own Bane.
-
-??? question "Why is my Voidwalker dying?"
-    Pets scale from your Stamina, at a lower rate than Classic. Blizzard agrees that Voidwalkers are under-tuned. Keep your own gear at your level. Take Fel Vitality and Demonic Energies. Check again after the 10 Nov hotfix.
-
-??? question "Should I use Curse of Shadows?"
-    It does not exist now. Curse of the Elements also applies to Shadow.
-
-??? question "Do I still need Soul Shards for everything?"
-    You get shards from Drain Soul ticks and kills. The *Reagent Economy* Legacy talent removes vendor reagent costs. But there is no documentation that it replaces shards.
-
-??? question "Is Demonology really a tank?"
-    With Demonic Brand, Voidwalker pet-tanking is a real option in dungeons and the open world. Blizzard has not said that it will tank raids.
-
-??? question "My Firestone replaced my Wizard Oil."
-    This is not correct: imbues and oils stack in Forever. Apply the 2 items.
-
-**Mistakes to avoid**
-
-- Searing Pain spam before Demonic Brand: you will take threat from your pet.
-- Shadow Bolt on a feared mob.
-- Life Tap before a big pull.
-- No Felsteed quest at 40, and money spent on a regular mount.
-- No Ritual of Summoning on your bars.
-
-## Upcoming tuning
-
-The Blizzard notice of 6 Nov (reported by Warcraft Tavern) gives changes for **Tuesday 10 November 2026**:
-
-- Blizzard will make **Voidwalkers** (and Hunter pets) more durable as tanks, to match Classic Era.
-- **Affliction:** Blizzard will make Siphon Life, Corruption and Bane of Agony worth a cast with Wrack. The total Affliction damage will not change.
-
-Blizzard gave no numbers. We will update this page after the hotfix.
+??? question "Is the Felguard in the game?"
+    No Forever source mentions it.
 
 ## Sources
 
-??? quote "6 sources"
+??? quote "13 sources"
 
-    - Blizzard: [World of Warcraft: Forever Class Deep Dives — Rogue and Warlock](https://worldofwarcraft.blizzard.com/news/24310968) (7 Oct 2026)
-    - Blizzard forums: [Class Tuning Incoming – November 10](https://us.forums.blizzard.com/en/wow/t/class-tuning-incoming-november-10/2404092) (cited via Warcraft Tavern)
-    - Warcraft Tavern: [Class tuning coming for Shamans, Warlocks, Hunter pets](https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/) (6 Nov 2026)
-    - Warcraft Tavern: [Warlock guide](https://www.warcrafttavern.com/forever/guides/warlock/), [Warlock leveling](https://www.warcrafttavern.com/forever/guides/warlock-leveling/), [Affliction](https://www.warcrafttavern.com/forever/guides/affliction-warlock/), [Demonology](https://www.warcrafttavern.com/forever/guides/demonology-warlock/), [Destruction](https://www.warcrafttavern.com/forever/guides/destruction-warlock/), [Racial abilities](https://www.warcrafttavern.com/forever/guides/racial-abilities/)
-    - Method.gg: [WoW Forever Warlock leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents) (4 Nov 2026)
-    - wowtbc.gg: [Affliction Warlock PvE guide](https://wowtbc.gg/warcraftforever/class-guides/affliction-warlock/)
+    - [wowforevertalents.com: Warlock talents, read from the client](https://wowforevertalents.com/warlock/)
+    - [wowforevertalents.com: profession recipes, read from the client](https://wowforevertalents.com/professions/)
+    - [Blizzard: Class Deep Dives, Rogue and Warlock](https://worldofwarcraft.blizzard.com/news/24310968)
+    - [Blizzard forums: Class Tuning Incoming, November 10](https://us.forums.blizzard.com/en/wow/t/class-tuning-incoming-november-10/2404092)
+    - [Warcraft Tavern: class tuning for Shamans, Warlocks and Hunter pets](https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/)
+    - [Warcraft Tavern: Warlock guide](https://www.warcrafttavern.com/forever/guides/warlock/)
+    - [Warcraft Tavern: Warlock leveling guide](https://www.warcrafttavern.com/forever/guides/warlock-leveling/)
+    - [Warcraft Tavern: Affliction Warlock guide](https://www.warcrafttavern.com/forever/guides/affliction-warlock/)
+    - [Warcraft Tavern: Demonology Warlock guide](https://www.warcrafttavern.com/forever/guides/demonology-warlock/)
+    - [Warcraft Tavern: Destruction Warlock guide](https://www.warcrafttavern.com/forever/guides/destruction-warlock/)
+    - [Warcraft Tavern: racial abilities](https://www.warcrafttavern.com/forever/guides/racial-abilities/)
+    - [Method.gg: Warlock leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents)
+    - [wowtbc.gg: Affliction Warlock PvE guide](https://wowtbc.gg/warcraftforever/class-guides/affliction-warlock/)

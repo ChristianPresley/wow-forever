@@ -11,7 +11,7 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page covers only what changes for a Troll.</p>
+<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page covers only what changes for a Troll.</p>
 
 </div>
 
@@ -164,7 +164,7 @@ Trolls share the Orc start. Blizzard added new NPCs, quests and small moments to
 
 ## Faction notes
 
-- **Poison quest (20):** Shenthul in the Cleft of Shadow. See the [main guide](index.md#the-poison-quest-level-20).
+- **Poison quest (20):** Shenthul in the Cleft of Shadow. See the [main guide](index.md#l20).
 - **Library books:** Owen Thadd, Magic Quarter, Undercity.
 - **Mount:** raptors from Zjolnir in Sen'jin Village. At Honored with **Darkspear Trolls**, you get a 10% discount.
 - **Reputation:** Darkspear Trolls.

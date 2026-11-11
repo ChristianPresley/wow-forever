@@ -147,7 +147,7 @@ The High Order airship leaves the **east Skydock** for **north Dalaran** in the 
 
 7.  **35–45**{ .lvl } **[Riverglades](../../world/zones.md#riverglades)** (Farholde Keep)
 
-8.  **40–60**{ .lvl } Same Alliance route as the [Druid guide](index.md#leveling-walkthrough-160)
+8.  **40–60**{ .lvl } Same Alliance route as the [Druid guide](index.md#l10)
 
     Felwood trainer Golhine the Hooded. Moonglade via Teleport
 

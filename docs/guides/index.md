@@ -5,16 +5,32 @@ hide:
   - toc
 ---
 
-# Class & Race Guides
+# Class Progressions
 
-Full walkthroughs for all **9 classes**, and a **race add-on** for each of the **56** race/class combinations. Select a class, then your race.
+A **progression** for each of the **9 classes**. Each progression is a narration in 9 chapters, from character creation to the raids. It tells you what changes in each level range: the spells that you train, the way that you fight, the dungeons and the decisions.
 
-The [Talent Guides](../talents/index.md) give a rating to each talent of each class, and a talent for each level from 10 to 60.
+Each progression has 3 types of **add-ons**. Select 1 of each type on the page, and each chapter shows the text for your selection.
 
-??? info "How the guides fit together · current as of 7 November 2026"
-    - **Class guide:** the core walkthrough. It gives talents and specs, rotations, a 1–60 leveling route, dungeons, raid prep for 9 December, PvP, gear and professions.
-    - **Race add-on:** read it together with the class guide. It gives the racials for that class, the starting zone, the route from your capital and faction notes.
-    - Forever started on 4 November, so numbers can change. The reference data is on [Classes](../characters/classes/index.md) and [Races](../characters/races.md).
+<div class="grid cards fc-addon-cards" markdown>
+
+-   :material-account-group: **Race add-ons**
+
+    Your start zone, your first trainer, your route and your racials. There are 56 race and class combinations.
+
+-   :material-star-four-points: **Talents add-ons**
+
+    The talent for each level, the way that you fight with them, and the level 60 builds. The tree data is from the game client.
+
+-   :material-shield-sword: **Equipment add-ons**
+
+    The equipment sets of the class, the items for each level range, enchants and consumables.
+
+</div>
+
+??? info "How the pages fit together · current as of 10 November 2026"
+    - **Progression:** the main page of a class. Read it from top to bottom as you level.
+    - **Add-on pages:** the full data for each add-on. The Talents page gives a rating to each talent. The Equipment page lists each set. Each Race page gives the racials and the start zone.
+    - Forever started on 4 November, so numbers can change. The rules for all classes are on [Class Changes](../characters/classes/index.md) and [Races](../characters/races.md).
 
 ## Pick a class
 
@@ -26,6 +42,8 @@ The [Talent Guides](../talents/index.md) give a rating to each talent of each cl
 
     **Tank · Healer · DPS** · Leather · Shapeshifting · Mana, Rage, Energy
 
+    [Talents](druid/talents.md) · [Equipment](druid/equipment.md)
+
     [Night Elf](druid/night-elf.md){ .fc-chip } [Skyborne HO](druid/skyborne-high-order.md){ .fc-chip } [Tauren](druid/tauren.md){ .fc-chip } [Skyborne WS](druid/skyborne-windshaper.md){ .fc-chip }
 
 -   :material-bow-arrow:{ .lg .middle } **[Hunter](hunter/index.md)**
@@ -33,6 +51,8 @@ The [Talent Guides](../talents/index.md) give a rating to each talent of each cl
     ---
 
     **Ranged DPS** · Mail at 40 · Pet · Mana
+
+    [Talents](hunter/talents.md) · [Equipment](hunter/equipment.md)
 
     [Human](hunter/human.md){ .fc-chip } [Dwarf](hunter/dwarf.md){ .fc-chip } [Night Elf](hunter/night-elf.md){ .fc-chip } [Skyborne HO](hunter/skyborne-high-order.md){ .fc-chip } [Orc](hunter/orc.md){ .fc-chip } [Troll](hunter/troll.md){ .fc-chip } [Tauren](hunter/tauren.md){ .fc-chip } [Skyborne WS](hunter/skyborne-windshaper.md){ .fc-chip }
 
@@ -42,6 +62,8 @@ The [Talent Guides](../talents/index.md) give a rating to each talent of each cl
 
     **Ranged DPS** · Cloth · Arcane, Fire, Frost · Mana
 
+    [Talents](mage/talents.md) · [Equipment](mage/equipment.md)
+
     [Human](mage/human.md){ .fc-chip } [Gnome](mage/gnome.md){ .fc-chip } [Skyborne HO](mage/skyborne-high-order.md){ .fc-chip } [Orc](mage/orc.md){ .fc-chip } [Troll](mage/troll.md){ .fc-chip } [Undead](mage/undead.md){ .fc-chip }
 
 -   :material-shield-sun:{ .lg .middle } **[Paladin](paladin/index.md)**
@@ -49,6 +71,8 @@ The [Talent Guides](../talents/index.md) give a rating to each talent of each cl
     ---
 
     **Tank · Healer · DPS** · Plate at 40 · Auras & Seals · Mana
+
+    [Talents](paladin/talents.md) · [Equipment](paladin/equipment.md)
 
     [Human](paladin/human.md){ .fc-chip } [Dwarf](paladin/dwarf.md){ .fc-chip } [Undead](paladin/undead.md){ .fc-chip }
 
@@ -58,6 +82,8 @@ The [Talent Guides](../talents/index.md) give a rating to each talent of each cl
 
     **Healer · DPS** · Cloth · Holy, Discipline, Shadow · Mana
 
+    [Talents](priest/talents.md) · [Equipment](priest/equipment.md)
+
     [Human](priest/human.md){ .fc-chip } [Dwarf](priest/dwarf.md){ .fc-chip } [Gnome](priest/gnome.md){ .fc-chip } [Night Elf](priest/night-elf.md){ .fc-chip } [Troll](priest/troll.md){ .fc-chip } [Undead](priest/undead.md){ .fc-chip }
 
 -   :material-knife:{ .lg .middle } **[Rogue](rogue/index.md)**
@@ -65,6 +91,8 @@ The [Talent Guides](../talents/index.md) give a rating to each talent of each cl
     ---
 
     **Melee DPS** · Leather · Stealth · Energy & combo points
+
+    [Talents](rogue/talents.md) · [Equipment](rogue/equipment.md)
 
     [Human](rogue/human.md){ .fc-chip } [Dwarf](rogue/dwarf.md){ .fc-chip } [Gnome](rogue/gnome.md){ .fc-chip } [Night Elf](rogue/night-elf.md){ .fc-chip } [Skyborne HO](rogue/skyborne-high-order.md){ .fc-chip } [Orc](rogue/orc.md){ .fc-chip } [Troll](rogue/troll.md){ .fc-chip } [Undead](rogue/undead.md){ .fc-chip } [Skyborne WS](rogue/skyborne-windshaper.md){ .fc-chip }
 
@@ -74,6 +102,8 @@ The [Talent Guides](../talents/index.md) give a rating to each talent of each cl
 
     **Healer · Ranged & melee DPS** · Mail at 40 · Totems · Mana
 
+    [Talents](shaman/talents.md) · [Equipment](shaman/equipment.md)
+
     [Dwarf](shaman/dwarf.md){ .fc-chip } [Orc](shaman/orc.md){ .fc-chip } [Troll](shaman/troll.md){ .fc-chip } [Tauren](shaman/tauren.md){ .fc-chip } [Skyborne WS](shaman/skyborne-windshaper.md){ .fc-chip }
 
 -   :material-skull-outline:{ .lg .middle } **[Warlock](warlock/index.md)**
@@ -82,6 +112,8 @@ The [Talent Guides](../talents/index.md) give a rating to each talent of each cl
 
     **Ranged DPS** · Cloth · Demons · Mana & soul shards
 
+    [Talents](warlock/talents.md) · [Equipment](warlock/equipment.md)
+
     [Human](warlock/human.md){ .fc-chip } [Gnome](warlock/gnome.md){ .fc-chip } [Orc](warlock/orc.md){ .fc-chip } [Troll](warlock/troll.md){ .fc-chip } [Undead](warlock/undead.md){ .fc-chip }
 
 -   :material-sword-cross:{ .lg .middle } **[Warrior](warrior/index.md)**
@@ -89,6 +121,8 @@ The [Talent Guides](../talents/index.md) give a rating to each talent of each cl
     ---
 
     **Tank · Melee DPS** · Plate at 40 · Stances · Rage
+
+    [Talents](warrior/talents.md) · [Equipment](warrior/equipment.md)
 
     [Human](warrior/human.md){ .fc-chip } [Dwarf](warrior/dwarf.md){ .fc-chip } [Gnome](warrior/gnome.md){ .fc-chip } [Night Elf](warrior/night-elf.md){ .fc-chip } [Skyborne HO](warrior/skyborne-high-order.md){ .fc-chip } [Orc](warrior/orc.md){ .fc-chip } [Troll](warrior/troll.md){ .fc-chip } [Tauren](warrior/tauren.md){ .fc-chip } [Undead](warrior/undead.md){ .fc-chip } [Skyborne WS](warrior/skyborne-windshaper.md){ .fc-chip }
 

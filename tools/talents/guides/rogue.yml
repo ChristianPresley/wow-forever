@@ -74,7 +74,7 @@ trees:
       Seal Fate:
         {does: "Crits from abilities that add Combo Points have a 33–100% chance to add 1 more Combo Point", lvl: A, pve: S, pvp: A, note: "The reason to stack crit. A Mutilate crit gives 3 Combo Points."}
       Mutilate:
-        {does: "60 Energy. Hits with the 2 weapons for 90% weapon damage plus 39.6 each. +20% damage against Poisoned targets. Gives 2 Combo Points", lvl: A, pve: S, pvp: A, note: "The core attack of the spec, available at level 40. The class guide says that it needs a dagger in each hand."}
+        {does: "60 Energy. Hits with the 2 weapons for 90% weapon damage plus 39.6 each. +20% damage against Poisoned targets. Gives 2 Combo Points", lvl: A, pve: S, pvp: A, note: "The core attack of the spec, available at level 40. The earlier Codex class guide says that it needs a dagger in each hand."}
   Combat:
     summary: |
       Combat is the tree for constant melee damage with each weapon type. **Blade Flurry** opens at 20 points and **Adrenaline Rush** at 30. **Hack and Slash** gives a different bonus for each weapon type, and **Flash of Steel** makes Shank a large source of Energy. Rows 2 and 3 have many defensive talents that are for leveling and PvP.

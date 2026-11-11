@@ -1,6 +1,6 @@
-# Characters
+# Character Reference
 
-Everything about the character you play: the 9 races, the 9 classes and their account-wide systems.
+The rules for the character you play: the 9 races, the changes for all classes and the account-wide systems. For 1 class from level 1 to the raids, read its [progression](../guides/index.md).
 
 ## In this section
 
@@ -10,17 +10,17 @@ Everything about the character you play: the 9 races, the 9 classes and their ac
 
     Racials, the race/class matrix, starting zones and the new Skyborne race.
 
--   :material-shield-sword: **[Classes](classes/index.md)**
+-   :material-shield-sword: **[Class Changes](classes/index.md)**
 
-    Cross-class changes and per-class talents for all 9 classes.
+    The changes that apply to all classes, and a summary for each class.
 
 -   :material-star-circle: **[Legacy System](legacy.md)**
 
     Account-wide challenges, Legacy Points, perk trees and rewards.
 
--   :material-hammer-wrench: **[Professions](professions.md)**
+-   :material-hammer-wrench: **[Professions](../professions/index.md)**
 
-    600+ new recipes, crates, Merchant's Favor and profession racials.
+    A guide for each of the 12 professions, with 600+ new recipes and the rules.
 
 -   :material-stairs-up: **[Leveling, Mounts & Reputation](leveling.md)**
 

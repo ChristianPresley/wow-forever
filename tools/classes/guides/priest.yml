@@ -1,0 +1,896 @@
+class: Priest
+badges: [heal, dps]
+description: "Priest progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
+aka: "Disc (Discipline) · Holy priest · Spriest / Shadow priest"
+
+intro: |
+  The Priest is a healer and a ranged caster that wears cloth. This page follows 1 Priest from character creation to the raids, level by level. It tells you what changes in each level range. You read which spells you train, how you fight and heal, and which decisions you make.
+
+  Warcraft Tavern reports class tuning on 10 November 2026. Thus the numbers on this page can change.
+
+glance:
+  - ["Roles", "Healer (Holy, Discipline), ranged damage (Shadow)"]
+  - ["Armor", "**Cloth**{ .pill .pill--cloth }"]
+  - ["Weapons", "Wands and one-hand maces by default. Daggers and staves from a weapon trainer"]
+  - ["Resource", "**Mana**{ .pill .pill--mana }"]
+  - ["Races", "6 combinations. Gnome is new"]
+  - ["Leveling speed", "In the beta, Priest and Warrior were the slowest classes"]
+  - ["Dual spec", "Level 40, 50g at a Priest trainer"]
+
+strengths:
+  - "The most flexible healer: shields, heal-over-time spells and direct heals"
+  - "2 healer specs and 1 full damage spec"
+  - "Power Word: Shield, Renew and Penance keep you alive when you level"
+  - "Fear Ward, Dispel Magic, Shackle Undead and Mind Control"
+
+weaknesses:
+  - "Cloth armor and few escapes"
+  - "Slow kills at low levels"
+  - "Uses much mana before you have talents and equipment"
+  - "No heals in Shadowform"
+
+changes:
+  added: ["Penance", "Soul Warding", "Divine Aegis", "Renewed Hope", "Power in Light", "Twin Disciplines", "Holy Precision", "Holy Binding", "Litany of Light", "Prayer of Mending", "Improved Mind Flay", "Devouring Contagion", "Early Demise", "Dark Inspiration"]
+  removed: ["Lightwell", "Binding Heal", "Improved Prayer of Healing", "Unbreakable Will", "Force of Will", "Improved Vampiric Embrace"]
+  notes:
+    - "**Fear Ward** and **Devouring Plague** are baseline for each race at level 20. Divine Spirit is baseline at 30, and Shadow Word: Death at 32."
+    - "**Fade** removes 2 times more threat. **Renew** from different Priests stacks on 1 target."
+    - "**Prayer of Healing** heals the party of the target, not your party."
+    - "**Shadowform** makes Shadow spells cost 50% less and increases their crit damage bonus by 100%. You cannot cast healing spells in it."
+    - "**Shadow Weaving** increases only your Shadow damage. The launch client has no Shadow Affinity talent. Silent Resolve in Discipline is the only threat talent."
+    - "**Vampiric Embrace** has a 30 second duration and a 30 second cooldown in the launch client. Beta sources gave 1 minute."
+    - "**Meditation** keeps 50% of your mana regeneration while you cast. In Classic it was 15%."
+    - "Shortly before launch, the passive **Holy Binding** replaced Binding Heal. Some fan guides still show Binding Heal."
+    - "Each race still has 2 special Priest spells, but they are smaller utility spells."
+    - "Damage-over-time and heal-over-time spells use your stats at each tick, not your stats at the time of the cast (Warcraft Tavern)."
+    - "**Holy Precision** gives a maximum of 18% Holy hit, and **Shadow Focus** now gives Shadow hit. Thus you need less hit on items."
+    - "Warcraft Tavern says that Vampiric Touch is not in Forever."
+
+# ------------------------------------------------------------------ chapters
+chapters:
+  - id: start
+    title: "Make your Priest"
+    story: |
+      A Priest keeps other players alive. You have 3 types of heal: shields that absorb damage, heal-over-time spells and direct heals. You also get a wand, 2 damage-over-time spells (DoTs) and Mind Blast, so you can kill enemies alone.
+
+      In Forever, Blizzard wants each of the 3 specs to be a real option. Discipline has shields and the new spell Penance. Holy has the largest heals and the new Prayer of Mending. Shadow is now a full damage spec, not only a source of a raid debuff.
+
+      The class is slow at low levels. In the beta, Priest and Warrior were the slowest classes to level. But groups always want a Priest, and you can heal dungeons with each talent path. At level 40, dual spec lets you keep a damage build and a healer build.
+
+      You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race. Skyborne, Orcs and Tauren cannot be Priests.
+    goals:
+      - "Select a race. Read its Race add-on."
+      - "Select a talent path. Shadow is the usual selection for quests. Discipline is safer, and it heals dungeons better."
+      - "Read the [Professions](#professions) section. Tailoring and Enchanting are the usual selection."
+
+  - id: l1
+    title: "Smite, Shadow Word: Pain and the first shield"
+    story: |
+      You start with Smite, Lesser Heal and Power Word: Fortitude. Keep Fortitude on you at all times. Pull each enemy with Smite from maximum range, and cast until it dies. You have no defense yet, so fight 1 enemy at a time.
+
+      At level 4 you train Shadow Word: Pain, your first DoT. It is instant, so use it as your first attack. It also tags the enemy immediately. A tag gives you the kill when other players want the same enemy.
+
+      Level 6 is the first large step. Power Word: Shield absorbs damage. In Classic, enemy hits do not push back your casts while it holds. From this level, cast the shield on yourself before each pull. The shield puts the effect Weakened Soul on its target. In Classic, that target cannot get a new shield for 15 seconds.
+
+      At level 8 you train Renew and Fade. Renew heals you while you fight. Fade has little use when you are alone, but it is important in groups later.
+
+      Your wand becomes your main weapon between level 5 and level 13. A wand does damage and uses no mana. Thus your mana regenerates while you use it. One-hand maces and wands are default skills. A weapon trainer teaches daggers and staves for 10 silver each.
+    train:
+      - [1, "Smite, Lesser Heal, Power Word: Fortitude", "Your first damage spell, your first heal and your first buff"]
+      - [4, "Shadow Word: Pain", "An instant damage-over-time spell. Your first attack on each enemy"]
+      - [6, "Power Word: Shield", "Absorbs damage. Cast it before each pull"]
+      - [8, "Renew, Fade", "Renew is a heal-over-time spell. Fade decreases your threat in a group"]
+    tip: |
+      Buy water for your level each time that you go to a town. Spirit gives mana regeneration only when you did not cast for 5 seconds.
+
+      A campfire with a Camp Tent from Leatherworking gives rested XP. See [Camping](../../systems/camping.md).
+    hardcore: |
+      Most deaths start with a pull without a shield. Do not fight 2 enemies before level 6.
+    goals:
+      - "Train Power Word: Shield at level 6."
+      - "Get a wand. The Lesser Magic Wand is usable at level 5."
+      - "At about level 5, get the camping quest *The Great Outdoors*."
+      - "Learn your 2 professions. With Enchanting, you can make your own wand."
+
+  - id: l10
+    title: "Mind Blast, first talents and the first dungeon"
+    story: |
+      At level 10 you train Mind Blast, and you get your first talent point. From here, you get 1 talent point at each level. You also get the first special spell of your race and your first class quest.
+
+      Mind Blast is your largest hit. Cast it before the enemy gets to you. Most kills are now the same sequence: Power Word: Shield, Mind Blast, Shadow Word: Pain, then the wand until the enemy dies. Each talent path changes this sequence a little.
+
+      Inner Fire at 12 gives armor. Psychic Scream at 14 is your only escape: it makes the enemies near you run for some seconds. Look at the area before you use it, because enemies that run can pull other enemies.
+
+      Your first dungeons open at level 13. The group finder shows groups, but it does not teleport you, and Meeting Stones do not summon. You must go to the entrance. Quests give much more XP than dungeon enemies, so do each dungeon for its quests.
+
+      You are the healer in most groups, and this is a new job. Cast Power Word: Shield and Renew on the tank before the pull. Each heal causes threat, and an enemy attacks the player with the most threat. If an enemy attacks you, cast Fade. Drink between pulls, and tell the group when your mana is low.
+
+      Start to collect the library books of your class now. At level 14, start the scavenger hunt for the Cozy Sleeping Bag. See [Leveling](../../characters/leveling.md).
+    train:
+      - [10, "Mind Blast, Resurrection", "Mind Blast is your largest hit. Resurrection makes you necessary in each group"]
+      - [10, "First race spell", "See the Race add-on"]
+      - [12, "Inner Fire", "More armor. Keep it active"]
+      - [14, "Psychic Scream, Cure Disease", "Psychic Scream is your emergency escape"]
+      - [16, "Heal", "A slow heal that uses mana efficiently. Use it in dungeons"]
+      - [18, "Dispel Magic", "Removes a harmful effect from an ally or a buff from an enemy"]
+    dungeons:
+      - {id: hall-of-thanes, levels: "13–20", note: "New. It is in Ironforge. The first dungeon for Alliance Priests"}
+      - {name: "Ragefire Chasm", levels: "13–18", note: "It is in Orgrimmar"}
+      - {id: ruins-of-lordaeron, levels: "15–22", note: "New. It is in Tirisfal Glades. It has Undead enemies. It drops the camp blueprints Fermenter and Arcane Salvager"}
+      - {name: "Wailing Caverns", levels: "15–24", note: "Warcraft Tavern lists the Sizzle Stick wand from a quest here"}
+      - {name: "The Deadmines", levels: "17–26"}
+    warn: |
+      Psychic Scream can pull more enemies in a dungeon. Use it only when the group is in danger.
+    hardcore: |
+      Keep Psychic Scream for escapes only. Run when the shield breaks and the enemy still has more than half of its health.
+    goals:
+      - "Train Mind Blast and spend your first talent point at level 10."
+      - "Do the class quest of level 10."
+      - "Heal your first dungeon for its quests."
+      - "Start the Cozy Sleeping Bag scavenger hunt at level 14."
+
+  - id: l20
+    title: "Fear Ward, Devouring Plague and your first key talent"
+    story: |
+      Level 20 gives you more than any level before it. You train Flash Heal, Holy Fire, Fear Ward, Devouring Plague, Shackle Undead and Mind Soothe. This training costs much money, so save for it. You also get the second special spell of your race and the second class quest.
+
+      In Classic, only some races had Fear Ward and Devouring Plague. In Forever they are baseline, thus each Priest trains them. Fear Ward protects 1 player from the next Fear. Put it on the tank before bosses that cast Fear.
+
+      Devouring Plague is your second DoT. In Classic it also heals you. It costs much mana, so use it on strong enemies and elite enemies. Shackle Undead holds 1 Undead enemy out of the fight. It is your first crowd control spell for dungeons.
+
+      Flash Heal is your fast heal. From now on, a dungeon healer uses 3 tools: the shield before damage, Renew for constant damage and Flash Heal for sudden damage. If a large heal gives you aggro, cast Fade and let the tank take the enemy back.
+
+      Your 11th talent point comes at level 20, and your 16th at level 25. These 2 points open the first strong talents of your tree. The Talents add-on below shows what you get and how it changes your fight.
+
+      At 20, give 10 library books to get the first book quest. Level 25 gives the *Priest: Novice* Legacy Point. Only the first Priest on your account gets it. See [Legacy](../../characters/legacy.md).
+    train:
+      - [20, "Flash Heal, Holy Fire", "A fast heal, and a damage spell with a long cast for the start of a fight"]
+      - [20, "Fear Ward, Devouring Plague", "Baseline for each race in Forever"]
+      - [20, "Shackle Undead, Mind Soothe", "Shackle Undead removes 1 Undead enemy from the fight"]
+      - [20, "Second race spell", "See the Race add-on"]
+      - [22, "Mind Vision", "You see through the eyes of the target"]
+      - [24, "Mana Burn", "Destroys enemy mana. A PvP spell"]
+    dungeons:
+      - {name: "Shadowfang Keep", levels: "20–30"}
+      - {name: "Blackfathom Deeps", levels: "24–32", note: "The quest *Blackfathom Villainy* gives the Gravestone Scepter wand"}
+      - {name: "The Stockade", levels: "25–29", note: "It is in Stormwind"}
+      - {id: excavation-site, levels: "26–33", note: "New. It is in the Wetlands"}
+      - {id: city-of-dalaran, levels: "28–35", note: "New. You need the Dalaran Sewer Key. NPCs in Dalaran attack Horde characters"}
+    extra: |
+      ??? example "Macros for heals, the shield and Fear Ward"
+
+          Heal the player under the mouse pointer. You do not need an add-on:
+
+          ```
+          #showtooltip
+          /cast [@mouseover,help,nodead][help,nodead][@player] Flash Heal
+          ```
+
+          Shield yourself and keep your target:
+
+          ```
+          #showtooltip
+          /cast [@player] Power Word: Shield
+          ```
+
+          Fear Ward on the focus. Set the tank as your focus:
+
+          ```
+          #showtooltip
+          /cast [@focus,help][help][@player] Fear Ward
+          ```
+
+          These macros assume that the `@` conditions and focus targets work as in the current Classic clients. See [Add-ons & UI](../../systems/addons.md).
+    tip: |
+      Practice Shackle Undead in the Ruins of Lordaeron. You need it later in Scarlet Monastery, Scholomance and Stratholme.
+    goals:
+      - "Save money for the training at level 20."
+      - "Turn in 10 library books for the first book quest."
+      - "Do the class quest of level 20."
+      - "Get the Gravestone Scepter from Blackfathom Deeps."
+
+  - id: l30
+    title: "Divine Spirit, Shadow Word: Death and gold for level 40"
+    story: |
+      At level 30 you train Divine Spirit, Prayer of Healing and Mind Control. Divine Spirit is baseline in Forever. Keep it on yourself and on each caster and healer in your group.
+
+      Prayer of Healing is your first group heal. In Forever it heals the party of your target, not your party. In a group of 5 players this is the same group. In a raid, you can now heal each group.
+
+      Shadow Word: Death comes at level 32 for each Priest. It is an instant hit, but it also damages you if the target does not die. Use it to kill an enemy with low health. Do not use it as a filler when your health is low.
+
+      The new battleground Battle for the Darkspear Islands opens at level 30. It has 15 players on each side, 4 bases and a flag in the center. As a healer, you can hold a base or shield the flag carrier.
+
+      The new zone Riverglades opens at level 35. It is contested, and it is about as large as Stranglethorn Vale. You can enter it from Redridge Mountains, the Badlands, the Swamp of Sorrows or the Burning Steppes, or with the ferry from Tanaris. See [Zones](../../world/zones.md#riverglades).
+
+      Start to save gold now. At level 40 you need 100g for riding, and dual spec costs 50g. Method recommends that you do not buy spell ranks of low value before 40. The second book quest at 35 needs 20 library books.
+    train:
+      - [30, "Divine Spirit", "Baseline in Forever. A Spirit buff for casters and healers"]
+      - [30, "Prayer of Healing, Mind Control", "Your first group heal. Mind Control is for PvP and for some dungeon tricks"]
+      - [32, "Shadow Word: Death, Abolish Disease", "An instant hit that also damages you if the target does not die"]
+      - [34, "Levitate", "You walk on water and you fall slowly"]
+    dungeons:
+      - {name: "Razorfen Kraul and Gnomeregan", levels: "29–38", note: "Razorfen Kraul drops the Death Speaker Scepter for healers"}
+      - {name: "Scarlet Monastery: Graveyard and Library", levels: "30–41", note: "The Graveyard has Undead enemies for Shackle Undead"}
+      - {id: drowned-city, levels: "35–42", note: "New"}
+      - {name: "Scarlet Monastery: Armory and Cathedral", levels: "36–46"}
+    extra: |
+      !!! conflict "Conflict: Shadow Word: Death backlash"
+          The Blizzard deep dive says that the spell damages you for 10% of your maximum health if the target does not die. Pre-launch notes say 30%, and no damage to you on a miss. The Codex did not test the value.
+    hardcore: |
+      Do not cast Shadow Word: Death when your health is low. Mind Control in the open world leaves your character without defense.
+    goals:
+      - "Train Divine Spirit at level 30 and Shadow Word: Death at level 32."
+      - "Turn in 20 library books at level 35 for the second book quest."
+      - "Save 150g before level 40."
+
+  - id: l40
+    title: "A mount, a second spec and Greater Heal"
+    story: |
+      Level 40 changes much. You can buy riding for 100g. You can buy dual spec for 50g from a Priest trainer. You train Greater Heal, your largest direct heal. Your 31st talent point also comes at level 40.
+
+      Dual spec removes the largest problem of the class. Before level 40, you select between fast kills and good heals. Now you keep the 2 of them. The usual pair is Shadow for quests, and Holy or Discipline for dungeons. You can change specs outside combat and outside battlegrounds. If you change the talents in a spec, you pay a fee. This fee decreases to 1g with time.
+
+      From this level, carry 2 sets of equipment: 1 for damage and 1 for healing. Bonus healing on an item also gives one third of its value as spell damage. Thus a healer set is not useless for quests.
+
+      You stay in Riverglades to level 45. At 45, the third book quest needs 25 library books. Level 45 also gives the *Priest: Experienced* Legacy Point. Prayer of Fortitude at 48 buffs the full group with 1 cast.
+    train:
+      - [40, "Greater Heal", "Your largest direct heal. It has a long cast"]
+      - [48, "Prayer of Fortitude", "Power Word: Fortitude for the full party. In Classic it needs a reagent"]
+    dungeons:
+      - {id: kroldok-stronghold, levels: "40–47", note: "New. It is in Riverglades"}
+      - {name: "Razorfen Downs", levels: "37–46"}
+      - {name: "Uldaman and Zul'Farrak", levels: "41–54"}
+      - {id: alcaz-prison, levels: "48–55", note: "New. It is in Dustwallow Marsh"}
+    extra: |
+      !!! conflict "Conflict: Shadowform"
+          The Blizzard text and the client data say that Shadowform increases the crit damage bonus of Shadow spells by 100%. The Warcraft Tavern summary says crit chance. This page uses the client data.
+    warn: |
+      Buy riding before dual spec if you do not have 150g. A mount saves more time than a second spec.
+    goals:
+      - "Buy riding (100g), then dual spec (50g)."
+      - "Make a healer build in your second spec, or a Shadow build if you level as Discipline."
+      - "Turn in 25 library books at level 45 for the third book quest."
+
+  - id: l50
+    title: "Shackle Undead and the level 60 dungeons"
+    story: |
+      The last 10 levels have the most dungeons, and each group needs a healer. Reportedly, each boss in the new dungeons drops a blue item. Start to collect your level 60 equipment here.
+
+      Your main tree is complete. The last points go into a second tree, and they add mana and small bonuses. Your fight does not change much in these levels.
+
+      Shackle Undead becomes very important at the end of this chapter, because Scholomance and Stratholme have many Undead enemies. Groups there need a Priest that can hold 1 enemy. Prayer of Shadow Protection comes at level 56.
+
+      Hit becomes important for your damage spells, because dungeon bosses are 2 or 3 levels above you. Heals cannot miss, so a healer set needs no hit.
+    train:
+      - [56, "Prayer of Shadow Protection", "Shadow resistance for the full party. Classic-era level"]
+    dungeons:
+      - {name: "Maraudon", levels: "46–55"}
+      - {name: "Sunken Temple and Blackrock Depths", levels: "50–60"}
+      - {id: blackmaw-hold, levels: "55–60", note: "New. It is in Azshara. It has an entrance to the Barrow Deeps"}
+      - {name: "Lower Blackrock Spire and Dire Maul", levels: "54–60"}
+      - {id: shapers-terrace, levels: "58–60", note: "New. It is in Un'Goro Crater"}
+      - {name: "Scholomance and Stratholme", levels: "58–60", note: "Shackle Undead is very important here"}
+    goals:
+      - "Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests."
+      - "Keep 1 healer set and 1 damage set."
+      - "Put Shackle Undead on a key that you can reach quickly."
+
+  - id: l60
+    title: "Select your raid role"
+    story: |
+      At level 60 you train Prayer of Spirit, and you get the *Priest: Master* Legacy Point. Mount Hyjal opens through Darkwhisper Gorge in Winterspring. The fast mount costs 1,000g.
+
+      All 3 launch raids open on 9 December 2026. Blizzard says that the difficulty comes from preparation, not from hundreds of attempts. Use the time before that date for 4 tasks. Select your raid role and respec to a level 60 build. Collect equipment for that role. Collect consumables. Do the attunement for Onyxia's Lair.
+
+      The attunement gives the Drakefire Amulet. It is not account-wide, so each character must do it. Blizzard tells players to get fire resistance for Onyxia's Lair, but it gives no number.
+
+      The first equipment lists for level 60 exist now, but tools made them. About 40% of the item data was not visible at launch. Thus use the lists as candidates. For a healer role, take items with healing power and Intellect. For Shadow, take items with hit and Shadow power. The Equipment add-on gives the items to look for.
+
+      The dungeon currency Tarnished Undermine Real buys level 60 items from Pix Xizzix in Stranglethorn Vale. Honor also buys blue and epic sets. See [PvP](../../content/pvp/index.md).
+    dungeons:
+      - {id: blackmaw-hold, levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60"}
+      - {name: "Scholomance, Stratholme, Dire Maul and Blackrock Spire", levels: "54–60", note: "The Classic dungeons are still in the game. The Devout items drop here"}
+    tip: |
+      Consumables for a Priest: mana potions, the best water, flasks and elixirs from Alchemy, and buff food from Cooking. Healing potions come from First Aid in Forever, not from Alchemy. The [Equipment add-on](equipment.md) has the full list.
+    goals:
+      - "Respec to a level 60 build."
+      - "Do the attunement for Onyxia's Lair."
+      - "Collect consumables before 9 December."
+
+  - id: raid
+    title: "Fear Ward, shields and Prayer of Mending"
+    story: |
+      **The Barrow Deeps** has 10 players. A group of this size has about 2 or 3 healers, so each heal is important. Shields and Penance on the tanks are strong here. See [The Barrow Deeps](../../content/raids/barrow-deeps.md).
+
+      **Hyjal Summit** has 20 players and 13 bosses on routes that branch. A raid of this size has about 4 or 5 healers. Holy is the raid healer, with Prayer of Mending and Prayer of Healing on each group. Shadow is a valid damage slot. See [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+      **Onyxia's Lair** has 40 players, many healers and much Fire damage. In the Classic fight, Onyxia casts Bellowing Roar in phase 3. Put Fear Ward on the main tank before it. See [Onyxia's Lair](../../content/raids/onyxias-lair.md).
+
+      The healer numbers above are general guidance. Blizzard has not published numbers, and no source has tested a build in the raids.
+
+      In PvP, a Priest is a strong healer and a caster that is difficult to kill. Fear Ward, Psychic Scream, Mana Burn, Mind Control and Dispel Magic are all important. Stay at maximum range behind pillars and walls. Fade has no effect against players. See [Battlegrounds](../../content/pvp/battlegrounds.md).
+    extra: |
+      **PvP in more detail**
+
+      - **Battlegrounds:** Warsong Gulch has 10 players on each side, Arathi Basin 15 and Alterac Valley 40. The Battle for the Darkspear Islands has 15, for levels 30 to 60.
+      - **Psychic Scream** is your best escape. Shield yourself when enemies attack you.
+      - **Dispel Magic** removes enemy buffs such as Blessing of Freedom and Power Infusion.
+      - **Mind Control** moves an enemy off a ledge or into your team. In Warsong Gulch, you can control the flag carrier.
+      - **Fear Ward:** cast it on yourself before you attack a Warlock or a Warrior.
+      - **Progression:** Seasons reset ranks. Honor buys equipment. Battlegrounds and weekly tasks give Rank Points.
+
+      | Enemy in PvP | What you do (general guidance) |
+      |---|---|
+      | Warrior | Stay at a distance. Use the shield, Psychic Scream and your DoTs. Use Fear Ward against Intimidating Shout |
+      | Rogue | Expect stuns. Keep Inner Fire active. Use Psychic Scream after the opener. The racials of Humans, Dwarves and the Undead help much here |
+      | Mage | Dispel Polymorph on allies. Use Mana Burn and Silence |
+      | Warlock | Cast Fear Ward first. Then dispel and use your DoTs |
+      | Hunter | Go into the dead zone (Classic mechanic) or out of range. Use Mana Burn |
+      | Paladin | Use Mana Burn and Dispel Magic. Long fights are better for the Paladin |
+      | Priest | Shadow wins with burst. Discipline wins long fights |
+
+      Camp buffs do not stack with the same class buff. The First Aid Kit gives the buff of Power Word: Fortitude, and the Faction Banner gives the buff of Divine Spirit. Dungeons and raids remove world buffs.
+    hardcore: |
+      [Hardcore](../../about/hardcore.md) comes in winter 2026/27. The Priest is one of the safer classes because it heals itself, but it is slow and has weak defenses. Shield before each pull. Put Fear Ward on yourself in areas with enemies that cast Fear. Keep healing potions from First Aid and bandages in your bags.
+
+      Know the emergency spell of your race. For the Alliance races, they are Desperate Prayer (Dwarf), Contingency Plan (Gnome), Divine Grace (Human) and Elune's Grace (Night Elf). Divine Grace heals only other players. For the Horde races, they are Rapid Regeneration (Troll) and Will of the Forsaken (Undead).
+
+      Dungeons give less XP from enemies. Make a group for the quests, not for many dungeon runs in sequence.
+
+# ------------------------------------------------------------------ races
+races:
+  - id: human
+    name: Human
+    faction: alliance
+    status: Classic
+    pitch: "The safe Alliance selection for healers. The Human Spirit gives 10% Spirit, Ruthless gives 1% crit, and Will to Survive removes stuns."
+    start: |
+      You start at Northshire Abbey in Elwynn Forest. Your first trainer is in the abbey (in Classic: Priestess Anetta). At level 5, go to Goldshire, which has a Priest trainer. The trainers of Stormwind are in the Cathedral of Light.
+    notes:
+      l10: "At level 10 you learn **Divine Grace**. It heals an ally below 50% health and removes Weakened Soul. You cannot cast it on yourself. Then complete Elwynn Forest and go to Westfall."
+      l20: "After Divine Grace, you can shield the same target again immediately. The cooldown is 5 minutes, so keep it for the tank."
+      l30: "The Human Spirit gives more mana regeneration through Meditation. Riverglades is near Redridge Mountains, and its Alliance town is Farholde Keep."
+      l60: "Ruthless gives 1% crit. For a healer, each crit heal can cause Inspiration and Divine Aegis. For Shadow, it is more damage."
+      raid: "Will to Survive removes the stuns of Rogues, Paladins and Warriors. It is one of the best PvP racials. Use Perception to find a Rogue in stealth. Your second race spell is Feedback. In Classic it drains the mana of casters that hit you."
+  - id: dwarf
+    name: Dwarf
+    faction: alliance
+    status: Classic
+    pitch: "The defensive selection, and a good Alliance Shadow race. Stoneform removes poisons, diseases and bleeds, and Artisan's Precision gives 1% hit."
+    start: |
+      You start in Coldridge Valley in Dun Morogh. Your first trainer is in Anvilmar (in Classic: Branstock Khalder). At level 6, go through the tunnel to Kharanos, which has a Priest trainer for the early ranks. The trainers of Ironforge are in the Mystic Ward.
+    notes:
+      l10: "The new dungeon Hall of Thanes is in Ironforge. It is the easiest first dungeon for a Dwarf. Then go east to Loch Modan."
+      l20: "At level 20 you learn **Chastise**, a 2 second root on a Humanoid. With Psychic Scream and Stoneform, you now have 3 defense buttons. Desperate Prayer is an instant self-heal (Classic spell)."
+      l50: "Artisan's Precision gives 1% hit. A Shadow Dwarf needs 1% less hit from items."
+      raid: "Fear Ward is not only a Dwarf spell in Forever. Each Priest has it. Stoneform still removes Rogue poisons, Serpent Sting and Rend, and it decreases physical damage by 10% for 8 seconds."
+  - id: gnome
+    name: Gnome
+    faction: alliance
+    status: New
+    pitch: "New in Forever. Eureka! gives 8 seconds of cheaper and stronger direct spells and heals, and Contingency Plan protects you at low health."
+    start: |
+      You start in Coldridge Valley in Dun Morogh, with the Dwarves. Gnomes had no Priest trainer in Classic. Probably the Priest trainer in Anvilmar also teaches Gnomes, but no source confirms it. At level 6, go through the tunnel to Kharanos. The trainers of Ironforge are in the Mystic Ward.
+    notes:
+      l10: "At level 10 you learn **Confounding Flash**. It confuses a maximum of 5 enemies for 3 seconds, and damage breaks it. Do not put DoTs on confused targets. Hall of Thanes is in Ironforge."
+      l20: "At level 20 you learn **Contingency Plan**, a 30 second ward. Below 35% health it gives you a shield and a heal-over-time effect. Cast it before dangerous pulls."
+      l30: "Gnomeregan, the old capital of your race, is a dungeon for levels 29 to 38."
+      l60: "Use Eureka! with Flash Heal, Greater Heal, Prayer of Healing or Mind Blast. It does not change Renew, Shadow Word: Pain or Devouring Plague."
+      raid: "Escape Artist removes Frost Nova, Hamstring and Entangling Roots. Expansive Mind gives 5% more mana for long fights."
+  - id: night-elf
+    name: Night Elf
+    faction: alliance
+    status: Classic
+    pitch: "The damage selection. Starshards is much stronger than in Classic, and Elune's Light gives 10% crit for 15 seconds. Warcraft Tavern calls the race very strong."
+    start: |
+      You start in Shadowglen on Teldrassil. Your first trainer is in Aldrassil (in Classic: Shanda). At level 6, go down the ramp to Dolanaar, which has early class training. The trainers of Darnassus are in the Temple of the Moon. Teldrassil has new quests and NPCs in Forever.
+    notes:
+      l10: "At level 10 you learn **Starshards**. It does Arcane damage and has a 30 second cooldown. Use it in each fight. Then take the boat from Rut'theran Village to Auberdine."
+      l20: "At level 20 you learn **Elune's Grace**. For 15 seconds, melee and ranged attacks against you have a 50% lower hit chance. Blackfathom Deeps in Ashenvale gives the Gravestone Scepter."
+      l40: "Starshards is an Arcane spell. Thus Shadowform does not decrease its mana cost."
+      l60: "Elune's Light gives 10% crit for 15 seconds. Use it before your largest heals or your largest damage spells."
+      raid: "In PvP, use Elune's Light before a Mind Blast and a Shadow Word: Death. Shadowmeld and Elune's Grace make you difficult to kill."
+  - id: troll
+    name: Troll
+    faction: horde
+    status: Classic
+    pitch: "The Horde selection for raids. Berserking gives 10% cast speed for 15 seconds, and Rapid Regeneration heals you between fights."
+    start: |
+      You start in the Valley of Trials in Durotar. Your first trainer is in the Den (in Classic: Ken'jai). At level 6, go to Sen'jin Village, which has early class trainers. The trainers of Orgrimmar are in the Valley of Spirits. Blizzard says that the Valley of Trials has new NPCs and quests.
+    notes:
+      l10: "Your race spells are **Hex of Weakness** and **Shadowguard**. Blizzard lists them as not changed and gives no levels. Shadowguard damages enemies that hit you. Beast Slaying gives more damage against Beasts, and many early quests have Beasts as targets. Ragefire Chasm is in Orgrimmar."
+      l20: "Rapid Regeneration gives back 50% of your health during 6 seconds, but an action stops it. Use it after a fight in place of food."
+      l30: "The Battle for the Darkspear Islands opens at level 30. The Darkspear Raiders are a separate faction from the Darkspear Trolls."
+      l40: "The Drowned City in Stranglethorn Vale and Zul'Farrak are on your route. Your mount is a raptor. Honored reputation with the Darkspear Trolls decreases its price by 10%."
+      l60: "Use Berserking for more Greater Heals in an emergency. For damage, use it when the raid must kill a boss quickly. It gives more Mind Flay and Mind Blast casts."
+      raid: "In Classic, Hex of Weakness decreases the damage of the target and the healing that it gets. Use it against melee classes in PvP. Warcraft Tavern rates the 2 Troll spells as weak."
+  - id: undead
+    name: Undead
+    faction: horde
+    status: Classic
+    pitch: "The Horde PvP selection, and a strong Shadow race. Will of the Forsaken removes Fear, charm and sleep, and Touch of the Grave drains health."
+    start: |
+      You start in the crypt of Deathknell in Tirisfal Glades. Your first trainer is in the chapel of Deathknell (in Classic: Dark Cleric Duesten). At level 6, go east to Brill, which has early class trainers. The capital trainers are in the Undercity. Tirisfal Glades has the 2 new areas Shadowvale and Bandarion Keep in the west.
+    notes:
+      l10: "The new dungeon Ruins of Lordaeron is in Tirisfal Glades. Its Undead enemies give practice with Shackle Undead at 20. At level 12, go south to Silverpine Forest."
+      l20: "At level 20 you learn **Dark Sacrifice**. It changes your health into mana, and Spirit increases the mana. Use it with Cannibalize or a Renew on yourself to drink less."
+      l30: "Scarlet Monastery is near your home. Touch of Weakness (Classic spell) damages the next melee attacker. Warcraft Tavern rates it as weak."
+      l60: "Touch of the Grave has a chance on hit to drain 5% of maximum health, with an internal cooldown of 15 seconds. In raids, Dark Sacrifice gives you mana when a healer can fill your health."
+      raid: "Will of the Forsaken stops the Fear of Warlocks, Priests and Warriors. It makes the Undead the best Horde PvP Priest."
+
+factions:
+  alliance:
+    l10: "Quest in Westfall, Loch Modan or Darkshore. Go to Redridge Mountains at level 15. The Three Corners supply camp in Redridge has the Merchant's Favor vendors."
+    l20: "Quest in the Wetlands, Duskwood, Ashenvale and Redridge Mountains. The new dungeon Excavation Site is in the Wetlands. The new boat from Stormwind Harbor goes to Auberdine."
+    l30: "Quest in the Alterac Mountains, Arathi Highlands, Stranglethorn Vale and Desolace. Go to Dustwallow Marsh and Riverglades at level 35. The centaur quests in Desolace now need level 35. Dalaran is friendly to the Alliance, and you can get Kirin Tor reputation there."
+    l40: "The Alliance town in Riverglades is Farholde Keep. Then quest in the Badlands, Swamp of Sorrows, Feralas, Tanaris and the Hinterlands. Searing Gorge opens at 43, and Azshara and Felwood at 45."
+    l50: "Quest in Un'Goro Crater, Burning Steppes, Western Plaguelands and Azshara. Go to Winterspring and Eastern Plaguelands at 53, and to Silithus at 55. Azshara has many new quests."
+    l60: "The attunement for Onyxia's Lair starts in Burning Steppes with Helendis Riverhorn and the quest *Dragonkin Menace*. The PvP vendor is in the Champion's Hall in Stormwind."
+  horde:
+    l10: "Quest in the Barrens or Silverpine Forest. Go to Stonetalon Mountains at level 15. Ragefire Chasm in Orgrimmar is your first dungeon."
+    l20: "Quest in Hillsbrad Foothills, Ashenvale and Stonetalon Mountains. Go to Thousand Needles at level 25."
+    l30: "Quest in Arathi Highlands, Stranglethorn Vale, Desolace and Thousand Needles. Go to Dustwallow Marsh and Riverglades at level 35. The centaur quests in Desolace now need level 35. NPCs in Dalaran attack Horde characters on sight, so do not go to its quest hubs."
+    l40: "The Horde town in Riverglades is Rog'mar. Then quest in the Badlands, Swamp of Sorrows, Feralas, Tanaris and the Hinterlands. Searing Gorge opens at 43, and Azshara and Felwood at 45."
+    l50: "Quest in Un'Goro Crater, Burning Steppes, Western Plaguelands and Azshara. Go to Winterspring and Eastern Plaguelands at 53, and to Silithus at 55. Azshara has many new quests."
+    l60: "The attunement for Onyxia's Lair starts in the Badlands with Warlord Goretooth and the quest *Blood and Thunder*. The PvP vendor is in the Hall of Legends in Orgrimmar."
+
+# ------------------------------------------------------------------ talent paths
+paths:
+  - id: shadow
+    name: "Shadow"
+    pitch: "The usual path for quests. Spirit Tap gives mana after each kill, and Shadowform at level 40 makes Shadow spells cost 50% less. Warcraft Tavern says that it is weak before about level 28."
+    leveling: shadow-leveling
+    endgame: [shadow-raid, shadow-pvp]
+    gear: shadow
+    play:
+      l1: "You have no talent points before level 10. Use Shadow Word: Pain and Smite, then the wand."
+      l10: "Spirit Tap doubles your Spirit for 15 seconds after each kill that gives XP. In that time, 50% of your mana regeneration continues while you cast. Thus go from kill to kill without a stop. Cast the shield, Mind Blast and Shadow Word: Pain, then use the wand. Improved Shadow Word: Pain at 15 and 16 adds 6 seconds to the DoT. Method says that a Shadow Priest can heal dungeons to level 60 without a respec, but with worse mana efficiency."
+      l20: "Mind Flay at level 20 is a 3 second channel that slows the enemy by 50%. It has a range of only 20 yards. Channel it to the end, because Improved Mind Flay makes each hit stronger than the hit before. Vampiric Embrace at 25 heals your party for 20% of your Shadow damage. Its cooldown is equal to its duration, so keep it active. Use the wand much until Shadow Weaving is complete at 28."
+      l30: "Devouring Contagion at 30 and 31 makes Devouring Plague cost 50% less. When the target dies, the Plague jumps to 2 enemies near it. Use the Plague in each fight now. Improved Mind Blast gives more casts of your largest hit, and Darkness adds 10% Shadow damage by level 39. In dungeons, let the tank get threat before you cast Mind Blast."
+      l40: |
+        Shadowform at level 40 changes the path. Shadow spells cost 50% less and their crits do much more damage. You cannot cast healing spells in Shadowform, so Vampiric Embrace and the shield keep you alive. Early Demise at 44 and 45 gives Shadow Word: Death 30% more crit on targets below 20% health. Silence at 46 stops enemy casters. In dungeons, keep it as an emergency interrupt.
+
+        Method gives this sequence for quests from level 40. Cast the shield, then Mind Blast before the enemy gets to you, then Shadow Word: Pain. Use Shadow Word: Death and Mind Blast on cooldown, if your health is sufficient. Fill with Mind Flay.
+      l50: "The last points go into Discipline. Twin Disciplines increases your instant Shadow spells by 5%. Mental Strength gives 10% Intellect, and Mental Agility makes DoTs and the shield cheaper. Inner Focus comes at level 60."
+      l60: "For raids, respec to the raid build. It moves the Spirit Tap points into Silent Resolve and Meditation, because Spirit Tap gives nothing on a boss. Silent Resolve decreases your threat by 30%. For PvP, the second build takes Blackout, Improved Psychic Scream and a stronger shield."
+      raid: "Only your spells give you Shadow Weaving stacks, so start to build them immediately. Use Shadow Word: Death when you must move. The raid build has no Early Demise, so the spell gets no crit bonus on targets with low health. On groups, put Shadow Word: Pain on each target. Put Devouring Plague on the target that dies first, so that the Plague jumps. In PvP, use Silence, Psychic Scream and a Mind Blast, then Shadow Word: Death to kill."
+    priority:
+      - "Cast **Power Word: Shield** on yourself before the pull when you are alone."
+      - "Keep **Shadow Word: Pain** and **Devouring Plague** active."
+      - "Keep **Vampiric Embrace** active on the target."
+      - "Cast **Mind Blast** on cooldown."
+      - "Cast **Shadow Word: Death** when you move. With Early Demise in the PvP build, also cast it on targets below 20% health. Do not cast it when your health is low."
+      - "Channel **Mind Flay** to the end as your filler spell."
+  - id: disc
+    name: "Discipline"
+    pitch: "The safe path, and the Hardcore path. You kill behind a strong shield with your wand, Smite and Penance, and you can heal each dungeon. It is slower than Shadow. Method says that its damage decreases in the late 30s."
+    leveling: disc-leveling
+    endgame: [disc-raid]
+    gear: healer
+    play:
+      l1: "You have no talent points before level 10. Use Shadow Word: Pain and Smite, then the wand."
+      l10: "Wand Specialization at 10 and 11 gives 25% more wand damage. The wand does a large part of your damage until level 30. Cast the shield, Smite and Shadow Word: Pain, then use the wand. Holy Precision at 15 gives 6% hit to Smite. Mental Strength gives more mana."
+      l20: "Improved Power Word: Shield makes the shield absorb 20% more by level 22. Soul Warding at 25 makes it cheaper and decreases its cooldown by 4 seconds. The shield is now your main spell alone and in dungeons. Start a fight with Holy Fire. Meditation keeps a part of your mana regeneration while you cast."
+      l30: "Penance at level 30 is the core spell of the path. It is instant, has a 12 second cooldown and hits an enemy or heals an ally 3 times. Use it on cooldown as damage, or as a heal when you need one. Power in Light makes Smite and Penance stronger on targets with your Holy Fire or Shadow Word: Pain. Put a DoT on the target first."
+      l40: "Power Infusion at level 40 gives 20% more spell damage and healing for 15 seconds. Use it on strong enemies or on hard pulls in dungeons. If your kills are too slow, make Shadow your second spec for quests. Method changes to Shadow at 40. Holy Specialization adds crit, and Divine Fury makes Smite and Holy Fire faster."
+      l50: "Divine Fury is complete at level 50. Holy Precision at 51 and 52 gives 18% Holy hit for dungeon bosses. Twilight Focus decreases pushback. The last points give Searing Light for 5% Holy damage and, at level 60, Holy Nova."
+      l60: "Respec to the healer build with 31 points in Discipline and 20 in Holy. It takes Renewed Hope and Divine Aegis in place of Power in Light. From Holy it takes Divine Fury, Inspiration, Improved Healing and Holy Binding. Use it for dungeons, for the Barrow Deeps and for tanks. It is also the usual healer build for PvP."
+      raid: "You prevent damage before it occurs. Shield the player that takes damage next. A crit heal gives the target a Divine Aegis shield and gives the tank armor through Inspiration. Use Power Infusion on yourself or on a caster."
+    priority:
+      - "Cast **Power Word: Shield** on the player that takes damage next."
+      - "Cast **Penance** on cooldown on the target with the most damage."
+      - "Cast **Flash Heal** or **Greater Heal** on targets with Weakened Soul. Renewed Hope gives these heals more crit."
+      - "Cast **Renew** on a tank that you cannot shield."
+      - "In a group of 5 players, cast **Prayer of Healing** for group damage."
+  - id: holy
+    name: "Holy at 60"
+    pitch: "The raid healer path. Holy is the slowest spec alone, so you level with the Discipline build. You change to Holy at level 60, or in your second spec at 40."
+    leveling: disc-leveling
+    endgame: [holy-raid]
+    gear: healer
+    play:
+      l1: "You have no talent points before level 10. Use Shadow Word: Pain and Smite, then the wand."
+      l10: "You level with the Discipline build, because Holy is the slowest spec alone. Wand Specialization at 10 and 11 gives 25% more wand damage. Cast the shield, Smite and Shadow Word: Pain, then use the wand. Heal dungeons from level 13, because this is the practice for your role at 60. Use the shield, Renew and Lesser Heal, and Heal from level 16."
+      l20: "The stronger shield and Soul Warding at 25 make dungeons easy to heal. Learn 2 habits now: Flash Heal for sudden damage, and Heal for slow damage. Do not use Flash Heal for all damage, because it costs much mana. Alone, start each fight with Holy Fire. Then fight as before behind the shield."
+      l30: "Penance at level 30 is an instant heal for the tank, and it is your best damage spell alone. Use it on cooldown. Put a DoT on the enemy first, because Power in Light then makes Smite and Penance stronger. Prayer of Healing heals the party of your target, so learn to target a player in the correct group. If you heal many dungeons, the talent guide recommends Renewed Hope before Power in Light."
+      l40: "With 31 points at level 40, a second spec can reach Prayer of Mending in the Holy tree. Use that spec in dungeons, and keep the Discipline build for quests. Prayer of Mending heals the target at the next hit and then jumps to a player near it. Start to use different heals in turn now, because the level 60 build rewards this."
+      l50: "Continue with the Discipline build for quests. Heal the level 55 to 60 dungeons with your Holy spec, and collect items with healing power, Intellect and Spirit."
+      l60: "Respec to the Holy raid build. It takes Prayer of Mending, Spiritual Guidance and Spiritual Healing from Holy. From Discipline it takes Meditation, Mental Strength, Mental Agility and Inner Focus. Spiritual Guidance changes a part of your Spirit into healing. The build is near the 19/32/0 split of the fan guides from the beta."
+      raid: "Holy has the largest heals and the best mana for long fights. Renew from different Priests stacks, so use it freely. Litany of Light gives mana back when you use different heals in turn. Do not cast the same heal many times in sequence."
+    priority:
+      - "Keep **Prayer of Mending** active. Put it on the tank again each 10 seconds."
+      - "Cast **Renew** on targets that take constant damage."
+      - "Cast **Flash Heal** for fast healing of 1 target. Holy Binding heals you for 50% of it."
+      - "Cast **Heal** or **Greater Heal** for large heals that use mana efficiently."
+      - "Cast **Prayer of Healing** on a member of the group that has damage."
+      - "Use different heals in turn for the **Litany of Light** refund."
+
+# ------------------------------------------------------------------ equipment sets
+gear:
+  - id: shadow
+    name: "Shadow damage"
+    pitch: "The damage set from quests and dungeons. You look for Intellect and spell power, and for hit at level 60. Most item names come from the Shadow list of Timesaver.gg."
+    stats: "Leveling: Intellect and spell power > Stamina and Spirit > Armor. Level 60: Hit (to the cap) > Spell power or Shadow power > Crit > Intellect > Spirit"
+    chapters:
+      l1:
+        text: "Your first important item is a wand, because its damage uses no mana. Buy one from an Enchanter or from the Auction House. Night Elves and Undead get a robe from their class quest at about level 5."
+        items:
+          - {slot: "Wand", name: "Lesser Magic Wand", from: craft, profession: enchanting, where: "usable at level 5"}
+          - {slot: "Staff", name: "Apprentice's Spellstaff", from: quest, where: "*Rare Books*, Elwynn Forest (Alliance)", basis: forever}
+          - {slot: "Chest", name: "Moon Robes of Elune", from: class, where: "*Garments of the Moon* (Night Elf)", basis: forever}
+          - {slot: "Chest", name: "Acolyte's Sacrificial Robes", from: class, where: "*Garments of Darkness* (Undead)", basis: forever}
+      l10:
+        text: "The wand is your most important slot in these levels. Replace it at 13 and again at 18. Early wands now have spell power as a stat. The first dungeons give a weapon and a robe for each faction."
+        items:
+          - {slot: "Wand", name: "Greater Magic Wand", from: craft, profession: enchanting, where: "usable at level 13"}
+          - {slot: "Wand", name: "Deepblaze", from: quest, where: "*Old Ironforge Incursion*, Hall of Thanes (Alliance)", basis: forever}
+          - {slot: "Wand", name: "Cinder Wand", from: quest, where: "*Arugal's Folly*, Silverpine Forest (Horde)", basis: forever}
+          - {slot: "Wand", name: "Sizzle Stick", from: quest, where: "a quest in Wailing Caverns. Usable at level 15 (Warcraft Tavern)", basis: forever}
+          - {slot: "Wand", name: "Charred Wand", from: quest, where: "*Dangerous!*, Hillsbrad Foothills. Usable at level 19 (Method)", basis: forever}
+          - {slot: "Wand", name: "Gravestone Scepter", from: quest, where: "*Blackfathom Villainy*, Blackfathom Deeps. Usable at level 18", basis: forever}
+          - {slot: "Dagger", name: "Fang of Magmatus", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Chest", name: "Robes of the Disgraced Thane", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Staff", name: "Staff of Orgrimmar", from: quest, where: "*Hidden Enemies*, Orgrimmar (Horde)", basis: forever}
+          - {slot: "Chest", name: "Robe of Evocation", from: dungeon, where: "Ragefire Chasm", basis: forever}
+      l20:
+        text: "Warcraft Tavern says that you keep the Gravestone Scepter to about level 37. Replace the staff at level 20 and at level 25. Ruins of Lordaeron gives cloth for Horde characters."
+        items:
+          - {slot: "Staff", name: "Emberstone Staff", from: dungeon, where: "The Deadmines", basis: forever}
+          - {slot: "Staff", name: "Crescent Staff", from: quest, where: "*Leaders of the Fang*, Wailing Caverns (Horde)", basis: forever}
+          - {slot: "Staff", name: "Rod of the Sleepwalker", from: dungeon, where: "Blackfathom Deeps", basis: forever}
+          - {slot: "Chest", name: "Robes of Arugal", from: dungeon, where: "Shadowfang Keep", basis: forever}
+          - {slot: "Head", name: "Shadow Circlet", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Tuskwrap Belt", from: dungeon, dungeon: ruins-of-lordaeron, basis: forever}
+          - {slot: "Wand", name: "Wand of Eventide", from: drop, where: "usable at level 27 (Warcraft Tavern)", basis: forever}
+          - {slot: "Wand", name: "Dancing Flame", from: quest, where: "*Final Passage*. Method says level 26, in Arathi Highlands. Timesaver.gg says level 35, in Thousand Needles (Horde)", basis: forever}
+          - {slot: "Legs", name: "Rotmender's Leggings", from: dungeon, dungeon: ruins-of-lordaeron, basis: forever}
+      l30:
+        text: "Change from a staff to a one-hand weapon with an off-hand item. Timesaver.gg keeps the ring from Excavation Site to level 60. The Philanthropist's Ring has 10 spell power (Warcraft Tavern). Sources disagree on the level of the Wand of Mana Concentration: Method says 27, Timesaver.gg lists it from 30."
+        items:
+          - {slot: "Ring", name: "Ring of Power Regulation", from: dungeon, dungeon: excavation-site, basis: forever}
+          - {slot: "Off-hand", name: "Raptor's Gaze", from: dungeon, dungeon: excavation-site, basis: forever}
+          - {slot: "Dagger", name: "Swinetusk Shank", from: dungeon, where: "Razorfen Kraul", basis: forever}
+          - {slot: "Wand", name: "Wand of Mana Concentration", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+          - {slot: "Dagger", name: "Hypnotic Blade", from: dungeon, where: "Scarlet Monastery, Library", basis: forever}
+          - {slot: "Off-hand", name: "Orb of the Forgotten Seer", from: dungeon, where: "Scarlet Monastery, Graveyard", basis: forever}
+          - {slot: "Ring", name: "Philanthropist's Ring", from: quest, where: "the book quest for 20 library books, level 35", basis: forever}
+      l40:
+        text: "Timesaver.gg selects these items for levels 40 to 49. The names are Classic names, and no source checked their stats in Forever. No source lists the loot of The Drowned City or Krol'dok Stronghold."
+        items:
+          - {slot: "Mace", name: "Soulsplatter Mace", from: quest, where: "*Khan Jehn*, Desolace", basis: forever}
+          - {slot: "Off-hand", name: "Mordresh's Lifeless Skull", from: dungeon, where: "Razorfen Downs", basis: forever}
+          - {slot: "Chest", name: "Robes of the Lich", from: dungeon, where: "Razorfen Downs", basis: forever}
+          - {slot: "Mace", name: "Galgann's Firehammer", from: dungeon, where: "Uldaman", basis: forever}
+          - {slot: "Wand", name: "Dudd's Second-Favorite Wand", from: quest, where: "*Partial Mystical Notes*, Stranglethorn Vale", basis: forever}
+          - {slot: "Wand", name: "Charged Lightning Rod", from: quest, where: "*Ledger from Tanaris*, Searing Gorge", basis: forever}
+          - {slot: "Wrist", name: "Netherpearl Cuffs", from: craft, profession: tailoring}
+      l50:
+        text: "The public lists show almost no new items between level 45 and 59. Probably the data is not complete, because much item data was not visible at launch. Look at each drop in Maraudon, Sunken Temple and Blackrock Depths. Blackmaw Hold has 1 caster item with a name in the public data."
+        items:
+          - {slot: "Wand", name: "Cairnstone Sliver", from: quest, where: "*The Morrow Stone*, Feralas (Alliance)", basis: forever}
+          - {slot: "Wand", name: "Nature's Breath", from: quest, where: "*Dark Vessels*, the Hinterlands (Horde)", basis: forever}
+          - {slot: "Trinket", name: "Shard of the Splithooves", from: quest, where: "*Heroes of Old*, Blasted Lands", basis: forever}
+          - {slot: "Chest", name: "Robes of Dark Summons", from: dungeon, dungeon: blackmaw-hold, basis: forever}
+          - {slot: "Chest", name: "Robe of Winter Night", from: craft, profession: tailoring, where: "on the level 60 list of Kami-Labs. No source gives the level that it needs"}
+          - {slot: "Head", name: "Felcloth Hood", from: craft, profession: tailoring, where: "in the level 60 simulation of Kami-Labs. No source gives the level that it needs"}
+      l60:
+        text: "Most of these items are from the Shadow list of the Kami-Labs tool of 9 November 2026. The tool is in beta, and Kami-Labs marks most Classic items as changed in Forever. Shadow Focus gives 5% hit. Sources give a boss miss chance of 16% or 17%, so the other 11% to 12% come from items. Blizzard has published no cap. The Ironbark Staff is an Alliance item, and no source names a Horde staff of the same type."
+        items:
+          - {slot: "Head", name: "Spellweaver's Turban", from: dungeon, where: "Upper Blackrock Spire", basis: forever}
+          - {slot: "Neck", name: "Nacreous Shell Necklace", from: dungeon, where: "Stratholme", basis: forever}
+          - {slot: "Shoulders", name: "Mantle of the Timbermaw", from: craft, profession: tailoring}
+          - {slot: "Back", name: "Arcanoweave Cloak", from: vendor, where: "Pix Xizzix, Stranglethorn Vale. 75 Tarnished Undermine Real", basis: forever}
+          - {slot: "Chest", name: "Robe of Winter Night", from: craft, profession: tailoring}
+          - {slot: "Wrist", name: "Netherpearl Cuffs", from: craft, profession: tailoring}
+          - {slot: "Hands", name: "Gloves of Spell Mastery", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Belt of the Archmage", from: craft, profession: tailoring}
+          - {slot: "Legs", name: "Skyshroud Leggings", from: dungeon, where: "Lower Blackrock Spire", basis: forever}
+          - {slot: "Feet", name: "Maleki's Footwraps", from: dungeon, where: "Stratholme", basis: forever}
+          - {slot: "Ring", name: "Don Mauricio's Band of Domination", from: dungeon, where: "Scholomance", basis: forever}
+          - {slot: "Ring", name: "Watcher's Signet of Brilliance or Warden's Signet of Brilliance", from: rep, where: "The Watchers, a new faction. Revered or Exalted", basis: forever}
+          - {slot: "Trinket", name: "Draconic Infused Emblem", from: dungeon, where: "Upper Blackrock Spire", basis: forever}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting}
+          - {slot: "Staff", name: "Ironbark Staff", from: rep, where: "League of Arathor, Exalted (Alliance)", basis: forever}
+          - {slot: "Wand", name: "Skul's Ghastly Touch", from: dungeon, where: "Stratholme", basis: forever}
+      raid:
+        text: "Timesaver.gg lists Torch of Light and Fel Cape for level 60. But the 2 recipes need Malleable Essence of Nature. One source says that this reagent comes from raid items that an Enchanter disenchants. Thus they are probably not available before 9 December. One source says that the Shadow Tier 1 set, Raiments of Conviction, gives hit with 2 parts."
+        items:
+          - {slot: "Wand", name: "Torch of Light", from: craft, profession: enchanting}
+          - {slot: "Back", name: "Fel Cape", from: craft, profession: tailoring}
+  - id: healer
+    name: "Healer"
+    pitch: "The Holy and Discipline set from quests and dungeons. You look for healing power, Intellect, mana regeneration and Spirit. You need no hit. Most item names come from the Holy list of Timesaver.gg."
+    stats: "Leveling: Intellect and spell power > Stamina and Spirit > Armor. Level 60: Healing power > Intellect > MP5 (mana each 5 seconds) > Spirit > Crit"
+    chapters:
+      l1:
+        text: "Your first important item is a wand, because you also kill enemies alone. Night Elves and Undead get a robe from their class quest at about level 5."
+        items:
+          - {slot: "Wand", name: "Lesser Magic Wand", from: craft, profession: enchanting, where: "usable at level 5"}
+          - {slot: "Staff", name: "Apprentice's Spellstaff", from: quest, where: "*Rare Books*, Elwynn Forest (Alliance)", basis: forever}
+          - {slot: "Chest", name: "Moon Robes of Elune", from: class, where: "*Garments of the Moon* (Night Elf)", basis: forever}
+          - {slot: "Chest", name: "Acolyte's Sacrificial Robes", from: class, where: "*Garments of Darkness* (Undead)", basis: forever}
+      l10:
+        text: "Bonus healing on an item also gives one third of its value as spell damage. Thus a healer weapon is also good for quests. Hall of Thanes and Ragefire Chasm give the first healer items."
+        items:
+          - {slot: "Wand", name: "Greater Magic Wand", from: craft, profession: enchanting, where: "usable at level 13"}
+          - {slot: "Main hand", name: "Thornroot Club", from: quest, where: "*Ursal the Mauler*, Teldrassil (Alliance)", basis: forever}
+          - {slot: "Main hand", name: "Makeshift Stormcaller", from: quest, where: "*Stormy Potential*, Durotar (Horde)", basis: forever}
+          - {slot: "Dagger", name: "Fang of Magmatus", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Off-hand", name: "Dwarven Tome", from: quest, where: "*Important Heirlooms*, Hall of Thanes (Alliance)", basis: forever}
+          - {slot: "Neck", name: "Ephemeral Choker", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Main hand", name: "Trogg Scepter", from: dungeon, where: "Ragefire Chasm", basis: forever}
+          - {slot: "Wand", name: "Sizzle Stick", from: quest, where: "a quest in Wailing Caverns. Usable at level 15 (Warcraft Tavern)", basis: forever}
+          - {slot: "Wand", name: "Gravestone Scepter", from: quest, where: "*Blackfathom Villainy*, Blackfathom Deeps. Usable at level 18", basis: forever}
+      l20:
+        text: "Replace the staff at level 20 and at level 25. Keep the Gravestone Scepter. The Pristine items of Tailoring are the selection of Warcraft Tavern for Holy and Discipline. No source gives their stats."
+        items:
+          - {slot: "Staff", name: "Staff of Westfall", from: quest, where: "*The Defias Brotherhood*, Westfall (Alliance)", basis: forever}
+          - {slot: "Staff", name: "Living Root", from: dungeon, where: "Wailing Caverns", basis: forever}
+          - {slot: "Staff", name: "Odo's Ley Staff", from: dungeon, where: "Shadowfang Keep", basis: forever}
+          - {slot: "Head", name: "Pristine Circlet", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Rotmender's Treads", from: dungeon, dungeon: ruins-of-lordaeron, basis: forever}
+      l30:
+        text: "The Healer's Staff comes from a quest in Excavation Site. Warcraft Tavern says that the Death Speaker Scepter has much bonus healing. City of Dalaran gives an off-hand item and a ring. The Philanthropist's Ring has 10 spell power."
+        items:
+          - {slot: "Staff", name: "Healer's Staff", from: quest, where: "*Prehistoric Prism* (Alliance) or *Earthen Echo* (Horde), Excavation Site", basis: forever}
+          - {slot: "Mace", name: "Death Speaker Scepter", from: dungeon, where: "Razorfen Kraul", basis: forever}
+          - {slot: "Shoulders", name: "Death Speaker Mantle", from: dungeon, where: "Razorfen Kraul", basis: forever}
+          - {slot: "Chest", name: "Death Speaker Robes", from: dungeon, where: "Razorfen Kraul", basis: forever}
+          - {slot: "Off-hand", name: "Ponderous Orb", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+          - {slot: "Ring", name: "Runemender's Seal", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+          - {slot: "Wand", name: "Wand of Mana Concentration", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+          - {slot: "Ring", name: "Philanthropist's Ring", from: quest, where: "the book quest for 20 library books, level 35", basis: forever}
+      l40:
+        text: "From level 40 you carry this set for your healer spec. Timesaver.gg selects the items of High Inquisitor Whitemane in Scarlet Monastery. The names are Classic names, and no source checked their stats in Forever."
+        items:
+          - {slot: "Mace", name: "Hand of Righteousness", from: dungeon, where: "Scarlet Monastery, Cathedral", basis: forever}
+          - {slot: "Head", name: "Whitemane's Chapeau", from: dungeon, where: "Scarlet Monastery, Cathedral", basis: forever}
+          - {slot: "Neck", name: "Triune Amulet", from: dungeon, where: "Scarlet Monastery, Cathedral", basis: forever}
+          - {slot: "Hands", name: "Restorer's Fine Gloves", from: quest, where: "a quest in Uldaman", basis: forever}
+          - {slot: "Wrist", name: "Nethergeld Cuffs", from: craft, profession: tailoring}
+      l50:
+        text: "The public lists show almost no new healer items between level 45 and 59. Look at each drop in Maraudon, Sunken Temple and Blackrock Depths. Timesaver.gg marks the Resurgence Rod quest as an Alliance quest."
+        items:
+          - {slot: "Main hand", name: "Resurgence Rod", from: quest, where: "*Corruption of Earth and Seed*, Maraudon", basis: forever}
+          - {slot: "Wand", name: "Cairnstone Sliver", from: quest, where: "*The Morrow Stone*, Feralas (Alliance)", basis: forever}
+          - {slot: "Wand", name: "Nature's Breath", from: quest, where: "*Dark Vessels*, the Hinterlands (Horde)", basis: forever}
+      l60:
+        text: "Most of these items are from the Holy and Discipline list of the Kami-Labs tool of 9 November 2026. The tool is in beta, and Kami-Labs marks most Classic items as changed in Forever. The Devout items are the Classic dungeon set. One source says that Dungeon Set 2, Vestments of the Virtuous, is a goal before the raids."
+        items:
+          - {slot: "Head", name: "Devout Crown", from: dungeon, where: "Scholomance", basis: forever}
+          - {slot: "Neck", name: "Beads of Ogre Mojo", from: quest, where: "*Falrin's Vendetta*, Dire Maul", basis: forever}
+          - {slot: "Back", name: "Hide of the Wild", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Devout Robe", from: dungeon, where: "Upper Blackrock Spire", basis: forever}
+          - {slot: "Chest", name: "Truefaith Vestments", from: craft, profession: tailoring, where: "the selection of Timesaver.gg"}
+          - {slot: "Hands", name: "Mooncloth Gloves", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Wisdom of the Timbermaw", from: craft, profession: tailoring, where: "the selection of Timesaver.gg"}
+          - {slot: "Legs", name: "Devout Skirt", from: dungeon, where: "Stratholme", basis: forever}
+          - {slot: "Feet", name: "Mooncloth Boots", from: craft, profession: tailoring}
+          - {slot: "Ring", name: "Seal of Rivendare", from: dungeon, where: "Stratholme", basis: forever}
+          - {slot: "Ring", name: "Channeler's Ring", from: vendor, where: "Pix Xizzix, Stranglethorn Vale. 75 Tarnished Undermine Real", basis: forever}
+          - {slot: "Trinket", name: "Serenity Field", from: vendor, where: "Pix Xizzix, Stranglethorn Vale. 125 Tarnished Undermine Real", basis: forever}
+          - {slot: "Trinket", name: "Briarwood Reed", from: dungeon, where: "Blackrock Spire", basis: forever}
+          - {slot: "Dagger", name: "Charstone Dirk", from: dungeon, where: "Maraudon", basis: forever}
+          - {slot: "Off-hand", name: "Book of the Dead", from: dungeon, where: "Stratholme", basis: forever}
+          - {slot: "Wand", name: "Brilliant Wand", from: craft, profession: enchanting}
+          - {slot: "Set", name: "Vestments of the Virtuous", from: any, where: "Dungeon Set 2. One source says that vendors sell it. The cost is not known", basis: unverified}
+      raid:
+        text: "One source gives the healer Tier 1 set the name Vestments of Conviction. Tailoring makes items with this name for 4 slots, with 2 names for each slot. No source says which name is the healer version. All of them need Malleable Essence of Nature, which reportedly comes from raid items that an Enchanter disenchants."
+        items:
+          - {slot: "Wand", name: "Torch of Light", from: craft, profession: enchanting}
+          - {slot: "Hands", name: "Gloves of Conviction or Handguards of Conviction", recipe: "Gloves of Conviction", from: craft, profession: tailoring}
+          - {slot: "Shoulders", name: "Mantle of Conviction or Pauldrons of Conviction", recipe: "Mantle of Conviction", from: craft, profession: tailoring}
+          - {slot: "Legs", name: "Leggings of Conviction or Pants of Conviction", recipe: "Leggings of Conviction", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Boots of Conviction or Treads of Conviction", recipe: "Boots of Conviction", from: craft, profession: tailoring}
+  - id: crafted
+    name: "Tailoring and Enchanting"
+    pitch: "You make your own cloth, wands, staves and off-hand items. Use it if you have Tailoring and Enchanting. The client data gives the name and the skill of each item, but not its stats."
+    stats: "The same as the set for your role. Read the tooltip of each crafted item"
+    chapters:
+      l1:
+        text: "Enchanting makes a wand at skill 1. No source gives the level that the Novice's Practice Wand needs. Tailoring makes the Stormsewn linen items at skill 50."
+        items:
+          - {slot: "Wand", name: "Novice's Practice Wand", from: craft, profession: enchanting}
+          - {slot: "Wand", name: "Lesser Magic Wand", from: craft, profession: enchanting, where: "usable at level 5"}
+          - {slot: "Feet", name: "Simple Linen Boots", from: craft, profession: tailoring}
+          - {slot: "Wrist", name: "Azure Stormsewn Cuffs", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Azure Stormsewn Cord", from: craft, profession: tailoring}
+          - {slot: "Bag", name: "Linen Reagent Bag", from: craft, profession: tailoring}
+      l10:
+        text: "Forever adds rare cloth items of item level 17 to 30 in 6 versions. Warcraft Tavern names the **Shadow** items for Shadow damage and recommends the **Pristine** items for healers. Each pattern costs 30 Merchant's Favor from Mivin Shadowweave at Three Corners in Redridge. Warcraft Tavern also names new belts with spell power at level 10. They are probably the 2 Novice sashes."
+        items:
+          - {slot: "Wand", name: "Greater Magic Wand", from: craft, profession: enchanting, where: "usable at level 13"}
+          - {slot: "Waist", name: "Novice Arcanist's Sash", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Novice Ardent's Sash", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Shadow Boots or Pristine Boots", recipe: "Shadow Boots", from: craft, profession: tailoring}
+          - {slot: "Hands", name: "Shadow Gloves or Pristine Gloves", recipe: "Shadow Gloves", from: craft, profession: tailoring, where: "Kami-Labs says that the Shadow Gloves were usable from about level 20 in the beta"}
+          - {slot: "Waist", name: "Shadow Sash or Pristine Sash", recipe: "Shadow Sash", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Filigreed Shadow Gown or Filigreed Pristine Gown", recipe: "Filigreed Shadow Gown", from: craft, profession: tailoring, where: "the pattern drops in low level dungeons (Warcraft Tavern)"}
+      l20:
+        text: "The head, chest and leg items of the same 6 versions come at Tailoring 100 to 125. Enchanting makes your first staves and off-hand items at skill 140. Each of these formulas costs 45 Merchant's Favor. Method says that the Lesser Mystic Wand is usable at 26."
+        items:
+          - {slot: "Head", name: "Shadow Circlet or Pristine Circlet", recipe: "Shadow Circlet", from: craft, profession: tailoring}
+          - {slot: "Chest", name: "Shadow Gown or Pristine Gown", recipe: "Shadow Gown", from: craft, profession: tailoring}
+          - {slot: "Legs", name: "Shadow Leggings or Pristine Leggings", recipe: "Shadow Leggings", from: craft, profession: tailoring}
+          - {slot: "Staff", name: "Glimmering Staff or Soulstaff", recipe: "Glimmering Staff", from: craft, profession: enchanting}
+          - {slot: "Off-hand", name: "Orb of Mystic Insight or Orb of Souls", recipe: "Orb of Mystic Insight", from: craft, profession: enchanting}
+          - {slot: "Wand", name: "Lesser Mystic Wand", from: craft, profession: enchanting}
+      l30:
+        text: "Robe of Power is a trainer recipe. The Invoker items are new. The Slippers and the Handwraps are the next rare items in 6 versions: Black, Fiery, Frothing, Gilded, Golden and Radiant. No source says which version has which stat. The Greater Mystic Wand needs level 30 in Classic, but Forever changed the recipe."
+        items:
+          - {slot: "Chest", name: "Robe of Power", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Invoker's Cord", from: craft, profession: tailoring}
+          - {slot: "Shoulders", name: "Invoker's Mantle", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Black Slippers", from: craft, profession: tailoring, where: "and 5 other versions"}
+          - {slot: "Wand", name: "Greater Mystic Wand", from: craft, profession: enchanting}
+      l40:
+        text: "Crafted items fill the levels where dungeons give few new items. Timesaver.gg selects the Netherpearl Cuffs for Shadow and the Nethergeld Cuffs for Holy. The 2 lists keep them to level 60. Enchanting makes 2 new wands, 2 staves and 2 off-hand items."
+        items:
+          - {slot: "Wrist", name: "Netherpearl Cuffs", from: craft, profession: tailoring, where: "Shadow"}
+          - {slot: "Wrist", name: "Nethergeld Cuffs", from: craft, profession: tailoring, where: "healer"}
+          - {slot: "Shoulders", name: "Netherpearl Shoulders or Nethergeld Shoulders", recipe: "Netherpearl Shoulders", from: craft, profession: tailoring}
+          - {slot: "Wand", name: "Twisted Nether Wand", from: craft, profession: enchanting}
+          - {slot: "Wand", name: "Dreambough Wand", from: craft, profession: enchanting}
+          - {slot: "Staff", name: "Dreamstaff or Radiant Staff", recipe: "Dreamstaff", from: craft, profession: enchanting}
+          - {slot: "Off-hand", name: "Truesilver Conduit or Twisting Essence Jar", recipe: "Truesilver Conduit", from: craft, profession: enchanting}
+      l50:
+        text: "The Eternal wands and the Heart of the Mountain trinkets are new in Forever. Each trinket needs 1 Blood of the Mountain. The Shadow lists use the Frozen Heart of the Mountain. Robe of Winter Night and the Felcloth items are on the level 60 Shadow lists. The belt Wisdom of the Timbermaw is on the level 60 Holy list of Timesaver.gg."
+        items:
+          - {slot: "Wand", name: "Lesser Eternal Wand", from: craft, profession: enchanting}
+          - {slot: "Chest", name: "Robe of Winter Night", from: craft, profession: tailoring}
+          - {slot: "Head", name: "Felcloth Hood", from: craft, profession: tailoring}
+          - {slot: "Waist", name: "Wisdom of the Timbermaw", from: craft, profession: tailoring, where: "healer. Timesaver.gg lists it at level 60"}
+          - {slot: "Wrist", name: "Earthenweave Cuffs", from: craft, profession: tailoring}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting}
+          - {slot: "Trinket", name: "Dormant Heart of the Mountain", from: craft, profession: enchanting}
+      l60:
+        text: "Before the raids open, make the Classic rare and epic items of Tailoring and the best wands. Forever changed these Tailoring recipes, so do not use the Classic stats. The formula of the Brilliant Wand costs 180 Merchant's Favor."
+        items:
+          - {slot: "Chest", name: "Truefaith Vestments", from: craft, profession: tailoring, where: "healer"}
+          - {slot: "Hands", name: "Mooncloth Gloves", from: craft, profession: tailoring, where: "healer"}
+          - {slot: "Feet", name: "Mooncloth Boots", from: craft, profession: tailoring, where: "healer"}
+          - {slot: "Shoulders", name: "Mantle of the Timbermaw", from: craft, profession: tailoring, where: "Shadow"}
+          - {slot: "Hands", name: "Gloves of Spell Mastery", from: craft, profession: tailoring, where: "Shadow"}
+          - {slot: "Waist", name: "Belt of the Archmage", from: craft, profession: tailoring, where: "Shadow"}
+          - {slot: "Wand", name: "Greater Eternal Wand", from: craft, profession: enchanting}
+          - {slot: "Wand", name: "Brilliant Wand", from: craft, profession: enchanting}
+      raid:
+        text: "Tailoring makes items with the Tier 1 name Conviction for the hands, shoulders, legs and feet. Each slot has 2 names, probably 1 for healers and 1 for Shadow. No source says which. All of them, Torch of Light and Fel Cape need Malleable Essence of Nature. Reportedly, this reagent comes from raid items that an Enchanter disenchants."
+        items:
+          - {slot: "Hands", name: "Gloves of Conviction or Handguards of Conviction", recipe: "Gloves of Conviction", from: craft, profession: tailoring}
+          - {slot: "Shoulders", name: "Mantle of Conviction or Pauldrons of Conviction", recipe: "Mantle of Conviction", from: craft, profession: tailoring}
+          - {slot: "Legs", name: "Leggings of Conviction or Pants of Conviction", recipe: "Leggings of Conviction", from: craft, profession: tailoring}
+          - {slot: "Feet", name: "Boots of Conviction or Treads of Conviction", recipe: "Boots of Conviction", from: craft, profession: tailoring}
+          - {slot: "Wand", name: "Torch of Light", from: craft, profession: enchanting}
+          - {slot: "Back", name: "Fel Cape", from: craft, profession: tailoring}
+
+equipment:
+  intro: |
+    A Priest wears cloth for all 60 levels and cannot use shields or relics. The wand is the main weapon until Penance at level 30 or Shadowform at level 40. From level 40, dual spec lets you play 2 roles, so carry a healer set and a damage set.
+
+    About 40% of the items of Forever had hidden stats at launch. The stats of an item become visible when a player first finds it. Most item names for each level come from 1 tool, Timesaver.gg (data of 6 November 2026). It shows no stats and no levels. The level 60 lists come from the Kami-Labs tool of 9 November. Use each list as candidates, not as tested lists. The Codex did not verify the stats.
+
+    No source compares a staff with a one-hand weapon and an off-hand item in numbers.
+  proficiencies:
+    - ["Cloth armor", "Level 1", "The only armor type of the Priest. No shields and no relics"]
+    - ["Wands", "Level 1", "A default skill. The wand goes in the ranged slot"]
+    - ["One-hand maces", "Level 1", "A default skill (Warcraft Tavern). Not tested in the game"]
+    - ["Daggers", "Weapon trainer, 10 silver", "Darnassus, Ironforge, Stormwind, Orgrimmar and the Undercity"]
+    - ["Staves", "Weapon trainer, 10 silver", "Darnassus, Stormwind, Orgrimmar and Thunder Bluff"]
+    - ["Off-hand items", "Level 1", "Use them with a mace or a dagger. They can have an enchant in Forever"]
+  rules:
+    - "Bonus healing on an item also gives one third of its value as spell damage. Caster weapons give spell damage and healing."
+    - "Early wands have spell power as a stat, from about level 5 (Warcraft Tavern)."
+    - "In the beta, wand damage increased with your spell power. RankedBoost reports that Blizzard removed this on 24 September 2026. No source tested it after launch."
+    - "Hit is 1 stat for melee, ranged attacks and spells. Heals cannot miss, so a healer needs no hit."
+    - "A spell misses a raid boss 16% of the time (Warcraft Tavern). A search result from Icy Veins gives 17%. Blizzard has published no cap."
+    - "Shadow Focus gives 5% Shadow hit. Thus a Shadow Priest needs 11% to 12% hit from items at level 60."
+    - "Holy Precision gives 18% Holy hit with 3 points. This is more than the boss miss chance of 16% or 17% that the sources give. Thus a Smite build probably needs no hit on items."
+    - "Intellect gives mana and spell crit. Mental Strength increases your total Intellect by a maximum of 10%."
+    - "Spirit is a real healer stat. Meditation keeps 50% of the regeneration while you cast, and Spiritual Guidance changes Spirit into healing."
+    - "The Warcraft Tavern Priest guide says that Forever has haste as a stat. Its stats guide says that no known item has haste."
+    - "Necklaces and off-hand items can have enchants. These slots are new."
+    - "Each profession gives a camp feature in place of a passive stat. The Faction Banner of Tailoring gives Spirit and does not stack with Divine Spirit."
+    - "The 20 library books give the Philanthropist's Ring with 10 spell power (Warcraft Tavern)."
+  enchants:
+    - ["Staff", "Enchant 2H Weapon - Mighty Healing Power, Mighty Spell Power or Spellblasting", "New. Enchanting 300. Each formula costs 240 Merchant's Favor. The 2 Mighty enchants need Fel Crystal, and no source gives where it comes from"]
+    - ["One-hand weapon", "Enchant Weapon - Healing Power or Spell Power", "Enchanting 300. Kami-Labs uses Mighty Intellect on its healer dagger"]
+    - ["Off-hand item", "Enchant Off-Hand - Superior Intellect, Excellent Spirit or Wisdom", "New slot. Enchanting 300"]
+    - ["Necklace", "Enchant Necklace - Healing Power or Spell Power", "New slot. Enchanting 210. The formula costs 120 Merchant's Favor"]
+    - ["Chest", "Enchant Chest - Major Intellect", "Enchanting 290"]
+    - ["Bracers", "Enchant Bracer - Healing Power, Superior Intellect or Greater Spellpower", "Superior Intellect and Greater Spellpower are new"]
+    - ["Gloves", "Enchant Gloves - Healing Power, Shadow Power or Holy Power", "Holy Power is new. It is for a Smite build"]
+    - ["Boots", "Enchant Boots - Spirit or Speed", "Speed is new"]
+    - ["Cloak", "Enchant Cloak - Greater Fire Resistance", "For Onyxia's Lair. Blizzard recommends fire resistance but gives no number"]
+    - ["Leveling", "Enchant Bracer - Minor Healing Power, Enchant Chest - Lesser Intellect", "Cheap enchants at Enchanting 90 and 80. Minor Healing Power is new"]
+  consumables:
+    - ["Leveling", "Minor Wizard Oil", "Enchanting skill 5 in Forever. In Classic it needed skill 45"]
+    - ["Leveling", "Water and crafted food", "Cooked food gives an XP buff while you level (Warcraft Tavern)"]
+    - ["Level 60, healer", "Brilliant Mana Oil, Flask of Distilled Wisdom", "Classic-era effects. Enchanting 300 and Alchemy 300"]
+    - ["Level 60, Shadow", "Brilliant Wizard Oil, Flask of Supreme Power, Elixir of Shadow Power", "Classic-era effects. The recipes are not changed"]
+    - ["Level 60, Shadow", "Major Spellblasting Potion", "New. Alchemy 285. The Kami-Labs simulation uses it. The exact effect is not known"]
+    - ["Level 60", "Major Mana Potion", "Alchemy 295"]
+    - ["Level 60", "Major Healing Potion", "Healing potions come from First Aid in Forever. First Aid 275"]
+    - ["Raids", "Greater Fire Protection Potion", "For Onyxia's Lair. Alchemy 290"]
+    - ["New, effect not known", "Mender's Potions, Cleric's Elixirs, Mageblood Elixirs", "New Alchemy recipes. No source gives the effects"]
+  sources:
+    - {title: "Timesaver.gg: Priest leveling gear, Shadow", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/priest/shadow"}
+    - {title: "Timesaver.gg: Priest leveling gear, Holy", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/priest/holy"}
+    - {title: "Kami-Labs: BiS lists for level 60 (tool in beta)", url: "https://kami-labs.fr/en/bis-list-wow-forever/"}
+    - {title: "Kami-Labs: Shadow Priest build and simulation", url: "https://kami-labs.fr/en/wow-forever/build-pretre-ombre-shadow-magic-wow-forever/"}
+    - {title: "Warcraft Tavern: Priest guide", url: "https://www.warcrafttavern.com/forever/guides/priest/"}
+    - {title: "Warcraft Tavern: Priest leveling guide", url: "https://www.warcrafttavern.com/forever/guides/priest-leveling/"}
+    - {title: "Warcraft Tavern: Shadow Priest guide", url: "https://www.warcrafttavern.com/forever/guides/shadow-priest/"}
+    - {title: "Warcraft Tavern: Holy Priest guide", url: "https://www.warcrafttavern.com/forever/guides/holy-priest/"}
+    - {title: "Warcraft Tavern: weapon trainers", url: "https://www.warcrafttavern.com/forever/guides/weapon-trainers/"}
+    - {title: "Warcraft Tavern: stats", url: "https://www.warcrafttavern.com/forever/guides/stats/"}
+    - {title: "Method.gg: Priest leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents"}
+    - {title: "wowtbc.gg: Shadow Priest item lists for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/shadow-priest/"}
+    - {title: "wowtbc.gg: Holy Priest item lists for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/holy-priest/"}
+    - {title: "LFCarry: sets and crafted tier items", url: "https://lfcarry.com/guides/wow-forever-bis-lists"}
+    - {title: "RankedBoost: hit and spell power", url: "https://rankedboost.com/world-of-warcraft/forever/stats/hit/"}
+    - {title: "Blizzard: raid overview", url: "https://news.blizzard.com/en-us/article/24303009/"}
+
+# ------------------------------------------------------------------ other sections
+professions: |
+  The Classic pair for a Priest is still the best, mostly because you make your own wand. Method recommends that you learn the 2 professions at launch.
+
+  | Rank | Professions | Use them for |
+  |---|---|---|
+  | **S**{ .tier .tier-s } | [Tailoring](../../professions/tailoring.md) + [Enchanting](../../professions/enchanting.md) | Cloth for each level, wands at level 5 and 13, spell power oils, staves and off-hand items |
+  | **A**{ .tier .tier-a } | [Herbalism](../../professions/herbalism.md) + [Alchemy](../../professions/alchemy.md) | Mana potions, flasks and elixirs for raids |
+  | **B**{ .tier .tier-b } | [Herbalism](../../professions/herbalism.md) + [Skinning](../../professions/skinning.md) | Gold while you level, with the smallest interruption (Method) |
+
+  [First Aid](../../professions/first-aid.md) now makes healing potions. Method rates bandages as low value for a Priest. [Cooking](../../professions/cooking.md) and [Fishing](../../professions/fishing.md) are also useful. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+  Professions give no passive stats in Forever. Each profession adds a [camp feature](../../systems/camping.md). Tailoring gives the Faction Banner (Spirit), and Enchanting gives the Enchanted Lute (armor, stats and resistances). Herbalism gives the Incense Candle (Intellect), Alchemy gives the Mana Well (mana regeneration), and Skinning gives the Camp Chair (2% crit).
+
+  A crafting profession gives [Legacy](../../characters/legacy.md) points at skill 150, 225 and 300. A Gnome has 20% fewer device failures with Engineering, but Engineering is not a top profession for a Priest.
+
+legacy: |
+  You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character.
+
+  | Tree | Picks for a Priest |
+  |---|---|
+  | Adventure | **Well Rested** 5/5, then **Talented** 5/5. Talented gives your first talent point up to 5 levels earlier. Thus Mind Flay, Penance and Shadowform also come earlier |
+  | Adventure | **Thrill of Adventure** gives health and mana after a kill in the open world, so you drink less. **Frequent Flier** makes flights cheaper |
+  | Resourcefulness | **Permanence** makes Fortitude, Divine Spirit and Shadow Protection last longer |
+  | Resourcefulness | **Reagent Economy** removes the reagent cost of the 3 Prayer buffs. **The Quick and the Dead** makes corpse runs faster |
+
+mistakes:
+  - "You do not get a wand before level 13."
+  - "You start with Mind Blast in an area with many players. Shadow Word: Pain tags the enemy immediately."
+  - "You forget the cost of water and training. Save money for level 20 and level 40."
+  - "You cast Prayer of Healing on your party in a raid because of an old habit. It heals the party of the target."
+  - "You do not collect library books before level 20."
+  - "You stop a Mind Flay channel early. Improved Mind Flay makes the last hit the strongest."
+  - "You use Shadow Word: Death as a filler when your health is low."
+  - "You use Psychic Scream in a dungeon, and the enemies that run pull more enemies."
+
+faq:
+  - q: "Which path is best for leveling?"
+    a: "Shadow is the most usual answer, and the easiest after about level 28. Discipline is safer at low levels and better if you heal dungeons. Holy is the slowest alone. With dual spec at 40, you can keep a healer spec."
+  - q: "Must I be a specific race for Fear Ward?"
+    a: "No. Fear Ward and Devouring Plague are baseline for each Priest at level 20."
+  - q: "Why does Prayer of Healing not heal my party?"
+    a: "In Forever, it heals the party of the target. Target a player in the group that you want to heal."
+  - q: "Do raids want a Shadow Priest?"
+    a: "Shadow Weaving does not buff other players in Forever. Thus Shadow must get its raid slot with its damage. The lower costs and the larger crits of Shadowform help it. No source has published results from the raids."
+  - q: "Can I heal in Shadowform?"
+    a: "No. In Shadowform you can cast all spells that do not heal. Vampiric Embrace still heals your party."
+  - q: "Is Binding Heal in the game?"
+    a: "No. Before launch, the passive Holy Binding replaced it."
+  - q: "Is Power Infusion in the game?"
+    a: "Yes. In the launch client it is in row 7 of Discipline. It needs 30 Discipline points and Penance."
+
+sources:
+  - {title: "Blizzard: Class Deep Dives, Priest and Warrior", url: "https://news.blizzard.com/en-us/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior"}
+  - {title: "Warcraft Tavern: Priest guide", url: "https://www.warcrafttavern.com/forever/guides/priest/"}
+  - {title: "Warcraft Tavern: Priest leveling guide", url: "https://www.warcrafttavern.com/forever/guides/priest-leveling/"}
+  - {title: "Method.gg: Priest leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents"}
+  - {title: "Mobalytics: Priest guides", url: "https://mobalytics.gg/wow-forever/priest-guides"}
+  - {title: "Mobalytics: Priest talent calculator", url: "https://mobalytics.gg/wow-forever/priest-talent-calculator"}
+  - {title: "Icy Veins: Holy Priest healer guide", url: "https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide"}
+  - {title: "Icy Veins: Discipline Priest healer guide", url: "https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide"}
+  - {title: "Zockify: Priest talent calculator", url: "https://www.zockify.com/forever/priest/"}

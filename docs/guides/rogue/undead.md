@@ -11,7 +11,7 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page covers only what changes for an Undead (Forsaken).</p>
+<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page covers only what changes for an Undead (Forsaken).</p>
 
 </div>
 
@@ -151,7 +151,7 @@ The Classic quests of Tirisfal are still there, with a large addition in the wes
 
 ## Faction notes
 
-- **Poison quest (20):** the Horde chain starts with **Shenthul in Orgrimmar**, not Undercity. Take the zeppelin. Then it sends you to the Barrens and to **Hillsbrad**, near your home city. See the [main guide](index.md#the-poison-quest-level-20).
+- **Poison quest (20):** the Horde chain starts with **Shenthul in Orgrimmar**, not Undercity. Take the zeppelin. Then it sends you to the Barrens and to **Hillsbrad**, near your home city. See the [main guide](index.md#l20).
 - **Library books:** **Owen Thadd** is in the Magic Quarter of Undercity, in your capital.
 - **Mount:** skeletal horses from Zachariah Post in Brill. At Honored with Undercity, you get a 10% discount.
 - **Reputation:** Undercity.

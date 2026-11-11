@@ -12,14 +12,16 @@ search:
 
 <div class="guide-head" data-class="warlock" markdown>
 
-:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Talent guide</span> **DPS**{ .badge .dps }
+:codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Warlock progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
 
 <nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#affliction">Affliction</a> <a href="#demonology">Demonology</a> <a href="#destruction">Destruction</a></nav>
 
 </div>
 
 !!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/warlock/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. Read this page with the [Warlock guide](../guides/warlock/index.md).
+    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/warlock/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Warlock progression](index.md) tells you when each talent becomes important.
 
 Each Warlock tree is a full damage spec in Forever. **Affliction** is the tree for solo leveling. **Demonology** is the safest tree and the PvP tree. **Destruction** is the tree for dungeons and cleave. Most level 60 builds put points in 2 or 3 trees, because Suppression, Improved Corruption, Bane and Ruin help all specs. Blizzard announced an Affliction and Voidwalker hotfix for 10 November. Its effect on these talents is not confirmed.
 
@@ -56,7 +58,7 @@ Each table gives the talent for each level. The *Points* column shows the points
 
     **Leveling**{ .pill .pill--info } **41/10/0**{ .pill .pill--outline }
 
-    The build that all major guides recommend for solo leveling. The first 21 points follow the Warcraft Tavern order from the class guide. After that, this order takes Siphon Life and Wrack earlier and does not use Malediction, which is not in the launch client.
+    The build that all major guides recommend for solo leveling. The first 21 points follow the Warcraft Tavern order from the earlier Codex class guide. After that, this order takes Siphon Life and Wrack earlier and does not use Malediction, which is not in the launch client.
 
     | Level | Talent | Rank | Points | Why |
     |---|---|---|---|---|
@@ -93,7 +95,7 @@ Each table gives the talent for each level. The *Points* column shows the points
 
     **Leveling**{ .pill .pill--info } **20/31/0**{ .pill .pill--outline }
 
-    The safe route to 60 and the route for Hardcore. It puts all points in Demonology from level 10. You get Soul Link at 30 and Demonic Pact at 40. The order follows the Warcraft Tavern Demonology build in the class guide.
+    The safe route to 60 and the route for Hardcore. It puts all points in Demonology from level 10. You get Soul Link at 30 and Demonic Pact at 40. The order follows the Warcraft Tavern Demonology build in the earlier Codex class guide.
 
     | Level | Talent | Rank | Points | Why |
     |---|---|---|---|---|
@@ -131,7 +133,7 @@ Each table gives the talent for each level. The *Points* column shows the points
 
     **Leveling**{ .pill .pill--info } **15/3/33**{ .pill .pill--outline }
 
-    The build for players who level in dungeon groups. It has the best AoE and cleave, but it has less self-healing than Affliction. The order follows the Warcraft Tavern build in the class guide, with Ruin 5/5.
+    The build for players who level in dungeon groups. It has the best AoE and cleave, but it has less self-healing than Affliction. The order follows the Warcraft Tavern build in the earlier Codex class guide, with Ruin 5/5.
 
     | Level | Talent | Rank | Points | Why |
     |---|---|---|---|---|

@@ -12,14 +12,16 @@ search:
 
 <div class="guide-head" data-class="druid" markdown>
 
-:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Talent guide</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+:codex-druid:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Druid progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
 
 <nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#balance">Balance</a> <a href="#feral-combat">Feral Combat</a> <a href="#restoration">Restoration</a></nav>
 
 </div>
 
 !!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/druid/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. Read this page with the [Druid guide](../guides/druid/index.md).
+    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/druid/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Druid progression](index.md) tells you when each talent becomes important.
 
 The Druid has 4 roles in 3 trees. **Feral Combat** is the tree for Cat damage and for the Bear tank. **Balance** is the caster damage tree, and **Restoration** is the healer tree. Some of the best talents for a role are in a different tree. For example, Heart of the Wild and Naturalist are in Restoration, but each Feral and Balance build takes them.
 
@@ -56,7 +58,7 @@ Each table gives the talent for each level. The *Points* column shows the points
 
     **Leveling**{ .pill .pill--info } **0/41/10**{ .pill .pill--outline }
 
-    The route that the class guide recommends. Play as Bear to level 19 and as Cat from level 20. The order follows the Feral timeline of the class guide, adjusted to the launch client. In the client, Leader of the Pack opens at 20 points, and Shifting Power and Primal Bite open at 30 points.
+    The route that the earlier Codex class guide recommends. Play as Bear to level 19 and as Cat from level 20. The order follows the Feral timeline of the earlier Codex class guide, adjusted to the launch client. In the client, Leader of the Pack opens at 20 points, and Shifting Power and Primal Bite open at 30 points.
 
     | Level | Talent | Rank | Points | Why |
     |---|---|---|---|---|
@@ -293,7 +295,7 @@ Balance is the caster damage tree. **Eclipse** opens at 20 points and **Moonkin 
 | **Nature's Grace** | 20 pts | 1 | Non-periodic spell crits make your casts 10% faster and your global cooldown 10% shorter for 3 s | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | 1 point. Different from Classic, where it made the next spell 0.5 s faster. |
 | **Eclipse** **New**{ .pill .pill--new .pill--sm } | 20 pts | 3 | Each Wrath makes your next 2 Starfires 0.17–0.5 s faster. Maximum 4 charges, 15 s | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **B**{ .tier .tier-b } | The core of the Balance rotation. With Improved Starfire, a Starfire can be 1 s faster. |
 | **Moonfury** | 25 pts | 5 | Damage of Arcane and Nature spells +2–10% | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | Take 5/5 in each deep Balance build. |
-| **Moonkin Form** | 30 pts | 1 | A caster form. Omen of Clarity procs 100% more frequently. Armor from items +360%. Party and raid members within 45 yd get +3% crit chance. You cannot cast healing spells | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | The aura is the reason that a raid brings a Moonkin. The class guide says that it does not stack with Leader of the Pack. |
+| **Moonkin Form** | 30 pts | 1 | A caster form. Omen of Clarity procs 100% more frequently. Armor from items +360%. Party and raid members within 45 yd get +3% crit chance. You cannot cast healing spells | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | The aura is the reason that a raid brings a Moonkin. The earlier Codex class guide says that it does not stack with Leader of the Pack. |
 
 ## Feral Combat
 
@@ -402,7 +404,7 @@ Restoration is the healer tree. **Swiftmend** opens at 15 points and **Wild Grow
 | **Bloom** **New**{ .pill .pill--new .pill--sm } | 10 pts | 1 | When Rejuvenation or Regrowth ends at its full duration, the target gets a heal equal to 100% of your Spirit. If a dispel removes the spell, the heal is 50% | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | 1 point. A hotfix on 6 November made the heal work. The value depends on your Spirit. |
 | **Tranquil Spirit** | 15 pts | 5 | Mana cost of Healing Touch and Tranquility −2–10% | **D**{ .tier .tier-d } | **B**{ .tier .tier-b } | **C**{ .tier .tier-c } | Filler to open the deep rows. Weaker in a build that uses HoTs more than Healing Touch. |
 | **Improved Rejuvenation** | 15 pts | 3 | Effect of Rejuvenation +5/10/15% | **C**{ .tier .tier-c } | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | Rejuvenation is your main spell. Improved Regrowth needs 3/3. |
-| **Swiftmend** | 15 pts | 1 | An instant heal on a target that has your Rejuvenation or Regrowth. The heal is equal to the full periodic effect. 15 s cooldown | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | **S**{ .tier .tier-s } | Your instant heal for sudden damage. It opens at 15 points. The class guide says that it removes the HoT, but the tooltip does not confirm this. |
+| **Swiftmend** | 15 pts | 1 | An instant heal on a target that has your Rejuvenation or Regrowth. The heal is equal to the full periodic effect. 15 s cooldown | **B**{ .tier .tier-b } | **S**{ .tier .tier-s } | **S**{ .tier .tier-s } | Your instant heal for sudden damage. It opens at 15 points. The earlier Codex class guide says that it removes the HoT, but the tooltip does not confirm this. |
 | **Nature's Swiftness**<br><small>Needs Naturalist</small> | 20 pts | 1 | Your next Nature spell is instant. 3 min cooldown | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | **S**{ .tier .tier-s } | An instant Healing Touch for emergencies. It also works with Entangling Roots and Wrath. |
 | **Living Spirit** **New**{ .pill .pill--new .pill--sm } | 20 pts | 3 | Spirit +5/10/15% | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | More mana with Reflection and a larger Bloom. Wild Growth needs 3/3. |
 | **Improved Tranquility** | 20 pts | 2 | Tranquility threat −50/100% and cooldown −30/60% | **D**{ .tier .tier-d } | **C**{ .tier .tier-c } | **C**{ .tier .tier-c } | A personal preference. Tranquility heals only your party. |
@@ -424,7 +426,7 @@ Restoration is the healer tree. **Swiftmend** opens at 15 points and **Wild Grow
     This is not confirmed. Beta-era guides gave Feral Charge a Cat version. The tooltip in the launch client lists only Bear Form and Dire Bear Form.
 
 ??? question "Do I take Moonkin Form or Leader of the Pack for the raid aura?"
-    The 2 auras give 3% crit chance to the party and raid within 45 yd. The class guide says that they do not stack. Thus, a raid needs only 1 of them.
+    The 2 auras give 3% crit chance to the party and raid within 45 yd. The earlier Codex class guide says that they do not stack. Thus, a raid needs only 1 of them.
 
 ## Sources
 

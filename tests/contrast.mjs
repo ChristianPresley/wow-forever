@@ -7,7 +7,7 @@ import { startServer } from "./serve.mjs";
 
 const SITE_DIR = process.env.SITE_DIR || "site";
 const OUT = process.env.REPORT_DIR || "tests/reports";
-const PAGES = (process.env.CONTRAST_PAGES || ",about/,characters/classes/mage/,guides/mage/human/,content/dungeons/hall-of-thanes/,community/glossary/,sources/").split(",");
+const PAGES = (process.env.CONTRAST_PAGES || ",about/,guides/mage/,guides/mage/human/,content/dungeons/hall-of-thanes/,community/glossary/,sources/").split(",");
 const ROLES = {
   "body text": ".md-typeset p", "link": ".md-typeset p a", "h1": ".md-typeset h1", "h2": ".md-typeset h2",
   "header title": ".md-header__topic", "tab link": ".md-tabs__link", "sidebar link": ".md-nav--primary .md-nav__link",

@@ -1,0 +1,825 @@
+class: Shaman
+badges: [heal, dps]
+description: "Shaman progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
+aka: "Sham · Shammy · Ele (Elemental) · Enh or Enhance (Enhancement) · Resto shaman"
+
+intro: |
+  The Shaman is a hybrid that fights with weapons, spells and totems. This page follows 1 Shaman from character creation to the raids, level by level. It tells you what changes in each level range: the totems and spells that you train, the way that you fight and the dungeons.
+
+glance:
+  - ["Roles", "Melee damage (Enhancement), ranged damage (Elemental), healer (Restoration)"]
+  - ["Armor", "**Leather**{ .pill .pill--leather }, then **Mail**{ .pill .pill--mail } from level 40. Shields"]
+  - ["Weapons", "One-hand and two-hand maces, staves, one-hand and two-hand axes, fist weapons, daggers"]
+  - ["Resource", "**Mana**{ .pill .pill--mana }"]
+  - ["Races", "5 combinations: 1 Alliance, 4 Horde"]
+  - ["Totems", "4 elements. 1 totem of each element at a time"]
+
+strengths:
+  - "Group buffs that each group wants: Windfury, Flametongue, Strength of Earth and Mana Spring Totem"
+  - "Resistance totems now cover the full raid"
+  - "Much utility: Purge, Earth Shock interrupts, Grounding Totem, Tremor Totem and Earthbind Totem"
+  - "Each spec can heal in an emergency, and Reincarnation can save a group after a wipe"
+  - "Enhancement levels quickly and uses little mana"
+
+weaknesses:
+  - "High mana use, most of all for Elemental during leveling"
+  - "Totems do not move with you. Totemic Call at level 22 brings them to you"
+  - "No tank spec. Blizzard removed Shield Specialization"
+  - "No dual wield in the launch client"
+  - "You need 4 class quests before you can use all totems"
+
+changes:
+  added: ["1 s totem GCD", "5 minute totems", "Call of the Elements", "Totemic Recall", "Totemic Call", "Lightning Overload", "Maelstrom Weapon", "Rage of the Farseer", "Water Shield", "Riptide", "Call of Air weapons", "Dwarf Shaman"]
+  removed: ["Elemental Mastery", "Lava Burst", "Fire Nova Totem", "Tranquil Air Totem", "Shield Specialization", "Nature's Guidance"]
+  notes:
+    - "Totems have a global cooldown (GCD) of **1.0 s** (1.5 s in Classic). Persistent totems last **5 minutes** (2 minutes in Classic)."
+    - "A new totem tracker shows your active totems. Right-click a totem in the tracker to destroy it."
+    - "**Call of the Elements** (20), **Call of the Ancestors** (30) and **Call of the Spirits** (40) are totem sets. Each puts down 4 totems with one 3 second cast."
+    - "**Totemic Recall** (20) refunds 25% of the mana of your totems. **Totemic Call** (22) moves your totems to you. Its name in the beta was Totemic Projection."
+    - "**Fire Nova** is now a spell. It comes out of your active Fire totem."
+    - "Windfury Totem and Flametongue Totem are group buffs, and Windfury Totem gives an extra attack. Totem twisting is not necessary. Grace of Air Totem works without it."
+    - "Weapon imbues last 60 minutes. They stack with sharpening stones, weightstones and oils."
+    - "Lightning Bolt and Chain Lightning cast faster. Chain Lightning has a 2.5 s cast time again. The top rank of Lightning Bolt does 80% more damage."
+    - "Two-hand axes and two-hand maces need no talent. Enhancing Totems, Weapon Mastery and Improved Weapon Totems are baseline."
+    - "Lightning Mastery takes the position of Elemental Mastery in the Elemental Combat tree. The launch client has no Lava Burst."
+    - "The level 30 class quest *Call of Air* is new. It gives the Air Totem and a weapon for your spec."
+    - "The Alliance has Shamans for the first time, as Dwarves. PvP equipment has separate healer, melee and caster sets."
+
+# ------------------------------------------------------------------ chapters
+chapters:
+  - id: start
+    title: "Make your Shaman"
+    story: |
+      A Shaman can do 3 jobs. Enhancement hits with a slow two-hand weapon and adds Shocks. Elemental casts Lightning Bolt from range. Restoration heals with Healing Wave and Chain Heal. The class has no tank spec. In Forever, Blizzard made Elemental and Enhancement full damage specs.
+
+      Totems are the most important tools of the class. You have 4 elements: Earth, Fire, Water and Air. You can have 1 totem of each element at a time. A totem gives a buff to your group, heals it, cleanses it or attacks enemies.
+
+      In Forever, totems need much less work than in Classic. They cost less time to put down, they last longer, and 1 cast puts down a full set. The Alliance can also play the class now, as a Dwarf.
+
+      You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. The race decides your faction and your start zone, and you cannot change it. You can change the talents and the equipment later, so select the path that you want for leveling.
+    goals:
+      - "Select a race. Read its Race add-on."
+      - "Select a talent path. Enhancement is the usual selection for a first Shaman."
+      - "Select the equipment set of your talent path."
+      - "Read the [Professions](#professions) section before you learn a profession."
+
+  - id: l1
+    title: "Rockbiter and the Earth totem"
+    story: |
+      You start with Lightning Bolt and Rockbiter Weapon. Rockbiter Weapon is a weapon imbue: a buff on your weapon that increases your melee damage. Put it on your weapon and renew it each hour. Start each fight with Lightning Bolt from maximum range, then hit the enemy with your weapon.
+
+      At level 4 you train Earth Shock, an instant spell that also stops a cast. At level 4 your trainer also gives the class quest *Call of Earth*. You drink Earth Sapta at a spirit stone and defeat a Minor Manifestation of Earth. The reward is the Earth Totem and your first totem spell, Stoneskin Totem.
+
+      You need 1 class quest for each element, at levels 4, 10, 20 and 30. In Classic, each quest gave a totem item that you kept in your bags. Warcraft Tavern confirms only the quests and their levels for Forever.
+
+      Earthbind Totem at level 6 slows all enemies near it. Stoneclaw Totem at level 8 pulls enemies away from you for some seconds. These 2 totems are your first escape tools. Lightning Shield at level 8 does damage to enemies that hit you.
+
+      A solo kill takes 10 to 15 seconds. All 3 specs fight in the same way before level 10: Lightning Bolt, Earth Shock, then melee. The developers say that levels 1 to 20 take about 20 hours.
+    train:
+      - [1, "Lightning Bolt, Rockbiter Weapon", "Your first damage spell and your first weapon imbue"]
+      - [4, "Earth Shock", "Instant damage. It also stops a cast"]
+      - [4, "Stoneskin Totem", "The reward of the Earth totem quest. Skyborne get the quest at level 3 (Warcraft Tavern)"]
+      - [6, "Earthbind Totem", "Slows enemies near the totem. Use it to run away"]
+      - [8, "Stoneclaw Totem, Lightning Shield", "Stoneclaw Totem takes enemies off you for some seconds"]
+    tip: |
+      The game does not put new spells on your action bars. Open your spellbook after each visit to the trainer.
+    hardcore: |
+      Keep Stoneclaw Totem and Earthbind Totem on keys that you can reach quickly. If a second enemy comes, put down Stoneclaw Totem and run.
+    goals:
+      - "Do *Call of Earth* at level 4."
+      - "Keep Rockbiter Weapon on your weapon."
+      - "Learn your professions. A starter quest lets you select a gathering profession and gives +2 skill."
+
+  - id: l10
+    title: "The Fire totem and your first talents"
+    story: |
+      At level 10 you get your first talent point, and your trainer gives the class quest *Call of Fire*. The quest has many steps. Its reward is the Fire Totem and Searing Totem. Do it immediately. Searing Totem attacks your target for you, and it is a larger gain than any item at this level.
+
+      Level 10 also gives Flame Shock, Flametongue Weapon and Strength of Earth Totem. Your pull now has a plan. Put down Searing Totem and Strength of Earth Totem, pull the enemy to the totems, and fight there.
+
+      Level 12 adds Purge, Ancestral Spirit and Fire Nova. Purge removes a buff from an enemy. Fire Nova is a burst of area damage (AoE) that comes from your Fire totem, so stand near the totem when you use it.
+
+      Your first dungeons open at level 13. Quests give much more XP than dungeon enemies, so do each dungeon for its quests. In a group, your totems are your most important job, so ask the other players which totems they need. Interrupt casters with Earth Shock, and Purge enemy buffs. Cure Poison at 16 and Tremor Totem at 18 are more group tools.
+
+      At level 14, start the scavenger hunt for the Cozy Sleeping Bag. It gives an XP buff and rested XP. See [Leveling](../../characters/leveling.md).
+    train:
+      - [10, "Searing Totem", "The reward of the Fire totem quest. A large damage increase"]
+      - [10, "Flame Shock, Flametongue Weapon, Strength of Earth Totem", "A damage over time Shock, a second imbue and your first buff totem"]
+      - [12, "Fire Nova, Purge, Ancestral Spirit", "AoE from your Fire totem, buff removal and a resurrection"]
+      - [16, "Cure Poison", "A group job in dungeons"]
+      - [18, "Tremor Totem", "Removes Fear, charm and sleep from your group"]
+    dungeons:
+      - {id: hall-of-thanes, levels: "13–20", note: "New. It is in Ironforge"}
+      - {name: "Ragefire Chasm", levels: "13–18", note: "It is in Orgrimmar"}
+      - {id: ruins-of-lordaeron, levels: "15–22", note: "New. It is in Tirisfal Glades"}
+      - {name: "Wailing Caverns", levels: "15–24"}
+      - {name: "Deadmines", levels: "17–26"}
+    tip: |
+      All Shocks have the same cooldown. Keep Earth Shock for an enemy cast when a caster is in the pull.
+    goals:
+      - "Do *Call of Fire* at level 10 and spend your first talent point."
+      - "Do your first dungeon for its quests."
+      - "Start the Cozy Sleeping Bag scavenger hunt at level 14."
+
+  - id: l20
+    title: "Ghost Wolf and the Water totem"
+    story: |
+      Level 20 is the most important level before 40. You train Ghost Wolf, Call of the Elements, Totemic Recall, Frost Shock, Frostbrand Weapon and Lesser Healing Wave. Your trainer also gives the class quest *Call of Water*.
+
+      Ghost Wolf is your travel form until you have a mount. Call of the Elements puts down a set of 4 totems with one 3 second cast. Totemic Recall removes your totems and refunds 25% of their mana. Use the 2 spells before and after each long fight.
+
+      *Call of Water* is the longest totem quest. Warcraft Tavern says that the Alliance version needs about 2 hours of travel. The reward is the Water Totem and Healing Stream Totem. Mana Spring Totem follows at level 26.
+
+      Totemic Call at level 22 moves your totems to you. In a dungeon, use it when the tank moves the enemies, and you do not put down the totems again. Cure Disease and Poison Cleansing Totem also come at 22. Use Poison Cleansing Totem against spiders and snakes. Magma Totem at 26 is your AoE Fire totem.
+
+      At 20, you can give 10 library books for the first book quest. No source gives the Shaman rewards. Reports name Garion Wendell in Stormwind and Owen Thadd in the Undercity as the quest NPCs. No source confirms that Shamans use these NPCs. Level 25 gives the *Shaman: Novice* Legacy Point to the first Shaman on your account. See [Legacy](../../characters/legacy.md).
+    train:
+      - [20, "Ghost Wolf", "Faster travel. An escape outdoors"]
+      - [20, "Call of the Elements, Totemic Recall", "A set of 4 totems in 1 cast, and a mana refund when you remove them"]
+      - [20, "Frost Shock, Frostbrand Weapon, Lesser Healing Wave", "A slow for kiting and a fast heal"]
+      - [20, "Healing Stream Totem", "The reward of the Water totem quest"]
+      - [22, "Totemic Call, Cure Disease, Poison Cleansing Totem", "Totemic Call moves your totems to you. It has a 30 second cooldown"]
+      - [26, "Magma Totem, Mana Spring Totem", "An AoE Fire totem, and mana for your group"]
+    dungeons:
+      - {name: "Shadowfang Keep", levels: "20–30"}
+      - {name: "Blackfathom Deeps", levels: "24–32"}
+      - {name: "The Stockade", levels: "25–29"}
+      - {id: excavation-site, levels: "26–33", note: "New. It is short, with 3 bosses"}
+      - {id: city-of-dalaran, levels: "28–35", note: "New. Dalaran is hostile to the Horde"}
+    extra: |
+      ??? example "Macros for Earth Shock, mouseover heals and burst"
+
+          ```
+          #showtooltip Earth Shock
+          /stopcasting
+          /cast Earth Shock
+          ```
+
+          ```
+          #showtooltip Lesser Healing Wave
+          /cast [@mouseover,help,nodead][] Lesser Healing Wave
+          ```
+
+          ```
+          #showtooltip Stormstrike
+          /cast Blood Fury
+          /cast Stormstrike
+          ```
+
+          The first macro stops your cast and interrupts the enemy. The second macro heals the player under your mouse pointer. The third macro is for an Orc with Stormstrike, which the Enhancement path gets at level 25. A Troll uses Berserking in its place.
+
+          The client blocks add-ons such as WeakAuras, but these macros work. See [Add-ons & UI](../../systems/addons.md). Give separate keys to your Call spells, Totemic Call, Earth Shock, Purge, Grounding Totem, Tremor Totem, Earthbind Totem and Ghost Wolf.
+    tip: |
+      The totem GCD is 1 second. Thus, it costs little to change 1 totem during a fight.
+    hardcore: |
+      Earthbind Totem, Frost Shock and Ghost Wolf are your escape tools. Before a dangerous pull, make sure that Ghost Wolf is not on cooldown. Keep a rank of Lesser Healing Wave on your bar in each spec.
+    goals:
+      - "Train Ghost Wolf and Call of the Elements at level 20."
+      - "Do *Call of Water* between level 20 and level 22."
+      - "Train Totemic Call at level 22 and Mana Spring Totem at level 26."
+
+  - id: l30
+    title: "The Air totem and Windfury"
+    story: |
+      At level 30 you get the last of the 4 elements, and Enhancement damage increases much. You train Windfury Weapon, Grounding Totem, Reincarnation and Call of the Ancestors. Your trainer gives the last totem quest, *Call of Air*.
+
+      *Call of Air* is new at this level in Forever. It gives the Air Totem. Its quest chain also gives a rare weapon for your spec and a shield. The Equipment add-on below describes the 3 weapons. Method.gg compares the Enhancement weapon with the Whirlwind Axe of the Warrior.
+
+      Windfury Weapon gives extra attacks, so a slow two-hand weapon hits very hard with it. Grounding Totem absorbs 1 harmful spell. Reincarnation lets you come back to life after a wipe, and then you can resurrect the group. It needs an Ankh, unless you have the Legacy talent Reagent Economy.
+
+      At level 32 you train Chain Lightning and Windfury Totem. Each group with melee players wants Windfury Totem, so you find dungeon groups more easily from this level. Use Grounding Totem in dungeons against dangerous casters.
+
+      The new battleground Battle for the Darkspear Islands opens at level 30. Start to save gold now. At level 40 you need 100g for riding. Dual spec gives you a second talent set, and it costs 50g. The second book quest at 35 needs 20 library books.
+    train:
+      - [30, "Windfury Weapon", "Extra attacks. The main imbue for Enhancement from this level"]
+      - [30, "Grounding Totem, Reincarnation, Call of the Ancestors", "A spell absorb, a self-resurrection and a second totem set"]
+      - [30, "Air Totem (class quest)", "It opens the Air totems. The chain also gives a spec weapon"]
+      - [32, "Chain Lightning, Windfury Totem", "A spell that hits more than 1 target, and the melee group buff"]
+    dungeons:
+      - {name: "Razorfen Kraul and Gnomeregan", levels: "29–38", note: "The Call of Air chain needs an item from the last boss of Razorfen Kraul (Kami-Labs, beta)"}
+      - {name: "Scarlet Monastery", levels: "30–46", note: "4 wings. Tremor Totem helps in the Library and the Cathedral"}
+      - {id: drowned-city, levels: "35–42", note: "New. It is on the coast of Stranglethorn Vale"}
+    extra: |
+      !!! conflict "Conflict: the Call of Air chain"
+          Kami-Labs describes the weapon chain from the beta. It needs an item from the last boss of Razorfen Kraul and 20 totems from 4 zones. It ends with a level 40 elite event in Thousand Needles. No source gives the quest names for the launch version. Reports name the chain *The Tempest's Weapons*.
+    warn: |
+      Kami-Labs (beta) gives level 34 to 40 for the enemies of the weapon chain. Do the Air Totem part at level 30. Do the weapon part later, or with a group.
+    hardcore: |
+      No source confirms how Reincarnation works in Hardcore. Do not make it part of your plan. Grounding Totem stops 1 dangerous spell, such as the Polymorph or the Fear of an elite caster.
+    goals:
+      - "Do *Call of Air* at level 30."
+      - "Get the spec weapon from the chain before level 40."
+      - "Save 150g before level 40."
+
+  - id: l40
+    title: "Mail armor and a healer spec"
+    story: |
+      Level 40 changes much. You can train mail armor at your class trainer (Warcraft Tavern). You can buy riding for 100g, and the price includes your first mount. You can buy dual spec for 50g from your trainer. You also train Call of the Spirits, your third totem set.
+
+      Dual spec is very useful for a hybrid. Keep your quest spec in 1 spec, and make the second spec a Restoration spec. Groups always need healers. The group finder is only a list, so a healer spec gets you into groups more quickly. You then need a second set of items, so keep each healer item that you find.
+
+      You change talents at a class trainer in a capital city. A talent change in 1 spec still costs a respec fee. The fee for each spec decreases to 1g with time.
+
+      With 3 Call spells, you can keep 1 set for solo fights, 1 for melee groups and 1 for caster groups. Windfury Totem and Strength of Earth Totem are for melee groups. Mana Spring Totem and Flametongue Totem are for casters.
+
+      The new zone Riverglades is for levels 35 to 45. It is about as large as Stranglethorn Vale, and it has 150 to 200 quests. A new ferry goes from Steamwheedle Port in Tanaris to Powderfuse Port in Riverglades. At 45, the third book quest needs 25 library books. Level 45 also gives the *Shaman: Experienced* Legacy Point.
+    train:
+      - [40, "Call of the Spirits", "Your third totem set"]
+      - [40, "Mail armor", "A skill from the class trainer (Warcraft Tavern)"]
+    dungeons:
+      - {id: kroldok-stronghold, levels: "40–47", note: "New. It is in Riverglades"}
+      - {name: "Razorfen Downs", levels: "37–46"}
+      - {name: "Uldaman", levels: "41–51"}
+      - {name: "Zul'Farrak", levels: "44–54"}
+    warn: |
+      Buy riding before dual spec if you do not have 150g. A mount saves more time than a second spec.
+    tip: |
+      No rule makes mail better than leather. Take the item with the better stats for your spec.
+    goals:
+      - "Train mail armor and Call of the Spirits at level 40."
+      - "Buy riding (100g), then dual spec (50g)."
+      - "Make a Restoration second spec for dungeons."
+
+  - id: l50
+    title: "Hit, mana and the last dungeons"
+    story: |
+      From level 50 you train only higher ranks of your spells. The change in these levels comes from your talents and your items. The main tree of your build is complete, so the last points go into the other 2 trees. The hit and mana talents are there.
+
+      Hit becomes important near level 60. Tidal Focus gives 5% hit to the 2 damage paths, so you need less hit from items.
+
+      These levels have the most dungeons. Reportedly, each boss in the new dungeons drops a blue item. Thus, you start to collect your level 60 equipment in these dungeons. Heal them in your second spec if a group has no healer. Before each boss, ask which totems the group needs, and move them with Totemic Call during the fight.
+
+      In the open world, Azshara has many new quests. Many enemies in Un'Goro Crater, Azshara and Silithus are elementals. Training is a large cost in these levels. For all classes, all spells from 1 to 60 cost about 206g to 207g.
+
+      The world-first group to reach level 60 had a Shaman. The group used large AoE pulls, about 3 days after launch.
+    dungeons:
+      - {id: alcaz-prison, levels: "48–55", note: "New. It is in Dustwallow Marsh"}
+      - {name: "Maraudon", levels: "46–55"}
+      - {name: "Sunken Temple and Blackrock Depths", levels: "50–60"}
+      - {id: blackmaw-hold, levels: "55–60", note: "New. It is in Azshara"}
+      - {name: "Lower Blackrock Spire and Dire Maul", levels: "54–60"}
+      - {id: shapers-terrace, levels: "58–60", note: "New. It is in Un'Goro Crater"}
+    tip: |
+      Meeting Stones cannot summon in Forever. Go to the dungeon entrance.
+    goals:
+      - "Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests."
+      - "Keep 1 set of items for your second spec."
+      - "Save gold for the fast mount at level 60 (1,000g)."
+
+  - id: l60
+    title: "Select your raid role"
+    story: |
+      At level 60 you get the *Shaman: Master* Legacy Point. Mount Hyjal opens through Darkwhisper Gorge in Winterspring, and the 2 new raids are there. The fast mount costs 1,000g. The game has no flying mounts.
+
+      All 3 launch raids open on 9 December 2026. The raids have no difficulty modes. Blizzard says that the difficulty comes from preparation: equipment, consumables and strategy.
+
+      No source has a tested item list for a level 60 Shaman. Do the level 60 dungeons, most of all the new dungeons. Upper Blackrock Spire has 10 players, so it is the nearest thing to a raid before 9 December.
+
+      Decide your raid role now. Restoration always gets a raid position. Elemental and Enhancement are full damage specs in Forever, but no source has published simulations. Respec to a level 60 build of your path.
+
+      Do the attunement for Onyxia's Lair. It gives the Drakefire Amulet. It is not account-wide, so each character must do it. Keep items with Fire resistance for this raid.
+
+      If you play PvP, collect the honor set for your role. A blue part and an Emboldened Seal make an epic part.
+    dungeons:
+      - {id: blackmaw-hold, levels: "55–60"}
+      - {id: shapers-terrace, levels: "58–60"}
+      - {name: "Scholomance and Stratholme", levels: "58–60"}
+      - {name: "Upper Blackrock Spire (10 players)", levels: "59–60", note: "It drops parts of the Elements set"}
+    extra: |
+      !!! conflict "Conflict: the level 60 builds"
+          Warcraft Tavern made its builds before the build of 3 November. That build removed Lava Burst, added Call of Thunder and changed the name of Elemental Mastery to Lightning Mastery. The raid builds on this page use the point splits of Warcraft Tavern with the talents of the launch client. Read the talent window in the game before you spend points.
+    goals:
+      - "Respec to a level 60 build."
+      - "Do the attunement for Onyxia's Lair."
+      - "Collect consumables before 9 December."
+
+  - id: raid
+    title: "Totems for the raid and for PvP"
+    story: |
+      **The Barrow Deeps** has 10 players. With so few players, the totems of 1 Shaman can possibly cover most of the raid. The raid will ask for your strongest buff totem. See [The Barrow Deeps](../../content/raids/barrow-deeps.md).
+
+      **Hyjal Summit** has 20 players and 13 bosses. Plan the totems for each group together with the other Shamans. See [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+      **Onyxia's Lair** has 40 players and much Fire damage. Fire Resistance Totem now covers the full raid, so the raid leader will ask for it. See [Onyxia's Lair](../../content/raids/onyxias-lair.md).
+
+      In each raid, ask your group which totems it needs. Use Totemic Call when the fight moves. Imbues now stack with stones and oils, so use the 2 together.
+
+      The new Battle for the Darkspear Islands is a 15 against 15 battleground with 4 bases and a central flag. Fan sites say that Warsong Gulch, Arathi Basin and Alterac Valley are also live. Ghost Wolf and Earthbind Totem make you a good flag escort and a good base defender. Purge removes enemy buffs, and Grounding Totem absorbs 1 spell. Shamans have 3 honor sets: healer, melee and caster. See [PvP](../../content/pvp/index.md) and [Battlegrounds](../../content/pvp/battlegrounds.md).
+    extra: |
+      | Enemy in PvP | What you do |
+      |---|---|
+      | Warlock | Use Tremor Totem against Fear. Use Grounding Totem against Death Coil or Fear. Purge the buffs |
+      | Mage | Use Grounding Totem against Polymorph. Use Frost Shock against kiting. Interrupt with Earth Shock |
+      | Rogue | Stoneclaw Totem absorbs hits |
+      | Warrior | Kite with Frost Shock and Earthbind Totem. As Elemental, do not fight in melee |
+      | Priest | Use Tremor Totem against Psychic Scream. Purge the shields |
+      | Paladin | Purge the blessings. Holy Strike and Seal of Fury make them more dangerous than in Classic |
+      | Druid | Purge the heals over time. Use Earth Shock on the heal casts |
+      | Hunter | Use Ghost Wolf to get near. Grounding Totem absorbs 1 spell |
+    hardcore: |
+      [Hardcore](../../about/hardcore.md) comes in winter 2026/27, and no date is known. On a PvP ruleset, Earthbind Totem and Ghost Wolf help you to escape in the open world. Legacy Points from Hardcore apply to other rulesets, but not the reverse.
+
+# ------------------------------------------------------------------ races
+races:
+  - id: orc
+    name: Orc
+    faction: horde
+    status: Classic
+    pitch: "The burst and PvP selection. Blood Fury gives 10% attack power and spell power for 15 seconds, and Hardiness makes stuns 20% shorter."
+    start: |
+      You start in the Valley of Trials in Durotar. The Shaman trainer is in the Den (Classic trainer: Shikrik). For *Call of Earth*, the trainer sends you to an earth spirit on the hills of the valley. At level 6, go to Razor Hill, which has a Shaman trainer (Classic: Swart). The trainers of Orgrimmar are in the Valley of Wisdom (Classic location).
+    notes:
+      l10: "Your trainer starts *Call of Fire*. No source gives the Forever route. In Classic it went through Durotar and the Barrens. Ragefire Chasm is in Orgrimmar."
+      l20: "In Classic, *Call of Water* was a quest chain in the Barrens. The Horde has about 15 Shaman trainers, so you can train near most quest zones."
+      l40: "Use Blood Fury together with Rage of the Farseer or with your first Lightning Bolts on an elite. The cooldown is 2 minutes."
+      raid: "Shatter Curse removes curses and Warlock Banes. A Shaman has no other curse removal. Hardiness makes Cheap Shot and Kidney Shot shorter."
+  - id: troll
+    name: Troll
+    faction: horde
+    status: Classic
+    pitch: "The flexible selection. Berserking gives 10% cast speed and attack speed for 15 seconds, and it helps all 3 specs."
+    start: |
+      You start in the Valley of Trials in Durotar, with the Orcs. The Shaman trainer is in the Den (Classic trainer: Shikrik). At level 6, go to Sen'jin Village and Razor Hill. Razor Hill has a Shaman trainer (Classic: Swart). The trainers of Orgrimmar are in the Valley of Wisdom (Classic location).
+    notes:
+      l1: "Beast Slaying gives +5% damage to Beasts. Many enemies in Durotar are Beasts."
+      l10: "Your trainer starts *Call of Fire*. No source gives the Forever route. After a fight, use Rapid Regeneration in place of a drink or a heal."
+      l30: "The Battle for the Darkspear Islands opens at level 30. You fight for the Darkspear Raiders. The Drowned City is a sunken troll ruin west of Grom'gol."
+      l60: "Use Berserking at the start of a boss fight. Rapid Regeneration heals 50% of your health during 6 seconds, but an action stops it."
+  - id: tauren
+    name: Tauren
+    faction: horde
+    status: Classic
+    pitch: "The defensive selection. War Stomp stuns enemies near you for 2 seconds, and Endurance gives 5% health. Warcraft Tavern rates the racials as the weakest for damage."
+    start: |
+      You start in Camp Narache in Mulgore. The Shaman trainer is in the camp (Classic trainer: Meela Dawnstrider). In Classic, *Call of Earth* sends you to an earth spirit on Red Cloud Mesa. At level 6, go to Bloodhoof Village, which has a Shaman trainer (Classic: Narm Skychaser). The trainers of Thunder Bluff are on Elder Rise (Classic location).
+    notes:
+      l10: "Your trainer starts *Call of Fire*. No source gives the Forever route. With Herbalism, Cultivation gives extra herbs."
+      l20: "In Classic, *Call of Water* used the Barrens and Thousand Needles. A Tauren can stay in Kalimdor for most levels."
+      l30: "War Stomp stuns the enemies near you for 2 seconds. Use it, then cast a heal. A path from Skywatcher Plateau in Mulgore goes to Desolace."
+      raid: "War Stomp is the best racial for a healer in melee range. A 5 November hotfix made Plainsrunning weaker, and you lose it when you get a flag."
+  - id: skyborne-windshaper
+    name: Skyborne (Windshaper)
+    faction: horde
+    status: New
+    pitch: "New in Forever, and a paid race. Wind Blessed gives permanent haste to all 3 specs. Warcraft Tavern rates it the strongest Shaman race."
+    start: |
+      You start at Thendal Village on [Zephras Isle](../../world/zephras-isle.md). The trainers are in the capital, Valanaar. Warcraft Tavern says that Skyborne get the Earth totem quest at level 3. Reportedly, the island quests take you to level 12 to 14. To play a Skyborne, you must have the Skyborne Heroic Pack or a higher edition.
+    notes:
+      l10: "The island quest *Meddlesome Mages* gives the relic Totem of Charged Flames (Warcraft Tavern only). Leave on the airship from the west Skydock to Skywatcher Plateau in Mulgore."
+      l20: "No source confirms that Skyborne use the standard Horde quests for the Water and Air totems. Ask your trainer in Thunder Bluff or Orgrimmar."
+      l50: "Elemental Insight gives +5% damage against Elementals. Un'Goro Crater, Azshara and Silithus have many."
+      raid: "Sources give Wind Blessed as 1%, 2% or 3% haste. The latest official notes say 2%. Skysight gives 15% movement speed for 15 seconds."
+  - id: dwarf
+    name: Dwarf
+    faction: alliance
+    status: New
+    pitch: "New in Forever, and the only Alliance Shaman. Artisan's Precision gives 1% hit, and Stoneform removes bleeds, poisons and diseases."
+    start: |
+      You start at Anvilmar in Coldridge Valley. Your trainer, Teo Hammerstorm, is in Anvilmar. For *Call of Earth*, he asks for 2 Iceclaw Bear Pendants from Frostmane Troll Whelps. Then you drink the Earth Sapta at the Earth Spirit Stone. At level 6, go to Kharanos. Reportedly, the trainer Ingrid Dunwald is there. Warcraft Tavern lists Eldrun Stormbreaker in Ironforge, and no Shaman trainer in Stormwind or Darnassus.
+    notes:
+      l1: "Big Game Hunter gives +5% damage to Beasts. The trainer names are from Warcraft Tavern. Check them in the game."
+      l10: "*Call of Fire* starts with Bruegs Kindleborn in Dun Morogh, near the tunnel to Loch Modan. He sends you to Braldir Ashmantle in Loch Modan. You need items from troggs in Silver Stream Mine and Stonesplinter Valley. These troggs are up to level 14 and stand in groups. Complete the quest at level 11 or 12. Hall of Thanes is in Ironforge."
+      l20: "*Call of Water* starts with Norric Lochthane in the north of Loch Modan. You fill waterskins in the Wetlands, Redridge Mountains and Ashenvale. The quest ends at Stendel's Pond in Westfall. Plan your training trips to Ironforge. The Deeprun Tram goes there from Stormwind."
+      l30: "*Call of Air* sends you to Veyric Thundervein in Arathi Highlands, near the Shard of Myzrael. Warcraft Tavern says that the game shows his name as Thunderhame. Dalaran is friendly to you."
+      l60: "Artisan's Precision gives 1% hit with attacks and spells. You need 1% less hit from items."
+      raid: "The Alliance never had Shaman totems before. Tell your group which totems you put down. Stoneform removes Rogue poisons and Warrior bleeds, and it decreases physical damage by 10% for 8 seconds."
+
+factions:
+  alliance:
+    l10: "Quest in Loch Modan from level 10. Then take the Deeprun Tram to Stormwind for Westfall, or the new boat from Stormwind Harbor to Darkshore."
+    l20: "Quest in the Wetlands, Redridge Mountains, Duskwood and Ashenvale. The new dungeon Excavation Site is in the Wetlands, on the route of the Water totem quest."
+    l30: "Quest in Hillsbrad Foothills, the Alterac Mountains, Arathi Highlands, Stranglethorn Vale and Desolace. The centaur quests in Desolace need level 35. The quests of City of Dalaran give Kirin Tor reputation."
+    l40: "The Alliance town in Riverglades is Farholde Keep. Then quest in Dustwallow Marsh, the Badlands, Feralas, the Hinterlands and Tanaris."
+    l50: "Quest in Searing Gorge, Burning Steppes, Azshara, Un'Goro Crater, Felwood, the Plaguelands and Winterspring."
+    l60: "The Alliance PvP vendors are in the Champion's Hall in Stormwind. In the Battle for the Darkspear Islands you fight for the Theramore Expeditionary Force."
+  horde:
+    l10: "Quest in the Barrens. Ragefire Chasm in Orgrimmar is your first dungeon. Silverpine Forest and the Ruins of Lordaeron need a zeppelin trip to the Undercity."
+    l20: "Quest in Stonetalon Mountains, Ashenvale, Hillsbrad Foothills and Thousand Needles."
+    l30: "Quest in Arathi Highlands, Stranglethorn Vale and Desolace. The centaur quests in Desolace need level 35. NPCs in Dalaran attack Horde characters on sight."
+    l40: "The Horde town in Riverglades is Rog'mar. Then quest in Dustwallow Marsh, the Badlands, Swamp of Sorrows, Tanaris, Feralas and the Hinterlands. Stonard has a Shaman trainer."
+    l50: "Quest in Azshara, Un'Goro Crater, Felwood, Burning Steppes, Winterspring and the Plaguelands."
+    l60: "The Horde PvP vendors are in the Hall of Legends in Orgrimmar. In the Battle for the Darkspear Islands you fight for the Darkspear Raiders."
+
+# ------------------------------------------------------------------ talent paths
+paths:
+  - id: enhancement
+    name: "Enhancement"
+    pitch: "The melee path, and the usual recommendation for a first Shaman. It kills single enemies quickly with a slow two-hand weapon, and it uses little mana."
+    leveling: enhancement-leveling
+    endgame: [enhancement-raid, enhancement-pvp]
+    gear: twohand
+    play:
+      l1: "You have no talent points before level 10. Pull with Lightning Bolt, use Earth Shock when the enemy gets to you, then fight in melee with Rockbiter Weapon."
+      l10: "Thundering Strikes gives 5% crit to attacks and spells. Mental Dexterity from level 15 changes Intellect into attack power. Put down Searing Totem and Strength of Earth Totem. Pull with Lightning Bolt and use Flame Shock on enemies that live long. Use Earth Shock on an enemy that runs away."
+      l20: "Shamanistic Focus at level 20 makes Shocks 45% cheaper, so you can use a Shock in each fight. Stormstrike at level 25 is your main attack. It has a 6 second cooldown, and it makes your next Earth Shock stronger. Flurry follows from level 26. Use Rockbiter Weapon or Flametongue Weapon, with the bonus of Elemental Weapons."
+      l30: "Change to Windfury Weapon at level 30. Flurry is complete at the same level. Spirit Weapons at 31 gives parry, and it decreases your threat in dungeons while Rockbiter Weapon is not active. Improved Stormstrike returns mana regeneration after each Stormstrike. Maelstrom Weapon starts at level 36. Each stack makes the next Lightning Bolt faster and cheaper."
+      l40: "Maelstrom Weapon is complete at level 40. At 5 stacks, Lightning Bolt is instant and free. Rage of the Farseer at 41 gives 30% attack speed for 25 seconds. Use it on elites and bosses. Improved Ghost Wolf makes Ghost Wolf instant, and it works indoors. Tidal Focus from level 46 gives hit."
+      l50: "Tidal Focus is complete at level 50, for 5% hit. Mindfulness and Water Shield give mana in long fights. Only 1 Elemental Shield can be active, so select Lightning Shield or Water Shield. The last points go into Concussion."
+      l60: "The raid build takes Elemental Devastation, which changes spell crits into 9% melee crit chance. Blizzard planned Enhancement tuning for 10 November that makes Strength the best stat. This page does not confirm that the change is live."
+      raid: "Use Windfury Weapon in a raid, so that Spirit Weapons decreases your threat. Stand with the melee group and give it Windfury Totem and Strength of Earth Totem. If a fight is long and your mana is low, change Lightning Shield to Water Shield. In PvP, the burst comes from Stormstrike, an instant Lightning Bolt and Rage of the Farseer."
+    priority:
+      - "Keep **Windfury Weapon** on your weapon, and **Lightning Shield** or **Water Shield** on you."
+      - "Put down Strength of Earth Totem, Searing Totem and Windfury Totem with a Call spell."
+      - "Pull with **Lightning Bolt**, then use **Stormstrike** on cooldown (6 seconds)."
+      - "Use **Flame Shock** on a target that lives long. On other targets, use **Earth Shock** after Stormstrike."
+      - "Cast **Lightning Bolt** at 5 **Maelstrom Weapon** stacks."
+      - "Use **Rage of the Farseer** on elites and bosses, and for burst in PvP."
+  - id: elemental
+    name: "Elemental"
+    pitch: "The caster path. You kill from range with Lightning Bolt and kite with Earthbind Totem. It uses much mana, so you drink more often than on the Enhancement path."
+    leveling: elemental-leveling
+    endgame: [elemental-raid, elemental-pvp]
+    gear: caster
+    play:
+      l1: "You have no talent points before level 10. Cast Lightning Bolt from maximum range, use Earth Shock, then finish the enemy in melee."
+      l10: "Concussion increases Lightning Bolt and Earth Shock damage. Elemental Alacrity from level 15 makes Lightning Bolt faster. Put down Searing Totem, cast Lightning Bolt until the enemy gets to you, then use a Shock. Drink before your mana is empty."
+      l20: "Elemental Focus at level 20 gives free spells from Clearcasting, and Convection makes your spells cheaper. Earthbound at level 25 changes the fight. Earthbind Totem now roots all enemies near it for 5 seconds. Put it down, step back and cast. Frost Shock keeps the enemy slow after the root. Eye of the Storm decreases pushback."
+      l30: "Call of Thunder at level 30 gives 5% crit to Lightning Bolt and Chain Lightning. Lightning Overload from 31 gives free second bolts. Chain Lightning at 32 lets you fight 2 enemies. Elemental Fury from 35 makes your crits larger. Use Mana Spring Totem at all times, and use a lower rank of Lightning Bolt to save mana."
+      l40: "Lightning Mastery at level 40 is your burst cooldown. For 15 seconds, Lightning Bolt casts 0.5 seconds faster and Chain Lightning has no cooldown. Tidal Focus from level 41 gives 5% hit. Mindfulness from 46 lets a part of your mana regeneration continue while you cast."
+      l50: "Water Shield at level 51 returns mana on each of your spell crits. Keep it active in place of Lightning Shield. Thundering Strikes then gives 5% crit, and each spell crit returns mana through Water Shield. Ancestral Knowledge gives more mana."
+      l60: "The raid build is almost the same as your leveling build. It replaces Earthbound with Elemental Reach, and Totemic Focus with Natural Grace for less threat. The PvP build has no Lightning Mastery. It takes Nature's Swiftness for an instant Chain Lightning or an instant heal."
+      raid: "Tidal Focus gives 5% hit. A raid boss needs 16% or 17% spell hit, so you need about 11% to 12% from items. For Onyxia's Lair, you can move the Eye of the Storm points to Elemental Warding. In PvP, your burst is lower than in Classic, because Elemental Mastery is not in the game. The PvP build keeps Earthbound for its 5 second root."
+    priority:
+      - "Keep **Water Shield** active."
+      - "Put down a Fire totem with a Call spell: Searing Totem for 1 target, Magma Totem for groups. Add **Mana Spring Totem**."
+      - "Use **Flame Shock** on a target that lives long."
+      - "Cast **Lightning Bolt** as your main spell. Lightning Overload gives free second bolts."
+      - "Cast **Chain Lightning** on 2 or more targets."
+      - "Use **Lightning Mastery** on cooldown in a raid. Cast Chain Lightning without pause during it."
+      - "Use **Earth Shock** to interrupt, or on a target that runs away. All Shocks have the same cooldown."
+      - "Use **Fire Nova** on groups that stand near your Fire totem."
+  - id: restoration
+    name: "Restoration at 60"
+    pitch: "The healer path. Restoration is weak for solo quests, so you level with the Enhancement build. You heal dungeons in your second spec from level 40, and you change to Restoration at 60."
+    leveling: enhancement-leveling
+    endgame: [restoration-raid]
+    gear: healer
+    play:
+      l1: "You have no talent points before level 10. Fight as each Shaman does: Lightning Bolt, Earth Shock, then melee."
+      l10: "Level with the Enhancement build. You can still heal the first dungeons, because Thundering Strikes also gives crit to heals. Keep items with Intellect and Spirit for dungeons."
+      l20: "Continue with the Enhancement build. Lesser Healing Wave at level 20 is your fast heal, and Healing Stream Totem heals the group. Cure Poison, Cure Disease and Poison Cleansing Totem are healer jobs."
+      l30: "Continue with the Enhancement build. Mental Quickness at 34 changes Intellect into spell damage and healing, so your heals also get stronger. Select Tidebringer's Claw from the Call of Air chain if you heal more than you quest."
+      l40: "Buy dual spec and make a Restoration second spec. At level 40 you have 31 points, which is sufficient for Riptide. Riptide is an instant heal over time, and it makes your next Chain Heal on that target 25% stronger. Quest in the Enhancement spec."
+      l50: "Heal the level 50 dungeons in your Restoration spec. Collect healing items there. Use Riptide on the tank before each pull. Keep Water Shield active and Mana Spring Totem down."
+      l60: "Respec your main spec to the Restoration build. It takes all talents for Healing Wave, then Riptide, Nature's Swiftness and Mana Tide Totem. The same build works as a battleground healer."
+      raid: "Healing Wave with Healing Way and Purification is your large heal on the tank. Chain Heal is your group heal. In the client data, Mana Tide Totem restores 88 mana each 3 seconds for 12 seconds. No source confirms a higher amount at level 60. In battlegrounds, Riptide and Chain Heal make Restoration a strong healer."
+    priority:
+      - "Keep **Water Shield** active. Put down **Mana Spring Totem** or Healing Stream Totem."
+      - "Use **Riptide** on the tank, then cast **Chain Heal** directly on the tank for 25% more healing."
+      - "Use **Healing Wave** for large, planned heals. Use a lower rank to save mana."
+      - "Use **Lesser Healing Wave** in an emergency. Use **Nature's Swiftness** for an instant Healing Wave."
+      - "Use **Mana Tide Totem** when the mana of your group is low."
+      - "Use the Cure spells, Poison Cleansing Totem or Disease Cleansing Totem where a fight needs them."
+
+# ------------------------------------------------------------------ equipment sets
+gear:
+  - id: twohand
+    name: "Two-hand weapon (Enhancement)"
+    pitch: "A slow two-hand mace or axe with Strength and attack power armor. It is the only melee damage set, because the launch client has no dual wield. The item names come from Timesaver.gg and Method.gg."
+    stats: "Leveling: weapon damage > Strength > Intellect > Agility and crit > Stamina. Level 60: weapon damage > hit > Strength and attack power > Intellect > crit > Agility"
+    chapters:
+      l1:
+        text: "Use the best two-hand weapon that a quest gives you. A staff is acceptable. Dwarves and Tauren get a better mace from a zone quest at about level 10."
+        items:
+          - {slot: "Axe", name: "Brave's Axe", from: quest, where: "*Rite of Strength*, Mulgore (Tauren)", basis: forever}
+          - {slot: "Two-hand", name: "Planting Shovel", from: quest, where: "*Deliver the News*, Zephras Isle (Skyborne)", basis: forever}
+          - {slot: "Two-hand", name: "Zephrali Smasher", from: vendor, where: "Falfaan Halfwind, Zephras Isle, level 9", basis: forever}
+          - {slot: "Feet", name: "Handstitched Leather Boots", from: craft, profession: leatherworking}
+          - {slot: "Armor kit", name: "Light Armor Kit", from: craft, profession: leatherworking}
+      l10:
+        text: "Weapon damage is your most important stat, and slow weapons are best. The first dungeons give a strong two-hand weapon for each faction. Heavy Copper Maul is the crafted option at level 11. Method.gg recommends Dark Leather Boots at about level 10."
+        items:
+          - {slot: "Two-hand mace", name: "Coldridge Hammer", from: quest, where: "*Protecting the Herd*, Dun Morogh (Dwarf)", basis: forever}
+          - {slot: "Two-hand mace", name: "Goblin Smasher", from: quest, where: "*Supervisor Fizsprocket*, Mulgore (Tauren)", basis: forever}
+          - {slot: "Two-hand mace", name: "Honed Greathammer", from: quest, where: "*Return to Valanaar*, Zephras Isle", basis: forever}
+          - {slot: "Two-hand mace", name: "Heavy Copper Maul", from: craft, profession: blacksmithing}
+          - {slot: "Two-hand mace", name: "Ironforge Greathammer", from: quest, where: "*Old Ironforge Incursion*, a Hall of Thanes quest (Alliance)", basis: forever}
+          - {slot: "Two-hand axe", name: "Axe of Orgrimmar", from: quest, where: "*Hidden Enemies*, Ragefire Chasm (Horde)", basis: forever}
+          - {slot: "Two-hand", name: "Segmented Spider Leg", from: dungeon, dungeon: ruins-of-lordaeron, where: "Witherfang. It has Agility and Spirit", basis: forever}
+          - {slot: "Feet", name: "Dark Leather Boots", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Flamefist Grips", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+      l20:
+        text: "Deadmines and Wailing Caverns give the weapons for these levels. The Fang items of Wailing Caverns are leather with new set bonuses in Forever (Method.gg). The crafted Leather Hoods are new rare items. Timesaver.gg selects the Defender's version for Enhancement, and Method.gg names the Brawler's version."
+        items:
+          - {slot: "Two-hand mace", name: "Smite's Mighty Hammer", from: dungeon, where: "Deadmines, Mr. Smite", basis: forever}
+          - {slot: "Two-hand", name: "Hammerbone", from: quest, where: "*Leaders of the Fang*, Wailing Caverns (Horde)", basis: forever}
+          - {slot: "Two-hand axe", name: "Forsaken Greataxe", from: quest, where: "*The Wrath of Rath'mael*, Brill (Horde)", basis: forever}
+          - {slot: "Two-hand axe", name: "Reef Axe", from: dungeon, where: "Blackfathom Deeps, Gelihast", basis: forever}
+          - {slot: "Chest", name: "Armor of the Fang", from: dungeon, where: "Wailing Caverns", basis: forever}
+          - {slot: "Head", name: "Defender's Leather Hood", from: craft, profession: leatherworking}
+      l30:
+        text: "Rage of the Storm from the Call of Air chain is the weapon of these levels. It has 35.6 DPS, and it increases Stormstrike damage by 10%. Kami-Labs gives speed 3.60, and Timesaver.gg gives speed 3.20. City of Dalaran quests give a second option."
+        items:
+          - {slot: "Two-hand mace", name: "Rage of the Storm", from: class, where: "The Call of Air chain, level 30", basis: forever}
+          - {slot: "Two-hand axe", name: "Corpsemaker", from: dungeon, where: "Razorfen Kraul, Overlord Ramtusk", basis: forever}
+          - {slot: "Two-hand", name: "Defender of Dalaran", from: quest, where: "*Heart of Disruption*, City of Dalaran (Alliance)", basis: forever}
+          - {slot: "Staff", name: "Striking Staff", from: quest, where: "*Heart of Disruption* from Tarren Mill (Horde)", basis: forever}
+          - {slot: "Two-hand mace", name: "The Pacifier", from: drop, where: "Lo'Grosh, Alterac Mountains", basis: forever}
+          - {slot: "Two-hand mace", name: "Solid Iron Maul", from: craft, profession: blacksmithing}
+          - {slot: "Hands", name: "Gloves of the Greatfather", from: craft, profession: leatherworking}
+          - {slot: "Neck", name: "Master Sergeant's Insignia or Senior Sergeant's Insignia", from: pvp, where: "PvP vendor in Stormwind or Orgrimmar", basis: forever}
+      l40:
+        text: "You can wear mail now. Leatherworking makes new mail with role names. The Skirmisher's items are probably the melee versions, but no source gives their stats. The DPS values suggest that Rage of the Storm stays useful to about level 45. No source lists the loot of Krol'dok Stronghold."
+        items:
+          - {slot: "Two-hand axe", name: "Ravager", from: dungeon, where: "Scarlet Monastery, Armory, Herod", basis: forever}
+          - {slot: "Two-hand", name: "Abandoned Ferocity", from: quest, where: "*Khan Jehn*, Desolace (Horde)", basis: forever}
+          - {slot: "Two-hand mace", name: "Mithril Warhammer", from: craft, profession: blacksmithing}
+          - {slot: "Two-hand axe", name: "Charged Mithril Battleaxe", from: craft, profession: blacksmithing}
+          - {slot: "Feet", name: "Skirmisher's Mail Boots", from: craft, profession: leatherworking}
+          - {slot: "Shoulders", name: "Skirmisher's Mail Shoulders", from: craft, profession: leatherworking}
+          - {slot: "Wrist", name: "Skirmisher's Mail Bracers", from: craft, profession: leatherworking}
+          - {slot: "Feet", name: "Manascale Treads", from: dungeon, dungeon: city-of-dalaran, where: "Mana Devourer. Timesaver.gg lists it from level 40 to 55", basis: forever}
+          - {slot: "Waist", name: "Saltscale Girdle", from: dungeon, dungeon: excavation-site, where: "Saltspine. Timesaver.gg lists it from level 40 to 55", basis: forever}
+          - {slot: "Legs", name: "Gnoll Crusher Leggings", from: quest, where: "*Snargl's Snout*, Riverglades", basis: forever}
+      l50:
+        text: "Thorium Greatmace is the two-hand weapon with the best data for these levels. Timesaver.gg says that the item binds when you make it, so only a Blacksmith can use it. Other players use quest weapons. The Elements set from the Blackrock Spire dungeons and Scholomance is the Classic dungeon set."
+        items:
+          - {slot: "Two-hand mace", name: "Thorium Greatmace", from: craft, profession: blacksmithing}
+          - {slot: "Staff", name: "Enchanted Azsharite Felbane Staff", from: quest, where: "*Enchanted Azsharite Fel Weaponry*, level 53 to 55. It is fast for Windfury Weapon", basis: forever}
+          - {slot: "Two-hand", name: "Beastslayer", from: quest, where: "*The Mighty U'cha*, Un'Goro Crater", basis: forever}
+          - {slot: "Waist", name: "Skirmisher's Mail Belt", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Skirmisher's Mail Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Prismscale Hauberk", from: quest, where: "*Tremors of the Earth* (Alliance) or *Broken Alliances* (Horde), Badlands", basis: forever}
+          - {slot: "Feet", name: "Boots of Elements", from: dungeon, where: "Lower Blackrock Spire, Highlord Omokk", basis: forever}
+      l60:
+        text: "No source has a tested list for level 60. The list of Timesaver.gg comes from an algorithm. It mixes mail and leather, and that has no penalty. The Classic crafted names have new stats that no source gives. Black Dragonscale Helm needs Fel Leather, and no source says where Fel Leather comes from. Get about 3% to 4% hit from items, in addition to Tidal Focus."
+        items:
+          - {slot: "Head", name: "Black Dragonscale Helm", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Vest of Elements", from: dungeon, where: "Upper Blackrock Spire, General Drakkisath", basis: forever}
+          - {slot: "Shoulders", name: "Ironfeather Shoulders", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Devilsaur Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Devilsaur Leggings", from: craft, profession: leatherworking}
+          - {slot: "Neck", name: "Beads of Ogre Might", from: quest, where: "*Falrin's Vendetta*, Dire Maul", basis: forever}
+          - {slot: "Trinket", name: "Shard of the Splithooves", from: quest, where: "*Heroes of Old*, Blasted Lands", basis: forever}
+          - {slot: "Set", name: "The Five Thunders", from: vendor, where: "Dungeon Set 2. One source names vendors. The cost is not known", basis: unverified}
+      raid:
+        text: "Forest Defender's Axe is the crafted epic weapon. Its reagent, Malleable Essence of Nature, reportedly comes from raid items that an Enchanter disenchants. The Enhancement raid set is The Spiritcaller's Rage. Leatherworkers make 4 of its 6 parts. No source says which Spiritcaller recipe is for which spec."
+        items:
+          - {slot: "Two-hand axe", name: "Forest Defender's Axe", from: craft, profession: blacksmithing}
+          - {slot: "Wrist", name: "Tranquil Wristguards", from: craft, profession: leatherworking}
+          - {slot: "Legs", name: "Spiritcaller Kilt, Leggings or Pants", recipe: "Spiritcaller Kilt", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Spiritcaller Gauntlets, Gloves or Grips", recipe: "Spiritcaller Gauntlets", from: craft, profession: leatherworking}
+  - id: caster
+    name: "One-hand and shield (Elemental)"
+    pitch: "A one-hand weapon with spell damage and a shield, with Intellect armor. Warcraft Tavern says that one-hand and shield is usually best. A staff is acceptable if it is better."
+    stats: "Leveling: spell damage and Intellect > crit > Stamina and Spirit. Level 60: spell damage first, and hit to the cap for raids"
+    chapters:
+      l1:
+        text: "Few caster items exist at these levels. Use a staff or a mace with a shield. A shield is good at these levels because of its armor."
+        items:
+          - {slot: "Chest", name: "Bandit's Jerkin", from: quest, where: "*The Criminal Element*, Zephras Isle", basis: forever}
+          - {slot: "Feet", name: "Rainwalker Boots", from: quest, where: "*Rite of Vision*, Mulgore", basis: forever}
+          - {slot: "Wrist", name: "Azure Gustwoven Bracers", from: craft, profession: leatherworking}
+      l10:
+        text: "Weapons near level 10 have spell damage in Forever. The first dungeons give a caster weapon for each faction. Minor Wizard Oil stacks with your weapon imbue."
+        items:
+          - {slot: "Dagger", name: "Fang of Magmatus", from: dungeon, dungeon: hall-of-thanes, where: "Daggers need a weapon trainer", basis: forever}
+          - {slot: "Staff", name: "Golemheart Stave", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Off-hand", name: "Dwarven Tome", from: quest, where: "*Important Heirlooms*, Hall of Thanes (Alliance)", basis: forever}
+          - {slot: "Staff", name: "Staff of Orgrimmar", from: quest, where: "*Hidden Enemies*, Ragefire Chasm (Horde)", basis: forever}
+          - {slot: "Main hand", name: "Trogg Scepter", from: dungeon, where: "Ragefire Chasm, Oggleflint", basis: forever}
+          - {slot: "Shield", name: "Welding Shield", from: quest, where: "*Samophlange*, the Barrens (Horde)", basis: forever}
+          - {slot: "Staff", name: "Coldspire Staff", from: dungeon, dungeon: ruins-of-lordaeron, basis: forever}
+          - {slot: "Relic", name: "Totem of Charged Flames", from: quest, where: "*Meddlesome Mages*, Zephras Isle (Skyborne)", basis: forever}
+          - {slot: "Oil", name: "Minor Wizard Oil", from: craft, profession: enchanting}
+      l20:
+        text: "Wailing Caverns gives a shield, and Blackfathom Deeps gives a staff. The ring from Excavation Site stays in the list of Timesaver.gg to level 60. Timesaver.gg selects the Totemic Leather Hood for Elemental."
+        items:
+          - {slot: "Main hand", name: "Scepter of the Abandoned", from: dungeon, dungeon: ruins-of-lordaeron, basis: forever}
+          - {slot: "Staff", name: "Rod of the Sleepwalker", from: dungeon, where: "Blackfathom Deeps, Twilight Lord Kelris", basis: forever}
+          - {slot: "Shield", name: "Seedcloud Buckler", from: dungeon, where: "Wailing Caverns, Verdan the Everliving", basis: forever}
+          - {slot: "Ring", name: "Ring of Power Regulation", from: dungeon, dungeon: excavation-site, where: "Relic Guardian", basis: forever}
+          - {slot: "Head", name: "Totemic Leather Hood", from: craft, profession: leatherworking}
+          - {slot: "Relic", name: "Polished Driftwood Icon", from: craft, profession: enchanting, where: "Warcraft Tavern says that the item binds when you make it, so only an Enchanter can use it"}
+      l30:
+        text: "Lightning's Grasp from the Call of Air chain is a main-hand fist weapon. It has up to 46 spell damage and gives 1% crit to Lightning Bolt. Train fist weapons at a weapon master before you select it. Elementalist's Guard is the shield of the chain."
+        items:
+          - {slot: "Fist weapon", name: "Lightning's Grasp", from: class, where: "The Call of Air chain, level 30", basis: forever}
+          - {slot: "Shield", name: "Elementalist's Guard", from: class, where: "The Call of Air chain. 1,078 armor, Stamina, Intellect and mana regeneration", basis: forever}
+          - {slot: "Dagger", name: "Hypnotic Blade", from: dungeon, where: "Scarlet Monastery, Library, Arcanist Doan", basis: forever}
+          - {slot: "Shield", name: "Painwalker Buckler", from: dungeon, where: "Scarlet Monastery, Graveyard, Interrogator Vishas", basis: forever}
+          - {slot: "Neck", name: "Archmagister's Faceted Pendant", from: dungeon, dungeon: city-of-dalaran, basis: forever}
+          - {slot: "Shoulders", name: "Spellguard Pauldrons", from: quest, where: "*Heart of Disruption*, City of Dalaran", basis: forever}
+          - {slot: "Staff", name: "Glimmering Staff", from: craft, profession: enchanting}
+      l40:
+        text: "You can wear mail now. The Skycaller's mail of Leatherworking is probably the caster version, but no source gives its stats. Timesaver.gg uses Skycaller's Mail Bracers for Elemental at level 60."
+        items:
+          - {slot: "Mace", name: "Hand of Righteousness", from: dungeon, where: "Scarlet Monastery, Cathedral, High Inquisitor Whitemane", basis: forever}
+          - {slot: "Mace", name: "Galgann's Firehammer", from: dungeon, where: "Uldaman, Galgann Firehammer", basis: forever}
+          - {slot: "Feet", name: "Skycaller's Mail Boots", from: craft, profession: leatherworking}
+          - {slot: "Shoulders", name: "Skycaller's Mail Shoulders", from: craft, profession: leatherworking}
+          - {slot: "Wrist", name: "Skycaller's Mail Bracers", from: craft, profession: leatherworking}
+          - {slot: "Neck", name: "Triune Amulet", from: dungeon, where: "Scarlet Monastery, Cathedral", basis: forever}
+          - {slot: "Relic", name: "Totem of Ancestral Protection", from: craft, profession: enchanting}
+      l50:
+        text: "Few caster weapons with a name exist for these levels. Thorium Cestus is a new crafted fist weapon, but no source gives its stats. Start to collect the Elements set."
+        items:
+          - {slot: "Dagger", name: "Black Crystal Dagger", from: quest, where: "*Wanted - Deathclasp*, Silithus", basis: forever}
+          - {slot: "Fist weapon", name: "Thorium Cestus", from: craft, profession: blacksmithing}
+          - {slot: "Waist", name: "Skycaller's Mail Belt", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Skycaller's Mail Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Neck", name: "Woven Ivy Necklace", from: quest, where: "*Wanted: Vile Priestess Hexx and Her Minions*, the Hinterlands", basis: forever}
+          - {slot: "Trinket", name: "Shard of the Splithooves", from: quest, where: "*Heroes of Old*, Blasted Lands", basis: forever}
+      l60:
+        text: "No source has a tested list for level 60. The Elements set is the base of the list of Timesaver.gg. With Tidal Focus, you need about 11% to 12% hit from items for a raid boss."
+        items:
+          - {slot: "Head", name: "Coif of Elements", from: dungeon, where: "Scholomance, Darkmaster Gandling", basis: forever}
+          - {slot: "Chest", name: "Vest of Elements", from: dungeon, where: "Upper Blackrock Spire, General Drakkisath", basis: forever}
+          - {slot: "Hands", name: "Gauntlets of Elements", from: dungeon, where: "Upper Blackrock Spire, Pyroguard Emberseer", basis: forever}
+          - {slot: "Feet", name: "Boots of Elements", from: dungeon, where: "Lower Blackrock Spire, Highlord Omokk", basis: forever}
+          - {slot: "Legs", name: "Blue Dragonscale Leggings", from: craft, profession: leatherworking}
+          - {slot: "Waist", name: "Girdle of Insight", from: craft, profession: leatherworking}
+          - {slot: "Shield", name: "Rhombeard Protector", from: dungeon, where: "Lower Blackrock Spire. wowtbc.gg names Gizrul as the boss", basis: forever}
+          - {slot: "Ring", name: "Warden's Signet of Brilliance", from: rep, where: "The Watchers, Exalted", basis: forever}
+          - {slot: "Trinket", name: "Frozen Heart of the Mountain", from: craft, profession: enchanting}
+          - {slot: "Relic", name: "Totem of Thunder", from: craft, profession: enchanting}
+      raid:
+        text: "Evergreen Shield and Cloak of Earth and Sky need Malleable Essence of Nature. Reportedly, that reagent comes from raid items that an Enchanter disenchants. The Elemental raid set is The Spiritcaller's Storm."
+        items:
+          - {slot: "Shield", name: "Evergreen Shield", from: craft, profession: blacksmithing}
+          - {slot: "Back", name: "Cloak of Earth and Sky", from: craft, profession: tailoring}
+          - {slot: "Relic", name: "Totem of Urgency", from: craft, profession: enchanting}
+          - {slot: "Shoulders", name: "Spiritcaller Epaulets, Mantle or Spaulders", recipe: "Spiritcaller Mantle", from: craft, profession: leatherworking}
+          - {slot: "Feet", name: "Spiritcaller Boots, Greaves or Treads", recipe: "Spiritcaller Treads", from: craft, profession: leatherworking}
+  - id: healer
+    name: "Healer (Restoration)"
+    pitch: "A one-hand weapon with healing power and a shield, or a healing staff. From level 40 it is the usual set for your second spec. Healing items also give some spell damage."
+    stats: "Healing power > Intellect > mana per 5 seconds > Spirit > crit (Warcraft Tavern, beta data). Warcraft Tavern also names haste, but no source found haste on items"
+    chapters:
+      l1:
+        text: "No healer items exist at these levels. Use the items of the other 2 sets."
+      l10:
+        text: "Keep each item with Intellect and Spirit for dungeons. The caster weapons of the first dungeons also work for a healer."
+        items:
+          - {slot: "Staff", name: "Golemheart Stave", from: dungeon, dungeon: hall-of-thanes, basis: forever}
+          - {slot: "Staff", name: "Staff of Orgrimmar", from: quest, where: "*Hidden Enemies*, Ragefire Chasm (Horde)", basis: forever}
+      l20:
+        text: "The quests of Excavation Site give the Healer's Staff to each faction. Timesaver.gg selects the Wisdom's Leather Hood for Restoration."
+        items:
+          - {slot: "Staff", name: "Healer's Staff", from: quest, where: "*Prehistoric Prism* (Alliance) or *Earthen Echo* (Horde), Excavation Site", basis: forever}
+          - {slot: "Head", name: "Wisdom's Leather Hood", from: craft, profession: leatherworking}
+          - {slot: "Shield", name: "Seedcloud Buckler", from: dungeon, where: "Wailing Caverns, Verdan the Everliving", basis: forever}
+          - {slot: "Staff", name: "Living Root", from: dungeon, where: "Wailing Caverns, Verdan the Everliving", basis: forever}
+      l30:
+        text: "Tidebringer's Claw from the Call of Air chain is a main-hand fist weapon. It has up to 86 healing and gives 2% crit to Healing Wave and Lesser Healing Wave. You get only 1 of the 3 weapons, so select it only if you heal often."
+        items:
+          - {slot: "Fist weapon", name: "Tidebringer's Claw", from: class, where: "The Call of Air chain, level 30", basis: forever}
+          - {slot: "Shield", name: "Elementalist's Guard", from: class, where: "The Call of Air chain", basis: forever}
+          - {slot: "Ring", name: "Runemender's Seal", from: dungeon, dungeon: city-of-dalaran, where: "Arcane Anomaly", basis: forever}
+          - {slot: "Feet", name: "Renewing Footpads", from: quest, where: "*Heart of Disruption*, City of Dalaran", basis: forever}
+          - {slot: "Back", name: "Priestess Cloak", from: dungeon, dungeon: drowned-city, where: "Var'Taka", basis: forever}
+      l40:
+        text: "Dual spec makes this set necessary. The Mender's mail of Leatherworking is probably the healer version, but no source gives its stats. Hand of Righteousness is in the level 60 healer list of Timesaver.gg, which shows how few healer weapons the public data has."
+        items:
+          - {slot: "Mace", name: "Hand of Righteousness", from: dungeon, where: "Scarlet Monastery, Cathedral, High Inquisitor Whitemane", basis: forever}
+          - {slot: "Feet", name: "Mender's Mail Boots", from: craft, profession: leatherworking}
+          - {slot: "Shoulders", name: "Mender's Mail Shoulders", from: craft, profession: leatherworking}
+          - {slot: "Wrist", name: "Mender's Mail Bracers", from: craft, profession: leatherworking}
+      l50:
+        text: "Heal the level 50 dungeons and take the items with healing power. The public data has few names for these levels."
+        items:
+          - {slot: "Waist", name: "Mender's Mail Belt", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Mender's Mail Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Ring", name: "Glowing Crystal Ring or Ring of Living Stone", from: quest, where: "*Uncovering Past Secrets*, Moonglade", basis: forever}
+      l60:
+        text: "No source has a tested list for level 60. The healer list of Timesaver.gg has clear gaps, such as Druid set items. The items below are the parts of that list that a Shaman can use. Living Crown needs Fel Leather, and no source says where Fel Leather comes from."
+        items:
+          - {slot: "Head", name: "Living Crown", from: craft, profession: leatherworking}
+          - {slot: "Chest", name: "Vest of Elements", from: dungeon, where: "Upper Blackrock Spire, General Drakkisath", basis: forever}
+          - {slot: "Back", name: "Hide of the Wild", from: craft, profession: leatherworking}
+          - {slot: "Hands", name: "Green Dragonscale Gauntlets", from: craft, profession: leatherworking}
+          - {slot: "Wrist", name: "Mender's Mail Bracers", from: craft, profession: leatherworking}
+          - {slot: "Staff", name: "Ironbark Staff", from: rep, where: "League of Arathor, Exalted (Alliance)", basis: forever}
+      raid:
+        text: "The crafted epic items need Malleable Essence of Nature from raid items. The Restoration raid set is The Spiritcaller. You can wear 1 crafted set part at first, and 2 with a Rousing Seed Pod. These values come from one commercial site that read the client set data."
+        items:
+          - {slot: "Waist", name: "Elderwild Waistcord", from: craft, profession: leatherworking}
+          - {slot: "Shield", name: "Evergreen Shield", from: craft, profession: blacksmithing}
+          - {slot: "Relic", name: "Totem of Urgency", from: craft, profession: enchanting}
+
+equipment:
+  intro: |
+    A Shaman wears leather to level 39 and can wear mail from level 40. Mixed armor types have no penalty, so take each item for its stats. Each spec uses a different weapon type, and dual spec at level 40 means that you carry 2 sets.
+
+    About 40% of the items of Forever had hidden stats at launch. No person has published a tested level 60 list for a Shaman. The item names on this page come from Timesaver.gg (an algorithm, data of 6 November 2026), Method.gg, wowtbc.gg and Kami-Labs. The Codex did not verify the stats.
+  proficiencies:
+    - ["Cloth and leather armor", "Level 1", "No penalty for mixed armor types"]
+    - ["Mail armor", "Level 40", "Train it at the class trainer (Warcraft Tavern)"]
+    - ["Shields", "Level 1", "You get 1 block value for each 20 Strength. Shield Specialization is not in the game"]
+    - ["One-hand maces, staves", "Level 1", "Default weapon skills"]
+    - ["Two-hand maces, two-hand axes", "No talent necessary", "Blizzard says that they are baseline. Warcraft Tavern still lists weapon trainers for them: Ironforge, Orgrimmar (axes) and Thunder Bluff (two-hand maces)"]
+    - ["One-hand axes, fist weapons", "Weapon master", "Ironforge for the Alliance, and Darnassus for fist weapons only. Orgrimmar for the Horde (Warcraft Tavern)"]
+    - ["Daggers", "Weapon master", "Ironforge, Darnassus and Stormwind for the Alliance. Orgrimmar and the Undercity for the Horde (Warcraft Tavern)"]
+    - ["Relic slot", "Level 1", "Totem relics go there. Enchanting makes 4 of them"]
+    - ["Dual wield", "Not available", "None of the 51 talents in the launch client gives dual wield"]
+  rules:
+    - "Hit is 1 stat for melee, ranged attacks and spells (Method.gg). Crit is also 1 stat."
+    - "Tidal Focus gives 5% hit, and the tooltip does not limit it to spells or to melee. All damage builds take it."
+    - "A raid boss needs 16% spell hit (Warcraft Tavern stats guide) or 17% (Warcraft Tavern Shaman guide). Elemental thus needs about 11% to 12% from items."
+    - "Warcraft Tavern gives 8% hit and 6.5% Expertise as the Enhancement targets. Only 1 source gives the Expertise value. Expertise replaces weapon skill."
+    - "Strength gives a Shaman 2 attack power for each point. Mental Dexterity gives attack power equal to 150% of your Intellect at 3/3."
+    - "In launch week, Intellect and spell power gave Enhancement more than Strength. Blizzard planned tuning for 10 November to make Strength the best stat. Keep your Strength items."
+    - "Weapon imbues last 60 minutes, and they stack with sharpening stones, weightstones and oils."
+    - "No source found haste on items in the beta. The stat lists of Warcraft Tavern still name haste, so read that entry as theory."
+    - "Healing items also give spell damage (Method.gg)."
+    - "World buffs do not work in dungeons and raids. Consumables are thus more important than in Classic."
+    - "For an emergency tank role, Method.gg says that you need a one-hand weapon and a shield. Spirit Weapons gives +30% threat while Rockbiter Weapon is active."
+    - "Resistance totems cover the full raid. A resistance of 315 gives the maximum of 75% (Warcraft Tavern)."
+  enchants:
+    - ["Two-hand weapon (leveling)", "Lesser Impact, Impact, Greater Impact", "Trainer recipes. The client data marks them as changed, and no source gives the new values"]
+    - ["Two-hand weapon (level 60)", "Strength, Agility, Superior Impact or Crusader", "Enchanting skill 290 to 300. No source says which is best in Forever. Crusader first is a Classic-era habit"]
+    - ["One-hand weapon (Elemental)", "Spell Power", "Enchanting skill 300. For a staff: Mighty Spell Power or Spellblasting"]
+    - ["One-hand weapon (Restoration)", "Healing Power", "Enchanting skill 300. For a staff: Mighty Healing Power"]
+    - ["Shield", "Critical Strike, Excellent Stamina or Superior Spirit", "The first 2 are new. No source gives the values"]
+    - ["Necklace", "Strength, Agility, Spell Power or Healing Power", "New slot. Enchanting skill 210"]
+    - ["Armor", "Forceful or Mystic armor kits", "New Leatherworking kits. Forceful is probably for physical specs and Mystic for casters. No source gives the effects"]
+  consumables:
+    - ["Leveling", "Cooked food", "Well Fed gives +5% XP for 15 minutes"]
+    - ["Leveling", "Healing potions from First Aid, mana potions from Alchemy", "First Aid makes healing potions in Forever"]
+    - ["Leveling", "Rough Weightstone or Minor Wizard Oil", "They stack with your imbue. Weightstones are for maces and sharpening stones are for axes"]
+    - ["Level 60, Enhancement", "Weightstone or sharpening stone, Elixir of Greater Strength, Elixir of the Mongoose, Strength food, mana potions, Juju items", "The selection is Classic-era guidance. No Forever source has a tested list"]
+    - ["Level 60, Elemental", "Brilliant Wizard Oil, Greater Arcane Elixir, Elixir of Nature Power, spell damage food, mana potions", "Elixir of Nature Power is new. Lightning is Nature damage"]
+    - ["Level 60, Restoration", "Brilliant Mana Oil, Mageblood Elixir, Flask of Distilled Wisdom, mana potions, Dark Runes", "Classic-era guidance. The new Cleric's Elixir and Mender's Potion have no known effects"]
+    - ["Onyxia's Lair", "Greater Fire Protection Potion", "Alchemy skill 290. Fire Resistance Totem covers the raid"]
+    - ["All levels", "Ankh, Shiny Fish Scales, Fish Oil", "Reagents for Reincarnation, Water Breathing and Water Walking. Reagent Economy removes the need"]
+  sources:
+    - {title: "Warcraft Tavern: Shaman guide", url: "https://www.warcrafttavern.com/forever/guides/shaman/"}
+    - {title: "Warcraft Tavern: Shaman leveling guide", url: "https://www.warcrafttavern.com/forever/guides/shaman-leveling/"}
+    - {title: "Warcraft Tavern: Enhancement Shaman guide", url: "https://www.warcrafttavern.com/forever/guides/enhancement-shaman/"}
+    - {title: "Warcraft Tavern: Elemental Shaman guide", url: "https://www.warcrafttavern.com/forever/guides/elemental-shaman/"}
+    - {title: "Warcraft Tavern: stats", url: "https://www.warcrafttavern.com/forever/guides/stats/"}
+    - {title: "Timesaver.gg: Shaman leveling gear, level by level", url: "https://timesaver.gg/tools/wow-forever/leveling-gear/shaman/enhancement"}
+    - {title: "Timesaver.gg: Enhancement Shaman leveling weapons", url: "https://timesaver.gg/blog/wow-forever-enhancement-shaman-leveling-weapons"}
+    - {title: "wowtbc.gg: Enhancement Shaman item lists for level 60", url: "https://wowtbc.gg/warcraftforever/bis-list/enhancement-shaman/"}
+    - {title: "Kami-Labs: the level 30 Shaman weapon quest (beta)", url: "https://kami-labs.fr/en/wow-forever/wow-forever-chaman-quete-arme-niveau-30/"}
+    - {title: "Method.gg: Shaman leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents"}
+    - {title: "Method.gg: itemization updates", url: "https://www.method.gg/wow-forever/itemization-updates-in-world-of-warcraft-forever-expertise-spell-damage-more"}
+    - {title: "ConquestCapped: tier sets and crafted tier items (commercial site)", url: "https://conquestcapped.com/guides/wow-forever/wow-forever-tier-sets-1/"}
+
+# ------------------------------------------------------------------ other sections
+professions: |
+  Mana potions are the largest raid cost of a Shaman. Enhancement and leveling Shamans also have good options.
+
+  | Rank | Professions | Use them for |
+  |---|---|---|
+  | **S**{ .tier .tier-s } | [Herbalism](../../professions/herbalism.md) + [Alchemy](../../professions/alchemy.md) | Elemental and Restoration. Mana potions and elixirs for raids. Tauren Cultivation gives extra herbs. Camp features: Incense Candle (Intellect) and Mana Well (mana regeneration) |
+  | **A**{ .tier .tier-a } | [Mining](../../professions/mining.md) + [Blacksmithing](../../professions/blacksmithing.md) | Enhancement. Two-hand weapons, and stones that stack with your imbue. Camp features: Lodestone (melee attack power) and Sharpening Wheel (Strength) |
+  | **A**{ .tier .tier-a } | [Skinning](../../professions/skinning.md) + [Leatherworking](../../professions/leatherworking.md) | Leveling. Leather and mail armor, and the crafted parts of the raid set. Camp features: Camp Chair (+2% crit) and Camp Tent (rested XP) |
+  | **B**{ .tier .tier-b } | [Mining](../../professions/mining.md) + [Engineering](../../professions/engineering.md) | PvP gadgets. Camp features: Lodestone and Reagent Bot |
+
+  2 gathering professions give gold most quickly during leveling, so you can buy your mounts earlier. [First Aid](../../professions/first-aid.md) now makes healing potions. [Cooking](../../professions/cooking.md) makes campfires, and [Fishing](../../professions/fishing.md) gives the Fish Bowl camp feature. [Enchanting](../../professions/enchanting.md) makes 4 totem relics. Warcraft Tavern says that Polished Driftwood Icon binds when you make it.
+
+  Crafting professions give [Legacy](../../characters/legacy.md) points at skill 150, 225 and 300. Each profession adds a [camp feature](../../systems/camping.md). Professions give no passive stats in Forever. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+legacy: |
+  You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character.
+
+  | Tree | Picks for a Shaman |
+  |---|---|
+  | Adventure | **Well Rested** 5/5, then **Talented** 5/5. Talented gives your first talent point up to 5 levels earlier |
+  | Adventure | **Thrill of Adventure** restores health and mana on each kill in the open world. Elemental drinks less often. **Frequent Flier** helps with the long Water totem quest |
+  | Resourcefulness | **Reagent Economy** removes the Ankh cost of Reincarnation. **Gourmand** makes food buffs last 33% longer |
+  | Resourcefulness | **Permanence** makes long class buffs last longer. No source confirms that it works on imbues and shields |
+  | Resourcefulness | **For Great Honor** gives +2% honor for each rank. It is for PvP players |
+
+mistakes:
+  - "You do not do a totem quest, and then your totem spells are grey. The quests are at levels 4, 10, 20 and 30."
+  - "You forget that the game no longer adds new spells to your action bars."
+  - "You twist totems as in Classic. Twisting is not necessary in Forever."
+  - "You leave your totems behind when the fight moves. Use Totemic Call."
+  - "You use a fast weapon with Windfury Weapon. A slow two-hand weapon does more damage with it."
+  - "You sell your Strength items because Intellect was stronger in launch week. Blizzard planned tuning for 10 November that makes Strength the best Enhancement stat."
+  - "You use Lightning Shield and Water Shield together. Only 1 Elemental Shield can be active."
+  - "You buy dual spec without gold for riding at level 40."
+
+faq:
+  - q: "Which path is best for leveling?"
+    a: "Enhancement is the most common recommendation. It uses little mana and kills single enemies quickly. Elemental kills from range, but it drinks often. Restoration is weak for solo quests."
+  - q: "Can a Shaman tank?"
+    a: "The client has no full tank tree. Spirit Weapons gives +30% threat with Rockbiter Weapon, and Anticipation and Toughness add survival. No source confirms the Shaman as a raid tank."
+  - q: "Can a Shaman dual wield?"
+    a: "No. None of the 51 talents in the launch client gives dual wield. Enhancement uses a two-hand weapon."
+  - q: "Where is Lava Burst?"
+    a: "Blizzard removed it before launch. Old beta guides still list it. Lightning Mastery is the last talent of the Elemental Combat tree."
+  - q: "Can the Alliance play a Shaman?"
+    a: "Yes, but only as a Dwarf. Skyborne Shamans are Horde only."
+  - q: "Elemental does not have sufficient mana during leveling. What can I do?"
+    a: "Use a lower rank of Lightning Bolt, Mana Spring Totem and the Legacy talent Thrill of Adventure. Water Shield comes at level 51 on the Elemental path. You can also level as Enhancement and change at 40 with dual spec."
+  - q: "Why was a Tauren Shaman not available on launch night?"
+    a: "Blizzard limited the creation of popular combinations on launch night. Blizzard also locked Horde creation on PvP rulesets for some time because of faction imbalance."
+
+sources:
+  - {title: "Warcraft Tavern: Shaman guide", url: "https://www.warcrafttavern.com/forever/guides/shaman/"}
+  - {title: "Warcraft Tavern: Shaman leveling guide", url: "https://www.warcrafttavern.com/forever/guides/shaman-leveling/"}
+  - {title: "Warcraft Tavern: Enhancement Shaman guide", url: "https://www.warcrafttavern.com/forever/guides/enhancement-shaman/"}
+  - {title: "Warcraft Tavern: Dwarf Shaman totem quests", url: "https://www.warcrafttavern.com/forever/guides/dwarf-shaman-totem-quests/"}
+  - {title: "Warcraft Tavern: class trainer locations", url: "https://www.warcrafttavern.com/forever/guides/class-trainers/"}
+  - {title: "Warcraft Tavern: Dwarf race overview", url: "https://www.warcrafttavern.com/forever/guides/dwarf/"}
+  - {title: "Warcraft Tavern: class tuning for Shamans, Warlocks and Hunter pets", url: "https://www.warcrafttavern.com/forever/news/class-tuning-coming-for-shamans-warlocks-hunter-pets-in-wow-forever/"}
+  - {title: "Warcraft Tavern: Mage & Shaman deep dive", url: "https://www.warcrafttavern.com/forever/news/scrolls-totems-mage-shaman-deep-dive-for-wow-forever/"}
+  - {title: "Warcraft Wiki: Shaman abilities (Forever)", url: "https://warcraft.wiki.gg/wiki/Shaman_abilities_(Forever)"}
+  - {title: "Mobalytics: Shaman leveling guide", url: "https://mobalytics.gg/wow-forever/classes/shaman-leveling-guide"}
+  - {title: "Mobalytics: Elemental Shaman leveling guide", url: "https://mobalytics.gg/wow-forever/classes/elemental-shaman-leveling-guide"}
+  - {title: "Icy Veins: Enhancement Shaman leveling", url: "https://www.icy-veins.com/wow-forever/enhancement-shaman-leveling"}
+  - {title: "Method.gg: Shaman leveling guide and talents", url: "https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents"}
+  - {title: "Kami-Labs: the level 30 Shaman weapon quest (beta)", url: "https://kami-labs.fr/en/wow-forever/wow-forever-chaman-quete-arme-niveau-30/"}

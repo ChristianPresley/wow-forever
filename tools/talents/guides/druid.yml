@@ -72,7 +72,7 @@ trees:
       Moonfury:
         {does: "Damage of Arcane and Nature spells +2–10%", lvl: A, pve: S, pvp: A, note: "Take 5/5 in each deep Balance build."}
       Moonkin Form:
-        {does: "A caster form. Omen of Clarity procs 100% more frequently. Armor from items +360%. Party and raid members within 45 yd get +3% crit chance. You cannot cast healing spells", lvl: A, pve: S, pvp: A, note: "The aura is the reason that a raid brings a Moonkin. The class guide says that it does not stack with Leader of the Pack."}
+        {does: "A caster form. Omen of Clarity procs 100% more frequently. Armor from items +360%. Party and raid members within 45 yd get +3% crit chance. You cannot cast healing spells", lvl: A, pve: S, pvp: A, note: "The aura is the reason that a raid brings a Moonkin. The earlier Codex class guide says that it does not stack with Leader of the Pack."}
   Feral Combat:
     summary: |
       Feral Combat is the tree for Cat damage and for the Bear tank. **Leader of the Pack** opens at 20 points. **Shifting Power** for Cat and **Primal Bite** for Bear open at 30 points. The PvE rating of each talent is for the role that the talent helps, and the note names that role.
@@ -142,7 +142,7 @@ trees:
       Improved Rejuvenation:
         {does: "Effect of Rejuvenation +5/10/15%", lvl: C, pve: S, pvp: A, note: "Rejuvenation is your main spell. Improved Regrowth needs 3/3."}
       Swiftmend:
-        {does: "An instant heal on a target that has your Rejuvenation or Regrowth. The heal is equal to the full periodic effect. 15 s cooldown", lvl: B, pve: S, pvp: S, note: "Your instant heal for sudden damage. It opens at 15 points. The class guide says that it removes the HoT, but the tooltip does not confirm this."}
+        {does: "An instant heal on a target that has your Rejuvenation or Regrowth. The heal is equal to the full periodic effect. 15 s cooldown", lvl: B, pve: S, pvp: S, note: "Your instant heal for sudden damage. It opens at 15 points. The earlier Codex class guide says that it removes the HoT, but the tooltip does not confirm this."}
       "Nature's Swiftness":
         {does: "Your next Nature spell is instant. 3 min cooldown", lvl: B, pve: A, pvp: S, note: "An instant Healing Touch for emergencies. It also works with Entangling Roots and Wrath."}
       Living Spirit:
@@ -160,7 +160,7 @@ builds:
     kind: leveling
     role: "Leveling"
     summary: |
-      The route that the class guide recommends. Play as Bear to level 19 and as Cat from level 20. The order follows the Feral timeline of the class guide, adjusted to the launch client. In the client, Leader of the Pack opens at 20 points, and Shifting Power and Primal Bite open at 30 points.
+      The route that the earlier Codex class guide recommends. Play as Bear to level 19 and as Cat from level 20. The order follows the Feral timeline of the earlier Codex class guide, adjusted to the launch client. In the client, Leader of the Pack opens at 20 points, and Shifting Power and Primal Bite open at 30 points.
     steps:
       - [Ferocity, 5, "Cheaper Maul and Swipe now. Cheaper Claw and Rake from level 20"]
       - [Thick Hide, 3, "Armor for Bear Form"]
@@ -360,7 +360,7 @@ faq:
   - q: "Can I use Feral Charge in Cat Form?"
     a: "This is not confirmed. Beta-era guides gave Feral Charge a Cat version. The tooltip in the launch client lists only Bear Form and Dire Bear Form."
   - q: "Do I take Moonkin Form or Leader of the Pack for the raid aura?"
-    a: "The 2 auras give 3% crit chance to the party and raid within 45 yd. The class guide says that they do not stack. Thus, a raid needs only 1 of them."
+    a: "The 2 auras give 3% crit chance to the party and raid within 45 yd. The earlier Codex class guide says that they do not stack. Thus, a raid needs only 1 of them."
 
 sources:
   - {title: "Warcraft Tavern: Druid guide", url: "https://www.warcrafttavern.com/forever/guides/druid/"}

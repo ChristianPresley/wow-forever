@@ -11,7 +11,7 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page covers only what changes for an Alliance Skyborne.</p>
+<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page covers only what changes for an Alliance Skyborne.</p>
 
 </div>
 
@@ -168,7 +168,7 @@ The High Order airship leaves from the east Skydock and flies to north **Dalaran
 
 ## Faction notes
 
-- **Poison quest (20):** Master Mathias Shaw, SI:7, Stormwind. See the [main guide](index.md#the-poison-quest-level-20).
+- **Poison quest (20):** Master Mathias Shaw, SI:7, Stormwind. See the [main guide](index.md#l20).
 - **Library books:** Garion Wendell, Mage Quarter, Stormwind.
 - **Mount:** **Galestriders** at **Fairweather Stables**, Zephras Isle (53.8, 81.3), in Umber, Stormy and Empyrean, with Swift versions. High Order reputation gives a 5/10/15/20% discount at Friendly → Exalted. Riding still costs 100g at 40.
 - **Reputation:** High Order. Other Alliance races can earn Galestriders at Exalted with it. The Nightclaw druids have a separate reputation.

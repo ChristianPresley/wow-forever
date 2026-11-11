@@ -11,7 +11,7 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page shows only the differences for a Human.</p>
+<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page shows only the differences for a Human.</p>
 
 </div>
 
@@ -166,7 +166,7 @@ The quest names below are from Classic. Blizzard has not listed changes to North
 
 ## Faction notes
 
-- **Poison quest (20):** **Master Mathias Shaw** in SI:7 starts *Mathias and the Defias*. It continues to Agent Kearnen and *Klaven's Tower* in Westfall, then *The Touch of Zanzil*. You learn Poisons and Thistle Tea. The [main guide](index.md#the-poison-quest-level-20) has the full walkthrough.
+- **Poison quest (20):** **Master Mathias Shaw** in SI:7 starts *Mathias and the Defias*. It continues to Agent Kearnen and *Klaven's Tower* in Westfall, then *The Touch of Zanzil*. You learn Poisons and Thistle Tea. The [main guide](index.md#l20) has the full walkthrough.
 - **Library books:** Give them to Garion Wendell in the Mage Quarter of Stormwind, a short walk from Old Town.
 - **Mount:** Stormwind horses at Eastvale Logging Camp in Elwynn. At 40, riding costs 100g, with your first horse included. Honored with Stormwind gives 10% off.
 - **Reputation:** Stormwind. The Legacy talent *Diplomat* replaced the old Human Diplomacy racial.

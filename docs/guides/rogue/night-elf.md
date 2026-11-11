@@ -11,7 +11,7 @@ tags:
 
 :codex-rogue:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-alliance:{ .fc-sigil aria-hidden="true" } Alliance**{ .badge .faction } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Rogue guide](index.md). This page covers only what changes for a Night Elf.</p>
+<p class="gh-note" markdown>Read with the [Rogue progression](index.md). This page covers only what changes for a Night Elf.</p>
 
 </div>
 
@@ -163,7 +163,7 @@ Blizzard reworked **Shadowglen** for Forever with new NPCs, quests, profession h
 
 ## Faction notes
 
-- **Poison quest (20):** in Stormwind, not Darnassus. The new **Stormwind harbor boat** from Auberdine makes the trip much shorter than in Classic. See the [main guide](index.md#the-poison-quest-level-20).
+- **Poison quest (20):** in Stormwind, not Darnassus. The new **Stormwind harbor boat** from Auberdine makes the trip much shorter than in Classic. See the [main guide](index.md#l20).
 - **Library books:** Garion Wendell, Mage Quarter, Stormwind.
 - **Mount:** frostsabers from Rut'theran Village. At Honored with Darnassus, you get a 10% discount.
 - **Reputation:** Darnassus. Darnassus also got a barbershop in Forever.

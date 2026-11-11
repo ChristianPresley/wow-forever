@@ -251,7 +251,7 @@ builds:
     kind: endgame
     role: "Tank healer"
     summary: |
-      The 31/20/0 build from the class guide. It has all shield talents, Penance and Power Infusion, with the Holy talents to row 4. Use it for dungeons, for 10-player raids and for tanks. It is also the usual healer build for PvP.
+      The 31/20/0 build from the earlier Codex class guide. It has all shield talents, Penance and Power Infusion, with the Holy talents to row 4. Use it for dungeons, for 10-player raids and for tanks. It is also the usual healer build for PvP.
     steps:
       - [Twin Disciplines, 5]
       - [Mental Strength, 5]

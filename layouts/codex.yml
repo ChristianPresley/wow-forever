@@ -16,7 +16,7 @@ definitions:
       {{ page.meta.title }}
     {%- elif page.is_homepage -%}
       The WoW: Forever wiki
-    {%- elif page.url.startswith("guides/") and page.parent and not page.is_index and page.url.count("/") == 3 -%}
+    {%- elif page.url.startswith("guides/") and page.parent and not page.is_index and page.url.count("/") == 3 and page.url.split("/")[2] not in ["talents", "equipment"] -%}
       {{ page.title }} {{ page.parent.title }}
     {%- else -%}
       {{ page.title }}
@@ -41,7 +41,7 @@ definitions:
       {{ config.site_name }}: the unofficial WoW: Forever wiki
     {%- else -%}
       {%- if page.meta.get("title") -%}{{ page.meta.title }}
-      {%- elif page.url.startswith("guides/") and page.parent and not page.is_index and page.url.count("/") == 3 -%}{{ page.title }} {{ page.parent.title }}
+      {%- elif page.url.startswith("guides/") and page.parent and not page.is_index and page.url.count("/") == 3 and page.url.split("/")[2] not in ["talents", "equipment"] -%}{{ page.title }} {{ page.parent.title }}
       {%- else -%}{{ page.title }}{%- endif %} on {{ config.site_name }}, an unofficial WoW: Forever wiki
     {%- endif -%}
 

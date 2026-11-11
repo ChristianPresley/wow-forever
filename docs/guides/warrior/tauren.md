@@ -11,7 +11,7 @@ tags:
 
 :codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on</span> **:codex-horde:{ .fc-sigil aria-hidden="true" } Horde**{ .badge .faction } **Tank**{ .badge .tank } **DPS**{ .badge .dps }
 
-<p class="gh-note" markdown>Read with the [Warrior guide](index.md). This page covers only what changes for a Tauren.</p>
+<p class="gh-note" markdown>Read with the [Warrior progression](index.md). This page covers only what changes for a Tauren.</p>
 
 </div>
 

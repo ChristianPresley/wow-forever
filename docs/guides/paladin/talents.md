@@ -12,14 +12,16 @@ search:
 
 <div class="guide-head" data-class="paladin" markdown>
 
-:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Talent guide</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+:codex-paladin:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **Tank**{ .badge .tank } **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Paladin progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
 
 <nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#holy">Holy</a> <a href="#protection">Protection</a> <a href="#retribution">Retribution</a></nav>
 
 </div>
 
 !!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/paladin/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. Read this page with the [Paladin guide](../guides/paladin/index.md).
+    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/paladin/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Paladin progression](index.md) tells you when each talent becomes important.
 
 Each Paladin tree has a different role in Forever. **Retribution** is the melee damage tree and the usual tree for leveling. **Protection** is a full tank tree with a taunt. **Holy** is the healer tree. Each tree also has talents that help a different role, so most builds put points in all 3 trees.
 
@@ -224,7 +226,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
     **Raid healer**{ .pill .pill--info } **32/11/8**{ .pill .pill--outline }
 
-    A deep Holy build with all the healing talents and Light's Vigil. It takes Conviction for crit, because crit heals give back mana through Illumination. The split follows the usage data in the class guide.
+    A deep Holy build with all the healing talents and Light's Vigil. It takes Conviction for crit, because crit heals give back mana through Illumination. The split follows the usage data in the earlier Codex class guide.
 
     - **Holy (32):** Spiritual Focus 5/5 · Healing Light 3/3 · Reverence 2/2 · Purifying Power 2/2 · Divine Favor 1/1 · Illumination 5/5 · Divine Precision 2/2 · Infusion of Light 2/2 · Oath of Light 1/1 · Holy Shock 1/1 · Boundless Light 2/2 · Holy Power 5/5 · Light's Vigil 1/1
     - **Protection (11):** Divine Intellect 5/5 · Precision 1/3 · Guardian's Favor 2/2 · Sacred Duty 2/2 · Templar's Bulwark 1/1
@@ -434,13 +436,13 @@ Retribution is the melee damage tree for two-hand weapons. **Seal of Command** o
     No. Holy Shock needs 21 Holy points and Unsealed Wrath needs 31 Retribution points. This is 52 points, and you have 51.
 
 ??? question "Where is Deflection?"
-    In the launch client, Deflection is in Retribution row 1. The class guide lists it with the Protection talents. A tank can take it to open Retribution row 2.
+    In the launch client, Deflection is in Retribution row 1. The earlier Codex class guide lists it with the Protection talents. A tank can take it to open Retribution row 2.
 
 ??? question "When does Divine Favor open?"
-    Divine Favor is in Holy row 3 and needs 10 Holy points. The class guide gives 16 points. Oath of Light is the talent that needs 15 Holy points.
+    Divine Favor is in Holy row 3 and needs 10 Holy points. The earlier Codex class guide gives 16 points. Oath of Light is the talent that needs 15 Holy points.
 
 ??? question "What does Vindication do?"
-    In the launch client, Vindication decreases the Strength and Agility of the target by 5% for 10 s. The tooltip shows the same text for all 3 ranks and gives no proc chance. The class guide says that it decreases attack power.
+    In the launch client, Vindication decreases the Strength and Agility of the target by 5% for 10 s. The tooltip shows the same text for all 3 ranks and gives no proc chance. The earlier Codex class guide says that it decreases attack power.
 
 ??? question "Are Twist of Light and Improved Seal of Fury in the game?"
     No. The launch client has neither talent. Unsealed Wrath is the last Retribution talent. The Protection talent at 10 points is Templar's Bulwark.

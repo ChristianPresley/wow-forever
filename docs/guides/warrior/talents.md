@@ -12,14 +12,16 @@ search:
 
 <div class="guide-head" data-class="warrior" markdown>
 
-:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Talent guide</span> **Tank**{ .badge .tank } **DPS**{ .badge .dps }
+:codex-warrior:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **Tank**{ .badge .tank } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Warrior progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
 
 <nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#arms">Arms</a> <a href="#fury">Fury</a> <a href="#protection">Protection</a></nav>
 
 </div>
 
 !!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/warrior/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. Read this page with the [Warrior guide](../guides/warrior/index.md).
+    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/warrior/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Warrior progression](index.md) tells you when each talent becomes important.
 
 The Warrior has 2 damage trees and 1 tank tree in Forever. **Protection** is the tank tree and the safe tree for solo leveling. **Arms** is the two-hander tree for groups and PvP. **Fury** is the dual-wield tree for raids. Most damage builds put points in Arms and Fury, because Cruelty, Impale and Deep Wounds help both specs.
 
@@ -199,7 +201,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
     - **Cruelty:** Crit for threat and rage. If threat is not a problem, move these points to Iron Will
 
     - Defiance, Bastion and Master of Defense need a shield.
-    - No source has published a level 60 tank build. This build follows the direction of the class guide.
+    - No source has published a level 60 tank build. This build follows the direction of the earlier Codex class guide.
 
     [Open this build in the talent calculator](https://wowforevertalents.com/warrior/?t=h05-05-250532120331221351)
 
@@ -227,7 +229,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
     **Raid DPS**{ .pill .pill--info } **33/18/0**{ .pill .pill--outline }
 
-    The two-hander raid build. It takes all the Arms damage talents, then Cruelty, Unbridled Wrath and Enrage from Fury. The class guide says that Arms is probably competitive in the 10- and 20-player raids.
+    The two-hander raid build. It takes all the Arms damage talents, then Cruelty, Unbridled Wrath and Enrage from Fury. The earlier Codex class guide says that Arms is probably competitive in the 10- and 20-player raids.
 
     - **Arms (33):** Improved Heroic Strike 3/3 · Improved Rend 3/3 · Improved Charge 2/2 · Improved Tactical Mastery 3/3 · Improved Overpower 2/2 · Anger Management 1/1 · Deep Wounds 3/3 · Two-Handed Weapon Specialization 3/3 · Impale 2/2 · Bloodthrill 2/2 · Sweeping Strikes 1/1 · Weaponmaster 5/5 · Improved Slam 2/2 · Mortal Strike 1/1
     - **Fury (18):** Cruelty 5/5 · Unbridled Wrath 5/5 · Enrage 5/5 · Reckless Swings 1/1 · Improved Execute 2/2
@@ -424,7 +426,7 @@ Protection is the tank tree, and the PvE ratings here are for tank value. **Shie
 | **Improved Sunder Armor** | 15 pts | 3 | Rage cost of Sunder Armor −1 to −3 | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | **D**{ .tier .tier-d } | Tanks use Sunder Armor constantly. Take it at 60. |
 | **Vanguard** **New**{ .pill .pill--new .pill--sm } | 15 pts | 1 | You can use Charge in Defensive Stance | **S**{ .tier .tier-s } | **A**{ .tier .tier-a } | **C**{ .tier .tier-c } | You do not have to change stance to start a pull. Available at level 25. |
 | **Improved Shield Bash** | 15 pts | 2 | Shield Bash has a 50/100% chance to silence the target for 3 s | **B**{ .tier .tier-b } | **B**{ .tier .tier-b } | **B**{ .tier .tier-b } | Good against caster mobs. It is not confirmed that bosses can be silenced. |
-| **Improved Shield Wall** | 20 pts | 2 | Shield Wall cooldown −5.5/11 min | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | **C**{ .tier .tier-c } | The class guide gives Shield Wall a 15 min cooldown. Thus 2/2 makes it 4 min. |
+| **Improved Shield Wall** | 20 pts | 2 | Shield Wall cooldown −5.5/11 min | **C**{ .tier .tier-c } | **A**{ .tier .tier-a } | **C**{ .tier .tier-c } | The earlier Codex class guide gives Shield Wall a 15 min cooldown. Thus 2/2 makes it 4 min. |
 | **Concussion Blow** | 20 pts | 1 | 10 Rage, 45 s cooldown. Stuns the target for 5 s | **A**{ .tier .tier-a } | **B**{ .tier .tier-b } | **A**{ .tier .tier-a } | Raid bosses are usually immune to stuns. Shield Slam needs it. |
 | **Focused Rage** **New**{ .pill .pill--new .pill--sm } | 20 pts | 3 | Rage cost of your offensive abilities −1 to −3 | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | **C**{ .tier .tier-c } | It applies to each offensive ability, so it adds to the other cost talents. |
 | **Bastion** | 25 pts | 5 | With a shield, all damage that you do +2–10% | **A**{ .tier .tier-a } | **A**{ .tier .tier-a } | **C**{ .tier .tier-c } | It replaces One-Handed Weapon Specialization. More damage also gives more threat. |

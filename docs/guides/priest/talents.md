@@ -12,14 +12,16 @@ search:
 
 <div class="guide-head" data-class="priest" markdown>
 
-:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Talent guide</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Add-on · Talents</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+
+<p class="gh-note" markdown>Read with the [Priest progression](index.md). This page gives the full talent data: each talent, each level and each build.</p>
 
 <nav class="gh-jump" aria-label="Jump to section"><a href="#quick-picks">Quick picks</a> <a href="#leveling-builds">Leveling</a> <a href="#level-60-builds">Level 60</a> <a href="#discipline">Discipline</a> <a href="#holy">Holy</a> <a href="#shadow-magic">Shadow Magic</a></nav>
 
 </div>
 
 !!! info "Current as of 10 November 2026"
-    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/priest/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. Read this page with the [Priest guide](../guides/priest/index.md).
+    The tree data is from the game client, build 1.60.1.70862, with the server hotfixes of 9 November 2026. [wowforevertalents.com](https://wowforevertalents.com/priest/) reads this data from the client. The ratings are Codex ratings. No source has published simulations, and the raids open on 9 December. The [Priest progression](index.md) tells you when each talent becomes important.
 
 The Priest has 2 healer trees and 1 damage tree in Forever. **Discipline** gives shields, Penance and mana talents. **Holy** gives the largest heals and Prayer of Mending. **Shadow Magic** is a full damage spec with Shadowform at 31 points. Each level 60 build puts about 20 points in a second tree, and Discipline is the usual second tree.
 
@@ -162,7 +164,7 @@ Dual spec becomes available at level 40 for 50g. Thus, you can keep 2 of these b
 
     **Tank healer**{ .pill .pill--info } **31/20/0**{ .pill .pill--outline }
 
-    The 31/20/0 build from the class guide. It has all shield talents, Penance and Power Infusion, with the Holy talents to row 4. Use it for dungeons, for 10-player raids and for tanks. It is also the usual healer build for PvP.
+    The 31/20/0 build from the earlier Codex class guide. It has all shield talents, Penance and Power Infusion, with the Holy talents to row 4. Use it for dungeons, for 10-player raids and for tanks. It is also the usual healer build for PvP.
 
     - **Discipline (31):** Twin Disciplines 5/5 · Mental Strength 5/5 · Mental Agility 3/3 · Inner Focus 1/1 · Improved Power Word: Shield 3/3 · Meditation 3/3 · Soul Warding 1/1 · Penance 1/1 · Renewed Hope 5/5 · Divine Aegis 3/3 · Power Infusion 1/1
     - **Holy (20):** Twilight Focus 3/3 · Holy Specialization 5/5 · Divine Fury 5/5 · Inspiration 3/3 · Improved Healing 3/3 · Holy Binding 1/1

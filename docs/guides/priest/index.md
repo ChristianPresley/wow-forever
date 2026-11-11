@@ -1,40 +1,103 @@
 ---
-description: "Priest guide for WoW: Forever: specs and talents, rotations, a 1–60 leveling route, dungeons, raids, PvP, gear and Hardcore tips."
+description: "Priest progression for WoW: Forever: a narrated route from character creation to the raids, with add-ons for your race, your talents and your equipment."
 tags:
   - Priest
 search:
   boost: 2
 ---
 
-# Priest Guide
+# Priest Progression
+
+<!-- This page is generated. Edit tools/classes/guides/priest.yml, then run tools/classes/build.py. -->
 
 <div class="guide-head" data-class="priest" markdown>
 
-:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class guide</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
+:codex-priest:{ .fc-sigil aria-hidden="true" } <span class="gh-kind">Class progression</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps }
 
-<nav class="gh-jump" aria-label="Jump to section"><a href="#specs-talents">Talents</a> <a href="#abilities-rotation">Rotation</a> <a href="#leveling-walkthrough-160">Leveling</a> <a href="#dungeons">Dungeons</a> <a href="#raid-preparation">Raids</a> <a href="#pvp">PvP</a> <a href="#gear-stats-enchants">Gear</a> <a href="#hardcore-notes">Hardcore</a></nav>
+<nav class="gh-jump" aria-label="Jump to chapter"><a href="#picks">Add-ons</a> <a href="#start">Start</a> <a href="#l1">1–9</a> <a href="#l10">10–19</a> <a href="#l20">20–29</a> <a href="#l30">30–39</a> <a href="#l40">40–49</a> <a href="#l50">50–59</a> <a href="#l60">60</a> <a href="#raid">Raids & PvP</a></nav>
 
 </div>
 
-!!! info "Current as of 7 November 2026"
-    This guide uses the Blizzard Priest deep dive, the [Priest reference page](../../characters/classes/priest.md) and fan guides from launch week. Warcraft Tavern reports **class tuning on 10 November**. Thus the numbers can change. Fan sites published exact talent point orders only as images. When this guide gives a build, it lists the talents for each milestone, not a point-by-point order.
+**Also called:** Disc (Discipline) · Holy priest · Spriest / Shadow priest
+{: .fc-aka }
 
-## Overview
+The Priest is a healer and a ranged caster that wears cloth. This page follows 1 Priest from character creation to the raids, level by level. It tells you what changes in each level range. You read which spells you train, how you fight and heal, and which decisions you make.
 
-The Priest is still the most flexible healer in Azeroth. It heals with heal-over-time spells, direct heals and absorb shields. The Shadow tree changes it into a full caster DPS. The design goals of Forever for the class are:
+Warcraft Tavern reports class tuning on 10 November 2026. Thus the numbers on this page can change.
 
-- **Every spec viable.** Discipline gets a real identity with shields, Penance and Divine Aegis. Holy gets Prayer of Mending and Holy Binding. Shadow is now an independent DPS spec, not only a source of a raid debuff.
-- **Less race lottery.** **Fear Ward** and **Devouring Plague** are now baseline for every Priest at level 20. The race-locked spells that remain are smaller utility spells.
-- **Less need for hit gear.** *Holy Precision* (Discipline) gives a maximum of 18% Holy hit, and *Shadow Focus* (Shadow) now gives Shadow hit.
+!!! info "Current as of 10 November 2026"
+    Forever started on 4 November 2026. The talent data and the recipe data are from the game client, build 1.60.1.70862. Spell levels, quests and zones that Forever did not change are Classic-era values. The raids open on 9 December, and no source has published simulations.
 
-<aside class="infobox" markdown>
+## Pick your add-ons { #picks }
+
+This page tells the progression of a Priest in 9 chapters, from character creation to the raids. The main text is the same for each character. An **add-on** adds the text for 1 selection: your race, your talents or your equipment.
+
+<div class="fc-pick" data-class="priest" role="group" aria-label="Add-ons for your Priest">
+<fieldset class="fc-pick__group" data-pick="race"><legend>Race</legend>
+<div class="fc-pick__opts">
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="human" checked><span>Human</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="dwarf"><span>Dwarf</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="gnome"><span>Gnome</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="night-elf"><span>Night Elf</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="troll"><span>Troll</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-race" value="undead"><span>Undead</span></label>
+</div>
+</fieldset>
+<fieldset class="fc-pick__group" data-pick="talents"><legend>Talents</legend>
+<div class="fc-pick__opts">
+<label class="fc-pick__opt"><input type="radio" name="fc-talents" value="shadow" checked><span>Shadow</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-talents" value="disc"><span>Discipline</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-talents" value="holy"><span>Holy at 60</span></label>
+</div>
+</fieldset>
+<fieldset class="fc-pick__group" data-pick="gear"><legend>Equipment</legend>
+<div class="fc-pick__opts">
+<label class="fc-pick__opt"><input type="radio" name="fc-gear" value="shadow" checked><span>Shadow damage</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-gear" value="healer"><span>Healer</span></label>
+<label class="fc-pick__opt"><input type="radio" name="fc-gear" value="crafted"><span>Tailoring and Enchanting</span></label>
+</div>
+</fieldset>
+<p class="fc-pick__note"><label class="fc-pick__all"><input type="checkbox" name="fc-all"><span>Show all add-ons</span></label> Each chapter shows only the add-ons that you select. This browser saves your selection.</p>
+</div>
+
+<div class="grid cards fc-addon-cards" markdown>
+
+-   :material-star-four-points: **[Talents add-on](talents.md)**
+
+    All 52 talents with a rating, a talent for each level and the level 60 builds.
+
+-   :material-shield-sword: **[Equipment add-on](equipment.md)**
+
+    The equipment sets, the items for each level range, enchants and consumables.
+
+-   :material-account-group: **Race add-ons**
+
+    [Human](human.md){ .fc-chip } [Dwarf](dwarf.md){ .fc-chip } [Gnome](gnome.md){ .fc-chip } [Night Elf](night-elf.md){ .fc-chip } [Troll](troll.md){ .fc-chip } [Undead](undead.md){ .fc-chip }
+
+</div>
+
+## Before level 1: Make your Priest { #start }
+
+A Priest keeps other players alive. You have 3 types of heal: shields that absorb damage, heal-over-time spells and direct heals. You also get a wand, 2 damage-over-time spells (DoTs) and Mind Blast, so you can kill enemies alone.
+
+In Forever, Blizzard wants each of the 3 specs to be a real option. Discipline has shields and the new spell Penance. Holy has the largest heals and the new Prayer of Mending. Shadow is now a full damage spec, not only a source of a raid debuff.
+
+The class is slow at low levels. In the beta, Priest and Warrior were the slowest classes to level. But groups always want a Priest, and you can heal dungeons with each talent path. At level 40, dual spec lets you keep a damage build and a healer build.
+
+You make 3 decisions before level 1: your race, your talent path and your equipment set. The add-ons below describe each option. You can change the talents and the equipment later. You cannot change the race. Skyborne, Orcs and Tauren cannot be Priests.
+
+<aside class="infobox" data-class="priest" markdown>
 <p class="infobox-title">Priest at a glance</p>
 
 | | |
 |---|---|
-| **Roles** | Healer (Holy, Discipline), ranged caster DPS (Shadow) |
-| **Armor / weapons** | Cloth. Wands and one-handed maces by default. Daggers and staves from weapon trainers |
-| **Dual spec** | Level 40, 50g at the class trainer |
+| **Roles** | Healer (Holy, Discipline), ranged damage (Shadow) |
+| **Armor** | **Cloth**{ .pill .pill--cloth } |
+| **Weapons** | Wands and one-hand maces by default. Daggers and staves from a weapon trainer |
+| **Resource** | **Mana**{ .pill .pill--mana } |
+| **Races** | 6 combinations. Gnome is new |
+| **Leveling speed** | In the beta, Priest and Warrior were the slowest classes |
+| **Dual spec** | Level 40, 50g at a Priest trainer |
 
 </aside>
 
@@ -43,10 +106,10 @@ The Priest is still the most flexible healer in Azeroth. It heals with heal-over
 
 Strengths
 
-- Best all-round healer
-- Strong self-sustain when you level (Shield, Renew, Penance)
-- Fear Ward and Mind Control utility
-- Two healer specs
+- The most flexible healer: shields, heal-over-time spells and direct heals
+- 2 healer specs and 1 full damage spec
+- Power Word: Shield, Renew and Penance keep you alive when you level
+- Fear Ward, Dispel Magic, Shackle Undead and Mind Control
 
 </div>
 <div class="cons" markdown>
@@ -54,322 +117,605 @@ Strengths
 Weaknesses
 
 - Cloth armor and few escapes
-- Slow kills at low levels: in beta, Priest and Warrior were the **slowest classes to level**
-- Uses much mana before talents and gear
+- Slow kills at low levels
+- Uses much mana before you have talents and equipment
+- No heals in Shadowform
 
 </div>
 </div>
 
+!!! forever "What Forever changed"
+    **Additions**
 
-### What's new in Forever
+    **Penance**{ .pill .pill--new } **Soul Warding**{ .pill .pill--new } **Divine Aegis**{ .pill .pill--new } **Renewed Hope**{ .pill .pill--new } **Power in Light**{ .pill .pill--new } **Twin Disciplines**{ .pill .pill--new } **Holy Precision**{ .pill .pill--new } **Holy Binding**{ .pill .pill--new } **Litany of Light**{ .pill .pill--new } **Prayer of Mending**{ .pill .pill--new } **Improved Mind Flay**{ .pill .pill--new } **Devouring Contagion**{ .pill .pill--new } **Early Demise**{ .pill .pill--new } **Dark Inspiration**{ .pill .pill--new }
 
-- **Baseline for all Priests:** Fear Ward and Devouring Plague (level 20), Divine Spirit (level 30), Shadow Word: Death (level 32).
-- **Fade** removes two times more threat.
-- **Prayer of Healing** heals the party of the *target*, not your party. In raids, you can now heal each group.
-- **Renew** from different Priests stacks on the same target.
-- **New gold talents** at the new 16-point tier and the 21/31 tiers: Soul Warding, Penance, Divine Aegis, Holy Binding, Prayer of Mending, a 30-second Vampiric Embrace and a reworked Shadowform.
-- **Removed:** Lightwell, Improved Prayer of Healing, Unbreakable Will, Force of Will, Improved Vampiric Embrace. Shortly before launch, *Holy Binding* replaced **Binding Heal**.
-- **Damage and healing over time** use the current stats of the caster at each tick, not the stats at the time of the cast (Warcraft Tavern). Early wands also give spell power.
+    **Removals**
 
-### Races
+    **Lightwell**{ .pill .pill--removed } **Binding Heal**{ .pill .pill--removed } **Improved Prayer of Healing**{ .pill .pill--removed } **Unbreakable Will**{ .pill .pill--removed } **Force of Will**{ .pill .pill--removed } **Improved Vampiric Embrace**{ .pill .pill--removed }
 
-6 races can be Priests. **Gnome is a new combination** in Forever.
+    - **Fear Ward** and **Devouring Plague** are baseline for each race at level 20. Divine Spirit is baseline at 30, and Shadow Word: Death at 32.
+    - **Fade** removes 2 times more threat. **Renew** from different Priests stacks on 1 target.
+    - **Prayer of Healing** heals the party of the target, not your party.
+    - **Shadowform** makes Shadow spells cost 50% less and increases their crit damage bonus by 100%. You cannot cast healing spells in it.
+    - **Shadow Weaving** increases only your Shadow damage. The launch client has no Shadow Affinity talent. Silent Resolve in Discipline is the only threat talent.
+    - **Vampiric Embrace** has a 30 second duration and a 30 second cooldown in the launch client. Beta sources gave 1 minute.
+    - **Meditation** keeps 50% of your mana regeneration while you cast. In Classic it was 15%.
+    - Shortly before launch, the passive **Holy Binding** replaced Binding Heal. Some fan guides still show Binding Heal.
+    - Each race still has 2 special Priest spells, but they are smaller utility spells.
+    - Damage-over-time and heal-over-time spells use your stats at each tick, not your stats at the time of the cast (Warcraft Tavern).
+    - **Holy Precision** gives a maximum of 18% Holy hit, and **Shadow Focus** now gives Shadow hit. Thus you need less hit on items.
+    - Warcraft Tavern says that Vampiric Touch is not in Forever.
 
-| Faction | Race | Race-locked Priest spells | Add-on |
+    All classes: [cross-class changes](../../characters/classes/index.md#cross-class-changes).
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Priest](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The safe Alliance selection for healers. The Human Spirit gives 10% Spirit, Ruthless gives 1% crit, and Will to Survive removes stuns. **Alliance**{ .pill .pill--alliance .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Priest](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The defensive selection, and a good Alliance Shadow race. Stoneform removes poisons, diseases and bleeds, and Artisan's Precision gives 1% hit. **Alliance**{ .pill .pill--alliance .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Priest](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+New in Forever. Eureka! gives 8 seconds of cheaper and stronger direct spells and heals, and Contingency Plan protects you at low health. **Alliance**{ .pill .pill--alliance .pill--sm } **New**{ .pill .pill--new .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Priest](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The damage selection. Starshards is much stronger than in Classic, and Elune's Light gives 10% crit for 15 seconds. Warcraft Tavern calls the race very strong. **Alliance**{ .pill .pill--alliance .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Priest](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Horde selection for raids. Berserking gives 10% cast speed for 15 seconds, and Rapid Regeneration heals you between fights. **Horde**{ .pill .pill--horde .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Priest](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Horde PvP selection, and a strong Shadow race. Will of the Forsaken removes Fear, charm and sleep, and Touch of the Grave drains health. **Horde**{ .pill .pill--horde .pill--sm }
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Shadow</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The usual path for quests. Spirit Tap gives mana after each kill, and Shadowform at level 40 makes Shadow spells cost 50% less. Warcraft Tavern says that it is weak before about level 28.
+
+Leveling build: **Shadow Magic (fast)**. Level 60 builds: **Shadow Magic (raid)**, **Shadow Magic (PvP)**.
+
+Usual equipment set: **Shadow damage**.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="disc" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Discipline</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The safe path, and the Hardcore path. You kill behind a strong shield with your wand, Smite and Penance, and you can heal each dungeon. It is slower than Shadow. Method says that its damage decreases in the late 30s.
+
+Leveling build: **Discipline (safe)**. Level 60 builds: **Discipline (healer)**.
+
+Usual equipment set: **Healer**.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="holy" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Holy at 60</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The raid healer path. Holy is the slowest spec alone, so you level with the Discipline build. You change to Holy at level 60, or in your second spec at 40.
+
+Leveling build: **Discipline (safe)**. Level 60 builds: **Holy (raid healer)**.
+
+Usual equipment set: **Healer**.
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Priest equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The damage set from quests and dungeons. You look for Intellect and spell power, and for hit at level 60. Most item names come from the Shadow list of Timesaver.gg.
+
+Stat priority: Leveling: Intellect and spell power > Stamina and Spirit > Armor. Level 60: Hit (to the cap) > Spell power or Shadow power > Crit > Intellect > Spirit
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="healer" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Healer</strong> [Priest equipment](equipment.md#healer){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Holy and Discipline set from quests and dungeons. You look for healing power, Intellect, mana regeneration and Spirit. You need no hit. Most item names come from the Holy list of Timesaver.gg.
+
+Stat priority: Leveling: Intellect and spell power > Stamina and Spirit > Armor. Level 60: Healing power > Intellect > MP5 (mana each 5 seconds) > Spirit > Crit
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Tailoring and Enchanting</strong> [Priest equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You make your own cloth, wands, staves and off-hand items. Use it if you have Tailoring and Enchanting. The client data gives the name and the skill of each item, but not its stats.
+
+Stat priority: The same as the set for your role. Read the tooltip of each crafted item
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Select a race. Read its Race add-on.
+- [ ] Select a talent path. Shadow is the usual selection for quests. Discipline is safer, and it heals dungeons better.
+- [ ] Read the [Professions](#professions) section. Tailoring and Enchanting are the usual selection.
+
+## Levels 1–9: Smite, Shadow Word: Pain and the first shield { #l1 }
+
+You start with Smite, Lesser Heal and Power Word: Fortitude. Keep Fortitude on you at all times. Pull each enemy with Smite from maximum range, and cast until it dies. You have no defense yet, so fight 1 enemy at a time.
+
+At level 4 you train Shadow Word: Pain, your first DoT. It is instant, so use it as your first attack. It also tags the enemy immediately. A tag gives you the kill when other players want the same enemy.
+
+Level 6 is the first large step. Power Word: Shield absorbs damage. In Classic, enemy hits do not push back your casts while it holds. From this level, cast the shield on yourself before each pull. The shield puts the effect Weakened Soul on its target. In Classic, that target cannot get a new shield for 15 seconds.
+
+At level 8 you train Renew and Fade. Renew heals you while you fight. Fade has little use when you are alone, but it is important in groups later.
+
+Your wand becomes your main weapon between level 5 and level 13. A wand does damage and uses no mana. Thus your mana regenerates while you use it. One-hand maces and wands are default skills. A weapon trainer teaches daggers and staves for 10 silver each.
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 1 | **Smite, Lesser Heal, Power Word: Fortitude** | Your first damage spell, your first heal and your first buff |
+| 4 | **Shadow Word: Pain** | An instant damage-over-time spell. Your first attack on each enemy |
+| 6 | **Power Word: Shield** | Absorbs damage. Cast it before each pull |
+| 8 | **Renew, Fade** | Renew is a heal-over-time spell. Fade decreases your threat in a group |
+
+!!! tip "Tip"
+    Buy water for your level each time that you go to a town. Spirit gives mana regeneration only when you did not cast for 5 seconds.
+    
+    A campfire with a Camp Tent from Leatherworking gives rested XP. See [Camping](../../systems/camping.md).
+
+!!! hardcore "Hardcore"
+    Most deaths start with a pull without a shield. Do not fight 2 enemies before level 6.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Priest](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start at Northshire Abbey in Elwynn Forest. Your first trainer is in the abbey (in Classic: Priestess Anetta). At level 5, go to Goldshire, which has a Priest trainer. The trainers of Stormwind are in the Cathedral of Light.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Priest](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start in Coldridge Valley in Dun Morogh. Your first trainer is in Anvilmar (in Classic: Branstock Khalder). At level 6, go through the tunnel to Kharanos, which has a Priest trainer for the early ranks. The trainers of Ironforge are in the Mystic Ward.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Priest](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start in Coldridge Valley in Dun Morogh, with the Dwarves. Gnomes had no Priest trainer in Classic. Probably the Priest trainer in Anvilmar also teaches Gnomes, but no source confirms it. At level 6, go through the tunnel to Kharanos. The trainers of Ironforge are in the Mystic Ward.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Priest](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start in Shadowglen on Teldrassil. Your first trainer is in Aldrassil (in Classic: Shanda). At level 6, go down the ramp to Dolanaar, which has early class training. The trainers of Darnassus are in the Temple of the Moon. Teldrassil has new quests and NPCs in Forever.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Priest](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start in the Valley of Trials in Durotar. Your first trainer is in the Den (in Classic: Ken'jai). At level 6, go to Sen'jin Village, which has early class trainers. The trainers of Orgrimmar are in the Valley of Spirits. Blizzard says that the Valley of Trials has new NPCs and quests.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Priest](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You start in the crypt of Deathknell in Tirisfal Glades. Your first trainer is in the chapel of Deathknell (in Classic: Dark Cleric Duesten). At level 6, go east to Brill, which has early class trainers. The capital trainers are in the Undercity. Tirisfal Glades has the 2 new areas Shadowvale and Bandarion Keep in the west.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Shadow</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You have no talent points before level 10. Use Shadow Word: Pain and Smite, then the wand.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="disc" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Discipline</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You have no talent points before level 10. Use Shadow Word: Pain and Smite, then the wand.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="holy" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Holy at 60</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You have no talent points before level 10. Use Shadow Word: Pain and Smite, then the wand.
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Priest equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Your first important item is a wand, because its damage uses no mana. Buy one from an Enchanter or from the Auction House. Night Elves and Undead get a robe from their class quest at about level 5.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Lesser Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: usable at level 5 |
+| Staff | **Apprentice's Spellstaff** | Quest: *Rare Books*, Elwynn Forest (Alliance) |
+| Chest | **Moon Robes of Elune** | Class quest: *Garments of the Moon* (Night Elf) |
+| Chest | **Acolyte's Sacrificial Robes** | Class quest: *Garments of Darkness* (Undead) |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="healer" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Healer</strong> [Priest equipment](equipment.md#healer){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Your first important item is a wand, because you also kill enemies alone. Night Elves and Undead get a robe from their class quest at about level 5.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Lesser Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: usable at level 5 |
+| Staff | **Apprentice's Spellstaff** | Quest: *Rare Books*, Elwynn Forest (Alliance) |
+| Chest | **Moon Robes of Elune** | Class quest: *Garments of the Moon* (Night Elf) |
+| Chest | **Acolyte's Sacrificial Robes** | Class quest: *Garments of Darkness* (Undead) |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Tailoring and Enchanting</strong> [Priest equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Enchanting makes a wand at skill 1. No source gives the level that the Novice's Practice Wand needs. Tailoring makes the Stormsewn linen items at skill 50.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Novice's Practice Wand** | [Enchanting](../../professions/enchanting.md), skill 1 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Lesser Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: usable at level 5 |
+| Feet | **Simple Linen Boots** | [Tailoring](../../professions/tailoring.md), trainer recipe |
+| Wrist | **Azure Stormsewn Cuffs** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Azure Stormsewn Cord** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
+| Bag | **Linen Reagent Bag** | [Tailoring](../../professions/tailoring.md), skill 5 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Train Power Word: Shield at level 6.
+- [ ] Get a wand. The Lesser Magic Wand is usable at level 5.
+- [ ] At about level 5, get the camping quest *The Great Outdoors*.
+- [ ] Learn your 2 professions. With Enchanting, you can make your own wand.
+
+## Levels 10–19: Mind Blast, first talents and the first dungeon { #l10 }
+
+At level 10 you train Mind Blast, and you get your first talent point. From here, you get 1 talent point at each level. You also get the first special spell of your race and your first class quest.
+
+Mind Blast is your largest hit. Cast it before the enemy gets to you. Most kills are now the same sequence: Power Word: Shield, Mind Blast, Shadow Word: Pain, then the wand until the enemy dies. Each talent path changes this sequence a little.
+
+Inner Fire at 12 gives armor. Psychic Scream at 14 is your only escape: it makes the enemies near you run for some seconds. Look at the area before you use it, because enemies that run can pull other enemies.
+
+Your first dungeons open at level 13. The group finder shows groups, but it does not teleport you, and Meeting Stones do not summon. You must go to the entrance. Quests give much more XP than dungeon enemies, so do each dungeon for its quests.
+
+You are the healer in most groups, and this is a new job. Cast Power Word: Shield and Renew on the tank before the pull. Each heal causes threat, and an enemy attacks the player with the most threat. If an enemy attacks you, cast Fade. Drink between pulls, and tell the group when your mana is low.
+
+Start to collect the library books of your class now. At level 14, start the scavenger hunt for the Cozy Sleeping Bag. See [Leveling](../../characters/leveling.md).
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 10 | **Mind Blast, Resurrection** | Mind Blast is your largest hit. Resurrection makes you necessary in each group |
+| 10 | **First race spell** | See the Race add-on |
+| 12 | **Inner Fire** | More armor. Keep it active |
+| 14 | **Psychic Scream, Cure Disease** | Psychic Scream is your emergency escape |
+| 16 | **Heal** | A slow heal that uses mana efficiently. Use it in dungeons |
+| 18 | **Dispel Magic** | Removes a harmful effect from an ally or a buff from an enemy |
+
+**Dungeons in this chapter**
+
+- [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) **13–20**{ .lvl }: New. It is in Ironforge. The first dungeon for Alliance Priests
+- Ragefire Chasm **13–18**{ .lvl }: It is in Orgrimmar
+- [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) **15–22**{ .lvl }: New. It is in Tirisfal Glades. It has Undead enemies. It drops the camp blueprints Fermenter and Arcane Salvager
+- Wailing Caverns **15–24**{ .lvl }: Warcraft Tavern lists the Sizzle Stick wand from a quest here
+- The Deadmines **17–26**{ .lvl }
+
+!!! warning "Caution"
+    Psychic Scream can pull more enemies in a dungeon. Use it only when the group is in danger.
+
+!!! hardcore "Hardcore"
+    Keep Psychic Scream for escapes only. Run when the shield breaks and the enemy still has more than half of its health.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Westfall, Loch Modan or Darkshore. Go to Redridge Mountains at level 15. The Three Corners supply camp in Redridge has the Merchant's Favor vendors.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in the Barrens or Silverpine Forest. Go to Stonetalon Mountains at level 15. Ragefire Chasm in Orgrimmar is your first dungeon.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Priest](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+At level 10 you learn **Divine Grace**. It heals an ally below 50% health and removes Weakened Soul. You cannot cast it on yourself. Then complete Elwynn Forest and go to Westfall.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Priest](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The new dungeon Hall of Thanes is in Ironforge. It is the easiest first dungeon for a Dwarf. Then go east to Loch Modan.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Priest](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+At level 10 you learn **Confounding Flash**. It confuses a maximum of 5 enemies for 3 seconds, and damage breaks it. Do not put DoTs on confused targets. Hall of Thanes is in Ironforge.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Priest](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+At level 10 you learn **Starshards**. It does Arcane damage and has a 30 second cooldown. Use it in each fight. Then take the boat from Rut'theran Village to Auberdine.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Priest](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Your race spells are **Hex of Weakness** and **Shadowguard**. Blizzard lists them as not changed and gives no levels. Shadowguard damages enemies that hit you. Beast Slaying gives more damage against Beasts, and many early quests have Beasts as targets. Ragefire Chasm is in Orgrimmar.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Priest](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The new dungeon Ruins of Lordaeron is in Tirisfal Glades. Its Undead enemies give practice with Shackle Undead at 20. At level 12, go south to Silverpine Forest.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Shadow</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Spirit Tap doubles your Spirit for 15 seconds after each kill that gives XP. In that time, 50% of your mana regeneration continues while you cast. Thus go from kill to kill without a stop. Cast the shield, Mind Blast and Shadow Word: Pain, then use the wand. Improved Shadow Word: Pain at 15 and 16 adds 6 seconds to the DoT. Method says that a Shadow Priest can heal dungeons to level 60 without a respec, but with worse mana efficiency.
+
+| Level | Talent | Rank | Why |
 |---|---|---|---|
-| **Alliance**{ .pill .pill--alliance } | Human | Divine Grace *(new)*, Feedback | [Human Priest](human.md) |
-| **Alliance**{ .pill .pill--alliance } | Dwarf | Desperate Prayer, Chastise *(new)* | [Dwarf Priest](dwarf.md) |
-| **Alliance**{ .pill .pill--alliance } | Gnome **(new)** | Confounding Flash *(new)*, Contingency Plan *(new)* | [Gnome Priest](gnome.md) |
-| **Alliance**{ .pill .pill--alliance } | Night Elf | Starshards (buffed), Elune's Grace (redesigned) | [Night Elf Priest](night-elf.md) |
-| **Horde**{ .pill .pill--horde } | Troll | Hex of Weakness, Shadowguard | [Troll Priest](troll.md) |
-| **Horde**{ .pill .pill--horde } | Undead | Touch of Weakness, Dark Sacrifice *(new)* | [Undead Priest](undead.md) |
+| 10–14 | **Spirit Tap** | 5/5 | Mana regeneration after each kill |
+| 15–16 | **Improved Shadow Word: Pain** | 2/2 | More damage for the same mana |
+| 17–19 | **Shadow Focus** | 3/5 | Fewer resists. Opens row 3 |
 
-Skyborne, Orc and Tauren cannot be Priests. For all racial abilities, see [Races](../../characters/races.md).
+Points at level 19: **0/0/10** (Discipline / Holy / Shadow Magic).
 
----
-
-## Specs & talents
-
-!!! tip "Full talent guide"
-    The [Priest talent guide](../../talents/priest.md) gives a rating to each talent and a talent for each level from 10 to 60. Its tree data is from the launch client. If this section and the talent guide disagree, use the talent guide.
-
-Talents start at **level 10**, with one point for each level. At 60, you have 51 points. Gold single-point tiers are at **11, 16, 21 and 31 points** spent in a tree. Without Legacy bonuses, the milestones are:
-
-<div class="milestones" markdown>
-
-11
-:   **Lv 20**{ .pts } Tier-3 talents (Mind Flay for Shadow, Holy Nova for Holy)
-
-16
-:   **Lv 25**{ .pts } Soul Warding · Holy Binding · Vampiric Embrace
-
-21
-:   **Lv 30**{ .pts } Penance (Discipline)
-
-31
-:   **Lv 40**{ .pts } Prayer of Mending · Shadowform
 
 </div>
 
-The Legacy talent **Talented** gives you your first point a maximum of 5 levels earlier. Thus each milestone above also comes earlier. See [Legacy](#professions-legacy).
+<div class="fc-addon" data-pick="talents" data-value="disc" markdown>
 
-=== "Discipline"
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Discipline</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-    **Identity:** shields, Penance and absorbs. Discipline is the strongest *solo* healer spec. With a wand, it is also a good spec for quests.
+Wand Specialization at 10 and 11 gives 25% more wand damage. The wand does a large part of your damage until level 30. Cast the shield, Smite and Shadow Word: Pain, then use the wand. Holy Precision at 15 gives 6% hit to Smite. Mental Strength gives more mana.
 
-    | Talent | Notes |
-    |---|---|
-    | Power in Light *(new)* | Increases Smite and Penance damage against targets that have your Holy Fire |
-    | Twin Disciplines *(new)* | Increases damage and healing of instant spells (Shield, Renew, SW:Pain, Holy Nova and others) |
-    | Wand Specialization | Now only 2 points. Get it for leveling |
-    | Silent Resolve | Also makes stuns, fears and silences on you shorter. It replaces Unbreakable Will |
-    | Holy Precision | A maximum of 18% Holy hit. You do not need hit gear for Holy damage |
-    | Improved Power Word: Shield | Larger shields |
-    | Mental Agility | Row 3, 3 points. Now also applies to Smite and Holy Fire |
-    | Meditation | Much stronger in-combat regeneration from Spirit |
-    | Improved Inner Fire | More armor and more charges |
-    | Mental Strength | Now a % Intellect bonus, not a % mana bonus |
-    | **Soul Warding** (16) | Power Word: Shield costs less and has a shorter cooldown |
-    | Renewed Hope | More crit on your direct heals and Penance on Weakened Soul targets. Each heal makes Weakened Soul shorter |
-    | **Penance** (21) | 2 s channel, 12 s cooldown. Hits an enemy or heals an ally each second |
-    | Divine Aegis | Critical heals give a 12 s absorb shield, based on the heal. Does not stack |
-    | Improved Mana Burn | Faster Mana Burn |
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 10–11 | **Wand Specialization** | 2/2 | The wand does much of your damage before level 30 |
+| 12–14 | **Twin Disciplines** | 3/5 | More damage from Shadow Word: Pain. Opens row 2 |
+| 15 | **Holy Precision** | 1/3 | 6% hit for Smite and Holy Fire |
+| 16–19 | **Mental Strength** | 4/5 | More mana. Opens row 3 |
 
-    Warcraft Tavern says that Power Infusion is still deep in the Discipline tree. The Blizzard deep dive does not mention it (*unconfirmed*).
+Points at level 19: **10/0/0** (Discipline / Holy / Shadow Magic).
 
-=== "Holy"
 
-    **Identity:** throughput and group healing. Holy has Prayer of Mending, Holy Binding and Spirit of Redemption, and mana tools for long fights.
+</div>
 
-    | Talent | Notes |
-    |---|---|
-    | Twilight Focus | New name of Healing Focus. Pushback protection on **all** casts, 3 points |
-    | Blessed Recovery | Also starts from each single hit of more than 30% of your health |
-    | Inspiration | Starts from each non-periodic critical heal |
-    | Improved Healing | Also decreases the cost of Penance and Prayer of Mending |
-    | Searing Light (redesigned) | A smaller Holy damage bonus. Holy Fire can make your next Holy Nova free |
-    | **Holy Binding** (16) | When your Flash Heals heal other players, they also heal you for 50% of that healing |
-    | Litany of Light | Gives back part of the cost of a heal if it is different from your previous heal. This rewards you when you use different spells |
-    | Spiritual Guidance | The spell damage share is now about one third of the healing share |
-    | Spiritual Healing | Now 3 points |
-    | Spirit of Redemption | Now lasts 15 s |
-    | **Prayer of Mending** (31) | 10 s cooldown, 30 s duration. Heals on the next hit, then jumps a maximum of 5 times within 20 yards |
+<div class="fc-addon" data-pick="talents" data-value="holy" markdown>
 
-    !!! conflict "Conflict: Binding Heal vs. Holy Binding"
-        The Blizzard deep dive describes **Binding Heal**, a 1.5 s spell that heals you and your target. In the launch kit, the passive **Holy Binding** above replaced it (see [Classes](../../characters/classes/index.md#changes-between-the-deep-dives-and-launch)). Some fan guides still show Binding Heal. Possibly the tooltip of Renewed Hope also still shows its name.
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Holy at 60</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-=== "Shadow"
+You level with the Discipline build, because Holy is the slowest spec alone. Wand Specialization at 10 and 11 gives 25% more wand damage. Cast the shield, Smite and Shadow Word: Pain, then use the wand. Heal dungeons from level 13, because this is the practice for your role at 60. Use the shield, Renew and Lesser Heal, and Heal from level 16.
 
-    **Identity:** a DoT and Mind Flay caster that buffs itself. Shadow Weaving now buffs only **your own** Shadow damage. Thus you bring a Shadow Priest for its damage, not for a raid debuff.
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 10–11 | **Wand Specialization** | 2/2 | The wand does much of your damage before level 30 |
+| 12–14 | **Twin Disciplines** | 3/5 | More damage from Shadow Word: Pain. Opens row 2 |
+| 15 | **Holy Precision** | 1/3 | 6% hit for Smite and Holy Fire |
+| 16–19 | **Mental Strength** | 4/5 | More mana. Opens row 3 |
 
-    | Talent | Notes |
-    |---|---|
-    | Shadow Focus | Row 1. Now gives Shadow **hit** |
-    | Shadow Reach | Row 2, 2 points. More range |
-    | Improved Mind Flay | Row 3. More damage and range, weaker slow |
-    | Mind Flay | Tier 3 (11 points, level 20) |
-    | **Vampiric Embrace** (16) | Now a 30 s duration on a 1-minute cooldown. A short burst of self and party healing, not a permanent debuff |
-    | Shadow Affinity | A little more threat reduction |
-    | Silence / Improved Psychic Scream | Silence no longer needs Improved Psychic Scream. Improved Psychic Scream now needs Blackout |
-    | Devouring Contagion | Row 5. Devouring Plague costs less. When the target dies, the Plague jumps to an enemy within 5 yards with its remaining duration |
-    | Early Demise | Row 6. More SW:Death crit below 20% health |
-    | Shadow Weaving | Only on yourself, with a smaller bonus |
-    | **Shadowform** (31) | You can cast all spells that do not heal. Shadow spells cost **50% less** and get **+100% crit damage**. The flat damage bonus is lower |
+Points at level 19: **10/0/0** (Discipline / Holy / Shadow Magic).
 
-    !!! conflict "Conflict: Shadowform"
-        The Blizzard text gives Shadowform +100% Shadow **crit damage**. The Warcraft Tavern summary says Shadow crit **chance**. This guide uses the Blizzard text.
 
-    Warcraft Tavern says that Vampiric Touch is not in the Forever kit.
+</div>
 
-### Recommended builds
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
 
-!!! note "Builds are milestone lists"
-    The fan sites published their trees as images, and their builds are different for each patch. The lists below give the **talents to have at each milestone**. Put the remaining points into the clear damage, mana or survival talents of the tree. After the 10 November tuning, check a talent calculator ([Mobalytics](https://mobalytics.gg/wow-forever/priest-talent-calculator) or [Zockify](https://www.zockify.com/forever/priest/)).
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Priest equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-=== "Leveling (recommended)"
+The wand is your most important slot in these levels. Replace it at 13 and again at 18. Early wands now have spell power as a stat. The first dungeons give a weapon and a robe for each faction.
 
-    Two routes are popular. Both work. Select a route by how frequently you play in a group.
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Greater Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: usable at level 13 |
+| Wand | **Deepblaze** | Quest: *Old Ironforge Incursion*, Hall of Thanes (Alliance) |
+| Wand | **Cinder Wand** | Quest: *Arugal's Folly*, Silverpine Forest (Horde) |
+| Wand | **Sizzle Stick** | Quest: a quest in Wailing Caverns. Usable at level 15 (Warcraft Tavern) |
+| Wand | **Charred Wand** | Quest: *Dangerous!*, Hillsbrad Foothills. Usable at level 19 (Method) |
+| Wand | **Gravestone Scepter** | Quest: *Blackfathom Villainy*, Blackfathom Deeps. Usable at level 18 |
+| Dagger | **Fang of Magmatus** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) |
+| Chest | **Robes of the Disgraced Thane** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) |
+| Staff | **Staff of Orgrimmar** | Quest: *Hidden Enemies*, Orgrimmar (Horde) |
+| Chest | **Robe of Evocation** | Ragefire Chasm |
 
-    **A. Discipline → Shadow at 40** (Method)
 
-    <div class="milestones" markdown>
+</div>
 
-    Lv 10–19
-    :   Wand Specialization (2), Twin Disciplines, Improved Power Word: Shield, Silent Resolve or Holy Precision
+<div class="fc-addon" data-pick="gear" data-value="healer" markdown>
 
-    Lv 20–25
-    :   Mental Agility, Meditation, Improved Inner Fire, then **Soul Warding** at 16 points
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Healer</strong> [Priest equipment](equipment.md#healer){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-    Lv 25–30
-    :   Mental Strength, Renewed Hope, then **Penance** at 21 points
+Bonus healing on an item also gives one third of its value as spell damage. Thus a healer weapon is also good for quests. Hall of Thanes and Ragefire Chasm give the first healer items.
 
-    Lv 30–39
-    :   Power in Light, Divine Aegis and the other talents that decrease mana cost
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Greater Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: usable at level 13 |
+| Main hand | **Thornroot Club** | Quest: *Ursal the Mauler*, Teldrassil (Alliance) |
+| Main hand | **Makeshift Stormcaller** | Quest: *Stormy Potential*, Durotar (Horde) |
+| Dagger | **Fang of Magmatus** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) |
+| Off-hand | **Dwarven Tome** | Quest: *Important Heirlooms*, Hall of Thanes (Alliance) |
+| Neck | **Ephemeral Choker** | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) |
+| Main hand | **Trogg Scepter** | Ragefire Chasm |
+| Wand | **Sizzle Stick** | Quest: a quest in Wailing Caverns. Usable at level 15 (Warcraft Tavern) |
+| Wand | **Gravestone Scepter** | Quest: *Blackfathom Villainy*, Blackfathom Deeps. Usable at level 18 |
 
-    Lv 40
-    :   Buy dual spec. Make spec 2 **Shadow** for quests and keep Discipline for dungeons, or change fully to Shadow
 
-    </div>
+</div>
 
-    Method says that this build uses mana efficiently and survives well. But its damage decreases in the middle and late 30s. For this reason, it changes to Shadow at 40.
+<div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-    **B. Shadow from level 10** (Mobalytics, Warcraft Tavern)
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Tailoring and Enchanting</strong> [Priest equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-    <div class="milestones" markdown>
+Forever adds rare cloth items of item level 17 to 30 in 6 versions. Warcraft Tavern names the **Shadow** items for Shadow damage and recommends the **Pristine** items for healers. Each pattern costs 30 Merchant's Favor from Mivin Shadowweave at Three Corners in Redridge. Warcraft Tavern also names new belts with spell power at level 10. They are probably the 2 Novice sashes.
 
-    Lv 10–19
-    :   Shadow Focus, Shadow Reach, Improved Shadow Word: Pain (if present), then Mind Flay at 11 points
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Greater Magic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe: usable at level 13 |
+| Waist | **Novice Arcanist's Sash** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Novice Ardent's Sash** | [Tailoring](../../professions/tailoring.md), skill 50 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Shadow Boots or Pristine Boots** | [Tailoring](../../professions/tailoring.md), skill 60 **New**{ .pill .pill--new .pill--sm } |
+| Hands | **Shadow Gloves or Pristine Gloves** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm }: Kami-Labs says that the Shadow Gloves were usable from about level 20 in the beta |
+| Waist | **Shadow Sash or Pristine Sash** | [Tailoring](../../professions/tailoring.md), skill 85 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Filigreed Shadow Gown or Filigreed Pristine Gown** | [Tailoring](../../professions/tailoring.md), skill 75 **New**{ .pill .pill--new .pill--sm }: the pattern drops in low level dungeons (Warcraft Tavern) |
 
-    Lv 20–25
-    :   Improved Mind Flay, then **Vampiric Embrace** at 16 points
 
-    Lv 25–39
-    :   Shadow Affinity, Silence, Devouring Contagion, Shadow Weaving, Early Demise
+</div>
 
-    Lv 40
-    :   **Shadowform** at 31 points
+</div>
 
-    Lv 41–60
-    :   Complete Shadow, then Discipline: Wand Specialization, Twin Disciplines, Improved Shield, Mental Agility, Meditation
+**Before you continue**
 
-    </div>
+- [ ] Train Mind Blast and spend your first talent point at level 10.
+- [ ] Do the class quest of level 10.
+- [ ] Heal your first dungeon for its quests.
+- [ ] Start the Cozy Sleeping Bag scavenger hunt at level 14.
 
-    Warcraft Tavern says that Shadow is not really strong before about level 28, when you have some spell power. Before that level, Disc is easier.
+## Levels 20–29: Fear Ward, Devouring Plague and your first key talent { #l20 }
 
-=== "Holy raid"
+Level 20 gives you more than any level before it. You train Flash Heal, Holy Fire, Fear Ward, Devouring Plague, Shackle Undead and Mind Soothe. This training costs much money, so save for it. You also get the second special spell of your race and the second class quest.
 
-    The fan guides give about **20/31/0** or **19/32/0**. This is deep Holy for Prayer of Mending and Spirit of Redemption, with about 20 Discipline points for Mental Agility, Meditation, Mental Strength, Improved Shield and Soul Warding. These splits come from beta calculators (*unconfirmed for launch*).
+In Classic, only some races had Fear Ward and Devouring Plague. In Forever they are baseline, thus each Priest trains them. Fear Ward protects 1 player from the next Fear. Put it on the tank before bosses that cast Fear.
 
-    Necessary talents: Twilight Focus, Inspiration, Improved Healing, Holy Binding, Litany of Light, Spiritual Healing, Spiritual Guidance, Spirit of Redemption, **Prayer of Mending**.
+Devouring Plague is your second DoT. In Classic it also heals you. It costs much mana, so use it on strong enemies and elite enemies. Shackle Undead holds 1 Undead enemy out of the fight. It is your first crowd control spell for dungeons.
 
-=== "Discipline raid"
+Flash Heal is your fast heal. From now on, a dungeon healer uses 3 tools: the shield before damage, Renew for constant damage and Flash Heal for sudden damage. If a large heal gives you aggro, cast Fade and let the tank take the enemy back.
 
-    About **31/20/0**: Penance, Divine Aegis and Renewed Hope, with about 20 Holy points for Twilight Focus, Inspiration, Improved Healing and **Holy Binding**. This is the strongest build for tank healing and single-target healing (*unconfirmed for launch*).
+Your 11th talent point comes at level 20, and your 16th at level 25. These 2 points open the first strong talents of your tree. The Talents add-on below shows what you get and how it changes your fight.
 
-=== "Shadow raid / PvP"
+At 20, give 10 library books to get the first book quest. Level 25 gives the *Priest: Novice* Legacy Point. Only the first Priest on your account gets it. See [Legacy](../../characters/legacy.md).
 
-    Go deep into Shadow for **Shadowform** (31+). Put the other points in Discipline for Mental Agility, Twin Disciplines, Improved Shield and Meditation. For PvP, think about Silence, Improved Psychic Scream and Silent Resolve, not only damage talents. Exact splits are not published yet.
+| Level | You train | Why it is important |
+|---|---|---|
+| 20 | **Flash Heal, Holy Fire** | A fast heal, and a damage spell with a long cast for the start of a fight |
+| 20 | **Fear Ward, Devouring Plague** | Baseline for each race in Forever |
+| 20 | **Shackle Undead, Mind Soothe** | Shackle Undead removes 1 Undead enemy from the fight |
+| 20 | **Second race spell** | See the Race add-on |
+| 22 | **Mind Vision** | You see through the eyes of the target |
+| 24 | **Mana Burn** | Destroys enemy mana. A PvP spell |
 
-### Dual spec at 40
+**Dungeons in this chapter**
 
-At 40, you can buy a second spec for **50g** from a Priest trainer. You can change specs outside combat and outside battlegrounds. If you change talents in a spec, you pay a fee. This fee decreases to 1g over time.
+- Shadowfang Keep **20–30**{ .lvl }
+- Blackfathom Deeps **24–32**{ .lvl }: The quest *Blackfathom Villainy* gives the Gravestone Scepter wand
+- The Stockade **25–29**{ .lvl }: It is in Stormwind
+- [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) **26–33**{ .lvl }: New. It is in the Wetlands
+- [City of Dalaran](../../content/dungeons/city-of-dalaran.md) **28–35**{ .lvl }: New. You need the Dalaran Sewer Key. NPCs in Dalaran attack Horde characters
 
-The usual pair is **Shadow for quests + Holy or Discipline for dungeons**. At 40, you also want your 100g mount. Method recommends that you do not buy low-value spell ranks before 40, so that you have money for both.
+??? example "Macros for heals, the shield and Fear Ward"
 
----
-
-## Abilities & rotation
-
-### Key spells by level
-
-Spell levels come from Warcraft Tavern and Method. This table does not show ranks.
-
-| Level | New spells |
-|---|---|
-| 1 | Smite, Lesser Heal, Power Word: Fortitude |
-| 4 | Shadow Word: Pain |
-| 6 | Power Word: Shield |
-| 8 | Renew, Fade |
-| 10 | Mind Blast, Resurrection, **first race spell**, first class quest. Talents start |
-| 12 | Inner Fire |
-| 14 | Psychic Scream, Cure Disease |
-| 16 | Heal |
-| 18 | Dispel Magic |
-| 20 | Flash Heal, Holy Fire, **Fear Ward**, **Devouring Plague**, Mind Soothe, Shackle Undead, **second race spell**, second class quest. The library-book quest becomes available |
-| 22 | Mind Vision |
-| 24 | Mana Burn |
-| 30 | **Divine Spirit**, Prayer of Healing, Mind Control |
-| 32 | **Shadow Word: Death**, Abolish Disease |
-| 34 | Levitate |
-| 35 | The library-book quest becomes available |
-| 40 | Greater Heal, dual spec, Apprentice Riding |
-| 45 | The library-book quest becomes available |
-| 48 | Prayer of Fortitude |
-| 56 | Prayer of Shadow Protection |
-| 60 | Prayer of Spirit |
-
-!!! conflict "Conflict: Shadow Word: Death backlash"
-    The Blizzard deep dive says that SW:Death causes damage to you of **10%** of your maximum health if the target does not die. The pre-launch notes on the [Priest page](../../characters/classes/priest.md) say **30%**, and no backlash on a miss. Think of it as a large hit on yourself. Do not use it as a filler when your health is low.
-
-### Rotations
-
-=== "Shadow"
-
-
-    !!! rotation "Shadow: Solo questing (Method, 40+)"
-
-        <div class="priority" markdown>
-
-        1. Cast **Power Word: Shield** on yourself before the pull.
-        2. Start with **Mind Blast** (cast it before the mob gets to you).
-        3. **Shadow Word: Pain**.
-        4. **Shadow Word: Death** on cooldown, if your health is sufficient.
-        5. **Mind Blast** on cooldown.
-        6. **Mind Flay** as filler. Add **Devouring Plague** on strong or elite mobs.
-
-        </div>
-
-
-    **Single-target raid (general):** Keep SW:Pain and Devouring Plague active. Use Mind Blast on cooldown and Mind Flay as filler. Use SW:Death when you move or during execute (Early Demise). Only your own spells give Shadow Weaving stacks. Thus start to build them immediately.
-
-    **Multiple targets:** Put SW:Pain on each target. With Devouring Contagion, put the Plague on the target that will die first, so that the Plague jumps.
-
-    **Vampiric Embrace:** a 30 s window each minute. Use it on large pulls in dungeons or when the healer has problems.
-
-=== "Discipline"
-
-    **Solo questing (Warcraft Tavern):** Shield yourself when you have sufficient mana. Start with Smite or Holy Fire (Power in Light) and apply SW:Pain. Use **Penance on cooldown** (as damage, or as a self-heal). Then use your wand or let the DoT kill the mob.
-
-
-    !!! rotation "Discipline: Healing"
-
-        <div class="priority" markdown>
-
-        1. **Power Word: Shield** on the player who will take damage next. With Soul Warding, this is your main spell.
-        2. **Penance** on cooldown on the target with the most damage.
-        3. Flash Heal / Greater Heal on Weakened Soul targets for Renewed Hope crits. Each crit gives **Divine Aegis**.
-        4. Renew on a tank that you cannot shield.
-        5. In a 5-player group, Prayer of Healing for group damage.
-
-        </div>
-
-
-=== "Holy"
-
-
-    !!! rotation "Holy: Healing"
-
-        <div class="priority" markdown>
-
-        1. Keep **Prayer of Mending** active. Put it on the tank again every 10 s.
-        2. **Renew** on targets that take constant damage. Renew from other Priests stacks.
-        3. **Flash Heal** for fast single-target healing. Holy Binding heals you for half.
-        4. **Heal / Greater Heal** for efficient large heals.
-        5. **Prayer of Healing** on a member of the group that has damage.
-        6. Use different spells in turn for **Litany of Light** refunds. Do not cast the same spell again and again.
-
-        </div>
-
-
-    **Solo:** The same as Discipline, but without Penance. Holy is the slowest spec for leveling.
-
-### Cooldowns & utility
-
-| Spell | Use |
-|---|---|
-| Fear Ward | Every Priest now has it. Put it on the tank before fear casts |
-| Psychic Scream | Emergency escape. It can pull more mobs. Look at the area around you |
-| Fade | Two times stronger. Use it after a large heal on a new pull |
-| Shackle Undead | Crowd control in Scholomance, Stratholme and the [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) |
-| Mind Control | In PvP, move enemies to dangerous positions. Also some dungeon tricks |
-| Mana Burn | PvP only |
-| Divine Spirit | Now baseline. Keep it on casters and healers |
-
-### Macros
-
-??? example "Show 3 macros"
-
-    Mouseover healing (you do not need an add-on):
+    Heal the player under the mouse pointer. You do not need an add-on:
 
     ```
     #showtooltip
@@ -383,404 +729,1266 @@ Spell levels come from Warcraft Tavern and Method. This table does not show rank
     /cast [@player] Power Word: Shield
     ```
 
-    Fear Ward on the focus (set the tank as focus):
+    Fear Ward on the focus. Set the tank as your focus:
 
     ```
     #showtooltip
     /cast [@focus,help][help][@player] Fear Ward
     ```
 
-    !!! note
-        This guide assumes that the modern `@` macro conditionals and focus targets work, as they do in the current Classic clients. The add-on and macro rules of Forever are on [Add-ons & UI](../../systems/addons.md).
+    These macros assume that the `@` conditions and focus targets work as in the current Classic clients. See [Add-ons & UI](../../systems/addons.md).
 
----
+!!! tip "Tip"
+    Practice Shackle Undead in the Ruins of Lordaeron. You need it later in Scarlet Monastery, Scholomance and Stratholme.
 
-## Leveling walkthrough 1–60
+<div class="fc-addons" markdown>
 
-General advice:
+<div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf" data-default markdown>
 
-- **Get a wand at level 5–13.** Until you have Penance or Shadowform, your wand is your main damage that uses no mana. See the wand list in the 10–20 section.
-- **Shield, DoT, wand.** Before 30, most kills are Power Word: Shield → Shadow Word: Pain → Mind Blast → wand. DoTs tag a mob instantly. When other players also want the mob, start with SW:Pain.
-- **Drink, do not rest.** Each time you go to a town, buy water for your level. Spirit gives mana regeneration outside the five-second rule.
-- **Camping and rested XP:** A campfire with a Leatherworking Camp Tent gives rested XP. The Cozy Sleeping Bag scavenger hunt starts at level 14. See [Camping](../../systems/camping.md) and [Leveling](../../characters/leveling.md).
-- **Quest XP is better than dungeon mob XP.** Do dungeons for their quests.
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
 
-<div class="route" markdown>
+Quest in the Wetlands, Duskwood, Ashenvale and Redridge Mountains. The new dungeon Excavation Site is in the Wetlands. The new boat from Stormwind Harbor goes to Auberdine.
 
-### 1–10: starting zones
-
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
-|---|---|
-| Human: Northshire → Elwynn Forest | Troll: Valley of Trials → Durotar |
-| Dwarf, Gnome: Coldridge Valley → Dun Morogh | Undead: Deathknell → Tirisfal Glades |
-| Night Elf: Shadowglen → Teldrassil | |
-
-- **Train:** Smite and Lesser Heal (1), SW:Pain (4), Power Word: Shield (6), Renew and Fade (8), Mind Blast (10).
-- Do the quest chain of the starting zone and train at each level. At about level 5, get the camping quest *The Great Outdoors*.
-- At **10**: you get your first race spell, your first class quest and your first talent point.
-- Durotar, Teldrassil and Tirisfal have new quests and NPCs in Forever. Tirisfal now has **Shadowvale** and **Bandarion Keep** in its empty west area.
-
-Each race add-on gives the steps for its starting zone.
-
-### 10–20
-
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
-|---|---|
-| Westfall, Loch Modan, Darkshore | The Barrens, Silverpine Forest |
-| Redridge Mountains (15+) | Stonetalon Mountains (15+) |
-
-- **Train:** Inner Fire (12), Psychic Scream and Cure Disease (14), Heal (16), Dispel Magic (18).
-- **Talents:** your first 10 points. If you start with Discipline, get Wand Specialization early.
-- **Wands** (Method and Warcraft Tavern. The lists are different):
-
-| Wand | Level | Source |
-|---|---|---|
-| Lesser Magic Wand | 5 | Enchanting (make it yourself or buy it) |
-| Greater Magic Wand | 13 | Enchanting |
-| Sizzle Stick | 15 | Wailing Caverns quest (Warcraft Tavern) |
-| Gravestone Scepter | 18 | Blackfathom Deeps quest *Blackfathom Villainy* |
-| Charred Wand | 19 | Hillsbrad quest *Dangerous!* (Method) |
-
-- **Dungeons:** [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (Ironforge, 13–20), Ragefire Chasm (13–19), [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) (Tirisfal, 15–22), The Deadmines and Wailing Caverns (17–25).
-- **Library books:** Start to collect class library books now. When you turn in 10 books, a quest becomes available at level 20. This wiki does not show the locations yet.
-
-### 20–30
-
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
-|---|---|
-| Wetlands, Duskwood, Ashenvale, Redridge | Hillsbrad Foothills, Ashenvale, Stonetalon, Thousand Needles (25+) |
-
-- **Train at 20:** Flash Heal, Holy Fire, **Fear Ward**, **Devouring Plague**, Shackle Undead, Mind Soothe. This training costs much money. Save money for it.
-- **At 20:** You get your second race spell, the second class quest, and the first library-book quest (10 books).
-- **Talents:** 11 points give access to tier 3 (Mind Flay for Shadow). At **25**, you get to the 16-point gold tier: Soul Warding, Holy Binding or Vampiric Embrace.
-- **Dungeons:** Shadowfang Keep, Blackfathom Deeps (Gravestone Scepter), the Stockade, and the new [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) (24–33).
-- **Wands at 26–27:** *Dancing Flame* (Arathi quest *Final Passage*), *Wand of Eventide* (world drop), *Wand of Mana Concentration* (City of Dalaran quest *Arcanic Enigma*). *Unconfirmed: each has only one source.*
-
-### 30–40
-
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
-|---|---|
-| Alterac Mountains (Dalaran), Arathi Highlands, Stranglethorn Vale, Desolace, Dustwallow (35+) | Arathi Highlands, Stranglethorn Vale, Desolace, Thousand Needles, Dustwallow (35+) |
-| **Riverglades** (35+) from Farholde Keep | **Riverglades** (35+) from Rog'mar |
-
-- **Train:** Divine Spirit, Prayer of Healing, Mind Control (30). **SW:Death** and Abolish Disease (32). Levitate (34).
-- **Talents:** At 30, 21 points give **Penance** for Discipline.
-- **At 35:** the second library-book quest (20 books in total).
-- **Riverglades** is new and contested, and it is about the size of Stranglethorn. You can go there from Redridge, the Badlands, the Swamp of Sorrows, the Burning Steppes, or with the Tanaris ferry. See [Zones](../../world/zones.md#riverglades).
-- **Dungeons:** [City of Dalaran](../../content/dungeons/city-of-dalaran.md) (28–35. In Dalaran, Horde players are attacked on sight), Razorfen Kraul, Gnomeregan, Scarlet Monastery wings, [The Drowned City](../../content/dungeons/drowned-city.md) (35–42).
-- Desolace centaur quests now need level 35. [Shen'dralas](../../world/zones.md#shendralas) is on the other side of the Valley of Bones (level range unknown).
-
-### 40–50
-
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
-|---|---|
-| Riverglades, Badlands, Swamp of Sorrows, Feralas, Tanaris, Hinterlands | Riverglades, Badlands, Swamp of Sorrows, Feralas, Tanaris, Hinterlands |
-| Searing Gorge (43+), Azshara and Felwood (45+) | Searing Gorge (43+), Azshara and Felwood (45+) |
-
-- **At 40:** Apprentice Riding and your first mount (100g), **dual spec** (50g), Greater Heal. Shadow gets **Shadowform**. Holy gets **Prayer of Mending**.
-- **At 45:** the third library-book quest (25 books in total).
-- **Train:** Prayer of Fortitude (48).
-- **Dungeons:** [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) (Riverglades, 40–47), Scarlet Armory and Cathedral, Razorfen Downs, Uldaman, Zul'Farrak, [Alcaz Prison](../../content/dungeons/alcaz-prison.md) (48–55).
-
-### 50–60
-
-| **Alliance**{ .pill .pill--alliance } | **Horde**{ .pill .pill--horde } |
-|---|---|
-| Un'Goro (48+), Burning Steppes, Western Plaguelands, Azshara | Un'Goro (48+), Burning Steppes, Western Plaguelands, Azshara |
-| Winterspring and Eastern Plaguelands (53+), Silithus (55+) | Winterspring and Eastern Plaguelands (53+), Silithus (55+) |
-
-- **Train:** Prayer of Shadow Protection (56), Prayer of Spirit (60).
-- **Azshara** has many new quests and the new [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (55–60). The north of Un'Goro has [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) (58–60).
-- At 60, **Mount Hyjal** opens from Darkwhisper Gorge in Winterspring. Its 2 raids open on 9 December.
-- The Legacy class tiers give points at 25, 45 and 60 for the first Priest on your account.
 
 </div>
 
----
+<div class="fc-addon" data-pick="race" data-value="troll undead" markdown>
 
-## Dungeons
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
 
-Groups always want Priests. The [group finder](../../content/dungeons/index.md#general-rules) of Forever shows groups, but it does not teleport you. Meeting Stones do not summon.
+Quest in Hillsbrad Foothills, Ashenvale and Stonetalon Mountains. Go to Thousand Needles at level 25.
 
-**Healer tips**
 
-- **Shield the tank before the pull.** Also put Renew on the tank before the pull. With Soul Warding, you can keep a shield on the tank almost all the time.
-- **Fear Ward the tank** before bosses that fear. Every Priest has it now.
-- **Fade is two times stronger.** If a large heal gets you aggro, use Fade and let the tank get the mob back.
-- **Prayer of Healing heals the party of the target.** In a 5-player group, this is still your group.
-- **Drink between pulls.** Tell the group when you have low mana.
-- Method says that Shadow Priests can heal dungeons to 60 without a respec, but with worse mana efficiency. Dual spec at 40 makes this easier.
+</div>
 
-**Shadow tips**
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
 
-- Shadow Affinity decreases your threat. But let the tank build threat before you cast Mind Blast.
-- Vampiric Embrace heals the party during its 30 s window. Use it on large pulls.
-- Silence and Psychic Scream are emergency interrupts and CC. Mobs that run from Scream can pull other packs.
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Priest](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-**Notable dungeons**
+After Divine Grace, you can shield the same target again immediately. The cooldown is 5 minutes, so keep it for the tank.
 
-| Level | Dungeon | Priest notes |
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Priest](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+At level 20 you learn **Chastise**, a 2 second root on a Humanoid. With Psychic Scream and Stoneform, you now have 3 defense buttons. Desperate Prayer is an instant self-heal (Classic spell).
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Priest](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+At level 20 you learn **Contingency Plan**, a 30 second ward. Below 35% health it gives you a shield and a heal-over-time effect. Cast it before dangerous pulls.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Priest](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+At level 20 you learn **Elune's Grace**. For 15 seconds, melee and ranged attacks against you have a 50% lower hit chance. Blackfathom Deeps in Ashenvale gives the Gravestone Scepter.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Priest](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Rapid Regeneration gives back 50% of your health during 6 seconds, but an action stops it. Use it after a fight in place of food.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Priest](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+At level 20 you learn **Dark Sacrifice**. It changes your health into mana, and Spirit increases the mana. Use it with Cannibalize or a Renew on yourself to drink less.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Shadow</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Mind Flay at level 20 is a 3 second channel that slows the enemy by 50%. It has a range of only 20 yards. Channel it to the end, because Improved Mind Flay makes each hit stronger than the hit before. Vampiric Embrace at 25 heals your party for 20% of your Shadow damage. Its cooldown is equal to its duration, so keep it active. Use the wand much until Shadow Weaving is complete at 28.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 20 | **Mind Flay** | 1/1 | Your filler spell. It slows mobs |
+| 21–22 | **Improved Mind Flay** | 2/2 | More damage from each full channel |
+| 23–24 | **Shadow Focus** | 5/5 | Opens row 4 |
+| 25 | **Vampiric Embrace** | 1/1 | Your Shadow damage heals you |
+| 26–28 | **Shadow Weaving** | 3/3 | 10% more Shadow damage at 5 stacks |
+| 29 | **Improved Mind Blast** | 1/5 | The last point to open row 5 |
+
+Points at level 29: **0/0/20** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="disc" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Discipline</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Improved Power Word: Shield makes the shield absorb 20% more by level 22. Soul Warding at 25 makes it cheaper and decreases its cooldown by 4 seconds. The shield is now your main spell alone and in dungeons. Start a fight with Holy Fire. Meditation keeps a part of your mana regeneration while you cast.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 20–22 | **Improved Power Word: Shield** | 3/3 | A larger shield. Soul Warding needs 3/3 |
+| 23–24 | **Meditation** | 2/3 | Mana regeneration while you cast. Opens row 4 |
+| 25 | **Soul Warding** | 1/1 | A cheaper shield with a shorter cooldown |
+| 26–28 | **Mental Agility** | 3/3 | Cheaper Smite, Holy Fire and instant spells |
+| 29 | **Inner Focus** | 1/1 | A free spell. The last point to open row 5 |
+
+Points at level 29: **20/0/0** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="holy" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Holy at 60</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The stronger shield and Soul Warding at 25 make dungeons easy to heal. Learn 2 habits now: Flash Heal for sudden damage, and Heal for slow damage. Do not use Flash Heal for all damage, because it costs much mana. Alone, start each fight with Holy Fire. Then fight as before behind the shield.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 20–22 | **Improved Power Word: Shield** | 3/3 | A larger shield. Soul Warding needs 3/3 |
+| 23–24 | **Meditation** | 2/3 | Mana regeneration while you cast. Opens row 4 |
+| 25 | **Soul Warding** | 1/1 | A cheaper shield with a shorter cooldown |
+| 26–28 | **Mental Agility** | 3/3 | Cheaper Smite, Holy Fire and instant spells |
+| 29 | **Inner Focus** | 1/1 | A free spell. The last point to open row 5 |
+
+Points at level 29: **20/0/0** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Priest equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Warcraft Tavern says that you keep the Gravestone Scepter to about level 37. Replace the staff at level 20 and at level 25. Ruins of Lordaeron gives cloth for Horde characters.
+
+| Slot | Item | Source |
 |---|---|---|
-| 13–20 | [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) | New. First dungeon for Alliance Priests |
-| 15–22 | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) | New. Undead mobs give practice with Shackle. Drops the Fermenter and Arcane Salvager camp blueprints |
-| 18–26 | Deadmines, Wailing Caverns | Classic. Sizzle Stick wand quest in WC |
-| 24–33 | [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) | New |
-| 25–32 | Blackfathom Deeps | Gravestone Scepter quest |
-| 28–35 | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) | New. Wand of Mana Concentration quest (*single source*) |
-| 35–42 | [The Drowned City](../../content/dungeons/drowned-city.md) | New |
-| 40–47 | [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) | New, in the Riverglades |
-| 48–55 | [Alcaz Prison](../../content/dungeons/alcaz-prison.md) | New |
-| 55–60 | [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) | New. Has a Barrow Deeps entrance |
-| 58–60 | [Shaper's Terrace](../../content/dungeons/shapers-terrace.md), Scholomance, Stratholme | Shackle Undead is very important in Scholomance and Stratholme |
+| Staff | **Emberstone Staff** | The Deadmines |
+| Staff | **Crescent Staff** | Quest: *Leaders of the Fang*, Wailing Caverns (Horde) |
+| Staff | **Rod of the Sleepwalker** | Blackfathom Deeps |
+| Chest | **Robes of Arugal** | Shadowfang Keep |
+| Head | **Shadow Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Waist | **Tuskwrap Belt** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) |
+| Wand | **Wand of Eventide** | World drop: usable at level 27 (Warcraft Tavern) |
+| Wand | **Dancing Flame** | Quest: *Final Passage*. Method says level 26, in Arathi Highlands. Timesaver.gg says level 35, in Thousand Needles (Horde) |
+| Legs | **Rotmender's Leggings** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) |
 
----
 
-## Raid preparation
+</div>
 
-The launch raids open on **9 December 2026**: [The Barrow Deeps](../../content/raids/barrow-deeps.md) (10), [Hyjal Summit](../../content/raids/hyjal-summit.md) (20) and [Onyxia's Lair](../../content/raids/onyxias-lair.md) (40). Blizzard says that the difficulty comes from preparation, not from hundreds of attempts.
+<div class="fc-addon" data-pick="gear" data-value="healer" markdown>
 
-### Your role
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Healer</strong> [Priest equipment](equipment.md#healer){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-| Raid | Healers | Priest focus |
+Replace the staff at level 20 and at level 25. Keep the Gravestone Scepter. The Pristine items of Tailoring are the selection of Warcraft Tavern for Holy and Discipline. No source gives their stats.
+
+| Slot | Item | Source |
 |---|---|---|
-| Barrow Deeps (10) | About 2–3 | Discipline or Holy on tanks. Each heal is important. Thus Penance and shields are strong |
-| Hyjal Summit (20) | About 4–5 | Holy for raid healing (Prayer of Mending, Prayer of Healing on each group). Shadow is a valid DPS slot |
-| Onyxia's Lair (40) | Many | **Fear Ward** the main tank before Bellowing Roar in phase 3 (Classic-era fight). Fire resistance helps |
+| Staff | **Staff of Westfall** | Quest: *The Defias Brotherhood*, Westfall (Alliance) |
+| Staff | **Living Root** | Wailing Caverns |
+| Staff | **Odo's Ley Staff** | Shadowfang Keep |
+| Head | **Pristine Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Rotmender's Treads** | [Ruins of Lordaeron](../../content/dungeons/ruins-of-lordaeron.md) |
 
-The healer counts above are general guidance. They are not published numbers.
 
-### Pre-raid gear approach
+</div>
 
-Nobody has published pre-raid lists for Forever. The dungeon items of Forever have unique stats with a theme. Thus the classic BiS lists do not apply. A practical approach:
+<div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-1. Do the **new level-60 dungeons** ([Blackmaw Hold](../../content/dungeons/blackmaw-hold.md), [Shaper's Terrace](../../content/dungeons/shapers-terrace.md)) and the classic level-60 dungeons (Scholomance, Stratholme, Dire Maul, LBRS/UBRS). Reportedly, each boss in the new dungeons always drops a blue item.
-2. Get each upgrade with **healing power** and **Intellect** (healer) or **hit and Shadow power** (Shadow). These are better than only Stamina.
-3. Look at the PvP vendors. Honor buys blue and epic sets, and the new sets fill gaps for each spec.
-4. Crafted gear: Tailoring has many new BoP patterns.
-5. For Onyxia, start the **Drakefire Amulet** attunement early. It is not account-wide.
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Tailoring and Enchanting</strong> [Priest equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-### Consumables
+The head, chest and leg items of the same 6 versions come at Tailoring 100 to 125. Enchanting makes your first staves and off-hand items at skill 140. Each of these formulas costs 45 Merchant's Favor. Method says that the Lesser Mystic Wand is usable at 26.
 
-- Mana potions and the best water that you can buy or that a Mage can conjure.
-- **Healing potions now come from First Aid**, not from Alchemy.
-- Flasks and elixirs from Alchemy. Buff food from Cooking.
-- Camp buffs work in the open world. They **do not stack** with the matching class buff. The First Aid Kit gives the same buff as Power Word: Fortitude, and the Tailoring Faction Banner gives the same buff as Divine Spirit.
-- Dungeons and raids remove world buffs from the Chronoboon Displacer.
+| Slot | Item | Source |
+|---|---|---|
+| Head | **Shadow Circlet or Pristine Circlet** | [Tailoring](../../professions/tailoring.md), skill 100 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Shadow Gown or Pristine Gown** | [Tailoring](../../professions/tailoring.md), skill 110 **New**{ .pill .pill--new .pill--sm } |
+| Legs | **Shadow Leggings or Pristine Leggings** | [Tailoring](../../professions/tailoring.md), skill 125 **New**{ .pill .pill--new .pill--sm } |
+| Staff | **Glimmering Staff or Soulstaff** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new .pill--sm } |
+| Off-hand | **Orb of Mystic Insight or Orb of Souls** | [Enchanting](../../professions/enchanting.md), skill 140 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Lesser Mystic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe |
 
----
 
-## PvP
+</div>
 
-In PvP, Priests are strong healers and casters that are difficult to fight. Fear Ward, Psychic Scream, Mana Burn, Mind Control and Dispel Magic are all important. Your race spell is frequently important too.
+</div>
 
-- **Battlegrounds:** Warsong Gulch (10v10), Arathi Basin (15v15), Alterac Valley (40v40) and the new **[Battle for the Darkspear Islands](../../content/pvp/battlegrounds.md#darkspear-islands)** (15v15, levels 30–60). Darkspear Islands has 4 bases and a central flag. As a healer, you can hold a base or shield the flag carrier. Both work well.
-- **Healer play:** Stay at maximum range behind pillars and walls. Shield yourself when enemies attack you. Fade has no effect against players. Psychic Scream is your best escape. Dispel enemy buffs (Blessing of Freedom, Power Infusion and similar buffs).
-- **Shadow play:** Use Silence, Psychic Scream and Mind Blast burst, then SW:Death to kill. Be careful of the SW:Death backlash.
-- **Mind Control:** Move enemies off ledges or into your team. In Warsong Gulch, you can control the flag carrier.
-- **Fear Ward yourself** against Warlocks and Warriors before you attack.
-- **Progression:** Seasons reset ranks. Honor buys gear. You get Rank Points from battlegrounds and weekly tasks. See [PvP](../../content/pvp/index.md).
+**Before you continue**
 
-| Matchup | Notes (general guidance) |
+- [ ] Save money for the training at level 20.
+- [ ] Turn in 10 library books for the first book quest.
+- [ ] Do the class quest of level 20.
+- [ ] Get the Gravestone Scepter from Blackfathom Deeps.
+
+## Levels 30–39: Divine Spirit, Shadow Word: Death and gold for level 40 { #l30 }
+
+At level 30 you train Divine Spirit, Prayer of Healing and Mind Control. Divine Spirit is baseline in Forever. Keep it on yourself and on each caster and healer in your group.
+
+Prayer of Healing is your first group heal. In Forever it heals the party of your target, not your party. In a group of 5 players this is the same group. In a raid, you can now heal each group.
+
+Shadow Word: Death comes at level 32 for each Priest. It is an instant hit, but it also damages you if the target does not die. Use it to kill an enemy with low health. Do not use it as a filler when your health is low.
+
+The new battleground Battle for the Darkspear Islands opens at level 30. It has 15 players on each side, 4 bases and a flag in the center. As a healer, you can hold a base or shield the flag carrier.
+
+The new zone Riverglades opens at level 35. It is contested, and it is about as large as Stranglethorn Vale. You can enter it from Redridge Mountains, the Badlands, the Swamp of Sorrows or the Burning Steppes, or with the ferry from Tanaris. See [Zones](../../world/zones.md#riverglades).
+
+Start to save gold now. At level 40 you need 100g for riding, and dual spec costs 50g. Method recommends that you do not buy spell ranks of low value before 40. The second book quest at 35 needs 20 library books.
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 30 | **Divine Spirit** | Baseline in Forever. A Spirit buff for casters and healers |
+| 30 | **Prayer of Healing, Mind Control** | Your first group heal. Mind Control is for PvP and for some dungeon tricks |
+| 32 | **Shadow Word: Death, Abolish Disease** | An instant hit that also damages you if the target does not die |
+| 34 | **Levitate** | You walk on water and you fall slowly |
+
+**Dungeons in this chapter**
+
+- Razorfen Kraul and Gnomeregan **29–38**{ .lvl }: Razorfen Kraul drops the Death Speaker Scepter for healers
+- Scarlet Monastery: Graveyard and Library **30–41**{ .lvl }: The Graveyard has Undead enemies for Shackle Undead
+- [The Drowned City](../../content/dungeons/drowned-city.md) **35–42**{ .lvl }: New
+- Scarlet Monastery: Armory and Cathedral **36–46**{ .lvl }
+
+!!! conflict "Conflict: Shadow Word: Death backlash"
+    The Blizzard deep dive says that the spell damages you for 10% of your maximum health if the target does not die. Pre-launch notes say 30%, and no damage to you on a miss. The Codex did not test the value.
+
+!!! hardcore "Hardcore"
+    Do not cast Shadow Word: Death when your health is low. Mind Control in the open world leaves your character without defense.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in the Alterac Mountains, Arathi Highlands, Stranglethorn Vale and Desolace. Go to Dustwallow Marsh and Riverglades at level 35. The centaur quests in Desolace now need level 35. Dalaran is friendly to the Alliance, and you can get Kirin Tor reputation there.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Arathi Highlands, Stranglethorn Vale, Desolace and Thousand Needles. Go to Dustwallow Marsh and Riverglades at level 35. The centaur quests in Desolace now need level 35. NPCs in Dalaran attack Horde characters on sight, so do not go to its quest hubs.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Priest](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Human Spirit gives more mana regeneration through Meditation. Riverglades is near Redridge Mountains, and its Alliance town is Farholde Keep.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Priest](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Gnomeregan, the old capital of your race, is a dungeon for levels 29 to 38.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Priest](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Battle for the Darkspear Islands opens at level 30. The Darkspear Raiders are a separate faction from the Darkspear Trolls.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Priest](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Scarlet Monastery is near your home. Touch of Weakness (Classic spell) damages the next melee attacker. Warcraft Tavern rates it as weak.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Shadow</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Devouring Contagion at 30 and 31 makes Devouring Plague cost 50% less. When the target dies, the Plague jumps to 2 enemies near it. Use the Plague in each fight now. Improved Mind Blast gives more casts of your largest hit, and Darkness adds 10% Shadow damage by level 39. In dungeons, let the tank get threat before you cast Mind Blast.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 30–31 | **Devouring Contagion** | 2/2 | Devouring Plague costs 50% less |
+| 32–34 | **Improved Mind Blast** | 4/5 | Opens row 6 |
+| 35–39 | **Darkness** | 5/5 | 10% more Shadow damage |
+
+Points at level 39: **0/0/30** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="disc" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Discipline</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Penance at level 30 is the core spell of the path. It is instant, has a 12 second cooldown and hits an enemy or heals an ally 3 times. Use it on cooldown as damage, or as a heal when you need one. Power in Light makes Smite and Penance stronger on targets with your Holy Fire or Shadow Word: Pain. Put a DoT on the target first.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 30 | **Penance** | 1/1 | Instant damage or an instant heal each 12 s |
+| 31–35 | **Power in Light** | 5/5 | 10% more Smite and Penance damage on targets with your DoT |
+| 36–37 | **Twin Disciplines** | 5/5 | 5% for all instant spells |
+| 38 | **Mental Strength** | 5/5 | 10% Intellect |
+| 39 | **Meditation** | 3/3 | The last point to open row 7 |
+
+Points at level 39: **30/0/0** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="holy" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Holy at 60</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Penance at level 30 is an instant heal for the tank, and it is your best damage spell alone. Use it on cooldown. Put a DoT on the enemy first, because Power in Light then makes Smite and Penance stronger. Prayer of Healing heals the party of your target, so learn to target a player in the correct group. If you heal many dungeons, the talent guide recommends Renewed Hope before Power in Light.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 30 | **Penance** | 1/1 | Instant damage or an instant heal each 12 s |
+| 31–35 | **Power in Light** | 5/5 | 10% more Smite and Penance damage on targets with your DoT |
+| 36–37 | **Twin Disciplines** | 5/5 | 5% for all instant spells |
+| 38 | **Mental Strength** | 5/5 | 10% Intellect |
+| 39 | **Meditation** | 3/3 | The last point to open row 7 |
+
+Points at level 39: **30/0/0** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Priest equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Change from a staff to a one-hand weapon with an off-hand item. Timesaver.gg keeps the ring from Excavation Site to level 60. The Philanthropist's Ring has 10 spell power (Warcraft Tavern). Sources disagree on the level of the Wand of Mana Concentration: Method says 27, Timesaver.gg lists it from 30.
+
+| Slot | Item | Source |
+|---|---|---|
+| Ring | **Ring of Power Regulation** | [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) |
+| Off-hand | **Raptor's Gaze** | [Excavation Site: Wetlands](../../content/dungeons/excavation-site.md) |
+| Dagger | **Swinetusk Shank** | Razorfen Kraul |
+| Wand | **Wand of Mana Concentration** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
+| Dagger | **Hypnotic Blade** | Scarlet Monastery, Library |
+| Off-hand | **Orb of the Forgotten Seer** | Scarlet Monastery, Graveyard |
+| Ring | **Philanthropist's Ring** | Quest: the book quest for 20 library books, level 35 |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="healer" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Healer</strong> [Priest equipment](equipment.md#healer){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Healer's Staff comes from a quest in Excavation Site. Warcraft Tavern says that the Death Speaker Scepter has much bonus healing. City of Dalaran gives an off-hand item and a ring. The Philanthropist's Ring has 10 spell power.
+
+| Slot | Item | Source |
+|---|---|---|
+| Staff | **Healer's Staff** | Quest: *Prehistoric Prism* (Alliance) or *Earthen Echo* (Horde), Excavation Site |
+| Mace | **Death Speaker Scepter** | Razorfen Kraul |
+| Shoulders | **Death Speaker Mantle** | Razorfen Kraul |
+| Chest | **Death Speaker Robes** | Razorfen Kraul |
+| Off-hand | **Ponderous Orb** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
+| Ring | **Runemender's Seal** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
+| Wand | **Wand of Mana Concentration** | [City of Dalaran](../../content/dungeons/city-of-dalaran.md) |
+| Ring | **Philanthropist's Ring** | Quest: the book quest for 20 library books, level 35 |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Tailoring and Enchanting</strong> [Priest equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Robe of Power is a trainer recipe. The Invoker items are new. The Slippers and the Handwraps are the next rare items in 6 versions: Black, Fiery, Frothing, Gilded, Golden and Radiant. No source says which version has which stat. The Greater Mystic Wand needs level 30 in Classic, but Forever changed the recipe.
+
+| Slot | Item | Source |
+|---|---|---|
+| Chest | **Robe of Power** | [Tailoring](../../professions/tailoring.md), trainer recipe |
+| Waist | **Invoker's Cord** | [Tailoring](../../professions/tailoring.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
+| Shoulders | **Invoker's Mantle** | [Tailoring](../../professions/tailoring.md), skill 150 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Black Slippers** | [Tailoring](../../professions/tailoring.md), skill 140 **New**{ .pill .pill--new .pill--sm }: and 5 other versions |
+| Wand | **Greater Mystic Wand** | [Enchanting](../../professions/enchanting.md), trainer recipe |
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Train Divine Spirit at level 30 and Shadow Word: Death at level 32.
+- [ ] Turn in 20 library books at level 35 for the second book quest.
+- [ ] Save 150g before level 40.
+
+## Levels 40–49: A mount, a second spec and Greater Heal { #l40 }
+
+Level 40 changes much. You can buy riding for 100g. You can buy dual spec for 50g from a Priest trainer. You train Greater Heal, your largest direct heal. Your 31st talent point also comes at level 40.
+
+Dual spec removes the largest problem of the class. Before level 40, you select between fast kills and good heals. Now you keep the 2 of them. The usual pair is Shadow for quests, and Holy or Discipline for dungeons. You can change specs outside combat and outside battlegrounds. If you change the talents in a spec, you pay a fee. This fee decreases to 1g with time.
+
+From this level, carry 2 sets of equipment: 1 for damage and 1 for healing. Bonus healing on an item also gives one third of its value as spell damage. Thus a healer set is not useless for quests.
+
+You stay in Riverglades to level 45. At 45, the third book quest needs 25 library books. Level 45 also gives the *Priest: Experienced* Legacy Point. Prayer of Fortitude at 48 buffs the full group with 1 cast.
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 40 | **Greater Heal** | Your largest direct heal. It has a long cast |
+| 48 | **Prayer of Fortitude** | Power Word: Fortitude for the full party. In Classic it needs a reagent |
+
+**Dungeons in this chapter**
+
+- [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) **40–47**{ .lvl }: New. It is in Riverglades
+- Razorfen Downs **37–46**{ .lvl }
+- Uldaman and Zul'Farrak **41–54**{ .lvl }
+- [Alcaz Prison](../../content/dungeons/alcaz-prison.md) **48–55**{ .lvl }: New. It is in Dustwallow Marsh
+
+!!! conflict "Conflict: Shadowform"
+    The Blizzard text and the client data say that Shadowform increases the crit damage bonus of Shadow spells by 100%. The Warcraft Tavern summary says crit chance. This page uses the client data.
+
+!!! warning "Caution"
+    Buy riding before dual spec if you do not have 150g. A mount saves more time than a second spec.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Alliance town in Riverglades is Farholde Keep. Then quest in the Badlands, Swamp of Sorrows, Feralas, Tanaris and the Hinterlands. Searing Gorge opens at 43, and Azshara and Felwood at 45.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Horde town in Riverglades is Rog'mar. Then quest in the Badlands, Swamp of Sorrows, Feralas, Tanaris and the Hinterlands. Searing Gorge opens at 43, and Azshara and Felwood at 45.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Priest](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Starshards is an Arcane spell. Thus Shadowform does not decrease its mana cost.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Priest](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Drowned City in Stranglethorn Vale and Zul'Farrak are on your route. Your mount is a raptor. Honored reputation with the Darkspear Trolls decreases its price by 10%.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Shadow</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Shadowform at level 40 changes the path. Shadow spells cost 50% less and their crits do much more damage. You cannot cast healing spells in Shadowform, so Vampiric Embrace and the shield keep you alive. Early Demise at 44 and 45 gives Shadow Word: Death 30% more crit on targets below 20% health. Silence at 46 stops enemy casters. In dungeons, keep it as an emergency interrupt.
+
+Method gives this sequence for quests from level 40. Cast the shield, then Mind Blast before the enemy gets to you, then Shadow Word: Pain. Use Shadow Word: Death and Mind Blast on cooldown, if your health is sufficient. Fill with Mind Flay.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 40 | **Shadowform** | 1/1 | Shadow spells cost 50% less and crit for more |
+| 41 | **Improved Mind Blast** | 5/5 | The full 2.5 s off the cooldown of Mind Blast |
+| 42–43 | **Shadow Reach** | 2/2 | More range for Mind Flay |
+| 44–45 | **Early Demise** | 2/2 | Shadow Word: Death crits on targets with low health |
+| 46 | **Silence** | 1/1 | Stops caster mobs |
+| 47–49 | **Twin Disciplines** | 3/5 | 5% damage for your instant Shadow spells |
+
+Points at level 49: **3/0/37** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="disc" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Discipline</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Power Infusion at level 40 gives 20% more spell damage and healing for 15 seconds. Use it on strong enemies or on hard pulls in dungeons. If your kills are too slow, make Shadow your second spec for quests. Method changes to Shadow at 40. Holy Specialization adds crit, and Divine Fury makes Smite and Holy Fire faster.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 40 | **Power Infusion** | 1/1 | 20% more damage for 15 s |
+| 41–45 | **Holy Specialization** | 5/5 | Crit for Smite, Holy Fire, Penance and heals |
+| 46–49 | **Divine Fury** | 4/5 | A faster Smite and Holy Fire |
+
+Points at level 49: **31/9/0** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="holy" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Holy at 60</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+With 31 points at level 40, a second spec can reach Prayer of Mending in the Holy tree. Use that spec in dungeons, and keep the Discipline build for quests. Prayer of Mending heals the target at the next hit and then jumps to a player near it. Start to use different heals in turn now, because the level 60 build rewards this.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 40 | **Power Infusion** | 1/1 | 20% more damage for 15 s |
+| 41–45 | **Holy Specialization** | 5/5 | Crit for Smite, Holy Fire, Penance and heals |
+| 46–49 | **Divine Fury** | 4/5 | A faster Smite and Holy Fire |
+
+Points at level 49: **31/9/0** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Priest equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Timesaver.gg selects these items for levels 40 to 49. The names are Classic names, and no source checked their stats in Forever. No source lists the loot of The Drowned City or Krol'dok Stronghold.
+
+| Slot | Item | Source |
+|---|---|---|
+| Mace | **Soulsplatter Mace** | Quest: *Khan Jehn*, Desolace |
+| Off-hand | **Mordresh's Lifeless Skull** | Razorfen Downs |
+| Chest | **Robes of the Lich** | Razorfen Downs |
+| Mace | **Galgann's Firehammer** | Uldaman |
+| Wand | **Dudd's Second-Favorite Wand** | Quest: *Partial Mystical Notes*, Stranglethorn Vale |
+| Wand | **Charged Lightning Rod** | Quest: *Ledger from Tanaris*, Searing Gorge |
+| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="healer" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Healer</strong> [Priest equipment](equipment.md#healer){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+From level 40 you carry this set for your healer spec. Timesaver.gg selects the items of High Inquisitor Whitemane in Scarlet Monastery. The names are Classic names, and no source checked their stats in Forever.
+
+| Slot | Item | Source |
+|---|---|---|
+| Mace | **Hand of Righteousness** | Scarlet Monastery, Cathedral |
+| Head | **Whitemane's Chapeau** | Scarlet Monastery, Cathedral |
+| Neck | **Triune Amulet** | Scarlet Monastery, Cathedral |
+| Hands | **Restorer's Fine Gloves** | Quest: a quest in Uldaman |
+| Wrist | **Nethergeld Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Tailoring and Enchanting</strong> [Priest equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Crafted items fill the levels where dungeons give few new items. Timesaver.gg selects the Netherpearl Cuffs for Shadow and the Nethergeld Cuffs for Holy. The 2 lists keep them to level 60. Enchanting makes 2 new wands, 2 staves and 2 off-hand items.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm }: Shadow |
+| Wrist | **Nethergeld Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm }: healer |
+| Shoulders | **Netherpearl Shoulders or Nethergeld Shoulders** | [Tailoring](../../professions/tailoring.md), skill 195 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Twisted Nether Wand** | [Enchanting](../../professions/enchanting.md), skill 185 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Dreambough Wand** | [Enchanting](../../professions/enchanting.md), skill 215 **New**{ .pill .pill--new .pill--sm } |
+| Staff | **Dreamstaff or Radiant Staff** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
+| Off-hand | **Truesilver Conduit or Twisting Essence Jar** | [Enchanting](../../professions/enchanting.md), skill 220 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Buy riding (100g), then dual spec (50g).
+- [ ] Make a healer build in your second spec, or a Shadow build if you level as Discipline.
+- [ ] Turn in 25 library books at level 45 for the third book quest.
+
+## Levels 50–59: Shackle Undead and the level 60 dungeons { #l50 }
+
+The last 10 levels have the most dungeons, and each group needs a healer. Reportedly, each boss in the new dungeons drops a blue item. Start to collect your level 60 equipment here.
+
+Your main tree is complete. The last points go into a second tree, and they add mana and small bonuses. Your fight does not change much in these levels.
+
+Shackle Undead becomes very important at the end of this chapter, because Scholomance and Stratholme have many Undead enemies. Groups there need a Priest that can hold 1 enemy. Prayer of Shadow Protection comes at level 56.
+
+Hit becomes important for your damage spells, because dungeon bosses are 2 or 3 levels above you. Heals cannot miss, so a healer set needs no hit.
+
+| Level | You train | Why it is important |
+|---|---|---|
+| 56 | **Prayer of Shadow Protection** | Shadow resistance for the full party. Classic-era level |
+
+**Dungeons in this chapter**
+
+- Maraudon **46–55**{ .lvl }
+- Sunken Temple and Blackrock Depths **50–60**{ .lvl }
+- [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) **55–60**{ .lvl }: New. It is in Azshara. It has an entrance to the Barrow Deeps
+- Lower Blackrock Spire and Dire Maul **54–60**{ .lvl }
+- [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) **58–60**{ .lvl }: New. It is in Un'Goro Crater
+- Scholomance and Stratholme **58–60**{ .lvl }: Shackle Undead is very important here
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Un'Goro Crater, Burning Steppes, Western Plaguelands and Azshara. Go to Winterspring and Eastern Plaguelands at 53, and to Silithus at 55. Azshara has many new quests.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Quest in Un'Goro Crater, Burning Steppes, Western Plaguelands and Azshara. Go to Winterspring and Eastern Plaguelands at 53, and to Silithus at 55. Azshara has many new quests.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Priest](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Artisan's Precision gives 1% hit. A Shadow Dwarf needs 1% less hit from items.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Shadow</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The last points go into Discipline. Twin Disciplines increases your instant Shadow spells by 5%. Mental Strength gives 10% Intellect, and Mental Agility makes DoTs and the shield cheaper. Inner Focus comes at level 60.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 50–51 | **Twin Disciplines** | 5/5 | 5% damage for your instant Shadow spells |
+| 52–56 | **Mental Strength** | 5/5 | 10% Intellect |
+| 57–59 | **Mental Agility** | 3/3 | Cheaper DoTs and shields |
+
+Points at level 59: **13/0/37** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="disc" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Discipline</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Divine Fury is complete at level 50. Holy Precision at 51 and 52 gives 18% Holy hit for dungeon bosses. Twilight Focus decreases pushback. The last points give Searing Light for 5% Holy damage and, at level 60, Holy Nova.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 50 | **Divine Fury** | 5/5 | A faster Smite and Holy Fire |
+| 51–52 | **Holy Precision** | 3/3 | Hit for dungeons at 55+ |
+| 53–55 | **Twilight Focus** | 3/3 | Less pushback on all casts |
+| 56–57 | **Improved Renew** | 2/3 | Opens Holy row 4 |
+| 58–59 | **Searing Light** | 2/2 | 5% Holy damage |
+
+Points at level 59: **33/17/0** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="holy" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Holy at 60</strong> [Priest talents](talents.md#leveling-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Continue with the Discipline build for quests. Heal the level 55 to 60 dungeons with your Holy spec, and collect items with healing power, Intellect and Spirit.
+
+| Level | Talent | Rank | Why |
+|---|---|---|---|
+| 50 | **Divine Fury** | 5/5 | A faster Smite and Holy Fire |
+| 51–52 | **Holy Precision** | 3/3 | Hit for dungeons at 55+ |
+| 53–55 | **Twilight Focus** | 3/3 | Less pushback on all casts |
+| 56–57 | **Improved Renew** | 2/3 | Opens Holy row 4 |
+| 58–59 | **Searing Light** | 2/2 | 5% Holy damage |
+
+Points at level 59: **33/17/0** (Discipline / Holy / Shadow Magic).
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Priest equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The public lists show almost no new items between level 45 and 59. Probably the data is not complete, because much item data was not visible at launch. Look at each drop in Maraudon, Sunken Temple and Blackrock Depths. Blackmaw Hold has 1 caster item with a name in the public data.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Cairnstone Sliver** | Quest: *The Morrow Stone*, Feralas (Alliance) |
+| Wand | **Nature's Breath** | Quest: *Dark Vessels*, the Hinterlands (Horde) |
+| Trinket | **Shard of the Splithooves** | Quest: *Heroes of Old*, Blasted Lands |
+| Chest | **Robes of Dark Summons** | [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) |
+| Chest | **Robe of Winter Night** | [Tailoring](../../professions/tailoring.md), skill 245: on the level 60 list of Kami-Labs. No source gives the level that it needs |
+| Head | **Felcloth Hood** | [Tailoring](../../professions/tailoring.md), skill 245: in the level 60 simulation of Kami-Labs. No source gives the level that it needs |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="healer" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Healer</strong> [Priest equipment](equipment.md#healer){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The public lists show almost no new healer items between level 45 and 59. Look at each drop in Maraudon, Sunken Temple and Blackrock Depths. Timesaver.gg marks the Resurgence Rod quest as an Alliance quest.
+
+| Slot | Item | Source |
+|---|---|---|
+| Main hand | **Resurgence Rod** | Quest: *Corruption of Earth and Seed*, Maraudon |
+| Wand | **Cairnstone Sliver** | Quest: *The Morrow Stone*, Feralas (Alliance) |
+| Wand | **Nature's Breath** | Quest: *Dark Vessels*, the Hinterlands (Horde) |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Tailoring and Enchanting</strong> [Priest equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The Eternal wands and the Heart of the Mountain trinkets are new in Forever. Each trinket needs 1 Blood of the Mountain. The Shadow lists use the Frozen Heart of the Mountain. Robe of Winter Night and the Felcloth items are on the level 60 Shadow lists. The belt Wisdom of the Timbermaw is on the level 60 Holy list of Timesaver.gg.
+
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Lesser Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 245 **New**{ .pill .pill--new .pill--sm } |
+| Chest | **Robe of Winter Night** | [Tailoring](../../professions/tailoring.md), skill 245 |
+| Head | **Felcloth Hood** | [Tailoring](../../professions/tailoring.md), skill 245 |
+| Waist | **Wisdom of the Timbermaw** | [Tailoring](../../professions/tailoring.md), skill 255: healer. Timesaver.gg lists it at level 60 |
+| Wrist | **Earthenweave Cuffs** | [Tailoring](../../professions/tailoring.md), skill 255 **New**{ .pill .pill--new .pill--sm } |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Trinket | **Dormant Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Do Alcaz Prison, Blackmaw Hold and Shaper's Terrace for their quests.
+- [ ] Keep 1 healer set and 1 damage set.
+- [ ] Put Shackle Undead on a key that you can reach quickly.
+
+## Level 60: Select your raid role { #l60 }
+
+At level 60 you train Prayer of Spirit, and you get the *Priest: Master* Legacy Point. Mount Hyjal opens through Darkwhisper Gorge in Winterspring. The fast mount costs 1,000g.
+
+All 3 launch raids open on 9 December 2026. Blizzard says that the difficulty comes from preparation, not from hundreds of attempts. Use the time before that date for 4 tasks. Select your raid role and respec to a level 60 build. Collect equipment for that role. Collect consumables. Do the attunement for Onyxia's Lair.
+
+The attunement gives the Drakefire Amulet. It is not account-wide, so each character must do it. Blizzard tells players to get fire resistance for Onyxia's Lair, but it gives no number.
+
+The first equipment lists for level 60 exist now, but tools made them. About 40% of the item data was not visible at launch. Thus use the lists as candidates. For a healer role, take items with healing power and Intellect. For Shadow, take items with hit and Shadow power. The Equipment add-on gives the items to look for.
+
+The dungeon currency Tarnished Undermine Real buys level 60 items from Pix Xizzix in Stranglethorn Vale. Honor also buys blue and epic sets. See [PvP](../../content/pvp/index.md).
+
+**Dungeons in this chapter**
+
+- [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) **55–60**{ .lvl }
+- [Shaper's Terrace](../../content/dungeons/shapers-terrace.md) **58–60**{ .lvl }
+- Scholomance, Stratholme, Dire Maul and Blackrock Spire **54–60**{ .lvl }: The Classic dungeons are still in the game. The Devout items drop here
+
+!!! tip "Tip"
+    Consumables for a Priest: mana potions, the best water, flasks and elixirs from Alchemy, and buff food from Cooking. Healing potions come from First Aid in Forever, not from Alchemy. The [Equipment add-on](equipment.md) has the full list.
+
+<div class="fc-addons" markdown>
+
+<div class="fc-addon" data-pick="race" data-value="human dwarf gnome night-elf" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Alliance route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The attunement for Onyxia's Lair starts in Burning Steppes with Helendis Riverhorn and the quest *Dragonkin Menace*. The PvP vendor is in the Champion's Hall in Stormwind.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Horde route</strong> <a class="fc-addon__change" href="#picks">Change</a></p>
+
+The attunement for Onyxia's Lair starts in the Badlands with Warlord Goretooth and the quest *Blood and Thunder*. The PvP vendor is in the Hall of Legends in Orgrimmar.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Priest](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Ruthless gives 1% crit. For a healer, each crit heal can cause Inspiration and Divine Aegis. For Shadow, it is more damage.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Priest](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Use Eureka! with Flash Heal, Greater Heal, Prayer of Healing or Mind Blast. It does not change Renew, Shadow Word: Pain or Devouring Plague.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Priest](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Elune's Light gives 10% crit for 15 seconds. Use it before your largest heals or your largest damage spells.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Priest](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Use Berserking for more Greater Heals in an emergency. For damage, use it when the raid must kill a boss quickly. It gives more Mind Flay and Mind Blast casts.
+
+
+</div>
+
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Priest](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Touch of the Grave has a chance on hit to drain 5% of maximum health, with an internal cooldown of 15 seconds. In raids, Dark Sacrifice gives you mana when a healer can fill your health.
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Shadow</strong> [Priest talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+For raids, respec to the raid build. It moves the Spirit Tap points into Silent Resolve and Meditation, because Spirit Tap gives nothing on a boss. Silent Resolve decreases your threat by 30%. For PvP, the second build takes Blackout, Improved Psychic Scream and a stronger shield.
+
+The leveling build ends at **14/0/37**. The level 60 builds of this path:
+
+- **Shadow Magic (raid)** (20/0/31, Raid DPS): [talent calculator](https://wowforevertalents.com/priest/?t=h00530503103--50052201211312051)
+- **Shadow Magic (PvP)** (18/0/33, PvP): [talent calculator](https://wowforevertalents.com/priest/?t=h00530021130021--15052221201310251)
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="disc" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Discipline</strong> [Priest talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Respec to the healer build with 31 points in Discipline and 20 in Holy. It takes Renewed Hope and Divine Aegis in place of Power in Light. From Holy it takes Divine Fury, Inspiration, Improved Healing and Holy Binding. Use it for dungeons, for the Barrow Deeps and for tanks. It is also the usual healer build for PvP.
+
+The leveling build ends at **33/18/0**. The level 60 builds of this path:
+
+- **Discipline (healer)** (31/20/0, Tank healer): [talent calculator](https://wowforevertalents.com/priest/?t=h005005031330011531-305050030301)
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="holy" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Holy at 60</strong> [Priest talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Respec to the Holy raid build. It takes Prayer of Mending, Spiritual Guidance and Spiritual Healing from Holy. From Discipline it takes Meditation, Mental Strength, Mental Agility and Inner Focus. Spiritual Guidance changes a part of your Spirit into healing. The build is near the 19/32/0 split of the fan guides from the beta.
+
+The leveling build ends at **33/18/0**. The level 60 builds of this path:
+
+- **Holy (raid healer)** (19/32/0, Raid healer): [talent calculator](https://wowforevertalents.com/priest/?t=h00520503103-03505003030121531)
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Priest equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Most of these items are from the Shadow list of the Kami-Labs tool of 9 November 2026. The tool is in beta, and Kami-Labs marks most Classic items as changed in Forever. Shadow Focus gives 5% hit. Sources give a boss miss chance of 16% or 17%, so the other 11% to 12% come from items. Blizzard has published no cap. The Ironbark Staff is an Alliance item, and no source names a Horde staff of the same type.
+
+| Slot | Item | Source |
+|---|---|---|
+| Head | **Spellweaver's Turban** | Upper Blackrock Spire |
+| Neck | **Nacreous Shell Necklace** | Stratholme |
+| Shoulders | **Mantle of the Timbermaw** | [Tailoring](../../professions/tailoring.md), skill 290 |
+| Back | **Arcanoweave Cloak** | Vendor: Pix Xizzix, Stranglethorn Vale. 75 Tarnished Undermine Real |
+| Chest | **Robe of Winter Night** | [Tailoring](../../professions/tailoring.md), skill 245 |
+| Wrist | **Netherpearl Cuffs** | [Tailoring](../../professions/tailoring.md), skill 205 **New**{ .pill .pill--new .pill--sm } |
+| Hands | **Gloves of Spell Mastery** | [Tailoring](../../professions/tailoring.md), skill 295 |
+| Waist | **Belt of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295 |
+| Legs | **Skyshroud Leggings** | Lower Blackrock Spire |
+| Feet | **Maleki's Footwraps** | Stratholme |
+| Ring | **Don Mauricio's Band of Domination** | Scholomance |
+| Ring | **Watcher's Signet of Brilliance or Warden's Signet of Brilliance** | Reputation: The Watchers, a new faction. Revered or Exalted |
+| Trinket | **Draconic Infused Emblem** | Upper Blackrock Spire |
+| Trinket | **Frozen Heart of the Mountain** | [Enchanting](../../professions/enchanting.md), skill 265 **New**{ .pill .pill--new .pill--sm } |
+| Staff | **Ironbark Staff** | Reputation: League of Arathor, Exalted (Alliance) |
+| Wand | **Skul's Ghastly Touch** | Stratholme |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="healer" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Healer</strong> [Priest equipment](equipment.md#healer){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Most of these items are from the Holy and Discipline list of the Kami-Labs tool of 9 November 2026. The tool is in beta, and Kami-Labs marks most Classic items as changed in Forever. The Devout items are the Classic dungeon set. One source says that Dungeon Set 2, Vestments of the Virtuous, is a goal before the raids.
+
+| Slot | Item | Source |
+|---|---|---|
+| Head | **Devout Crown** | Scholomance |
+| Neck | **Beads of Ogre Mojo** | Quest: *Falrin's Vendetta*, Dire Maul |
+| Back | **Hide of the Wild** | [Leatherworking](../../professions/leatherworking.md), skill 300 |
+| Chest | **Devout Robe** | Upper Blackrock Spire |
+| Chest | **Truefaith Vestments** | [Tailoring](../../professions/tailoring.md), skill 295: the selection of Timesaver.gg |
+| Hands | **Mooncloth Gloves** | [Tailoring](../../professions/tailoring.md), skill 280 |
+| Waist | **Wisdom of the Timbermaw** | [Tailoring](../../professions/tailoring.md), skill 255: the selection of Timesaver.gg |
+| Legs | **Devout Skirt** | Stratholme |
+| Feet | **Mooncloth Boots** | [Tailoring](../../professions/tailoring.md), trainer recipe |
+| Ring | **Seal of Rivendare** | Stratholme |
+| Ring | **Channeler's Ring** | Vendor: Pix Xizzix, Stranglethorn Vale. 75 Tarnished Undermine Real |
+| Trinket | **Serenity Field** | Vendor: Pix Xizzix, Stranglethorn Vale. 125 Tarnished Undermine Real |
+| Trinket | **Briarwood Reed** | Blackrock Spire |
+| Dagger | **Charstone Dirk** | Maraudon |
+| Off-hand | **Book of the Dead** | Stratholme |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
+| Set | **Vestments of the Virtuous** | All sources: Dungeon Set 2. One source says that vendors sell it. The cost is not known **Not confirmed**{ .pill .pill--outline .pill--sm } |
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Tailoring and Enchanting</strong> [Priest equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Before the raids open, make the Classic rare and epic items of Tailoring and the best wands. Forever changed these Tailoring recipes, so do not use the Classic stats. The formula of the Brilliant Wand costs 180 Merchant's Favor.
+
+| Slot | Item | Source |
+|---|---|---|
+| Chest | **Truefaith Vestments** | [Tailoring](../../professions/tailoring.md), skill 295: healer |
+| Hands | **Mooncloth Gloves** | [Tailoring](../../professions/tailoring.md), skill 280: healer |
+| Feet | **Mooncloth Boots** | [Tailoring](../../professions/tailoring.md), trainer recipe: healer |
+| Shoulders | **Mantle of the Timbermaw** | [Tailoring](../../professions/tailoring.md), skill 290: Shadow |
+| Hands | **Gloves of Spell Mastery** | [Tailoring](../../professions/tailoring.md), skill 295: Shadow |
+| Waist | **Belt of the Archmage** | [Tailoring](../../professions/tailoring.md), skill 295: Shadow |
+| Wand | **Greater Eternal Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Brilliant Wand** | [Enchanting](../../professions/enchanting.md), skill 275 **New**{ .pill .pill--new .pill--sm } |
+
+
+</div>
+
+</div>
+
+**Before you continue**
+
+- [ ] Respec to a level 60 build.
+- [ ] Do the attunement for Onyxia's Lair.
+- [ ] Collect consumables before 9 December.
+
+## Raids and PvP: Fear Ward, shields and Prayer of Mending { #raid }
+
+**The Barrow Deeps** has 10 players. A group of this size has about 2 or 3 healers, so each heal is important. Shields and Penance on the tanks are strong here. See [The Barrow Deeps](../../content/raids/barrow-deeps.md).
+
+**Hyjal Summit** has 20 players and 13 bosses on routes that branch. A raid of this size has about 4 or 5 healers. Holy is the raid healer, with Prayer of Mending and Prayer of Healing on each group. Shadow is a valid damage slot. See [Hyjal Summit](../../content/raids/hyjal-summit.md).
+
+**Onyxia's Lair** has 40 players, many healers and much Fire damage. In the Classic fight, Onyxia casts Bellowing Roar in phase 3. Put Fear Ward on the main tank before it. See [Onyxia's Lair](../../content/raids/onyxias-lair.md).
+
+The healer numbers above are general guidance. Blizzard has not published numbers, and no source has tested a build in the raids.
+
+In PvP, a Priest is a strong healer and a caster that is difficult to kill. Fear Ward, Psychic Scream, Mana Burn, Mind Control and Dispel Magic are all important. Stay at maximum range behind pillars and walls. Fade has no effect against players. See [Battlegrounds](../../content/pvp/battlegrounds.md).
+
+**PvP in more detail**
+
+- **Battlegrounds:** Warsong Gulch has 10 players on each side, Arathi Basin 15 and Alterac Valley 40. The Battle for the Darkspear Islands has 15, for levels 30 to 60.
+- **Psychic Scream** is your best escape. Shield yourself when enemies attack you.
+- **Dispel Magic** removes enemy buffs such as Blessing of Freedom and Power Infusion.
+- **Mind Control** moves an enemy off a ledge or into your team. In Warsong Gulch, you can control the flag carrier.
+- **Fear Ward:** cast it on yourself before you attack a Warlock or a Warrior.
+- **Progression:** Seasons reset ranks. Honor buys equipment. Battlegrounds and weekly tasks give Rank Points.
+
+| Enemy in PvP | What you do (general guidance) |
 |---|---|
-| Warrior | Stay at a distance. Shield, Scream, wand or DoT. Fear Ward against Intimidating Shout |
-| Rogue | Expect stuns. Keep Inner Fire active. Scream after the opener. Human, Dwarf and Undead racials help much here |
-| Mage | Dispel Polymorph on allies. Mana Burn and Silence |
-| Warlock | First Fear Ward, then Dispel and DoT. Undead Will of the Forsaken stops fear |
-| Hunter | Go into the dead zone or out of range. Mana Burn their mana pool |
-| Paladin | Mana Burn and Dispel. Long fights are better for them |
+| Warrior | Stay at a distance. Use the shield, Psychic Scream and your DoTs. Use Fear Ward against Intimidating Shout |
+| Rogue | Expect stuns. Keep Inner Fire active. Use Psychic Scream after the opener. The racials of Humans, Dwarves and the Undead help much here |
+| Mage | Dispel Polymorph on allies. Use Mana Burn and Silence |
+| Warlock | Cast Fear Ward first. Then dispel and use your DoTs |
+| Hunter | Go into the dead zone (Classic mechanic) or out of range. Use Mana Burn |
+| Paladin | Use Mana Burn and Dispel Magic. Long fights are better for the Paladin |
 | Priest | Shadow wins with burst. Discipline wins long fights |
 
----
+Camp buffs do not stack with the same class buff. The First Aid Kit gives the buff of Power Word: Fortitude, and the Faction Banner gives the buff of Divine Spirit. Dungeons and raids remove world buffs.
 
-## Gear, stats & enchants
+!!! hardcore "Hardcore"
+    [Hardcore](../../about/hardcore.md) comes in winter 2026/27. The Priest is one of the safer classes because it heals itself, but it is slow and has weak defenses. Shield before each pull. Put Fear Ward on yourself in areas with enemies that cast Fear. Keep healing potions from First Aid and bandages in your bags.
+    
+    Know the emergency spell of your race. For the Alliance races, they are Desperate Prayer (Dwarf), Contingency Plan (Gnome), Divine Grace (Human) and Elune's Grace (Night Elf). Divine Grace heals only other players. For the Horde races, they are Rapid Regeneration (Troll) and Will of the Forsaken (Undead).
+    
+    Dungeons give less XP from enemies. Make a group for the quests, not for many dungeon runs in sequence.
 
-| Spec | Stat priority (Warcraft Tavern) |
-|---|---|
-| **Holy / Discipline** | Healing power > Intellect > MP5 > Spirit > Crit |
-| **Shadow** | Hit (to cap) > Spell / Shadow power > Crit > Intellect > Spirit |
-| **Leveling (any)** | Intellect and spell power > Stamina and Spirit > Armor |
+<div class="fc-addons" markdown>
 
-- **Intellect** increases your mana pool and spell crit. Mental Strength now multiplies it.
-- **Spirit** is more important when you level (out-of-combat regeneration), and for Holy/Discipline through Meditation. Shadow must not look for it.
-- **Hit:** Holy Precision gives the Holy hit. Shadow Focus gives Shadow hit. Thus Shadow needs less hit gear. Nobody has published the exact cap.
-- **Weapons:** wands until 60. Then a caster staff, or a mace or dagger with an off-hand.
+<div class="fc-addon" data-pick="race" data-value="human" data-default markdown>
 
-**Enchants:** The Enchanting recipe list of Forever is not fully documented. Look for Intellect, healing or spell power, Spirit and Stamina enchants on chest, bracers, cloak and weapon. Enchanting also makes spell power oils for weapons (Warcraft Tavern).
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Human</strong> [Human Priest](human.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
----
+Will to Survive removes the stuns of Rogues, Paladins and Warriors. It is one of the best PvP racials. Use Perception to find a Rogue in stealth. Your second race spell is Feedback. In Classic it drains the mana of casters that hit you.
 
-## Professions & Legacy { #professions-legacy }
-
-### Professions
-
-The classic Priest pair is still the best, mostly because you can make your own wand.
-
-<div class="prof-picks" markdown>
-
-<div class="prof-pick prof-pick--best" markdown>
-
-<p class="prof-rank" markdown>**S**{ .tier .tier-s } Best pick</p>
-
-<p class="prof-pair" markdown>:material-needle: Tailoring <span class="prof-plus">+</span> :material-auto-fix: Enchanting</p>
-
-<p class="prof-for">Best for: Every Priest</p>
-
-<div class="pills" markdown>
-**Leveling**{ .pill .pill--success .pill--sm } **Raids**{ .pill .pill--info .pill--sm }
-</div>
-
-<dl class="prof-scores">
-<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
-<dt>Raids</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
-<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
-<dt>Gold</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
-</dl>
-
-- Cloth leveling gear and many new BoP patterns
-- Your own wands (Lesser at 5, Greater at 13) and spell power oils
-- Method recommends that you learn both at launch
-
-<p class="prof-camp" markdown>:material-campfire: **Camp features:** Faction Banner (Spirit) · Enchanted Lute (armor, stats, resists)</p>
 
 </div>
 
-<div class="prof-pick prof-pick--alt" markdown>
+<div class="fc-addon" data-pick="race" data-value="dwarf" markdown>
 
-<p class="prof-rank" markdown>**A**{ .tier .tier-a } Strong alternative</p>
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Dwarf</strong> [Dwarf Priest](dwarf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-<p class="prof-pair" markdown>:material-leaf: Herbalism <span class="prof-plus">+</span> :material-flask: Alchemy</p>
+Fear Ward is not only a Dwarf spell in Forever. Each Priest has it. Stoneform still removes Rogue poisons, Serpent Sting and Rend, and it decreases physical damage by 10% for 8 seconds.
 
-<p class="prof-for">Best for: Raid nights</p>
-
-<div class="pills" markdown>
-**Raids**{ .pill .pill--info .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
-</div>
-
-<dl class="prof-scores">
-<dt>Leveling</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
-<dt>Raids</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
-<dt>PvP</dt><dd><span class="meter" style="--v:60%"><span>3/5</span></span></dd>
-<dt>Gold</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
-</dl>
-
-- Mana potions, flasks and elixirs
-
-<p class="prof-camp" markdown>:material-campfire: **Camp features:** Incense Candle (Intellect) · Mana Well (mana regen)</p>
 
 </div>
 
-<div class="prof-pick prof-pick--sit" markdown>
+<div class="fc-addon" data-pick="race" data-value="gnome" markdown>
 
-<p class="prof-rank" markdown>**B**{ .tier .tier-b } Situational</p>
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Gnome</strong> [Gnome Priest](gnome.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-<p class="prof-pair" markdown>:material-leaf: Herbalism <span class="prof-plus">+</span> :material-knife: Skinning</p>
+Escape Artist removes Frost Nova, Hamstring and Entangling Roots. Expansive Mind gives 5% more mana for long fights.
 
-<p class="prof-for">Best for: Gold when you level</p>
-
-<div class="pills" markdown>
-**Leveling**{ .pill .pill--success .pill--sm } **Gold**{ .pill .pill--gold .pill--sm }
-</div>
-
-<dl class="prof-scores">
-<dt>Leveling</dt><dd><span class="meter" style="--v:80%"><span>4/5</span></span></dd>
-<dt>Raids</dt><dd><span class="meter" style="--v:20%"><span>1/5</span></span></dd>
-<dt>PvP</dt><dd><span class="meter" style="--v:20%"><span>1/5</span></span></dd>
-<dt>Gold</dt><dd><span class="meter" style="--v:100%"><span>5/5</span></span></dd>
-</dl>
-
-- Gold when you level, with the smallest interruption (Method)
-
-<p class="prof-camp" markdown>:material-campfire: **Camp features:** Incense Candle (Intellect) · Camp Chair (+2% crit)</p>
 
 </div>
 
+<div class="fc-addon" data-pick="race" data-value="night-elf" markdown>
+
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Night Elf</strong> [Night Elf Priest](night-elf.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+In PvP, use Elune's Light before a Mind Blast and a Shadow Word: Death. Shadowmeld and Elune's Grace make you difficult to kill.
+
+
 </div>
 
-<p class="legend" markdown>Codex ratings out of 5, based on the sources above. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).</p>
+<div class="fc-addon" data-pick="race" data-value="troll" markdown>
 
-<div class="pills" markdown>
-**:material-medical-bag: First Aid · healing potions**{ .pill .pill--success } **:material-pot-steam: Cooking · campfires**{ .pill .pill--info } **:material-fish: Fishing · Fish Bowl**{ .pill .pill--info }
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Troll</strong> [Troll Priest](troll.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+In Classic, Hex of Weakness decreases the damage of the target and the healing that it gets. Use it against melee classes in PvP. Warcraft Tavern rates the 2 Troll spells as weak.
+
+
 </div>
 
-**Secondary skills.** Cooking (food buffs, campfires) and Fishing (crates, pearls). First Aid now makes healing potions. But Method rates bandages as low value for Priests.
+<div class="fc-addon" data-pick="race" data-value="undead" markdown>
 
-!!! tip "Race notes"
-    **Gnome:** fewer Engineering failures. But Engineering is not a top profession for Priests.
+<p class="fc-addon__label" markdown>:material-account-group: <span class="fc-addon__kind">Race add-on</span> <strong>Undead</strong> [Undead Priest](undead.md){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-Crafting professions give [Legacy Points](../../characters/legacy.md) at skill 150, 225 and 300, and each profession adds a [camp feature](../../systems/camping.md). In Forever, professions give no passive stats.
+Will of the Forsaken stops the Fear of Warlocks, Priests and Warriors. It makes the Undead the best Horde PvP Priest.
 
-### Legacy talents
 
-You can spend a maximum of **16 points** on each character. Good choices for a Priest:
+</div>
 
-| Talent | Tree | Why |
+<div class="fc-addon" data-pick="talents" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Shadow</strong> [Priest talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Only your spells give you Shadow Weaving stacks, so start to build them immediately. Use Shadow Word: Death when you must move. The raid build has no Early Demise, so the spell gets no crit bonus on targets with low health. On groups, put Shadow Word: Pain on each target. Put Devouring Plague on the target that dies first, so that the Plague jumps. In PvP, use Silence, Psychic Scream and a Mind Blast, then Shadow Word: Death to kill.
+
+<div class="priority" markdown>
+
+1. Cast **Power Word: Shield** on yourself before the pull when you are alone.
+2. Keep **Shadow Word: Pain** and **Devouring Plague** active.
+3. Keep **Vampiric Embrace** active on the target.
+4. Cast **Mind Blast** on cooldown.
+5. Cast **Shadow Word: Death** when you move. With Early Demise in the PvP build, also cast it on targets below 20% health. Do not cast it when your health is low.
+6. Channel **Mind Flay** to the end as your filler spell.
+
+</div>
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="disc" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Discipline</strong> [Priest talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+You prevent damage before it occurs. Shield the player that takes damage next. A crit heal gives the target a Divine Aegis shield and gives the tank armor through Inspiration. Use Power Infusion on yourself or on a caster.
+
+<div class="priority" markdown>
+
+1. Cast **Power Word: Shield** on the player that takes damage next.
+2. Cast **Penance** on cooldown on the target with the most damage.
+3. Cast **Flash Heal** or **Greater Heal** on targets with Weakened Soul. Renewed Hope gives these heals more crit.
+4. Cast **Renew** on a tank that you cannot shield.
+5. In a group of 5 players, cast **Prayer of Healing** for group damage.
+
+</div>
+
+
+</div>
+
+<div class="fc-addon" data-pick="talents" data-value="holy" markdown>
+
+<p class="fc-addon__label" markdown>:material-star-four-points: <span class="fc-addon__kind">Talents add-on</span> <strong>Holy at 60</strong> [Priest talents](talents.md#level-60-builds){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Holy has the largest heals and the best mana for long fights. Renew from different Priests stacks, so use it freely. Litany of Light gives mana back when you use different heals in turn. Do not cast the same heal many times in sequence.
+
+<div class="priority" markdown>
+
+1. Keep **Prayer of Mending** active. Put it on the tank again each 10 seconds.
+2. Cast **Renew** on targets that take constant damage.
+3. Cast **Flash Heal** for fast healing of 1 target. Holy Binding heals you for 50% of it.
+4. Cast **Heal** or **Greater Heal** for large heals that use mana efficiently.
+5. Cast **Prayer of Healing** on a member of the group that has damage.
+6. Use different heals in turn for the **Litany of Light** refund.
+
+</div>
+
+
+</div>
+
+<div class="fc-addon" data-pick="gear" data-value="shadow" data-default markdown>
+
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Shadow damage</strong> [Priest equipment](equipment.md#shadow){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
+
+Timesaver.gg lists Torch of Light and Fel Cape for level 60. But the 2 recipes need Malleable Essence of Nature. One source says that this reagent comes from raid items that an Enchanter disenchants. Thus they are probably not available before 9 December. One source says that the Shadow Tier 1 set, Raiments of Conviction, gives hit with 2 parts.
+
+| Slot | Item | Source |
 |---|---|---|
-| **Well Rested** → **Talented** | Adventure | Faster rested XP, then earlier talent points. Very helpful for a slow leveler |
-| **Thrill of Adventure** | Adventure | Health and mana back on kills: you drink less |
-| **Permanence** | Resourcefulness | Fortitude, Divine Spirit and Shadow Protection last longer |
-| **Reagent Economy** | Resourcefulness | No reagents for Prayer of Fortitude, Prayer of Spirit or Prayer of Shadow Protection |
-| **The Quick and the Dead** | Resourcefulness | Faster corpse runs |
-| **Frequent Flier** | Adventure | Flights cost less and are faster |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
 
-See [Legacy System](../../characters/legacy.md).
 
----
+</div>
 
-## Hardcore notes
+<div class="fc-addon" data-pick="gear" data-value="healer" markdown>
 
-!!! hardcore "Hardcore survival"
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Healer</strong> [Priest equipment](equipment.md#healer){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-    The [Hardcore](../../about/hardcore.md) ruleset comes this winter. Because of self-healing, Priests are one of the safer Hardcore classes. But they are slow and they have weak defenses.
+One source gives the healer Tier 1 set the name Vestments of Conviction. Tailoring makes items with this name for 4 slots, with 2 names for each slot. No source says which name is the healer version. All of them need Malleable Essence of Nature, which reportedly comes from raid items that an Enchanter disenchants.
 
-    - **Always shield before the pull.** Most deaths start with a pull without a shield.
-    - **Keep Psychic Scream for escapes.** Look around before you use it. Feared mobs can pull other mobs.
-    - **Fear Ward yourself** in areas with mobs that fear.
-    - **Do not use SW:Death** when your health is low.
-    - **Know the emergency button of your race:** Desperate Prayer (Dwarf), Contingency Plan (Gnome), Divine Grace for a party member (Human), Elune's Grace (Night Elf), Rapid Regeneration (Troll), Will of the Forsaken (Undead).
-    - Keep healing potions (First Aid) and bandages.
-    - Dungeons give less mob XP. Make a group for quests, not for many dungeon runs one after the other.
+| Slot | Item | Source |
+|---|---|---|
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Hands | **Gloves of Conviction or Handguards of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Shoulders | **Mantle of Conviction or Pauldrons of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Legs | **Leggings of Conviction or Pants of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Boots of Conviction or Treads of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
 
----
 
-## Common mistakes / FAQ
+</div>
 
-??? question "Which spec is best for leveling?"
-    Shadow is the most usual answer, and the easiest after about level 28. Discipline is safer at low levels and better if you heal dungeons. Holy is the slowest solo. With dual spec at 40, you can keep a healer spec.
+<div class="fc-addon" data-pick="gear" data-value="crafted" markdown>
 
-??? question "Do I need to be a specific race for Fear Ward now?"
-    No. Fear Ward and Devouring Plague are baseline for every Priest at level 20.
+<p class="fc-addon__label" markdown>:material-shield-sword: <span class="fc-addon__kind">Equipment add-on</span> <strong>Tailoring and Enchanting</strong> [Priest equipment](equipment.md#crafted){ .fc-addon__more } <a class="fc-addon__change" href="#picks">Change</a></p>
 
-??? question "Why doesn't my Prayer of Healing heal my own party?"
-    In Forever, it heals the party of the **target**. Target a player in the group that you want to heal.
+Tailoring makes items with the Tier 1 name Conviction for the hands, shoulders, legs and feet. Each slot has 2 names, probably 1 for healers and 1 for Shadow. No source says which. All of them, Torch of Light and Fel Cape need Malleable Essence of Nature. Reportedly, this reagent comes from raid items that an Enchanter disenchants.
 
-??? question "Is Shadow wanted in raids?"
-    Shadow Weaving no longer buffs other players. Thus Shadow must get its raid spot with its damage. The lower costs and the doubled crit damage of Shadowform are there to make Shadow competitive. Early raid logs will show the result.
+| Slot | Item | Source |
+|---|---|---|
+| Hands | **Gloves of Conviction or Handguards of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Shoulders | **Mantle of Conviction or Pauldrons of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Legs | **Leggings of Conviction or Pants of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Feet | **Boots of Conviction or Treads of Conviction** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Wand | **Torch of Light** | [Enchanting](../../professions/enchanting.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
+| Back | **Fel Cape** | [Tailoring](../../professions/tailoring.md), skill 300 **New**{ .pill .pill--new .pill--sm } |
 
-??? question "Can I DPS in Shadowform and still heal?"
-    No. In Shadowform, you can cast all spells that do not heal.
+
+</div>
+
+</div>
+
+## Professions { #professions }
+
+The Classic pair for a Priest is still the best, mostly because you make your own wand. Method recommends that you learn the 2 professions at launch.
+
+| Rank | Professions | Use them for |
+|---|---|---|
+| **S**{ .tier .tier-s } | [Tailoring](../../professions/tailoring.md) + [Enchanting](../../professions/enchanting.md) | Cloth for each level, wands at level 5 and 13, spell power oils, staves and off-hand items |
+| **A**{ .tier .tier-a } | [Herbalism](../../professions/herbalism.md) + [Alchemy](../../professions/alchemy.md) | Mana potions, flasks and elixirs for raids |
+| **B**{ .tier .tier-b } | [Herbalism](../../professions/herbalism.md) + [Skinning](../../professions/skinning.md) | Gold while you level, with the smallest interruption (Method) |
+
+[First Aid](../../professions/first-aid.md) now makes healing potions. Method rates bandages as low value for a Priest. [Cooking](../../professions/cooking.md) and [Fishing](../../professions/fishing.md) are also useful. Compare all classes in [Best professions by class](../../characters/professions.md#best-professions-by-class).
+
+Professions give no passive stats in Forever. Each profession adds a [camp feature](../../systems/camping.md). Tailoring gives the Faction Banner (Spirit), and Enchanting gives the Enchanted Lute (armor, stats and resistances). Herbalism gives the Incense Candle (Intellect), Alchemy gives the Mana Well (mana regeneration), and Skinning gives the Camp Chair (2% crit).
+
+A crafting profession gives [Legacy](../../characters/legacy.md) points at skill 150, 225 and 300. A Gnome has 20% fewer device failures with Engineering, but Engineering is not a top profession for a Priest.
+
+## Legacy talents { #legacy }
+
+You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 character.
+
+| Tree | Picks for a Priest |
+|---|---|
+| Adventure | **Well Rested** 5/5, then **Talented** 5/5. Talented gives your first talent point up to 5 levels earlier. Thus Mind Flay, Penance and Shadowform also come earlier |
+| Adventure | **Thrill of Adventure** gives health and mana after a kill in the open world, so you drink less. **Frequent Flier** makes flights cheaper |
+| Resourcefulness | **Permanence** makes Fortitude, Divine Spirit and Shadow Protection last longer |
+| Resourcefulness | **Reagent Economy** removes the reagent cost of the 3 Prayer buffs. **The Quick and the Dead** makes corpse runs faster |
+
+## Common mistakes
+
+- You do not get a wand before level 13.
+- You start with Mind Blast in an area with many players. Shadow Word: Pain tags the enemy immediately.
+- You forget the cost of water and training. Save money for level 20 and level 40.
+- You cast Prayer of Healing on your party in a raid because of an old habit. It heals the party of the target.
+- You do not collect library books before level 20.
+- You stop a Mind Flay channel early. Improved Mind Flay makes the last hit the strongest.
+- You use Shadow Word: Death as a filler when your health is low.
+- You use Psychic Scream in a dungeon, and the enemies that run pull more enemies.
+
+## FAQ
+
+??? question "Which path is best for leveling?"
+    Shadow is the most usual answer, and the easiest after about level 28. Discipline is safer at low levels and better if you heal dungeons. Holy is the slowest alone. With dual spec at 40, you can keep a healer spec.
+
+??? question "Must I be a specific race for Fear Ward?"
+    No. Fear Ward and Devouring Plague are baseline for each Priest at level 20.
+
+??? question "Why does Prayer of Healing not heal my party?"
+    In Forever, it heals the party of the target. Target a player in the group that you want to heal.
+
+??? question "Do raids want a Shadow Priest?"
+    Shadow Weaving does not buff other players in Forever. Thus Shadow must get its raid slot with its damage. The lower costs and the larger crits of Shadowform help it. No source has published results from the raids.
+
+??? question "Can I heal in Shadowform?"
+    No. In Shadowform you can cast all spells that do not heal. Vampiric Embrace still heals your party.
 
 ??? question "Is Binding Heal in the game?"
     No. Before launch, the passive Holy Binding replaced it.
 
-**Common mistakes**
-
-- You do not get a wand before level 13.
-- You start with Mind Blast in an area with many players, not with SW:Pain, which tags instantly.
-- You forget the cost of water and training. Save money for level 20 and level 40.
-- You use Prayer of Healing on your own party in a raid because of old habit.
-- You do not collect library books until 20.
-
----
+??? question "Is Power Infusion in the game?"
+    Yes. In the launch client it is in row 7 of Discipline. It needs 30 Discipline points and Penance.
 
 ## Sources
 
-??? quote "8 sources"
+??? quote "11 sources"
 
-    - Blizzard, *Class Deep Dives — Priest and Warrior*: <https://news.blizzard.com/en-us/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior>
-    - Warcraft Tavern, Priest guide: <https://www.warcrafttavern.com/forever/guides/priest/>
-    - Warcraft Tavern, Priest leveling guide: <https://www.warcrafttavern.com/forever/guides/priest-leveling/>
-    - Method, Priest leveling guide and talents: <https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents>
-    - Mobalytics, Priest guides and talent calculator: <https://mobalytics.gg/wow-forever/priest-guides>, <https://mobalytics.gg/wow-forever/priest-talent-calculator>
-    - Icy Veins, Holy and Discipline Priest guides: <https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide>, <https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide>
-    - Zockify, Priest talent calculator: <https://www.zockify.com/forever/priest/>
-    - Wiki pages: [Priest](../../characters/classes/priest.md), [Races](../../characters/races.md), [Leveling](../../characters/leveling.md), [Legacy](../../characters/legacy.md), [Sources](../../sources.md)
+    - [wowforevertalents.com: Priest talents, read from the client](https://wowforevertalents.com/priest/)
+    - [wowforevertalents.com: profession recipes, read from the client](https://wowforevertalents.com/professions/)
+    - [Blizzard: Class Deep Dives, Priest and Warrior](https://news.blizzard.com/en-us/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior)
+    - [Warcraft Tavern: Priest guide](https://www.warcrafttavern.com/forever/guides/priest/)
+    - [Warcraft Tavern: Priest leveling guide](https://www.warcrafttavern.com/forever/guides/priest-leveling/)
+    - [Method.gg: Priest leveling guide and talents](https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents)
+    - [Mobalytics: Priest guides](https://mobalytics.gg/wow-forever/priest-guides)
+    - [Mobalytics: Priest talent calculator](https://mobalytics.gg/wow-forever/priest-talent-calculator)
+    - [Icy Veins: Holy Priest healer guide](https://www.icy-veins.com/wow-forever/holy-priest-healer-pve-guide)
+    - [Icy Veins: Discipline Priest healer guide](https://www.icy-veins.com/wow-forever/discipline-priest-healer-pve-guide)
+    - [Zockify: Priest talent calculator](https://www.zockify.com/forever/priest/)

@@ -1,23 +1,27 @@
 ---
 wide: true
-description: Estimated raid DPS for every race and DPS spec in WoW Forever, with every input sourced and editable.
+description: Estimated (not measured) raid DPS for every race and DPS spec in WoW Forever, with every input sourced and editable.
 ---
 
 # DPS calculator
 
-This page ranks every race and DPS spec pair by single-target raid DPS against a level 63 boss, with pre-raid gear. No raid opens until 9 December 2026, so no one has published real raid logs yet.
+This page **estimates** single-target raid DPS for every race and DPS spec pair against a level 63 boss, with pre-raid gear. These numbers are model output, not measured results. No raid opens until 9 December 2026, so no one has real raid logs to check them against.
 
-!!! warning "Built on incomplete data"
-    Many Forever values are still unknown: most Rogue, Hunter, Paladin, Druid and Shaman ability ranks, most spell coefficients, pet and demon damage, rating conversions and the armor formula. Each gap is filled with a Classic value or a tagged assumption. The **Data confidence** column shows how much of each spec's input is Forever data.
+!!! warning "Estimates on incomplete data"
+    Treat every number on this page as an estimate. Absolute DPS could be off by 20–30%, and the order of specs could change once real logs exist.
 
-    - **Race results within one spec are reliable** where the gap is larger than the ± margin. Every racial value comes from Wowhead Forever, and all races of a class use the same gear.
-    - **Spec-against-spec rankings are rough.** They depend on assumed gear and the Classic fallbacks.
+    - **Missing Forever data:** most Rogue, Hunter, Paladin, Druid and Shaman ability ranks, most spell coefficients, pet and demon damage, base stats by race, rating conversions and the armor formula. Each gap is filled with a Classic value or a tagged assumption.
+    - **Assumed gear:** most gear profiles are assumptions. Only Arms uses published pre-raid totals.
+    - **Untested rotations:** each spec uses a priority list written for this page, not one tested by players.
+    - **Data confidence** shows how much of each spec's input is Forever data. No spec is above 66%.
 
-## Simulated results
+    **What is more trustworthy:** comparing races within one spec, when the gap is larger than the ± margin. Every racial value comes from Wowhead Forever, and all races of a class use the same gear. Gaps under about 1% are effectively ties.
 
-These come from two event-driven combat simulators in the repository (`tools/sim/physical` and `tools/sim/casters`). They play out each fight with swing timers, cast times, the attack table, resources, procs and cooldowns, using a priority list for each spec. Their READMEs list every assumption and gap.
+## Simulated estimates
 
-<div class="dps-calc" data-dps-sim><p>Loading the simulation results. They need JavaScript.</p></div>
+These estimates come from two event-driven combat simulators in the repository (`tools/sim/physical` and `tools/sim/casters`). They play out each fight with swing timers, cast times, the attack table, resources, procs and cooldowns, using a priority list for each spec. Their READMEs list every assumption and gap.
+
+<div class="dps-calc" data-dps-sim><p>Loading the simulated estimates. They need JavaScript.</p></div>
 
 ## Quick estimate (editable)
 

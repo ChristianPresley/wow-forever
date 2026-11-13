@@ -599,7 +599,7 @@
           ]));
         });
         out.replaceChildren(el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table" }, [
-          el("thead", {}, [el("tr", {}, ["#", "Class", "Spec (open for breakdown)", "Race", "Simulated DPS", "vs best race", "Data confidence"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), tbody])]));
+          el("thead", {}, [el("tr", {}, ["#", "Class", "Spec (open for breakdown)", "Race", "Estimated DPS", "vs best race", "Data confidence"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), tbody])]));
       }
       function select(label, key, opts) {
         var s = el("select", { "aria-label": label });
@@ -614,9 +614,9 @@
         select("Faction", "faction", [["all", "Both"], ["A", "Alliance"], ["H", "Horde"]]),
         el("label", { "class": "dps-check" }, [cb, el("span", { text: "Best race per spec only" })]));
       var r0 = rows[0] || {};
-      box.replaceChildren(el("p", { "class": "dps-meta", text: rows.length + " spec and race pairs, " + (r0.iterations || "?") + " simulated fights of " + (r0.fight_seconds || "?") + " s each. ± is the 95% confidence interval." }), filters, out);
+      box.replaceChildren(el("p", { "class": "dps-meta", text: rows.length + " spec and race pairs, " + (r0.iterations || "?") + " simulated fights of " + (r0.fight_seconds || "?") + " s each. ± is the 95% confidence interval of the simulation, not the error of the estimate." }), filters, out);
       draw();
-    }).catch(function () { box.replaceChildren(el("p", { text: "The simulation results could not be loaded." })); });
+    }).catch(function () { box.replaceChildren(el("p", { text: "The simulated estimates could not be loaded." })); });
   }
 
   function onPage() {

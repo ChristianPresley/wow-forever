@@ -1,4 +1,5 @@
-"""Hunter: level-aware DPS for Beast Mastery, Marksmanship and Survival.
+"""Hunter: level-aware DPS for Beast Mastery, Marksmanship and Survival, naked or in
+crafted gear (core.GEAR, see "Gear" below).
 
 No gear means no ranged weapon and no ammo. In the client, Auto Shot, Serpent
 Sting, Arcane Shot, Multi-Shot, Aimed Shot, Volley and Sniper Shot require an
@@ -34,6 +35,23 @@ Server-side behaviour and assumptions (tag in `inputs`):
 - Mana regen: Classic Hunter 15 + Spirit/5 per 2 s tick after 5 s without
   spending mana (CU). Viper Sting drains the target, not a Hunter mana
   source, and needs a ranged weapon: not modelled. No drinking.
+- Gear (core.GEAR "crafted", gear.py): gear stats come through core.Character;
+  gear "+attack power" adds to melee AP and "+ranged attack power" to RAP only
+  (Classic, C; tag "gear": F (crafted items)). With a bow, gun or crossbow the
+  Hunter stands at range: Auto Shot, Aspect of the Hawk, Hunter's Mark, Rapid Fire,
+  Serpent Sting, Aimed Shot (talent; the client has rank 1 only, F), Multi-Shot and
+  Arcane Shot from forever.json, plus pet, hawks and traps; no melee. Sniper Shot
+  and Volley's damage are not in the client: unused.
+  Ranged rules: weapon min-max + RAP/14 * weapon speed (C); Multi-Shot and Aimed
+  Shot use normalized speed 2.8 (CU); the ranged roll is the yellow melee table
+  (miss, dodge, crit; no glancing, no parry, CU), with ch.hit and melee crit (C);
+  Serpent Sting cannot crit (CU); no ammo damage (A); Auto Shot keeps firing
+  through casts (A). Tooltip talents (F): Mortal Shots +6% crit damage bonus per
+  rank, Ranged Weapon Specialization +1%/rank weapon shots, Barrage +5%/rank
+  Multi/Aimed, Improved Arcane Shot -0.3 s/rank, Improved Serpent Sting +2%/rank,
+  Improved Stings +20%/3 per rank, Rapid Killing -60 s Rapid Fire per rank,
+  Deadly Aspects 2%/rank Auto Shot chance for +30% ranged speed for 12 s,
+  Efficiency also on shots and stings.
 - Lone Wolf (Marksmanship 42+): the sim runs with and without the pet and
   reports the better (`pet` in the result).
 """
@@ -72,7 +90,11 @@ TT = {
     "Improved Tracking": 0.01, "Savage Strikes": 2.0, "Surefooted": 1.0, "Predator's Edge": 0.06,
     "Expose Prey": 5.0, "Resourcefulness": 0.30, "Survivalist's Discipline": 0.20, "Clever Traps": 0.15,
     "Lightning Reflexes": 0.03, "Lacerating Strikes": 0.40,
+    "Mortal Shots": 0.06, "Ranged Weapon Specialization": 0.01, "Barrage": 0.05, "Improved Arcane Shot": 0.3,
+    "Improved Serpent Sting": 0.02, "Improved Stings": 0.20 / 3, "Rapid Killing": 60, "Deadly Aspects": 2.0,
 }
+RANGED_NORMALIZED_SPEED = 2.8          # Classic normalized ranged speed (CU)
+DEADLY_ASPECTS = (0.30, 12)            # tooltip: +30% ranged attack speed for 12 s (F)
 BESTIAL_WRATH = (0.50, 18, 120)        # tooltip: +50% for 18 s, 2 min (F)
 FRENZY = (0.30, 8)                     # tooltip: +30% attack speed for 8 s (F)
 INTIMIDATION_CD = 60                   # tooltip (F)
@@ -115,8 +137,16 @@ class Hunter:
                     "weapon_requirements": "F", "improved_tracking_applies": "A"}
         self.pet = use_pet and level >= 10
         ca = ch.int * self.tr("Careful Aim") * TT["Careful Aim"]
-        self.ap = 2 * level + ch.str + ch.agi - 20 + ca
-        self.rap = 2 * level + 2 * ch.agi - 10 + ca
+        self.ap = 2 * level + ch.str + ch.agi - 20 + ca + ch.gear_ap()
+        self.rap = 2 * level + 2 * ch.agi - 10 + ca + ch.gear_ap() + ch.gear_rap()  # Classic: +AP gear counts for ranged too (C)
+        self.rw = ch.gear["ranged"] if ch.gear else None
+        self.rapid_pct = 0.0
+        self.next_act = 1.5
+        if ch.gear:
+            self.inp["gear"] = "F (crafted items)"
+        if self.rw:
+            self.inp.update({"ranged_attack_table": "CU", "ranged_normalized_speed_2.8": "CU", "no_ammo": "A",
+                             "auto_shot_through_casts": "A"})
         self.max_mana = ch.mana()
         self.mana = self.max_mana
         self.last_spend = -10.0
@@ -126,7 +156,7 @@ class Hunter:
         self.hawks = []
         self.intim = False
         self.lacerate_gen = 0
-        self.weapon_avg, self.speed = core.unarmed_weapon(level)
+        self.weapon_avg, self.speed = ch.weapon("mh")
 
     def tr(self, n):
         return self.t_.get(n, 0)
@@ -173,9 +203,9 @@ class Hunter:
         return h
 
     # ---------- resources ----------
-    def cost(self, s, melee=False, trap=False):
+    def cost(self, s, melee=False, trap=False, shot=False):
         _, c = core.cost(s, self.ch.base_mana)
-        if melee:
+        if melee or shot:
             c *= 1 - self.tr("Efficiency") * TT["Efficiency"]
         if melee or trap:
             c *= 1 - self.tr("Resourcefulness") * TT["Resourcefulness"]
@@ -239,6 +269,103 @@ class Hunter:
         if gen == self.lacerate_gen:
             self.sim.deal("Lacerating Strikes", per)
 
+    # ---------- ranged (gear) ----------
+    def rhaste(self):
+        h = self.haste()
+        if self.up("rapid"):
+            h *= 1 + self.rapid_pct
+        if self.up("da"):
+            h *= 1 + DEADLY_ASPECTS[0]
+        return h
+
+    def shot(self, name, base, weapon=True, cast=True):
+        out = core.melee_roll(self.sim.rng, self.ch, white=False, extra_crit=self.crit_extra())
+        if cast:
+            self.sim.cast(name)
+        if out in ("miss", "dodge"):
+            return 0.0
+        amt = base * self.player_mult()
+        if weapon:
+            amt *= 1 + self.tr("Ranged Weapon Specialization") * TT["Ranged Weapon Specialization"]
+        if out == "crit":
+            cm = core.A("melee_crit_mult")
+            amt *= cm + (cm - 1) * self.tr("Mortal Shots") * TT["Mortal Shots"]
+        self.sim.deal(name, amt)
+        return amt
+
+    def rweapon(self, normalized=False):
+        rw = self.rw
+        return self.sim.rng.uniform(rw["min"], rw["max"]) + self.rap_now() / 14 * (
+            RANGED_NORMALIZED_SPEED if normalized else rw["speed"])
+
+    def auto_shot(self):
+        self.shot("Auto Shot", self.rweapon(), cast=False)
+        if self.tr("Deadly Aspects") and self.up("aspect") and \
+                self.sim.rng.chance(self.tr("Deadly Aspects") * TT["Deadly Aspects"]):
+            self.buffs["da"] = self.sim.t + DEADLY_ASPECTS[1]
+        self.sim.at(self.sim.t + self.rw["speed"] / self.rhaste(), self.auto_shot)
+
+    def do_rapid(self):
+        s = self.spell("Rapid Fire")
+        if not s or not self.ready("rapid") or not self.pay(s):
+            return False
+        self.rapid_pct = s["effects"][0]["EffectBasePointsF"] / 100
+        self.buffs["rapid"] = self.sim.t + s["duration_ms"] / 1000
+        self.cds["rapid"] = self.sim.t + s["category_cooldown_ms"] / 1000 - self.tr("Rapid Killing") * TT["Rapid Killing"]
+        self.sim.cast("Rapid Fire")
+        return False  # off the global cooldown
+
+    def do_sting(self):
+        s = self.spell("Serpent Sting")
+        if not s or self.up("sting") or self.sim.t > self.sim.end - 6 or not self.pay(s, shot=True):
+            return False
+        self.sim.cast("Serpent Sting")
+        e = s["effects"][0]
+        per = (e.get("EffectAuraPeriod") or 3000) / 1000
+        n = int(round(s["duration_ms"] / 1000 / per))
+        self.buffs["sting"] = self.sim.t + n * per
+        out = core.melee_roll(self.sim.rng, self.ch, white=False)
+        if out in ("miss", "dodge"):
+            self.buffs["sting"] = -1
+            return True
+        tick = e["EffectBasePointsF"] * (1 + self.tr("Improved Serpent Sting") * TT["Improved Serpent Sting"]) \
+            * (1 + self.tr("Improved Stings") * TT["Improved Stings"]) * self.player_mult()
+        for i in range(1, n + 1):
+            self.sim.at(self.sim.t + i * per, self.sim.deal, "Serpent Sting", tick)
+        return True
+
+    def do_aimed(self):
+        if not self.tr("Aimed Shot"):
+            return False
+        s = core.talent(CLASS, "Aimed Shot")["ranks"][0]
+        if not self.ready("ms") or not self.pay(s, shot=True):
+            return False
+        self.cds["ms"] = self.sim.t + s["category_cooldown_ms"] / 1000
+        cast = s["cast_ms"] / 1000
+        self.next_act = max(1.5, cast)
+        bonus = s["effects"][0]["EffectBasePointsF"]
+        mult = 1 + self.tr("Barrage") * TT["Barrage"]
+        self.sim.at(self.sim.t + cast, lambda: self.shot("Aimed Shot", (self.rweapon(True) + bonus) * mult))
+        return True
+
+    def do_multi(self):
+        s = self.spell("Multi-Shot")
+        if not s or not self.ready("ms") or not self.pay(s, shot=True):
+            return False
+        self.cds["ms"] = self.sim.t + s["category_cooldown_ms"] / 1000
+        bonus = s["effects"][0]["EffectBasePointsF"]
+        self.shot("Multi-Shot", (self.rweapon(True) + bonus) * (1 + self.tr("Barrage") * TT["Barrage"]))
+        return True
+
+    def do_arcane(self):
+        s = self.spell("Arcane Shot")
+        if not s or not self.ready("arcane") or not self.pay(s, shot=True):
+            return False
+        self.cds["arcane"] = self.sim.t + s["category_cooldown_ms"] / 1000 \
+            - self.tr("Improved Arcane Shot") * TT["Improved Arcane Shot"]
+        self.shot("Arcane Shot", s["effects"][0]["EffectBasePointsF"], weapon=False)
+        return True
+
     # ---------- pet ----------
     def pet_stats(self, extra=0.0):
         return _PetStats(PET_CRIT + self.tr("Ferocity") * TT["Ferocity"] + extra)
@@ -294,7 +421,10 @@ class Hunter:
     def start(self):
         sim = self.sim
         sim.at(0.0, self.regen)
-        sim.at(0.0, self.swing)
+        if self.rw:
+            sim.at(0.0, self.auto_shot)
+        else:
+            sim.at(0.0, self.swing)
         if self.pet:
             sim.at(0.2, self.pet_swing)
             sim.at(1.0, self.pet_special)
@@ -343,13 +473,21 @@ class Hunter:
             self.intim = True
             self.cds["intim"] = sim.t + INTIMIDATION_CD
             sim.cast("Intimidation")
+        if self.rw:
+            self.do_rapid()
         for name, fn in self.priority():
+            self.next_act = gcd
             if fn():
-                sim.at(sim.t + gcd, self.act)
+                sim.at(sim.t + self.next_act, self.act)
                 return
         sim.at(sim.t + 0.5, self.act)
 
     def priority(self):
+        if self.rw:
+            return [("Aspect of the Hawk", self.do_aspect), ("Hunter's Mark", self.do_mark),
+                    ("Summon Hawk", self.do_hawk), ("Serpent Sting", self.do_sting),
+                    ("Aimed Shot", self.do_aimed), ("Multi-Shot", self.do_multi),
+                    ("Arcane Shot", self.do_arcane), ("Trap", self.do_trap)]
         return [("Aspect of the Hawk", self.do_aspect), ("Hunter's Mark", self.do_mark),
                 ("Mongoose Bite", self.do_mb), ("Summon Hawk", self.do_hawk),
                 ("Strider Kick", self.do_kick), ("Trap", self.do_trap)]
@@ -363,7 +501,7 @@ class Hunter:
 
     def do_aspect(self):
         s = self.spell("Aspect of the Hawk")
-        if not s or not self.tr("Summon Hawk") or self.up("aspect") or not self.pay(s):
+        if not s or not (self.tr("Summon Hawk") or self.rw) or self.up("aspect") or not self.pay(s):
             return False
         self.buffs["aspect"] = 1e9
         self.sim.cast("Aspect of the Hawk")
@@ -371,7 +509,8 @@ class Hunter:
 
     def do_mark(self):
         s = self.spell("Hunter's Mark")
-        if not s or not (self.tr("Summon Hawk") or self.tr("Expose Prey")) or self.up("mark") or not self.pay(s):
+        if not s or not (self.tr("Summon Hawk") or self.tr("Expose Prey") or self.rw) or self.up("mark") \
+                or not self.pay(s):
             return False
         self.buffs["mark"] = self.sim.t + s["duration_ms"] / 1000
         self.sim.cast("Hunter's Mark")

@@ -2,7 +2,7 @@
 
     python tools/levelsim/run.py [--iterations N] [--levels 60] [--classes warrior,mage]
 
-Writes tools/levelsim/results/levels.json.
+Writes tools/levelsim/results/levels.json (no gear) or levels_crafted.json (--gear crafted).
 """
 import argparse
 import importlib
@@ -41,23 +41,27 @@ def main():
     ap.add_argument("--levels", default="1-60")
     ap.add_argument("--classes", default="")
     ap.add_argument("--seed", type=int, default=1)
+    ap.add_argument("--gear", choices=["none", "crafted"], default="none")
     a = ap.parse_args()
     levels = parse_levels(a.levels)
     wanted = set(filter(None, a.classes.split(",")))
     rows = []
     import classes  # noqa: F401
+    import core
+    core.GEAR["mode"] = a.gear
     for m in pkgutil.iter_modules([str(HERE / "classes")]):
         if m.name.startswith("test_") or (wanted and m.name not in wanted):
             continue
         mod = importlib.import_module(f"classes.{m.name}")
         for spec, spec_name in mod.SPECS.items():
             for race in CLASS_RACES[mod.CLASS]:
+                core.GEAR["spec"] = spec
                 for lv in levels:
                     r = mod.simulate(spec, race, lv, a.iterations, a.seed)
                     rows.append({"class": mod.CLASS, "spec": spec, "spec_name": spec_name, "race": race,
-                                 "level": lv, "talents": mod.talents_at(spec, lv), **r})
+                                 "level": lv, "gear": a.gear, "talents": mod.talents_at(spec, lv), **r})
                 print(f"{mod.CLASS:8} {spec:14} {race:7} done", flush=True)
-    out = HERE / "results" / "levels.json"
+    out = HERE / "results" / ("levels.json" if a.gear == "none" else f"levels_{a.gear}.json")
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(rows, separators=(",", ":")), encoding="utf-8")
     print(f"wrote {len(rows)} rows to {out}")

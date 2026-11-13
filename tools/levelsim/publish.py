@@ -7,17 +7,22 @@ from collections import defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SRC = HERE / "results" / "levels.json"
+SRCS = {"none": HERE / "results" / "levels.json", "crafted": HERE / "results" / "levels_crafted.json"}
 OUT = HERE.parent.parent / "docs" / "assets" / "data" / "level-sim.json"
 
 
 def main():
-    rows = json.loads(SRC.read_text(encoding="utf-8"))
+    rows = []
+    for mode, src in SRCS.items():
+        if src.exists():
+            for r in json.loads(src.read_text(encoding="utf-8")):
+                r["gear"] = mode
+                rows.append(r)
     levels = sorted({r["level"] for r in rows})
     groups = defaultdict(dict)
     meta = {}
     for r in rows:
-        k = (r["class"], r["spec"], r["race"])
+        k = (r["class"], r["spec"], r["race"], r["gear"])
         groups[k][r["level"]] = r
         meta[k] = r
     out = []
@@ -25,7 +30,7 @@ def main():
         top = by[max(by)]
         tags = list((top.get("inputs") or {}).values())
         out.append({
-            "class": k[0], "spec": k[1], "spec_name": meta[k]["spec_name"], "race": k[2],
+            "class": k[0], "spec": k[1], "spec_name": meta[k]["spec_name"], "race": k[2], "gear": k[3],
             "dps": [round(by[lv]["dps_mean"], 1) if lv in by else None for lv in levels],
             "ci": [round((by[lv]["ci95"][1] - by[lv]["ci95"][0]) / 2, 1) if lv in by else None for lv in levels],
             "breakdown": {a: round(v, 1) for a, v in top["breakdown"].items()},

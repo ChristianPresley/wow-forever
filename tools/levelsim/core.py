@@ -47,6 +47,10 @@ ASSUMPTIONS = {
 }
 
 
+# Gear mode: "none" (naked) or "crafted" (best craftable gear, gear.py). Set by run.py.
+GEAR = {"mode": "none", "spec": None}
+
+
 def A(key):
     return ASSUMPTIONS[key][0]
 
@@ -178,6 +182,50 @@ class Character:
         self.dmg_mult = 1.0
         self.ap_mult = 1.0
         self.sp = 0.0
+        # Gear (see gear.py). run.py sets GEAR["mode"] and GEAR["spec"] before each simulate().
+        # Base stats, hit and crit are applied here; modules add ch.gear AP, spell power and weapons.
+        self.gear = None
+        if GEAR["mode"] == "crafted" and GEAR["spec"]:
+            import gear as _gear
+            self.gear = _gear.select(cls, GEAR["spec"], level)
+            gs = self.gear["stats"]
+            self.str += gs.get("str", 0)
+            self.agi += gs.get("agi", 0)
+            self.sta += gs.get("sta", 0)
+            self.int += gs.get("int", 0)
+            self.spi += gs.get("spi", 0)
+            self.hit += gs.get("hit", 0) / _gear.HIT_RATING_PER_PCT
+            self.crit_bonus += gs.get("crit", 0) / _gear.CRIT_RATING_PER_PCT
+            self.spell_crit_bonus += gs.get("crit", 0) / _gear.CRIT_RATING_PER_PCT
+            self.stats_tag += "+gear"
+
+    def gear_stat(self, key, default=0):
+        return self.gear["stats"].get(key, default) if self.gear else default
+
+    def gear_ap(self):
+        return self.gear_stat("ap")
+
+    def gear_rap(self):
+        return self.gear_stat("rap")
+
+    def gear_sp(self, school=None):
+        """Bonus spell damage from gear, plus the school-specific part if given."""
+        if not self.gear:
+            return 0
+        import gear as _gear
+        return _gear.spell_power(self.gear, school)
+
+    def weapon(self, hand="mh"):
+        """(average damage, speed) of the equipped weapon in hand mh/oh/ranged, or
+        the unarmed fist for mh/oh when nothing is equipped there; None for ranged."""
+        w = self.gear and self.gear.get(hand)
+        if w and w["type"] != "wand" or (w and hand == "ranged"):
+            return w["avg"], w["speed"]
+        if hand == "ranged":
+            return None
+        if hand == "oh" and self.gear and self.gear.get("mh") and not self.gear.get("oh"):
+            return None  # two-hander or shield: no off-hand weapon
+        return unarmed_weapon(self.level)
 
     def tr(self, name):
         return self.talents.get(name, 0)

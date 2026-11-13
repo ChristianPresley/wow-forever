@@ -25,6 +25,17 @@ Server-side rules not in the client (tag in brackets):
   used: racial, humanoid-only, self-buff, no damage, or AoE spells. Holy Nova is
   cast only when Searing Light makes it free [A].
 - Spirit regen, 5-second rule, mana at cast start, no periodic crits: see mage.py.
+- Mana-aware rotation [A] (mage.plan_options): the filler (Smite or Mind Flay) is
+  chosen by spell AND rank from every rank known at that level, by sustained damage
+  over the remaining fight; when the best option cannot be sustained the Priest casts
+  until empty, then rests (unarmed melee, full Spirit regen). SW:Pain, Holy Fire,
+  Devouring Plague, Penance, Mind Blast and SW:Death are cast when they fit the mana
+  budget or are at least as mana-efficient as the filler.
+- Out of mana or resting: unarmed melee auto-attack, target in range [A]; attack
+  power = Strength - 10 [CU].
+- Gear (core.GEAR "crafted"): spell damage (generic + school), mp5 and the OOM wand /
+  weapon melee are handled by mage.CasterSim (see mage.py); Mind Flay ticks include
+  gear spell damage too.
 """
 import core
 from .mage import CasterSim, GCD, Spell, spell
@@ -149,6 +160,13 @@ class PriestSim(CasterSim):
                 inputs["spell:Penance"] = "F"
                 inputs["penance_bolts"] = "CU"
         self.S = S
+        # every known rank of the fillers, for mana-aware downranking (A)
+        self.ranks_ = {}
+        for n in ("Smite", "Mind Flay"):
+            if n in S:
+                rs = [Spell(r, level, bm) for r in core.ranks(CLASS, n) if r["base_level"] <= level and r["costs"]]
+                self.ranks_[n] = rs or [S[n]]
+        inputs["mana_budget_rotation"] = "A"
         # talents
         ms = self.T("Mental Strength")
         ch.int *= 1 + ms / 100
@@ -351,7 +369,7 @@ class PriestSim(CasterSim):
         step = self.T("Improved Mind Flay") / 100
         if res != "miss":
             for k in range(n):
-                self.sim.at(self.t + period * (k + 1), self._flay, sp, (base + coef * self.sp) * (1 + step) ** k)
+                self.sim.at(self.t + period * (k + 1), self._flay, sp, (base + coef * (self.sp + self.gear_sp_of(sp))) * (1 + step) ** k)
         return max(GCD, sp.duration / self.haste())
 
     def _flay(self, sp, amount):
@@ -361,9 +379,50 @@ class PriestSim(CasterSim):
     def affordable(self, sp):
         return self.mana >= self.cost_of(sp)
 
+    # --- mana planning (A)
+    def exec_time(self, sp):
+        if sp.name == "Mind Flay":
+            return max(GCD, sp.duration / self.haste())
+        if sp.name == "Penance":
+            return max(GCD, PENANCE_BOLTS[-1])
+        return max(GCD, self.cast_time(sp))
+
+    def exp_damage(self, sp):
+        """Expected damage of one cast (average roll + spell power, hit and crit folded in)."""
+        p = self.spell_power(sp)
+        direct = (sp.avg_direct + sp.direct[2] * p) if sp.direct else 0.0
+        if sp.name == "Penance":
+            direct *= len(PENANCE_BOLTS)
+        dot = 0.0
+        if sp.dot:
+            base, period, coef = sp.dot
+            n = int(round(sp.duration / period))
+            if sp.name == "Shadow Word: Pain":
+                n = int(round((sp.duration + self.T("Improved Shadow Word: Pain")) / period))
+            if sp.name == "Mind Flay":
+                step = self.T("Improved Mind Flay") / 100
+                dot = (base + coef * p) * sum((1 + step) ** k for k in range(n))
+            else:
+                dot = (base + coef * p) * n
+        crit = min(100.0, self.ch.spell_crit + self.crit_chance(sp)) / 100
+        hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit + self.hit_bonus(sp)) / 100
+        m = self.dmg_mult(sp, False)
+        return hit * m * (direct * (1 + crit * (self.crit_mult(sp) - 1)) + dot)
+
+    def option(self, sp):
+        c = self.cost_of(sp)
+        return (sp, self.exp_damage(sp), self.exec_time(sp), c, self.mana >= c)
+
+    def cast_any(self, sp):
+        if sp.name == "Penance":
+            return self.penance(sp)
+        if sp.name == "Mind Flay":
+            return self.mind_flay(sp)
+        return self.cast(sp)
+
     def choose(self):
         S, t = self.S, self.t
-        if self.pi and self.ready.get("pi", 0) <= t and self.mana >= self.pi_spell.cost:
+        if self.pi and self.ready.get("pi", 0) <= t and self.mana >= self.pi_spell.cost and not self.resting:
             self.spend(self.pi_spell.cost)
             self.ready["pi"] = t + self.pi_spell.cd
             self.buffs["power_infusion"] = t + self.pi_spell.duration
@@ -372,10 +431,19 @@ class PriestSim(CasterSim):
             self.if_on = True
             self.ready["if"] = t + INNER_FOCUS_CD
             self.sim.cast("Inner Focus")
-        order = []
         nova = S.get("Holy Nova")
         if nova and self.free_nova:
-            order.append(nova)
+            self.free_nova = False
+            self.sim.cast("Holy Nova")
+            self.hit_direct(nova)
+            return GCD
+        opts = [self.option(r) for rs in self.ranks_.values() for r in rs]
+        fill, f, ok, need = self.plan(opts)
+        if self.resting:
+            if not self.rest_done(f, need):
+                return self.melee_idle()
+            self.resting = False
+        order = []
         swp = S.get("Shadow Word: Pain")
         if swp and not self.dot_up("Shadow Word: Pain"):
             order.append(swp)
@@ -390,23 +458,18 @@ class PriestSim(CasterSim):
             s = S.get(n)
             if s and self.cd_ready(s):
                 order.append(s)
-        if "Mind Flay" in S:
-            order.append(S["Mind Flay"])
-        order.append(S["Smite"])
         for sp in order:
-            if not self.affordable(sp):
-                continue
-            if sp.name == "Holy Nova":
-                self.free_nova = False
-                self.sim.cast("Holy Nova")
-                self.hit_direct(sp)
-                return GCD
-            if sp.name == "Penance":
-                return self.penance(sp)
-            if sp.name == "Mind Flay":
-                return self.mind_flay(sp)
-            return self.cast(sp)
-        return 0.5
+            if self.efficient(sp, fill):
+                return self.cast_any(sp)
+        if fill is not None and not ok:
+            if f < 1.0:
+                self.resting = True
+                return self.melee_idle()
+            aff = [o for o in opts if o[4]]
+            fill = max(aff, key=lambda o: o[1] / o[2])[0] if aff else None
+        if fill is not None:
+            return self.cast_any(fill)
+        return self.melee_idle()
 
 
 def simulate(spec, race, level, iterations, seed):

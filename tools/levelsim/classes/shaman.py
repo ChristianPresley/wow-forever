@@ -8,12 +8,20 @@ Talent values come from the Forever tooltip text (.research/talents/shaman.json,
 divided by max rank) and are tagged A, because the client's talent rows are stale.
 
 Rotations (only abilities known at that level):
-  Elemental and Restoration (Restoration is scored on this damage rotation), at range, no melee:
+  Elemental and Restoration (Restoration is scored on this damage rotation), at range:
     Searing Totem kept up > Lightning Mastery (40) > Flame Shock if not ticking >
-    Chain Lightning on cooldown > Lightning Bolt.
+    Chain Lightning on cooldown > Lightning Bolt. Mana-aware (A, mage.plan_options): the
+    Lightning Bolt rank is chosen from every known rank by sustained damage over the
+    remaining fight; Searing Totem, Flame Shock and Chain Lightning are cast when their
+    damage net of the mana's value beats the alternative. When the best bolt cannot be
+    sustained the Shaman casts until empty, then rests (unarmed melee, full regen) until
+    95% mana or the casting share of the fight is covered.
   Enhancement, in melee:
     Searing Totem kept up > Rage of the Farseer > Stormstrike > Lightning Bolt at 5 Maelstrom
-    Weapon stacks > Flame Shock if not ticking > Earth Shock while mana is above 50%.
+    Weapon stacks > Flame Shock if not ticking while mana is above 30% > Earth Shock while
+    mana is above 50%. These mana floors already pace Enhancement over a whole fight (its
+    damage is mostly melee, and the gaps give full out-of-5-second-rule regen), so it keeps
+    top ranks; a budget-paced downranking variant was tried and did worse (A).
   Before Earth Shock (level 4) every spec casts Lightning Bolt; Enhancement only when no melee
   ability is ready and mana is above 60%.
   Buffs before the pull: Windfury Weapon on the main hand from 30 (Enhancement); Strength of
@@ -40,8 +48,24 @@ Server-side rules and values not in the client (tags):
   - Mana regen: 17 + Spirit/5 per 2 s outside the 5-second rule (CU); Mindfulness and
     Improved Stormstrike keep a share while casting.
   - Racials: Blood Fury +10% AP and spell power, Berserking +10% attack and cast speed (core).
+  - Out of mana or resting (Elemental/Restoration): unarmed melee auto-attack with the totem
+    buffs, target in range (A). Downranked spells use their own max level for per-level
+    growth (client max_level, F).
+  - Gear (core.GEAR "crafted", gear.py): Str/Agi/Sta/Int/Spi/hit/crit through core.Character.
+    Gear spell damage (generic + the spell's school) adds to the shaman's spell bonus damage
+    (Lightning Bolt, Chain Lightning, shocks, Flame Shock ticks; client coefficients, C),
+    also in the planner's expected values; Searing Totem keeps its fixed CU damage. Gear
+    mp5 is regained every tick, also inside the 5-second rule (C). Melee (Enhancement, and
+    the Elemental/Restoration rest) uses the equipped main-hand weapon (damage and speed;
+    Windfury and Maelstrom use it too) and gear attack power; Stormstrike uses the
+    normalized speed 3.3 for a two-hander, 2.4 otherwise (CU, Classic).
 """
 import core
+
+try:
+    from .mage import plan_options
+except ImportError:  # imported as a top-level module by the tests
+    from mage import plan_options
 
 CLASS = "shaman"
 SPECS = {"elemental": "Elemental", "enhancement": "Enhancement", "restoration": "Restoration"}
@@ -85,6 +109,17 @@ def _tier(table, level, default=None):
     return table[max(ks)] if ks else default
 
 
+def _lv(spell, level):
+    return min(level, spell["max_level"]) if spell.get("max_level") else level
+
+
+def _paid_ranks(name, level):
+    """Every rank with a mana cost known at `level`, each with its Overload copy (or None)."""
+    rs = [s for s in core.ranks(CLASS, name) if s["base_level"] <= level]
+    free = {s["base_level"]: s for s in rs if not s["costs"]}
+    return [(s, free.get(s["base_level"])) for s in rs if s["costs"]]
+
+
 def talents_at(spec, level):
     pts = max(0, min(level, 60) - 9)
     out = {}
@@ -121,7 +156,15 @@ class Fight:
         self.wf_totem_ap = 0 if (self.wf_weapon or self.enh) else _tier(WF_TOTEM_AP_CU, level, 0)
         ch.sp = ch.int * tv("Mental Quickness") / 100
         self.base_ap = 2 * ch.str + 2 * level - 20 + ch.int * tv("Mental Dexterity") / 100
-        self.wavg, self.speed = core.unarmed_weapon(level)
+        self.wavg, self.speed = ch.weapon("mh")
+        self.norm_speed = 2.4
+        self.mp5 = ch.gear_stat("mp5")
+        if ch.gear:
+            self.base_ap += ch.gear_ap()
+            mh = ch.gear.get("mh")
+            if mh and (mh["type"].endswith("2h") or mh["type"] in ("staff", "polearm")):
+                self.norm_speed = 3.3
+            inputs["gear"] = "F (crafted items)"
         self.max_mana = self.mana = ch.mana()
         self.last_spend = -10.0
         self.busy = 0.0
@@ -145,13 +188,18 @@ class Fight:
         self.st = _rank("Searing Totem", level)
         self.ss = core.talent(CLASS, "Stormstrike")["ranks"][0] if ch.tr("Stormstrike") else None
         self.rof = _rank("Rage of the Farseer", 60) if ch.tr("Rage of the Farseer") else None
+        self.lbs = _paid_ranks("Lightning Bolt", level)
+        self.resting = False
+        self.next_swing = 0.0
+        self.lam = 0.0
+        inputs["mana_budget_rotation"] = "A"
         inputs.update({"talents": "A (Forever tooltip)", "attack_power_formula": "CU", "unarmed_weapon": "CU",
                        "base_stats": ch.stats_tag, "spell_ranks": "F", "overload_ranks": "F",
                        "mana_regen_spirit": "CU", "searing_totem_damage": "CU", "shock_cooldown": "CU",
                        "totem_buffs": "CU", "fight_seconds": "A"})
         if self.enh:
             inputs.update({"windfury_weapon_ap": "CU", "windfury_extra_attacks": "A", "maelstrom_ppm": "A",
-                           "stormstrike": "F", "imbue_on_unarmed": "A"})
+                           "stormstrike": "F", ("imbue_on_weapon" if ch.gear else "imbue_on_unarmed"): "A"})
 
     @property
     def t(self):
@@ -165,6 +213,12 @@ class Fight:
     @property
     def sp(self):
         return self.ch.sp * self.sp_mult
+
+    def spw(self, spell):
+        """Bonus spell damage for this spell: Mental Quickness plus gear (generic + school)."""
+        if not self.ch.gear:
+            return self.sp
+        return (self.ch.sp + self.ch.gear_sp(core.SCHOOLS.get(spell["school_mask"]))) * self.sp_mult
 
     def haste(self):
         return self.ch.haste * self.speed_mult
@@ -183,11 +237,11 @@ class Fight:
     # ----- damage -----
     def spell_hit(self, src, spell, mult=1.0, extra_crit=0.0, direct=True):
         e = core.damage_effect(spell)
-        lo, hi = core.effect_range(e, self.level, spell["spell_level"])
+        lo, hi = core.effect_range(e, _lv(spell, self.level), spell["spell_level"])
         o = core.spell_roll(self.sim.rng, self.ch, extra_crit=extra_crit)
         if o == "miss":
             return False
-        d = (self.sim.rng.uniform(lo, hi) + e["EffectBonusCoefficient"] * self.sp) * mult
+        d = (self.sim.rng.uniform(lo, hi) + e["EffectBonusCoefficient"] * self.spw(spell)) * mult
         if o == "crit":
             d *= self.crit_mult()
             if self.ch.tr("Water Shield") and self.t >= self.ws_icd:
@@ -210,7 +264,7 @@ class Fight:
         return 1.0
 
     def melee_dmg(self, normalized=False, extra_ap=0.0):
-        return self.wavg + (self.ap + extra_ap) / 14 * (2.4 if normalized else self.speed)
+        return self.wavg + (self.ap + extra_ap) / 14 * (self.norm_speed if normalized else self.speed)
 
     def melee(self, src, base_fn, white, can_wf=True, extra_ap=0.0):
         o = core.melee_roll(self.sim.rng, self.ch, white=white)
@@ -256,6 +310,8 @@ class Fight:
             if self.buff.get("iss", -1) > self.t:
                 frac += self.tv("Improved Stormstrike") / 100
         self.mana = min(self.max_mana, self.mana + base * min(1.0, frac))
+        if self.mp5:
+            self.mana = min(self.max_mana, self.mana + self.mp5 * 2 / 5)
         self.sim.at(self.t + 2, self.regen)
 
     def totem_tick(self, until):
@@ -317,18 +373,98 @@ class Fight:
         if self.ch.tr("Elemental Focus") and self.sim.rng.chance(10):
             self.clearcast = True
 
+    # ----- mana planning (A) -----
+    def regen_full_ps(self):
+        r = (17 + self.ch.spi / 5) / 2
+        return r + self.mp5 / 5 if self.mp5 else r
+
+    def regen_casting_ps(self):
+        frac = self.tv("Mindfulness") / 100
+        if self.buff.get("iss", -1) > self.t:
+            frac += self.tv("Improved Stormstrike") / 100
+        r = (17 + self.ch.spi / 5) / 2 * min(1.0, frac)
+        return r + self.mp5 / 5 if self.mp5 else r
+
+    def melee_dps(self):
+        return self.melee_dmg() / self.speed * self.haste() * 0.85
+
+    def exp_spell(self, spell, mult=1.0, extra_crit=0.0, ospell=None, lo_chance=0.0):
+        e = core.damage_effect(spell)
+        lo, hi = core.effect_range(e, _lv(spell, self.level), spell["spell_level"])
+        crit = min(100.0, self.ch.spell_crit + extra_crit) / 100
+        hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit) / 100
+        d = ((lo + hi) / 2 + e["EffectBonusCoefficient"] * self.spw(spell)) * mult * hit * (1 + crit * (self.crit_mult() - 1))
+        if ospell and lo_chance:
+            d += lo_chance / 100 * self.exp_spell(ospell, mult, extra_crit)
+        return d
+
+    def bolt_time(self, spell, name, gcd):
+        cast = spell["cast_ms"] / 1000 - self.tv("Elemental Alacrity")
+        if name == "Lightning Bolt" and self.buff.get("lm", -1) > self.t:
+            cast -= 0.5
+        return max(gcd, max(1.0, cast / self.haste()))
+
+    def bolt_option(self, spell, ospell, name, gcd):
+        c = self.cost(spell, self.tv("Convection"))
+        eff = c * (0.9 if self.ch.tr("Elemental Focus") else 1.0)  # Clearcasting 10% (A)
+        dmg = self.exp_spell(spell, 1 + self.tv("Concussion") / 100, self.tv("Call of Thunder"),
+                             ospell, self.tv("Lightning Overload"))
+        return ((name, spell, ospell), dmg, self.bolt_time(spell, name, gcd), eff, self.can(c))
+
+    def fs_damage(self, spell):
+        mult = 1 + self.tv("Call of Flame") / 100
+        dot = [e for e in spell["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
+        dur = spell["duration_ms"] / 1000 + 3 * self.ch.tr("Call of Flame")
+        n = int(dur / (dot["EffectAuraPeriod"] / 1000) + 1e-6)
+        return self.exp_spell(spell, mult) + (dot["EffectBasePointsF"] + dot["EffectBonusCoefficient"] * self.spw(spell)) * mult * n, dur
+
+    def totem_damage(self):
+        lo, hi = _tier(SEARING_CU, self.level)
+        dur = self.st["duration_ms"] / 1000
+        crit = min(100.0, self.ch.spell_crit) / 100
+        hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit) / 100
+        return (lo + hi) / 2 * (1 + self.tv("Call of Flame") / 100) * hit * (1 + crit * (self.crit_mult() - 1)) * int(dur / 2.5)
+
+    def worth(self, dmg, cost, secs):
+        """Damage net of the mana's value beats resting for the same time (A)."""
+        if not self.can(cost):
+            return False
+        if self.lam <= 0 or cost <= 0 or self.clearcast:
+            return True
+        base = self.melee_dps() + self.lam * self.regen_full_ps()
+        return dmg - self.lam * (cost - self.regen_casting_ps() * secs) >= base * secs
+
+    def melee_idle(self):
+        """Unarmed auto-attack while out of mana or resting (A)."""
+        self.inp["oom_weapon_melee" if self.ch.gear else "oom_unarmed_melee"] = "A"
+        if self.next_swing <= self.t + 1e-9:
+            self.melee("Melee" if self.ch.gear else "Melee (unarmed)", lambda x: self.melee_dmg(extra_ap=x), True)
+            self.next_swing = self.t + self.speed / self.haste()
+        self.sim.at(self.t + min(0.5, max(0.05, self.next_swing - self.t)), self.act)
+
     def act(self):
         if self.t < self.busy - 1e-9:
             return
         t, gcd, ch = self.t, 1.5 / self.haste(), self.ch
         gcd = max(1.0, gcd)
         shock_red = self.tv("Convection") + self.tv("Shamanistic Focus")
+        opts, key, f, ok, need = [], None, 1.0, True, 0.0
+        if not self.enh:
+            opts = [self.bolt_option(r, o, "Lightning Bolt", gcd) for r, o in self.lbs]
+            key, f, ok, need, self.lam = plan_options(opts, self.mana, 0.0, self.sim.end - t, self.regen_casting_ps(),
+                                                      self.regen_full_ps(), self.melee_dps())
+            if self.resting:
+                if not (f >= 1.0 or self.mana >= min(0.95 * self.max_mana, need)):
+                    return self.melee_idle()
+                self.resting = False
         # Searing Totem
         if self.st and self.totem_until <= t:
             c = self.cost(self.st, self.tv("Totemic Focus"))
-            if self.mana >= c:
+            dur = self.st["duration_ms"] / 1000
+            go = self.mana >= c and (self.enh or self.worth(self.totem_damage(), c, gcd))
+            if go:
                 self.spend(c)
-                self.totem_until = t + self.st["duration_ms"] / 1000
+                self.totem_until = t + dur
                 self.sim.cast("Searing Totem")
                 self.sim.at(t + 0.5, self.totem_tick, self.totem_until)
                 return self.after(gcd)
@@ -369,17 +505,26 @@ class Fight:
                 self.sim.cast("Lightning Mastery")
         # Flame Shock
         if self.fs and self.fs_until <= t and self.ready("shock"):
-            c = self.cost(self.fs, shock_red)
-            if self.can(c) and (not self.enh or self.mana >= 0.3 * self.max_mana):
+            fs = None
+            if self.enh:
+                if self.can(self.cost(self.fs, shock_red)) and self.mana >= 0.3 * self.max_mana:
+                    fs = self.fs
+            else:
+                dmg, _ = self.fs_damage(self.fs)
+                c = self.cost(self.fs, shock_red)
+                if self.worth(dmg, c, gcd):
+                    fs = self.fs
+            if fs:
+                c = self.cost(fs, shock_red)
                 self.pay(c)
                 self.cd["shock"] = t + 6
                 self.sim.cast("Flame Shock")
                 mult = 1 + self.tv("Call of Flame") / 100
-                self.spell_hit("Flame Shock", self.fs, mult)
-                dot = [e for e in self.fs["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
-                dur = self.fs["duration_ms"] / 1000 + 3 * ch.tr("Call of Flame")
+                self.spell_hit("Flame Shock", fs, mult)
+                dot = [e for e in fs["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
+                dur = fs["duration_ms"] / 1000 + 3 * ch.tr("Call of Flame")
                 per = dot["EffectAuraPeriod"] / 1000
-                tick = (dot["EffectBasePointsF"] + dot["EffectBonusCoefficient"] * self.sp) * mult
+                tick = (dot["EffectBasePointsF"] + dot["EffectBonusCoefficient"] * self.spw(fs)) * mult
                 self.fs_until = t + dur
                 for i in range(1, int(dur / per + 1e-6) + 1):
                     self.sim.at(t + i * per, self.fs_tick, self.fs_until, tick)
@@ -398,14 +543,22 @@ class Fight:
                 return self.cast_bolt(t, gcd, self.lb, self.lbo, "Lightning Bolt")
         else:
             if self.cl and (self.ready("cl") or self.buff.get("lm", -1) > t):
+                _, dmg, secs, eff, _ = self.bolt_option(self.cl, self.clo, "Chain Lightning", gcd)
                 c = self.cost(self.cl, self.tv("Convection"))
-                if self.can(c):
+                if self.worth(dmg, c, secs):
                     self.cd["cl"] = t + 6
                     return self.cast_bolt(t, gcd, self.cl, self.clo, "Chain Lightning", c)
-            if self.lb:
-                c = self.cost(self.lb, self.tv("Convection"))
-                if self.can(c):
-                    return self.cast_bolt(t, gcd, self.lb, self.lbo, "Lightning Bolt", c)
+            if key is not None and not ok and not self.clearcast:
+                if f < 1.0:
+                    self.resting = True
+                    return self.melee_idle()
+                aff = [o for o in opts if o[4]]
+                key = max(aff, key=lambda o: o[1] / o[2])[0] if aff else None
+            if key is not None:
+                name, spell, ospell = key
+                return self.cast_bolt(t, gcd, spell, ospell, name)
+            if self.lbs:
+                return self.melee_idle()
         nxt = [v for v in self.cd.values() if v > t] + [t + 1.0, self.totem_until, self.fs_until]
         self.sim.at(min(x for x in nxt if x > t + 1e-6), self.act)
 

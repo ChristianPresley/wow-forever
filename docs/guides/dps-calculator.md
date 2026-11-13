@@ -17,11 +17,16 @@ This page **estimates** single-target raid DPS for every race and DPS spec pair 
 
     **What is more trustworthy:** comparing races within one spec, when the gap is larger than the ± margin. Every racial value comes from Wowhead Forever, and all races of a class use the same gear. Gaps under about 1% are effectively ties.
 
-## Base DPS by level (no gear)
+## DPS by level
 
-This simulator (`tools/levelsim`) plays out every class, talent tree and race at every level from 1 to 60. The character wears no gear and fights a same-level target with no armor. It knows every spell rank and talent point it can have at that level, and uses its racial abilities. Spell values come from the Forever client data. Server-side rules the client doesn't ship (combat formulas, rage, most talent ranks above 1, scripted effects) use Classic rules or tagged assumptions; the module docstrings list them.
+This simulator (`tools/levelsim`) plays out every class, talent tree and race at every level from 1 to 60, in a 3-minute fight against a same-level target with no armor. The character knows every spell rank and talent point it can have at that level, and uses its racial abilities. Casters spend their mana so it lasts the fight. They pick spell ranks to suit, and shoot a wand or melee while their mana comes back.
 
-Use this to compare classes and races on equal footing. It is not raid DPS: gear, buffs and boss armor are left out on purpose.
+Pick the gear:
+
+- **Best craftable gear:** each slot holds the crafted item and enchant that scores best for the spec at that level. Item stats are decoded from the Forever client. Crafting makes almost no rings, necks or trinkets, so those slots are mostly empty. Weapon procs and set bonuses are not counted.
+- **No gear:** the character fights unarmed and unarmored. Hunters have no ranged weapon, so they lose their shots.
+
+Spell values come from the Forever client data. Rules the client doesn't ship (combat formulas, rage, most talent ranks above 1, scripted effects, hit and crit rating conversion) use Classic rules or tagged assumptions; the module docstrings list them. It is not raid DPS: raid buffs, consumables and boss armor are left out.
 
 <div class="dps-calc" data-dps-levels><p>Loading the level simulation. It needs JavaScript.</p></div>
 

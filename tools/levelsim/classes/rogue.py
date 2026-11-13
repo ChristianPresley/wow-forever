@@ -1,4 +1,5 @@
-"""Rogue: Assassination (Mutilate at 31+ points), Combat and Subtlety, levels 1-60, naked.
+"""Rogue: Assassination (Mutilate at 31+ points), Combat and Subtlety, levels 1-60, naked or in
+crafted gear (core.GEAR).
 
 Spell values come from forever.json through core helpers. Talent values come from the
 Forever client tooltip text (TOOLTIP, tag F) because many client talent ranks above 1
@@ -18,6 +19,14 @@ Server-side rules and data the client lacks, tagged:
 - Weapon requirements are ignored so every spec can be simulated naked: Backstab,
   Ambush, Mutilate and poisons work with the unarmed fist (A). There is no off-hand, so
   Mutilate hits twice with the main-hand fist (A) and dual-wield talents do nothing.
+- Gear (core.GEAR "crafted", gear.py): gear stats come through core.Character, gear
+  "+attack power" adds to AP (F (crafted items)). Weapon swings roll the weapon's
+  min-max (F); instant attacks use the Classic normalized speed of the weapon type
+  (1.7 dagger, 2.4 other one-hand, CU). Weapon requirements apply (C): Backstab, Ambush
+  and Mutilate need a dagger in the main hand (gear.py gives Assassination and Subtlety
+  one). The off-hand weapon swings on its own timer for 50% damage (C), white swings
+  take the dual-wield miss penalty (C), off-hand hits can apply poison, and Mutilate's
+  second hit uses the off-hand weapon at 50% (CU). The naked rules above are unchanged.
 - Energy 10/s (core CU), cap 100 + Vigor. Combo points capped at 5.
 - Eviscerate adds 3% AP per combo point (CU). Rupture adds 4% AP per combo point over
   its duration (A). Garrote adds 18% AP over its duration (CU).
@@ -140,6 +149,16 @@ def _rank_at(table, level):
     return v
 
 
+TWO_HAND = {"axe2h", "sword2h", "mace2h", "polearm", "staff"}
+
+
+def norm_speed(w):
+    """Classic normalized weapon speed for instant attacks (CU); the fist counts as one-hand."""
+    if not w:
+        return 2.4
+    return 1.7 if w["type"] == "dagger" else 3.3 if w["type"] in TWO_HAND else 2.4
+
+
 def setup(spec, race, level):
     tl = talents_at(spec, level)
     ch = core.Character(CLASS, race, level, tl)
@@ -152,15 +171,30 @@ def setup(spec, race, level):
     for n in tl:
         inp[f"talent:{n}"] = "F" if n in TOOLTIP else "F(no effect modeled)"
     p = {"spec": spec, "level": level, "tl": tl, "ch": ch, "inp": inp}
-    p["w_avg"], p["speed"] = core.unarmed_weapon(level)
+    p["w_avg"], p["speed"] = ch.weapon("mh")
+    g = ch.gear
+    p["mh"] = g["mh"] if g else None
+    p["oh"] = g["oh"] if g else None
+    p["norm"] = norm_speed(p["mh"])
+    p["gear_ap"] = ch.gear_ap()
+    dagger = bool(p["mh"] and p["mh"]["type"] == "dagger")
+    if g:
+        del inp["weapon_requirements_ignored"]
+        inp["gear"] = "F (crafted items)"
+        inp["weapon_requirements"] = "C"
+        inp["normalized_speed_by_weapon_type"] = "CU"
+        if p["oh"]:
+            inp["off_hand_50pct_damage"] = "C"
     ab = {}
     for key, name in (("ss", "Sinister Strike"), ("bs", "Backstab"), ("evis", "Eviscerate"),
                       ("snd", "Slice and Dice"), ("rup", "Rupture"), ("amb", "Ambush"), ("gar", "Garrote")):
         s = _spell(name, level)
+        if s and g and key in ("bs", "amb") and not dagger:
+            continue
         if s:
             ab[key] = s
             inp[name] = "F"
-    if tl.get("Mutilate"):
+    if tl.get("Mutilate") and (dagger or not g):
         # The client lists the two per-hand trigger spells under the same name; take the castable one.
         ab["mut"] = [s for s in core.ranks(CLASS, "Mutilate") if s["base_level"] <= level and s["costs"]][-1]
         inp["Mutilate"] = "F"
@@ -194,6 +228,7 @@ def setup(spec, race, level):
 def build(p):
     ch, tl, lv, ab, spec = p["ch"], p["tl"], p["level"], p["ab"], p["spec"]
     speed0 = p["speed"]
+    mh, oh = p["mh"], p["oh"]
     cm = core.A("melee_crit_mult")
     leth_mult = cm + (cm - 1) * tal(tl, "Lethality") / 100
     max_energy = 100 + tal(tl, "Vigor")
@@ -259,7 +294,7 @@ def build(p):
               "stealth": True, "prem_ready": 0.0, "gs_ready": 0.0}
 
         def ap():
-            a = ch.str + ch.agi + 2 * lv - 20
+            a = ch.str + ch.agi + 2 * lv - 20 + p["gear_ap"]
             if racial and racial[0] == "power" and sim.t < st["racial_until"]:
                 a *= 1 + racial[1] / 100
             return max(0.0, a)
@@ -273,7 +308,11 @@ def build(p):
             return 1.0
 
         def weapon(norm=False):
-            return p["w_avg"] * rng.uniform(0.8, 1.2) + ap() / 14 * (2.4 if norm else speed0)
+            base = rng.uniform(mh["min"], mh["max"]) if mh else p["w_avg"] * rng.uniform(0.8, 1.2)
+            return base + ap() / 14 * (p["norm"] if norm else speed0)
+
+        def oh_weapon(norm=False):
+            return (rng.uniform(oh["min"], oh["max"]) + ap() / 14 * (norm_speed(oh) if norm else oh["speed"])) * 0.5
 
         def deal(name, d, bleed=False):
             sim.deal(name, d)
@@ -282,7 +321,7 @@ def build(p):
                 dm[1] += d * (2 if bleed else 1)
 
         def roll(white, extra=0.0):
-            o = core.melee_roll(rng, ch, white=white, extra_crit=extra + crit_extra())
+            o = core.melee_roll(rng, ch, white=white, dual_wield=bool(oh), extra_crit=extra + crit_extra())
             if o == "dodge" and we and rng.chance(we / core.A("dodge_same_level") * 100):
                 o = "hit"
             return o
@@ -332,6 +371,22 @@ def build(p):
                 h *= 1 + racial[1] / 100
             st["swing_id"] += 1
             sim.at(sim.t + speed0 / h, swing, st["swing_id"])
+
+        def oh_swing():
+            o = roll(True)
+            if o not in ("miss", "dodge"):
+                d = oh_weapon() * mult()
+                d *= cm if o == "crit" else (core.A("glance_damage") if o == "glance" else 1)
+                deal("Melee (off hand)", d)
+                poison()
+            h = ch.haste
+            if sim.t < st["snd"]:
+                h *= 1 + snd_haste
+            if sim.t < st["bf"]:
+                h *= 1.2
+            if racial and racial[0] == "haste" and sim.t < st["racial_until"]:
+                h *= 1 + racial[1] / 100
+            sim.at(sim.t + oh["speed"] / h, oh_swing)
 
         def regen():
             r = core.A("energy_per_sec") * 2 * (2 if sim.t < st["ar"] else 1)
@@ -502,13 +557,14 @@ def build(p):
                 sim.cast("Mutilate")
                 crit_any = False
                 hit_any = False
-                for _ in range(2):
+                for hand in range(2):
                     extra = tal(tl, "Puncturing Wounds") / 2 + (100 if st["cb"] else 0)
                     o = roll(False, extra)
                     if o in ("miss", "dodge"):
                         continue
                     hit_any = True
-                    d = (weapon(True) + fl) * pct * (1 + opp) * pois * mult()
+                    w = oh_weapon(True) if hand and oh else weapon(True)
+                    d = (w + fl) * pct * (1 + opp) * pois * mult()
                     if o == "crit":
                         d *= leth_mult
                         crit_any = True
@@ -539,6 +595,8 @@ def build(p):
                 return gcd()
 
         sim.at(0.0, swing, 0)
+        if oh:
+            sim.at(0.2, oh_swing)  # off hand starts slightly after the main hand (A)
         sim.at(0.0, act)
         sim.at(2.0, regen)
 

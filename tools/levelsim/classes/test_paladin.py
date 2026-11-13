@@ -10,6 +10,15 @@ import core  # noqa: E402
 import paladin as m  # noqa: E402
 
 
+def _crafted(mod, spec, race, level, n=10):
+    """Simulate in crafted gear, then restore naked mode."""
+    core.GEAR.update(mode="crafted", spec=spec)
+    try:
+        return mod.simulate(spec, race, level, n, 1)
+    finally:
+        core.GEAR.update(mode="none", spec=None)
+
+
 class TalentTests(unittest.TestCase):
     def test_points_per_level(self):
         for spec in m.SPECS:
@@ -72,6 +81,15 @@ class GatingTests(unittest.TestCase):
 
     def test_no_judgement_before_4(self):
         self.assertNotIn("Judgement", m.simulate("retribution", RACE, 3, 3, 1)["breakdown"])
+
+
+class GearTests(unittest.TestCase):
+    def test_crafted_beats_naked_and_rises(self):
+        for spec in m.SPECS:
+            vals = [_crafted(m, spec, "human", lv)["dps_mean"] for lv in (20, 40, 60)]
+            self.assertEqual(vals, sorted(vals), (spec, vals))
+            self.assertGreater(vals[-1], m.simulate(spec, "human", 60, 10, 1)["dps_mean"] * 1.3, spec)
+            self.assertEqual(_crafted(m, spec, "human", 60, 1)["inputs"]["gear"], "F (crafted items)")
 
 
 if __name__ == "__main__":

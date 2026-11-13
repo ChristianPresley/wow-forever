@@ -10,8 +10,13 @@ divided by max rank) and are tagged A, because the client's talent rows are stal
 Rotations (only abilities known at that level):
   Balance and Restoration (Restoration is scored on this damage rotation), caster form,
   Moonkin Form from 40 (Balance):
-    Moonfire if not ticking > Insect Swarm if not ticking (talent) > Starfire while Eclipse
-    charges are stored or mana is above 30% > Wrath. Clearcasting is spent on Starfire.
+    Moonfire if not ticking > Insect Swarm if not ticking (talent) > filler, where the
+    filler is Wrath or Starfire at any known rank, chosen by sustained damage over the
+    remaining fight (mage.plan_options, A). Moonfire and Insect Swarm are cast when their
+    damage net of the mana's value beats the alternative. When the best filler cannot be
+    sustained the Druid casts until empty, then rests (unarmed melee, full regen) until
+    95% mana or the casting share of the fight is covered. Clearcasting is spent on
+    Starfire.
   Feral: levels 1-9 caster (Wrath, Moonfire); 10-19 Bear Form (auto-attack, Maul when rage
     allows); 20+ Cat Form from behind:
     Tiger's Fury > Shifting Power below 40 Energy > Rip at 5 combo points when it is not
@@ -34,8 +39,24 @@ Server-side rules and values not in the client (tags):
     cooldown (client); Moonkin Form doubles the chance (tooltip); known from level 20 (A).
   - Mana regen: 15 + Spirit/5 per 2 s outside the 5-second rule (CU); Reflection keeps a share.
   - Racials: Shadowmeld-type crit cooldown for Night Elves via core (crit +10% 15 s/3 min).
+  - Out of mana or resting (Balance/Restoration): unarmed melee auto-attack in caster form,
+    target in range (A); caster attack power 2 x Strength - 20 (CU). Downranked spells use
+    their own max level for per-level growth (client max_level, F).
+  - Gear (core.GEAR "crafted", gear.py): Str/Agi/Sta/Int/Spi/hit/crit through core.Character.
+    Gear spell damage (generic + the spell's school) times the client coefficient
+    (EffectBonusCoefficient, C) adds to Wrath, Starfire, Moonfire and Insect Swarm, also in
+    the planner's expected values. Gear mp5 is regained every tick, also inside the
+    5-second rule (C). Caster-form rest melee uses the equipped main-hand weapon and gear
+    attack power (A). Bear/Cat: gear attack power adds to the form attack power and gear
+    Str/Agi count through the form formula; form attacks keep the fist-based form weapon,
+    as weapon damage does not apply in form (CU, Classic).
 """
 import core
+
+try:
+    from .mage import plan_options
+except ImportError:  # imported as a top-level module by the tests
+    from mage import plan_options
 
 CLASS = "druid"
 SPECS = {"balance": "Balance", "feral": "Feral (Cat)", "restoration": "Restoration"}
@@ -86,6 +107,15 @@ def _rank(name, level):
     return rs[-1] if rs else None
 
 
+def _ranks(name, level):
+    """Every trained rank with a mana cost known at `level` (for downranking)."""
+    return [s for s in core.ranks(CLASS, name) if s["base_level"] <= level and s["costs"]]
+
+
+def _lv(spell, level):
+    return min(level, spell["max_level"]) if spell.get("max_level") else level
+
+
 def _rage_conv(level):
     return 0.0091107836 * level ** 2 + 3.225598133 * level + 4.2652911  # Classic (CU)
 
@@ -120,6 +150,9 @@ class Fight:
             self.form = "caster"
         self.ooc = level >= 20
         self.wavg, _ = core.unarmed_weapon(level)
+        self.mp5 = ch.gear_stat("mp5")
+        if ch.gear:
+            inputs["gear"] = "F (crafted items)"
         inputs.update({"talents": "A (Forever tooltip)", "base_stats": ch.stats_tag, "spell_ranks": "F",
                        "mana_regen_spirit": "CU", "omen_of_clarity": "CU", "fight_seconds": "A"})
         if self.form in ("cat", "bear"):
@@ -141,6 +174,8 @@ class Fight:
         base = 15 + self.ch.spi / 5
         frac = 1.0 if self.t - self.last_spend >= 5 else self.tv("Reflection") / 100
         self.mana = min(self.max_mana, self.mana + base * frac)
+        if self.mp5:
+            self.mana = min(self.max_mana, self.mana + self.mp5 * 2 / 5)
         self.sim.at(self.t + 2, self.regen)
 
     def ready(self, k):
@@ -204,6 +239,10 @@ class Fight:
         self.eclipse_exp = -1.0
         self.mf_until = self.is_until = -1.0
         self.ng_until = -1.0
+        self.wraths, self.sfs = _ranks("Wrath", lv), _ranks("Starfire", lv)
+        self.resting = False
+        self.next_swing = 0.0
+        self.inp["mana_budget_rotation"] = "A"
         if self.form == "moonkin":
             mk = _rank("Moonkin Form", lv)
             self.spend(core.cost(mk, ch.base_mana)[1])
@@ -220,13 +259,19 @@ class Fight:
     def crit_mult(self):
         return 1 + (core.A("spell_crit_mult") - 1) * (1 + self.tv("Vengeance") / 100)
 
+    def bonus(self, spell, e):
+        """Gear bonus spell damage times the effect's coefficient (C); 0 when naked."""
+        if not self.ch.gear:
+            return 0
+        return (e.get("EffectBonusCoefficient") or 0) * self.ch.gear_sp(core.SCHOOLS.get(spell["school_mask"]))
+
     def nuke(self, src, spell, mult=1.0, extra_crit=0.0, eff=None):
         e = eff or core.damage_effect(spell)
-        lo, hi = core.effect_range(e, self.level, spell["spell_level"])
+        lo, hi = core.effect_range(e, _lv(spell, self.level), spell["spell_level"])
         o = core.spell_roll(self.sim.rng, self.ch, extra_crit=extra_crit + self.extra_crit)
         if o == "miss":
             return
-        d = self.sim.rng.uniform(lo, hi) * mult * self.spell_mult()
+        d = (self.sim.rng.uniform(lo, hi) + self.bonus(spell, e)) * mult * self.spell_mult()
         if o == "crit":
             d *= self.crit_mult()
             if self.ch.tr("Nature's Grace"):
@@ -243,7 +288,7 @@ class Fight:
     def dot(self, src, spell, dur, until_attr, mult):
         eff = [e for e in spell["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
         per = eff["EffectAuraPeriod"] / 1000
-        tick = eff["EffectBasePointsF"] * mult * self.spell_mult(True)
+        tick = (eff["EffectBasePointsF"] + self.bonus(spell, eff)) * mult * self.spell_mult(True)
         until = self.t + dur
         setattr(self, until_attr, until)
         for i in range(1, int(dur / per + 1e-6) + 1):
@@ -263,49 +308,139 @@ class Fight:
         self.spend(c)
         return True
 
+    # ----- mana planning (A) -----
+    def regen_full_ps(self):
+        r = (15 + self.ch.spi / 5) / 2
+        return r + self.mp5 / 5 if self.mp5 else r
+
+    def regen_casting_ps(self):
+        r = (15 + self.ch.spi / 5) / 2 * self.tv("Reflection") / 100
+        return r + self.mp5 / 5 if self.mp5 else r
+
+    def caster_ap(self):
+        return max(0.0, 2 * self.ch.str - 20) + self.ch.gear_ap()
+
+    def melee_dps(self):
+        avg, speed = self.ch.weapon("mh")
+        ap = self.caster_ap()
+        return (avg + ap / 14 * speed) / speed * self.ch.haste * self.dmg_all * 0.85
+
+    def exp_hit(self, spell, eff=None, mult=1.0, extra_crit=0.0):
+        e = eff or core.damage_effect(spell)
+        lo, hi = core.effect_range(e, _lv(spell, self.level), spell["spell_level"])
+        crit = min(100.0, self.ch.spell_crit + extra_crit + self.extra_crit) / 100
+        hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit) / 100
+        return ((lo + hi) / 2 + self.bonus(spell, e)) * mult * self.spell_mult() * hit * (1 + crit * (self.crit_mult() - 1))
+
+    def options(self, ecl):
+        moonglow = self.tv("Moonglow")
+        out = []
+        for w in self.wraths:
+            c = core.cost(w, self.ch.base_mana)[1] * max(0.0, 1 - (moonglow + 10 * self.ch.tr("Improved Wrath")) / 100)
+            secs = max(self.gcd(), self.cast_time(w["cast_ms"] / 1000 - self.tv("Improved Wrath")))
+            out.append((("Wrath", w), self.exp_hit(w), secs, c, self.mana >= c))
+        for sf in self.sfs:
+            c = core.cost(sf, self.ch.base_mana)[1] * max(0.0, 1 - moonglow / 100)
+            secs = max(self.gcd(), self.cast_time(sf["cast_ms"] / 1000 - self.tv("Improved Starfire")
+                                                 - (self.tv("Eclipse") if ecl else 0)))
+            out.append((("Starfire", sf), self.exp_hit(sf), secs, c, self.mana >= c))
+        return out
+
+    def worth(self, dmg, cost, secs):
+        """DoT check: damage net of the mana's value beats resting for the same time."""
+        if self.mana < cost:
+            return False
+        if self.lam <= 0 or cost <= 0:
+            return True
+        base = self.melee_dps() + self.lam * self.regen_full_ps()
+        return dmg - self.lam * (cost - self.regen_casting_ps() * secs) >= base * secs
+
+    def melee_idle(self):
+        """Unarmed auto-attack while out of mana or resting (A)."""
+        self.inp["oom_weapon_melee" if self.ch.gear else "oom_unarmed_melee"] = "A"
+        if self.next_swing <= self.t + 1e-9:
+            avg, speed = self.ch.weapon("mh")
+            o = core.melee_roll(self.sim.rng, self.ch, extra_crit=self.extra_crit)
+            if o not in ("miss", "dodge"):
+                d = (avg + self.caster_ap() / 14 * speed) * self.dmg_all
+                if o == "crit":
+                    d *= core.A("melee_crit_mult")
+                elif o == "glance":
+                    d *= core.A("glance_damage")
+                self.sim.deal("Melee" if self.ch.gear else "Melee (unarmed)", d)
+            self.next_swing = self.t + speed / self.ch.haste
+        self.sim.at(self.t + min(0.5, max(0.05, self.next_swing - self.t)), self.act)
+
     def act_caster(self):
         t, ch = self.t, self.ch
         moonglow = self.tv("Moonglow")
-        if self.mf and self.mf_until <= t and self.mana >= 0.1 * self.max_mana:
-            if self.pay(self.mf, moonglow):
+        ecl = self.eclipse if self.eclipse_exp > t else 0
+        opts = self.options(ecl)
+        key, f, ok, need, self.lam = plan_options(opts, self.mana, 0.0, self.sim.end - t, self.regen_casting_ps(),
+                                                  self.regen_full_ps(), self.melee_dps())
+        if self.resting:
+            if not (f >= 1.0 or self.mana >= min(0.95 * self.max_mana, need)):
+                return self.melee_idle()
+            self.resting = False
+        gcd = self.gcd()
+        if self.mf and self.mf_until <= t:
+            imp = self.tv("Improved Moonfire")
+            direct = [e for e in self.mf["effects"] if e["Effect"] == core.SCHOOL_DAMAGE][0]
+            dot_e = [e for e in self.mf["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
+            dur = self.mf["duration_ms"] / 1000 + (3 if ch.tr("Nature's Splendor") else 0)
+            ticks = int(dur / (dot_e["EffectAuraPeriod"] / 1000) + 1e-6)
+            dmg = self.exp_hit(self.mf, direct, 1 + imp / 100, imp) + \
+                (dot_e["EffectBasePointsF"] + self.bonus(self.mf, dot_e)) * (1 + imp / 100) * self.spell_mult(True) * ticks
+            c = core.cost(self.mf, ch.base_mana)[1] * max(0.0, 1 - moonglow / 100)
+            if (self.clearcast or self.worth(dmg, c, gcd)) and self.pay(self.mf, moonglow):
                 self.sim.cast("Moonfire")
-                imp = self.tv("Improved Moonfire")
-                direct = [e for e in self.mf["effects"] if e["Effect"] == core.SCHOOL_DAMAGE][0]
                 self.nuke("Moonfire", self.mf, 1 + imp / 100, imp, direct)
-                dur = self.mf["duration_ms"] / 1000 + (3 if ch.tr("Nature's Splendor") else 0)
                 self.dot("Moonfire (DoT)", self.mf, dur, "mf_until", 1 + imp / 100)
                 self.try_ooc()
-                return self.after(self.gcd())
-        if self.isw and self.is_until <= t and self.mana >= 0.1 * self.max_mana:
-            if self.pay(self.isw, moonglow):
+                return self.after(gcd)
+        if self.isw and self.is_until <= t:
+            dur = self.isw["duration_ms"] / 1000 + (2 if ch.tr("Nature's Splendor") else 0)
+            dot_e = [e for e in self.isw["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
+            dmg = (dot_e["EffectBasePointsF"] + self.bonus(self.isw, dot_e)) * self.spell_mult(True) * int(dur / (dot_e["EffectAuraPeriod"] / 1000) + 1e-6)
+            c = core.cost(self.isw, ch.base_mana)[1] * max(0.0, 1 - moonglow / 100)
+            if (self.clearcast or self.worth(dmg, c, gcd)) and self.pay(self.isw, moonglow):
                 self.sim.cast("Insect Swarm")
-                dur = self.isw["duration_ms"] / 1000 + (2 if ch.tr("Nature's Splendor") else 0)
                 self.dot("Insect Swarm", self.isw, dur, "is_until", 1.0)
                 self.try_ooc()
-                return self.after(self.gcd())
-        ecl = self.eclipse if self.eclipse_exp > t else 0
-        if self.sf and (ecl or self.clearcast or self.mana >= 0.3 * self.max_mana):
-            if self.pay(self.sf, moonglow):
-                base = self.sf["cast_ms"] / 1000 - self.tv("Improved Starfire")
+                return self.after(gcd)
+        if self.clearcast and self.sf:
+            key, ok = ("Starfire", self.sf), True
+        elif key is not None and not ok:
+            if f < 1.0:
+                self.resting = True
+                return self.melee_idle()
+            aff = [o for o in opts if o[4]]
+            key = max(aff, key=lambda o: o[1] / o[2])[0] if aff else None
+        if key is None:
+            return self.melee_idle()
+        name, spell = key
+        if name == "Starfire":
+            if self.pay(spell, moonglow):
+                base = spell["cast_ms"] / 1000 - self.tv("Improved Starfire")
                 if ecl:
                     base -= self.tv("Eclipse")
                     self.eclipse -= 1
                 cast = self.cast_time(base)
                 self.sim.cast("Starfire")
-                self.sim.at(t + cast, self.nuke, "Starfire", self.sf)
+                self.sim.at(t + cast, self.nuke, "Starfire", spell)
                 self.try_ooc()
-                return self.after(max(self.gcd(), cast))
-        if self.wrath:
-            if self.pay(self.wrath, moonglow + 10 * ch.tr("Improved Wrath"), ooc=False):
-                cast = self.cast_time(self.wrath["cast_ms"] / 1000 - self.tv("Improved Wrath"))
+                return self.after(max(gcd, cast))
+        else:
+            if self.pay(spell, moonglow + 10 * ch.tr("Improved Wrath"), ooc=False):
+                cast = self.cast_time(spell["cast_ms"] / 1000 - self.tv("Improved Wrath"))
                 self.sim.cast("Wrath")
-                self.sim.at(t + cast, self.nuke, "Wrath", self.wrath)
+                self.sim.at(t + cast, self.nuke, "Wrath", spell)
                 if ch.tr("Eclipse"):
                     self.eclipse = min(4, ecl + 2)
                     self.eclipse_exp = t + 15
                 self.try_ooc()
-                return self.after(max(self.gcd(), cast))
-        self.wait([self.mf_until, self.is_until])
+                return self.after(max(gcd, cast))
+        return self.melee_idle()
 
     # ----- Bear / Cat -----
     def melee_setup(self):
@@ -315,6 +450,9 @@ class Fight:
             ch.str *= 1 + self.tv("Heart of the Wild") / 100
         ch.crit_bonus += self.tv("Sharpened Claws") + self.tv("Leader of the Pack")
         self.ap = 2 * ch.str - 20 + (ch.agi + 40 if cat else 30) + lv * self.tv("Predatory Strikes") / 100
+        if ch.gear:
+            self.ap += ch.gear_ap()
+            self.inp["form_gear_ap"] = "CU"
         self.speed = 1.0 if cat else 2.5
         self.wdmg = self.wavg / 2.0 * self.speed  # fist damage rescaled to form speed (A)
         form = _rank("Cat Form" if cat else "Bear Form", lv)

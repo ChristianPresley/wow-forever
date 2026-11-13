@@ -31,6 +31,10 @@ Server-side behaviour and assumptions (tag in `inputs`):
   has the same total).
 - No target health: execute effects (Decimation, Shadowburn shard on kill,
   Drain Soul kill) do nothing. AoE spells (Rain of Fire, Hellfire) are unused.
+- Gear (core.GEAR "crafted", gear.py): Int/Spi/hit/crit come through core.Character;
+  gear spell damage (generic + the spell's school) adds to the warlock's own spells
+  through each spell's coefficient (F (crafted items)). Pets do not gain the warlock's
+  gear spell damage (C).
 """
 import core
 
@@ -140,6 +144,8 @@ class Warlock:
         self.pet, self.sacrificed = pet_for(spec, level)
         self.inp["pet"] = "A"
         self.sp = level * TT["Demonic Knowledge"] * self.tr("Demonic Knowledge") if self.pet else 0.0
+        if self.ch.gear:
+            self.inp["gear"] = "F (crafted items)"
         self.buffs = {}
         self.dots = {}
         self.cds = {}
@@ -222,6 +228,10 @@ class Warlock:
             f += self.tr("Pandemic") * TT["Pandemic"]
         return 1 + bonus * f
 
+    def spw(self, school):
+        """Spell power for the warlock's own spells: Demonic Knowledge plus gear."""
+        return self.sp + self.ch.gear_sp(school)
+
     def school(self, s):
         return core.SCHOOLS.get(s["school_mask"], "shadow")
 
@@ -272,7 +282,7 @@ class Warlock:
         if out == "miss":
             return out
         _, (lo, hi) = self.val(s, e)
-        amt = (rng.uniform(lo, hi) + self.sp * (e.get("EffectBonusCoefficient") or 0)) * self.mult(name, school) * extra
+        amt = (rng.uniform(lo, hi) + self.spw(school) * (e.get("EffectBonusCoefficient") or 0)) * self.mult(name, school) * extra
         if self.racial and self.racial[0] == "direct" and self.up("racial"):
             amt *= 1 + self.racial[1] / 100
         if out == "crit":
@@ -288,7 +298,7 @@ class Warlock:
         period = (e.get("EffectAuraPeriod") or 3000) / 1000
         ticks = max(1, round(s["duration_ms"] / 1000 / period))
         tick, _ = self.val(s, e)
-        tick = (tick + self.sp * (e.get("EffectBonusCoefficient") or 0)) * scale
+        tick = (tick + self.spw(school) * (e.get("EffectBonusCoefficient") or 0)) * scale
         gen = self.dots.get(name, {}).get("gen", 0) + 1
         self.dots[name] = {"gen": gen, "left": ticks, "tick": tick, "period": period, "school": school,
                            "end": self.sim.t + ticks * period}
@@ -495,7 +505,7 @@ class Warlock:
             return
         self.sim.cast(name)
         tick, _ = self.val(s, e)
-        tick += self.sp * (e.get("EffectBonusCoefficient") or 0)
+        tick += self.spw(self.school(s)) * (e.get("EffectBonusCoefficient") or 0)
         for i in range(1, n + 1):
             self.sim.at(self.sim.t + i * per, self.channel_tick, name, tick, "shadow")
 

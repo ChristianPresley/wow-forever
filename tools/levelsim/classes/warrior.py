@@ -1,4 +1,5 @@
-"""Warrior: Arms, Fury and Protection, levels 1-60, naked (unarmed fist, no shield).
+"""Warrior: Arms, Fury and Protection, levels 1-60, naked (unarmed fist, no shield) or in
+crafted gear (core.GEAR).
 
 Spell values come from forever.json through core helpers. Talent values come from
 the Forever client tooltip text (TOOLTIP below, tag F) because many client talent
@@ -28,6 +29,14 @@ Server-side rules (not in the client), tagged:
 - Enrage, Blood Craze, Revenge, Shield Slam, Shield Specialization, Bastion and the
   weapon-type talents do nothing: the target does not attack and there is no weapon
   or shield (A). Protection fights in Defensive Stance (client: -10% damage).
+- Gear (core.GEAR "crafted", gear.py): gear Str/Agi/hit/crit come through core.Character;
+  gear "+attack power" adds to melee AP (F (crafted items)). Weapon swings roll the
+  weapon's min-max (F); instant attacks use the Classic normalized speed of the weapon
+  type: 1.7 dagger, 2.4 other one-hand, 3.3 two-hand (CU). With an off-hand weapon
+  (Fury) the off hand swings on its own timer for 50% damage (+ Dual Wield
+  Specialization), white swings take the dual-wield miss penalty, and off-hand hits
+  give Rage with f = 1.75 (C). Two-Handed Weapon Specialization adds its tooltip %
+  damage with a two-hander (F). Naked runs keep the unarmed fist and no off hand.
 - Battle Shout is up at the pull (pre-buffed, A) and recast when it ends.
 - Charge at the pull gives its client Rage (F) once known (level 4).
 """
@@ -100,6 +109,16 @@ def tal(talents, name):
     return v * min(r, mx) / mx
 
 
+TWO_HAND = {"axe2h", "sword2h", "mace2h", "polearm", "staff"}
+
+
+def norm_speed(w):
+    """Classic normalized weapon speed for instant attacks (CU); the fist counts as one-hand."""
+    if not w:
+        return 2.4
+    return 1.7 if w["type"] == "dagger" else 3.3 if w["type"] in TWO_HAND else 2.4
+
+
 def rage_conv(level):
     return 0.0091107836 * level * level + 3.225598133 * level + 4.2652911
 
@@ -138,8 +157,25 @@ def setup(spec, race, level):
     for n in tl:
         inp[f"talent:{n}"] = "F" if n in TOOLTIP else "F(no effect modeled)"
     p = {"level": level, "spec": spec, "tl": tl, "ch": ch, "inp": inp}
-    w_avg, speed = core.unarmed_weapon(level)
+    w_avg, speed = ch.weapon("mh")
     p["w_avg"], p["speed"] = w_avg, speed
+    g = ch.gear
+    p["mh"] = g["mh"] if g else None
+    p["oh"] = g["oh"] if g else None
+    p["norm"] = norm_speed(p["mh"])
+    p["gear_ap"] = ch.gear_ap()
+    if g:
+        inp["gear"] = "F (crafted items)"
+        inp["normalized_speed_by_weapon_type"] = "CU"
+        if p["oh"]:
+            inp["off_hand_50pct_damage"] = "C"
+            inp["off_hand_rage_f_1.75"] = "C"
+        if p["mh"] and p["mh"]["type"] in TWO_HAND and tl.get("Two-Handed Weapon Specialization"):
+            dmg_mult_2h = 1 + tal(tl, "Two-Handed Weapon Specialization") / 100
+        else:
+            dmg_mult_2h = 1.0
+    else:
+        dmg_mult_2h = 1.0
     # Stance
     stance = "battle"
     if spec == "fury" and level >= 30:
@@ -161,7 +197,7 @@ def setup(spec, race, level):
                 dmg_mult *= 1 + e["EffectBasePointsF"] / 100
         inp["Defensive Stance Passive"] = "F"
     ch.crit_bonus += tal(tl, "Cruelty")
-    p["dmg_mult"] = dmg_mult
+    p["dmg_mult"] = dmg_mult * dmg_mult_2h
     p["crit_mult_yellow"] = core.A("melee_crit_mult") + (core.A("melee_crit_mult") - 1) * tal(tl, "Impale") / 100
     p["focused"] = tal(tl, "Focused Rage")
     # Battle Shout AP
@@ -239,6 +275,8 @@ def build(p):
     ibr = tal(tl, "Improved Bloodrage") / 100
     iww = tal(tl, "Improved Whirlwind")
     focused = p["focused"]
+    mh, oh = p["mh"], p["oh"]
+    oh_pct = 0.5 * (1 + tal(tl, "Dual Wield Specialization") / 100)
 
     def cost(key, extra_red=0.0):
         return max(0.0, _rage_cost(ab[key]) - extra_red - (focused if key not in ("br", "bzr", "reck") else 0))
@@ -278,7 +316,7 @@ def build(p):
               "swing_id": 0}
 
         def ap():
-            a = 2 * ch.str + 3 * lv - 20 + (p["bs_ap"] if sim.t < st["bs_until"] else 0)
+            a = 2 * ch.str + 3 * lv - 20 + p["gear_ap"] + (p["bs_ap"] if sim.t < st["bs_until"] else 0)
             if racial and racial[0] == "power" and sim.t < st["racial_until"]:
                 a *= 1 + racial[1] / 100
             return max(0.0, a)
@@ -300,13 +338,17 @@ def build(p):
             return x
 
         def weapon(norm=False):
-            return p["w_avg"] * rng.uniform(0.8, 1.2) + ap() / 14 * (2.4 if norm else speed0)
+            base = rng.uniform(mh["min"], mh["max"]) if mh else p["w_avg"] * rng.uniform(0.8, 1.2)
+            return base + ap() / 14 * (p["norm"] if norm else speed0)
+
+        def oh_weapon():
+            return (rng.uniform(oh["min"], oh["max"]) + ap() / 14 * oh["speed"]) * oh_pct
 
         def add_rage(x):
             st["rage"] = min(100.0, st["rage"] + x)
 
-        def rage_from(d, crit):
-            r = 15 * d / (4 * conv) + 3.5 * speed0 / 2
+        def rage_from(d, crit, f=3.5, spd=None):
+            r = 15 * d / (4 * conv) + f * (speed0 if spd is None else spd) / 2
             r = min(r, 15 * d / conv)
             if crit:
                 r *= 1.75
@@ -374,7 +416,7 @@ def build(p):
                 yellow("Heroic Strike", weapon() + flat["hs"])
             else:
                 st["hs_q"] = False
-                o = core.melee_roll(rng, ch, white=True, extra_crit=crit_extra())
+                o = core.melee_roll(rng, ch, white=True, dual_wield=bool(oh), extra_crit=crit_extra())
                 if o not in ("miss", "dodge"):
                     d = weapon() * mult()
                     if o == "crit":
@@ -385,6 +427,26 @@ def build(p):
                     rage_from(d, o == "crit")
                 on_hit(o, True)
             schedule_swing()
+            act()
+
+        def oh_swing():
+            o = core.melee_roll(rng, ch, white=True, dual_wield=True, extra_crit=crit_extra())
+            if o not in ("miss", "dodge"):
+                d = oh_weapon() * mult()
+                if o == "crit":
+                    d *= melee_mult
+                elif o == "glance":
+                    d *= core.A("glance_damage")
+                sim.deal("Melee (off hand)", d)
+                rage_from(d, o == "crit", 1.75, oh["speed"])
+            on_hit(o, True)
+            h = ch.haste
+            if st["flurry"] > 0:
+                h *= 1 + flurry
+                st["flurry"] -= 1
+            if racial and racial[0] == "haste" and sim.t < st["racial_until"]:
+                h *= 1 + racial[1] / 100
+            sim.at(sim.t + oh["speed"] / h, oh_swing)
             act()
 
         def schedule_swing():
@@ -527,6 +589,8 @@ def build(p):
                 sim.at(sim.t + 3.0, am_tick)
             sim.at(3.0, am_tick)
         sim.at(0.0, swing, 0)
+        if oh:
+            sim.at(0.2, oh_swing)  # off hand starts slightly after the main hand (A)
         sim.at(0.0, act)
 
     return fn

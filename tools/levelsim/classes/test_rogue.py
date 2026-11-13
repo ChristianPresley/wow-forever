@@ -9,6 +9,15 @@ import core  # noqa: E402
 import rogue as R  # noqa: E402
 
 
+def _crafted(mod, spec, race, level, n=10):
+    """Simulate in crafted gear, then restore naked mode."""
+    core.GEAR.update(mode="crafted", spec=spec)
+    try:
+        return mod.simulate(spec, race, level, n, 1)
+    finally:
+        core.GEAR.update(mode="none", spec=None)
+
+
 class TalentTests(unittest.TestCase):
     def test_points_per_level(self):
         for spec in R.SPECS:
@@ -68,6 +77,23 @@ class SimTests(unittest.TestCase):
         r = R.simulate("subtlety", "orc", 60, 2, 1)
         for k, tag in r["inputs"].items():
             self.assertTrue(tag.split("(")[0] in ("F", "C", "CU", "A"), (k, tag))
+
+
+class GearTests(unittest.TestCase):
+    def test_crafted_beats_naked_and_rises(self):
+        for spec in R.SPECS:
+            vals = [_crafted(R, spec, "human", lv)["dps_mean"] for lv in (20, 40, 60)]
+            self.assertEqual(vals, sorted(vals), (spec, vals))
+            self.assertGreater(vals[-1], R.simulate(spec, "human", 60, 10, 1)["dps_mean"] * 1.3, spec)
+
+    def test_weapon_requirements_in_gear(self):
+        r = _crafted(R, "assassination", "human", 60)
+        self.assertIn("Mutilate", r["breakdown"])
+        self.assertIn("Melee (off hand)", r["breakdown"])
+        self.assertEqual(r["inputs"]["weapon_requirements"], "C")
+        r = _crafted(R, "combat", "human", 60, 3)
+        self.assertNotIn("Backstab", r["breakdown"])
+        self.assertNotIn("Ambush", r["breakdown"])
 
 
 if __name__ == "__main__":

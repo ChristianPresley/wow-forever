@@ -70,5 +70,46 @@ class GatingTests(unittest.TestCase):
         self.assertNotIn("Insect Swarm", m.simulate("restoration", RACE, 60, 3, 1)["breakdown"])
 
 
+class ManaTests(unittest.TestCase):
+    def _at(self, fight, fn):
+        old = core.ASSUMPTIONS["fight_seconds"]
+        core.ASSUMPTIONS["fight_seconds"] = (fight, old[1], old[2])
+        try:
+            return fn()
+        finally:
+            core.ASSUMPTIONS["fight_seconds"] = old
+
+    def test_sustained_long_fight(self):
+        # 180 s DPS is lower than 30 s DPS but not the old ~1/3 collapse
+        for spec in ('balance', 'restoration'):
+            short = self._at(30, lambda: m.simulate(spec, "nelf", 60, 6, 1)["dps_mean"])
+            long_ = self._at(180, lambda: m.simulate(spec, "nelf", 60, 6, 1)["dps_mean"])
+            self.assertTrue(0.4 * short < long_ < 1.05 * short, (spec, short, long_))
+
+    def test_oom_melee_and_downranks(self):
+        b = self._at(180, lambda: m.simulate("balance", "nelf", 60, 3, 1)["breakdown"])
+        self.assertGreater(b.get("Melee (unarmed)", 0), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
+
+
+def _crafted_dps(spec, level, fight=None, n=8):
+    """Simulate in crafted gear (core.GEAR), then restore naked mode."""
+    core.GEAR.update(mode="crafted", spec=spec)
+    try:
+        return m.simulate(spec, "nelf", level, n, 1)
+    finally:
+        core.GEAR.update(mode="none", spec=None)
+
+
+def test_crafted_gear_beats_naked_and_rises():
+    for spec in m.SPECS:
+        vals = [_crafted_dps(spec, lv)["dps_mean"] for lv in (20, 40, 60)]
+        assert vals == sorted(vals), (spec, vals)
+        for lv, v in zip((20, 40, 60), vals):
+            assert v > m.simulate(spec, "nelf", lv, 8, 1)["dps_mean"], (spec, lv)
+    out = _crafted_dps(next(iter(m.SPECS)), 60, n=1)
+    assert out["inputs"]["gear"] == "F (crafted items)"
+    assert "gear" not in m.simulate(next(iter(m.SPECS)), "nelf", 60, 1, 1)["inputs"]

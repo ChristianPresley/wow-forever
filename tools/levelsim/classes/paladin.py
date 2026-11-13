@@ -37,6 +37,12 @@ Server-side rules and values not in the client (tags):
   - Seals and Holy Strike work with the unarmed fist (A, no gear requested). Two-Handed Weapon
     Specialization gives nothing unarmed (A).
   - Blessing of Might is on the paladin before the pull (A).
+  - Gear (core.GEAR "crafted", gear.py): gear stats come through core.Character; gear
+    "+attack power" adds to AP and gear spell damage (generic + Holy) adds to the
+    Champion of the Light spell power (F (crafted items)). The weapon's average damage and
+    speed replace the fist; Holy Strike uses the weapon type's normalized speed (1.7
+    dagger, 2.4 one-hand, 3.3 two-hand, CU). With a two-hander, Two-Handed Weapon
+    Specialization adds 2% weapon damage per rank (CU, Classic).
 """
 import core
 
@@ -97,6 +103,9 @@ def _has_dmg(s):
 CONSECRATION_CU = {20: 64, 30: 120, 40: 192, 50: 280, 60: 384}
 
 
+TWO_HAND = {"axe2h", "sword2h", "mace2h", "polearm", "staff"}
+
+
 class Fight:
     def __init__(self, sim, spec, race, level, inputs):
         self.sim, self.spec, self.level, self.inp = sim, spec, level, inputs
@@ -110,10 +119,18 @@ class Fight:
         ch.hit += tv("Precision")
         ch.crit_bonus += tv("Conviction")
         ch.spell_crit_bonus += tv("Conviction")
-        ch.sp = ch.int * tv("Champion of the Light") / 100
+        ch.sp = ch.int * tv("Champion of the Light") / 100 + ch.gear_sp("holy")
         bom = _rank("Blessing of Might", level)
-        self.ap = 2 * ch.str + 3 * level - 20 + (bom["effects"][0]["EffectBasePointsF"] if bom else 0)
-        self.wavg, self.speed = core.unarmed_weapon(level)
+        self.ap = 2 * ch.str + 3 * level - 20 + (bom["effects"][0]["EffectBasePointsF"] if bom else 0) + ch.gear_ap()
+        self.wavg, self.speed = ch.weapon("mh")
+        mh = ch.gear["mh"] if ch.gear else None
+        two_hand = bool(mh and mh["type"] in TWO_HAND)
+        self.norm = 1.7 if mh and mh["type"] == "dagger" else 3.3 if two_hand else 2.4
+        self.wmult = 1 + 2 * ch.tr("Two-Handed Weapon Specialization") / 100 if two_hand else 1.0
+        if ch.gear:
+            inputs.update({"gear": "F (crafted items)", "normalized_speed_by_weapon_type": "CU"})
+            if two_hand:
+                inputs["two_handed_weapon_specialization_2pct"] = "CU"
         self.max_mana = self.mana = ch.mana()
         self.last_spend = -10.0
         self.busy = 0.0
@@ -161,7 +178,7 @@ class Fight:
             self.veng = (min(5, (st if ex > self.t else 0) + 1), self.t + 30)
 
     def white_dmg(self, normalized=False):
-        return self.wavg + self.ap / 14 * (2.4 if normalized else self.speed)
+        return (self.wavg + self.ap / 14 * (self.norm if normalized else self.speed)) * self.wmult
 
     def holy(self, src, amount, roll=True, melee_crit=False):
         """Holy damage with Improved Seals applied by caller where relevant."""

@@ -30,6 +30,35 @@ Server-side rules not in the client (tag in brackets):
   used: they are close-range or AoE spells and the fight is one ranged target [A].
 - Mana is spent when a cast starts; damage lands when it ends (no travel time) [A].
 - Periodic damage does not crit [A]. GCD is 1.5 s and not hasted [CU].
+- Mana-aware rotation [A] (`plan_options`, shared with priest, druid, shaman): the
+  filler spell AND rank are chosen from every rank known at that level. With M = mana
+  + expected cooldown mana (Evocation) and R = remaining fight time, an option with
+  damage/s d and mana/s m can be cast a fraction f of the remaining time, where
+  f = 1 if m <= M/R + regen while casting, else f = (M/R + rf) / (m - rc + rf)
+  (rf, rc = regen outside / inside the 5-second rule); the rest of the time the
+  character auto-attacks unarmed and regenerates at the full rate. The caster takes
+  the option with the highest f*d + (1-f)*melee dps. When that option has f < 1 and
+  is not affordable, it rests (melee, full regen) until mana is 95% full or the
+  option becomes sustainable to the end of the fight (cast-until-empty, then rest:
+  how a player levels without consumables). The plan also gives the marginal
+  damage of a mana point (lam; with slack, the damage/mana slope to the next stronger
+  option). Cooldown nukes and DoTs (Fire Blast, Arcane Wrath, Arcane Blast; the Priest's
+  DoTs and shocks) are cast when damage - lam * net mana beats resting for the same
+  time and, when mana-bound, their damage per mana is at least 90% of the filler's.
+  Spell values for planning are expectations (average roll, spell power, hit, crit);
+  Clearcasting, Master of Elements and Missile Barrage adjust cost/value.
+- Out of mana, or resting, the caster melees unarmed (core.unarmed_weapon,
+  core.melee_roll; the target is assumed to be in melee range) [A]. Mage and Priest
+  attack power = Strength - 10 [CU, Classic].
+- Gear (core.GEAR "crafted", gear.py): Int/Spi/hit/crit come through core.Character.
+  Gear spell damage (generic + the spell's school; the best school for multi-school
+  spells) adds to every spell's bonus damage, also in the planner's expected values
+  (DoT ticks included for the gear part) [C coefficients from the data, no extra
+  low-level penalty]. Gear mp5 is regained every tick, also inside the 5-second rule
+  [C]. Out of mana / resting the caster shoots an equipped wand (min..max at its
+  speed, spell hit roll, ranged (melee) crit chance at the melee crit multiplier,
+  not scaled by spell power) [CU]; without a wand it melees with the equipped
+  main-hand weapon and gear attack power [A].
 """
 import core
 
@@ -166,11 +195,48 @@ def spell(cls, name, level, base_mana, inputs, raw=None):
     return Spell(s, level, base_mana)
 
 
+# ---------- Mana planning (shared by priest, druid, shaman) ----------
+
+def plan_options(opts, mana, extra, remaining, rc, rf, melee_dps):
+    """Pick the option with the best sustained damage over the rest of the fight (A).
+
+    opts: (key, damage, seconds, cost, affordable). Returns (key, f, affordable, need):
+    f is the fraction of the remaining time the option can be cast (the rest is spent
+    auto-attacking unarmed at the full regen rate rf, outside the 5-second rule) and
+    need is the mana that casting it for f of the remaining time uses up, and lam is
+    the marginal damage of one mana point (0 when mana is not binding).
+    """
+    R = max(1.0, remaining)
+    inflow = max(0.0, mana + extra) / R
+    best = None
+    for key, dmg, secs, c, ok in opts:
+        d, m = dmg / secs, c / secs
+        if m <= inflow + rc + 1e-9:
+            f = 1.0
+        else:
+            f = max(0.0, min(1.0, (inflow + rf) / (m - rc + rf)))
+        v = f * d + (1 - f) * melee_dps
+        if best is None or v > best[0] + 1e-9:
+            lam = max(0.0, d - melee_dps) / (m - rc + rf) if f < 1.0 else 0.0
+            best = (v, key, f, ok, f * R * max(0.0, m - rc), lam, d, m)
+    if best is None:
+        return None, 0.0, False, 0.0, 0.0
+    if best[2] >= 1.0:
+        # Sustainable with slack: a mana point is worth the damage/mana slope to the next
+        # stronger (costlier) option, i.e. what spending it elsewhere gives up.
+        d0, m0 = best[6], best[7]
+        slopes = [(dmg / secs - d0) / (c / secs - m0) for _, dmg, secs, c, _ in opts
+                  if c / secs > m0 + 1e-9 and dmg / secs > d0]
+        best = best[:5] + (max(slopes, default=0.0),)
+    return best[1:6]
+
+
 # ---------- Shared caster engine ----------
 
 REGEN_TICK = 2.0
 GCD = 1.5
 FIVE_SEC = 5.0
+DPM_FLOOR = 0.9  # A: mana-bound cooldown spells need >= 90% of the filler damage per mana
 
 
 class CasterSim:
@@ -192,6 +258,16 @@ class CasterSim:
         self.dots = {}                  # key -> dict
         self.sp = 0.0                   # bonus spell damage
         self.racial = None
+        self.resting = False
+        self.next_swing = 0.0
+        self.lam = 0.0
+        self.wand = ch.gear["ranged"] if ch.gear and (ch.gear.get("ranged") or {}).get("type") == "wand" else None
+        self.mp5 = ch.gear_stat("mp5")
+        if ch.gear:
+            inputs["gear"] = "F (crafted items)"
+            if self.mp5:
+                inputs["regen:gear_mp5"] = "C"
+            inputs["oom_wand" if self.wand else "oom_weapon_melee"] = "CU" if self.wand else "A"
         inputs["regen:spirit"] = "CU"
         inputs["mana:int"] = "CU"
 
@@ -227,6 +303,8 @@ class CasterSim:
         per = 12.5 + self.ch.spi / 4
         if self.t - self.last_spend < FIVE_SEC:
             per *= self.regen_while_casting
+        if self.mp5:
+            per += self.mp5 * REGEN_TICK / 5
         self.mana = min(self.max_mana, self.mana + per)
         self.sim.at(self.t + REGEN_TICK, self.regen)
 
@@ -247,8 +325,16 @@ class CasterSim:
     def hit_bonus(self, sp):
         return 0.0
 
+    def gear_sp_of(self, sp):
+        """Gear bonus spell damage for this spell (generic + its school; best school
+        for multi-school spells)."""
+        if not self.ch.gear:
+            return 0
+        schools = [n for m, n in core.SCHOOLS.items() if sp.school & m] or [None]
+        return max(self.ch.gear_sp(s) for s in schools)
+
     def spell_power(self, sp):
-        p = self.sp
+        p = self.sp + self.gear_sp_of(sp) if self.ch.gear else self.sp
         if self.has("racial_power"):
             p *= 1 + self.racial[1] / 100
         return p
@@ -310,6 +396,100 @@ class CasterSim:
         else:
             del self.dots[key]
 
+    # --- mana planning (A)
+    def regen_casting_ps(self):
+        """Mana per second regained while casting (inside the 5-second rule)."""
+        r = (12.5 + self.ch.spi / 4) / REGEN_TICK * self.regen_while_casting
+        return r + self.mp5 / 5 if self.mp5 else r
+
+    def regen_full_ps(self):
+        r = (12.5 + self.ch.spi / 4) / REGEN_TICK
+        return r + self.mp5 / 5 if self.mp5 else r
+
+    def extra_mana(self):
+        """Expected mana from cooldowns (Evocation) in the remaining fight."""
+        return 0.0
+
+    def budget(self):
+        """Sustainable mana per second if casting nonstop to the end of the fight."""
+        rem = max(1.0, self.sim.end - self.t)
+        return (max(0.0, self.mana) + self.extra_mana()) / rem + self.regen_casting_ps()
+
+    def melee_dps(self):
+        if self.wand:
+            w = self.wand
+            hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit) / 100
+            crit = min(100.0, self.ch.melee_crit) / 100
+            return w["avg"] / w["speed"] * self.ch.haste * self.ch.dmg_mult * hit * (1 + crit * (core.A("melee_crit_mult") - 1))
+        avg, speed = self.ch.weapon("mh")
+        return (avg + self.melee_ap() / 14 * speed) / speed * self.ch.haste * self.ch.dmg_mult * 0.85
+
+    def plan(self, opts):
+        """Returns (key, f, affordable, need); stores the mana value self.lam."""
+        out = plan_options(opts, self.mana, self.extra_mana(), self.sim.end - self.t,
+                           self.regen_casting_ps(), self.regen_full_ps(), self.melee_dps())
+        self.lam = out[4]
+        return out[:4]
+
+    def rest_done(self, f, need):
+        """Stop resting at 95% mana, or once mana covers the casting share of the fight."""
+        return f >= 1.0 or self.mana >= min(0.95 * self.max_mana, need)
+
+    def efficient(self, sp, ref=None):
+        """Cast a cooldown/DoT spell if its damage, net of the value of the mana it uses
+        (self.lam from the last plan), beats resting or the filler for the same time."""
+        c = self.cost_of(sp)
+        if self.mana < c:
+            return False
+        if c <= 0 or self.lam <= 0:
+            return True
+        _, dmg, secs, ec, _ = self.option(sp)
+        base = self.melee_dps() + self.lam * self.regen_full_ps()
+        if dmg - self.lam * (ec - self.regen_casting_ps() * secs) < base * secs:
+            return False
+        if ref is not None and ec > 0:
+            # mana-bound: also require close to the filler's damage per mana (A, 90%)
+            _, rd, _, rc_, _ = self.option(ref)
+            if rc_ > 0 and dmg / ec < DPM_FLOOR * rd / rc_:
+                return False
+        return True
+
+    def melee_ap(self):
+        return max(0.0, self.ch.str - 10) + self.ch.gear_ap()  # Classic Mage/Priest attack power (CU)
+
+    def wand_idle(self):
+        """Shoot the wand while out of mana / resting (CU). Returns seconds to wait."""
+        w = self.wand
+        nxt = self.next_swing
+        if nxt <= self.t + 1e-9:
+            if core.spell_roll(self.rng, self.ch, can_crit=False) != "miss":
+                d = self.rng.uniform(w["min"], w["max"]) * self.ch.dmg_mult
+                if self.rng.chance(self.ch.melee_crit):
+                    d *= core.A("melee_crit_mult")
+                self.sim.deal("Wand", d)
+            self.next_swing = nxt = self.t + w["speed"] / self.haste()
+        return min(0.5, max(0.05, nxt - self.t))
+
+    def melee_idle(self):
+        """Auto-attack (wand, else melee) while out of mana (A). Returns seconds to wait."""
+        if self.wand:
+            return self.wand_idle()
+        if not self.ch.gear:
+            self.inputs["oom_unarmed_melee"] = "A"
+        nxt = self.next_swing
+        if nxt <= self.t + 1e-9:
+            avg, speed = self.ch.weapon("mh")
+            o = core.melee_roll(self.rng, self.ch)
+            if o not in ("miss", "dodge"):
+                d = (avg + self.melee_ap() / 14 * speed) * self.ch.dmg_mult
+                if o == "crit":
+                    d *= core.A("melee_crit_mult")
+                elif o == "glance":
+                    d *= core.A("glance_damage")
+                self.sim.deal("Melee" if self.ch.gear else "Melee (unarmed)", d)
+            self.next_swing = nxt = self.t + speed / self.haste()
+        return min(0.5, max(0.05, nxt - self.t))
+
     # --- loop
     def start(self):
         rc = core.racial_cooldown(self.ch.race)
@@ -342,6 +522,7 @@ class CasterSim:
 
 MAGE_SPELLS = ["Fireball", "Frostbolt", "Fire Blast", "Arcane Missiles", "Scorch", "Frostfire Bolt",
                "Arcane Blast", "Arcane Wrath", "Ice Lance", "Pyroblast", "Ice Barrier"]
+FILLERS = ["Fireball", "Frostbolt", "Frostfire Bolt", "Arcane Missiles", "Scorch", "Pyroblast"]
 TALENT_SPELLS = {"Arcane Blast", "Arcane Wrath", "Ice Lance", "Pyroblast", "Ice Barrier"}
 FIRE, FROST, ARCANE = 4, 16, 64
 
@@ -365,6 +546,14 @@ class MageSim(CasterSim):
             s = spell(CLASS, n, level, ch.base_mana, inputs)
             if s:
                 self.sp_[n] = s
+        # every known rank of the filler spells, for mana-aware downranking (A)
+        self.ranks_ = {}
+        for n in FILLERS:
+            if n in self.sp_:
+                rs = [Spell(r, level, ch.base_mana) for r in core.ranks(CLASS, n)
+                      if r["base_level"] <= level and r["costs"]]
+                self.ranks_[n] = rs or [self.sp_[n]]
+        inputs["mana_budget_rotation"] = "A"
         # Arcane Wrath: spell damage = X% of max mana (client effect index 1)
         aw = self.sp_.get("Arcane Wrath")
         self.aw_pct = next((e["EffectBasePointsF"] for e in aw.effects if e["EffectIndex"] == 1), 0) if aw else 0
@@ -640,21 +829,67 @@ class MageSim(CasterSim):
     def _evoc_tick(self):
         self.mana = min(self.max_mana, self.mana + self.max_mana * EVOCATION["pct_per_tick"] / 100)
 
-    def value_rate(self, sp):
-        """Static damage per second of cast time, used to pick the filler."""
-        dmg = sp.avg_direct + sp.dot_total()
+    def exec_time(self, sp):
+        return sp.duration if sp.missile else max(GCD, self.cast_time(sp))
+
+    def exp_damage(self, sp):
+        """Expected damage of one cast (average roll + spell power, hit and crit folded in)."""
+        p = self.spell_power(sp)
         if sp.missile:
-            dmg = (sp.missile[0] + sp.missile[1]) / 2 * round(sp.duration / sp.missile_period)
-            t = sp.duration
+            n = round(sp.duration / sp.missile_period)
+            dmg = ((sp.missile[0] + sp.missile[1]) / 2 + sp.missile[2] * p) * n
         else:
-            t = max(GCD, self.cast_time(sp))
-        m = self.dmg_mult(sp, False)
-        if self.is_(sp, FROST) and not self.is_(sp, FIRE):
-            m *= 1 + self.crit_bonus(sp) * 0.1
-        return dmg * m / t
+            dmg = sp.avg_direct + (sp.direct[2] * p if sp.direct else 0.0) + sp.dot_total()
+            if sp.dot and self.ch.gear:  # gear spell power on the DoT ticks (A)
+                dmg += sp.dot[2] * self.gear_sp_of(sp) * int(round(sp.duration / sp.dot[1]))
+        crit = min(100.0, self.ch.spell_crit + self.crit_chance(sp)) / 100
+        hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit + self.hit_bonus(sp)) / 100
+        return dmg * self.dmg_mult(sp, False) * hit * (1 + crit * (self.crit_mult(sp) - 1))
+
+    def value_rate(self, sp):
+        """Expected damage per second of cast time."""
+        return self.exp_damage(sp) / self.exec_time(sp)
+
+    def option(self, sp):
+        """Planner option with proc-adjusted value (A): Clearcasting makes the next spell
+        free, Master of Elements refunds part of the cost on crits, Missile Barrage gives
+        a free Arcane Missiles."""
+        c = self.cost_of(sp)
+        dmg = self.exp_damage(sp)
+        eff = c * (1 - self.cc_chance / 100)
+        moe = self.T("Master of Elements")
+        if moe and (self.is_(sp, FIRE) or self.is_(sp, FROST)):
+            crit = min(100.0, self.ch.spell_crit + self.crit_chance(sp)) / 100
+            eff -= sp.cost * moe / 100 * crit
+        mb = self.mb_other if sp.name in ("Fireball", "Frostbolt", "Frostfire Bolt") else 0
+        am = self.ranks_.get("Arcane Missiles")
+        secs = self.exec_time(sp)
+        if mb and am:  # the free Missiles also take (half) channel time
+            dmg += mb / 100 * self.exp_damage(am[-1])
+            secs += mb / 100 * am[-1].duration * 0.5
+        return (sp, dmg, secs, max(0.0, eff), self.mana >= c)
+
+    def extra_mana(self):
+        rem = self.sim.end - self.t
+        wait = max(0.0, self.evoc_ready - self.t)
+        if wait > rem - 8:
+            return 0.0
+        n = 1 + int((rem - 8 - wait) // EVOCATION["cd"])
+        return n * self.max_mana * EVOCATION["pct_per_tick"] / 100 * EVOCATION["ticks"]
 
     def affordable(self, sp, cost=None):
         return self.mana >= (self.cost_of(sp) if cost is None else cost)
+
+    def filler(self):
+        """Mana-aware filler (A): spell and rank by sustained damage, see plan_options.
+        Returns (spell, f, affordable)."""
+        names = [n for n in self.ranks_ if not (n == "Pyroblast" and self.heating)]
+        pref = names
+        if self.spec == "frost":
+            pref = [n for n in names if self.is_(self.sp_[n], FROST)] or names
+        elif self.spec == "fire":
+            pref = [n for n in names if self.is_(self.sp_[n], FIRE)] or names
+        return self.plan([self.option(r) for n in pref for r in self.ranks_[n]])
 
     def choose(self):
         S = self.sp_
@@ -671,6 +906,16 @@ class MageSim(CasterSim):
         # mana
         if self.mana < 0.12 * self.max_mana and self.evoc_ready <= t:
             return self.evocate()
+        fill, f, ok, need = self.filler()
+        if self.resting:
+            if not self.rest_done(f, need):
+                return self.melee_idle()
+            self.resting = False
+        if fill is not None and not ok and f < 1.0:
+            if self.evoc_ready <= t:
+                return self.evocate()
+            self.resting = True
+            return self.melee_idle()
         ib = S.get("Ice Barrier")
         if ib and not self.has("ice_barrier") and self.cd_ready(ib) and self.affordable(ib):
             self.spend(self.cost_of(ib))
@@ -684,7 +929,7 @@ class MageSim(CasterSim):
             return self.cast(sc)
         am = S.get("Arcane Missiles")
         if am and self.mb:
-            return self.cast_missiles(am)
+            return self.cast_missiles(max(self.ranks_.get("Arcane Missiles", [am]), key=self.value_rate))
         il = S.get("Ice Lance")
         if il and self.fof > 0 and self.cd_ready(il) and self.affordable(il):
             return self.cast(il)
@@ -692,32 +937,22 @@ class MageSim(CasterSim):
         if py and self.heat >= 3 and self.affordable(py):
             return self.cast(py)
         aw = S.get("Arcane Wrath")
-        if aw and self.cd_ready(aw) and self.affordable(aw):
+        if aw and self.cd_ready(aw) and self.efficient(aw, fill):
             return self.cast(aw, instant=self.use_pom())
         fb = S.get("Fire Blast")
-        if fb and self.cd_ready(fb) and self.affordable(fb) and not (self.fof and il):
+        if fb and self.cd_ready(fb) and not (self.fof and il) and self.efficient(fb, fill):
             return self.cast(fb)
         ab = S.get("Arcane Blast")
-        if ab:
-            cost = self.cost_of(ab)
-            reserve = (0.1 if self.evoc_ready <= t + 10 else 0.35) * self.max_mana
-            if self.mana - cost >= reserve or (self.cc and self.mana >= 0):
-                return self.cast(ab)
-        # filler: best damage per cast second among known bolts
-        cands = [S[n] for n in ("Fireball", "Frostbolt", "Frostfire Bolt", "Pyroblast") if n in S]
-        if self.spec == "fire" and py and self.heating:
-            cands = [c for c in cands if c.name != "Pyroblast"]
-        if self.spec == "frost":
-            cands = [c for c in cands if self.is_(c, FROST)] or cands
-        if self.spec == "fire":
-            cands = [c for c in cands if self.is_(c, FIRE)] or cands
-        best = max(cands, key=self.value_rate)
-        if self.affordable(best):
-            return self.cast(best, instant=best.cast >= 3.5 and self.use_pom())
-        cheap = [c for c in cands + ([sc] if sc else []) if self.affordable(c)]
-        if cheap:
-            return self.cast(max(cheap, key=self.value_rate))
-        return 0.5  # wait for mana
+        if ab and (self.cc or self.efficient(ab, fill)):
+            return self.cast(ab)
+        if fill is not None and not ok:  # sustainable but short right now: best affordable
+            aff = [self.option(r) for rs in self.ranks_.values() for r in rs]
+            fill = max((o for o in aff if o[4]), key=lambda o: o[1] / o[2], default=(None,))[0]
+        if fill is not None:
+            if fill.missile:
+                return self.cast_missiles(fill)
+            return self.cast(fill, instant=fill.cast >= 3.5 and self.use_pom())
+        return self.melee_idle()
 
     def use_pom(self):
         if self.pom and self.ready.get("pom", 0) <= self.t:

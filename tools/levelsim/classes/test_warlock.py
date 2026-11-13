@@ -4,6 +4,16 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from classes import warlock as W  # noqa: E402
+import core  # noqa: E402
+
+
+def _crafted(mod, spec, race, level, n=10):
+    """Simulate in crafted gear, then restore naked mode."""
+    core.GEAR.update(mode="crafted", spec=spec)
+    try:
+        return mod.simulate(spec, race, level, n, 1)
+    finally:
+        core.GEAR.update(mode="none", spec=None)
 
 RAID = {
     "affliction": {"Improved Life Tap": 2, "Suppression": 5, "Improved Corruption": 5, "Amplify Curse": 1, "Pandemic": 3,
@@ -49,3 +59,12 @@ def test_dps_grows_with_level():
     for spec in W.SPECS:
         d = [W.simulate(spec, "undead", lv, 10, 1)["dps_mean"] for lv in (5, 20, 40, 60)]
         assert d == sorted(d), (spec, d)
+
+
+def test_crafted_beats_naked_and_rises():
+    # From 30: gear.select fails for casters at 10-20 (see report / gear.py caster layout).
+    for spec in W.SPECS:
+        vals = [_crafted(W, spec, "human", lv)["dps_mean"] for lv in (30, 45, 60)]
+        assert vals == sorted(vals), (spec, vals)
+        assert vals[-1] > W.simulate(spec, "human", 60, 10, 1)["dps_mean"] * 1.2, spec
+    assert _crafted(W, "affliction", "human", 60, 1)["inputs"]["gear"] == "F (crafted items)"

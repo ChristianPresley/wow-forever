@@ -1,0 +1,21 @@
+/* DPS calculator (docs/guides/dps-calculator.md, javascripts/dps-calc.js) */
+.md-typeset .dps-filters { display: flex; flex-wrap: wrap; gap: var(--fc-space-3); align-items: end; margin: var(--fc-space-4) 0; }
+.md-typeset .dps-filters label { display: grid; gap: var(--fc-space-1); font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .dps-filters .dps-check { display: flex; align-items: center; gap: var(--fc-space-2); }
+.md-typeset .dps-calc select,
+.md-typeset .dps-calc input[type="number"] { font: inherit; font-size: var(--fc-fs-sm); color: var(--fc-text); background: var(--fc-surface-1);
+  border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius); padding: .25em .5em; }
+.md-typeset .dps-calc input[type="number"] { width: 6rem; font-variant-numeric: tabular-nums; }
+.md-typeset .dps-scroll { overflow-x: auto; max-width: 100%; }
+.md-typeset .dps-table, .md-typeset .dps-inputs { width: 100%; font-size: var(--fc-fs-sm); }
+.md-typeset .dps-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.md-typeset .dps-bar { --v: 0%; display: inline-block; width: 5rem; height: .45rem; margin-right: .6em; vertical-align: middle; border-radius: var(--fc-radius-full);
+  background: linear-gradient(90deg, var(--fc-gold) var(--v), color-mix(in srgb, var(--fc-border) 70%, transparent) var(--v)); }
+.md-typeset .dps-tag { display: inline-block; padding: 0 .5em; border-radius: var(--fc-radius-full); font-size: var(--fc-fs-xs); font-weight: 600; white-space: nowrap;
+  border: 1px solid var(--fc-border-strong); color: var(--fc-text); }
+.md-typeset .dps-tag--f { border-color: var(--fc-adm-success); color: var(--fc-adm-success-text); }
+.md-typeset .dps-tag--a { border-color: var(--fc-adm-danger); color: var(--fc-adm-danger-text); }
+.md-typeset .dps-gear { display: flex; flex-wrap: wrap; gap: var(--fc-space-2); }
+.md-typeset .dps-gear label { display: grid; font-size: var(--fc-fs-xs); }
+.md-typeset .dps-gear input[type="number"] { width: 4.5rem; }
+@media (max-width: 40em) { .md-typeset .dps-bar { display: none; } }

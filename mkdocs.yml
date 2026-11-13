@@ -63,9 +63,11 @@ extra_css:
   - stylesheets/guides.css
   - stylesheets/reference.css
   - stylesheets/components.css
+  - stylesheets/dps.css
 
 extra_javascript:
   - javascripts/codex.js
+  - javascripts/dps-calc.js
 
 extra:
   generator: false
@@ -123,6 +125,7 @@ plugins:
         remove_comments: true
       js_files:
         - javascripts/codex.js
+        - javascripts/dps-calc.js
       css_files:
         - stylesheets/extra.css
         - stylesheets/identity.css
@@ -130,6 +133,7 @@ plugins:
         - stylesheets/guides.css
         - stylesheets/reference.css
         - stylesheets/components.css
+        - stylesheets/dps.css
 
 nav:
   - Home: index.md
@@ -145,6 +149,7 @@ nav:
       - FAQ: about/faq.md
   - Classes:
       - guides/index.md
+      - DPS Calculator: guides/dps-calculator.md
       - Druid:
           - guides/druid/index.md
           - Talents: guides/druid/talents.md

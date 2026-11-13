@@ -1,0 +1,1824 @@
+[
+ {
+  "class": "warlock",
+  "spec": "Demonology",
+  "race": "orc",
+  "race_name": "Orc",
+  "build": "2/31/18",
+  "dps_mean": 628.8,
+  "dps_sd": 21.5,
+  "ci95": [
+   627.5,
+   630.1
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Searing Pain": 172.9,
+   "Imp: Firebolt": 140.3,
+   "Soul Fire": 73.2,
+   "Immolate (DoT)": 56.8,
+   "Demonic Brand": 56.6,
+   "Corruption": 48.9,
+   "Immolate": 33.1,
+   "Bane of Doom": 32.2,
+   "Bane of Agony": 15.0
+  },
+  "data_confidence": 0.618,
+  "casts_per_fight": {
+   "Searing Pain": 57.48,
+   "Life Tap": 13.37,
+   "Immolate": 12.45,
+   "Corruption": 11.1,
+   "Soul Fire": 9.47,
+   "Searing Pain (miss)": 6.29,
+   "Bane of Agony": 3.38,
+   "blood_fury": 2.0,
+   "Bane of Doom": 2.0,
+   "Major Mana Potion": 2.0,
+   "Immolate (miss)": 1.43,
+   "Corruption (miss)": 1.19,
+   "Soul Fire (miss)": 1.0,
+   "Bane of Agony (miss)": 0.38,
+   "Bane of Doom (miss)": 0.23
+  },
+  "mana_left_pct": 24.3
+ },
+ {
+  "class": "warlock",
+  "spec": "Demonology",
+  "race": "gnome",
+  "race_name": "Gnome",
+  "build": "2/31/18",
+  "dps_mean": 617.8,
+  "dps_sd": 22.4,
+  "ci95": [
+   616.4,
+   619.2
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Searing Pain": 172.4,
+   "Imp: Firebolt": 133.2,
+   "Soul Fire": 73.5,
+   "Immolate (DoT)": 56.3,
+   "Demonic Brand": 53.8,
+   "Corruption": 48.3,
+   "Immolate": 33.1,
+   "Bane of Doom": 32.4,
+   "Bane of Agony": 14.8
+  },
+  "data_confidence": 0.614,
+  "casts_per_fight": {
+   "Searing Pain": 57.63,
+   "Life Tap": 13.13,
+   "Immolate": 12.42,
+   "Corruption": 11.12,
+   "Soul Fire": 9.53,
+   "Searing Pain (miss)": 6.31,
+   "Bane of Agony": 3.37,
+   "eureka": 2.0,
+   "Bane of Doom": 2.0,
+   "Major Mana Potion": 2.0,
+   "Immolate (miss)": 1.39,
+   "Corruption (miss)": 1.22,
+   "Soul Fire (miss)": 0.99,
+   "Bane of Agony (miss)": 0.37,
+   "Bane of Doom (miss)": 0.18
+  },
+  "mana_left_pct": 24.2
+ },
+ {
+  "class": "warlock",
+  "spec": "Demonology",
+  "race": "human",
+  "race_name": "Human",
+  "build": "2/31/18",
+  "dps_mean": 616.8,
+  "dps_sd": 21.8,
+  "ci95": [
+   615.5,
+   618.2
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Searing Pain": 173.6,
+   "Imp: Firebolt": 133.0,
+   "Soul Fire": 72.3,
+   "Immolate (DoT)": 56.7,
+   "Demonic Brand": 53.6,
+   "Corruption": 48.6,
+   "Immolate": 33.2,
+   "Bane of Doom": 31.2,
+   "Bane of Agony": 14.8
+  },
+  "data_confidence": 0.61,
+  "casts_per_fight": {
+   "Searing Pain": 57.73,
+   "Life Tap": 13.07,
+   "Immolate": 12.42,
+   "Corruption": 11.11,
+   "Soul Fire": 9.49,
+   "Searing Pain (miss)": 6.38,
+   "Bane of Agony": 3.4,
+   "Bane of Doom": 2.0,
+   "Major Mana Potion": 2.0,
+   "Immolate (miss)": 1.39,
+   "Corruption (miss)": 1.21,
+   "Soul Fire (miss)": 1.01,
+   "Bane of Agony (miss)": 0.4,
+   "Bane of Doom (miss)": 0.25
+  },
+  "mana_left_pct": 25.5
+ },
+ {
+  "class": "warlock",
+  "spec": "Demonology",
+  "race": "troll",
+  "race_name": "Troll",
+  "build": "2/31/18",
+  "dps_mean": 616.6,
+  "dps_sd": 21.9,
+  "ci95": [
+   615.2,
+   618.0
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Searing Pain": 173.2,
+   "Imp: Firebolt": 133.0,
+   "Soul Fire": 72.0,
+   "Immolate (DoT)": 56.5,
+   "Demonic Brand": 53.6,
+   "Corruption": 49.2,
+   "Immolate": 32.8,
+   "Bane of Doom": 31.5,
+   "Bane of Agony": 14.8
+  },
+  "data_confidence": 0.614,
+  "casts_per_fight": {
+   "Searing Pain": 58.22,
+   "Life Tap": 13.57,
+   "Immolate": 12.37,
+   "Corruption": 11.12,
+   "Soul Fire": 9.51,
+   "Searing Pain (miss)": 6.39,
+   "Bane of Agony": 3.38,
+   "berserking": 2.0,
+   "Bane of Doom": 2.0,
+   "Major Mana Potion": 2.0,
+   "Immolate (miss)": 1.33,
+   "Corruption (miss)": 1.21,
+   "Soul Fire (miss)": 1.0,
+   "Bane of Agony (miss)": 0.38,
+   "Bane of Doom (miss)": 0.23
+  },
+  "mana_left_pct": 24.8
+ },
+ {
+  "class": "warlock",
+  "spec": "Demonology",
+  "race": "undead",
+  "race_name": "Undead",
+  "build": "2/31/18",
+  "dps_mean": 613.6,
+  "dps_sd": 21.4,
+  "ci95": [
+   612.3,
+   614.9
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Searing Pain": 171.6,
+   "Imp: Firebolt": 133.0,
+   "Soul Fire": 71.7,
+   "Immolate (DoT)": 56.4,
+   "Demonic Brand": 53.5,
+   "Corruption": 48.4,
+   "Immolate": 32.9,
+   "Bane of Doom": 31.3,
+   "Bane of Agony": 14.8
+  },
+  "data_confidence": 0.602,
+  "casts_per_fight": {
+   "Searing Pain": 57.41,
+   "Life Tap": 13.42,
+   "Immolate": 12.37,
+   "Corruption": 11.16,
+   "Soul Fire": 9.52,
+   "Searing Pain (miss)": 6.2,
+   "Bane of Agony": 3.31,
+   "Bane of Doom": 2.0,
+   "Major Mana Potion": 2.0,
+   "Immolate (miss)": 1.33,
+   "Corruption (miss)": 1.25,
+   "Soul Fire (miss)": 1.01,
+   "Bane of Agony (miss)": 0.32,
+   "Bane of Doom (miss)": 0.22
+  },
+  "mana_left_pct": 25.4
+ },
+ {
+  "class": "mage",
+  "spec": "Frost",
+  "race": "sho",
+  "race_name": "Skyborne (High Order)",
+  "build": "15/5/31",
+  "dps_mean": 512.2,
+  "dps_sd": 28.2,
+  "ci95": [
+   510.4,
+   513.9
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Frostbolt": 348.8,
+   "Arcane Missiles": 96.2,
+   "Ice Lance": 67.1
+  },
+  "data_confidence": 0.577,
+  "casts_per_fight": {
+   "Frostbolt": 53.2,
+   "Arcane Missiles": 10.37,
+   "Ice Lance": 6.93,
+   "Ice Barrier": 3.31,
+   "Frostbolt (miss)": 2.62,
+   "Arcane Missiles (miss)": 2.54,
+   "Major Mana Potion": 1.99,
+   "Evocation": 1.0,
+   "Ice Lance (miss)": 0.34
+  },
+  "mana_left_pct": 39.7
+ },
+ {
+  "class": "mage",
+  "spec": "Frost",
+  "race": "troll",
+  "race_name": "Troll",
+  "build": "15/5/31",
+  "dps_mean": 505.7,
+  "dps_sd": 28.8,
+  "ci95": [
+   503.9,
+   507.5
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Frostbolt": 342.7,
+   "Arcane Missiles": 96.5,
+   "Ice Lance": 66.4
+  },
+  "data_confidence": 0.589,
+  "casts_per_fight": {
+   "Frostbolt": 52.49,
+   "Arcane Missiles": 10.41,
+   "Ice Lance": 6.87,
+   "Ice Barrier": 3.24,
+   "Frostbolt (miss)": 2.59,
+   "Arcane Missiles (miss)": 2.51,
+   "berserking": 2.0,
+   "Major Mana Potion": 2.0,
+   "Evocation": 1.0,
+   "Ice Lance (miss)": 0.33
+  },
+  "mana_left_pct": 42.4
+ },
+ {
+  "class": "mage",
+  "spec": "Frost",
+  "race": "gnome",
+  "race_name": "Gnome",
+  "build": "15/5/31",
+  "dps_mean": 504.1,
+  "dps_sd": 29.7,
+  "ci95": [
+   502.3,
+   506.0
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Frostbolt": 341.8,
+   "Arcane Missiles": 95.7,
+   "Ice Lance": 66.7
+  },
+  "data_confidence": 0.589,
+  "casts_per_fight": {
+   "Frostbolt": 52.09,
+   "Arcane Missiles": 10.26,
+   "Ice Lance": 6.77,
+   "Ice Barrier": 3.25,
+   "Frostbolt (miss)": 2.66,
+   "Arcane Missiles (miss)": 2.56,
+   "eureka": 2.0,
+   "Major Mana Potion": 1.99,
+   "Evocation": 0.99,
+   "Ice Lance (miss)": 0.34
+  },
+  "mana_left_pct": 46.7
+ },
+ {
+  "class": "priest",
+  "spec": "Shadow",
+  "race": "dwarf",
+  "race_name": "Dwarf",
+  "build": "20/0/31",
+  "dps_mean": 503.7,
+  "dps_sd": 16.1,
+  "ci95": [
+   502.7,
+   504.7
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Mind Flay": 164.9,
+   "Mind Blast": 139.7,
+   "Shadow Word: Pain": 89.4,
+   "Devouring Plague": 58.7,
+   "Shadow Word: Death": 51.0
+  },
+  "data_confidence": 0.659,
+  "casts_per_fight": {
+   "Mind Flay": 31.85,
+   "Mind Blast": 24.11,
+   "Shadow Word: Death": 9.0,
+   "Shadow Word: Pain": 8.41,
+   "Devouring Plague": 7.82,
+   "Vampiric Embrace": 6.0,
+   "Major Mana Potion": 2.0,
+   "Mind Flay (miss)": 1.57,
+   "Mind Blast (miss)": 1.18,
+   "Inner Focus": 1.0,
+   "Shadow Word: Death (miss)": 0.51,
+   "Shadow Word: Pain (miss)": 0.41,
+   "Devouring Plague (miss)": 0.4
+  },
+  "mana_left_pct": 46.8
+ },
+ {
+  "class": "priest",
+  "spec": "Shadow",
+  "race": "gnome",
+  "race_name": "Gnome",
+  "build": "20/0/31",
+  "dps_mean": 503.4,
+  "dps_sd": 16.2,
+  "ci95": [
+   502.4,
+   504.4
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Mind Flay": 163.3,
+   "Mind Blast": 139.9,
+   "Shadow Word: Pain": 89.4,
+   "Devouring Plague": 58.7,
+   "Shadow Word: Death": 52.1
+  },
+  "data_confidence": 0.667,
+  "casts_per_fight": {
+   "Mind Flay": 31.8,
+   "Mind Blast": 24.15,
+   "Shadow Word: Death": 9.0,
+   "Shadow Word: Pain": 8.49,
+   "Devouring Plague": 7.8,
+   "Vampiric Embrace": 6.0,
+   "eureka": 2.0,
+   "Major Mana Potion": 2.0,
+   "Mind Flay (miss)": 1.79,
+   "Mind Blast (miss)": 1.46,
+   "Inner Focus": 1.0,
+   "Shadow Word: Death (miss)": 0.51,
+   "Shadow Word: Pain (miss)": 0.49,
+   "Devouring Plague (miss)": 0.41
+  },
+  "mana_left_pct": 48.5
+ },
+ {
+  "class": "mage",
+  "spec": "Frost",
+  "race": "undead",
+  "race_name": "Undead",
+  "build": "15/5/31",
+  "dps_mean": 502.8,
+  "dps_sd": 28.8,
+  "ci95": [
+   501.0,
+   504.6
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Frostbolt": 340.4,
+   "Arcane Missiles": 95.5,
+   "Ice Lance": 66.9
+  },
+  "data_confidence": 0.571,
+  "casts_per_fight": {
+   "Frostbolt": 51.98,
+   "Arcane Missiles": 10.29,
+   "Ice Lance": 6.88,
+   "Ice Barrier": 3.23,
+   "Frostbolt (miss)": 2.49,
+   "Arcane Missiles (miss)": 2.47,
+   "Major Mana Potion": 1.99,
+   "Evocation": 0.99,
+   "Ice Lance (miss)": 0.33
+  },
+  "mana_left_pct": 44.4
+ },
+ {
+  "class": "mage",
+  "spec": "Frost",
+  "race": "orc",
+  "race_name": "Orc",
+  "build": "15/5/31",
+  "dps_mean": 502.7,
+  "dps_sd": 28.7,
+  "ci95": [
+   501.0,
+   504.5
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Frostbolt": 341.6,
+   "Arcane Missiles": 94.9,
+   "Ice Lance": 66.3
+  },
+  "data_confidence": 0.595,
+  "casts_per_fight": {
+   "Frostbolt": 52.09,
+   "Arcane Missiles": 10.2,
+   "Ice Lance": 6.83,
+   "Ice Barrier": 3.24,
+   "Frostbolt (miss)": 2.66,
+   "Arcane Missiles (miss)": 2.53,
+   "blood_fury": 2.0,
+   "Major Mana Potion": 2.0,
+   "Evocation": 1.0,
+   "Ice Lance (miss)": 0.36
+  },
+  "mana_left_pct": 43.7
+ },
+ {
+  "class": "mage",
+  "spec": "Frost",
+  "race": "human",
+  "race_name": "Human",
+  "build": "15/5/31",
+  "dps_mean": 502.0,
+  "dps_sd": 28.7,
+  "ci95": [
+   500.2,
+   503.8
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Frostbolt": 341.8,
+   "Arcane Missiles": 95.1,
+   "Ice Lance": 65.1
+  },
+  "data_confidence": 0.583,
+  "casts_per_fight": {
+   "Frostbolt": 52.13,
+   "Arcane Missiles": 10.21,
+   "Ice Lance": 6.77,
+   "Ice Barrier": 3.24,
+   "Frostbolt (miss)": 2.62,
+   "Arcane Missiles (miss)": 2.53,
+   "Major Mana Potion": 1.99,
+   "Evocation": 0.99,
+   "Ice Lance (miss)": 0.39
+  },
+  "mana_left_pct": 44.1
+ },
+ {
+  "class": "priest",
+  "spec": "Shadow",
+  "race": "human",
+  "race_name": "Human",
+  "build": "20/0/31",
+  "dps_mean": 501.4,
+  "dps_sd": 16.9,
+  "ci95": [
+   500.4,
+   502.5
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Mind Flay": 162.8,
+   "Mind Blast": 140.1,
+   "Shadow Word: Pain": 89.4,
+   "Devouring Plague": 58.4,
+   "Shadow Word: Death": 50.8
+  },
+  "data_confidence": 0.663,
+  "casts_per_fight": {
+   "Mind Flay": 31.8,
+   "Mind Blast": 24.14,
+   "Shadow Word: Death": 9.0,
+   "Shadow Word: Pain": 8.53,
+   "Devouring Plague": 7.78,
+   "Vampiric Embrace": 6.0,
+   "Major Mana Potion": 2.0,
+   "Mind Flay (miss)": 1.87,
+   "Mind Blast (miss)": 1.42,
+   "Inner Focus": 1.0,
+   "Shadow Word: Death (miss)": 0.57,
+   "Shadow Word: Pain (miss)": 0.53,
+   "Devouring Plague (miss)": 0.44
+  },
+  "mana_left_pct": 49.8
+ },
+ {
+  "class": "priest",
+  "spec": "Shadow",
+  "race": "nelf",
+  "race_name": "Night Elf",
+  "build": "20/0/31",
+  "dps_mean": 500.8,
+  "dps_sd": 16.1,
+  "ci95": [
+   499.8,
+   501.8
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Mind Flay": 162.9,
+   "Mind Blast": 139.1,
+   "Shadow Word: Pain": 89.4,
+   "Devouring Plague": 58.3,
+   "Shadow Word: Death": 51.1
+  },
+  "data_confidence": 0.667,
+  "casts_per_fight": {
+   "Mind Flay": 31.78,
+   "Mind Blast": 24.15,
+   "Shadow Word: Death": 9.01,
+   "Shadow Word: Pain": 8.51,
+   "Devouring Plague": 7.79,
+   "Vampiric Embrace": 6.0,
+   "elune": 2.0,
+   "Major Mana Potion": 2.0,
+   "Mind Flay (miss)": 1.84,
+   "Mind Blast (miss)": 1.44,
+   "Inner Focus": 1.0,
+   "Shadow Word: Death (miss)": 0.53,
+   "Shadow Word: Pain (miss)": 0.51,
+   "Devouring Plague (miss)": 0.46
+  },
+  "mana_left_pct": 46.7
+ },
+ {
+  "class": "priest",
+  "spec": "Shadow",
+  "race": "troll",
+  "race_name": "Troll",
+  "build": "20/0/31",
+  "dps_mean": 499.5,
+  "dps_sd": 16.2,
+  "ci95": [
+   498.5,
+   500.5
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Mind Flay": 167.0,
+   "Mind Blast": 139.4,
+   "Shadow Word: Pain": 88.3,
+   "Devouring Plague": 58.5,
+   "Shadow Word: Death": 46.3
+  },
+  "data_confidence": 0.667,
+  "casts_per_fight": {
+   "Mind Flay": 32.65,
+   "Mind Blast": 24.27,
+   "Shadow Word: Pain": 8.49,
+   "Shadow Word: Death": 8.23,
+   "Devouring Plague": 7.91,
+   "Vampiric Embrace": 6.0,
+   "berserking": 2.0,
+   "Major Mana Potion": 2.0,
+   "Mind Flay (miss)": 1.9,
+   "Mind Blast (miss)": 1.46,
+   "Inner Focus": 1.0,
+   "Shadow Word: Death (miss)": 0.51,
+   "Shadow Word: Pain (miss)": 0.49,
+   "Devouring Plague (miss)": 0.48
+  },
+  "mana_left_pct": 45.9
+ },
+ {
+  "class": "priest",
+  "spec": "Shadow",
+  "race": "undead",
+  "race_name": "Undead",
+  "build": "20/0/31",
+  "dps_mean": 499.1,
+  "dps_sd": 16.4,
+  "ci95": [
+   498.1,
+   500.1
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Mind Flay": 162.6,
+   "Mind Blast": 138.3,
+   "Shadow Word: Pain": 89.4,
+   "Devouring Plague": 58.1,
+   "Shadow Word: Death": 50.6
+  },
+  "data_confidence": 0.654,
+  "casts_per_fight": {
+   "Mind Flay": 31.8,
+   "Mind Blast": 24.14,
+   "Shadow Word: Death": 9.0,
+   "Shadow Word: Pain": 8.51,
+   "Devouring Plague": 7.79,
+   "Vampiric Embrace": 6.0,
+   "Major Mana Potion": 2.0,
+   "Mind Flay (miss)": 1.9,
+   "Mind Blast (miss)": 1.45,
+   "Inner Focus": 1.0,
+   "Shadow Word: Death (miss)": 0.54,
+   "Shadow Word: Pain (miss)": 0.51,
+   "Devouring Plague (miss)": 0.49
+  },
+  "mana_left_pct": 46.5
+ },
+ {
+  "class": "druid",
+  "spec": "Balance",
+  "race": "sws",
+  "race_name": "Skyborne (Windshaper)",
+  "build": "36/0/15",
+  "dps_mean": 488.7,
+  "dps_sd": 30.2,
+  "ci95": [
+   486.9,
+   490.6
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Starfire": 312.1,
+   "Insect Swarm": 53.6,
+   "Wrath": 51.5,
+   "Moonfire (DoT)": 47.6,
+   "Moonfire": 23.9
+  },
+  "data_confidence": 0.61,
+  "casts_per_fight": {
+   "Starfire": 41.98,
+   "Wrath": 20.38,
+   "Insect Swarm": 13.03,
+   "Moonfire": 12.58,
+   "Starfire (miss)": 2.99,
+   "Major Mana Potion": 1.99,
+   "Wrath (miss)": 1.38,
+   "Insect Swarm (miss)": 0.94,
+   "Moonfire (miss)": 0.9
+  },
+  "mana_left_pct": 10.9
+ },
+ {
+  "class": "druid",
+  "spec": "Balance",
+  "race": "nelf",
+  "race_name": "Night Elf",
+  "build": "36/0/15",
+  "dps_mean": 488.4,
+  "dps_sd": 30.9,
+  "ci95": [
+   486.4,
+   490.3
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Starfire": 312.6,
+   "Insect Swarm": 53.0,
+   "Wrath": 51.5,
+   "Moonfire (DoT)": 47.5,
+   "Moonfire": 23.8
+  },
+  "data_confidence": 0.62,
+  "casts_per_fight": {
+   "Starfire": 41.76,
+   "Wrath": 20.19,
+   "Insect Swarm": 12.88,
+   "Moonfire": 12.49,
+   "Starfire (miss)": 2.81,
+   "elune": 2.0,
+   "Major Mana Potion": 1.98,
+   "Wrath (miss)": 1.43,
+   "Insect Swarm (miss)": 0.89,
+   "Moonfire (miss)": 0.87
+  },
+  "mana_left_pct": 12.0
+ },
+ {
+  "class": "druid",
+  "spec": "Balance",
+  "race": "sho",
+  "race_name": "Skyborne (High Order)",
+  "build": "36/0/15",
+  "dps_mean": 487.8,
+  "dps_sd": 30.2,
+  "ci95": [
+   485.9,
+   489.7
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Starfire": 311.5,
+   "Insect Swarm": 53.6,
+   "Wrath": 51.3,
+   "Moonfire (DoT)": 47.6,
+   "Moonfire": 23.7
+  },
+  "data_confidence": 0.61,
+  "casts_per_fight": {
+   "Starfire": 41.97,
+   "Wrath": 20.37,
+   "Insect Swarm": 12.97,
+   "Moonfire": 12.63,
+   "Starfire (miss)": 2.96,
+   "Major Mana Potion": 1.98,
+   "Wrath (miss)": 1.4,
+   "Moonfire (miss)": 0.96,
+   "Insect Swarm (miss)": 0.9
+  },
+  "mana_left_pct": 11.1
+ },
+ {
+  "class": "druid",
+  "spec": "Balance",
+  "race": "tauren",
+  "race_name": "Tauren",
+  "build": "36/0/15",
+  "dps_mean": 482.5,
+  "dps_sd": 29.7,
+  "ci95": [
+   480.7,
+   484.4
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Starfire": 308.1,
+   "Insect Swarm": 53.0,
+   "Wrath": 50.5,
+   "Moonfire (DoT)": 47.3,
+   "Moonfire": 23.6
+  },
+  "data_confidence": 0.618,
+  "casts_per_fight": {
+   "Starfire": 41.46,
+   "Wrath": 20.03,
+   "Insect Swarm": 12.87,
+   "Moonfire": 12.49,
+   "Starfire (miss)": 2.75,
+   "Major Mana Potion": 1.98,
+   "Wrath (miss)": 1.4,
+   "Moonfire (miss)": 0.88,
+   "Insect Swarm (miss)": 0.87
+  },
+  "mana_left_pct": 13.1
+ },
+ {
+  "class": "mage",
+  "spec": "Arcane",
+  "race": "gnome",
+  "race_name": "Gnome",
+  "build": "38/10/3",
+  "dps_mean": 475.8,
+  "dps_sd": 43.4,
+  "ci95": [
+   473.1,
+   478.5
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Arcane Missiles": 226.3,
+   "Arcane Wrath": 192.8,
+   "Arcane Blast": 56.8
+  },
+  "data_confidence": 0.632,
+  "casts_per_fight": {
+   "Arcane Wrath": 20.31,
+   "Arcane Missiles": 18.46,
+   "Arcane Blast": 15.07,
+   "Arcane Missiles (miss)": 4.56,
+   "eureka": 2.0,
+   "Major Mana Potion": 2.0,
+   "Arcane Power": 1.0,
+   "Presence of Mind": 1.0,
+   "Evocation": 1.0,
+   "Arcane Wrath (miss)": 1.0,
+   "Arcane Blast (miss)": 0.76
+  },
+  "mana_left_pct": 3.0
+ },
+ {
+  "class": "mage",
+  "spec": "Arcane",
+  "race": "human",
+  "race_name": "Human",
+  "build": "38/10/3",
+  "dps_mean": 473.6,
+  "dps_sd": 43.3,
+  "ci95": [
+   470.9,
+   476.3
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Arcane Missiles": 226.2,
+   "Arcane Wrath": 192.5,
+   "Arcane Blast": 55.0
+  },
+  "data_confidence": 0.627,
+  "casts_per_fight": {
+   "Arcane Wrath": 20.45,
+   "Arcane Missiles": 18.46,
+   "Arcane Blast": 14.82,
+   "Arcane Missiles (miss)": 4.56,
+   "Major Mana Potion": 2.0,
+   "Arcane Wrath (miss)": 1.04,
+   "Arcane Power": 1.0,
+   "Presence of Mind": 1.0,
+   "Evocation": 1.0,
+   "Arcane Blast (miss)": 0.79
+  },
+  "mana_left_pct": 2.9
+ },
+ {
+  "class": "mage",
+  "spec": "Arcane",
+  "race": "sho",
+  "race_name": "Skyborne (High Order)",
+  "build": "38/10/3",
+  "dps_mean": 472.1,
+  "dps_sd": 41.7,
+  "ci95": [
+   469.5,
+   474.6
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Arcane Missiles": 226.5,
+   "Arcane Wrath": 189.8,
+   "Arcane Blast": 55.8
+  },
+  "data_confidence": 0.622,
+  "casts_per_fight": {
+   "Arcane Wrath": 20.27,
+   "Arcane Missiles": 18.63,
+   "Arcane Blast": 15.09,
+   "Arcane Missiles (miss)": 4.69,
+   "Major Mana Potion": 2.0,
+   "Arcane Wrath (miss)": 1.03,
+   "Arcane Power": 1.0,
+   "Presence of Mind": 1.0,
+   "Evocation": 1.0,
+   "Arcane Blast (miss)": 0.74
+  },
+  "mana_left_pct": 3.0
+ },
+ {
+  "class": "mage",
+  "spec": "Arcane",
+  "race": "orc",
+  "race_name": "Orc",
+  "build": "38/10/3",
+  "dps_mean": 467.4,
+  "dps_sd": 43.0,
+  "ci95": [
+   464.7,
+   470.1
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Arcane Missiles": 223.6,
+   "Arcane Wrath": 188.5,
+   "Arcane Blast": 55.3
+  },
+  "data_confidence": 0.636,
+  "casts_per_fight": {
+   "Arcane Wrath": 20.07,
+   "Arcane Missiles": 18.33,
+   "Arcane Blast": 14.95,
+   "Arcane Missiles (miss)": 4.45,
+   "blood_fury": 2.0,
+   "Major Mana Potion": 2.0,
+   "Arcane Wrath (miss)": 1.02,
+   "Arcane Power": 1.0,
+   "Presence of Mind": 1.0,
+   "Evocation": 1.0,
+   "Arcane Blast (miss)": 0.75
+  },
+  "mana_left_pct": 3.1
+ },
+ {
+  "class": "mage",
+  "spec": "Arcane",
+  "race": "undead",
+  "race_name": "Undead",
+  "build": "38/10/3",
+  "dps_mean": 466.8,
+  "dps_sd": 42.1,
+  "ci95": [
+   464.2,
+   469.4
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Arcane Missiles": 223.0,
+   "Arcane Wrath": 189.2,
+   "Arcane Blast": 54.7
+  },
+  "data_confidence": 0.616,
+  "casts_per_fight": {
+   "Arcane Wrath": 20.14,
+   "Arcane Missiles": 18.33,
+   "Arcane Blast": 14.92,
+   "Arcane Missiles (miss)": 4.54,
+   "Major Mana Potion": 2.0,
+   "Arcane Power": 1.0,
+   "Presence of Mind": 1.0,
+   "Evocation": 1.0,
+   "Arcane Wrath (miss)": 0.97,
+   "Arcane Blast (miss)": 0.77
+  },
+  "mana_left_pct": 2.9
+ },
+ {
+  "class": "mage",
+  "spec": "Arcane",
+  "race": "troll",
+  "race_name": "Troll",
+  "build": "38/10/3",
+  "dps_mean": 463.3,
+  "dps_sd": 42.6,
+  "ci95": [
+   460.6,
+   465.9
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Arcane Missiles": 223.6,
+   "Arcane Wrath": 183.4,
+   "Arcane Blast": 56.2
+  },
+  "data_confidence": 0.632,
+  "casts_per_fight": {
+   "Arcane Wrath": 19.8,
+   "Arcane Missiles": 18.37,
+   "Arcane Blast": 15.08,
+   "Arcane Missiles (miss)": 4.57,
+   "berserking": 2.0,
+   "Major Mana Potion": 2.0,
+   "Arcane Power": 1.0,
+   "Presence of Mind": 1.0,
+   "Evocation": 1.0,
+   "Arcane Wrath (miss)": 0.96,
+   "Arcane Blast (miss)": 0.7
+  },
+  "mana_left_pct": 2.9
+ },
+ {
+  "class": "warlock",
+  "spec": "Destruction",
+  "race": "human",
+  "race_name": "Human",
+  "build": "14/4/33",
+  "dps_mean": 453.5,
+  "dps_sd": 18.8,
+  "ci95": [
+   452.3,
+   454.6
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Incinerate": 177.4,
+   "Conflagrate": 78.3,
+   "Corruption": 67.1,
+   "Immolate (DoT)": 52.0,
+   "Shadowburn": 41.6,
+   "Immolate": 37.2
+  },
+  "data_confidence": 0.62,
+  "casts_per_fight": {
+   "Incinerate": 33.87,
+   "Life Tap": 20.0,
+   "Conflagrate": 16.7,
+   "Immolate": 12.52,
+   "Corruption": 11.71,
+   "Shadowburn": 11.03,
+   "Incinerate (miss)": 2.01,
+   "Major Mana Potion": 2.0,
+   "Conflagrate (miss)": 1.01,
+   "Immolate (miss)": 0.75,
+   "Corruption (miss)": 0.72,
+   "Shadowburn (miss)": 0.68
+  },
+  "mana_left_pct": 25.5
+ },
+ {
+  "class": "warlock",
+  "spec": "Destruction",
+  "race": "gnome",
+  "race_name": "Gnome",
+  "build": "14/4/33",
+  "dps_mean": 451.7,
+  "dps_sd": 18.5,
+  "ci95": [
+   450.5,
+   452.8
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Incinerate": 175.8,
+   "Conflagrate": 78.5,
+   "Corruption": 66.4,
+   "Immolate (DoT)": 51.7,
+   "Shadowburn": 42.0,
+   "Immolate": 37.2
+  },
+  "data_confidence": 0.625,
+  "casts_per_fight": {
+   "Incinerate": 33.77,
+   "Life Tap": 20.24,
+   "Conflagrate": 16.7,
+   "Immolate": 12.48,
+   "Corruption": 11.66,
+   "Shadowburn": 11.03,
+   "Incinerate (miss)": 2.05,
+   "eureka": 2.0,
+   "Major Mana Potion": 2.0,
+   "Conflagrate (miss)": 0.97,
+   "Immolate (miss)": 0.69,
+   "Corruption (miss)": 0.67,
+   "Shadowburn (miss)": 0.64
+  },
+  "mana_left_pct": 25.3
+ },
+ {
+  "class": "warlock",
+  "spec": "Destruction",
+  "race": "orc",
+  "race_name": "Orc",
+  "build": "14/4/33",
+  "dps_mean": 451.0,
+  "dps_sd": 19.1,
+  "ci95": [
+   449.8,
+   452.1
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Incinerate": 175.6,
+   "Conflagrate": 78.0,
+   "Corruption": 66.9,
+   "Immolate (DoT)": 52.0,
+   "Shadowburn": 41.7,
+   "Immolate": 36.7
+  },
+  "data_confidence": 0.63,
+  "casts_per_fight": {
+   "Incinerate": 33.58,
+   "Life Tap": 20.52,
+   "Conflagrate": 16.67,
+   "Immolate": 12.43,
+   "Corruption": 11.69,
+   "Shadowburn": 11.01,
+   "Incinerate (miss)": 2.02,
+   "blood_fury": 2.0,
+   "Major Mana Potion": 2.0,
+   "Conflagrate (miss)": 1.0,
+   "Immolate (miss)": 0.74,
+   "Corruption (miss)": 0.71,
+   "Shadowburn (miss)": 0.66
+  },
+  "mana_left_pct": 25.2
+ },
+ {
+  "class": "warlock",
+  "spec": "Destruction",
+  "race": "troll",
+  "race_name": "Troll",
+  "build": "14/4/33",
+  "dps_mean": 448.6,
+  "dps_sd": 18.6,
+  "ci95": [
+   447.5,
+   449.8
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Incinerate": 177.4,
+   "Conflagrate": 76.4,
+   "Corruption": 66.5,
+   "Immolate (DoT)": 51.3,
+   "Shadowburn": 41.3,
+   "Immolate": 35.8
+  },
+  "data_confidence": 0.625,
+  "casts_per_fight": {
+   "Incinerate": 34.35,
+   "Life Tap": 20.71,
+   "Conflagrate": 16.53,
+   "Immolate": 12.23,
+   "Corruption": 11.66,
+   "Shadowburn": 11.1,
+   "Incinerate (miss)": 2.08,
+   "berserking": 2.0,
+   "Major Mana Potion": 2.0,
+   "Conflagrate (miss)": 1.01,
+   "Immolate (miss)": 0.72,
+   "Shadowburn (miss)": 0.7,
+   "Corruption (miss)": 0.67
+  },
+  "mana_left_pct": 25.2
+ },
+ {
+  "class": "warlock",
+  "spec": "Destruction",
+  "race": "undead",
+  "race_name": "Undead",
+  "build": "14/4/33",
+  "dps_mean": 447.0,
+  "dps_sd": 18.9,
+  "ci95": [
+   445.8,
+   448.2
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Incinerate": 174.2,
+   "Conflagrate": 77.5,
+   "Corruption": 66.4,
+   "Immolate (DoT)": 51.4,
+   "Shadowburn": 41.0,
+   "Immolate": 36.6
+  },
+  "data_confidence": 0.61,
+  "casts_per_fight": {
+   "Incinerate": 33.62,
+   "Life Tap": 20.49,
+   "Conflagrate": 16.69,
+   "Immolate": 12.47,
+   "Corruption": 11.65,
+   "Shadowburn": 11.01,
+   "Incinerate (miss)": 2.01,
+   "Major Mana Potion": 2.0,
+   "Conflagrate (miss)": 0.96,
+   "Immolate (miss)": 0.76,
+   "Shadowburn (miss)": 0.71,
+   "Corruption (miss)": 0.67
+  },
+  "mana_left_pct": 25.3
+ },
+ {
+  "class": "mage",
+  "spec": "Fire",
+  "race": "gnome",
+  "race_name": "Gnome",
+  "build": "12/36/3",
+  "dps_mean": 441.8,
+  "dps_sd": 45.9,
+  "ci95": [
+   439.0,
+   444.7
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Fireball": 155.0,
+   "Fire Blast": 82.5,
+   "Scorch": 54.2,
+   "Ignite": 45.3,
+   "Arcane Missiles": 41.9,
+   "Pyroblast": 40.8,
+   "Pyroblast (DoT)": 16.3,
+   "Fireball (DoT)": 5.8
+  },
+  "data_confidence": 0.622,
+  "casts_per_fight": {
+   "Fireball": 22.9,
+   "Scorch": 19.1,
+   "Fire Blast": 16.41,
+   "Pyroblast": 5.45,
+   "Arcane Missiles": 4.49,
+   "eureka": 2.0,
+   "Major Mana Potion": 2.0,
+   "Fireball (miss)": 1.16,
+   "Arcane Missiles (miss)": 1.15,
+   "Combustion": 1.0,
+   "Evocation": 1.0,
+   "Scorch (miss)": 0.92,
+   "Fire Blast (miss)": 0.81,
+   "Pyroblast (miss)": 0.29
+  },
+  "mana_left_pct": 1.4
+ },
+ {
+  "class": "mage",
+  "spec": "Fire",
+  "race": "human",
+  "race_name": "Human",
+  "build": "12/36/3",
+  "dps_mean": 438.4,
+  "dps_sd": 42.9,
+  "ci95": [
+   435.7,
+   441.0
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Fireball": 151.9,
+   "Fire Blast": 81.0,
+   "Scorch": 54.0,
+   "Ignite": 46.3,
+   "Arcane Missiles": 41.9,
+   "Pyroblast": 41.2,
+   "Pyroblast (DoT)": 16.6,
+   "Fireball (DoT)": 5.7
+  },
+  "data_confidence": 0.618,
+  "casts_per_fight": {
+   "Fireball": 22.33,
+   "Scorch": 19.57,
+   "Fire Blast": 16.09,
+   "Pyroblast": 5.57,
+   "Arcane Missiles": 4.48,
+   "Major Mana Potion": 2.0,
+   "Fireball (miss)": 1.13,
+   "Arcane Missiles (miss)": 1.12,
+   "Combustion": 1.0,
+   "Evocation": 1.0,
+   "Scorch (miss)": 0.93,
+   "Fire Blast (miss)": 0.78,
+   "Pyroblast (miss)": 0.3
+  },
+  "mana_left_pct": 1.4
+ },
+ {
+  "class": "warlock",
+  "spec": "Affliction (Wrack)",
+  "race": "human",
+  "race_name": "Human",
+  "build": "33/0/18",
+  "dps_mean": 435.5,
+  "dps_sd": 20.4,
+  "ci95": [
+   434.3,
+   436.8
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Wrack": 243.8,
+   "Corruption": 74.2,
+   "Bane of Agony": 61.5,
+   "Siphon Life": 29.5,
+   "Shadow Bolt": 26.5
+  },
+  "data_confidence": 0.654,
+  "casts_per_fight": {
+   "Wrack": 20.52,
+   "Corruption": 11.7,
+   "Bane of Agony": 8.43,
+   "Siphon Life": 6.53,
+   "Shadow Bolt": 5.65,
+   "Life Tap": 5.5,
+   "Major Mana Potion": 2.0,
+   "Wrack (miss)": 1.28,
+   "Amplify Curse": 1.0,
+   "Corruption (miss)": 0.7,
+   "Bane of Agony (miss)": 0.51,
+   "Siphon Life (miss)": 0.4,
+   "Shadow Bolt (miss)": 0.32
+  },
+  "mana_left_pct": 41.7
+ },
+ {
+  "class": "warlock",
+  "spec": "Affliction (Wrack)",
+  "race": "orc",
+  "race_name": "Orc",
+  "build": "33/0/18",
+  "dps_mean": 435.5,
+  "dps_sd": 20.6,
+  "ci95": [
+   434.2,
+   436.8
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Wrack": 243.7,
+   "Corruption": 74.0,
+   "Bane of Agony": 61.7,
+   "Siphon Life": 29.4,
+   "Shadow Bolt": 26.6
+  },
+  "data_confidence": 0.663,
+  "casts_per_fight": {
+   "Wrack": 20.47,
+   "Corruption": 11.68,
+   "Bane of Agony": 8.41,
+   "Siphon Life": 6.51,
+   "Shadow Bolt": 5.72,
+   "Life Tap": 5.71,
+   "blood_fury": 2.0,
+   "Major Mana Potion": 2.0,
+   "Wrack (miss)": 1.23,
+   "Amplify Curse": 1.0,
+   "Corruption (miss)": 0.67,
+   "Bane of Agony (miss)": 0.49,
+   "Siphon Life (miss)": 0.37,
+   "Shadow Bolt (miss)": 0.35
+  },
+  "mana_left_pct": 41.2
+ },
+ {
+  "class": "warlock",
+  "spec": "Affliction (Wrack)",
+  "race": "troll",
+  "race_name": "Troll",
+  "build": "33/0/18",
+  "dps_mean": 433.5,
+  "dps_sd": 20.5,
+  "ci95": [
+   432.3,
+   434.8
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Wrack": 244.0,
+   "Corruption": 73.2,
+   "Bane of Agony": 61.0,
+   "Siphon Life": 29.3,
+   "Shadow Bolt": 26.0
+  },
+  "data_confidence": 0.659,
+  "casts_per_fight": {
+   "Wrack": 20.66,
+   "Corruption": 11.6,
+   "Bane of Agony": 8.48,
+   "Siphon Life": 6.71,
+   "Life Tap": 5.86,
+   "Shadow Bolt": 5.66,
+   "berserking": 2.0,
+   "Major Mana Potion": 2.0,
+   "Wrack (miss)": 1.24,
+   "Amplify Curse": 1.0,
+   "Corruption (miss)": 0.73,
+   "Bane of Agony (miss)": 0.52,
+   "Siphon Life (miss)": 0.43,
+   "Shadow Bolt (miss)": 0.36
+  },
+  "mana_left_pct": 40.9
+ },
+ {
+  "class": "warlock",
+  "spec": "Affliction (Wrack)",
+  "race": "gnome",
+  "race_name": "Gnome",
+  "build": "33/0/18",
+  "dps_mean": 432.0,
+  "dps_sd": 21.2,
+  "ci95": [
+   430.7,
+   433.3
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Wrack": 241.3,
+   "Corruption": 73.4,
+   "Bane of Agony": 60.9,
+   "Siphon Life": 29.2,
+   "Shadow Bolt": 27.2
+  },
+  "data_confidence": 0.659,
+  "casts_per_fight": {
+   "Wrack": 20.39,
+   "Corruption": 11.71,
+   "Bane of Agony": 8.44,
+   "Siphon Life": 6.54,
+   "Shadow Bolt": 5.84,
+   "Life Tap": 5.68,
+   "eureka": 2.0,
+   "Major Mana Potion": 2.0,
+   "Wrack (miss)": 1.25,
+   "Amplify Curse": 1.0,
+   "Corruption (miss)": 0.72,
+   "Bane of Agony (miss)": 0.54,
+   "Siphon Life (miss)": 0.38,
+   "Shadow Bolt (miss)": 0.36
+  },
+  "mana_left_pct": 41.1
+ },
+ {
+  "class": "warlock",
+  "spec": "Affliction (Wrack)",
+  "race": "undead",
+  "race_name": "Undead",
+  "build": "33/0/18",
+  "dps_mean": 431.9,
+  "dps_sd": 19.9,
+  "ci95": [
+   430.7,
+   433.2
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Wrack": 242.4,
+   "Corruption": 73.5,
+   "Bane of Agony": 60.9,
+   "Siphon Life": 29.1,
+   "Shadow Bolt": 26.0
+  },
+  "data_confidence": 0.646,
+  "casts_per_fight": {
+   "Wrack": 20.45,
+   "Corruption": 11.71,
+   "Bane of Agony": 8.44,
+   "Siphon Life": 6.56,
+   "Life Tap": 5.72,
+   "Shadow Bolt": 5.64,
+   "Major Mana Potion": 2.0,
+   "Wrack (miss)": 1.19,
+   "Amplify Curse": 1.0,
+   "Corruption (miss)": 0.72,
+   "Bane of Agony (miss)": 0.51,
+   "Siphon Life (miss)": 0.41,
+   "Shadow Bolt (miss)": 0.35
+  },
+  "mana_left_pct": 41.4
+ },
+ {
+  "class": "mage",
+  "spec": "Fire",
+  "race": "orc",
+  "race_name": "Orc",
+  "build": "12/36/3",
+  "dps_mean": 431.6,
+  "dps_sd": 44.3,
+  "ci95": [
+   428.9,
+   434.4
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Fireball": 149.9,
+   "Fire Blast": 79.5,
+   "Scorch": 54.9,
+   "Ignite": 43.9,
+   "Arcane Missiles": 41.6,
+   "Pyroblast": 39.9,
+   "Pyroblast (DoT)": 16.3,
+   "Fireball (DoT)": 5.6
+  },
+  "data_confidence": 0.626,
+  "casts_per_fight": {
+   "Fireball": 22.11,
+   "Scorch": 19.6,
+   "Fire Blast": 15.89,
+   "Pyroblast": 5.37,
+   "Arcane Missiles": 4.45,
+   "blood_fury": 2.0,
+   "Major Mana Potion": 2.0,
+   "Fireball (miss)": 1.1,
+   "Arcane Missiles (miss)": 1.08,
+   "Combustion": 1.0,
+   "Evocation": 1.0,
+   "Scorch (miss)": 0.92,
+   "Fire Blast (miss)": 0.8,
+   "Pyroblast (miss)": 0.28
+  },
+  "mana_left_pct": 1.4
+ },
+ {
+  "class": "mage",
+  "spec": "Fire",
+  "race": "sho",
+  "race_name": "Skyborne (High Order)",
+  "build": "12/36/3",
+  "dps_mean": 430.5,
+  "dps_sd": 44.0,
+  "ci95": [
+   427.7,
+   433.2
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Fireball": 149.6,
+   "Fire Blast": 79.8,
+   "Scorch": 54.7,
+   "Ignite": 44.2,
+   "Arcane Missiles": 40.8,
+   "Pyroblast": 39.7,
+   "Pyroblast (DoT)": 16.1,
+   "Fireball (DoT)": 5.6
+  },
+  "data_confidence": 0.614,
+  "casts_per_fight": {
+   "Fireball": 22.1,
+   "Scorch": 20.01,
+   "Fire Blast": 15.99,
+   "Pyroblast": 5.39,
+   "Arcane Missiles": 4.37,
+   "Major Mana Potion": 2.0,
+   "Fireball (miss)": 1.11,
+   "Arcane Missiles (miss)": 1.07,
+   "Combustion": 1.0,
+   "Evocation": 1.0,
+   "Scorch (miss)": 0.98,
+   "Fire Blast (miss)": 0.79,
+   "Pyroblast (miss)": 0.29
+  },
+  "mana_left_pct": 1.4
+ },
+ {
+  "class": "mage",
+  "spec": "Fire",
+  "race": "undead",
+  "race_name": "Undead",
+  "build": "12/36/3",
+  "dps_mean": 427.8,
+  "dps_sd": 41.6,
+  "ci95": [
+   425.2,
+   430.4
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Fireball": 149.2,
+   "Fire Blast": 79.3,
+   "Scorch": 53.8,
+   "Ignite": 43.5,
+   "Arcane Missiles": 40.9,
+   "Pyroblast": 39.4,
+   "Pyroblast (DoT)": 16.0,
+   "Fireball (DoT)": 5.6
+  },
+  "data_confidence": 0.609,
+  "casts_per_fight": {
+   "Fireball": 22.07,
+   "Scorch": 19.67,
+   "Fire Blast": 15.86,
+   "Pyroblast": 5.39,
+   "Arcane Missiles": 4.39,
+   "Major Mana Potion": 2.0,
+   "Fireball (miss)": 1.09,
+   "Arcane Missiles (miss)": 1.08,
+   "Combustion": 1.0,
+   "Evocation": 1.0,
+   "Scorch (miss)": 1.0,
+   "Fire Blast (miss)": 0.78,
+   "Pyroblast (miss)": 0.31
+  },
+  "mana_left_pct": 1.4
+ },
+ {
+  "class": "mage",
+  "spec": "Fire",
+  "race": "troll",
+  "race_name": "Troll",
+  "build": "12/36/3",
+  "dps_mean": 426.8,
+  "dps_sd": 42.6,
+  "ci95": [
+   424.2,
+   429.4
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Fireball": 149.5,
+   "Fire Blast": 78.6,
+   "Scorch": 54.6,
+   "Ignite": 43.1,
+   "Arcane Missiles": 41.1,
+   "Pyroblast": 39.0,
+   "Pyroblast (DoT)": 15.5,
+   "Fireball (DoT)": 5.6
+  },
+  "data_confidence": 0.622,
+  "casts_per_fight": {
+   "Fireball": 22.12,
+   "Scorch": 19.94,
+   "Fire Blast": 15.81,
+   "Pyroblast": 5.31,
+   "Arcane Missiles": 4.41,
+   "berserking": 2.0,
+   "Major Mana Potion": 2.0,
+   "Arcane Missiles (miss)": 1.14,
+   "Fireball (miss)": 1.11,
+   "Combustion": 1.0,
+   "Evocation": 1.0,
+   "Scorch (miss)": 0.98,
+   "Fire Blast (miss)": 0.83,
+   "Pyroblast (miss)": 0.25
+  },
+  "mana_left_pct": 1.4
+ },
+ {
+  "class": "shaman",
+  "spec": "Elemental",
+  "race": "dwarf",
+  "race_name": "Dwarf",
+  "build": "31/9/11",
+  "dps_mean": 415.8,
+  "dps_sd": 36.2,
+  "ci95": [
+   413.6,
+   418.1
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Lightning Bolt": 262.7,
+   "Chain Lightning": 98.7,
+   "Lightning Overload": 54.4
+  },
+  "data_confidence": 0.492,
+  "casts_per_fight": {
+   "Lightning Bolt": 46.08,
+   "Chain Lightning": 14.31,
+   "Water Shield": 4.98,
+   "Lightning Bolt (miss)": 2.29,
+   "Major Mana Potion": 2.0,
+   "Lightning Mastery": 1.0,
+   "Lightning Overload (miss)": 0.9,
+   "Chain Lightning (miss)": 0.69
+  },
+  "mana_left_pct": 2.8
+ },
+ {
+  "class": "shaman",
+  "spec": "Elemental",
+  "race": "sws",
+  "race_name": "Skyborne (Windshaper)",
+  "build": "31/9/11",
+  "dps_mean": 412.7,
+  "dps_sd": 38.7,
+  "ci95": [
+   410.3,
+   415.1
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Lightning Bolt": 261.2,
+   "Chain Lightning": 97.3,
+   "Lightning Overload": 54.2
+  },
+  "data_confidence": 0.492,
+  "casts_per_fight": {
+   "Lightning Bolt": 46.36,
+   "Chain Lightning": 14.28,
+   "Water Shield": 4.91,
+   "Lightning Bolt (miss)": 2.8,
+   "Major Mana Potion": 2.0,
+   "Lightning Overload (miss)": 1.13,
+   "Lightning Mastery": 1.0,
+   "Chain Lightning (miss)": 0.89
+  },
+  "mana_left_pct": 2.6
+ },
+ {
+  "class": "shaman",
+  "spec": "Elemental",
+  "race": "orc",
+  "race_name": "Orc",
+  "build": "31/9/11",
+  "dps_mean": 410.0,
+  "dps_sd": 36.7,
+  "ci95": [
+   407.7,
+   412.3
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Lightning Bolt": 259.1,
+   "Chain Lightning": 97.9,
+   "Lightning Overload": 53.1
+  },
+  "data_confidence": 0.516,
+  "casts_per_fight": {
+   "Lightning Bolt": 45.84,
+   "Chain Lightning": 14.23,
+   "Water Shield": 4.82,
+   "Lightning Bolt (miss)": 2.8,
+   "blood_fury": 2.0,
+   "Major Mana Potion": 2.0,
+   "Lightning Overload (miss)": 1.1,
+   "Lightning Mastery": 1.0,
+   "Chain Lightning (miss)": 0.86
+  },
+  "mana_left_pct": 2.9
+ },
+ {
+  "class": "shaman",
+  "spec": "Elemental",
+  "race": "tauren",
+  "race_name": "Tauren",
+  "build": "31/9/11",
+  "dps_mean": 407.2,
+  "dps_sd": 38.8,
+  "ci95": [
+   404.8,
+   409.6
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Lightning Bolt": 257.4,
+   "Chain Lightning": 97.1,
+   "Lightning Overload": 52.7
+  },
+  "data_confidence": 0.5,
+  "casts_per_fight": {
+   "Lightning Bolt": 45.63,
+   "Chain Lightning": 14.24,
+   "Water Shield": 4.8,
+   "Lightning Bolt (miss)": 2.72,
+   "Major Mana Potion": 2.0,
+   "Lightning Overload (miss)": 1.11,
+   "Lightning Mastery": 1.0,
+   "Chain Lightning (miss)": 0.79
+  },
+  "mana_left_pct": 2.8
+ },
+ {
+  "class": "shaman",
+  "spec": "Elemental",
+  "race": "troll",
+  "race_name": "Troll",
+  "build": "31/9/11",
+  "dps_mean": 406.6,
+  "dps_sd": 37.4,
+  "ci95": [
+   404.3,
+   408.9
+  ],
+  "iterations": 1000,
+  "fight_seconds": 180.0,
+  "breakdown": {
+   "Lightning Bolt": 255.3,
+   "Chain Lightning": 98.5,
+   "Lightning Overload": 52.9
+  },
+  "data_confidence": 0.508,
+  "casts_per_fight": {
+   "Lightning Bolt": 45.28,
+   "Chain Lightning": 14.5,
+   "Water Shield": 4.85,
+   "Lightning Bolt (miss)": 2.69,
+   "berserking": 2.0,
+   "Major Mana Potion": 2.0,
+   "Lightning Overload (miss)": 1.06,
+   "Lightning Mastery": 1.0,
+   "Chain Lightning (miss)": 0.91
+  },
+  "mana_left_pct": 2.6
+ }
+]

@@ -754,6 +754,7 @@ class Demonology(Warlock):
         self.reg("brand", "fire", label="Demonic Brand")
         self.imp = (self.sv("imp_firebolt", "min"), self.sv("imp_firebolt", "max"), self.sv("imp_firebolt", "cast"),
                     self.sv("imp_firebolt", "owner_sp_share"), self.sv("imp_firebolt", "coef"), self.sv("imp_firebolt", "base_crit"))
+        self.imp_scale = self.sv("imp_firebolt", "calibration")
         self.brand_left = 0
 
     def crit_extra(self, name):
@@ -778,7 +779,7 @@ class Demonology(Warlock):
         if self.rng.random() < self.hit_p("imp_firebolt"):
             pet_sp = share * self.spell_power() + self.dk
             m = (self.debuff("fire") * (1 + self.impimp) * (1 + self.unholy) * (1 + self.md) * (1 + self.link)
-                 * self.pet_mult_race)
+                 * self.pet_mult_race * self.imp_scale)
             amt = (self.rng.uniform(lo, hi) + coef * pet_sp) * m
             if self.rng.random() * 100 < crit:
                 amt *= self.base_crit_mult

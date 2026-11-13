@@ -27,7 +27,8 @@ Server-side behaviour and assumptions (tag in `inputs`):
 - Hawks: the dive-bomb is client data ($s1 + 5% RAP). The hawk then attacks
   for 18 s; that follow-up is server-side: A, one hit every 2.0 s for half the
   dive-bomb damage. At most 2 hawks.
-- Traps are placed under the target and trigger at once (A).
+- Traps are placed under the target and trigger at once (A). The trap with the best
+  damage per mana is used, since a naked Hunter is mana-bound (A).
 - The target is a tracked creature type, so Improved Tracking applies (A).
 - Counterattack needs a parry, and the training target does not attack: unused.
 - Deadly Aspects procs from Auto Shot (no ranged weapon) or with Aspect of the
@@ -431,7 +432,7 @@ class Hunter:
         sim.at(0.0, self.act)
 
     def trap(self):
-        """Best fire trap known: (name, effect spell, place spell, expected damage)."""
+        """Best fire trap known: (name, effect spell, place spell, expected damage, damage per mana)."""
         best = None
         for name in ("Immolation Trap", "Explosive Trap"):
             rs = [r for r in core.ranks(CLASS, name) if r["base_level"] <= self.level]
@@ -442,9 +443,12 @@ class Hunter:
             place = [r for r in rs if r["base_level"] == lv and any(e["Effect"] == 104 for e in r["effects"])]
             if not eff or not place:
                 continue
+            # A naked Hunter is mana-bound (Summon Hawk competes for the same mana),
+            # so rank traps by damage per mana, not raw damage (A).
             total = self.trap_total(eff[0])
-            if not best or total > best[3]:
-                best = (name, eff[0], place[0], total)
+            value = total / max(1.0, self.cost(place[0], trap=True))
+            if not best or value > best[4]:
+                best = (name, eff[0], place[0], total, value)
         return best
 
     def trap_total(self, s):
@@ -558,7 +562,7 @@ class Hunter:
         tr = self.trap()
         if not tr or not self.ready("trap"):
             return False
-        name, eff, place, _ = tr
+        name, eff, place = tr[:3]
         if not self.pay(place, trap=True):
             return False
         cd = place["category_cooldown_ms"] / 1000 * (1 - self.tr("Survivalist's Discipline") * TT["Survivalist's Discipline"])

@@ -32,12 +32,12 @@
   // Raid buffs and debuffs (on/off + value).
   var BUFFS = {
     might:     [true, 133, "F", "Blessing of Might, melee AP"],
-    shout:     [true, 139, "FE", "Battle Shout, melee AP"],
+    shout:     [true, 139, "FE", "Battle Shout, melee AP (raid-wide)"],
     kings:     [true, 10, "F", "Blessing of Kings, % all stats"],
     motw:      [true, 16, "F", "Mark/Gift of the Wild, all stats"],
     soe:       [true, 53, "F", "Strength of Earth Totem, Strength"],
     goa:       [true, 89, "F", "Grace of Air Totem, Agility"],
-    wfTotem:   [true, 246, "F", "Windfury Totem: 20% for 1 extra attack with +AP (2H and main hand)"],
+    wfTotem:   [true, 246, "F", "Windfury Totem: 20% for 1 extra attack with +AP on main-hand hits, specials included (all melee)"],
     lotp:      [true, 3, "F", "Leader of the Pack, % crit (all)"],
     moonkin:   [true, 3, "F", "Moonkin Aura, % crit (all, stacks with LotP)"],
     ai:        [true, 31, "F", "Arcane Brilliance, Intellect"],
@@ -118,6 +118,8 @@
     ms:        [160, "F", "Mortal Strike normalized weapon + 160, 6 s"],
     slam:      [87, "F", "Slam weapon + 87, 15 s cd"],
     hs:        [157, "F", "Heroic Strike +157"],
+    execute:   [[600, 15, 20], "F", "Execute 600 + 15 per extra rage; 20 extra rage per cast assumed (A)"],
+    execPhase: [20, "A", "Execute phase, % of the fight (boss below 20% health)"],
     ww:        [10, "C", "Whirlwind normalized weapon, 10 s (8 s with Improved Whirlwind)"],
     deathWish: [20, "F", "Death Wish +20% physical, 30 s / 3 min"],
     ss:        [68, "C", "Sinister Strike normalized + 68, 40 energy after Efficient Strikes"],
@@ -195,6 +197,12 @@
   function m(k) { return MODEL[k][0]; }
   function b(k) { return BUFFS[k][0] ? BUFFS[k][1] : 0; }
   function v(k) { return V[k][0]; }
+  // Execute phase: the last part of the fight swaps fillers for Execute on every free GCD (A).
+  function withExecute(normal, base, freeGcdShare, y) {
+    var e = v("execute"), f = v("execPhase") / 100;
+    var exec = (e[0] + e[1] * e[2]) * y.avg * freeGcdShare / 1.5;
+    return normal * (1 - f) + (base + exec) * f;
+  }
   function clamp(x, lo, hi) { return Math.max(lo, Math.min(hi, x)); }
 
   // Average uptime of a cooldown used on cooldown from the pull.
@@ -227,7 +235,7 @@
     else if (cls === "druid") ap = 180 + s.str * 2 - 20 + s.agi + 12 + 90; // cat form: + Agi + 12, Predatory Strikes 150% of level
     else ap = s.str * 2 - 20;
     ap += (g.ap || 0) + b("might");
-    if (cls === "warrior") ap += b("shout");
+    ap += b("shout"); // shouts are raid-wide in Forever (F)
     if (spec.id === "enh") ap += s.int * 1.5; // Mental Dexterity (F)
     s.ap = ap * s.powerMul;
     s.rap = (120 + s.agi * 2 - 20 + (g.rap || 0) + b("trueshot") + 120) * s.powerMul; // + Aspect of the Hawk (FE)
@@ -279,7 +287,8 @@
       var ww = (g.mh[0] + s.ap / 14 * 2.4) * y.avg / 8;
       var wf = b("wfTotem") ? mhSw * 0.2 * (g.mh[0] + (s.ap + b("wfTotem")) / 14 * g.mh[1]) * w.avg : 0;
       var dw = 1 + v("deathWish") / 100 * uptime(30, 180);
-      return (white + hs + bt + ww + wf) * dw * s.armorMul * s.directMul;
+      var whiteAll = mhSw * mhAvg * w.avg + ohSw * ohAvg * w.avg; // no Heroic Strike while executing
+      return withExecute(white + hs + bt + ww + wf, whiteAll + bt + wf, 0.75, y) * dw * s.armorMul * s.directMul; // Bloodthirst keeps 1 GCD in 4
     },
     arms: function (s) {
       var g = GEAR.melee2h, cm = m("meleeCritMul");
@@ -293,7 +302,8 @@
       var critsPerSec = sw * w.crit + (1 / 6 + 1 / 15 + 1 / 10) * y.crit;
       var deep = 0.6 * g.mh[0] / 12 * (1 - Math.exp(-critsPerSec * 12)); // Deep Wounds 60% avg weapon over 12 s (F)
       var dw = 1 + v("deathWish") / 100 * uptime(30, 180);
-      return ((white + hs + ms + slam + ww + wf) * s.armorMul + deep) * 1.06 * dw * s.directMul; // Two-Handed Spec +6% (F)
+      var phys = withExecute(white + hs + ms + slam + ww + wf, sw * avg * w.avg + ms + wf, 0.75, y); // Mortal Strike keeps 1 GCD in 4
+      return (phys * s.armorMul + deep) * 1.06 * dw * s.directMul; // Two-Handed Spec +6% (F)
     },
     combat: function (s) {
       var g = GEAR.rogue, cm = m("meleeCritMul");
@@ -302,13 +312,14 @@
       var mhAvg = g.mh[0] + s.ap / 14 * g.mh[1], ohAvg = (g.oh[0] + s.ap / 14 * g.oh[1]) * 0.5 * 1.5;
       var white = (haste / g.mh[1] * mhAvg + haste / g.oh[1] * ohAvg) * w.avg;
       var ssDmg = (g.mh[0] + s.ap / 14 * 2.4 + v("ss")) * 1.15 * y.avg;
-      var energy = 10 + 15 / 10; // regen + Shank refund approx (A)
+      var energy = 10 + (25 + 15 - 5) / (10 - 2); // regen + Shank r2 (+25, 5 cost, 10 s) with Flash of Steel 5/5 (+15, -2 s cd) (F)
       var cycleE = 5 * 40 + 20, cycleT = cycleE / energy; // 5 SS + Eviscerate
       var evis = v("evisc") * 1.15 * 1.2 * y.avg;
       var special = (5 * ssDmg + evis) / cycleT;
+      var wf = b("wfTotem") ? (haste / g.mh[1] + 5 / cycleT) * 0.2 * (g.mh[0] + (s.ap + b("wfTotem")) / 14 * g.mh[1]) * w.avg : 0; // procs from main-hand swings and Sinister Strike (F)
       var hits = (haste / g.mh[1] + haste / g.oh[1]) * (1 - m("meleeMiss") / 100);
       var pois = hits * 0.5 * v("instPois")[0] * v("instPois")[1] * spellHitOnly(s) + v("deadly")[0] / v("deadly")[1] * v("deadly")[2] * spellHitOnly(s);
-      return ((white + special) * s.armorMul + pois) * s.directMul;
+      return ((white + special + wf) * s.armorMul + pois) * s.directMul;
     },
     mm: function (s) {
       var g = GEAR.hunter, cm = m("meleeCritMul");
@@ -358,7 +369,8 @@
       var white = s.haste * avg * w.avg;
       var shred = (avg * v("shred")[0] + v("shred")[1]) * 1.1 * y.avg;
       var special = shred * 10 / 42; // energy-limited Shred spam, finishers folded in (A)
-      return (white + special) * s.armorMul * s.directMul;
+      var wf = b("wfTotem") ? (s.haste + 10 / 42) * 0.2 * (v("catWeapon") + (s.ap + b("wfTotem")) / 14) * w.avg : 0; // claws count as a main hand (A)
+      return (white + special + wf) * s.armorMul * s.directMul;
     },
     balance: function (s) {
       var sf = v("starfire"), crit = 2.0, mul = 1.1 * (1 + b("coe") / 100);

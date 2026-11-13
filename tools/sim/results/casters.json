@@ -5,26 +5,26 @@
   "race": "orc",
   "race_name": "Orc",
   "build": "2/31/18",
-  "dps_mean": 628.8,
-  "dps_sd": 21.5,
+  "dps_mean": 540.4,
+  "dps_sd": 20.4,
   "ci95": [
-   627.5,
-   630.1
+   539.2,
+   541.7
   ],
   "iterations": 1000,
   "fight_seconds": 180.0,
   "breakdown": {
    "Searing Pain": 172.9,
-   "Imp: Firebolt": 140.3,
    "Soul Fire": 73.2,
    "Immolate (DoT)": 56.8,
    "Demonic Brand": 56.6,
+   "Imp: Firebolt": 51.9,
    "Corruption": 48.9,
    "Immolate": 33.1,
    "Bane of Doom": 32.2,
    "Bane of Agony": 15.0
   },
-  "data_confidence": 0.618,
+  "data_confidence": 0.612,
   "casts_per_fight": {
    "Searing Pain": 57.48,
    "Life Tap": 13.37,
@@ -50,26 +50,26 @@
   "race": "gnome",
   "race_name": "Gnome",
   "build": "2/31/18",
-  "dps_mean": 617.8,
-  "dps_sd": 22.4,
+  "dps_mean": 533.9,
+  "dps_sd": 21.5,
   "ci95": [
-   616.4,
-   619.2
+   532.5,
+   535.2
   ],
   "iterations": 1000,
   "fight_seconds": 180.0,
   "breakdown": {
    "Searing Pain": 172.4,
-   "Imp: Firebolt": 133.2,
    "Soul Fire": 73.5,
    "Immolate (DoT)": 56.3,
    "Demonic Brand": 53.8,
+   "Imp: Firebolt": 49.3,
    "Corruption": 48.3,
    "Immolate": 33.1,
    "Bane of Doom": 32.4,
    "Bane of Agony": 14.8
   },
-  "data_confidence": 0.614,
+  "data_confidence": 0.608,
   "casts_per_fight": {
    "Searing Pain": 57.63,
    "Life Tap": 13.13,
@@ -95,26 +95,26 @@
   "race": "human",
   "race_name": "Human",
   "build": "2/31/18",
-  "dps_mean": 616.8,
-  "dps_sd": 21.8,
+  "dps_mean": 533.1,
+  "dps_sd": 21.1,
   "ci95": [
-   615.5,
-   618.2
+   531.8,
+   534.4
   ],
   "iterations": 1000,
   "fight_seconds": 180.0,
   "breakdown": {
    "Searing Pain": 173.6,
-   "Imp: Firebolt": 133.0,
    "Soul Fire": 72.3,
    "Immolate (DoT)": 56.7,
    "Demonic Brand": 53.6,
+   "Imp: Firebolt": 49.2,
    "Corruption": 48.6,
    "Immolate": 33.2,
    "Bane of Doom": 31.2,
    "Bane of Agony": 14.8
   },
-  "data_confidence": 0.61,
+  "data_confidence": 0.604,
   "casts_per_fight": {
    "Searing Pain": 57.73,
    "Life Tap": 13.07,
@@ -139,26 +139,26 @@
   "race": "troll",
   "race_name": "Troll",
   "build": "2/31/18",
-  "dps_mean": 616.6,
-  "dps_sd": 21.9,
+  "dps_mean": 532.8,
+  "dps_sd": 21.0,
   "ci95": [
-   615.2,
-   618.0
+   531.5,
+   534.1
   ],
   "iterations": 1000,
   "fight_seconds": 180.0,
   "breakdown": {
    "Searing Pain": 173.2,
-   "Imp: Firebolt": 133.0,
    "Soul Fire": 72.0,
    "Immolate (DoT)": 56.5,
    "Demonic Brand": 53.6,
    "Corruption": 49.2,
+   "Imp: Firebolt": 49.2,
    "Immolate": 32.8,
    "Bane of Doom": 31.5,
    "Bane of Agony": 14.8
   },
-  "data_confidence": 0.614,
+  "data_confidence": 0.608,
   "casts_per_fight": {
    "Searing Pain": 58.22,
    "Life Tap": 13.57,
@@ -184,26 +184,26 @@
   "race": "undead",
   "race_name": "Undead",
   "build": "2/31/18",
-  "dps_mean": 613.6,
-  "dps_sd": 21.4,
+  "dps_mean": 529.8,
+  "dps_sd": 20.6,
   "ci95": [
-   612.3,
-   614.9
+   528.5,
+   531.1
   ],
   "iterations": 1000,
   "fight_seconds": 180.0,
   "breakdown": {
    "Searing Pain": 171.6,
-   "Imp: Firebolt": 133.0,
    "Soul Fire": 71.7,
    "Immolate (DoT)": 56.4,
    "Demonic Brand": 53.5,
+   "Imp: Firebolt": 49.2,
    "Corruption": 48.4,
    "Immolate": 32.9,
    "Bane of Doom": 31.3,
    "Bane of Agony": 14.8
   },
-  "data_confidence": 0.602,
+  "data_confidence": 0.596,
   "casts_per_fight": {
    "Searing Pain": 57.41,
    "Life Tap": 13.42,

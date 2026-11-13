@@ -63,7 +63,7 @@ Mean over races, seed 1, 1000 × 180 s. Calculator values come from `dps-calc.js
 | Affliction | 434 | 407 | +7% | Soul Siphon, Wrack's DoT bonus and Nightfall are modelled tick by tick. |
 | Fire | 433 | 452 | −4% | The sim runs out of mana (1.4% left; Fireball is 410 mana). The calculator has no mana. |
 | Elemental | 411 | 450 | −9% | Out of mana again (2.8% left). The calculator assumes endless 2.5 s Lightning Bolts. |
-| Demonology | 619 | — | new | Not in the calculator. About 30% of it is the Imp and Demonic Brand, both built on assumed pet numbers (see gaps). |
+| Demonology | 534 | — | new | Not in the calculator. The Imp and Demonic Brand are calibrated to about 20% of it (see gaps). |
 
 Race ranking differs from the calculator for mana-bound specs (Fire, Arcane, Elemental). There, Gnome (+4 Int and Eureka!'s −10% cost) or Dwarf come out on top, and Troll's Berserking is worth less than its −4 Int because extra haste only empties the mana bar sooner.
 
@@ -71,7 +71,7 @@ Race ranking differs from the calculator for mana-bound specs (Fire, Arcane, Ele
 
 - **Coefficients.** Forever coefficients are unknown, except Shadow Bolt 0.857 (Wowhead Forever). Every other coefficient is Classic (C/CU) or a cast-time rule (A) for new spells: Arcane Blast, Arcane Wrath, Ice Lance, Incinerate, Shadow Word: Death. Forever base damage is much lower than Classic, so the coefficients may have been raised. If so, every spec here is under-valued, the high-spell-power specs most.
 - **Gear.** Int 260, SP 380, 6% hit, 4% crit and Spirit 120 are all assumptions (A), shared with the calculator. No mp5. No set bonuses, trinkets or on-use items.
-- **Demons.** Imp Firebolt damage, cast time and how much of your spell power it gets (15% assumed) are not published. WT-DEMO says demons do about 1/5 of a Warlock's damage; here it is ~30%, so Demonology is likely overstated. Affliction and Destruction run with no demon damage.
+- **Demons.** Imp Firebolt damage, cast time and how much of your spell power it gets (15% assumed) are not published. Uncalibrated, the Imp and Demonic Brand came to ~30% of Demonology. `imp_firebolt.calibration` (0.37, tag A) scales Firebolt so the two make up ~20%, matching WT-DEMO's "demons do about 1/5 of a Warlock's damage". Affliction and Destruction run with no demon damage.
 - **Conflicts resolved one way.**
   - Wrack is a 6 s channel with "+10% to your other Shadow DoTs" (tooltip). WT-AFF says it makes ticks go at double speed instead.
   - Arcane Blast gives 12% of Int per stack and applies to all spells.

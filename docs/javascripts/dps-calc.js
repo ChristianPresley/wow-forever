@@ -9,6 +9,7 @@
    Research notes live in .research/dps/*.md. */
 (function () {
   "use strict";
+  var SCRIPT_SRC = document.currentScript ? document.currentScript.src : "";
 
   // ---------- Inputs ----------
   // Global combat model. Every row: [value, tag, note]
@@ -563,9 +564,66 @@
     draw();
   }
 
+  // ---------- Simulated results (tools/sim, published by tools/sim/publish.py) ----------
+  var simCache = null;
+  function renderSim(box) {
+    var url = new URL("../assets/data/sim-results.json", SCRIPT_SRC || location.href).href;
+    var load = simCache ? Promise.resolve(simCache) : fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+    load.then(function (rows) {
+      simCache = rows;
+      var state = { cls: "all", faction: "all", best: false };
+      var filters = el("div", { "class": "dps-filters" }), out = el("div");
+      function draw() {
+        var list = rows.filter(function (x) {
+          var f = RACES[x.race] ? RACES[x.race].faction : "";
+          return (state.cls === "all" || x.class === state.cls) && (state.faction === "all" || f === state.faction);
+        });
+        var best = {};
+        rows.forEach(function (x) { var k = x.class + x.spec; best[k] = Math.max(best[k] || 0, x.dps_mean); });
+        if (state.best) { var seen = {}; list = list.filter(function (x) { var k = x.class + x.spec; if (seen[k]) return false; seen[k] = 1; return true; }); }
+        var top = list.length ? list[0].dps_mean : 1, tbody = el("tbody");
+        list.forEach(function (x, i) {
+          var vs = x.dps_mean / best[x.class + x.spec] - 1, half = (x.ci95[1] - x.ci95[0]) / 2;
+          var parts = Object.keys(x.breakdown).map(function (k) { return [k, x.breakdown[k]]; }).sort(function (a, c) { return c[1] - a[1]; });
+          var det = el("details", { "class": "dps-breakdown" }, [el("summary", { text: x.spec })].concat([el("ul", {}, parts.map(function (p) {
+            return el("li", { text: p[0] + ": " + Math.round(p[1]) + " DPS (" + Math.round(p[1] / x.dps_mean * 100) + "%)" });
+          }))]));
+          tbody.appendChild(el("tr", {}, [
+            el("td", { text: String(i + 1) }),
+            el("td", {}, [el("span", { "class": "pill pill--" + x.class, text: CLSNAME[x.class] || x.class })]),
+            el("td", {}, [det]),
+            el("td", { text: x.race_name || (RACES[x.race] && RACES[x.race].name) || x.race }),
+            el("td", { "class": "dps-num" }, [el("span", { "class": "dps-bar", style: "--v:" + (x.dps_mean / top * 100).toFixed(1) + "%" }), el("strong", { text: Math.round(x.dps_mean).toLocaleString() }), el("small", { text: " ±" + half.toFixed(1) })]),
+            el("td", { "class": "dps-num", text: Math.abs(vs) < 1e-9 ? "best" : (Math.abs(vs) < 0.0005 ? "tied" : (vs * 100).toFixed(1) + "%") }),
+            el("td", { "class": "dps-num", text: Math.round(x.data_confidence * 100) + "%" })
+          ]));
+        });
+        out.replaceChildren(el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table" }, [
+          el("thead", {}, [el("tr", {}, ["#", "Class", "Spec (open for breakdown)", "Race", "Simulated DPS", "vs best race", "Data confidence"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), tbody])]));
+      }
+      function select(label, key, opts) {
+        var s = el("select", { "aria-label": label });
+        opts.forEach(function (o) { s.appendChild(el("option", { value: o[0], text: o[1] })); });
+        s.addEventListener("change", function () { state[key] = s.value; draw(); });
+        return el("label", {}, [el("span", { text: label }), s]);
+      }
+      var cb = el("input", { type: "checkbox" });
+      cb.addEventListener("change", function () { state.best = cb.checked; draw(); });
+      filters.replaceChildren(
+        select("Class", "cls", [["all", "All classes"]].concat(Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; }))),
+        select("Faction", "faction", [["all", "Both"], ["A", "Alliance"], ["H", "Horde"]]),
+        el("label", { "class": "dps-check" }, [cb, el("span", { text: "Best race per spec only" })]));
+      var r0 = rows[0] || {};
+      box.replaceChildren(el("p", { "class": "dps-meta", text: rows.length + " spec and race pairs, " + (r0.iterations || "?") + " simulated fights of " + (r0.fight_seconds || "?") + " s each. ± is the 95% confidence interval." }), filters, out);
+      draw();
+    }).catch(function () { box.replaceChildren(el("p", { text: "The simulation results could not be loaded." })); });
+  }
+
   function onPage() {
     var root = document.getElementById("dps-calc");
     if (root && !root.dataset.ready) { root.dataset.ready = "1"; render(root); }
+    var sim = document.querySelector("[data-dps-sim]");
+    if (sim && !sim.dataset.ready) { sim.dataset.ready = "1"; renderSim(sim); }
   }
   window.ForeverDps = { results: results, MODEL: MODEL, BUFFS: BUFFS, V: V, GEAR: GEAR };
   if (window.document$ && typeof window.document$.subscribe === "function") window.document$.subscribe(onPage);

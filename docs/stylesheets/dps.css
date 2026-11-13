@@ -19,3 +19,10 @@
 .md-typeset .dps-gear label { display: grid; font-size: var(--fc-fs-xs); }
 .md-typeset .dps-gear input[type="number"] { width: 4.5rem; }
 @media (max-width: 40em) { .md-typeset .dps-bar { display: none; } }
+.md-typeset .dps-breakdown summary { cursor: pointer; }
+.md-typeset .dps-breakdown ul { margin: var(--fc-space-1) 0 0; font-size: var(--fc-fs-xs); }
+.md-typeset .dps-meta { font-size: var(--fc-fs-sm); color: var(--fc-text-muted); }
+.md-typeset details.dps-breakdown { margin: 0; padding: 0; border: 0; box-shadow: none; background: none; font-size: inherit; }
+.md-typeset details.dps-breakdown > summary { padding: 0; margin: 0; background: none; border: 0; font-weight: 400; text-decoration: underline dotted; }
+.md-typeset details.dps-breakdown > summary::before, .md-typeset details.dps-breakdown > summary::after { display: none; }
+.md-typeset details.dps-breakdown > ul { padding-left: 1.2em; }

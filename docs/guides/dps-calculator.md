@@ -5,13 +5,23 @@ description: Estimated raid DPS for every race and DPS spec in WoW Forever, with
 
 # DPS calculator
 
-This page ranks every race and DPS spec pair by **estimated** single-target raid DPS against a level 63 boss. It uses pre-raid gear, because no raid opens until 9 December 2026.
+This page ranks every race and DPS spec pair by single-target raid DPS against a level 63 boss, with pre-raid gear. No raid opens until 9 December 2026, so no one has published real raid logs yet.
 
-!!! warning "An estimate, not a simulation"
-    No one has published raid logs for Forever yet. Many Forever values are still unknown: most Rogue, Hunter, Paladin, Druid and Shaman ability ranks, pet and demon damage, rating conversions and the armor formula. The calculator fills each gap with a Classic value or an assumption and shows its source next to it.
+!!! warning "Built on incomplete data"
+    Many Forever values are still unknown: most Rogue, Hunter, Paladin, Druid and Shaman ability ranks, most spell coefficients, pet and demon damage, rating conversions and the armor formula. Each gap is filled with a Classic value or a tagged assumption. The **Data confidence** column shows how much of each spec's input is Forever data.
 
-    - **Race results within one spec are reliable.** Every racial value comes from Wowhead Forever, and all races of a class use the same gear.
-    - **Spec-against-spec rankings are rough.** They depend on the assumed gear and the Classic fallbacks. The **Data confidence** column shows how much of each spec's input is Forever data.
+    - **Race results within one spec are reliable** where the gap is larger than the ± margin. Every racial value comes from Wowhead Forever, and all races of a class use the same gear.
+    - **Spec-against-spec rankings are rough.** They depend on assumed gear and the Classic fallbacks.
+
+## Simulated results
+
+These come from two event-driven combat simulators in the repository (`tools/sim/physical` and `tools/sim/casters`). They play out each fight with swing timers, cast times, the attack table, resources, procs and cooldowns, using a priority list for each spec. Their READMEs list every assumption and gap.
+
+<div class="dps-calc" data-dps-sim><p>Loading the simulation results. They need JavaScript.</p></div>
+
+## Quick estimate (editable)
+
+This is a faster, simpler formula model. It doesn't simulate fights, but you can change every input below and see the effect at once.
 
 <div id="dps-calc" class="dps-calc" markdown>
 

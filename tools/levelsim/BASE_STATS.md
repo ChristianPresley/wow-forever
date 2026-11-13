@@ -22,3 +22,7 @@ Race offsets come from Warrior at level 1, which every race can play.
 - Skyborne Agi/Sta/Int/Spi are assumed equal to Night Elf.
 
 Test: `python -m pytest tools/levelsim/test_base_stats.py` (run from `tools/levelsim`, or with it on `sys.path`).
+
+## Rebuilding
+Download `ClassicDB_1_12_1_z2815.sql.gz` from cmangos classic-db (`Full_DB/`), then run
+`python build_base_stats.py ClassicDB_1_12_1_z2815.sql.gz`. It rewrites `base_stats.json`, including the Undead Mage fix.

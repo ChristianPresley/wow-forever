@@ -31,7 +31,7 @@
   // Raid buffs and debuffs (on/off + value).
   var BUFFS = {
     might:     [true, 133, "F", "Blessing of Might, melee AP"],
-    shout:     [true, 139, "FE", "Battle Shout, melee AP"],
+    shout:     [true, 139, "FE", "Battle Shout, melee AP (raid-wide)"],
     kings:     [true, 10, "F", "Blessing of Kings, % all stats"],
     motw:      [true, 16, "F", "Mark/Gift of the Wild, all stats"],
     soe:       [true, 53, "F", "Strength of Earth Totem, Strength"],
@@ -226,7 +226,7 @@
     else if (cls === "druid") ap = 180 + s.str * 2 - 20 + s.agi + 12 + 90; // cat form: + Agi + 12, Predatory Strikes 150% of level
     else ap = s.str * 2 - 20;
     ap += (g.ap || 0) + b("might");
-    if (cls === "warrior") ap += b("shout");
+    ap += b("shout"); // shouts are raid-wide in Forever (F)
     if (spec.id === "enh") ap += s.int * 1.5; // Mental Dexterity (F)
     s.ap = ap * s.powerMul;
     s.rap = (120 + s.agi * 2 - 20 + (g.rap || 0) + b("trueshot") + 120) * s.powerMul; // + Aspect of the Hawk (FE)
@@ -301,7 +301,7 @@
       var mhAvg = g.mh[0] + s.ap / 14 * g.mh[1], ohAvg = (g.oh[0] + s.ap / 14 * g.oh[1]) * 0.5 * 1.5;
       var white = (haste / g.mh[1] * mhAvg + haste / g.oh[1] * ohAvg) * w.avg;
       var ssDmg = (g.mh[0] + s.ap / 14 * 2.4 + v("ss")) * 1.15 * y.avg;
-      var energy = 10 + 15 / 10; // regen + Shank refund approx (A)
+      var energy = 10 + (25 + 15 - 5) / (10 - 2); // regen + Shank r2 (+25, 5 cost, 10 s) with Flash of Steel 5/5 (+15, -2 s cd) (F)
       var cycleE = 5 * 40 + 20, cycleT = cycleE / energy; // 5 SS + Eviscerate
       var evis = v("evisc") * 1.15 * 1.2 * y.avg;
       var special = (5 * ssDmg + evis) / cycleT;

@@ -11,8 +11,10 @@ from it and tagged F.
 Server-side rules not in the client (tag in brackets):
 - Penance: 3 bolts over a 2 s channel (at 0, 1 and 2 s), 12 s cooldown from
   the client [CU for bolt count and timing].
-- Shadow Word: Death: client damage is `damagepower * 346%`. damagepower uses the
-  Season of Discovery level formula 9.456667 + 0.635108*L + 0.039995*L^2 [CU].
+- Shadow Word: Death: damage is Metabot's 434-462 at level 56 [F, MB]. The client
+  value is `damagepower * 346%`, a level-scaled base, so other levels scale that
+  range by the Season of Discovery damagepower curve
+  9.456667 + 0.635108*L + 0.039995*L^2 relative to level 56 [CU].
   Learned at level 32 by every Priest (wiki guide). Backlash is ignored: it hurts
   only the Priest.
 - Devouring Plague is baseline at level 20 (wiki guide).
@@ -105,6 +107,9 @@ def talents_at(spec, level):
     return out
 
 
+SWD_MB = (434, 462, 56)   # Metabot min, max, level [F]
+
+
 def damagepower(level):
     """Season of Discovery level-scaled base value (CU)."""
     return 9.456667 + 0.635108 * level + 0.039995 * level * level
@@ -142,13 +147,12 @@ class PriestSim(CasterSim):
             raw = _client("Shadow Word: Death")[0]
             s = Spell(raw, level, bm)
             e = s.direct
-            dp = damagepower(level)
-            var = next(x["Variance"] for x in raw["effects"] if x["Effect"] == core.SCHOOL_DAMAGE)
-            avg = dp * next(x["EffectBasePointsF"] for x in raw["effects"] if x["Effect"] == core.SCHOOL_DAMAGE) / 100
-            s.direct = (avg * (1 - var / 2), avg * (1 + var / 2), e[2])
+            f = damagepower(level) / damagepower(SWD_MB[2])
+            s.direct = (SWD_MB[0] * f, SWD_MB[1] * f, e[2])
             S["Shadow Word: Death"] = s
             inputs["spell:Shadow Word: Death"] = "F"
-            inputs["swd_damagepower"] = "CU"
+            inputs["swd_damage_metabot"] = "F"
+            inputs["swd_level_scaling"] = "CU"
         if talents.get("Penance"):
             cast, bolt = self._penance(level)
             if cast:

@@ -49,6 +49,9 @@ ASSUMPTIONS = {
 
 # Gear mode: "none" (naked) or "crafted" (best craftable gear, gear.py). Set by run.py.
 GEAR = {"mode": "none", "spec": None}
+# Cast tracing for the spec detail export (spec_export.py): the first fight's cast
+# sequence and average casts per minute are added to run_many output when on.
+TRACE = {"on": False, "max_events": 60}
 
 
 def A(key):
@@ -298,6 +301,7 @@ class Sim:
         self.n = 0
         self.damage = {}
         self.casts = {}
+        self.trace = None  # list of (time, ability) when tracing (see TRACE)
 
     def at(self, t, fn, *args):
         self.n += 1
@@ -309,6 +313,8 @@ class Sim:
 
     def cast(self, name):
         self.casts[name] = self.casts.get(name, 0) + 1
+        if self.trace is not None and len(self.trace) < TRACE["max_events"]:
+            self.trace.append((round(self.t, 2), name))
 
     def run(self):
         while self.q:
@@ -322,19 +328,27 @@ class Sim:
 
 def run_many(build_fn, iterations=200, seed=1, fight=None):
     """build_fn(sim) sets up one fight. Returns mean, sd, ci95 and breakdown."""
-    vals, breakdown = [], {}
+    vals, breakdown, casts, timeline = [], {}, {}, None
     for i in range(iterations):
         sim = Sim(seed + i, fight)
+        if TRACE["on"] and i == 0:
+            sim.trace = []
         build_fn(sim)
         vals.append(sim.run())
         for k, v in sim.damage.items():
             breakdown[k] = breakdown.get(k, 0.0) + v / sim.end
+        for k, v in sim.casts.items():
+            casts[k] = casts.get(k, 0) + v * 60 / sim.end
+        if sim.trace is not None:
+            timeline = sim.trace
     n = len(vals)
     mean = sum(vals) / n
     sd = math.sqrt(sum((v - mean) ** 2 for v in vals) / max(1, n - 1))
     half = 1.96 * sd / math.sqrt(n)
     return {"dps_mean": round(mean, 2), "dps_sd": round(sd, 2), "ci95": [round(mean - half, 2), round(mean + half, 2)],
-            "iterations": n, "breakdown": {k: round(v / n, 2) for k, v in sorted(breakdown.items(), key=lambda kv: -kv[1])}}
+            "iterations": n, "breakdown": {k: round(v / n, 2) for k, v in sorted(breakdown.items(), key=lambda kv: -kv[1])},
+            **({"casts_per_min": {k: round(v / n, 2) for k, v in sorted(casts.items(), key=lambda kv: -kv[1])},
+                "timeline": timeline} if TRACE["on"] else {})}
 
 
 # ---------- Racials (Forever client / Wowhead Forever values) ----------

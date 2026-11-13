@@ -632,6 +632,65 @@
   }
 
   // ---------- Level-by-level simulation (tools/levelsim, published by tools/levelsim/publish.py) ----------
+  // ---------- Build panel: full character for one row (tools/levelsim/spec_export.py) ----------
+  var specCache = {};
+  var SLOT_ORDER = ["head", "neck", "shoulder", "back", "chest", "wrist", "hands", "waist", "legs", "feet", "trinket1", "trinket2", "main_hand", "off_hand", "ranged"];
+  var SLOT_NAME = { head: "Head", neck: "Neck", shoulder: "Shoulder", back: "Back", chest: "Chest", wrist: "Wrist", hands: "Hands", waist: "Waist", legs: "Legs", feet: "Feet", trinket1: "Trinket", trinket2: "Trinket", main_hand: "Main hand", off_hand: "Off hand", ranged: "Ranged" };
+  var STAT_NAME = { str: "Strength", agi: "Agility", sta: "Stamina", int: "Intellect", spi: "Spirit", ap: "Attack power", rap: "Ranged attack power", sp_total: "Spell damage", hit: "Hit rating", crit: "Crit rating", mp5: "Mana per 5 s", defense: "Defense", dodge: "Dodge rating", parry: "Parry rating", block: "Block rating", healing: "Healing" };
+  function specFile(x, gear) {
+    var key = x.class + "-" + x.spec + "-" + gear;
+    if (!specCache[key]) {
+      var url = new URL("../assets/data/specs/" + key + ".json", SCRIPT_SRC || location.href).href;
+      specCache[key] = fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+    }
+    return specCache[key];
+  }
+  function section(title, kids) { return el("section", { "class": "dps-spec-sec" }, [el("h4", { text: title })].concat(kids)); }
+  function specPanel(x, level, gear) {
+    var box = el("div", { "class": "dps-spec" }, [el("p", { text: "Loading the build…" })]);
+    specFile(x, gear).then(function (doc) {
+      var L = doc.levels[String(level)], R = L && L.races[x.race];
+      if (!R) { box.replaceChildren(el("p", { text: "No build data for this level." })); return; }
+      var N = doc.names, raceName = (RACES[x.race] && RACES[x.race].name) || x.race;
+      var kids = [el("p", { "class": "dps-spec-head" }, [
+        el("strong", { text: "Level " + level + " " + raceName + " " + (CLSNAME[x.class] || x.class) + ", " + doc.spec_name }),
+        el("span", { text: " · " + (gear === "crafted" ? "best craftable gear" : "no gear") + " · " + R.dps.toFixed(1) + " DPS in this run (" + doc.iterations + " fights of " + doc.fight_seconds + " s)" })])];
+      // Talents
+      var trees = Object.keys(L.talents).sort(function (p, q) { return L.points[q] - L.points[p]; });
+      var pts = trees.map(function (t) { return L.points[t]; });
+      kids.push(section("Talents" + (trees.length ? " (" + pts.join("/") + ")" : ""), trees.length ? [el("div", { "class": "dps-spec-trees" }, trees.map(function (t) {
+        return el("div", {}, [el("h5", { text: t + " · " + L.points[t] }), el("ul", {}, Object.keys(L.talents[t]).map(function (n) { return el("li", { text: n + " " + L.talents[t][n] }); }))]);
+      }))] : [el("p", { text: "No talent points before level 10." })]));
+      // Gear
+      if (L.gear) {
+        var rowsG = SLOT_ORDER.filter(function (s) { return L.gear.items[s]; }).map(function (s) {
+          var it = L.gear.items[s], ench = L.gear.enchants.filter(function (e) { return e.slot === s; }).map(function (e) { return e.name.indexOf("$") < 0 ? e.name : e.name.replace(/\+?\$k\d+\s*/, "") + " (amount not in client text)"; }).join(", ");
+          return el("tr", {}, [el("td", { text: SLOT_NAME[s] || s }), el("td", { text: it.name }), el("td", { "class": "dps-num", text: String(it.ilvl) }), el("td", { text: ench })]);
+        });
+        var st = L.gear.stats, statTxt = Object.keys(STAT_NAME).filter(function (k) { return st[k]; }).map(function (k) { return STAT_NAME[k] + " " + st[k]; });
+        Object.keys(st).filter(function (k) { return k.indexOf("sp_") === 0 && k !== "sp_total"; }).forEach(function (k) { statTxt.push(k.slice(3) + " spell damage " + st[k]); });
+        kids.push(section("Gear", [el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-inputs" }, [
+          el("thead", {}, [el("tr", {}, ["Slot", "Item", "Item level", "Enchant"].map(function (h) { return el("th", { scope: "col", text: h }); }))]),
+          el("tbody", {}, rowsG)])]), el("p", { "class": "dps-meta", text: "Gear totals: " + statTxt.join(", ") + ". Empty slots have no craftable item." })]));
+      } else {
+        kids.push(section("Gear", [el("p", { text: "None: fights unarmed and unarmored." })]));
+      }
+      // Opening sequence
+      var tl = R.tl, seq = [];
+      for (var i = 0; i < tl.length; i += 2) seq.push(el("li", {}, [el("span", { "class": "dps-spec-t", text: (tl[i] / 10).toFixed(1) + " s" }), document.createTextNode(" " + N[tl[i + 1]])]));
+      kids.push(section("Opening sequence", seq.length ? [el("ol", { "class": "dps-spec-seq" }, seq), el("p", { "class": "dps-meta", text: "The first " + seq.length + " abilities used in one simulated fight. White swings and automatic attacks are not listed." })] : [el("p", { text: "Auto-attacks only." })]));
+      // Ability use and damage
+      var cpm = Object.keys(R.cpm).map(function (k) { return [N[k], R.cpm[k]]; }).sort(function (a, b) { return b[1] - a[1]; });
+      var dmg = Object.keys(R.dmg).map(function (k) { return [N[k], R.dmg[k]]; }).sort(function (a, b) { return b[1] - a[1]; });
+      var tot = dmg.reduce(function (s, p) { return s + p[1]; }, 0) || 1;
+      kids.push(el("div", { "class": "dps-spec-trees" }, [
+        section("Casts per minute", [el("ul", {}, cpm.map(function (p) { return el("li", { text: p[0] + ": " + p[1] }); }))]),
+        section("Damage by source", [el("ul", {}, dmg.map(function (p) { return el("li", { text: p[0] + ": " + p[1].toFixed(1) + " DPS (" + Math.round(p[1] / tot * 100) + "%)" }); }))])]));
+      box.replaceChildren.apply(box, kids);
+    }).catch(function () { box.replaceChildren(el("p", { text: "The build details could not be loaded." })); });
+    return box;
+  }
+
   function renderLevels(box) {
     var url = new URL("../assets/data/level-sim.json", SCRIPT_SRC || location.href).href;
     fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (data) {
@@ -649,22 +708,28 @@
         var top = list.length ? list[0].dps[li] : 1, tbody = el("tbody");
         list.forEach(function (x, i) {
           var d = x.dps[li], vs = d / best[x.class + x.spec] - 1;
-          var parts = Object.keys(x.breakdown).map(function (k) { return [k, x.breakdown[k]]; }).sort(function (a, c) { return c[1] - a[1]; });
-          var tot = parts.reduce(function (s, p) { return s + p[1]; }, 0) || 1;
-          var det = el("details", { "class": "dps-breakdown" }, [el("summary", { text: x.spec_name })].concat([el("ul", {}, parts.map(function (p) {
-            return el("li", { text: p[0] + ": " + Math.round(p[1] / tot * 100) + "% at level " + levels[levels.length - 1] });
-          }))]));
-          tbody.appendChild(el("tr", {}, [
+          var btn = el("button", { type: "button", "class": "dps-spec-btn", "aria-expanded": "false", text: x.spec_name });
+          var tr = el("tr", { "class": "dps-spec-row" });
+          var detail = null;
+          function toggle() {
+            if (detail) { detail.remove(); detail = null; btn.setAttribute("aria-expanded", "false"); tr.classList.remove("is-open"); return; }
+            detail = el("tr", { "class": "dps-spec-detail" }, [el("td", { colspan: "6" }, [specPanel(x, state.level, x.gear || "none")])]);
+            tr.after(detail); btn.setAttribute("aria-expanded", "true"); tr.classList.add("is-open");
+          }
+          btn.addEventListener("click", function (ev) { ev.stopPropagation(); toggle(); });
+          tr.addEventListener("click", toggle);
+          tbody.appendChild(tr);
+          [
             el("td", { text: String(i + 1) }),
             el("td", {}, [el("span", { "class": "pill pill--" + x.class, text: CLSNAME[x.class] || x.class })]),
-            el("td", {}, [det]),
+            el("td", {}, [btn]),
             el("td", { text: (RACES[x.race] && RACES[x.race].name) || x.race }),
             el("td", { "class": "dps-num" }, [el("span", { "class": "dps-bar", style: "--v:" + (d / top * 100).toFixed(1) + "%" }), el("strong", { text: d.toFixed(1) }), el("small", { text: " ±" + (x.ci[li] || 0).toFixed(1) })]),
             el("td", { "class": "dps-num", text: Math.abs(vs) < 1e-9 ? "best" : (Math.abs(vs) < 0.0005 ? "tied" : (vs * 100).toFixed(1) + "%") })
-          ]));
+          ].forEach(function (td) { tr.appendChild(td); });
         });
         out.replaceChildren(el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table" }, [
-          el("thead", {}, [el("tr", {}, ["#", "Class", "Spec (open for ability share)", "Race", "Simulated DPS", "vs best race"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), tbody])]));
+          el("thead", {}, [el("tr", {}, ["#", "Class", "Spec (click for the full build)", "Race", "Simulated DPS", "vs best race"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), tbody])]));
       }
       var cls = el("select", { "aria-label": "Class" });
       [["all", "All classes"]].concat(Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; })).forEach(function (o) { cls.appendChild(el("option", { value: o[0], text: o[1] })); });

@@ -26,3 +26,21 @@
 .md-typeset details.dps-breakdown > summary { padding: 0; margin: 0; background: none; border: 0; font-weight: 400; text-decoration: underline dotted; }
 .md-typeset details.dps-breakdown > summary::before, .md-typeset details.dps-breakdown > summary::after { display: none; }
 .md-typeset details.dps-breakdown > ul { padding-left: 1.2em; }
+
+/* Build panel (click a row in DPS by level) */
+.dps-spec-row { cursor: pointer; }
+.dps-spec-row:hover td, .dps-spec-row.is-open td { background: var(--md-accent-fg-color--transparent); }
+.dps-spec-btn { font: inherit; color: var(--md-typeset-a-color); background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+.dps-spec-btn::after { content: " ▸"; }
+.dps-spec-btn[aria-expanded="true"]::after { content: " ▾"; }
+.dps-spec-detail > td { padding: 0 !important; background: var(--md-code-bg-color); }
+.dps-spec { padding: .8rem 1rem; }
+.dps-spec-head { margin: 0 0 .6rem; }
+.dps-spec-sec { margin: .6rem 0; }
+.dps-spec-sec h4 { margin: 0 0 .3rem; font-size: .8rem; }
+.dps-spec-sec h5 { margin: 0 0 .2rem; font-size: .72rem; }
+.dps-spec ul, .dps-spec ol { margin: 0 0 0 1.1rem; padding: 0; font-size: .72rem; }
+.dps-spec li { margin: 0; }
+.dps-spec-trees { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: .6rem 1.2rem; }
+.dps-spec-seq { columns: 3 12rem; }
+.dps-spec-t { display: inline-block; min-width: 3.2rem; color: var(--md-default-fg-color--light); font-variant-numeric: tabular-nums; }

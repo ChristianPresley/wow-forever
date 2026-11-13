@@ -26,6 +26,8 @@ Pick the gear:
 - **Best craftable gear:** each slot holds the crafted item and enchant that scores best for the spec at that level. Item stats are decoded from the Forever client. Crafting makes almost no rings, necks or trinkets, so those slots are mostly empty. Weapon procs and set bonuses are not counted.
 - **No gear:** the character fights unarmed and unarmored. Hunters have no ranged weapon, so they lose their shots.
 
+**Click any row** to open its full build at that level: race, class and spec, talents by tree, every gear slot with its enchant, the opening sequence of abilities from a simulated fight, casts per minute and damage by source.
+
 Spell values come from the Forever client data. Rules the client doesn't ship (combat formulas, rage, most talent ranks above 1, scripted effects, hit and crit rating conversion) use Classic rules or tagged assumptions; the module docstrings list them. It is not raid DPS: raid buffs, consumables and boss armor are left out.
 
 <div class="dps-calc" data-dps-levels><p>Loading the level simulation. It needs JavaScript.</p></div>

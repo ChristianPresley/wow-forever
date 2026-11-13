@@ -17,7 +17,15 @@ This page **estimates** single-target raid DPS for every race and DPS spec pair 
 
     **What is more trustworthy:** comparing races within one spec, when the gap is larger than the ± margin. Every racial value comes from Wowhead Forever, and all races of a class use the same gear. Gaps under about 1% are effectively ties.
 
-## Simulated estimates
+## Base DPS by level (no gear)
+
+This simulator (`tools/levelsim`) plays out every class, talent tree and race at every level from 1 to 60. The character wears no gear and fights a same-level target with no armor. It knows every spell rank and talent point it can have at that level, and uses its racial abilities. Spell values come from the Forever client data. Server-side rules the client doesn't ship (combat formulas, rage, most talent ranks above 1, scripted effects) use Classic rules or tagged assumptions; the module docstrings list them.
+
+Use this to compare classes and races on equal footing. It is not raid DPS: gear, buffs and boss armor are left out on purpose.
+
+<div class="dps-calc" data-dps-levels><p>Loading the level simulation. It needs JavaScript.</p></div>
+
+## Simulated raid estimates
 
 These estimates come from two event-driven combat simulators in the repository (`tools/sim/physical` and `tools/sim/casters`). They play out each fight with swing timers, cast times, the attack table, resources, procs and cooldowns, using a priority list for each spec. Their READMEs list every assumption and gap.
 

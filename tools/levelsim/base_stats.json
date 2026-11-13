@@ -11,7 +11,7 @@
   "A_new_pairs": "New Forever pairs built as Classic class curve (from the first Classic race of that class) minus that race's level-1 offset vs Human Warrior plus the target race's offset: warrior/sho, warrior/sws, paladin/undead, hunter/human, hunter/sho, hunter/sws, rogue/sho, rogue/sws, priest/gnome, shaman/dwarf, shaman/sws, mage/sho, mage/orc, warlock/troll, druid/sho, druid/sws",
   "A_skyborne": "sho/sws: Night Elf offsets vs Human, but Str set to Human+5 (published Forever fix: Tauren Warrior +5 Str vs Human, same fix for both Skyborne). No published Skyborne table.",
   "A_tauren": "Classic Tauren Warrior is already +5 Str vs Human at level 1, so the Tauren fix needs no change.",
-  "A_fix": "mage/undead level 1 int: cmangos has 27 (higher than level 2, a data error); set to Human Mage int - 2 (the Undead offset)."
+  "A_fix": "mage/undead level 1: cmangos has int 27 / spi 21, which looks swapped (Undead is Int -2, Spi +5 vs Human). Swapped to int 21 / spi 27."
  },
  "warrior": {
   "human": {
@@ -19444,7 +19444,7 @@
     "agi": 18,
     "sta": 21,
     "int": 21,
-    "spi": 21
+    "spi": 27
    },
    "2": {
     "str": 19,

@@ -12,7 +12,7 @@ Tags: **F** Forever client, **C** Classic 1.12 server data, **A** assumption.
 | Classic class/race pairs | C | `player_levelstats` from [cmangos classic-db](https://github.com/cmangos/classic-db) (`ClassicDB_1_12_1_z2815`, GPL-2.0). Only the numbers are stored. |
 | New Forever pairs (Undead Paladin, Dwarf Shaman, Gnome Priest, Human Hunter, Orc Mage, Troll Warlock) | A | The class's Classic curve for one race, minus that race's level-1 offset from Human, plus the target race's offset. In Classic, base stats are a race base plus a class curve, so this holds when Forever keeps that model. |
 | Skyborne (`sho`, `sws`), all classes | A | Night Elf offsets from Human, with Str set to Human +5. This follows the published Forever fix: Tauren Warrior is +5 Str vs Human, and the same fix applies to both Skyborne. There is no published Skyborne table. |
-| Undead Mage level 1 Int | A | cmangos lists 27, higher than level 2 (22). Set to Human Mage minus 2 (the Undead offset). |
+| Undead Mage level 1 Int/Spi | A | cmangos lists Int 27 / Spi 21, which looks swapped (Undead is Int -2, Spi +5 vs Human). Stored as Int 21 / Spi 27. |
 | Tauren fix | C | Classic Tauren Warrior is already +5 Str vs Human, so no change was needed. |
 
 Race offsets come from Warrior at level 1, which every race can play.

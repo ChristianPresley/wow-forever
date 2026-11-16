@@ -112,3 +112,21 @@
 .md-typeset .heal-hero-cols h4 { margin: 0 0 var(--fc-space-2); font-size: var(--fc-fs-xs); letter-spacing: .06em; text-transform: uppercase; color: var(--fc-text-muted); }
 .md-typeset .heal-hero-cols ol { margin: 0 0 0 1.1rem; padding: 0; font-size: var(--fc-fs-sm); }
 .md-typeset .heal-hero-cols li { margin: 0 0 .15rem; }
+
+/* Shared calculator tables (javascripts/calc-table.js): sortable headers, sticky header row, column guide */
+.md-typeset .calc-sort { font: inherit; font-weight: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: inherit; }
+.md-typeset .calc-sort::after { content: " \2195"; opacity: .45; }
+.md-typeset th[aria-sort="descending"] .calc-sort::after { content: " \25BE"; opacity: 1; }
+.md-typeset th[aria-sort="ascending"] .calc-sort::after, .md-typeset .heal-sort.is-asc::after { content: " \25B4"; opacity: 1; }
+.md-typeset .calc-sort.is-active { color: var(--fc-gold-text); }
+.md-typeset .calc-sort:focus-visible, .md-typeset th.heal-tip:focus-visible, .md-typeset .dps-scroll:focus-visible { outline: 2px solid var(--fc-focus, currentColor); outline-offset: 2px; border-radius: var(--fc-radius-s); }
+.md-typeset th.heal-tip { cursor: help; }
+.md-typeset .calc-sticky thead th { position: relative; z-index: 2; background: var(--md-default-bg-color); will-change: transform; }
+.md-typeset .calc-sticky.is-stuck thead th { box-shadow: 0 2px 0 var(--fc-border-strong), 0 6px 10px -6px rgb(0 0 0 / .45); }
+.md-typeset details.calc-guide { margin: var(--fc-space-2) 0 var(--fc-space-5); padding: 0 var(--fc-space-3); border: 1px solid var(--fc-border); border-radius: var(--fc-radius);
+  box-shadow: none; background: none; font-size: var(--fc-fs-sm); }
+.md-typeset details.calc-guide > summary { padding: var(--fc-space-2) 0 var(--fc-space-2) 1.4em; margin: 0; background: none; border: 0; font-weight: 600; cursor: pointer; }
+.md-typeset details.calc-guide dl { display: grid; grid-template-columns: minmax(8rem, max-content) 1fr; gap: .25rem var(--fc-space-4); margin: 0 0 var(--fc-space-3); }
+.md-typeset details.calc-guide dt { margin: 0; font-weight: 600; }
+.md-typeset details.calc-guide dd { margin: 0; color: var(--fc-text-muted); }
+@media (max-width: 40em) { .md-typeset details.calc-guide dl { grid-template-columns: 1fr; } .md-typeset details.calc-guide dd { margin-bottom: .3rem; } }

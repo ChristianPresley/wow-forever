@@ -25,11 +25,11 @@
   function numCell(v, d) { return el("td", { "class": "dps-num", text: num(v, d) }); }
   // Column header with a hover / focus description, and optionally a click-to-sort button.
   function th(label, tip, sort) {
-    var inner = sort ? el("button", { type: "button", "class": "heal-sort" + (sort.active ? " is-active" : ""), text: label }) : el("span", { text: label });
+    var inner = sort ? el("button", { type: "button", "class": "heal-sort" + (sort.active ? " is-active" : "") + (sort && sort.active && sort.dir === "ascending" ? " is-asc" : ""), text: label }) : el("span", { text: label });
     if (tip) { inner.setAttribute("data-tip", tip); inner.classList.add("heal-tip"); if (!sort) inner.setAttribute("tabindex", "0"); }
     if (sort) inner.addEventListener("click", sort.go);
     var h = el("th", { scope: "col" }, [inner]);
-    if (sort && sort.active) h.setAttribute("aria-sort", "descending");
+    if (sort && sort.active) h.setAttribute("aria-sort", sort.dir || "descending");
     return h;
   }
   // One floating tooltip for every [data-tip] element (tables scroll sideways, so a CSS-only tooltip would be clipped).
@@ -75,10 +75,10 @@
   function render(box, data) {
     var N = data.names, builds = {}, fight = data.fight_seconds;
     data.builds.forEach(function (b) { builds[b["class"] + "/" + b.id] = b; });
-    var state = { cls: "all", scen: "tank", gear: "crafted", role: "all", sort: "fight", best: true };
+    var state = { cls: "all", scen: "tank", gear: "crafted", role: "all", sort: "fight", best: false, dir: "descending" };
     var controls = el("div", { "class": "dps-filters" });
     var picks = el("div", { "class": "heal-picks" });
-    var meta = el("p", { "class": "dps-meta" });
+    var meta = el("p", { "class": "dps-meta", role: "status" });
     var holder = el("div", { "class": "dps-scroll" });
 
     function buildOf(x) { return builds[x["class"] + "/" + x.build]; }
@@ -195,10 +195,11 @@
     }
 
     function draw() {
-      var list = pool().sort(function (a, b) { return value(b, state.sort) - value(a, state.sort); });
+      var sign = state.dir === "ascending" ? -1 : 1;
+      var list = pool().sort(function (a, b) { return sign * (value(b, state.sort) - value(a, state.sort)); });
       var all = list.slice();
       if (state.best) { var seen = {}; list = list.filter(function (x) { var k = x["class"] + x.build; if (seen[k]) return false; seen[k] = 1; return true; }); }
-      var top = list.length ? value(list[0], state.sort) || 1 : 1;
+      var top = Math.max.apply(null, list.map(function (x) { return value(x, state.sort); }).concat([0])) || 1;
 
       // Best picks for the current filters.
       function bestBy(key) { return all.slice().sort(function (a, b) { return value(b, key) - value(a, key); })[0]; }
@@ -246,9 +247,13 @@
         body.appendChild(tr);
       });
       function sorter(k) {
-        return { active: k === state.sort, go: function () { state.sort = k; controls.querySelectorAll("select")[4].value = k; draw(); } };
+        return { active: k === state.sort, dir: state.dir, go: function () {
+          state.dir = k === state.sort && state.dir === "descending" ? "ascending" : "descending";
+          state.sort = k; controls.querySelectorAll("select")[4].value = k; draw();
+        } };
       }
-      holder.replaceChildren(el("table", { "class": "dps-table heal-table" }, [
+      holder.replaceChildren(el("table", { "class": "dps-table heal-table", "data-sort": "own",
+        "data-caption": "Healing by build and race, " + (state.scen === "tank" ? "one target" : "party of 5") + ", sorted by " + LABEL[state.sort] + ", " + state.dir }, [
         el("thead", {}, [el("tr", {}, [th("#", TIP.rank), th("Class"), th("Build (click for the full build)", TIP.build), th("Race", TIP.race),
           th(LABEL[state.sort], TIP[state.sort], sorter(state.sort))]
           .concat(side.map(function (k) { return th(SHORT[k], TIP[k] + " Click to sort by it.", sorter(k)); })))]), body]));
@@ -261,7 +266,7 @@
       var s = el("select");
       opts.forEach(function (o) { s.appendChild(el("option", { value: o[0], text: o[1] })); });
       s.value = state[key];
-      s.addEventListener("change", function () { state[key] = s.value; draw(); });
+      s.addEventListener("change", function () { state[key] = s.value; if (key === "sort") state.dir = "descending"; draw(); });
       return el("label", {}, [labelText, s]);
     }
     var cb = el("input", { type: "checkbox" });

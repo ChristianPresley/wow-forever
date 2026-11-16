@@ -69,6 +69,7 @@ extra_javascript:
   - javascripts/codex.js
   - javascripts/dps-calc.js
   - javascripts/heal-calc.js
+  - javascripts/calc-table.js
 
 extra:
   generator: false
@@ -132,6 +133,7 @@ plugins:
         - javascripts/codex.js
         - javascripts/dps-calc.js
         - javascripts/heal-calc.js
+        - javascripts/calc-table.js
       css_files:
         - stylesheets/extra.css
         - stylesheets/identity.css

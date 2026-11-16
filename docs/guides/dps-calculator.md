@@ -19,6 +19,14 @@ Healers have their own page: the [healing calculator](healing-calculator.md) cov
 
     **What is more trustworthy:** comparing races within one spec, when the gap is larger than the ± margin. Every racial value comes from Wowhead Forever, and all races of a class use the same gear. Gaps under about 1% are effectively ties.
 
+**Using the tables.** Every table on this page works the same way:
+
+- **Sort:** select a column header to sort by it, and select it again to reverse the order.
+- **Column meanings:** point at a header, or move keyboard focus to it, for a description. The same descriptions are written out under each table in "How to read this table".
+- **Header row:** it stays in view while you scroll down a long table.
+- **Every race is listed** by default. Tick the best-race box to keep only the best race of each spec or build.
+- **Keyboard:** all filters, headers and row names are reachable with Tab. A table that is wider than the page can be scrolled sideways with the arrow keys once it has focus.
+
 ## DPS by level
 
 This simulator (`tools/levelsim`) plays out every class, talent tree and race at every level from 1 to 60, in a 3-minute fight against a same-level target with no armor. The character knows every spell rank and talent point it can have at that level, and uses its racial abilities. Casters spend their mana so it lasts the fight. They pick spell ranks to suit, and shoot a wand or melee while their mana comes back.

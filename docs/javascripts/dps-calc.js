@@ -696,7 +696,7 @@
     fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (data) {
       var levels = data.levels, rows = data.rows;
       var hasCrafted = rows.some(function (x) { return x.gear === "crafted"; });
-      var state = { cls: "all", level: levels[levels.length - 1], best: true, gear: hasCrafted ? "crafted" : "none" };
+      var state = { cls: "all", level: levels[levels.length - 1], best: false, gear: hasCrafted ? "crafted" : "none" };
       var filters = el("div", { "class": "dps-filters" }), out = el("div");
       function draw() {
         var li = levels.indexOf(state.level);
@@ -737,7 +737,7 @@
       var lvl = el("input", { type: "range", min: String(levels[0]), max: String(levels[levels.length - 1]), value: String(state.level), "aria-label": "Level" });
       var lvlText = el("strong", { text: String(state.level) });
       lvl.addEventListener("input", function () { state.level = parseInt(lvl.value, 10); lvlText.textContent = lvl.value; draw(); });
-      var cb = el("input", { type: "checkbox" }); cb.checked = true;
+      var cb = el("input", { type: "checkbox" }); cb.checked = state.best;
       cb.addEventListener("change", function () { state.best = cb.checked; draw(); });
       var gsel = el("select", { "aria-label": "Gear" });
       [["crafted", "Best craftable gear"], ["none", "No gear"]].forEach(function (o) { if (o[0] === "none" || hasCrafted) gsel.appendChild(el("option", { value: o[0], text: o[1] })); });

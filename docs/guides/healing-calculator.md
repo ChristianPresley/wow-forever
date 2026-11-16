@@ -36,6 +36,14 @@ Pick the healing job:
 
 **Click any row** for the full build: talents by tree, the exact spells and ranks to cast per minute for each of the three numbers, a breakout of each sustain stat by pace and by spell (total healing, healing per mana, seconds until empty), healing by source, the off-damage breakdown and every gear slot.
 
+**Using the tables.** Every table on this page works the same way:
+
+- **Sort:** select a column header to sort by it, and select it again to reverse the order.
+- **Column meanings:** point at a header, or move keyboard focus to it, for a description. The same descriptions are written out under each table in "How to read this table".
+- **Header row:** it stays in view while you scroll down a long table.
+- **Every race is listed** by default. Tick the best-race box to keep only the best race of each spec or build.
+- **Keyboard:** all filters, headers and row names are reachable with Tab. A table that is wider than the page can be scrolled sideways with the arrow keys once it has focus.
+
 <div class="dps-calc" data-heal-sim><p>Loading the healing simulation. It needs JavaScript.</p></div>
 
 ## Every talent, ability and stat

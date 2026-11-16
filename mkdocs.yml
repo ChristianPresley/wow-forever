@@ -116,6 +116,10 @@ plugins:
       cards_layout: codex
   - optimize:
       enabled: !ENV [CI, false]
+      # No cache: on a cache hit the plugin's worker thread renames the file before the main
+      # thread removes it from the build ("... not in collection"), which failed deploys at random.
+      # Re-optimizing the few images each build is slow enough to avoid that race.
+      cache: false
   - privacy
   - minify:
       minify_html: true

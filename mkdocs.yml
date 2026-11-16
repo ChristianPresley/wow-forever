@@ -67,6 +67,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/codex.js
+  - javascripts/calc-filters.js
   - javascripts/dps-calc.js
   - javascripts/heal-calc.js
   - javascripts/calc-table.js
@@ -132,6 +133,7 @@ plugins:
         remove_comments: true
       js_files:
         - javascripts/codex.js
+        - javascripts/calc-filters.js
         - javascripts/dps-calc.js
         - javascripts/heal-calc.js
         - javascripts/calc-table.js

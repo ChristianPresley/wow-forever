@@ -10,7 +10,7 @@ description: Estimated (not measured) sustained and maximum healing, and off-dam
 **How to use it.**
 
 - **Healing job:** pick *One target (tank)* or *Party of 5*.
-- **Filter:** pick a class, the gear, and healers or hybrids. Tick the best-race box to keep only the best race of each build.
+- **Filter:** select one or more classes, the gear, healers or hybrids, or a race, or type in *Search*. Turn on the best-race switch to keep only the best race of each build. The bar shows how many rows match, and *Reset filters* returns to the start.
 - **Sort:** select the header of a number column, or use *Sort by*. Select the header again to reverse the order.
 - **Open a build:** select a row to see its talents, the exact spells and ranks to cast, the mana flow, the off-damage and the gear.
 - **Column meanings:** point at a header, or move keyboard focus to it. *How to read this table*, under the table, lists them all.

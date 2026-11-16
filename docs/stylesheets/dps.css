@@ -107,7 +107,7 @@
 .md-typeset .heal-chip strong { font-size: var(--fc-fs-sm); color: var(--fc-text); font-variant-numeric: tabular-nums; }
 .md-typeset .heal-hero-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: var(--fc-space-4) var(--fc-space-5); margin-top: var(--fc-space-5);
   padding-top: var(--fc-space-4); border-top: 1px solid var(--fc-border); }
-.md-typeset .heal-hero-cols h4 { margin: 0 0 var(--fc-space-2); font-size: var(--fc-fs-xs); letter-spacing: .06em; text-transform: uppercase; color: var(--fc-text-muted); }
+.md-typeset .heal-hero-cols h3 { margin: 0 0 var(--fc-space-2); font-size: var(--fc-fs-xs); letter-spacing: .06em; text-transform: uppercase; color: var(--fc-text-muted); }
 .md-typeset .heal-hero-cols ol { margin: 0 0 0 1.1rem; padding: 0; font-size: var(--fc-fs-sm); }
 .md-typeset .heal-hero-cols li { margin: 0 0 .15rem; }
 
@@ -178,3 +178,59 @@
 .md-typeset .heal-table :is(th, td) { padding-inline: .35em; }
 .md-typeset .heal-table .dps-bar { width: 1.8rem; }
 .md-typeset .heal-abilities td:first-child { min-width: 10rem; }
+
+/* Filter bar (javascripts/calc-filters.js): chips, one-of choices, switches, a level stepper, search, count and reset */
+.md-typeset .dps-filters:has(> .ff) { display: block; }
+.md-typeset .ff { margin: var(--fc-space-4) 0; padding: var(--fc-space-4); border: 1px solid var(--fc-border); border-radius: var(--fc-radius); background: var(--fc-surface-1); font-size: var(--fc-fs-sm); }
+.md-typeset .ff-fields { display: flex; flex-wrap: wrap; gap: var(--fc-space-4) var(--fc-space-5); align-items: flex-end; }
+.md-typeset .ff-field { margin: 0; padding: 0; border: 0; min-width: 0; }
+.md-typeset .ff-field--chips { flex: 1 1 100%; }
+.md-typeset .ff legend, .md-typeset .ff-label > span, .md-typeset .ff-label-inline { display: block; padding: 0; margin: 0 0 var(--fc-space-1); font-size: var(--fc-fs-xs); font-weight: 600;
+  letter-spacing: .05em; text-transform: uppercase; color: var(--fc-text-muted); }
+.md-typeset .ff-label { display: block; }
+.md-typeset .ff select, .md-typeset .ff input[type="search"], .md-typeset .ff input[type="number"] { font: inherit; color: var(--fc-text); background: var(--md-default-bg-color);
+  border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius); padding: .3em .55em; min-height: 2.1rem; box-sizing: border-box; }
+.md-typeset .ff input[type="search"] { width: 13rem; max-width: 100%; }
+.md-typeset .ff input[type="number"] { width: 4.2rem; font-variant-numeric: tabular-nums; }
+/* chips: many of */
+.md-typeset .ff-chips { display: flex; flex-wrap: wrap; gap: var(--fc-space-2); align-items: center; }
+.md-typeset .ff-chip { cursor: pointer; }
+.md-typeset .ff-chip .pill, .md-typeset .ff-chip-text { display: inline-flex; align-items: center; margin: 0; padding: .2em .65em; border: 1px solid transparent; border-radius: var(--fc-radius-full); }
+.md-typeset .ff-chips.is-filtered .ff-chip input:not(:checked) + span { opacity: .5; }
+.md-typeset .ff-chip input:checked + span { border-color: currentColor; box-shadow: inset 0 0 0 1px currentColor; }
+.md-typeset .ff-chip input:checked + span::after { content: "\2713"; margin-left: .4em; font-weight: 700; }
+.md-typeset .ff-all { font: inherit; font-weight: 600; cursor: pointer; padding: .2em .75em; border-radius: var(--fc-radius-full); border: 1px solid var(--fc-border-strong);
+  background: none; color: var(--fc-text); }
+.md-typeset .ff-all[aria-pressed="true"] { background: var(--fc-gold); border-color: var(--fc-gold); color: #1c1503; }
+/* choice: one of */
+.md-typeset .ff-seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius); overflow: hidden; background: var(--md-default-bg-color); }
+.md-typeset .ff-seg-opt { cursor: pointer; display: flex; }
+.md-typeset .ff-seg-opt + .ff-seg-opt { border-left: 1px solid var(--fc-border); }
+.md-typeset .ff-seg-opt > span { display: inline-flex; align-items: center; margin: 0; padding: .3em .8em; min-height: 2.1rem; box-sizing: border-box; border-radius: 0; color: var(--fc-text); background: none; }
+.md-typeset .ff-seg-opt input:checked + span { background: var(--fc-gold); color: #1c1503; font-weight: 600; }
+.md-typeset .ff-seg-opt input:checked + span .gi { color: #1c1503; }
+/* switch */
+.md-typeset .ff-switch { display: inline-flex; align-items: center; gap: .55em; cursor: pointer; min-height: 2.1rem; white-space: nowrap; }
+.md-typeset .ff-track { position: relative; width: 2.3rem; height: 1.25rem; flex: none; border-radius: var(--fc-radius-full); background: color-mix(in srgb, var(--fc-border-strong) 60%, transparent); border: 1px solid var(--fc-border-strong); box-sizing: border-box; }
+.md-typeset .ff-track::after { content: ""; position: absolute; top: 2px; left: 2px; width: calc(1.25rem - 6px); height: calc(1.25rem - 6px); border-radius: 50%; background: var(--fc-text); }
+.md-typeset .ff-switch input:checked + .ff-track { background: var(--fc-gold); border-color: var(--fc-gold); }
+.md-typeset .ff-switch input:checked + .ff-track::after { left: calc(100% - 1.25rem + 4px); background: #1c1503; }
+/* level stepper */
+.md-typeset .ff-range { display: grid; grid-template-columns: auto minmax(6rem, 11rem) auto auto; align-items: center; gap: var(--fc-space-1) var(--fc-space-2); }
+.md-typeset .ff-range .ff-label-inline { grid-column: 1 / -1; margin: 0; }
+.md-typeset .ff-range input[type="range"] { width: 100%; accent-color: var(--fc-gold); }
+.md-typeset .ff-step { font: inherit; font-weight: 700; width: 2.1rem; height: 2.1rem; cursor: pointer; border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius); background: var(--md-default-bg-color); color: var(--fc-text); }
+.md-typeset .ff-step:disabled, .md-typeset .ff-reset:disabled { opacity: .45; cursor: default; }
+/* count and reset */
+.md-typeset .ff-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--fc-space-3); margin-top: var(--fc-space-4); padding-top: var(--fc-space-3); border-top: 1px solid var(--fc-border); }
+.md-typeset .ff-count { margin: 0; font-weight: 600; color: var(--fc-text); }
+.md-typeset .ff-count.is-empty { color: var(--fc-adm-danger-text); }
+.md-typeset .ff-reset { font: inherit; cursor: pointer; padding: .3em .9em; border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius); background: none; color: var(--fc-text); }
+/* one focus ring for every control, including the visually hidden inputs behind chips, choices and switches */
+.md-typeset .ff :is(select, input, button):focus-visible, .md-typeset .ff input:focus-visible + span { outline: 2px solid var(--fc-focus, currentColor); outline-offset: 2px; }
+@media (max-width: 40em) { .md-typeset .ff-fields { gap: var(--fc-space-3); } .md-typeset .ff input[type="search"], .md-typeset .ff select { width: 100%; } .md-typeset .ff-field--search, .md-typeset .ff-field--select { flex: 1 1 100%; } }
+/* the bar sits inside .dps-filters, whose label rule (a grid, small muted text) is for the old plain selects */
+.md-typeset .dps-filters .ff label { font-size: inherit; color: var(--fc-text); }
+.md-typeset .dps-filters .ff .ff-switch { display: inline-flex; gap: .55em; }
+.md-typeset .dps-filters .ff .ff-label { display: block; }
+.md-typeset .dps-filters .ff .ff-chip, .md-typeset .dps-filters .ff .ff-seg-opt { display: flex; gap: 0; }

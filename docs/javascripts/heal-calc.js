@@ -75,7 +75,8 @@
   function render(box, data) {
     var N = data.names, builds = {}, fight = data.fight_seconds;
     data.builds.forEach(function (b) { builds[b["class"] + "/" + b.id] = b; });
-    var state = { cls: "all", scen: "tank", gear: "crafted", role: "all", sort: "fight", best: false, dir: "descending" };
+    var state = { cls: [], scen: "tank", gear: "crafted", role: "all", race: "all", q: "", sort: "fight", best: false, dir: "descending" };
+    var ff = null, FF = window.ForeverFilters;
     var controls = el("div", { "class": "dps-filters" });
     var picks = el("div", { "class": "heal-picks" });
     var meta = el("p", { "class": "dps-meta", role: "status" });
@@ -100,8 +101,9 @@
     }
     function pool() {
       return data.rows.filter(function (x) {
-        return x.gear === state.gear && (state.cls === "all" || x["class"] === state.cls) &&
-          (state.role === "all" || buildOf(x).role === state.role);
+        var b = buildOf(x);
+        return x.gear === state.gear && FF.match(state.cls, x["class"]) && FF.match(state.role, b.role) && FF.match(state.race, x.race) &&
+          FF.text(state.q, [CLSNAME[x["class"]], b.name, b.note, RACENAME[x.race]]);
       });
     }
 
@@ -249,7 +251,7 @@
       function sorter(k) {
         return { active: k === state.sort, dir: state.dir, go: function () {
           state.dir = k === state.sort && state.dir === "descending" ? "ascending" : "descending";
-          state.sort = k; controls.querySelectorAll("select")[4].value = k; draw();
+          state.sort = k; if (ff) ff.sync(); draw();
         } };
       }
       holder.replaceChildren(el("table", { "class": "dps-table heal-table", "data-sort": "own",
@@ -257,28 +259,28 @@
         el("thead", {}, [el("tr", {}, [th("#", TIP.rank), th("Class"), th("Build (click for the full build)", TIP.build), th("Race", TIP.race),
           th(LABEL[state.sort], TIP[state.sort], sorter(state.sort))]
           .concat(side.map(function (k) { return th(SHORT[k], TIP[k] + " Click to sort by it.", sorter(k)); })))]), body]));
-      meta.textContent = list.length + " of " + data.rows.filter(function (x) { return x.gear === state.gear; }).length + " race and build pairs shown. Level " + data.level +
+      if (ff) {
+        var inGear = data.rows.filter(function (x) { return x.gear === state.gear; });
+        ff.count(list.length, state.best ? new Set(inGear.map(function (x) { return x["class"] + x.build; })).size : inGear.length, state.best ? "builds" : "build and race pairs");
+      }
+      meta.textContent = "Level " + data.level +
         ", " + (state.scen === "tank" ? "one target taking all the damage" : "a party of 5, everyone hurt") + ". Sustained = a " + Math.round(fight / 60) +
         "-minute fight that ends on empty mana. The first number column is the one the table is sorted by. Healing per mana is for the sustained mix. Seconds until empty is at maximum pace. Off-DPS = the same build and gear dealing damage for " + Math.round(data.dps_fight_seconds / 60) + " minutes.";
     }
 
-    function select(labelText, key, opts) {
-      var s = el("select");
-      opts.forEach(function (o) { s.appendChild(el("option", { value: o[0], text: o[1] })); });
-      s.value = state[key];
-      s.addEventListener("change", function () { state[key] = s.value; if (key === "sort") state.dir = "descending"; draw(); });
-      return el("label", {}, [labelText, s]);
-    }
-    var cb = el("input", { type: "checkbox" });
-    cb.checked = state.best;
-    cb.addEventListener("change", function () { state.best = cb.checked; draw(); });
-    [select("Class", "cls", [["all", "All healing classes"]].concat(Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; }))),
-      select("Healing", "scen", [["tank", "One target (tank)"], ["group", "Party of 5"]]),
-      select("Gear", "gear", [["crafted", "Best craftable gear"], ["none", "No gear"]]),
-      select("Builds", "role", [["all", "Healers and hybrids"], ["healer", "Healers only"], ["hybrid", "Hybrids only"]]),
-      select("Sort by", "sort", [["fight", "Sustained healing"], ["total", "Total healing in the fight"], ["hpm", "Healing per mana"], ["empty", "Seconds until empty"], ["sustain", "Sustain %"], ["endless", "Endless healing"], ["max", "Maximum healing"], ["dps", "Off-damage"]]),
-      el("label", { "class": "dps-check" }, [cb, "Best race only"])
-    ].forEach(function (c) { controls.appendChild(c); });
+    ff = FF.build(state, [
+      { type: "choice", key: "scen", label: "Healing job", options: [["tank", "One target (tank)"], ["group", "Party of 5"]] },
+      { type: "choice", key: "gear", label: "Gear", options: [["crafted", "Best craftable"], ["none", "No gear"]] },
+      { type: "chips", key: "cls", label: "Class", all: "All classes", pills: true, options: Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; }) },
+      { type: "choice", key: "role", label: "Builds", options: [["all", "All"], ["healer", "Healers"], ["hybrid", "Hybrids"]] },
+      { type: "select", key: "race", label: "Race", options: [["all", "All races"]].concat(Object.keys(RACENAME).filter(function (r) { return data.rows.some(function (x) { return x.race === r; }); }).map(function (r) { return [r, RACENAME[r]]; })) },
+      { type: "select", key: "sort", label: "Sort by", after: function () { state.dir = "descending"; },
+        options: [["fight", "Sustained healing"], ["total", "Total healing in the fight"], ["hpm", "Healing per mana"], ["empty", "Seconds until empty"],
+          ["sustain", "Sustain %"], ["endless", "Endless healing"], ["max", "Maximum healing"], ["dps", "Off-damage"]] },
+      { type: "search", key: "q", label: "Search", placeholder: "Build, class or race" },
+      { type: "toggle", key: "best", label: "Best race of each build only" }
+    ], draw, { label: "Filter the healing table" });
+    controls.appendChild(ff.el);
     box.replaceChildren(controls, meta, holder, picks);     // the table first; the best-of cards follow it
     draw();
   }
@@ -335,13 +337,13 @@
           chip("Intellect", num(st.int)), chip("Spirit", num(st.spi)), chip("Spell crit", num(st.crit, 1) + "%"),
           chip("Regen casting", num(st.regen_cast, 0) + " / 5 s"), chip("Regen resting", num(st.regen_rest, 0) + " / 5 s")]),
         el("div", { "class": "heal-hero-cols" }, [
-          el("div", {}, [el("h4", { text: "Best stats for sustained healing" }), el("ol", {}, stats.map(function (w) {
+          el("div", {}, [el("h3", { text: "Best stats for sustained healing" }), el("ol", {}, stats.map(function (w) {
             return el("li", {}, [el("strong", { text: w.label }), " · " + (w.unit === "point" ? "one point" : w.unit) + " is worth " + num(w.d[sc][1] / hp, 1) + " healing power"]);
           }))]),
-          el("div", {}, [el("h4", { text: "Most valuable healing talents" }), el("ol", {}, tal.map(function (t) {
+          el("div", {}, [el("h3", { text: "Most valuable healing talents" }), el("ol", {}, tal.map(function (t) {
             return el("li", {}, [el("strong", { text: t.name }), " · " + signed(t.d[sc][1]) + " sustained HPS"]);
           }))]),
-          el("div", {}, [el("h4", { text: "Most valuable damage talents" }), el("ol", {}, dmg.map(function (t) {
+          el("div", {}, [el("h3", { text: "Most valuable damage talents" }), el("ol", {}, dmg.map(function (t) {
             return el("li", {}, [el("strong", { text: t.name }), " · " + signed(t.dps) + " DPS"]);
           }))])])]);
       return hero;
@@ -420,23 +422,13 @@
       });
       out.replaceChildren.apply(out, kids);
     }
-    function select(labelText, key, opts) {
-      var s = el("select");
-      opts.forEach(function (o) { s.appendChild(el("option", { value: o[0], text: o[1] })); });
-      s.value = state[key];
-      s.addEventListener("change", function () { state[key] = s.value; draw(); });
-      return el("label", {}, [labelText, s]);
-    }
-    function check(labelText, key) {
-      var cb = el("input", { type: "checkbox" });
-      cb.checked = state[key];
-      cb.addEventListener("change", function () { state[key] = cb.checked; draw(); });
-      return el("label", { "class": "dps-check" }, [cb, labelText]);
-    }
-    controls.appendChild(select("Class", "cls", Object.keys(data.classes).map(function (k) { return [k, CLSNAME[k]]; })));
-    controls.appendChild(select("Healing", "scen", [["tank", "One target (tank)"], ["group", "Party of 5"]]));
-    controls.appendChild(check("Show every spell rank", "ranks"));
-    controls.appendChild(check("Show talents with no effect", "zero"));
+    var lf = window.ForeverFilters.build(state, [
+      { type: "choice", key: "cls", label: "Class", pills: true, options: Object.keys(data.classes).map(function (k) { return [k, CLSNAME[k]]; }) },
+      { type: "choice", key: "scen", label: "Healing job", options: [["tank", "One target (tank)"], ["group", "Party of 5"]] },
+      { type: "toggle", key: "ranks", label: "Show every spell rank" },
+      { type: "toggle", key: "zero", label: "Show talents with no effect" }
+    ], draw, { label: "Choose the class and healing job" });
+    controls.appendChild(lf.el);
     box.replaceChildren(controls, out);
     draw();
   }

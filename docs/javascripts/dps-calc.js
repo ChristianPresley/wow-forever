@@ -484,17 +484,19 @@
   function tagEl(t) { return el("span", { "class": "dps-tag dps-tag--" + t.toLowerCase(), title: TAGNAME[t], text: TAGNAME[t] }); }
 
   function render(root) {
-    var state = { cls: "all", faction: "all", best: false };
+    var state = { cls: [], faction: "all", race: "all", q: "", best: false }, ff = null, FF = window.ForeverFilters;
     var out = root.querySelector("[data-dps-results]");
     var filters = root.querySelector("[data-dps-filters]");
 
     function draw() {
-      var rows = results().filter(function (x) {
-        return (state.cls === "all" || x.spec.cls === state.cls) && (state.faction === "all" || RACES[x.race].faction === state.faction);
+      var all = results(), rows = all.filter(function (x) {
+        return FF.match(state.cls, x.spec.cls) && FF.match(state.faction, RACES[x.race].faction) && FF.match(state.race, x.race) &&
+          FF.text(state.q, [CLSNAME[x.spec.cls], x.spec.name, x.spec.id, RACES[x.race].name]);
       });
       if (state.best) {
         var seen = {}; rows = rows.filter(function (x) { if (seen[x.spec.id]) return false; seen[x.spec.id] = 1; return true; });
       }
+      if (ff) ff.count(rows.length, state.best ? new Set(all.map(function (x) { return x.spec.id; })).size : all.length, state.best ? "specs" : "spec and race pairs");
       var top = rows.length ? rows[0].dps : 1;
       var tbody = el("tbody");
       rows.forEach(function (x, i) {
@@ -517,19 +519,14 @@
       out.replaceChildren(el("div", { "class": "dps-scroll" }, [table]));
     }
 
-    function select(label, key, opts) {
-      var s = el("select", { "aria-label": label });
-      opts.forEach(function (o) { s.appendChild(el("option", { value: o[0], text: o[1] })); });
-      s.addEventListener("change", function () { state[key] = s.value; draw(); });
-      return el("label", {}, [el("span", { text: label }), s]);
-    }
-    var bestBox = el("input", { type: "checkbox" });
-    bestBox.addEventListener("change", function () { state.best = bestBox.checked; draw(); });
-    filters.replaceChildren(
-      select("Class", "cls", [["all", "All classes"]].concat(Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; }))),
-      select("Faction", "faction", [["all", "Both"], ["A", "Alliance"], ["H", "Horde"]]),
-      el("label", { "class": "dps-check" }, [bestBox, el("span", { text: "Best race per spec only" })])
-    );
+    ff = FF.build(state, [
+      { type: "chips", key: "cls", label: "Class", all: "All classes", pills: true, options: Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; }) },
+      { type: "choice", key: "faction", label: "Faction", options: [["all", "Both"], ["A", "Alliance"], ["H", "Horde"]] },
+      { type: "select", key: "race", label: "Race", options: [["all", "All races"]].concat(Object.keys(RACES).map(function (r) { return [r, RACES[r].name]; })) },
+      { type: "search", key: "q", label: "Search", placeholder: "Spec, class or race" },
+      { type: "toggle", key: "best", label: "Best race of each spec only" }
+    ], draw, { label: "Filter the quick estimate" });
+    filters.replaceChildren(ff.el);
 
     // Editable inputs
     function numInput(row, idx, onChange) {
@@ -592,16 +589,18 @@
     var load = simCache ? Promise.resolve(simCache) : fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
     load.then(function (rows) {
       simCache = rows;
-      var state = { cls: "all", faction: "all", best: false };
+      var state = { cls: [], faction: "all", race: "all", q: "", best: false }, ff = null, FF = window.ForeverFilters;
       var filters = el("div", { "class": "dps-filters" }), out = el("div");
       function draw() {
         var list = rows.filter(function (x) {
           var f = RACES[x.race] ? RACES[x.race].faction : "";
-          return (state.cls === "all" || x.class === state.cls) && (state.faction === "all" || f === state.faction);
+          return FF.match(state.cls, x.class) && FF.match(state.faction, f) && FF.match(state.race, x.race) &&
+            FF.text(state.q, [CLSNAME[x.class], x.spec, x.build, x.race_name, RACES[x.race] && RACES[x.race].name]);
         });
         var best = {};
         rows.forEach(function (x) { var k = x.class + x.spec; best[k] = Math.max(best[k] || 0, x.dps_mean); });
         if (state.best) { var seen = {}; list = list.filter(function (x) { var k = x.class + x.spec; if (seen[k]) return false; seen[k] = 1; return true; }); }
+        if (ff) ff.count(list.length, state.best ? Object.keys(best).length : rows.length, state.best ? "specs" : "spec and race pairs");
         var top = list.length ? list[0].dps_mean : 1, tbody = el("tbody");
         list.forEach(function (x, i) {
           var vs = x.dps_mean / best[x.class + x.spec] - 1, half = (x.ci95[1] - x.ci95[0]) / 2;
@@ -622,18 +621,14 @@
         out.replaceChildren(el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table" }, [
           el("thead", {}, [el("tr", {}, ["#", "Class", "Spec (open for breakdown)", "Race", "Estimated DPS", "vs best race", "Data confidence"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), tbody])]));
       }
-      function select(label, key, opts) {
-        var s = el("select", { "aria-label": label });
-        opts.forEach(function (o) { s.appendChild(el("option", { value: o[0], text: o[1] })); });
-        s.addEventListener("change", function () { state[key] = s.value; draw(); });
-        return el("label", {}, [el("span", { text: label }), s]);
-      }
-      var cb = el("input", { type: "checkbox" });
-      cb.addEventListener("change", function () { state.best = cb.checked; draw(); });
-      filters.replaceChildren(
-        select("Class", "cls", [["all", "All classes"]].concat(Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; }))),
-        select("Faction", "faction", [["all", "Both"], ["A", "Alliance"], ["H", "Horde"]]),
-        el("label", { "class": "dps-check" }, [cb, el("span", { text: "Best race per spec only" })]));
+      ff = FF.build(state, [
+        { type: "chips", key: "cls", label: "Class", all: "All classes", pills: true, options: Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; }) },
+        { type: "choice", key: "faction", label: "Faction", options: [["all", "Both"], ["A", "Alliance"], ["H", "Horde"]] },
+        { type: "select", key: "race", label: "Race", options: [["all", "All races"]].concat(Object.keys(RACES).map(function (r) { return [r, RACES[r].name]; })) },
+        { type: "search", key: "q", label: "Search", placeholder: "Spec, class or race" },
+        { type: "toggle", key: "best", label: "Best race of each spec only" }
+      ], draw, { label: "Filter the simulated raid estimates" });
+      filters.replaceChildren(ff.el);
       var r0 = rows[0] || {};
       box.replaceChildren(el("p", { "class": "dps-meta", text: rows.length + " spec and race pairs, " + (r0.iterations ? r0.iterations.toLocaleString("en-US") : "?") + " simulated fights of " + (r0.fight_seconds || "?") + " s each. ± is the 95% confidence interval of the simulation, not the error of the estimate." }), filters, out);
       draw();
@@ -705,15 +700,20 @@
     fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (data) {
       var levels = data.levels, rows = data.rows;
       var hasCrafted = rows.some(function (x) { return x.gear === "crafted"; });
-      var state = { cls: "all", level: levels[levels.length - 1], best: false, gear: hasCrafted ? "crafted" : "none" };
+      var state = { cls: [], level: levels[levels.length - 1], best: false, gear: hasCrafted ? "crafted" : "none", faction: "all", race: "all", q: "" };
+      var ff = null, FF = window.ForeverFilters;
       var filters = el("div", { "class": "dps-filters" }), out = el("div");
       function draw() {
         var li = levels.indexOf(state.level);
-        var list = rows.filter(function (x) { return x.dps[li] != null && (x.gear || "none") === state.gear && (state.cls === "all" || x.class === state.cls); })
+        var list = rows.filter(function (x) { return x.dps[li] != null && (x.gear || "none") === state.gear && FF.match(state.cls, x.class) &&
+          FF.match(state.faction, RACES[x.race] ? RACES[x.race].faction : "") && FF.match(state.race, x.race) &&
+          FF.text(state.q, [CLSNAME[x.class], x.spec_name, x.spec, RACES[x.race] && RACES[x.race].name]); })
           .sort(function (a, b) { return b.dps[li] - a.dps[li]; });
         var best = {};
         list.forEach(function (x) { var k = x.class + x.spec; best[k] = Math.max(best[k] || 0, x.dps[li]); });
         if (state.best) { var seen = {}; list = list.filter(function (x) { var k = x.class + x.spec; if (seen[k]) return false; seen[k] = 1; return true; }); }
+        if (ff) ff.count(list.length, state.best ? new Set(rows.filter(function (x) { return (x.gear || "none") === state.gear; }).map(function (x) { return x.class + x.spec; })).size
+          : rows.filter(function (x) { return (x.gear || "none") === state.gear && x.dps[li] != null; }).length, state.best ? "specs" : "spec and race pairs");
         var top = list.length ? list[0].dps[li] : 1, tbody = el("tbody");
         list.forEach(function (x, i) {
           var d = x.dps[li], vs = d / best[x.class + x.spec] - 1;
@@ -740,23 +740,16 @@
         out.replaceChildren(el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table" }, [
           el("thead", {}, [el("tr", {}, ["#", "Class", "Spec (click for the full build)", "Race", "Simulated DPS", "vs best race"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), tbody])]));
       }
-      var cls = el("select", { "aria-label": "Class" });
-      [["all", "All classes"]].concat(Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; })).forEach(function (o) { cls.appendChild(el("option", { value: o[0], text: o[1] })); });
-      cls.addEventListener("change", function () { state.cls = cls.value; draw(); });
-      var lvl = el("input", { type: "range", min: String(levels[0]), max: String(levels[levels.length - 1]), value: String(state.level), "aria-label": "Level" });
-      var lvlText = el("strong", { text: String(state.level) });
-      lvl.addEventListener("input", function () { state.level = parseInt(lvl.value, 10); lvlText.textContent = lvl.value; draw(); });
-      var cb = el("input", { type: "checkbox" }); cb.checked = state.best;
-      cb.addEventListener("change", function () { state.best = cb.checked; draw(); });
-      var gsel = el("select", { "aria-label": "Gear" });
-      [["crafted", "Best craftable gear"], ["none", "No gear"]].forEach(function (o) { if (o[0] === "none" || hasCrafted) gsel.appendChild(el("option", { value: o[0], text: o[1] })); });
-      gsel.value = state.gear;
-      gsel.addEventListener("change", function () { state.gear = gsel.value; draw(); });
-      filters.replaceChildren(
-        el("label", {}, [el("span", { text: "Gear" }), gsel]),
-        el("label", {}, [el("span", { text: "Class" }), cls]),
-        el("label", {}, [el("span", { text: "Level " }), lvlText, lvl]),
-        el("label", { "class": "dps-check" }, [cb, el("span", { text: "Best race per spec only" })]));
+      ff = FF.build(state, [
+        { type: "range", key: "level", label: "Level", values: levels },
+        { type: "choice", key: "gear", label: "Gear", options: (hasCrafted ? [["crafted", "Best craftable"]] : []).concat([["none", "No gear"]]) },
+        { type: "chips", key: "cls", label: "Class", all: "All classes", pills: true, options: Object.keys(CLSNAME).map(function (c) { return [c, CLSNAME[c]]; }) },
+        { type: "choice", key: "faction", label: "Faction", options: [["all", "Both"], ["A", "Alliance"], ["H", "Horde"]] },
+        { type: "select", key: "race", label: "Race", options: [["all", "All races"]].concat(Object.keys(RACES).map(function (r) { return [r, RACES[r].name]; })) },
+        { type: "search", key: "q", label: "Search", placeholder: "Spec, class or race" },
+        { type: "toggle", key: "best", label: "Best race of each spec only" }
+      ], draw, { label: "Filter DPS by level" });
+      filters.replaceChildren(ff.el);
       box.replaceChildren(el("p", { "class": "dps-meta", text: rows.length / (hasCrafted ? 2 : 1) + " class, spec and race series, levels " + levels[0] + "–" + levels[levels.length - 1] + ", " + (data.iterations || "?") + " simulated fights per point. ± is simulation noise only." }), filters, out);
       draw();
     }).catch(function () { box.replaceChildren(el("p", { text: "The level simulation could not be loaded." })); });

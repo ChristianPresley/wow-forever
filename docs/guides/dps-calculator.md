@@ -10,7 +10,7 @@ description: Estimated (not measured) raid DPS for every race and DPS spec in Wo
 **How to use it.**
 
 - **Level and gear:** move the Level slider, and pick *Best craftable gear* or *No gear*.
-- **Filter:** pick a class. Tick the best-race box to keep only the best race of each spec.
+- **Filter:** select one or more classes, a faction or a race, or type in *Search*. Turn on the best-race switch to keep only the best race of each spec. The bar shows how many rows match, and *Reset filters* returns to the start.
 - **Sort:** select a column header. Select it again to reverse the order.
 - **Open a build:** select a row to see its talents, gear, opening sequence and damage by source at that level.
 - **Column meanings:** point at a header, or move keyboard focus to it. *How to read this table*, under the table, lists them all.

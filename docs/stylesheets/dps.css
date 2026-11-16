@@ -55,3 +55,5 @@
 .md-typeset .heal-table .dps-bar { width: 3rem; }
 .md-typeset .heal-table th, .md-typeset .heal-table td { padding-inline: .45em; }
 .md-typeset .heal-table td:nth-child(3) { min-width: 8.5rem; }
+.md-typeset .heal-ledger td { vertical-align: top; }
+.md-typeset .heal-ledger .heal-ledger-text { min-width: 16rem; font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }

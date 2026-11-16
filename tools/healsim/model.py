@@ -69,8 +69,17 @@ CU_VALUES = {
     "chain_heal_jumps": (1.75, "CU", "Chain Heal in a group: 3 targets at 100% / 50% / 25%"),
     "swiftmend": (None, "CU", "Swiftmend consumes the HoT (Classic); used on the last tick so no healing is lost"),
     "sub_level_20_penalty": (0.0375, "CU", "Spells learned before level 20 lose 3.75% of their coefficient per level below 20 (Classic)"),
+    "base_health": ({"priest": 1397, "paladin": 1381, "druid": 1483, "shaman": 1423}, "CU", "Level 60 base health per class (Classic, unchecked); health = base + 10 per Stamina"),
+    "lay_on_hands": (None, "A", "Lay on Hands heals for the Paladin's maximum health and drains all mana, so it is cast only when mana is ignored (max)"),
+    "lightwell": (5, "A", "Lightwell: all 5 charges are used; the rank 1 heal in the client is scaled by mana cost for rank 3; party only"),
+    "desperate_prayer": (None, "A", "Desperate Prayer heals only the Priest, so it counts in the party scenario only"),
+    "armor_buff": (15, "A", "Inspiration and Ancestral Healing: armor buff uptime on a tank = 1 - exp(-15 s x crit heals per second)"),
     "racial_cooldowns": (None, "A", "Racial cooldowns are used on cooldown; Blood Fury and Eureka! are taken to affect healing"),
 }
+
+# Flat bonuses added to every character, for stat weights (tools/healsim/ledger.py):
+# healing, int, spi, crit (% points), mp5, haste (% points), mana.
+BONUS = {}
 
 REGEN = {"priest": (12.5, 4), "paladin": (15, 5), "druid": (15, 5), "shaman": (17, 5)}   # per 2 s: a + Spirit / b (CU)
 CAST_REGEN = {"priest": ("Meditation", 3, 0.5), "paladin": ("Reverence", 2, 0.3),
@@ -168,6 +177,8 @@ class Stats:
         ch = core.Character(cls, race, LEVEL, talents)
         core.apply_passive_racials(ch, race)
         self.cls, self.race, self.talents, self.ch = cls, race, talents, ch
+        ch.int += BONUS.get("int", 0)
+        ch.spi += BONUS.get("spi", 0)
         ch.int *= 1 + 0.10 * self.t(INT_TALENT[cls]) / 5
         if race == "human":
             ch.spi *= 1.10                                   # The Human Spirit (F)
@@ -175,12 +186,14 @@ class Stats:
             ch.spi *= 1 + 0.15 * self.t("Living Spirit") / 3
         self.int, self.spi = ch.int, ch.spi
         self.base_mana = ch.base_mana
-        self.max_mana = ch.mana() * (1.05 if race == "gnome" else 1.0)   # Expansive Mind (F)
-        self.crit = ch.spell_crit
-        self.haste = ch.haste
+        self.max_mana = (ch.mana() + BONUS.get("mana", 0)) * (1.05 if race == "gnome" else 1.0)   # Expansive Mind (F)
+        self.crit = ch.spell_crit + BONUS.get("crit", 0)
+        self.haste = ch.haste * (1 + BONUS.get("haste", 0) / 100)
         g = ch.gear["stats"] if ch.gear else {}
-        self.hp = g.get("healing", 0) + g.get("sp", 0)
-        self.mp5 = g.get("mp5", 0)
+        self.hp = g.get("healing", 0) + g.get("sp", 0) + BONUS.get("healing", 0)
+        self.mp5 = g.get("mp5", 0) + BONUS.get("mp5", 0)
+        hps = core.data()["classes"][cls]["expected"][str(LEVEL)].get("hp_per_stamina", 10)
+        self.health = (CU_VALUES["base_health"][0][cls] + ch.sta * hps) * (1.05 if race == "tauren" else 1.0)   # Endurance (F)
         a, b = REGEN[cls]
         self.spirit_ps = (a + self.spi / b) / 2
         name, mx, frac = CAST_REGEN[cls]
@@ -200,7 +213,7 @@ class Stats:
 
     def summary(self):
         return {"int": round(self.int), "spi": round(self.spi), "mana": round(self.max_mana), "healing": round(self.hp),
-                "crit": round(self.crit, 1), "mp5": self.mp5, "regen_cast": round(self.rc * 5, 1), "regen_rest": round(self.rf * 5, 1)}
+                "crit": round(self.crit, 1), "mp5": self.mp5, "health": round(self.health), "haste": round((self.haste - 1) * 100, 1), "regen_cast": round(self.rc * 5, 1), "regen_rest": round(self.rf * 5, 1)}
 
 
 def apply_racials(st, U):
@@ -236,6 +249,7 @@ class Kit:
         self.st, self.n = st, n
         self.actions, self.groups, self.links = [], {}, []
         self.income, self.time_tax, self.passive = 0.0, 0.0, {}
+        self.armor_talent = None
         self.tags = {"base_stats": st.ch.stats_tag.split("+")[0], "regen:spirit": "CU", "mana:int": "CU",
                      "no_overhealing": "A", "cooldowns_averaged": "A", "sub_level_20_penalty": "CU"}
         if st.ch.gear:
@@ -271,7 +285,7 @@ def priest(st, ctx, n, U, mode):
     T = k.tal
     hp = st.hp_x + st.spi * 0.25 * T("Spiritual Guidance", 5)
     mult = st.heal_mult * (1 + 0.10 * T("Spiritual Healing", 3))
-    if T("Power Infusion"):
+    if T("Power Infusion") and not getattr(st, "skip_pi", False):
         mult *= 1 + 0.20 * min(1.0, 15 * U(180))
         k.income -= 0.20 * st.base_mana * U(180)
     crit = st.crit_x + 5 * T("Holy Specialization", 5)
@@ -340,9 +354,27 @@ def priest(st, ctx, n, U, mode):
         heal = [s for s in rows if not s["costs"] and eff(s, "direct") and s["base_level"] == cast["base_level"]][-1]
         h, a, c = direct(heal, eff(heal, "direct"), m=td, count=party)
         k.add("Holy Nova", "Holy Nova", GCD, cost(cast, "Holy Nova", ma), {"Holy Nova": h, "Divine Aegis": a}, c)
+    if n > 1:
+        dp = trained("priest", "Desperate Prayer", paid=False)
+        if dp:   # heals only the Priest, who is one of the party
+            h, a, c = direct(dp[-1], eff(dp[-1], "direct"), m=td)
+            k.add("Desperate Prayer", "Desperate Prayer", GCD, 0.0, {"Desperate Prayer": h, "Divine Aegis": a}, c, cap=U(cd_of(dp[-1])))
+            k.tags["desperate_prayer_self_only"] = "A"
+        lw = trained("priest", "Lightwell")
+        renew = [r for r in core.data()["classes"]["priest"]["spells"] if r["name"] == "Lightwell Renew"]
+        if lw and renew:   # the client has the rank 1 heal only: scale it by mana cost (A)
+            e = eff(renew[0], "hot")
+            ticks = round(renew[0]["duration_ms"] / e["EffectAuraPeriod"])
+            scale = mana_cost(lw[-1], st.base_mana) / mana_cost(lw[0], st.base_mana)
+            charge = e["EffectBasePointsF"] * ticks * scale * mult
+            k.add(label(lw[-1]), "Lightwell", max(GCD, lw[-1]["cast_ms"] / 1000 / st.haste_x), cost(lw[-1], "Lightwell"),
+                  {"Lightwell": charge * CU_VALUES["lightwell"][0]}, cap=U(cd_of(lw[-1])))
+            k.tags["lightwell_all_charges_used"] = "A"
     if T("Inner Focus"):
         k.income += mana_cost(trained("priest", "Greater Heal")[-1], st.base_mana) * ih * U(180)
         k.tags["inner_focus_cd"] = "CU"
+
+    k.armor_talent = "Inspiration" if T("Inspiration") else None
 
     def feedback(x):
         out = {"ws": min(1.0, k.rate(x, lambda a: a.group == "Weakened Soul") * 15 / n)}
@@ -412,6 +444,11 @@ def paladin(st, ctx, n, U, mode):
                   mana_cost(lv, st.base_mana) * st.cost_mult + sc,
                   {"Holy Shock": h, "Light's Vigil": vb * (1 + vc * (cm - 1)) * party}, c, cap=1 / (cd_of(lv)))
             k.tags["lights_vigil_heal"] = "A"
+    loh = trained("paladin", "Lay on Hands", paid=False)
+    if loh and mode == "max":   # drains all mana: only worth it when mana is ignored
+        k.add("Lay on Hands", "Lay on Hands", GCD, 0.0, {"Lay on Hands": st.health}, cap=U(cd_of(loh[-1])))
+        k.tags["lay_on_hands_max_only"] = "A"
+        k.tags["base_health"] = "CU"
     bow = trained("paladin", "Blessing of Wisdom")[-1]["effects"][0]
     k.income += bow["EffectBasePointsF"] / (bow["EffectAuraPeriod"] / 1000)
     k.tags["blessing_of_wisdom_self"] = "F"
@@ -559,6 +596,8 @@ def shaman(st, ctx, n, U, mode):
         k.income += min(ctx.get("crits", 0.0), 1 / CU_VALUES["water_shield_icd"][0]) * 0.02 * st.max_mana
         k.tags["water_shield"] = "A"
 
+    k.armor_talent = "Ancestral Healing" if T("Ancestral Healing") else None
+
     def feedback(x):
         return {"rip": min(1.0, k.rate(x, lambda a: a.spell == "Riptide") * 15),
                 "crits": sum(v * a.crit for a, v in zip(k.actions, x))}
@@ -610,10 +649,11 @@ def _top_ranks(k):
     k.actions = [a for a in k.actions if last[re.sub(r" \(Rank \d+\)", "", a.name)] is a]
 
 
-def solve(cls, race, talents, gear_mode, scenario, mode, iterations=40, top_only=False):
+def solve(cls, race, talents, gear_mode, scenario, mode, iterations=40, top_only=False, _skip_pi=False):
     """Best cast mix for one build. Returns hps, the mix, mana flow and the inputs used.
     top_only=True forbids downranking: only the highest rank of each spell may be cast."""
     st = Stats(cls, race, talents, gear_mode)
+    st.skip_pi = _skip_pi
     U = uses(mode)
     apply_racials(st, U)
     n = SCENARIOS[scenario]
@@ -650,6 +690,14 @@ def solve(cls, race, talents, gear_mode, scenario, mode, iterations=40, top_only
            "oom_seconds": round(st.max_mana / net, 1) if net > 1e-6 else None,
            "hpm": round((hps - sum(k.passive.values())) / spend, 2) if spend > 1e-6 else None,
            "inputs": dict(sorted(k.tags.items())), "stats": st.summary()}
+    if k.armor_talent and n == 1:
+        crits = sum(v * a.crit for a, v in zip(k.actions, x))
+        out["armor_buff"] = {"talent": k.armor_talent, "uptime": round(1 - math.exp(-CU_VALUES["armor_buff"][0] * crits), 3)}
+    if cls == "priest" and talents.get("Power Infusion") and not _skip_pi:
+        # Power Infusion costs 20% of base mana: skip it when the mix heals more without it.
+        alt = solve(cls, race, talents, gear_mode, scenario, mode, iterations, top_only, _skip_pi=True)
+        if alt["hps"] > out["hps"]:
+            return alt
     return out
 
 

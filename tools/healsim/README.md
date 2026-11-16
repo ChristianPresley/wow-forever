@@ -6,6 +6,7 @@ Works out the best healing of every healer build at level 60: Priest, Paladin, D
 python tools/healsim/run.py                      # all builds, writes results and the wiki data (about 25 s)
 python tools/healsim/run.py --classes druid --no-dps
 python tools/healsim/builds.py                   # list the builds and check them against the talent trees
+python tools/healsim/ledger.py                   # value of every talent, ability and stat (about 1 min)
 python tools/healsim/search.py                   # local search for better talent allocations (a few minutes)
 python -m unittest discover -s tools/healsim -p "test_*.py"
 ```
@@ -23,6 +24,7 @@ Output:
 | `builds.py` | The 21 builds as tree-valid talent orders, the races per class and `validate()`. |
 | `run.py` | Runs everything in parallel processes and writes both JSON files. |
 | `search.py` | Hill-climbs from the listed builds by moving one talent point at a time under the tree rules. A local search, not an exhaustive one. Writes `results/search.json`. |
+| `ledger.py` | Values every talent (with and without it on a reference healer, healing and off-DPS), every castable rank of every healing ability and every stat (healing per point, through `model.BONUS`). Lists every other trained ability as damage or utility. Writes `results/ledger.json` and `docs/assets/data/heal-ledger.json`. |
 | `test_healsim.py` | Unit tests: the linear program, build validity, budgets, mode order, limits and determinism. |
 
 The model reuses `tools/levelsim`: `core.py` for client data, base stats and characters, `gear.py` for gear (spec key `healer`) and the class modules for off-DPS.
@@ -78,7 +80,12 @@ It uses expected values, not Monte Carlo. Healing has no hit roll, and the only 
 - **Coefficient penalty.** The client stores `cast time / 3.5` for every rank. The model applies the Classic penalty for spells learned before level 20 (3.75% per level). Forever may differ. If it has no penalty, rank 1 and 2 heals become the best sustained spells.
 - **Racials.** Elune's Light, Berserking, Blood Fury and Eureka! are averaged over the fight. Blood Fury and Eureka! are assumed to affect healing. Read Leyline is not modelled.
 - **Gear.** `gear.py` picks the healing set with rough stat weights (tag A), not a stat-weight solve. Crafting makes few rings, necks and trinkets.
+- **Power Infusion** is skipped when the mix heals more without it (it costs 20% of base mana).
+- **Lay on Hands** heals for the Paladin's maximum health (class base health is Classic, unchecked) and drains all mana, so it is offered only in `max`.
+- **Lightwell** assumes all 5 charges are used. The client has the rank 1 heal only; rank 3 is scaled by mana cost. Party scenario only.
+- **Desperate Prayer** heals only the Priest: party scenario only.
+- **Inspiration and Ancestral Healing** are reported as armor buff uptime on the tank (`armor_buff`), not as healing.
 - **Power Word: Shield** counts its absorb as healing. Divine Aegis counts too.
 - **Holy Binding** counts in the group scenario only (the Priest is one of the five).
-- **Not modelled:** movement, pushback, damage to the healer, dispels, threat, mana potions, runes, party buffs, Inspiration and Ancestral Healing armor, Lightwell, Lay on Hands, Seal of Light, Judgement of Wisdom, Desperate Prayer, Spirit of Redemption.
+- **Not modelled:** movement, pushback, damage to the healer, dispels, threat, mana potions, runes, party buffs, Seal of Light, Judgement of Light and Judgement of Wisdom (melee only), Spirit of Redemption.
 - **Circle of Healing, Lifebloom, Nourish, Earth Shield, Divine Light and Healing Rain** exist in the client with no trained rank. The model treats them as not learnable.

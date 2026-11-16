@@ -146,6 +146,45 @@ class Coverage(unittest.TestCase):
         self.assertAlmostEqual(k.groups["Weakened Soul"], 1 / 4)
 
 
+class Extras(unittest.TestCase):
+    def test_every_stat_has_a_weight_and_none_hurts(self):
+        t = talents("druid", "resto-splendor")
+        base = model.solve("druid", "nelf", t, "crafted", "tank", "fight")["hps"]
+        for key, step in (("healing", 10), ("int", 10), ("spi", 10), ("crit", 1), ("mp5", 5), ("haste", 1), ("mana", 100)):
+            model.BONUS[key] = step
+            try:
+                self.assertGreater(model.solve("druid", "nelf", t, "crafted", "tank", "fight")["hps"], base, key)
+            finally:
+                model.BONUS.clear()
+
+    def test_lay_on_hands_only_when_mana_is_ignored(self):
+        t = talents("paladin", "holy-crit")
+        names = lambda m: {x["name"] for x in model.solve("paladin", "human", t, "crafted", "tank", m)["mix"]}  # noqa: E731
+        self.assertIn("Lay on Hands", names("max"))
+        self.assertNotIn("Lay on Hands", names("fight"))
+
+    def test_self_and_party_only_spells_stay_out_of_tank_healing(self):
+        t = talents("priest", "holy-pom")
+        for m in model.MODES:
+            names = " ".join(x["name"] for x in model.solve("priest", "human", t, "crafted", "tank", m)["mix"])
+            self.assertNotIn("Lightwell", names)
+            self.assertNotIn("Desperate Prayer", names)
+
+    def test_power_infusion_never_lowers_healing(self):
+        t = talents("priest", "disc-pi")
+        without = dict(t)
+        del without["Power Infusion"]
+        for sc in model.SCENARIOS:
+            for m in model.MODES:
+                self.assertGreaterEqual(model.solve("priest", "human", t, "crafted", sc, m)["hps"],
+                                        model.solve("priest", "human", without, "crafted", sc, m)["hps"] - 0.05)
+
+    def test_armor_buff_uptime_is_reported_for_the_tank(self):
+        o = model.solve("shaman", "troll", talents("shaman", "resto-deep"), "crafted", "tank", "fight")
+        self.assertEqual(o["armor_buff"]["talent"], "Ancestral Healing")
+        self.assertTrue(0 < o["armor_buff"]["uptime"] < 1)
+
+
 class OffDps(unittest.TestCase):
     def test_off_dps_uses_the_build_and_restores_the_module(self):
         import classes.shaman as sh

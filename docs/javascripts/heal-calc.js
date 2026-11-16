@@ -228,14 +228,94 @@
     draw();
   }
 
-  function onPage() {
-    var box = document.querySelector("[data-heal-sim]");
+  // ---------- Ledger: every talent, ability and stat (docs/assets/data/heal-ledger.json) ----------
+  function simpleTable(head, rows, cls) {
+    return el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table " + (cls || "") }, [
+      el("thead", {}, [el("tr", {}, head.map(function (h) { return el("th", { scope: "col", text: h }); }))]),
+      el("tbody", {}, rows.map(function (r) {
+        return el("tr", {}, r.map(function (c, i) { return typeof c === "string" || typeof c === "number" ? el("td", { "class": i ? "dps-num" : "", text: String(c) }) : c; }));
+      }))])]);
+  }
+  function signed(v, d) { return (v > 0 ? "+" : "") + num(v, d == null ? 1 : d); }
+  function renderLedger(box, data) {
+    var state = { cls: "priest", scen: "tank" };
+    var controls = el("div", { "class": "dps-filters" }), out = el("div");
+    var DPS_NOISE = 3;
+    function draw() {
+      var c = data.classes[state.cls], sc = state.scen, base = c.base[sc], kids = [];
+      kids.push(el("p", { "class": "dps-meta", text: "Reference healer: " + RACENAME[c.race] + " " + CLSNAME[state.cls] + ", build \"" + c.build +
+        "\", best craftable healing gear, " + (sc === "tank" ? "one target" : "party of 5") + ". Baseline: " + num(base[1], 1) + " sustained, " + num(base[2], 1) +
+        " endless and " + num(base[0], 1) + " maximum HPS; " + num(c.dps, 1) + " off-DPS. Health " + num(c.stats.health) + ", mana " + num(c.stats.mana) +
+        ", healing power " + num(c.stats.healing) + ", Intellect " + num(c.stats.int) + ", Spirit " + num(c.stats.spi) + ", spell crit " + num(c.stats.crit, 1) + "%." }));
+
+      // Stats
+      var hp = c.weights.filter(function (w) { return w.key === "healing"; })[0].d[sc];
+      kids.push(el("h3", { text: "Stats: healing gained per point" }));
+      kids.push(simpleTable(["Stat", "One point is", "Sustained HPS", "Endless HPS", "Maximum HPS", "Worth in healing power (sustained)"], c.weights.map(function (w) {
+        var d = w.d[sc];
+        return [w.label, w.unit, signed(d[1], 3), signed(d[2], 3), signed(d[0], 3), hp[1] ? num(d[1] / hp[1], 2) : "–"];
+      })));
+      if (c.armor_buff && c.armor_buff.fight && sc === "tank") {
+        var ab = c.armor_buff;
+        kids.push(el("p", { "class": "dps-meta", text: ab.fight.talent + " armor buff uptime on the tank: " + Math.round(ab.fight.uptime * 100) + "% sustained, " +
+          Math.round(ab.endless.uptime * 100) + "% endless, " + Math.round(ab.max.uptime * 100) + "% at maximum pace." }));
+      }
+
+      // Abilities
+      kids.push(el("h3", { text: "Healing abilities: every castable rank" }));
+      var acts = c.abilities.filter(function (a) { return a[sc] != null; });
+      kids.push(simpleTable(["Ability", "Seconds per cast", "Mana", "Healing per cast", "HPS while casting", "Healing per mana", "Limit per minute", "In the best mix for"], acts.map(function (a) {
+        var used = a.used.filter(function (u) { return u.indexOf(sc + "/") === 0; }).map(function (u) { return { max: "maximum", fight: "sustained", endless: "endless" }[u.split("/")[1]]; });
+        return [a.name, num(a.time, 2), num(a.cost, 0), num(a[sc], 0), num(a[sc] / a.time, 0), a.cost > 0 ? num(a[sc] / a.cost, 2) : "free", a.cap == null ? "–" : num(a.cap, 2),
+          el("td", { text: used.join(", ") || "–" })];
+      }), "heal-ledger"));
+      var o = c.other;
+      kids.push(el("p", { "class": "dps-meta", text: "Other trained abilities. Supporting the healing model (" + o.healing_support.length + "): " + (o.healing_support.join(", ") || "none") +
+        ". Used by the damage simulator (" + o.damage.length + "): " + (o.damage.join(", ") || "none") + ". No healing or damage output, so not calculated (" + o.utility.length + "): " + o.utility.join(", ") + "." }));
+
+      // Talents
+      kids.push(el("h3", { text: "Talents: value of every talent at its maximum rank" }));
+      kids.push(el("p", { "class": "dps-meta", text: "Each value is the reference healer with the talent at maximum rank minus the same healer without it. Damage changes under " + DPS_NOISE +
+        " DPS are within the simulator's noise." }));
+      var trees = [];
+      c.talents.forEach(function (t) { if (trees.indexOf(t.tree) < 0) trees.push(t.tree); });
+      trees.forEach(function (tree) {
+        var ts = c.talents.filter(function (t) { return t.tree === tree; }).sort(function (a, b) { return a.row - b.row; });
+        kids.push(el("h4", { text: tree }));
+        kids.push(simpleTable(["Talent", "Ranks", "In the reference build", "Sustained HPS", "Endless HPS", "Maximum HPS", "Off-DPS", "What it does"], ts.map(function (t) {
+          var d = t.d[sc], healing = Math.abs(d[0]) >= 0.5 || Math.abs(d[1]) >= 0.5 || Math.abs(d[2]) >= 0.5, dmg = t.dps != null && Math.abs(t.dps) >= DPS_NOISE;
+          var note = healing || dmg ? "" : (t.heal ? "Calculated; worth nothing to this build. " : t.dmg ? "No measurable output change. " : "No healing or damage output: survival, control or utility. ");
+          return [t.name, t.max, t.ref ? t.ref + "/" + t.max : "–", healing ? signed(d[1]) : "0", healing ? signed(d[2]) : "0", healing ? signed(d[0]) : "0",
+            t.dps == null ? "–" : dmg ? signed(t.dps) : "0", el("td", { "class": "heal-ledger-text", text: note + t.text })];
+        }), "heal-ledger"));
+      });
+      out.replaceChildren.apply(out, kids);
+    }
+    function select(labelText, key, opts) {
+      var s = el("select");
+      opts.forEach(function (o) { s.appendChild(el("option", { value: o[0], text: o[1] })); });
+      s.value = state[key];
+      s.addEventListener("change", function () { state[key] = s.value; draw(); });
+      return el("label", {}, [labelText, s]);
+    }
+    controls.appendChild(select("Class", "cls", Object.keys(data.classes).map(function (k) { return [k, CLSNAME[k]]; })));
+    controls.appendChild(select("Healing", "scen", [["tank", "One target (tank)"], ["group", "Party of 5"]]));
+    box.replaceChildren(controls, out);
+    draw();
+  }
+
+  function load(selector, file, draw, failText) {
+    var box = document.querySelector(selector);
     if (!box || box.dataset.ready) return;
     box.dataset.ready = "1";
-    var url = new URL("../assets/data/heal-sim.json", SCRIPT_SRC || location.href).href;
+    var url = new URL("../assets/data/" + file, SCRIPT_SRC || location.href).href;
     fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (data) { render(box, data); })
-      .catch(function () { box.replaceChildren(el("p", { text: "The healing simulation could not be loaded." })); });
+      .then(function (data) { draw(box, data); })
+      .catch(function () { box.replaceChildren(el("p", { text: failText })); });
+  }
+  function onPage() {
+    load("[data-heal-sim]", "heal-sim.json", render, "The healing simulation could not be loaded.");
+    load("[data-heal-ledger]", "heal-ledger.json", renderLedger, "The talent, ability and stat values could not be loaded.");
   }
   if (window.document$ && typeof window.document$.subscribe === "function") window.document$.subscribe(onPage);
   else if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", onPage);

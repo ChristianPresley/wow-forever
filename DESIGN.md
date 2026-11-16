@@ -158,6 +158,7 @@ Each ability, talent, item, profession, race, class, dungeon and raid name has a
 - **Opt out.** Put `<!-- unslop-prose: off -->` and `<!-- unslop-prose: on -->` on their own lines around a block that must stay as written, for example a quoted rule or a deliberate bad example.
 - **Generated pages.** Fix the text in the YAML source, then run the generator. `tools/classes/build.py` also stops on `semicolon`, `modal` and `long-sentence` in the guide data.
 - **Limits.** A program cannot check one topic for each sentence, the active voice, noun clusters or one term for one thing. A reviewer checks these.
+- **Claude Code hook.** `.claude/settings.json` registers a `PostToolUse` hook for `Edit`, `Write`, `MultiEdit` and `NotebookEdit`. After each edit, `.claude/hooks/lint-changed.mjs` runs the linter for that file type on the changed file only. Findings go back to Claude, which must fix them. The hook does not replace `npm run lint`, which checks all files.
 
 ## Deferred
 

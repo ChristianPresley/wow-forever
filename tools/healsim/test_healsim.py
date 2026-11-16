@@ -121,6 +121,31 @@ class Solve(unittest.TestCase):
         self.assertNotIn("Penance", names)
 
 
+class Coverage(unittest.TestCase):
+    def test_results_cover_every_build_race_gear_scenario_and_mode(self):
+        import json
+        path = Path(__file__).resolve().parent / "results" / "healers.json"
+        if not path.exists():
+            self.skipTest("run tools/healsim/run.py first")
+        rows = json.loads(path.read_text(encoding="utf-8"))
+        want = {(c, b[0], r, g) for c, bs in B.BUILDS.items() for b in bs for r in B.RACES[c] for g in ("crafted", "none")}
+        self.assertEqual({(r["class"], r["build"], r["race"], r["gear"]) for r in rows}, want)
+        for r in rows:
+            for sc in model.SCENARIOS:
+                for m in model.MODES:
+                    self.assertGreater(r["results"][sc][m]["hps"], 0)
+                    self.assertTrue(r["results"][sc][m]["mix"])
+            self.assertGreater(r["dps"]["dps"], 0)
+            self.assertNotIn("error", r["dps"])
+
+    def test_shield_respects_its_cooldown(self):
+        t = talents("priest", "holy-pom")                       # no Soul Warding: 4 s cooldown
+        st = model.Stats("priest", "human", t, "crafted")
+        model.apply_racials(st, model.uses("max"))
+        k = model.priest(st, {}, 5, model.uses("max"), "max")
+        self.assertAlmostEqual(k.groups["Weakened Soul"], 1 / 4)
+
+
 class OffDps(unittest.TestCase):
     def test_off_dps_uses_the_build_and_restores_the_module(self):
         import classes.shaman as sh

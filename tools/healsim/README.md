@@ -6,6 +6,7 @@ Works out the best healing of every healer build at level 60: Priest, Paladin, D
 python tools/healsim/run.py                      # all builds, writes results and the wiki data (about 25 s)
 python tools/healsim/run.py --classes druid --no-dps
 python tools/healsim/builds.py                   # list the builds and check them against the talent trees
+python tools/healsim/search.py                   # local search for better talent allocations (a few minutes)
 python -m unittest discover -s tools/healsim -p "test_*.py"
 ```
 
@@ -21,6 +22,7 @@ Output:
 | `model.py` | The linear program, the client data helpers, character stats, one kit per class, the solver and the off-DPS hook. |
 | `builds.py` | The 21 builds as tree-valid talent orders, the races per class and `validate()`. |
 | `run.py` | Runs everything in parallel processes and writes both JSON files. |
+| `search.py` | Hill-climbs from the listed builds by moving one talent point at a time under the tree rules. A local search, not an exhaustive one. Writes `results/search.json`. |
 | `test_healsim.py` | Unit tests: the linear program, build validity, budgets, mode order, limits and determinism. |
 
 The model reuses `tools/levelsim`: `core.py` for client data, base stats and characters, `gear.py` for gear (spec key `healer`) and the class modules for off-DPS.

@@ -318,7 +318,8 @@ def priest(st, ctx, n, U, mode):
         h = (val(s, e) + coef(s, e) * hp) * (1 + 0.20 * T("Improved Power Word: Shield", 3))
         k.add(label(s), "Power Word: Shield", GCD, cost(s, "Power Word: Shield", ma * (1 - 0.15 * sw)),
               {"Power Word: Shield (absorb)": h}, group="Weakened Soul")
-        k.groups["Weakened Soul"] = n / 15.0
+        # one shield per target per 15 s (Weakened Soul), and never faster than its own cooldown
+        k.groups["Weakened Soul"] = min(n / 15.0, 1 / max(GCD, cd_of(s) - 4 * sw))
     if T("Penance"):
         cast = trained("priest", "Penance")[-1]
         bolt = next(s for s in trained("priest", "Penance", paid=False)

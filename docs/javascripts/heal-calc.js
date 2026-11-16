@@ -5,8 +5,8 @@
   "use strict";
   var SCRIPT_SRC = document.currentScript ? document.currentScript.src : "";
   var CLSNAME = { priest: "Priest", paladin: "Paladin", druid: "Druid", shaman: "Shaman" };
-  var RACENAME = { human: "Human", dwarf: "Dwarf", gnome: "Gnome", nelf: "Night Elf", sho: "High Order Skyborne",
-    sws: "Windshaper Skyborne", orc: "Orc", troll: "Troll", tauren: "Tauren", undead: "Undead" };
+  var RACENAME = { human: "Human", dwarf: "Dwarf", gnome: "Gnome", nelf: "Night Elf", sho: "Skyborne (High Order)",
+    sws: "Skyborne (Windshaper)", orc: "Orc", troll: "Troll", tauren: "Tauren", undead: "Undead" };
   var MODES = [["fight", "Sustained"], ["endless", "Endless"], ["max", "Maximum"]];
   var SLOT_ORDER = ["head", "neck", "shoulder", "back", "chest", "wrist", "hands", "waist", "legs", "feet", "trinket1", "trinket2", "main_hand", "off_hand", "ranged"];
   var SLOT_NAME = { head: "Head", neck: "Neck", shoulder: "Shoulders", back: "Back", chest: "Chest", wrist: "Wrists", hands: "Hands", waist: "Waist",
@@ -163,35 +163,48 @@
           el("span", { text: buildOf(x).name }), el("span", { "class": "dps-meta", text: RACENAME[x.race] + " " + CLSNAME[x["class"]] })]);
       }) : []);
 
+      // Same shape as the DPS by level table: class pill, build, race, one main column with a bar
+      // (the metric the table is sorted by), then the other headline numbers.
+      var LABEL = { fight: "Sustained HPS", total: "Total healing in the fight", hpm: "Healing per mana", empty: "Seconds until empty",
+        sustain: "Sustain (% of maximum)", endless: "Endless HPS", max: "Maximum HPS", dps: "Off-DPS" };
+      var DIGITS = { fight: 1, total: 0, hpm: 2, empty: 1, sustain: 1, endless: 1, max: 1, dps: 1 };
+      var UNIT = { empty: " s", sustain: "%" };
+      // Short headers and whole numbers for the side columns keep the build names on one or two lines.
+      var SHORT = { fight: "Sustained HPS", hpm: "Per mana", empty: "Empty in", max: "Max HPS", dps: "Off-DPS" };
+      var SIDE_DIGITS = { fight: 1, hpm: 2, empty: 1, max: 0, dps: 0 };
+      function show(x, key, side) { return num(value(x, key), side ? SIDE_DIGITS[key] : DIGITS[key]) + (UNIT[key] || ""); }
+      var side = ["fight", "hpm", "empty", "max", "dps"].filter(function (k) { return k !== state.sort; });
+      var span = String(5 + side.length);
       var body = el("tbody");
       list.forEach(function (x, i) {
-        var b = buildOf(x), R = x.r[state.scen];
+        var b = buildOf(x);
         var btn = el("button", { type: "button", "class": "dps-spec-btn", "aria-expanded": "false", text: b.name });
         var tr = el("tr", { "class": "dps-spec-row" }), detail = null;
         function toggle() {
           if (detail) { detail.remove(); detail = null; tr.classList.remove("is-open"); btn.setAttribute("aria-expanded", "false"); return; }
-          detail = el("tr", { "class": "dps-spec-detail" }, [el("td", { colspan: "12" }, [panel(x)])]);
+          detail = el("tr", { "class": "dps-spec-detail" }, [el("td", { colspan: span }, [panel(x)])]);
           tr.after(detail); tr.classList.add("is-open"); btn.setAttribute("aria-expanded", "true");
         }
         btn.addEventListener("click", function (ev) { ev.stopPropagation(); toggle(); });
         tr.addEventListener("click", toggle);
         var bar = el("span", { "class": "dps-bar", "aria-hidden": "true" });
-        bar.style.setProperty("--v", Math.round(value(x, state.sort) / top * 100) + "%");
-        [el("td", { "class": "dps-num", text: String(i + 1) }), el("td", { text: CLSNAME[x["class"]] }),
-          el("td", {}, [btn, b.role === "hybrid" ? el("span", { "class": "dps-tag", text: "hybrid" }) : null]),
+        bar.style.setProperty("--v", (value(x, state.sort) / top * 100).toFixed(1) + "%");
+        [el("td", { text: String(i + 1) }),
+          el("td", {}, [el("span", { "class": "pill pill--" + x["class"], text: CLSNAME[x["class"]] })]),
+          el("td", {}, [btn]),
           el("td", { text: RACENAME[x.race] }),
-          el("td", { "class": "dps-num" }, [bar, num(R.fight.hps, 1)]), numCell(total(x)), numCell(R.fight.hpm, 2), numCell(R.max.oom, 1),
-          el("td", { "class": "dps-num", text: num(sustain(x), 1) + "%" }), numCell(R.endless.hps, 1), numCell(R.max.hps, 1),
-          numCell(x.dps ? x.dps.dps : null)
-        ].forEach(function (td) { tr.appendChild(td); });
+          el("td", { "class": "dps-num" }, [bar, el("strong", { text: show(x, state.sort) })])
+        ].concat(side.map(function (k) { return el("td", { "class": "dps-num", text: show(x, k, true) }); }))
+          .forEach(function (td) { tr.appendChild(td); });
         body.appendChild(tr);
       });
-      holder.replaceChildren(el("table", { "class": "dps-table" }, [
-        el("thead", {}, [el("tr", {}, ["#", "Class", "Build (click for the full build)", "Race", "Sustained HPS", "Total healing in the fight", "Healing per mana", "Seconds until empty", "Sustain", "Endless HPS", "Maximum HPS", "Off-DPS"]
-          .map(function (h) { return el("th", { scope: "col", text: h }); }))]), body]));
+      holder.replaceChildren(el("table", { "class": "dps-table heal-table" }, [
+        el("thead", {}, [el("tr", {}, ["#", "Class", "Build (click for the full build)", "Race",
+          LABEL[state.sort]]
+          .concat(side.map(function (k) { return SHORT[k]; })).map(function (h) { return el("th", { scope: "col", text: h }); }))]), body]));
       meta.textContent = list.length + " of " + data.rows.filter(function (x) { return x.gear === state.gear; }).length + " race and build pairs shown. Level " + data.level +
         ", " + (state.scen === "tank" ? "one target taking all the damage" : "a party of 5, everyone hurt") + ". Sustained = a " + Math.round(fight / 60) +
-        "-minute fight that ends on empty mana. Healing per mana is for the sustained mix. Seconds until empty is at maximum pace. Sustain = sustained healing as a share of maximum. Off-DPS = the same build and gear dealing damage for " + Math.round(data.dps_fight_seconds / 60) + " minutes.";
+        "-minute fight that ends on empty mana. The first number column is the one the table is sorted by. Healing per mana is for the sustained mix. Seconds until empty is at maximum pace. Off-DPS = the same build and gear dealing damage for " + Math.round(data.dps_fight_seconds / 60) + " minutes.";
     }
 
     function select(labelText, key, opts) {

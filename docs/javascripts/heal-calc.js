@@ -23,6 +23,53 @@
   }
   function num(v, d) { return v == null ? "–" : v.toLocaleString("en-US", { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 }); }
   function numCell(v, d) { return el("td", { "class": "dps-num", text: num(v, d) }); }
+  // Column header with a hover / focus description, and optionally a click-to-sort button.
+  function th(label, tip, sort) {
+    var inner = sort ? el("button", { type: "button", "class": "heal-sort" + (sort.active ? " is-active" : ""), text: label }) : el("span", { text: label });
+    if (tip) { inner.setAttribute("data-tip", tip); inner.classList.add("heal-tip"); if (!sort) inner.setAttribute("tabindex", "0"); }
+    if (sort) inner.addEventListener("click", sort.go);
+    var h = el("th", { scope: "col" }, [inner]);
+    if (sort && sort.active) h.setAttribute("aria-sort", "descending");
+    return h;
+  }
+  // One floating tooltip for every [data-tip] element (tables scroll sideways, so a CSS-only tooltip would be clipped).
+  var tipBox = null;
+  function showTip(target) {
+    if (!tipBox) { tipBox = el("div", { "class": "heal-tipbox", role: "tooltip", id: "heal-tipbox" }); document.body.appendChild(tipBox); }
+    tipBox.textContent = target.getAttribute("data-tip");
+    tipBox.hidden = false;
+    target.setAttribute("aria-describedby", "heal-tipbox");
+    var r = target.getBoundingClientRect(), w = tipBox.offsetWidth, hgt = tipBox.offsetHeight;
+    var left = Math.max(8, Math.min(window.innerWidth - w - 8, r.left + r.width / 2 - w / 2));
+    var top = r.bottom + 8 + hgt > window.innerHeight ? r.top - hgt - 8 : r.bottom + 8;
+    tipBox.style.left = left + "px";
+    tipBox.style.top = Math.max(8, top) + "px";
+  }
+  function hideTip() { if (tipBox) tipBox.hidden = true; }
+  function tipTarget(ev) { return ev.target && ev.target.closest ? ev.target.closest("[data-tip]") : null; }
+  if (!window.__healTips) {
+    window.__healTips = true;
+    document.addEventListener("mouseover", function (ev) { var t = tipTarget(ev); if (t) showTip(t); });
+    document.addEventListener("mouseout", function (ev) { if (tipTarget(ev)) hideTip(); });
+    document.addEventListener("focusin", function (ev) { var t = tipTarget(ev); if (t) showTip(t); });
+    document.addEventListener("focusout", hideTip);
+    document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") hideTip(); });
+    window.addEventListener("scroll", hideTip, true);
+  }
+  var TIP = {
+    rank: "Position in the current sort order.",
+    build: "The talent build. Click a row for its talents, cast mixes, sustain breakouts and gear.",
+    race: "Race of the character. Each build is run for every race its class can be.",
+    fight: "Sustained HPS: the most healing per second that lasts the whole 5-minute fight, starting on full mana and ending on empty.",
+    total: "Total healing in the fight: sustained HPS times the 300 seconds of the fight.",
+    hpm: "Healing per mana: healing bought by each point of mana with the sustained cast mix.",
+    empty: "Seconds until empty: how long a full mana bar lasts when casting the maximum mix without stopping.",
+    sustain: "Sustain: sustained HPS as a percentage of maximum HPS. The share of full output that survives a whole fight.",
+    endless: "Endless HPS: the most healing per second on mana regeneration alone. This mix never runs out of mana.",
+    max: "Maximum HPS: the most healing per second with mana ignored.",
+    dps: "Off-DPS: the same build in the same healing gear dealing damage for 3 minutes with its best damage rotation."
+  };
+
   function section(title, kids) { return el("section", { "class": "dps-spec-sec" }, [el("h4", { text: title })].concat(kids)); }
 
   function render(box, data) {
@@ -198,10 +245,13 @@
           .forEach(function (td) { tr.appendChild(td); });
         body.appendChild(tr);
       });
+      function sorter(k) {
+        return { active: k === state.sort, go: function () { state.sort = k; controls.querySelectorAll("select")[4].value = k; draw(); } };
+      }
       holder.replaceChildren(el("table", { "class": "dps-table heal-table" }, [
-        el("thead", {}, [el("tr", {}, ["#", "Class", "Build (click for the full build)", "Race",
-          LABEL[state.sort]]
-          .concat(side.map(function (k) { return SHORT[k]; })).map(function (h) { return el("th", { scope: "col", text: h }); }))]), body]));
+        el("thead", {}, [el("tr", {}, [th("#", TIP.rank), th("Class"), th("Build (click for the full build)", TIP.build), th("Race", TIP.race),
+          th(LABEL[state.sort], TIP[state.sort], sorter(state.sort))]
+          .concat(side.map(function (k) { return th(SHORT[k], TIP[k] + " Click to sort by it.", sorter(k)); })))]), body]));
       meta.textContent = list.length + " of " + data.rows.filter(function (x) { return x.gear === state.gear; }).length + " race and build pairs shown. Level " + data.level +
         ", " + (state.scen === "tank" ? "one target taking all the damage" : "a party of 5, everyone hurt") + ". Sustained = a " + Math.round(fight / 60) +
         "-minute fight that ends on empty mana. The first number column is the one the table is sorted by. Healing per mana is for the sustained mix. Seconds until empty is at maximum pace. Off-DPS = the same build and gear dealing damage for " + Math.round(data.dps_fight_seconds / 60) + " minutes.";
@@ -229,31 +279,83 @@
   }
 
   // ---------- Ledger: every talent, ability and stat (docs/assets/data/heal-ledger.json) ----------
-  function simpleTable(head, rows, cls) {
-    return el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table " + (cls || "") }, [
-      el("thead", {}, [el("tr", {}, head.map(function (h) { return el("th", { scope: "col", text: h }); }))]),
-      el("tbody", {}, rows.map(function (r) {
-        return el("tr", {}, r.map(function (c, i) { return typeof c === "string" || typeof c === "number" ? el("td", { "class": i ? "dps-num" : "", text: String(c) }) : c; }));
-      }))])]);
-  }
   function signed(v, d) { return (v > 0 ? "+" : "") + num(v, d == null ? 1 : d); }
+  function ledgerTable(cols, rows, cls) {
+    return el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table heal-ledger " + (cls || "") }, [
+      el("thead", {}, [el("tr", {}, cols.map(function (c) { return th(c[0], c[1]); }))]),
+      el("tbody", {}, rows)])]);
+  }
+  function td(text, cls) { return el("td", { "class": cls || "dps-num", text: String(text) }); }
+  function barCell(text, share, strong) {
+    var bar = el("span", { "class": "dps-bar", "aria-hidden": "true" });
+    bar.style.setProperty("--v", Math.max(0, Math.min(100, share * 100)).toFixed(1) + "%");
+    return el("td", { "class": "dps-num" }, [bar, strong ? el("strong", { text: text }) : text]);
+  }
   function renderLedger(box, data) {
-    var state = { cls: "priest", scen: "tank" };
+    var state = { cls: "priest", scen: "tank", ranks: false, zero: true };
     var controls = el("div", { "class": "dps-filters" }), out = el("div");
-    var DPS_NOISE = 3;
+    var DPS_NOISE = 3, MODE_NAME = { max: "maximum", fight: "sustained", endless: "endless" };
+
+    function kpi(label, value, unit, sub, share, tip) {
+      var kids = [el("span", { "class": "heal-kpi-k heal-tip", "data-tip": tip, tabindex: "0", text: label }),
+        el("span", { "class": "heal-kpi-v" }, [el("strong", { text: value }), el("small", { text: " " + unit })])];
+      if (share != null) {
+        var m = el("span", { "class": "heal-meter", "aria-hidden": "true" }); m.style.setProperty("--v", (share * 100).toFixed(1) + "%"); kids.push(m);
+      }
+      kids.push(el("span", { "class": "heal-kpi-s", text: sub }));
+      return el("div", { "class": "heal-kpi" }, kids);
+    }
+    function chip(label, value) { return el("span", { "class": "heal-chip" }, [el("span", { text: label }), el("strong", { text: value })]); }
+
+    function overview(c, sc) {
+      var base = c.base[sc], st = c.stats, mx = base[0] || 1;
+      var pts = Object.keys(c.points).map(function (t) { return c.points[t] + " " + t; }).join(" / ");
+      var hp = c.weights.filter(function (w) { return w.key === "healing"; })[0].d[sc][1] || 1;
+      var stats = c.weights.filter(function (w) { return w.key !== "healing" && w.d[sc][1] > 0; })
+        .sort(function (a, b) { return b.d[sc][1] - a.d[sc][1]; }).slice(0, 3);
+      var tal = c.talents.slice().sort(function (a, b) { return b.d[sc][1] - a.d[sc][1]; }).slice(0, 3);
+      var dmg = c.talents.filter(function (t) { return t.dps != null && t.dps >= DPS_NOISE; }).sort(function (a, b) { return b.dps - a.dps; }).slice(0, 3);
+      var hero = el("section", { "class": "heal-hero heal-hero--" + state.cls, "aria-label": CLSNAME[state.cls] + " overview" }, [
+        el("div", { "class": "heal-hero-head" }, [
+          el("span", { "class": "pill pill--" + state.cls, text: CLSNAME[state.cls] }),
+          el("div", {}, [el("p", { "class": "heal-hero-title", text: c.build_name }),
+            el("p", { "class": "heal-hero-sub", text: RACENAME[c.race] + " · " + pts + " · best craftable healing gear · " + (sc === "tank" ? "one target" : "party of 5") })])]),
+        el("p", { "class": "heal-hero-note", text: c.note }),
+        el("div", { "class": "heal-kpis" }, [
+          kpi("Sustained", num(base[1], 1), "HPS", num(base[1] / mx * 100, 1) + "% of maximum, for 5 minutes", base[1] / mx, TIP.fight),
+          kpi("Endless", num(base[2], 1), "HPS", num(base[2] / mx * 100, 1) + "% of maximum, forever", base[2] / mx, TIP.endless),
+          kpi("Maximum", num(base[0], 1), "HPS", "mana ignored", 1, TIP.max),
+          kpi("Off-damage", num(c.dps, 1), "DPS", "same build and gear", null, TIP.dps)]),
+        el("div", { "class": "heal-chips" }, [chip("Health", num(st.health)), chip("Mana", num(st.mana)), chip("Healing power", num(st.healing)),
+          chip("Intellect", num(st.int)), chip("Spirit", num(st.spi)), chip("Spell crit", num(st.crit, 1) + "%"),
+          chip("Regen casting", num(st.regen_cast, 0) + " / 5 s"), chip("Regen resting", num(st.regen_rest, 0) + " / 5 s")]),
+        el("div", { "class": "heal-hero-cols" }, [
+          el("div", {}, [el("h4", { text: "Best stats for sustained healing" }), el("ol", {}, stats.map(function (w) {
+            return el("li", {}, [el("strong", { text: w.label }), " · one " + (w.unit === "point" ? "point" : w.unit) + " is worth " + num(w.d[sc][1] / hp, 1) + " healing power"]);
+          }))]),
+          el("div", {}, [el("h4", { text: "Most valuable healing talents" }), el("ol", {}, tal.map(function (t) {
+            return el("li", {}, [el("strong", { text: t.name }), " · " + signed(t.d[sc][1]) + " sustained HPS"]);
+          }))]),
+          el("div", {}, [el("h4", { text: "Most valuable damage talents" }), el("ol", {}, dmg.map(function (t) {
+            return el("li", {}, [el("strong", { text: t.name }), " · " + signed(t.dps) + " DPS"]);
+          }))])])]);
+      return hero;
+    }
+
     function draw() {
-      var c = data.classes[state.cls], sc = state.scen, base = c.base[sc], kids = [];
-      kids.push(el("p", { "class": "dps-meta", text: "Reference healer: " + RACENAME[c.race] + " " + CLSNAME[state.cls] + ", build \"" + c.build +
-        "\", best craftable healing gear, " + (sc === "tank" ? "one target" : "party of 5") + ". Baseline: " + num(base[1], 1) + " sustained, " + num(base[2], 1) +
-        " endless and " + num(base[0], 1) + " maximum HPS; " + num(c.dps, 1) + " off-DPS. Health " + num(c.stats.health) + ", mana " + num(c.stats.mana) +
-        ", healing power " + num(c.stats.healing) + ", Intellect " + num(c.stats.int) + ", Spirit " + num(c.stats.spi) + ", spell crit " + num(c.stats.crit, 1) + "%." }));
+      var c = data.classes[state.cls], sc = state.scen, kids = [overview(c, sc)];
 
       // Stats
       var hp = c.weights.filter(function (w) { return w.key === "healing"; })[0].d[sc];
+      var topW = Math.max.apply(null, c.weights.map(function (w) { return w.d[sc][1]; })) || 1;
       kids.push(el("h3", { text: "Stats: healing gained per point" }));
-      kids.push(simpleTable(["Stat", "One point is", "Sustained HPS", "Endless HPS", "Maximum HPS", "Worth in healing power (sustained)"], c.weights.map(function (w) {
+      kids.push(ledgerTable([["Stat"], ["One point is", "The amount of the stat that the other columns are measured for."],
+        ["Sustained HPS", "Sustained healing per second gained from one more point of the stat."],
+        ["Worth in healing power", "How many points of healing power give the same sustained gain as one point of this stat."],
+        ["Endless HPS", "Endless healing per second gained from one more point."], ["Maximum HPS", "Maximum healing per second gained from one more point."]],
+      c.weights.map(function (w) {
         var d = w.d[sc];
-        return [w.label, w.unit, signed(d[1], 3), signed(d[2], 3), signed(d[0], 3), hp[1] ? num(d[1] / hp[1], 2) : "–"];
+        return el("tr", {}, [td(w.label, ""), td(w.unit), barCell(signed(d[1], 3), d[1] / topW, true), td(hp[1] ? num(d[1] / hp[1], 2) : "–"), td(signed(d[2], 3)), td(signed(d[0], 3))]);
       })));
       if (c.armor_buff && c.armor_buff.fight && sc === "tank") {
         var ab = c.armor_buff;
@@ -262,32 +364,54 @@
       }
 
       // Abilities
-      kids.push(el("h3", { text: "Healing abilities: every castable rank" }));
-      var acts = c.abilities.filter(function (a) { return a[sc] != null; });
-      kids.push(simpleTable(["Ability", "Seconds per cast", "Mana", "Healing per cast", "HPS while casting", "Healing per mana", "Limit per minute", "In the best mix for"], acts.map(function (a) {
-        var used = a.used.filter(function (u) { return u.indexOf(sc + "/") === 0; }).map(function (u) { return { max: "maximum", fight: "sustained", endless: "endless" }[u.split("/")[1]]; });
-        return [a.name, num(a.time, 2), num(a.cost, 0), num(a[sc], 0), num(a[sc] / a.time, 0), a.cost > 0 ? num(a[sc] / a.cost, 2) : "free", a.cap == null ? "–" : num(a.cap, 2),
-          el("td", { text: used.join(", ") || "–" })];
-      }), "heal-ledger"));
+      kids.push(el("h3", { text: "Healing abilities" }));
+      var acts = c.abilities.filter(function (a) { return a[sc] != null; }), last = {};
+      acts.forEach(function (a) { last[a.spell + "|" + a.name.replace(/ \(Rank \d+\)/, "")] = a.name; });
+      function usedIn(a) { return a.used.filter(function (u) { return u.indexOf(sc + "/") === 0; }).map(function (u) { return MODE_NAME[u.split("/")[1]]; }); }
+      var shown = acts.filter(function (a) { return state.ranks || usedIn(a).length || last[a.spell + "|" + a.name.replace(/ \(Rank \d+\)/, "")] === a.name; });
+      var topHps = Math.max.apply(null, shown.map(function (a) { return a[sc] / a.time; })) || 1;
+      kids.push(el("p", { "class": "dps-meta", text: shown.length + " of " + acts.length + " castable ranks shown" + (state.ranks ? "." : ": the top rank of each spell and every rank a best mix uses.") }));
+      kids.push(ledgerTable([["Ability"], ["Seconds per cast", "Time one cast takes: cast time or the 1.5 s global cooldown, whichever is longer."],
+        ["Mana", "Mana per cast after talents and expected refunds."], ["Healing per cast", "Expected healing of one cast: average roll, healing power, talents and crit. Party heals count every target hit."],
+        ["HPS while casting", "Healing per cast divided by seconds per cast: output if this were cast back to back."],
+        ["Healing per mana", "Healing per cast divided by mana per cast."], ["Limit per minute", "Most casts per minute a cooldown or a one-per-target rule allows."],
+        ["Best mix", "Which of the three optimal cast mixes use this rank."]],
+      shown.map(function (a) {
+        var used = usedIn(a);
+        return el("tr", { "class": used.length ? "" : "heal-dim" }, [td(a.name, ""), td(num(a.time, 2)), td(num(a.cost, 0)), td(num(a[sc], 0)),
+          barCell(num(a[sc] / a.time, 0), a[sc] / a.time / topHps), td(a.cost > 0 ? num(a[sc] / a.cost, 2) : "free"), td(a.cap == null ? "–" : num(a.cap, 2)),
+          el("td", {}, used.length ? used.map(function (u) { return el("span", { "class": "dps-tag dps-tag--f", text: u }); }) : ["–"])]);
+      })));
       var o = c.other;
-      kids.push(el("p", { "class": "dps-meta", text: "Other trained abilities. Supporting the healing model (" + o.healing_support.length + "): " + (o.healing_support.join(", ") || "none") +
-        ". Used by the damage simulator (" + o.damage.length + "): " + (o.damage.join(", ") || "none") + ". No healing or damage output, so not calculated (" + o.utility.length + "): " + o.utility.join(", ") + "." }));
+      kids.push(el("details", { "class": "heal-other" }, [el("summary", { text: "Other trained abilities (" + (o.healing_support.length + o.damage.length + o.utility.length) + ")" }),
+        el("p", {}, [el("strong", { text: "Supporting the healing model: " }), o.healing_support.join(", ") || "none"]),
+        el("p", {}, [el("strong", { text: "Used by the damage simulator: " }), o.damage.join(", ") || "none"]),
+        el("p", {}, [el("strong", { text: "No healing or damage output, so nothing to calculate: " }), o.utility.join(", ")])]));
 
       // Talents
-      kids.push(el("h3", { text: "Talents: value of every talent at its maximum rank" }));
-      kids.push(el("p", { "class": "dps-meta", text: "Each value is the reference healer with the talent at maximum rank minus the same healer without it. Damage changes under " + DPS_NOISE +
-        " DPS are within the simulator's noise." }));
-      var trees = [];
+      kids.push(el("h3", { text: "Talents: value at maximum rank" }));
+      var trees = [], topT = Math.max.apply(null, c.talents.map(function (t) { return t.d[sc][1]; })) || 1;
       c.talents.forEach(function (t) { if (trees.indexOf(t.tree) < 0) trees.push(t.tree); });
+      function effect(t) { var d = t.d[sc]; return Math.abs(d[0]) >= 0.5 || Math.abs(d[1]) >= 0.5 || Math.abs(d[2]) >= 0.5; }
+      function damage(t) { return t.dps != null && Math.abs(t.dps) >= DPS_NOISE; }
       trees.forEach(function (tree) {
-        var ts = c.talents.filter(function (t) { return t.tree === tree; }).sort(function (a, b) { return a.row - b.row; });
-        kids.push(el("h4", { text: tree }));
-        kids.push(simpleTable(["Talent", "Ranks", "In the reference build", "Sustained HPS", "Endless HPS", "Maximum HPS", "Off-DPS", "What it does"], ts.map(function (t) {
-          var d = t.d[sc], healing = Math.abs(d[0]) >= 0.5 || Math.abs(d[1]) >= 0.5 || Math.abs(d[2]) >= 0.5, dmg = t.dps != null && Math.abs(t.dps) >= DPS_NOISE;
-          var note = healing || dmg ? "" : (t.heal ? "Calculated; worth nothing to this build. " : t.dmg ? "No measurable output change. " : "No healing or damage output: survival, control or utility. ");
-          return [t.name, t.max, t.ref ? t.ref + "/" + t.max : "–", healing ? signed(d[1]) : "0", healing ? signed(d[2]) : "0", healing ? signed(d[0]) : "0",
-            t.dps == null ? "–" : dmg ? signed(t.dps) : "0", el("td", { "class": "heal-ledger-text", text: note + t.text })];
-        }), "heal-ledger"));
+        var all = c.talents.filter(function (t) { return t.tree === tree; }).sort(function (a, b) { return a.row - b.row; });
+        var ts = all.filter(function (t) { return state.zero || effect(t) || damage(t); });
+        kids.push(el("h4", { text: tree + " · " + (c.points[tree] || 0) + " points in the reference build" + (ts.length < all.length ? " · " + (all.length - ts.length) + " hidden" : "") }));
+        kids.push(ledgerTable([["Talent"], ["Build", "Ranks the reference build has in this talent, out of its maximum."],
+          ["Sustained HPS", "Sustained healing with the talent at maximum rank minus the same healer without it."],
+          ["Endless HPS", "The same comparison for endless healing."], ["Maximum HPS", "The same comparison for maximum healing."],
+          ["Off-DPS", "Damage per second with the talent minus without it. Changes under 3 DPS are simulator noise and show as 0."],
+          ["What it does", "The talent's tooltip at maximum rank."]],
+        ts.map(function (t) {
+          var d = t.d[sc], h = effect(t), g = damage(t);
+          var note = h || g ? "" : (t.heal ? "Calculated; worth nothing to this build. " : t.dmg ? "No measurable output change. " : "No healing or damage output: survival, control or utility. ");
+          function v(x) { return h && Math.abs(x) >= 0.05 ? el("td", { "class": "dps-num " + (x > 0 ? "heal-pos" : "heal-neg"), text: signed(x) }) : el("td", { "class": "dps-num heal-zero", text: "0" }); }
+          return el("tr", { "class": h || g ? "" : "heal-dim" }, [td(t.name, "heal-talent"), el("td", { "class": "dps-num" }, [t.ref ? el("span", { "class": "dps-tag", text: t.ref + "/" + t.max }) : "0/" + t.max]),
+            h && d[1] > 0 ? barCell(signed(d[1]), d[1] / topT, true) : v(d[1]), v(d[2]), v(d[0]),
+            t.dps == null ? td("–") : g ? el("td", { "class": "dps-num " + (t.dps > 0 ? "heal-pos" : "heal-neg"), text: signed(t.dps) }) : el("td", { "class": "dps-num heal-zero", text: "0" }),
+            el("td", { "class": "heal-ledger-text", text: note + t.text })]);
+        }), "heal-talents"));
       });
       out.replaceChildren.apply(out, kids);
     }
@@ -298,8 +422,16 @@
       s.addEventListener("change", function () { state[key] = s.value; draw(); });
       return el("label", {}, [labelText, s]);
     }
+    function check(labelText, key) {
+      var cb = el("input", { type: "checkbox" });
+      cb.checked = state[key];
+      cb.addEventListener("change", function () { state[key] = cb.checked; draw(); });
+      return el("label", { "class": "dps-check" }, [cb, labelText]);
+    }
     controls.appendChild(select("Class", "cls", Object.keys(data.classes).map(function (k) { return [k, CLSNAME[k]]; })));
     controls.appendChild(select("Healing", "scen", [["tank", "One target (tank)"], ["group", "Party of 5"]]));
+    controls.appendChild(check("Show every spell rank", "ranks"));
+    controls.appendChild(check("Show talents with no effect", "zero"));
     box.replaceChildren(controls, out);
     draw();
   }

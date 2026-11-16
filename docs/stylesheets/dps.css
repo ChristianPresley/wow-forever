@@ -56,4 +56,59 @@
 .md-typeset .heal-table th, .md-typeset .heal-table td { padding-inline: .45em; }
 .md-typeset .heal-table td:nth-child(3) { min-width: 8.5rem; }
 .md-typeset .heal-ledger td { vertical-align: top; }
-.md-typeset .heal-ledger .heal-ledger-text { min-width: 16rem; font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .heal-ledger .heal-ledger-text { min-width: 12rem; font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+
+/* Healing tables: sortable headers, hover descriptions, quieter zero rows */
+.md-typeset .heal-table tbody tr:nth-child(even) td, .md-typeset .heal-ledger tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--fc-surface-2) 55%, transparent); }
+.md-typeset .heal-table .dps-spec-row:hover td, .md-typeset .heal-table .dps-spec-row.is-open td { background: var(--md-accent-fg-color--transparent); }
+.md-typeset .heal-table thead th, .md-typeset .heal-ledger thead th { vertical-align: bottom; border-bottom: 2px solid var(--fc-border-strong); }
+.md-typeset .heal-ledger thead th:not(:first-child) { text-align: right; }
+.md-typeset .heal-ledger th:last-child, .md-typeset .heal-ledger td:last-child { text-align: left; }
+.md-typeset .heal-tip { cursor: help; text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.md-typeset .heal-tip:focus-visible, .md-typeset .heal-sort:focus-visible { outline: 2px solid var(--fc-focus, currentColor); outline-offset: 2px; border-radius: var(--fc-radius-s); }
+.md-typeset .heal-sort { font: inherit; font-weight: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: inherit; }
+.md-typeset .heal-sort::after { content: " \2195"; opacity: .45; }
+.md-typeset .heal-sort.is-active { color: var(--fc-gold-text); }
+.md-typeset .heal-sort.is-active::after { content: " \25BE"; opacity: 1; }
+.heal-tipbox { position: fixed; z-index: 20; max-width: 18rem; padding: .45rem .6rem; border-radius: var(--fc-radius); background: #282e39; color: #f4f1ea;
+  font-size: var(--fc-fs-xs, .68rem); line-height: 1.45; box-shadow: 0 4px 14px rgb(0 0 0 / .3); pointer-events: none; }
+.heal-tipbox[hidden] { display: none; }
+.md-typeset .heal-dim td { color: var(--fc-text-subtle); }
+.md-typeset .heal-zero { color: var(--fc-text-subtle); }
+.md-typeset .heal-pos { color: var(--fc-adm-success-text); font-weight: 600; }
+.md-typeset .heal-neg { color: var(--fc-adm-danger-text); font-weight: 600; }
+.md-typeset .heal-talent { font-weight: 600; white-space: nowrap; }
+.md-typeset .heal-ledger .dps-tag + .dps-tag { margin-left: .3em; }
+.md-typeset details.heal-other { margin: var(--fc-space-3) 0 var(--fc-space-5); font-size: var(--fc-fs-sm); }
+
+/* Class overview card */
+.md-typeset .heal-hero { --c: var(--fc-text-muted); --ct: var(--fc-surface-2); margin: var(--fc-space-4) 0 var(--fc-space-6); padding: var(--fc-space-5);
+  border: 1px solid var(--fc-border); border-top: 4px solid var(--c); border-radius: var(--fc-radius);
+  background: linear-gradient(135deg, var(--ct), var(--fc-surface-1) 60%); }
+.md-typeset .heal-hero--priest { --c: var(--fc-c-priest); --ct: var(--fc-c-priest-t); }
+.md-typeset .heal-hero--paladin { --c: var(--fc-c-paladin); --ct: var(--fc-c-paladin-t); }
+.md-typeset .heal-hero--druid { --c: var(--fc-c-druid); --ct: var(--fc-c-druid-t); }
+.md-typeset .heal-hero--shaman { --c: var(--fc-c-shaman); --ct: var(--fc-c-shaman-t); }
+.md-typeset .heal-hero-head { display: flex; align-items: center; gap: var(--fc-space-4); }
+.md-typeset .heal-hero-head .pill { font-size: var(--fc-fs-body); }
+.md-typeset .heal-hero-title { margin: 0; font-family: var(--fc-display-font, inherit); font-size: var(--fc-fs-h2); font-weight: 700; line-height: 1.15; color: var(--c); }
+.md-typeset .heal-hero-sub { margin: .15rem 0 0; font-size: var(--fc-fs-sm); color: var(--fc-text-muted); }
+.md-typeset .heal-hero-note { margin: var(--fc-space-3) 0 0; font-size: var(--fc-fs-sm); }
+.md-typeset .heal-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.6rem, 1fr)); gap: var(--fc-space-3); margin-top: var(--fc-space-4); }
+.md-typeset .heal-kpi { display: grid; gap: .2rem; padding: var(--fc-space-3) var(--fc-space-4); border: 1px solid var(--fc-border); border-radius: var(--fc-radius);
+  background: color-mix(in srgb, var(--fc-surface-1) 80%, transparent); }
+.md-typeset .heal-kpi-k { justify-self: start; font-size: var(--fc-fs-xs); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--fc-text-muted); }
+.md-typeset .heal-kpi-v strong { font-size: 1.5rem; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--fc-text); }
+.md-typeset .heal-kpi-v small { font-size: var(--fc-fs-sm); color: var(--fc-text-muted); }
+.md-typeset .heal-kpi-s { font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .heal-meter { --v: 0%; height: .4rem; border-radius: var(--fc-radius-full);
+  background: linear-gradient(90deg, var(--c) var(--v), color-mix(in srgb, var(--fc-border) 70%, transparent) var(--v)); }
+.md-typeset .heal-chips { display: flex; flex-wrap: wrap; gap: var(--fc-space-2); margin-top: var(--fc-space-4); }
+.md-typeset .heal-chip { display: inline-flex; gap: .45em; align-items: baseline; padding: .15rem .6rem; border: 1px solid var(--fc-border); border-radius: var(--fc-radius-full);
+  background: color-mix(in srgb, var(--fc-surface-1) 80%, transparent); font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .heal-chip strong { font-size: var(--fc-fs-sm); color: var(--fc-text); font-variant-numeric: tabular-nums; }
+.md-typeset .heal-hero-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: var(--fc-space-4) var(--fc-space-5); margin-top: var(--fc-space-5);
+  padding-top: var(--fc-space-4); border-top: 1px solid var(--fc-border); }
+.md-typeset .heal-hero-cols h4 { margin: 0 0 var(--fc-space-2); font-size: var(--fc-fs-xs); letter-spacing: .06em; text-transform: uppercase; color: var(--fc-text-muted); }
+.md-typeset .heal-hero-cols ol { margin: 0 0 0 1.1rem; padding: 0; font-size: var(--fc-fs-sm); }
+.md-typeset .heal-hero-cols li { margin: 0 0 .15rem; }

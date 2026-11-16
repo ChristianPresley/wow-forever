@@ -147,7 +147,8 @@ def main():
         acts = abilities(cls)
         dsrc = (model.LEVELSIM / "classes" / f"{cls}.py").read_text(encoding="utf-8")
         st = model.solve(cls, race, ref, "crafted", "tank", "fight")
-        doc[cls] = {"build": REFERENCE[cls], "race": race, "base": healing(cls, race, ref), "stats": st["stats"],
+        bdef = next(b for b in B.BUILDS[cls] if b[0] == REFERENCE[cls])
+        doc[cls] = {"build": REFERENCE[cls], "build_name": bdef[1], "note": bdef[3], "points": B.points(bdef[4]), "race": race, "base": healing(cls, race, ref), "stats": st["stats"],
                     "armor_buff": {m: model.solve(cls, race, ref, "crafted", "tank", m).get("armor_buff") for m in model.MODES},
                     "dps": model.off_dps(cls, race, ref, "crafted", a.dps_iterations)["dps"] if a.dps_iterations else None,
                     "abilities": acts, "other": other_abilities(cls, {x["spell"] for x in acts}),

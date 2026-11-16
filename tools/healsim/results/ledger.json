@@ -98,6 +98,12 @@
  "classes": {
   "priest": {
    "build": "holy-pom",
+   "build_name": "Holy (Prayer of Mending)",
+   "note": "Deep Holy: Spiritual Guidance, Spiritual Healing and Prayer of Mending.",
+   "points": {
+    "Discipline": 19,
+    "Holy": 32
+   },
    "race": "human",
    "base": {
     "tank": [
@@ -2006,6 +2012,13 @@
   },
   "paladin": {
    "build": "holy-crit",
+   "build_name": "Holy (Light's Vigil) / Retribution",
+   "note": "Deep Holy with Divine Intellect, Benediction and Conviction for crit.",
+   "points": {
+    "Holy": 31,
+    "Protection": 5,
+    "Retribution": 15
+   },
    "race": "human",
    "base": {
     "tank": [
@@ -3594,6 +3607,12 @@
   },
   "druid": {
    "build": "resto-splendor",
+   "build_name": "Restoration / Nature's Splendor",
+   "note": "11/0/40: longer HoTs and Nature's Majesty crit, still with Wild Growth.",
+   "points": {
+    "Balance": 11,
+    "Restoration": 40
+   },
    "race": "nelf",
    "base": {
     "tank": [
@@ -5506,6 +5525,12 @@
   },
   "shaman": {
    "build": "resto-deep",
+   "build_name": "Deep Restoration (Riptide)",
+   "note": "0/10/41: Riptide, Mana Tide and Purification with Enhancement Intellect and crit.",
+   "points": {
+    "Enhancement": 10,
+    "Restoration": 41
+   },
    "race": "dwarf",
    "base": {
     "tank": [

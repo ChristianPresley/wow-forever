@@ -68,6 +68,7 @@ extra_css:
 extra_javascript:
   - javascripts/codex.js
   - javascripts/dps-calc.js
+  - javascripts/heal-calc.js
 
 extra:
   generator: false
@@ -126,6 +127,7 @@ plugins:
       js_files:
         - javascripts/codex.js
         - javascripts/dps-calc.js
+        - javascripts/heal-calc.js
       css_files:
         - stylesheets/extra.css
         - stylesheets/identity.css
@@ -150,6 +152,7 @@ nav:
   - Classes:
       - guides/index.md
       - DPS Calculator: guides/dps-calculator.md
+      - Healing Calculator: guides/healing-calculator.md
       - Druid:
           - guides/druid/index.md
           - Talents: guides/druid/talents.md

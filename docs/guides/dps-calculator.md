@@ -7,6 +7,8 @@ description: Estimated (not measured) raid DPS for every race and DPS spec in Wo
 
 This page **estimates** single-target raid DPS for every race and DPS spec pair against a level 63 boss, with pre-raid gear. These numbers are model output, not measured results. No raid opens until 9 December 2026, so no one has real raid logs to check them against.
 
+Healers have their own page: the [healing calculator](healing-calculator.md) covers sustained and maximum healing, and the off-damage of every healer build.
+
 !!! warning "Estimates on incomplete data"
     Treat every number on this page as an estimate. Absolute DPS could be off by 20–30%, and the order of specs could change once real logs exist.
 

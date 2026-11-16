@@ -52,6 +52,8 @@ DAGGER_MH = {("rogue", "assassination"), ("rogue", "subtlety")}
 PHYS = {"str": 2.0, "agi": 2.0, "ap": 1.0, "crit": 20 / CRIT_RATING_PER_PCT, "hit": 15 / HIT_RATING_PER_PCT, "sta": 0.05}
 CASTER = {"sp": 1.0, "int": 0.6, "spi": 0.2, "crit": 10 / CRIT_RATING_PER_PCT, "hit": 12 / HIT_RATING_PER_PCT,
           "mp5": 1.5, "sta": 0.02}
+# Healing gear (spec key "healer", used by tools/healsim): rough weights, tag A.
+HEALER = {"healing": 1.0, "sp": 1.0, "int": 0.8, "spi": 0.5, "crit": 8 / CRIT_RATING_PER_PCT, "mp5": 2.5, "sta": 0.02}
 SCHOOLS = {
     ("mage", "arcane"): {"arcane"}, ("mage", "fire"): {"fire"}, ("mage", "frost"): {"frost"},
     ("priest", "shadow"): {"shadow"}, ("priest", "holy"): {"holy", "shadow"}, ("priest", "discipline"): {"holy", "shadow"},
@@ -62,6 +64,11 @@ SCHOOLS = {
 
 
 def weights(cls, spec):
+    if spec == "healer":
+        w = dict(HEALER)
+        if cls == "paladin":  # Illumination and a small Spirit regen: Intellect and crit over Spirit
+            w.update(int=1.0, spi=0.2, crit=12 / CRIT_RATING_PER_PCT)
+        return w
     if (cls, spec) in SCHOOLS:
         return dict(CASTER)
     w = dict(PHYS)
@@ -105,7 +112,7 @@ def select(cls, spec, level):
     """Return {"items": [...], "enchants": [...], "stats": totals, "mh", "oh", "ranged"}."""
     d = _data()
     w = weights(cls, spec)
-    phys = (cls, spec) not in SCHOOLS
+    phys = (cls, spec) not in SCHOOLS and spec != "healer"
     schools = SCHOOLS.get((cls, spec), set())
     armor_ok = ARMOR[cls][1 if level >= 40 else 0]
     wpn_ok = WEAPONS[cls]
@@ -156,7 +163,8 @@ def select(cls, spec, level):
         chosen["off_hand"] = best({"shield"})
     else:
         staff = best({"two_hand"})
-        one, held = best({"one_hand", "main_hand"}), best({"held_in_off_hand"})
+        off = {"held_in_off_hand", "shield"} if spec == "healer" else {"held_in_off_hand"}  # healers may hold a shield
+        one, held = best({"one_hand", "main_hand"}), best(off)
         pair = (_wscore(one, w, schools, False) if one else -1) + (_wscore(held, w, schools, False) if held else 0)
         if staff and _wscore(staff, w, schools, False) >= pair:
             chosen["main_hand"] = staff

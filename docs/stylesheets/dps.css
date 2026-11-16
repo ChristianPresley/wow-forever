@@ -44,3 +44,10 @@
 .dps-spec-trees { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: .6rem 1.2rem; }
 .dps-spec-seq { columns: 3 12rem; }
 .dps-spec-t { display: inline-block; min-width: 3.2rem; color: var(--md-default-fg-color--light); font-variant-numeric: tabular-nums; }
+
+/* Healing calculator (docs/guides/healing-calculator.md, javascripts/heal-calc.js) */
+.md-typeset .heal-picks { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: var(--fc-space-3); margin: var(--fc-space-4) 0; }
+.md-typeset .heal-pick { display: grid; gap: .1rem; padding: var(--fc-space-3); border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius); background: var(--fc-surface-1); font-size: var(--fc-fs-sm); }
+.md-typeset .heal-pick-k { font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .heal-pick strong { font-size: 1.15rem; font-variant-numeric: tabular-nums; }
+.md-typeset .dps-spec-btn + .dps-tag { margin-left: .5em; }

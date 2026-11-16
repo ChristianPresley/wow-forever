@@ -279,7 +279,7 @@
       select("Sort by", "sort", [["fight", "Sustained healing"], ["total", "Total healing in the fight"], ["hpm", "Healing per mana"], ["empty", "Seconds until empty"], ["sustain", "Sustain %"], ["endless", "Endless healing"], ["max", "Maximum healing"], ["dps", "Off-damage"]]),
       el("label", { "class": "dps-check" }, [cb, "Best race only"])
     ].forEach(function (c) { controls.appendChild(c); });
-    box.replaceChildren(controls, picks, meta, holder);
+    box.replaceChildren(controls, meta, holder, picks);     // the table first; the best-of cards follow it
     draw();
   }
 

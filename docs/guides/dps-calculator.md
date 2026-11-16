@@ -5,44 +5,26 @@ description: Estimated (not measured) raid DPS for every race and DPS spec in Wo
 
 # DPS calculator
 
-This page **estimates** single-target raid DPS for every race and DPS spec pair against a level 63 boss, with pre-raid gear. These numbers are model output, not measured results. No raid opens until 9 December 2026, so no one has real raid logs to check them against.
+**What the table shows.** Simulated damage per second (DPS) for every class, talent tree and race, at the level and with the gear that you pick. Each row is one spec and race in a 3-minute fight against a target of the same level. A higher number is better. The numbers are model estimates, not measured results: see [Limits](#limits).
 
-Healers have their own page: the [healing calculator](healing-calculator.md) covers sustained and maximum healing, and the off-damage of every healer build.
+**How to use it.**
 
-!!! warning "Estimates on incomplete data"
-    Treat every number on this page as an estimate. Absolute DPS could be off by 20–30%, and the order of specs could change once real logs exist.
-
-    - **Missing Forever data:** most Rogue, Hunter, Paladin, Druid and Shaman ability ranks, most spell coefficients, pet and demon damage, base stats by race, rating conversions and the armor formula. Each gap is filled with a Classic value or a tagged assumption.
-    - **Assumed gear:** most gear profiles are assumptions. Only Arms uses published pre-raid totals.
-    - **Untested rotations:** each spec uses a priority list written for this page, not one tested by players.
-    - **Data confidence** shows how much of each spec's input is Forever data. No simulated spec is above 67%.
-
-    **What is more trustworthy:** comparing races within one spec, when the gap is larger than the ± margin. Every racial value comes from Wowhead Forever, and all races of a class use the same gear. Gaps under about 1% are effectively ties.
-
-**Using the tables.** Every table on this page works the same way:
-
-- **Sort:** select a column header to sort by it, and select it again to reverse the order.
-- **Column meanings:** point at a header, or move keyboard focus to it, for a description. The same descriptions are written out under each table in "How to read this table".
-- **Header row:** it stays in view while you scroll down a long table.
-- **Every race is listed** by default. Tick the best-race box to keep only the best race of each spec or build.
-- **Keyboard:** all filters, headers and row names are reachable with Tab. A table that is wider than the page can be scrolled sideways with the arrow keys once it has focus.
-
-## DPS by level
-
-This simulator (`tools/levelsim`) plays out every class, talent tree and race at every level from 1 to 60, in a 3-minute fight against a same-level target with no armor. The character knows every spell rank and talent point it can have at that level, and uses its racial abilities. Casters spend their mana so it lasts the fight. They pick spell ranks to suit, and shoot a wand or melee while their mana comes back.
-
-Pick the gear:
-
-- **Best craftable gear:** each slot holds the crafted item and enchant that scores best for the spec at that level. Item stats are decoded from the Forever client. Crafting makes almost no rings, necks or trinkets, so those slots are mostly empty. Weapon procs and set bonuses are not counted.
-- **No gear:** the character fights unarmed and unarmored. Hunters have no ranged weapon, so they lose their shots.
-
-**Click any row** to open its full build at that level: race, class and spec, talents by tree, every gear slot with its enchant, the opening sequence of abilities from a simulated fight, casts per minute and damage by source.
-
-Spell values come from the Forever client data. Rules the client doesn't ship (combat formulas, rage, most talent ranks above 1, scripted effects, hit and crit rating conversion) use Classic rules or tagged assumptions; the module docstrings list them. It is not raid DPS: raid buffs, consumables and boss armor are left out.
+- **Level and gear:** move the Level slider, and pick *Best craftable gear* or *No gear*.
+- **Filter:** pick a class. Tick the best-race box to keep only the best race of each spec.
+- **Sort:** select a column header. Select it again to reverse the order.
+- **Open a build:** select a row to see its talents, gear, opening sequence and damage by source at that level.
+- **Column meanings:** point at a header, or move keyboard focus to it. *How to read this table*, under the table, lists them all.
+- **Keyboard:** Tab reaches every filter, header and row name. The header row stays in view while you scroll.
 
 <div class="dps-calc" data-dps-levels><p>Loading the level simulation. It needs JavaScript.</p></div>
 
+Healers have their own page: the [healing calculator](healing-calculator.md) covers sustained and maximum healing, and the off-damage of every healer build.
+
 ## Simulated raid estimates
+
+**What the table shows.** Estimated single-target raid DPS for every race and DPS spec at level 60, against a level 63 boss, with pre-raid gear and raid buffs. It answers a different question from the table above: how specs compare in a raid, not how they level.
+
+**How to use it.** Filter by class or faction, sort by any column, and open a spec name to see its damage by ability. *Data confidence* shows how much of the spec's input is Forever data.
 
 These estimates come from two event-driven combat simulators in the repository (`tools/sim/physical` and `tools/sim/casters`). They play out each fight with swing timers, cast times, the attack table, resources, procs and cooldowns, using a priority list for each spec. Their READMEs list every assumption and gap.
 
@@ -75,6 +57,33 @@ Change any number and the table updates. Changes are not saved.
 <div class="dps-inputs-wrap" data-dps-inputs></div>
 
 </div>
+
+## How DPS by level works
+
+This simulator (`tools/levelsim`) plays out every class, talent tree and race at every level from 1 to 60, in a 3-minute fight against a same-level target with no armor. The character knows every spell rank and talent point it can have at that level, and uses its racial abilities. Casters spend their mana so it lasts the fight. They pick spell ranks to suit, and shoot a wand or melee while their mana comes back.
+
+Pick the gear:
+
+- **Best craftable gear:** each slot holds the crafted item and enchant that scores best for the spec at that level. Item stats are decoded from the Forever client. Crafting makes almost no rings, necks or trinkets, so those slots are mostly empty. Weapon procs and set bonuses are not counted.
+- **No gear:** the character fights unarmed and unarmored. Hunters have no ranged weapon, so they lose their shots.
+
+**Click any row** to open its full build at that level: race, class and spec, talents by tree, every gear slot with its enchant, the opening sequence of abilities from a simulated fight, casts per minute and damage by source.
+
+Spell values come from the Forever client data. Rules the client doesn't ship (combat formulas, rage, most talent ranks above 1, scripted effects, hit and crit rating conversion) use Classic rules or tagged assumptions; the module docstrings list them. It is not raid DPS: raid buffs, consumables and boss armor are left out.
+
+## Limits
+
+No raid opens until 9 December 2026, so no one has real raid logs to check these numbers against.
+
+!!! warning "Estimates on incomplete data"
+    Treat every number on this page as an estimate. Absolute DPS could be off by 20–30%, and the order of specs could change once real logs exist.
+
+    - **Missing Forever data:** most Rogue, Hunter, Paladin, Druid and Shaman ability ranks, most spell coefficients, pet and demon damage, base stats by race, rating conversions and the armor formula. Each gap is filled with a Classic value or a tagged assumption.
+    - **Assumed gear:** most gear profiles are assumptions. Only Arms uses published pre-raid totals.
+    - **Untested rotations:** each spec uses a priority list written for this page, not one tested by players.
+    - **Data confidence** shows how much of each spec's input is Forever data. No simulated spec is above 67%.
+
+    **What is more trustworthy:** comparing races within one spec, when the gap is larger than the ± margin. Every racial value comes from Wowhead Forever, and all races of a class use the same gear. Gaps under about 1% are effectively ties.
 
 ## Sources
 

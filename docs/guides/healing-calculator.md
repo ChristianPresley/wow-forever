@@ -5,17 +5,18 @@ description: Estimated (not measured) sustained and maximum healing, and off-dam
 
 # Healing calculator
 
-This page **estimates** the healing of every healer build at level 60: Priest, Paladin, Druid and Shaman, each race, 21 talent builds. For each one it works out the cast mix that heals the most, and reports three numbers plus the damage the same character deals when it stops healing. These numbers are model output, not measured results. No raid opens until 9 December 2026, so no one has real healing logs to check them against.
+**What the table shows.** The best healing that each healer build can do at level 60: Priest, Paladin, Druid and Shaman, 21 talent builds, every race. Each row is one build and race. *Sustained HPS* is the most healing per second that lasts a 5-minute fight. The other columns show the healing for each point of mana, how fast the mana runs out at full pace, the maximum healing, and the damage that the same character deals when it does not heal. The numbers are model estimates, not measured results: see [Limits](#limits).
 
-!!! warning "Estimates on incomplete data"
-    Treat every number on this page as an estimate.
+**How to use it.**
 
-    - **No overhealing:** every point of healing counts. Real healing loses a large share to overhealing, more for slow heals and heal-over-time spells.
-    - **Missing Forever data:** talent values come from launch tooltips, not the client. Holy Shock's cost, Light's Vigil's heal, Oath of Light at lower ranks, the water totems, Innervate, Spirit regeneration and the penalty on spells learned before level 20 use Classic values or tagged assumptions.
-    - **Crafted gear only:** the gear is the best craftable healing set. Dungeon and raid gear would raise every number.
-    - **No party buffs or consumables:** each healer brings only their own buffs. No mana potions.
+- **Healing job:** pick *One target (tank)* or *Party of 5*.
+- **Filter:** pick a class, the gear, and healers or hybrids. Tick the best-race box to keep only the best race of each build.
+- **Sort:** select the header of a number column, or use *Sort by*. Select the header again to reverse the order.
+- **Open a build:** select a row to see its talents, the exact spells and ranks to cast, the mana flow, the off-damage and the gear.
+- **Column meanings:** point at a header, or move keyboard focus to it. *How to read this table*, under the table, lists them all.
+- **Keyboard:** Tab reaches every filter, header and row name. The header row stays in view while you scroll.
 
-    **What is more trustworthy:** comparing builds within one class, and comparing sustained with maximum healing for one build.
+<div class="dps-calc" data-heal-sim><p>Loading the healing simulation. It needs JavaScript.</p></div>
 
 ## What the numbers mean
 
@@ -35,16 +36,6 @@ Pick the healing job:
 - **Party of 5:** all five party members are hurt. Party heals hit five players, Chain Heal hits three and Prayer of Mending jumps five times.
 
 **Click any row** for the full build: talents by tree, the exact spells and ranks to cast per minute for each of the three numbers, a breakout of each sustain stat by pace and by spell (total healing, healing per mana, seconds until empty), healing by source, the off-damage breakdown and every gear slot.
-
-**Using the tables.** Every table on this page works the same way:
-
-- **Sort:** select a column header to sort by it, and select it again to reverse the order. In the first table the number columns sort; the other tables sort on every column.
-- **Column meanings:** point at a header, or move keyboard focus to it, for a description. The same descriptions are written out under each table in "How to read this table".
-- **Header row:** it stays in view while you scroll down a long table.
-- **Every race is listed** by default. Tick the best-race box to keep only the best race of each spec or build.
-- **Keyboard:** all filters, headers and row names are reachable with Tab. A table that is wider than the page can be scrolled sideways with the arrow keys once it has focus.
-
-<div class="dps-calc" data-heal-sim><p>Loading the healing simulation. It needs JavaScript.</p></div>
 
 ## Every talent, ability and stat
 
@@ -97,6 +88,20 @@ The model (`tools/healsim`) does not play out a fight. It uses expected values.
 - **Racial cooldowns** are used on cooldown and averaged over the fight.
 
 Not modelled: overhealing, movement, pushback, damage to the healer, dispels, threat, mana potions, runes, party buffs, Seal of Light and Judgement of Wisdom (they need the healer in melee). Inspiration and Ancestral Healing are reported as armor buff uptime, not as healing. Lightwell assumes the party uses all five charges. Lay on Hands drains all mana, so it only counts toward maximum healing.
+
+## Limits
+
+No raid opens until 9 December 2026, so no one has real healing logs to check these numbers against.
+
+!!! warning "Estimates on incomplete data"
+    Treat every number on this page as an estimate.
+
+    - **No overhealing:** every point of healing counts. Real healing loses a large share to overhealing, more for slow heals and heal-over-time spells.
+    - **Missing Forever data:** talent values come from launch tooltips, not the client. Holy Shock's cost, Light's Vigil's heal, Oath of Light at lower ranks, the water totems, Innervate, Spirit regeneration and the penalty on spells learned before level 20 use Classic values or tagged assumptions.
+    - **Crafted gear only:** the gear is the best craftable healing set. Dungeon and raid gear would raise every number.
+    - **No party buffs or consumables:** each healer brings only their own buffs. No mana potions.
+
+    **What is more trustworthy:** comparing builds within one class, and comparing sustained with maximum healing for one build.
 
 ## Sources
 

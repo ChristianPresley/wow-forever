@@ -35,7 +35,22 @@
     var holder = el("div", { "class": "dps-scroll" });
 
     function buildOf(x) { return builds[x["class"] + "/" + x.build]; }
-    function value(x, key) { return key === "dps" ? (x.dps ? x.dps.dps : 0) : x.r[state.scen][key].hps; }
+    // Sustain: the share of a build's maximum healing that it can keep up for the whole fight.
+    function sustain(x) { var R = x.r[state.scen]; return R.max.hps ? R.fight.hps / R.max.hps * 100 : 0; }
+    // The three sustain stats: total healing in the fight, healing per mana, seconds until the mana bar is empty.
+    function total(x) { return x.r[state.scen].fight.hps * fight; }
+    function hpm(x) { return x.r[state.scen].fight.hpm || 0; }
+    function empty(x) { return x.r[state.scen].max.oom || 0; }
+    function value(x, key) {
+      var R = x.r[state.scen];
+      return key === "dps" ? (x.dps ? x.dps.dps : 0) : key === "sustain" ? sustain(x) : key === "total" ? total(x) : key === "hpm" ? hpm(x) :
+        key === "empty" ? empty(x) : R[key].hps;
+    }
+    function table(head, rows) {
+      return el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table" }, [
+        el("thead", {}, [el("tr", {}, head.map(function (h) { return el("th", { scope: "col", text: h }); }))]),
+        el("tbody", {}, rows.map(function (r) { return el("tr", {}, r.map(function (c, i) { return i ? el("td", { "class": "dps-num", text: c }) : el("td", { text: c }); })); }))])]);
+    }
     function pool() {
       return data.rows.filter(function (x) {
         return x.gear === state.gear && (state.cls === "all" || x["class"] === state.cls) &&
@@ -44,7 +59,7 @@
     }
 
     function mixList(o) {
-      var items = o.mix.map(function (m) { return el("li", { text: N[m[0]] + ": " + num(m[1], 1) + " casts/min, " + num(m[2]) + " HPS" }); });
+      var items = o.mix.map(function (m) { return el("li", { text: N[m[0]] + ": " + num(m[1], 1) + " casts/min, " + num(m[2], 1) + " HPS" }); });
       if (o.rest > 0.005) items.push(el("li", { text: "Not casting (regenerating mana): " + Math.round(o.rest * 100) + "% of the time" }));
       return el("ul", {}, items);
     }
@@ -63,6 +78,40 @@
         "Healing power " + num(st.healing) + ", Intellect " + num(st.int) + ", Spirit " + num(st.spi) + ", spell crit " + num(st.crit, 1) + "% before talents",
         "Mana " + num(st.mana) + "; regeneration " + num(st.regen_cast, 0) + " per 5 s while casting, " + num(st.regen_rest, 0) + " per 5 s while resting"
       ].map(function (t) { return el("li", { text: t }); }))]));
+      var F = R.fight, E = R.endless, M = R.max, pool = st.mana;
+      var PACES = [["Sustained mix", F], ["Endless mix", E], ["Maximum mix", M]];
+      function lasts(o) { return o.oom == null ? Infinity : o.oom; }
+      function secs(o) { var t = lasts(o); return t === Infinity ? "never" : num(t, 1) + " s"; }
+      // 1. Total healing in the fight
+      kids.push(section("Sustain stat 1: total healing in the fight: " + num(total(x)), [
+        el("p", { "class": "dps-meta", text: "Healing delivered over the " + num(fight) + " s fight at each pace. The maximum mix stops when mana runs out." }),
+        table(["Pace", "HPS while casting", "Seconds it lasts", "Total healing in the fight", "Share of sustained"], PACES.map(function (pc) {
+          var o = pc[1], t = Math.min(fight, lasts(o)), tot = o.hps * t;
+          return [pc[0], num(o.hps, 1), num(t, 1), num(tot), num(tot / (F.hps * fight) * 100, 1) + "%"];
+        })),
+        el("h5", { text: "Sustained mix, by spell" }),
+        table(["Spell", "Casts in the fight", "Healing per cast", "Total healing", "Share"], F.mix.map(function (m) {
+          return [N[m[0]], num(m[1] * fight / 60, 1), num(m[4], 1), num(m[2] * fight), num(m[2] / F.hps * 100, 1) + "%"];
+        }))]));
+      // 2. Healing per mana
+      kids.push(section("Sustain stat 2: healing per mana: " + num(F.hpm, 2), [
+        el("p", { "class": "dps-meta", text: "Healing bought by each point of mana spent." }),
+        table(["Pace", "Healing per mana", "HPS", "Mana spent per second"], PACES.map(function (pc) {
+          return [pc[0], num(pc[1].hpm, 2), num(pc[1].hps, 1), num(pc[1].spend, 2)];
+        })),
+        el("h5", { text: "Sustained mix, by spell" }),
+        table(["Spell", "Healing per mana", "Healing per cast", "Mana per cast", "Mana in the fight", "Share of mana"], F.mix.map(function (m) {
+          var mana = m[1] / 60 * m[3];
+          return [N[m[0]], m[3] > 0 ? num(m[4] / m[3], 2) : "free", num(m[4], 1), num(m[3], 1), num(mana * fight), F.spend ? num(mana / F.spend * 100, 1) + "%" : "–"];
+        }))]));
+      // 3. Seconds until empty
+      kids.push(section("Sustain stat 3: seconds until empty: " + secs(M) + " at maximum pace", [
+        el("p", { "class": "dps-meta", text: "How long a full mana bar of " + num(pool) + " lasts at each pace: mana bar divided by the net drain." }),
+        table(["Pace", "Mana spent per second", "Mana regenerated per second", "Net drain per second", "Seconds until empty", "Time not casting"], PACES.map(function (pc) {
+          var o = pc[1];
+          return [pc[0], num(o.spend, 2), num(o.regen, 2), num(Math.max(0, o.spend - o.regen), 2), secs(o), Math.round(o.rest * 100) + "%"];
+        })),
+        el("p", { "class": "dps-meta", text: "Sustain: " + num(sustain(x), 1) + "% of maximum healing lasts the whole fight; " + num(M.hps ? E.hps / M.hps * 100 : 0, 1) + "% lasts forever." })]));
       var titles = { fight: "Sustained: best cast mix for a " + Math.round(fight / 60) + "-minute fight", endless: "Endless: best cast mix on regeneration alone",
         max: "Maximum: highest healing per second, mana ignored" };
       MODES.forEach(function (m, i) {
@@ -106,10 +155,11 @@
 
       // Best picks for the current filters.
       function bestBy(key) { return all.slice().sort(function (a, b) { return value(b, key) - value(a, key); })[0]; }
-      var cards = [["Best sustained healing", "fight", "HPS"], ["Best endless healing", "endless", "HPS"], ["Highest healing", "max", "HPS"], ["Most off-damage", "dps", "DPS"]];
+      var cards = [["Most healing in the fight", "total", "healing", 0], ["Best healing per mana", "hpm", "per mana", 2], ["Longest at maximum pace", "empty", "s until empty", 1],
+        ["Best endless healing", "endless", "HPS", 1], ["Highest healing", "max", "HPS", 1], ["Most off-damage", "dps", "DPS", 1]];
       picks.replaceChildren.apply(picks, all.length ? cards.map(function (c) {
         var x = bestBy(c[1]);
-        return el("div", { "class": "heal-pick" }, [el("span", { "class": "heal-pick-k", text: c[0] }), el("strong", { text: num(value(x, c[1])) + " " + c[2] }),
+        return el("div", { "class": "heal-pick" }, [el("span", { "class": "heal-pick-k", text: c[0] }), el("strong", { text: num(value(x, c[1]), c[3]) + " " + c[2] }),
           el("span", { text: buildOf(x).name }), el("span", { "class": "dps-meta", text: RACENAME[x.race] + " " + CLSNAME[x["class"]] })]);
       }) : []);
 
@@ -120,7 +170,7 @@
         var tr = el("tr", { "class": "dps-spec-row" }), detail = null;
         function toggle() {
           if (detail) { detail.remove(); detail = null; tr.classList.remove("is-open"); btn.setAttribute("aria-expanded", "false"); return; }
-          detail = el("tr", { "class": "dps-spec-detail" }, [el("td", { colspan: "9" }, [panel(x)])]);
+          detail = el("tr", { "class": "dps-spec-detail" }, [el("td", { colspan: "12" }, [panel(x)])]);
           tr.after(detail); tr.classList.add("is-open"); btn.setAttribute("aria-expanded", "true");
         }
         btn.addEventListener("click", function (ev) { ev.stopPropagation(); toggle(); });
@@ -130,17 +180,18 @@
         [el("td", { "class": "dps-num", text: String(i + 1) }), el("td", { text: CLSNAME[x["class"]] }),
           el("td", {}, [btn, b.role === "hybrid" ? el("span", { "class": "dps-tag", text: "hybrid" }) : null]),
           el("td", { text: RACENAME[x.race] }),
-          el("td", { "class": "dps-num" }, [bar, num(R.fight.hps)]), numCell(R.endless.hps), numCell(R.max.hps), numCell(R.max.oom),
+          el("td", { "class": "dps-num" }, [bar, num(R.fight.hps, 1)]), numCell(total(x)), numCell(R.fight.hpm, 2), numCell(R.max.oom, 1),
+          el("td", { "class": "dps-num", text: num(sustain(x), 1) + "%" }), numCell(R.endless.hps, 1), numCell(R.max.hps, 1),
           numCell(x.dps ? x.dps.dps : null)
         ].forEach(function (td) { tr.appendChild(td); });
         body.appendChild(tr);
       });
       holder.replaceChildren(el("table", { "class": "dps-table" }, [
-        el("thead", {}, [el("tr", {}, ["#", "Class", "Build (click for the full build)", "Race", "Sustained HPS", "Endless HPS", "Maximum HPS", "Seconds to empty at maximum", "Off-DPS"]
+        el("thead", {}, [el("tr", {}, ["#", "Class", "Build (click for the full build)", "Race", "Sustained HPS", "Total healing in the fight", "Healing per mana", "Seconds until empty", "Sustain", "Endless HPS", "Maximum HPS", "Off-DPS"]
           .map(function (h) { return el("th", { scope: "col", text: h }); }))]), body]));
       meta.textContent = list.length + " of " + data.rows.filter(function (x) { return x.gear === state.gear; }).length + " race and build pairs shown. Level " + data.level +
         ", " + (state.scen === "tank" ? "one target taking all the damage" : "a party of 5, everyone hurt") + ". Sustained = a " + Math.round(fight / 60) +
-        "-minute fight that ends on empty mana. Off-DPS = the same build and gear dealing damage for " + Math.round(data.dps_fight_seconds / 60) + " minutes.";
+        "-minute fight that ends on empty mana. Healing per mana is for the sustained mix. Seconds until empty is at maximum pace. Sustain = sustained healing as a share of maximum. Off-DPS = the same build and gear dealing damage for " + Math.round(data.dps_fight_seconds / 60) + " minutes.";
     }
 
     function select(labelText, key, opts) {
@@ -157,7 +208,7 @@
       select("Healing", "scen", [["tank", "One target (tank)"], ["group", "Party of 5"]]),
       select("Gear", "gear", [["crafted", "Best craftable gear"], ["none", "No gear"]]),
       select("Builds", "role", [["all", "Healers and hybrids"], ["healer", "Healers only"], ["hybrid", "Hybrids only"]]),
-      select("Sort by", "sort", [["fight", "Sustained healing"], ["endless", "Endless healing"], ["max", "Maximum healing"], ["dps", "Off-damage"]]),
+      select("Sort by", "sort", [["fight", "Sustained healing"], ["total", "Total healing in the fight"], ["hpm", "Healing per mana"], ["empty", "Seconds until empty"], ["sustain", "Sustain %"], ["endless", "Endless healing"], ["max", "Maximum healing"], ["dps", "Off-damage"]]),
       el("label", { "class": "dps-check" }, [cb, "Best race only"])
     ].forEach(function (c) { controls.appendChild(c); });
     box.replaceChildren(controls, picks, meta, holder);

@@ -35,7 +35,8 @@ def one(job):
 
 
 def compact(rows):
-    """Small JSON for the page: names are indexed, each mix entry is [name, casts/min, hps]."""
+    """Small JSON for the page: names are indexed, each mix entry is
+    [name, casts/min, hps, mana per cast, healing per cast]."""
     names = []
 
     def ix(n):
@@ -55,7 +56,7 @@ def compact(rows):
             for m, o in modes.items():
                 row["r"][sc][m] = {"hps": o["hps"], "rest": o["rest"], "oom": o["oom_seconds"], "hpm": o["hpm"],
                                    "spend": o["mana_spent_ps"], "regen": o["mana_regen_ps"],
-                                   "mix": [[ix(x["name"]), x["cpm"], x["hps"]] for x in o["mix"]],
+                                   "mix": [[ix(x["name"]), x["cpm"], x["hps"], x["cost"], x["heal"]] for x in o["mix"]],
                                    "src": [[ix(k), v] for k, v in o["breakdown"].items()]}
         if r["dps"]:
             d = r["dps"]

@@ -17,9 +17,13 @@ This page **estimates** the healing of every healer build at level 60: Priest, P
 
     **What is more trustworthy:** comparing builds within one class, and comparing sustained with maximum healing for one build.
 
-## What the three numbers mean
+## What the numbers mean
 
 - **Sustained HPS:** the most healing per second that lasts a 5-minute fight. The healer starts on full mana and ends on empty. This is the number to plan a fight around.
+- **Total healing in the fight:** sustained HPS times the 300 seconds of the fight.
+- **Healing per mana:** healing bought by each point of mana with the sustained mix.
+- **Seconds until empty:** how long a full mana bar lasts at maximum pace.
+- **Sustain:** sustained HPS as a percentage of maximum HPS. A build at 25% must hold back three quarters of what it could cast.
 - **Endless HPS:** the most healing per second on mana regeneration alone. A healer casting this mix never runs out.
 - **Maximum HPS:** the most healing per second with mana ignored, and how many seconds the mana bar lasts at that pace.
 
@@ -30,7 +34,7 @@ Pick the healing job:
 - **One target (tank):** one player takes all the damage. Party heals hit one player and each heal-over-time spell can only be on that one target.
 - **Party of 5:** all five party members are hurt. Party heals hit five players, Chain Heal hits three and Prayer of Mending jumps five times.
 
-**Click any row** for the full build: talents by tree, the exact spells and ranks to cast per minute for each of the three numbers, healing by source, mana flow, the off-damage breakdown and every gear slot.
+**Click any row** for the full build: talents by tree, the exact spells and ranks to cast per minute for each of the three numbers, a breakout of each sustain stat by pace and by spell (total healing, healing per mana, seconds until empty), healing by source, the off-damage breakdown and every gear slot.
 
 <div class="dps-calc" data-heal-sim><p>Loading the healing simulation. It needs JavaScript.</p></div>
 

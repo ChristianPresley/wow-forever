@@ -6,6 +6,7 @@ search:
   boost: 2
 generated: true
 wide: true
+wide: true
 ---
 
 # Alchemy Guide
@@ -30,7 +31,7 @@ wide: true
 | **Recipes** | 179 (72 new, 49 changed) |
 | **From a trainer** | 43 |
 | **From a recipe item** | 136 |
-| **Merchant's Favor** | 28 recipes |
+| **Favor recipes** | 28 |
 
 </aside>
 

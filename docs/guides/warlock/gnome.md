@@ -41,13 +41,13 @@ A Classic combination with a new change. Gnomes keep **Escape Artist** and **Exp
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Expansive Mind** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Expansive Mind** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown>+5% maximum mana. Fewer Life Taps per fight, and more spare mana when you level</p>
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Engineering Specialization** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Engineering Specialization** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
 <p markdown>20% fewer device failures. Does not add Engineering skill now. Only useful if you take Engineering. Warcraft Tavern recommends Engineering for top damage</p>
 </div>

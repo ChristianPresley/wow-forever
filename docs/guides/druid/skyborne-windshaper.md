@@ -75,7 +75,7 @@ Method recommends the Windshaper as the Horde choice for **Cat and Balance in Pv
 
     Check that Cat Form is stance 3 on your bar. Skysight plus Dash is a strong gap-closer or escape in Cat.
 
-## Starting zone walkthrough: Zephras Isle (1–~12)
+## Starting zone walkthrough: Zephras Isle (1–12)
 
 Both Skyborne factions use [Zephras Isle](../../world/zephras-isle.md), in different phases, until about **12–14**.
 

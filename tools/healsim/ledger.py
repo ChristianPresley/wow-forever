@@ -69,7 +69,7 @@ def talent_job(job):
         a = model.off_dps(cls, race, with_t, "crafted", dps_iter)["dps"]
         b = model.off_dps(cls, race, without, "crafted", dps_iter)["dps"]
         dps = round(a - b, 1)
-    text = t.get("rankmax") or t.get("rank1") or " ".join(t.get("text") or [])
+    text = t.get("rankmax") or t.get("rank1") or (t.get("text") or [""])[-1]     # for an active talent: the description, not its cost line
     return {"tree": tree, "name": t["name"], "max": t["max"], "row": t["row"], "ref": ref.get(t["name"], 0),
             "text": text.encode("ascii", "replace").decode().replace("?", "-") if "�" in text else text, "d": d, "dps": dps}
 
@@ -132,7 +132,7 @@ def stat_weights(cls):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--classes", default="")
-    ap.add_argument("--dps-iterations", type=int, default=40)
+    ap.add_argument("--dps-iterations", type=int, default=30)     # the same runs as run.py, so the numbers agree
     ap.add_argument("--jobs", type=int, default=max(1, (os.cpu_count() or 2) - 1))
     a = ap.parse_args()
     wanted = set(filter(None, a.classes.split(","))) or set(B.BUILDS)

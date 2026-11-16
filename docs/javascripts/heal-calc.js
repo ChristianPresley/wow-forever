@@ -106,7 +106,7 @@
     }
 
     function mixList(o) {
-      var items = o.mix.map(function (m) { return el("li", { text: N[m[0]] + ": " + num(m[1], 1) + " casts/min, " + num(m[2], 1) + " HPS" }); });
+      var items = o.mix.filter(function (m) { return m[1] >= 0.05; }).map(function (m) { return el("li", { text: N[m[0]] + ": " + num(m[1], 1) + " casts/min, " + num(m[2], 1) + " HPS" }); });
       if (o.rest > 0.005) items.push(el("li", { text: "Not casting (regenerating mana): " + Math.round(o.rest * 100) + "% of the time" }));
       return el("ul", {}, items);
     }
@@ -190,7 +190,7 @@
           el("thead", {}, [el("tr", {}, ["Slot", "Item", "Item level", "Enchant"].map(function (h) { return el("th", { scope: "col", text: h }); }))]),
           el("tbody", {}, rowsG)])]), el("p", { "class": "dps-meta", text: "Gear totals: " + statTxt.join(", ") + "." })]));
       }
-      kids.push(el("p", { "class": "dps-meta", text: "Data confidence: " + Math.round(x.share * 100) + "% of the inputs this build read are Forever client values; the rest are Classic rules or assumptions." }));
+      kids.push(el("p", { "class": "dps-meta", text: "Data confidence: " + Math.round(x.share * 100) + "% of the inputs this build reads are Forever client values; the rest are Classic rules or assumptions." }));
       return el("div", { "class": "dps-spec" }, kids);
     }
 
@@ -204,7 +204,7 @@
       // Best picks for the current filters.
       function bestBy(key) { return all.slice().sort(function (a, b) { return value(b, key) - value(a, key); })[0]; }
       var cards = [["Most healing in the fight", "total", "healing", 0], ["Best healing per mana", "hpm", "per mana", 2], ["Longest at maximum pace", "empty", "s until empty", 1],
-        ["Best endless healing", "endless", "HPS", 1], ["Highest healing", "max", "HPS", 1], ["Most off-damage", "dps", "DPS", 1]];
+        ["Best endless healing", "endless", "HPS", 1], ["Highest maximum healing", "max", "HPS", 1], ["Most off-damage", "dps", "DPS", 1]];
       picks.replaceChildren.apply(picks, all.length ? cards.map(function (c) {
         var x = bestBy(c[1]);
         return el("div", { "class": "heal-pick" }, [el("span", { "class": "heal-pick-k", text: c[0] }), el("strong", { text: num(value(x, c[1]), c[3]) + " " + c[2] }),
@@ -290,7 +290,7 @@
       el("thead", {}, [el("tr", {}, cols.map(function (c) { return th(c[0], c[1]); }))]),
       el("tbody", {}, rows)])]);
   }
-  function td(text, cls) { return el("td", { "class": cls || "dps-num", text: String(text) }); }
+  function td(text, cls) { return el("td", { "class": cls == null ? "dps-num" : cls, text: String(text) }); }   // "" = a text cell
   function barCell(text, share, strong) {
     var bar = el("span", { "class": "dps-bar", "aria-hidden": "true" });
     bar.style.setProperty("--v", Math.max(0, Math.min(100, share * 100)).toFixed(1) + "%");
@@ -336,7 +336,7 @@
           chip("Regen casting", num(st.regen_cast, 0) + " / 5 s"), chip("Regen resting", num(st.regen_rest, 0) + " / 5 s")]),
         el("div", { "class": "heal-hero-cols" }, [
           el("div", {}, [el("h4", { text: "Best stats for sustained healing" }), el("ol", {}, stats.map(function (w) {
-            return el("li", {}, [el("strong", { text: w.label }), " · one " + (w.unit === "point" ? "point" : w.unit) + " is worth " + num(w.d[sc][1] / hp, 1) + " healing power"]);
+            return el("li", {}, [el("strong", { text: w.label }), " · " + (w.unit === "point" ? "one point" : w.unit) + " is worth " + num(w.d[sc][1] / hp, 1) + " healing power"]);
           }))]),
           el("div", {}, [el("h4", { text: "Most valuable healing talents" }), el("ol", {}, tal.map(function (t) {
             return el("li", {}, [el("strong", { text: t.name }), " · " + signed(t.d[sc][1]) + " sustained HPS"]);
@@ -386,7 +386,7 @@
         return el("tr", { "class": used.length ? "" : "heal-dim" }, [td(a.name, ""), td(num(a.time, 2)), td(num(a.cost, 0)), td(num(a[sc], 0)),
           barCell(num(a[sc] / a.time, 0), a[sc] / a.time / topHps), td(a.cost > 0 ? num(a[sc] / a.cost, 2) : "free"), td(a.cap == null ? "–" : num(a.cap, 2)),
           el("td", {}, used.length ? used.map(function (u) { return el("span", { "class": "dps-tag dps-tag--f", text: u }); }) : ["–"])]);
-      })));
+      }), "heal-abilities"));
       var o = c.other;
       kids.push(el("details", { "class": "heal-other" }, [el("summary", { text: "Other trained abilities (" + (o.healing_support.length + o.damage.length + o.utility.length) + ")" }),
         el("p", {}, [el("strong", { text: "Supporting the healing model: " }), o.healing_support.join(", ") || "none"]),

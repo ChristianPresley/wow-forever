@@ -303,8 +303,12 @@
     });
 
     /* 2. Route tables: first column "Level(s)", second "Zone(s)"/"Where" */
+    /* Progress ticks are for the class guides (a route you follow). An overview table of zones, or a
+       reference page whose heading happens to start with "Leveling", is not a route. */
+    var isGuide = /\/guides\/[a-z-]+\//.test(location.pathname);
     root.querySelectorAll("table").forEach(function (table) {
       var ths = table.querySelectorAll("thead th");
+      if (!isGuide) return;
       if (ths.length < 2 || !ROUTE_TABLE.test(textOf(ths[0])) || !ROUTE_COL.test(textOf(ths[1]))) return;
       if (table.hasAttribute("data-fc-route")) return;
       table.setAttribute("data-fc-route", ""); /* not a class: the table style is for a table with no class */
@@ -322,7 +326,7 @@
     });
 
     /* 3. Leveling brackets: every H3 under the "Leveling walkthrough" H2, and .steps list items */
-    var lev = root.querySelector("h2[id^='leveling']");
+    var lev = isGuide ? root.querySelector("h2[id^='leveling']") : null;
     var brackets = [];
     for (var n = lev && lev.nextElementSibling; n && n.tagName !== "H2"; n = n.nextElementSibling) {
       if (n.tagName === "H3" && n.id) brackets.push(n);

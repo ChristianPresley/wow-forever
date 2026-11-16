@@ -6,6 +6,7 @@ search:
   boost: 2
 generated: true
 wide: true
+wide: true
 ---
 
 # Engineering Guide
@@ -30,7 +31,7 @@ wide: true
 | **Recipes** | 247 (78 new, 49 changed) |
 | **From a trainer** | 71 |
 | **From a recipe item** | 176 |
-| **Merchant's Favor** | 28 recipes |
+| **Favor recipes** | 28 |
 
 </aside>
 

@@ -31,7 +31,7 @@ The Tauren is the original Horde druid. You start at Camp Narache in Mulgore and
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Endurance** <span class="ability-type passive">Passive: +5% health</span></p>
+<p class="ability-name" markdown>**Endurance** *(changed)* <span class="ability-type passive">Passive: +5% health</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown><span class="ability-label">PvE</span> Always-on survivability for Bear</p>
 <p markdown><span class="ability-label">PvP</span> Harder to burst</p>
@@ -74,7 +74,7 @@ Blizzard removed the old Nature Resistance racial. Endurance lost the hit/crit b
 
     The second macro interrupts your own cast to stomp a caster. Stomp, then shift out and heal, or shift into Bear when they are stunned.
 
-## Starting zone walkthrough: Mulgore (1–~12)
+## Starting zone walkthrough: Mulgore (1–12)
 
 **Camp Narache (1–6)**
 

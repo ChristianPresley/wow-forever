@@ -23,26 +23,26 @@ Troll Rogue is a Classic combination. **Berserking** gives +10% attack speed for
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 }</p>
+<p class="ability-name" markdown>**Berserking** *(changed)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown>+10% attack and cast speed for 15 s. Stacks with Adrenaline Rush and Blade Flurry. More swings = more poison and Hack and Slash procs</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Rapid Regeneration** *(new)* <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 } leveling · **2/5**{ .stars .s2 } PvP</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } leveling · **2/5**{ .stars .s2 } PvP</p>
 <p markdown>Regenerates 50% of max health over 6 s. Any action cancels it. Use it after a kill instead of eating. In PvP, use it when you are Vanished or after a Blind</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Beast Slaying** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } leveling · **1/5**{ .stars .s1 } raids</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } leveling · **1/5**{ .stars .s1 } raids</p>
 <p markdown>Bonus damage against Beasts (5% in Classic. The Forever value is not listed). Many leveling mobs are beasts</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Regeneration** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown>+20% health regen, part of it during combat. You eat less food</p>
 </div>
 

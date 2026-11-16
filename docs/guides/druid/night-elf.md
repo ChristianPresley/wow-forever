@@ -70,7 +70,7 @@ Blizzard removed the old Nature Resistance racial, like all other resistance rac
 
     Use the first one at 5 combo points in Cat, or replace Ferocious Bite with Starfire for Balance. Sources do not list a global cooldown for Elune's Light. If your bite does not fire, push the macro again.
 
-## Starting zone walkthrough: Teldrassil (1–~12)
+## Starting zone walkthrough: Teldrassil (1–12)
 
 !!! note "Changed in Forever"
     Blizzard added new NPCs, quests, profession hooks and "small moments" to Shadowglen, in the same way as the Valley of Trials. The quest chains below follow the familiar Classic sequence. Some new quests do not have documentation yet.

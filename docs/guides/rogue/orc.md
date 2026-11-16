@@ -23,26 +23,26 @@ Orc Rogue is a Classic combination. Method and Warcraft Tavern both pick Orc as 
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Blood Fury** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 }</p>
+<p class="ability-name" markdown>**Blood Fury** *(changed)* <span class="ability-type active">Active</span></p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
 <p markdown>+10% attack power for 15 s, 2-minute cooldown. Use it with every major cooldown, and on every pull when you level</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Shatter Curse** *(new)* <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } PvP · **2/5**{ .stars .s2 } PvE</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } PvP · **2/5**{ .stars .s2 } PvE</p>
 <p markdown>Removes curses and Warlock Banes, and you take 5% less magic damage for 8 s. Strong against Warlocks and casters that use curses. Rogues usually cannot cleanse these</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Command** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> —</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> —</p>
 <p markdown>+5% pet damage. Rogues have no pet</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Hardiness** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 } PvP · **1/5**{ .stars .s1 } PvE</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } PvP · **1/5**{ .stars .s1 } PvE</p>
 <p markdown>Stuns last 20% less. Cheap Shot, Kidney Shot, Hammer of Justice and Charge stuns are all shorter</p>
 </div>
 

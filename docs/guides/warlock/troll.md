@@ -37,7 +37,7 @@ Warcraft Tavern says that Troll is good in content with many beasts. Method.gg r
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
+<p class="ability-name" markdown>**Berserking** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } Destro · **3/5**{ .stars .s3 } Aff/Demo</p>
 <p markdown>+10% cast and attack speed for **15 s** (increased from 10 s in the 26 Oct beta notes). Makes Incinerate, Shadow Bolt, Searing Pain, Soul Fire and the global cooldown faster. Warcraft Tavern says that it does not make DoT ticks or channels faster, so it gives little benefit to Wrack. Cooldown not published (3 min in Classic)</p>
 </div>

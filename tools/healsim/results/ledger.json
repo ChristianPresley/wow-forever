@@ -143,7 +143,7 @@
      "uptime": 0.095
     }
    },
-   "dps": 143.4,
+   "dps": 143.2,
    "abilities": [
     {
      "name": "Lesser Heal (Rank 1)",
@@ -831,7 +831,7 @@
        0.0
       ]
      },
-     "dps": 1.5,
+     "dps": 1.8,
      "heal": false,
      "dmg": true
     },
@@ -923,7 +923,7 @@
        0.0
       ]
      },
-     "dps": 0.9,
+     "dps": 0.8,
      "heal": false,
      "dmg": true
     },
@@ -992,7 +992,7 @@
        27.7
       ]
      },
-     "dps": 5.9,
+     "dps": 6.1,
      "heal": true,
      "dmg": true
     },
@@ -1002,7 +1002,7 @@
      "max": 1,
      "row": 3,
      "ref": 1,
-     "text": "Instant \u00b7 3 min cooldown When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect.",
+     "text": "When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect.",
      "d": {
       "tank": [
        0.0,
@@ -1061,7 +1061,7 @@
        47.1
       ]
      },
-     "dps": 7.2,
+     "dps": 6.9,
      "heal": true,
      "dmg": true
     },
@@ -1140,7 +1140,7 @@
      "max": 1,
      "row": 5,
      "ref": 0,
-     "text": "150 Mana \u00b7 36 yd range \u00b7 Instant \u00b7 12 sec cooldown Launches a volley of holy light at the target, causing 45 Holy damage to an enemy, or 134 healing to an ally, instantly and every 1 sec for 2 sec.",
+     "text": "Launches a volley of holy light at the target, causing 45 Holy damage to an enemy, or 134 healing to an ally, instantly and every 1 sec for 2 sec.",
      "d": {
       "tank": [
        0.0,
@@ -1153,7 +1153,7 @@
        0.0
       ]
      },
-     "dps": -2.8,
+     "dps": -2.2,
      "heal": true,
      "dmg": true
     },
@@ -1209,7 +1209,7 @@
      "max": 1,
      "row": 7,
      "ref": 0,
-     "text": "20% of base mana \u00b7 30 yd range \u00b7 Instant \u00b7 3 min cooldown Infuses the target with power, increasing their spell damage and healing done by 20% for 15 sec.",
+     "text": "Infuses the target with power, increasing their spell damage and healing done by 20% for 15 sec.",
      "d": {
       "tank": [
        21.9,
@@ -1222,7 +1222,7 @@
        0.0
       ]
      },
-     "dps": 3.3,
+     "dps": 3.1,
      "heal": true,
      "dmg": true
     },
@@ -1337,7 +1337,7 @@
        0.0
       ]
      },
-     "dps": 0.4,
+     "dps": 0.7,
      "heal": true,
      "dmg": true
     },
@@ -1347,7 +1347,7 @@
      "max": 1,
      "row": 3,
      "ref": 0,
-     "text": "185 Mana \u00b7 Instant Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 50 to 57. These effects cause no threat.",
+     "text": "Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 50 to 57. These effects cause no threat.",
      "d": {
       "tank": [
        0.0,
@@ -1600,7 +1600,7 @@
      "max": 1,
      "row": 7,
      "ref": 1,
-     "text": "210 Mana \u00b7 40 yd range \u00b7 Instant \u00b7 10 sec cooldown Places a spell on the target that heals them for (172 + 42.9% of healing power) the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.",
+     "text": "Places a spell on the target that heals them for (172 + 42.9% of healing power) the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.",
      "d": {
       "tank": [
        0.0,
@@ -1636,7 +1636,7 @@
        0.0
       ]
      },
-     "dps": 2.1,
+     "dps": 2.4,
      "heal": false,
      "dmg": true
     },
@@ -1705,7 +1705,7 @@
        0.0
       ]
      },
-     "dps": 2.4,
+     "dps": 2.3,
      "heal": false,
      "dmg": true
     },
@@ -1728,7 +1728,7 @@
        0.0
       ]
      },
-     "dps": 0.8,
+     "dps": 1.1,
      "heal": false,
      "dmg": true
     },
@@ -1784,7 +1784,7 @@
      "max": 1,
      "row": 3,
      "ref": 0,
-     "text": "45 Mana \u00b7 20 yd range \u00b7 Instant Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+     "text": "Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%.",
      "d": {
       "tank": [
        0.0,
@@ -1797,7 +1797,7 @@
        0.0
       ]
      },
-     "dps": 14.2,
+     "dps": 14.3,
      "heal": false,
      "dmg": true
     },
@@ -1853,7 +1853,7 @@
      "max": 1,
      "row": 4,
      "ref": 0,
-     "text": "40 Mana \u00b7 30 yd range \u00b7 Instant \u00b7 30 sec cooldown Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec.",
+     "text": "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec.",
      "d": {
       "tank": [
        0.0,
@@ -1889,7 +1889,7 @@
        0.0
       ]
      },
-     "dps": 5.9,
+     "dps": 6.3,
      "heal": false,
      "dmg": true
     },
@@ -1899,7 +1899,7 @@
      "max": 1,
      "row": 5,
      "ref": 0,
-     "text": "225 Mana \u00b7 20 yd range \u00b7 Instant \u00b7 45 sec cooldown Silences the target, preventing them from casting spells for 5 sec and interrupting their spellcasts for 3 sec.",
+     "text": "Silences the target, preventing them from casting spells for 5 sec and interrupting their spellcasts for 3 sec.",
      "d": {
       "tank": [
        0.0,
@@ -1935,7 +1935,7 @@
        0.0
       ]
      },
-     "dps": 5.8,
+     "dps": 6.0,
      "heal": false,
      "dmg": true
     },
@@ -1981,7 +1981,7 @@
        0.0
       ]
      },
-     "dps": 6.5,
+     "dps": 6.4,
      "heal": false,
      "dmg": true
     },
@@ -1991,7 +1991,7 @@
      "max": 1,
      "row": 7,
      "ref": 0,
-     "text": "40% of base mana \u00b7 Instant \u00b7 1.5 sec cooldown Assume Shadowform, increasing your Shadow damage by 10%, reducing the Mana cost of all Shadow spells by 50%, increasing the critical strike damage bonus of your Shadow spells by 100%, and reducing Physical damage taken by you by 15%. However, you may not cast healing spells while in this form.",
+     "text": "Assume Shadowform, increasing your Shadow damage by 10%, reducing the Mana cost of all Shadow spells by 50%, increasing the critical strike damage bonus of your Shadow spells by 100%, and reducing Physical damage taken by you by 15%. However, you may not cast healing spells while in this form.",
      "d": {
       "tank": [
        0.0,
@@ -2004,7 +2004,7 @@
        0.0
       ]
      },
-     "dps": 30.7,
+     "dps": 30.8,
      "heal": false,
      "dmg": true
     }
@@ -2049,7 +2049,7 @@
     "fight": null,
     "endless": null
    },
-   "dps": 205.3,
+   "dps": 205.5,
    "abilities": [
     {
      "name": "Holy Light (Rank 1)",
@@ -2472,7 +2472,7 @@
        0.0
       ]
      },
-     "dps": 1.7,
+     "dps": 1.8,
      "heal": false,
      "dmg": true
     },
@@ -2518,7 +2518,7 @@
        26.3
       ]
      },
-     "dps": 7.3,
+     "dps": 7.1,
      "heal": true,
      "dmg": true
     },
@@ -2574,7 +2574,7 @@
      "max": 1,
      "row": 3,
      "ref": 1,
-     "text": "4% of base mana \u00b7 Instant \u00b7 2 min cooldown When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.",
+     "text": "When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.",
      "d": {
       "tank": [
        17.1,
@@ -2633,7 +2633,7 @@
        0.0
       ]
      },
-     "dps": 12.5,
+     "dps": 13.0,
      "heal": false,
      "dmg": true
     },
@@ -2689,7 +2689,7 @@
      "max": 1,
      "row": 4,
      "ref": 1,
-     "text": "8% of base mana \u00b7 40 yd range \u00b7 Instant Swear an Oath to protect target ally for 5 min, increasing the healing of your Holy Light on them by up to 400, your Flash of Light by up to 115, and your Holy Shock by up to 230. Only one Oath of Light may be sworn by the Paladin at any one time.",
+     "text": "Swear an Oath to protect target ally for 5 min, increasing the healing of your Holy Light on them by up to 400, your Flash of Light by up to 115, and your Holy Shock by up to 230. Only one Oath of Light may be sworn by the Paladin at any one time.",
      "d": {
       "tank": [
        197.6,
@@ -2735,7 +2735,7 @@
      "max": 1,
      "row": 5,
      "ref": 1,
-     "text": "160 Mana \u00b7 20 yd range \u00b7 Instant \u00b7 10 sec cooldown Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally.",
+     "text": "Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally.",
      "d": {
       "tank": [
        0.0,
@@ -2748,7 +2748,7 @@
        0.0
       ]
      },
-     "dps": 12.3,
+     "dps": 12.2,
      "heal": true,
      "dmg": true
     },
@@ -2804,7 +2804,7 @@
      "max": 1,
      "row": 7,
      "ref": 1,
-     "text": "730 Mana \u00b7 40 yd range \u00b7 1.5 sec cast \u00b7 6 sec cooldown Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 325 to 344. Only one Vigil per Paladin may be active in each party.",
+     "text": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 325 to 344. Only one Vigil per Paladin may be active in each party.",
      "d": {
       "tank": [
        0.0,
@@ -2840,7 +2840,7 @@
        0.4
       ]
      },
-     "dps": 1.6,
+     "dps": 1.2,
      "heal": true,
      "dmg": true
     },
@@ -2886,7 +2886,7 @@
        0.0
       ]
      },
-     "dps": 4.5,
+     "dps": 3.9,
      "heal": false,
      "dmg": true
     },
@@ -2942,7 +2942,7 @@
      "max": 1,
      "row": 3,
      "ref": 0,
-     "text": "110 Mana \u00b7 Instant \u00b7 5 min cooldown When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+     "text": "When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
      "d": {
       "tank": [
        0.0,
@@ -3034,7 +3034,7 @@
      "max": 1,
      "row": 4,
      "ref": 0,
-     "text": "10 yd range \u00b7 Instant \u00b7 1 min cooldown Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect. Does not share a cooldown with your Judgement ability.",
+     "text": "Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect. Does not share a cooldown with your Judgement ability.",
      "d": {
       "tank": [
        0.0,
@@ -3047,7 +3047,7 @@
        0.0
       ]
      },
-     "dps": 5.0,
+     "dps": 5.7,
      "heal": false,
      "dmg": true
     },
@@ -3126,7 +3126,7 @@
      "max": 1,
      "row": 5,
      "ref": 0,
-     "text": "100 Mana \u00b7 Instant \u00b7 10 sec cooldown Increases chance to block by 30% for 10 sec, and deals 75 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+     "text": "Increases chance to block by 30% for 10 sec, and deals 75 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
      "d": {
       "tank": [
        0.0,
@@ -3208,7 +3208,7 @@
        0.0
       ]
      },
-     "dps": 9.0,
+     "dps": 9.5,
      "heal": false,
      "dmg": true
     },
@@ -3254,7 +3254,7 @@
        0.0
       ]
      },
-     "dps": 6.7,
+     "dps": 7.0,
      "heal": true,
      "dmg": true
     },
@@ -3277,7 +3277,7 @@
        0.0
       ]
      },
-     "dps": 3.6,
+     "dps": 4.1,
      "heal": false,
      "dmg": true
     },
@@ -3300,7 +3300,7 @@
        9.1
       ]
      },
-     "dps": 8.1,
+     "dps": 8.0,
      "heal": true,
      "dmg": true
     },
@@ -3379,7 +3379,7 @@
      "max": 1,
      "row": 3,
      "ref": 0,
-     "text": "65 Mana \u00b7 Instant Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec. Unleashing this Seal's energy will judge an enemy, instantly causing 74 Holy damage, 136 to 148 if the target is stunned or incapacitated.",
+     "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec. Unleashing this Seal's energy will judge an enemy, instantly causing 74 Holy damage, 136 to 148 if the target is stunned or incapacitated.",
      "d": {
       "tank": [
        0.0,
@@ -3392,7 +3392,7 @@
        0.0
       ]
      },
-     "dps": -14.8,
+     "dps": -14.5,
      "heal": false,
      "dmg": true
     },
@@ -3517,7 +3517,7 @@
      "max": 1,
      "row": 5,
      "ref": 0,
-     "text": "60 Mana \u00b7 20 yd range \u00b7 Instant \u00b7 1 min cooldown Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.",
+     "text": "Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.",
      "d": {
       "tank": [
        0.0,
@@ -3553,7 +3553,7 @@
        0.0
       ]
      },
-     "dps": 20.5,
+     "dps": 19.7,
      "heal": false,
      "dmg": true
     },
@@ -3643,7 +3643,7 @@
     "fight": null,
     "endless": null
    },
-   "dps": 155.6,
+   "dps": 156.1,
    "abilities": [
     {
      "name": "Healing Touch (Rank 1)",
@@ -4344,7 +4344,7 @@
        0.0
       ]
      },
-     "dps": 28.1,
+     "dps": 28.0,
      "heal": false,
      "dmg": true
     },
@@ -4390,7 +4390,7 @@
        0.0
       ]
      },
-     "dps": 12.6,
+     "dps": 12.3,
      "heal": false,
      "dmg": true
     },
@@ -4413,7 +4413,7 @@
        0.0
       ]
      },
-     "dps": 1.9,
+     "dps": 2.1,
      "heal": false,
      "dmg": true
     },
@@ -4436,7 +4436,7 @@
        0.4
       ]
      },
-     "dps": 4.5,
+     "dps": 5.0,
      "heal": true,
      "dmg": true
     },
@@ -4459,7 +4459,7 @@
        0.0
       ]
      },
-     "dps": 4.6,
+     "dps": 3.3,
      "heal": false,
      "dmg": true
     },
@@ -4505,7 +4505,7 @@
        31.9
       ]
      },
-     "dps": 2.2,
+     "dps": 2.3,
      "heal": true,
      "dmg": true
     },
@@ -4515,7 +4515,7 @@
      "max": 1,
      "row": 4,
      "ref": 0,
-     "text": "45 Mana \u00b7 30 yd range \u00b7 Instant The enemy target is swarmed by insects, decreasing their chance to hit with attacks by 2% and causing 48 Nature damage over 12 sec.",
+     "text": "The enemy target is swarmed by insects, decreasing their chance to hit with attacks by 2% and causing 48 Nature damage over 12 sec.",
      "d": {
       "tank": [
        0.0,
@@ -4528,7 +4528,7 @@
        0.0
       ]
      },
-     "dps": 1.8,
+     "dps": 0.8,
      "heal": false,
      "dmg": true
     },
@@ -4574,7 +4574,7 @@
        0.0
       ]
      },
-     "dps": 3.3,
+     "dps": 2.8,
      "heal": false,
      "dmg": true
     },
@@ -4620,7 +4620,7 @@
        1.6
       ]
      },
-     "dps": 0.0,
+     "dps": 0.2,
      "heal": true,
      "dmg": true
     },
@@ -4676,7 +4676,7 @@
      "max": 1,
      "row": 7,
      "ref": 0,
-     "text": "35% of base mana \u00b7 Instant Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+     "text": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
      "d": {
       "tank": [
        0.0,
@@ -4712,7 +4712,7 @@
        0.0
       ]
      },
-     "dps": 0.4,
+     "dps": 0.1,
      "heal": false,
      "dmg": true
     },
@@ -4883,7 +4883,7 @@
      "max": 1,
      "row": 3,
      "ref": 0,
-     "text": "5 Rage \u00b7 25 yd range \u00b7 Instant \u00b7 15 sec cooldown Requires Bear Form, Dire Bear Form. Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec. Leap behind an enemy.",
+     "text": "Requires Bear Form, Dire Bear Form. Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec. Leap behind an enemy.",
      "d": {
       "tank": [
        0.0,
@@ -4952,7 +4952,7 @@
      "max": 1,
      "row": 4,
      "ref": 0,
-     "text": "15 Rage \u00b7 Melee Range \u00b7 Instant Requires Bear Form, Dire Bear Form Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
+     "text": "Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
      "d": {
       "tank": [
        0.0,
@@ -5080,7 +5080,7 @@
        0.0
       ]
      },
-     "dps": 0.7,
+     "dps": 1.1,
      "heal": false,
      "dmg": true
     },
@@ -5113,7 +5113,7 @@
      "max": 1,
      "row": 7,
      "ref": 0,
-     "text": "20 Rage \u00b7 Melee Range \u00b7 Instant \u00b7 6 sec cooldown Requires Bear Form, Dire Bear Form Bite the target, dealing 100% normal damage plus 42 and generating a high amount of threat.",
+     "text": "Bite the target, dealing 100% normal damage plus 42 and generating a high amount of threat.",
      "d": {
       "tank": [
        0.0,
@@ -5136,7 +5136,7 @@
      "max": 1,
      "row": 7,
      "ref": 0,
-     "text": "55% of base mana \u00b7 Instant \u00b7 8 sec cooldown Requires Cat Form Instantly convert 55% of Base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.",
+     "text": "Instantly convert 55% of Base Mana into 40 Energy. Shifting Power's cost is reduced by effects that reduce the cost of Shapeshifting.",
      "d": {
       "tank": [
        0.0,
@@ -5149,7 +5149,7 @@
        0.0
       ]
      },
-     "dps": 10.4,
+     "dps": 10.1,
      "heal": false,
      "dmg": true
     },
@@ -5195,7 +5195,7 @@
        0.0
       ]
      },
-     "dps": 3.5,
+     "dps": 4.4,
      "heal": true,
      "dmg": true
     },
@@ -5218,7 +5218,7 @@
        0.0
       ]
      },
-     "dps": 14.1,
+     "dps": 14.2,
      "heal": true,
      "dmg": true
     },
@@ -5241,7 +5241,7 @@
        61.3
       ]
      },
-     "dps": 12.6,
+     "dps": 12.3,
      "heal": true,
      "dmg": true
     },
@@ -5389,7 +5389,7 @@
      "max": 1,
      "row": 4,
      "ref": 1,
-     "text": "20% of base mana \u00b7 40 yd range \u00b7 Instant \u00b7 15 sec cooldown Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect.",
+     "text": "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect.",
      "d": {
       "tank": [
        10.5,
@@ -5412,7 +5412,7 @@
      "max": 1,
      "row": 5,
      "ref": 1,
-     "text": "Instant \u00b7 3 min cooldown When activated, your next Nature spell becomes an instant cast spell.",
+     "text": "When activated, your next Nature spell becomes an instant cast spell.",
      "d": {
       "tank": [
        10.6,
@@ -5504,7 +5504,7 @@
      "max": 1,
      "row": 7,
      "ref": 1,
-     "text": "550 Mana \u00b7 40 yd range \u00b7 3 sec cast \u00b7 6 sec cooldown Heals the target and their party for 336 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+     "text": "Heals the target and their party for 336 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
      "d": {
       "tank": [
        0.0,
@@ -5570,7 +5570,7 @@
      "uptime": 0.616
     }
    },
-   "dps": 197.2,
+   "dps": 197.8,
    "abilities": [
     {
      "name": "Healing Wave (Rank 1)",
@@ -5990,7 +5990,7 @@
        0.0
       ]
      },
-     "dps": 6.7,
+     "dps": 5.1,
      "heal": false,
      "dmg": true
     },
@@ -6105,7 +6105,7 @@
        0.0
       ]
      },
-     "dps": 18.3,
+     "dps": 18.0,
      "heal": false,
      "dmg": true
     },
@@ -6128,7 +6128,7 @@
        0.0
       ]
      },
-     "dps": 5.9,
+     "dps": 4.1,
      "heal": false,
      "dmg": true
     },
@@ -6312,7 +6312,7 @@
        0.0
       ]
      },
-     "dps": 3.2,
+     "dps": 3.1,
      "heal": false,
      "dmg": true
     },
@@ -6322,7 +6322,7 @@
      "max": 1,
      "row": 7,
      "ref": 0,
-     "text": "Instant \u00b7 3 min cooldown Gain mastery over Lightning, reducing the cast time of your Lightning Bolt spell by 0.5 sec, and removing the cooldown from your Chain Lightning spell. Lasts 15 sec.",
+     "text": "Gain mastery over Lightning, reducing the cast time of your Lightning Bolt spell by 0.5 sec, and removing the cooldown from your Chain Lightning spell. Lasts 15 sec.",
      "d": {
       "tank": [
        0.0,
@@ -6381,7 +6381,7 @@
        14.2
       ]
      },
-     "dps": 6.7,
+     "dps": 7.5,
      "heal": true,
      "dmg": true
     },
@@ -6404,7 +6404,7 @@
        3.0
       ]
      },
-     "dps": 2.9,
+     "dps": 3.0,
      "heal": true,
      "dmg": true
     },
@@ -6450,7 +6450,7 @@
        0.0
       ]
      },
-     "dps": 32.6,
+     "dps": 32.8,
      "heal": false,
      "dmg": true
     },
@@ -6519,7 +6519,7 @@
        0.0
       ]
      },
-     "dps": 28.3,
+     "dps": 28.1,
      "heal": false,
      "dmg": true
     },
@@ -6588,7 +6588,7 @@
        0.0
       ]
      },
-     "dps": 17.1,
+     "dps": 15.9,
      "heal": false,
      "dmg": true
     },
@@ -6598,7 +6598,7 @@
      "max": 1,
      "row": 4,
      "ref": 0,
-     "text": "8% of base mana \u00b7 Melee Range \u00b7 Instant \u00b7 6 sec cooldown Instantly strike for 150% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
+     "text": "Instantly strike for 150% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
      "d": {
       "tank": [
        0.0,
@@ -6611,7 +6611,7 @@
        0.0
       ]
      },
-     "dps": 23.0,
+     "dps": 21.0,
      "heal": false,
      "dmg": true
     },
@@ -6726,7 +6726,7 @@
        0.0
       ]
      },
-     "dps": 20.4,
+     "dps": 21.8,
      "heal": false,
      "dmg": true
     },
@@ -6736,7 +6736,7 @@
      "max": 1,
      "row": 7,
      "ref": 0,
-     "text": "Instant \u00b7 3 min cooldown Increases your attack speed by 30% for 25 sec.",
+     "text": "Increases your attack speed by 30% for 25 sec.",
      "d": {
       "tank": [
        0.0,
@@ -6795,7 +6795,7 @@
        9.1
       ]
      },
-     "dps": 8.1,
+     "dps": 8.2,
      "heal": true,
      "dmg": true
     },
@@ -6818,7 +6818,7 @@
        48.3
       ]
      },
-     "dps": 8.1,
+     "dps": 8.8,
      "heal": true,
      "dmg": true
     },
@@ -6956,7 +6956,7 @@
        28.7
       ]
      },
-     "dps": 0.9,
+     "dps": 1.3,
      "heal": true,
      "dmg": true
     },
@@ -7012,7 +7012,7 @@
      "max": 1,
      "row": 4,
      "ref": 1,
-     "text": "10 Mana \u00b7 Instant \u00b7 5 min cooldown Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards.",
+     "text": "Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards.",
      "d": {
       "tank": [
        0.0,
@@ -7058,7 +7058,7 @@
      "max": 1,
      "row": 5,
      "ref": 1,
-     "text": "Instant \u00b7 3 min cooldown When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell.",
+     "text": "When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell.",
      "d": {
       "tank": [
        7.9,
@@ -7104,7 +7104,7 @@
      "max": 1,
      "row": 7,
      "ref": 1,
-     "text": "150 Mana \u00b7 40 yd range \u00b7 Instant \u00b7 12 sec cooldown Heals a friendly target for 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
+     "text": "Heals a friendly target for 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
      "d": {
       "tank": [
        0.0,

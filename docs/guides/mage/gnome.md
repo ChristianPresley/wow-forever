@@ -41,13 +41,13 @@ Gnome Mage is the original "glass-cannon with an escape hatch": high damage, low
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Expansive Mind** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Expansive Mind** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown>+5% maximum mana. More casts for each drink and a bigger Arcane burn phase</p>
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Engineering Specialization** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Engineering Specialization** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
 <p markdown>20% fewer device failures. Important only if you take Engineering, but Engineering is a strong PvP choice</p>
 </div>

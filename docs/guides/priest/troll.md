@@ -23,7 +23,7 @@ Troll Priest is a Classic combination and **not new**. Its Priest spells, **Hex 
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
+<p class="ability-name" markdown>**Berserking** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
 <p markdown><span class="ability-label">PvE</span> **+10% cast speed for 15 s.** More Greater Heals in an emergency, or more Mind Flay ticks and Mind Blasts in a burn phase</p>
 <p markdown><span class="ability-label">PvP</span> Burst</p>

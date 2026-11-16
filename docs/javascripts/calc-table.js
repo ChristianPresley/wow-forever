@@ -124,6 +124,19 @@
     });
     var last = state.get(holder);
     if (last) Array.prototype.forEach.call(heads, function (h, index) { if (text(h) === last.label) sortBy(table, index, last.dir, true); });
+    else {      // the calculator drew it in some order: find the number column it is sorted by and mark it
+      var rows = groups(table.tBodies[0]);
+      for (var c = 1; c < heads.length && rows.length > 2; c++) {
+        var vals = rows.map(function (r) { return r[0].children[c] ? cellValue(r[0].children[c]) : null; });
+        if (vals.some(function (v) { return v === null || isNaN(v); }) || vals[0] === vals[vals.length - 1]) continue;
+        if (vals.every(function (v, i) { return i === 0 || v <= vals[i - 1]; })) {
+          heads[c].setAttribute("aria-sort", "descending");
+          var b = heads[c].querySelector(".calc-sort");
+          if (b) b.classList.add("is-active");
+          break;
+        }
+      }
+    }
   }
 
   // ---------- sticky header ----------
@@ -170,6 +183,13 @@
       var inner = h.firstElementChild, tip = (inner && inner.getAttribute("data-tip")) || h.getAttribute("data-tip");
       return tip ? [text(h), tip.replace(/ Click to sort by it\.$/, "")] : null;
     }).filter(Boolean);
+
+    // a header sits over its column: right-aligned over numbers, left-aligned over text
+    var firstRow = table.tBodies[0] && table.tBodies[0].rows[0];
+    if (firstRow) Array.prototype.forEach.call(heads, function (h, i) {
+      var c = firstRow.cells[i];
+      h.classList.add(c && c.classList.contains("dps-num") ? "calc-num" : "calc-text");
+    });
 
     // caption and scroll region
     var name = table.getAttribute("data-caption") || headingFor(wrap || table);

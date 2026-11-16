@@ -24,25 +24,25 @@ Dwarf Rogue is a Classic combination. Forever made it much stronger. **Stoneform
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Stoneform** *(changed)* <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE</p>
 <p markdown>Removes bleeds, poisons and diseases, gives immunity to them, and decreases physical damage taken by 10% for 8 s. Removes enemy Rogue poisons and Rupture/Garrote, and Warrior Rend and Deep Wounds. In PvE, it is a short defensive cooldown and a cleanse for dungeons with many poisons</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Find Treasure** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **2/5**{ .stars .s2 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
 <p markdown>Shows treasure chests. Good with Lockpicking: open locked chests for coins and items</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Artisan's Precision** *(new)* <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown>+1% hit with attacks and spells. Every Rogue wants hit until misses are rare</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Big Game Hunter** *(new)* <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } leveling · **1/5**{ .stars .s1 } raids</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } leveling · **1/5**{ .stars .s1 } raids</p>
 <p markdown>+5% damage against Beasts. Many leveling targets are Beasts. Most launch raid bosses are not Beasts</p>
 </div>
 

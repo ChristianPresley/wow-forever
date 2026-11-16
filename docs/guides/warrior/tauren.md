@@ -45,7 +45,7 @@ Tauren are the biggest Warriors in the game. Before launch, Blizzard raised Taur
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Endurance** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Endurance** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown><span class="ability-label">PvE</span> +5% health: very good for tanks</p>
 <p markdown><span class="ability-label">PvP</span> Harder to burst</p>

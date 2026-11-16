@@ -28,14 +28,14 @@ Stormwind is also near the new Alliance content: the harbor with a boat to Auber
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Will to Survive** <span class="ability-type active">Active</span></p>
+<p class="ability-name" markdown>**Will to Survive** *(new)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
 <p markdown><span class="ability-label">PvE</span> Breaks boss stuns (you seldom need this)</p>
 <p markdown><span class="ability-label">PvP</span> Immediately removes stuns, as a PvP trinket does. Use it together with Blessing of Freedom, and it is very difficult for enemies to control you</p>
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Ruthless** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Ruthless** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown><span class="ability-label">PvE</span> +1% crit with spells and attacks: more Vengeance uptime (Ret), more mana from Illumination (Holy)</p>
 <p markdown><span class="ability-label">PvP</span> A little more burst</p>

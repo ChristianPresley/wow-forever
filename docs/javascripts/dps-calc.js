@@ -506,7 +506,7 @@
           el("td", { text: x.spec.name }),
           el("td", { text: RACES[x.race].name }),
           el("td", { "class": "dps-num" }, [bar, el("strong", { text: Math.round(x.dps).toLocaleString() })]),
-          el("td", { "class": "dps-num", text: x.vsBest === 0 ? "best" : (x.vsBest * 100).toFixed(1) + "%" }),
+          el("td", { "class": "dps-num", text: x.vsBest === 0 ? "best" : (Math.abs(x.vsBest) < 0.0005 ? "tied" : (x.vsBest * 100).toFixed(1) + "%") }),
           el("td", { "class": "dps-num", title: "Share of this spec's inputs that are Forever-sourced", text: conf + "%" })
         ]));
       });
@@ -537,21 +537,26 @@
       i.addEventListener("input", function () { var n = parseFloat(i.value); if (!isNaN(n)) { onChange(n); draw(); } });
       return i;
     }
+    function named(input, name) {      // a programmatic label: the visible name is in the neighbouring cell
+      var target = input && input.matches && input.matches("input") ? input : input && input.querySelector ? input.querySelector("input") : null;
+      if (target && !target.getAttribute("aria-label")) target.setAttribute("aria-label", name);
+      return input;
+    }
     var mTable = el("tbody");
     Object.keys(MODEL).forEach(function (k) {
       var row = MODEL[k];
-      mTable.appendChild(el("tr", {}, [el("td", { text: row[2] }), el("td", {}, [numInput(row, 0, function (n) { row[0] = n; })]), el("td", {}, [tagEl(row[1])])]));
+      mTable.appendChild(el("tr", {}, [el("td", { text: row[2] }), el("td", {}, [named(numInput(row, 0, function (n) { row[0] = n; }), row[2])]), el("td", {}, [tagEl(row[1])])]));
     });
     var bTable = el("tbody");
     Object.keys(BUFFS).forEach(function (k) {
       var row = BUFFS[k], cb = el("input", { type: "checkbox", "aria-label": row[3] });
       cb.checked = row[0]; cb.addEventListener("change", function () { row[0] = cb.checked; draw(); });
-      bTable.appendChild(el("tr", {}, [el("td", {}, [cb]), el("td", { text: row[3] }), el("td", {}, [numInput(row, 1, function (n) { row[1] = n; })]), el("td", {}, [tagEl(row[2])])]));
+      bTable.appendChild(el("tr", {}, [el("td", {}, [cb]), el("td", { text: row[3] }), el("td", {}, [named(numInput(row, 1, function (n) { row[1] = n; }), row[3] + ", value")]), el("td", {}, [tagEl(row[2])])]));
     });
     var vTable = el("tbody");
     Object.keys(V).forEach(function (k) {
       var row = V[k], val = row[0];
-      var input = Array.isArray(val) ? el("code", { text: JSON.stringify(val) }) : numInput(row, 0, function (n) { row[0] = n; });
+      var input = Array.isArray(val) ? el("code", { text: JSON.stringify(val) }) : named(numInput(row, 0, function (n) { row[0] = n; }), row[2]);
       vTable.appendChild(el("tr", {}, [el("td", { text: row[2] }), el("td", {}, [input]), el("td", {}, [tagEl(row[1])])]));
     });
     var gTable = el("tbody");
@@ -566,7 +571,11 @@
       gTable.appendChild(el("tr", {}, [el("td", { text: k }), el("td", {}, [fields, el("small", { text: g.note })]), el("td", {}, [tagEl(g.tag)])]));
     });
     function tbl(head, body) { return el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-inputs" }, [el("thead", {}, [el("tr", {}, head.map(function (h) { return el("th", { scope: "col", text: h }); }))]), body])]); }
-    function box(title, content) { return el("details", { "class": "note" }, [el("summary", { text: title }), content]); }
+    function box(title, content) {
+      var t = content.querySelector && content.querySelector("table");
+      if (t) t.setAttribute("data-caption", title + " inputs");
+      return el("details", { "class": "note" }, [el("summary", { text: title }), content]);
+    }
     var inputs = root.querySelector("[data-dps-inputs]");
     if (inputs) inputs.replaceChildren(
       box("Combat model", tbl(["Input", "Value", "Source"], mTable)),
@@ -626,7 +635,7 @@
         select("Faction", "faction", [["all", "Both"], ["A", "Alliance"], ["H", "Horde"]]),
         el("label", { "class": "dps-check" }, [cb, el("span", { text: "Best race per spec only" })]));
       var r0 = rows[0] || {};
-      box.replaceChildren(el("p", { "class": "dps-meta", text: rows.length + " spec and race pairs, " + (r0.iterations || "?") + " simulated fights of " + (r0.fight_seconds || "?") + " s each. ± is the 95% confidence interval of the simulation, not the error of the estimate." }), filters, out);
+      box.replaceChildren(el("p", { "class": "dps-meta", text: rows.length + " spec and race pairs, " + (r0.iterations ? r0.iterations.toLocaleString("en-US") : "?") + " simulated fights of " + (r0.fight_seconds || "?") + " s each. ± is the 95% confidence interval of the simulation, not the error of the estimate." }), filters, out);
       draw();
     }).catch(function () { box.replaceChildren(el("p", { text: "The simulated estimates could not be loaded." })); });
   }

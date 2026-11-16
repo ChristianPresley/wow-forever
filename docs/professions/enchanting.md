@@ -6,6 +6,7 @@ search:
   boost: 2
 generated: true
 wide: true
+wide: true
 ---
 
 # Enchanting Guide
@@ -29,7 +30,7 @@ wide: true
 | **Recipes** | 225 (74 new, 116 changed) |
 | **From a trainer** | 65 |
 | **From a recipe item** | 160 |
-| **Merchant's Favor** | 39 recipes |
+| **Favor recipes** | 39 |
 
 </aside>
 

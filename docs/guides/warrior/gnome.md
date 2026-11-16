@@ -38,14 +38,14 @@ In the past, players chose Gnome Warriors as a joke. Forever gives them a real d
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Expansive Mind** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Expansive Mind** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
 <p markdown><span class="ability-label">PvE</span> +5% maximum rage. Lets you store a little more rage</p>
 <p markdown><span class="ability-label">PvP</span> Minor</p>
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Engineering Specialization** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Engineering Specialization** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
 <p markdown><span class="ability-label">PvE</span> 20% fewer device failures. Useful only if you are an engineer</p>
 <p markdown><span class="ability-label">PvP</span> Same, for nets and bombs</p>

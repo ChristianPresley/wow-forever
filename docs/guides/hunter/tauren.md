@@ -50,7 +50,7 @@ Thus Tauren are a good choice for Hardcore, solo play and new players.
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Endurance** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Endurance** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown><span class="ability-label">PvE</span> +5% health. Also a safety margin in Hardcore</p>
 <p markdown><span class="ability-label">PvP</span> More survivability</p>

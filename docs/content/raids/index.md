@@ -15,7 +15,7 @@ wide: true
 
 **Coming soon**{ .pill .pill--soon } All launch raids open on **9 December 2026** for level-60 characters.
 
-<div class="fc-data" data-prose="1 4 6" markdown>
+<div class="fc-data" data-prose="4 6" markdown>
 
 | Raid | Status | Size | Location | Bosses | Attunement | Reset |
 |---|---|---|---|---:|---|---|

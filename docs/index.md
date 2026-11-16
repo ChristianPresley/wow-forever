@@ -48,7 +48,7 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 
     ---
 
-    9 class progressions, with add-ons for 56 races, the talents and the equipment.
+    9 class progressions, with add-ons for 56 race and class pairs, the talents and the equipment.
 
     [:octicons-arrow-right-24: Class progressions](guides/index.md)
 

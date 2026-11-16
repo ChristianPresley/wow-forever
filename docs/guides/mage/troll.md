@@ -29,7 +29,7 @@ The Troll Mage is the traditional Horde PvE caster. **Berserking** now gives a f
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
+<p class="ability-name" markdown>**Berserking** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvE · **3/5**{ .stars .s3 } PvP</p>
 <p markdown>+10% cast and attack speed for **15 s** (it was 10 in the beta). More Arcane Blasts in a burn phase, faster Pyroblast hard-casts, faster Frostbolts</p>
 </div>

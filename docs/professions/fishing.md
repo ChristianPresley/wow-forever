@@ -6,6 +6,7 @@ search:
   boost: 2
 generated: true
 wide: true
+wide: true
 ---
 
 # Fishing Guide

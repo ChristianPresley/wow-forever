@@ -50,7 +50,7 @@ Read this page with the [Paladin guide](index.md). This page gives the differenc
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Touch of the Grave** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Touch of the Grave** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown><span class="ability-label">PvE</span> Melee hits and damage spells have a 20% chance to drain up to 5% of maximum health, with a 15 s internal cooldown. Retribution and Protection proc it all the time</p>
 <p markdown><span class="ability-label">PvP</span> A free self-heal every 15 s in long fights</p>

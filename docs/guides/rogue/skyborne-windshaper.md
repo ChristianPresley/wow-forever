@@ -27,25 +27,25 @@ Read with the [Rogue progression](index.md). This page covers only what changes 
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown>A 10 s controlled glide. Cliff shortcuts, safe drops and escapes</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Skysight** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 } PvP · **2/5**{ .stars .s2 } PvE</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 } PvP · **2/5**{ .stars .s2 } PvE</p>
 <p markdown>+15% movement speed for 15 s, +30% while *Charged* at an elemental convergence. Stack it with Sprint to catch kiting classes, or to carry a flag</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Wind Blessed** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown>Permanent haste: more swings, more poison procs</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Elemental Insight** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **2/5**{ .stars .s2 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
 <p markdown>+5% damage against Elementals</p>
 </div>
 

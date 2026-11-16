@@ -38,7 +38,7 @@ Pick the healing job:
 
 **Using the tables.** Every table on this page works the same way:
 
-- **Sort:** select a column header to sort by it, and select it again to reverse the order.
+- **Sort:** select a column header to sort by it, and select it again to reverse the order. In the first table the number columns sort; the other tables sort on every column.
 - **Column meanings:** point at a header, or move keyboard focus to it, for a description. The same descriptions are written out under each table in "How to read this table".
 - **Header row:** it stays in view while you scroll down a long table.
 - **Every race is listed** by default. Tick the best-race box to keep only the best race of each spec or build.
@@ -48,7 +48,7 @@ Pick the healing job:
 
 ## Every talent, ability and stat
 
-This section shows how each piece of a healer is calculated and what it is worth. Pick a class. The reference healer is that class's strongest listed healing build, in the best craftable healing gear.
+This section shows how each piece of a healer is calculated and what it is worth. Pick a class. The reference healer is a deep healing build of that class in the best craftable healing gear. The card names the build and the race.
 
 - **Stats:** the healing gained from one more point of each stat.
 - **Healing abilities:** every castable rank with its cast time, mana, healing per cast, healing per second while casting and healing per mana, and whether the best mix uses it.
@@ -80,7 +80,7 @@ With the best craftable gear:
 
 - **Tank healing, sustained:** Restoration Druid with Nature's Splendor leads (about 330 HPS). It keeps Regrowth and Rejuvenation on the tank, uses Swiftmend and rests between casts to regenerate. Holy/Penance Priest and Mental Quickness Shaman are close behind (about 300 HPS).
 - **Party healing, sustained:** Holy Priest with Prayer of Mending leads by a wide margin (about 660 HPS). One Prayer of Mending every 10 seconds heals six times for one cast.
-- **Maximum healing:** Holy Priest, Holy Paladin, Restoration Druid and Restoration Shaman builds all reach 1,100 to 1,200 HPS on one target and empty their mana in under 20 seconds. Discipline Priest reaches about 1,000. On a party, Restoration Druid (Wild Growth and Regrowth, about 1,890 HPS) and Holy Priest (Prayer of Healing, about 1,740 HPS) lead.
+- **Maximum healing:** Holy Priest, Holy Paladin, Restoration Druid and Restoration Shaman builds all reach about 1,100 to 1,210 HPS on one target and empty their mana in about 20 seconds. Discipline Priest reaches about 1,000. On a party, Restoration Druid (Wild Growth and Regrowth, about 1,890 HPS) and Holy Priest (Prayer of Healing, about 1,740 HPS) lead.
 - **Sustained healing is about a quarter of maximum healing.** Mana, not cast time, is the limit. The best sustained mixes use cheap lower ranks and spend much of the fight not casting, so that Spirit regeneration runs at its full rate.
 - **Off-damage:** hybrids trade healing for damage. An Enhancement hybrid Shaman deals about 340 DPS and sustains about 210 HPS on a tank. A deep Restoration Shaman deals about 200 DPS and sustains about 290 HPS.
 - **Race matters little:** the gap between the best and worst race of a build is a few percent. Humans lead Priest and Paladin builds through The Human Spirit.

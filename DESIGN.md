@@ -33,6 +33,7 @@ This is a summary of the November 2026 UI overhaul. The overhaul was based on si
   - Gold is for fills, for the current item (active tab, active page, selected chip in the dark theme) and for the rule under the H1. It appears as text only in its darker `--fc-gold-text` step.
   - Links use `--fc-link` (blue) in both themes.
 - **Original identity.** No game assets.
+  - Names carry a small original glyph (see *Icons*). The glyphs are drawn for this site. They are not game icons.
   - Each class has its own original hue (`--fc-c-*`), used only as an accent next to the class name.
   - There is one ornament: the short gilt rule under the H1. An `hr` is a plain hairline. Surfaces are flat: no texture, no glow, no shadow.
 - **Motion.**
@@ -127,6 +128,18 @@ The styles are in section 4 of `docs/stylesheets/extra.css`. The "On this page" 
 | Glossary | `.fc-glossary` wraps the definition list: terms in A to Z order, medium weight, in a column beside the definitions (1 column on phones). `initGlossary` in `codex.js` gives each term an id and adds the A to Z row (`.fc-az`, chips) |
 | Sources | `.fc-sources`: each site is a closed `<details>` row with its number of sources. The page has no heading for each site, so the table of contents is short |
 | Profession guides | The header is the H1, the `p.fc-meta` row (kind, type tag, "Updated" date, "Data and sources" link), the infobox and the lede. The note about the data is in the *Sources* section. A recipe that is new or changed has a tag after its name |
+
+## Icons (16 Nov 2026)
+
+Each ability, talent, item, profession, race, class, dungeon and raid name has a small glyph before it. Each page title has the emblem of its section.
+
+- **Source.** `tools/icons/glyphs.json` holds 50 glyphs drawn for this site: 24 by 24, 1.75 round stroke, small filled accents, the same style as the class sigils. No game artwork.
+- **Meaning.** The shape shows what the thing does (heal, heal over time, party heal, shield, mana, damage, damage over time, strike, totem, control and more). The tint shows the spell school, the class or the faction. For a crafted item the tint shows its quality (grey common, green uncommon, blue rare, purple epic). The shape is the cue; the tint only supports it.
+- **Mapping.** `python tools/icons/build.py` writes `docs/assets/data/icons.json` (abilities, talents, trees, stats, slots, professions, races, classes, dungeons, raids) and `icons-items.json` (crafted items and recipes, loaded only where items are listed). Abilities are classified from the client effects. Talents are classified from the tooltip text.
+- **Display.** `docs/javascripts/calc-icons.js` adds the glyphs in the browser: to bold names, talent nodes, table cells, headings and chips that are exactly a known name, and to the calculators, which redraw. A sentence never gets a glyph: bold text gets one only when it starts its line or cell. A class page reads only that class's names. A table column gets glyphs as a whole or not at all, and never one repeated glyph.
+- **Accessibility.** A glyph is decoration. It is hidden from assistive technology, it never replaces the name, and it is not printed.
+- **Opt out.** Put the class `gi-off` on an element to keep glyphs out of it.
+- **Styles.** `.gi` and its tints are at the end of `docs/stylesheets/dps.css`.
 
 ## Deferred
 

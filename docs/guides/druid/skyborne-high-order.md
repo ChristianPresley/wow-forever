@@ -75,7 +75,7 @@ You get **haste** (Wind Blessed), a **regeneration cooldown** (Read Ley Line) an
 
     Replace *Morning Glory Dew* with the drink that you have. Read Ley Line and Innervate do not stack. Thus, as Resto, use 1 and keep the other.
 
-## Starting zone walkthrough: Zephras Isle (1–~12)
+## Starting zone walkthrough: Zephras Isle (1–12)
 
 Both Skyborne factions use [Zephras Isle](../../world/zephras-isle.md), in different phases. It takes you to about **12–14**.
 

@@ -24,25 +24,25 @@ Undead Rogue is the iconic Classic Horde PvP Rogue. **Will of the Forsaken** bre
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Will of the Forsaken** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvP · **3/5**{ .stars .s3 } PvE</p>
 <p markdown>Removes charm, fear and sleep. Breaks Fear, Psychic Scream, Intimidating Shout, Seduction and Hibernate. Several dungeon and raid bosses also use fear</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Cannibalize** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } leveling</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } leveling</p>
 <p markdown>Eat a humanoid or undead corpse to heal. Free food when you quest</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Underwater Breathing** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **1/5**{ .stars .s1 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **1/5**{ .stars .s1 }</p>
 <p markdown>Longer breath. Useful in coastal quests and on the way to the Drowned City</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Touch of the Grave** *(new)* <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown>A chance to drain 5% of your max health from the target (15 s internal cooldown). Small but constant self-healing for a class that has no healing</p>
 </div>
 

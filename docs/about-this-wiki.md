@@ -39,7 +39,7 @@ When the beta Class Deep Dives and the later pre-launch notes disagree, the wiki
 
 ## Contributing
 
-Each page has an edit link (the pencil icon). This link opens the Markdown source on GitHub. The site uses [MkDocs Material](https://squidfunk.github.io/mkdocs-material/). On every push to `main`, GitHub Actions deploys the site to GitHub Pages.
+Each page has an edit link in its footer: "Edit this page on GitHub". This link opens the Markdown source on GitHub. The site uses [MkDocs Material](https://squidfunk.github.io/mkdocs-material/). On every push to `main`, GitHub Actions deploys the site to GitHub Pages.
 
 ```bash
 pip install -r requirements.txt

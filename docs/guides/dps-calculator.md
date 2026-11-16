@@ -15,7 +15,7 @@ Healers have their own page: the [healing calculator](healing-calculator.md) cov
     - **Missing Forever data:** most Rogue, Hunter, Paladin, Druid and Shaman ability ranks, most spell coefficients, pet and demon damage, base stats by race, rating conversions and the armor formula. Each gap is filled with a Classic value or a tagged assumption.
     - **Assumed gear:** most gear profiles are assumptions. Only Arms uses published pre-raid totals.
     - **Untested rotations:** each spec uses a priority list written for this page, not one tested by players.
-    - **Data confidence** shows how much of each spec's input is Forever data. No spec is above 66%.
+    - **Data confidence** shows how much of each spec's input is Forever data. No simulated spec is above 67%.
 
     **What is more trustworthy:** comparing races within one spec, when the gap is larger than the ± margin. Every racial value comes from Wowhead Forever, and all races of a class use the same gear. Gaps under about 1% are effectively ties.
 

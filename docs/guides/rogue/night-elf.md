@@ -24,25 +24,25 @@ Night Elf Rogue is a Classic combination. In Forever it gets **Elune's Light** (
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Elune's Light** *(new)* <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 } PvE · **4/5**{ .stars .s4 } PvP</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvE · **4/5**{ .stars .s4 } PvP</p>
 <p markdown>+10% crit for 15 s. With Seal Fate, this gives extra combo points. With Lethality, it gives very large Eviscerates. Use it with Adrenaline Rush or Cold Blood</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Shadowmeld** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown>Stealth when you do not move. A Rogue already has Stealth, but Shadowmeld works when Stealth is on cooldown. It also lets you hide quickly when you eat or drink</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Quickness** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown>+1% dodge and +2% run speed. The run speed is always useful. The dodge stacks with Evasion</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Wisp Spirit** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **1/5**{ .stars .s1 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **1/5**{ .stars .s1 }</p>
 <p markdown>Faster ghost. Only important for corpse runs</p>
 </div>
 

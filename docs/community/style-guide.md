@@ -301,3 +301,23 @@ An infobox floats at the right of the text. With the class `infobox--row` it has
 A page shows 1 date. A page that you write by hand has "Updated" and the date in its footer. A generated page has "Updated" and the date in the meta row under the H1.
 
 `DESIGN.md` in the repository documents the other components (infobox, glossary list, source list, steps, rotation priority and the comparison matrix).
+
+## Glyphs
+
+A small glyph comes before each ability, talent, item, profession, race, class, dungeon and raid name. A page title gets the emblem of its section. The site draws its own glyphs. It does not use game icons.
+
+You do not write a glyph. The page adds it when the text is exactly a known name:
+
+- **Bold text** that starts a line or a table cell: `**Flash Heal** heals 1 target.`
+- A **table cell**, a **heading** or a **chip** that holds only the name.
+
+**Flash Heal** gets a glyph here. In a sentence, Flash Heal and **Flash Heal** do not.
+
+The rules:
+
+- A glyph is decoration. Always write the name.
+- A class page reads only the names of that class.
+- A table column gets glyphs on all its names or on none.
+- To keep glyphs out of a block, add the class `gi-off`: `{: .gi-off }`.
+
+The glyph set and the name list come from `tools/icons`. See *Icons* in `DESIGN.md`.

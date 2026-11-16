@@ -27,7 +27,7 @@ Trolls are also the faction of the new **Darkspear Islands** battleground and th
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
+<p class="ability-name" markdown>**Berserking** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
 <p markdown><span class="ability-label">PvE</span> +10% cast and attack speed for 15 s. Stack it with Rapid Fire. It also makes Aimed Shot and Sniper Shot casts shorter</p>
 <p markdown><span class="ability-label">PvP</span> Faster Aimed Shot in a burst window</p>

@@ -6,6 +6,7 @@ search:
   boost: 2
 generated: true
 wide: true
+wide: true
 ---
 
 # Blacksmithing Guide
@@ -30,7 +31,7 @@ wide: true
 | **Recipes** | 441 (197 new, 186 changed) |
 | **From a trainer** | 83 |
 | **From a recipe item** | 358 |
-| **Merchant's Favor** | 61 recipes |
+| **Favor recipes** | 61 |
 
 </aside>
 

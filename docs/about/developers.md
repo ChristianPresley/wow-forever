@@ -6,7 +6,7 @@
 |---|---|---|
 | **Holly Longdale** | Executive Producer / VP, World of Warcraft | "A new beginning for World of Warcraft". After the Anniversary Edition, she and Ion decided to "just do it". The beta was the biggest in Blizzard's history |
 | **Ion Hazzikostas** | Senior Game Director | The community gave very different definitions of "Classic+". SoD tested how much change is too much. The choice between SD and HD was difficult. No Steam release is planned. Patches that start at different times in different regions are a schedule choice, not a technical limit. A very good start for new players |
-| **Tim Jones** | Lead Game Designer | Three pillars. Rotations are simple but not repetitive. No add-ons needed to play a class correctly |
+| **Tim Jones** | Lead Game Designer | 3 pillars. Rotations are simple but not repetitive. No add-ons needed to play a class correctly |
 | **Nora Mills** | Lead Software Engineer | A "completely separate third pillar", not a remake. Grounded stories about everyday Azeroth |
 | **Clay Stone** | WoW Classic team | No WoW Token or boosts, because "the journey is the game" |
 | **Josh Greenfield** (Aggrend) | Senior Game Designer / producer (sources differ) | Possible Mak'gora arena for Hardcore. Beta numbers "craziest" in his 17 years. On launch night, he agreed that some zones felt empty |

@@ -24,7 +24,7 @@ Trolls are the Horde Warriors that are most comfortable to level. **Berserking**
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Berserking** <span class="ability-type active">Active</span></p>
+<p class="ability-name" markdown>**Berserking** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown><span class="ability-label">PvE</span> +10% cast and attack speed for 15 s. More swings, more rage, more Flurry and Enrage uptime. Use it together with Death Wish</p>
 <p markdown><span class="ability-label">PvP</span> Burst</p>

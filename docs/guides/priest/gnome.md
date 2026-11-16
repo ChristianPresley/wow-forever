@@ -37,14 +37,14 @@ Read with the [Priest progression](index.md).
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Expansive Mind** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Expansive Mind** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown><span class="ability-label">PvE</span> **+5% maximum mana.** Larger mana pool for long fights</p>
 <p markdown><span class="ability-label">PvP</span> Same</p>
 </div>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Engineering Specialization** <span class="ability-type passive">Passive</span></p>
+<p class="ability-name" markdown>**Engineering Specialization** *(changed)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **1/5**{ .stars .s1 } (**3/5**{ .stars .s3 } with Engineering)</p>
 <p markdown><span class="ability-label">PvE</span> 20% fewer device failures. Important only with Engineering</p>
 <p markdown><span class="ability-label">PvP</span> Engineering gadgets in PvP</p>

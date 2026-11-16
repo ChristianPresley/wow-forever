@@ -6,6 +6,7 @@ search:
   boost: 2
 generated: true
 wide: true
+wide: true
 ---
 
 # Tailoring Guide
@@ -28,7 +29,7 @@ wide: true
 | **Recipes** | 417 (183 new, 209 changed) |
 | **From a trainer** | 85 |
 | **From a recipe item** | 332 |
-| **Merchant's Favor** | 67 recipes |
+| **Favor recipes** | 67 |
 
 </aside>
 
@@ -38,7 +39,7 @@ Tailoring changes cloth into bolts, and bolts into bags and cloth armor. It need
 
 - **Reagent bags.** Forever has a reagent bag slot. Tailoring makes 7 bags for it, from the Linen Reagent Bag at skill 5 to the Bottomless Reagent Bag at skill 300.
 - **183 new recipes.** Almost all of them are cloth armor. Recipe items teach them, and a trainer teaches only the 2 Faction Banners.
-- **67 Merchant's Favor patterns.** Mivin Shadowweave sells them at Three Corners, the Alliance camp. They include 6 color sets for skill 60 to 125 and 2 reagent bags.
+- **67 Merchant's Favor patterns.** Mivin Shadowweave sells them at Three Corners, the Alliance camp. They include 6 colour sets for skill 60 to 125 and 2 reagent bags.
 - **16 Stormsewn patterns** (Azure and Cloudy). They make uncommon armor from skill 50, and the recipe items bind when you pick them up.
 - **18 Filigreed patterns** make rare gowns, leggings and circlets at skill 75, 100 and 125.
 - **New level 60 epics.** The Conviction, Manaflare and Demonheart patterns and 5 other epics use a new reagent, Malleable Essence of Nature.
@@ -130,9 +131,9 @@ Mageweave Cloth drops from humanoids of level 41 to 50, and Runecloth from level
 | Skill | Make or gather | Crafts | Reagents for 1 | Colour | Source | Notes |
 |---|---|---:|---|---|---|---|
 | 150–170 | **Crimson Silk Vest** | 20 | 4 Bolt of Silk Cloth, 2 Red Dye, 2 Fine Thread | Orange | Trainer, learn 150 (estimate) | 4 silk bolts, 2 Red Dye and 2 Fine Thread. Orange for the full step |
-| 170–185 | **Black Mageweave Leggings** | 15 | 2 Bolt of Mageweave, 3 Silken Thread | Orange | Trainer, learn 170 (estimate) | 2 mageweave bolts and 3 Silken Thread. Black Mageweave Vest has the same reagents and the same colors |
+| 170–185 | **Black Mageweave Leggings** | 15 | 2 Bolt of Mageweave, 3 Silken Thread | Orange | Trainer, learn 170 (estimate) | 2 mageweave bolts and 3 Silken Thread. Black Mageweave Vest has the same reagents and the same colours |
 | 185–200 | **Black Mageweave Gloves** | 16 | 2 Bolt of Mageweave, 2 Heavy Silken Thread | Orange → Yellow | Trainer, learn 180 (estimate) | Yellow from 195 |
-| 200–205 | **Black Mageweave Headband** | 5 | 3 Bolt of Mageweave, 2 Heavy Silken Thread | Orange | Trainer, learn 190 (estimate) | Orange for the full step. Black Mageweave Shoulders has the same reagents and the same colors |
+| 200–205 | **Black Mageweave Headband** | 5 | 3 Bolt of Mageweave, 2 Heavy Silken Thread | Orange | Trainer, learn 190 (estimate) | Orange for the full step. Black Mageweave Shoulders has the same reagents and the same colours |
 | 205–210 | **Bolt of Runecloth** | 5 | 5 Runecloth | Orange | Trainer, learn 205 (estimate) | Orange for the full step. Keep the bolts for Runecloth Belt. If the trainer does not offer it, continue Black Mageweave Headband |
 | 210–225 | **Runecloth Belt** | 15 | 3 Bolt of Runecloth, 1 Rune Thread | Orange | Trainer, learn 210 (estimate) | 3 runecloth bolts and 1 Rune Thread. Orange for the full step |
 
@@ -174,7 +175,7 @@ This bracket is the most expensive part. Runecloth Belt is the last trainer reci
 
 - If you do not have Wizardweave Leggings, Runecloth Pants is orange from 240 to 255. It needs 2 Ironweb Spider Silk for each craft.
 - If you do not have Runecloth Headband, use Runecloth Pants to 270. Ghostweave Mantle and Earthenweave Vest are also orange from 250 to 265.
-- If you do not have Runecloth Shoulders, use Ghostweave Hood, Earthenweave Crown or Wizardweave Turban. They have the same colors, and their recipe items do not bind.
+- If you do not have Runecloth Shoulders, use Ghostweave Hood, Earthenweave Crown or Wizardweave Turban. They have the same colours, and their recipe items do not bind.
 - Mooncloth is orange from skill 230 to 270. Each Mooncloth that you make in this range gives 1 point. The client data does not give a cooldown.
 - Mooncloth Shoulders stays yellow from 290 to 300, but each craft needs 5 Mooncloth. Use it only if Felcloth is cheap on your realm.
 - The client data shows no recipe item for Mooncloth Boots, which is yellow from 285. In Classic, a quest teaches it, not a trainer. This is not confirmed for Forever. Each craft needs 4 Mooncloth and 2 Black Pearl.
@@ -323,14 +324,14 @@ The Filigreed recipes in this tier also give points for only 5 skill levels.
 
 ### Merchant's Favor patterns
 
-Mivin Shadowweave at Three Corners, the Alliance camp, sells 67 patterns. The data does not name the Horde merchant. The prices are from a beta merchant window of 20 September 2026. All these recipe items bind when you pick them up. Each set has color variants that differ in 1 reagent. Warcraft Tavern says that the variants are for different types of damage or healing. Buy the 2 reagent bags first, then 1 color set for your class.
+Mivin Shadowweave at Three Corners, the Alliance camp, sells 67 patterns. The data does not name the Horde merchant. The prices are from a beta merchant window of 20 September 2026. All these recipe items bind when you pick them up. Each set has colour variants that differ in 1 reagent. Warcraft Tavern says that the variants are for different types of damage or healing. Buy the 2 reagent bags first, then 1 colour set for your class.
 
 <div class="fc-data" data-prose="1 3 5" markdown>
 
 | Recipe | Learn | Reagents | Source | Why |
 |---|---:|---|---|---|
-| Shadow Boots | 60 | 8 Bolt of Woolen Cloth, 2 Fine Thread, 2 Cerulean Dye, 1 Shadowgem | Recipe item (BoP) · Merchant's Favor | 30 Favor. The first piece of a color set, at skill 60 |
-| Shadow Gloves | 75 | 6 Bolt of Woolen Cloth, 4 Fine Thread, 3 Cerulean Dye, 2 Shadowgem | Recipe item (BoP) · Merchant's Favor | 30 Favor. The color sets are Flame, Pearly, Pristine, Shadow, Shining and Silky |
+| Shadow Boots | 60 | 8 Bolt of Woolen Cloth, 2 Fine Thread, 2 Cerulean Dye, 1 Shadowgem | Recipe item (BoP) · Merchant's Favor | 30 Favor. The first piece of a colour set, at skill 60 |
+| Shadow Gloves | 75 | 6 Bolt of Woolen Cloth, 4 Fine Thread, 3 Cerulean Dye, 2 Shadowgem | Recipe item (BoP) · Merchant's Favor | 30 Favor. The colour sets are Flame, Pearly, Pristine, Shadow, Shining and Silky |
 | Shadow Sash | 85 | 8 Bolt of Silk Cloth, 4 Fine Thread, 3 Cerulean Dye, 3 Shadowgem | Recipe item (BoP) · Merchant's Favor | 30 Favor. The first piece that uses silk bolts |
 | Shadow Circlet | 100 | 10 Bolt of Silk Cloth, 2 Silken Thread, 4 Cerulean Dye, 4 Shadowgem, 1 Silver Bar, 2 Greater Astral Essence | Recipe item (BoP) · Merchant's Favor | 30 Favor. It needs 2 Greater Astral Essence and 1 Silver Bar |
 | Shadow Gown | 110 | 12 Bolt of Silk Cloth, 2 Silken Thread, 6 Cerulean Dye, 6 Shadowgem, 2 Silver Bar, 2 Greater Astral Essence | Recipe item (BoP) · Merchant's Favor | 30 Favor. The chest piece of the set |
@@ -494,7 +495,7 @@ The full list of 417 recipes is on a separate page: [Tailoring recipes](tailorin
     The client data does not say. In Classic, Mooncloth has a cooldown of 4 days and you make it at a moonwell. It is not confirmed for Forever.
 
 ??? question "Which Merchant's Favor patterns do I buy first?"
-    Buy the Mageweave Reagent Bag and the Runecloth Reagent Bag first. Then buy 1 color set for your class.
+    Buy the Mageweave Reagent Bag and the Runecloth Reagent Bag first. Then buy 1 colour set for your class.
 
 ??? question "How much cloth do I need for 1 to 300?"
     The materials table gives the estimate for each bracket. The real number changes, because yellow and green recipes do not always give a point.

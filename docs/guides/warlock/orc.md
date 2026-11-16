@@ -34,7 +34,7 @@ The original Horde Warlock. Most guides say that it is the best race for the cla
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Blood Fury** <span class="ability-type active">Active</span></p>
+<p class="ability-name" markdown>**Blood Fury** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
 <p markdown>+10% attack power and spell power for 15 s, **2 min** cooldown (was 3). Use it with your opener: Soul Fire for Destruction, Decimation Soul Fire for Demonology, or a new set of DoTs for Affliction. DoTs recalculate each tick, so keep them active during the window</p>
 </div>

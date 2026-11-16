@@ -240,7 +240,7 @@ def render(slug, data, guide, errors):
     camp = [r for r in recipes if r["group"] == "Camping"]
 
     o = [
-        "---", f'description: "{guide["description"]}"', "tags:", "  - Professions", "search:", "  boost: 2", "generated: true", "wide: true", "---", "",
+        "---", f'description: "{guide["description"]}"', "tags:", "  - Professions", "search:", "  boost: 2", "generated: true", "wide: true", "wide: true", "---", "",
         f"# {name} Guide", "",
         f"<!-- This page is generated. Edit tools/professions/guides/{slug}.yml, then run tools/professions/build.py. -->", "",
     ] + meta_row(guide["icon"], "Profession guide", KINDS[guide["kind"]]) + [
@@ -255,7 +255,7 @@ def render(slug, data, guide, errors):
         f"| **From a recipe item** | {n - n_tr} |",
     ]
     if n_fav:
-        o.append(f"| **Merchant's Favor** | {n_fav} recipes |")
+        o.append(f"| **Favor recipes** | {n_fav} |")
     o += ["", "</aside>", "", guide["intro"].strip(), "", "## New in Forever", ""]
     o += [f"- {b}" for b in guide["new"]] + [""]
 

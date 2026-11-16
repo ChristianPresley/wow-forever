@@ -35,7 +35,7 @@ Warcraft Tavern and Method.gg both name Orc as a top Horde Mage.
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Blood Fury** <span class="ability-type active">Active</span></p>
+<p class="ability-name" markdown>**Blood Fury** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
 <p markdown>+10% attack power **and spell power** for 15 s, with a **2 min** cooldown (it was 3). Use it together with Arcane Power, Combustion or an Ice Lance shatter window</p>
 </div>
@@ -48,7 +48,7 @@ Warcraft Tavern and Method.gg both name Orc as a top Horde Mage.
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Command** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rating</span> ☆</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> —</p>
 <p markdown>+5% pet damage. Only Hunters and Warlocks get a benefit. It is of no use to a Mage</p>
 </div>
 

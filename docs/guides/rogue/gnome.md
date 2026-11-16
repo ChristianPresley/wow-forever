@@ -24,25 +24,25 @@ Gnome Rogue is a Classic combination. Forever gives it a new burst racial: **Eur
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Escape Artist** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE</p>
 <p markdown>Removes roots and snares and gives 3 s of immunity. Breaks Frost Nova, Hamstring, Crippling Poison, Entangling Roots and Frostbolt slows. Then you can go back to your target</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Eureka!** *(new)* <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown>For 8 s, your non-periodic abilities cost 10% less and do 10% more damage. Rupture and Garrote ticks do not get the bonus. Sinister Strike, Mutilate, Ambush, Eviscerate and Shank get it. Use it at the same time as Cold Blood, Adrenaline Rush or a Stealth opener</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Expansive Mind** *(changed)* <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown>+5% maximum Energy. A larger pool gives a stronger opener, and you can keep more Energy before a burst</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Engineering Specialization** *(changed)* <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } with Engineering · — without</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } with Engineering · — without</p>
 <p markdown>20% fewer device failures and backfires. It no longer adds skill points. Very good if you use bombs and nets in PvP</p>
 </div>
 

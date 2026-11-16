@@ -6,6 +6,7 @@ search:
   boost: 2
 generated: true
 wide: true
+wide: true
 ---
 
 # First Aid Guide
@@ -177,7 +178,7 @@ These are the Classic healing potions. Each craft needs a vial from a vendor, sp
 | Recipe | Learn | Reagents | Source | Why |
 |---|---:|---|---|---|
 | Heavy Runecloth Bandage | <span class="fc-na">—</span> | 2 Runecloth | Trainer | The standard bandage at level 60 |
-| Dense Runecloth Bandage | 300 | 2 Heavy Runecloth Bandage | Recipe item | New. It is yellow until 315, so it gives no skill points that you can use. Read the tooltip for its effect |
+| Dense Runecloth Bandage | 300 | 2 Heavy Runecloth Bandage | Recipe item | New. You learn it at 300, the skill cap, so it gives no skill points that you can use. Read the tooltip for its effect |
 
 </div>
 
@@ -198,7 +199,7 @@ The client data does not give the effects of the new poultices and tourniquets.
 
 ## Where recipes come from
 
-A trainer teaches 14 of the 32 recipes. The client does not hold the skill that the trainer asks for, so the guide uses Classic-era values for the Classic bandages. Recipe items teach the other 18 recipes. The client does not say where these items come from. The recipe items for Crystal Infused Bandage and Powerful Anti-Venom bind when you pick them up.
+A trainer teaches 15 of the 32 recipes. The client does not hold the skill that the trainer asks for, so the guide uses Classic-era values for the Classic bandages. Recipe items teach the other 17 recipes. The client does not say where these items come from. The recipe items for Crystal Infused Bandage and Powerful Anti-Venom bind when you pick them up.
 
 ## Camp features
 

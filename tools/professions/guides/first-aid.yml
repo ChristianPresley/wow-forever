@@ -80,7 +80,7 @@ picks:
   - title: "Bandages at 300"
     items:
       - {recipe: "Heavy Runecloth Bandage", why: "The standard bandage at level 60"}
-      - {recipe: "Dense Runecloth Bandage", why: "New. It is yellow until 315, so it gives no skill points that you can use. Read the tooltip for its effect"}
+      - {recipe: "Dense Runecloth Bandage", why: "New. You learn it at 300, the skill cap, so it gives no skill points that you can use. Read the tooltip for its effect"}
   - title: "Curatives"
     intro: |
       The client data does not give the effects of the new poultices and tourniquets.
@@ -91,7 +91,7 @@ picks:
       - {recipe: "Woolen Tourniquet", why: "The first tourniquet. A trainer teaches it"}
 
 sources_note: |
-  A trainer teaches 14 of the 32 recipes. The client does not hold the skill that the trainer asks for, so the guide uses Classic-era values for the Classic bandages. Recipe items teach the other 18 recipes. The client does not say where these items come from. The recipe items for Crystal Infused Bandage and Powerful Anti-Venom bind when you pick them up.
+  A trainer teaches 15 of the 32 recipes. The client does not hold the skill that the trainer asks for, so the guide uses Classic-era values for the Classic bandages. Recipe items teach the other 17 recipes. The client does not say where these items come from. The recipe items for Crystal Infused Bandage and Powerful Anti-Venom bind when you pick them up.
 
 camp_note: |
   The First Aid Kit is the first feature, and a trainer teaches it. Blueprints teach Toxin Study at skill 140 and Plague Doctor's Laboratory at skill 300.

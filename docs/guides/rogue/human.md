@@ -24,25 +24,25 @@ Human Rogue is a Classic combination. Forever made it one of the strongest Allia
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Will to Survive** *(new)* <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 } PvP · **2/5**{ .stars .s2 } PvE</p>
 <p markdown>Instantly removes stuns. In PvP, this works like a second trinket: break a Kidney Shot or Cheap Shot and change the result of the fight. In PvE, it saves you from trash mobs or bosses that stun frequently</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Perception** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 } PvP · **1/5**{ .stars .s1 } PvE</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 } PvP · **1/5**{ .stars .s1 } PvE</p>
 <p markdown>Detect stealth for 20 s. The counter to enemy Rogues and Cat Druids. Use it when a flag carrier dies and you cannot see the attacker</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Ruthless** *(new)* <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown>+1% crit with attacks and spells (it was 2% in beta). Always active. Helps Seal Fate and Lethality builds</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**The Human Spirit** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **1/5**{ .stars .s1 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **1/5**{ .stars .s1 }</p>
 <p markdown>+10% Spirit. For a Rogue, Spirit only gives slightly faster health regen out of combat</p>
 </div>
 

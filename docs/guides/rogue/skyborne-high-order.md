@@ -27,25 +27,25 @@ Read with the [Rogue progression](index.md). This page covers only what changes 
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Walk on Air** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **3/5**{ .stars .s3 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
 <p markdown>A 10 s controlled glide. Cross gaps, jump from cliffs safely and take shortcuts when you level. Rogues get Safe Fall at 40, but the glide also helps you find routes and escape in world PvP</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Read Ley Line** <span class="ability-type active">Active</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **2/5**{ .stars .s2 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
 <p markdown>+50% regen for 15 s, +100% while *Attuned* at a Ley Line. It is not clear if it affects Energy. For health regen, it decreases downtime</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Wind Blessed** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **4/5**{ .stars .s4 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **4/5**{ .stars .s4 }</p>
 <p markdown>Permanent haste. More swings means more poison and Hack and Slash procs</p>
 </div>
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Elemental Insight** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rogue rating</span> **2/5**{ .stars .s2 }</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> **2/5**{ .stars .s2 }</p>
 <p markdown>+5% damage against Elementals. Zephras Isle has many of them, and some dungeons also have them</p>
 </div>
 

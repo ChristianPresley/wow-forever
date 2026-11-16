@@ -24,7 +24,7 @@ The Orc Warrior is the iconic Horde fighter. Forever removed **Axe Specializatio
 <div class="ability-cards" markdown>
 
 <div class="ability-card" markdown>
-<p class="ability-name" markdown>**Blood Fury** <span class="ability-type active">Active</span></p>
+<p class="ability-name" markdown>**Blood Fury** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
 <p markdown><span class="ability-label">PvE</span> +10% AP for 15 s on a 2 min cooldown. Use it with Death Wish and Recklessness. When you level, use it on every pull when it is ready</p>
 <p markdown><span class="ability-label">PvP</span> Burst for a Mortal Strike kill</p>
@@ -39,7 +39,7 @@ The Orc Warrior is the iconic Horde fighter. Forever removed **Axe Specializatio
 
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Command** <span class="ability-type passive">Passive</span></p>
-<p class="ability-rating" markdown><span class="ability-label">Rating</span> ☆☆☆☆☆</p>
+<p class="ability-rating" markdown><span class="ability-label">Rating</span> —</p>
 <p markdown><span class="ability-label">PvE</span> +5% pet damage: does nothing for a Warrior</p>
 <p markdown><span class="ability-label">PvP</span> None</p>
 </div>

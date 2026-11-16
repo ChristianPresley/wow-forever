@@ -6,6 +6,7 @@ search:
   boost: 2
 generated: true
 wide: true
+wide: true
 ---
 
 # Leatherworking Guide
@@ -30,7 +31,7 @@ wide: true
 | **Recipes** | 512 (277 new, 199 changed) |
 | **From a trainer** | 76 |
 | **From a recipe item** | 436 |
-| **Merchant's Favor** | 81 recipes |
+| **Favor recipes** | 81 |
 
 </aside>
 

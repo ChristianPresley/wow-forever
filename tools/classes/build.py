@@ -23,7 +23,7 @@ The script stops with a list of errors if the data breaks a rule:
   - a race has no Race add-on page, or a Race add-on page has no race entry
   - a talent path names a build that does not exist, or a build that breaks the tree rules
   - a crafted item is not in the client recipe data, or a dungeon has no page
-  - a sentence breaks the Simplified Technical English profile (DESIGN.md):
+  - a sentence breaks the unslop-prose writing profile (DESIGN.md, tools/unslop_prose):
     more than 25 words, a semicolon, or should / would / could / might / may
 """
 from __future__ import annotations
@@ -97,42 +97,21 @@ def place(slug: str):
     return None
 
 
-# ---------------------------------------------------------------- STE lint
+# ---------------------------------------------------------------- unslop-prose
 
-_MODAL = re.compile(r"\b(should|would|could|might|may)\b")
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from unslop_prose import lint as unslop  # noqa: E402  (the shared prose linter, tools/unslop_prose)
 
-
-def plain(text: str) -> str:
-    t = re.sub(r"\{[^{}]*\}", "", text)                 # attribute lists
-    t = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", t)   # links
-    t = re.sub(r"<[^>]+>", "", t)                       # html
-    t = re.sub(r":[a-z0-9-]+:", "", t)                  # icons
-    t = re.sub(r"&[a-z]+;", " ", t)
-    return t.replace("*", "").replace("`", "")
+# The generator stops on these rules. `npm run lint:prose` reports the other rules on the built pages.
+HARD_RULES = {"semicolon", "modal", "long-sentence"}
 
 
 def lint(text, where, errors):
     if not text:
         return
-    fenced = False
-    for raw in str(text).splitlines():
-        if raw.strip().startswith("```"):
-            fenced = not fenced
-            continue
-        if fenced:
-            continue
-        line = plain(raw).strip()
-        if not line or line.startswith(("|", "#", "<", "???", "!!!", "===")):
-            continue
-        line = re.sub(r"^([-*]|\d+\.)\s+", "", line)
-        if ";" in line:
-            errors.append(f"{where}: STE: semicolon in '{line[:70]}'")
-        for m in _MODAL.finditer(line):
-            errors.append(f"{where}: STE: '{m.group(1)}' in '{line[:70]}'")
-        for sent in re.split(r"(?<=[.!?])\s+(?=[A-Z\"“(\[0-9])", line):
-            n = len(sent.split())
-            if n > 25:
-                errors.append(f"{where}: STE: sentence has {n} words (maximum 25): '{sent[:70]}…'")
+    for _line, rule, msg in unslop.check_text(str(text)):
+        if rule in HARD_RULES:
+            errors.append(f"{where}: unslop-prose: {rule}: {msg}")
 
 
 # ---------------------------------------------------------------- talents

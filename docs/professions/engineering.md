@@ -459,7 +459,9 @@ Most of these recipes have Gnomish or Goblin in the name. In Classic, each group
 
 A trainer teaches 71 of the 247 recipes. The client does not hold the skill that the trainer asks for, so the guide uses Classic-era values. Recipe items teach the other 176 recipes, and the client does not say where these items come from. 97 of the recipe items bind when you get them, so you cannot buy them from other players.
 
-Fritz Fizzle at Three Corners in Redridge Mountains sells 28 schematics for Merchant's Favor. Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes also need reputation. See the Economy page. In the beta, the schematics cost 45, 180, 270 or 360 Favor. The price increases with the skill of the recipe.
+Fritz Fizzle at Three Corners in Redridge Mountains sells 28 schematics for Merchant's Favor. Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant.
+
+You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes also need reputation. See the Economy page. In the beta, the schematics cost 45, 180, 270 or 360 Favor. The price increases with the skill of the recipe.
 
 8 of the 28 Favor schematics do not bind, so you can buy them from other players. These include SAF-T Tabs, EZ-Thro Wrap, No Slip SAF-T Padding, SAF-T Bell and EZ-Thro Fireproof Fuse.
 
@@ -487,7 +489,11 @@ Engineering makes these features for a [camp](../systems/camping.md). The camp p
 
 </div>
 
-A trainer teaches the Reagent Bot, and it uses 1 Handful of Copper Bolts and 1 Copper Tube. The Camping page says that a "Camping 101" quest gives the Tier 1 feature of each profession. The Repair Bot blueprint drops from Sneed in The Deadmines and needs skill 140. The Repair Bot uses 2 Whirring Bronze Gizmos, 1 Bronze Tube and 1 Heavy Leather. A blueprint teaches Anarchist's Workbench at skill 300, and it uses 1 Essence of Anarchy and 2 Thorium Widgets. Tier 3 blueprints drop from dungeon and raid bosses. The boss for Anarchist's Workbench is not known. A higher tier includes the features of the lower tiers. The Legacy talent Reagent Economy removes the reagents of Tier 1 features. The client data does not give the effects of the 3 features.
+A trainer teaches the Reagent Bot, and it uses 1 Handful of Copper Bolts and 1 Copper Tube. The Camping page says that a "Camping 101" quest gives the Tier 1 feature of each profession.
+
+The Repair Bot blueprint drops from Sneed in The Deadmines and needs skill 140. The Repair Bot uses 2 Whirring Bronze Gizmos, 1 Bronze Tube and 1 Heavy Leather. A blueprint teaches Anarchist's Workbench at skill 300, and it uses 1 Essence of Anarchy and 2 Thorium Widgets. Tier 3 blueprints drop from dungeon and raid bosses. The boss for Anarchist's Workbench is not known.
+
+A higher tier includes the features of the lower tiers. The Legacy talent Reagent Economy removes the reagents of Tier 1 features. The client data does not give the effects of the 3 features.
 
 ## Tips
 

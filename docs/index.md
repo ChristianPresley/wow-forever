@@ -21,6 +21,8 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 <label class="fc-hero__search" for="__search">Search the Codex</label> [What is Forever?](about/index.md)
 {: .fc-hero__find }
 
+<!-- unslop-prose: off -->
+
 <nav class="fc-sigils" aria-label="Class progressions" markdown>
 
 [:codex-druid: Druid](guides/druid/index.md){ data-class="druid" }
@@ -34,6 +36,8 @@ A community-style wiki for *World of Warcraft: Forever*, Blizzard's permanent "C
 [:codex-warrior: Warrior](guides/warrior/index.md){ data-class="warrior" }
 
 </nav>
+
+<!-- unslop-prose: on -->
 
 </div>
 

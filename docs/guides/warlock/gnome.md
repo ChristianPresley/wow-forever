@@ -14,7 +14,9 @@ Read with the [Warlock progression](index.md). This page covers only what change
 
 ## Why this combo
 
-A Classic combination with a new change. Gnomes keep **Escape Artist** and **Expansive Mind**. They also get **Eureka!**, an 8-second window in which non-periodic spells cost less and do more damage. Thus, Gnome is better for **Destruction and Demonology** (Incinerate, Soul Fire, Searing Pain) than for Affliction. Most Affliction damage comes from DoTs and channels. Warcraft Tavern says that Gnome gets the least benefit of the Warlock races, but it is still close to the others. Method.gg puts it in its B tier.
+A Classic combination with a new change. Gnomes keep **Escape Artist** and **Expansive Mind**. They also get **Eureka!**, an 8-second window in which non-periodic spells cost less and do more damage. Thus, Gnome is better for **Destruction and Demonology** (Incinerate, Soul Fire, Searing Pain) than for Affliction. Most Affliction damage comes from DoTs and channels.
+
+Warcraft Tavern says that Gnome gets the least benefit of the Warlock races, but it is still close to the others. Method.gg puts it in its B tier.
 
 | | |
 |---|---|

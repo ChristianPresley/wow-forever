@@ -301,7 +301,7 @@ Full add-on: [Dwarf Paladin](dwarf.md)
 
 You start at Northshire Abbey in Elwynn Forest. Your first trainer is Brother Sammuel. At level 6, go to Goldshire, where Brother Wilhelm trains you. The Paladin trainers of Stormwind are in the Cathedral of Light.
 
-The quest *Rare Books* in Elwynn Forest gives a weapon. Select the Northshire Hammer for two hands, or the Militia Sword for one hand. The Human Spirit gives 10% more Spirit, which gives mana between fights.
+The quest *Rare Books* in Elwynn Forest gives a weapon. Select the Northshire Hammer for 2 hands, or the Militia Sword for 1 hand. The Human Spirit gives 10% more Spirit, which gives mana between fights.
 
 
 Full add-on: [Human Paladin](human.md)
@@ -1129,7 +1129,7 @@ Full add-on: [Paladin equipment](equipment.md#healer)
 
 Level 40 changes much. You can wear plate armor. You can buy riding for 100g. You can buy dual spec for 50g from your Paladin trainer. Your 31st talent point gives the last talent of your tree.
 
-Paladins also get a class mount, the Warhorse. Sources do not agree if it is a trainer spell, a quest, or the two together. In all cases, keep 100g for the riding skill.
+Paladins also get a class mount, the Warhorse. Sources do not agree if it is a trainer spell, a quest, or the 2 together. In all cases, keep 100g for the riding skill.
 
 Dual spec is important for a hybrid class. Keep your quest build in 1 spec and a group role in the other. You change specs for free outside combat and outside battlegrounds. A change of talents in 1 spec costs gold, and this cost decreases to 1g with time.
 

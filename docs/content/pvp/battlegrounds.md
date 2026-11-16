@@ -54,4 +54,4 @@
 - **Exalted** unlocks a short questline for a faction **tabard** and gives **1 Legacy Point**.
 - This reputation is separate from PvP rank.
 
-*Sources: Blizzard (news 24307308); warcraft.wiki.gg; wow.gg.*
+*Sources: Blizzard (news 24307308), warcraft.wiki.gg, wow.gg.*

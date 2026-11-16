@@ -92,7 +92,7 @@ Trolls and Orcs both start in the **Valley of Trials**, Durotar. Blizzard change
 
 3.  **10**{ .lvl } The first pet
 
-    - The chain is the same as for Orcs. In Classic, **Thotar** at Razor Hill sent you to tame a **Dire Mottled Boar**, a **Surf Crawler** and an **Armored Scorpid** (*Classic-era*). The Forever quest is *Taming the Beast* (Orc/Troll; Warcraft Tavern gives 6062), then *Training the Beast* (6081).
+    - The chain is the same as for Orcs. In Classic, **Thotar** at Razor Hill sent you to tame a **Dire Mottled Boar**, a **Surf Crawler** and an **Armored Scorpid** (*Classic-era*). The Forever quest is *Taming the Beast* (Orc/Troll, Warcraft Tavern gives 6062), then *Training the Beast* (6081).
     - A boar for durability, a Durotar Tiger (cat) for damage. Beast Slaying makes your quests to kill beasts faster.
     - First talent: **Deadly Aspects**.
 
@@ -108,7 +108,7 @@ Trolls and Orcs both start in the **Valley of Trials**, Durotar. Blizzard change
 
 <div class="steps" markdown>
 
-1.  **10–20**{ .lvl } The Barrens (Crossroads; **Durotar Supply and Logistics** crate camp), Silverpine
+1.  **10–20**{ .lvl } The Barrens (Crossroads, and the **Durotar Supply and Logistics** crate camp), Silverpine
 
     <span class="step-label">Travel</span> Zeppelin to Undercity
 

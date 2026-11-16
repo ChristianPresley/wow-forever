@@ -15,7 +15,9 @@ wide: true
 
 A Priest wears cloth for all 60 levels and cannot use shields or relics. The wand is the main weapon until Penance at level 30 or Shadowform at level 40. From level 40, dual spec lets you play 2 roles, so carry a healer set and a damage set.
 
-About 40% of the items of Forever had hidden stats at launch. The stats of an item become visible when a player first finds it. Most item names for each level come from 1 tool, Timesaver.gg (data of 6 November 2026). It shows no stats and no levels. The level 60 lists come from the Kami-Labs tool of 9 November. Use each list as candidates, not as tested lists. The Codex did not verify the stats.
+About 40% of the items of Forever had hidden stats at launch. The stats of an item become visible when a player first finds it. Most item names for each level come from 1 tool, Timesaver.gg (data of 6 November 2026). It shows no stats and no levels.
+
+The level 60 lists come from the Kami-Labs tool of 9 November. Use each list as candidates, not as tested lists. The Codex did not verify the stats.
 
 No source compares a staff with a one-hand weapon and an off-hand item in numbers.
 

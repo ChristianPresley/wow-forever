@@ -2,7 +2,7 @@
 // CI also runs lychee for external links; this is the fast local equivalent of
 // `lychee --offline --include-fragments`. env: SITE_DIR, REPORT_DIR, LINKS_MAX_BROKEN (0)
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, statSync } from "node:fs";
-import { join, relative, sep, dirname, posix } from "node:path";
+import { join, relative, sep, posix } from "node:path";
 
 const SITE_DIR = process.env.SITE_DIR || "site";
 const OUT = process.env.REPORT_DIR || "tests/reports";

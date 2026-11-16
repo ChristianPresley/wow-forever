@@ -14,7 +14,7 @@ Read with the [Warlock progression](index.md). This page covers only what change
 
 ## Why this combo
 
-**New in Forever.** In Classic, Trolls were not able to be Warlocks. Forever is the first Classic-era version that permits it. It was also a frequent topic in the beta. Reviewers complained that the revamped racials were overtuned, and they named Troll Warlock as an example. Then Blizzard tuned the Troll and Orc racials before launch.
+**New in Forever.** Classic did not permit Troll Warlocks. Forever is the first Classic-era version that permits it. It was also a frequent topic in the beta. Reviewers complained that the revamped racials were overtuned, and they named Troll Warlock as an example. Then Blizzard tuned the Troll and Orc racials before launch.
 
 Trolls get:
 

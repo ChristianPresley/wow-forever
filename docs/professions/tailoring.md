@@ -324,7 +324,9 @@ The Filigreed recipes in this tier also give points for only 5 skill levels.
 
 ### Merchant's Favor patterns
 
-Mivin Shadowweave at Three Corners, the Alliance camp, sells 67 patterns. The data does not name the Horde merchant. The prices are from a beta merchant window of 20 September 2026. All these recipe items bind when you pick them up. Each set has colour variants that differ in 1 reagent. Warcraft Tavern says that the variants are for different types of damage or healing. Buy the 2 reagent bags first, then 1 colour set for your class.
+Mivin Shadowweave at Three Corners, the Alliance camp, sells 67 patterns. The data does not name the Horde merchant. The prices are from a beta merchant window of 20 September 2026. All these recipe items bind when you pick them up.
+
+Each set has colour variants that differ in 1 reagent. Warcraft Tavern says that the variants are for different types of damage or healing. Buy the 2 reagent bags first, then 1 colour set for your class.
 
 <div class="fc-data" data-prose="1 3 5" markdown>
 
@@ -436,7 +438,9 @@ Most of these recipes are from Classic. They are for appearance.
 
 A trainer teaches 85 of the 417 recipes. The client does not hold the skill that the trainer asks for. Recipe items teach the other recipes, and the client does not say where these items come from.
 
-The recipe items for 161 recipes bind when you pick them up. Mivin Shadowweave sells 67 of them for Merchant's Favor at Three Corners in Redridge Mountains. Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes also need reputation. The other 94 include the Stormsewn, Swarmtender's, Venomspew, Conviction, Manaflare and Demonheart patterns and Mooncloth.
+The recipe items for 161 recipes bind when you pick them up. Mivin Shadowweave sells 67 of them for Merchant's Favor at Three Corners in Redridge Mountains. The other 94 include the Stormsewn, Swarmtender's, Venomspew, Conviction, Manaflare and Demonheart patterns and Mooncloth.
+
+Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes also need reputation.
 
 The Warcraft Wiki pattern list gives a vendor as the source of the Stormsewn, Swarmtender's, Venomspew, Conviction, Manaflare and Demonheart patterns. It gives drops as the source of the Filigreed patterns. These sources are not in the client data.
 

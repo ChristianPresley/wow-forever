@@ -32,7 +32,9 @@ new:
   - "**6 Classic plans moved to Leatherworking:** Wildthorn Mail, Heavy Timbermaw Belt, Storm Gauntlets, Heavy Timbermaw Boots, Helm of the Great Chief and Invulnerable Mail. They are not Blacksmithing recipes in Forever."
 
 path_intro: |
-  This path uses trainer recipes to skill 240. The client does not hold the skill that the trainer asks for. The path uses the Classic-era value when that value is not above the yellow skill. For 5 mithril and steel recipes it uses the yellow skill as an estimate. Because the colours moved down, it is possible that the trainer teaches these recipes earlier. Go to the trainer each time you get 5 points. A recipe that you learn earlier stays orange longer. If the trainer does not teach a recipe at the skill in the table, continue with the recipe from the step before. Steel Breastplate and Heavy Mithril Axe are other trainer options. Their Classic trainer skills are 200 and 210.
+  This path uses trainer recipes to skill 240. The client does not hold the skill that the trainer asks for. The path uses the Classic-era value when that value is not above the yellow skill. For 5 mithril and steel recipes it uses the yellow skill as an estimate. Because the colours moved down, it is possible that the trainer teaches these recipes earlier.
+
+  Go to the trainer each time you get 5 points. A recipe that you learn earlier stays orange longer. If the trainer does not teach a recipe at the skill in the table, continue with the recipe from the step before. Steel Breastplate and Heavy Mithril Axe are other trainer options. Their Classic trainer skills are 200 and 210.
 
 path:
   - bracket: "Apprentice (1–75)"
@@ -59,7 +61,9 @@ path:
       - "Keep 5 Bronze Bars, 2 Coarse Grinding Stones and 2 Medium Leather for the Anvil at skill 140. A blueprint teaches the Anvil."
   - bracket: "Expert (150–225)"
     intro: |
-      You use Iron Bars, then Steel Bars and Mithril Bars. The last step uses Steel Bars again. Green Dye comes from a vendor. Each Heavy Grinding Stone needs 3 Heavy Stone, and each Solid Grinding Stone needs 4 Solid Stone. A Miner makes Steel Bars from Iron Bars and Coal. In Classic, Coal comes from a vendor. Heavy Mithril Gauntlet needs Mageweave Cloth. In Classic, Mageweave Cloth comes from humanoids of level 41 to 50.
+      You use Iron Bars, then Steel Bars and Mithril Bars. The last step uses Steel Bars again. Green Dye comes from a vendor. Each Heavy Grinding Stone needs 3 Heavy Stone, and each Solid Grinding Stone needs 4 Solid Stone.
+
+      A Miner makes Steel Bars from Iron Bars and Coal. In Classic, Coal comes from a vendor. Heavy Mithril Gauntlet needs Mageweave Cloth. In Classic, Mageweave Cloth comes from humanoids of level 41 to 50.
     steps:
       - {from: 150, to: 155, craft: "Bronze Warhammer", learn: 125, learn_basis: classic, note: "The last orange points"}
       - {from: 155, to: 165, craft: "Green Iron Leggings", learn: 155, learn_basis: classic, note: "Yellow from the start"}
@@ -75,7 +79,9 @@ path:
       - "The trainer recipes from 165 to 225 are yellow or green in this path. Plans such as Golden Scale Leggings, Steel Weapon Chain and Mithril Spurs stay orange longer. The client does not say where these plans come from."
   - bracket: "Artisan (225–300)"
     intro: |
-      The trainer has no cheap recipe above skill 240. The last 3 steps use plans that do not bind when you pick them up. The client does not say where these plans come from. In Classic they are world drops, so look in the auction house. You need Mithril Bars, then Thorium Bars. Mithril Coif needs Mageweave Cloth, and Heavy Mithril Boots need Thick Leather. Thorium Greatsword needs Rugged Leather and Dense Grinding Stones. Each Dense Grinding Stone needs 4 Dense Stone. In Classic, a Skinner gets Thick Leather and Rugged Leather.
+      The trainer has no cheap recipe above skill 240. The last 3 steps use plans that do not bind when you pick them up. The client does not say where these plans come from. In Classic they are world drops, so look in the auction house.
+
+      You need Mithril Bars, then Thorium Bars. Mithril Coif needs Mageweave Cloth, and Heavy Mithril Boots need Thick Leather. Thorium Greatsword needs Rugged Leather and Dense Grinding Stones. Each Dense Grinding Stone needs 4 Dense Stone. In Classic, a Skinner gets Thick Leather and Rugged Leather.
     steps:
       - {from: 225, to: 235, craft: "Mithril Coif", learn: 225, learn_basis: estimate, note: "The Classic trainer skill is 230, which is above the yellow skill in Forever. The guide uses 225. Yellow. If the trainer does not teach it at 225, make Mithril Spurs from a plan, or Heavy Mithril Axe, which is green"}
       - {from: 235, to: 240, craft: "Heavy Mithril Boots", learn: 230, learn_basis: estimate, note: "The Classic trainer skill is 235. Yellow"}
@@ -145,7 +151,9 @@ picks:
       - {recipe: "Clutchlord's Grips", why: "New. One of 6 Rare plate recipes in the Clutchlord's and Goregasher lines. The client data does not give the stats"}
   - title: "Merchant's Favor: low-level mail sets"
     intro: |
-      On the beta, Stondry Darkhammer sold 6 plans for each of 5 Rare mail sets. Each plan cost 30 Merchant's Favor. 1 material is different in each set: Shadowgem (Guard's), Tigerseye (Protector's), Strange Dust (Acolyte's), Lesser Magic Essence (Crusader's) or Small Lustrous Pearl (Veteran's). Choose the set by the stats in the tooltip. Each set also has a Chain Shirt, Chain Leggings and a Chain Helm that are not Favor plans. These plans bind when you pick them up, and the client does not say where they come from. Each of these recipes turns grey 5 points after you learn it, so it gives only 5 points.
+      On the beta, Stondry Darkhammer sold 6 plans for each of 5 Rare mail sets. Each plan cost 30 Merchant's Favor. 1 material is different in each set: Shadowgem (Guard's), Tigerseye (Protector's), Strange Dust (Acolyte's), Lesser Magic Essence (Crusader's) or Small Lustrous Pearl (Veteran's). Choose the set by the stats in the tooltip.
+
+      Each set also has a Chain Shirt, Chain Leggings and a Chain Helm that are not Favor plans. These plans bind when you pick them up, and the client does not say where they come from. Each of these recipes turns grey 5 points after you learn it, so it gives only 5 points.
     items:
       - {recipe: "Guard's Chain Belt", why: "The first piece of each set. Buy this plan first if you level a mail character"}
       - {recipe: "Guard's Gloves", why: "The same recipe is in each of the 5 sets"}
@@ -232,9 +240,15 @@ picks:
       - {recipe: "Arcanite Blacksmith Hammer", why: "A Rare thrown weapon"}
 
 sources_note: |
-  A trainer teaches 83 of the 441 recipes. For 66 of them, the client does not hold the skill that the trainer asks for. Plans teach the other 358 recipes, and 262 of these plans bind when you pick them up. The client does not say where the plans come from. On the beta, Stondry Darkhammer sold 61 plans for Merchant's Favor at Three Corners in Redridge Mountains. This is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes need Favor and reputation. The data does not give the reputation rank for each plan. The Favor prices in this guide come from the beta, not from the launch client.
+  A trainer teaches 83 of the 441 recipes. For 66 of them, the client does not hold the skill that the trainer asks for. Plans teach the other 358 recipes, and 262 of these plans bind when you pick them up. The client does not say where the plans come from.
 
-  The Blacksmithing data does not show where the new reagents come from. The data of other professions shows some sources. Sulfuric Acid is an Alchemy trainer recipe. Sandpaper is an Engineering trainer recipe. Mining has the recipes Smelt Heavy Thorium and Smelt Azerothium. Alchemy has the recipe Transmute: Legionite. The data does not show the source of Pristine Leather, Malleable Essence of Nature, Torbernite, Death Lotus or Golem Heart.
+  On the beta, Stondry Darkhammer sold 61 plans for Merchant's Favor at Three Corners in Redridge Mountains. This is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant.
+
+  You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes need Favor and reputation. The data does not give the reputation rank for each plan. The Favor prices in this guide come from the beta, not from the launch client.
+
+  The Blacksmithing data does not show where the new reagents come from. The data of other professions shows some sources. Sulfuric Acid is an Alchemy trainer recipe. Sandpaper is an Engineering trainer recipe. Mining has the recipes Smelt Heavy Thorium and Smelt Azerothium. Alchemy has the recipe Transmute: Legionite.
+
+  The data does not show the source of Pristine Leather, Malleable Essence of Nature, Torbernite, Death Lotus or Golem Heart.
 
 specializations_intro: |
   The client holds 5 specialization abilities. It does not say which recipes need a specialization, or how you get one. In Classic, you select Armorsmith or Weaponsmith at skill 200 and level 40 with a quest. A Weaponsmith can then select 1 master specialization at skill 250 and level 50. These rules are not confirmed for Forever.
@@ -252,7 +266,9 @@ specializations:
     text: "The client says that a Master Swordsmith can make special swords. In Classic, Arcanite Champion and Frostguard need it."
 
 camp_note: |
-  A trainer teaches the Sharpening Wheel. The client does not hold the trainer skill. The wiki says that utility features start at skill 20. The Sharpening Wheel gives a Strength buff at a camp, and the buff does not stack with Strength of Earth. A blueprint from Gilnid in The Deadmines teaches the Anvil at skill 140. A blueprint teaches the Master Forge at skill 300, and it needs 1 Golem Heart. The wiki does not give the source of this blueprint. It also does not give the effects of the Anvil and the Master Forge. Higher tiers include the features of the lower tiers.
+  A trainer teaches the Sharpening Wheel. The client does not hold the trainer skill. The wiki says that utility features start at skill 20. The Sharpening Wheel gives a Strength buff at a camp, and the buff does not stack with Strength of Earth.
+
+  A blueprint from Gilnid in The Deadmines teaches the Anvil at skill 140. A blueprint teaches the Master Forge at skill 300, and it needs 1 Golem Heart. The wiki does not give the source of this blueprint. It also does not give the effects of the Anvil and the Master Forge. Higher tiers include the features of the lower tiers.
 
 tips:
   - "Learn Mining with Blacksmithing. The path needs many bars and stones, and a Miner gets them without the auction house."

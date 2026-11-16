@@ -30,7 +30,7 @@ The new [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) dungeon (13â€
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Stoneform** *(changed)* <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
-<p markdown><span class="ability-label">PvE</span> Removes and blocks bleeds, poisons and diseases; âˆ’10% physical damage for 8 s. Use it as a short tank cooldown, or to remove diseases in Scholomance and Stratholme</p>
+<p markdown><span class="ability-label">PvE</span> Removes and blocks bleeds, poisons and diseases. âˆ’10% physical damage for 8 s. Use it as a short tank cooldown, or to remove diseases in Scholomance and Stratholme</p>
 <p markdown><span class="ability-label">PvP</span> Removes rogue poisons and warrior bleeds. The damage reduction helps against burst</p>
 </div>
 
@@ -44,7 +44,7 @@ The new [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) dungeon (13â€
 <div class="ability-card" markdown>
 <p class="ability-name" markdown>**Big Game Hunter** *(new)* <span class="ability-type passive">Passive</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **3/5**{ .stars .s3 }</p>
-<p markdown><span class="ability-label">PvE</span> +5% damage to Beasts. Strong while you level; useful against beast bosses</p>
+<p markdown><span class="ability-label">PvE</span> +5% damage to Beasts. Strong while you level. Useful against beast bosses</p>
 <p markdown><span class="ability-label">PvP</span> It is *not* confirmed that Druids in animal forms count as Beasts</p>
 </div>
 

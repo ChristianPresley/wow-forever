@@ -85,7 +85,7 @@ Humans start at **Northshire Abbey** in **Elwynn Forest**. Blizzard did not name
 
 1.  **10–20**{ .lvl } Westfall → Loch Modan → Redridge Mountains
 
-    <span class="step-label">Flight paths / notes</span> Sentinel Hill, Thelsamar, Lakeshire. Deadmines in Westfall; [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) in Ironforge
+    <span class="step-label">Flight paths / notes</span> Sentinel Hill, Thelsamar, Lakeshire. Deadmines in Westfall and [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) in Ironforge
 
 2.  **20–30**{ .lvl } Duskwood → Wetlands → Ashenvale (via the new Stormwind harbor boat to Auberdine)
 
@@ -127,7 +127,7 @@ Humans start at **Northshire Abbey** in **Elwynn Forest**. Blizzard did not name
 | **Fury** | **4/5**{ .stars .s4 } | +1% crit helps Flurry uptime. There is no active damage racial, so your burst is a little less than Orc and Night Elf burst |
 | **Protection** | **4/5**{ .stars .s4 } | Crit gives rage, rage gives threat. Will to Survive breaks boss stuns that otherwise decrease your threat. Dwarf is stronger on mitigation |
 
-**Weapon choice:** there is no Sword or Mace Specialization, so use the **Weaponmaster** talent: axes and polearms for more crit with Ruthless, swords for extra attacks, maces for armor penetration.
+**Weapon choice:** there is no Sword or Mace Specialization, so use the **Weaponmaster** talent. Use axes and polearms for more crit with Ruthless, swords for extra attacks, and maces for armor penetration.
 
 ### Leveling checklist
 

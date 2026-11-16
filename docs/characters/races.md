@@ -34,6 +34,8 @@ wide: true
 
 <p class="fc-legend" id="race-class-legend"><span aria-hidden="true">✓</span> available in Classic · <strong>NEW</strong> new combination in Forever · <span aria-hidden="true">—</span> unavailable. Every mark links to the guide for that race and class.</p>
 
+<!-- unslop-prose: off -->
+
 <table markdown="block" aria-labelledby="race-class-matrix" aria-describedby="race-class-legend">
 <thead markdown="block">
 <tr markdown="block"><th scope="col">Race</th><th scope="col">Warrior</th><th scope="col">Paladin</th><th scope="col">Hunter</th><th scope="col">Rogue</th><th scope="col">Priest</th><th scope="col">Shaman</th><th scope="col">Mage</th><th scope="col">Warlock</th><th scope="col">Druid</th></tr>
@@ -55,6 +57,8 @@ wide: true
 <tr markdown="block"><th scope="row">Skyborne (Windshaper)</th><td class="fc-new" markdown="span">[NEW<span class="fc-sr"> combination in Forever: Skyborne (Windshaper) Warrior, open guide</span>](../guides/warrior/skyborne-windshaper.md)</td><td class="fc-na"><span aria-hidden="true">—</span><span class="fc-sr">Skyborne (Windshaper) Paladin: not available</span></td><td class="fc-new" markdown="span">[NEW<span class="fc-sr"> combination in Forever: Skyborne (Windshaper) Hunter, open guide</span>](../guides/hunter/skyborne-windshaper.md)</td><td class="fc-new" markdown="span">[NEW<span class="fc-sr"> combination in Forever: Skyborne (Windshaper) Rogue, open guide</span>](../guides/rogue/skyborne-windshaper.md)</td><td class="fc-na"><span aria-hidden="true">—</span><span class="fc-sr">Skyborne (Windshaper) Priest: not available</span></td><td class="fc-new" markdown="span">[NEW<span class="fc-sr"> combination in Forever: Skyborne (Windshaper) Shaman, open guide</span>](../guides/shaman/skyborne-windshaper.md)</td><td class="fc-na"><span aria-hidden="true">—</span><span class="fc-sr">Skyborne (Windshaper) Mage: not available</span></td><td class="fc-na"><span aria-hidden="true">—</span><span class="fc-sr">Skyborne (Windshaper) Warlock: not available</span></td><td class="fc-new" markdown="span">[NEW<span class="fc-sr"> combination in Forever: Skyborne (Windshaper) Druid, open guide</span>](../guides/druid/skyborne-windshaper.md)</td></tr>
 </tbody>
 </table>
+
+<!-- unslop-prose: on -->
 
 </div>
 

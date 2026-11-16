@@ -37,4 +37,4 @@ The Drowned City is an **open-air dungeon**. Its weather becomes worse as you go
 - **Alliance:** *Magics of the Drowned City*, *Take Two With Water*
 - **Horde:** *Ancient Gurubashi Idol*, *The Drowned City*, *The Only Good Brinescale…*
 
-*Sources: Warcraft Tavern dungeon guide; Blizzard dungeon overview (24301455).*
+*Sources: Warcraft Tavern dungeon guide, Blizzard dungeon overview (24301455).*

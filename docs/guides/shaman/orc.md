@@ -14,7 +14,9 @@ Read with the [Shaman progression](index.md).
 
 ## Why this combo
 
-Orc Shaman is the original Horde Shaman. Thrall is an Orc Shaman, and the class is at the center of Orgrimmar. It is a Classic combination and it is not new in Forever. But the orc racials changed a lot. **Blood Fury** now increases both attack power **and** spell power, and it has a **2-minute** cooldown. The new **Shatter Curse** is a counter to Warlocks. Thus, Orc is a strong burst choice for Enhancement and Elemental, and a good PvP choice for all specs.
+Orc Shaman is the original Horde Shaman. Thrall is an Orc Shaman, and the class is at the center of Orgrimmar. It is a Classic combination and it is not new in Forever.
+
+But the orc racials changed a lot. **Blood Fury** now increases both attack power **and** spell power, and it has a **2-minute** cooldown. The new **Shatter Curse** is a counter to Warlocks. Thus, Orc is a strong burst choice for Enhancement and Elemental, and a good PvP choice for all specs.
 
 ## Racials in practice
 
@@ -147,7 +149,7 @@ Forever removed the old Axe Specialization. Axes now give Orcs no special advant
 
 **Totem quests:** Earth (4) and Fire (10) as above. In Classic, **Water (20)** was a quest chain in the Barrens and Southern Barrens. **Air (30)** is new in Forever and gives a spec weapon. Our sources do not yet document its Horde quest giver. Your trainer gives the quest when you reach level 30.
 
-**Dungeons on the way:** Ragefire Chasm, Wailing Caverns, Shadowfang Keep, Razorfen Kraul, Scarlet Monastery, [The Drowned City](../../content/dungeons/drowned-city.md) (near Grom'gol), [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) (Riverglades), [Alcaz Prison](../../content/dungeons/alcaz-prison.md) (Dustwallow), [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (Azshara). The City of Dalaran is hostile to Horde.
+**Dungeons on the way:** Ragefire Chasm, Wailing Caverns, Shadowfang Keep, Razorfen Kraul and Scarlet Monastery. Also [The Drowned City](../../content/dungeons/drowned-city.md) (near Grom'gol), [Krol'dok Stronghold](../../content/dungeons/kroldok-stronghold.md) (Riverglades), [Alcaz Prison](../../content/dungeons/alcaz-prison.md) (Dustwallow) and [Blackmaw Hold](../../content/dungeons/blackmaw-hold.md) (Azshara). The City of Dalaran is hostile to Horde.
 
 ## Faction-specific notes
 

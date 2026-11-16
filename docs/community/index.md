@@ -69,7 +69,7 @@ The Warcraft Twitch countdown showed **Taldramir** 1 hour before launch. It is p
 
 ## Streamers & guilds
 
-- **Asmongold** (Olympus guild) preferred PvE. He said that he could not play on PvP.
+- **Asmongold** (Olympus guild) preferred PvE. He said that it was not possible for him to play on PvP.
 - **Naguura** and **Leon** (Bonjwa guild, 200–250 members) selected **Horde** and held a vote about PvE vs PvP.
 - An unverified forum list *unconfirmed*{ .unconfirmed } put Venruki, Pika, Soda, Xaryu, Esfand, Ziqo, Payo, Shobek and Summit on "PvP Alliance".
 - **Payo** got a ban before launch because he encouraged gold buying.

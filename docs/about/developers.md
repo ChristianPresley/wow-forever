@@ -32,4 +32,10 @@
 - **RaiderIO / SoulSoBreezy**: Paul Kubit and Kim Flack
 - IGN, GameSpot, Inven Global, TechRadar and Windows Central also published BlizzCon interviews
 
-Other WoW news from the same BlizzCon, for context: *Midnight: Eclipse* (12.2.0), new paladin races for retail, a *WoW Remix: Wrath of the Lich King* teaser, the "Talebound" mode, and *The Last Titan* (tentatively 2027).
+Other WoW news from the same BlizzCon, for context:
+
+- *Midnight: Eclipse* (12.2.0)
+- New paladin races for retail
+- A *WoW Remix: Wrath of the Lich King* teaser
+- The "Talebound" mode
+- *The Last Titan* (tentatively 2027)

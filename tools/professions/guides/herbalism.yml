@@ -88,10 +88,18 @@ picks:
       - {recipe: "Seed Hybridizer", why: "Tier 3. The client data does not give its effect. It gives no skill points, because it is grey at 300"}
 
 sources_note: |
-  A trainer teaches Incense Candle. The client does not hold the skill that the trainer asks for. The wiki says that camp utility starts at skill 20, and the recipe is yellow at 20. The wiki also says that each profession gives a Camping 101 quest for its Tier-1 feature. You unlock camping first with the quest The Great Outdoors. Recipe items teach Greenhouse at skill 140 and Seed Hybridizer at skill 300. The wiki says that the Greenhouse blueprint drops from the Relic Guardian in Excavation Site. The wiki says that Tier 3 blueprints drop from dungeon and raid bosses. It does not name the boss for the Seed Hybridizer. No Herbalism recipe uses Merchant's Favor. The data shows no Herbalism recipe item that binds on pickup.
+  A trainer teaches Incense Candle. The client does not hold the skill that the trainer asks for. The wiki says that camp utility starts at skill 20, and the recipe is yellow at 20. The wiki also says that each profession gives a Camping 101 quest for its Tier-1 feature. You unlock camping first with the quest The Great Outdoors.
+
+  Recipe items teach Greenhouse at skill 140 and Seed Hybridizer at skill 300. The wiki says that the Greenhouse blueprint drops from the Relic Guardian in Excavation Site. The wiki says that Tier 3 blueprints drop from dungeon and raid bosses. It does not name the boss for the Seed Hybridizer.
+
+  No Herbalism recipe uses Merchant's Favor. The data shows no Herbalism recipe item that binds on pickup.
 
 camp_note: |
-  To unlock camping, do the quest The Great Outdoors at about level 5. The quest asks you to learn Cooking and make a Basic Campfire. The camp buff lasts 1 hour. You get it when you sit or craft at a camp for 60 seconds. The Greenhouse lists Arthas' Tears and Purple Lotus as reagents. In Classic, these herbs need skill 220 and 210, but the recipe needs only skill 140. Buy these herbs, or make the Greenhouse later. The Greenhouse also needs Simple Wood. The Seed Hybridizer needs Mountain Silversage, a Crystal Vial and Runecloth. In Classic, trade supplies vendors sell Simple Wood and Star Wood. This is not confirmed for Forever. In Classic, vendors sell Crystal Vials, and humanoids of level 51 and above drop Runecloth. These sources are not confirmed for Forever.
+  To unlock camping, do the quest The Great Outdoors at about level 5. The quest asks you to learn Cooking and make a Basic Campfire. The camp buff lasts 1 hour. You get it when you sit or craft at a camp for 60 seconds.
+
+  The Greenhouse lists Arthas' Tears and Purple Lotus as reagents. In Classic, these herbs need skill 220 and 210, but the recipe needs only skill 140. Buy these herbs, or make the Greenhouse later. The Greenhouse also needs Simple Wood.
+
+  The Seed Hybridizer needs Mountain Silversage, a Crystal Vial and Runecloth. In Classic, trade supplies vendors sell Simple Wood and Star Wood. This is not confirmed for Forever. In Classic, vendors sell Crystal Vials, and humanoids of level 51 and above drop Runecloth. These sources are not confirmed for Forever.
 
 tips:
   - "Keep Find Herbs on. You can track only 1 type of thing at a time."

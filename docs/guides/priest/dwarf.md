@@ -16,7 +16,7 @@ Read with the [Priest progression](index.md).
 
 Dwarf Priest is a Classic combination and **not new**. In Classic, Dwarves were *the* raid Priest because only they had Fear Ward. In Forever, **Fear Ward is baseline for every Priest**. Now the strengths of the Dwarf are **Stoneform**, the most flexible defensive racial in the game, +1% hit, Desperate Prayer and the new **Chastise** root.
 
-**Best for:** Shadow Priests (free hit), Hardcore players (two self-saves), and PvP healers who fear Rogues and poisons.
+**Best for:** Shadow Priests (free hit), Hardcore players (2 self-saves), and PvP healers who fear Rogues and poisons.
 
 ## Racials in practice
 
@@ -59,7 +59,7 @@ Dwarf Priest is a Classic combination and **not new**. In Classic, Dwarves were 
 | **Desperate Prayer** | (Classic spell) | An instant self-heal on a long cooldown (Classic-era behavior. Blizzard lists it as unchanged) | Emergency button when you solo and in Hardcore |
 | **Chastise** *(new)* | 20 | Roots a **Humanoid** for 2 s. Instant, 2-minute cooldown | Escape from a melee Humanoid, protect a flag carrier, or stop a player who runs. It works only on Humanoids. It is weak against Beasts, Undead and Elementals |
 
-With Psychic Scream and Stoneform, a Dwarf has three self-defense buttons by level 20.
+With Psychic Scream and Stoneform, a Dwarf has 3 self-defense buttons by level 20.
 
 ??? example "Macros"
 

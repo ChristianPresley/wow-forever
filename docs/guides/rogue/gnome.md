@@ -14,7 +14,9 @@ Read with the [Rogue progression](index.md). This page shows only the difference
 
 ## Why this combo
 
-Gnome Rogue is a Classic combination. Forever gives it a new burst racial: **Eureka!**. For 8 s, your direct abilities cost 10% less and hit 10% harder. This is a strong window for a 5-point Eviscerate or Mutilate. **Escape Artist** is still the best snare breaker for a melee class. **Expansive Mind** now increases max Energy. The Method leveling guide selects Gnome as the best Alliance Rogue.
+Gnome Rogue is a Classic combination. Forever gives it a new burst racial: **Eureka!**. For 8 s, your direct abilities cost 10% less and hit 10% harder. This is a strong window for a 5-point Eviscerate or Mutilate.
+
+**Escape Artist** is still the best snare breaker for a melee class. **Expansive Mind** now increases max Energy. The Method leveling guide selects Gnome as the best Alliance Rogue.
 
 **Best for:** PvP, and players who like Engineering.
 

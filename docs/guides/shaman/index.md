@@ -362,7 +362,9 @@ Full add-on: [Skyborne (Windshaper) Shaman](skyborne-windshaper.md)
 
 <p class="fc-addon__label"><span class="fc-addon__kind">Race</span> <strong>Dwarf</strong></p>
 
-You start at Anvilmar in Coldridge Valley. Your trainer, Teo Hammerstorm, is in Anvilmar. For *Call of Earth*, he asks for 2 Iceclaw Bear Pendants from Frostmane Troll Whelps. Then you drink the Earth Sapta at the Earth Spirit Stone. At level 6, go to Kharanos. Reportedly, the trainer Ingrid Dunwald is there. Warcraft Tavern lists Eldrun Stormbreaker in Ironforge, and no Shaman trainer in Stormwind or Darnassus.
+You start at Anvilmar in Coldridge Valley. Your trainer, Teo Hammerstorm, is in Anvilmar. For *Call of Earth*, he asks for 2 Iceclaw Bear Pendants from Frostmane Troll Whelps. Then you drink the Earth Sapta at the Earth Spirit Stone.
+
+At level 6, go to Kharanos. Reportedly, the trainer Ingrid Dunwald is there. Warcraft Tavern lists Eldrun Stormbreaker in Ironforge, and no Shaman trainer in Stormwind or Darnassus.
 
 Big Game Hunter gives +5% damage to Beasts. The trainer names are from Warcraft Tavern. Check them in the game.
 

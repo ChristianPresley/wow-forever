@@ -119,7 +119,7 @@ trees:
         {does: "Cat ability. It changes 55% of your base mana into 40 Energy. 8 s cooldown. Talents that decrease the cost of shapeshifts also decrease its cost", lvl: A, pve: S, pvp: A, note: "Cat rating. It replaces Tiger's Fury. Your mana is the limit in long fights."}
   Restoration:
     summary: |
-      Restoration is the healer tree. **Swiftmend** opens at 15 points and **Wild Growth** at 30. The first 2 rows are important for all roles, because **Heart of the Wild** and **Naturalist** increase the stats and the damage of Cat, Bear and Moonkin. The PvE ratings are for healers, unless the note gives a different role.
+      Restoration is the healer tree. **Swiftmend** opens at 15 points and **Wild Growth** at 30. The first 2 rows are important for all roles. **Heart of the Wild** and **Naturalist** increase the stats and the damage of Cat, Bear and Moonkin. The PvE ratings are for healers, unless the note gives a different role.
     talents:
       "Nature's Focus":
         {does: "Arcane and Nature spells have a 14–70% chance to ignore pushback", lvl: C, pve: C, pvp: A, note: "For PvP, where enemies attack you while you cast. In raids it is filler."}

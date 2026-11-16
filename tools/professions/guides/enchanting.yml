@@ -88,7 +88,7 @@ path:
       - "If you do not have Enchant Cloak - Superior Defense, continue Enchant Boots - Greater Stamina to 300. It is yellow until 300."
       - "In Classic, Enchant Cloak - Superior Defense needs a Runed Arcanite Rod. This is not confirmed for Forever. If you do not have the rod, also continue Enchant Boots - Greater Stamina."
       - "The recipe item for Runed Arcanite Rod binds when you pick it up. The client gives learn skill 290 for it."
-      - "The Runed Arcanite Rod needs 1 Arcanite Rod, 1 Golden Pearl, 10 Illusion Dust, 4 Greater Eternal Essence, 4 Small Brilliant Shard and 2 Large Brilliant Shard."
+      - "The Runed Arcanite Rod needs 1 Arcanite Rod, 1 Golden Pearl and 10 Illusion Dust. It also needs 4 Greater Eternal Essence, 4 Small Brilliant Shard and 2 Large Brilliant Shard."
       - "The client does not say where the 2 recipe items for this bracket come from."
 
 picks_intro: |

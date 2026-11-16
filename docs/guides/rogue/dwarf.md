@@ -14,7 +14,9 @@ Read with the [Rogue progression](index.md). This page shows only the difference
 
 ## Why this combo
 
-Dwarf Rogue is a Classic combination. Forever made it much stronger. **Stoneform** now removes and prevents bleeds, poisons and diseases, and gives 10% physical damage reduction. This is a direct counter to other Rogues and Warriors. **Artisan's Precision** gives +1% hit. At low levels, hit is the stat that Rogues have the most problems with. Dwarves start in Dun Morogh, near the new **Hall of Thanes** dungeon.
+Dwarf Rogue is a Classic combination. Forever made it much stronger. **Stoneform** now removes and prevents bleeds, poisons and diseases, and gives 10% physical damage reduction. This is a direct counter to other Rogues and Warriors.
+
+**Artisan's Precision** gives +1% hit. At low levels, hit is the stat that Rogues have the most problems with. Dwarves start in Dun Morogh, near the new **Hall of Thanes** dungeon.
 
 **Best for:** PvE players who want a hit bonus, and PvP players who fight other melee players.
 
@@ -56,7 +58,7 @@ Dwarf Rogue is a Classic combination. Forever made it much stronger. **Stoneform
     /cast Evasion
     ```
 
-    Use this button when a Warrior or Rogue attacks you. It gives physical damage reduction, a bleed and poison cleanse, and dodge with one push. Be careful when you use it, because it uses two cooldowns.
+    Use this button when a Warrior or Rogue attacks you. It gives physical damage reduction, a bleed and poison cleanse, and dodge with 1 push. Be careful when you use it, because it uses 2 cooldowns.
 
 ## Starting zone: Coldridge Valley and Dun Morogh (1–12)
 

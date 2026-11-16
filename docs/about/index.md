@@ -65,7 +65,9 @@ It keeps the mechanics, art style and 1–60 leveling of the 2004 game. It also 
 
 Forever occurs in the **first year of World of Warcraft (25 ADP)**. This is after the Warcraft III: Reforged campaign *Forsaken Kingdom* and before *The Burning Crusade*. The Blizzard launch article puts it "after Forsaken Kingdom and before Molten Core".
 
-The game stays in that period with no end date. It is a **separate continuity** that never becomes part of retail lore. Blizzard calls this a *time bubble*. It lets the team tell new stories and not change the original Azeroth. The tone is grounded on purpose. The stories are about the everyday lives of ordinary people and how the war affected them, not about heroes who save the world. See [Lore & Story](../world/lore.md).
+The game stays in that period with no end date. It is a **separate continuity** that never becomes part of retail lore. Blizzard calls this a *time bubble*. It lets the team tell new stories and not change the original Azeroth.
+
+The tone is grounded on purpose. The stories are about the everyday lives of ordinary people and how the war affected them, not about heroes who save the world. See [Lore & Story](../world/lore.md).
 
 ## Design pillars
 

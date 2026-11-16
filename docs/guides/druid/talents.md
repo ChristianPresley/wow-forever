@@ -382,7 +382,7 @@ Feral Combat is the tree for Cat damage and for the Bear tank. **Leader of the P
 
 ## Restoration
 
-Restoration is the healer tree. **Swiftmend** opens at 15 points and **Wild Growth** at 30. The first 2 rows are important for all roles, because **Heart of the Wild** and **Naturalist** increase the stats and the damage of Cat, Bear and Moonkin. The PvE ratings are for healers, unless the note gives a different role.
+Restoration is the healer tree. **Swiftmend** opens at 15 points and **Wild Growth** at 30. The first 2 rows are important for all roles. **Heart of the Wild** and **Naturalist** increase the stats and the damage of Cat, Bear and Moonkin. The PvE ratings are for healers, unless the note gives a different role.
 
 <div class="ttree-wrap" data-search-exclude role="group" aria-label="Restoration talent tree">
 <ul class="ttree">

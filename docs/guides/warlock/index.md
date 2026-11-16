@@ -1098,7 +1098,9 @@ Full add-on: [Warlock talents](talents.md#leveling-builds)
 
 <p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Demonology</strong></p>
 
-Soul Link at level 30 is the best defensive talent of the class. Your demon takes 30% of the damage that you take. Do not sacrifice the demon yet, because a new demon cancels the Demonic Sacrifice effect. Fel Domination at 34 gives a fast summon when your demon dies. Master Demonologist gives a bonus that depends on the demon. The Imp gives Fire damage, and the Sayaad gives Shadow damage. The Voidwalker decreases physical damage, and the Felhunter decreases magic damage.
+Soul Link at level 30 is the best defensive talent of the class. Your demon takes 30% of the damage that you take. Do not sacrifice the demon yet, because a new demon cancels the Demonic Sacrifice effect. Fel Domination at 34 gives a fast summon when your demon dies.
+
+Master Demonologist gives a bonus that depends on the demon. The Imp gives Fire damage, and the Sayaad gives Shadow damage. The Voidwalker decreases physical damage, and the Felhunter decreases magic damage.
 
 | Level | Talent | Why |
 |---|---|---|
@@ -1645,7 +1647,9 @@ At level 60 you get the *Warlock: Master* Legacy Point, and you train Ritual of 
 
 The Dreadsteed, your fast mount, comes from a long quest chain. No source documents changes to this chain in Forever. The Journeyman riding skill for a fast mount costs 1,000g.
 
-All 3 launch raids open on 9 December 2026. Blizzard says that the difficulty of the raids comes from preparation. Thus, you stop leveling and start to prepare. You have 4 tasks. Get spell power on each item. Get hit from Suppression and from items. Collect consumables. Do the attunement for Onyxia's Lair.
+All 3 launch raids open on 9 December 2026. Blizzard says that the difficulty of the raids comes from preparation. Thus, you stop leveling and start to prepare.
+
+You have 4 tasks. Get spell power on each item. Get hit from Suppression and from items. Collect consumables. Do the attunement for Onyxia's Lair.
 
 Hit is the stat that you cannot ignore. Warcraft Tavern says that a raid boss needs 17% spell hit. Its stats guide says 16%. Suppression gives 5%, so Affliction and Destruction need about 12% from items and buffs. The Demonology raid build has no Suppression, so it needs all 17% from items and buffs.
 
@@ -1749,7 +1753,9 @@ Full add-on: [Warlock talents](talents.md#level-60-builds)
 
 <p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Demonology</strong></p>
 
-The raid build is the Fire build. Sacrifice the Sayaad for +15% Fire damage, keep the Imp out and use a Firestone. A Shadow variant sacrifices the Imp, keeps the Sayaad out and uses a Spellstone. It casts Searing Pain only for Demonic Brand, uses Shadow Bolt as filler and does not use Soul Fire. Warcraft Tavern puts it within about 3% of the Fire build. The PvP build takes Soul Link, Improved Felhunter and Curse of Exhaustion. There, sacrifice the Voidwalker for mana or the Imp for Shadow damage, then summon the Felhunter.
+The raid build is the Fire build. Sacrifice the Sayaad for +15% Fire damage, keep the Imp out and use a Firestone. A Shadow variant sacrifices the Imp, keeps the Sayaad out and uses a Spellstone. It casts Searing Pain only for Demonic Brand, uses Shadow Bolt as filler and does not use Soul Fire. Warcraft Tavern puts it within about 3% of the Fire build.
+
+The PvP build takes Soul Link, Improved Felhunter and Curse of Exhaustion. There, sacrifice the Voidwalker for mana or the Imp for Shadow damage, then summon the Felhunter.
 
 The leveling build ends at **20/31/0**. The level 60 builds of this path:
 
@@ -1941,7 +1947,9 @@ Full add-on: [Undead Warlock](undead.md)
 
 <p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Affliction</strong></p>
 
-Start with a Shadow Bolt when the tank pulls. On a second target, add Corruption. If that target lives for 30 seconds or more, also add Bane of Agony and Siphon Life. On 6 November, Blizzard said that Wrack alone was better than the other DoTs. Blizzard planned a hotfix for 10 November to correct this, and said that the total damage of Affliction does not increase. Thus, no source confirms the priority below after that date. The launch tooltip of Wrack says Instant, and other sources say channel.
+Start with a Shadow Bolt when the tank pulls. On a second target, add Corruption. If that target lives for 30 seconds or more, also add Bane of Agony and Siphon Life.
+
+On 6 November, Blizzard said that Wrack alone was better than the other DoTs. Blizzard planned a hotfix for 10 November to correct this, and said that the total damage of Affliction does not increase. Thus, no source confirms the priority below after that date. The launch tooltip of Wrack says Instant, and other sources say channel.
 
 <div class="priority" markdown>
 

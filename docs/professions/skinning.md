@@ -48,7 +48,9 @@ Skinning is a primary gathering profession. You skin dead beasts and get leather
 
 ## Level 1 to 300
 
-You level Skinning with creatures, not with recipes. The client data does not give the skill for each creature level. This path uses the Classic-era rule. Skill 1 lets you skin creatures up to level 10. Each level from 11 to 20 needs 10 more skill. From skill 100, your skill divided by 5 is the highest creature level. The zone lists are Classic-era zone levels. The rule and the zone levels are not confirmed for Forever.
+You level Skinning with creatures, not with recipes. The client data does not give the skill for each creature level. This path uses the Classic-era rule. Skill 1 lets you skin creatures up to level 10. Each level from 11 to 20 needs 10 more skill. From skill 100, your skill divided by 5 is the highest creature level.
+
+The zone lists are Classic-era zone levels. The rule and the zone levels are not confirmed for Forever.
 
 The *Crafts* column is an estimate. A recipe always gives a skill point while it is orange. The chance decreases when the recipe is yellow and green, and a grey recipe gives no points. The estimate uses the Classic-era rule, which is not confirmed for Forever.
 
@@ -137,7 +139,9 @@ Each player can add 1 feature to a camp. Higher tiers include the features of th
 
 ## Where recipes come from
 
-A trainer teaches the Camp Chair. The client does not hold the skill that the trainer asks for. The recipe turns yellow at skill 20, and camp utility starts at skill 20. Each profession gives a "Camping 101" quest for its Tier 1 feature. First do the quest The Great Outdoors and make a Basic Campfire with Cooking. Recipe items teach the Field Guide at skill 140 and the Trapper's Workbench at skill 300. Tier 2 and Tier 3 blueprints drop from dungeon and raid bosses. The known blueprint drops do not include the 2 Skinning blueprints. No Skinning recipe needs Merchant's Favor, and no Merchant's Favor merchant sells Skinning recipes. No recipe item binds when you pick it up.
+A trainer teaches the Camp Chair. The client does not hold the skill that the trainer asks for. The recipe turns yellow at skill 20, and camp utility starts at skill 20. Each profession gives a "Camping 101" quest for its Tier 1 feature. First do the quest The Great Outdoors and make a Basic Campfire with Cooking.
+
+Recipe items teach the Field Guide at skill 140 and the Trapper's Workbench at skill 300. Tier 2 and Tier 3 blueprints drop from dungeon and raid bosses. The known blueprint drops do not include the 2 Skinning blueprints. No Skinning recipe needs Merchant's Favor, and no Merchant's Favor merchant sells Skinning recipes. No recipe item binds when you pick it up.
 
 ## Camp features
 
@@ -154,7 +158,9 @@ Skinning makes these features for a [camp](../systems/camping.md). The camp page
 
 </div>
 
-Camping starts with the quest The Great Outdoors at about level 5. You need Cooking and a Basic Campfire. Then a "Camping 101" quest for Skinning leads to the Camp Chair. The Camp Chair needs Light Leather and Simple Wood. The Field Guide needs Medium Leather, Slimy Murloc Scale and Fine Thread. The Trapper's Workbench needs Heavy Leather, Simple Wood and an Iron Bar. In Classic, trade supplies vendors sell Simple Wood, Star Wood and Fine Thread. In Classic, murlocs drop Slimy Murloc Scale, and a miner smelts Iron Bar from Iron Ore. These sources are Classic-era values. They are not confirmed for Forever. The Legacy talent Reagent Economy removes the reagents of Tier 1 camp features.
+Camping starts with the quest The Great Outdoors at about level 5. You need Cooking and a Basic Campfire. Then a "Camping 101" quest for Skinning leads to the Camp Chair. The Camp Chair needs Light Leather and Simple Wood. The Field Guide needs Medium Leather, Slimy Murloc Scale and Fine Thread. The Trapper's Workbench needs Heavy Leather, Simple Wood and an Iron Bar.
+
+In Classic, trade supplies vendors sell Simple Wood, Star Wood and Fine Thread. In Classic, murlocs drop Slimy Murloc Scale, and a miner smelts Iron Bar from Iron Ore. These sources are Classic-era values. They are not confirmed for Forever. The Legacy talent Reagent Economy removes the reagents of Tier 1 camp features.
 
 ## Tips
 

@@ -51,7 +51,7 @@ Blizzard made it from a part of **southeastern Khaz Modan** that was closed to p
 | **Bolder'ok** | Horde-aligned ogres | Ogres who left the Twilight's Hammer and became allies of the Horde |
 | **Powderfuse Port** | Neutral (goblin) | **Melbin Powderfuse** controls it. Ferry to Steamwheedle Port (Tanaris). The arena of Jazzle Cheapshot is "not open yet" |
 
-**Other locations:** Meadowsbrook, Windstead, Wheeler's Grange, **Sunnyglade** (ruined), Twilight's Shroud, Ashwood's Fall, Bristle Hills, Eastwind Shore, Elbrim's Farm, Forlorn Pit, Southern Watch, Terral's Watch, Turner's Logging Camp.
+**Other locations:** Meadowsbrook, Windstead, Wheeler's Grange, **Sunnyglade** (ruined), Twilight's Shroud, Ashwood's Fall and Bristle Hills. Also Eastwind Shore, Elbrim's Farm, Forlorn Pit, Southern Watch, Terral's Watch and Turner's Logging Camp.
 
 ### History
 
@@ -84,7 +84,7 @@ Blizzard made it from a part of **southeastern Khaz Modan** that was closed to p
 
 *Level range unknown (beta maps show possibly 38–40, and 1 guide says 40+). Contested.*
 
-Blizzard describes a hidden mystery between **Mulgore and Desolace**. It has a connection to the **Shen'dralar** Highborne of Eldre'Thalas (Dire Maul) and to the local centaur tribes. You walk there from southern Desolace through the **Valley of Bones**. This is approximately where Lake Dumont is in retail.
+Blizzard describes a hidden mystery between **Mulgore and Desolace**. It has a connection to the **Shen'dralar** Highborne of Eldre'Thalas (Dire Maul) and to the local centaur tribes. You walk there from southern Desolace through the **Valley of Bones**. This is about where Lake Dumont is in retail.
 
 - **Peoples:** Shen'dralar Highborne, the **Magram** centaur clan, the **Bristleback** quilboar.
 - **Subzones:** Shen'dralas (capital), Bristleback Retreat, Evenshade Overlook, Outcast Hideaway, Magram Front, Valley of Bones.

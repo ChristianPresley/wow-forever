@@ -94,7 +94,7 @@ Blizzard added **new NPCs, quests, profession hooks and small moments** to the V
 
 6.  **10**{ .lvl } Kaplak
 
-    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+    **Slice and Dice**, **Sap**, **Sprint**. First talent point
 
 7.  **10–12**{ .lvl } Orgrimmar and the Barrens border
 
@@ -155,7 +155,7 @@ Blizzard added **new NPCs, quests, profession hooks and small moments** to the V
 
 ## Faction notes
 
-- **Poison quest (20):** **Shenthul** in the Cleft of Shadow starts *The Shattered Salute* and *Deep Cover*, then *Mission: Possible But Not Probable* (Barrens) and *Hinott's Assistance* (Hillsbrad). This version is harder than the Alliance version. See the [main guide](index.md#l20).
+- **Poison quest (20):** **Shenthul** in the Cleft of Shadow starts *The Shattered Salute* and *Deep Cover*. The chain continues with *Mission: Possible But Not Probable* (Barrens) and *Hinott's Assistance* (Hillsbrad). This version is harder than the Alliance version. See the [main guide](index.md#l20).
 - **Library books:** Owen Thadd in the Magic Quarter of Undercity. Take the zeppelin.
 - **Mount:** wolves from Ogunaro Wolfrunner in Orgrimmar. At Honored with Orgrimmar, you get a 10% discount.
 - **Reputation:** Orgrimmar. The **Durotar Supply and Logistics** crate camp is a short distance west of the Crossroads.

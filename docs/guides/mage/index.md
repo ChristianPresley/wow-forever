@@ -113,7 +113,7 @@ Weaknesses
     All classes: [cross-class changes](../../characters/classes/index.md#cross-class-changes).
 
 !!! conflict "Conflict: the best race"
-    Warcraft Tavern names Skyborne as the best Alliance Mage and Orc as the best Horde Mage. Method.gg recommends Human or Gnome for the Alliance, and Orc or Troll for the Horde. The differences are small. Select the race that you will like for a few hundred hours.
+    Warcraft Tavern names Skyborne as the best Alliance Mage and Orc as the best Horde Mage. Method.gg recommends Human or Gnome for the Alliance, and Orc or Troll for the Horde. The differences are small. Select the race that you will like for hundreds of hours.
 
 <div class="fc-addons" markdown>
 

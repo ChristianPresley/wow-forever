@@ -14,9 +14,9 @@ Read with the [Priest progression](index.md).
 
 ## Why this combo
 
-**New in Forever.** In Classic, Gnomes could not be Priests. Blizzard gave them two new race spells: **Confounding Flash**, a group confuse, and **Contingency Plan**, a ward that protects you at low health. Gnomes also have **Eureka!**, which increases direct spells and heals for 8 s, and +5% mana. With these, the Gnome is a Priest that Warcraft Tavern calls "deceptively strong".
+**New in Forever.** Classic did not permit Gnome Priests. Blizzard gave them 2 new race spells: **Confounding Flash**, a group confuse, and **Contingency Plan**, a ward that protects you at low health. Gnomes also have **Eureka!**, which increases direct spells and heals for 8 s, and +5% mana. With these, the Gnome is a Priest that Warcraft Tavern calls "deceptively strong".
 
-**Best for:** Discipline and Holy healers (Eureka! increases Penance, Flash Heal and Greater Heal), Shadow burst, and all players who want to play the new combination.
+**Best for:** Discipline and Holy healers (Eureka! increases Penance, Flash Heal and Greater Heal), Shadow burst, and all players who want the new combination.
 
 ## Racials in practice
 

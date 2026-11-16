@@ -53,7 +53,11 @@ Leatherworking changes leather, hides and scales into leather armor, mail armor,
 
 ## Level 1 to 300
 
-The path uses trainer recipes to skill 235. After that, the trainer has no cheap recipe, so the path uses 3 recipe items from vendors. The client does not hold the skill that a trainer asks for. Each learn value of a trainer recipe in this path is a Codex estimate. The estimate is 20 to 30 points below the yellow skill. Many Classic recipe items in the client have this interval. If the trainer does not offer a recipe at the start of a step, continue with the recipe of the step before. It gives points until it is grey. The sources list 2 published Forever guides. For each step, at least 1 of them uses the recipe at the same skill or earlier. The Heavy Armor Kit step is the exception. It comes from the client data only.
+The path uses trainer recipes to skill 235. After that, the trainer has no cheap recipe, so the path uses 3 recipe items from vendors. The client does not hold the skill that a trainer asks for. Each learn value of a trainer recipe in this path is a Codex estimate. The estimate is 20 to 30 points below the yellow skill. Many Classic recipe items in the client have this interval.
+
+If the trainer does not offer a recipe at the start of a step, continue with the recipe of the step before. It gives points until it is grey.
+
+The sources list 2 published Forever guides. For each step, at least 1 of them uses the recipe at the same skill or earlier. The Heavy Armor Kit step is the exception. It comes from the client data only.
 
 The *Crafts* column is an estimate. A recipe always gives a skill point while it is orange. The chance decreases when the recipe is yellow and green, and a grey recipe gives no points. The estimate uses the Classic-era rule, which is not confirmed for Forever.
 
@@ -148,7 +152,9 @@ Heavy Leather comes from beasts of level 25 to 40, and Thick Leather from level 
 
 ### Artisan (225–300)
 
-Rugged Leather comes from beasts of level 45 to 60. This is the Classic-era range. Above skill 235 the trainer recipes are too expensive, so the path uses 3 vendor recipe items. All 3 bind when you pick them up. The client does not hold their vendors. The vendor names come from the 2 published guides in the sources. The path uses these 3 because the published guides name a vendor for each. Recipe items that do not bind teach equal recipes, but they have no known source. If you have one, use it.
+Rugged Leather comes from beasts of level 45 to 60. This is the Classic-era range. Above skill 235 the trainer recipes are too expensive, so the path uses 3 vendor recipe items. All 3 bind when you pick them up. The client does not hold their vendors.
+
+The vendor names come from the 2 published guides in the sources. The path uses these 3 because the published guides name a vendor for each. Recipe items that do not bind teach equal recipes, but they have no known source. If you have one, use it.
 
 Buy Black Dye and Rune Thread from a trade supplies vendor. In Classic, Runecloth drops from humanoids of level 51 and above. In Classic, you skin Heavy Scorpid Scale from scorpids of level 40 to 60. These values are not confirmed for Forever. The Heavy Scorpid Helm also needs 1 Cured Rugged Hide. Each craft of Cured Rugged Hide uses 1 Rugged Hide and 1 Refined Deeprock Salt.
 
@@ -406,7 +412,9 @@ The client data does not show which recipes need a specialization. This list use
 
 A trainer teaches 76 of the 512 recipes. The client does not hold the skill that the trainer asks for, so the path gives estimates. Recipe items teach the other 436 recipes, and 238 of these recipe items bind when you pick them up. The client does not say where a recipe item comes from.
 
-81 recipes are Merchant's Favor recipes. On the beta, Daniel Stitchsong sold them at Three Corners in Redridge Mountains, and each one binds when you pick it up. Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. The stock and prices come from the beta, not from the launch client. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes also need reputation. The client data does not say where Pristine Leather, Pristine Hide and Pristine Scale come from. The pieces of the Favor sets that are not on the merchant are the Armor, Pants, Helm, Belt, Shoes, Mail Boots and Gauntlets recipes.
+81 recipes are Merchant's Favor recipes. On the beta, Daniel Stitchsong sold them at Three Corners in Redridge Mountains, and each one binds when you pick it up. Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant.
+
+The stock and prices come from the beta, not from the launch client. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes also need reputation. The client data does not say where Pristine Leather, Pristine Hide and Pristine Scale come from. The pieces of the Favor sets that are not on the merchant are the Armor, Pants, Helm, Belt, Shoes, Mail Boots and Gauntlets recipes.
 
 The client also holds 80 Leatherworking recipes from Season of Discovery under a separate heading. No merchant sells them, so this guide does not list them.
 
@@ -433,7 +441,9 @@ Leatherworking makes these features for a [camp](../systems/camping.md). The cam
 
 </div>
 
-The Camp Tent is a trainer recipe that uses 5 Light Leather. It gives rested XP at a camp, up to 5% of a level. A blueprint teaches the Tanning Rack. The client gives skill 140, and a hotfix on 6 November decreased it to 125. The blueprint drops from Razorclaw the Butcher in Shadowfang Keep. A blueprint teaches the Sewing Machine at skill 300, and it needs 1 Undeath Engine. The client data and the wiki do not give the effects of the Tanning Rack and the Sewing Machine.
+The Camp Tent is a trainer recipe that uses 5 Light Leather. It gives rested XP at a camp, up to 5% of a level.
+
+A blueprint teaches the Tanning Rack. The client gives skill 140, and a hotfix on 6 November decreased it to 125. The blueprint drops from Razorclaw the Butcher in Shadowfang Keep. A blueprint teaches the Sewing Machine at skill 300, and it needs 1 Undeath Engine. The client data and the wiki do not give the effects of the Tanning Rack and the Sewing Machine.
 
 ## Tips
 

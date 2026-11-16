@@ -83,7 +83,7 @@ Both Skyborne factions use [Zephras Isle](../../world/zephras-isle.md), in diffe
 
 <div class="steps" markdown>
 
-1.  Start at Thendal Village. Quests: *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* (teaches you to use Walk on Air) and *The Anchors of Zephras*.
+1.  Start at Thendal Village. Quests: *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* and *The Anchors of Zephras*. *Falling With Style* teaches you to use Walk on Air.
 2.  Your faction opener is ***Reading the Leylines***, which shows you how to get Attuned.
 3.  Play as a caster, as usual: Wrath, Moonfire, Rejuvenation.
 
@@ -166,7 +166,7 @@ The High Order airship leaves the **east Skydock** for **north Dalaran** in the 
 
 <div class="verdict" markdown>
 
-A good, distinctive Alliance druid. **Wind Blessed** and **Read Ley Line** make it the best Alliance pick for **Balance and Restoration**, and it is almost equal to Night Elf for Cat. You lose Shadowmeld and Elune's Light burst. The difficult part is the start: at level 12, you arrive in a 30–40 zone and must walk to the lowbie zones.
+A good, distinctive Alliance druid. **Wind Blessed** and **Read Ley Line** make it the best Alliance pick for **Balance and Restoration**. It is almost equal to Night Elf for Cat. You lose Shadowmeld and Elune's Light burst. The difficult part is the start: at level 12, you arrive in a 30–40 zone and must walk to the lowbie zones.
 
 | Spec | Rating |
 |---|---|

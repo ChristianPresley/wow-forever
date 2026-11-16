@@ -85,7 +85,7 @@ Night Elves start in **Shadowglen**, Teldrassil. Blizzard gave Shadowglen the sa
 1.  **1–5**{ .lvl } Shadowglen
 
     - Start with Conservator Ilthalaine at Aldrassil: grells and young nightsabers. Then do the Fel Moss and Webwood spider quests in the Shadowthread Cave.
-    - The **Hunter trainer is at Aldrassil** (Ayanna Everstride in Classic; *Classic-era*). At 4, train **Serpent Sting**.
+    - The **Hunter trainer is at Aldrassil** (Ayanna Everstride in Classic, *Classic-era*). At 4, train **Serpent Sting**.
     - Look for the new Forever additions in Shadowglen and get them as you go.
 
 2.  **5–10**{ .lvl } Dolanaar
@@ -96,7 +96,7 @@ Night Elves start in **Shadowglen**, Teldrassil. Blizzard gave Shadowglen the sa
 
 3.  **10**{ .lvl } The first pet
 
-    - In Classic, **Dazalar** in Dolanaar gave the taming chain: **Webwood Lurker** (spider), **Nightsaber Stalker** (cat) and **Strigid Screecher** (owl) (*Classic-era*). The Forever quest is *Taming the Beast* (Night Elf; Warcraft Tavern gives 6063). The chain ends with *Training the Beast* (6103).
+    - In Classic, **Dazalar** in Dolanaar gave the taming chain: **Webwood Lurker** (spider), **Nightsaber Stalker** (cat) and **Strigid Screecher** (owl) (*Classic-era*). The Forever quest is *Taming the Beast* (Night Elf, Warcraft Tavern gives 6063). The chain ends with *Training the Beast* (6103).
     - Owls are now **Birds of Prey**, with the *Mine!* disarm.
     - Keep a **Nightsaber** (cat) for leveling damage. First talent: **Deadly Aspects**.
 

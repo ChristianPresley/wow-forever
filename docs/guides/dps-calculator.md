@@ -26,7 +26,7 @@ Healers have their own page: the [healing calculator](healing-calculator.md) cov
 
 **How to use it.** Filter by class or faction, sort by any column, and open a spec name to see its damage by ability. *Data confidence* shows how much of the spec's input is Forever data.
 
-These estimates come from two event-driven combat simulators in the repository (`tools/sim/physical` and `tools/sim/casters`). They play out each fight with swing timers, cast times, the attack table, resources, procs and cooldowns, using a priority list for each spec. Their READMEs list every assumption and gap.
+These estimates come from 2 event-driven combat simulators in the repository (`tools/sim/physical` and `tools/sim/casters`). They play out each fight with swing timers, cast times, the attack table, resources, procs and cooldowns, using a priority list for each spec. Their READMEs list every assumption and gap.
 
 <div class="dps-calc" data-dps-sim><p>Loading the simulated estimates. They need JavaScript.</p></div>
 
@@ -60,25 +60,32 @@ Change any number and the table updates. Changes are not saved.
 
 ## How DPS by level works
 
-This simulator (`tools/levelsim`) plays out every class, talent tree and race at every level from 1 to 60, in a 3-minute fight against a same-level target with no armor. The character knows every spell rank and talent point it can have at that level, and uses its racial abilities. Casters spend their mana so it lasts the fight. They pick spell ranks to suit, and shoot a wand or melee while their mana comes back.
+This simulator (`tools/levelsim`) plays out every class, talent tree and race at every level from 1 to 60. Each fight lasts 3 minutes against a same-level target with no armor. The character knows every spell rank and talent point it can have at that level, and uses its racial abilities. Casters spend their mana so it lasts the fight. They pick spell ranks to suit, and shoot a wand or melee while their mana comes back.
 
 Pick the gear:
 
 - **Best craftable gear:** each slot holds the crafted item and enchant that scores best for the spec at that level. Item stats are decoded from the Forever client. Crafting makes almost no rings, necks or trinkets, so those slots are mostly empty. Weapon procs and set bonuses are not counted.
 - **No gear:** the character fights unarmed and unarmored. Hunters have no ranged weapon, so they lose their shots.
 
-**Click any row** to open its full build at that level: race, class and spec, talents by tree, every gear slot with its enchant, the opening sequence of abilities from a simulated fight, casts per minute and damage by source.
+**Click any row** to open its full build at that level:
 
-Spell values come from the Forever client data. Rules the client doesn't ship (combat formulas, rage, most talent ranks above 1, scripted effects, hit and crit rating conversion) use Classic rules or tagged assumptions; the module docstrings list them. It is not raid DPS: raid buffs, consumables and boss armor are left out.
+- Race, class and spec.
+- Talents by tree.
+- Every gear slot with its enchant.
+- The opening sequence of abilities from a simulated fight.
+- Casts per minute.
+- Damage by source.
+
+Spell values come from the Forever client data. The client doesn't ship some rules: combat formulas, rage, most talent ranks above 1, scripted effects, and hit and crit rating conversion. These rules use Classic rules or tagged assumptions. The module docstrings list them. It is not raid DPS: raid buffs, consumables and boss armor are left out.
 
 ## Limits
 
 No raid opens until 9 December 2026, so no one has real raid logs to check these numbers against.
 
 !!! warning "Estimates on incomplete data"
-    Treat every number on this page as an estimate. Absolute DPS could be off by 20–30%, and the order of specs could change once real logs exist.
+    Treat every number on this page as an estimate. Absolute DPS can be off by 20–30%, and the order of specs can change when real logs exist.
 
-    - **Missing Forever data:** most Rogue, Hunter, Paladin, Druid and Shaman ability ranks, most spell coefficients, pet and demon damage, base stats by race, rating conversions and the armor formula. Each gap is filled with a Classic value or a tagged assumption.
+    - **Missing Forever data:** most Rogue, Hunter, Paladin, Druid and Shaman ability ranks and most spell coefficients. Also missing: pet and demon damage, base stats by race, rating conversions and the armor formula. Each gap is filled with a Classic value or a tagged assumption.
     - **Assumed gear:** most gear profiles are assumptions. Only Arms uses published pre-raid totals.
     - **Untested rotations:** each spec uses a priority list written for this page, not one tested by players.
     - **Data confidence** shows how much of each spec's input is Forever data. No simulated spec is above 67%.

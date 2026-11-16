@@ -1,0 +1,15 @@
+# Ruff: the Python tools (generators and simulators). Run with `npm run lint:py`.
+line-length = 200
+target-version = "py312"
+extend-exclude = [".venv", "node_modules", "site", ".claude", ".cache", "tools/forever_data/cache"]
+
+[lint]
+select = ["E", "F", "W", "B"]
+ignore = [
+    "E501",  # long lines: data tables and one-line records are written wide on purpose
+    "E731",  # small lambdas bound to a name are used as local helpers
+    "E741",  # single-letter names follow the game formulas
+    "B023",  # closures in simulator set-up loops are called before the loop moves on
+    "B905",  # zip() over lists built together: strict= adds noise
+    "B007",  # a loop variable that is only a counter
+]

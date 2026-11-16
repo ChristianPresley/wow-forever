@@ -31,7 +31,7 @@
 - **Discounts:** Honored with your home faction gives −10% on Riding and racial mounts. The Legacy talent *Bartering* gives up to −10% on mounts. Skyborne reputation gives 5–20% off Galestriders.
 - Mounts of other races need **Exalted** reputation.
 - **Class mounts:** Paladin (*Tome of Nobility*. Forsaken paladins have their own path) and Warlock (Strahad Farsan, Ratchet, lvl 40), plus the difficult level-60 epic class quests.
-- **New mounts:** Galestriders (Skyborne), Reins of the Spectral Bear (Legacy), Reins of the Pack Kodo (6,000 Merchant's Favor), PvP Rank 11 Black War mounts, and the edition mounts (Cerulean Prideclaw, Veteran Adventurer's Loyal Companion).
+- **New mounts:** Galestriders (Skyborne), Reins of the Spectral Bear (Legacy), Reins of the Pack Kodo (6,000 Merchant's Favor) and PvP Rank 11 Black War mounts. Also the edition mounts (Cerulean Prideclaw, Veteran Adventurer's Loyal Companion).
 - Store and edition mounts still need the Riding skill.
 
 ## Reputation

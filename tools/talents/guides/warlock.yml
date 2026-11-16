@@ -3,7 +3,9 @@ badges: [dps]
 description: "Warlock talent guide for WoW: Forever: all 53 talents in Affliction, Demonology and Destruction with a rating, a talent for each level from 10 to 60, and level 60 builds for raids and PvP."
 
 intro: |
-  Each Warlock tree is a full damage spec in Forever. **Affliction** is the tree for solo leveling. **Demonology** is the safest tree and the PvP tree. **Destruction** is the tree for dungeons and cleave. Most level 60 builds put points in 2 or 3 trees, because Suppression, Improved Corruption, Bane and Ruin help all specs. Blizzard announced an Affliction and Voidwalker hotfix for 10 November. Its effect on these talents is not confirmed.
+  Each Warlock tree is a full damage spec in Forever. **Affliction** is the tree for solo leveling. **Demonology** is the safest tree and the PvP tree. **Destruction** is the tree for dungeons and cleave. Most level 60 builds put points in 2 or 3 trees, because Suppression, Improved Corruption, Bane and Ruin help all specs.
+
+  Blizzard announced an Affliction and Voidwalker hotfix for 10 November. Its effect on these talents is not confirmed.
 
 card:
   leveling: "Affliction (fast solo) or Demonology (safe)"

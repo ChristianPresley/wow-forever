@@ -90,7 +90,7 @@ The Classic quests of Tirisfal are still there, with a large addition in the wes
 
 6.  **10**{ .lvl } Marion Call
 
-    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+    **Slice and Dice**, **Sap**, **Sprint**. First talent point
 
 7.  **10–12**{ .lvl } Finish Tirisfal, then Silverpine
 

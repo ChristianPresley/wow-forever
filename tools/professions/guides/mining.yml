@@ -116,7 +116,9 @@ picks:
       - {recipe: "Molten Foundry", why: "The Tier 3 feature at skill 300. It includes the lower features. Its own effect is not known"}
 
 sources_note: |
-  The client data lists a trainer as the source of 15 of the 18 recipes. For 14 of them, the client does not hold the skill that the trainer asks for. The path uses Classic-era values for Smelt Bronze and Smelt Iron. Smelt Copper has a learn skill of 1 in the client. Recipe items teach Rock Garden, Molten Foundry and Smelt Obsidian-Infused Thorium Bar. The recipe item for Smelt Obsidian-Infused Thorium Bar binds when you pick it up. The client data does not say where this recipe item drops. The client data lists no Mining recipe that you buy with Merchant's Favor.
+  The client data lists a trainer as the source of 15 of the 18 recipes. For 14 of them, the client does not hold the skill that the trainer asks for. The path uses Classic-era values for Smelt Bronze and Smelt Iron. Smelt Copper has a learn skill of 1 in the client.
+
+  Recipe items teach Rock Garden, Molten Foundry and Smelt Obsidian-Infused Thorium Bar. The recipe item for Smelt Obsidian-Infused Thorium Bar binds when you pick it up. The client data does not say where this recipe item drops. The client data lists no Mining recipe that you buy with Merchant's Favor.
 
   The client data lists a trainer for Smelt Dark Iron and Smelt Elementium. In Classic, a quest in Blackrock Depths and an enemy in Blackwing Lair teach them. It is not confirmed how Forever teaches them.
 

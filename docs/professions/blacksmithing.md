@@ -53,7 +53,9 @@ Blacksmithing changes metal bars and stones into mail armor, plate armor, weapon
 
 ## Level 1 to 300
 
-This path uses trainer recipes to skill 240. The client does not hold the skill that the trainer asks for. The path uses the Classic-era value when that value is not above the yellow skill. For 5 mithril and steel recipes it uses the yellow skill as an estimate. Because the colours moved down, it is possible that the trainer teaches these recipes earlier. Go to the trainer each time you get 5 points. A recipe that you learn earlier stays orange longer. If the trainer does not teach a recipe at the skill in the table, continue with the recipe from the step before. Steel Breastplate and Heavy Mithril Axe are other trainer options. Their Classic trainer skills are 200 and 210.
+This path uses trainer recipes to skill 240. The client does not hold the skill that the trainer asks for. The path uses the Classic-era value when that value is not above the yellow skill. For 5 mithril and steel recipes it uses the yellow skill as an estimate. Because the colours moved down, it is possible that the trainer teaches these recipes earlier.
+
+Go to the trainer each time you get 5 points. A recipe that you learn earlier stays orange longer. If the trainer does not teach a recipe at the skill in the table, continue with the recipe from the step before. Steel Breastplate and Heavy Mithril Axe are other trainer options. Their Classic trainer skills are 200 and 210.
 
 The *Crafts* column is an estimate. A recipe always gives a skill point while it is orange. The chance decreases when the recipe is yellow and green, and a grey recipe gives no points. The estimate uses the Classic-era rule, which is not confirmed for Forever.
 
@@ -111,7 +113,9 @@ You change from copper to bronze in this bracket. A Miner makes Bronze Bars from
 
 ### Expert (150–225)
 
-You use Iron Bars, then Steel Bars and Mithril Bars. The last step uses Steel Bars again. Green Dye comes from a vendor. Each Heavy Grinding Stone needs 3 Heavy Stone, and each Solid Grinding Stone needs 4 Solid Stone. A Miner makes Steel Bars from Iron Bars and Coal. In Classic, Coal comes from a vendor. Heavy Mithril Gauntlet needs Mageweave Cloth. In Classic, Mageweave Cloth comes from humanoids of level 41 to 50.
+You use Iron Bars, then Steel Bars and Mithril Bars. The last step uses Steel Bars again. Green Dye comes from a vendor. Each Heavy Grinding Stone needs 3 Heavy Stone, and each Solid Grinding Stone needs 4 Solid Stone.
+
+A Miner makes Steel Bars from Iron Bars and Coal. In Classic, Coal comes from a vendor. Heavy Mithril Gauntlet needs Mageweave Cloth. In Classic, Mageweave Cloth comes from humanoids of level 41 to 50.
 
 <div class="fc-data" data-prose="2 4 6 7" markdown>
 
@@ -150,7 +154,9 @@ You use Iron Bars, then Steel Bars and Mithril Bars. The last step uses Steel Ba
 
 ### Artisan (225–300)
 
-The trainer has no cheap recipe above skill 240. The last 3 steps use plans that do not bind when you pick them up. The client does not say where these plans come from. In Classic they are world drops, so look in the auction house. You need Mithril Bars, then Thorium Bars. Mithril Coif needs Mageweave Cloth, and Heavy Mithril Boots need Thick Leather. Thorium Greatsword needs Rugged Leather and Dense Grinding Stones. Each Dense Grinding Stone needs 4 Dense Stone. In Classic, a Skinner gets Thick Leather and Rugged Leather.
+The trainer has no cheap recipe above skill 240. The last 3 steps use plans that do not bind when you pick them up. The client does not say where these plans come from. In Classic they are world drops, so look in the auction house.
+
+You need Mithril Bars, then Thorium Bars. Mithril Coif needs Mageweave Cloth, and Heavy Mithril Boots need Thick Leather. Thorium Greatsword needs Rugged Leather and Dense Grinding Stones. Each Dense Grinding Stone needs 4 Dense Stone. In Classic, a Skinner gets Thick Leather and Rugged Leather.
 
 <div class="fc-data" data-prose="2 4 6 7" markdown>
 
@@ -293,7 +299,9 @@ These recipes make armor for your character during leveling. The plans for the S
 
 ### Merchant's Favor: low-level mail sets
 
-On the beta, Stondry Darkhammer sold 6 plans for each of 5 Rare mail sets. Each plan cost 30 Merchant's Favor. 1 material is different in each set: Shadowgem (Guard's), Tigerseye (Protector's), Strange Dust (Acolyte's), Lesser Magic Essence (Crusader's) or Small Lustrous Pearl (Veteran's). Choose the set by the stats in the tooltip. Each set also has a Chain Shirt, Chain Leggings and a Chain Helm that are not Favor plans. These plans bind when you pick them up, and the client does not say where they come from. Each of these recipes turns grey 5 points after you learn it, so it gives only 5 points.
+On the beta, Stondry Darkhammer sold 6 plans for each of 5 Rare mail sets. Each plan cost 30 Merchant's Favor. 1 material is different in each set: Shadowgem (Guard's), Tigerseye (Protector's), Strange Dust (Acolyte's), Lesser Magic Essence (Crusader's) or Small Lustrous Pearl (Veteran's). Choose the set by the stats in the tooltip.
+
+Each set also has a Chain Shirt, Chain Leggings and a Chain Helm that are not Favor plans. These plans bind when you pick them up, and the client does not say where they come from. Each of these recipes turns grey 5 points after you learn it, so it gives only 5 points.
 
 <div class="fc-data" data-prose="1 3 5" markdown>
 
@@ -429,9 +437,15 @@ The recipes at skill 300 in this list are not changed from Classic, unless the r
 
 ## Where recipes come from
 
-A trainer teaches 83 of the 441 recipes. For 66 of them, the client does not hold the skill that the trainer asks for. Plans teach the other 358 recipes, and 262 of these plans bind when you pick them up. The client does not say where the plans come from. On the beta, Stondry Darkhammer sold 61 plans for Merchant's Favor at Three Corners in Redridge Mountains. This is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes need Favor and reputation. The data does not give the reputation rank for each plan. The Favor prices in this guide come from the beta, not from the launch client.
+A trainer teaches 83 of the 441 recipes. For 66 of them, the client does not hold the skill that the trainer asks for. Plans teach the other 358 recipes, and 262 of these plans bind when you pick them up. The client does not say where the plans come from.
 
-The Blacksmithing data does not show where the new reagents come from. The data of other professions shows some sources. Sulfuric Acid is an Alchemy trainer recipe. Sandpaper is an Engineering trainer recipe. Mining has the recipes Smelt Heavy Thorium and Smelt Azerothium. Alchemy has the recipe Transmute: Legionite. The data does not show the source of Pristine Leather, Malleable Essence of Nature, Torbernite, Death Lotus or Golem Heart.
+On the beta, Stondry Darkhammer sold 61 plans for Merchant's Favor at Three Corners in Redridge Mountains. This is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant.
+
+You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes need Favor and reputation. The data does not give the reputation rank for each plan. The Favor prices in this guide come from the beta, not from the launch client.
+
+The Blacksmithing data does not show where the new reagents come from. The data of other professions shows some sources. Sulfuric Acid is an Alchemy trainer recipe. Sandpaper is an Engineering trainer recipe. Mining has the recipes Smelt Heavy Thorium and Smelt Azerothium. Alchemy has the recipe Transmute: Legionite.
+
+The data does not show the source of Pristine Leather, Malleable Essence of Nature, Torbernite, Death Lotus or Golem Heart.
 
 ## Specializations
 
@@ -458,7 +472,9 @@ Blacksmithing makes these features for a [camp](../systems/camping.md). The camp
 
 </div>
 
-A trainer teaches the Sharpening Wheel. The client does not hold the trainer skill. The wiki says that utility features start at skill 20. The Sharpening Wheel gives a Strength buff at a camp, and the buff does not stack with Strength of Earth. A blueprint from Gilnid in The Deadmines teaches the Anvil at skill 140. A blueprint teaches the Master Forge at skill 300, and it needs 1 Golem Heart. The wiki does not give the source of this blueprint. It also does not give the effects of the Anvil and the Master Forge. Higher tiers include the features of the lower tiers.
+A trainer teaches the Sharpening Wheel. The client does not hold the trainer skill. The wiki says that utility features start at skill 20. The Sharpening Wheel gives a Strength buff at a camp, and the buff does not stack with Strength of Earth.
+
+A blueprint from Gilnid in The Deadmines teaches the Anvil at skill 140. A blueprint teaches the Master Forge at skill 300, and it needs 1 Golem Heart. The wiki does not give the source of this blueprint. It also does not give the effects of the Anvil and the Master Forge. Higher tiers include the features of the lower tiers.
 
 ## Tips
 

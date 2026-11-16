@@ -14,7 +14,7 @@ Read this page with the [Hunter guide](index.md).
 
 ## Why this combo
 
-**NEW in Forever.** In Classic, Humans could not be Hunters. This is 1 of the 6 new race/class combinations that Blizzard announced. It gives the Alliance a Hunter that starts in Elwynn Forest. Elwynn is a short walk from the new harbor of Stormwind and the boat to Auberdine.
+**NEW in Forever.** Classic did not permit Human Hunters. This is 1 of the 6 new race/class combinations that Blizzard announced. It gives the Alliance a Hunter that starts in Elwynn Forest. Elwynn is a short walk from the new harbor of Stormwind and the boat to Auberdine.
 
 Humans are a strong all-round pick:
 

@@ -17,7 +17,9 @@ Read with the [Rogue progression](index.md). This page covers only what changes 
 
 ## Why this combo
 
-**NEW in Forever.** The Windshapers are the Horde branch of the Skyborne. They descend from kaldorei citizens of Eldre'Thalas and have a connection to the Earthen Ring. Rogue is one of five Windshaper classes. Compared with the High Order, you get **Skysight** instead of Read Ley Line. Skysight is a +15% movement-speed burst (+30% when *Charged*). This is very useful for a melee class that must catch other players.
+**NEW in Forever.** The Windshapers are the Horde branch of the Skyborne. They descend from kaldorei citizens of Eldre'Thalas and have a connection to the Earthen Ring. Rogue is 1 of 5 Windshaper classes.
+
+Compared with the High Order, you get **Skysight** instead of Read Ley Line. Skysight is a +15% movement-speed burst (+30% when *Charged*). This is very useful for a melee class that must catch other players.
 
 **Best for:** world PvP chasers and flag carriers, players who want the new race on the Horde.
 
@@ -103,7 +105,7 @@ Every Skyborne starts in **Thendal Village**, northwest Zephras Isle. Horde and 
 
 7.  **10**{ .lvl } Valanaar
 
-    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+    **Slice and Dice**, **Sap**, **Sprint**. First talent point
 
 8.  **10–12**{ .lvl } Shadowgale Forest
 

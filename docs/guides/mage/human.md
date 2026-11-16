@@ -140,7 +140,7 @@ Northshire and Elwynn are mostly the Classic zones. The quest names below are Cl
 - **Reputation:** at Honored with Stormwind, you get a 10% discount on riding and the Horse. The **Azeroth Commerce Authority** crate faction is at Three Corners, Redridge. It is near your route at 15–25.
 - **Kirin Tor:** reputation in Dalaran, only for the Alliance.
 - **PvP:** Champion's Hall in Stormwind has PvP vendors.
-- **Lore:** most of the magi of the Kirin Tor are Humans. The restored Dalaran in the Alterac Mountains is truly your city.
+- **Lore:** most of the magi of the Kirin Tor are Humans. The restored Dalaran in the Alterac Mountains is your city.
 
 ## Verdict
 

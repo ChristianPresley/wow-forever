@@ -15,7 +15,9 @@ wide: true
 :codex-warlock:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Talents</span> **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
 {: .fc-meta data-class="warlock" }
 
-Each Warlock tree is a full damage spec in Forever. **Affliction** is the tree for solo leveling. **Demonology** is the safest tree and the PvP tree. **Destruction** is the tree for dungeons and cleave. Most level 60 builds put points in 2 or 3 trees, because Suppression, Improved Corruption, Bane and Ruin help all specs. Blizzard announced an Affliction and Voidwalker hotfix for 10 November. Its effect on these talents is not confirmed.
+Each Warlock tree is a full damage spec in Forever. **Affliction** is the tree for solo leveling. **Demonology** is the safest tree and the PvP tree. **Destruction** is the tree for dungeons and cleave. Most level 60 builds put points in 2 or 3 trees, because Suppression, Improved Corruption, Bane and Ruin help all specs.
+
+Blizzard announced an Affliction and Voidwalker hotfix for 10 November. Its effect on these talents is not confirmed.
 
 ## Quick picks
 

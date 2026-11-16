@@ -27,7 +27,7 @@ The Undead Warrior is a PvP favorite. **Will of the Forsaken** breaks fear, char
 <p class="ability-name" markdown>**Will of the Forsaken** <span class="ability-type active">Active</span></p>
 <p class="ability-rating" markdown><span class="ability-label">Rating</span> **5/5**{ .stars .s5 }</p>
 <p markdown><span class="ability-label">PvE</span> Breaks boss fears and charms</p>
-<p markdown><span class="ability-label">PvP</span> Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control effects. Has no shared cooldown with Berserker Rage, so you have two fear breaks</p>
+<p markdown><span class="ability-label">PvP</span> Removes Fear, Psychic Scream, Seduction, Sleep and Mind Control effects. Has no shared cooldown with Berserker Rage, so you have 2 fear breaks</p>
 </div>
 
 <div class="ability-card" markdown>

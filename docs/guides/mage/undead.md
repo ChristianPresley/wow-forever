@@ -99,7 +99,7 @@ The Forsaken Mage is the traditional Horde PvP choice. **Will of the Forsaken** 
 
     <span class="step-label">Travel</span> Tarren Mill: Magus Wordeen Voidglare starts the Dalaran Sewer Key chain
 
-4.  **30–40**{ .lvl } Arathi, Alterac, Stranglethorn, Desolace, Dustwallow; Scarlet Monastery in Tirisfal
+4.  **30–40**{ .lvl } Arathi, Alterac, Stranglethorn, Desolace, Dustwallow, and Scarlet Monastery in Tirisfal
 
     <span class="step-label">Travel</span> Grom'gol zeppelin from Undercity
 

@@ -138,7 +138,9 @@ A player can add 1 feature to a camp. Higher tiers include the features of the l
 
 ## Where recipes come from
 
-A trainer teaches the Fish Bowl. The client does not hold the skill that the trainer asks for. Recipe items teach the Fishing Rack at skill 140 and the Fishing Hut at skill 300. These are the values in the launch client. Tier 2 and Tier 3 blueprints drop from dungeon and raid bosses. The Fishing Rack blueprint drops from Gelihast in Blackfathom Deeps. The source of the Fishing Hut blueprint is not known. Merchant's Favor has no Fishing merchant, and no Fishing recipe item binds when you pick it up.
+A trainer teaches the Fish Bowl. The client does not hold the skill that the trainer asks for. Recipe items teach the Fishing Rack at skill 140 and the Fishing Hut at skill 300. These are the values in the launch client.
+
+Tier 2 and Tier 3 blueprints drop from dungeon and raid bosses. The Fishing Rack blueprint drops from Gelihast in Blackfathom Deeps. The source of the Fishing Hut blueprint is not known. Merchant's Favor has no Fishing merchant, and no Fishing recipe item binds when you pick it up.
 
 ## Camp features
 
@@ -155,7 +157,9 @@ Fishing makes these features for a [camp](../systems/camping.md). The camp page 
 
 </div>
 
-You need a campfire from Cooking first. After you make a Basic Campfire with Cooking, each profession gives a "Camping 101" quest for its Tier 1 feature. For Fishing, that feature is the Fish Bowl. A Basic Campfire holds 3 features. The Fish Bowl gives the same type of buff as Blessing of Kings, so it has the most value in a group without a Paladin. If your group has Blessing of Kings, the Fish Bowl buff does not stack with it. Use a feature from a different profession in that group. Sit or craft at the camp for 60 seconds to get the buff for 1 hour. The Legacy talent Reagent Economy removes the reagents of Tier 1 features.
+You need a campfire from Cooking first. After you make a Basic Campfire with Cooking, each profession gives a "Camping 101" quest for its Tier 1 feature. For Fishing, that feature is the Fish Bowl. A Basic Campfire holds 3 features.
+
+The Fish Bowl gives the same type of buff as Blessing of Kings, so it has the most value in a group without a Paladin. If your group has Blessing of Kings, the Fish Bowl buff does not stack with it. Use a feature from a different profession in that group. Sit or craft at the camp for 60 seconds to get the buff for 1 hour. The Legacy talent Reagent Economy removes the reagents of Tier 1 features.
 
 ## Tips
 

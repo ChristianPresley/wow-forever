@@ -26,8 +26,8 @@ Read this page with the [Paladin guide](index.md). This page gives the differenc
 
     Forever is set in 25 ADP, immediately after the Warcraft III campaign *[Forsaken Kingdom](../../world/lore.md)*. In life, some of the Forsaken were paladins of Lordaeron. They still follow the Light, but the Light causes pain to their undead bodies. Many other Forsaken do not trust them. For most Forsaken, the only paladins that they know are the Scarlet Crusade, who hunt them.
 
-    - **Bandarion Keep** is in the **Whispering Wood**, a part of western Tirisfal Glades that players could not go to before. It is near the new town of **Shadowvale**.
-    - **Danitha Morr** is the leader of the keep and gives most class quests. One fan guide (ChaosBoost) says that she did not join the Argent Dawn. The reason: she still saw the Forsaken as people that paladins swore to protect. The same guide says that the keep was an Argent Dawn fortress with the name of **Garek Bandarion**, a Lordaeron guard who became a Deathguard captain. *Unconfirmed; one source only.*
+    - **Bandarion Keep** is in the **Whispering Wood**, a part of western Tirisfal Glades that was closed to players before. It is near the new town of **Shadowvale**.
+    - **Danitha Morr** is the leader of the keep and gives most class quests. One fan guide (ChaosBoost) says that she did not join the Argent Dawn. The reason: she still saw the Forsaken as people that paladins swore to protect. The same guide says that the keep was an Argent Dawn fortress with the name of **Garek Bandarion**. He was a Lordaeron guard who became a Deathguard captain. *Unconfirmed. One source only.*
     - The pain is a mechanic. In *Rediscovering the Light*, when you heal others with Holy Light, it **also damages you**. Blizzard added this in a later beta build, and it is intentional.
     - No source gives a name for a Forsaken paladin order.
 
@@ -89,13 +89,13 @@ Undead no longer have Shadow Resistance. Forever removed racial resistances.
 
 ## Starting zone walkthrough (1–12)
 
-You start at **Deathknell** in Tirisfal Glades. Trainers: **Aramis Hammerhand** in the Deathknell church (31.1, 66.4; trains until level 6), **Shari Stilwell** in Brill (60.3, 52.6), and **Hilda the Breaker** at Bandarion Keep (22.0, 47.2).
+You start at **Deathknell** in Tirisfal Glades. **Aramis Hammerhand** is the trainer in the Deathknell church (31.1, 66.4) and trains until level 6. The other trainers are **Shari Stilwell** in Brill (60.3, 52.6) and **Hilda the Breaker** at Bandarion Keep (22.0, 47.2).
 
 <div class="steps" markdown>
 
 1.  **1–4**{ .lvl } Deathknell
 
-    *A Difficult Path* (read the Consecrated Scroll, talk to Aramis) → *Rediscovering the Light* (heal 5 Injured Deathguards; this damages you) → *Coming to Terms* (find a Frightened Paladin in the hills west of the chapel). Also do the usual Deathknell quests
+    First, *A Difficult Path*: read the Consecrated Scroll and talk to Aramis. Then *Rediscovering the Light*: heal 5 Injured Deathguards (this damages you). Then *Coming to Terms*: find a Frightened Paladin in the hills west of the chapel. Also do the usual Deathknell quests
 
 2.  **4**{ .lvl } Deathknell
 
@@ -133,7 +133,7 @@ You start at **Deathknell** in Tirisfal Glades. Trainers: **Aramis Hammerhand** 
 
 !!! conflict "Conflicts"
     - *A Second Home* is "level 8" (ForG) or "level 11, available from 8" (ChaosBoost).
-    - ForeverDB gives the Redemption quest the name *The Tome of Divinity*, which is the Alliance name from Classic. The two quest-tracking sources call it *A Lesson in Divinity*.
+    - ForeverDB gives the Redemption quest the name *The Tome of Divinity*, which is the Alliance name from Classic. The 2 quest-tracking sources call it *A Lesson in Divinity*.
     - One source puts Deathguard Billmuth "at the keep", but it gives the coordinates 86.6, 47.6, which are not near the keep. Look at your quest map.
 
 !!! tip "No inn at the keep"
@@ -141,7 +141,9 @@ You start at **Deathknell** in Tirisfal Glades. Trainers: **Aramis Hammerhand** 
 
 ## Route to 60
 
-**The most important thing to plan is access to trainers.** Horde paladin trainers are only at **Deathknell, Brill and Bandarion Keep**. There is no paladin trainer in Undercity, Orgrimmar or Thunder Bluff. One fan guide gives a "Garen Largo" in the Undercity War Quarter. But the Warcraft Tavern trainer table and ForeverDB have no Undercity paladin trainer, so this is *unconfirmed*. The Brill trainer is a short run from the Undercity. The zeppelin tower near Brill has zeppelins to Orgrimmar and Grom'gol.
+**The most important thing to plan is access to trainers.** Horde paladin trainers are only at **Deathknell, Brill and Bandarion Keep**. There is no paladin trainer in Undercity, Orgrimmar or Thunder Bluff. One fan guide gives a "Garen Largo" in the Undercity War Quarter. But the Warcraft Tavern trainer table and ForeverDB have no Undercity paladin trainer, so this is *unconfirmed*.
+
+The Brill trainer is a short run from the Undercity. The zeppelin tower near Brill has zeppelins to Orgrimmar and Grom'gol.
 
 <div class="steps" markdown>
 
@@ -157,7 +159,7 @@ You start at **Deathknell** in Tirisfal Glades. Trainers: **Aramis Hammerhand** 
 
     Go back to Brill to train at even levels
 
-4.  **30–40**{ .lvl } Arathi Highlands, Thousand Needles, Stranglethorn, Desolace; Scarlet Monastery
+4.  **30–40**{ .lvl } Arathi Highlands, Thousand Needles, Stranglethorn, Desolace, and Scarlet Monastery
 
     SM is in Tirisfal, so you can train at Brill between runs
 
@@ -182,9 +184,9 @@ This is the Forsaken equivalent of the Alliance quest *Verigan's Fist*. Start: *
 3. *A Grim Fate* → a burned body on Fenris Isle (65.0, 34.1).
 4. *Into Fenris Keep* → release **Lumina Windsinger** from the prison of the keep. In *The Windcaller's Fury*, escort her out.
 5. *Light*, then *A Moon-Kissed Blade* (from level 20). Get these items:
-    - an **Enchanted Silver Ingot** in Arugal's room, Shadowfang Keep;
-    - **Whitestone Oak Lumber** from Goblin Woodcarvers in the Deadmines (Horde can swim there from Grom'gol);
-    - a **Purified Kor Gem** (*Seeking the Kor Gem*, Ulric Frostveil, Zoram Strand in Ashenvale, 11.9, 34.5; from naga).
+    - an **Enchanted Silver Ingot** in Arugal's room, Shadowfang Keep
+    - **Whitestone Oak Lumber** from Goblin Woodcarvers in the Deadmines (Horde can swim there from Grom'gol)
+    - a **Purified Kor Gem** from naga (*Seeking the Kor Gem*, Ulric Frostveil, Zoram Strand in Ashenvale, 11.9, 34.5)
 6. *An Underrated Talent* and *Ott's Masterpiece*: **Ott** at Tarren Mill (60.4, 26.2) makes the blade.
 7. *The Moonsilver Blade*, then *Old Fire-Eye*: kill the elite worgen near the Greymane Wall in southern Silverpine. Then Lumina completes **Wolfsbane**.
 
@@ -195,7 +197,7 @@ This is the Forsaken equivalent of the Alliance quest *Verigan's Fist*. Start: *
 
 ## Faction-specific notes
 
-- **Mounts.** The Forsaken **Warhorse** at 40 (*A Trusty Steed* in datamined text) and the **Forsaken Charger** at 60 (*Justice and Retribution* in the beta client) have **no confirmed quest giver or steps**. The start is probably at Bandarion Keep. Do **not** do the Alliance mount chain. It is Alliance-only. Fan sources say that the Forsaken paladin mounts will come to retail in patch 12.2.0.
+- **Mounts.** The Forsaken **Warhorse** at 40 (*A Trusty Steed* in datamined text) has **no confirmed quest giver or steps**. The same is true for the **Forsaken Charger** at 60 (*Justice and Retribution* in the beta client). The start is probably at Bandarion Keep. Do **not** do the Alliance mount chain. It is Alliance-only. Fan sources say that the Forsaken paladin mounts will come to retail in patch 12.2.0.
 - **Skeletal horse:** this is your Undead racial mount. Apprentice Riding at 40 costs 100g, and this cost includes the horse.
 - **Reputation:** Undercity is your home faction (Honored gives −10% on Riding). The Wolfsbane chain adds Orgrimmar and Earthen Ring reputation.
 - **Dalaran:** NPCs in the City of Dalaran zone attack Horde on sight. Do not do the Kirin Tor quests.

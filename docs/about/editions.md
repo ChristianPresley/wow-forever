@@ -18,7 +18,14 @@ Each tier includes everything in the tier below it.
 
     ---
 
-    Skyborne race and the Zephras Isle starting experience. *Cerulean Prideclaw* mount. *Ensemble: Shen'dorei Skyseer's Garb*. *Veteran Adventurer's Rucksack* (back slot). *Shen'dorei Windwell* toy. Skyborne housing decor (retail). Early Name Reservation. 1 Invite-A-Friend code.
+    - Skyborne race and the Zephras Isle starting experience
+    - *Cerulean Prideclaw* mount
+    - *Ensemble: Shen'dorei Skyseer's Garb*
+    - *Veteran Adventurer's Rucksack* (back slot)
+    - *Shen'dorei Windwell* toy
+    - Skyborne housing decor (retail)
+    - Early Name Reservation
+    - 1 Invite-A-Friend code
 
 -   **Skyborne Epic Pack** **Beta access**{ .pill .pill--info .pill--sm }
 
@@ -26,7 +33,15 @@ Each tier includes everything in the tier below it.
 
     ---
 
-    Everything in Heroic, plus **beta access**, the *Veteran Adventurer's Loyal Companion* mount, *Ensemble: Veteran Adventurer's Outdoor Wear*, the *Lordaeron Forever* and *Shen'dorei* tabards, 4 pets (Zergling Leash, Panda Collar, Diablo Stone, Pachimari), **30 days of game time** and 3 IaF codes in total.
+    Everything in Heroic, plus:
+
+    - **Beta access**
+    - The *Veteran Adventurer's Loyal Companion* mount
+    - *Ensemble: Veteran Adventurer's Outdoor Wear*
+    - The *Lordaeron Forever* and *Shen'dorei* tabards
+    - 4 pets (Zergling Leash, Panda Collar, Diablo Stone, Pachimari)
+    - **30 days of game time**
+    - 3 IaF codes in total
 
 -   **Warcraft Forever Collection** **Includes WC3**{ .pill .pill--official .pill--sm }
 

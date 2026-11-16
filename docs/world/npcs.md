@@ -16,7 +16,7 @@ New characters introduced in Forever.
 | Constable Aonda | Shen'dar Village | Law enforcement, bounties |
 | Aamelia Windfield | Windfield Orchard | Quest chain |
 | **High Priestess Lorthuna** | Al'Aketh temples | **Main villain** of Zephras |
-| Skypriest Aanders; Commanders Cyclas, Aanders, Haalien, Belguilos; Malduko Cloudcrash | Zephras | Cult lieutenants |
+| Skypriest Aanders, Malduko Cloudcrash, and Commanders Cyclas, Aanders, Haalien and Belguilos | Zephras | Cult lieutenants |
 | "Badwind" Bennic | Bandit Hideout | Bandit boss |
 | **Rohash, Lord of the East Wind** | Skywall | Elemental lord who serves Al'Akir |
 | Archmage Ansirem Runeweaver, Muln Earthfury | Zephras finale | Leaders of the faction reinforcements |
@@ -33,7 +33,7 @@ New characters introduced in Forever.
 | Jazzle Cheapshot | Powderfuse Port | Arena owner (arena not yet open) |
 | Overlord Mugg | Krol'dok Stronghold | Dungeon boss |
 
-**Remembered heroes** (on the Farholde memorial): Sir Howard Armstrong, Roderick the Unbroken, Lady Isolde Brightlance, Brienne Stormhart, Alden Amberhall, Rosalind Ashwood, and Fern Crimsonleaf (presumed dead).
+**Remembered heroes** (on the Farholde memorial): Sir Howard Armstrong, Roderick the Unbroken, Lady Isolde Brightlance, Brienne Stormhart, Alden Amberhall, Rosalind Ashwood, Fern Crimsonleaf (presumed dead).
 
 ## Dalaran & elsewhere
 

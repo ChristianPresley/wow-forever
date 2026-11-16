@@ -14,7 +14,9 @@ Read with the [Warlock progression](index.md). This page covers only what change
 
 ## Why this combo
 
-A Classic combination. In Forever, it is possibly the best Alliance Warlock. Method.gg ranks Human at the top of its Warlock tier list. Warcraft Tavern says that Human is strong in both PvE and PvP. 2 passives are very useful for a Warlock. **Ruthless** gives a flat +1% crit. **The Human Spirit** now gives **+10% Spirit**, which is important because Life Tap scales with Spirit in Forever. **Will to Survive** is a free stun break, and many players say that it is the best PvP racial in the game.
+A Classic combination. In Forever, it is possibly the best Alliance Warlock. Method.gg ranks Human at the top of its Warlock tier list. Warcraft Tavern says that Human is strong in both PvE and PvP.
+
+2 passives are very useful for a Warlock. **Ruthless** gives a flat +1% crit. **The Human Spirit** now gives **+10% Spirit**, which is important because Life Tap scales with Spirit in Forever. **Will to Survive** is a free stun break, and many players say that it is the best PvP racial in the game.
 
 | | |
 |---|---|

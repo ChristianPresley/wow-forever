@@ -99,7 +99,7 @@ Trolls start in the **Valley of Trials** with the Orcs. Forever added new NPCs a
 
     <span class="step-label">Travel</span> Crossroads flight point
 
-2.  **15–25**{ .lvl } Stonetalon, Barrens; Ragefire Chasm and Wailing Caverns
+2.  **15–25**{ .lvl } Stonetalon, Barrens, Ragefire Chasm and Wailing Caverns
 
     <span class="step-label">Travel</span> [Dungeons](../../content/dungeons/index.md)
 
@@ -142,6 +142,6 @@ Trolls start in the **Valley of Trials** with the Orcs. Forever added new NPCs a
 
 <div class="verdict" markdown>
 
-This is the best Horde Mage for raid damage if you prefer haste to the Orc spell-power burst. The two races are close. Troll is also good for leveling because of Rapid Regeneration and Beast Slaying. If PvP is your first priority, choose Orc or Undead.
+This is the best Horde Mage for raid damage if you prefer haste to the Orc spell-power burst. The 2 races are close. Troll is also good for leveling because of Rapid Regeneration and Beast Slaying. If PvP is your first priority, choose Orc or Undead.
 
 </div>

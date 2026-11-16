@@ -178,6 +178,8 @@ The Skyborne start on **[Zephras Isle](../../world/zephras-isle.md)**, a floatin
 
 <div class="verdict" markdown>
 
-**The strongest Shaman race in theory, but you must pay for it.** Permanent haste from Wind Blessed helps all 3 specs. Elemental Insight is useful against the many elementals at level cap. Skysight and Walk on Air give you mobility. But you have no stun break, curse removal or stun resistance, so in PvP an Orc is stronger. If you have the Heroic Pack and play Horde, this is the most thematic Shaman. It is probably also the best for PvE.
+**The strongest Shaman race in theory, but you must pay for it.** Permanent haste from Wind Blessed helps all 3 specs. Elemental Insight is useful against the many elementals at level cap. Skysight and Walk on Air give you mobility. But you have no stun break, curse removal or stun resistance, so in PvP an Orc is stronger.
+
+If you have the Heroic Pack and play Horde, this is the most thematic Shaman. It is probably also the best for PvE.
 
 </div>

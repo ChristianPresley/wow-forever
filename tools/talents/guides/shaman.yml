@@ -3,7 +3,7 @@ badges: [heal, dps]
 description: "Shaman talent guide for WoW: Forever: all 51 talents in Elemental Combat, Enhancement and Restoration with a rating, a talent for each level from 10 to 60, and level 60 builds for raids and PvP."
 
 intro: |
-  The Shaman has 3 roles in Forever. **Elemental Combat** is the ranged damage tree, **Enhancement** is the melee damage tree, and **Restoration** is the healer tree. Each damage build also puts points in the first rows of the other trees, because Thundering Strikes, Tidal Focus, Mindfulness and Water Shield help all specs. The client has no full tank tree, but some Enhancement talents add threat and avoidance.
+  The Shaman has 3 roles in Forever. **Elemental Combat** is the ranged damage tree, **Enhancement** is the melee damage tree, and **Restoration** is the healer tree. Each damage build also puts points in the first rows of the other trees. Thundering Strikes, Tidal Focus, Mindfulness and Water Shield help all specs. The client has no full tank tree, but some Enhancement talents add threat and avoidance.
 
 card:
   leveling: "Enhancement (fast and safe) or Elemental (ranged)"

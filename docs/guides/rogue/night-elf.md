@@ -95,7 +95,7 @@ Blizzard reworked **Shadowglen** for Forever with new NPCs, quests, profession h
 
 6.  **10**{ .lvl } Jannok Breezesong
 
-    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+    **Slice and Dice**, **Sap**, **Sprint**. First talent point
 
 7.  **10–12**{ .lvl } Darnassus and Rut'theran
 

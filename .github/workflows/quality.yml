@@ -26,6 +26,28 @@ env:
   NODE_VERSION: "22"
 
 jobs:
+  lint:
+    name: Lint (JS, CSS, Python, prose)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: npm ci --no-audit --no-fund
+      - run: pip install -r requirements-dev.txt
+      - run: npm run lint:js
+      - run: npm run lint:css
+      - run: npm run lint:py
+      # unslop-prose: the writing profile in DESIGN.md. Fails when a page has more findings than its baseline.
+      - run: npm run lint:prose
+
   build:
     name: Build site (strict)
     runs-on: ubuntu-latest

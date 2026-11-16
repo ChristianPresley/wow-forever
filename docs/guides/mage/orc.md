@@ -14,7 +14,7 @@ Read this page with the [Mage guide](index.md). This page gives only the differe
 
 ## Why this combo
 
-**New in Forever.** In Classic, Orcs could not be Mages. In Forever they can, and their racials are possibly the strongest set for a Horde caster:
+**New in Forever.** Classic did not permit Orc Mages. Forever permits them, and their racials are possibly the strongest set for a Horde caster:
 
 - **Blood Fury** now increases spell power, with a 2-minute cooldown.
 - **Shatter Curse** removes Warlock curses and Banes.
@@ -95,7 +95,7 @@ Forever added new NPCs, quests and "small moments" to the Valley of Trials. The 
 
 <div class="steps" markdown>
 
-1.  **1–6**{ .lvl } **Valley of Trials.** Start at the Den. Your Mage trainer in the valley is **Mai'ah**, the Troll trainer who teaches all Horde Mages here (Classic location; look near the Den). Kill boars and scorpids. Then kill the Vile Familiars in the cave and Sarkoth.
+1.  **1–6**{ .lvl } **Valley of Trials.** Start at the Den. Your Mage trainer in the valley is **Mai'ah**, the Troll trainer who teaches all Horde Mages here (Classic location. Look near the Den). Kill boars and scorpids. Then kill the Vile Familiars in the cave and Sarkoth.
 2.  **4**{ .lvl } Train Frostbolt and Conjure Water. Train Polymorph at 8.
 3.  **6–10**{ .lvl } **Razor Hill.** Turn in *Report to Sen'jin Village* / *Report to Orgnil*. Kill Kul Tiran sailors at Tiragarde Keep and quilboar in the Razormane camp. **Sen'jin Village**, to the south, has a Mage trainer (Classic).
 4.  **10**{ .lvl } Train Frost Nova and spend your first talent point. The Orgrimmar Mage trainers are near the Valley of Spirits (Classic).
@@ -114,7 +114,7 @@ Forever added new NPCs, quests and "small moments" to the Valley of Trials. The 
 
     <span class="step-label">Travel</span> Take the zeppelin to Undercity for Silverpine
 
-2.  **15–25**{ .lvl } Stonetalon, Barrens; [Ragefire Chasm](../../content/dungeons/index.md) and Wailing Caverns
+2.  **15–25**{ .lvl } Stonetalon, Barrens, [Ragefire Chasm](../../content/dungeons/index.md) and Wailing Caverns
 
     <span class="step-label">Travel</span> Durotar Supply and Logistics crate camp, west of the Crossroads
 

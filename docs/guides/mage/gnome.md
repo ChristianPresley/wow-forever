@@ -107,7 +107,7 @@ Coldridge Valley and Dun Morogh follow the Classic layout. Quest names are Class
 
 1.  **10–20**{ .lvl } Loch Modan, then Westfall or Darkshore
 
-    <span class="step-label">Travel</span> Deeprun Tram to Stormwind; Stormwind Harbor boat to Auberdine
+    <span class="step-label">Travel</span> Deeprun Tram to Stormwind, then the Stormwind Harbor boat to Auberdine
 
 2.  **15–25**{ .lvl } Redridge, Wetlands (low end), Darkshore
 

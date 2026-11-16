@@ -348,7 +348,9 @@ These 12 drinks are new. Each tea uses 1 vendor drink and 2 herbs. Each smoothie
 
 ## Where recipes come from
 
-A trainer teaches 13 of the 125 recipes. The client does not hold the skill that the trainer asks for, so the path uses Classic-era values. Recipe items teach the other 112 recipes. The client does not say where these items come from. 47 of the recipe items bind when you pick them up, and 33 of these teach new recipes. Other players cannot sell you a recipe item that binds when you pick it up. You must get it yourself. No Cooking recipe is on the list of a Merchant's Favor merchant.
+A trainer teaches 13 of the 125 recipes. The client does not hold the skill that the trainer asks for, so the path uses Classic-era values. Recipe items teach the other 112 recipes. The client does not say where these items come from.
+
+47 of the recipe items bind when you pick them up, and 33 of these teach new recipes. Other players cannot sell you a recipe item that binds when you pick it up. You must get it yourself. No Cooking recipe is on the list of a Merchant's Favor merchant.
 
 The client also holds 7 Cooking recipes from Season of Discovery under a separate heading. No merchant sells them, so this guide does not list them.
 
@@ -375,7 +377,7 @@ Lord Serpentis in Wailing Caverns drops the Journeyman Campfire blueprint. Cooki
 
 ## Tips
 
-- Keep low-level meat. The new recipes at skill 275 use 3 pieces of meat such as Meaty Bat Wing, Raptor Flesh, Big Bear Meat, Stag Meat or Tiger Meat.
+- Keep low-level meat. The new recipes at skill 275 use 3 pieces of meat. Examples are Meaty Bat Wing, Raptor Flesh, Big Bear Meat, Stag Meat and Tiger Meat.
 - Keep 2 Mystery Meat and 1 Heavy Kodo Meat for Cookie's Feast.
 - Count your meat before you buy spices. The new recipes at skill 275 use 1 to 4 Soothing Spices for each craft.
 - The Legacy talent Master Chef gives a 10% chance of an extra cooking result. Working Overtime increases the skill-up chance by 4% for each rank.

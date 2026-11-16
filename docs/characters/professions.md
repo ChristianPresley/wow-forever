@@ -14,7 +14,7 @@ This page gives the rules of professions. For a path from skill 1 to 300 and the
 !!! forever "Professions no longer give stats"
     Professions give **no passive stat bonuses**. Their value comes from crafting, gathering and [camping](../systems/camping.md).
 
-- **600+ new recipes** according to the developers (a datamine counted 884; the recipe lists on this wiki count 958 in client build 1.60.1). Armor crafters get many new **BoP** patterns.
+- **600+ new recipes** according to the developers. A datamine counted 884. The recipe lists on this wiki count 958 in client build 1.60.1. Armor crafters get many new **BoP** patterns.
 - **Healing potions moved from Alchemy to First Aid** (about 6 potions).
 - A new **Professions window** (hotkey **K**) with search, filters, recipe tracking and chat links.
 - A dedicated **reagent bag** slot: the 6-slot Linen Reagent Bag (Tailoring) or a 4-slot starter gathering bag.

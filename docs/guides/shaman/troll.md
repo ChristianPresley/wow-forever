@@ -142,7 +142,7 @@ Forever removed the old Bow and Throwing Specializations. They were never import
 
 **Totem quests:** Earth (4), Fire (10), Water (20, a Barrens chain in Classic), and **Air (30, new in Forever)**, which gives a spec weapon. Your trainer gives each quest.
 
-**Troll-themed stops:** Stranglethorn's jungle trolls and **[The Drowned City](../../content/dungeons/drowned-city.md)** (sunken troll ruins west of Grom'gol, 35–40), the Revantusk trolls in the Hinterlands, and Zul'Farrak in Tanaris.
+**Troll-themed stops:** Stranglethorn's jungle trolls and **[The Drowned City](../../content/dungeons/drowned-city.md)** (sunken troll ruins west of Grom'gol, 35–40). Also the Revantusk trolls in the Hinterlands, and Zul'Farrak in Tanaris.
 
 ## Faction-specific notes
 

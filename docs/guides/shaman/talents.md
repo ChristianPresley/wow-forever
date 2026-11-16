@@ -15,7 +15,7 @@ wide: true
 :codex-shaman:{ .fc-sigil aria-hidden="true" } <span class="fc-meta__kind">Add-on: Talents</span> **Healer**{ .badge .heal } **DPS**{ .badge .dps } <span class="fc-meta__date">Updated 10 November 2026</span> [Data and sources](#sources)
 {: .fc-meta data-class="shaman" }
 
-The Shaman has 3 roles in Forever. **Elemental Combat** is the ranged damage tree, **Enhancement** is the melee damage tree, and **Restoration** is the healer tree. Each damage build also puts points in the first rows of the other trees, because Thundering Strikes, Tidal Focus, Mindfulness and Water Shield help all specs. The client has no full tank tree, but some Enhancement talents add threat and avoidance.
+The Shaman has 3 roles in Forever. **Elemental Combat** is the ranged damage tree, **Enhancement** is the melee damage tree, and **Restoration** is the healer tree. Each damage build also puts points in the first rows of the other trees. Thundering Strikes, Tidal Focus, Mindfulness and Water Shield help all specs. The client has no full tank tree, but some Enhancement talents add threat and avoidance.
 
 ## Quick picks
 

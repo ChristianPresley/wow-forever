@@ -226,12 +226,18 @@ picks:
 sources_note: |
   A trainer teaches the basic recipes of each heading. The client does not hold the skill that the trainer asks for, so the path uses Classic-era values. Recipe items teach most of the other recipes. The client does not say where these items come from. Many recipe items bind when you pick them up, so you cannot buy them from a different player.
 
-  Nina Surefire at Three Corners in the Redridge Mountains sells 28 recipes for Merchant's Favor. On the beta, 8 cost 45 Favor, 5 cost 120, 13 cost 180 and 2 cost 240. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes need Merchant's Favor and reputation with the crate faction. The data does not give the reputation rank for each recipe. Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant.
+  Nina Surefire at Three Corners in the Redridge Mountains sells 28 recipes for Merchant's Favor. On the beta, 8 cost 45 Favor, 5 cost 120, 13 cost 180 and 2 cost 240. You get Merchant's Favor when you turn in crates. The wiki says that high-end recipes need Merchant's Favor and reputation with the crate faction. The data does not give the reputation rank for each recipe.
+
+  Three Corners is the Alliance camp of the Azeroth Commerce Authority. The Horde camp of Durotar Supply and Logistics is west of the Crossroads in the Barrens. The data does not name the Horde merchant.
 
   The client also holds 15 Alchemy recipes from Season of Discovery under a separate heading. No merchant sells them, so this guide does not list them.
 
 camp_note: |
-  A trainer teaches Mana Well. It uses 1 Peacebloom and 1 Empty Vial. Its buff does not stack with Blessing of Wisdom. The Fermenter blueprint drops from Rath'mael in Ruins of Lordaeron and needs skill 140. The Alchemy Laboratory blueprint needs skill 300. Tier 3 blueprints drop from dungeon and raid bosses. The wiki does not name the boss for Alchemy Laboratory. It needs 1 Lich's Index Finger, 1 Crystal Vial and 2 Dreamfoil. The data does not give the effects of Fermenter and Alchemy Laboratory. A higher tier includes the features of the lower tiers.
+  A trainer teaches Mana Well. It uses 1 Peacebloom and 1 Empty Vial. Its buff does not stack with Blessing of Wisdom.
+
+  The Fermenter blueprint drops from Rath'mael in Ruins of Lordaeron and needs skill 140. The Alchemy Laboratory blueprint needs skill 300. Tier 3 blueprints drop from dungeon and raid bosses. The wiki does not name the boss for Alchemy Laboratory. It needs 1 Lich's Index Finger, 1 Crystal Vial and 2 Dreamfoil.
+
+  The data does not give the effects of Fermenter and Alchemy Laboratory. A higher tier includes the features of the lower tiers.
 
 tips:
   - "Learn Herbalism with Alchemy. The path uses herbs in each step."

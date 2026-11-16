@@ -1,7 +1,7 @@
 {
   "name": "forever-codex-quality",
   "private": true,
-  "description": "Quality gates for the Forever Codex static site: accessibility, Lighthouse, HTML validation and links.",
+  "description": "Quality gates for the Forever Codex static site: linting (code and prose), accessibility, Lighthouse, HTML validation and links.",
   "license": "UNLICENSED",
   "type": "module",
   "engines": {
@@ -17,12 +17,21 @@
     "test:links": "node tests/links.mjs",
     "test": "npm run test:css && npm run test:html && npm run test:a11y && npm run test:links",
     "test:lhci:summary": "node tests/lhci-summary.mjs tests/reports/lhci tests/reports/lhci.md",
-    "test:contrast": "node tests/contrast.mjs"
+    "test:contrast": "node tests/contrast.mjs",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"docs/stylesheets/**/*.css\"",
+    "lint:py": "python -m ruff check tools",
+    "lint:prose": "python tools/unslop_prose/lint.py",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:py && npm run lint:prose"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^10.0.1",
     "@lhci/cli": "^0.16.0",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
     "html-validate": "^11.19.0",
-    "playwright-core": "^1.65.0"
+    "playwright-core": "^1.65.0",
+    "stylelint": "^16.26.1"
   }
 }

@@ -141,6 +141,24 @@ Each ability, talent, item, profession, race, class, dungeon and raid name has a
 - **Opt out.** Put the class `gi-off` on an element to keep glyphs out of it.
 - **Styles.** `.gi` and its tints are at the end of `docs/stylesheets/dps.css`.
 
+## Linting (16 Nov 2026)
+
+`npm run lint` runs 4 linters. The `Lint` job of `.github/workflows/quality.yml` runs the same 4 on each push.
+
+| Command | Tool | What it checks | Configuration |
+|---|---|---|---|
+| `npm run lint:js` | ESLint | `docs/javascripts/*.js` (browser scripts) and `tests/*.mjs` (Node scripts): undefined names, unused variables, useless assignments | `eslint.config.mjs` |
+| `npm run lint:css` | Stylelint | `docs/stylesheets/*.css`: unknown properties, units and pseudo-classes, duplicate properties and selectors, invalid colours | `.stylelintrc.json` |
+| `npm run lint:py` | Ruff | `tools/**/*.py` (generators and simulators): errors, unused names, likely bugs | `ruff.toml`, `requirements-dev.txt` |
+| `npm run lint:prose` | unslop-prose | `docs/**/*.md`: the writing profile above | `tools/unslop_prose/` |
+
+**unslop-prose rules.** `semicolon`, `modal`, `long-sentence` (more than 25 words), `long-paragraph` (more than 6 sentences), `word`, `phrasal`, `number-word` and `filler`. It reads body text, list items, callout bodies, table cells that hold a sentence and the `description:` of the front matter. It does not read code, markup, headings or quoted text.
+
+- **Baseline.** `tools/unslop_prose/baseline.json` holds the number of findings for each file and rule that are accepted. The check fails only when a file has more findings of a rule than its baseline. Lower the baseline with `python tools/unslop_prose/lint.py --update-baseline` after you clean a page.
+- **Opt out.** Put `<!-- unslop-prose: off -->` and `<!-- unslop-prose: on -->` on their own lines around a block that must stay as written, for example a quoted rule or a deliberate bad example.
+- **Generated pages.** Fix the text in the YAML source, then run the generator. `tools/classes/build.py` also stops on `semicolon`, `modal` and `long-sentence` in the guide data.
+- **Limits.** A program cannot check one topic for each sentence, the active voice, noun clusters or one term for one thing. A reviewer checks these.
+
 ## Deferred
 
 - **Social cards.** These need cairo, so they would have to be CI-gated with `enabled: !ENV [CI, false]`.
@@ -166,21 +184,23 @@ The one remaining axe finding is `target-size` on sidebar links that are partial
 
 `docs/stylesheets/components.css` adds pills (status, change, faction, class, difficulty; one soft style and one size), the stat strip, timelines, meters, pros/cons and price cards. The live reference with copy-paste Markdown is the **Style guide** page (`docs/community/style-guide.md`).
 
-## Writing: Simplified Technical English (9 Nov 2026)
+## Writing: unslop-prose (9 Nov 2026, renamed 16 Nov 2026)
 
-All prose in `docs/` follows a Codex profile of ASD-STE100 Simplified Technical English (STE). The goal is text that is easy to read for every reader, including readers whose first language is not English and readers who use machine translation.
+All prose in `docs/` follows **unslop-prose**, the writing profile of the Codex. It is a profile of ASD-STE100 Simplified Technical English. The goal is text that is easy to read for every reader, including readers whose first language is not English and readers who use machine translation. The goal is also text with no filler: each sentence gives a fact or an instruction.
+
+`tools/unslop_prose/lint.py` checks the rules that a program can check. Run `npm run lint:prose`. See *Linting* below.
 
 ### Scope
 
 - **Rewrite:** body text, list items, table cells that hold sentences, callout bodies, captions, `description:` front matter, and link text that is a sentence.
 - **Do not change:** Markdown and HTML markup, attribute lists (`{ .pill .pill--new }`), CSS classes, anchors (`{ #id }`), link targets, front-matter keys, tags, code blocks, macros, and file names.
-- **Technical names stay as they are:** spell, talent, item, quest, zone, NPC, faction, race, class, profession and stat names, game terms (DPS, aggro, kiting, pull, proc, tank, rotation, cooldown, haste), and quoted titles. A technical name can contain words that STE does not approve.
+- **Technical names stay as they are:** spell, talent, item, quest, zone, NPC, faction, race, class, profession and stat names, game terms (DPS, aggro, kiting, pull, proc, tank, rotation, cooldown, haste), and quoted titles. A technical name can contain words that the profile does not approve.
 - **Facts stay the same:** numbers, levels, prices, dates, sources and their attribution ("Warcraft Tavern says …"), and the meaning of every hedge ("reportedly", "not confirmed"). If a sentence is ambiguous, keep the ambiguity: do not invent a fact to make it simpler.
 - **Headings:** keep heading text when it is a technical name or when other pages link to its anchor. Otherwise make it short and simple. If a heading changes and it has no `{ #id }`, add the old anchor as `{ #old-slug }` so links do not break.
 
 ### Word rules
 
-1. Use approved STE words with their approved meaning, where a simple word exists: *use* not *utilize*, *help* not *assist*, *start* not *commence*, *get* not *obtain*, *about* not *approximately*, *more than* not *in excess of*, *because* not *since* or *as* (for a reason), *if* or *when* not *in case*, *can* not *is able to*.
+1. Use approved words with their approved meaning, where a simple word exists: *use* not *utilize*, *help* not *assist*, *start* not *commence*, *get* not *obtain*, *about* not *approximately*, *more than* not *in excess of*, *because* not *since* or *as* (for a reason), *if* or *when* not *in case*, *can* not *is able to*.
 2. Use one word for one meaning, and one meaning for one word. Use the same term for the same thing on every page.
 3. Do not use phrasal verbs when a single verb exists: *find* not *find out*, *leave* not *head off*, *continue* not *keep on*, *get* not *pick up* (except for game idioms such as *pick up a quest*).
 4. Do not use *-ing* forms as nouns or as modifiers in general prose (*Leveling* is a technical name and can stay). Write *when you level* not *while leveling*, where this makes the sentence clearer.
@@ -188,6 +208,7 @@ All prose in `docs/` follows a Codex profile of ASD-STE100 Simplified Technical 
 6. Do not use slang, jokes, idioms or metaphors: *strong* not *a beast*, *easy* not *a breeze*.
 7. Keep articles (*a*, *an*, *the*) and *that* where they make the meaning clear. Do not write telegraphic text in sentences.
 8. Write numbers as digits.
+9. Do not write filler or hype: *it is worth noting*, *seamless*, *robust*, *incredibly*. Remove the words or state the fact.
 
 ### Sentence rules
 

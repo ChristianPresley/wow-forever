@@ -1323,7 +1323,9 @@ Full add-on: [Priest equipment](equipment.md#crafted)
 
 Level 40 changes much. You can buy riding for 100g. You can buy dual spec for 50g from a Priest trainer. You train Greater Heal, your largest direct heal. Your 31st talent point also comes at level 40.
 
-Dual spec removes the largest problem of the class. Before level 40, you select between fast kills and good heals. Now you keep the 2 of them. The usual pair is Shadow for quests, and Holy or Discipline for dungeons. You can change specs outside combat and outside battlegrounds. If you change the talents in a spec, you pay a fee. This fee decreases to 1g with time.
+Dual spec removes the largest problem of the class. Before level 40, you select between fast kills and good heals. Now you keep the 2 of them. The usual pair is Shadow for quests, and Holy or Discipline for dungeons.
+
+You can change specs outside combat and outside battlegrounds. If you change the talents in a spec, you pay a fee. This fee decreases to 1g with time.
 
 From this level, carry 2 sets of equipment: 1 for damage and 1 for healing. Bonus healing on an item also gives one third of its value as spell damage. Thus a healer set is not useless for quests.
 

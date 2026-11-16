@@ -17,7 +17,7 @@ Read with the [Rogue progression](index.md). This page covers only what changes 
 
 ## Why this combo
 
-**NEW in Forever.** The Skyborne are a Forever-only elven race that descends from exiles of Eldre'Thalas. The High Order is their Alliance branch. Rogue is one of five High Order classes. You get **Wind Blessed** (permanent haste) and **Walk on Air** (a 10 s controlled glide). You also get a starting zone, [Zephras Isle](../../world/zephras-isle.md), that only Skyborne play.
+**NEW in Forever.** The Skyborne are a Forever-only elven race that descends from exiles of Eldre'Thalas. The High Order is their Alliance branch. Rogue is 1 of 5 High Order classes. You get **Wind Blessed** (permanent haste) and **Walk on Air** (a 10 s controlled glide). You also get a starting zone, [Zephras Isle](../../world/zephras-isle.md), that only Skyborne play.
 
 **Best for:** players who want something new, steady haste for poison and Combat builds, and the Galestrider mount from day one of riding.
 
@@ -77,7 +77,7 @@ Every Skyborne starts in **Thendal Village** in the northwest of Zephras Isle, a
 
 1.  **1–4**{ .lvl } **Thendal Village**
 
-    *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* (your first Walk on Air), *The Anchors of Zephras*
+    *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style*, *The Anchors of Zephras*. *Falling With Style* is your first Walk on Air
 
 2.  **3–4**{ .lvl } Thendal Village
 
@@ -85,7 +85,7 @@ Every Skyborne starts in **Thendal Village** in the northwest of Zephras Isle, a
 
 3.  **4–7**{ .lvl } Road to **Shen'dar Village**
 
-    Al'Aketh thugs under Malduko Cloudcrash. Ride the **Blessing of Zephras** tornadoes for +40% speed. **The Great Outdoors** teaches [camping](../../systems/camping.md). Bandits, hippogryphs and Prideclaws; *WANTED: Vulgara the Insatiable*
+    Al'Aketh thugs under Malduko Cloudcrash. Ride the **Blessing of Zephras** tornadoes for +40% speed. **The Great Outdoors** teaches [camping](../../systems/camping.md). Bandits, hippogryphs and Prideclaws. *WANTED: Vulgara the Insatiable*
 
 4.  **7–8**{ .lvl } **Falaath Village**
 
@@ -101,7 +101,7 @@ Every Skyborne starts in **Thendal Village** in the northwest of Zephras Isle, a
 
 7.  **10**{ .lvl } Valanaar
 
-    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+    **Slice and Dice**, **Sap**, **Sprint**. First talent point
 
 8.  **10–12**{ .lvl } Shadowgale Forest
 
@@ -171,7 +171,7 @@ The High Order airship leaves from the east Skydock and flies to north **Dalaran
 - **Reputation:** High Order. Other Alliance races can earn Galestriders at Exalted with it. The Nightclaw druids have a separate reputation.
 - **Kirin Tor:** the High Order are allies of Dalaran. Kirin Tor reputation is Alliance-only.
 - **Language:** Darnassian and Common. You can talk to Windshaper Skyborne in Darnassian across factions.
-- **Looks:** HD models only at launch, with two body types. Feathers, tattoos and the vivid-blue "Sky-Touched Blessing" skin. See [Races](../../characters/races.md#skyborne).
+- **Looks:** HD models only at launch, with 2 body types. Feathers, tattoos and the vivid-blue "Sky-Touched Blessing" skin. See [Races](../../characters/races.md#skyborne).
 
 ## Verdict
 

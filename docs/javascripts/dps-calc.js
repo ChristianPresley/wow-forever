@@ -334,7 +334,7 @@
     },
     ret: function (s) {
       var g = GEAR.ret, cm = m("meleeCritMul");
-      var conv = 6, w = whiteMul(s, false, cm);
+      var conv = 6, w;
       s.meleeCrit += conv;
       w = whiteMul(s, false, cm);
       var y = yellowMul(s, cm);
@@ -364,7 +364,7 @@
       return dmg / cast * (1 + b("coe") / 100) * s.directMul;
     },
     feral: function (s) {
-      var g = GEAR.cat, cm = m("meleeCritMul"), w = whiteMul(s, false, cm), y = yellowMul(s, cm);
+      var cm = m("meleeCritMul"), w = whiteMul(s, false, cm), y = yellowMul(s, cm);
       var avg = v("catWeapon") + s.ap / 14;
       var white = s.haste * avg * w.avg;
       var shred = (avg * v("shred")[0] + v("shred")[1]) * 1.1 * y.avg;

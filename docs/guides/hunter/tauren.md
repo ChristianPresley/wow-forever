@@ -97,7 +97,7 @@ Tauren start at **Camp Narache**, Mulgore. Forever adds **Skywatcher Plateau** i
 
 3.  **10**{ .lvl } The first pet
 
-    - In Classic, **Yaw Sharpmane** in Bloodhoof Village gave the taming chain: **Adult Plainstrider**, **Prairie Wolf Alpha** and **Swoop** (*Classic-era*). The Forever quest is *Taming the Beast* (Tauren; Warcraft Tavern gives 6061), then *Training the Beast* (6089).
+    - In Classic, **Yaw Sharpmane** in Bloodhoof Village gave the taming chain: **Adult Plainstrider**, **Prairie Wolf Alpha** and **Swoop** (*Classic-era*). The Forever quest is *Taming the Beast* (Tauren, Warcraft Tavern gives 6061), then *Training the Beast* (6089).
     - Keep a **Prairie Wolf** (Furious Howl later), or tame a **Prairie Stalker** or mountain cougar (cat).
     - First talent: **Deadly Aspects**.
 
@@ -115,7 +115,7 @@ Tauren start at **Camp Narache**, Mulgore. Forever adds **Skywatcher Plateau** i
 
 <div class="steps" markdown>
 
-1.  **10–20**{ .lvl } The Barrens (Crossroads; **Durotar Supply and Logistics** crate camp), Silverpine
+1.  **10–20**{ .lvl } The Barrens (Crossroads, and the **Durotar Supply and Logistics** crate camp), Silverpine
 
     <span class="step-label">Travel</span> Thunder Bluff wind rider
 

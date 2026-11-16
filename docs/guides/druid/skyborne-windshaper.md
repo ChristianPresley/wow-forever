@@ -83,7 +83,7 @@ Both Skyborne factions use [Zephras Isle](../../world/zephras-isle.md), in diffe
 
 <div class="steps" markdown>
 
-1.  Quests: *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* (Walk on Air) and *The Anchors of Zephras*.
+1.  Quests: *Coming of Age*, *Harmony in Balance*, *The Cirrusfly Queen*, *Harvesting Windstones* (gathering profession voucher), *Falling With Style* and *The Anchors of Zephras*. *Falling With Style* teaches you to use Walk on Air.
 2.  Your faction opener is ***The Gift of Skysight***, which shows you how to get Charged.
 3.  Play as a caster: Wrath, Moonfire, Rejuvenation.
 

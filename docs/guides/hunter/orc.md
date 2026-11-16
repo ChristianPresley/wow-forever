@@ -74,7 +74,7 @@ Axe Specialization is not in the game now.
     /cast Bestial Wrath
     ```
 
-    Use the second macro only if you take Bestial Wrath in a deep-BM build (*Classic-era talent; not confirmed in Forever's BM tree*).
+    Use the second macro only if you take Bestial Wrath in a deep-BM build (*Classic-era talent, not confirmed in Forever's BM tree*).
 
 ## Starting zone walkthrough 1–12
 
@@ -85,7 +85,7 @@ Orcs start in the **Valley of Trials**, Durotar. Blizzard changed it with **new 
 1.  **1–5**{ .lvl } Valley of Trials
 
     - Start with Kaltunk and Gornek at the Den. Mottled boars, scorpids, Sarkoth, Vile Familiars at Burning Blade Coven, cactus apples, and the lazy peons.
-    - The **Hunter trainer stands near the Den** (Jen'shan in Classic; *Classic-era*). At 4, train **Serpent Sting**.
+    - The **Hunter trainer stands near the Den** (Jen'shan in Classic, *Classic-era*). At 4, train **Serpent Sting**.
     - Look for the new Forever quests from Blizzard in the Valley and get them.
 
 2.  **5–10**{ .lvl } Razor Hill and Sen'jin
@@ -96,7 +96,7 @@ Orcs start in the **Valley of Trials**, Durotar. Blizzard changed it with **new 
 
 3.  **10**{ .lvl } The first pet
 
-    - In Classic, **Thotar** at Razor Hill gave the taming chain: **Dire Mottled Boar**, **Surf Crawler** (crab) and **Armored Scorpid** (*Classic-era*). The Forever quest is *Taming the Beast* (Orc/Troll; Warcraft Tavern gives 6062). The chain ends with *Training the Beast* (6081).
+    - In Classic, **Thotar** at Razor Hill gave the taming chain: **Dire Mottled Boar**, **Surf Crawler** (crab) and **Armored Scorpid** (*Classic-era*). The Forever quest is *Taming the Beast* (Orc/Troll, Warcraft Tavern gives 6062). The chain ends with *Training the Beast* (6081).
     - Keep a **Dire Mottled Boar** (Charge), or tame a **Durotar Tiger** (cat) for damage.
     - First talent: **Deadly Aspects**.
 
@@ -112,7 +112,7 @@ Orcs start in the **Valley of Trials**, Durotar. Blizzard changed it with **new 
 
 <div class="steps" markdown>
 
-1.  **10–20**{ .lvl } The Barrens (Crossroads; **Durotar Supply and Logistics** crate camp to the west), Silverpine
+1.  **10–20**{ .lvl } The Barrens (Crossroads, and the **Durotar Supply and Logistics** crate camp to the west), Silverpine
 
     <span class="step-label">Travel</span> Zeppelin to Undercity
 
@@ -124,7 +124,7 @@ Orcs start in the **Valley of Trials**, Durotar. Blizzard changed it with **new 
 
     <span class="step-label">Travel</span> Sun Rock, Tarren Mill
 
-4.  **28–35**{ .lvl } Hillsbrad; Arathi (Hammerfall). Do not go to Dalaran: the guards attack Horde players when they see them
+4.  **28–35**{ .lvl } Hillsbrad, Arathi (Hammerfall). Do not go to Dalaran: the guards attack Horde players when they see them
 
     <span class="step-label">Travel</span> Hammerfall
 

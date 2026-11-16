@@ -96,7 +96,7 @@ Trolls share the Orc start. Blizzard added new NPCs, quests and small moments to
 
 6.  **10**{ .lvl } Kaplak
 
-    **Slice and Dice**, **Sap**, **Sprint**; first talent point
+    **Slice and Dice**, **Sap**, **Sprint**. First talent point
 
 7.  **10–12**{ .lvl } Orgrimmar, then the Barrens
 

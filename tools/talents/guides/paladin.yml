@@ -64,7 +64,7 @@ trees:
       Infusion of Light:
         {does: "Crits of Holy Shock and Flash of Light make your next Holy Light 0.5/1 s faster. The effect stays for 15 s", lvl: D, pve: A, pvp: B, note: "For healers only. It makes Holy Light a 1.5 s cast after a crit."}
       Oath of Light:
-        {does: "An Oath on 1 ally for 5 min. Holy Light heals the ally for up to 400 more, Flash of Light for up to 115 more and Holy Shock for up to 230 more", lvl: C, pve: S, pvp: B, note: "Keep it on the tank. You can have only 1 Oath."}
+        {does: "An Oath on 1 ally for 5 min. Holy Light heals the ally for up to 400 more. Flash of Light heals for up to 115 more and Holy Shock for up to 230 more", lvl: C, pve: S, pvp: B, note: "Keep it on the tank. You can have only 1 Oath."}
       Consecrated Ground:
         {does: "Your Holy spells do 5/10% more damage to the first 4 enemies that enter your Consecration", lvl: C, pve: C, pvp: D, note: "A damage talent that needs 20 Holy points. Too deep in the tree for Retribution and Protection builds."}
       Holy Shock:

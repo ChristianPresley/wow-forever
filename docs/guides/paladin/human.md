@@ -21,7 +21,7 @@ The Human paladin is the traditional Knight of the Silver Hand. It trains at the
 - **The Human Spirit** (+10% Spirit) helps mana between fights. Mana is the main paladin problem while you level.
 - The old Sword and Mace Specialization racials are **removed**, so Humans no longer have an advantage in weapon skill. Diplomacy is now the Legacy talent *Diplomat*.
 
-Stormwind is also near the new Alliance content: the harbor with a boat to Auberdine, the Azeroth Commerce Authority camp in Redridge, and the road east from Redridge to Riverglades.
+Stormwind is also near the new Alliance content. This content is the harbor with a boat to Auberdine, the Azeroth Commerce Authority camp in Redridge, and the road east from Redridge to Riverglades.
 
 ## Racials in practice
 
@@ -68,7 +68,7 @@ Stormwind is also near the new Alliance content: the harbor with a boat to Auber
     /cast Blessing of Freedom
     ```
 
-    If Will to Survive is off the global cooldown, one push casts both spells. If not, push it two times. Use it against warriors and rogues to break a stun and then make yourself free.
+    If Will to Survive is off the global cooldown, 1 push casts both spells. If not, push it 2 times. Use it against warriors and rogues to break a stun and then make yourself free.
 
     ```
     #showtooltip Perception
@@ -139,7 +139,7 @@ Your trainers are in **Stormwind** (Cathedral of Light) and Goldshire, and also 
 
 5.  **30–40**{ .lvl } Arathi Highlands, Stranglethorn, Desolace, Dustwallow
 
-    Scarlet Monastery (Tirisfal Glades, a long trip through Horde land); [The Drowned City](../../content/dungeons/drowned-city.md) (35–40)
+    Scarlet Monastery (Tirisfal Glades, a long trip through Horde land) and [The Drowned City](../../content/dungeons/drowned-city.md) (35–40)
 
 6.  **35–45**{ .lvl } [Riverglades](../../world/zones.md#riverglades)
 

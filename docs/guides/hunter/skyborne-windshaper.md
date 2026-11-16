@@ -125,7 +125,7 @@ The **west Skydock airship** goes to **Skywatcher Plateau** in northwest Mulgore
 
 <div class="steps" markdown>
 
-1.  **12–20**{ .lvl } The remaining Mulgore quests, then the Barrens (Crossroads; **Durotar Supply and Logistics** crate camp)
+1.  **12–20**{ .lvl } The remaining Mulgore quests, then the Barrens (Crossroads, and the **Durotar Supply and Logistics** crate camp)
 
     <span class="step-label">Travel</span> Thunder Bluff wind rider
 

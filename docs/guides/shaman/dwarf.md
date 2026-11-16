@@ -76,7 +76,7 @@ Stoneform is no longer an armor buff. It is now a flat damage reduction, which a
 
     - You start at **Anvilmar**. Your Shaman trainer, **Teo Hammerstorm**, is inside Anvilmar (about 28.8, 66.2).
     - Kill troll whelps and wolves. Keep Rockbiter Weapon active. Open with Lightning Bolt and finish with melee.
-    - **Level 4: *Call of Earth*.** Teo asks for two Iceclaw Bear Pendants from Frostmane Troll Whelps (near 27.3, 79.6). He gives you **Earth Sapta**. Follow the path with rubble on it (from about 25.8, 69.3) to the Earth Spirit Stone (25.0, 62.4). Drink the Sapta and defeat the Minor Manifestation of Earth. Return the Rough Quartz to Teo for the **Earth Totem** and Stoneskin Totem.
+    - **Level 4: *Call of Earth*.** Teo asks for 2 Iceclaw Bear Pendants from Frostmane Troll Whelps (near 27.3, 79.6). He gives you **Earth Sapta**. Follow the path with rubble on it (from about 25.8, 69.3) to the Earth Spirit Stone (25.0, 62.4). Drink the Sapta and defeat the Minor Manifestation of Earth. Return the Rough Quartz to Teo for the **Earth Totem** and Stoneskin Totem.
 
 2.  **6–12**{ .lvl } Kharanos
 
@@ -105,7 +105,7 @@ The Fire quest sends you to Loch Modan, so plan to finish it at 11–12 when you
 
     <span class="step-label">Travel</span> —
 
-2.  **10–20**{ .lvl } **Loch Modan**; [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18) in Ironforge
+2.  **10–20**{ .lvl } **Loch Modan** and [Hall of Thanes](../../content/dungeons/hall-of-thanes.md) (13–18) in Ironforge
 
     <span class="step-label">Travel</span> Thelsamar flight path
 
@@ -145,7 +145,7 @@ The Fire quest sends you to Loch Modan, so plan to finish it at 11–12 when you
 |---|---|---|
 | 4 | *Call of Earth* | Coldridge Valley (above) |
 | 10 | *Call of Fire* | Dun Morogh → Loch Modan (above) |
-| 20 | *Call of Water* | Start with **Norric Lochthane** in northern Loch Modan (41.9, 19.0). **Hervdana Saegrund** is in a cave behind a waterfall in the Wetlands (65.7, 76.4). She tells you to fill waterskins at 3 places: her waterfall, Stonewatch Falls in Redridge (73.7, 61.6) and a lake near Astranaar in Ashenvale (37.0, 51.6). Go back to Norric. Then go to the Forgotten Shrine at Stendel's Pond in Westfall (47.5, 60.4). Drink the Water Sapta and defeat the corrupted water spirit. Reward: **Water Totem** and Healing Stream. Warcraft Tavern says that it takes about 2 hours |
+| 20 | *Call of Water* | Start with **Norric Lochthane** in northern Loch Modan (41.9, 19.0). **Hervdana Saegrund** is in a cave behind a waterfall in the Wetlands (65.7, 76.4). She tells you to fill waterskins at 3 places. The places are her waterfall, Stonewatch Falls in Redridge (73.7, 61.6) and a lake near Astranaar in Ashenvale (37.0, 51.6). Go back to Norric. Then go to the Forgotten Shrine at Stendel's Pond in Westfall (47.5, 60.4). Drink the Water Sapta and defeat the corrupted water spirit. Reward: **Water Totem** and Healing Stream. Warcraft Tavern says that it takes about 2 hours |
 | 30 | *Call of Air* | Your trainer sends you to **Veyric Thundervein** in Arathi Highlands (about 59.8, 27.6). He is at the top of a narrow path and rocks near the Shard of Myzrael. Reward: **Air Totem**, plus the choice of spec weapon |
 
 !!! conflict "Conflict"
@@ -167,6 +167,8 @@ The Fire quest sends you to Loch Modan, so plan to finish it at 11–12 when you
 
 <div class="verdict" markdown>
 
-**The best Alliance Shaman, because it is the only one, and it is also a good one.** Artisan's Precision helps every spec get enough hit sooner. Big Game Hunter makes leveling faster. Stoneform stops Rogues and Warriors in PvP. The main disadvantage is that most Shaman trainers are in Dun Morogh and Ironforge, so plan your training trips. In raids, you are one of a small number of Alliance players who can give totems. This makes you very valuable.
+**The best Alliance Shaman, because it is the only one, and it is also a good one.** Artisan's Precision helps every spec get enough hit sooner. Big Game Hunter makes leveling faster. Stoneform stops Rogues and Warriors in PvP.
+
+The main disadvantage is that most Shaman trainers are in Dun Morogh and Ironforge, so plan your training trips. In raids, you are one of a small number of Alliance players who can give totems. This makes you very valuable.
 
 </div>

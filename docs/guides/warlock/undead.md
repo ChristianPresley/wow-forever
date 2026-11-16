@@ -14,7 +14,9 @@ Read with the [Warlock progression](index.md). This page covers only what change
 
 ## Why this combo
 
-The classic PvP Warlock. **Will of the Forsaken** breaks and blocks fears, charms and sleeps, which often decide caster fights. This includes the Fear and Seduction of enemy Warlocks. Warcraft Tavern names Undead as its PvP choice in each Warlock spec guide. Method.gg ranks it B tier overall. Forever adds **Touch of the Grave**, a passive health drain that is a good match for a class that uses drains. **Cannibalize** now restores mana and health.
+The classic PvP Warlock. **Will of the Forsaken** breaks and blocks fears, charms and sleeps, which often decide caster fights. This includes the Fear and Seduction of enemy Warlocks. Warcraft Tavern names Undead as its PvP choice in each Warlock spec guide. Method.gg ranks it B tier overall.
+
+Forever adds **Touch of the Grave**, a passive health drain that is a good match for a class that uses drains. **Cannibalize** now restores mana and health.
 
 | | |
 |---|---|

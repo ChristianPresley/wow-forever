@@ -152,7 +152,7 @@ All tables have one style. A column is as wide as its content.
 
 ## Card grids
 
-A card grid (`<div class="grid cards" markdown>`) never leaves 1 card alone in a row: 3, 5 and 9 cards use 3 columns, and 4 cards use 2 columns. You do not set the columns.
+A card grid (`<div class="grid cards" markdown>`) never leaves 1 card alone in a row. Grids of 3, 5 and 9 cards use 3 columns, and grids of 4 cards use 2 columns. You do not set the columns.
 
 ## Timeline
 
@@ -281,7 +281,7 @@ Read with the [Mage progression](index.md). This page gives only the changes whe
 
 The template adds the switcher below the meta row of an add-on page: one line of chips for the pages of the class. Do not write it by hand.
 
-The other parts of a class progression (the add-on picker, the sticky pick bar, the add-on blocks, the chapter headings, the goals and the talent tree) come from the generators. `DESIGN.md` describes them.
+The other parts of a class progression come from the generators. These parts are the add-on picker, the sticky pick bar, the add-on blocks, the chapter headings, the goals and the talent tree. `DESIGN.md` describes them.
 
 ## Sizes, corners and spacing
 
@@ -321,3 +321,39 @@ The rules:
 - To keep glyphs out of a block, add the class `gi-off`: `{: .gi-off }`.
 
 The glyph set and the name list come from `tools/icons`. See *Icons* in `DESIGN.md`.
+
+## Writing: unslop-prose
+
+All text on the Codex follows **unslop-prose**, the writing profile of the site. It is a profile of Simplified Technical English. Each sentence gives a fact or an instruction. `DESIGN.md` has the full rules.
+
+The rules that a program checks:
+
+| Rule | Do not write | Write |
+|---|---|---|
+| Sentence length | A sentence of more than 25 words | 2 sentences, or a list |
+| Paragraph length | A paragraph of more than 6 sentences | 2 paragraphs, or a list |
+| Semicolon | A semicolon between 2 sentences | 2 sentences |
+| Modal verb | *should*, *would*, *could*, *might*, *may* | *can*, *must*, or a command |
+| Simple word | *utilize*, *obtain*, *in order to*, *prior to* | *use*, *get*, *to*, *before* |
+| Phrasal verb | *find out*, *keep on* | *find*, *continue* |
+| Number | *three* | *3* |
+| Filler | *it is worth noting*, *seamless*, *robust* | The fact, or nothing |
+
+Names of spells, talents, items, zones and other game terms stay as they are. Quoted text stays as it is.
+
+Check your text before you commit:
+
+```bash
+npm run lint:prose
+python tools/unslop_prose/lint.py docs/about/faq.md
+```
+
+If a block must stay as written, put it between these 2 comments:
+
+```markdown
+<!-- unslop-prose: off -->
+A quoted rule, or an example of what not to write.
+<!-- unslop-prose: on -->
+```
+
+`npm run lint` also checks the scripts, the stylesheets and the Python tools.

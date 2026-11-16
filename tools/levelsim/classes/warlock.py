@@ -399,7 +399,6 @@ class Warlock:
         e = core.damage_effect(s)
         if name == "Wrack":
             per, _ = self.val(s, e)
-            ticks = s["duration_ms"] / 1000
             dot_bonus = sum(d["tick"] / d["period"] for k, d in self.dots.items()
                             if k in ("Corruption", "Siphon Life", "Bane of Agony") and self.dot_up(k))
             return s, (per * self.mult(name, school) + dot_bonus)
@@ -419,7 +418,7 @@ class Warlock:
 
     def choose(self):
         """Priority list limited to spells known at this level."""
-        t, remain = self.sim.t, self.sim.end - self.sim.t
+        remain = self.sim.end - self.sim.t
         if self.racial and self.ready("racial"):
             return ("racial", None)
         if self.trance and self.spell("Shadow Bolt"):

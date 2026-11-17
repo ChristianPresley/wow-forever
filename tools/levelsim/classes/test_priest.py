@@ -35,9 +35,17 @@ def test_spells_gated():
     b31 = priest.simulate("shadow", "human", 31, 3, 1)["breakdown"]
     assert "Shadow Word: Death" not in b31 and "Mind Flay" in b31
     assert "Shadow Word: Death" in priest.simulate("shadow", "human", 32, 3, 1)["breakdown"]
-    assert "Penance" in priest.simulate("discipline", "human", 60, 3, 1)["breakdown"]
+    # Talent spells are known by the right spec. Whether the rotation casts them depends on
+    # their damage per mana against the other spells (the mana plan), so check what is known.
+
+    def known(spec, level=60):
+        talents = priest.talents_at(spec, level)
+        ch = core.Character(priest.CLASS, "human", level, talents)
+        core.apply_passive_racials(ch, "human")
+        return priest.PriestSim(core.Sim(1), ch, spec, level, talents, {}).S
+    assert "Penance" in known("discipline") and "Penance" not in known("shadow")
+    assert "Holy Fire" in known("holy") and "Mind Flay" in known("shadow")
     assert "Penance" not in priest.simulate("shadow", "human", 60, 3, 1)["breakdown"]
-    assert "Holy Fire" in priest.simulate("holy", "human", 60, 3, 1)["breakdown"]
 
 
 def test_swd_damagepower():
@@ -97,3 +105,95 @@ def test_crafted_gear_beats_naked_and_rises():
     out = _crafted_dps(next(iter(priest.SPECS)), 60, n=1)
     assert out["inputs"]["gear"] == "F (crafted items)"
     assert "gear" not in priest.simulate(next(iter(priest.SPECS)), "human", 60, 1, 1)["inputs"]
+
+
+def _sim(spec, level, race="human"):
+    talents = priest.talents_at(spec, level)
+    ch = core.Character(priest.CLASS, race, level, talents)
+    core.apply_passive_racials(ch, race)
+    return priest.PriestSim(core.Sim(1), ch, spec, level, talents, {})
+
+
+def test_starshards_is_night_elf_only():
+    assert "Starshards" in _sim("shadow", 10, "nelf").S
+    assert "Starshards" not in _sim("shadow", 9, "nelf").S
+    assert "Starshards" not in _sim("shadow", 60, "human").S
+    out = priest.simulate("holy", "nelf", 20, 3, 1)
+    assert "Starshards" in out["breakdown"] and out["inputs"]["race_lock:Starshards"] == "F"
+    # the lock is the client's race mask, not a name in the module
+    row = core.best_rank("priest", "Starshards", 60)
+    assert [r for r in priest.RACE_BIT if priest.race_open(row, r)] == ["nelf"]
+    assert not priest.race_open(row, "sho") and priest.race_open(core.best_rank("priest", "Smite", 60), "sho")
+    assert priest.race_open(core.best_rank("priest", "Devouring Plague", 60), "human")
+    assert "Starshards" not in priest.simulate("holy", "human", 20, 3, 1)["breakdown"]
+
+
+def test_holy_fire_value_counts_free_holy_nova():
+    p = _sim("holy", 60)
+    hf = p.S["Holy Fire"]
+    opt = p.option(hf)
+    assert opt[1] > p.exp_damage(hf) and opt[2] > p.exec_time(hf)
+    assert "Holy Fire" in _crafted_dps("holy", 60, n=3)["breakdown"]  # ungeared it seldom pays
+
+
+def test_inner_focus_goes_to_the_spell_that_gains_most():
+    p = _sim("holy", 60)
+    p.plan([p.option(r) for rs in p.ranks_.values() for r in rs])
+    cands = [p.S[n] for n in ("Shadow Word: Pain", "Devouring Plague", "Shadow Word: Death")]
+    p.if_on = True
+    pick = p.focus_target(cands)
+    assert pick in cands and p.if_on
+    assert p.cost_of(pick) == 0
+    out = priest.simulate("holy", "human", 60, 3, 1)
+    assert out["inputs"]["talent:Inner Focus"] == "F"
+    # Discipline keeps the older rule: no Devouring Plague, which only a free cast pays for
+    assert "discipline" in priest.FOCUS_FIRST_SPELL
+    assert "Devouring Plague" not in priest.simulate("discipline", "human", 60, 3, 1)["breakdown"]
+
+
+def test_mana_is_kept_for_the_better_spell():
+    p = _sim("discipline", 54, "nelf")
+    p.plan([p.option(r) for rs in p.ranks_.values() for r in rs])
+    swp, stars = p.S["Shadow Word: Pain"], p.S["Starshards"]
+    assert p.option(stars)[1] / p.cost_of(stars) > p.option(swp)[1] / p.cost_of(swp)
+    p.lam = 1.0
+    p.mana = p.cost_of(swp) + 5           # enough for Pain, then nothing left for Starshards
+    assert p.held(swp) and not p.held(stars)
+    p.mana = p.max_mana
+    assert not p.held(swp)
+    # a DoT cast near the end of the fight only counts the ticks that still land
+    full = p.exp_damage(stars)
+    p.sim.t = p.sim.end - 2.0
+    assert 0 < p.exp_damage(stars) < 0.5 * full
+
+
+def test_swing_policy_credits_a_cast_between_swings():
+    assert "plan+swing" in priest.POLICIES
+    p = _sim("discipline", 40)
+    w = p.ch.weapon("mh")[1] / p.haste()
+    assert abs(p.swing_overlap(w) - w / 2) < 1e-9 and abs(p.swing_overlap(10 * w) - w / 2) < 1e-9
+    assert 0 < p.swing_overlap(w / 2) < w / 2
+    swd = p.S["Shadow Word: Death"]
+    plain = p.option(swd)[1]
+    p.idle = 1.0
+    assert p.option(swd)[1] == plain          # the plain plan gives no credit
+    priest.POLICY["mode"] = "plan+swing"
+    try:
+        q = _sim("discipline", 40)
+    finally:
+        priest.POLICY["mode"] = "plan"
+    q.idle = 1.0
+    assert abs(q.option(swd)[1] - plain - q.melee_dps() * q.swing_overlap(1.5)) < 1e-6
+    smite = q.ranks_["Smite"][0]
+    assert q.option(smite)[1] == p.option(smite)[1]   # fillers get none
+    out = _crafted_dps("discipline", 36, n=6)
+    assert out["mana_policy"] in priest.POLICIES and priest.POLICY["mode"] == "plan"
+
+
+def test_wand_first_policy_fixes_the_level_38_drop():
+    assert "plan+wand" in priest.POLICIES
+    # at 38 the gear's Holy spell power makes rank 6 Smite just beat the wand in the plan;
+    # wanding between the cooldown spells is the better rotation and the level no longer loses
+    a, b = _crafted_dps("discipline", 37, n=30), _crafted_dps("discipline", 38, n=30)
+    assert b["dps_mean"] > a["dps_mean"], (a["dps_mean"], b["dps_mean"])
+    assert b["mana_policy"] == "plan+wand"

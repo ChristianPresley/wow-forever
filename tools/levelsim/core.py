@@ -92,6 +92,24 @@ def best_rank(cls, name, level):
 
 
 @lru_cache(maxsize=None)
+def _unlinked(cls):
+    return {s["id"]: s for s in data()["classes"][cls].get("unlinked", [])}
+
+
+def unlinked(cls, spell_id):
+    """A client spell that carries a class spell's name but that no trainer, talent or exported
+    trigger links to the class: the damage spells the server casts for a class spell (Judgement
+    of Command, Consecration ticks) and ranks the trainer table omits. None if absent.
+    Use `unlinked_named` to list them by name."""
+    return _unlinked(cls).get(spell_id)
+
+
+def unlinked_named(cls, name):
+    """All unlinked client spells of a class with this name, ordered by base level, then id."""
+    return sorted((s for s in _unlinked(cls).values() if s["name"] == name), key=lambda s: (s["base_level"], s["id"]))
+
+
+@lru_cache(maxsize=None)
 def talent(cls, name):
     for t in data()["classes"][cls]["talents"]:
         if t["name"] == name:
@@ -185,6 +203,8 @@ class Character:
         self.dmg_mult = 1.0
         self.ap_mult = 1.0
         self.sp = 0.0
+        self.resource_mult = 1.0  # Gnome Expansive Mind: max mana, rage and energy
+        self.hp_per_sta = exp.get("hp_per_stamina", 10)
         # Gear (see gear.py). run.py sets GEAR["mode"] and GEAR["spec"] before each simulate().
         # Base stats, hit and crit are applied here; modules add ch.gear AP, spell power and weapons.
         self.gear = None
@@ -242,7 +262,17 @@ class Character:
         return A("base_spell_crit") + self.int * self.spell_crit_per_int + self.spell_crit_bonus
 
     def mana(self):
-        return self.base_mana + self.int * 15 - 280 + 20 if self.base_mana else 0  # Classic Int->mana (CU)
+        if not self.base_mana:
+            return 0
+        return (self.base_mana + self.int * 15 - 280 + 20) * self.resource_mult  # Classic Int->mana (CU)
+
+    def resource_cap(self, base=100.0):
+        """Maximum rage or energy: `base` (talents included) times Expansive Mind."""
+        return base * self.resource_mult
+
+    def health(self):
+        """Maximum health from Stamina only (A: class base health is server-side, so this is a floor)."""
+        return self.sta * self.hp_per_sta
 
 
 def unarmed_weapon(level):
@@ -302,6 +332,8 @@ class Sim:
         self.damage = {}
         self.casts = {}
         self.trace = None  # list of (time, ability) when tracing (see TRACE)
+        self.proc_rng = random.Random(seed * 7919 + 13)  # racial procs: own stream, class rolls unchanged
+        self.touch_ready = 0.0
 
     def at(self, t, fn, *args):
         self.n += 1
@@ -310,6 +342,11 @@ class Sim:
     def deal(self, source, amount):
         if amount > 0:
             self.damage[source] = self.damage.get(source, 0.0) + amount
+            tg = PROCS["touch"]
+            if tg and self.t >= self.touch_ready and not source.startswith(PET_PREFIXES) \
+                    and self.proc_rng.random() * 100 < tg["chance"]:
+                self.touch_ready = self.t + tg["icd"]
+                self.damage[TOUCH] = self.damage.get(TOUCH, 0.0) + tg["amount"]
 
     def cast(self, name):
         self.casts[name] = self.casts.get(name, 0) + 1
@@ -354,17 +391,73 @@ def run_many(build_fn, iterations=200, seed=1, fight=None):
 # ---------- Racials (Forever client / Wowhead Forever values) ----------
 
 RACIALS = {
-    "human": {"crit": 1.0},
+    "human": {"crit": 1.0, "spirit": 10.0},
     "dwarf": {"hit": 1.0},
     "nelf": {"cd": ("crit", 10.0, 15, 180)},
     "sho": {"haste": 2.0},
     "sws": {"haste": 2.0},
     "orc": {"cd": ("power", 10.0, 15, 120), "pet": 5.0},
     "troll": {"cd": ("haste", 10.0, 15, 180)},
-    "gnome": {"cd": ("direct", 10.0, 8, 120)},
-    "tauren": {}, "undead": {},
+    "gnome": {"cd": ("direct", 10.0, 8, 120), "resource": 5.0},
+    "tauren": {},
+    "undead": {"touch": {"chance": 20.0, "icd": 15.0, "pct_health": 5.0}},
 }
 RACE_LEVEL = {"nelf": 1, "orc": 1, "troll": 1, "gnome": 1}  # racials are known from level 1 in Forever (A)
+
+TOUCH = "Touch of the Grave"
+PET_PREFIXES = ("Pet:", "Imp:", "Succubus:", "Voidwalker:", "Hawk:", "Searing Totem")  # not the player's own attacks
+# Proc racials for the fight being set up. apply_passive_racials sets it for every character,
+# so it always matches the last character built (class modules build one per simulate call).
+PROCS = {"touch": None}
+
+# Every racial of every race (docs/characters/races.md), and what the simulator does with it.
+# status: "modelled", "partial" (see note) or "none" (no effect on damage against one training target).
+RACIAL_STATUS = {
+    "human": [("Will to Survive", "none", "Removes stuns."),
+              ("Perception", "none", "Stealth detection."),
+              ("Ruthless", "modelled", "+1% crit."),
+              ("The Human Spirit", "modelled", "+10% Spirit, which adds mana regeneration.")],
+    "dwarf": [("Stoneform", "none", "Defensive."),
+              ("Find Treasure", "none", "Utility."),
+              ("Artisan's Precision", "modelled", "+1% hit."),
+              ("Big Game Hunter", "none", "+5% damage against Beasts only. The training target has no creature type.")],
+    "gnome": [("Escape Artist", "none", "Removes roots and snares."),
+              ("Eureka!", "partial", "+10% non-periodic damage for 8 s every 2 min in every class. The 10% lower cost "
+                                     "is applied to Mage and Priest mana only, not to rage, energy or other casters."),
+              ("Expansive Mind", "modelled", "+5% maximum mana, rage or energy."),
+              ("Engineering Specialization", "none", "Profession bonus.")],
+    "nelf": [("Elune's Light", "modelled", "+10% crit for 15 s every 3 min."),
+             ("Shadowmeld", "none", "Stealth."),
+             ("Quickness", "none", "Dodge and run speed."),
+             ("Wisp Spirit", "none", "Ghost speed.")],
+    "orc": [("Blood Fury", "modelled", "+10% attack power and spell power for 15 s every 2 min."),
+            ("Shatter Curse", "none", "Defensive."),
+            ("Command", "modelled", "+5% pet damage (Hunter and Warlock pets)."),
+            ("Hardiness", "none", "Shorter stuns.")],
+    "troll": [("Berserking", "modelled", "+10% attack and cast speed for 15 s every 3 min."),
+              ("Rapid Regeneration", "none", "Health regeneration."),
+              ("Beast Slaying", "none", "Damage against Beasts only. The training target has no creature type."),
+              ("Regeneration", "none", "Health regeneration.")],
+    "tauren": [("War Stomp", "none", "Stun."),
+               ("Cultivation", "none", "Herb gathering."),
+               ("Plainsrunning", "none", "Run speed."),
+               ("Endurance", "none", "+5% health.")],
+    "undead": [("Will of the Forsaken", "none", "Removes charm, fear and sleep."),
+               ("Cannibalize", "none", "Needs a corpse."),
+               ("Underwater Breathing", "none", "Utility."),
+               ("Touch of the Grave", "modelled", "20% chance on the character's own damage (assumed), 15 s internal "
+                                                  "cooldown, 5% of maximum health as Shadow damage. Health counts "
+                                                  "Stamina only (assumed).")],
+    "sho": [("Walk on Air", "none", "Glide."),
+            ("Read Ley Line", "none", "+50% regeneration for 15 s. Its cooldown and what it regenerates are not "
+                                      "published, so it is left out."),
+            ("Wind Blessed", "modelled", "+2% haste."),
+            ("Elemental Insight", "none", "+5% damage against Elementals only.")],
+    "sws": [("Walk on Air", "none", "Glide."),
+            ("Skysight", "none", "Run speed."),
+            ("Wind Blessed", "modelled", "+2% haste."),
+            ("Elemental Insight", "none", "+5% damage against Elementals only.")],
+}
 
 
 def apply_passive_racials(ch, race):
@@ -373,6 +466,10 @@ def apply_passive_racials(ch, race):
     ch.spell_crit_bonus += r.get("crit", 0)
     ch.hit += r.get("hit", 0)
     ch.haste *= 1 + r.get("haste", 0) / 100
+    ch.spi *= 1 + r.get("spirit", 0) / 100
+    ch.resource_mult *= 1 + r.get("resource", 0) / 100
+    tg = r.get("touch")
+    PROCS["touch"] = dict(tg, amount=ch.health() * tg["pct_health"] / 100) if tg else None
 
 
 def racial_cooldown(race):

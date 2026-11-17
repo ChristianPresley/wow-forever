@@ -43,8 +43,14 @@ def test_spells_gated_by_level_and_talent():
     # Arcane Blast's stacking cost makes it a burst spell: used in a short fight, while
     # the mana-aware rotation drops it for cheaper damage per mana over 180 s
     arc = _dps_at(30, lambda: mage.simulate("arcane", "human", 60, 3, 1)["breakdown"])
-    assert "Arcane Blast" in arc and "Arcane Wrath" in arc
-    assert "Arcane Wrath" in mage.simulate("arcane", "human", 60, 3, 1)["breakdown"]
+    assert "Arcane Blast" in arc
+    # Arcane Wrath is known at 60. The client only has its level 25 talent rank, so it can do
+    # less damage per second of cast time than Fireball; the rotation casts it only when it pays.
+    talents = mage.talents_at("arcane", 60)
+    known = mage.MageSim(core.Sim(1), mage.make_character("human", 60, talents), "arcane", 60, talents, {}).sp_
+    assert "Arcane Wrath" in known
+    assert "Arcane Wrath" not in mage.MageSim(core.Sim(1), mage.make_character("human", 60, mage.talents_at("fire", 60)),
+                                               "fire", 60, mage.talents_at("fire", 60), {}).sp_
     frost = mage.simulate("frost", "human", 60, 3, 1)["breakdown"]
     assert "Ice Lance" in frost
 
@@ -118,3 +124,104 @@ def test_crafted_wand_replaces_unarmed_melee():
     out = _crafted_dps("fire", 20, n=3)
     assert "Wand" in out["breakdown"] and not any("unarmed" in k for k in out["breakdown"])
     assert "Wand" not in mage.simulate("fire", "human", 20, 3, 1)["breakdown"]
+
+
+def test_mana_price_plans_within_the_mana():
+    # two fillers (strong and costly, weak and cheap), one cooldown spell, and rest
+    acts = [(100.0, 50.0, 1.0), (40.0, 10.0, 1.0), (300.0, 60.0, 0.1), (5.0, -8.0, 1.0)]
+    price, x = mage.mana_price(acts, 1000.0)
+    assert price == 0.0 and abs(sum(x) - 1) < 1e-6 and x[2] == 0.1 and x[0] > 0.89  # mana is free: best damage
+    price, x = mage.mana_price(acts, 12.0)
+    assert price > 0 and abs(sum(x) - 1) < 1e-6
+    assert abs(sum(xi * a[1] for xi, a in zip(x, acts)) - 12.0) < 0.05  # the plan uses exactly the mana
+    assert x[2] == 0.1  # the cooldown spell has the best damage per mana and stays in
+
+
+def test_simulate_reports_the_better_mana_policy():
+    core.GEAR.update(mode="none", spec="arcane")
+    best = mage.simulate("arcane", "human", 40, 6, 1)
+    talents = mage.talents_at("arcane", 40)
+    assert best["mana_policy"] in mage.policies_for(talents)
+    for mode in mage.policies_for(talents):
+        mage.POLICY["mode"] = mode
+        try:
+            def build(sim):
+                mage.MageSim(sim, mage.make_character("human", 40, talents), "arcane", 40, talents, {}).start()
+            assert core.run_many(build, 6, 1)["dps_mean"] <= best["dps_mean"] + 1e-9
+        finally:
+            mage.POLICY["mode"] = "plan"
+
+
+def _sim(spec, level, race="human"):
+    talents = mage.talents_at(spec, level)
+    return mage.MageSim(core.Sim(1), mage.make_character(race, level, talents), spec, level, talents, {})
+
+
+def test_planner_counts_what_a_cast_sets_off():
+    # Fingers of Frost: a Frostbolt's value includes the Ice Lance against a Frozen target
+    m = _sim("frost", 60)
+    bolt, lance = m.ranks_["Frostbolt"][0], m.sp_["Ice Lance"]
+    assert m.exp_damage(lance, frozen=True) > 3 * m.exp_damage(lance)
+    opt = m.option(bolt)
+    assert opt[1] > m.exp_damage(bolt) + 0.1 * m.exp_damage(lance, frozen=True)
+    assert opt[2] > m.exec_time(bolt)
+    # Arcane Wrath: spell damage from maximum mana, as in the fight
+    a = _sim("arcane", 60)
+    aw = a.sp_["Arcane Wrath"]
+    assert a.exp_damage(aw) > aw.avg_direct + 0.9 * a.max_mana * a.aw_pct / 100 * aw.direct[2]
+    assert "Arcane Wrath" in _crafted_dps("arcane", 60, n=3)["breakdown"]
+    # a DoT cast back to back is cut short by the next cast
+    f = _sim("fire", 30)
+    py = f.sp_["Pyroblast"]
+    assert f.exp_damage(py) < f.exp_damage(py, spam=False)
+
+
+def test_scorch_debuff_is_priced():
+    f = _sim("fire", 60)
+    sc = f.sp_["Scorch"]
+    f.plan_rate = 100.0
+    start = f.scorch_bonus(sc)
+    f.sim.t = f.sim.end - 1.0
+    assert start > f.scorch_bonus(sc) > 0
+    f.scorch_stacks, f.scorch_end = 5, f.sim.end + 10  # five stacks that outlast the fight
+    assert f.scorch_bonus(sc) == 0
+
+
+def test_a_level_does_not_lower_dps():
+    # the three drops this fixed: a level must not cost more than the noise
+    core.GEAR.update(mode="none", spec=None)
+    for spec, race, lv in (("frost", "human", 54), ("fire", "undead", 31), ("fire", "gnome", 24)):
+        a = mage.simulate(spec, race, lv, 30, 1)["dps_mean"]
+        b = mage.simulate(spec, race, lv + 1, 30, 1)["dps_mean"]
+        assert b > 0.97 * a, (spec, race, lv, a, b)
+    core.GEAR.update(mode="crafted", spec="fire")
+    try:
+        a = mage.simulate("fire", "gnome", 29, 30, 1)["dps_mean"]
+        b = mage.simulate("fire", "gnome", 30, 30, 1)["dps_mean"]
+    finally:
+        core.GEAR.update(mode="none", spec=None)
+    assert b > 0.97 * a, (a, b)
+
+
+def test_improved_fire_blast_can_keep_the_base_cooldown():
+    assert mage.policies_for(mage.talents_at("fire", 28)) == mage.POLICIES
+    with_talent = mage.policies_for(mage.talents_at("fire", 29))
+    assert with_talent == mage.POLICIES + ("plan+basecd",)
+    assert mage.policies_for(mage.talents_at("frost", 60)) == mage.POLICIES
+    assert mage.policies_for(mage.talents_at("arcane", 60)) == mage.POLICIES + ("plan+nowrath",)
+    assert mage.policies_for(mage.talents_at("arcane", 9)) == mage.POLICIES
+    # level 29 no longer loses to 28 (orc, no gear: the drop was 3%)
+    core.GEAR.update(mode="none", spec=None)
+    a = mage.simulate("fire", "orc", 28, 100, 1)
+    b = mage.simulate("fire", "orc", 29, 100, 1)
+    assert b["dps_mean"] > 0.985 * a["dps_mean"], (a["dps_mean"], b["dps_mean"])
+    assert b["mana_policy"] == "plan+basecd" and mage.POLICY["mode"] == "plan"
+
+
+def test_arcane_can_leave_out_arcane_wrath():
+    # without gear near 60 the rotation without Arcane Wrath is the better one; in crafted
+    # gear Arcane Wrath stays in
+    core.GEAR.update(mode="none", spec=None)
+    out = mage.simulate("arcane", "human", 59, 40, 1)
+    assert out["mana_policy"] == "plan+nowrath" and "Arcane Wrath" not in out["breakdown"]
+    assert "Arcane Wrath" in _crafted_dps("arcane", 60, n=20)["breakdown"]

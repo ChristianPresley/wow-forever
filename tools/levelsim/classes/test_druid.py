@@ -58,11 +58,24 @@ RACE = "nelf"
 class GatingTests(unittest.TestCase):
     def test_feral_forms(self):
         self.assertIn("Wrath", m.simulate("feral", RACE, 9, 3, 1)["breakdown"])
-        self.assertIn("Maul", m.simulate("feral", RACE, 15, 3, 1)["breakdown"])
-        b = m.simulate("feral", RACE, 60, 3, 1)["breakdown"]
+        bear = core.run_many(lambda sim: m.Fight(sim, "feral", RACE, 15, {}).start(), 3, 1)
+        self.assertIn("Maul", bear["breakdown"])
+        b = core.run_many(lambda sim: m.Fight(sim, "feral", RACE, 60, {}).start(), 3, 1)["breakdown"]
         for k in ("Shred", "Rip", "Rake"):
             self.assertIn(k, b)
         self.assertNotIn("Ferocious Bite", m.simulate("feral", RACE, 23, 3, 1)["breakdown"])
+
+    def test_feral_reports_the_better_form_and_builder(self):
+        """Levels 10-19: Bear Form or the caster rotation; from 46: Shred or Claw."""
+        for lv, knob, value in ((12, "low_form", "caster"), (46, "builder", "Claw")):
+            best = m.simulate("feral", RACE, lv, 6, 3)
+            first = core.run_many(lambda sim: m.Fight(sim, "feral", RACE, lv, {}).start(), 6, 3)
+            self.assertGreaterEqual(best["dps_mean"], first["dps_mean"])
+            self.assertEqual(m.FERAL, {"builder": None, "low_form": "bear"})
+            if best.get("feral_" + knob) == "Claw":
+                self.assertNotIn("Shred", best["breakdown"])
+            if best.get("feral_" + knob) == "caster":
+                self.assertIn("Wrath", best["breakdown"])
 
     def test_balance_spells(self):
         self.assertNotIn("Starfire", m.simulate("balance", RACE, 19, 3, 1)["breakdown"])
@@ -113,3 +126,34 @@ def test_crafted_gear_beats_naked_and_rises():
     out = _crafted_dps(next(iter(m.SPECS)), 60, n=1)
     assert out["inputs"]["gear"] == "F (crafted items)"
     assert "gear" not in m.simulate(next(iter(m.SPECS)), "nelf", 60, 1, 1)["inputs"]
+
+
+def test_ravage_opens_the_cat_fight_once():
+    core.TRACE["on"] = True
+    try:
+        r = m.simulate("feral", "nelf", 40, 4, 1)
+        early = m.simulate("feral", "nelf", 31, 4, 1)
+    finally:
+        core.TRACE["on"] = False
+    assert r["breakdown"].get("Ravage", 0) > 0
+    assert abs(r["casts_per_min"]["Ravage"] - 60 / core.A("fight_seconds")) < 0.01  # one per fight
+    assert [name for _, name in r["timeline"] if name != "Tiger's Fury"][0] == "Ravage"
+    assert r["inputs"]["prowl_opener"] == "A"
+    assert "Ravage" not in early["breakdown"]  # trained at 32
+    assert "Pounce" not in r["casts_per_min"]  # tested, not chosen (module docstring)
+
+
+def test_caster_reports_the_better_mana_policy():
+    for spec, lv in (("balance", 40), ("restoration", 30)):
+        best = m.simulate(spec, "nelf", lv, 6, 3)
+        assert best["mana_policy"] in m.POLICIES
+        assert best["inputs"]["mana_policy_best_of"] == "A"
+        each = {}
+        for mode in m.POLICIES:
+            m.POLICY["mode"] = mode
+            try:
+                each[mode] = core.run_many(lambda sim: m.Fight(sim, spec, "nelf", lv, {}).start(), 6, 3)["dps_mean"]
+            finally:
+                m.POLICY["mode"] = "simple"
+        assert best["dps_mean"] == max(each.values()), (spec, each)
+    assert "mana_policy" not in m.simulate("feral", "nelf", 40, 2, 1)

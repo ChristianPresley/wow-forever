@@ -117,3 +117,45 @@ def test_crafted_gear_beats_naked_and_rises():
     out = _crafted_dps(next(iter(m.SPECS)), 60, n=1)
     assert out["inputs"]["gear"] == "F (crafted items)"
     assert "gear" not in m.simulate(next(iter(m.SPECS)), "orc", 60, 1, 1)["inputs"]
+
+
+def _policy_dps(spec, level, mode, n=6, seed=3):
+    m.POLICY["mode"] = mode
+    try:
+        return core.run_many(lambda sim: m.Fight(sim, spec, "orc", level, {}).start(), n, seed)
+    finally:
+        m.POLICY["mode"] = "simple"
+
+
+def test_caster_reports_the_best_rotation_policy():
+    for spec, lv in (("elemental", 40), ("restoration", 30)):
+        best = m.simulate(spec, "orc", lv, 6, 3)
+        assert best["mana_policy"] in m.POLICIES
+        assert best["inputs"]["mana_policy_best_of"] == "A"
+        each = {mode: _policy_dps(spec, lv, mode)["dps_mean"] for mode in m.POLICIES}
+        assert best["dps_mean"] == max(each.values()), (spec, each)
+    assert "mana_policy" not in m.simulate("enhancement", "orc", 40, 2, 1)
+
+
+def test_direct_shock_only_in_shock_policies():
+    for mode in ("plan", "simple"):
+        b = _policy_dps("elemental", 60, mode)["breakdown"]
+        assert "Earth Shock" not in b and "Frost Shock" not in b, (mode, b)
+    b = _policy_dps("elemental", 60, "simple+shock", n=10)["breakdown"]
+    assert b.get("Earth Shock", 0) > 0, b
+
+
+def test_frost_shock_when_its_rank_is_newer():
+    # level 58: Frost Shock rank 4 (58) beats Earth Shock rank 6 (48); level 60: Earth Shock rank 7
+    pick = lambda lv: m.Fight(core.Sim(1), "restoration", "orc", lv, {}).direct_shock()[0]
+    assert pick(58) == "Frost Shock"
+    assert pick(60) == "Earth Shock"
+    assert pick(19) == "Earth Shock"  # Frost Shock is trained at 20
+    core.GEAR.update(mode="crafted", spec="elemental")
+    try:
+        b58 = _policy_dps("elemental", 58, "plan+shock", n=10)["breakdown"]
+    finally:
+        core.GEAR.update(mode="none", spec=None)
+    assert b58.get("Frost Shock", 0) > 0 and "Earth Shock" not in b58, b58
+    # Enhancement keeps Earth Shock (Frost Shock tested and not chosen, module docstring)
+    assert "Frost Shock" not in m.simulate("enhancement", "orc", 58, 5, 1)["breakdown"]

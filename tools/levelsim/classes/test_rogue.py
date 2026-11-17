@@ -70,8 +70,12 @@ class SimTests(unittest.TestCase):
         r = R.simulate("combat", "human", 19, 5, 1)
         self.assertNotIn("Instant Poison", r["breakdown"])
         self.assertNotIn("Shank", r["breakdown"])
+        # Death Mark is known with the talent. The rotation casts it only when its cap can beat
+        # a 5-point Eviscerate, and it never takes Ghostly Strike over a better builder.
+        self.assertIn("dm", R.setup("subtlety", "human", 60)["ab"])
+        self.assertNotIn("dm", R.setup("subtlety", "human", 39)["ab"])
         r = R.simulate("subtlety", "human", 60, 5, 1)
-        self.assertIn("Death Mark", r["breakdown"])
+        self.assertTrue("Death Mark" in r["breakdown"] or "Eviscerate" in r["breakdown"])
 
     def test_inputs_tagged(self):
         r = R.simulate("subtlety", "orc", 60, 2, 1)
@@ -94,6 +98,33 @@ class GearTests(unittest.TestCase):
         r = _crafted(R, "combat", "human", 60, 3)
         self.assertNotIn("Backstab", r["breakdown"])
         self.assertNotIn("Ambush", r["breakdown"])
+
+    def test_weapon_talents_add_damage_in_gear_only(self):
+        orig = R.talents_at
+        try:
+            for name in ("Hack and Slash", "Dual Wield Specialization"):
+                base = _crafted(R, "combat", "human", 60, 20)["dps_mean"]
+                naked = R.simulate("combat", "human", 60, 5, 1)["dps_mean"]
+                R.talents_at = lambda s, lv, name=name: {k: v for k, v in orig(s, lv).items() if k != name}
+                self.assertLess(_crafted(R, "combat", "human", 60, 20)["dps_mean"], base, name)
+                self.assertEqual(R.simulate("combat", "human", 60, 5, 1)["dps_mean"], naked, name)
+                R.talents_at = orig
+        finally:
+            R.talents_at = orig
+
+    def test_hack_and_slash_follows_the_weapon_type(self):
+        # Level 60 Combat holds two swords (extra attacks); level 50 holds fist weapons (crit only).
+        core.TRACE["on"] = True
+        try:
+            self.assertGreater(_crafted(R, "combat", "human", 60, 5)["casts_per_min"].get("Hack and Slash", 0), 0)
+            self.assertNotIn("Hack and Slash", _crafted(R, "combat", "human", 50, 5)["casts_per_min"])
+        finally:
+            core.TRACE["on"] = False
+
+    def test_combat_builder_with_a_dagger(self):
+        # gear.py gives Combat a dagger main hand at 36: Backstab pays more per Energy there.
+        self.assertIn("Backstab", _crafted(R, "combat", "human", 36, 5)["breakdown"])
+        self.assertIn("Sinister Strike", _crafted(R, "combat", "human", 30, 5)["breakdown"])
 
 
 if __name__ == "__main__":

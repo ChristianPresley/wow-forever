@@ -26,7 +26,39 @@ Server-side behaviour and assumptions (tag in `inputs`):
   without spending mana (CU).
 - Periodic damage can crit (A: Pandemic raises the crit bonus of DoTs, so
   Forever DoTs crit).
-- Wrack: client text, other Affliction DoTs tick 100% faster while it channels.
+- Wrack (F): client text, Siphon Life, Corruption and Bane of Agony "deal their periodic damage
+  100% faster" while it channels (effect 2, base points 100). Blizzard's developers' note with
+  the 10 November 2026 hotfixes: "Wrack speeds up how often your periodic effects deal damage,
+  not how long they last." So the three DoTs keep their duration and gain ticks: the tick
+  timer runs at double speed during the channel (the tick in progress included, and the time
+  gained is kept when the channel ends) while the duration runs normally. The web tooltip in
+  .research/talents and tools/sim ("+10% to your other Shadow DoTs") is older. Wrack's own
+  damage is the client row after that hotfix: 25.2 + 1.75 per level per 1 s tick, coefficient
+  0.2002, 6 s. Soul Siphon (client and tooltip agree): 4% per rank for each of Corruption,
+  Siphon Life and Bane of Agony on the target, 36% at most.
+- Wrack as filler (`filler_value`): its own damage plus one more damage-per-second of each of
+  the three DoTs that is up, for as much of the channel as the DoT lasts. The channel is not
+  clipped (A). A DoT that would run out in the first half of a channel (Wrack, Drain Life) is
+  recast before the channel starts; one that runs out in the second half (Immolate included)
+  is recast after it. Bridging that gap with a shorter filler was tested and does not pay: the
+  bolt only postpones the downtime.
+- Immolate is cast only while one cast (hit plus all ticks, per second of cast time and Life
+  Tap share) is worth more than the best filler; a build with Conflagrate always keeps it up.
+  For Affliction with Wrack and its three DoTs up the filler usually wins. Soul Fire is held
+  to the same test instead of being cast whenever it is ready.
+- Shadow Trance (Nightfall) does not run out (A). The instant Shadow Bolt is cast after the
+  DoT recasts, and only when it is worth at least as much as Wrack.
+- Filler values include spell power and crit, and are per second of cast time plus the share
+  of a Life Tap global cooldown that pays for the mana (Wrack costs far less mana per second
+  than Shadow Bolt). Shadow Bolt's value also counts the Improved Shadow Bolt debuff a crit
+  starts: seconds added x 4% per rank x the Shadow damage per second of the DoTs that are up
+  and of the bolts.
+- A resisted channel (Drain Life, Drain Soul, Wrack) costs the global cooldown, not the
+  channel time, and a resisted Wrack does not speed up the DoTs.
+- Drain Soul is a filler option that is never chosen: its client damage (84 per 3 s at 60,
+  coefficient 0.1) stays below the best other filler at every level from 10 to 60 for every
+  spec and gear mode, even with three Soul Siphon effects (at best 92%, Affliction 38 without
+  gear; test_warlock.py).
 - Bane of Agony: total damage spread evenly over its ticks (the Classic ramp
   has the same total).
 - No target health: execute effects (Decimation, Shadowburn shard on kill,
@@ -95,12 +127,15 @@ TT = {
 }
 
 DESTRUCTION = {"Shadow Bolt", "Immolate", "Searing Pain", "Soul Fire", "Shadowburn", "Conflagrate", "Incinerate"}
-DOT_CRIT_PANDEMIC = {"Corruption", "Bane of Agony", "Bane of Doom", "Drain Life", "Siphon Life", "Wrack"}
+DOT_CRIT_PANDEMIC = {"Corruption", "Bane of Agony", "Bane of Doom", "Drain Life", "Drain Soul", "Siphon Life", "Wrack"}
+WRACK_DOTS = ("Corruption", "Siphon Life", "Bane of Agony")  # client text of Wrack
+CHANNELS = ("Drain Life", "Drain Soul", "Wrack")
 
 # Pets (not in the client). Classic ranks: (learned level, min, max).
 FIREBOLT = [(1, 7, 10), (8, 14, 17), (18, 25, 29), (28, 36, 41), (38, 52, 59), (48, 68, 77), (58, 83, 97)]
 LASH = [(20, 33), (28, 44), (36, 60), (44, 73), (52, 87), (60, 99)]
 DEMON_MELEE = {"imp": 0.0, "voidwalker": 0.8, "succubus": 1.0, "felhunter": 0.9}
+ISB_SECONDS = 12  # Improved Shadow Bolt debuff duration (F, talent tooltip)
 PET_HIT_PER_LEVEL = 100 / 60  # generic pet melee average hit per level, 2.0 s swing (A)
 
 
@@ -200,10 +235,10 @@ class Warlock:
             m *= 1 + self.tr("Improved Corruption") * TT["Improved Corruption"][1]
         if name == "Bane of Agony":
             m *= 1 + self.tr("Improved Bane of Agony") * TT["Improved Bane of Agony"]
-        if name in ("Drain Life", "Wrack"):
+        if name in CHANNELS:
             if name == "Drain Life":
                 m *= 1 + self.tr("Improved Drains") * TT["Improved Drains"]
-            n = sum(1 for d in ("Corruption", "Siphon Life", "Bane of Agony") if self.dot_up(d))
+            n = sum(1 for d in WRACK_DOTS if self.dot_up(d))
             m *= 1 + n * self.tr("Soul Siphon") * TT["Soul Siphon"]
         return m
 
@@ -251,6 +286,18 @@ class Warlock:
         if s["name"] in DESTRUCTION:
             c *= 1 - self.tr("Cataclysm") * TT["Cataclysm"]
         return c
+
+    def life_tap_gain(self):
+        lt = self.spell("Life Tap")
+        if not lt:
+            return 0.0
+        gain, _ = self.val(lt, lt["effects"][0])
+        return (gain + self.ch.spi) * (1 + self.tr("Improved Life Tap") * TT["Improved Life Tap"])
+
+    def cast_seconds(self, s, ct):
+        """Time one cast takes including the share of a Life Tap that pays for its mana."""
+        gain = self.life_tap_gain()
+        return ct + (self.mana_cost(s) / gain * self.gcd() if gain else 0.0)
 
     def haste(self):
         h = self.ch.haste
@@ -300,32 +347,47 @@ class Warlock:
         tick, _ = self.val(s, e)
         tick = (tick + self.spw(school) * (e.get("EffectBonusCoefficient") or 0)) * scale
         gen = self.dots.get(name, {}).get("gen", 0) + 1
-        self.dots[name] = {"gen": gen, "left": ticks, "tick": tick, "period": period, "school": school,
+        self.dots[name] = {"gen": gen, "tok": 0, "tick": tick, "period": period, "school": school,
                            "end": self.sim.t + ticks * period}
-        self.sim.at(self.sim.t + self.tick_delay(name, period), self.dot_tick, name, gen)
+        self.schedule_tick(name, self.tick_delay(name, period))
 
     def tick_delay(self, name, period):
-        if name in ("Corruption", "Siphon Life", "Bane of Agony") and self.wrack_until > self.sim.t:
+        if name in WRACK_DOTS and self.wrack_until > self.sim.t:
             return period / 2
         return period
 
-    def dot_tick(self, name, gen):
+    def schedule_tick(self, name, delay):
+        """Schedule the next tick of a DoT if it still falls inside the DoT's duration; an
+        earlier schedule of the same DoT is dropped."""
+        d = self.dots[name]
+        d["tok"] += 1
+        d["next"] = self.sim.t + delay
+        if d["next"] <= d["end"] + 1e-9:
+            self.sim.at(d["next"], self.dot_tick, name, d["gen"], d["tok"])
+
+    def wrack_speed(self, factor):
+        """Wrack starts (0.5) or ends (2.0): the tick timer of each affected DoT runs at double
+        speed during the channel, the tick in progress included; the duration does not change."""
+        for name in WRACK_DOTS:
+            d = self.dots.get(name)
+            if d and self.sim.t < d["next"] <= d["end"] + 1e-9:
+                self.schedule_tick(name, (d["next"] - self.sim.t) * factor)
+
+    def wrack_end(self):
+        if self.wrack_until <= self.sim.t:
+            self.wrack_speed(2.0)
+
+    def dot_tick(self, name, gen, tok):
         d = self.dots.get(name)
-        if not d or d["gen"] != gen or d["left"] <= 0:
+        if not d or d["gen"] != gen or d["tok"] != tok:
             return
-        d["left"] -= 1
         amt = d["tick"] * self.mult(name, d["school"])
         if self.sim.rng.chance(self.crit_chance(name, d["school"])):
             amt *= self.crit_mult(name)
         self.sim.deal(name, amt)
         if name == "Corruption" and self.tr("Nightfall") and self.sim.rng.chance(self.tr("Nightfall") * TT["Nightfall"]):
             self.trance = True
-        if d["left"] > 0:
-            delay = self.tick_delay(name, d["period"])
-            d["end"] = self.sim.t + d["left"] * delay
-            self.sim.at(self.sim.t + delay, self.dot_tick, name, gen)
-        else:
-            d["end"] = self.sim.t
+        self.schedule_tick(name, self.tick_delay(name, d["period"]))
 
     # ---------- pets ----------
     def pet_mult(self, school):
@@ -390,6 +452,12 @@ class Warlock:
     def ready(self, name):
         return self.cds.get(name, -1) <= self.sim.t
 
+    def dot_dps(self, name):
+        """Expected damage per second of a DoT that is up, crits included."""
+        d = self.dots[name]
+        crit = min(100, self.crit_chance(name, d["school"])) / 100
+        return d["tick"] * self.mult(name, d["school"]) / d["period"] * (1 + crit * (self.crit_mult(name) - 1))
+
     def filler_value(self, name):
         """Expected damage per second of cast time for choosing the filler."""
         s = self.spell(name)
@@ -397,32 +465,78 @@ class Warlock:
             return None, 0
         school = self.school(s)
         e = core.damage_effect(s)
+        bonus = self.spw(school) * (e.get("EffectBonusCoefficient") or 0)  # spell power part of one hit or tick
+        crit = min(100, self.crit_chance(name, school)) / 100
+        crit_f = 1 + crit * (self.crit_mult(name) - 1)
         if name == "Wrack":
             per, _ = self.val(s, e)
-            dot_bonus = sum(d["tick"] / d["period"] for k, d in self.dots.items()
-                            if k in ("Corruption", "Siphon Life", "Bane of Agony") and self.dot_up(k))
-            return s, (per * self.mult(name, school) + dot_bonus)
-        if name == "Drain Life":
+            T = s["duration_ms"] / 1000
+            per = (per + bonus) / ((e.get("EffectAuraPeriod") or 1000) / 1000) * crit_f
+            taps = T / self.cast_seconds(s, T)  # share of the time left after paying the mana
+            # While Wrack channels, Corruption, Siphon Life and Bane of Agony tick twice as often
+            # and keep their duration: each one that is up deals its damage per second once
+            # more, for as much of the channel as it lasts.
+            dot_bonus = sum(self.dot_dps(k) * min(1.0, (d["end"] - self.sim.t) / T)
+                            for k, d in self.dots.items() if k in WRACK_DOTS and self.dot_up(k))
+            return s, (per * self.mult(name, school) + dot_bonus) * taps
+        if name in ("Drain Life", "Drain Soul"):
             per, _ = self.val(s, e)
-            return s, per / ((e.get("EffectAuraPeriod") or 1000) / 1000) * self.mult(name, school)
+            T = s["duration_ms"] / 1000
+            per = (per + bonus) / ((e.get("EffectAuraPeriod") or 1000) / 1000) * crit_f
+            return s, per * self.mult(name, school) * T / self.cast_seconds(s, T)
         avg, _ = self.val(s, e)
-        crit = min(100, self.crit_chance(name, school)) / 100
-        dmg = avg * self.mult(name, school) * (1 + crit * (self.crit_mult(name) - 1))
+        dmg = (avg + bonus) * self.mult(name, school) * crit_f
         if name == "Incinerate" and self.dot_up("Immolate"):
             dmg *= 1 + s["effects"][1]["EffectBasePointsF"] / 100
-        v = dmg / max(self.gcd(), self.cast_time(s))
+        ct = self.cast_seconds(s, max(self.gcd(), self.cast_time(s)))
+        v = dmg / ct
+        if name == "Shadow Bolt" and self.tr("Improved Shadow Bolt"):
+            # A crit also (re)starts Improved Shadow Bolt: count the seconds of the debuff it
+            # adds on the warlock's Shadow damage (the DoTs that are up and the bolts themselves).
+            added = max(0.0, ISB_SECONDS - max(0.0, self.buffs.get("isb", -1) - (self.sim.t + ct)))
+            held, self.trance = self.trance, False  # the bolts that follow are hard casts
+            normal = dmg / self.cast_seconds(s, max(self.gcd(), self.cast_time(s)))
+            self.trance = held
+            shadow = normal + sum(d["tick"] * self.mult(k, d["school"]) / d["period"]
+                             for k, d in self.dots.items() if d["school"] == "shadow" and self.dot_up(k))
+            if self.up("isb"):
+                shadow /= 1 + self.tr("Improved Shadow Bolt") * TT["Improved Shadow Bolt"]
+            v += crit * added * self.tr("Improved Shadow Bolt") * TT["Improved Shadow Bolt"] * shadow / ct
         if name == "Searing Pain" and self.tr("Demonic Brand") and self.pet:
             # Searing Pain as filler keeps the pet branded: count that pet damage too.
             v += (66.5 * self.level / 60 + 0.078 * self.sp) * self.pet_mult("fire") / 2.0
         return s, v
+
+    def best_filler(self):
+        best, bv = None, 0
+        for name in ("Shadow Bolt", "Searing Pain", "Incinerate", "Drain Life", "Drain Soul", "Wrack"):
+            s, v = self.filler_value(name)
+            if s and v > bv:
+                best, bv = (name, s), v
+        return best, bv
+
+    def immolate_value(self):
+        """Expected damage of one Immolate (hit and all ticks) per second of cast time, on the
+        same scale as `filler_value`."""
+        s = self.spell("Immolate")
+        school = self.school(s)
+        crit = min(100, self.crit_chance("Immolate", school)) / 100
+        crit_f = 1 + crit * (self.crit_mult("Immolate") - 1)
+        de = [e for e in s["effects"] if e["Effect"] == core.SCHOOL_DAMAGE][0]
+        te = core.damage_effect(s)
+        hit = (self.val(s, de)[0] + self.spw(school) * (de.get("EffectBonusCoefficient") or 0))             * (1 + self.tr("Aftermath") * TT["Aftermath"])
+        period = (te.get("EffectAuraPeriod") or 3000) / 1000
+        ticks = max(1, round(s["duration_ms"] / 1000 / period))
+        tick = self.val(s, te)[0] + self.spw(school) * (te.get("EffectBonusCoefficient") or 0)
+        dmg = (hit + ticks * tick) * self.mult("Immolate", school) * crit_f
+        return dmg / self.cast_seconds(s, max(self.gcd(), self.cast_time(s)))
 
     def choose(self):
         """Priority list limited to spells known at this level."""
         remain = self.sim.end - self.sim.t
         if self.racial and self.ready("racial"):
             return ("racial", None)
-        if self.trance and self.spell("Shadow Bolt"):
-            return ("Shadow Bolt", self.spell("Shadow Bolt"))
+        best, bv = self.best_filler()
         for name in ("Death Coil", "Shadowburn"):
             s = self.spell(name)
             if s and self.ready(name):
@@ -431,6 +545,8 @@ class Warlock:
             return ("Conflagrate", self.spell("Conflagrate"))
         bane = "Bane of Doom" if self.spec != "affliction" and self.spell("Bane of Doom") and remain >= 60 else "Bane of Agony"
         dots = [bane, "Corruption", "Siphon Life", "Immolate"]
+        if self.spell("Immolate") and not self.tr("Conflagrate") and self.immolate_value() < bv:
+            dots.remove("Immolate")  # the filler is worth more than the time and mana of the cast
         for name in dots:
             s = self.spell(name)
             if not s:
@@ -444,13 +560,20 @@ class Warlock:
                 if name == "Bane of Agony" and self.dot_up("Bane of Doom"):
                     continue
                 return (name, s)
-        if self.spell("Soul Fire") and self.ready("Soul Fire"):
+        if self.trance and self.spell("Shadow Bolt")                 and self.filler_value("Shadow Bolt")[1] >= self.filler_value("Wrack")[1]:
+            # Shadow Trance does not run out here (A): the instant bolt comes after the DoT
+            # recasts and waits while Wrack is worth more.
+            return ("Shadow Bolt", self.spell("Shadow Bolt"))
+        if self.spell("Soul Fire") and self.ready("Soul Fire") and self.filler_value("Soul Fire")[1] >= bv:
             return ("Soul Fire", self.spell("Soul Fire"))
-        best, bv = None, 0
-        for name in ("Shadow Bolt", "Searing Pain", "Incinerate", "Drain Life", "Wrack"):
-            s, v = self.filler_value(name)
-            if s and v > bv:
-                best, bv = (name, s), v
+        if best and best[0] in CHANNELS:
+            # A DoT that would run out in the first half of the channel is recast before it:
+            # cutting off r seconds of the DoT costs less than leaving it down for T - r.
+            T = best[1]["duration_ms"] / 1000
+            for name in dots:
+                s, d = self.spell(name), self.dots.get(name)
+                if s and d and 0 < d["end"] - self.sim.t < T / 2 and remain > s["duration_ms"] / 2000 + T:
+                    return (name, s)
         return best
 
     def act(self):
@@ -469,10 +592,8 @@ class Warlock:
             return
         cost = self.mana_cost(s)
         if cost > self.mana:
-            lt = self.spell("Life Tap")
-            if lt:
-                gain, _ = self.val(lt, lt["effects"][0])
-                gain = (gain + self.ch.spi) * (1 + self.tr("Improved Life Tap") * TT["Improved Life Tap"])
+            gain = self.life_tap_gain()
+            if gain:
                 self.mana = min(self.max_mana, self.mana + gain)
                 sim.cast("Life Tap")
                 sim.at(sim.t + self.gcd(), self.act)
@@ -481,16 +602,18 @@ class Warlock:
             return
         self.spend(cost)
         ct = self.cast_time(s)
-        if name in ("Drain Life", "Wrack"):
+        if name in CHANNELS:
             ct = s["duration_ms"] / 1000
         cd = max(s["cooldown_ms"], s["category_cooldown_ms"]) / 1000
         if cd:
             self.cds[name] = sim.t + cd
-        if name == "Wrack":
-            self.wrack_until = sim.t + ct
-            self.start_channel(name, s, ct)
-        elif name == "Drain Life":
-            self.start_channel(name, s, ct)
+        if name in CHANNELS:
+            if not self.start_channel(name, s, ct):
+                ct = 0.0  # resisted: no channel, only the global cooldown is spent
+            elif name == "Wrack":
+                self.wrack_until = sim.t + ct
+                self.wrack_speed(0.5)
+                sim.at(self.wrack_until, self.wrack_end)
         else:
             sim.at(sim.t + ct, self.land, name, s)
         sim.at(sim.t + max(ct, self.gcd()), self.act)
@@ -499,14 +622,14 @@ class Warlock:
         e = core.damage_effect(s)
         per = (e.get("EffectAuraPeriod") or 1000) / 1000
         n = int(round(dur / per))
-        if core.spell_roll(self.sim.rng, self.ch) == "miss":
-            self.sim.cast(name)
-            return
         self.sim.cast(name)
+        if core.spell_roll(self.sim.rng, self.ch) == "miss":
+            return False
         tick, _ = self.val(s, e)
         tick += self.spw(self.school(s)) * (e.get("EffectBonusCoefficient") or 0)
         for i in range(1, n + 1):
             self.sim.at(self.sim.t + i * per, self.channel_tick, name, tick, "shadow")
+        return True
 
     def channel_tick(self, name, tick, school):
         amt = tick * self.mult(name, school)
@@ -522,7 +645,7 @@ class Warlock:
             self.trance = False
             out = self.direct(name, s, core.damage_effect(s), school)
             if out == "crit" and self.tr("Improved Shadow Bolt"):
-                self.buffs["isb"] = self.sim.t + 12
+                self.buffs["isb"] = self.sim.t + ISB_SECONDS
         elif name == "Immolate":
             if core.spell_roll(self.sim.rng, self.ch) == "miss":
                 self.sim.cast(name)

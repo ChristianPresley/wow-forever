@@ -160,7 +160,7 @@
 .md-typeset .dps-table th.calc-num, .md-typeset .dps-inputs th.calc-num { text-align: right; }
 .md-typeset .heal-ledger :is(th, td), .md-typeset .dps-spec table :is(th, td) { padding-inline: .55em; }
 .md-typeset .dps-table td .pill { margin-right: .45em; }
-.md-typeset .dps-table .dps-spec-btn { text-align: left; }
+.md-typeset .dps-table .dps-spec-btn { text-align: left; white-space: nowrap; }
 /* the breakdown toggle in the simulated table is plain text, not a callout */
 .md-typeset .dps-calc details.dps-breakdown, .md-typeset .dps-calc details.dps-breakdown > summary { border: 0 !important; background: none !important; box-shadow: none !important; }
 .md-typeset .dps-calc details.dps-breakdown > summary { display: inline; padding: 0 !important; }
@@ -231,3 +231,69 @@
 .md-typeset .dps-filters .ff .ff-switch { display: inline-flex; gap: .55em; }
 .md-typeset .dps-filters .ff .ff-label { display: block; }
 .md-typeset .dps-filters .ff .ff-chip, .md-typeset .dps-filters .ff .ff-seg-opt { display: flex; gap: 0; }
+
+/* Charts (javascripts/calc-charts.js): line and stacked-area charts for the level simulation.
+   Six categorical series colours in a fixed order, stepped separately for the dark scheme and
+   checked for colour-blind separation on both page surfaces. Text always wears text colours. */
+.md-typeset .fc-chart { --viz-1: #2a78d6; --viz-2: #eb6834; --viz-3: #1baf7a; --viz-4: #eda100; --viz-5: #e87ba4; --viz-6: #008300;
+  margin: var(--fc-space-4) 0; font-size: var(--fc-fs-sm); }
+[data-md-color-scheme="slate"] .md-typeset .fc-chart { --viz-1: #3987e5; --viz-2: #d95926; --viz-3: #199e70; --viz-4: #c98500; --viz-5: #d55181; --viz-6: #0ca30c; }
+.md-typeset .fc-chart-plot { position: relative; }
+.md-typeset .fc-chart svg { display: block; max-width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
+.md-typeset .fc-chart svg:focus-visible { outline: 2px solid var(--fc-focus, currentColor); outline-offset: 2px; border-radius: var(--fc-radius-s); }
+.md-typeset .fc-chart-grid { stroke: var(--fc-border); stroke-width: 1; }
+.md-typeset .fc-chart-tick, .md-typeset .fc-chart-axis { fill: var(--fc-text-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.md-typeset .fc-chart-end { fill: var(--fc-text); font-size: 11.5px; }
+.md-typeset .fc-chart-marker { stroke: var(--fc-gold); stroke-width: 2; }
+.md-typeset .fc-chart-hair { stroke: var(--fc-border-strong); stroke-width: 1; }
+.md-typeset .fc-chart-ctx { fill: none; stroke: var(--fc-border-strong); stroke-width: 1; opacity: .3; }
+.md-typeset .fc-chart-line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.md-typeset .fc-chart-dot { stroke: var(--md-default-bg-color); stroke-width: 2; }
+.md-typeset .fc-chart-area { stroke: var(--md-default-bg-color); stroke-width: 1.5; stroke-linejoin: round; fill-opacity: .82; }
+.md-typeset .fc-viz-stroke-0 { stroke: var(--viz-1); } .md-typeset .fc-viz-stroke-1 { stroke: var(--viz-2); } .md-typeset .fc-viz-stroke-2 { stroke: var(--viz-3); }
+.md-typeset .fc-viz-stroke-3 { stroke: var(--viz-4); } .md-typeset .fc-viz-stroke-4 { stroke: var(--viz-5); } .md-typeset .fc-viz-stroke-5 { stroke: var(--viz-6); }
+.md-typeset .fc-viz-fill-0 { fill: var(--viz-1); } .md-typeset .fc-viz-fill-1 { fill: var(--viz-2); } .md-typeset .fc-viz-fill-2 { fill: var(--viz-3); }
+.md-typeset .fc-viz-fill-3 { fill: var(--viz-4); } .md-typeset .fc-viz-fill-4 { fill: var(--viz-5); } .md-typeset .fc-viz-fill-5 { fill: var(--viz-6); }
+.md-typeset .fc-viz-bg-0 { background: var(--viz-1); } .md-typeset .fc-viz-bg-1 { background: var(--viz-2); } .md-typeset .fc-viz-bg-2 { background: var(--viz-3); }
+.md-typeset .fc-viz-bg-3 { background: var(--viz-4); } .md-typeset .fc-viz-bg-4 { background: var(--viz-5); } .md-typeset .fc-viz-bg-5 { background: var(--viz-6); }
+.md-typeset .fc-chart-legend { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; margin: 0 0 var(--fc-space-2); padding: 0; list-style: none; color: var(--fc-text); }
+.md-typeset .fc-chart-legend li { display: inline-flex; align-items: center; gap: .45em; margin: 0; }
+.md-typeset .fc-chart-legend small { color: var(--fc-text-muted); font-variant-numeric: tabular-nums; }
+.md-typeset .fc-chart-key { display: inline-block; flex: none; width: 1.1em; height: 3px; border-radius: 2px; }
+.md-typeset .fc-chart-box { display: inline-block; flex: none; width: .8em; height: .8em; border-radius: 2px; }
+.md-typeset .fc-chart-note { margin: 0 0 var(--fc-space-2); font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .fc-chart-tip { position: absolute; z-index: 3; min-width: 9rem; max-width: 17rem; padding: .4rem .6rem; pointer-events: none; border: 1px solid var(--fc-border-strong);
+  border-radius: var(--fc-radius); background: var(--md-default-bg-color); color: var(--fc-text); box-shadow: 0 4px 14px rgb(0 0 0 / .25); font-size: var(--fc-fs-xs); line-height: 1.5; }
+.md-typeset .fc-chart-tip[hidden] { display: none; }
+.md-typeset .fc-chart-tip p { margin: 0; }
+.md-typeset .fc-chart-tip-h { font-weight: 600; color: var(--fc-text-muted); }
+.md-typeset .fc-chart-tip-row { display: flex; align-items: center; gap: .4em; white-space: nowrap; }
+.md-typeset .fc-chart-tip-row strong { font-variant-numeric: tabular-nums; }
+.md-typeset .fc-chart-tip-row span { overflow: hidden; text-overflow: ellipsis; color: var(--fc-text-muted); }
+
+/* Trajectory block above the level table, and the compare button in each row */
+.md-typeset .dps-traj { margin: var(--fc-space-4) 0; padding: var(--fc-space-4); border: 1px solid var(--fc-border); border-radius: var(--fc-radius); }
+.md-typeset .dps-traj-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--fc-space-2) var(--fc-space-4); }
+.md-typeset .dps-traj-head h3 { margin: 0; font-size: var(--fc-fs-body); }
+.md-typeset .dps-traj-head p { margin: 0; font-size: var(--fc-fs-sm); color: var(--fc-text-muted); }
+.md-typeset .dps-traj details, .md-typeset .dps-spec details.dps-levels { margin: var(--fc-space-2) 0 0; padding: 0 var(--fc-space-3); border: 1px solid var(--fc-border); border-radius: var(--fc-radius);
+  box-shadow: none; background: none; font-size: var(--fc-fs-sm); }
+.md-typeset .dps-traj details > summary, .md-typeset .dps-spec details.dps-levels > summary { padding: var(--fc-space-2) 0 var(--fc-space-2) 2.4em; margin: 0; background: none; border: 0; font-weight: 600; cursor: pointer; }
+.md-typeset .dps-traj .dps-scroll, .md-typeset .dps-spec details.dps-levels .dps-scroll { max-height: 24rem; overflow-y: auto; }
+.md-typeset .dps-pin { font: inherit; font-size: var(--fc-fs-xs); cursor: pointer; padding: .1em .6em; border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius-full);
+  background: none; color: var(--fc-text); white-space: nowrap; }
+.md-typeset .dps-pin[aria-pressed="true"] { background: var(--fc-gold); border-color: var(--fc-gold); color: #1c1503; font-weight: 600; }
+.md-typeset .dps-pin:focus-visible { outline: 2px solid var(--fc-focus, currentColor); outline-offset: 2px; }
+.md-typeset .dps-linkbtn { font: inherit; cursor: pointer; padding: .2em .8em; border: 1px solid var(--fc-border-strong); border-radius: var(--fc-radius); background: none; color: var(--fc-text); }
+.md-typeset .dps-linkbtn:disabled { opacity: .45; cursor: default; }
+.md-typeset .dps-table:has(.dps-pin) .dps-bar { width: 3.2rem; }
+.md-typeset .dps-up { color: var(--fc-adm-success-text); } .md-typeset .dps-down { color: var(--fc-adm-danger-text); }
+
+/* Coverage audit (tools/levelsim/audit.py) */
+.md-typeset .dps-audit-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr)); gap: var(--fc-space-3); margin: var(--fc-space-4) 0; }
+.md-typeset .dps-audit-tile { display: grid; align-content: start; gap: .15rem; padding: var(--fc-space-3) var(--fc-space-4); border: 1px solid var(--fc-border); border-radius: var(--fc-radius); background: var(--fc-surface-1); }
+.md-typeset .dps-audit-tile strong { font-size: 1.3rem; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.md-typeset .dps-audit-tile span { font-size: var(--fc-fs-xs); font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--fc-text-muted); }
+.md-typeset .dps-audit-tile small { font-size: var(--fc-fs-xs); color: var(--fc-text-muted); }
+.md-typeset .dps-tag--ok { border-color: var(--fc-adm-success); color: var(--fc-adm-success-text); }
+.md-typeset .dps-tag--gap { border-color: var(--fc-adm-danger); color: var(--fc-adm-danger-text); }

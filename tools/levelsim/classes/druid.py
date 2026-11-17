@@ -12,13 +12,20 @@ Rotations (only abilities known at that level):
   Moonkin Form from 40 (Balance):
     Moonfire if not ticking > Insect Swarm if not ticking (talent) > filler, where the
     filler is Wrath or Starfire at any known rank, chosen by sustained damage over the
-    remaining fight (mage.plan_options, A). Moonfire and Insect Swarm are cast when their
-    damage net of the mana's value beats the alternative. When the best filler cannot be
-    sustained the Druid casts until empty, then rests (unarmed melee, full regen) until
-    95% mana or the casting share of the fight is covered. Clearcasting is spent on
-    Starfire.
+    remaining fight (A). Moonfire and Insect Swarm are cast when their damage net of the
+    mana's value beats the alternative. When the best filler cannot be sustained the Druid
+    casts until empty, then rests (unarmed melee, full regen) until 95% mana or the casting
+    share of the fight is covered. Clearcasting is spent on Starfire.
+    Two mana policies (A, the pattern of mage.py): "simple" plans the filler alone
+    (mage.plan_options) and checks each DoT against resting; "plan" plans the fillers, both
+    DoTs and resting together (mage.mana_price: one mana price for the whole remaining
+    fight, a DoT is cast when it beats every filler and resting at that price, and the
+    Druid rests between DoTs when the plan has no room for a filler). Neither is best at
+    every level, so `simulate` runs both and reports the better one (`best_policy`); the
+    result names it in "mana_policy".
   Feral: levels 1-9 caster (Wrath, Moonfire); 10-19 Bear Form (auto-attack, Maul when rage
-    allows); 20+ Cat Form from behind:
+    allows); 20+ Cat Form from behind, starting in Prowl:
+    Ravage once as the opener (from 32) >
     Tiger's Fury > Shifting Power below 40 Energy > Rip at 5 combo points when it is not
     ticking and 10 s or more remain > Ferocious Bite at 5 combo points > Rake if not ticking >
     best builder (Shred or Claw, by damage per Energy).
@@ -33,6 +40,14 @@ Server-side rules and values not in the client (tags):
   - Form attacks use the unarmed fist damage rescaled to the form speed: Cat 1.0 s, Bear 2.5 s (A).
   - Rage: 7.5 x damage / rage conversion per melee hit (CU, Classic formula).
   - Energy 10 per second (core), Cat GCD 1.0 s (CU), Energy starts full (A).
+  - Opener: the cat fight starts in Prowl behind the target (A, as the Rogue module starts
+    from stealth). Ravage (435% weapon damage plus its flat bonus, 60 Energy, 1 combo point;
+    client) is used once at 0 s in place of the first builder. Tiger's Fury is pressed with
+    it and does not break Prowl (A). Measured over the 180 s fight (400 fights, Night Elf):
+    +0.2% to +1.5% from level 32, both gear modes. Pounce (36: 50 Energy, a 2 s stun and
+    an 18 s bleed of 19/25/31 per 3 s, 1 combo point; client) was tested as the opener and
+    is not used: its bleed total (114-186) is far below one Ravage, and opening with it
+    was 0.4% to 1.5% below opening with a plain builder.
   - Rip gets 6% of AP per combo point up to 4 over its duration; Ferocious Bite 3% of AP per
     combo point (CU, Classic 1.12).
   - Omen of Clarity: 10% per damaging spell, 2 procs per minute in melee (CU), 10 s internal
@@ -54,9 +69,9 @@ Server-side rules and values not in the client (tags):
 import core
 
 try:
-    from .mage import plan_options
+    from .mage import mana_price, plan_options
 except ImportError:  # imported as a top-level module by the tests
-    from mage import plan_options
+    from mage import mana_price, plan_options
 
 CLASS = "druid"
 SPECS = {"balance": "Balance", "feral": "Feral (Cat)", "restoration": "Restoration"}
@@ -88,6 +103,48 @@ _TT = {
     "Predatory Strikes": 50.0, "Leader of the Pack": 3.0, "Natural Instinct": 10.0, "Rend and Tear": 3.0,
     "Shredding Attacks": 6.0, "Natural Shapeshifter": 10.0,
 }
+
+
+# Mana policies of the caster rotation (A), as in mage.py: "simple" plans the filler alone
+# (mage.plan_options) and gates each DoT on its own; "plan" plans fillers, DoTs and rest
+# together (mage.mana_price). `simulate` runs both and reports the better one.
+POLICIES = ("plan", "simple")
+POLICY = {"mode": "simple"}
+
+
+# Feral choices that `simulate` runs both ways, reporting the better one (A).
+# builder: None picks Shred or Claw by damage per Energy; "Claw" keeps Claw. Damage per Energy
+# leaves out the combo point each builder gives, and Claw gives one per 40 Energy against 60.
+# low_form: levels 10-19 (Bear Form known, Cat Form not yet): "bear", or "caster" to stay in
+# caster form with the Wrath/Moonfire rotation of levels 1-9.
+FERAL = {"builder": None, "low_form": "bear"}
+
+
+def _white_factor(ch, extra_crit=0.0):
+    """Expected damage of an auto-attack as a share of its average hit: the attack table of
+    core.melee_roll (miss, dodge, glancing blow, crit) instead of a flat 0.85."""
+    import os
+    if os.environ.get("K_MF") != "1":
+        return 0.85
+    miss = max(0.0, core.A("melee_miss_same_level") - ch.hit)
+    dodge, glance = core.A("dodge_same_level"), core.A("glance_same_level")
+    crit = min(max(0.0, ch.melee_crit + extra_crit), max(0.0, 100 - miss - dodge - glance))
+    return (100 - miss - dodge - glance * (1 - core.A("glance_damage")) + crit * (core.A("melee_crit_mult") - 1)) / 100
+
+
+def best_policy(run):
+    """run() -> core.run_many output under the current POLICY. Returns the better of the two."""
+    best = None
+    for mode in POLICIES:
+        POLICY["mode"] = mode
+        try:
+            out = run()
+        finally:
+            POLICY["mode"] = "simple"
+        if best is None or out["dps_mean"] > best["dps_mean"]:
+            best = out
+            best["mana_policy"] = mode
+    return best
 
 
 def talents_at(spec, level):
@@ -123,6 +180,7 @@ def _rage_conv(level):
 class Fight:
     def __init__(self, sim, spec, race, level, inputs):
         self.sim, self.spec, self.level, self.inp = sim, spec, level, inputs
+        self.policy = POLICY["mode"]
         ch = self.ch = core.Character(CLASS, race, level, talents_at(spec, level))
         core.apply_passive_racials(ch, race)
         self.tv = tv = lambda n: ch.tr(n) * _TT.get(n, 0.0)
@@ -142,7 +200,7 @@ class Fight:
         self.extra_crit = 0.0
         if spec == "feral" and level >= 20:
             self.form = "cat"
-        elif spec == "feral" and level >= 10:
+        elif spec == "feral" and level >= 10 and FERAL["low_form"] == "bear":
             self.form = "bear"
         elif spec == "balance" and ch.tr("Moonkin Form"):
             self.form = "moonkin"
@@ -242,6 +300,7 @@ class Fight:
         self.wraths, self.sfs = _ranks("Wrath", lv), _ranks("Starfire", lv)
         self.resting = False
         self.next_swing = 0.0
+        self.lam, self.rest_gain, self.lean, self._opts = 0.0, 0.0, False, []
         self.inp["mana_budget_rotation"] = "A"
         if self.form == "moonkin":
             mk = _rank("Moonkin Form", lv)
@@ -323,7 +382,7 @@ class Fight:
     def melee_dps(self):
         avg, speed = self.ch.weapon("mh")
         ap = self.caster_ap()
-        return (avg + ap / 14 * speed) / speed * self.ch.haste * self.dmg_all * 0.85
+        return (avg + ap / 14 * speed) / speed * self.ch.haste * self.dmg_all * _white_factor(self.ch, self.extra_crit)
 
     def exp_hit(self, spell, eff=None, mult=1.0, extra_crit=0.0):
         e = eff or core.damage_effect(spell)
@@ -346,14 +405,74 @@ class Fight:
             out.append((("Starfire", sf), self.exp_hit(sf), secs, c, self.mana >= c))
         return out
 
+    def plan(self, opts, pool):
+        """Filler choice for the rest of the fight: (key, f, affordable, need); the mana
+        price is kept in self.lam. "simple": the filler alone (mage.plan_options). "plan":
+        the fillers, the DoTs in `pool` ((damage, seconds, cost, duration), each at most
+        seconds / duration of the time) and resting share the time and the mana
+        (mage.mana_price, same steps as mage.CasterSim.plan)."""
+        rc, rf, w = self.regen_casting_ps(), self.regen_full_ps(), self.melee_dps()
+        self._opts, self.lean = opts, False
+        if self.policy == "simple" or not opts:
+            key, f, ok, need, self.lam = plan_options(opts, self.mana, 0.0, self.sim.end - self.t, rc, rf, w)
+            return key, f, ok, need
+        acts = [(dmg / secs, c / secs, 1.0) for _, dmg, secs, c, _ in opts]
+        acts += [(dmg / secs, c / secs, min(1.0, secs / max(secs, dur))) for dmg, secs, c, dur in pool]
+        times = [secs for _, secs, _, _ in pool]
+        rem = max(1.0, self.sim.end - self.t)
+        inflow = max(0.0, self.mana) / rem + rc
+        g = 1.0  # share of the rest time that earns full regen (5-second rule after each DoT cast)
+        for _ in range(3):
+            lam, x = mana_price(acts + [(w, -(rf - rc) * g, 1.0)], inflow)
+            casts = sum(xi / secs for xi, secs in zip(x[len(opts):-1], times))
+            g2 = max(0.0, x[-1] - 5.0 * casts) / x[-1] if x[-1] > 1e-6 else 1.0
+            if abs(g2 - g) < 0.05:
+                break
+            g = (g + g2) / 2
+        self.lam, self.rest_gain = lam, (rf - rc) * g
+        i = max(range(len(opts)), key=lambda i: (acts[i][0] - lam * acts[i][1], acts[i][0]))
+        f = 1.0 - x[-1]
+        self.lean = f < 1.0 and sum(x[:len(opts)]) < 0.02  # no room for a filler: rest between DoTs
+        spent = sum(xi * a[1] for xi, a in zip(x[:-1], acts))
+        return opts[i][0], f, opts[i][4], max(0.0, rem * (spent - f * rc))
+
     def worth(self, dmg, cost, secs):
-        """DoT check: damage net of the mana's value beats resting for the same time."""
+        """DoT check: damage net of the mana's value beats the alternative for the same time
+        (simple: resting; plan: every filler and resting, at the plan's mana price)."""
         if self.mana < cost:
             return False
-        if self.lam <= 0 or cost <= 0:
-            return True
-        base = self.melee_dps() + self.lam * self.regen_full_ps()
-        return dmg - self.lam * (cost - self.regen_casting_ps() * secs) >= base * secs
+        if self.policy == "simple":
+            if self.lam <= 0 or cost <= 0:
+                return True
+            base = self.melee_dps() + self.lam * self.regen_full_ps()
+            return dmg - self.lam * (cost - self.regen_casting_ps() * secs) >= base * secs
+        lam = self.lam
+        rest = self.melee_dps() + lam * self.rest_gain
+        if self.lean:  # the plan's rest gain already counts the casts between rests
+            return dmg - lam * cost >= rest * secs - 1e-9
+        alt = max([rest] + [d2 / s2 - lam * c2 / s2 for _, d2, s2, c2, _ in self._opts])
+        return dmg / secs - lam * cost / secs >= alt - 1e-9
+
+    def mf_plan(self):
+        """Moonfire for planning: (expected damage, cost, duration, direct effect, Improved Moonfire %)."""
+        ch = self.ch
+        imp = self.tv("Improved Moonfire")
+        direct = [e for e in self.mf["effects"] if e["Effect"] == core.SCHOOL_DAMAGE][0]
+        dot_e = [e for e in self.mf["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
+        dur = self.mf["duration_ms"] / 1000 + (3 if ch.tr("Nature's Splendor") else 0)
+        ticks = int(dur / (dot_e["EffectAuraPeriod"] / 1000) + 1e-6)
+        dmg = self.exp_hit(self.mf, direct, 1 + imp / 100, imp) + \
+            (dot_e["EffectBasePointsF"] + self.bonus(self.mf, dot_e)) * (1 + imp / 100) * self.spell_mult(True) * ticks
+        return dmg, core.cost(self.mf, ch.base_mana)[1] * max(0.0, 1 - self.tv("Moonglow") / 100), dur, direct, imp
+
+    def is_plan(self):
+        """Insect Swarm for planning: (expected damage, cost, duration)."""
+        ch = self.ch
+        dur = self.isw["duration_ms"] / 1000 + (2 if ch.tr("Nature's Splendor") else 0)
+        dot_e = [e for e in self.isw["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
+        dmg = (dot_e["EffectBasePointsF"] + self.bonus(self.isw, dot_e)) * self.spell_mult(True) \
+            * int(dur / (dot_e["EffectAuraPeriod"] / 1000) + 1e-6)
+        return dmg, core.cost(self.isw, ch.base_mana)[1] * max(0.0, 1 - self.tv("Moonglow") / 100), dur
 
     def melee_idle(self):
         """Unarmed auto-attack while out of mana or resting (A)."""
@@ -376,22 +495,19 @@ class Fight:
         moonglow = self.tv("Moonglow")
         ecl = self.eclipse if self.eclipse_exp > t else 0
         opts = self.options(ecl)
-        key, f, ok, need, self.lam = plan_options(opts, self.mana, 0.0, self.sim.end - t, self.regen_casting_ps(),
-                                                  self.regen_full_ps(), self.melee_dps())
+        gcd = self.gcd()
+        mfp = self.mf_plan() if self.mf else None
+        isp = self.is_plan() if self.isw else None
+        key, f, ok, need = self.plan(opts, [(p[0], gcd, p[1], p[2]) for p in (mfp, isp) if p])
         if self.resting:
             if not (f >= 1.0 or self.mana >= min(0.95 * self.max_mana, need)):
                 return self.melee_idle()
             self.resting = False
-        gcd = self.gcd()
+        if self.policy == "plan" and key is not None and not ok and f < 1.0 and not self.clearcast:
+            self.resting = True
+            return self.melee_idle()
         if self.mf and self.mf_until <= t:
-            imp = self.tv("Improved Moonfire")
-            direct = [e for e in self.mf["effects"] if e["Effect"] == core.SCHOOL_DAMAGE][0]
-            dot_e = [e for e in self.mf["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
-            dur = self.mf["duration_ms"] / 1000 + (3 if ch.tr("Nature's Splendor") else 0)
-            ticks = int(dur / (dot_e["EffectAuraPeriod"] / 1000) + 1e-6)
-            dmg = self.exp_hit(self.mf, direct, 1 + imp / 100, imp) + \
-                (dot_e["EffectBasePointsF"] + self.bonus(self.mf, dot_e)) * (1 + imp / 100) * self.spell_mult(True) * ticks
-            c = core.cost(self.mf, ch.base_mana)[1] * max(0.0, 1 - moonglow / 100)
+            dmg, c, dur, direct, imp = mfp
             if (self.clearcast or self.worth(dmg, c, gcd)) and self.pay(self.mf, moonglow):
                 self.sim.cast("Moonfire")
                 self.nuke("Moonfire", self.mf, 1 + imp / 100, imp, direct)
@@ -399,10 +515,7 @@ class Fight:
                 self.try_ooc()
                 return self.after(gcd)
         if self.isw and self.is_until <= t:
-            dur = self.isw["duration_ms"] / 1000 + (2 if ch.tr("Nature's Splendor") else 0)
-            dot_e = [e for e in self.isw["effects"] if e["EffectAura"] == core.PERIODIC_DAMAGE][0]
-            dmg = (dot_e["EffectBasePointsF"] + self.bonus(self.isw, dot_e)) * self.spell_mult(True) * int(dur / (dot_e["EffectAuraPeriod"] / 1000) + 1e-6)
-            c = core.cost(self.isw, ch.base_mana)[1] * max(0.0, 1 - moonglow / 100)
+            dmg, c, dur = isp
             if (self.clearcast or self.worth(dmg, c, gcd)) and self.pay(self.isw, moonglow):
                 self.sim.cast("Insect Swarm")
                 self.dot("Insect Swarm", self.isw, dur, "is_until", 1.0)
@@ -410,6 +523,8 @@ class Fight:
                 return self.after(gcd)
         if self.clearcast and self.sf:
             key, ok = ("Starfire", self.sf), True
+        elif self.lean:
+            return self.melee_idle()
         elif key is not None and not ok:
             if f < 1.0:
                 self.resting = True
@@ -462,10 +577,12 @@ class Fight:
         self.cp = 0
         self.maul_q = False
         self.rip_until = self.rake_until = -1.0
+        self.prowl = cat
         self.tf_until = -1.0
         r = lambda n: _rank(n, lv)
         self.claw, self.shred, self.rake = r("Claw"), r("Shred"), r("Rake")
         self.rip, self.fb, self.tf, self.maul = r("Rip"), r("Ferocious Bite"), None, r("Maul")
+        self.ravage = r("Ravage")
         tf = [s for s in core.ranks(CLASS, "Tiger's Fury") if s["base_level"] <= lv and s["cooldown_ms"]]
         self.tf = tf[-1] if tf else None
         self.sp_spell = core.ranks(CLASS, "Shifting Power")[0] if ch.tr("Shifting Power") else None
@@ -560,6 +677,13 @@ class Fight:
             self.cd["tf"] = t + self.tf["cooldown_ms"] / 1000
             self.tf_until = t + self.tf["duration_ms"] / 1000
             self.sim.cast("Tiger's Fury")
+        if self.prowl:  # the fight starts in Prowl behind the target (A): Ravage once
+            self.prowl = False
+            if self.ravage and e >= self.energy_cost(self.ravage):
+                self.inp["prowl_opener"] = "A"
+                self.set_en(e - self.energy_cost(self.ravage))
+                self.ability("Ravage", self.ravage)
+                return self.after(gcd)
         if self.sp_spell and self.ready("sp") and e < 40:
             c = core.cost(self.sp_spell, ch.base_mana)[1] * (1 - self.tv("Natural Shapeshifter") / 100)
             if self.mana >= c:
@@ -599,7 +723,7 @@ class Fight:
         # builder by damage per Energy
         best = None
         for spell, name, red in ((self.shred, "Shred", self.tv("Shredding Attacks")), (self.claw, "Claw", self.tv("Ferocity"))):
-            if not spell:
+            if not spell or FERAL["builder"] not in (None, name):
                 continue
             effs = spell["effects"]
             pct = sum(x["EffectBasePointsF"] for x in effs if x["Effect"] == core.WEAPON_PERCENT_DAMAGE) / 100
@@ -668,6 +792,34 @@ def simulate(spec, race, level, iterations, seed):
     def build(sim):
         Fight(sim, spec, race, level, inputs).start()
 
-    r = core.run_many(build, iterations, seed)
+    def casting():
+        r = best_policy(lambda: core.run_many(build, iterations, seed))
+        inputs["mana_policy_best_of"] = "A"
+        return r
+
+    if spec == "feral" and level >= 20:
+        r = core.run_many(build, iterations, seed)
+        if _rank("Shred", level) and _rank("Claw", level):
+            r = _feral_best(r, "builder", "Claw", lambda: core.run_many(build, iterations, seed))
+            inputs["cat_builder_best_of"] = "A"
+    elif spec == "feral" and level >= 10:
+        r = _feral_best(core.run_many(build, iterations, seed), "low_form", "caster", casting)
+        inputs["feral_form_best_of"] = "A"
+    else:
+        r = casting()
     r["inputs"] = inputs
     return r
+
+
+def _feral_best(first, knob, value, run):
+    """The better of `first` and run() with FERAL[knob] = value; the result names the choice."""
+    default = FERAL[knob]
+    FERAL[knob] = value
+    try:
+        other = run()
+    finally:
+        FERAL[knob] = default
+    if other["dps_mean"] > first["dps_mean"]:
+        other["feral_" + knob] = value
+        return other
+    return first

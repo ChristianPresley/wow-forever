@@ -27,6 +27,19 @@ Server-side rules and data the client lacks, tagged:
   one). The off-hand weapon swings on its own timer for 50% damage (C), white swings
   take the dual-wield miss penalty (C), off-hand hits can apply poison, and Mutilate's
   second hit uses the off-hand weapon at 50% (CU). The naked rules above are unchanged.
+- Weapon talents (crafted gear only; the unarmed fist is not a weapon type, A). Dual Wield
+  Specialization adds its tooltip % to off-hand weapon damage (F). Hack and Slash works per
+  hand, by the type of the weapon that attacks (A): a dagger or fist weapon adds its tooltip
+  crit % to that hand's attacks, a sword gives that hand's landed attacks its tooltip %
+  chance of an extra attack (F). The extra attack is one main-hand white swing that does
+  not reset the swing timer and cannot trigger another (CU, Classic Sword Specialization).
+  A mace ignores armor, which is nothing against a target with 0 armor. Yellow attacks
+  count as main-hand attacks. Lightning Reflexes (Dodge), Endurance (Sprint and Evasion
+  cooldowns), Composure (the Poised ability, not in the rotation), Camouflage, Elusiveness
+  and Preparation are defensive or utility and change nothing here.
+- Combat with a dagger in the main hand (gear.py picks one at some levels) may use Backstab:
+  it builds with whichever of Sinister Strike and Backstab has the higher expected damage
+  per Energy with the equipped weapon (A). Both give one combo point.
 - Energy 10/s (core CU), cap 100 + Vigor. Combo points capped at 5.
 - Eviscerate adds 3% AP per combo point (CU). Rupture adds 4% AP per combo point over
   its duration (A). Garrote adds 18% AP over its duration (CU).
@@ -38,6 +51,9 @@ Server-side rules and data the client lacks, tagged:
   5 stacks over 12 s. Forever AP coefficients 0.01 / 0.009 (C, Warcraft Tavern).
 - Death Mark: stores 12% of damage per combo point (Garrote/Rupture twice), cap
   (165 + 102 per extra point) + 4% AP per point, times 1 + crit (tooltip, F), for every rank (A).
+- Value gates (A): Slice and Dice is cast only when the white damage it adds is worth at
+  least an Eviscerate with the same combo points; Ghostly Strike is used only when it does at least the damage per Energy of
+  the spec's main builder; Death Mark only when its cap can beat a 5-point Eviscerate.
 - Openers: the fight starts from stealth. Ambush (or Garrote for Subtlety) once, with
   Premeditation when talented (A). Riposte, Setup, Remorseless Attacks, Improved Kidney
   Shot and Preparation do nothing here (the target does not attack or die) (A).
@@ -60,7 +76,8 @@ TOOLTIP = {
     "Blade Flurry": (20, 1), "Flash of Steel": (15, 5), "Adrenaline Rush": (100, 1),
     "Opportunity": (20, 5), "Improved Ambush": (45, 3), "Initiative": (100, 3), "Premeditation": (2, 1),
     "Serrated Blades": (30, 3), "Ghostly Strike": (125, 1), "Hemorrhage": (15, 1),
-    "Boot Knife": (100, 5), "Death Mark": (1, 1),
+    "Boot Knife": (100, 5), "Death Mark": (1, 1), "Hack and Slash": (5, 5),
+    "Dual Wield Specialization": (50, 2), "Dirty Deeds": (20, 2),
 }
 
 ORDERS = {
@@ -231,7 +248,7 @@ def build(p):
     mh, oh = p["mh"], p["oh"]
     cm = core.A("melee_crit_mult")
     leth_mult = cm + (cm - 1) * tal(tl, "Lethality") / 100
-    max_energy = 100 + tal(tl, "Vigor")
+    max_energy = ch.resource_cap(100 + tal(tl, "Vigor"))  # Expansive Mind (Gnome)
     ruth = tal(tl, "Ruthlessness")
     relentless = tal(tl, "Relentless Strikes")
     seal = tal(tl, "Seal Fate")
@@ -261,7 +278,7 @@ def build(p):
     if "evis" in cost:
         cost["evis"] -= fe
     if "gar" in cost:
-        cost["gar"] -= 10 * tl.get("Dirty Deeds", 0)
+        cost["gar"] -= tal(tl, "Dirty Deeds")
     strike = {k: _strike(ab[k]) for k in ("ss", "bs", "amb", "hemo") if k in ab}
     if "mut" in ab:
         trig = [e["trigger"] for e in ab["mut"]["effects"] if e.get("trigger")]
@@ -283,7 +300,23 @@ def build(p):
         gar_dur = ab["gar"]["duration_ms"] / 1000 + 9 * bsplat
         gar_ticks = int(gar_dur // 3)
     ip, dp = p["ip"], p["dp"]
+    oh_pct = 0.5 * (1 + tal(tl, "Dual Wield Specialization") / 100)
+    # Hack and Slash, per hand (index 0 main hand, 1 off hand): crit % and extra-attack %.
+    has = tal(tl, "Hack and Slash")
+    has_crit = [has if w and w["type"] in ("dagger", "fist") else 0.0 for w in (mh, oh)]
+    has_extra = [has if w and w["type"] == "sword" else 0.0 for w in (mh, oh)]
     use_bs_builder = spec in ("assassination", "subtlety") and "bs" in ab
+    if spec == "combat" and "bs" in ab and "ss" in ab and mh:
+        # Dagger in the main hand: Backstab or Sinister Strike by expected damage per Energy (A).
+        avg0 = (mh["min"] + mh["max"]) / 2 + max(0.0, ch.str + ch.agi + 2 * lv - 20 + p["gear_ap"]) / 14 * p["norm"]
+        crit0 = max(0.0, min(100.0, ch.melee_crit + has_crit[0]))
+
+        def per_energy(key, bonus, extra_crit=0.0):
+            fl, pct = strike[key]
+            c = min(100.0, crit0 + extra_crit) / 100
+            return (avg0 + fl) * pct * (1 + bonus) * (1 + c * (leth_mult - 1)) / max(1.0, cost[key])
+        use_bs_builder = per_energy("bs", opp, pw) > per_energy("ss", aggr)
+        p["inp"]["combat_dagger_builder_by_damage_per_energy"] = "A"
 
     def fn(sim):
         rng = sim.rng
@@ -312,7 +345,7 @@ def build(p):
             return base + ap() / 14 * (p["norm"] if norm else speed0)
 
         def oh_weapon(norm=False):
-            return (rng.uniform(oh["min"], oh["max"]) + ap() / 14 * (norm_speed(oh) if norm else oh["speed"])) * 0.5
+            return (rng.uniform(oh["min"], oh["max"]) + ap() / 14 * (norm_speed(oh) if norm else oh["speed"])) * oh_pct
 
         def deal(name, d, bleed=False):
             sim.deal(name, d)
@@ -320,8 +353,9 @@ def build(p):
             if dm and sim.t <= dm[0]:
                 dm[1] += d * (2 if bleed else 1)
 
-        def roll(white, extra=0.0):
-            o = core.melee_roll(rng, ch, white=white, dual_wield=bool(oh), extra_crit=extra + crit_extra())
+        def roll(white, extra=0.0, hand=0):
+            o = core.melee_roll(rng, ch, white=white, dual_wield=bool(oh),
+                                extra_crit=extra + crit_extra() + has_crit[hand])
             if o == "dodge" and we and rng.chance(we / core.A("dodge_same_level") * 100):
                 o = "hit"
             return o
@@ -353,15 +387,26 @@ def build(p):
             else:
                 st["dp_stacks"] = 0
 
-        def swing(sid):
-            if sid != st["swing_id"]:
-                return
+        def white_mh(can_proc=True):
             o = roll(True)
             if o not in ("miss", "dodge"):
                 d = weapon() * mult()
                 d *= cm if o == "crit" else (core.A("glance_damage") if o == "glance" else 1)
                 deal("Melee", d)
                 poison()
+                if can_proc:
+                    extra_attack(0)
+
+        def extra_attack(hand):
+            """Hack and Slash with a sword in `hand`: chance of one extra main-hand swing."""
+            if has_extra[hand] and rng.chance(has_extra[hand]):
+                sim.cast("Hack and Slash")
+                white_mh(False)
+
+        def swing(sid):
+            if sid != st["swing_id"]:
+                return
+            white_mh()
             h = ch.haste
             if sim.t < st["snd"]:
                 h *= 1 + snd_haste
@@ -373,12 +418,13 @@ def build(p):
             sim.at(sim.t + speed0 / h, swing, st["swing_id"])
 
         def oh_swing():
-            o = roll(True)
+            o = roll(True, hand=1)
             if o not in ("miss", "dodge"):
                 d = oh_weapon() * mult()
                 d *= cm if o == "crit" else (core.A("glance_damage") if o == "glance" else 1)
                 deal("Melee (off hand)", d)
                 poison()
+                extra_attack(1)
             h = ch.haste
             if sim.t < st["snd"]:
                 h *= 1 + snd_haste
@@ -413,6 +459,7 @@ def build(p):
             deal(name, d)
             poison()
             add_cp(cps + (1 if o == "crit" and seal and rng.chance(seal) else 0))
+            extra_attack(0)
             return o
 
         def finisher_common(cp):
@@ -442,6 +489,51 @@ def build(p):
             sim.deal("Death Mark", min(stored * 0.12 * cp * (1 + cdg), cap * (1 + cdg)))
             if st["dm"] is rec:
                 st["dm"] = None
+
+        def avg_weapon():
+            return ((mh["min"] + mh["max"]) / 2 if mh else p["w_avg"]) + ap() / 14 * p["norm"]
+
+        def crit_factor(extra=0.0, mult_=None):
+            c = max(0.0, min(100.0, ch.melee_crit + crit_extra() + has_crit[0] + extra)) / 100
+            return 1 + c * ((mult_ or cm) - 1)
+
+        def ghostly_pays():
+            """Ghostly Strike is worth its Energy only when it does at least the damage per
+            Energy of the spec's main builder (A). Both give one combo point."""
+            gs = avg_weapon() * 1.25 * crit_factor() / 40
+            if "mut" in ab:
+                return False
+            if use_bs_builder and "bs" in strike:
+                fl, pct = strike["bs"]
+                return gs >= (avg_weapon() + fl) * pct * (1 + opp) * crit_factor(pw) / max(1.0, cost["bs"])
+            if "ss" in strike and "ss" in ab:
+                fl, pct = strike["ss"]
+                return gs >= (avg_weapon() + fl) * pct * (1 + aggr) * crit_factor() / max(1.0, cost["ss"])
+            return True
+
+        def snd_pays(cp):
+            """Slice and Dice is worth its combo points only when the white damage it adds over
+            its duration is at least an Eviscerate with the same points (A). With the fist or a
+            weak weapon at low level it is not, and the points go to Eviscerate."""
+            if not evis:
+                return True
+            dur = (6 + 3 * cp) * (1 + isnd)
+            white = (((mh["min"] + mh["max"]) / 2 if mh else p["w_avg"]) + ap() / 14 * speed0) / speed0
+            if oh:
+                white += ((oh["min"] + oh["max"]) / 2 + ap() / 14 * oh["speed"]) * 0.5 / oh["speed"]
+            lo, hi = core.effect_range(ee, lv)
+            ev = ((lo + hi) / 2 + ee["EffectPointsPerResource"] * cp + 0.03 * cp * ap()) * (1 + cdg) * (1 + aggr) * crit_factor()
+            return white * 0.85 * snd_haste * dur >= ev
+
+        def death_mark_pays(cp):
+            """Death Mark replaces a 5-point Eviscerate, so it must be able to beat one: its cap
+            (the most it can release) against the expected Eviscerate (A)."""
+            if not evis:
+                return True
+            cap = (165 + 102 * (cp - 1) + 0.04 * cp * ap()) * (1 + ch.melee_crit / 100) * (1 + cdg)
+            lo, hi = core.effect_range(ee, lv)
+            ev = ((lo + hi) / 2 + ee["EffectPointsPerResource"] * cp + 0.03 * cp * ap()) * (1 + cdg) * (1 + aggr) * crit_factor()
+            return cap >= ev
 
         def opener():
             st["stealth"] = False
@@ -489,10 +581,11 @@ def build(p):
                 st["shank_ready"] = t + shank_cd
                 sim.cast("Shank")
                 d = weapon() * shank_pct * mult()
-                if rng.chance(ch.melee_crit + crit_extra()):
+                if rng.chance(ch.melee_crit + crit_extra() + has_crit[0]):
                     d *= cm
                 deal("Shank", d)
                 poison()
+                extra_attack(0)
                 st["e"] = min(max_energy, st["e"] + shank_energy)
                 if venom:
                     st["venom"] = t + 6
@@ -500,13 +593,13 @@ def build(p):
                     add_cp(2)
                 return gcd()
             # Finishers
-            if "snd" in ab and cp >= 1 and t >= st["snd"] and e >= cost["snd"] and (cp >= 2 or lv < 20):
+            if "snd" in ab and cp >= 1 and t >= st["snd"] and e >= cost["snd"] and (cp >= 2 or lv < 20) and snd_pays(cp):
                 st["e"] -= cost["snd"]
                 st["snd"] = t + (6 + 3 * cp) * (1 + isnd)
                 sim.cast("Slice and Dice")
                 finisher_common(cp)
                 return gcd()
-            if "dm" in ab and cp >= 5 and t >= st["dm_ready"] and e >= cost["dm"] and t < st["rup"]:
+            if "dm" in ab and cp >= 5 and t >= st["dm_ready"] and e >= cost["dm"] and t < st["rup"] and death_mark_pays(cp):
                 st["e"] -= cost["dm"]
                 st["dm_ready"] = t + 10
                 rec = [t + 6, 0.0, cp]
@@ -539,13 +632,14 @@ def build(p):
                         * (1 + cdg) * (1 + aggr) * mult()
                     deal("Eviscerate", d * (cm if o == "crit" else 1))
                     finisher_common(cp)
+                    extra_attack(0)
                 return gcd()
             if cp >= 5:
                 return
             # Builders
             if "gs" not in st:
                 pass
-            if tl.get("Ghostly Strike") and t >= st["gs_ready"] and e >= 40:
+            if tl.get("Ghostly Strike") and t >= st["gs_ready"] and e >= 40 and ghostly_pays():
                 st["gs_ready"] = t + 20
                 cost["gs"] = 40
                 builder("gs", "Ghostly Strike", weapon(True) * 1.25)
@@ -559,11 +653,13 @@ def build(p):
                 hit_any = False
                 for hand in range(2):
                     extra = tal(tl, "Puncturing Wounds") / 2 + (100 if st["cb"] else 0)
-                    o = roll(False, extra)
+                    off = 1 if hand and oh else 0
+                    o = roll(False, extra, off)
                     if o in ("miss", "dodge"):
                         continue
                     hit_any = True
-                    w = oh_weapon(True) if hand and oh else weapon(True)
+                    extra_attack(off)
+                    w = oh_weapon(True) if off else weapon(True)
                     d = (w + fl) * pct * (1 + opp) * pois * mult()
                     if o == "crit":
                         d *= leth_mult

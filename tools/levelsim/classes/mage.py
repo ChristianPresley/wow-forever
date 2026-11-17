@@ -30,23 +30,54 @@ Server-side rules not in the client (tag in brackets):
   used: they are close-range or AoE spells and the fight is one ranged target [A].
 - Mana is spent when a cast starts; damage lands when it ends (no travel time) [A].
 - Periodic damage does not crit [A]. GCD is 1.5 s and not hasted [CU].
-- Mana-aware rotation [A] (`plan_options`, shared with priest, druid, shaman): the
-  filler spell AND rank are chosen from every rank known at that level. With M = mana
-  + expected cooldown mana (Evocation) and R = remaining fight time, an option with
-  damage/s d and mana/s m can be cast a fraction f of the remaining time, where
-  f = 1 if m <= M/R + regen while casting, else f = (M/R + rf) / (m - rc + rf)
-  (rf, rc = regen outside / inside the 5-second rule); the rest of the time the
-  character auto-attacks unarmed and regenerates at the full rate. The caster takes
-  the option with the highest f*d + (1-f)*melee dps. When that option has f < 1 and
-  is not affordable, it rests (melee, full regen) until mana is 95% full or the
-  option becomes sustainable to the end of the fight (cast-until-empty, then rest:
-  how a player levels without consumables). The plan also gives the marginal
-  damage of a mana point (lam; with slack, the damage/mana slope to the next stronger
-  option). Cooldown nukes and DoTs (Fire Blast, Arcane Wrath, Arcane Blast; the Priest's
-  DoTs and shocks) are cast when damage - lam * net mana beats resting for the same
-  time and, when mana-bound, their damage per mana is at least 90% of the filler's.
+- Mana-aware rotation [A] (`CasterSim.plan`, `mana_price`; Mage and Priest). Every decision
+  plans the whole remaining fight: each filler spell AND rank known at that level, each
+  cooldown or DoT spell of the rotation (`nuke_pool`: at most cast time / cooldown or
+  cast time / duration of the time) and resting share the time and the mana (mana +
+  expected Evocation mana + regeneration). The plan fills the time with the activities
+  of highest `damage/s - price * mana/s`; the price of a mana point (lam) is the lowest
+  one at which the plan fits the mana, 0 when mana is not binding. Resting earns the
+  full regeneration only after 5 s without a cast, so its mana gain is scaled down by
+  the casts the plan makes between rests. From the plan: the filler is the best one at
+  that price; a cooldown or DoT spell is cast when its damage net of its mana at that
+  price beats every filler and resting; when the plan has no room for a filler, the
+  caster rests (wand or melee) between those spells. When the filler is not affordable
+  the caster rests until mana is 95% full or covers the plan's casting share
+  (cast-until-empty, then rest: how a player levels without consumables).
   Spell values for planning are expectations (average roll, spell power, hit, crit);
-  Clearcasting, Master of Elements and Missile Barrage adjust cost/value.
+  Clearcasting, Master of Elements and Missile Barrage adjust cost/value. A free next
+  spell (Clearcasting) is priced at 0, so it goes to the strongest spell.
+  The expected value of a cast counts what the cast sets off in the fight (`MageSim.option`,
+  `exp_damage`): Ignite on a Fire crit, the free Arcane Missiles of Missile Barrage (from
+  Arcane Blast, Arcane Wrath and the bolts), the fast Pyroblast after three Heating Up crits,
+  the Ice Lance against a Frozen target after a Fingers of Frost proc (one per Ice Lance
+  cooldown) and Arcane Wrath's spell damage from maximum mana. A DoT of a spell cast back to
+  back (Fireball, Pyroblast, Frostfire Bolt) only counts the ticks before the next cast lands,
+  because the recast replaces it. Without these, a level could lower DPS: a new Pyroblast
+  rank looked better than Fireball through a DoT it never finished, and rank 1 Frostbolt,
+  cast for its procs, tied with "top rank, then rest".
+  Improved Scorch [A]: a Scorch for the debuff is cast when its own damage plus the debuff's
+  3% per stack on the planned damage of the remaining fight is worth its time and mana
+  (`scorch_bonus`); before, the first talent point forced Scorch until five stacks at any price.
+  Tested and not kept: casting DoT fillers once per DoT duration as a separate plan activity
+  (worse in the fight than in the plan: each cast between rests restarts the 5-second rule).
+  Improved Fire Blast [A]: a build with the talent is also run with Fire Blast held to its
+  untalented cooldown ("plan+basecd", `policies_for`) and the best policy is reported. When
+  mana limits Fire Blast, the extra casts of the shorter cooldown each restart the 5-second
+  rule and take the mana of a Fireball: at 29, where the talent is new, using it cost 2.3 to
+  2.6% without gear and the level lost up to 3% against 28. Also tested and not kept: the
+  talented cooldown in the plan's Fire Blast share (no gain at 29, 2.8% worse at 34) and
+  charging a cast between rests for the regeneration it interrupts (worse in most cells).
+  Arcane Wrath [A]: a build with the talent is also run without casting it ("plan+nowrath").
+  The plan casts it when it ties with rank 1 Frostbolt as the way to set off Missile Barrage;
+  without gear at 56 to 60 the fight is 1.4 to 3.2% better without it, and one race lost 2%
+  from 56 to 57 where the tie tipped. In crafted gear the cast is kept (1 to 8% better).
+- Arcane Wrath: the client has one rank (level 25: 120 base, 100% coefficient, 5% of maximum
+  mana as spell damage), so its base damage does not grow after 25. It is still cast at 60
+  because the mana term and gear spell damage scale and it sets off Missile Barrage [F].
+  `plan_options` is the older single-filler planner that Druid and Shaman still use.
+  Mage and Priest run both that older rule and the plan and report the better one
+  (`best_policy`): the plan misjudges a few levels where two options are nearly equal.
 - Out of mana, or resting, the caster melees unarmed (core.unarmed_weapon,
   core.melee_roll; the target is assumed to be in melee range) [A]. Mage and Priest
   attack power = Strength - 10 [CU, Classic].
@@ -231,12 +262,95 @@ def plan_options(opts, mana, extra, remaining, rc, rf, melee_dps):
     return best[1:6]
 
 
+def mana_price(acts, inflow):
+    """Plan the remaining fight as a whole (A). Returns (price, shares).
+
+    acts: (damage per second, mana per second, cap), where cap is the largest share of the
+    time the activity can take: 1 for a filler, cast time / cooldown for a cooldown spell,
+    cast time / duration for a DoT. Resting is an activity too, with a negative mana rate.
+    The plan fills the time with the activities of highest `damage - price * mana` up to
+    their caps. The price is the damage value of one mana point: the lowest one at which
+    that plan fits in `inflow` mana per second, 0 when mana is not binding. It is found by
+    bisection, and the two plans either side of it are mixed so that the mana balances.
+    shares[i] is the share of the time for acts[i].
+    """
+    def fill(price):
+        left, mana, x = 1.0, 0.0, [0.0] * len(acts)
+        for i in sorted(range(len(acts)), key=lambda i: -(acts[i][0] - price * acts[i][1])):
+            x[i] = min(acts[i][2], left)
+            mana += x[i] * acts[i][1]
+            left -= x[i]
+            if left <= 1e-9:
+                break
+        return mana, x
+
+    m0, x0 = fill(0.0)
+    if m0 <= inflow + 1e-9:
+        return 0.0, x0
+    lo, hi = 0.0, max((d / m for d, m, _ in acts if m > 1e-9), default=0.0) + 1.0
+    for _ in range(24):
+        mid = (lo + hi) / 2
+        if fill(mid)[0] <= inflow:
+            hi = mid
+        else:
+            lo = mid
+    (ml, xl), (mh, xh) = fill(lo), fill(hi)
+    w = (inflow - mh) / (ml - mh) if ml - mh > 1e-9 else 0.0
+    w = max(0.0, min(1.0, w))
+    return hi, [w * a + (1 - w) * b for a, b in zip(xl, xh)]
+
+
 # ---------- Shared caster engine ----------
+
+# Mana policies of CasterSim (A). "plan" plans fillers, cooldown spells and rest together
+# (CasterSim.plan, mana_price). "simple" is the older rule: the filler alone is planned
+# (plan_options) and a cooldown spell needs 90% of the filler's damage per mana when mana is
+# short. Neither is best everywhere: the plan is better when cooldown spells carry the damage,
+# the simple rule at some levels where the plan sits on a knife edge. `best_policy` runs both
+# and reports the better one, so the result is the better of two rotations a player can follow.
+POLICIES = ("plan", "simple")
+# A third rotation for a Mage with Improved Fire Blast (A): the plan, with Fire Blast held to
+# its untalented cooldown. When mana and not the cooldown limits Fire Blast, the casts the
+# talent adds each restart the 5-second rule and take the mana of a Fireball; at level 29,
+# where the talent is new, using the shorter cooldown costs about 2.5%.
+BASE_CD = "basecd"
+# A third rotation for a Mage with Arcane Wrath (A): the plan without Arcane Wrath. Without
+# gear from the mid-50s its mana is better spent on rank 1 Frostbolt for Missile Barrage (up
+# to 3.7% better); in crafted gear, where its 5% of maximum mana is large, it is 1 to 8% worse.
+NO_WRATH = "nowrath"
+POLICY = {"mode": "plan"}
+DPM_FLOOR = 0.9
+LEAN_SHARE = 0.02   # the plan is "lean" when fillers get less than this share of the time (A)
+
+
+def policies_for(talents):
+    """The mana policies tried for a build: POLICIES, the base-cooldown plan when the build
+    has Improved Fire Blast and the plan without Arcane Wrath when it has that talent."""
+    extra = [BASE_CD] if talents.get("Improved Fire Blast") else []
+    if talents.get("Arcane Wrath"):
+        extra.append(NO_WRATH)
+    return POLICIES + tuple("plan+" + rule for rule in extra)
+
+
+def best_policy(run, modes=None):
+    """run() -> core.run_many output under the current POLICY. Returns the best of `modes`
+    (POLICIES when not given)."""
+    best = None
+    for mode in modes or POLICIES:
+        POLICY["mode"] = mode
+        try:
+            out = run()
+        finally:
+            POLICY["mode"] = "plan"
+        if best is None or out["dps_mean"] > best["dps_mean"]:
+            best = out
+            best["mana_policy"] = mode
+    return best
+
 
 REGEN_TICK = 2.0
 GCD = 1.5
 FIVE_SEC = 5.0
-DPM_FLOOR = 0.9  # A: mana-bound cooldown spells need >= 90% of the filler damage per mana
 
 
 class CasterSim:
@@ -249,6 +363,7 @@ class CasterSim:
     def __init__(self, sim, ch, inputs):
         self.sim, self.ch, self.inputs = sim, ch, inputs
         self.rng = sim.rng
+        self.policy, _, self.rule = POLICY["mode"].partition("+")
         self.max_mana = ch.mana()
         self.mana = self.max_mana
         self.last_spend = -99.0
@@ -261,6 +376,7 @@ class CasterSim:
         self.resting = False
         self.next_swing = 0.0
         self.lam = 0.0
+        self._opts, self.lean, self.rest_gain, self.plan_rate = [], False, 0.0, 0.0
         self.wand = ch.gear["ranged"] if ch.gear and (ch.gear.get("ranged") or {}).get("type") == "wand" else None
         self.mp5 = ch.gear_stat("mp5")
         if ch.gear:
@@ -425,34 +541,96 @@ class CasterSim:
         return (avg + self.melee_ap() / 14 * speed) / speed * self.ch.haste * self.ch.dmg_mult * 0.85
 
     def plan(self, opts):
-        """Returns (key, f, affordable, need); stores the mana value self.lam."""
-        out = plan_options(opts, self.mana, self.extra_mana(), self.sim.end - self.t,
-                           self.regen_casting_ps(), self.regen_full_ps(), self.melee_dps())
-        self.lam = out[4]
-        return out[:4]
+        """Returns (filler, f, affordable, need) from a plan of the whole remaining fight
+        (mana_price): the fillers in `opts`, the cooldown and DoT spells of nuke_pool and
+        resting share the time and the mana. The filler is the best one at the plan's mana
+        price, f is the share of the time not spent resting and need is the mana the casting
+        share uses up beyond the regeneration while casting. The price is kept in self.lam."""
+        if not opts:
+            self.lam, self._opts, self.lean = 0.0, [], False
+            return None, 0.0, False, 0.0
+        if self.policy == "simple":
+            out = plan_options(opts, self.mana, self.extra_mana(), self.sim.end - self.t,
+                               self.regen_casting_ps(), self.regen_full_ps(), self.melee_dps())
+            self.lam, self._opts, self.lean, self.plan_f = out[4], opts, False, out[1]
+            self.plan_rate = out[1] * next((d / secs for sp, d, secs, _, _ in opts if sp is out[0]), 0.0)
+            return out[:4]
+        rc, rf = self.regen_casting_ps(), self.regen_full_ps()
+        acts = [(dmg / secs, c / secs, 1.0) for _, dmg, secs, c, _ in opts]
+        times = []
+        for sp, period in self.nuke_pool():
+            _, dmg, secs, c, _ = self.option(sp)
+            acts.append((dmg / secs, c / secs, min(1.0, secs / max(secs, period))))
+            times.append(secs)
+        rem = max(1.0, self.sim.end - self.t)
+        inflow = (max(0.0, self.mana) + self.extra_mana()) / rem + rc
+        # Resting regenerates at the full rate only after 5 s without a cast. Cooldown spells cast
+        # between rests each cost 5 s of that, so the rest's mana gain is scaled by the share
+        # of the rest time that is left (g). g depends on the plan, so plan, rescale, plan again.
+        g, w = 1.0, self.melee_dps()
+        for _ in range(3):
+            lam, x = mana_price(acts + [(w, -(rf - rc) * g, 1.0)], inflow)
+            casts = sum(xi / secs for xi, secs in zip(x[len(opts):-1], times))
+            g2 = max(0.0, x[-1] - 5.0 * casts) / x[-1] if x[-1] > 1e-6 else 1.0
+            if abs(g2 - g) < 0.05:
+                break
+            g = (g + g2) / 2
+        acts.append((w, -(rf - rc) * g, 1.0))
+        self.lam, self._opts, self.rest_gain = lam, opts, (rf - rc) * g
+        self.plan_rate = sum(xi * a[0] for xi, a in zip(x[:-1], acts[:-1]))  # planned spell damage per second
+        i = max(range(len(opts)), key=lambda i: (acts[i][0] - lam * acts[i][1], acts[i][0]))
+        f = 1.0 - x[-1]
+        # lean: the plan spends the mana on cooldown and DoT spells and rests the remaining time,
+        # with no room for a filler. The rotation then rests between those spells.
+        self.lean = f < 1.0 and sum(x[:len(opts)]) < LEAN_SHARE
+        spent = sum(xi * a[1] for xi, a in zip(x[:-1], acts[:-1]))
+        return opts[i][0], f, opts[i][4], max(0.0, rem * (spent - f * rc))
 
     def rest_done(self, f, need):
         """Stop resting at 95% mana, or once mana covers the casting share of the fight."""
         return f >= 1.0 or self.mana >= min(0.95 * self.max_mana, need)
 
-    def efficient(self, sp, ref=None):
-        """Cast a cooldown/DoT spell if its damage, net of the value of the mana it uses
-        (self.lam from the last plan), beats resting or the filler for the same time."""
+    def nuke_pool(self):
+        """Cooldown and DoT spells the rotation may cast besides the filler: (spell, period),
+        where period is the cooldown or the DoT duration. Subclasses list theirs."""
+        return []
+
+    def efficient(self, sp, ref=None, resting=False, bonus=0.0):
+        """Cast a cooldown or DoT spell when, at the mana price of the whole remaining fight
+        (self.lam, set by plan), its damage net of its mana beats every filler and resting
+        for the same time. While resting, a cast also restarts the 5-second rule, so it must
+        be in the plan at that price (the plan's rest gain counts the regeneration such casts
+        interrupt). `ref` is unused by the plan; the simple rule compares against it. `bonus` is
+        expected damage the cast adds elsewhere (a debuff it applies), counted with its own."""
         c = self.cost_of(sp)
         if self.mana < c:
             return False
-        if c <= 0 or self.lam <= 0:
-            return True
-        _, dmg, secs, ec, _ = self.option(sp)
-        base = self.melee_dps() + self.lam * self.regen_full_ps()
-        if dmg - self.lam * (ec - self.regen_casting_ps() * secs) < base * secs:
-            return False
-        if ref is not None and ec > 0:
-            # mana-bound: also require close to the filler's damage per mana (A, 90%)
-            _, rd, _, rc_, _ = self.option(ref)
-            if rc_ > 0 and dmg / ec < DPM_FLOOR * rd / rc_:
+        if self.policy == "simple":
+            if resting:
                 return False
-        return True
+            if c <= 0 or self.lam <= 0:
+                return True
+            _, dmg, secs, ec, _ = self.option(sp)
+            dmg += bonus
+            base = self.melee_dps() + self.lam * self.regen_full_ps()
+            if dmg - self.lam * (ec - self.regen_casting_ps() * secs) < base * secs:
+                return False
+            if ref is not None and ec > 0:
+                _, rd, _, rc_, _ = self.option(ref)
+                if rc_ > 0 and dmg / ec < DPM_FLOOR * rd / rc_:
+                    return False
+            return True
+        lam = self.lam
+        _, dmg, secs, ec, _ = self.option(sp)
+        dmg += bonus
+        rest = self.melee_dps() + lam * self.rest_gain
+        if resting:
+            # the plan's rest gain already counts the casts it expects between rests
+            return dmg - lam * ec >= rest * secs - 1e-9
+        alt = rest
+        for _, d2, s2, c2, _ in self._opts:
+            alt = max(alt, d2 / s2 - lam * c2 / s2)
+        return dmg / secs - lam * ec / secs >= alt - 1e-9
 
     def melee_ap(self):
         return max(0.0, self.ch.str - 10) + self.ch.gear_ap()  # Classic Mage/Priest attack power (CU)
@@ -531,6 +709,10 @@ AB_STACK = {"sp_pct_int": 12, "max": 4, "duration": 18}                         
 ARCANE_POWER = {"dmg": None, "dur": 15, "cd": 180}                                # CU (dmg/cost from client)
 POM_CD = 180                                                                      # CU
 ICE_BARRIER_FROST = 20                                                            # CU 15% + 5% while shielded
+MB_BOLTS = ("Arcane Wrath", "Fireball", "Frostbolt", "Frostfire Bolt")              # A (tooltip): Missile Barrage
+HEAT_SPELLS = ("Fireball", "Frostfire Bolt", "Fire Blast", "Scorch")                 # A (tooltip): crits that heat up
+HEAT_MAX = 3                                                                      # A (tooltip): stacks, -25% cast each
+FOF_CHANCE = 15                                                                   # A (tooltip): % per chill
 
 
 class MageSim(CasterSim):
@@ -700,8 +882,8 @@ class MageSim(CasterSim):
             ig = self.T("Ignite")
             if ig:
                 self.add_ignite(amount * ig / 100)
-            if self.heating and sp.name in ("Fireball", "Frostfire Bolt", "Fire Blast", "Scorch"):
-                self.heat = min(3, self.heat + 1)
+            if self.heating and sp.name in HEAT_SPELLS:
+                self.heat = min(HEAT_MAX, self.heat + 1)
             if self.comb_on:
                 self.comb_crit += 1
                 if self.comb_crit >= self.comb_charges:
@@ -735,14 +917,14 @@ class MageSim(CasterSim):
             self.cc_next = True
         if self.is_(sp, FIRE) and self.comb_on:
             self.comb_hits += 1
-        if sp.name in ("Frostbolt", "Frostfire Bolt") and self.tal.get("Fingers of Frost") and self.rng.chance(15):
+        if sp.name in ("Frostbolt", "Frostfire Bolt") and self.tal.get("Fingers of Frost") and self.rng.chance(FOF_CHANCE):
             self.fof = self.T("Fingers of Frost")
         if sp.name == "Scorch" and self.tal.get("Improved Scorch") and self.rng.chance(self.T("Improved Scorch")):
             self.scorch_stacks = min(5, (self.scorch_stacks if self.scorch_end > self.t else 0) + 1)
             self.scorch_end = self.t + 30
         if sp.name == "Arcane Blast" and self.mb_ab and self.rng.chance(self.mb_ab):
             self.mb = True
-        if sp.name in ("Arcane Wrath", "Fireball", "Frostbolt", "Frostfire Bolt") and self.mb_other and self.rng.chance(self.mb_other):
+        if sp.name in MB_BOLTS and self.mb_other and self.rng.chance(self.mb_other):
             self.mb = True
 
     # --- casting
@@ -785,7 +967,7 @@ class MageSim(CasterSim):
             ct = 0.0
         if sp.cd:
             cd = sp.cd
-            if sp.name == "Fire Blast":
+            if sp.name == "Fire Blast" and self.rule != BASE_CD:
                 cd -= self.T("Improved Fire Blast")
             self.start_cd(sp, cd)
         self.sim.cast(sp.name)
@@ -832,19 +1014,39 @@ class MageSim(CasterSim):
     def exec_time(self, sp):
         return sp.duration if sp.missile else max(GCD, self.cast_time(sp))
 
-    def exp_damage(self, sp):
-        """Expected damage of one cast (average roll + spell power, hit and crit folded in)."""
+    def exp_damage(self, sp, frozen=False, spam=True):
+        """Expected damage of one cast (average roll + spell power, hit and crit folded in;
+        a Fire crit adds its Ignite). `frozen`: the cast spends a Fingers of Frost charge
+        (Shatter, Ice Lance bonus). `spam`: the spell is cast back to back, so its DoT is cut
+        short by the next cast."""
         p = self.spell_power(sp)
+        if sp.name == "Arcane Wrath":
+            p += self.max_mana * self.aw_pct / 100
+        dot = 0.0
         if sp.missile:
             n = round(sp.duration / sp.missile_period)
             dmg = ((sp.missile[0] + sp.missile[1]) / 2 + sp.missile[2] * p) * n
         else:
-            dmg = sp.avg_direct + (sp.direct[2] * p if sp.direct else 0.0) + sp.dot_total()
-            if sp.dot and self.ch.gear:  # gear spell power on the DoT ticks (A)
-                dmg += sp.dot[2] * self.gear_sp_of(sp) * int(round(sp.duration / sp.dot[1]))
+            dmg = sp.avg_direct + (sp.direct[2] * p if sp.direct else 0.0)
+            if sp.dot:
+                # A recast replaces the DoT and restarts its tick timer, so a spell cast back to
+                # back only gets the ticks that fit before the next one lands (A).
+                ticks = int(round(sp.duration / sp.dot[1]))
+                if spam:
+                    ticks = min(ticks, int((self.exec_time(sp) - 1e-9) / sp.dot[1]))
+                dot = sp.dot[0] * ticks
+                if self.ch.gear:  # gear spell power on the DoT ticks (A)
+                    dot += sp.dot[2] * self.gear_sp_of(sp) * ticks
+        was, self.frozen_cast = self.frozen_cast, frozen
         crit = min(100.0, self.ch.spell_crit + self.crit_chance(sp)) / 100
+        self.frozen_cast = was
+        if frozen and sp.name == "Ice Lance":
+            dmg *= 1 + self.il_frozen / 100
         hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit + self.hit_bonus(sp)) / 100
-        return dmg * self.dmg_mult(sp, False) * hit * (1 + crit * (self.crit_mult(sp) - 1))
+        on_crit = self.crit_mult(sp)
+        if self.is_(sp, FIRE):
+            on_crit *= 1 + self.T("Ignite") / 100
+        return (dmg * (1 + crit * (on_crit - 1)) + dot) * self.dmg_mult(sp, False) * hit
 
     def value_rate(self, sp):
         """Expected damage per second of cast time."""
@@ -853,20 +1055,41 @@ class MageSim(CasterSim):
     def option(self, sp):
         """Planner option with proc-adjusted value (A): Clearcasting makes the next spell
         free, Master of Elements refunds part of the cost on crits, Missile Barrage gives
-        a free Arcane Missiles."""
+        a free Arcane Missiles, Heating Up a fast Pyroblast and Fingers of Frost an Ice
+        Lance against a Frozen target."""
         c = self.cost_of(sp)
         dmg = self.exp_damage(sp)
-        eff = c * (1 - self.cc_chance / 100)
+        eff = c * (1 - self.cc_chance / 100)  # 0 under Clearcasting: the free cast goes to the strongest spell
         moe = self.T("Master of Elements")
         if moe and (self.is_(sp, FIRE) or self.is_(sp, FROST)):
             crit = min(100.0, self.ch.spell_crit + self.crit_chance(sp)) / 100
             eff -= sp.cost * moe / 100 * crit
-        mb = self.mb_other if sp.name in ("Fireball", "Frostbolt", "Frostfire Bolt") else 0
+        mb = self.mb_other if sp.name in MB_BOLTS else self.mb_ab if sp.name == "Arcane Blast" else 0
         am = self.ranks_.get("Arcane Missiles")
         secs = self.exec_time(sp)
         if mb and am:  # the free Missiles also take (half) channel time
             dmg += mb / 100 * self.exp_damage(am[-1])
             secs += mb / 100 * am[-1].duration * 0.5
+        py = self.sp_.get("Pyroblast")
+        if py and self.heating and sp.name in HEAT_SPELLS:
+            # Heating Up: every third crit is followed by a Pyroblast at a quarter of its cast time.
+            crit = min(100.0, self.ch.spell_crit + self.crit_chance(sp)) / 100
+            hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit + self.hit_bonus(sp)) / 100
+            n = hit * crit / HEAT_MAX
+            was, self.heat = self.heat, HEAT_MAX
+            dmg += n * self.exp_damage(py, spam=False)
+            secs += n * self.exec_time(py)
+            self.heat = was
+            eff += n * self.cost_of(py) * (1 - self.cc_chance / 100)
+        il = self.sp_.get("Ice Lance")
+        if il and self.tal.get("Fingers of Frost") and sp.name in ("Frostbolt", "Frostfire Bolt"):
+            # Fingers of Frost: a proc is followed by one Ice Lance against a Frozen target, at
+            # most one per Ice Lance cooldown (the rotation casts it whenever a charge is up).
+            hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit + self.hit_bonus(sp)) / 100
+            n = min(FOF_CHANCE / 100 * hit, secs / il.cd if il.cd else 1.0)
+            dmg += n * self.exp_damage(il, frozen=True)
+            secs += n * self.exec_time(il)
+            eff += n * self.cost_of(il) * (1 - self.cc_chance / 100)
         return (sp, dmg, secs, max(0.0, eff), self.mana >= c)
 
     def extra_mana(self):
@@ -916,6 +1139,9 @@ class MageSim(CasterSim):
                 return self.evocate()
             self.resting = True
             return self.melee_idle()
+        # lean: the plan has no room for a filler. Procs and cooldown spells are still cast;
+        # the time between them is spent resting.
+        lean = self.lean and not self.cc
         ib = S.get("Ice Barrier")
         if ib and not self.has("ice_barrier") and self.cd_ready(ib) and self.affordable(ib):
             self.spend(self.cost_of(ib))
@@ -925,7 +1151,7 @@ class MageSim(CasterSim):
             return GCD
         sc = S.get("Scorch")
         if sc and self.tal.get("Improved Scorch") and (self.scorch_stacks < 5 or self.scorch_end - t < 4 or self.scorch_end <= t) \
-                and self.affordable(sc):
+                and self.efficient(sc, fill, resting=lean, bonus=self.scorch_bonus(sc)):
             return self.cast(sc)
         am = S.get("Arcane Missiles")
         if am and self.mb:
@@ -934,17 +1160,19 @@ class MageSim(CasterSim):
         if il and self.fof > 0 and self.cd_ready(il) and self.affordable(il):
             return self.cast(il)
         py = S.get("Pyroblast")
-        if py and self.heat >= 3 and self.affordable(py):
+        if py and self.heat >= HEAT_MAX and self.affordable(py):
             return self.cast(py)
-        aw = S.get("Arcane Wrath")
-        if aw and self.cd_ready(aw) and self.efficient(aw, fill):
+        aw = S.get("Arcane Wrath") if self.rule != NO_WRATH else None
+        if aw and self.cd_ready(aw) and self.efficient(aw, fill, resting=lean):
             return self.cast(aw, instant=self.use_pom())
         fb = S.get("Fire Blast")
-        if fb and self.cd_ready(fb) and not (self.fof and il) and self.efficient(fb, fill):
+        if fb and self.cd_ready(fb) and not (self.fof and il) and self.efficient(fb, fill, resting=lean):
             return self.cast(fb)
         ab = S.get("Arcane Blast")
-        if ab and (self.cc or self.efficient(ab, fill)):
+        if ab and (self.cc or self.efficient(ab, fill, resting=lean)):
             return self.cast(ab)
+        if lean:
+            return self.melee_idle()
         if fill is not None and not ok:  # sustainable but short right now: best affordable
             aff = [self.option(r) for rs in self.ranks_.values() for r in rs]
             fill = max((o for o in aff if o[4]), key=lambda o: o[1] / o[2], default=(None,))[0]
@@ -953,6 +1181,26 @@ class MageSim(CasterSim):
                 return self.cast_missiles(fill)
             return self.cast(fill, instant=fill.cast >= 3.5 and self.use_pom())
         return self.melee_idle()
+
+    def scorch_bonus(self, sc):
+        """Expected Fire damage that this Scorch adds through Improved Scorch (A): a new stack
+        is worth 3% of the planned damage for the rest of the fight; at 5 stacks the cast keeps
+        all of them from running out."""
+        hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit + self.hit_bonus(sc)) / 100
+        chance = self.T("Improved Scorch") / 100 * hit
+        rem = max(0.0, self.sim.end - self.t)
+        n = self.scorch_stacks if self.scorch_end > self.t else 0
+        if n < 5:
+            return chance * 0.03 / (1 + 0.03 * n) * self.plan_rate * rem
+        return chance * 0.03 * n / (1 + 0.03 * n) * self.plan_rate * max(0.0, self.sim.end - self.scorch_end)
+
+    def nuke_pool(self):
+        out = []
+        for name in ("Arcane Wrath", "Fire Blast"):
+            sp = self.sp_.get(name)
+            if sp and not (name == "Arcane Wrath" and self.rule == NO_WRATH):
+                out.append((sp, sp.cd))
+        return out
 
     def use_pom(self):
         if self.pom and self.ready.get("pom", 0) <= self.t:
@@ -979,7 +1227,8 @@ def simulate(spec, race, level, iterations, seed):
         inputs["base_stats"] = ch.stats_tag
         m.start()
 
-    out = core.run_many(build, iterations, seed)
+    out = best_policy(lambda: core.run_many(build, iterations, seed), policies_for(talents))
+    inputs["mana_policy_best_of"] = "A"
     out["inputs"] = dict(sorted(inputs.items()))
     for k in ("fight_seconds", "spell_hit_same_level", "spell_crit_mult", "base_spell_crit"):
         out["inputs"][k] = core.ASSUMPTIONS[k][1]

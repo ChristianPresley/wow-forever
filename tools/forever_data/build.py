@@ -167,6 +167,7 @@ def main():
         s["skill_line"] = sl["DisplayName_lang"]
         s["acquire"] = num(r["AcquireMethod"])
         s["supersedes"] = num(r["SupercedesSpell"])
+        s["race_mask"] = num(r.get("RaceMasks_0", -1))  # -1 or 0: every race; else bits 1 Human, 2 Orc, 4 Dwarf, 8 Night Elf, 16 Undead, 32 Tauren, 64 Gnome, 128 Troll
         for o in owners:
             class_spells[o][r["Spell"]] = s
 
@@ -189,6 +190,43 @@ def main():
             "ranks": [spell(sid) for sid in ranks],
         })
 
+    # Spells that carry a class spell's or talent's name but that no skill line or talent teaches
+    # and no exported effect triggers: the per-rank damage spells the server casts for a class
+    # spell (Judgement of Command, Consecration ticks) and ranks the trainer table omits. They
+    # are matched by name and by the class's spell family, so read them by id; "base_level" is
+    # the spell's own level row and is often 0.
+    unlinked = defaultdict(list)
+    for cls in CLASS_MASK.values():
+        linked, wanted = set(), set()
+
+        def walk(sp, linked=linked, wanted=wanted):
+            linked.add(str(sp["id"]))
+            wanted.add(sp["name"])
+            if sp["name"].startswith("Seal of "):  # a seal's Judgement is a spell of its own
+                wanted.add("Judgement of " + sp["name"][len("Seal of "):])
+            for e in sp["effects"]:
+                if e.get("trigger"):
+                    linked.add(str(e["trigger"]["id"]))
+        for sp in class_spells[cls].values():
+            walk(sp)
+        for t in talents[cls]:
+            for sp in t["ranks"]:
+                walk(sp)
+        sets = defaultdict(int)
+        for sp in class_spells[cls].values():
+            if sp["class_set"]:
+                sets[sp["class_set"]] += 1
+        family = max(sets, key=sets.get) if sets else 0
+        for sid, name in names.items():
+            if name not in wanted or sid in linked or sid not in effects:
+                continue
+            fam = int(classopt[sid]["SpellClassSet"] or 0) if sid in classopt else 0
+            if fam and fam != family:
+                continue
+            sp = spell(sid)
+            sp["family_checked"] = bool(fam)
+            unlinked[cls].append(sp)
+
     expected = defaultdict(dict)
     for r in T["PlayerExpectedStat"]:
         cls = CLASS_MASK.get(int(r["ClassID"]))
@@ -210,6 +248,7 @@ def main():
         "build": build,
         "classes": {c: {"spells": sorted(class_spells[c].values(), key=lambda s: (s["name"], s["base_level"])),
                         "talents": sorted(talents[c], key=lambda t: (t["tab_order"], t["tier"], t["column"])),
+                        "unlinked": sorted(unlinked[c], key=lambda s: (s["name"], s["id"])),
                         "expected": expected[c]} for c in CLASS_MASK.values()},
         "races": {rid: dict(r, racials=racials.get(rid, [])) for rid, r in races.items() if racials.get(rid)},
         "race_stat": [{k: num(v) for k, v in r.items()} for r in T["RaceStat"]],
@@ -217,7 +256,7 @@ def main():
     dest = HERE / "forever.json"
     dest.write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
     for c, d in out["classes"].items():
-        print(f"{c:8} spells={len(d['spells']):4} talents={len(d['talents']):3} levels={len(d['expected'])}")
+        print(f"{c:8} spells={len(d['spells']):4} talents={len(d['talents']):3} unlinked={len(d['unlinked']):4} levels={len(d['expected'])}")
     print("races with racials:", ", ".join(r["name"] for r in out["races"].values()))
     print(f"wrote {dest.relative_to(HERE.parents[1])} ({dest.stat().st_size // 1024} KB)")
 

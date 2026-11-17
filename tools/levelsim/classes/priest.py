@@ -18,16 +18,76 @@ Server-side rules not in the client (tag in brackets):
   Learned at level 32 by every Priest (wiki guide). Backlash is ignored: it hurts
   only the Priest.
 - Devouring Plague is baseline at level 20 (wiki guide).
-- Inner Focus: 3 min cooldown (Classic) [CU]. Used on the next Mind Blast or Smite.
+- Inner Focus: 3 min cooldown (Classic) [CU]. The free cast goes to the spell that gains
+  most from it (`focus_target`) [A]: for a spell the rotation casts anyway that is the mana
+  saved at the plan's mana price, for a spell too expensive to cast otherwise (Devouring
+  Plague without Devouring Contagion) it is the whole cast, plus the crit bonus on direct
+  damage. The plan itself is made at normal costs. Holy and Shadow use this rule.
+  Discipline keeps the older one (the next spell in the rotation's order is free, in
+  practice Shadow Word: Pain): the new rule was better for it on average but 2.3% worse
+  for a Human at level 60 in crafted gear.
 - Improved Mind Flay: tick k deals (1+x)^k times the base tick [A].
 - Twin Disciplines applies to instant spells (SW:Pain, Devouring Plague,
   SW:Death), not to channels (Mind Flay, Penance) [A].
 - Spiritual Guidance: spell damage = 1..8% of Spirit, linear per rank [A].
-- Starshards, Chastise, Shadowguard, Vampiric Embrace and Holy Nova (paid) are not
-  used: racial, humanoid-only, self-buff, no damage, or AoE spells. Holy Nova is
-  cast only when Searing Light makes it free [A].
+- Race-locked spells [F]: the client's `race_mask` on a class spell names the races that
+  learn it (`race_open`; 0 or -1 is every race, and the two Skyborne races have no bit, so
+  they learn no race-locked spell). Every spell the rotation loads is checked against it.
+  Starshards is the only locked one it casts: Night Elf only, an instant Arcane DoT, 6 ticks
+  in 6 s, 30 s cooldown, learned at level 10. The other locked Priest spells (Touch of
+  Weakness, Shadowguard, Hex of Weakness, Chastise, Desperate Prayer, Feedback, Divine
+  Grace, Elune's Grace) are not rotation spells. It is the most mana-efficient spell a Night Elf Priest
+  has, so every spec casts it on cooldown; Twin Disciplines and Mental Agility apply
+  (instant spell) [A].
+- Saving mana for the better spell [A] (`PriestSim.held`): when mana is short, a spell waits
+  if paying for it would leave too little, with the regeneration until then, for a cooldown
+  or DoT spell with more damage per mana that is ready before the mana is back. Without it
+  a Night Elf out of mana spent what trickled in on Shadow Word: Pain just before Starshards
+  came off cooldown, and some levels lost 2 to 3% against the level before. A DoT's expected
+  damage counts only the ticks before the fight ends.
+- Chastise, Shadowguard, Touch of Weakness, Vampiric Embrace and Holy Nova (paid) are not
+  used: humanoid-only, reactive, self-buff, no damage, or AoE spells. Holy Nova is cast
+  only when Searing Light makes it free [A]; the plan counts those free Novas (and their
+  GCDs) in Holy Fire's value.
+- Spells the plan knows and seldom or never casts at level 60, because they lose on damage
+  per mana with the client's numbers (checked by forcing each into the rotation, which
+  lowered DPS by 2 to 13%): Mind Blast for Shadow (4.8 damage per mana against 7.5 for Mind
+  Flay and 12 for Shadow Word: Death), Penance for Discipline (0.85 to 1.2 against 3.5 to
+  4.3 for Shadow Word: Death), top-rank Smite for Discipline and Holy (1.3 to 1.4; the wand
+  does more for the mana). Holy Fire is cast by Holy once Holy Nova is known. A Priest who
+  runs dry in 40 s of Smite therefore plays Shadow Word: Death and Pain, Mind Blast or
+  Holy Fire on cooldown and the wand in between.
+- Divine Fury (Discipline, 5 points for Holy Specialization's tree position): it adds
+  nothing measurable. It makes rank 2 Smite a 1.5 s cast, which the plan then casts instead
+  of wanding during Power Infusion; that trade is about even (within 1%).
 - Spirit regen, 5-second rule, mana at cast start, no periodic crits: see mage.py.
-- Mana-aware rotation [A] (mage.plan_options): the filler (Smite or Mind Flay) is
+- Third mana policy, "plan+swing" [A]: the plan charges a cooldown spell its whole cast time
+  against the wand or melee damage of resting. In the fight the swing timer runs on during
+  the cast, so an instant between two wand shots delays the next shot by about half a
+  swing only. Under this policy a cooldown or DoT spell is credited with the swing damage
+  it does not displace (`swing_overlap`): in the plan for the resting share of the time, in
+  the choice when the Priest is resting. It is a policy and not the rule because it is
+  better where the wand carries the rotation (Discipline in crafted gear, low-level Shadow:
+  up to 13%) and up to 6% worse elsewhere (it casts Mind Blast where the mana was better
+  kept for Mind Flay).
+- Fourth mana policy, "plan+wand" [A]: "plan+swing" with no filler while mana is short. The
+  plan prices a filler by its own damage and mana, but chain-casting it also delays every
+  cooldown spell by half a cast on average and takes the wand shots that fit between
+  instants. Where a cheap low-rank Smite only just beats the wand in the plan (Discipline in
+  crafted gear from the mid-30s) wanding between cooldown spells is 1 to 4% better in the
+  fight; for Shadow, whose Mind Flay clearly beats the wand, it is worse. `simulate` reports
+  the best of the four (`POLICIES`).
+- Why several policies [A]: the plan's mana price is too low when resting is interrupted
+  often, so a spell that ties with resting in the plan can lose in the fight, and a new rank,
+  a talent or a gear change tips the tie. With "plan" and "simple" alone ten level-to-level
+  drops of 2 to 3% remained (the same at 1,000 fights, so not sampling noise); with the four
+  policies a sweep of every spec, race, gear mode and level from 5 to 60 has none above 2%.
+  One talent still loses a little: Holy Specialization for a Human Discipline Priest at 60
+  in crafted gear. Its 5% Holy crit makes the plan cast rank 2 Smite more often in place of
+  the wand (4.28 against 3.63 casts a minute), which loses 0.5%; the other races gain 0 to
+  0.8% from it.
+- Mana-aware rotation [A] (mage.CasterSim.plan and best_policy, see mage.py; the text
+  below describes the older rule, which is one of the policies tried): the filler (Smite or Mind Flay) is
   chosen by spell AND rank from every rank known at that level, by sustained damage
   over the remaining fight; when the best option cannot be sustained the Priest casts
   until empty, then rests (unarmed melee, full Spirit regen). SW:Pain, Holy Fire,
@@ -40,6 +100,7 @@ Server-side rules not in the client (tag in brackets):
   gear spell damage too.
 """
 import core
+from . import mage
 from .mage import CasterSim, GCD, Spell, spell
 
 CLASS = "priest"
@@ -91,7 +152,35 @@ TALENT_VALUES = {
 HOLY, SHADOW = 2, 32
 PENANCE_BOLTS = (0.0, 1.0, 2.0)   # CU
 INNER_FOCUS_CD = 180             # CU
+FOCUS_FIRST_SPELL = ("discipline",)  # specs whose Inner Focus goes to the next spell cast (A, see docstring)
 SWD_LEVEL = 32
+# Mana policies tried per cell; the best is reported (A). "plan" and "simple" are mage.py's.
+# "plan+swing" is the plan with one more rule: a cooldown spell cast while resting is credited
+# with the wand or melee damage it does not displace (PriestSim.swing_overlap).
+# "plan+wand" is "plan+swing" without a filler while mana is short: the Priest wands between
+# cooldown spells instead of alternating filler casts and rests.
+POLICIES = ("plan", "plan+swing", "plan+wand", "simple")
+POLICY = {"mode": "plan"}
+# cooldown and DoT spells cast besides the filler (Holy Fire by Holy only)
+NUKES = ("Shadow Word: Pain", "Devouring Plague", "Starshards", "Penance", "Mind Blast", "Shadow Word: Death", "Holy Fire")
+# F: bit of each race in a class spell's race_mask (the Skyborne races, sho and sws, have none)
+RACE_BIT = {"human": 1, "orc": 2, "dwarf": 4, "nelf": 8, "undead": 16, "tauren": 32, "gnome": 64, "troll": 128}
+
+
+def race_open(row, race):
+    """True when the race can learn the spell: no race mask (0 or -1) or the race's bit set."""
+    mask = row.get("race_mask") or 0
+    return mask <= 0 or bool(mask & RACE_BIT.get(race, 0))
+
+
+def learn(name, level, race, base_mana, inputs):
+    """The best rank known at this level, or None when the level or the race rules it out."""
+    row = core.best_rank(CLASS, name, level)
+    if not row or not race_open(row, race):
+        return None
+    if (row.get("race_mask") or 0) > 0:
+        inputs[f"race_lock:{name}"] = "F"
+    return spell(CLASS, name, level, base_mana, inputs, raw=row)
 DP_LEVEL = 20
 
 
@@ -126,12 +215,12 @@ class PriestSim(CasterSim):
         self.T = lambda n: self._tv(n)
         bm = ch.base_mana
         S = {}
-        for n in ("Smite", "Shadow Word: Pain", "Mind Blast", "Holy Fire"):
-            s = spell(CLASS, n, level, bm, inputs)
+        for n in ("Smite", "Shadow Word: Pain", "Mind Blast", "Holy Fire", "Starshards"):
+            s = learn(n, level, ch.race, bm, inputs)
             if s:
                 S[n] = s
         if level >= DP_LEVEL:
-            s = spell(CLASS, "Devouring Plague", level, bm, inputs)
+            s = learn("Devouring Plague", level, ch.race, bm, inputs)
             if s:
                 S["Devouring Plague"] = s
                 inputs["devouring_plague_baseline_20"] = "CU"
@@ -206,6 +295,9 @@ class PriestSim(CasterSim):
         self.weave, self.weave_end = 0, 0.0
         self.if_on = False
         self.free_nova = False
+        self.swing = POLICY["mode"] in ("plan+swing", "plan+wand")
+        self.wand_first = POLICY["mode"] == "plan+wand"
+        self.idle = self.rest_share = 0.0   # chance that a cooldown spell is cast between swings
 
     def _tv(self, name):
         r = self.tal.get(name, 0)
@@ -237,7 +329,7 @@ class PriestSim(CasterSim):
         return bool(sp.school & school)
 
     def instant(self, sp):
-        return sp.name in ("Shadow Word: Pain", "Devouring Plague", "Shadow Word: Death", "Holy Nova")
+        return sp.name in ("Shadow Word: Pain", "Devouring Plague", "Shadow Word: Death", "Holy Nova", "Starshards")
 
     def dmg_mult(self, sp, periodic):
         m = super().dmg_mult(sp, periodic)
@@ -407,6 +499,9 @@ class PriestSim(CasterSim):
                 step = self.T("Improved Mind Flay") / 100
                 dot = (base + coef * p) * sum((1 + step) ** k for k in range(n))
             else:
+                # only the ticks that land before the fight ends
+                left = self.sim.end - self.t - self.cast_time(sp)
+                n = max(0, min(n, int(left / period + 1e-9)))
                 dot = (base + coef * p) * n
         crit = min(100.0, self.ch.spell_crit + self.crit_chance(sp)) / 100
         hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit + self.hit_bonus(sp)) / 100
@@ -414,8 +509,87 @@ class PriestSim(CasterSim):
         return hit * m * (direct * (1 + crit * (self.crit_mult(sp) - 1)) + dot)
 
     def option(self, sp):
+        c = self.cost_of(sp)  # 0 under Inner Focus
+        dmg, secs = self.exp_damage(sp), self.exec_time(sp)
+        nova, sl = self.S.get("Holy Nova"), self.T("Searing Light")
+        if sp.name == "Holy Fire" and nova and sl and sp.dot:
+            # Searing Light: each Holy Fire tick may make one Holy Nova free; it takes a GCD (A)
+            n = int(round(sp.duration / sp.dot[1])) * sl[1] / 100
+            dmg += n * self.exp_damage(nova)
+            secs += n * GCD
+        if self.swing and self.idle > 0 and sp.name in NUKES:
+            dmg += self.idle * self.melee_dps() * self.swing_overlap(secs)
+        return (sp, dmg, secs, c, self.mana >= c)
+
+    def swing_overlap(self, secs):
+        """Seconds of a cast that cost no wand or melee damage when it is cast between swings
+        (A). The swing timer runs on during the cast, so the next swing is late only by what
+        the cast overruns it: with the cast starting at a random point of the swing, a cast of
+        s seconds (at most one swing, w) delays it by s * s / (2 * w) on average."""
+        w = (self.wand["speed"] if self.wand else self.ch.weapon("mh")[1]) / self.haste()
+        s = min(secs, w)
+        return s - s * s / (2 * w)
+
+    def focus_target(self, cands):
+        """The spell that gains most from Inner Focus (A). A free cast is worth its damage
+        (with the crit bonus) over what the same time earns otherwise, less what the spell
+        would have earned anyway at its normal cost and the plan's mana price: for a spell
+        the rotation casts in any case that is the mana saved, for one too expensive to
+        cast it is the whole cast."""
+        lam = self.lam
+        alt = self.melee_dps() + lam * self.rest_gain
+        for _, d, secs, c, _ in self._opts:
+            alt = max(alt, (d - lam * c) / secs)
+        best, best_gain = None, None
+        for sp in cands:
+            self.if_on = False
+            _, d0, secs, c0, _ = self.option(sp)
+            self.if_on = True
+            gain = self.option(sp)[1] - secs * alt - max(0.0, d0 - lam * c0 - secs * alt)
+            if best is None or gain > best_gain + 1e-9:
+                best, best_gain = sp, gain
+        return best
+
+    def nuke_pool(self):
+        out = []
+        for name in NUKES:
+            if name == "Holy Fire" and self.spec != "holy":
+                continue
+            sp = self.S.get(name)
+            if not sp:
+                continue
+            period = sp.cd
+            if name == "Mind Blast":
+                period -= self.T("Improved Mind Blast")
+            if sp.dot:
+                dur = sp.duration + (self.T("Improved Shadow Word: Pain") if name == "Shadow Word: Pain" else 0)
+                period = max(period, dur)
+            out.append((sp, period))
+        return out
+
+    def held(self, sp):
+        """Keep the mana for a better spell (A). When mana is short, `sp` waits if paying for it
+        would leave too little, with the regeneration until then, for a cooldown or DoT spell
+        that gives more damage per mana and is ready, or will be, before the mana is back."""
         c = self.cost_of(sp)
-        return (sp, self.exp_damage(sp), self.exec_time(sp), c, self.mana >= c)
+        if c <= 0 or self.lam <= 0:
+            return False
+        dpm = self.option(sp)[1] / c
+        rf = self.regen_full_ps()
+        for other, _ in self.nuke_pool():
+            if other is sp:
+                continue
+            _, d2, _, c2, _ = self.option(other)
+            if c2 <= 0 or d2 / c2 <= dpm:
+                continue
+            if other.dot and not other.cd:
+                d = self.dots.get(other.name)
+                wait = max(0.0, d["end"] - self.t) if d else 0.0
+            else:
+                wait = max(0.0, self.ready.get(other.category or other.name, 0) - self.t)
+            if self.mana - c + rf * wait < c2:
+                return True
+        return False
 
     def cast_any(self, sp):
         if sp.name == "Penance":
@@ -441,12 +615,23 @@ class PriestSim(CasterSim):
             self.sim.cast("Holy Nova")
             self.hit_direct(nova)
             return GCD
+        # Holy and Shadow plan at normal costs and Inner Focus picks its spell below (focus_target).
+        # Discipline keeps the older rule: everything is free while it is up, first spell in order.
+        focus = self.if_on and self.spec not in FOCUS_FIRST_SPELL
+        if focus:
+            self.if_on = False
         opts = [self.option(r) for rs in self.ranks_.values() for r in rs]
+        self.idle = self.rest_share
         fill, f, ok, need = self.plan(opts)
-        if self.resting:
-            if not self.rest_done(f, need):
-                return self.melee_idle()
+        self.rest_share = 1.0 - f
+        if focus:
+            self.if_on = True
+        if self.resting and self.rest_done(f, need):
             self.resting = False
+        lean = (self.lean or (self.wand_first and f < 1.0)) and not self.if_on
+        # the plan counts a cooldown spell as cast between swings for the resting share of the
+        # time; the choice below knows whether it is
+        self.idle = 1.0 if self.resting or lean else 0.0
         order = []
         swp = S.get("Shadow Word: Pain")
         if swp and not self.dot_up("Shadow Word: Pain"):
@@ -458,13 +643,19 @@ class PriestSim(CasterSim):
         dp = S.get("Devouring Plague")
         if dp and not self.dot_up("Devouring Plague"):
             order.append(dp)
-        for n in ("Penance", "Mind Blast", "Shadow Word: Death"):
+        for n in ("Starshards", "Penance", "Mind Blast", "Shadow Word: Death"):
             s = S.get(n)
             if s and self.cd_ready(s):
                 order.append(s)
-        for sp in order:
-            if self.efficient(sp, fill):
+        if focus:
+            sp = self.focus_target(order + [o[0] for o in opts])
+            if sp is not None:
                 return self.cast_any(sp)
+        for sp in order:
+            if self.efficient(sp, fill, resting=self.resting or lean) and not self.held(sp):
+                return self.cast_any(sp)
+        if self.resting or lean:
+            return self.melee_idle()
         if fill is not None and not ok:
             if f < 1.0:
                 self.resting = True
@@ -474,6 +665,21 @@ class PriestSim(CasterSim):
         if fill is not None:
             return self.cast_any(fill)
         return self.melee_idle()
+
+
+def best_policy(run):
+    """run() -> core.run_many output under the current POLICY. Returns the best of POLICIES."""
+    best = None
+    for mode in POLICIES:
+        POLICY["mode"], mage.POLICY["mode"] = mode, mode.partition("+")[0]
+        try:
+            out = run()
+        finally:
+            POLICY["mode"] = mage.POLICY["mode"] = "plan"
+        if best is None or out["dps_mean"] > best["dps_mean"]:
+            best = out
+            best["mana_policy"] = mode
+    return best
 
 
 def simulate(spec, race, level, iterations, seed):
@@ -487,7 +693,8 @@ def simulate(spec, race, level, iterations, seed):
         inputs["base_stats"] = ch.stats_tag
         p.start()
 
-    out = core.run_many(build, iterations, seed)
+    out = best_policy(lambda: core.run_many(build, iterations, seed))
+    inputs["mana_policy_best_of"] = "A"
     out["inputs"] = dict(sorted(inputs.items()))
     for k in ("fight_seconds", "spell_hit_same_level", "spell_crit_mult", "base_spell_crit"):
         out["inputs"][k] = core.ASSUMPTIONS[k][1]

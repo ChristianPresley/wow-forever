@@ -26,9 +26,23 @@ Server-side rules (not in the client), tagged:
   refreshed by each crit (tooltip, F; tick timing CU).
 - Bloodrage: 10 Rage now + 10 over 10 s (CU). Overpower: usable 5 s after a dodge (CU).
 - Slam resets the swing timer without Improved Slam (CU). Forever Slam cooldown 15 s (F).
-- Enrage, Blood Craze, Revenge, Shield Slam, Shield Specialization, Bastion and the
-  weapon-type talents do nothing: the target does not attack and there is no weapon
-  or shield (A). Protection fights in Defensive Stance (client: -10% damage).
+- Enrage, Blood Craze, Revenge, Shield Specialization and the weapon-type talents do
+  nothing: the target does not attack (A). Naked there is no shield, so Shield Slam and
+  Bastion do nothing either. Protection fights in Defensive Stance (client: -10% damage).
+- Stances: each ability is usable only in the stances its client shapeshift mask allows
+  (STANCE_BIT, F). So Protection has no Execute and Fury has no Rend from level 30.
+- Shield (crafted gear only; gear.py equips Protection's first craftable shield at level
+  60, the client has none below that): Shield Slam is cast on cooldown for its client
+  damage, Rage cost and 6 s cooldown (F), as a yellow melee attack (CU), and Bastion adds
+  its tooltip % damage (F). "Increased by your Block Value": the crafted item data has no
+  block value for any shield (no item carries stat 48 and a shield's own block value is
+  not exported), and the Strength share is server-side, so Shield Slam uses the base
+  damage plus gear "block_value" (0 today) only (A). This undervalues it.
+- Other Protection talents with no effect here: Improved Revenge, Master of Defense,
+  Last Stand, Defiance, Anticipation, Deflection, Improved Shield Bash and Improved
+  Shield Wall are defensive, reactive or threat. Vanguard: Charge already opens the
+  fight. Concussion Blow: the client spell is a stun with no damage effect (F).
+  Improved Sunder Armor: Sunder Armor is not cast, the target has 0 armor (A).
 - Gear (core.GEAR "crafted", gear.py): gear Str/Agi/hit/crit come through core.Character;
   gear "+attack power" adds to melee AP (F (crafted items)). Weapon swings roll the
   weapon's min-max (F); instant attacks use the Classic normalized speed of the weapon
@@ -60,6 +74,7 @@ TOOLTIP = {
     "Flurry": (30, 3), "Reckless Swings": (5, 1), "Improved Bloodrage": (50, 2),
     "Improved Thunder Clap": (6, 3), "Focused Rage": (3, 3), "Bastion": (10, 5),
     "Two-Handed Weapon Specialization": (6, 3), "Weaponmaster": (5, 5), "Enrage": (10, 5),
+    "Shield Slam": (1, 1),
 }
 
 # Leveling orders: (talent, ranks) spent in order, one point per level from 10.
@@ -110,6 +125,10 @@ def tal(talents, name):
 
 
 TWO_HAND = {"axe2h", "sword2h", "mace2h", "polearm", "staff"}
+# Client shapeshift mask bit of each stance (form 17, 18, 19). An ability with a mask is usable
+# only in the stances whose bit is set: Execute in Battle and Berserker, Rend and Thunder Clap in
+# Battle and Defensive, Overpower in Battle, Whirlwind in Berserker.
+STANCE_BIT = {"battle": 1 << 16, "defensive": 1 << 17, "berserker": 1 << 18}
 
 
 def norm_speed(w):
@@ -164,6 +183,8 @@ def setup(spec, race, level):
     p["oh"] = g["oh"] if g else None
     p["norm"] = norm_speed(p["mh"])
     p["gear_ap"] = ch.gear_ap()
+    # A non-weapon off-hand item on a Warrior is a shield (gear.py layout "1h_shield").
+    p["shield"] = bool(g and g["items"].get("off_hand") and not g["oh"])
     if g:
         inp["gear"] = "F (crafted items)"
         inp["normalized_speed_by_weapon_type"] = "CU"
@@ -197,6 +218,8 @@ def setup(spec, race, level):
                 dmg_mult *= 1 + e["EffectBasePointsF"] / 100
         inp["Defensive Stance Passive"] = "F"
     ch.crit_bonus += tal(tl, "Cruelty")
+    if p["shield"] and tl.get("Bastion"):
+        dmg_mult *= 1 + tal(tl, "Bastion") / 100
     p["dmg_mult"] = dmg_mult * dmg_mult_2h
     p["crit_mult_yellow"] = core.A("melee_crit_mult") + (core.A("melee_crit_mult") - 1) * tal(tl, "Impale") / 100
     p["focused"] = tal(tl, "Focused Rage")
@@ -217,6 +240,8 @@ def setup(spec, race, level):
         s = _spell(name, level)
         if not s or (need_talent and not tl.get(need_talent)) or (stances and stance not in stances):
             return None
+        if s["shapeshift_mask"] and not s["shapeshift_mask"] & STANCE_BIT[stance]:
+            return None  # the client limits the ability to other stances (F)
         ab[key] = s
         inp[name] = "F"
         return s
@@ -233,6 +258,9 @@ def setup(spec, race, level):
     add("br", "Bloodrage")
     add("bzr", "Berserker Rage", stances=("berserker",))
     add("reck", "Recklessness", stances=("berserker",))
+    if p["shield"] and add("sslam", "Shield Slam", need_talent="Shield Slam"):
+        inp["shield_slam_block_value_missing"] = "A"
+        p["block_value"] = ch.gear_stat("block_value")
     if "exe" in ab and ab["exe"]["id"] == 20647:  # level-1 damage trigger, not the trained spell
         del ab["exe"]
     p["ab"] = ab
@@ -277,6 +305,7 @@ def build(p):
     focused = p["focused"]
     mh, oh = p["mh"], p["oh"]
     oh_pct = 0.5 * (1 + tal(tl, "Dual Wield Specialization") / 100)
+    oh_rage = 1 + 0.10 * min(5, tl.get("Dual Wield Specialization", 0))  # tooltip: +10% off-hand Rage per rank (F)
 
     def cost(key, extra_red=0.0):
         return max(0.0, _rage_cost(ab[key]) - extra_red - (focused if key not in ("br", "bzr", "reck") else 0))
@@ -303,12 +332,15 @@ def build(p):
     exe_base = _eff(ab["exe"], core.DUMMY)["EffectBasePointsF"] if "exe" in ab else 0
     exe_per = 3 * p.get("exe_rank", 0)
     tc_e = _eff(ab["tc"], core.SCHOOL_DAMAGE) if "tc" in ab else None
+    if "sslam" in ab:
+        sslam_lo, sslam_hi = core.effect_range(_eff(ab["sslam"], core.SCHOOL_DAMAGE), lv, ab["sslam"]["spell_level"])
     racial = p["racial"]
+    rage_cap = ch.resource_cap(100.0)  # Expansive Mind (Gnome)
 
     def fn(sim):
         rng = sim.rng
         end = sim.end
-        st = {"rage": min(100.0, p["charge_rage"]), "gcd": 0.0, "next_swing": 0.0, "hs_q": False,
+        st = {"rage": min(rage_cap, p["charge_rage"]), "gcd": 0.0, "next_swing": 0.0, "hs_q": False,
               "flurry": 0, "op_until": -1.0, "rend_until": -1.0, "dw_until": -1.0, "dw_tick": 0.0,
               "bs_until": 120.0 if p["bs_ap"] else -1, "dwish_until": -1.0, "reck_until": -1.0,
               "rs_charges": 0, "rs_until": -1.0, "racial_until": -1.0, "slam_busy": -1.0,
@@ -345,14 +377,14 @@ def build(p):
             return (rng.uniform(oh["min"], oh["max"]) + ap() / 14 * oh["speed"]) * oh_pct
 
         def add_rage(x):
-            st["rage"] = min(100.0, st["rage"] + x)
+            st["rage"] = min(rage_cap, st["rage"] + x)
 
-        def rage_from(d, crit, f=3.5, spd=None):
+        def rage_from(d, crit, f=3.5, spd=None, mult=1.0):
             r = 15 * d / (4 * conv) + f * (speed0 if spd is None else spd) / 2
             r = min(r, 15 * d / conv)
             if crit:
                 r *= 1.75
-            add_rage(r)
+            add_rage(r * mult)
 
         def on_hit(outcome, white):
             if outcome == "crit":
@@ -438,7 +470,7 @@ def build(p):
                 elif o == "glance":
                     d *= core.A("glance_damage")
                 sim.deal("Melee (off hand)", d)
-                rage_from(d, o == "crit", 1.75, oh["speed"])
+                rage_from(d, o == "crit", 1.75, oh["speed"], oh_rage)
             on_hit(o, True)
             h = ch.haste
             if st["flurry"] > 0:
@@ -522,6 +554,10 @@ def build(p):
                 st["rage"] = 0.0
                 yellow("Execute", exe_base + extra * exe_per)
                 return
+            if ready("sslam"):
+                use("sslam")
+                yellow("Shield Slam", rng.uniform(sslam_lo, sslam_hi) + p["block_value"])
+                return
             for k in ("bt", "ms"):
                 if ready(k):
                     use(k)
@@ -565,14 +601,14 @@ def build(p):
                 return
             # Heroic Strike as a rage dump
             if "hs" in ab and not st["hs_q"]:
-                big = [costs[k] for k in ("bt", "ms", "ww") if k in ab]
+                big = [costs[k] for k in ("bt", "ms", "ww", "sslam") if k in ab]
                 reserve = max(big) if big else 0
                 if execute_phase and "exe" in ab:
                     reserve = max(reserve, costs["exe"] + 15)
                 if st["rage"] >= costs["hs"] + reserve:
                     st["hs_q"] = True
             # Nothing castable now: look again when the next cooldown ends
-            nxt = [st["ready"][k] for k in ("bt", "ms", "ww", "slam") if k in ab and st["ready"][k] > t]
+            nxt = [st["ready"][k] for k in ("bt", "ms", "ww", "slam", "sslam") if k in ab and st["ready"][k] > t]
             if nxt:
                 sim.at(min(nxt) + 1e-6, act)
 

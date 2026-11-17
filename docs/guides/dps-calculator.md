@@ -12,7 +12,8 @@ description: Estimated (not measured) raid DPS for every race and DPS spec in Wo
 - **Level and gear:** move the Level slider, and pick *Best craftable gear* or *No gear*.
 - **Filter:** select one or more classes, a faction or a race, or type in *Search*. Turn on the best-race switch to keep only the best race of each spec. The bar shows how many rows match, and *Reset filters* returns to the start.
 - **Sort:** select a column header. Select it again to reverse the order.
-- **Open a build:** select a row to see its talents, gear, opening sequence and damage by source at that level.
+- **Chart:** the chart above the table draws DPS at every level from 1 to 60. It starts with the best race of the top 4 specs in the table. Select *Compare* in a row to chart that row instead, up to 6 rows. Point at the chart, or focus it and press the arrow keys, to read every charted row at one level. The table under the chart has the same numbers.
+- **Open a build:** select a row to see its talents, gear, opening sequence and damage by source at that level. The panel also charts that build across all 60 levels: its DPS with and without crafted gear, and its damage by source. A table lists every level with the talent point spent there.
 - **Column meanings:** point at a header, or move keyboard focus to it. *How to read this table*, under the table, lists them all.
 - **Keyboard:** Tab reaches every filter, header and row name. The header row stays in view while you scroll.
 
@@ -70,13 +71,27 @@ Pick the gear:
 **Click any row** to open its full build at that level:
 
 - Race, class and spec.
+- DPS at every level, with and without crafted gear, as a chart.
+- Damage by source at every level, as a chart and as a table with one row per level.
 - Talents by tree.
 - Every gear slot with its enchant.
 - The opening sequence of abilities from a simulated fight.
 - Casts per minute.
 - Damage by source.
 
+Racials are part of every fight. The simulator models each racial that changes damage against one target: Ruthless, The Human Spirit, Artisan's Precision, Eureka!, Expansive Mind, Elune's Light, Blood Fury, Command, Berserking, Touch of the Grave and Wind Blessed. The coverage section below lists all 40 racials and their status.
+
 Spell values come from the Forever client data. The client doesn't ship some rules: combat formulas, rage, most talent ranks above 1, scripted effects, and hit and crit rating conversion. These rules use Classic rules or tagged assumptions. The module docstrings list them. It is not raid DPS: raid buffs, consumables and boss armor are left out.
+
+## Coverage: what is simulated and what is not
+
+**What is complete.** Every class, talent tree, race, gear mode and level from 1 to 60 is simulated: 27 specs, 56 class and race pairs, 168 spec and race pairs, 2 gear modes and 60 levels, which is 20,160 cells. A test fails when a cell is missing. Every damaging class spell in the Forever client is either used, tested and not chosen, or left out for a stated reason. Every talent of every level 60 build is tested by removing it and running the fight again.
+
+**What is not.** Each spec runs one talent order and one priority list. The simulator does not try every other way to spend 51 talent points, or every other order of abilities. There are far too many to run. Talents that no build takes, and spells marked *Not tested*, are listed below so that the gaps are visible.
+
+<div class="dps-calc" data-dps-audit><p>Loading the coverage audit. It needs JavaScript.</p></div>
+
+The audit is `tools/levelsim/audit.py`. It reads the simulation results and writes the data for this section.
 
 ## Limits
 

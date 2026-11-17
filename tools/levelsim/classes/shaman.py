@@ -10,18 +10,49 @@ divided by max rank) and are tagged A, because the client's talent rows are stal
 Rotations (only abilities known at that level):
   Elemental and Restoration (Restoration is scored on this damage rotation), at range:
     Searing Totem kept up > Lightning Mastery (40) > Flame Shock if not ticking >
-    Chain Lightning on cooldown > Lightning Bolt. Mana-aware (A, mage.plan_options): the
+    Chain Lightning on cooldown > Earth Shock or Frost Shock on the shock cooldown when
+    Flame Shock does not need it within 6 s > Lightning Bolt. Mana-aware (A): the
     Lightning Bolt rank is chosen from every known rank by sustained damage over the
-    remaining fight; Searing Totem, Flame Shock and Chain Lightning are cast when their
-    damage net of the mana's value beats the alternative. When the best bolt cannot be
-    sustained the Shaman casts until empty, then rests (unarmed melee, full regen) until
-    95% mana or the casting share of the fight is covered.
+    remaining fight; Searing Totem, Flame Shock, Chain Lightning and the direct shock are
+    cast when their damage net of the mana's value beats the alternative. When the best
+    bolt cannot be sustained the Shaman casts until empty, then rests (unarmed melee, full
+    regen) until 95% mana or the casting share of the fight is covered.
+    Four rotation policies (A, the pattern of mage.py), `simulate` reports the best one and
+    names it in "mana_policy". Mana: "simple" plans the bolt alone (mage.plan_options) and
+    checks each other spell against resting; "plan" plans bolts, totem, Flame Shock, Chain
+    Lightning, the direct shock and resting together (mage.mana_price: one mana price for
+    the whole remaining fight, a spell is cast when it beats every bolt and resting at
+    that price). "+shock" adds the direct shock: a shock does more damage per second and
+    less per mana than a bolt, so neither choice is best at every level. "+wf" counts the
+    Windfury Totem procs when the plan values resting in melee; counting them is better
+    where Flame Shock and melee carry the damage (Restoration crafted 56-60, +9%), not
+    counting them where the plan would then rest too long (Elemental crafted 50-60, +4%
+    to +9%). The four run are "plan+shock", "plan+shock+wf", "plan+wf" and "simple+shock";
+    over Dwarf levels 1-60 in both gear modes they reach the best of all eight
+    combinations in every cell.
+    While a "plan" rotation rests, totem, Flame Shock, Chain Lightning and the direct shock
+    are still cast when they pass the price test; only the bolt waits for the mana. Before
+    this they lapsed during every rest (Restoration ungeared 26: 33.1 -> 36.6).
+    Auto-attack and instants (A): an instant spell (totem, shocks) does not stop the
+    auto-attack, so a swing that comes due during its global cooldown lands; a cast time
+    does stop it. Before this every global cooldown delayed the swing, which cost the
+    caster specs 4% on average and made DPS depend on how the casts fell against the swing
+    timer.
+    Direct shock: Earth Shock and Frost Shock share the 6 s shock cooldown and the same
+    coefficient (client). The one with the higher expected damage is cast. Concussion and
+    the Stormstrike charge only raise Earth Shock (tooltips), so Frost Shock wins only at
+    levels where its newest rank is newer than Earth Shock's (20-23 before Concussion
+    counts, 34-35, 46-47, 58-59).
   Enhancement, in melee:
     Searing Totem kept up > Rage of the Farseer > Stormstrike > Lightning Bolt at 5 Maelstrom
     Weapon stacks > Flame Shock if not ticking while mana is above 30% > Earth Shock while
     mana is above 50%. These mana floors already pace Enhancement over a whole fight (its
     damage is mostly melee, and the gaps give full out-of-5-second-rule regen), so it keeps
     top ranks; a budget-paced downranking variant was tried and did worse (A).
+    Frost Shock in the Earth Shock slot (when its expected damage is higher) was tested for
+    Enhancement and is not used: it costs more mana, gets neither Concussion nor the
+    Stormstrike charge, and was 0.1% to 1.3% worse in 12 of 14 cells at levels 20-23,
+    34-35, 46-47 and 58-59.
   Before Earth Shock (level 4) every spec casts Lightning Bolt; Enhancement only when no melee
   ability is ready and mana is above 60%.
   Buffs before the pull: Windfury Weapon on the main hand from 30 (Enhancement); Strength of
@@ -63,9 +94,9 @@ Server-side rules and values not in the client (tags):
 import core
 
 try:
-    from .mage import plan_options
+    from .mage import mana_price, plan_options
 except ImportError:  # imported as a top-level module by the tests
-    from mage import plan_options
+    from mage import mana_price, plan_options
 
 CLASS = "shaman"
 SPECS = {"elemental": "Elemental", "enhancement": "Enhancement", "restoration": "Restoration"}
@@ -102,6 +133,44 @@ WF_WEAPON_AP_CU = {30: 46, 40: 119, 50: 249, 60: 333}
 WF_TOTEM_AP_CU = {32: 122, 42: 229, 52: 315}
 SOE_CU = {10: 10, 24: 20, 38: 36, 52: 61, 60: 77}
 GOA_CU = {42: 43, 56: 67, 60: 77}
+
+
+# Rotation policies of Elemental/Restoration (A), as in mage.py. Mana: "simple" plans the
+# Lightning Bolt rank alone (mage.plan_options) and gates totem, Flame Shock and Chain
+# Lightning on their own; "plan" plans bolts, those spells and rest together
+# (mage.mana_price). "+shock" also casts the direct shock (Earth Shock or Frost Shock) on the
+# shock cooldown between Flame Shocks. "+wf" counts the Windfury Totem procs in the plan's
+# estimate of auto-attack damage while resting. `simulate` runs the four in POLICIES and
+# reports the best one; "plan" and "simple" alone are still valid modes.
+POLICIES = ("plan+shock", "plan+shock+wf", "plan+wf", "simple+shock")
+POLICY = {"mode": "simple"}
+
+
+def _white_factor(ch, extra_crit=0.0):
+    """Expected damage of an auto-attack as a share of its average hit: the attack table of
+    core.melee_roll (miss, dodge, glancing blow, crit) instead of a flat 0.85."""
+    import os
+    if os.environ.get("K_MF") != "1":
+        return 0.85
+    miss = max(0.0, core.A("melee_miss_same_level") - ch.hit)
+    dodge, glance = core.A("dodge_same_level"), core.A("glance_same_level")
+    crit = min(max(0.0, ch.melee_crit + extra_crit), max(0.0, 100 - miss - dodge - glance))
+    return (100 - miss - dodge - glance * (1 - core.A("glance_damage")) + crit * (core.A("melee_crit_mult") - 1)) / 100
+
+
+def best_policy(run):
+    """run() -> core.run_many output under the current POLICY. Returns the best of POLICIES."""
+    best = None
+    for mode in POLICIES:
+        POLICY["mode"] = mode
+        try:
+            out = run()
+        finally:
+            POLICY["mode"] = "simple"
+        if best is None or out["dps_mean"] > best["dps_mean"]:
+            best = out
+            best["mana_policy"] = mode
+    return best
 
 
 def _tier(table, level, default=None):
@@ -141,6 +210,8 @@ def _rank(name, level, paid=True):
 class Fight:
     def __init__(self, sim, spec, race, level, inputs):
         self.sim, self.spec, self.level, self.inp = sim, spec, level, inputs
+        self.policy, *flags = POLICY["mode"].split("+")
+        self.use_shock, self.plan_wf = "shock" in flags, "wf" in flags
         ch = self.ch = core.Character(CLASS, race, level, talents_at(spec, level))
         core.apply_passive_racials(ch, race)
         self.tv = tv = lambda n: ch.tr(n) * _TT.get(n, 0.0)
@@ -185,13 +256,14 @@ class Fight:
         self.cl, self.clo = _rank("Chain Lightning", level), _rank("Chain Lightning", level, False)
         self.es = _rank("Earth Shock", level)
         self.fs = _rank("Flame Shock", level)
+        self.frs = _rank("Frost Shock", level)
         self.st = _rank("Searing Totem", level)
         self.ss = core.talent(CLASS, "Stormstrike")["ranks"][0] if ch.tr("Stormstrike") else None
         self.rof = _rank("Rage of the Farseer", 60) if ch.tr("Rage of the Farseer") else None
         self.lbs = _paid_ranks("Lightning Bolt", level)
         self.resting = False
         self.next_swing = 0.0
-        self.lam = 0.0
+        self.lam, self.rest_gain, self.lean, self._opts, self.share = 0.0, 0.0, False, [], {}
         inputs["mana_budget_rotation"] = "A"
         inputs.update({"talents": "A (Forever tooltip)", "attack_power_formula": "CU", "unarmed_weapon": "CU",
                        "base_stats": ch.stats_tag, "spell_ranks": "F", "overload_ranks": "F",
@@ -358,6 +430,18 @@ class Fight:
         self.busy = self.t + dt
         self.sim.at(self.busy, self.act)
 
+    def instant(self, gcd):
+        """After an instant spell of a caster spec: the auto-attack goes on during the global
+        cooldown (only a cast time stops it)."""
+        if not self.enh and self.next_swing < self.t + gcd - 1e-9:
+            self.sim.at(max(self.t, self.next_swing), self.gcd_swing)
+        return self.after(gcd)
+
+    def gcd_swing(self):
+        if self.next_swing <= self.t + 1e-9:
+            self.melee("Melee" if self.ch.gear else "Melee (unarmed)", lambda x: self.melee_dmg(extra_ap=x), True)
+            self.next_swing = self.t + self.speed / self.haste()
+
     def can(self, c):
         if self.clearcast:
             return True
@@ -386,7 +470,13 @@ class Fight:
         return r + self.mp5 / 5 if self.mp5 else r
 
     def melee_dps(self):
-        return self.melee_dmg() / self.speed * self.haste() * 0.85
+        """Expected auto-attack damage per second for the mana plan. Policy "+wf" adds the
+        Windfury Totem procs (20% per landed hit, 2 extra attacks with the totem's attack
+        power); without it the plan values resting lower and casts more."""
+        d = self.melee_dmg()
+        if self.plan_wf and self.wf_totem_ap and not self.wf_weapon:
+            d += 0.2 * 2 * self.melee_dmg(extra_ap=self.wf_totem_ap)
+        return d / self.speed * self.haste() * _white_factor(self.ch)
 
     def exp_spell(self, spell, mult=1.0, extra_crit=0.0, ospell=None, lo_chance=0.0):
         e = core.damage_effect(spell)
@@ -425,14 +515,100 @@ class Fight:
         hit = min(99.0, core.A("spell_hit_same_level") + self.ch.hit) / 100
         return (lo + hi) / 2 * (1 + self.tv("Call of Flame") / 100) * hit * (1 + crit * (self.crit_mult() - 1)) * int(dur / 2.5)
 
-    def worth(self, dmg, cost, secs):
-        """Damage net of the mana's value beats resting for the same time (A)."""
+    def direct_shock(self):
+        """Earth Shock or Frost Shock, whichever has the higher expected damage now (they
+        share the cooldown): (name, spell, damage multiplier, expected damage) or None.
+        Concussion only raises Earth Shock (tooltip)."""
+        best = None
+        for name, spell, mult in (("Earth Shock", self.es, 1 + self.tv("Concussion") / 100),
+                                  ("Frost Shock", self.frs, 1.0)):
+            if spell:
+                d = self.exp_spell(spell, mult)
+                if best is None or d > best[3]:
+                    best = (name, spell, mult, d)
+        return best
+
+    def plan(self, opts, pool):
+        """Lightning Bolt rank for the rest of the fight: (key, f, affordable, need); the mana
+        price is kept in self.lam. "simple": the bolt alone (mage.plan_options). "plan": the
+        bolts, the spells in `pool` ((name, damage, seconds, cost, period), each at most
+        seconds / period of the time) and resting share the time and the mana
+        (mage.mana_price, same steps as mage.CasterSim.plan). self.share keeps the share of
+        the time the plan gives each pool spell."""
+        rc, rf, w = self.regen_casting_ps(), self.regen_full_ps(), self.melee_dps()
+        self._opts, self.lean, self.share = opts, False, {}
+        if self.policy == "simple" or not opts:
+            key, f, ok, need, self.lam = plan_options(opts, self.mana, 0.0, self.sim.end - self.t, rc, rf, w)
+            return key, f, ok, need
+        acts = [(dmg / secs, c / secs, 1.0) for _, dmg, secs, c, _ in opts]
+        acts += [(dmg / secs, c / secs, min(1.0, secs / max(secs, per))) for _, dmg, secs, c, per in pool]
+        times = [secs for _, _, secs, _, _ in pool]
+        rem = max(1.0, self.sim.end - self.t)
+        inflow = max(0.0, self.mana) / rem + rc
+        g = 1.0  # share of the rest time that earns full regen (5-second rule after each cast)
+        for _ in range(3):
+            lam, x = mana_price(acts + [(w, -(rf - rc) * g, 1.0)], inflow)
+            casts = sum(xi / secs for xi, secs in zip(x[len(opts):-1], times))
+            g2 = max(0.0, x[-1] - 5.0 * casts) / x[-1] if x[-1] > 1e-6 else 1.0
+            if abs(g2 - g) < 0.05:
+                break
+            g = (g + g2) / 2
+        self.lam, self.rest_gain = lam, (rf - rc) * g
+        self.share = {sp[0]: xi for sp, xi in zip(pool, x[len(opts):-1])}
+        i = max(range(len(opts)), key=lambda i: (acts[i][0] - lam * acts[i][1], acts[i][0]))
+        f = 1.0 - x[-1]
+        self.lean = f < 1.0 and sum(x[:len(opts)]) < 0.02  # no room for a bolt: rest between the pool spells
+        spent = sum(xi * a[1] for xi, a in zip(x[:-1], acts))
+        return opts[i][0], f, opts[i][4], max(0.0, rem * (spent - f * rc))
+
+    def worth(self, dmg, cost, secs, name=None):
+        """Damage net of the mana's value beats the alternative for the same time (A):
+        resting (simple), or every bolt and resting at the plan's mana price (plan).
+        When the plan is the direct shock and resting alone (no bolt, no other pool spell:
+        levels 4-9, before Searing Totem and Flame Shock), the shock is cast when the plan
+        gives it a share of the time. The price is not asked again there: the plan's price
+        is the one at which its last-admitted spell exactly breaks even, and that spell is
+        the shock, so it would pass or fail on rounding and the mana would stay unspent.
+        The same rule for totem, Flame Shock and Chain Lightning, or for the shock next to
+        them, was tested and was worse at levels 18-25."""
         if not self.can(cost):
             return False
-        if self.lam <= 0 or cost <= 0 or self.clearcast:
-            return True
-        base = self.melee_dps() + self.lam * self.regen_full_ps()
-        return dmg - self.lam * (cost - self.regen_casting_ps() * secs) >= base * secs
+        if self.policy == "simple":
+            if self.lam <= 0 or cost <= 0 or self.clearcast:
+                return True
+            base = self.melee_dps() + self.lam * self.regen_full_ps()
+            return dmg - self.lam * (cost - self.regen_casting_ps() * secs) >= base * secs
+        if self.clearcast:
+            cost = 0.0
+        elif self.lean and name == "shock" and sum(self.share.values()) - self.share.get(name, 0.0) < 1e-3:
+            return self.share.get(name, 0.0) > 1e-3
+        lam = self.lam
+        rest = self.melee_dps() + lam * self.rest_gain
+        if self.lean:  # the plan's rest gain already counts the casts between rests
+            return dmg - lam * cost >= rest * secs - 1e-9
+        alt = max([rest] + [d2 / s2 - lam * c2 / s2 for _, d2, s2, c2, _ in self._opts])
+        return dmg / secs - lam * cost / secs >= alt - 1e-9
+
+    def pool(self, gcd, shock_red):
+        """Spells planned besides the bolt: (name, expected damage, seconds, cost, period)."""
+        out = []
+        cc = 0.9 if self.ch.tr("Elemental Focus") else 1.0
+        if self.st:
+            out.append(("totem", self.totem_damage(), gcd, self.cost(self.st, self.tv("Totemic Focus")),
+                        self.st["duration_ms"] / 1000))
+        fs_dur = 0.0
+        if self.fs:
+            dmg, fs_dur = self.fs_damage(self.fs)
+            out.append(("fs", dmg, gcd, self.cost(self.fs, shock_red) * cc, fs_dur))
+        if self.cl:
+            _, dmg, secs, eff, _ = self.bolt_option(self.cl, self.clo, "Chain Lightning", gcd)
+            out.append(("cl", dmg, secs, eff, 6.0))
+        ds = self.direct_shock() if self.use_shock else None
+        if ds:
+            # the shock cooldown is shared: Flame Shock takes one slot per duration
+            per = 6.0 if not fs_dur else 1 / max(1e-6, 1 / 6.0 - 1 / max(6.0, fs_dur))
+            out.append(("shock", ds[3], gcd, self.cost(ds[1], shock_red) * cc, per))
+        return out
 
     def melee_idle(self):
         """Unarmed auto-attack while out of mana or resting (A)."""
@@ -451,23 +627,29 @@ class Fight:
         opts, key, f, ok, need = [], None, 1.0, True, 0.0
         if not self.enh:
             opts = [self.bolt_option(r, o, "Lightning Bolt", gcd) for r, o in self.lbs]
-            key, f, ok, need, self.lam = plan_options(opts, self.mana, 0.0, self.sim.end - t, self.regen_casting_ps(),
-                                                      self.regen_full_ps(), self.melee_dps())
+            key, f, ok, need = self.plan(opts, self.pool(gcd, shock_red) if self.policy == "plan" else [])
+            hold = False
             if self.resting:
                 if not (f >= 1.0 or self.mana >= min(0.95 * self.max_mana, need)):
-                    return self.melee_idle()
-                self.resting = False
+                    if self.policy != "plan":
+                        return self.melee_idle()
+                    hold = True  # plan: totem and shocks go on between rests, only the bolt waits
+                else:
+                    self.resting = False
+            if self.policy == "plan" and key is not None and not ok and f < 1.0 and not self.clearcast:
+                self.resting = True
+                hold = True
         # Searing Totem
         if self.st and self.totem_until <= t:
             c = self.cost(self.st, self.tv("Totemic Focus"))
             dur = self.st["duration_ms"] / 1000
-            go = self.mana >= c and (self.enh or self.worth(self.totem_damage(), c, gcd))
+            go = self.mana >= c and (self.enh or self.worth(self.totem_damage(), c, gcd, "totem"))
             if go:
                 self.spend(c)
                 self.totem_until = t + dur
                 self.sim.cast("Searing Totem")
                 self.sim.at(t + 0.5, self.totem_tick, self.totem_until)
-                return self.after(gcd)
+                return self.instant(gcd)
         if self.enh:
             if self.rof and self.ready("rof"):
                 self.cd["rof"] = t + self.rof["cooldown_ms"] / 1000
@@ -499,7 +681,7 @@ class Fight:
                     self.after_damage_spell()
                     return self.after(max(gcd, cast))
         else:
-            if ch.tr("Lightning Mastery") and self.ready("lm"):
+            if ch.tr("Lightning Mastery") and self.ready("lm") and not hold:
                 self.cd["lm"] = t + 180
                 self.buff["lm"] = t + 15
                 self.sim.cast("Lightning Mastery")
@@ -512,7 +694,7 @@ class Fight:
             else:
                 dmg, _ = self.fs_damage(self.fs)
                 c = self.cost(self.fs, shock_red)
-                if self.worth(dmg, c, gcd):
+                if self.worth(dmg, c, gcd, "fs"):
                     fs = self.fs
             if fs:
                 c = self.cost(fs, shock_red)
@@ -529,7 +711,7 @@ class Fight:
                 for i in range(1, int(dur / per + 1e-6) + 1):
                     self.sim.at(t + i * per, self.fs_tick, self.fs_until, tick)
                 self.after_damage_spell()
-                return self.after(gcd)
+                return self.instant(gcd)
         if self.enh:
             if self.es and self.ready("shock") and self.mana >= 0.5 * self.max_mana:
                 c = self.cost(self.es, shock_red)
@@ -545,9 +727,24 @@ class Fight:
             if self.cl and (self.ready("cl") or self.buff.get("lm", -1) > t):
                 _, dmg, secs, eff, _ = self.bolt_option(self.cl, self.clo, "Chain Lightning", gcd)
                 c = self.cost(self.cl, self.tv("Convection"))
-                if self.worth(dmg, c, secs):
+                if self.worth(dmg, c, secs, "cl"):
                     self.cd["cl"] = t + 6
                     return self.cast_bolt(t, gcd, self.cl, self.clo, "Chain Lightning", c)
+            ds = self.direct_shock() if self.use_shock and self.ready("shock") else None
+            if ds and (not self.fs or self.fs_until <= t or self.fs_until > t + 6):
+                name, spell, mult, dmg = ds
+                c = self.cost(spell, shock_red)
+                # simple: `worth` only compares with resting, so the shock must also beat the bolt
+                beats = self.policy == "plan" or key is None or                     dmg / gcd >= max(o[1] / o[2] for o in opts if o[0] is key)
+                if beats and self.worth(dmg, c, gcd, "shock"):
+                    self.pay(c)
+                    self.cd["shock"] = t + 6
+                    self.sim.cast(name)
+                    self.spell_hit(name, spell, mult)
+                    self.after_damage_spell()
+                    return self.instant(gcd)
+            if hold or (self.lean and not self.clearcast):
+                return self.melee_idle()
             if key is not None and not ok and not self.clearcast:
                 if f < 1.0:
                     self.resting = True
@@ -593,6 +790,10 @@ def simulate(spec, race, level, iterations, seed):
     def build(sim):
         Fight(sim, spec, race, level, inputs).start()
 
-    r = core.run_many(build, iterations, seed)
+    if spec == "enhancement":
+        r = core.run_many(build, iterations, seed)
+    else:
+        r = best_policy(lambda: core.run_many(build, iterations, seed))
+        inputs["mana_policy_best_of"] = "A"
     r["inputs"] = inputs
     return r

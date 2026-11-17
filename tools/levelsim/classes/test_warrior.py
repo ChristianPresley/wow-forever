@@ -94,6 +94,25 @@ class GearTests(unittest.TestCase):
         self.assertEqual(r["inputs"]["gear"], "F (crafted items)")
         self.assertNotIn("gear", W.simulate("arms", "human", 60, 2, 1)["inputs"])
 
+    def test_shield_slam_needs_the_crafted_shield(self):
+        # gear.py's first craftable shield is at level 60; naked there is none.
+        r = _crafted(W, "protection", "human", 60)
+        self.assertGreater(r["breakdown"].get("Shield Slam", 0), 0)
+        self.assertEqual(r["inputs"]["shield_slam_block_value_missing"], "A")
+        self.assertNotIn("Shield Slam", _crafted(W, "protection", "human", 59)["breakdown"])
+        self.assertNotIn("Shield Slam", W.simulate("protection", "human", 60, 5, 1)["breakdown"])
+        self.assertNotIn("Shield Slam", _crafted(W, "arms", "human", 60, 3)["breakdown"])
+
+    def test_shield_talents_add_damage_with_a_shield(self):
+        base = _crafted(W, "protection", "human", 60, 20)["dps_mean"]
+        orig = W.talents_at
+        try:
+            for name in ("Shield Slam", "Bastion"):
+                W.talents_at = lambda s, lv, name=name: {k: v for k, v in orig(s, lv).items() if k != name}
+                self.assertLess(_crafted(W, "protection", "human", 60, 20)["dps_mean"], base, name)
+        finally:
+            W.talents_at = orig
+
 
 if __name__ == "__main__":
     unittest.main()

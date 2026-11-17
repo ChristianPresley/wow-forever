@@ -30,6 +30,8 @@ Server-side behaviour and assumptions (tag in `inputs`):
 - Traps are placed under the target and trigger at once (A). The trap with the best
   damage per mana is used, since a naked Hunter is mana-bound (A).
 - The target is a tracked creature type, so Improved Tracking applies (A).
+- Mana reserve (A): when Summon Hawk is ready but not affordable, the Hunter saves mana for
+  it and casts nothing weaker in the meantime. Hawks do far more damage per mana than shots.
 - Counterattack needs a parry, and the training target does not attack: unused.
 - Deadly Aspects procs from Auto Shot (no ranged weapon) or with Aspect of the
   Beast (not a trained spell in the client): no effect.
@@ -479,11 +481,17 @@ class Hunter:
             sim.cast("Intimidation")
         if self.rw:
             self.do_rapid()
+        self.short = False
         for name, fn in self.priority():
             self.next_act = gcd
             if fn():
                 sim.at(sim.t + self.next_act, self.act)
                 return
+            if self.short:
+                # Summon Hawk is ready but not affordable: save the mana for it instead of
+                # spending it on a weaker shot or trap (A). Without this, cheaper shots
+                # (Efficiency) starve the hawks, which do far more damage per mana.
+                break
         sim.at(sim.t + 0.5, self.act)
 
     def priority(self):
@@ -546,7 +554,10 @@ class Hunter:
         if not s or not self.ready("hawk"):
             return False
         self.hawks = [h for h in self.hawks if h > self.sim.t]
-        if len(self.hawks) >= s["effects"][2]["EffectBasePointsF"] or not self.pay(s):
+        if len(self.hawks) >= s["effects"][2]["EffectBasePointsF"]:
+            return False
+        if not self.pay(s):
+            self.short = True  # ready but not affordable: act() saves the mana for it
             return False
         self.cds["hawk"] = self.sim.t + s["category_cooldown_ms"] / 1000
         self.sim.cast("Summon Hawk")

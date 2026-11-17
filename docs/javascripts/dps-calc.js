@@ -635,7 +635,6 @@
     }).catch(function () { box.replaceChildren(el("p", { text: "The simulated estimates could not be loaded." })); });
   }
 
-  // ---------- Level-by-level simulation (tools/levelsim, published by tools/levelsim/publish.py) ----------
   // ---------- Build panel: full character for one row (tools/levelsim/spec_export.py) ----------
   var specCache = {};
   var SLOT_ORDER = ["head", "neck", "shoulder", "back", "chest", "wrist", "hands", "waist", "legs", "feet", "trinket1", "trinket2", "main_hand", "off_hand", "ranged"];
@@ -650,7 +649,55 @@
     return specCache[key];
   }
   function section(title, kids) { return el("section", { "class": "dps-spec-sec" }, [el("h4", { text: title })].concat(kids)); }
-  function specPanel(x, level, gear) {
+  // Charts and the level-by-level table of one class, spec, race and gear mode (all 60 levels of the build file).
+  function acrossLevels(x, doc, level, gear, series) {
+    var N = doc.names, lvls = Object.keys(doc.levels).map(Number).sort(function (a, b) { return a - b; });
+    var per = lvls.map(function (lv) { return doc.levels[String(lv)].races[x.race] || { dps: null, ci: null, dmg: {} }; });
+    var kids = [];
+    // 1. this build with and without crafted gear
+    var lines = [];
+    if (series.crafted) lines.push({ name: "Best craftable gear", values: series.crafted, slot: 0 });
+    if (series.none) lines.push({ name: "No gear", values: series.none, slot: 1 });
+    var lineBox = el("div");
+    kids.push(el("h5", { text: "DPS at every level" }), lineBox);
+    // 2. damage by source: the five largest sources over all levels, the rest as "Other"
+    var sum = {};
+    per.forEach(function (r) { Object.keys(r.dmg).forEach(function (k) { sum[k] = (sum[k] || 0) + r.dmg[k]; }); });
+    var order = Object.keys(sum).sort(function (a, b) { return sum[b] - sum[a]; }), top = order.slice(0, order.length > 6 ? 5 : 6), rest = order.slice(top.length);
+    var stack = top.map(function (k, i) { return { name: N[k], slot: i, values: per.map(function (r) { return r.dmg[k] || 0; }) }; });
+    if (rest.length) stack.push({ name: "Other (" + rest.length + " sources)", slot: 5, values: per.map(function (r) { return rest.reduce(function (s, k) { return s + (r.dmg[k] || 0); }, 0); }) });
+    var stackBox = el("div");
+    kids.push(el("h5", { text: "Damage by source at every level (" + (gear === "crafted" ? "best craftable gear" : "no gear") + ")" }), stackBox);
+    // 3. the same numbers as a table: one row per level, with the talent point spent at that level
+    function flat(lv) { var out = {}, t = doc.levels[String(lv)].talents; Object.keys(t).forEach(function (tree) { Object.keys(t[tree]).forEach(function (n) { out[n] = t[tree][n]; }); }); return out; }
+    var prevT = {}, body = el("tbody");
+    lvls.forEach(function (lv, i) {
+      var r = per[i], cur = flat(lv), gained = Object.keys(cur).filter(function (n) { return cur[n] > (prevT[n] || 0); }).map(function (n) { return n + " " + cur[n]; });
+      prevT = cur;
+      var prev = i ? per[i - 1].dps : null, ch = prev ? (r.dps / prev - 1) * 100 : null;
+      var parts = Object.keys(r.dmg).map(function (k) { return [N[k], r.dmg[k]]; }).sort(function (a, b) { return b[1] - a[1]; });
+      var tot = parts.reduce(function (s, p) { return s + p[1]; }, 0) || 1;
+      body.appendChild(el("tr", lv === level ? { "class": "is-open" } : {}, [
+        el("td", { "class": "dps-num", text: String(lv) }),
+        el("td", { "class": "dps-num" }, [el("strong", { text: r.dps == null ? "–" : r.dps.toFixed(1) }), el("small", { text: r.ci == null ? "" : " ±" + r.ci.toFixed(1) })]),
+        el("td", { "class": "dps-num" + (ch == null ? "" : ch < 0 ? " dps-down" : ""), text: ch == null ? "–" : (ch >= 0 ? "+" : "") + ch.toFixed(1) + "%" }),
+        el("td", { text: gained.join(", ") }),
+        el("td", { text: parts.slice(0, 4).map(function (p) { return p[0] + " " + Math.round(p[1] / tot * 100) + "%"; }).join(", ") })]));
+    });
+    var tbl = el("table", { "class": "dps-inputs", "data-caption": "Level-by-level breakdown" }, [
+      el("thead", {}, [el("tr", {}, ["Level", "DPS", "Change", "Talent point", "Largest damage sources"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), body]);
+    kids.push(el("details", { "class": "dps-levels" }, [el("summary", { text: "Level-by-level breakdown (all " + lvls.length + " levels)" }), el("div", { "class": "dps-scroll" }, [tbl])]));
+    var sec = section("Across levels " + lvls[0] + "–" + lvls[lvls.length - 1], kids);
+    // draw once the section is in the page, so the charts can measure their width
+    setTimeout(function () {
+      if (!window.ForeverCharts) return;
+      window.ForeverCharts.draw(lineBox, { label: "DPS at every level, with and without crafted gear", x: lvls, xLabel: "Level", unit: "DPS", series: lines, marker: level });
+      window.ForeverCharts.draw(stackBox, { label: "Damage by source at every level", x: lvls, xLabel: "Level", unit: "DPS", series: stack, stacked: true, marker: level });
+    }, 0);
+    return sec;
+  }
+
+  function specPanel(x, level, gear, series) {
     var box = el("div", { "class": "dps-spec" }, [el("p", { text: "Loading the build…" })]);
     specFile(x, gear).then(function (doc) {
       var L = doc.levels[String(level)], R = L && L.races[x.race];
@@ -658,7 +705,8 @@
       var N = doc.names, raceName = (RACES[x.race] && RACES[x.race].name) || x.race;
       var kids = [el("p", { "class": "dps-spec-head" }, [
         el("strong", { text: "Level " + level + " " + raceName + " " + (CLSNAME[x.class] || x.class) + ", " + doc.spec_name }),
-        el("span", { text: " · " + (gear === "crafted" ? "best craftable gear" : "no gear") + " · " + R.dps.toFixed(1) + " DPS in this run (" + doc.iterations + " fights of " + doc.fight_seconds + " s)" })])];
+        el("span", { text: " · " + (gear === "crafted" ? "best craftable gear" : "no gear") + " · " + R.dps.toFixed(1) + " DPS (" + doc.iterations + " fights of " + doc.fight_seconds + " s)" })])];
+      kids.push(acrossLevels(x, doc, level, gear, series || {}));
       // Talents
       var trees = Object.keys(L.talents).sort(function (p, q) { return L.points[q] - L.points[p]; });
       var pts = trees.map(function (t) { return L.points[t]; });
@@ -695,14 +743,59 @@
     return box;
   }
 
+  // ---------- Level-by-level simulation (tools/levelsim, published by tools/levelsim/publish.py) ----------
   function renderLevels(box) {
     var url = new URL("../assets/data/level-sim.json", SCRIPT_SRC || location.href).href;
     fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (data) {
-      var levels = data.levels, rows = data.rows;
+      var levels = data.levels, rows = data.rows, MAXPIN = 6;
       var hasCrafted = rows.some(function (x) { return x.gear === "crafted"; });
       var state = { cls: [], level: levels[levels.length - 1], best: false, gear: hasCrafted ? "crafted" : "none", faction: "all", race: "all", q: "" };
-      var ff = null, FF = window.ForeverFilters;
+      var pins = [];      // rows picked with Compare: { key, slot }; empty means the chart follows the top of the table
+      var byKey = {};
+      function keyOf(x) { return x.class + "|" + x.spec + "|" + x.race; }
+      function nameOf(x) { return x.spec_name + " " + (CLSNAME[x.class] || x.class) + " · " + ((RACES[x.race] && RACES[x.race].name) || x.race); }
+      rows.forEach(function (x) { byKey[keyOf(x) + "|" + (x.gear || "none")] = x; });
+      var ff = null, FF = window.ForeverFilters, chart = null;
       var filters = el("div", { "class": "dps-filters" }), out = el("div");
+      var chartBox = el("div"), trajSub = el("p"), clearBtn = el("button", { type: "button", "class": "dps-linkbtn", text: "Follow the top rows" });
+      var numbers = el("div", { "class": "dps-scroll" });
+      var traj = el("div", { "class": "dps-traj" }, [
+        el("div", { "class": "dps-traj-head" }, [el("div", {}, [el("h3", { text: "DPS across levels " + levels[0] + "–" + levels[levels.length - 1] }), trajSub]), clearBtn]),
+        chartBox,
+        el("details", {}, [el("summary", { text: "Level-by-level numbers for the charted rows" }), numbers])]);
+      clearBtn.addEventListener("click", function () { pins = []; draw(); });
+
+      function drawChart(list) {
+        var shown;
+        if (pins.length) {
+          shown = pins.map(function (p) { return { x: byKey[p.key + "|" + state.gear], slot: p.slot }; }).filter(function (p) { return p.x; });
+        } else {      // no picks yet: the best row of each of the first four specs in the table
+          var seenSpec = {}; shown = [];
+          list.forEach(function (x) { var k = x.class + x.spec; if (seenSpec[k] || shown.length >= 4) return; seenSpec[k] = 1; shown.push({ x: x, slot: shown.length }); });
+        }
+        var on = {}; shown.forEach(function (p) { on[keyOf(p.x)] = 1; });
+        var ctxSeen = {}, context = [];
+        list.forEach(function (x) { var k = x.class + x.spec; if (ctxSeen[k] || on[keyOf(x)]) return; ctxSeen[k] = 1; context.push({ name: nameOf(x), values: x.dps, context: true }); });
+        var series = shown.map(function (p) { return { name: nameOf(p.x), short: p.x.spec_name + " · " + ((RACES[p.x.race] && RACES[p.x.race].name) || p.x.race), values: p.x.dps, slot: p.slot }; }).concat(context);
+        var gearTxt = state.gear === "crafted" ? "best craftable gear" : "no gear";
+        trajSub.textContent = (pins.length ? "Your " + shown.length + " picked row" + (shown.length === 1 ? "" : "s") : "The best race of the top " + shown.length + " specs in the table") +
+          ", " + gearTxt + ". Pick up to " + MAXPIN + " rows with Compare. The gold line marks level " + state.level + ".";
+        clearBtn.disabled = !pins.length;
+        var opts = { label: "Simulated DPS at every level for the charted rows", x: levels, xLabel: "Level", unit: "DPS", series: series, marker: state.level,
+          note: context.length ? "Grey lines: the best race of the other " + context.length + " specs that match the filters." : "" };
+        if (window.ForeverCharts) { if (chart) chart.update(opts); else chart = window.ForeverCharts.draw(chartBox, opts); }
+        // the same numbers as a table
+        var body = el("tbody");
+        levels.forEach(function (lv, i) {
+          body.appendChild(el("tr", lv === state.level ? { "class": "is-open" } : {}, [el("td", { "class": "dps-num", text: String(lv) })].concat(shown.map(function (p) {
+            var v = p.x.dps[i], c = p.x.ci[i];
+            return el("td", { "class": "dps-num" }, [el("strong", { text: v == null ? "–" : v.toFixed(1) }), el("small", { text: c == null ? "" : " ±" + c.toFixed(1) })]);
+          }))));
+        });
+        numbers.replaceChildren(el("table", { "class": "dps-inputs", "data-caption": "DPS at every level for the charted rows" }, [
+          el("thead", {}, [el("tr", {}, [el("th", { scope: "col", text: "Level" })].concat(shown.map(function (p) { return el("th", { scope: "col", text: nameOf(p.x) }); })))]), body]));
+      }
+
       function draw() {
         var li = levels.indexOf(state.level);
         var list = rows.filter(function (x) { return x.dps[li] != null && (x.gear || "none") === state.gear && FF.match(state.cls, x.class) &&
@@ -714,15 +807,29 @@
         if (state.best) { var seen = {}; list = list.filter(function (x) { var k = x.class + x.spec; if (seen[k]) return false; seen[k] = 1; return true; }); }
         if (ff) ff.count(list.length, state.best ? new Set(rows.filter(function (x) { return (x.gear || "none") === state.gear; }).map(function (x) { return x.class + x.spec; })).size
           : rows.filter(function (x) { return (x.gear || "none") === state.gear && x.dps[li] != null; }).length, state.best ? "specs" : "spec and race pairs");
+        drawChart(list);
+        var pinned = {}; pins.forEach(function (p) { pinned[p.key] = 1; });
         var top = list.length ? list[0].dps[li] : 1, tbody = el("tbody");
         list.forEach(function (x, i) {
-          var d = x.dps[li], vs = d / best[x.class + x.spec] - 1;
+          var d = x.dps[li], vs = d / best[x.class + x.spec] - 1, prev = li > 0 ? x.dps[li - 1] : null, gain = prev ? (d / prev - 1) * 100 : null;
           var btn = el("button", { type: "button", "class": "dps-spec-btn", "aria-expanded": "false", text: x.spec_name });
+          var isPin = !!pinned[keyOf(x)];
+          var pin = el("button", { type: "button", "class": "dps-pin", "aria-pressed": isPin ? "true" : "false", "aria-label": (isPin ? "On chart: " : "Compare: ") + nameOf(x) + (isPin ? ". Remove it from the chart" : ". Add it to the chart"), text: isPin ? "On chart" : "Compare" });
+          if (!isPin && pins.length >= MAXPIN) pin.disabled = true;
+          pin.addEventListener("click", function (ev) {
+            ev.stopPropagation();
+            var k = keyOf(x), at = -1;
+            pins.forEach(function (p, n) { if (p.key === k) at = n; });
+            if (at >= 0) pins.splice(at, 1);
+            else if (pins.length < MAXPIN) { var used = {}; pins.forEach(function (p) { used[p.slot] = 1; }); var slot = 0; while (used[slot]) slot++; pins.push({ key: k, slot: slot }); }      // a picked row keeps its colour
+            draw();
+          });
           var tr = el("tr", { "class": "dps-spec-row" });
           var detail = null;
           function toggle() {
             if (detail) { detail.remove(); detail = null; btn.setAttribute("aria-expanded", "false"); tr.classList.remove("is-open"); return; }
-            detail = el("tr", { "class": "dps-spec-detail" }, [el("td", { colspan: "6" }, [specPanel(x, state.level, x.gear || "none")])]);
+            var both = {}; ["crafted", "none"].forEach(function (g) { var o = byKey[keyOf(x) + "|" + g]; if (o) both[g] = o.dps; });
+            detail = el("tr", { "class": "dps-spec-detail" }, [el("td", { colspan: "8" }, [specPanel(x, state.level, x.gear || "none", both)])]);
             tr.after(detail); btn.setAttribute("aria-expanded", "true"); tr.classList.add("is-open");
           }
           btn.addEventListener("click", function (ev) { ev.stopPropagation(); toggle(); });
@@ -734,11 +841,13 @@
             el("td", {}, [btn]),
             el("td", { text: (RACES[x.race] && RACES[x.race].name) || x.race }),
             el("td", { "class": "dps-num" }, [el("span", { "class": "dps-bar", style: "--v:" + (d / top * 100).toFixed(1) + "%" }), el("strong", { text: d.toFixed(1) }), el("small", { text: " ±" + (x.ci[li] || 0).toFixed(1) })]),
-            el("td", { "class": "dps-num", text: Math.abs(vs) < 1e-9 ? "best" : (Math.abs(vs) < 0.0005 ? "tied" : (vs * 100).toFixed(1) + "%") })
+            el("td", { "class": "dps-num", text: Math.abs(vs) < 1e-9 ? "best" : (Math.abs(vs) < 0.0005 ? "tied" : (vs * 100).toFixed(1) + "%") }),
+            el("td", { "class": "dps-num" + (gain != null && gain < 0 ? " dps-down" : ""), text: gain == null ? "–" : (gain >= 0 ? "+" : "") + gain.toFixed(1) + "%" }),
+            el("td", {}, [pin])
           ].forEach(function (td) { tr.appendChild(td); });
         });
         out.replaceChildren(el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-table" }, [
-          el("thead", {}, [el("tr", {}, ["#", "Class", "Spec (click for the full build)", "Race", "Simulated DPS", "vs best race"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), tbody])]));
+          el("thead", {}, [el("tr", {}, ["#", "Class", "Spec (click for the full build)", "Race", "Simulated DPS", "vs best race", "vs previous level", "Chart"].map(function (h) { return el("th", { scope: "col", text: h }); }))]), tbody])]));
       }
       ff = FF.build(state, [
         { type: "range", key: "level", label: "Level", values: levels },
@@ -750,9 +859,84 @@
         { type: "toggle", key: "best", label: "Best race of each spec only" }
       ], draw, { label: "Filter DPS by level" });
       filters.replaceChildren(ff.el);
-      box.replaceChildren(el("p", { "class": "dps-meta", text: rows.length / (hasCrafted ? 2 : 1) + " class, spec and race series, levels " + levels[0] + "–" + levels[levels.length - 1] + ", " + (data.iterations || "?") + " simulated fights per point. ± is simulation noise only." }), filters, out);
+      box.replaceChildren(el("p", { "class": "dps-meta", text: rows.length / (hasCrafted ? 2 : 1) + " class, spec and race series, levels " + levels[0] + "–" + levels[levels.length - 1] + ", " + (hasCrafted ? "with and without crafted gear, " : "") + (data.iterations || "?") + " simulated fights per point. ± is simulation noise only." }), filters, traj, out);
       draw();
     }).catch(function () { box.replaceChildren(el("p", { text: "The level simulation could not be loaded." })); });
+  }
+
+  // ---------- Coverage audit (tools/levelsim/audit.py) ----------
+  var STATUS = { used: "Used", tested: "Tested, not chosen", starved: "In rotation, never cast", multi: "Left out: several targets", reactive: "Left out: target must act", kill: "Left out: needs a kill",
+    type: "Left out: creature type", utility: "Left out: utility", talent: "Left out: talent not taken", form: "Left out: form or weapon", untested: "Not tested", unaccounted: "Unaccounted" };
+  function renderAudit(box) {
+    var url = new URL("../assets/data/level-audit.json", SCRIPT_SRC || location.href).href;
+    fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (A) {
+      function num(n) { return n.toLocaleString("en-US"); }
+      function tile(k, v, s) { return el("div", { "class": "dps-audit-tile" }, [el("span", { text: k }), el("strong", { text: v }), el("small", { text: s })]); }
+      function tbl(caption, head, bodyRows) {
+        return el("div", { "class": "dps-scroll" }, [el("table", { "class": "dps-inputs", "data-caption": caption }, [
+          el("thead", {}, [el("tr", {}, head.map(function (h) { return el("th", { scope: "col", text: h }); }))]), el("tbody", {}, bodyRows)])]);
+      }
+      function fold(title, kids) { return el("details", { "class": "note" }, [el("summary", { text: title })].concat(kids)); }
+      function tag(text, cls) { return el("span", { "class": "dps-tag" + (cls ? " dps-tag--" + cls : ""), text: text }); }
+      var M = A.matrix, counts = { used: 0, tested: 0, out: 0, untested: 0, unaccounted: 0 }, spellRows = [];
+      Object.keys(A.abilities).forEach(function (cls) {
+        A.abilities[cls].spells.forEach(function (sp) {
+          var st = sp.status;
+          counts[st === "used" || st === "tested" || st === "unaccounted" ? st : st === "untested" || st === "starved" ? "untested" : "out"]++;
+          spellRows.push(el("tr", {}, [
+            el("td", {}, [el("span", { "class": "pill pill--" + cls, text: CLSNAME[cls] || cls })]), el("td", { text: sp.name }), el("td", { "class": "dps-num", text: String(sp.learned) }),
+            el("td", {}, [tag(STATUS[st] || st, st === "used" || st === "tested" ? "ok" : st === "untested" || st === "starved" || st === "unaccounted" ? "gap" : "")]),
+            el("td", { text: st === "used" ? "From level " + sp.first_used + ": " + sp.specs.join(", ") : (A.reasons[st] || "") })]));
+        });
+      });
+      var totalSpells = spellRows.length, T = A.talents || {}, tRows = [], tCount = 0, tMeasurable = 0, tLower = 0, never = [];
+      Object.keys(T).forEach(function (cls) {
+        T[cls].specs.forEach(function (sp) {
+          sp.talents.slice().sort(function (a, b) { return (b.adds_pct || 0) - (a.adds_pct || 0); }).forEach(function (t) {
+            tCount++; if (t.measurable) tMeasurable++; if (t.measurable && t.adds_pct < 0) tLower++;
+            tRows.push(el("tr", {}, [
+              el("td", {}, [el("span", { "class": "pill pill--" + cls, text: CLSNAME[cls] || cls })]), el("td", { text: sp.spec_name }), el("td", { text: t.talent }),
+              el("td", { text: t.tree }), el("td", { "class": "dps-num", text: String(t.rank) }),
+              el("td", { "class": "dps-num" + (t.adds_pct != null && t.adds_pct < 0 && t.measurable ? " dps-down" : "") }, [
+                el("span", { "class": "dps-bar", style: "--v:" + Math.max(0, Math.min(100, (t.adds_pct || 0) * 4)).toFixed(1) + "%" }),
+                el("strong", { text: t.adds_pct == null ? "–" : (t.adds_pct >= 0 ? "+" : "") + t.adds_pct.toFixed(1) + "%" })]),
+              el("td", { text: t.measurable ? "Yes" : "No" })]));
+          });
+        });
+        never.push(el("li", {}, [el("strong", { text: (CLSNAME[cls] || cls) + " (" + T[cls].never_taken.length + " of " + T[cls].tree_size + "): " }), document.createTextNode(T[cls].never_taken.join(", "))]));
+      });
+      var rRows = [], rModelled = 0, rTotal = 0;
+      Object.keys(A.racials).forEach(function (race) {
+        A.racials[race].forEach(function (r) {
+          rTotal++; if (r.status !== "none") rModelled++;
+          rRows.push(el("tr", {}, [el("td", { text: (RACES[race] && RACES[race].name) || race }), el("td", { text: r.name }),
+            el("td", {}, [tag(r.status === "modelled" ? "Modelled" : r.status === "partial" ? "Partly modelled" : "No damage effect", r.status === "modelled" ? "ok" : r.status === "partial" ? "gap" : "")]),
+            el("td", { text: r.note })]));
+        });
+      });
+      var dipRows = A.dips.map(function (d) {
+        return el("tr", {}, [el("td", {}, [el("span", { "class": "pill pill--" + d["class"], text: CLSNAME[d["class"]] || d["class"] })]), el("td", { text: d.spec }),
+          el("td", { text: d.gear === "crafted" ? "Best craftable" : "No gear" }), el("td", { "class": "dps-num", text: (d.level - 1) + " to " + d.level }),
+          el("td", { "class": "dps-num dps-down", text: d.worst_pct.toFixed(1) + "%" }), el("td", { "class": "dps-num", text: String(d.races) })]);
+      });
+      var complete = M.cells_present === M.cells_expected && !M.not_positive.length;
+      box.replaceChildren(
+        el("div", { "class": "dps-audit-tiles" }, [
+          tile("Cells simulated", num(M.cells_present) + " of " + num(M.cells_expected), complete ? "No cell is missing and every one has a positive DPS." : (M.missing.length + " missing, " + M.not_positive.length + " without damage.")),
+          tile("Combinations", num(M.series), M.specs + " specs × the races of each class (" + M.class_race_pairs + " class and race pairs) × " + M.gear_modes.length + " gear modes, each at " + M.levels + " levels."),
+          tile("Damaging class spells", counts.used + " of " + totalSpells + " used", counts.tested + " tested and not chosen, " + counts.out + " left out for a stated reason, " + counts.untested + " not tested or never cast" + (counts.unaccounted ? ", " + counts.unaccounted + " unaccounted" : "") + "."),
+          tile("Talents tested", tCount ? num(tCount) : "–", tCount ? (tMeasurable - tLower) + " add DPS, " + (tCount - tMeasurable) + " change nothing above the noise, and " + tLower + " lower it: the build does better without them." : "Run audit.py with talents."),
+          tile("Racials", rModelled + " of " + rTotal + " modelled", (rTotal - rModelled) + " have no effect on damage against one training target.")]),
+        fold("Abilities: every damaging class spell and what the simulator does with it", [tbl("Damaging class spells", ["Class", "Spell", "Learned", "Status", "Detail"], spellRows)]),
+        fold("Talents: what each talent adds to its level 60 build", [
+          el("p", { text: "Each talent of each level 60 build is removed in turn and the fight is run again with the same random seeds (" + (A.talent_iterations || "?") + " fights, best craftable gear, first race of the class). Adds is the DPS lost without the talent. A talent marked No has no modelled effect on this fight, or one smaller than the noise. Removing a talent that unlocks another one leaves the other in place, so the number is that talent alone. A red negative number means DPS rises without the talent. That points at a rotation that uses the talent badly, and it is a known defect of this model." }),
+          tbl("Talent contribution", ["Class", "Spec", "Talent", "Tree", "Rank", "Adds", "Above noise"], tRows)]),
+        fold("Talents that no simulated build takes", [el("p", { text: "Each spec runs one talent order. These talents are in the trees but in none of the 27 orders, so they are not tested." }), el("ul", {}, never)]),
+        fold("Racials: all " + rTotal + " and their status", [tbl("Racials", ["Race", "Racial", "Status", "Note"], rRows)]),
+        fold("Level-to-level drops (" + A.dips.length + ")", [
+          el("p", { text: "Places where DPS falls by more than 5% and more than the noise from one level to the next. A drop usually means a new spell rank or item changes the rotation or the mana budget. Each one is worth a look." }),
+          dipRows.length ? tbl("Level-to-level drops", ["Class", "Spec", "Gear", "Levels", "Largest drop", "Races"], dipRows) : el("p", { text: "None." })]));
+    }).catch(function () { box.replaceChildren(el("p", { text: "The coverage audit could not be loaded." })); });
   }
 
   function onPage() {
@@ -762,6 +946,8 @@
     if (root && !root.dataset.ready) { root.dataset.ready = "1"; render(root); }
     var sim = document.querySelector("[data-dps-sim]");
     if (sim && !sim.dataset.ready) { sim.dataset.ready = "1"; renderSim(sim); }
+    var au = document.querySelector("[data-dps-audit]");
+    if (au && !au.dataset.ready) { au.dataset.ready = "1"; renderAudit(au); }
   }
   window.ForeverDps = { results: results, MODEL: MODEL, BUFFS: BUFFS, V: V, GEAR: GEAR };
   if (window.document$ && typeof window.document$.subscribe === "function") window.document$.subscribe(onPage);

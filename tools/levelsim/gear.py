@@ -11,6 +11,9 @@ Assumptions (tag A unless noted):
   pace while levelling) and its stats decode; procs are ignored.
 - A non-unique crafted one-hander may be used in both hands.
 - Slot scores use rough spec stat weights below, not a full stat-weight solve.
+- Hit rating is not valued past the hit cap (see hit_cap).
+- A Combat Rogue's main hand is scored on DPS plus damage per hit (MAIN_HAND_HIT_WEIGHT),
+  because Sinister Strike uses a normalized speed. Every other weapon is scored on DPS alone.
 - Crafting produces almost no rings or necks and few trinkets; empty slots stay empty.
 """
 import json
@@ -95,11 +98,25 @@ def _score(stats, w, schools):
     return s
 
 
-def _wscore(item, w, schools, phys):
+# Instant attacks that use a normalized speed scale with the main hand's damage per hit, not
+# with its DPS. Combat Rogues use one (Sinister Strike) about every 4 s, which makes one point
+# of average hit worth 14 / 4 = 3.5 attack power (A). Without it the DPS score swapped Combat's
+# main hand to a fast dagger at 31 and 34 and its DPS fell by 6% to 8%. Tested for the other
+# physical specs and not applied: it lowered Arms, Fury, Protection (Warrior) and Feral.
+MAIN_HAND_HIT_WEIGHT = {("rogue", "combat"): 3.5, ("paladin", "retribution"): 3.5}
+
+
+# Specs whose attacks do not use the weapon's damage: a Feral Druid fights in Cat or Bear Form,
+# so its weapon is scored on stats alone (C, Classic: weapon damage does not apply in form).
+STAT_STICK = {("druid", "feral")}
+
+
+def _wscore(item, w, schools, phys, main=0.0, stick=False):
     s = _score(item["stats"], w, schools)
     wp = item.get("weapon")
-    if wp and phys and not wp.get("caster"):
+    if wp and phys and not stick and not wp.get("caster"):
         s += wp["dps"] * 14  # 1 weapon DPS = 14 AP
+        s += (wp["min"] + wp["max"]) / 2 * main
     return s
 
 
@@ -107,11 +124,46 @@ ENCHANT_SLOTS = {"bracer": ["wrist"], "chest": ["chest"], "cloak": ["back"], "bo
                  "shield": ["shield"], "2h weapon": ["two_hand"], "weapon": ["one_hand", "main_hand", "two_hand"]}
 
 
+# Hit rating past the hit cap does nothing. Against a same-level target a spell misses 4% of the
+# time and can reach 99% at most, so 3% (30 rating) is all a caster can use; a special attack
+# misses 5%, so 50 rating is all a spec without dual wield can use (C, core.ASSUMPTIONS).
+# Dual-wield specs have no cap here: their white swings miss 24%. Balance gets its spell hit
+# from talents (Nature's Reach), so hit on gear is worth nothing to it (A).
+SPELL_HIT_CAP, MELEE_HIT_CAP = 30, 50
+HIT_CAP = {("druid", "balance"): 0}
+
+
+def hit_cap(cls, spec):
+    """Largest useful hit rating from gear for the spec, or None when there is no cap."""
+    if (cls, spec) in HIT_CAP:
+        return HIT_CAP[(cls, spec)]
+    if (cls, spec) in SCHOOLS:
+        return SPELL_HIT_CAP
+    if spec == "healer" or LAYOUT.get((cls, spec)) == "dw":
+        return None
+    return MELEE_HIT_CAP
+
+
 @lru_cache(maxsize=None)
 def select(cls, spec, level):
-    """Return {"items": [...], "enchants": [...], "stats": totals, "mh", "oh", "ranged"}."""
+    """Return {"items": [...], "enchants": [...], "stats": totals, "mh", "oh", "ranged"}.
+
+    Slots are filled one by one, so the hit cap is handled in a second pass: when the first
+    pick holds more hit rating than the spec can use, hit is re-weighted by cap / total and the
+    slots are filled again, so that a hit item only wins where its other stats carry it."""
+    g = _select(cls, spec, level, 1.0)
+    cap = hit_cap(cls, spec)
+    total = g["stats"].get("hit", 0)
+    if cap is not None and total > cap:
+        g = _select(cls, spec, level, cap / total)
+    return g
+
+
+@lru_cache(maxsize=None)
+def _select(cls, spec, level, hit_scale):
     d = _data()
     w = weights(cls, spec)
+    w["hit"] = w.get("hit", 0) * hit_scale
     phys = (cls, spec) not in SCHOOLS and spec != "healer"
     schools = SCHOOLS.get((cls, spec), set())
     armor_ok = ARMOR[cls][1 if level >= 40 else 0]
@@ -136,9 +188,12 @@ def select(cls, spec, level):
                 continue  # relic effects are spell modifiers, not stats
         usable.append(it)
 
-    def best(slots, pred=lambda it: True):
+    hit_weight = MAIN_HAND_HIT_WEIGHT.get((cls, spec), 0.0)
+    stick = (cls, spec) in STAT_STICK
+
+    def best(slots, pred=lambda it: True, main=False):
         c = [it for it in usable if it["slot"] in slots and pred(it)]
-        return max(c, key=lambda it: (_wscore(it, w, schools, phys), it["ilvl"]), default=None)
+        return max(c, key=lambda it: (_wscore(it, w, schools, phys, hit_weight if main else 0.0, stick), it["ilvl"]), default=None)
 
     chosen = {}
     for slot in ("head", "neck", "shoulder", "back", "chest", "wrist", "hands", "waist", "legs", "feet"):
@@ -153,13 +208,13 @@ def select(cls, spec, level):
     layout = LAYOUT.get((cls, spec), "caster")
     melee = lambda it: not (it.get("weapon") or {}).get("caster") or not phys
     if layout == "2h":
-        chosen["main_hand"] = best({"two_hand"}, melee)
+        chosen["main_hand"] = best({"two_hand"}, melee, main=True)
     elif layout == "dw":
         dag = (lambda it: it["weapon"]["type"] == "dagger") if (cls, spec) in DAGGER_MH else (lambda it: True)
-        chosen["main_hand"] = best({"one_hand", "main_hand"}, lambda it: dag(it) and melee(it))
+        chosen["main_hand"] = best({"one_hand", "main_hand"}, lambda it: dag(it) and melee(it), main=True)
         chosen["off_hand"] = best({"one_hand"}, melee)
     elif layout == "1h_shield":
-        chosen["main_hand"] = best({"one_hand", "main_hand"})
+        chosen["main_hand"] = best({"one_hand", "main_hand"}, main=True)
         chosen["off_hand"] = best({"shield"})
     else:
         staff = best({"two_hand"})

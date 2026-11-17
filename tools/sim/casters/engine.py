@@ -61,7 +61,7 @@ class Data:
 
 
 class Dot:
-    __slots__ = ("gen", "ticks_left", "interval", "amount", "end", "can_crit", "label", "name", "extra")
+    __slots__ = ("gen", "ticks_left", "interval", "amount", "end", "can_crit", "label", "name", "extra", "next")
 
     def __init__(self):
         self.gen = 0
@@ -296,7 +296,8 @@ class Caster:
         d.name = name or key
         d.label = label or self.S[d.name]["label"]
         d.extra = extra
-        self.at(self.t + interval, self._dot_tick, key, d.gen)
+        d.next = self.t + interval / self.dot_speed(key)
+        self.at(d.next, self._dot_tick, key, d.gen)
 
     def _dot_tick(self, key, gen):
         d = self.dots[key]
@@ -309,11 +310,24 @@ class Caster:
             crit = True
         self.deal(d.label, amt)
         d.ticks_left -= 1
-        if d.ticks_left > 0:
-            self.at(self.t + d.interval, self._dot_tick, key, gen)
+        # Time-based: a DoT ticks until its duration ends, so a faster tick timer adds ticks.
+        d.next = self.t + d.interval / self.dot_speed(key)
+        if d.next <= d.end + 1e-6:
+            self.at(d.next, self._dot_tick, key, gen)
         else:
             d.end = self.t
         self.on_tick(key, crit, amt)
+
+    def retime_dot(self, key, factor):
+        """The tick timer of a running DoT changes speed by `factor` (the tick in progress
+        included). The duration does not change."""
+        d = self.dots.get(key)
+        if d is None or d.end <= self.t:
+            return
+        d.gen += 1
+        d.next = self.t + (d.next - self.t) / factor
+        if d.next <= d.end + 1e-6:
+            self.at(d.next, self._dot_tick, key, d.gen)
 
     def dot_rem(self, key) -> float:
         d = self.dots.get(key)
@@ -409,6 +423,9 @@ class Caster:
 
     def sp_extra(self) -> float:
         return 0.0
+
+    def dot_speed(self, key) -> float:
+        return 1.0
 
     def dot_mult(self, key) -> float:
         return 1.0

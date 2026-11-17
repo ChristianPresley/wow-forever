@@ -536,7 +536,8 @@ class Affliction(Warlock):
         for n, lab in (("corruption", "Corruption"), ("agony", "Bane of Agony"), ("siphon_life", "Siphon Life")):
             self.reg(n, "shadow", True, lab)
         self.wr = (self.sv("wrack", "tick"), self.sv("wrack", "ticks"), self.sv("wrack", "coef_tick"),
-                   self.sv("wrack", "mana"), self.sv("wrack", "cast"), self.sv("wrack", "dot_bonus"))
+                   self.sv("wrack", "mana"), self.sv("wrack", "cast"), self.sv("wrack", "dot_speed"))
+        self.wrack_on = False
 
     def crit_extra(self, name):
         return self.malev if self.S[name]["school"] == "shadow" else 0.0
@@ -549,8 +550,18 @@ class Affliction(Warlock):
             m *= 1 + self.impcorr
         return m
 
-    def dot_mult(self, key):
-        return 1 + self.wr[5] if self.up("wrack") and key in ("corruption", "agony", "siphon_life") else 1.0
+    WRACK_DOTS = ("corruption", "agony", "siphon_life")
+
+    def dot_speed(self, key):
+        # Wrack: the three DoTs tick faster while it channels and keep their duration
+        return self.wr[5] if self.wrack_on and key in self.WRACK_DOTS else 1.0
+
+    def wrack_speed(self, on):
+        if on == self.wrack_on:
+            return
+        self.wrack_on = on
+        for key in self.WRACK_DOTS:
+            self.retime_dot(key, self.wr[5] if on else 1 / self.wr[5])
 
     def cost_mult(self, name):
         return 1 - self.cata if name in DESTRO else 1.0
@@ -590,6 +601,8 @@ class Affliction(Warlock):
         landed = self.roll_hit("wrack")
         if landed:
             self.buffs["wrack"] = self.t + dur
+            self.wrack_speed(True)
+            self.at(self.t + dur, self.wrack_speed, False)
         else:
             self.casts["Wrack (miss)"] += 1
 

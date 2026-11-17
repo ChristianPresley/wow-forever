@@ -196,4 +196,20 @@ def test_wand_first_policy_fixes_the_level_38_drop():
     # wanding between the cooldown spells is the better rotation and the level no longer loses
     a, b = _crafted_dps("discipline", 37, n=30), _crafted_dps("discipline", 38, n=30)
     assert b["dps_mean"] > a["dps_mean"], (a["dps_mean"], b["dps_mean"])
-    assert b["mana_policy"] == "plan+wand"
+    assert b["mana_policy"] in ("plan+wand", "plan+lean")
+
+
+def test_a_talent_does_not_lower_dps():
+    # the wand-only rotation ("plan+lean") plans without a filler, so a talent that only
+    # improves Smite cannot change it; "+nonova" leaves the free Holy Nova unused
+    assert "plan+lean" in priest.POLICIES
+    assert priest.policies_for(priest.talents_at("holy", 60))[-2:] == priest.NOVA_POLICIES
+    assert priest.policies_for(priest.talents_at("discipline", 60), "discipline") == priest.POLICIES
+    real = priest.talents_at
+    full = _crafted_dps("discipline", 60, n=40)["dps_mean"]
+    for talent in ("Divine Fury", "Holy Specialization"):
+        priest.talents_at = lambda s, lv, talent=talent: {k: v for k, v in real(s, lv).items() if k != talent}
+        try:
+            assert full >= 0.999 * _crafted_dps("discipline", 60, n=40)["dps_mean"], talent
+        finally:
+            priest.talents_at = real

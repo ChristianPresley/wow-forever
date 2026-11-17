@@ -27,7 +27,7 @@ plus extra fields `race_name`, `build`, `casts_per_fight` and `mana_left_pct`. `
 
 - **Time.** A priority queue of events: cast finishes, DoT ticks, channel ticks, 2 s mana ticks (random phase), racial cooldowns, the Imp's attacks. The player acts when free. The APL picks one action. Casts occupy `max(cast / haste, GCD)`. The GCD is 1.5 s / haste, floor 1.0 s. A 50 ms reaction delay follows each action.
 - **Rolls.** Each direct hit, each Arcane Missile, each Lightning Overload rolls hit, then crit. DoTs and channels roll hit once on application. DoT ticks and Wrack ticks roll crit (Warlock only). Spell hit = 83% + gear + talents + racial, capped at 99%. Crit = class base + Int / ratio + gear + LotP 3 + Moonkin 3 − 1.8 suppression + talents + racials. Crit multiplier 1.5, raised by Ice Shards, Arcane Mind, Ruin, Pandemic, Shadowform, Vengeance and Elemental Fury.
-- **Damage.** `(base roll + coefficient × spell power) × multipliers`. Multipliers: Curse of the Elements 10% on all magic (Curse of Shadow 10% on Shadow/Arcane is treated as the same 10%, not stacked), talents, procs and debuffs (Improved Scorch stacks, Shadow Weaving stacks, Improved Shadow Bolt, Fire Power counting your own Fire effects on the target, Wrack's +10% to other Shadow DoTs, Shadow and Flame, Soul Siphon), Eureka! (non-periodic only).
+- **Damage.** `(base roll + coefficient × spell power) × multipliers`. Multipliers: Curse of the Elements 10% on all magic (Curse of Shadow 10% on Shadow/Arcane is treated as the same 10%, not stacked), talents, procs and debuffs (Improved Scorch stacks, Shadow Weaving stacks, Improved Shadow Bolt, Fire Power counting your own Fire effects on the target, Shadow and Flame, Soul Siphon), Eureka! (non-periodic only).
 - **DoTs.** Damage per tick is snapshotted at application. Multipliers apply at tick time. A refresh drops the remaining ticks and restarts the timer (Classic rule). Haste does not speed up ticks. Channels are hasted.
 - **Mana.** Max mana = base + Int conversion (first 20 Int give 1, then 15 each). Spirit regen per 2 s tick (Classic class formulas), stopped for 5 s after spending, except for the regen-while-casting talents. Blessing of Wisdom and Mana Spring always tick. Major Mana Potion when the deficit is at least 2250 (2 min cooldown). Evocation (mages), Life Tap = (424 + Spirit) × 1.2 (warlocks), Water Shield crits (shaman), Master of Elements (fire). Clearcasting, Omen and Elemental Focus make the next spell free.
 - **Target.** A level 63 boss whose health falls linearly from 100% to 0% over the fight. This drives Decimation's below-35% phase.
@@ -58,12 +58,12 @@ Mean over races, seed 1, 1000 × 180 s. Calculator values come from `dps-calc.js
 | Frost | 505 | 453 | +12% | The sim adds Missile Barrage Arcane Missiles (~100 DPS) and Fingers of Frost Ice Lances. The calculator models only Frostbolt. |
 | Shadow | 501 | 514 | −2% | Close. The sim pays GCDs for Vampiric Embrace and misses Mind Flay ticks along with the cast. |
 | Balance | 487 | 437 | +11% | Eclipse (2.5 s Starfires), Nature's Grace and Omen of Clarity are not in the calculator. |
+| Affliction | 479 | 477 | +0% | Close. Soul Siphon, Wrack's faster DoT ticks and Nightfall are modelled tick by tick. |
 | Arcane | 470 | 394 | +19% | The calculator models Arcane Blast spam only. In the sim, Arcane Wrath alone gives ~180 DPS. The sim is mana bound (3% left at the end). |
-| Destruction | 450 | 396 | +14% | The calculator uses a Shadow Bolt filler. The sim uses the guide rotation: Incinerate (+25% on Immolate), Shadowburn, Corruption, Shadow and Flame. |
-| Affliction | 434 | 407 | +7% | Soul Siphon, Wrack's DoT bonus and Nightfall are modelled tick by tick. |
+| Destruction | 456 | 396 | +15% | The calculator uses a Shadow Bolt filler. The sim uses the guide rotation: Incinerate (+25% on Immolate), Shadowburn, Corruption, Shadow and Flame. |
 | Fire | 433 | 452 | −4% | The sim runs out of mana (1.4% left; Fireball is 410 mana). The calculator has no mana. |
-| Elemental | 411 | 450 | −9% | Out of mana again (2.8% left). The calculator assumes endless 2.5 s Lightning Bolts. |
-| Demonology | 534 | — | new | Not in the calculator. The Imp and Demonic Brand are calibrated to about 20% of it (see gaps). |
+| Elemental | 410 | 450 | −9% | Out of mana again (2.8% left). The calculator assumes endless 2.5 s Lightning Bolts. |
+| Demonology | 543 | — | new | Not in the calculator. The Imp and Demonic Brand are calibrated to about 20% of it (see gaps). |
 
 Race ranking differs from the calculator for mana-bound specs (Fire, Arcane, Elemental). There, Gnome (+4 Int and Eureka!'s −10% cost) or Dwarf come out on top, and Troll's Berserking is worth less than its −4 Int because extra haste only empties the mana bar sooner.
 
@@ -73,7 +73,7 @@ Race ranking differs from the calculator for mana-bound specs (Fire, Arcane, Ele
 - **Gear.** Int 260, SP 380, 6% hit, 4% crit and Spirit 120 are all assumptions (A), shared with the calculator. No mp5. No set bonuses, trinkets or on-use items.
 - **Demons.** Imp Firebolt damage, cast time and how much of your spell power it gets (15% assumed) are not published. Uncalibrated, the Imp and Demonic Brand came to ~30% of Demonology. `imp_firebolt.calibration` (0.37, tag A) scales Firebolt so the two make up ~20%, matching WT-DEMO's "demons do about 1/5 of a Warlock's damage". Affliction and Destruction run with no demon damage.
 - **Conflicts resolved one way.**
-  - Wrack is a 6 s channel with "+10% to your other Shadow DoTs" (tooltip). WT-AFF says it makes ticks go at double speed instead.
+  - Wrack is a 6 s channel. While it channels, Corruption, Siphon Life and Bane of Agony tick twice as often and keep their duration (client text and Blizzard's note with the 10 November 2026 hotfixes). The older web tooltip said "+10% to your other Shadow DoTs".
   - Arcane Blast gives 12% of Int per stack and applies to all spells.
   - Starfire uses Metabot's 490–576 (pre-launch notes say +40%).
   - Wrath 86–96 is very low vs Classic.

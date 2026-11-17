@@ -116,6 +116,26 @@ class DotTests(unittest.TestCase):
         self.assertAlmostEqual(s.dmg["Dot"], 5 * 10 * 1.10)
         self.assertAlmostEqual(s.t, 11.0)
 
+    def test_wrack_doubles_tick_speed_and_keeps_duration(self):
+        # Blizzard, 10 November 2026: Wrack speeds up how often the DoTs tick, not how long they last
+        lock = specs.Affliction("undead", DATA, random.Random(1))
+        lock.crit = -100.0
+        lock.apply_dot("corruption", 10.0, 6, 3.0, False)
+        ticks = []
+        lock.on_tick = lambda key, crit, amt: ticks.append(round(lock.t, 3))
+        lock.at(1.0, lock.wrack_speed, True)
+        lock.at(7.0, lock.wrack_speed, False)
+        while lock._q:
+            t, _q, fn, args = heapq.heappop(lock._q)
+            if t > 18.0 + 1e-6:
+                break
+            lock.t = t
+            fn(*args)
+        # first tick due at 3 s comes at 2 s; then every 1.5 s to 6.5 s; a third of the next
+        # interval (1 s of 3 s at normal speed) is done at 7 s, so it lands at 9 s; then every 3 s
+        self.assertEqual(ticks, [2.0, 3.5, 5.0, 6.5, 9.0, 12.0, 15.0, 18.0])
+        self.assertEqual(lock.dot_rem("corruption"), 0.0)
+
     def test_dot_crit_uses_periodic_multiplier(self):
         lock = specs.Affliction("undead", DATA, random.Random(1))
         self.assertAlmostEqual(lock.crit_mult("corruption", True), 2.0)    # Pandemic 3/3

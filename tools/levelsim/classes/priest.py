@@ -58,8 +58,9 @@ Server-side rules not in the client (tag in brackets):
   runs dry in 40 s of Smite therefore plays Shadow Word: Death and Pain, Mind Blast or
   Holy Fire on cooldown and the wand in between.
 - Divine Fury (Discipline, 5 points for Holy Specialization's tree position): it adds
-  nothing measurable. It makes rank 2 Smite a 1.5 s cast, which the plan then casts instead
-  of wanding during Power Infusion; that trade is about even (within 1%).
+  nothing. It makes rank 2 Smite a 1.5 s cast, which the plan then casts instead of wanding
+  during Power Infusion, and that lost 1.5%. The "plan+lean" policy (below) never casts a
+  filler, so it is the same with and without the talent, and is the best one here.
 - Spirit regen, 5-second rule, mana at cast start, no periodic crits: see mage.py.
 - Third mana policy, "plan+swing" [A]: the plan charges a cooldown spell its whole cast time
   against the wand or melee damage of resting. In the fight the swing timer runs on during
@@ -82,10 +83,12 @@ Server-side rules not in the client (tag in brackets):
   a talent or a gear change tips the tie. With "plan" and "simple" alone ten level-to-level
   drops of 2 to 3% remained (the same at 1,000 fights, so not sampling noise); with the four
   policies a sweep of every spec, race, gear mode and level from 5 to 60 has none above 2%.
-  One talent still loses a little: Holy Specialization for a Human Discipline Priest at 60
-  in crafted gear. Its 5% Holy crit makes the plan cast rank 2 Smite more often in place of
-  the wand (4.28 against 3.63 casts a minute), which loses 0.5%; the other races gain 0 to
-  0.8% from it.
+  Three talents still lost 0.5 to 1.5% at 60 in crafted gear with those four (Divine Fury
+  and Holy Specialization for Discipline, Holy Nova for Holy): each made the plan trade wand
+  time for a cheap Smite or a free Holy Nova that did less in the fight. A Priest with the
+  talent can always play as if it were not there, so two more policies do that: "plan+lean"
+  (cooldown and DoT spells and the wand, no filler, planned without a filler) and "+nonova"
+  for Holy (the free Holy Nova is left unused). With them no talent lowers DPS.
 - Mana-aware rotation [A] (mage.CasterSim.plan and best_policy, see mage.py; the text
   below describes the older rule, which is one of the policies tried): the filler (Smite or Mind Flay) is
   chosen by spell AND rank from every rank known at that level, by sustained damage
@@ -159,7 +162,20 @@ SWD_LEVEL = 32
 # with the wand or melee damage it does not displace (PriestSim.swing_overlap).
 # "plan+wand" is "plan+swing" without a filler while mana is short: the Priest wands between
 # cooldown spells instead of alternating filler casts and rests.
-POLICIES = ("plan", "plan+swing", "plan+wand", "simple")
+# "plan+lean" never casts a filler: cooldown and DoT spells, and the wand in between.
+# "+nonova" leaves a free Holy Nova (Searing Light) unused; it is tried only for a Priest
+# who has the talent and casts Holy Fire, which is Holy (`policies_for`).
+# The last two exist because a talent must not lower DPS: a Priest can always play as if a
+# faster or stronger Smite, or a free Holy Nova, were not there.
+POLICIES = ("plan", "plan+swing", "plan+wand", "plan+lean", "simple")
+NOVA_POLICIES = ("plan+nonova", "plan+swing+nonova")
+
+
+def policies_for(talents, spec="holy"):
+    nova = spec == "holy" and talents.get("Holy Nova") and talents.get("Searing Light")
+    return POLICIES + (NOVA_POLICIES if nova else ())
+
+
 POLICY = {"mode": "plan"}
 # cooldown and DoT spells cast besides the filler (Holy Fire by Holy only)
 NUKES = ("Shadow Word: Pain", "Devouring Plague", "Starshards", "Penance", "Mind Blast", "Shadow Word: Death", "Holy Fire")
@@ -295,8 +311,11 @@ class PriestSim(CasterSim):
         self.weave, self.weave_end = 0, 0.0
         self.if_on = False
         self.free_nova = False
-        self.swing = POLICY["mode"] in ("plan+swing", "plan+wand")
-        self.wand_first = POLICY["mode"] == "plan+wand"
+        rules = POLICY["mode"].split("+")[1:]
+        self.swing = bool({"swing", "wand", "lean"} & set(rules))
+        self.wand_first = "wand" in rules
+        self.always_lean = "lean" in rules
+        self.skip_nova = "nonova" in rules
         self.idle = self.rest_share = 0.0   # chance that a cooldown spell is cast between swings
 
     def _tv(self, name):
@@ -404,7 +423,7 @@ class PriestSim(CasterSim):
 
     def hf_tick(self):
         sl = self.T("Searing Light")
-        if sl and "Holy Nova" in self.S and self.rng.chance(sl[1]):
+        if sl and "Holy Nova" in self.S and not self.skip_nova and self.rng.chance(sl[1]):
             self.free_nova = True
 
     # --- actions
@@ -512,7 +531,7 @@ class PriestSim(CasterSim):
         c = self.cost_of(sp)  # 0 under Inner Focus
         dmg, secs = self.exp_damage(sp), self.exec_time(sp)
         nova, sl = self.S.get("Holy Nova"), self.T("Searing Light")
-        if sp.name == "Holy Fire" and nova and sl and sp.dot:
+        if sp.name == "Holy Fire" and nova and sl and sp.dot and not self.skip_nova:
             # Searing Light: each Holy Fire tick may make one Holy Nova free; it takes a GCD (A)
             n = int(round(sp.duration / sp.dot[1])) * sl[1] / 100
             dmg += n * self.exp_damage(nova)
@@ -621,14 +640,18 @@ class PriestSim(CasterSim):
         if focus:
             self.if_on = False
         opts = [self.option(r) for rs in self.ranks_.values() for r in rs]
+        if self.always_lean:
+            # no filler in this rotation, so none in the plan's mana price either: a talent
+            # that improves the filler then changes nothing here
+            opts = []
         self.idle = self.rest_share
-        fill, f, ok, need = self.plan(opts)
+        fill, f, ok, need = self.plan(opts, no_filler=self.always_lean)
         self.rest_share = 1.0 - f
         if focus:
             self.if_on = True
         if self.resting and self.rest_done(f, need):
             self.resting = False
-        lean = (self.lean or (self.wand_first and f < 1.0)) and not self.if_on
+        lean = self.always_lean or ((self.lean or (self.wand_first and f < 1.0)) and not self.if_on)
         # the plan counts a cooldown spell as cast between swings for the resting share of the
         # time; the choice below knows whether it is
         self.idle = 1.0 if self.resting or lean else 0.0
@@ -667,10 +690,11 @@ class PriestSim(CasterSim):
         return self.melee_idle()
 
 
-def best_policy(run):
-    """run() -> core.run_many output under the current POLICY. Returns the best of POLICIES."""
+def best_policy(run, modes=None):
+    """run() -> core.run_many output under the current POLICY. Returns the best of `modes`
+    (POLICIES when not given)."""
     best = None
-    for mode in POLICIES:
+    for mode in modes or POLICIES:
         POLICY["mode"], mage.POLICY["mode"] = mode, mode.partition("+")[0]
         try:
             out = run()
@@ -693,7 +717,7 @@ def simulate(spec, race, level, iterations, seed):
         inputs["base_stats"] = ch.stats_tag
         p.start()
 
-    out = best_policy(lambda: core.run_many(build, iterations, seed))
+    out = best_policy(lambda: core.run_many(build, iterations, seed), policies_for(talents, spec))
     inputs["mana_policy_best_of"] = "A"
     out["inputs"] = dict(sorted(inputs.items()))
     for k in ("fight_seconds", "spell_hit_same_level", "spell_crit_mult", "base_spell_crit"):

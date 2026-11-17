@@ -98,7 +98,7 @@ class GearTests(unittest.TestCase):
         # gear.py's first craftable shield is at level 60; naked there is none.
         r = _crafted(W, "protection", "human", 60)
         self.assertGreater(r["breakdown"].get("Shield Slam", 0), 0)
-        self.assertEqual(r["inputs"]["shield_slam_block_value_missing"], "A")
+        self.assertEqual(r["inputs"]["shield_block_value"], "C")
         self.assertNotIn("Shield Slam", _crafted(W, "protection", "human", 59)["breakdown"])
         self.assertNotIn("Shield Slam", W.simulate("protection", "human", 60, 5, 1)["breakdown"])
         self.assertNotIn("Shield Slam", _crafted(W, "arms", "human", 60, 3)["breakdown"])

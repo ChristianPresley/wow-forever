@@ -143,10 +143,10 @@
     frostbolt: [[475, 0.814, 2.5], "F", "Frostbolt 457-493, 2.5 s; coefficient 0.814 is Classic"],
     arcaneBlast:[[236, 0.429, 1.5], "F", "Arcane Blast 218-254, 1.5 s; coefficient assumed 1.5/3.5"],
     shadowBolt:[[277.5, 0.857, 2.5], "F", "Shadow Bolt 263-292, SP mod 0.857 (Wowhead Forever)"],
-    corruption:[[438, 18, 1.0], "F", "Corruption 438 over 18 s; coefficient Classic"],
-    agony:     [[552, 24, 1.0], "F", "Bane of Agony 552 over 24 s; coefficient Classic"],
-    siphon:    [[410, 30, 0.5], "F", "Siphon Life 410 over 30 s; coefficient Classic"],
-    wrack:     [[86, 0.286], "F", "Wrack 86 dps + 0.286 SP per second"],
+    corruption:[[438, 18, 1.2], "F", "Corruption 438 over 18 s; 0.2 SP per tick (client)"],
+    agony:     [[552, 24, 1.596], "F", "Bane of Agony 552 over 24 s; 0.133 SP per tick (client)"],
+    siphon:    [[410, 30, 0.5], "F", "Siphon Life 410 over 30 s; 0.05 SP per tick (client)"],
+    wrack:     [[60.2, 0.2002], "F", "Wrack 60.2 dps + 0.2002 SP per second (client, after the 10 November hotfix)"],
     immolate:  [[158, 275, 15, 0.2, 0.65], "F", "Immolate 158 + 275 over 15 s"],
     conflag:   [[282, 10, 0.429], "F", "Conflagrate 251-313, 10 s"],
     mindFlay:  [[390, 3, 0.45], "F", "Mind Flay 390 over 3 s"],
@@ -408,7 +408,8 @@
       var gcdShare = 3 * 1.5 / s.haste / 20;
       var wrack = (wr[0] + wr[1] * s.sp) * h * 1.36 * s.haste;
       var nf = 0.04 * (6 / 3 + 1) / 3 * (v("shadowBolt")[0] + v("shadowBolt")[1] * s.sp) * spellMul(s, 2.0, 5, 5);
-      return (dots + wrack * (1 - gcdShare) + nf) * shadow;
+      // While Wrack channels, the three DoTs tick twice as often and keep their duration
+      return (dots * (2 - gcdShare) + wrack * (1 - gcdShare) + nf) * shadow;
     },
     destro: function (s) {
       var sb = v("shadowBolt"), im = v("immolate"), cf = v("conflag"), crit = 2.0;

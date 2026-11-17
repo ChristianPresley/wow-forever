@@ -76,7 +76,7 @@ trees:
       Shadow Mastery:
         {does: "Shadow damage and life drained +2–10%", lvl: A, pve: S, pvp: A, note: "Applies to all Shadow spells. Take 5/5 in each deep Affliction build."}
       Wrack:
-        {does: "200 mana, 30 yd. 86 Shadow damage each second for 6 s. The target takes 10% more damage from your other Shadow DoTs", lvl: A, pve: S, pvp: B, note: "The filler of the raid build. The launch tooltip says Instant, and other sources say channel. Its value after the 10 November hotfix is not confirmed."}
+        {does: "200 mana, 30 yd, 6 s channel. 60 Shadow damage each second at level 60. During the channel, your Siphon Life, Corruption and Bane of Agony on the target do their damage 2 times as frequently", lvl: A, pve: S, pvp: B, note: "The filler of the raid build. The numbers are from the client after the 10 November hotfix. The durations of the DoTs do not change."}
   Demonology:
     summary: |
       Demonology is the demon tree and the tree with the most health. **Demonic Sacrifice** gives a 2-hour bonus, and **Demonic Pact** lets you keep that bonus with a different demon out. The PvE ratings are for damage. The notes tell you which talents are only for Voidwalker pet tanking.
@@ -176,7 +176,7 @@ builds:
       - [Soul Siphon, 3, "Drain Life does more with DoTs on the target"]
       - [Improved Life Tap, 2, "More mana. Opens row 6"]
       - [Shadow Mastery, 5, "10% Shadow damage"]
-      - [Wrack, 1, "A new filler that makes your DoTs stronger"]
+      - [Wrack, 1, "A new filler that makes your DoTs do damage 2 times as frequently"]
       - [Malevolence, 5, "Shadow crit for Pandemic"]
       - [Nightfall, 2, "Instant Shadow Bolts"]
       - [Improved Bane of Agony, 2, "More Bane damage"]
@@ -251,7 +251,7 @@ builds:
     kind: endgame
     role: "Raid DPS"
     summary: |
-      The 33/0/18 split from the Warcraft Tavern Affliction guide. Wrack is the filler. You cast Shadow Bolt only when Nightfall makes it instant. Blizzard announced Affliction changes for 10 November, so the priority of this build is not confirmed after that date.
+      The 33/0/18 split from the Warcraft Tavern Affliction guide. Wrack is the filler. You cast Shadow Bolt only when Nightfall makes it instant. After the 10 November hotfix, Wrack makes Siphon Life, Corruption and Bane of Agony do their damage 2 times as frequently. Keep all 3 on the target before you channel.
     steps:
       - [Improved Corruption, 5]
       - [Suppression, 5]

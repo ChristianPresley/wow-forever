@@ -157,3 +157,18 @@ def test_caster_reports_the_better_mana_policy():
                 m.POLICY["mode"] = "simple"
         assert best["dps_mean"] == max(each.values()), (spec, each)
     assert "mana_policy" not in m.simulate("feral", "nelf", 40, 2, 1)
+
+
+def test_table_policy_fixes_the_level_13_drop():
+    # in crafted gear the plan may value swings by the attack table; a Feral Tauren at 13
+    # then no longer loses 3.4% against 12
+    assert 0.9 < core.melee_expect(core.Character(m.CLASS, "tauren", 13, {})) < 1.1
+    core.GEAR.update(mode="crafted", spec="feral")
+    try:
+        a = m.simulate("feral", "tauren", 12, 60, 1)
+        b = m.simulate("feral", "tauren", 13, 60, 1)
+    finally:
+        core.GEAR.update(mode="none", spec=None)
+    assert b["dps_mean"] > 0.99 * a["dps_mean"], (a["dps_mean"], b["dps_mean"])
+    assert b["mana_policy"] in m.POLICIES + m.TABLE_POLICIES
+    assert m.simulate("feral", "tauren", 13, 4, 1)["mana_policy"] in m.POLICIES  # no gear: not tried

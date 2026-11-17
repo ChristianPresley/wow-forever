@@ -94,8 +94,31 @@ def skill(sla):
     return max(int(sla["MinSkillLineRank"]), int(sla["TrivialSkillLineRankLow"] or 0))
 
 
+SHIELD_BLOCK_URL = "https://wago.tools/api/casc/2200979?product=wow_classic_era"
+
+
+def shield_block():
+    """{item level: [block value by quality 0-6]} from gametables/shieldblockregular.txt.
+    wago.tools does not serve this file for the Forever build, so it is the Classic Era
+    client's table (the client Forever is built on). Cached in cache/classic_era."""
+    p = HERE / "cache" / "classic_era" / "ShieldBlockRegular.txt"
+    if not p.exists() or p.stat().st_size == 0:
+        import urllib.request
+        p.parent.mkdir(parents=True, exist_ok=True)
+        req = urllib.request.Request(SHIELD_BLOCK_URL, headers={"User-Agent": "forever-codex-data-builder"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            p.write_bytes(r.read())
+    out = {}
+    for line in p.read_text(encoding="utf-8").splitlines()[1:]:
+        cols = line.split("	")
+        if len(cols) >= 8:
+            out[cols[0]] = [int(float(c)) for c in cols[1:8]]
+    return out
+
+
 def main():
     build = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_BUILD
+    sblock = shield_block()
     B.TABLES = TABLES
     cache = B.fetch(build)
     T = {t: B.load(cache, t) for t in TABLES}
@@ -222,6 +245,8 @@ def main():
                     "req_level": int(s["RequiredLevel"]), "slot": SLOT.get(inv, inv),
                     "armor_type": ARMOR_SUB.get(sub) if it["ClassID"] == "4" else None,
                     "armor": armor(s, it, q, inv), "weapon": weapon(s, it, q, inv),
+                    # a shield's own block value (Classic Era table, see shield_block)
+                    "block": sblock[il][q] if it["ClassID"] == "4" and sub == 6 and il in sblock and q in range(7) else 0,
                     "stats": stats, "stat_pct": raw, "equip_spells": eq,
                     "profession": prof, "skill": skill(sla),
                     "recipe_spell": int(sid),

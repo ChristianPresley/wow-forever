@@ -32,7 +32,7 @@ Server-side behaviour and assumptions (tag in `inputs`):
   not how long they last." So the three DoTs keep their duration and gain ticks: the tick
   timer runs at double speed during the channel (the tick in progress included, and the time
   gained is kept when the channel ends) while the duration runs normally. The web tooltip in
-  .research/talents and tools/sim ("+10% to your other Shadow DoTs") is older. Wrack's own
+  .research/talents ("+10% to your other Shadow DoTs") is older. Wrack's own
   damage is the client row after that hotfix: 25.2 + 1.75 per level per 1 s tick, coefficient
   0.2002, 6 s. Soul Siphon (client and tooltip agree): 4% per rank for each of Corruption,
   Siphon Life and Bane of Agony on the target, 36% at most.

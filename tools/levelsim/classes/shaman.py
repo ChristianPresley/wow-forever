@@ -142,14 +142,18 @@ GOA_CU = {42: 43, 56: 67, 60: 77}
 # shock cooldown between Flame Shocks. "+wf" counts the Windfury Totem procs in the plan's
 # estimate of auto-attack damage while resting. `simulate` runs the four in POLICIES and
 # reports the best one; "plan" and "simple" alone are still valid modes.
+# "+table" values auto-attacks by the attack table with crits (core.melee_expect) and not by
+# the flat 0.85 allowance; it is tried in crafted gear only, where the weapon carries more of
+# the damage (see druid.py).
 POLICIES = ("plan+shock", "plan+shock+wf", "plan+wf", "simple+shock")
+TABLE_POLICIES = ("plan+shock+table", "simple+shock+table")
 POLICY = {"mode": "simple"}
 
 
 def best_policy(run):
     """run() -> core.run_many output under the current POLICY. Returns the best of POLICIES."""
     best = None
-    for mode in POLICIES:
+    for mode in POLICIES + (TABLE_POLICIES if core.GEAR.get("mode") == "crafted" else ()):
         POLICY["mode"] = mode
         try:
             out = run()
@@ -199,7 +203,7 @@ class Fight:
     def __init__(self, sim, spec, race, level, inputs):
         self.sim, self.spec, self.level, self.inp = sim, spec, level, inputs
         self.policy, *flags = POLICY["mode"].split("+")
-        self.use_shock, self.plan_wf = "shock" in flags, "wf" in flags
+        self.use_shock, self.plan_wf, self.table = "shock" in flags, "wf" in flags, "table" in flags
         ch = self.ch = core.Character(CLASS, race, level, talents_at(spec, level))
         core.apply_passive_racials(ch, race)
         self.tv = tv = lambda n: ch.tr(n) * _TT.get(n, 0.0)
@@ -468,7 +472,8 @@ class Fight:
         # expectation with crits in its place was tested and not used: it was worse in
         # sampled cells of every caster spec (up to -3.4%), better only for Feral in crafted
         # gear at levels 11-19.
-        return d / self.speed * self.haste() * 0.85
+        allow = core.melee_expect(self.ch) if self.table else 0.85
+        return d / self.speed * self.haste() * allow
 
     def exp_spell(self, spell, mult=1.0, extra_crit=0.0, ospell=None, lo_chance=0.0):
         e = core.damage_effect(spell)

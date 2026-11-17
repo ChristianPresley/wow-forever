@@ -108,7 +108,13 @@ _TT = {
 # Mana policies of the caster rotation (A), as in mage.py: "simple" plans the filler alone
 # (mage.plan_options) and gates each DoT on its own; "plan" plans fillers, DoTs and rest
 # together (mage.mana_price). `simulate` runs both and reports the better one.
+# "+table": the plan values auto-attacks by the attack table with crits (core.melee_expect)
+# and not by the flat 0.85 allowance of melee_dps. The flat figure is too low for a Druid with
+# a crafted weapon and Agility gear (12.9 against 14.9 damage per second for a Feral Tauren at
+# 13), so the plan spent mana on Wrath that did less than the swings it replaced, and level 13
+# lost 3.4% against 12. It is tried in crafted gear only and the best policy is reported.
 POLICIES = ("plan", "simple")
+TABLE_POLICIES = ("plan+table", "simple+table")
 POLICY = {"mode": "simple"}
 
 
@@ -123,7 +129,7 @@ FERAL = {"builder": None, "low_form": "bear"}
 def best_policy(run):
     """run() -> core.run_many output under the current POLICY. Returns the better of the two."""
     best = None
-    for mode in POLICIES:
+    for mode in POLICIES + (TABLE_POLICIES if core.GEAR.get("mode") == "crafted" else ()):
         POLICY["mode"] = mode
         try:
             out = run()
@@ -168,7 +174,8 @@ def _rage_conv(level):
 class Fight:
     def __init__(self, sim, spec, race, level, inputs):
         self.sim, self.spec, self.level, self.inp = sim, spec, level, inputs
-        self.policy = POLICY["mode"]
+        self.policy, _, rule = POLICY["mode"].partition("+")
+        self.table = rule == "table"
         ch = self.ch = core.Character(CLASS, race, level, talents_at(spec, level))
         core.apply_passive_racials(ch, race)
         self.tv = tv = lambda n: ch.tr(n) * _TT.get(n, 0.0)
@@ -374,7 +381,8 @@ class Fight:
         # expectation with crits in its place was tested and not used: it was worse in
         # sampled cells of every caster spec (up to -3.4%), better only for Feral in crafted
         # gear at levels 11-19.
-        return (avg + ap / 14 * speed) / speed * self.ch.haste * self.dmg_all * 0.85
+        allow = core.melee_expect(self.ch, self.extra_crit) if self.table else 0.85
+        return (avg + ap / 14 * speed) / speed * self.ch.haste * self.dmg_all * allow
 
     def exp_hit(self, spell, eff=None, mult=1.0, extra_crit=0.0):
         e = eff or core.damage_effect(spell)

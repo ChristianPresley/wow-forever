@@ -1329,14 +1329,14 @@ Full add-on: [Undead Warlock](undead.md)
 
 <p class="fc-addon__label"><span class="fc-addon__kind">Talents</span> <strong>Affliction</strong></p>
 
-Soul Siphon is complete at level 40. It makes Drain Life stronger for each Affliction effect on the target. Thus, put Corruption, Bane of Agony and Siphon Life on the enemy before you drain. Shadow Mastery adds 10% Shadow damage. Wrack at level 48 is a new filler that makes your other Shadow DoTs 10% stronger.
+Soul Siphon is complete at level 40. It makes Drain Life stronger for each Affliction effect on the target. Thus, put Corruption, Bane of Agony and Siphon Life on the enemy before you drain. Shadow Mastery adds 10% Shadow damage. Wrack at level 48 is a new filler. While you channel it, Siphon Life, Corruption and Bane of Agony do their damage 2 times as frequently.
 
 | Level | Talent | Why |
 |---|---|---|
 | 40 | **Soul Siphon** <span class="fc-rank">3/3</span> | Drain Life does more with DoTs on the target |
 | 41–42 | **Improved Life Tap** <span class="fc-rank">2/2</span> | More mana. Opens row 6 |
 | 43–47 | **Shadow Mastery** <span class="fc-rank">5/5</span> | 10% Shadow damage |
-| 48 | **Wrack** <span class="fc-rank">1/1</span> | A new filler that makes your DoTs stronger |
+| 48 | **Wrack** <span class="fc-rank">1/1</span> | A new filler that makes your DoTs do damage 2 times as frequently |
 | 49 | **Malevolence** <span class="fc-rank">1/5</span> | Shadow crit for Pandemic |
 
 Points at level 49: **33/7/0** (Affliction / Demonology / Destruction).
@@ -1949,7 +1949,7 @@ Full add-on: [Undead Warlock](undead.md)
 
 Start with a Shadow Bolt when the tank pulls. On a second target, add Corruption. If that target lives for 30 seconds or more, also add Bane of Agony and Siphon Life.
 
-On 6 November, Blizzard said that Wrack alone was better than the other DoTs. Blizzard planned a hotfix for 10 November to correct this, and said that the total damage of Affliction does not increase. Thus, no source confirms the priority below after that date. The launch tooltip of Wrack says Instant, and other sources say channel.
+On 6 November, Blizzard said that Wrack alone was better than the other DoTs. The hotfix of 10 November corrected this. Wrack is a 6-second channel. While you channel it, Siphon Life, Corruption and Bane of Agony do their damage 2 times as frequently, and their durations do not change. Thus, put all 3 DoTs on the target before you channel Wrack.
 
 <div class="priority" markdown>
 
@@ -2138,7 +2138,7 @@ You can spend a maximum of 16 [Legacy](../../characters/legacy.md) points on 1 c
     Use the Voidwalker to tank while you level and for Demonology pet tanking. Use the Sayaad for the most damage, and Seduction for crowd control. Use the Felhunter against casters and in PvP. The Imp gives Blood Pact and is the raid demon of Fire builds. The Infernal and the Doomguard stay for a short time only.
 
 ??? question "What did Blizzard announce for 10 November?"
-    The notice of 6 November names 2 Warlock changes. Voidwalkers become more durable as tanks, to match Classic Era. Siphon Life, Corruption and Bane of Agony become worth a cast with Wrack, and the total damage of Affliction does not increase. Blizzard gave no numbers.
+    The notice of 6 November names 2 Warlock changes. Voidwalkers become more durable as tanks, to match Classic Era. Siphon Life, Corruption and Bane of Agony become worth a cast with Wrack, and the total damage of Affliction does not increase. The hotfix note says that Wrack changes how frequently these DoTs do damage, and does not change their durations.
 
 ??? question "Why does my Voidwalker die?"
     Demons get less health from your Stamina than in Classic. Blizzard agreed that Voidwalkers were too weak. A hotfix on 6 November added about 40 base health, and a second hotfix was planned for 10 November. Keep your items at your level, and take Fel Vitality and Demonic Energies.

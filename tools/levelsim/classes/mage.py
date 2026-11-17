@@ -540,13 +540,15 @@ class CasterSim:
         avg, speed = self.ch.weapon("mh")
         return (avg + self.melee_ap() / 14 * speed) / speed * self.ch.haste * self.ch.dmg_mult * 0.85
 
-    def plan(self, opts):
+    def plan(self, opts, no_filler=False):
         """Returns (filler, f, affordable, need) from a plan of the whole remaining fight
         (mana_price): the fillers in `opts`, the cooldown and DoT spells of nuke_pool and
         resting share the time and the mana. The filler is the best one at the plan's mana
         price, f is the share of the time not spent resting and need is the mana the casting
-        share uses up beyond the regeneration while casting. The price is kept in self.lam."""
-        if not opts:
+        share uses up beyond the regeneration while casting. The price is kept in self.lam.
+        `no_filler`: plan the cooldown and DoT spells and resting only (`opts` may be empty;
+        the filler returned is then None)."""
+        if not opts and not (no_filler and self.nuke_pool()):
             self.lam, self._opts, self.lean = 0.0, [], False
             return None, 0.0, False, 0.0
         if self.policy == "simple":
@@ -578,8 +580,12 @@ class CasterSim:
         acts.append((w, -(rf - rc) * g, 1.0))
         self.lam, self._opts, self.rest_gain = lam, opts, (rf - rc) * g
         self.plan_rate = sum(xi * a[0] for xi, a in zip(x[:-1], acts[:-1]))  # planned spell damage per second
-        i = max(range(len(opts)), key=lambda i: (acts[i][0] - lam * acts[i][1], acts[i][0]))
         f = 1.0 - x[-1]
+        if not opts:
+            spent = sum(xi * a[1] for xi, a in zip(x[:-1], acts[:-1]))
+            self.lean = True
+            return None, f, False, max(0.0, rem * (spent - f * rc))
+        i = max(range(len(opts)), key=lambda i: (acts[i][0] - lam * acts[i][1], acts[i][0]))
         # lean: the plan spends the mana on cooldown and DoT spells and rests the remaining time,
         # with no room for a filler. The rotation then rests between those spells.
         self.lean = f < 1.0 and sum(x[:len(opts)]) < LEAN_SHARE

@@ -251,6 +251,8 @@ def _select(cls, spec, level, hit_scale):
     for it in chosen.values():
         for k, v in it["stats"].items():
             tot[k] = tot.get(k, 0) + v
+        if it.get("block"):  # a shield's own block value
+            tot["block_value"] = tot.get("block_value", 0) + it["block"]
     for e in ench:
         for k, v in e["stats"].items():
             if isinstance(v, (int, float)):

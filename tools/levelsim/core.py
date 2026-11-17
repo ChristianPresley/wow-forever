@@ -295,6 +295,14 @@ class Rng:
         return self.r.uniform(lo, hi)
 
 
+def melee_expect(ch, extra_crit=0.0):
+    """Expected damage multiplier of a white swing on melee_roll's attack table."""
+    miss = max(0.0, A("melee_miss_same_level") - ch.hit)
+    crit = max(0.0, ch.melee_crit + extra_crit)
+    return (100 - miss - A("dodge_same_level") - A("glance_same_level") * (1 - A("glance_damage"))
+            + crit * (A("melee_crit_mult") - 1)) / 100
+
+
 def melee_roll(rng, ch, white=True, dual_wield=False, extra_crit=0.0):
     """Single-roll attack table vs a same-level target from behind.
     Returns 'miss' | 'dodge' | 'glance' | 'crit' | 'hit'."""

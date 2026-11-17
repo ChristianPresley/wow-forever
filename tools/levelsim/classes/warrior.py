@@ -34,10 +34,11 @@ Server-side rules (not in the client), tagged:
 - Shield (crafted gear only; gear.py equips Protection's first craftable shield at level
   60, the client has none below that): Shield Slam is cast on cooldown for its client
   damage, Rage cost and 6 s cooldown (F), as a yellow melee attack (CU), and Bastion adds
-  its tooltip % damage (F). "Increased by your Block Value": the crafted item data has no
-  block value for any shield (no item carries stat 48 and a shield's own block value is
-  not exported), and the Strength share is server-side, so Shield Slam uses the base
-  damage plus gear "block_value" (0 today) only (A). This undervalues it.
+  its tooltip % damage (F). "Increased by your Block Value": the shield's own block value
+  comes from the Classic Era client's shieldblockregular game table by item level and
+  quality (C: wago.tools does not serve that table for the Forever build; 44 for the item
+  level 65 epic shields), and Strength adds 1 per 20 (CU, the Classic rule; the Forever
+  server may differ). No crafted item carries the block value stat (48).
 - Other Protection talents with no effect here: Improved Revenge, Master of Defense,
   Last Stand, Defiance, Anticipation, Deflection, Improved Shield Bash and Improved
   Shield Wall are defensive, reactive or threat. Vanguard: Charge already opens the
@@ -259,8 +260,9 @@ def setup(spec, race, level):
     add("bzr", "Berserker Rage", stances=("berserker",))
     add("reck", "Recklessness", stances=("berserker",))
     if p["shield"] and add("sslam", "Shield Slam", need_talent="Shield Slam"):
-        inp["shield_slam_block_value_missing"] = "A"
-        p["block_value"] = ch.gear_stat("block_value")
+        inp["shield_block_value"] = "C"
+        inp["block_value_per_strength"] = "CU"
+        p["block_value"] = ch.gear_stat("block_value") + ch.str / 20
     if "exe" in ab and ab["exe"]["id"] == 20647:  # level-1 damage trigger, not the trained spell
         del ab["exe"]
     p["ab"] = ab

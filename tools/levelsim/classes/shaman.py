@@ -146,18 +146,6 @@ POLICIES = ("plan+shock", "plan+shock+wf", "plan+wf", "simple+shock")
 POLICY = {"mode": "simple"}
 
 
-def _white_factor(ch, extra_crit=0.0):
-    """Expected damage of an auto-attack as a share of its average hit: the attack table of
-    core.melee_roll (miss, dodge, glancing blow, crit) instead of a flat 0.85."""
-    import os
-    if os.environ.get("K_MF") != "1":
-        return 0.85
-    miss = max(0.0, core.A("melee_miss_same_level") - ch.hit)
-    dodge, glance = core.A("dodge_same_level"), core.A("glance_same_level")
-    crit = min(max(0.0, ch.melee_crit + extra_crit), max(0.0, 100 - miss - dodge - glance))
-    return (100 - miss - dodge - glance * (1 - core.A("glance_damage")) + crit * (core.A("melee_crit_mult") - 1)) / 100
-
-
 def best_policy(run):
     """run() -> core.run_many output under the current POLICY. Returns the best of POLICIES."""
     best = None
@@ -476,7 +464,11 @@ class Fight:
         d = self.melee_dmg()
         if self.plan_wf and self.wf_totem_ap and not self.wf_weapon:
             d += 0.2 * 2 * self.melee_dmg(extra_ap=self.wf_totem_ap)
-        return d / self.speed * self.haste() * _white_factor(self.ch)
+        # 0.85 is a flat allowance for misses, dodges and glancing blows (A). The attack-table
+        # expectation with crits in its place was tested and not used: it was worse in
+        # sampled cells of every caster spec (up to -3.4%), better only for Feral in crafted
+        # gear at levels 11-19.
+        return d / self.speed * self.haste() * 0.85
 
     def exp_spell(self, spell, mult=1.0, extra_crit=0.0, ospell=None, lo_chance=0.0):
         e = core.damage_effect(spell)
